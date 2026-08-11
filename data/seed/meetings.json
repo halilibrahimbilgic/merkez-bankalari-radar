@@ -17,7 +17,10 @@
       "timeTbd": false,
       "type": "projections",
       "status": "done",
-      "sourceUrl": "https://www.federalreserve.gov/monetarypolicy/fomccalendars.htm"
+      "sourceUrl": "https://www.federalreserve.gov/monetarypolicy/fomccalendars.htm",
+      "decisionRate": 0.25,
+      "decisionRateLower": 0,
+      "previousRate": 0.25
     },
     {
       "id": "fed-2021-04-28",
@@ -26,7 +29,10 @@
       "timeTbd": false,
       "type": "rate_decision",
       "status": "done",
-      "sourceUrl": "https://www.federalreserve.gov/monetarypolicy/fomccalendars.htm"
+      "sourceUrl": "https://www.federalreserve.gov/monetarypolicy/fomccalendars.htm",
+      "decisionRate": 0.25,
+      "decisionRateLower": 0,
+      "previousRate": 0.25
     },
     {
       "id": "fed-2021-06-16",
@@ -35,7 +41,10 @@
       "timeTbd": false,
       "type": "projections",
       "status": "done",
-      "sourceUrl": "https://www.federalreserve.gov/monetarypolicy/fomccalendars.htm"
+      "sourceUrl": "https://www.federalreserve.gov/monetarypolicy/fomccalendars.htm",
+      "decisionRate": 0.25,
+      "decisionRateLower": 0,
+      "previousRate": 0.25
     },
     {
       "id": "fed-2021-07-28",
@@ -44,7 +53,10 @@
       "timeTbd": false,
       "type": "rate_decision",
       "status": "done",
-      "sourceUrl": "https://www.federalreserve.gov/monetarypolicy/fomccalendars.htm"
+      "sourceUrl": "https://www.federalreserve.gov/monetarypolicy/fomccalendars.htm",
+      "decisionRate": 0.25,
+      "decisionRateLower": 0,
+      "previousRate": 0.25
     },
     {
       "id": "fed-2021-09-22",
@@ -53,7 +65,10 @@
       "timeTbd": false,
       "type": "projections",
       "status": "done",
-      "sourceUrl": "https://www.federalreserve.gov/monetarypolicy/fomccalendars.htm"
+      "sourceUrl": "https://www.federalreserve.gov/monetarypolicy/fomccalendars.htm",
+      "decisionRate": 0.25,
+      "decisionRateLower": 0,
+      "previousRate": 0.25
     },
     {
       "id": "fed-2021-11-03",
@@ -62,7 +77,10 @@
       "timeTbd": false,
       "type": "rate_decision",
       "status": "done",
-      "sourceUrl": "https://www.federalreserve.gov/monetarypolicy/fomccalendars.htm"
+      "sourceUrl": "https://www.federalreserve.gov/monetarypolicy/fomccalendars.htm",
+      "decisionRate": 0.25,
+      "decisionRateLower": 0,
+      "previousRate": 0.25
     },
     {
       "id": "fed-2021-12-15",
@@ -71,7 +89,10 @@
       "timeTbd": false,
       "type": "projections",
       "status": "done",
-      "sourceUrl": "https://www.federalreserve.gov/monetarypolicy/fomccalendars.htm"
+      "sourceUrl": "https://www.federalreserve.gov/monetarypolicy/fomccalendars.htm",
+      "decisionRate": 0.25,
+      "decisionRateLower": 0,
+      "previousRate": 0.25
     },
     {
       "id": "fed-2022-01-26",
@@ -80,7 +101,10 @@
       "timeTbd": false,
       "type": "rate_decision",
       "status": "done",
-      "sourceUrl": "https://www.federalreserve.gov/monetarypolicy/fomccalendars.htm"
+      "sourceUrl": "https://www.federalreserve.gov/monetarypolicy/fomccalendars.htm",
+      "decisionRate": 0.25,
+      "decisionRateLower": 0,
+      "previousRate": 0.25
     },
     {
       "id": "fed-2022-03-16",
@@ -89,7 +113,10 @@
       "timeTbd": false,
       "type": "projections",
       "status": "done",
-      "sourceUrl": "https://www.federalreserve.gov/monetarypolicy/fomccalendars.htm"
+      "sourceUrl": "https://www.federalreserve.gov/monetarypolicy/fomccalendars.htm",
+      "decisionRate": 0.5,
+      "decisionRateLower": 0.25,
+      "previousRate": 0.25
     },
     {
       "id": "fed-2022-05-04",
@@ -98,7 +125,10 @@
       "timeTbd": false,
       "type": "rate_decision",
       "status": "done",
-      "sourceUrl": "https://www.federalreserve.gov/monetarypolicy/fomccalendars.htm"
+      "sourceUrl": "https://www.federalreserve.gov/monetarypolicy/fomccalendars.htm",
+      "decisionRate": 1,
+      "decisionRateLower": 0.75,
+      "previousRate": 0.5
     },
     {
       "id": "fed-2022-06-15",
@@ -107,7 +137,10 @@
       "timeTbd": false,
       "type": "projections",
       "status": "done",
-      "sourceUrl": "https://www.federalreserve.gov/monetarypolicy/fomccalendars.htm"
+      "sourceUrl": "https://www.federalreserve.gov/monetarypolicy/fomccalendars.htm",
+      "decisionRate": 1.75,
+      "decisionRateLower": 1.5,
+      "previousRate": 1
     },
     {
       "id": "fed-2022-07-27",
@@ -116,7 +149,10 @@
       "timeTbd": false,
       "type": "rate_decision",
       "status": "done",
-      "sourceUrl": "https://www.federalreserve.gov/monetarypolicy/fomccalendars.htm"
+      "sourceUrl": "https://www.federalreserve.gov/monetarypolicy/fomccalendars.htm",
+      "decisionRate": 2.5,
+      "decisionRateLower": 2.25,
+      "previousRate": 1.75
     },
     {
       "id": "fed-2022-09-21",
@@ -125,7 +161,10 @@
       "timeTbd": false,
       "type": "projections",
       "status": "done",
-      "sourceUrl": "https://www.federalreserve.gov/monetarypolicy/fomccalendars.htm"
+      "sourceUrl": "https://www.federalreserve.gov/monetarypolicy/fomccalendars.htm",
+      "decisionRate": 3.25,
+      "decisionRateLower": 3,
+      "previousRate": 2.5
     },
     {
       "id": "fed-2022-11-02",
@@ -134,7 +173,10 @@
       "timeTbd": false,
       "type": "rate_decision",
       "status": "done",
-      "sourceUrl": "https://www.federalreserve.gov/monetarypolicy/fomccalendars.htm"
+      "sourceUrl": "https://www.federalreserve.gov/monetarypolicy/fomccalendars.htm",
+      "decisionRate": 4,
+      "decisionRateLower": 3.75,
+      "previousRate": 3.25
     },
     {
       "id": "fed-2022-12-14",
@@ -143,7 +185,10 @@
       "timeTbd": false,
       "type": "projections",
       "status": "done",
-      "sourceUrl": "https://www.federalreserve.gov/monetarypolicy/fomccalendars.htm"
+      "sourceUrl": "https://www.federalreserve.gov/monetarypolicy/fomccalendars.htm",
+      "decisionRate": 4.5,
+      "decisionRateLower": 4.25,
+      "previousRate": 4
     },
     {
       "id": "fed-2023-02-01",
@@ -152,7 +197,10 @@
       "timeTbd": false,
       "type": "rate_decision",
       "status": "done",
-      "sourceUrl": "https://www.federalreserve.gov/monetarypolicy/fomccalendars.htm"
+      "sourceUrl": "https://www.federalreserve.gov/monetarypolicy/fomccalendars.htm",
+      "decisionRate": 4.75,
+      "decisionRateLower": 4.5,
+      "previousRate": 4.5
     },
     {
       "id": "fed-2023-03-22",
@@ -161,7 +209,10 @@
       "timeTbd": false,
       "type": "projections",
       "status": "done",
-      "sourceUrl": "https://www.federalreserve.gov/monetarypolicy/fomccalendars.htm"
+      "sourceUrl": "https://www.federalreserve.gov/monetarypolicy/fomccalendars.htm",
+      "decisionRate": 5,
+      "decisionRateLower": 4.75,
+      "previousRate": 4.75
     },
     {
       "id": "fed-2023-05-03",
@@ -170,7 +221,10 @@
       "timeTbd": false,
       "type": "rate_decision",
       "status": "done",
-      "sourceUrl": "https://www.federalreserve.gov/monetarypolicy/fomccalendars.htm"
+      "sourceUrl": "https://www.federalreserve.gov/monetarypolicy/fomccalendars.htm",
+      "decisionRate": 5.25,
+      "decisionRateLower": 5,
+      "previousRate": 5
     },
     {
       "id": "fed-2023-06-14",
@@ -179,7 +233,10 @@
       "timeTbd": false,
       "type": "projections",
       "status": "done",
-      "sourceUrl": "https://www.federalreserve.gov/monetarypolicy/fomccalendars.htm"
+      "sourceUrl": "https://www.federalreserve.gov/monetarypolicy/fomccalendars.htm",
+      "decisionRate": 5.25,
+      "decisionRateLower": 5,
+      "previousRate": 5.25
     },
     {
       "id": "fed-2023-07-26",
@@ -188,7 +245,10 @@
       "timeTbd": false,
       "type": "rate_decision",
       "status": "done",
-      "sourceUrl": "https://www.federalreserve.gov/monetarypolicy/fomccalendars.htm"
+      "sourceUrl": "https://www.federalreserve.gov/monetarypolicy/fomccalendars.htm",
+      "decisionRate": 5.5,
+      "decisionRateLower": 5.25,
+      "previousRate": 5.25
     },
     {
       "id": "fed-2023-09-20",
@@ -197,7 +257,10 @@
       "timeTbd": false,
       "type": "projections",
       "status": "done",
-      "sourceUrl": "https://www.federalreserve.gov/monetarypolicy/fomccalendars.htm"
+      "sourceUrl": "https://www.federalreserve.gov/monetarypolicy/fomccalendars.htm",
+      "decisionRate": 5.5,
+      "decisionRateLower": 5.25,
+      "previousRate": 5.5
     },
     {
       "id": "fed-2023-11-01",
@@ -206,7 +269,10 @@
       "timeTbd": false,
       "type": "rate_decision",
       "status": "done",
-      "sourceUrl": "https://www.federalreserve.gov/monetarypolicy/fomccalendars.htm"
+      "sourceUrl": "https://www.federalreserve.gov/monetarypolicy/fomccalendars.htm",
+      "decisionRate": 5.5,
+      "decisionRateLower": 5.25,
+      "previousRate": 5.5
     },
     {
       "id": "fed-2023-12-13",
@@ -215,7 +281,10 @@
       "timeTbd": false,
       "type": "projections",
       "status": "done",
-      "sourceUrl": "https://www.federalreserve.gov/monetarypolicy/fomccalendars.htm"
+      "sourceUrl": "https://www.federalreserve.gov/monetarypolicy/fomccalendars.htm",
+      "decisionRate": 5.5,
+      "decisionRateLower": 5.25,
+      "previousRate": 5.5
     },
     {
       "id": "fed-2024-01-31",
@@ -224,7 +293,10 @@
       "timeTbd": false,
       "type": "rate_decision",
       "status": "done",
-      "sourceUrl": "https://www.federalreserve.gov/monetarypolicy/fomccalendars.htm"
+      "sourceUrl": "https://www.federalreserve.gov/monetarypolicy/fomccalendars.htm",
+      "decisionRate": 5.5,
+      "decisionRateLower": 5.25,
+      "previousRate": 5.5
     },
     {
       "id": "fed-2024-03-20",
@@ -233,7 +305,10 @@
       "timeTbd": false,
       "type": "projections",
       "status": "done",
-      "sourceUrl": "https://www.federalreserve.gov/monetarypolicy/fomccalendars.htm"
+      "sourceUrl": "https://www.federalreserve.gov/monetarypolicy/fomccalendars.htm",
+      "decisionRate": 5.5,
+      "decisionRateLower": 5.25,
+      "previousRate": 5.5
     },
     {
       "id": "fed-2024-05-01",
@@ -242,7 +317,10 @@
       "timeTbd": false,
       "type": "rate_decision",
       "status": "done",
-      "sourceUrl": "https://www.federalreserve.gov/monetarypolicy/fomccalendars.htm"
+      "sourceUrl": "https://www.federalreserve.gov/monetarypolicy/fomccalendars.htm",
+      "decisionRate": 5.5,
+      "decisionRateLower": 5.25,
+      "previousRate": 5.5
     },
     {
       "id": "fed-2024-06-12",
@@ -251,7 +329,10 @@
       "timeTbd": false,
       "type": "projections",
       "status": "done",
-      "sourceUrl": "https://www.federalreserve.gov/monetarypolicy/fomccalendars.htm"
+      "sourceUrl": "https://www.federalreserve.gov/monetarypolicy/fomccalendars.htm",
+      "decisionRate": 5.5,
+      "decisionRateLower": 5.25,
+      "previousRate": 5.5
     },
     {
       "id": "fed-2024-07-31",
@@ -260,7 +341,10 @@
       "timeTbd": false,
       "type": "rate_decision",
       "status": "done",
-      "sourceUrl": "https://www.federalreserve.gov/monetarypolicy/fomccalendars.htm"
+      "sourceUrl": "https://www.federalreserve.gov/monetarypolicy/fomccalendars.htm",
+      "decisionRate": 5.5,
+      "decisionRateLower": 5.25,
+      "previousRate": 5.5
     },
     {
       "id": "fed-2024-09-18",
@@ -269,7 +353,10 @@
       "timeTbd": false,
       "type": "projections",
       "status": "done",
-      "sourceUrl": "https://www.federalreserve.gov/monetarypolicy/fomccalendars.htm"
+      "sourceUrl": "https://www.federalreserve.gov/monetarypolicy/fomccalendars.htm",
+      "decisionRate": 5,
+      "decisionRateLower": 4.75,
+      "previousRate": 5.5
     },
     {
       "id": "fed-2024-11-07",
@@ -278,7 +365,10 @@
       "timeTbd": false,
       "type": "rate_decision",
       "status": "done",
-      "sourceUrl": "https://www.federalreserve.gov/monetarypolicy/fomccalendars.htm"
+      "sourceUrl": "https://www.federalreserve.gov/monetarypolicy/fomccalendars.htm",
+      "decisionRate": 4.75,
+      "decisionRateLower": 4.5,
+      "previousRate": 5
     },
     {
       "id": "fed-2024-12-18",
@@ -287,7 +377,10 @@
       "timeTbd": false,
       "type": "projections",
       "status": "done",
-      "sourceUrl": "https://www.federalreserve.gov/monetarypolicy/fomccalendars.htm"
+      "sourceUrl": "https://www.federalreserve.gov/monetarypolicy/fomccalendars.htm",
+      "decisionRate": 4.5,
+      "decisionRateLower": 4.25,
+      "previousRate": 4.75
     },
     {
       "id": "fed-2025-01-29",
@@ -296,7 +389,10 @@
       "timeTbd": false,
       "type": "rate_decision",
       "status": "done",
-      "sourceUrl": "https://www.federalreserve.gov/monetarypolicy/fomccalendars.htm"
+      "sourceUrl": "https://www.federalreserve.gov/monetarypolicy/fomccalendars.htm",
+      "decisionRate": 4.5,
+      "decisionRateLower": 4.25,
+      "previousRate": 4.5
     },
     {
       "id": "fed-2025-03-19",
@@ -305,7 +401,10 @@
       "timeTbd": false,
       "type": "projections",
       "status": "done",
-      "sourceUrl": "https://www.federalreserve.gov/monetarypolicy/fomccalendars.htm"
+      "sourceUrl": "https://www.federalreserve.gov/monetarypolicy/fomccalendars.htm",
+      "decisionRate": 4.5,
+      "decisionRateLower": 4.25,
+      "previousRate": 4.5
     },
     {
       "id": "fed-2025-05-07",
@@ -314,7 +413,10 @@
       "timeTbd": false,
       "type": "rate_decision",
       "status": "done",
-      "sourceUrl": "https://www.federalreserve.gov/monetarypolicy/fomccalendars.htm"
+      "sourceUrl": "https://www.federalreserve.gov/monetarypolicy/fomccalendars.htm",
+      "decisionRate": 4.5,
+      "decisionRateLower": 4.25,
+      "previousRate": 4.5
     },
     {
       "id": "fed-2025-06-18",
@@ -323,7 +425,10 @@
       "timeTbd": false,
       "type": "projections",
       "status": "done",
-      "sourceUrl": "https://www.federalreserve.gov/monetarypolicy/fomccalendars.htm"
+      "sourceUrl": "https://www.federalreserve.gov/monetarypolicy/fomccalendars.htm",
+      "decisionRate": 4.5,
+      "decisionRateLower": 4.25,
+      "previousRate": 4.5
     },
     {
       "id": "fed-2025-07-30",
@@ -332,7 +437,10 @@
       "timeTbd": false,
       "type": "rate_decision",
       "status": "done",
-      "sourceUrl": "https://www.federalreserve.gov/monetarypolicy/fomccalendars.htm"
+      "sourceUrl": "https://www.federalreserve.gov/monetarypolicy/fomccalendars.htm",
+      "decisionRate": 4.5,
+      "decisionRateLower": 4.25,
+      "previousRate": 4.5
     },
     {
       "id": "fed-2025-09-17",
@@ -341,7 +449,10 @@
       "timeTbd": false,
       "type": "projections",
       "status": "done",
-      "sourceUrl": "https://www.federalreserve.gov/monetarypolicy/fomccalendars.htm"
+      "sourceUrl": "https://www.federalreserve.gov/monetarypolicy/fomccalendars.htm",
+      "decisionRate": 4.25,
+      "decisionRateLower": 4,
+      "previousRate": 4.5
     },
     {
       "id": "fed-2025-10-29",
@@ -350,7 +461,10 @@
       "timeTbd": false,
       "type": "rate_decision",
       "status": "done",
-      "sourceUrl": "https://www.federalreserve.gov/monetarypolicy/fomccalendars.htm"
+      "sourceUrl": "https://www.federalreserve.gov/monetarypolicy/fomccalendars.htm",
+      "decisionRate": 4,
+      "decisionRateLower": 3.75,
+      "previousRate": 4.25
     },
     {
       "id": "fed-2025-12-10",
@@ -359,7 +473,10 @@
       "timeTbd": false,
       "type": "projections",
       "status": "done",
-      "sourceUrl": "https://www.federalreserve.gov/monetarypolicy/fomccalendars.htm"
+      "sourceUrl": "https://www.federalreserve.gov/monetarypolicy/fomccalendars.htm",
+      "decisionRate": 3.75,
+      "decisionRateLower": 3.5,
+      "previousRate": 4
     },
     {
       "id": "tcmb-2026-01-22",
@@ -377,7 +494,10 @@
       "timeTbd": false,
       "type": "rate_decision",
       "status": "done",
-      "sourceUrl": "https://www.federalreserve.gov/monetarypolicy/fomccalendars.htm"
+      "sourceUrl": "https://www.federalreserve.gov/monetarypolicy/fomccalendars.htm",
+      "decisionRate": 3.75,
+      "decisionRateLower": 3.5,
+      "previousRate": 3.75
     },
     {
       "id": "tcmb-2026-03-12",
@@ -395,7 +515,10 @@
       "timeTbd": false,
       "type": "projections",
       "status": "done",
-      "sourceUrl": "https://www.federalreserve.gov/monetarypolicy/fomccalendars.htm"
+      "sourceUrl": "https://www.federalreserve.gov/monetarypolicy/fomccalendars.htm",
+      "decisionRate": 3.75,
+      "decisionRateLower": 3.5,
+      "previousRate": 3.75
     },
     {
       "id": "tcmb-2026-04-22",
@@ -413,7 +536,10 @@
       "timeTbd": false,
       "type": "rate_decision",
       "status": "done",
-      "sourceUrl": "https://www.federalreserve.gov/monetarypolicy/fomccalendars.htm"
+      "sourceUrl": "https://www.federalreserve.gov/monetarypolicy/fomccalendars.htm",
+      "decisionRate": 3.75,
+      "decisionRateLower": 3.5,
+      "previousRate": 3.75
     },
     {
       "id": "tcmb-2026-06-11",
@@ -431,7 +557,10 @@
       "timeTbd": false,
       "type": "projections",
       "status": "done",
-      "sourceUrl": "https://www.federalreserve.gov/monetarypolicy/fomccalendars.htm"
+      "sourceUrl": "https://www.federalreserve.gov/monetarypolicy/fomccalendars.htm",
+      "decisionRate": 3.75,
+      "decisionRateLower": 3.5,
+      "previousRate": 3.75
     },
     {
       "id": "tcmb-2026-07-23",
@@ -449,7 +578,10 @@
       "timeTbd": false,
       "type": "rate_decision",
       "status": "done",
-      "sourceUrl": "https://www.federalreserve.gov/monetarypolicy/fomccalendars.htm"
+      "sourceUrl": "https://www.federalreserve.gov/monetarypolicy/fomccalendars.htm",
+      "decisionRate": 3.75,
+      "decisionRateLower": 3.5,
+      "previousRate": 3.75
     },
     {
       "id": "tcmb-2026-09-10",

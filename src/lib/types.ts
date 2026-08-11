@@ -22,7 +22,10 @@ export interface Meeting {
   timeTbd: boolean;
   type: MeetingType;
   status: MeetingStatus;
+  /** Fed için hedef aralığın üst sınırı; tek oranlı bankalarda oranın kendisi. */
   decisionRate?: number;
+  /** Yalnızca aralık ilan eden bankalarda (Fed) dolu. */
+  decisionRateLower?: number;
   previousRate?: number;
   decisionNoteTr?: string;
   sourceUrl?: string;

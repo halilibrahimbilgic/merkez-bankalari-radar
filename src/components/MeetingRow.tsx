@@ -52,7 +52,7 @@ export function MeetingRow({ meeting, now }: { meeting: Meeting; now: Date }) {
         {isPast ? (
           <span className="text-muted tabular">
             {meeting.decisionRate !== undefined
-              ? `${formatRate(meeting.decisionRate)}${rateDelta(meeting)}`
+              ? `${formatRate(meeting)}${rateDelta(meeting)}`
               : countdownLabelTr(meeting.meetingAt, now)}
           </span>
         ) : (
@@ -66,8 +66,15 @@ export function MeetingRow({ meeting, now }: { meeting: Meeting; now: Date }) {
   );
 }
 
-function formatRate(rate: number): string {
-  return `%${rate.toFixed(2).replace(".", ",")}`;
+/** Fed bir aralık ilan eder ("%3,50-3,75"); diğer bankalar tek oran. */
+function formatRate(meeting: Meeting): string {
+  const upper = num(meeting.decisionRate!);
+  if (meeting.decisionRateLower === undefined) return `%${upper}`;
+  return `%${num(meeting.decisionRateLower)}-${upper}`;
+}
+
+function num(rate: number): string {
+  return rate.toFixed(2).replace(".", ",");
 }
 
 function rateDelta(meeting: Meeting): string {

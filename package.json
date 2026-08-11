@@ -7,7 +7,8 @@
     "build": "next build",
     "start": "next start",
     "lint": "eslint",
-    "fetch:meetings": "tsx scripts/fetch-meetings.ts"
+    "fetch:meetings": "tsx scripts/fetch-meetings.ts",
+    "fetch:rates": "tsx scripts/fetch-rates.ts"
   },
   "dependencies": {
     "next": "16.3.0",
