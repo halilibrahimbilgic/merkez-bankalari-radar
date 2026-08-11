@@ -1,0 +1,78 @@
+import Link from "next/link";
+import { BANKS } from "@/lib/banks";
+import type { Meeting } from "@/lib/types";
+import {
+  countdownLabelTr,
+  formatDateTr,
+  formatTimeInZone,
+  formatTimeTrt,
+  formatWeekdayTr,
+} from "@/lib/time";
+import { Countdown } from "./Countdown";
+
+export function MeetingRow({ meeting, now }: { meeting: Meeting; now: Date }) {
+  const bank = BANKS[meeting.bankCode];
+  const isPast = new Date(meeting.meetingAt) < now;
+
+  return (
+    <li className="flex flex-wrap items-baseline gap-x-3 gap-y-1 border-b border-border px-4 py-3 last:border-b-0">
+      <Link
+        href={`/banka/${bank.code}`}
+        className="min-w-14 font-semibold text-accent hover:underline"
+      >
+        {bank.nameTr}
+      </Link>
+
+      <div className="min-w-56 flex-1">
+        <div className="tabular">
+          {formatDateTr(meeting.meetingAt)}
+          <span className="text-muted"> · {formatWeekdayTr(meeting.meetingAt)}</span>
+        </div>
+        <div className="text-sm text-muted tabular">
+          {meeting.timeTbd ? (
+            "Saat açıklanmadı"
+          ) : (
+            <>
+              {formatTimeTrt(meeting.meetingAt)} TRT
+              <span className="opacity-70">
+                {" "}
+                (yerel {formatTimeInZone(meeting.meetingAt, bank.timezone)})
+              </span>
+            </>
+          )}
+          {meeting.type === "projections" && (
+            <span className="ml-2 rounded bg-accent-soft px-1.5 py-0.5 text-xs text-accent">
+              projeksiyon
+            </span>
+          )}
+        </div>
+      </div>
+
+      <div className="text-sm">
+        {isPast ? (
+          <span className="text-muted tabular">
+            {meeting.decisionRate !== undefined
+              ? `${formatRate(meeting.decisionRate)}${rateDelta(meeting)}`
+              : countdownLabelTr(meeting.meetingAt, now)}
+          </span>
+        ) : (
+          <Countdown
+            meetingAt={meeting.meetingAt}
+            initialLabel={countdownLabelTr(meeting.meetingAt, now)}
+          />
+        )}
+      </div>
+    </li>
+  );
+}
+
+function formatRate(rate: number): string {
+  return `%${rate.toFixed(2).replace(".", ",")}`;
+}
+
+function rateDelta(meeting: Meeting): string {
+  if (meeting.previousRate === undefined || meeting.decisionRate === undefined) return "";
+  const bps = Math.round((meeting.decisionRate - meeting.previousRate) * 100);
+  if (bps === 0) return " (değişiklik yok)";
+  return ` (${bps > 0 ? "+" : ""}${bps} bp)`;
+}

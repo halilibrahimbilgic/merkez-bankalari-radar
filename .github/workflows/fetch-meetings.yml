@@ -1,0 +1,32 @@
+name: Toplantı takvimini güncelle
+
+# Her gün 08:00 TRT (05:00 UTC) — plandaki günlük veri çekme işi.
+on:
+  schedule:
+    - cron: "0 5 * * *"
+  workflow_dispatch:
+
+jobs:
+  fetch:
+    runs-on: ubuntu-latest
+    permissions:
+      contents: write
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-node@v4
+        with:
+          node-version: 22
+          cache: npm
+      - run: npm ci
+      - run: npm run fetch:meetings
+      - name: Değişiklik varsa commit'le
+        run: |
+          if [[ -n "$(git status --porcelain data/seed)" ]]; then
+            git config user.name "github-actions[bot]"
+            git config user.email "github-actions[bot]@users.noreply.github.com"
+            git add data/seed
+            git commit -m "chore: toplantı takvimini güncelle"
+            git push
+          else
+            echo "Takvimde değişiklik yok."
+          fi

@@ -1,36 +1,74 @@
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).
+# Merkez Bankaları Radar
 
-## Getting Started
+Fed, ECB ve TCMB faiz toplantılarını Türkiye saatiyle tek yerde toplayan Türkçe
+merkez bankası takip platformu. Yol haritası ve gerekçe için
+`merkez_bankalari_radar_mvp_plani.docx` belgesine bakın.
 
-First, run the development server:
+## Durum
+
+| Modül | Kapsam | Durum |
+| --- | --- | --- |
+| A — Toplantı takvimi | Fed, ECB, TCMB; TRT dönüşümü, geri sayım, filtre, iCal | **Yayında** |
+| B — Faiz olasılığı | Fed Funds futures'tan bağımsız olasılık hesabı | Faz 2 |
+| C — Konuşma arşivi ve şahin/güvercin skoru | BIS arşivi + Claude API ile Türkçe özet/skor | Faz 3 |
+
+## Kurulum
 
 ```bash
+npm install
+cp .env.example .env.local   # şimdilik boş bırakılabilir
+npm run fetch:meetings       # resmî takvimleri çeker → data/seed/meetings.json
 npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
 ```
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+`DATABASE_URL` tanımlı değilse uygulama `data/seed/meetings.json` dosyasından
+okur. Bu sayede arayüz, Supabase/Neon kurulumunu beklemeden çalışır.
 
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
+## Veritabanı (isteğe bağlı)
 
-This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
+```bash
+psql "$DATABASE_URL" -f db/schema.sql
+psql "$DATABASE_URL" -f db/seed.sql
+```
 
-## Learn More
+`DATABASE_URL` tanımlandığı anda okuma katmanı otomatik olarak Postgres'e geçer
+(`src/lib/db.ts`).
 
-To learn more about Next.js, take a look at the following resources:
+## Veri kaynakları
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+Takvim verisi merkez bankalarının kendi sayfalarından çekilir; ara bir sağlayıcı
+kullanılmaz.
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
+| Banka | Kaynak | Karar saati |
+| --- | --- | --- |
+| Fed | `federalreserve.gov` FOMC takvimi | Toplantının 2. günü 14:00 New York |
+| ECB | `ecb.europa.eu` Governing Council takvimi | Day 2, 14:15 Frankfurt |
+| TCMB | `tcmb.gov.tr` duyuru takvimi | Toplantı günü 14:00 Türkiye |
 
-## Deploy on Vercel
+Saatler kaynağın yerel saatinden okunup UTC olarak saklanır, sunumda TRT'ye
+çevrilir. Yaz saati farkları `src/lib/tz.ts` içinde `Intl` üzerinden çözülür —
+sabit ofset varsayımı yoktur.
 
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
+Takvim her gün 08:00 TRT'de GitHub Actions ile yenilenir
+(`.github/workflows/fetch-meetings.yml`).
 
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
+## Dizin yapısı
+
+```
+src/app/           sayfalar (/, /takvim, /banka/[code], /hakkinda, ...)
+src/components/    paylaşılan arayüz parçaları
+src/lib/sources/   resmî takvim ayrıştırıcıları (fomc, ecb, tcmb)
+src/lib/data/      okuma katmanı — Postgres ya da seed dosyası
+src/lib/tz.ts      zaman dilimi / DST dönüşümü
+scripts/           veri çekme işleri
+db/                şema ve seed SQL
+```
+
+## Komutlar
+
+```bash
+npm run dev              # geliştirme sunucusu
+npm run build            # üretim derlemesi
+npm run fetch:meetings   # takvimleri yeniden çek
+npm run lint
+```

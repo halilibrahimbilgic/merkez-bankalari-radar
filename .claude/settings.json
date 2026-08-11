@@ -1,0 +1,28 @@
+{
+  "permissions": {
+    "allow": [
+      "Bash(npm:*)",
+      "Bash(npx:*)",
+      "Bash(node:*)",
+      "Bash(python3:*)",
+      "Bash(curl:*)",
+      "Bash(git:*)",
+      "Bash(ls:*)",
+      "Bash(cat:*)",
+      "Bash(find:*)",
+      "Bash(grep:*)",
+      "Bash(mkdir:*)",
+      "Bash(rm:*)",
+      "Bash(cp:*)",
+      "Bash(mv:*)",
+      "Bash(sed:*)",
+      "Bash(echo:*)",
+      "Bash(psql:*)",
+      "Read(//Users/halilibrahimbilgic/Desktop/codeprjt/**)",
+      "Edit(//Users/halilibrahimbilgic/Desktop/codeprjt/**)",
+      "Write(//Users/halilibrahimbilgic/Desktop/codeprjt/**)",
+      "WebFetch",
+      "WebSearch"
+    ]
+  }
+}

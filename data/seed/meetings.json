@@ -1,0 +1,788 @@
+{
+  "fetchedAt": "2026-08-11T11:08:07.968Z",
+  "meetings": [
+    {
+      "id": "fed-2021-01-27",
+      "bankCode": "fed",
+      "meetingAt": "2021-01-27T19:00:00.000Z",
+      "timeTbd": false,
+      "type": "rate_decision",
+      "status": "done",
+      "sourceUrl": "https://www.federalreserve.gov/monetarypolicy/fomccalendars.htm"
+    },
+    {
+      "id": "fed-2021-03-17",
+      "bankCode": "fed",
+      "meetingAt": "2021-03-17T18:00:00.000Z",
+      "timeTbd": false,
+      "type": "projections",
+      "status": "done",
+      "sourceUrl": "https://www.federalreserve.gov/monetarypolicy/fomccalendars.htm"
+    },
+    {
+      "id": "fed-2021-04-28",
+      "bankCode": "fed",
+      "meetingAt": "2021-04-28T18:00:00.000Z",
+      "timeTbd": false,
+      "type": "rate_decision",
+      "status": "done",
+      "sourceUrl": "https://www.federalreserve.gov/monetarypolicy/fomccalendars.htm"
+    },
+    {
+      "id": "fed-2021-06-16",
+      "bankCode": "fed",
+      "meetingAt": "2021-06-16T18:00:00.000Z",
+      "timeTbd": false,
+      "type": "projections",
+      "status": "done",
+      "sourceUrl": "https://www.federalreserve.gov/monetarypolicy/fomccalendars.htm"
+    },
+    {
+      "id": "fed-2021-07-28",
+      "bankCode": "fed",
+      "meetingAt": "2021-07-28T18:00:00.000Z",
+      "timeTbd": false,
+      "type": "rate_decision",
+      "status": "done",
+      "sourceUrl": "https://www.federalreserve.gov/monetarypolicy/fomccalendars.htm"
+    },
+    {
+      "id": "fed-2021-09-22",
+      "bankCode": "fed",
+      "meetingAt": "2021-09-22T18:00:00.000Z",
+      "timeTbd": false,
+      "type": "projections",
+      "status": "done",
+      "sourceUrl": "https://www.federalreserve.gov/monetarypolicy/fomccalendars.htm"
+    },
+    {
+      "id": "fed-2021-11-03",
+      "bankCode": "fed",
+      "meetingAt": "2021-11-03T18:00:00.000Z",
+      "timeTbd": false,
+      "type": "rate_decision",
+      "status": "done",
+      "sourceUrl": "https://www.federalreserve.gov/monetarypolicy/fomccalendars.htm"
+    },
+    {
+      "id": "fed-2021-12-15",
+      "bankCode": "fed",
+      "meetingAt": "2021-12-15T19:00:00.000Z",
+      "timeTbd": false,
+      "type": "projections",
+      "status": "done",
+      "sourceUrl": "https://www.federalreserve.gov/monetarypolicy/fomccalendars.htm"
+    },
+    {
+      "id": "fed-2022-01-26",
+      "bankCode": "fed",
+      "meetingAt": "2022-01-26T19:00:00.000Z",
+      "timeTbd": false,
+      "type": "rate_decision",
+      "status": "done",
+      "sourceUrl": "https://www.federalreserve.gov/monetarypolicy/fomccalendars.htm"
+    },
+    {
+      "id": "fed-2022-03-16",
+      "bankCode": "fed",
+      "meetingAt": "2022-03-16T18:00:00.000Z",
+      "timeTbd": false,
+      "type": "projections",
+      "status": "done",
+      "sourceUrl": "https://www.federalreserve.gov/monetarypolicy/fomccalendars.htm"
+    },
+    {
+      "id": "fed-2022-05-04",
+      "bankCode": "fed",
+      "meetingAt": "2022-05-04T18:00:00.000Z",
+      "timeTbd": false,
+      "type": "rate_decision",
+      "status": "done",
+      "sourceUrl": "https://www.federalreserve.gov/monetarypolicy/fomccalendars.htm"
+    },
+    {
+      "id": "fed-2022-06-15",
+      "bankCode": "fed",
+      "meetingAt": "2022-06-15T18:00:00.000Z",
+      "timeTbd": false,
+      "type": "projections",
+      "status": "done",
+      "sourceUrl": "https://www.federalreserve.gov/monetarypolicy/fomccalendars.htm"
+    },
+    {
+      "id": "fed-2022-07-27",
+      "bankCode": "fed",
+      "meetingAt": "2022-07-27T18:00:00.000Z",
+      "timeTbd": false,
+      "type": "rate_decision",
+      "status": "done",
+      "sourceUrl": "https://www.federalreserve.gov/monetarypolicy/fomccalendars.htm"
+    },
+    {
+      "id": "fed-2022-09-21",
+      "bankCode": "fed",
+      "meetingAt": "2022-09-21T18:00:00.000Z",
+      "timeTbd": false,
+      "type": "projections",
+      "status": "done",
+      "sourceUrl": "https://www.federalreserve.gov/monetarypolicy/fomccalendars.htm"
+    },
+    {
+      "id": "fed-2022-11-02",
+      "bankCode": "fed",
+      "meetingAt": "2022-11-02T18:00:00.000Z",
+      "timeTbd": false,
+      "type": "rate_decision",
+      "status": "done",
+      "sourceUrl": "https://www.federalreserve.gov/monetarypolicy/fomccalendars.htm"
+    },
+    {
+      "id": "fed-2022-12-14",
+      "bankCode": "fed",
+      "meetingAt": "2022-12-14T19:00:00.000Z",
+      "timeTbd": false,
+      "type": "projections",
+      "status": "done",
+      "sourceUrl": "https://www.federalreserve.gov/monetarypolicy/fomccalendars.htm"
+    },
+    {
+      "id": "fed-2023-02-01",
+      "bankCode": "fed",
+      "meetingAt": "2023-02-01T19:00:00.000Z",
+      "timeTbd": false,
+      "type": "rate_decision",
+      "status": "done",
+      "sourceUrl": "https://www.federalreserve.gov/monetarypolicy/fomccalendars.htm"
+    },
+    {
+      "id": "fed-2023-03-22",
+      "bankCode": "fed",
+      "meetingAt": "2023-03-22T18:00:00.000Z",
+      "timeTbd": false,
+      "type": "projections",
+      "status": "done",
+      "sourceUrl": "https://www.federalreserve.gov/monetarypolicy/fomccalendars.htm"
+    },
+    {
+      "id": "fed-2023-05-03",
+      "bankCode": "fed",
+      "meetingAt": "2023-05-03T18:00:00.000Z",
+      "timeTbd": false,
+      "type": "rate_decision",
+      "status": "done",
+      "sourceUrl": "https://www.federalreserve.gov/monetarypolicy/fomccalendars.htm"
+    },
+    {
+      "id": "fed-2023-06-14",
+      "bankCode": "fed",
+      "meetingAt": "2023-06-14T18:00:00.000Z",
+      "timeTbd": false,
+      "type": "projections",
+      "status": "done",
+      "sourceUrl": "https://www.federalreserve.gov/monetarypolicy/fomccalendars.htm"
+    },
+    {
+      "id": "fed-2023-07-26",
+      "bankCode": "fed",
+      "meetingAt": "2023-07-26T18:00:00.000Z",
+      "timeTbd": false,
+      "type": "rate_decision",
+      "status": "done",
+      "sourceUrl": "https://www.federalreserve.gov/monetarypolicy/fomccalendars.htm"
+    },
+    {
+      "id": "fed-2023-09-20",
+      "bankCode": "fed",
+      "meetingAt": "2023-09-20T18:00:00.000Z",
+      "timeTbd": false,
+      "type": "projections",
+      "status": "done",
+      "sourceUrl": "https://www.federalreserve.gov/monetarypolicy/fomccalendars.htm"
+    },
+    {
+      "id": "fed-2023-11-01",
+      "bankCode": "fed",
+      "meetingAt": "2023-11-01T18:00:00.000Z",
+      "timeTbd": false,
+      "type": "rate_decision",
+      "status": "done",
+      "sourceUrl": "https://www.federalreserve.gov/monetarypolicy/fomccalendars.htm"
+    },
+    {
+      "id": "fed-2023-12-13",
+      "bankCode": "fed",
+      "meetingAt": "2023-12-13T19:00:00.000Z",
+      "timeTbd": false,
+      "type": "projections",
+      "status": "done",
+      "sourceUrl": "https://www.federalreserve.gov/monetarypolicy/fomccalendars.htm"
+    },
+    {
+      "id": "fed-2024-01-31",
+      "bankCode": "fed",
+      "meetingAt": "2024-01-31T19:00:00.000Z",
+      "timeTbd": false,
+      "type": "rate_decision",
+      "status": "done",
+      "sourceUrl": "https://www.federalreserve.gov/monetarypolicy/fomccalendars.htm"
+    },
+    {
+      "id": "fed-2024-03-20",
+      "bankCode": "fed",
+      "meetingAt": "2024-03-20T18:00:00.000Z",
+      "timeTbd": false,
+      "type": "projections",
+      "status": "done",
+      "sourceUrl": "https://www.federalreserve.gov/monetarypolicy/fomccalendars.htm"
+    },
+    {
+      "id": "fed-2024-05-01",
+      "bankCode": "fed",
+      "meetingAt": "2024-05-01T18:00:00.000Z",
+      "timeTbd": false,
+      "type": "rate_decision",
+      "status": "done",
+      "sourceUrl": "https://www.federalreserve.gov/monetarypolicy/fomccalendars.htm"
+    },
+    {
+      "id": "fed-2024-06-12",
+      "bankCode": "fed",
+      "meetingAt": "2024-06-12T18:00:00.000Z",
+      "timeTbd": false,
+      "type": "projections",
+      "status": "done",
+      "sourceUrl": "https://www.federalreserve.gov/monetarypolicy/fomccalendars.htm"
+    },
+    {
+      "id": "fed-2024-07-31",
+      "bankCode": "fed",
+      "meetingAt": "2024-07-31T18:00:00.000Z",
+      "timeTbd": false,
+      "type": "rate_decision",
+      "status": "done",
+      "sourceUrl": "https://www.federalreserve.gov/monetarypolicy/fomccalendars.htm"
+    },
+    {
+      "id": "fed-2024-09-18",
+      "bankCode": "fed",
+      "meetingAt": "2024-09-18T18:00:00.000Z",
+      "timeTbd": false,
+      "type": "projections",
+      "status": "done",
+      "sourceUrl": "https://www.federalreserve.gov/monetarypolicy/fomccalendars.htm"
+    },
+    {
+      "id": "fed-2024-11-07",
+      "bankCode": "fed",
+      "meetingAt": "2024-11-07T19:00:00.000Z",
+      "timeTbd": false,
+      "type": "rate_decision",
+      "status": "done",
+      "sourceUrl": "https://www.federalreserve.gov/monetarypolicy/fomccalendars.htm"
+    },
+    {
+      "id": "fed-2024-12-18",
+      "bankCode": "fed",
+      "meetingAt": "2024-12-18T19:00:00.000Z",
+      "timeTbd": false,
+      "type": "projections",
+      "status": "done",
+      "sourceUrl": "https://www.federalreserve.gov/monetarypolicy/fomccalendars.htm"
+    },
+    {
+      "id": "fed-2025-01-29",
+      "bankCode": "fed",
+      "meetingAt": "2025-01-29T19:00:00.000Z",
+      "timeTbd": false,
+      "type": "rate_decision",
+      "status": "done",
+      "sourceUrl": "https://www.federalreserve.gov/monetarypolicy/fomccalendars.htm"
+    },
+    {
+      "id": "fed-2025-03-19",
+      "bankCode": "fed",
+      "meetingAt": "2025-03-19T18:00:00.000Z",
+      "timeTbd": false,
+      "type": "projections",
+      "status": "done",
+      "sourceUrl": "https://www.federalreserve.gov/monetarypolicy/fomccalendars.htm"
+    },
+    {
+      "id": "fed-2025-05-07",
+      "bankCode": "fed",
+      "meetingAt": "2025-05-07T18:00:00.000Z",
+      "timeTbd": false,
+      "type": "rate_decision",
+      "status": "done",
+      "sourceUrl": "https://www.federalreserve.gov/monetarypolicy/fomccalendars.htm"
+    },
+    {
+      "id": "fed-2025-06-18",
+      "bankCode": "fed",
+      "meetingAt": "2025-06-18T18:00:00.000Z",
+      "timeTbd": false,
+      "type": "projections",
+      "status": "done",
+      "sourceUrl": "https://www.federalreserve.gov/monetarypolicy/fomccalendars.htm"
+    },
+    {
+      "id": "fed-2025-07-30",
+      "bankCode": "fed",
+      "meetingAt": "2025-07-30T18:00:00.000Z",
+      "timeTbd": false,
+      "type": "rate_decision",
+      "status": "done",
+      "sourceUrl": "https://www.federalreserve.gov/monetarypolicy/fomccalendars.htm"
+    },
+    {
+      "id": "fed-2025-09-17",
+      "bankCode": "fed",
+      "meetingAt": "2025-09-17T18:00:00.000Z",
+      "timeTbd": false,
+      "type": "projections",
+      "status": "done",
+      "sourceUrl": "https://www.federalreserve.gov/monetarypolicy/fomccalendars.htm"
+    },
+    {
+      "id": "fed-2025-10-29",
+      "bankCode": "fed",
+      "meetingAt": "2025-10-29T18:00:00.000Z",
+      "timeTbd": false,
+      "type": "rate_decision",
+      "status": "done",
+      "sourceUrl": "https://www.federalreserve.gov/monetarypolicy/fomccalendars.htm"
+    },
+    {
+      "id": "fed-2025-12-10",
+      "bankCode": "fed",
+      "meetingAt": "2025-12-10T19:00:00.000Z",
+      "timeTbd": false,
+      "type": "projections",
+      "status": "done",
+      "sourceUrl": "https://www.federalreserve.gov/monetarypolicy/fomccalendars.htm"
+    },
+    {
+      "id": "tcmb-2026-01-22",
+      "bankCode": "tcmb",
+      "meetingAt": "2026-01-22T11:00:00.000Z",
+      "timeTbd": false,
+      "type": "rate_decision",
+      "status": "done",
+      "sourceUrl": "https://www.tcmb.gov.tr/wps/wcm/connect/TR/TCMB+TR/Main+Menu/Duyurular/Takvim"
+    },
+    {
+      "id": "fed-2026-01-28",
+      "bankCode": "fed",
+      "meetingAt": "2026-01-28T19:00:00.000Z",
+      "timeTbd": false,
+      "type": "rate_decision",
+      "status": "done",
+      "sourceUrl": "https://www.federalreserve.gov/monetarypolicy/fomccalendars.htm"
+    },
+    {
+      "id": "tcmb-2026-03-12",
+      "bankCode": "tcmb",
+      "meetingAt": "2026-03-12T11:00:00.000Z",
+      "timeTbd": false,
+      "type": "rate_decision",
+      "status": "done",
+      "sourceUrl": "https://www.tcmb.gov.tr/wps/wcm/connect/TR/TCMB+TR/Main+Menu/Duyurular/Takvim"
+    },
+    {
+      "id": "fed-2026-03-18",
+      "bankCode": "fed",
+      "meetingAt": "2026-03-18T18:00:00.000Z",
+      "timeTbd": false,
+      "type": "projections",
+      "status": "done",
+      "sourceUrl": "https://www.federalreserve.gov/monetarypolicy/fomccalendars.htm"
+    },
+    {
+      "id": "tcmb-2026-04-22",
+      "bankCode": "tcmb",
+      "meetingAt": "2026-04-22T11:00:00.000Z",
+      "timeTbd": false,
+      "type": "rate_decision",
+      "status": "done",
+      "sourceUrl": "https://www.tcmb.gov.tr/wps/wcm/connect/TR/TCMB+TR/Main+Menu/Duyurular/Takvim"
+    },
+    {
+      "id": "fed-2026-04-29",
+      "bankCode": "fed",
+      "meetingAt": "2026-04-29T18:00:00.000Z",
+      "timeTbd": false,
+      "type": "rate_decision",
+      "status": "done",
+      "sourceUrl": "https://www.federalreserve.gov/monetarypolicy/fomccalendars.htm"
+    },
+    {
+      "id": "tcmb-2026-06-11",
+      "bankCode": "tcmb",
+      "meetingAt": "2026-06-11T11:00:00.000Z",
+      "timeTbd": false,
+      "type": "rate_decision",
+      "status": "done",
+      "sourceUrl": "https://www.tcmb.gov.tr/wps/wcm/connect/TR/TCMB+TR/Main+Menu/Duyurular/Takvim"
+    },
+    {
+      "id": "fed-2026-06-17",
+      "bankCode": "fed",
+      "meetingAt": "2026-06-17T18:00:00.000Z",
+      "timeTbd": false,
+      "type": "projections",
+      "status": "done",
+      "sourceUrl": "https://www.federalreserve.gov/monetarypolicy/fomccalendars.htm"
+    },
+    {
+      "id": "tcmb-2026-07-23",
+      "bankCode": "tcmb",
+      "meetingAt": "2026-07-23T11:00:00.000Z",
+      "timeTbd": false,
+      "type": "rate_decision",
+      "status": "done",
+      "sourceUrl": "https://www.tcmb.gov.tr/wps/wcm/connect/TR/TCMB+TR/Main+Menu/Duyurular/Takvim"
+    },
+    {
+      "id": "fed-2026-07-29",
+      "bankCode": "fed",
+      "meetingAt": "2026-07-29T18:00:00.000Z",
+      "timeTbd": false,
+      "type": "rate_decision",
+      "status": "done",
+      "sourceUrl": "https://www.federalreserve.gov/monetarypolicy/fomccalendars.htm"
+    },
+    {
+      "id": "tcmb-2026-09-10",
+      "bankCode": "tcmb",
+      "meetingAt": "2026-09-10T11:00:00.000Z",
+      "timeTbd": false,
+      "type": "rate_decision",
+      "status": "scheduled",
+      "sourceUrl": "https://www.tcmb.gov.tr/wps/wcm/connect/TR/TCMB+TR/Main+Menu/Duyurular/Takvim"
+    },
+    {
+      "id": "ecb-2026-09-10",
+      "bankCode": "ecb",
+      "meetingAt": "2026-09-10T12:15:00.000Z",
+      "timeTbd": false,
+      "type": "rate_decision",
+      "status": "scheduled",
+      "sourceUrl": "https://www.ecb.europa.eu/press/calendars/mgcgc/html/index.en.html"
+    },
+    {
+      "id": "fed-2026-09-16",
+      "bankCode": "fed",
+      "meetingAt": "2026-09-16T18:00:00.000Z",
+      "timeTbd": false,
+      "type": "projections",
+      "status": "scheduled",
+      "sourceUrl": "https://www.federalreserve.gov/monetarypolicy/fomccalendars.htm"
+    },
+    {
+      "id": "tcmb-2026-10-22",
+      "bankCode": "tcmb",
+      "meetingAt": "2026-10-22T11:00:00.000Z",
+      "timeTbd": false,
+      "type": "rate_decision",
+      "status": "scheduled",
+      "sourceUrl": "https://www.tcmb.gov.tr/wps/wcm/connect/TR/TCMB+TR/Main+Menu/Duyurular/Takvim"
+    },
+    {
+      "id": "fed-2026-10-28",
+      "bankCode": "fed",
+      "meetingAt": "2026-10-28T18:00:00.000Z",
+      "timeTbd": false,
+      "type": "rate_decision",
+      "status": "scheduled",
+      "sourceUrl": "https://www.federalreserve.gov/monetarypolicy/fomccalendars.htm"
+    },
+    {
+      "id": "ecb-2026-10-29",
+      "bankCode": "ecb",
+      "meetingAt": "2026-10-29T13:15:00.000Z",
+      "timeTbd": false,
+      "type": "rate_decision",
+      "status": "scheduled",
+      "sourceUrl": "https://www.ecb.europa.eu/press/calendars/mgcgc/html/index.en.html"
+    },
+    {
+      "id": "fed-2026-12-09",
+      "bankCode": "fed",
+      "meetingAt": "2026-12-09T19:00:00.000Z",
+      "timeTbd": false,
+      "type": "projections",
+      "status": "scheduled",
+      "sourceUrl": "https://www.federalreserve.gov/monetarypolicy/fomccalendars.htm"
+    },
+    {
+      "id": "tcmb-2026-12-10",
+      "bankCode": "tcmb",
+      "meetingAt": "2026-12-10T11:00:00.000Z",
+      "timeTbd": false,
+      "type": "rate_decision",
+      "status": "scheduled",
+      "sourceUrl": "https://www.tcmb.gov.tr/wps/wcm/connect/TR/TCMB+TR/Main+Menu/Duyurular/Takvim"
+    },
+    {
+      "id": "ecb-2026-12-17",
+      "bankCode": "ecb",
+      "meetingAt": "2026-12-17T13:15:00.000Z",
+      "timeTbd": false,
+      "type": "rate_decision",
+      "status": "scheduled",
+      "sourceUrl": "https://www.ecb.europa.eu/press/calendars/mgcgc/html/index.en.html"
+    },
+    {
+      "id": "tcmb-2027-01-21",
+      "bankCode": "tcmb",
+      "meetingAt": "2027-01-21T11:00:00.000Z",
+      "timeTbd": false,
+      "type": "rate_decision",
+      "status": "scheduled",
+      "sourceUrl": "https://www.tcmb.gov.tr/wps/wcm/connect/TR/TCMB+TR/Main+Menu/Duyurular/Takvim"
+    },
+    {
+      "id": "fed-2027-01-27",
+      "bankCode": "fed",
+      "meetingAt": "2027-01-27T19:00:00.000Z",
+      "timeTbd": false,
+      "type": "rate_decision",
+      "status": "scheduled",
+      "sourceUrl": "https://www.federalreserve.gov/monetarypolicy/fomccalendars.htm"
+    },
+    {
+      "id": "ecb-2027-02-04",
+      "bankCode": "ecb",
+      "meetingAt": "2027-02-04T13:15:00.000Z",
+      "timeTbd": false,
+      "type": "rate_decision",
+      "status": "scheduled",
+      "sourceUrl": "https://www.ecb.europa.eu/press/calendars/mgcgc/html/index.en.html"
+    },
+    {
+      "id": "fed-2027-03-17",
+      "bankCode": "fed",
+      "meetingAt": "2027-03-17T18:00:00.000Z",
+      "timeTbd": false,
+      "type": "projections",
+      "status": "scheduled",
+      "sourceUrl": "https://www.federalreserve.gov/monetarypolicy/fomccalendars.htm"
+    },
+    {
+      "id": "tcmb-2027-03-18",
+      "bankCode": "tcmb",
+      "meetingAt": "2027-03-18T11:00:00.000Z",
+      "timeTbd": false,
+      "type": "rate_decision",
+      "status": "scheduled",
+      "sourceUrl": "https://www.tcmb.gov.tr/wps/wcm/connect/TR/TCMB+TR/Main+Menu/Duyurular/Takvim"
+    },
+    {
+      "id": "ecb-2027-03-18",
+      "bankCode": "ecb",
+      "meetingAt": "2027-03-18T13:15:00.000Z",
+      "timeTbd": false,
+      "type": "rate_decision",
+      "status": "scheduled",
+      "sourceUrl": "https://www.ecb.europa.eu/press/calendars/mgcgc/html/index.en.html"
+    },
+    {
+      "id": "tcmb-2027-04-22",
+      "bankCode": "tcmb",
+      "meetingAt": "2027-04-22T11:00:00.000Z",
+      "timeTbd": false,
+      "type": "rate_decision",
+      "status": "scheduled",
+      "sourceUrl": "https://www.tcmb.gov.tr/wps/wcm/connect/TR/TCMB+TR/Main+Menu/Duyurular/Takvim"
+    },
+    {
+      "id": "fed-2027-04-28",
+      "bankCode": "fed",
+      "meetingAt": "2027-04-28T18:00:00.000Z",
+      "timeTbd": false,
+      "type": "rate_decision",
+      "status": "scheduled",
+      "sourceUrl": "https://www.federalreserve.gov/monetarypolicy/fomccalendars.htm"
+    },
+    {
+      "id": "ecb-2027-04-29",
+      "bankCode": "ecb",
+      "meetingAt": "2027-04-29T12:15:00.000Z",
+      "timeTbd": false,
+      "type": "rate_decision",
+      "status": "scheduled",
+      "sourceUrl": "https://www.ecb.europa.eu/press/calendars/mgcgc/html/index.en.html"
+    },
+    {
+      "id": "fed-2027-06-09",
+      "bankCode": "fed",
+      "meetingAt": "2027-06-09T18:00:00.000Z",
+      "timeTbd": false,
+      "type": "projections",
+      "status": "scheduled",
+      "sourceUrl": "https://www.federalreserve.gov/monetarypolicy/fomccalendars.htm"
+    },
+    {
+      "id": "tcmb-2027-06-10",
+      "bankCode": "tcmb",
+      "meetingAt": "2027-06-10T11:00:00.000Z",
+      "timeTbd": false,
+      "type": "rate_decision",
+      "status": "scheduled",
+      "sourceUrl": "https://www.tcmb.gov.tr/wps/wcm/connect/TR/TCMB+TR/Main+Menu/Duyurular/Takvim"
+    },
+    {
+      "id": "ecb-2027-06-10",
+      "bankCode": "ecb",
+      "meetingAt": "2027-06-10T12:15:00.000Z",
+      "timeTbd": false,
+      "type": "rate_decision",
+      "status": "scheduled",
+      "sourceUrl": "https://www.ecb.europa.eu/press/calendars/mgcgc/html/index.en.html"
+    },
+    {
+      "id": "ecb-2027-07-22",
+      "bankCode": "ecb",
+      "meetingAt": "2027-07-22T12:15:00.000Z",
+      "timeTbd": false,
+      "type": "rate_decision",
+      "status": "scheduled",
+      "sourceUrl": "https://www.ecb.europa.eu/press/calendars/mgcgc/html/index.en.html"
+    },
+    {
+      "id": "fed-2027-07-28",
+      "bankCode": "fed",
+      "meetingAt": "2027-07-28T18:00:00.000Z",
+      "timeTbd": false,
+      "type": "rate_decision",
+      "status": "scheduled",
+      "sourceUrl": "https://www.federalreserve.gov/monetarypolicy/fomccalendars.htm"
+    },
+    {
+      "id": "ecb-2027-09-09",
+      "bankCode": "ecb",
+      "meetingAt": "2027-09-09T12:15:00.000Z",
+      "timeTbd": false,
+      "type": "rate_decision",
+      "status": "scheduled",
+      "sourceUrl": "https://www.ecb.europa.eu/press/calendars/mgcgc/html/index.en.html"
+    },
+    {
+      "id": "fed-2027-09-15",
+      "bankCode": "fed",
+      "meetingAt": "2027-09-15T18:00:00.000Z",
+      "timeTbd": false,
+      "type": "projections",
+      "status": "scheduled",
+      "sourceUrl": "https://www.federalreserve.gov/monetarypolicy/fomccalendars.htm"
+    },
+    {
+      "id": "fed-2027-10-27",
+      "bankCode": "fed",
+      "meetingAt": "2027-10-27T18:00:00.000Z",
+      "timeTbd": false,
+      "type": "rate_decision",
+      "status": "scheduled",
+      "sourceUrl": "https://www.federalreserve.gov/monetarypolicy/fomccalendars.htm"
+    },
+    {
+      "id": "ecb-2027-10-28",
+      "bankCode": "ecb",
+      "meetingAt": "2027-10-28T12:15:00.000Z",
+      "timeTbd": false,
+      "type": "rate_decision",
+      "status": "scheduled",
+      "sourceUrl": "https://www.ecb.europa.eu/press/calendars/mgcgc/html/index.en.html"
+    },
+    {
+      "id": "fed-2027-12-08",
+      "bankCode": "fed",
+      "meetingAt": "2027-12-08T19:00:00.000Z",
+      "timeTbd": false,
+      "type": "projections",
+      "status": "scheduled",
+      "sourceUrl": "https://www.federalreserve.gov/monetarypolicy/fomccalendars.htm"
+    },
+    {
+      "id": "ecb-2027-12-16",
+      "bankCode": "ecb",
+      "meetingAt": "2027-12-16T13:15:00.000Z",
+      "timeTbd": false,
+      "type": "rate_decision",
+      "status": "scheduled",
+      "sourceUrl": "https://www.ecb.europa.eu/press/calendars/mgcgc/html/index.en.html"
+    },
+    {
+      "id": "ecb-2028-02-03",
+      "bankCode": "ecb",
+      "meetingAt": "2028-02-03T13:15:00.000Z",
+      "timeTbd": false,
+      "type": "rate_decision",
+      "status": "scheduled",
+      "sourceUrl": "https://www.ecb.europa.eu/press/calendars/mgcgc/html/index.en.html"
+    },
+    {
+      "id": "ecb-2028-03-23",
+      "bankCode": "ecb",
+      "meetingAt": "2028-03-23T13:15:00.000Z",
+      "timeTbd": false,
+      "type": "rate_decision",
+      "status": "scheduled",
+      "sourceUrl": "https://www.ecb.europa.eu/press/calendars/mgcgc/html/index.en.html"
+    },
+    {
+      "id": "ecb-2028-05-04",
+      "bankCode": "ecb",
+      "meetingAt": "2028-05-04T12:15:00.000Z",
+      "timeTbd": false,
+      "type": "rate_decision",
+      "status": "scheduled",
+      "sourceUrl": "https://www.ecb.europa.eu/press/calendars/mgcgc/html/index.en.html"
+    },
+    {
+      "id": "ecb-2028-06-08",
+      "bankCode": "ecb",
+      "meetingAt": "2028-06-08T12:15:00.000Z",
+      "timeTbd": false,
+      "type": "rate_decision",
+      "status": "scheduled",
+      "sourceUrl": "https://www.ecb.europa.eu/press/calendars/mgcgc/html/index.en.html"
+    },
+    {
+      "id": "ecb-2028-07-20",
+      "bankCode": "ecb",
+      "meetingAt": "2028-07-20T12:15:00.000Z",
+      "timeTbd": false,
+      "type": "rate_decision",
+      "status": "scheduled",
+      "sourceUrl": "https://www.ecb.europa.eu/press/calendars/mgcgc/html/index.en.html"
+    },
+    {
+      "id": "ecb-2028-09-07",
+      "bankCode": "ecb",
+      "meetingAt": "2028-09-07T12:15:00.000Z",
+      "timeTbd": false,
+      "type": "rate_decision",
+      "status": "scheduled",
+      "sourceUrl": "https://www.ecb.europa.eu/press/calendars/mgcgc/html/index.en.html"
+    },
+    {
+      "id": "ecb-2028-10-12",
+      "bankCode": "ecb",
+      "meetingAt": "2028-10-12T12:15:00.000Z",
+      "timeTbd": false,
+      "type": "rate_decision",
+      "status": "scheduled",
+      "sourceUrl": "https://www.ecb.europa.eu/press/calendars/mgcgc/html/index.en.html"
+    },
+    {
+      "id": "ecb-2028-12-07",
+      "bankCode": "ecb",
+      "meetingAt": "2028-12-07T13:15:00.000Z",
+      "timeTbd": false,
+      "type": "rate_decision",
+      "status": "scheduled",
+      "sourceUrl": "https://www.ecb.europa.eu/press/calendars/mgcgc/html/index.en.html"
+    }
+  ]
+}
