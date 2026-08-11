@@ -12,7 +12,7 @@
 import { readFile, writeFile } from "node:fs/promises";
 import path from "node:path";
 import { config } from "dotenv";
-import { fetchSeries, SERIES, valueAsOf, type Observation } from "../src/lib/sources/fred";
+import { fetchSeries, SERIES, valueAsOf } from "../src/lib/sources/fred";
 import type { Meeting } from "../src/lib/types";
 
 config({ path: ".env.local", quiet: true });
