@@ -9,7 +9,7 @@ merkez bankası takip platformu. Yol haritası ve gerekçe için
 | Modül | Kapsam | Durum |
 | --- | --- | --- |
 | A — Toplantı takvimi | Fed, ECB, TCMB; TRT dönüşümü, geri sayım, filtre, iCal | **Yayında** |
-| B — Faiz olasılığı | Fed Funds futures'tan bağımsız olasılık hesabı | Faz 2 |
+| B — Faiz olasılığı | Atlanta Fed MPT dağılımları, Türkçe anlatım + grafik | **Yayında** |
 | C — Konuşma arşivi ve şahin/güvercin skoru | BIS arşivi + Claude API ile Türkçe özet/skor | Faz 3 |
 
 ## Kurulum
@@ -18,6 +18,8 @@ merkez bankası takip platformu. Yol haritası ve gerekçe için
 npm install
 cp .env.example .env.local   # şimdilik boş bırakılabilir
 npm run fetch:meetings       # resmî takvimleri çeker → data/seed/meetings.json
+npm run fetch:rates          # geçmiş Fed karar oranları (FRED_API_KEY gerekir)
+npm run fetch:probabilities  # Atlanta Fed olasılık dağılımları
 npm run dev
 ```
 
@@ -45,6 +47,21 @@ kullanılmaz.
 | ECB | `ecb.europa.eu` Governing Council takvimi | Day 2, 14:15 Frankfurt |
 | TCMB | `tcmb.gov.tr` duyuru takvimi | Toplantı günü 14:00 Türkiye |
 
+Faiz olasılıkları [Atlanta Fed Market Probability
+Tracker](https://www.atlantafed.org/research-and-data/data/market-probability-tracker)
+verisinden gelir (CME 3 aylık SOFR opsiyonlarından türetilir).
+
+**Lisans uyarısı:** bu veri yalnızca kişisel ve eğitim amaçlı kullanıma
+izinlidir. Site buna göre konumlandırılmıştır; ticarileştirme (reklam,
+abonelik) düşünülüyorsa önce CME lisansı alınmalı ve bu kaynak
+değiştirilmelidir. Kaynak ve lisans metinleri `/faiz-olasiligi` ile
+`/hakkinda` sayfalarında görünür durumdadır.
+
+Olasılıkları kendimiz hesaplamıyoruz: girdi olan vadeli işlem/opsiyon
+fiyatları CME'nin lisanslı verisidir ve CME otomatik veri çekmeyi kullanım
+şartlarıyla yasaklamıştır. FRED'de Fed Funds futures fiyatı **yoktur** —
+plandaki bu varsayım hatalıdır.
+
 Saatler kaynağın yerel saatinden okunup UTC olarak saklanır, sunumda TRT'ye
 çevrilir. Yaz saati farkları `src/lib/tz.ts` içinde `Intl` üzerinden çözülür —
 sabit ofset varsayımı yoktur.
@@ -70,5 +87,7 @@ db/                şema ve seed SQL
 npm run dev              # geliştirme sunucusu
 npm run build            # üretim derlemesi
 npm run fetch:meetings   # takvimleri yeniden çek
+npm run fetch:rates      # geçmiş Fed karar oranları
+npm run fetch:probabilities  # olasılık dağılımları
 npm run lint
 ```

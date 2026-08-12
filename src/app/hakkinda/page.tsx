@@ -22,6 +22,16 @@ const SOURCES = [
     note: "Para politikası toplantısının ikinci günü, 14:15 Frankfurt saatinde karar; 14:45'te basın toplantısı.",
   },
   {
+    name: "Atlanta Fed — Market Probability Tracker",
+    url: "https://www.atlantafed.org/research-and-data/data/market-probability-tracker",
+    note: "Faiz olasılıkları. CME 3 aylık SOFR opsiyon fiyatlarından türetilen dağılımlar; toplantı bazlı değil, üçer aylık ortalama faiz üzerinedir.",
+  },
+  {
+    name: "FRED (St. Louis Fed)",
+    url: "https://fred.stlouisfed.org/",
+    note: "Fed hedef aralığının geçmişi (DFEDTARU / DFEDTARL) — geçmiş toplantıların karar oranlarını doldurmak için.",
+  },
+  {
     name: "TCMB — Duyuru takvimi",
     url: "https://www.tcmb.gov.tr/wps/wcm/connect/TR/TCMB+TR/Main+Menu/Duyurular/Takvim",
     note: "PPK toplantı kararı, toplantı günü 14:00 Türkiye saatinde açıklanır.",
@@ -29,7 +39,6 @@ const SOURCES = [
 ];
 
 const PLANNED = [
-  "FRED API (St. Louis Fed) — Fed Funds futures ve faiz serileri",
   "TCMB EVDS API — politika faizi, enflasyon, kur serileri",
   "ECB SDW (SDMX REST) — ECB faiz kararları ve istatistikleri",
   "BIS Central Bankers' Speeches — konuşma metinleri",
@@ -105,19 +114,34 @@ export default async function AboutPage() {
 
       <section>
         <h2 className="mb-3 text-lg font-semibold">Faiz olasılığı hesabı</h2>
-        <p className="text-muted">
-          Faiz olasılıkları, Fed Funds vadeli işlem fiyatlarından PyFedWatch açık
-          kaynak metodolojisi temel alınarak bağımsız şekilde hesaplanacaktır.
-          CME FedWatch markası veya lisanslı verisi kullanılmaz; yalnızca herkese
-          açık vadeli işlem fiyatları girdi olarak alınır. Bu modül henüz yayında
-          değildir.
-        </p>
+        <div className="space-y-3 text-muted">
+          <p>
+            Olasılıkları kendimiz hesaplamıyoruz. Bunun nedeni şudur: piyasa bazlı
+            olasılık için Fed Funds ya da SOFR vadeli işlem/opsiyon fiyatları
+            gerekir; bu fiyatlar CME&apos;nin lisanslı verisidir ve CME kendi
+            sayfalarından otomatik veri çekilmesini kullanım şartlarıyla
+            yasaklamıştır. Kendi hesaplama motorumuzu yazmak bu kısıtı ortadan
+            kaldırmaz — girdi verisinin kendisi lisanslıdır.
+          </p>
+          <p>
+            Bu yüzden Atlanta Fed&apos;in kamuya açık olarak yayımladığı Market
+            Probability Tracker dağılımlarını olduğu gibi gösteriyor ve kaynağını
+            açıkça belirtiyoruz. Bu veri yalnızca kişisel ve eğitim amaçlı
+            kullanıma izinlidir; sitenin konumlandırması da buna göredir.
+          </p>
+          <p>
+            Önemli bir ayrım: bu dağılımlar tek bir FOMC toplantısına ait değil,
+            üçer aylık dönemlerde <em>ortalama</em> gecelik faize ilişkindir.
+            CME FedWatch tarzı &quot;toplantıda 25 baz puan indirim ihtimali&quot;
+            rakamlarıyla doğrudan karşılaştırılamaz.
+          </p>
+        </div>
       </section>
 
       <section>
         <h2 className="mb-3 text-lg font-semibold">Sorumluluk reddi</h2>
         <p className="text-muted">
-          Bu sitedeki bilgiler yalnızca bilgilendirme amaçlıdır ve yatırım
+          Bu site kişisel kullanım ve eğitim amaçlıdır. Buradaki bilgiler yatırım
           tavsiyesi değildir. Veriler resmî kaynaklardan otomatik derlenir; hata
           veya gecikme olabilir. Karar vermeden önce merkez bankalarının kendi
           duyurularını esas alın.

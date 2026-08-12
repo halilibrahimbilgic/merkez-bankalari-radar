@@ -1,4 +1,4 @@
-name: Toplantı takvimini güncelle
+name: Veriyi güncelle
 
 # Her gün 08:00 TRT (05:00 UTC) — plandaki günlük veri çekme işi.
 on:
@@ -19,14 +19,18 @@ jobs:
           cache: npm
       - run: npm ci
       - run: npm run fetch:meetings
+      - run: npm run fetch:rates
+        env:
+          FRED_API_KEY: ${{ secrets.FRED_API_KEY }}
+      - run: npm run fetch:probabilities
       - name: Değişiklik varsa commit'le
         run: |
           if [[ -n "$(git status --porcelain data/seed)" ]]; then
             git config user.name "github-actions[bot]"
             git config user.email "github-actions[bot]@users.noreply.github.com"
             git add data/seed
-            git commit -m "chore: toplantı takvimini güncelle"
+            git commit -m "chore: takvim ve piyasa verisini güncelle"
             git push
           else
-            echo "Takvimde değişiklik yok."
+            echo "Veride değişiklik yok."
           fi

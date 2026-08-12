@@ -2,7 +2,11 @@ import Link from "next/link";
 import { MeetingRow } from "@/components/MeetingRow";
 import { MVP_BANK_CODES, BANKS } from "@/lib/banks";
 import { getUpcomingMeetings } from "@/lib/data/meetings";
-import { countdownLabelTr, formatMeetingTr } from "@/lib/time";
+import {
+  describeWindowTr,
+  getProbabilitySnapshot,
+} from "@/lib/data/probabilities";
+import { countdownLabelTr, formatDateTr, formatMeetingTr } from "@/lib/time";
 
 export const revalidate = 3600;
 
@@ -10,6 +14,8 @@ export default async function HomePage() {
   const now = new Date();
   const upcoming = await getUpcomingMeetings({ limit: 8, now });
   const next = upcoming[0];
+  const probability = await getProbabilitySnapshot();
+  const nearestWindow = probability?.windows[0];
 
   return (
     <div className="space-y-10">
@@ -35,6 +41,24 @@ export default async function HomePage() {
           <div className="mt-1 text-sm text-muted">
             {BANKS[next.bankCode].rateNameTr}
           </div>
+        </section>
+      )}
+
+      {nearestWindow && (
+        <section className="rounded-lg border border-border bg-surface p-5">
+          <div className="flex items-baseline justify-between gap-3">
+            <h2 className="text-lg font-semibold">Piyasa Fed&apos;den ne bekliyor?</h2>
+            <Link href="/faiz-olasiligi" className="text-sm text-accent hover:underline">
+              Ayrıntı →
+            </Link>
+          </div>
+          <p className="mt-2 text-muted">
+            {describeWindowTr(nearestWindow, probability?.targetRange)}
+          </p>
+          <p className="mt-2 text-sm text-muted">
+            {formatDateTr(nearestWindow.startDate)} itibarıyla başlayan üç aylık
+            dönem için · veri {formatDateTr(probability!.asOf)} kapanışı
+          </p>
         </section>
       )}
 

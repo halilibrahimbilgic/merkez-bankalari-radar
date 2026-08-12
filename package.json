@@ -8,9 +8,11 @@
     "start": "next start",
     "lint": "eslint",
     "fetch:meetings": "tsx scripts/fetch-meetings.ts",
-    "fetch:rates": "tsx scripts/fetch-rates.ts"
+    "fetch:rates": "tsx scripts/fetch-rates.ts",
+    "fetch:probabilities": "tsx scripts/fetch-probabilities.ts"
   },
   "dependencies": {
+    "fflate": "^0.8.3",
     "next": "16.3.0",
     "pg": "^8.23.0",
     "react": "19.2.8",

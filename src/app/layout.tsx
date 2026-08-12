@@ -12,7 +12,7 @@ export const metadata: Metadata = {
     template: "%s · Merkez Bankaları Radar",
   },
   description:
-    "Fed, ECB ve TCMB faiz toplantı takvimi Türkiye saatiyle; faiz olasılıkları ve merkez bankası konuşmalarının şahin/güvercin skoru — Türkçe.",
+    "Fed, ECB ve TCMB faiz toplantı takvimi Türkiye saatiyle; piyasanın fiyatladığı faiz olasılıkları ve merkez bankası konuşmalarının şahin/güvercin skoru — Türkçe, eğitim amaçlı.",
   keywords: [
     "Fed toplantısı", "FOMC takvimi", "ECB faiz kararı", "TCMB PPK",
     "faiz olasılığı", "şahin güvercin", "merkez bankası takvimi",
@@ -21,6 +21,7 @@ export const metadata: Metadata = {
 
 const NAV = [
   { href: "/takvim", label: "Takvim" },
+  { href: "/faiz-olasiligi", label: "Faiz olasılığı" },
   { href: "/konusmalar", label: "Konuşmalar" },
   { href: "/skor", label: "Şahin/Güvercin" },
   { href: "/hakkinda", label: "Metodoloji" },
@@ -57,7 +58,8 @@ export default function RootLayout({ children }: LayoutProps<"/">) {
               resmî takvimlerinden derlenir.
             </p>
             <p className="mt-2">
-              Burada yer alan hiçbir içerik yatırım tavsiyesi değildir.{" "}
+              Bu site kişisel kullanım ve eğitim amaçlıdır. Burada yer alan hiçbir
+              içerik yatırım tavsiyesi değildir.{" "}
               <Link href="/hakkinda" className="text-accent hover:underline">
                 Kaynaklar ve yöntem
               </Link>
