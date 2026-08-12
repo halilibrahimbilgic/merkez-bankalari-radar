@@ -32,6 +32,11 @@ const SOURCES = [
     note: "Fed hedef aralığının geçmişi (DFEDTARU / DFEDTARL) — geçmiş toplantıların karar oranlarını doldurmak için.",
   },
   {
+    name: "BIS — Central Bankers' Speeches",
+    url: "https://www.bis.org/cbspeeches/index.htm",
+    note: "Konuşma metinleri. Besleme yalnızca son 25 konuşmayı verir ve sayfalama kabul etmez; arşiv günlük çalışan işle zaman içinde birikir.",
+  },
+  {
     name: "TCMB — Duyuru takvimi",
     url: "https://www.tcmb.gov.tr/wps/wcm/connect/TR/TCMB+TR/Main+Menu/Duyurular/Takvim",
     note: "PPK toplantı kararı, toplantı günü 14:00 Türkiye saatinde açıklanır.",
@@ -41,7 +46,6 @@ const SOURCES = [
 const PLANNED = [
   "TCMB EVDS API — politika faizi, enflasyon, kur serileri",
   "ECB SDW (SDMX REST) — ECB faiz kararları ve istatistikleri",
-  "BIS Central Bankers' Speeches — konuşma metinleri",
 ];
 
 export default async function AboutPage() {
@@ -134,6 +138,30 @@ export default async function AboutPage() {
             üçer aylık dönemlerde <em>ortalama</em> gecelik faize ilişkindir.
             CME FedWatch tarzı &quot;toplantıda 25 baz puan indirim ihtimali&quot;
             rakamlarıyla doğrudan karşılaştırılamaz.
+          </p>
+        </div>
+      </section>
+
+      <section>
+        <h2 className="mb-3 text-lg font-semibold">Şahin/güvercin skorlaması</h2>
+        <div className="space-y-3 text-muted">
+          <p>
+            Konuşmalar Claude API ile Türkçe özetlenir ve -10 (çok güvercin) ile
+            +10 (çok şahin) arasında puanlanır. Skor, konuşmanın para politikası
+            duruşunu ölçer; finansal istikrar veya denetim konulu konuşmalar
+            sinyal taşımıyorsa 0 puan alır.
+          </p>
+          <p>
+            Plandaki tutarlılık riskine karşı üç önlem alınmıştır: her konuşma
+            aynı sabit prompt şablonuyla okunur, çıktı şema ile kısıtlanır
+            (puan her zaman aralık içinde bir sayıdır) ve ölçeğin her basamağı
+            prompt içinde açıkça tanımlanır. Her kaydın yanında hangi model ve
+            hangi prompt sürümüyle üretildiği saklanır — prompt değişirse eski
+            ve yeni skorlar ayırt edilebilir.
+          </p>
+          <p>
+            Özet ve skor otomatik üretilir; hata payı vardır ve orijinal metnin
+            yerini tutmaz. Her konuşma sayfasında kaynak metne bağlantı verilir.
           </p>
         </div>
       </section>

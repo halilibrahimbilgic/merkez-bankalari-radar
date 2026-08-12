@@ -10,7 +10,7 @@ merkez bankası takip platformu. Yol haritası ve gerekçe için
 | --- | --- | --- |
 | A — Toplantı takvimi | Fed, ECB, TCMB; TRT dönüşümü, geri sayım, filtre, iCal | **Yayında** |
 | B — Faiz olasılığı | Atlanta Fed MPT dağılımları, Türkçe anlatım + grafik | **Yayında** |
-| C — Konuşma arşivi ve şahin/güvercin skoru | BIS arşivi + Claude API ile Türkçe özet/skor | Faz 3 |
+| C — Konuşma arşivi ve şahin/güvercin skoru | BIS arşivi + Claude API ile Türkçe özet/skor | Boru hattı hazır, skorlama API kredisi bekliyor |
 
 ## Kurulum
 
@@ -20,6 +20,8 @@ cp .env.example .env.local   # şimdilik boş bırakılabilir
 npm run fetch:meetings       # resmî takvimleri çeker → data/seed/meetings.json
 npm run fetch:rates          # geçmiş Fed karar oranları (FRED_API_KEY gerekir)
 npm run fetch:probabilities  # Atlanta Fed olasılık dağılımları
+npm run fetch:speeches       # BIS konuşma arşivi (metinlerle birlikte)
+npm run score:speeches       # Türkçe özet + skor (ANTHROPIC_API_KEY gerekir)
 npm run dev
 ```
 
@@ -66,6 +68,12 @@ Saatler kaynağın yerel saatinden okunup UTC olarak saklanır, sunumda TRT'ye
 çevrilir. Yaz saati farkları `src/lib/tz.ts` içinde `Intl` üzerinden çözülür —
 sabit ofset varsayımı yoktur.
 
+Konuşmalar [BIS Central Bankers'
+Speeches](https://www.bis.org/cbspeeches/index.htm) beslemesinden gelir. Besleme
+yalnızca **son 25 konuşmayı** döndürür ve sayfalama parametresi kabul etmez —
+arşiv, günlük çalışan işle zaman içinde birikir. Tek bir çekişte yalnızca
+takip edilen 6 bankaya ait olanlar alınır (ilk çekişte 11 konuşma).
+
 Takvim her gün 08:00 TRT'de GitHub Actions ile yenilenir
 (`.github/workflows/fetch-meetings.yml`).
 
@@ -89,5 +97,7 @@ npm run build            # üretim derlemesi
 npm run fetch:meetings   # takvimleri yeniden çek
 npm run fetch:rates      # geçmiş Fed karar oranları
 npm run fetch:probabilities  # olasılık dağılımları
+npm run fetch:speeches   # BIS konuşma arşivi
+npm run score:speeches   # özet + skor üret (--limit N ile sınırlanabilir)
 npm run lint
 ```

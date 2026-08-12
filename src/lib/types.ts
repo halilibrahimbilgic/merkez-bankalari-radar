@@ -40,11 +40,16 @@ export interface Speech {
   /** YYYY-MM-DD */
   speechDate: string;
   sourceUrl: string;
+  /** Skorlamaya girdi olan tam metin; arayüzde gösterilmez. */
+  rawText?: string;
   summaryTr?: string;
   /** -10 (çok güvercin) .. +10 (çok şahin) */
   hawkDoveScore?: number;
   scoreRationaleTr?: string;
   model?: string;
+  /** Skorun hangi prompt sürümüyle üretildiği — karşılaştırılabilirlik için. */
+  promptVersion?: string;
+  scoredAt?: string;
 }
 
 export interface RateProbability {

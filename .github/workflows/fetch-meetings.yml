@@ -23,6 +23,10 @@ jobs:
         env:
           FRED_API_KEY: ${{ secrets.FRED_API_KEY }}
       - run: npm run fetch:probabilities
+      - run: npm run fetch:speeches
+      - run: npm run score:speeches
+        env:
+          ANTHROPIC_API_KEY: ${{ secrets.ANTHROPIC_API_KEY }}
       - name: Değişiklik varsa commit'le
         run: |
           if [[ -n "$(git status --porcelain data/seed)" ]]; then
