@@ -14,12 +14,13 @@ import type { BankCode } from "./types";
 export const SCORING_MODEL = "claude-opus-5";
 
 /** Prompt değişirse skorlar karşılaştırılamaz olur; sürüm kaydı tutulur. */
-export const PROMPT_VERSION = "1";
+export const PROMPT_VERSION = "2";
 
 export interface ScoreResult {
   summaryTr: string;
   hawkDoveScore: number;
   scoreRationaleTr: string;
+  hasPolicySignal: boolean;
 }
 
 const SYSTEM_PROMPT = `Sen merkez bankası iletişimini analiz eden bir makro ekonomi analistisin. Görevin, verilen konuşmayı Türkçe özetlemek ve para politikası duruşunu şahin/güvercin ölçeğinde puanlamaktır.
@@ -36,7 +37,10 @@ const SYSTEM_PROMPT = `Sen merkez bankası iletişimini analiz eden bir makro ek
 PUANLAMA KURALLARI:
 - Yalnızca para politikası duruşunu puanla. Finansal istikrar, ödeme sistemleri,
   denetim veya kurumsal konular içeren konuşmalar para politikası sinyali
-  taşımıyorsa 0 ver ve gerekçede bunu belirt.
+  taşımıyorsa 0 ver, has_policy_signal alanını false yap ve gerekçede belirt.
+- has_policy_signal ile puan farklı şeylerdir: dengeli bir duruş sergileyen ama
+  para politikasından söz eden konuşma 0 puan alır ve has_policy_signal true
+  olur; hiç söz etmeyen konuşma 0 puan alır ve false olur.
 - Konuşmacının kendi görüşünü esas al, aktardığı başkalarının görüşünü değil.
 - Geçmiş kararları anlatmak sinyal değildir; ileriye dönük ifadeleri tart.
 - Emin değilsen uç puanlardan kaçın; ölçeğin ortasına yaklaş.
@@ -66,8 +70,18 @@ const OUTPUT_SCHEMA = {
       type: "string",
       description: "Puanın 1-2 cümlelik Türkçe gerekçesi",
     },
+    has_policy_signal: {
+      type: "boolean",
+      description:
+        "Konuşma para politikası duruşuna dair bir sinyal taşıyor mu? Düzenleme/denetim konuşmalarında false.",
+    },
   },
-  required: ["summary_tr", "hawk_dove_score", "score_rationale_tr"],
+  required: [
+    "summary_tr",
+    "hawk_dove_score",
+    "score_rationale_tr",
+    "has_policy_signal",
+  ],
   additionalProperties: false,
 } as const;
 
@@ -134,6 +148,7 @@ ${text}
     summary_tr: string;
     hawk_dove_score: number;
     score_rationale_tr: string;
+    has_policy_signal: boolean;
   };
 
   // Şema sayıyı garanti eder ama aralığı etmez — sınırla.
@@ -143,5 +158,6 @@ ${text}
     summaryTr: parsed.summary_tr,
     hawkDoveScore: Math.round(score * 10) / 10,
     scoreRationaleTr: parsed.score_rationale_tr,
+    hasPolicySignal: parsed.has_policy_signal,
   };
 }

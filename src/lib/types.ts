@@ -45,11 +45,24 @@ export interface Speech {
   summaryTr?: string;
   /** -10 (çok güvercin) .. +10 (çok şahin) */
   hawkDoveScore?: number;
+  /**
+   * Konuşma para politikası duruşuna dair sinyal taşıyor mu?
+   * Düzenleme/denetim konuşmaları 0 puan alır ama bu "nötr duruş" değildir —
+   * banka ortalamalarına katılmazlar.
+   */
+  hasPolicySignal?: boolean;
   scoreRationaleTr?: string;
   model?: string;
   /** Skorun hangi prompt sürümüyle üretildiği — karşılaştırılabilirlik için. */
   promptVersion?: string;
   scoredAt?: string;
+  /**
+   * Skorun nasıl üretildiği. "api" = score:speeches script'i,
+   * "session" = Claude Code oturumunda elle üretildi (API kredisi yokken).
+   */
+  scoredVia?: "api" | "session";
+  /** BIS bazı konuşmaların yalnızca girişini HTML'de yayımlar; tam metin PDF'tedir. */
+  textIsExcerpt?: boolean;
 }
 
 export interface RateProbability {

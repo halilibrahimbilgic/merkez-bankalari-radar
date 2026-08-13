@@ -10,7 +10,7 @@ merkez bankası takip platformu. Yol haritası ve gerekçe için
 | --- | --- | --- |
 | A — Toplantı takvimi | Fed, ECB, TCMB; TRT dönüşümü, geri sayım, filtre, iCal | **Yayında** |
 | B — Faiz olasılığı | Atlanta Fed MPT dağılımları, Türkçe anlatım + grafik | **Yayında** |
-| C — Konuşma arşivi ve şahin/güvercin skoru | BIS arşivi + Claude API ile Türkçe özet/skor | Boru hattı hazır, skorlama API kredisi bekliyor |
+| C — Konuşma arşivi ve şahin/güvercin skoru | BIS arşivi + Claude API ile Türkçe özet/skor | **Yayında** (11 konuşma skorlu; toplu iş API kredisi bekliyor) |
 
 ## Kurulum
 
@@ -73,6 +73,17 @@ Speeches](https://www.bis.org/cbspeeches/index.htm) beslemesinden gelir. Besleme
 yalnızca **son 25 konuşmayı** döndürür ve sayfalama parametresi kabul etmez —
 arşiv, günlük çalışan işle zaman içinde birikir. Tek bir çekişte yalnızca
 takip edilen 6 bankaya ait olanlar alınır (ilk çekişte 11 konuşma).
+
+Skor sıfırsa iki durum olabilir: dengeli bir duruş, ya da hiç para politikası
+sinyali taşımayan bir konuşma (düzenleme, denetim, ödeme sistemleri).
+`hasPolicySignal` alanı bunları ayırır; sinyalsiz konuşmalar banka
+ortalamalarına katılmaz.
+
+Arşivdeki ilk 11 kayıt, Anthropic hesabında kredi bulunmadığından
+`score:speeches` yerine bir Claude Code oturumunda aynı ölçek ve kurallarla
+puanlanmış ve `scoredVia: "session"` ile işaretlenmiştir
+(`scripts/apply-session-scores.ts`). Kredi eklendiğinde bu kayıtlar toplu işle
+yeniden üretilebilir.
 
 Takvim her gün 08:00 TRT'de GitHub Actions ile yenilenir
 (`.github/workflows/fetch-meetings.yml`).

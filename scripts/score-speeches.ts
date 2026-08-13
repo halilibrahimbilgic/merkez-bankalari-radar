@@ -59,9 +59,11 @@ async function main() {
       speech.summaryTr = result.summaryTr;
       speech.hawkDoveScore = result.hawkDoveScore;
       speech.scoreRationaleTr = result.scoreRationaleTr;
+      speech.hasPolicySignal = result.hasPolicySignal;
       speech.model = SCORING_MODEL;
       speech.promptVersion = PROMPT_VERSION;
       speech.scoredAt = new Date().toISOString();
+      speech.scoredVia = "api";
 
       // Her başarılı skordan sonra yaz — kesinti hâlinde ilerleme korunur.
       await writeFile(SEED, JSON.stringify(store, null, 2) + "\n", "utf8");

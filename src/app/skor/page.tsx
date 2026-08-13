@@ -28,8 +28,9 @@ export default async function ScorePage() {
       <header>
         <h1 className="text-2xl font-semibold tracking-tight">Şahin/Güvercin skoru</h1>
         <p className="mt-2 max-w-2xl text-muted">
-          Her bankanın skoru, arşivdeki konuşmalarının ortalamasıdır. Ölçek -10
-          (çok güvercin) ile +10 (çok şahin) arasındadır.
+          Her bankanın skoru, arşivdeki konuşmalarından para politikası sinyali
+          taşıyanların ortalamasıdır. Ölçek -10 (çok güvercin) ile +10 (çok
+          şahin) arasındadır.
         </p>
       </header>
 
@@ -61,13 +62,21 @@ export default async function ScorePage() {
                 <ScoreMeter score={s.averageScore} />
                 <div className="text-sm text-muted tabular">
                   {s.speechCount} konuşma · son {formatDateTr(s.latestDate)}
+                  {s.noSignalCount > 0 && (
+                    <span className="opacity-70">
+                      {" "}
+                      (+{s.noSignalCount} sinyalsiz)
+                    </span>
+                  )}
                 </div>
               </li>
             ))}
           </ul>
           <p className="mt-2 text-sm text-muted">
-            Konuşma sayısı az olan bankalarda ortalama tek bir konuşmadan güçlü
-            etkilenir — sayıyı da birlikte okuyun.
+            Ortalamaya yalnızca para politikası sinyali taşıyan konuşmalar girer;
+            düzenleme ve denetim konuşmaları &quot;sinyalsiz&quot; olarak ayrı
+            sayılır. Konuşma sayısı az olan bankalarda ortalama tek bir
+            konuşmadan güçlü etkilenir — sayıyı da birlikte okuyun.
           </p>
         </section>
       )}
@@ -125,7 +134,9 @@ function Scale() {
       <div className="mt-2 h-2 rounded-full bg-gradient-to-r from-dove via-border to-hawk" />
       <p className="mt-3 text-muted">
         Güvercin duruş faiz indirimine, şahin duruş faiz artırımına eğilimi
-        gösterir. Para politikası sinyali taşımayan konuşmalar 0 puan alır.
+        gösterir. Düzenleme veya denetim konulu konuşmalar 0 puan alır ve
+        ortalamaya katılmaz — bu &quot;dengeli duruş&quot; değil
+        &quot;sinyal yok&quot; demektir.
       </p>
     </div>
   );

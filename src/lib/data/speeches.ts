@@ -58,13 +58,23 @@ export async function getSpeechIds(): Promise<string[]> {
 
 export interface BankScoreSummary {
   bankCode: BankCode;
-  /** Skorlanmış konuşmaların ortalaması. */
+  /** Yalnızca para politikası sinyali taşıyan konuşmaların ortalaması. */
   averageScore: number;
+  /** Ortalamaya giren konuşma sayısı. */
   speechCount: number;
+  /** Arşivdeki ama sinyal taşımadığı için ortalamaya girmeyen konuşma sayısı. */
+  noSignalCount: number;
   latestDate: string;
 }
 
-/** Banka bazında ortalama eğilim — /skor sayfası için. */
+/**
+ * Banka bazında ortalama eğilim — /skor sayfası için.
+ *
+ * Ortalamaya yalnızca para politikası sinyali taşıyan konuşmalar girer.
+ * Düzenleme/denetim konuşmaları 0 puan alır ama bu "nötr duruş" değil
+ * "sinyal yok" demektir; ortalamaya katılsalardı skoru yapay olarak
+ * sıfıra çekerlerdi.
+ */
 export async function getBankScoreSummaries(): Promise<BankScoreSummary[]> {
   const scored = await getSpeeches({ scoredOnly: true });
 
@@ -76,15 +86,23 @@ export async function getBankScoreSummaries(): Promise<BankScoreSummary[]> {
   }
 
   return [...byBank.entries()]
-    .map(([bankCode, list]) => ({
-      bankCode,
-      averageScore:
-        Math.round(
-          (list.reduce((sum, s) => sum + (s.hawkDoveScore ?? 0), 0) / list.length) * 10,
-        ) / 10,
-      speechCount: list.length,
-      latestDate: list[0].speechDate,
-    }))
+    .map(([bankCode, list]) => {
+      const signal = list.filter((s) => s.hasPolicySignal !== false);
+      return {
+        bankCode,
+        averageScore:
+          signal.length === 0
+            ? 0
+            : Math.round(
+                (signal.reduce((sum, s) => sum + (s.hawkDoveScore ?? 0), 0) /
+                  signal.length) * 10,
+              ) / 10,
+        speechCount: signal.length,
+        noSignalCount: list.length - signal.length,
+        latestDate: (signal[0] ?? list[0]).speechDate,
+      };
+    })
+    .filter((s) => s.speechCount > 0)
     .sort((a, b) => b.averageScore - a.averageScore);
 }
 

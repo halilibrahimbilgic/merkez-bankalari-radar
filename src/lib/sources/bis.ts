@@ -129,9 +129,32 @@ export async function fetchSpeechText(url: string): Promise<string> {
     .replace(/<\/(p|div|h[1-6]|li|br)>/gi, "\n")
     .replace(/<[^>]+>/g, " ");
 
-  return decodeXml(text)
+  const cleaned = decodeXml(text)
     .replace(/[ \t ]+/g, " ")
     .replace(/\n{3,}/g, "\n\n")
     .replace(/^\s*cmsContent'?>?/, "")
     .trim();
+
+  return cutBoilerplate(cleaned);
+}
+
+/**
+ * BIS her konuşmanın ardına sabit bir sorumluluk reddi ve site altbilgisi
+ * ("About the author", "Stay connected", "Legal information" ...) ekler.
+ * Bu metin skorlamaya girmemeli - ilk eslesen sinirdan itibaren atilir.
+ */
+const BOILERPLATE_MARKERS = [
+  "The views expressed in this speech are those of the speaker",
+  "About the author",
+  "Stay connected",
+  "Sign up to receive email alerts",
+];
+
+function cutBoilerplate(text: string): string {
+  let cut = text.length;
+  for (const marker of BOILERPLATE_MARKERS) {
+    const i = text.indexOf(marker);
+    if (i !== -1 && i < cut) cut = i;
+  }
+  return text.slice(0, cut).trim();
 }

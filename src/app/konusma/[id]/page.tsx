@@ -52,6 +52,13 @@ export default async function SpeechPage({ params }: PageProps<"/konusma/[id]">)
           {speech.scoreRationaleTr && (
             <p className="mt-2 text-muted">{speech.scoreRationaleTr}</p>
           )}
+          {speech.hasPolicySignal === false && (
+            <p className="mt-3 rounded border border-border p-3 text-sm text-muted">
+              Bu konuşma para politikası duruşuna dair sinyal taşımıyor. Sıfır
+              puanı &quot;dengeli duruş&quot; değil &quot;sinyal yok&quot;
+              anlamına gelir; bu yüzden bankanın ortalama skoruna katılmaz.
+            </p>
+          )}
         </section>
       ) : (
         <p className="rounded-lg border border-border bg-surface p-5 text-muted">
@@ -79,10 +86,23 @@ export default async function SpeechPage({ params }: PageProps<"/konusma/[id]">)
             Konuşmanın tam metni (BIS, İngilizce) →
           </a>
         </p>
+        {speech.textIsExcerpt && (
+          <p className="mt-2">
+            BIS bu konuşmanın yalnızca giriş bölümünü yayımlıyor; özet ve skor
+            kısıtlı metne dayanıyor. Tam metin için kaynak bağlantısındaki
+            PDF&apos;e bakın.
+          </p>
+        )}
         {speech.model && (
           <p className="mt-2 tabular">
             Model: {speech.model}
             {speech.promptVersion && ` · prompt sürümü ${speech.promptVersion}`}
+          </p>
+        )}
+        {speech.scoredVia === "session" && (
+          <p className="mt-2">
+            Bu skor, API kredisi bulunmadığından toplu iş yerine bir Claude Code
+            oturumunda aynı ölçek ve kurallarla üretildi.
           </p>
         )}
         <p className="mt-2">

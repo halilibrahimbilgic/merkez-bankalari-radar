@@ -160,8 +160,23 @@ export default async function AboutPage() {
             ve yeni skorlar ayırt edilebilir.
           </p>
           <p>
+            Sıfır puan iki farklı şey olabilir: dengeli bir duruş, ya da hiç
+            para politikası sinyali taşımayan bir konuşma. Bunları ayırıyoruz —
+            düzenleme ve denetim konuşmaları &quot;sinyalsiz&quot; işaretlenir
+            ve banka ortalamalarına katılmaz, aksi hâlde ortalamayı yapay olarak
+            sıfıra çekerlerdi.
+          </p>
+          <p>
             Özet ve skor otomatik üretilir; hata payı vardır ve orijinal metnin
             yerini tutmaz. Her konuşma sayfasında kaynak metne bağlantı verilir.
+            BIS bazı konuşmaların yalnızca giriş bölümünü HTML olarak yayımlar;
+            bu kayıtlar arayüzde açıkça işaretlenir.
+          </p>
+          <p>
+            Arşivin ilk 11 kaydı, API kredisi bulunmadığından toplu iş yerine
+            bir Claude Code oturumunda aynı ölçek ve kurallarla puanlanmıştır.
+            Bu kayıtlar ayrıca işaretlidir ve kredi eklendiğinde toplu işle
+            yeniden üretilebilir.
           </p>
         </div>
       </section>
