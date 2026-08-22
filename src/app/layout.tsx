@@ -1,6 +1,7 @@
 import type { Metadata } from "next";
 import Link from "next/link";
 import { Geist, Geist_Mono } from "next/font/google";
+import { SITE_URL } from "@/lib/site";
 import "./globals.css";
 
 const geistSans = Geist({ variable: "--font-geist-sans", subsets: ["latin"] });
@@ -16,7 +17,18 @@ export const metadata: Metadata = {
   keywords: [
     "Fed toplantısı", "FOMC takvimi", "ECB faiz kararı", "TCMB PPK",
     "faiz olasılığı", "şahin güvercin", "merkez bankası takvimi",
+    "Fed faiz kararı ne zaman", "PPK toplantısı tarihi",
   ],
+  metadataBase: new URL(SITE_URL),
+  alternates: { canonical: "/" },
+  openGraph: {
+    type: "website",
+    locale: "tr_TR",
+    siteName: "Merkez Bankaları Radar",
+    url: SITE_URL,
+  },
+  twitter: { card: "summary" },
+  robots: { index: true, follow: true },
 };
 
 const NAV = [

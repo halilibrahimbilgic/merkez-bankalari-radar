@@ -22,6 +22,12 @@ jobs:
       - run: npm run fetch:rates
         env:
           FRED_API_KEY: ${{ secrets.FRED_API_KEY }}
+      - run: npm run fetch:rates
+        env:
+          FRED_API_KEY: ${{ secrets.FRED_API_KEY }}
+      - run: npm run fetch:current-rates
+        env:
+          FRED_API_KEY: ${{ secrets.FRED_API_KEY }}
       - run: npm run fetch:probabilities
       - run: npm run fetch:speeches
       - run: npm run score:speeches

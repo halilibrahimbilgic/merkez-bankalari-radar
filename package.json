@@ -11,7 +11,8 @@
     "fetch:rates": "tsx scripts/fetch-rates.ts",
     "fetch:probabilities": "tsx scripts/fetch-probabilities.ts",
     "fetch:speeches": "tsx scripts/fetch-speeches.ts",
-    "score:speeches": "tsx scripts/score-speeches.ts"
+    "score:speeches": "tsx scripts/score-speeches.ts",
+    "fetch:current-rates": "tsx scripts/fetch-current-rates.ts"
   },
   "dependencies": {
     "@anthropic-ai/sdk": "^0.116.0",

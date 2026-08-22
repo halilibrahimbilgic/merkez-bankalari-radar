@@ -4,7 +4,10 @@ import { notFound } from "next/navigation";
 import { MeetingRow } from "@/components/MeetingRow";
 import { ALL_BANKS, getBank } from "@/lib/banks";
 import { getPastMeetings, getUpcomingMeetings } from "@/lib/data/meetings";
-import { formatMeetingTr } from "@/lib/time";
+import { formatCurrentRate, getCurrentRate } from "@/lib/data/rates";
+import { getBankScoreSummaries, getSpeeches } from "@/lib/data/speeches";
+import { ScoreBadge } from "@/components/ScoreBadge";
+import { formatDateTr, formatMeetingTr } from "@/lib/time";
 
 export const revalidate = 3600;
 
@@ -33,6 +36,11 @@ export default async function BankPage({ params }: PageProps<"/banka/[code]">) {
   const upcoming = await getUpcomingMeetings({ bankCode: bank.code, now });
   const past = await getPastMeetings({ bankCode: bank.code, limit: 12, now });
   const next = upcoming[0];
+  const currentRate = await getCurrentRate(bank.code);
+  const speeches = await getSpeeches({ bankCode: bank.code, limit: 5 });
+  const scoreSummary = (await getBankScoreSummaries()).find(
+    (s) => s.bankCode === bank.code,
+  );
 
   return (
     <div className="space-y-8">
@@ -53,6 +61,31 @@ export default async function BankPage({ params }: PageProps<"/banka/[code]">) {
           Resmî takvim sayfası →
         </a>
       </header>
+
+      <div className="grid gap-3 sm:grid-cols-2">
+        {currentRate && (
+          <section className="rounded-lg border border-border bg-surface p-5">
+            <div className="text-sm text-muted">Güncel politika faizi</div>
+            <div className="mt-1 text-2xl font-semibold tabular">
+              {formatCurrentRate(currentRate)}
+            </div>
+            <div className="mt-1 text-sm text-muted tabular">
+              {formatDateTr(currentRate.asOf)} itibarıyla
+            </div>
+          </section>
+        )}
+        {scoreSummary && (
+          <section className="rounded-lg border border-border bg-surface p-5">
+            <div className="text-sm text-muted">Şahin/güvercin eğilimi</div>
+            <div className="mt-1 text-2xl">
+              <ScoreBadge score={scoreSummary.averageScore} />
+            </div>
+            <div className="mt-1 text-sm text-muted tabular">
+              {scoreSummary.speechCount} sinyalli konuşmanın ortalaması
+            </div>
+          </section>
+        )}
+      </div>
 
       {next ? (
         <section className="rounded-lg border border-border bg-surface p-5">
@@ -87,8 +120,39 @@ export default async function BankPage({ params }: PageProps<"/banka/[code]">) {
             ))}
           </ul>
           <p className="mt-2 text-sm text-muted">
-            Karar oranları Faz 2&apos;de FRED / EVDS / ECB SDW API&apos;lerinden doldurulacak.
+            Karar oranları Fed için FRED, ECB için SDMX veri servisinden
+            doldurulur. TCMB için EVDS anahtarı gerekiyor.
           </p>
+        </section>
+      )}
+
+      {speeches.length > 0 && (
+        <section>
+          <div className="mb-3 flex items-baseline justify-between">
+            <h2 className="text-lg font-semibold">Son konuşmalar</h2>
+            <Link
+              href={`/konusmalar?banka=${bank.code}`}
+              className="text-sm text-accent hover:underline"
+            >
+              Tümü →
+            </Link>
+          </div>
+          <ul className="overflow-hidden rounded-lg border border-border bg-surface">
+            {speeches.map((s) => (
+              <li
+                key={s.id}
+                className="flex flex-wrap items-baseline gap-x-3 gap-y-1 border-b border-border px-4 py-3 last:border-b-0"
+              >
+                <span className="text-sm text-muted tabular">
+                  {formatDateTr(s.speechDate)}
+                </span>
+                <Link href={`/konusma/${s.id}`} className="flex-1 hover:text-accent">
+                  {s.speakerName} — {s.title}
+                </Link>
+                <ScoreBadge score={s.hawkDoveScore} />
+              </li>
+            ))}
+          </ul>
         </section>
       )}
 

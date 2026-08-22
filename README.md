@@ -19,6 +19,7 @@ npm install
 cp .env.example .env.local   # şimdilik boş bırakılabilir
 npm run fetch:meetings       # resmî takvimleri çeker → data/seed/meetings.json
 npm run fetch:rates          # geçmiş Fed karar oranları (FRED_API_KEY gerekir)
+npm run fetch:current-rates  # güncel politika faizleri (Fed, ECB)
 npm run fetch:probabilities  # Atlanta Fed olasılık dağılımları
 npm run fetch:speeches       # BIS konuşma arşivi (metinlerle birlikte)
 npm run score:speeches       # Türkçe özet + skor (ANTHROPIC_API_KEY gerekir)
@@ -88,6 +89,21 @@ yeniden üretilebilir.
 Takvim her gün 08:00 TRT'de GitHub Actions ile yenilenir
 (`.github/workflows/fetch-meetings.yml`).
 
+## Yayına alma (Vercel)
+
+1. Depoyu Vercel'e bağlayın; Next.js otomatik algılanır, ek ayar gerekmez.
+2. Ortam değişkeni olarak `FRED_API_KEY` ve (skorlama için) `ANTHROPIC_API_KEY`
+   ekleyin. Kendi alan adınızı bağladığınızda `NEXT_PUBLIC_SITE_URL` tanımlayın —
+   sitemap ve kanonik adresler bunu kullanır; tanımsızsa Vercel'in verdiği
+   üretim alan adına düşer.
+3. Aynı anahtarları GitHub deposunda **Secrets** olarak da ekleyin; günlük veri
+   yenileme işi (`.github/workflows/fetch-meetings.yml`) bunları kullanır ve
+   güncellenen `data/seed/*.json` dosyalarını commit'ler. Bu commit Vercel'de
+   yeni bir dağıtım tetikler.
+
+`sitemap.xml` ve `robots.txt` otomatik üretilir (`src/app/sitemap.ts`,
+`src/app/robots.ts`).
+
 ## Dizin yapısı
 
 ```
@@ -107,6 +123,7 @@ npm run dev              # geliştirme sunucusu
 npm run build            # üretim derlemesi
 npm run fetch:meetings   # takvimleri yeniden çek
 npm run fetch:rates      # geçmiş Fed karar oranları
+npm run fetch:current-rates  # güncel politika faizleri
 npm run fetch:probabilities  # olasılık dağılımları
 npm run fetch:speeches   # BIS konuşma arşivi
 npm run score:speeches   # özet + skor üret (--limit N ile sınırlanabilir)
