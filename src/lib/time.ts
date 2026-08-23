@@ -113,3 +113,25 @@ export function trtMonthLabel(iso: string): string {
     year: "numeric",
   }).format(new Date(iso));
 }
+
+/** Bölmeli geri sayım parçaları — sunucu ve istemcide aynı hesap. */
+export interface CountdownParts {
+  days: number;
+  hours: number;
+  minutes: number;
+  past: boolean;
+}
+
+export function computeCountdownParts(
+  meetingAt: string,
+  now: number = Date.now(),
+): CountdownParts {
+  const diff = new Date(meetingAt).getTime() - now;
+  if (diff <= 0) return { days: 0, hours: 0, minutes: 0, past: true };
+  return {
+    days: Math.floor(diff / 86_400_000),
+    hours: Math.floor((diff % 86_400_000) / 3_600_000),
+    minutes: Math.floor((diff % 3_600_000) / 60_000),
+    past: false,
+  };
+}
