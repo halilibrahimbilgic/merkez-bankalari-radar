@@ -50,10 +50,10 @@ export default async function SpeechPage({ params }: PageProps<"/konusma/[id]">)
             <ScoreBadge score={speech.hawkDoveScore} />
           </div>
           {speech.scoreRationaleTr && (
-            <p className="mt-2 text-muted">{speech.scoreRationaleTr}</p>
+            <p className="prose-width mt-2 text-muted">{speech.scoreRationaleTr}</p>
           )}
           {speech.hasPolicySignal === false && (
-            <p className="mt-3 rounded border border-border p-3 text-sm text-muted">
+            <p className="prose-width mt-3 rounded border border-border p-3 text-sm text-muted">
               Bu konuşma para politikası duruşuna dair sinyal taşımıyor. Sıfır
               puanı &quot;dengeli duruş&quot; değil &quot;sinyal yok&quot;
               anlamına gelir; bu yüzden bankanın ortalama skoruna katılmaz.
@@ -69,12 +69,14 @@ export default async function SpeechPage({ params }: PageProps<"/konusma/[id]">)
       {speech.summaryTr && (
         <section>
           <h2 className="mb-2 text-lg font-semibold">Türkçe özet</h2>
-          <p className="leading-relaxed text-foreground">{speech.summaryTr}</p>
+          <p className="prose-width leading-relaxed text-foreground">
+            {speech.summaryTr}
+          </p>
         </section>
       )}
 
       <section className="rounded-lg border border-border bg-surface p-5 text-sm text-muted">
-        <p>
+        <p className="prose-width">
           Özet ve skor bir dil modeli tarafından üretilmiştir; orijinal metnin
           yerini tutmaz.{" "}
           <a
@@ -87,7 +89,7 @@ export default async function SpeechPage({ params }: PageProps<"/konusma/[id]">)
           </a>
         </p>
         {speech.textIsExcerpt && (
-          <p className="mt-2">
+          <p className="prose-width mt-2">
             BIS bu konuşmanın yalnızca giriş bölümünü yayımlıyor; özet ve skor
             kısıtlı metne dayanıyor. Tam metin için kaynak bağlantısındaki
             PDF&apos;e bakın.
@@ -100,7 +102,7 @@ export default async function SpeechPage({ params }: PageProps<"/konusma/[id]">)
           </p>
         )}
         {speech.scoredVia === "session" && (
-          <p className="mt-2">
+          <p className="prose-width mt-2">
             Bu skor, API kredisi bulunmadığından toplu iş yerine bir Claude Code
             oturumunda aynı ölçek ve kurallarla üretildi.
           </p>

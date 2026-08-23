@@ -86,6 +86,16 @@ export async function getPastMeetings(
   return opts.limit ? rows.slice(0, opts.limit) : rows;
 }
 
+/** Yaklaşan toplantısı bulunan bankalar — filtre çiplerini pasifleştirmek için. */
+export async function getBankCodesWithMeetings(now = new Date()): Promise<BankCode[]> {
+  const all = await getAllMeetings();
+  return [
+    ...new Set(
+      all.filter((m) => new Date(m.meetingAt) >= now).map((m) => m.bankCode),
+    ),
+  ];
+}
+
 /** Verinin en son ne zaman tazelendiği — /hakkinda sayfasındaki şeffaflık notu. */
 export async function getMeetingsFetchedAt(): Promise<string | null> {
   if (getPool()) return null;

@@ -1,8 +1,9 @@
 import type { Metadata } from "next";
 import Link from "next/link";
 import { BankTag, ScoreBadge } from "@/components/ScoreBadge";
-import { ALL_BANKS, isBankCode } from "@/lib/banks";
-import { getSpeeches } from "@/lib/data/speeches";
+import { BankFilter } from "@/components/BankFilter";
+import { isBankCode } from "@/lib/banks";
+import { getBankCodesWithSpeeches, getSpeeches } from "@/lib/data/speeches";
 import { formatDateTr } from "@/lib/time";
 import type { BankCode } from "@/lib/types";
 
@@ -22,6 +23,7 @@ export default async function SpeechesPage({
   const bankCode: BankCode | undefined = raw && isBankCode(raw) ? raw : undefined;
 
   const speeches = await getSpeeches({ bankCode });
+  const availableCodes = await getBankCodesWithSpeeches();
 
   return (
     <div className="space-y-6">
@@ -33,26 +35,11 @@ export default async function SpeechesPage({
         </p>
       </header>
 
-      <nav className="flex flex-wrap gap-2">
-        {[{ code: undefined as BankCode | undefined, label: "Tümü" },
-          ...ALL_BANKS.map((b) => ({ code: b.code, label: b.nameTr }))].map((item) => {
-          const active = item.code === bankCode;
-          return (
-            <Link
-              key={item.label}
-              href={item.code ? `/konusmalar?banka=${item.code}` : "/konusmalar"}
-              className={
-                "rounded-full border px-3 py-1 text-sm " +
-                (active
-                  ? "border-accent bg-accent-soft text-accent"
-                  : "border-border text-muted hover:border-accent hover:text-accent")
-              }
-            >
-              {item.label}
-            </Link>
-          );
-        })}
-      </nav>
+      <BankFilter
+        basePath="/konusmalar"
+        active={bankCode}
+        availableCodes={availableCodes}
+      />
 
       {speeches.length === 0 ? (
         <p className="rounded-lg border border-border bg-surface p-5 text-muted">

@@ -100,7 +100,9 @@ export default async function ProbabilityPage({
         <h2 className="text-lg font-semibold">
           {formatDateTr(selected.startDate)} – {formatDateTr(end)} dönemi
         </h2>
-        <p className="mt-2 text-muted">{describeWindowTr(selected, target)}</p>
+        <p className="prose-width mt-2 text-muted">
+          {describeWindowTr(selected, target)}
+        </p>
 
         <div className="mt-4 grid gap-3 sm:grid-cols-3">
           <Stat
@@ -174,7 +176,7 @@ function Caveat() {
   return (
     <div className="rounded-lg border border-border bg-accent-soft p-4 text-sm">
       <p className="font-medium text-accent">Bu rakamlar ne anlama gelir?</p>
-      <p className="mt-1 text-muted">
+      <p className="prose-width mt-1 text-muted">
         Buradaki olasılıklar <strong>tek bir FOMC toplantısına ait değildir</strong>.
         Üçer aylık bir dönemde <em>ortalama</em> gecelik faizin hangi bantta
         kalacağını gösterirler. Yani &quot;Eylül toplantısında 25 baz puan indirim
@@ -189,7 +191,7 @@ function Attribution() {
   return (
     <section className="space-y-3 rounded-lg border border-border bg-surface p-5 text-sm text-muted">
       <h2 className="text-base font-semibold text-foreground">Kaynak ve lisans</h2>
-      <p>
+      <p className="prose-width">
         Veri:{" "}
         <a
           href={MPT_PAGE_URL}
@@ -201,8 +203,8 @@ function Attribution() {
         </a>
         . Dağılımlar CME 3 aylık SOFR opsiyon fiyatlarından türetilmiştir.
       </p>
-      <p>{LICENSE_NOTICE.atlantaFed}</p>
-      <p>{LICENSE_NOTICE.cme}</p>
+      <p className="prose-width">{LICENSE_NOTICE.atlantaFed}</p>
+      <p className="prose-width">{LICENSE_NOTICE.cme}</p>
     </section>
   );
 }

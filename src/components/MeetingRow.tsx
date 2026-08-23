@@ -13,6 +13,8 @@ import { Countdown } from "./Countdown";
 export function MeetingRow({ meeting, now }: { meeting: Meeting; now: Date }) {
   const bank = BANKS[meeting.bankCode];
   const isPast = new Date(meeting.meetingAt) < now;
+  const trtTime = formatTimeTrt(meeting.meetingAt);
+  const localTime = formatTimeInZone(meeting.meetingAt, bank.timezone);
 
   return (
     <li className="flex flex-wrap items-baseline gap-x-3 gap-y-1 border-b border-border px-4 py-3 last:border-b-0">
@@ -34,10 +36,10 @@ export function MeetingRow({ meeting, now }: { meeting: Meeting; now: Date }) {
           ) : (
             <>
               {formatTimeTrt(meeting.meetingAt)} TRT
-              <span className="opacity-70">
-                {" "}
-                (yerel {formatTimeInZone(meeting.meetingAt, bank.timezone)})
-              </span>
+              {/* TCMB'de yerel saat zaten TRT — tekrar göstermek gürültü. */}
+              {localTime !== trtTime && (
+                <span className="opacity-70"> (yerel {localTime})</span>
+              )}
             </>
           )}
           {meeting.type === "projections" && (

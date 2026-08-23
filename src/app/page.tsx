@@ -23,7 +23,7 @@ export default async function HomePage() {
         <h1 className="text-2xl font-semibold tracking-tight sm:text-3xl">
           Merkez bankası faiz kararlarını Türkçe takip et
         </h1>
-        <p className="mt-2 max-w-2xl text-muted">
+        <p className="prose-width mt-2 text-muted">
           Fed, ECB ve TCMB toplantı takvimi Türkiye saatiyle tek yerde. Faiz
           olasılıkları ve yetkili konuşmalarının şahin/güvercin skoru sırada.
         </p>
@@ -48,11 +48,14 @@ export default async function HomePage() {
         <section className="rounded-lg border border-border bg-surface p-5">
           <div className="flex items-baseline justify-between gap-3">
             <h2 className="text-lg font-semibold">Piyasa Fed&apos;den ne bekliyor?</h2>
-            <Link href="/faiz-olasiligi" className="text-sm text-accent hover:underline">
-              Ayrıntı →
+            <Link
+              href="/faiz-olasiligi"
+              className="whitespace-nowrap text-sm text-accent hover:underline"
+            >
+              Faiz olasılıkları →
             </Link>
           </div>
-          <p className="mt-2 text-muted">
+          <p className="prose-width mt-2 text-muted">
             {describeWindowTr(nearestWindow, probability?.targetRange)}
           </p>
           <p className="mt-2 text-sm text-muted">

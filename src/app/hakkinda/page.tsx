@@ -76,7 +76,7 @@ export default async function AboutPage() {
               >
                 {s.name}
               </a>
-              <p className="mt-1 text-sm text-muted">{s.note}</p>
+              <p className="prose-width mt-1 text-sm text-muted">{s.note}</p>
             </li>
           ))}
         </ul>
@@ -84,7 +84,7 @@ export default async function AboutPage() {
 
       <section>
         <h2 className="mb-3 text-lg font-semibold">Saat dilimi</h2>
-        <p className="text-muted">
+        <p className="prose-width text-muted">
           Toplantı anları kaynağın yerel saatinden okunur ve UTC olarak saklanır;
           sitede Türkiye saatine (TRT, UTC+3) çevrilerek gösterilir. Yaz saati
           uygulaması olan ülkelerde (ABD, Euro Bölgesi, Birleşik Krallık) TRT
@@ -95,7 +95,7 @@ export default async function AboutPage() {
 
       <section>
         <h2 className="mb-3 text-lg font-semibold">Güncelleme sıklığı</h2>
-        <p className="text-muted">
+        <p className="prose-width text-muted">
           Takvim verisi zamanlanmış bir işle günde bir kez resmî sayfalardan
           yeniden çekilir. Sayfalar en fazla bir saatlik önbellekle sunulur.
         </p>
@@ -109,7 +109,7 @@ export default async function AboutPage() {
 
       <section>
         <h2 className="mb-3 text-lg font-semibold">Yol haritasındaki kaynaklar</h2>
-        <ul className="list-inside list-disc space-y-1 text-muted">
+        <ul className="prose-width list-inside list-disc space-y-1 text-muted">
           {PLANNED.map((p) => (
             <li key={p}>{p}</li>
           ))}
@@ -118,7 +118,7 @@ export default async function AboutPage() {
 
       <section>
         <h2 className="mb-3 text-lg font-semibold">Faiz olasılığı hesabı</h2>
-        <div className="space-y-3 text-muted">
+        <div className="prose-width space-y-3 text-muted">
           <p>
             Olasılıkları kendimiz hesaplamıyoruz. Bunun nedeni şudur: piyasa bazlı
             olasılık için Fed Funds ya da SOFR vadeli işlem/opsiyon fiyatları
@@ -144,7 +144,7 @@ export default async function AboutPage() {
 
       <section>
         <h2 className="mb-3 text-lg font-semibold">Şahin/güvercin skorlaması</h2>
-        <div className="space-y-3 text-muted">
+        <div className="prose-width space-y-3 text-muted">
           <p>
             Konuşmalar Claude API ile Türkçe özetlenir ve -10 (çok güvercin) ile
             +10 (çok şahin) arasında puanlanır. Skor, konuşmanın para politikası
@@ -183,7 +183,7 @@ export default async function AboutPage() {
 
       <section>
         <h2 className="mb-3 text-lg font-semibold">Sorumluluk reddi</h2>
-        <p className="text-muted">
+        <p className="prose-width text-muted">
           Bu site kişisel kullanım ve eğitim amaçlıdır. Buradaki bilgiler yatırım
           tavsiyesi değildir. Veriler resmî kaynaklardan otomatik derlenir; hata
           veya gecikme olabilir. Karar vermeden önce merkez bankalarının kendi

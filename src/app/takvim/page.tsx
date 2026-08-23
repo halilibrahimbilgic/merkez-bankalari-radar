@@ -1,8 +1,12 @@
 import type { Metadata } from "next";
-import Link from "next/link";
 import { MeetingRow } from "@/components/MeetingRow";
-import { ALL_BANKS, isBankCode } from "@/lib/banks";
-import { getPastMeetings, getUpcomingMeetings } from "@/lib/data/meetings";
+import { BankFilter } from "@/components/BankFilter";
+import { isBankCode } from "@/lib/banks";
+import {
+  getBankCodesWithMeetings,
+  getPastMeetings,
+  getUpcomingMeetings,
+} from "@/lib/data/meetings";
 import { trtMonthLabel } from "@/lib/time";
 import type { BankCode, Meeting } from "@/lib/types";
 
@@ -25,6 +29,7 @@ export default async function CalendarPage({
   const now = new Date();
   const upcoming = await getUpcomingMeetings({ bankCode, now });
   const past = await getPastMeetings({ bankCode, limit: 8, now });
+  const availableCodes = await getBankCodesWithMeetings(now);
 
   const icalHref = bankCode ? `/takvim/takvim.ics?banka=${bankCode}` : "/takvim/takvim.ics";
 
@@ -40,7 +45,7 @@ export default async function CalendarPage({
         </a>
       </div>
 
-      <FilterBar active={bankCode} />
+      <BankFilter basePath="/takvim" active={bankCode} availableCodes={availableCodes} />
 
       <section>
         <h2 className="mb-3 text-lg font-semibold">Yaklaşan</h2>
@@ -64,35 +69,6 @@ export default async function CalendarPage({
         </section>
       )}
     </div>
-  );
-}
-
-function FilterBar({ active }: { active?: BankCode }) {
-  const items = [
-    { code: undefined as BankCode | undefined, label: "Tümü" },
-    ...ALL_BANKS.map((b) => ({ code: b.code, label: b.nameTr })),
-  ];
-
-  return (
-    <nav className="flex flex-wrap gap-2">
-      {items.map((item) => {
-        const isActive = item.code === active;
-        return (
-          <Link
-            key={item.label}
-            href={item.code ? `/takvim?banka=${item.code}` : "/takvim"}
-            className={
-              "rounded-full border px-3 py-1 text-sm " +
-              (isActive
-                ? "border-accent bg-accent-soft text-accent"
-                : "border-border text-muted hover:border-accent hover:text-accent")
-            }
-          >
-            {item.label}
-          </Link>
-        );
-      })}
-    </nav>
   );
 }
 

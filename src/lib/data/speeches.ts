@@ -106,6 +106,12 @@ export async function getBankScoreSummaries(): Promise<BankScoreSummary[]> {
     .sort((a, b) => b.averageScore - a.averageScore);
 }
 
+/** Arşivde konuşması bulunan bankalar — filtre çiplerini pasifleştirmek için. */
+export async function getBankCodesWithSpeeches(): Promise<BankCode[]> {
+  const { speeches } = await load();
+  return [...new Set(speeches.map((s) => s.bankCode))];
+}
+
 /** Arşivin son güncellenme zamanı. */
 export async function getSpeechesFetchedAt(): Promise<string | null> {
   const store = await load();
