@@ -1,6 +1,8 @@
 import type { Metadata } from "next";
 import Link from "next/link";
 import { ProbabilityChart, type ChartBucket } from "@/components/ProbabilityChart";
+import { ExpectedPathChart, type PathPoint } from "@/components/ExpectedPathChart";
+import { RateOdds, type OddsRow } from "@/components/RateOdds";
 import {
   bpsRangeTr,
   describeWindowTr,
@@ -58,6 +60,30 @@ export default async function ProbabilityPage({
           : "inside",
   }));
 
+  // Yön oklu özet — seçili pencere için.
+  const odds: OddsRow[] | undefined =
+    selected.probHikePct !== undefined && selected.probCutPct !== undefined
+      ? [
+          { direction: "up", label: "Aralığın üzeri", pct: selected.probHikePct },
+          {
+            direction: "flat",
+            label: "Aralık içinde",
+            pct: Math.max(0, 100 - selected.probHikePct - selected.probCutPct),
+          },
+          { direction: "down", label: "Aralığın altı", pct: selected.probCutPct },
+        ]
+      : undefined;
+
+  // Beklenen faiz patikası — tüm pencereler boyunca ortalama ve
+  // 25.-75. yüzdelik bandı.
+  const path: PathPoint[] = snapshot.windows
+    .filter((w) => w.meanBps !== undefined && w.p25Bps !== undefined && w.p75Bps !== undefined)
+    .map((w) => ({
+      label: shortPeriodLabel(w.startDate),
+      band: [w.p25Bps!, w.p75Bps!] as [number, number],
+      mean: w.meanBps!,
+    }));
+
   // Bu pencereye denk gelen FOMC toplantıları — okuyucuya bağlam verir.
   const end = windowEndDate(selected.startDate);
   const fomc = (await getUpcomingMeetings({ bankCode: "fed" })).filter(
@@ -76,7 +102,25 @@ export default async function ProbabilityPage({
 
       <Caveat />
 
-      <nav className="flex flex-wrap gap-2">
+      {path.length > 1 && (
+        <section className="rounded-lg border border-border bg-surface p-5">
+          <h2 className="text-lg font-semibold">Beklenen faiz patikası</h2>
+          <p className="prose-width mt-1 text-sm text-muted">
+            Piyasanın her üç aylık dönem için fiyatladığı ortalama faiz ve
+            25.–75. yüzdelik aralığı. Gölgeli yatay bant bugünkü hedef aralığı
+            gösterir.
+          </p>
+          <div className="mt-4">
+            <ExpectedPathChart data={path} targetRange={target} />
+          </div>
+          <p className="mt-1 text-sm text-muted">
+            Bandın ileri dönemlerde açılması, ortalama beklenti benzer kalsa
+            bile belirsizliğin arttığı anlamına gelir.
+          </p>
+        </section>
+      )}
+
+      <nav aria-label="Dönem seçimi" className="flex flex-wrap gap-2">
         {snapshot.windows.slice(0, 8).map((w) => {
           const isActive = w.startDate === selected.startDate;
           return (
@@ -84,7 +128,7 @@ export default async function ProbabilityPage({
               key={w.startDate}
               href={`/faiz-olasiligi?donem=${w.startDate}`}
               className={
-                "rounded-full border px-3 py-1 text-sm tabular " +
+                "inline-flex min-h-9 items-center rounded-full border px-3 text-sm tabular " +
                 (isActive
                   ? "border-accent bg-accent-soft text-accent"
                   : "border-border text-muted hover:border-accent hover:text-accent")
@@ -103,6 +147,12 @@ export default async function ProbabilityPage({
         <p className="prose-width mt-2 text-muted">
           {describeWindowTr(selected, target)}
         </p>
+
+        {odds && (
+          <div className="mt-4">
+            <RateOdds rows={odds} />
+          </div>
+        )}
 
         <div className="mt-4 grid gap-3 sm:grid-cols-3">
           <Stat
@@ -151,6 +201,16 @@ export default async function ProbabilityPage({
       <Attribution />
     </div>
   );
+}
+
+/** "16 Eylül 2026" yerine grafikte sığan "Eyl 26" biçimi. */
+function shortPeriodLabel(startDate: string): string {
+  const d = new Date(`${startDate}T00:00:00Z`);
+  const month = new Intl.DateTimeFormat("tr-TR", {
+    timeZone: "UTC",
+    month: "short",
+  }).format(d);
+  return `${month} ${String(d.getUTCFullYear()).slice(2)}`;
 }
 
 function Stat({

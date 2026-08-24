@@ -106,6 +106,38 @@ export async function getBankScoreSummaries(): Promise<BankScoreSummary[]> {
     .sort((a, b) => b.averageScore - a.averageScore);
 }
 
+export interface BankCoverage {
+  bankCode: BankCode;
+  speakers: string[];
+  speechCount: number;
+}
+
+/**
+ * Hangi bankada kimlerin konuşmalarını izlediğimiz — kapsamı şeffaf kılar.
+ * Sabit bir liste tutmuyoruz; arşivde fiilen görülen konuşmacılardan türer,
+ * yani vaat değil gerçekleşen kapsamı gösterir.
+ */
+export async function getCoverage(): Promise<BankCoverage[]> {
+  const { speeches } = await load();
+  const byBank = new Map<BankCode, Set<string>>();
+  const counts = new Map<BankCode, number>();
+
+  for (const s of speeches) {
+    const set = byBank.get(s.bankCode) ?? new Set<string>();
+    set.add(s.speakerName);
+    byBank.set(s.bankCode, set);
+    counts.set(s.bankCode, (counts.get(s.bankCode) ?? 0) + 1);
+  }
+
+  return [...byBank.entries()]
+    .map(([bankCode, names]) => ({
+      bankCode,
+      speakers: [...names].sort((a, b) => a.localeCompare(b, "tr")),
+      speechCount: counts.get(bankCode) ?? 0,
+    }))
+    .sort((a, b) => b.speechCount - a.speechCount);
+}
+
 /** Arşivde konuşması bulunan bankalar — filtre çiplerini pasifleştirmek için. */
 export async function getBankCodesWithSpeeches(): Promise<BankCode[]> {
   const { speeches } = await load();
