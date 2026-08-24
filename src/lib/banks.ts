@@ -81,3 +81,13 @@ export function getBank(code: string): CentralBank | undefined {
 export function isBankCode(code: string): code is BankCode {
   return code in BANKS;
 }
+
+/**
+ * Bankanın kimlik rengi (CSS değişkeni).
+ *
+ * Renk yalnızca tarama hızını artıran ikincil bir ipucudur; banka adı
+ * metni her zaman yanında bulunur. Tek başına anlam taşımaz.
+ */
+export function bankColorVar(code: BankCode): string {
+  return `var(--bank-${code})`;
+}

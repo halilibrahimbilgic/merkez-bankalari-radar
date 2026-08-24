@@ -10,6 +10,22 @@
   --accent-soft: #eef2ff;
   --hawk: #b91c1c;
   --dove: #15803d;
+
+  /*
+   * Banka kimlik renkleri. Renk her zaman ikincil ipucudur — banka adı
+   * metni yanında durur, tek başına anlam taşımaz (WCAG 1.4.1).
+   * Tonlar şahin (0°), güvercin (142°) ve vurgu (224°) renklerinden
+   * olabildiğince uzak seçildi; hepsi yüzeye karşı >=5:1.
+   *
+   * En sık birlikte görünen üçlü (Fed 243°, ECB 175°, TCMB 26°) birbirinden
+   * en az 68° ayrık; nadir görünen bankalar kalan aralıklara yerleşti.
+   */
+  --bank-fed: #4f46e5;
+  --bank-ecb: #0f766e;
+  --bank-tcmb: #b45309;
+  --bank-boe: #7c3aed;
+  --bank-boj: #a21caf;
+  --bank-rba: #0369a1;
 }
 
 @media (prefers-color-scheme: dark) {
@@ -23,6 +39,13 @@
     --accent-soft: #1a2138;
     --hawk: #f87171;
     --dove: #4ade80;
+
+    --bank-fed: #a5b4fc;
+    --bank-ecb: #5eead4;
+    --bank-tcmb: #fbbf24;
+    --bank-boe: #c4b5fd;
+    --bank-boj: #f0abfc;
+    --bank-rba: #7dd3fc;
   }
 }
 

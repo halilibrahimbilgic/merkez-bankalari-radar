@@ -1,5 +1,5 @@
 import Link from "next/link";
-import { BANKS } from "@/lib/banks";
+import { BANKS, bankColorVar } from "@/lib/banks";
 import type { BankCode, Meeting } from "@/lib/types";
 import { computeCountdownParts, formatDateTr, formatTimeTrt } from "@/lib/time";
 import { formatCurrentRate, type CurrentRate } from "@/lib/data/rates";
@@ -35,8 +35,13 @@ export function BankCard({
         <h3 className="text-lg font-semibold">
           <Link
             href={`/banka/${bank.code}`}
-            className="inline-flex min-h-9 items-center hover:text-accent"
+            className="inline-flex min-h-9 items-center gap-2 hover:text-accent"
           >
+            <span
+              aria-hidden
+              className="inline-block size-2.5 shrink-0 rounded-full"
+              style={{ backgroundColor: bankColorVar(bank.code) }}
+            />
             {bank.nameTr}
           </Link>
         </h3>

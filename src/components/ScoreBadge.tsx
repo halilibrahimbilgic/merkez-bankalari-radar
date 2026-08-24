@@ -1,4 +1,4 @@
-import { BANKS } from "@/lib/banks";
+import { BANKS, bankColorVar } from "@/lib/banks";
 import type { BankCode } from "@/lib/types";
 
 /** Skorun rengi ve etiketi — ölçek her yerde aynı okunsun diye tek yerde. */
@@ -39,9 +39,19 @@ export function ScoreBadge({ score }: { score?: number }) {
   );
 }
 
+/**
+ * Banka etiketi: kimlik rengi bir nokta olarak, ad her zaman metin olarak.
+ * Renk tek başına anlam taşımaz — noktayı ayırt edemeyen okuyucu için ad
+ * yeterlidir.
+ */
 export function BankTag({ code }: { code: BankCode }) {
   return (
-    <span className="rounded bg-accent-soft px-1.5 py-0.5 text-xs font-medium text-accent">
+    <span className="inline-flex items-center gap-1.5 rounded border border-border px-1.5 py-0.5 text-xs font-medium">
+      <span
+        aria-hidden
+        className="inline-block size-2 shrink-0 rounded-full"
+        style={{ backgroundColor: bankColorVar(code) }}
+      />
       {BANKS[code].nameTr}
     </span>
   );
