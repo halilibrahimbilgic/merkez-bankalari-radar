@@ -10,7 +10,7 @@ merkez bankası takip platformu. Yol haritası ve gerekçe için
 | --- | --- | --- |
 | A — Toplantı takvimi | Fed, ECB, TCMB; TRT dönüşümü, geri sayım, filtre, iCal | **Yayında** |
 | B — Faiz olasılığı | Atlanta Fed MPT dağılımları, Türkçe anlatım + grafik | **Yayında** |
-| C — Konuşma arşivi ve şahin/güvercin skoru | BIS arşivi + Claude API ile Türkçe özet/skor | **Yayında** (11 konuşma skorlu; toplu iş API kredisi bekliyor) |
+| C — Konuşma arşivi ve şahin/güvercin skoru | BIS arşivi + Türkçe özet/skor | **Yayında** — metin toplama otomatik, **skorlama elle** |
 
 ## Kurulum
 
@@ -80,11 +80,15 @@ sinyali taşımayan bir konuşma (düzenleme, denetim, ödeme sistemleri).
 `hasPolicySignal` alanı bunları ayırır; sinyalsiz konuşmalar banka
 ortalamalarına katılmaz.
 
-Arşivdeki ilk 11 kayıt, Anthropic hesabında kredi bulunmadığından
-`score:speeches` yerine bir Claude Code oturumunda aynı ölçek ve kurallarla
-puanlanmış ve `scoredVia: "session"` ile işaretlenmiştir
-(`scripts/apply-session-scores.ts`). Kredi eklendiğinde bu kayıtlar toplu işle
-yeniden üretilebilir.
+**Skorlama otomatik değildir.** Konuşma metinleri günlük cron ile toplanır,
+ancak Türkçe özet ve şahin/güvercin skoru elle üretilir
+(`scripts/apply-session-scores.ts`, kayıtlar `scoredVia: "session"` ile
+işaretli). `npm run score:speeches` toplu işi bir Anthropic API anahtarı ve
+bakiyesi gerektirir; cron'da `continue-on-error` ile işaretlidir, yani
+çalışmasa bile diğer veriler güncellenmeye devam eder.
+
+Skorsuz kayıt sayısı `/konusmalar` ve `/skor` sayfalarında açıkça gösterilir —
+banka ortalamalarının hangi örnekleme dayandığı gizlenmez.
 
 Takvim her gün 08:00 TRT'de GitHub Actions ile yenilenir
 (`.github/workflows/fetch-meetings.yml`).

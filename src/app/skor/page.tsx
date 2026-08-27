@@ -11,8 +11,10 @@ import { BANKS } from "@/lib/banks";
 import {
   getBankScoreSummaries,
   getCoverage,
+  getScoringStatus,
   getSpeeches,
 } from "@/lib/data/speeches";
+import { ScoringGap } from "@/components/ScoringGap";
 import { formatDateTr } from "@/lib/time";
 
 export const revalidate = 3600;
@@ -24,10 +26,11 @@ export const metadata: Metadata = {
 };
 
 export default async function ScorePage() {
-  const [summaries, recent, coverage] = await Promise.all([
+  const [summaries, recent, coverage, status] = await Promise.all([
     getBankScoreSummaries(),
     getSpeeches({ scoredOnly: true, limit: 10 }),
     getCoverage(),
+    getScoringStatus(),
   ]);
 
   return (
@@ -43,13 +46,12 @@ export default async function ScorePage() {
 
       <Scale />
 
+      <ScoringGap status={status} context="averages" />
+
       {summaries.length === 0 ? (
         <p className="rounded-lg border border-border bg-surface p-5 text-muted">
-          Henüz skorlanmış konuşma yok.{" "}
-          <code className="rounded bg-accent-soft px-1 text-accent">
-            npm run score:speeches
-          </code>{" "}
-          komutunu çalıştırın.
+          Henüz skorlanmış konuşma yok. Skorlama elle yapılır; toplu iş için
+          bir Anthropic API anahtarı ve bakiyesi gerekir.
         </p>
       ) : (
         <section>

@@ -23,6 +23,41 @@ interface Entry {
 }
 
 const SCORES: Record<string, Entry> = {
+  r260813h: {
+    hasPolicySignal: true,
+    hawkDoveScore: 5,
+    summaryTr:
+      "Cook, ABD ekonomisini dirençli ve sağlam hızda büyüyor bulurken enflasyonun inatçı biçimde yüksek kaldığını, hedefin beş yıldır aşıldığını söylüyor. Haziranda hedeflenen PCE enflasyonu yıllık %3,7, çekirdek %3,3 — hedefin neredeyse iki katı. Orta Doğu kaynaklı enerji fiyatları ve yapay zekâ altyapısı yatırımının çip, yazılım ve elektrik fiyatlarına yaptığı baskıyı iki yeni kaynak olarak sayıyor ve risk dengesinin enflasyon tarafına kaydığını belirtiyor. Faizi sabit tutmayı desteklediğini, çünkü tarife etkilerinin geride kalması, petrolün gerilemesi ve yapay zekâ kaynaklı baskının hafiflemesi gibi üç dezenflasyonist gücün devrede olduğunu anlatıyor. Ancak beş yıllık hedef üstü enflasyonun fiyatlama ve ücret davranışına yerleşme riskini vurgulayarak, başka bir ortamda beklemeye tahammül olabileceğini ama bu ortamda o lüksün bulunmadığını söylüyor.",
+    scoreRationaleTr:
+      "\"Gerekirse faiz artırarak harekete geçmeye hazırım\" ve \"yakında dezenflasyon işareti görmezsem harekete geçmeye hazırım\" ifadeleri açık şahin duruş; buna karşılık üç dezenflasyonist gücü sayıp \"gerekmeyebilir\" demesi ve sabit tutmayı desteklemesi puanı üst basamaktan uzak tutuyor.",
+  },
+  r260813c: {
+    hasPolicySignal: false,
+    hawkDoveScore: 0,
+    textIsExcerpt: true,
+    summaryTr:
+      "Lane, ChaMP araştırma ağının kapanış yemeğindeki bu konuşmasında yapay zekânın para politikası duruşuna etkisini kuramsal olarak ele alıyor. Yapay zekâyı üretkenliği kalıcı biçimde artıran bir şok olarak görmenin doğal bir başlangıç noktası olduğunu, hanehalkı ve firmalar bu kalıcılığı hızla içselleştirirse geçiş döneminin başında talep kanalıyla enflasyonist baskı doğabileceğini söylüyor. Ancak bunun gerçekçi olmadığını, alışkanlık oluşumu ve bireysel gelir belirsizliği nedeniyle harcamanın yavaş uyarlanacağını, bu durumda peşin enflasyonist etkinin büyük ölçüde zayıflayacağını savunuyor. (BIS bu konuşmanın yalnızca giriş bölümünü yayımlıyor.)",
+    scoreRationaleTr:
+      "Yapay zekânın enflasyon etkisini kuramsal olarak tartışıyor ve peşin etkinin zayıf kalacağını savunuyor; ancak ECB'nin güncel faiz duruşuna dair ileriye dönük bir ifade içermiyor.",
+  },
+  r260813a: {
+    hasPolicySignal: false,
+    hawkDoveScore: 0,
+    textIsExcerpt: true,
+    summaryTr:
+      "Bullock, son yılların belirleyici özelliğinin arz şoklarının sıklaşması ve etkisinin artması olduğunu söylüyor: önce pandemi, ardından Ukrayna savaşının tetiklediği enerji fiyatı sıçraması, şimdi de Orta Doğu çatışması, sert hava olayları ve süregelen ticaret gerilimleri. Görünümün hızla değişebildiğini ve eski riskler hafiflerken yeni belirsizliklerin doğabildiğini belirtiyor. Bu gelişmelerin Avustralya'ya etkisini 1970'lerin petrol şoklarıyla karşılaştıracağını, dünyanın daha şok yatkın hâle geldiğini ama ekonominin geçmişe göre daha dayanıklı olduğunu, bunda merkez bankalarının güvenilir enflasyon hedeflerinin pay sahibi olduğunu söylüyor. (BIS bu konuşmanın yalnızca giriş bölümünü yayımlıyor.)",
+    scoreRationaleTr:
+      "Erişilebilen metin arz şoklarının çerçevesini kuruyor ve güvenilir enflasyon hedeflemesinin dayanıklılığa katkısını anlatıyor; RBA'nın güncel faiz duruşuna dair bir ifade içermiyor.",
+  },
+  r260813d: {
+    hasPolicySignal: false,
+    hawkDoveScore: 0,
+    textIsExcerpt: true,
+    summaryTr:
+      "Cipollone, dijital euronun kooperatif bankacılığıyla ortak zeminini anlatıyor. Paranın bir toplumsal uzlaşının ürünü olduğunu, değerini yarın da kabul edileceğine duyulan güvenden aldığını ve bu uzlaşının hukukla güvence altına alındığını hatırlatıyor. Merkez bankası parasına tanınan kanuni ödeme aracı statüsünün parasal sistemin çıpası olduğunu, diğer para biçimlerine duyulan güvenin bunların merkez bankası parasına başabaş çevrilebilmesine dayandığını vurguluyor. İtalya'da 1883'te kurulan ilk kooperatif bankası örneğiyle karşılıklı güvene dayalı modelin nasıl yayıldığını anlatıyor. (BIS bu konuşmanın yalnızca giriş bölümünü yayımlıyor.)",
+    scoreRationaleTr:
+      "Konuşma dijital euro ve ödeme sistemleri üzerine; para politikası duruşuna dair sinyal içermiyor.",
+  },
   r260730l: {
     hasPolicySignal: true,
     hawkDoveScore: 6,

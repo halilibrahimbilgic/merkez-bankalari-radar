@@ -3,7 +3,12 @@ import Link from "next/link";
 import { BankTag, ScoreBadge } from "@/components/ScoreBadge";
 import { BankFilter } from "@/components/BankFilter";
 import { isBankCode } from "@/lib/banks";
-import { getBankCodesWithSpeeches, getSpeeches } from "@/lib/data/speeches";
+import {
+  getBankCodesWithSpeeches,
+  getScoringStatus,
+  getSpeeches,
+} from "@/lib/data/speeches";
+import { ScoringGap } from "@/components/ScoringGap";
 import { formatDateTr } from "@/lib/time";
 import type { BankCode } from "@/lib/types";
 
@@ -24,16 +29,20 @@ export default async function SpeechesPage({
 
   const speeches = await getSpeeches({ bankCode });
   const availableCodes = await getBankCodesWithSpeeches();
+  const status = await getScoringStatus();
 
   return (
     <div className="space-y-6">
       <header>
         <h1 className="text-2xl font-semibold tracking-tight">Konuşma arşivi</h1>
-        <p className="mt-2 max-w-2xl text-muted">
-          BIS arşivinden derlenen merkez bankası konuşmaları. Her konuşma Türkçe
-          özetlenip -10 (çok güvercin) ile +10 (çok şahin) arasında puanlanır.
+        <p className="prose-width mt-2 text-muted">
+          BIS arşivinden derlenen merkez bankası konuşmaları. Konuşma metinleri
+          günlük olarak otomatik toplanır; Türkçe özet ve şahin/güvercin skoru
+          ise elle üretilir, bu yüzden her kayıtta bulunmayabilir.
         </p>
       </header>
+
+      <ScoringGap status={status} context="archive" />
 
       <BankFilter
         basePath="/konusmalar"

@@ -173,10 +173,14 @@ export default async function AboutPage() {
             bu kayıtlar arayüzde açıkça işaretlenir.
           </p>
           <p>
-            Arşivin ilk 11 kaydı, API kredisi bulunmadığından toplu iş yerine
-            bir Claude Code oturumunda aynı ölçek ve kurallarla puanlanmıştır.
-            Bu kayıtlar ayrıca işaretlidir ve kredi eklendiğinde toplu işle
-            yeniden üretilebilir.
+            <strong className="text-foreground">
+              Skorlama şu an otomatik değildir.
+            </strong>{" "}
+            Konuşma metinleri her gün otomatik toplanır, ancak Türkçe özet ve
+            skor elle üretilir. Bu yüzden arşivde skorsuz kayıtlar bulunabilir
+            ve banka ortalamaları en güncel konuşmaları içermeyebilir. Skorlama
+            boşluğunun büyüklüğü konuşma arşivi ve skor sayfalarında açıkça
+            gösterilir.
           </p>
         </div>
       </section>

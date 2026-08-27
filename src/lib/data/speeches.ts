@@ -144,6 +144,41 @@ export async function getBankCodesWithSpeeches(): Promise<BankCode[]> {
   return [...new Set(speeches.map((s) => s.bankCode))];
 }
 
+export interface ScoringStatus {
+  total: number;
+  scored: number;
+  unscored: number;
+  /** Skorlanmış kayıtların en yenisinin tarihi. */
+  latestScoredDate?: string;
+  /** Skorsuz kayıtların en yenisinin tarihi — boşluğun ne kadar taze olduğu. */
+  latestUnscoredDate?: string;
+}
+
+/**
+ * Skorlama boşluğunun büyüklüğü.
+ *
+ * Skorlama otomatik değil (bkz. /hakkinda); arşive yeni konuşma girdikçe
+ * skorsuz kayıt birikir. Bunu gizlemek yerine sayıp gösteriyoruz — yoksa
+ * banka ortalamaları eskimiş bir örneklemi temsil ederken güncel görünür.
+ */
+export async function getScoringStatus(): Promise<ScoringStatus> {
+  const { speeches } = await load();
+  const scored = speeches.filter((s) => s.hawkDoveScore !== undefined);
+  const unscored = speeches.filter((s) => s.hawkDoveScore === undefined);
+  const newest = (list: Speech[]) =>
+    list.length === 0
+      ? undefined
+      : list.reduce((a, b) => (a.speechDate > b.speechDate ? a : b)).speechDate;
+
+  return {
+    total: speeches.length,
+    scored: scored.length,
+    unscored: unscored.length,
+    latestScoredDate: newest(scored),
+    latestUnscoredDate: newest(unscored),
+  };
+}
+
 /** Arşivin son güncellenme zamanı. */
 export async function getSpeechesFetchedAt(): Promise<string | null> {
   const store = await load();
