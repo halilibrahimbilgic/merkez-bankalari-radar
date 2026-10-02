@@ -1,15 +1,46 @@
 @import "tailwindcss";
 
+/*
+ * Tema üç durumludur: açık, koyu ve "sistem" (varsayılan).
+ *
+ *   :root                                 → açık palet, tam tanım
+ *   @media (prefers-color-scheme: dark)   → sistem koyuysa koyuya geç,
+ *     :root:not([data-theme="light"])        ama kullanıcı açığı seçtiyse geçme
+ *   :root[data-theme="dark"]              → kullanıcı koyuyu seçtiyse her
+ *                                           durumda koyu
+ *
+ * Hiçbir rengin tek tanımı bir media sorgusunun içinde olmamalı: sistem
+ * ayarı "açık" olan bir tarayıcıda o renk hiç tanımlanmamış olurdu.
+ */
+
 :root {
-  --background: #f7f8fa;
+  /* Zemin katmanları — en arkadan en öne. */
+  --background: #f1f3f7;
   --surface: #ffffff;
-  --border: #e3e6ec;
+  /*
+   * Kart İÇİNDEKİ panel (istatistik kutusu, uyarı bloğu). Kartla aynı
+   * beyazı kullanmak hiyerarşiyi yok ediyordu: iç içe iki kutu da aynı
+   * zemin, aynı 1px kenarlık. Hafif gri dolgu derinliği kenarlığa
+   * yüklemeden verir.
+   */
+  --surface-sunken: #f6f7fa;
+  --border: #e1e5ec;
+  /* Bir tık koyu kenarlık — tablo başlığı gibi ayırıcı rolü ağır olanlar. */
+  --border-strong: #cfd5e0;
+
   --foreground: #12151c;
   --muted: #5b6472;
   --accent: #1d4ed8;
   --accent-soft: #eef2ff;
   --hawk: #b91c1c;
   --dove: #15803d;
+
+  /*
+   * Yükseklik. Koyu temada gölge görünmez (karanlık üstünde karanlık),
+   * orada derinlik kenarlık kontrastıyla verilir — bu yüzden gölge de
+   * tema değişkeni.
+   */
+  --shadow-card: 0 1px 2px rgb(18 21 28 / 0.04), 0 1px 3px rgb(18 21 28 / 0.06);
 
   /*
    * Banka kimlik renkleri. Renk her zaman ikincil ipucudur — banka adı
@@ -28,17 +59,21 @@
   --bank-rba: #0369a1;
 }
 
+/* Sistem koyu — kullanıcı açığı seçmediyse. */
 @media (prefers-color-scheme: dark) {
-  :root {
+  :root:not([data-theme="light"]) {
     --background: #0b0d12;
     --surface: #151922;
+    --surface-sunken: #1b202b;
     --border: #262c39;
+    --border-strong: #38414f;
     --foreground: #e8eaef;
     --muted: #9aa4b5;
     --accent: #7ea2ff;
     --accent-soft: #1a2138;
     --hawk: #f87171;
     --dove: #4ade80;
+    --shadow-card: none;
 
     --bank-fed: #a5b4fc;
     --bank-ecb: #5eead4;
@@ -49,10 +84,35 @@
   }
 }
 
+/* Kullanıcı koyuyu seçti — sistem ne derse desen. */
+:root[data-theme="dark"] {
+  --background: #0b0d12;
+  --surface: #151922;
+  --surface-sunken: #1b202b;
+  --border: #262c39;
+  --border-strong: #38414f;
+  --foreground: #e8eaef;
+  --muted: #9aa4b5;
+  --accent: #7ea2ff;
+  --accent-soft: #1a2138;
+  --hawk: #f87171;
+  --dove: #4ade80;
+  --shadow-card: none;
+
+  --bank-fed: #a5b4fc;
+  --bank-ecb: #5eead4;
+  --bank-tcmb: #fbbf24;
+  --bank-boe: #c4b5fd;
+  --bank-boj: #f0abfc;
+  --bank-rba: #7dd3fc;
+}
+
 @theme inline {
   --color-background: var(--background);
   --color-surface: var(--surface);
+  --color-surface-sunken: var(--surface-sunken);
   --color-border: var(--border);
+  --color-border-strong: var(--border-strong);
   --color-foreground: var(--foreground);
   --color-muted: var(--muted);
   --color-accent: var(--accent);
@@ -104,4 +164,29 @@ body {
  */
 .prose-width {
   max-width: 58ch;
+}
+
+/*
+ * Kart yüzeyi. Projede 30 yerde elle tekrarlanan sınıf dizisinin tek
+ * tanımı — bkz. src/components/ui/Card.tsx.
+ */
+.card {
+  background: var(--surface);
+  border: 1px solid var(--border);
+  border-radius: 0.5rem;
+  box-shadow: var(--shadow-card);
+}
+
+/*
+ * Hareketi azalt tercihi (WCAG 2.3.3): geri sayım ve tema geçişi gibi
+ * süslemeler kapanır. İçerik aynı kalır.
+ */
+@media (prefers-reduced-motion: reduce) {
+  *,
+  *::before,
+  *::after {
+    animation-duration: 0.01ms !important;
+    animation-iteration-count: 1 !important;
+    transition-duration: 0.01ms !important;
+  }
 }

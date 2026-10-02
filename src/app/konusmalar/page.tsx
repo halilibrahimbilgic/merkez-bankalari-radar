@@ -51,7 +51,7 @@ export default async function SpeechesPage({
       />
 
       {speeches.length === 0 ? (
-        <p className="rounded-lg border border-border bg-surface p-5 text-muted">
+        <p className="card p-5 text-muted">
           Bu filtre için konuşma yok.{" "}
           <code className="rounded bg-accent-soft px-1 text-accent">
             npm run fetch:speeches
@@ -61,7 +61,7 @@ export default async function SpeechesPage({
       ) : (
         <ul className="space-y-3">
           {speeches.map((s) => (
-            <li key={s.id} className="rounded-lg border border-border bg-surface p-4">
+            <li key={s.id} className="card p-4">
               <div className="flex flex-wrap items-center gap-2 text-sm text-muted">
                 <BankTag code={s.bankCode} />
                 <span className="tabular">{formatDateTr(s.speechDate)}</span>

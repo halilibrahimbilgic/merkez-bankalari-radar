@@ -1,5 +1,5 @@
 {
-  "fetchedAt": "2026-08-11T11:08:07.968Z",
+  "fetchedAt": "2026-10-02T20:52:54.806Z",
   "meetings": [
     {
       "id": "fed-2021-01-27",
@@ -589,7 +589,7 @@
       "meetingAt": "2026-09-10T11:00:00.000Z",
       "timeTbd": false,
       "type": "rate_decision",
-      "status": "scheduled",
+      "status": "done",
       "sourceUrl": "https://www.tcmb.gov.tr/wps/wcm/connect/TR/TCMB+TR/Main+Menu/Duyurular/Takvim"
     },
     {
@@ -607,8 +607,11 @@
       "meetingAt": "2026-09-16T18:00:00.000Z",
       "timeTbd": false,
       "type": "projections",
-      "status": "scheduled",
-      "sourceUrl": "https://www.federalreserve.gov/monetarypolicy/fomccalendars.htm"
+      "status": "done",
+      "sourceUrl": "https://www.federalreserve.gov/monetarypolicy/fomccalendars.htm",
+      "decisionRate": 4,
+      "decisionRateLower": 3.75,
+      "previousRate": 3.75
     },
     {
       "id": "tcmb-2026-10-22",

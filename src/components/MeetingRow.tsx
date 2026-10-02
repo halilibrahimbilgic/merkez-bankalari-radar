@@ -9,6 +9,7 @@ import {
   formatWeekdayTr,
 } from "@/lib/time";
 import { Countdown } from "./Countdown";
+import { Row } from "./ui";
 
 export function MeetingRow({ meeting, now }: { meeting: Meeting; now: Date }) {
   const bank = BANKS[meeting.bankCode];
@@ -17,10 +18,7 @@ export function MeetingRow({ meeting, now }: { meeting: Meeting; now: Date }) {
   const localTime = formatTimeInZone(meeting.meetingAt, bank.timezone);
 
   return (
-    <li
-      className="flex flex-wrap items-baseline gap-x-3 gap-y-1 border-b border-l-3 border-border px-4 py-3 last:border-b-0"
-      style={{ borderLeftColor: bankColorVar(bank.code) }}
-    >
+    <Row accentColor={bankColorVar(bank.code)}>
       <Link
         href={`/banka/${bank.code}`}
         className="min-w-14 font-semibold text-accent hover:underline"
@@ -67,7 +65,7 @@ export function MeetingRow({ meeting, now }: { meeting: Meeting; now: Date }) {
           />
         )}
       </div>
-    </li>
+    </Row>
   );
 }
 

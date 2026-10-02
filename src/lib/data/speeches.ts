@@ -1,6 +1,7 @@
 import "server-only";
 import { readFile } from "node:fs/promises";
 import path from "node:path";
+import { getPool } from "../db";
 import type { BankCode, Speech } from "../types";
 
 const SEED_PATH = path.join(process.cwd(), "data", "seed", "speeches.json");
@@ -10,16 +11,83 @@ interface Store {
   speeches: Speech[];
 }
 
-let cache: Store | null | undefined;
+/**
+ * Yalnızca seed dosyası önbelleğe alınır. Veritabanı yolu her istekte
+ * yeniden sorgulanır: dosya ancak yeni bir dağıtımla değişir, veritabanı
+ * ise günlük iş çalıştıkça değişir — onu süreç ömrü boyunca önbelleğe
+ * almak taze veriyi sonsuza dek eskitirdi. Tazelik sınırını sayfa
+ * düzeyindeki `revalidate` belirler.
+ */
+let seedCache: Store | undefined;
 
 async function load(): Promise<Store> {
-  if (cache !== undefined && cache !== null) return cache;
-  try {
-    cache = JSON.parse(await readFile(SEED_PATH, "utf8")) as Store;
-  } catch {
-    cache = { fetchedAt: new Date(0).toISOString(), speeches: [] };
+  const pool = getPool();
+  if (pool) {
+    // raw_text kasıtlı olarak seçilmez: üçüncü taraf telifli tam metin
+    // arayüzde hiç gösterilmez, yalnızca skorlama script'inin girdisidir.
+    const { rows } = await pool.query<SpeechRow>(
+      `select id, bank_code, speaker_name, speaker_role_tr, title,
+              speech_date, source_url, text_is_excerpt, summary_tr,
+              hawk_dove_score, has_policy_signal, score_rationale_tr,
+              model, prompt_version, scored_at, scored_via,
+              max(created_at) over () as store_fetched_at
+         from speeches
+        order by speech_date desc`,
+    );
+    return {
+      fetchedAt: (rows[0]?.store_fetched_at ?? new Date(0)).toISOString(),
+      speeches: rows.map(toSpeech),
+    };
   }
-  return cache;
+
+  if (seedCache) return seedCache;
+  try {
+    seedCache = JSON.parse(await readFile(SEED_PATH, "utf8")) as Store;
+  } catch {
+    seedCache = { fetchedAt: new Date(0).toISOString(), speeches: [] };
+  }
+  return seedCache;
+}
+
+interface SpeechRow {
+  id: string;
+  bank_code: BankCode;
+  speaker_name: string;
+  speaker_role_tr: string | null;
+  title: string;
+  speech_date: Date;
+  source_url: string;
+  text_is_excerpt: boolean;
+  summary_tr: string | null;
+  hawk_dove_score: number | null;
+  has_policy_signal: boolean | null;
+  score_rationale_tr: string | null;
+  model: string | null;
+  prompt_version: string | null;
+  scored_at: Date | null;
+  scored_via: "api" | "session" | null;
+  store_fetched_at: Date | null;
+}
+
+function toSpeech(r: SpeechRow): Speech {
+  return {
+    id: r.id,
+    bankCode: r.bank_code,
+    speakerName: r.speaker_name,
+    speakerRoleTr: r.speaker_role_tr ?? undefined,
+    title: r.title,
+    speechDate: r.speech_date.toISOString().slice(0, 10),
+    sourceUrl: r.source_url,
+    textIsExcerpt: r.text_is_excerpt,
+    summaryTr: r.summary_tr ?? undefined,
+    hawkDoveScore: r.hawk_dove_score ?? undefined,
+    hasPolicySignal: r.has_policy_signal ?? undefined,
+    scoreRationaleTr: r.score_rationale_tr ?? undefined,
+    model: r.model ?? undefined,
+    promptVersion: r.prompt_version ?? undefined,
+    scoredAt: r.scored_at?.toISOString(),
+    scoredVia: r.scored_via ?? undefined,
+  };
 }
 
 /**

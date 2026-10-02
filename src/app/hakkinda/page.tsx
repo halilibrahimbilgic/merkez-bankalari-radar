@@ -67,7 +67,7 @@ export default async function AboutPage() {
         <h2 className="mb-3 text-lg font-semibold">Şu anda kullanılan kaynaklar</h2>
         <ul className="space-y-3">
           {SOURCES.map((s) => (
-            <li key={s.url} className="rounded-lg border border-border bg-surface p-4">
+            <li key={s.url} className="card p-4">
               <a
                 href={s.url}
                 target="_blank"

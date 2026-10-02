@@ -3,6 +3,7 @@ import Link from "next/link";
 import { ProbabilityChart, type ChartBucket } from "@/components/ProbabilityChart";
 import { ExpectedPathChart, type PathPoint } from "@/components/ExpectedPathChart";
 import { RateOdds, type OddsRow } from "@/components/RateOdds";
+import { Callout, Card, EmptyState, SectionHeader, Stat } from "@/components/ui";
 import {
   bpsRangeTr,
   describeWindowTr,
@@ -31,13 +32,9 @@ export default async function ProbabilityPage({
     return (
       <div className="space-y-4">
         <h1 className="text-2xl font-semibold tracking-tight">Fed faiz olasılıkları</h1>
-        <p className="rounded-lg border border-border bg-surface p-5 text-muted">
-          Olasılık verisi henüz yüklenmedi.{" "}
-          <code className="rounded bg-accent-soft px-1 text-accent">
-            npm run fetch:probabilities
-          </code>{" "}
-          komutunu çalıştırın.
-        </p>
+        <EmptyState command="npm run fetch:probabilities">
+          Olasılık verisi henüz yüklenmedi.
+        </EmptyState>
       </div>
     );
   }
@@ -103,13 +100,11 @@ export default async function ProbabilityPage({
       <Caveat />
 
       {path.length > 1 && (
-        <section className="rounded-lg border border-border bg-surface p-5">
-          <h2 className="text-lg font-semibold">Beklenen faiz patikası</h2>
-          <p className="prose-width mt-1 text-sm text-muted">
-            Piyasanın her üç aylık dönem için fiyatladığı ortalama faiz ve
-            25.–75. yüzdelik aralığı. Gölgeli yatay bant bugünkü hedef aralığı
-            gösterir.
-          </p>
+        <Card>
+          <SectionHeader
+            title="Beklenen faiz patikası"
+            description="Piyasanın her üç aylık dönem için fiyatladığı ortalama faiz ve 25.–75. yüzdelik aralığı. Gölgeli yatay bant bugünkü hedef aralığı gösterir."
+          />
           <div className="mt-4">
             <ExpectedPathChart data={path} targetRange={target} />
           </div>
@@ -117,7 +112,7 @@ export default async function ProbabilityPage({
             Bandın ileri dönemlerde açılması, ortalama beklenti benzer kalsa
             bile belirsizliğin arttığı anlamına gelir.
           </p>
-        </section>
+        </Card>
       )}
 
       <nav aria-label="Dönem seçimi" className="flex flex-wrap gap-2">
@@ -140,7 +135,7 @@ export default async function ProbabilityPage({
         })}
       </nav>
 
-      <section className="rounded-lg border border-border bg-surface p-5">
+      <Card>
         <h2 className="text-lg font-semibold">
           {formatDateTr(selected.startDate)} – {formatDateTr(end)} dönemi
         </h2>
@@ -157,21 +152,20 @@ export default async function ProbabilityPage({
         <div className="mt-4 grid gap-3 sm:grid-cols-3">
           <Stat
             label="İndirim yönünde"
-            value={selected.probCutPct}
+            value={pct(selected.probCutPct)}
             tone="text-dove"
           />
           <Stat
             label="Aralık içinde"
-            value={
+            value={pct(
               selected.probHikePct !== undefined && selected.probCutPct !== undefined
                 ? Math.max(0, 100 - selected.probHikePct - selected.probCutPct)
-                : undefined
-            }
-            tone="text-foreground"
+                : undefined,
+            )}
           />
           <Stat
             label="Artırım yönünde"
-            value={selected.probHikePct}
+            value={pct(selected.probHikePct)}
             tone="text-hawk"
           />
         </div>
@@ -196,7 +190,7 @@ export default async function ProbabilityPage({
             ))}
           </p>
         )}
-      </section>
+      </Card>
 
       <Attribution />
     </div>
@@ -213,43 +207,26 @@ function shortPeriodLabel(startDate: string): string {
   return `${month} ${String(d.getUTCFullYear()).slice(2)}`;
 }
 
-function Stat({
-  label,
-  value,
-  tone,
-}: {
-  label: string;
-  value?: number;
-  tone: string;
-}) {
-  return (
-    <div className="rounded border border-border p-3">
-      <div className="text-sm text-muted">{label}</div>
-      <div className={`mt-1 text-xl font-semibold tabular ${tone}`}>
-        {value === undefined ? "—" : formatPct(value)}
-      </div>
-    </div>
-  );
+/** Eksik veri tire ile gösterilir — 0 ile karıştırılmasın. */
+function pct(value?: number): string {
+  return value === undefined ? "—" : formatPct(value);
 }
 
 function Caveat() {
   return (
-    <div className="rounded-lg border border-border bg-accent-soft p-4 text-sm">
-      <p className="font-medium text-accent">Bu rakamlar ne anlama gelir?</p>
-      <p className="prose-width mt-1 text-muted">
-        Buradaki olasılıklar <strong>tek bir FOMC toplantısına ait değildir</strong>.
-        Üçer aylık bir dönemde <em>ortalama</em> gecelik faizin hangi bantta
-        kalacağını gösterirler. Yani &quot;Eylül toplantısında 25 baz puan indirim
-        ihtimali %X&quot; şeklinde okunamaz; &quot;Eylül–Aralık döneminde ortalama
-        faizin şu bantta olma ihtimali %X&quot; şeklinde okunur.
-      </p>
-    </div>
+    <Callout title="Bu rakamlar ne anlama gelir?">
+      Buradaki olasılıklar <strong>tek bir FOMC toplantısına ait değildir</strong>.
+      Üçer aylık bir dönemde <em>ortalama</em> gecelik faizin hangi bantta
+      kalacağını gösterirler. Yani &quot;Eylül toplantısında 25 baz puan indirim
+      ihtimali %X&quot; şeklinde okunamaz; &quot;Eylül–Aralık döneminde ortalama
+      faizin şu bantta olma ihtimali %X&quot; şeklinde okunur.
+    </Callout>
   );
 }
 
 function Attribution() {
   return (
-    <section className="space-y-3 rounded-lg border border-border bg-surface p-5 text-sm text-muted">
+    <Card className="space-y-3 text-sm text-muted">
       <h2 className="text-base font-semibold text-foreground">Kaynak ve lisans</h2>
       <p className="prose-width">
         Veri:{" "}
@@ -265,6 +242,6 @@ function Attribution() {
       </p>
       <p className="prose-width">{LICENSE_NOTICE.atlantaFed}</p>
       <p className="prose-width">{LICENSE_NOTICE.cme}</p>
-    </section>
+    </Card>
   );
 }

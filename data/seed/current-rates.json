@@ -1,17 +1,17 @@
 {
-  "fetchedAt": "2026-08-22T15:01:43.712Z",
+  "fetchedAt": "2026-09-29T11:32:11.755Z",
   "rates": [
     {
       "bankCode": "fed",
-      "rate": 3.75,
-      "rateLower": 3.5,
-      "asOf": "2026-08-22",
+      "rate": 4,
+      "rateLower": 3.75,
+      "asOf": "2026-09-28",
       "sourceUrl": "https://fred.stlouisfed.org/series/DFEDTARU"
     },
     {
       "bankCode": "ecb",
-      "rate": 2.25,
-      "asOf": "2026-08-22",
+      "rate": 2.5,
+      "asOf": "2026-09-29",
       "sourceUrl": "https://www.ecb.europa.eu/stats/policy_and_exchange_rates/key_ecb_interest_rates/html/index.en.html"
     }
   ]

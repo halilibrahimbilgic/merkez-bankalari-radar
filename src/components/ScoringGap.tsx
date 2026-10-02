@@ -21,7 +21,7 @@ export function ScoringGap({
   if (status.unscored === 0) return null;
 
   return (
-    <div className="rounded-lg border border-border bg-surface p-4 text-sm">
+    <div className="card p-4 text-sm">
       <p className="prose-width text-muted">
         Arşivdeki {status.total} konuşmanın{" "}
         <strong className="text-foreground">

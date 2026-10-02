@@ -30,7 +30,7 @@ export function BankCard({
   const bank = BANKS[bankCode];
 
   return (
-    <article className="flex flex-col rounded-lg border border-border bg-surface p-5">
+    <article className="flex flex-col card p-5">
       <header className="flex items-baseline justify-between gap-2">
         <h3 className="text-lg font-semibold">
           <Link

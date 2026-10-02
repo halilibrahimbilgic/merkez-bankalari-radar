@@ -64,7 +64,7 @@ export default async function BankPage({ params }: PageProps<"/banka/[code]">) {
 
       <div className="grid gap-3 sm:grid-cols-2">
         {currentRate && (
-          <section className="rounded-lg border border-border bg-surface p-5">
+          <section className="card p-5">
             <div className="text-sm text-muted">Güncel politika faizi</div>
             <div className="mt-1 text-2xl font-semibold tabular">
               {formatCurrentRate(currentRate)}
@@ -75,7 +75,7 @@ export default async function BankPage({ params }: PageProps<"/banka/[code]">) {
           </section>
         )}
         {scoreSummary && (
-          <section className="rounded-lg border border-border bg-surface p-5">
+          <section className="card p-5">
             <div className="text-sm text-muted">Şahin/güvercin eğilimi</div>
             <div className="mt-1 text-2xl">
               <ScoreBadge score={scoreSummary.averageScore} />
@@ -88,14 +88,14 @@ export default async function BankPage({ params }: PageProps<"/banka/[code]">) {
       </div>
 
       {next ? (
-        <section className="rounded-lg border border-border bg-surface p-5">
+        <section className="card p-5">
           <div className="text-sm text-muted">Sıradaki toplantı</div>
           <div className="mt-1 text-lg font-semibold tabular">
             {formatMeetingTr(next.meetingAt, next.timeTbd)}
           </div>
         </section>
       ) : (
-        <p className="rounded-lg border border-border bg-surface p-5 text-muted">
+        <p className="card p-5 text-muted">
           Bu banka için henüz takvim verisi yok. MVP&apos;de Fed, ECB ve TCMB canlıdır.
         </p>
       )}
@@ -103,7 +103,7 @@ export default async function BankPage({ params }: PageProps<"/banka/[code]">) {
       {upcoming.length > 1 && (
         <section>
           <h2 className="mb-3 text-lg font-semibold">Yaklaşan toplantılar</h2>
-          <ul className="overflow-hidden rounded-lg border border-border bg-surface">
+          <ul className="overflow-hidden card">
             {upcoming.slice(1).map((m) => (
               <MeetingRow key={m.id} meeting={m} now={now} />
             ))}
@@ -114,7 +114,7 @@ export default async function BankPage({ params }: PageProps<"/banka/[code]">) {
       {past.length > 0 && (
         <section>
           <h2 className="mb-3 text-lg font-semibold">Geçmiş toplantılar</h2>
-          <ul className="overflow-hidden rounded-lg border border-border bg-surface opacity-80">
+          <ul className="overflow-hidden card opacity-80">
             {past.map((m) => (
               <MeetingRow key={m.id} meeting={m} now={now} />
             ))}
@@ -137,7 +137,7 @@ export default async function BankPage({ params }: PageProps<"/banka/[code]">) {
               Tümü →
             </Link>
           </div>
-          <ul className="overflow-hidden rounded-lg border border-border bg-surface">
+          <ul className="overflow-hidden card">
             {speeches.map((s) => (
               <li
                 key={s.id}

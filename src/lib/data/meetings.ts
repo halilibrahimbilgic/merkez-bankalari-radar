@@ -30,35 +30,43 @@ export async function getAllMeetings(): Promise<Meeting[]> {
 
   const { rows } = await pool.query<{
     id: string;
-    code: BankCode;
+    bank_code: BankCode;
     meeting_at: Date;
     time_tbd: boolean;
     type: Meeting["type"];
     status: Meeting["status"];
     decision_rate: string | null;
+    decision_rate_lower: string | null;
     previous_rate: string | null;
     decision_note_tr: string | null;
     source_url: string | null;
   }>(
-    `select m.id::text, b.code, m.meeting_at, m.time_tbd, m.type, m.status,
-            m.decision_rate, m.previous_rate, m.decision_note_tr, m.source_url
-       from meetings m
-       join central_banks b on b.id = m.bank_id
-      order by m.meeting_at asc`,
+    `select id, bank_code, meeting_at, time_tbd, type, status,
+            decision_rate, decision_rate_lower, previous_rate,
+            decision_note_tr, source_url
+       from meetings
+      order by meeting_at asc`,
   );
 
+  // numeric kolonlar pg'den string gelir — Number() ile çevrilmezse
+  // oran aritmetiği (baz puan farkı) metin birleştirmeye dönüşür.
   return rows.map((r) => ({
     id: r.id,
-    bankCode: r.code,
+    bankCode: r.bank_code,
     meetingAt: r.meeting_at.toISOString(),
     timeTbd: r.time_tbd,
     type: r.type,
     status: r.status,
-    decisionRate: r.decision_rate === null ? undefined : Number(r.decision_rate),
-    previousRate: r.previous_rate === null ? undefined : Number(r.previous_rate),
+    decisionRate: num(r.decision_rate),
+    decisionRateLower: num(r.decision_rate_lower),
+    previousRate: num(r.previous_rate),
     decisionNoteTr: r.decision_note_tr ?? undefined,
     sourceUrl: r.source_url ?? undefined,
   }));
+}
+
+function num(value: string | null): number | undefined {
+  return value === null ? undefined : Number(value);
 }
 
 /** Bugünden itibaren yaklaşan toplantılar. */
@@ -98,7 +106,13 @@ export async function getBankCodesWithMeetings(now = new Date()): Promise<BankCo
 
 /** Verinin en son ne zaman tazelendiği — /hakkinda sayfasındaki şeffaflık notu. */
 export async function getMeetingsFetchedAt(): Promise<string | null> {
-  if (getPool()) return null;
+  const pool = getPool();
+  if (pool) {
+    const { rows } = await pool.query<{ updated_at: Date | null }>(
+      "select max(updated_at) as updated_at from meetings",
+    );
+    return rows[0]?.updated_at?.toISOString() ?? null;
+  }
   const seed = await loadSeed();
   return seed.meetings.length > 0 ? seed.fetchedAt : null;
 }

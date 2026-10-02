@@ -31,13 +31,35 @@ okur. Bu sayede arayüz, Supabase/Neon kurulumunu beklemeden çalışır.
 
 ## Veritabanı (isteğe bağlı)
 
+Site veritabanı olmadan da tam çalışır: `DATABASE_URL` tanımlı değilse okuma
+katmanı `data/seed/*.json` dosyalarından okur. Postgres'e geçmek isterseniz:
+
 ```bash
-psql "$DATABASE_URL" -f db/schema.sql
-psql "$DATABASE_URL" -f db/seed.sql
+export DATABASE_URL="postgres://localhost:5432/mbr"
+npm run db:migrate   # db/migrations/*.sql dosyalarını sırayla uygular
+npm run db:import    # data/seed/*.json içeriğini aktarır (idempotent)
 ```
 
-`DATABASE_URL` tanımlandığı anda okuma katmanı otomatik olarak Postgres'e geçer
-(`src/lib/db.ts`).
+`DATABASE_URL` tanımlandığı anda **tüm** okuma modülleri Postgres'e geçer —
+toplantılar, konuşmalar, güncel faizler ve olasılıklar (`src/lib/db.ts`).
+Karışık bir durum yoktur.
+
+Birkaç tasarım notu:
+
+- Birincil anahtarlar içerikten türeyen `text` değerlerdir (`fed-2026-09-16`),
+  surrogate uuid değil. Aynı kimlik seed dosyasında, URL'de ve veritabanında
+  geçerli olur; `db:import` doğal olarak idempotent kalır.
+- `central_banks` yalnızca bir referans çapasıdır. Görünen ad, saat dilimi ve
+  faiz adı `src/lib/banks.ts`'te kalır — iki yerde tutmak kayma üretirdi.
+- `db:import` mevcut skorları **ezmez**: skorlama elle yürütülen bir süreçtir
+  ve günlük veri çekme işi skorsuz kayıtlar üretir; naif bir upsert her gece
+  skorları silerdi.
+- Olasılıklar üç tabloya ayrıktır (`probability_snapshots` → `_windows` →
+  `_buckets`), böylece geçmiş anlıklar birikip "beklenti zamanla nasıl
+  değişti" sorusu sorgulanabilir. Seed dosyası yalnızca son anlığı tutar.
+
+Uygulanmış bir göç dosyasını düzenlemeyin; yeni bir dosya ekleyin. Çalıştırıcı
+dosyayı adına göre atlar, içeriği değişse bile yeniden uygulamaz.
 
 ## Veri kaynakları
 
@@ -116,8 +138,9 @@ src/components/    paylaşılan arayüz parçaları
 src/lib/sources/   resmî takvim ayrıştırıcıları (fomc, ecb, tcmb)
 src/lib/data/      okuma katmanı — Postgres ya da seed dosyası
 src/lib/tz.ts      zaman dilimi / DST dönüşümü
-scripts/           veri çekme işleri
-db/                şema ve seed SQL
+src/components/ui.tsx  düzen ilkelleri (Card, SectionHeader, TableFrame, ...)
+scripts/           veri çekme işleri ve veritabanı araçları
+db/migrations/     sıralı şema göçleri
 ```
 
 ## Komutlar
@@ -131,5 +154,7 @@ npm run fetch:current-rates  # güncel politika faizleri
 npm run fetch:probabilities  # olasılık dağılımları
 npm run fetch:speeches   # BIS konuşma arşivi
 npm run score:speeches   # özet + skor üret (--limit N ile sınırlanabilir)
+npm run db:migrate       # şema göçlerini uygula (DATABASE_URL gerekir)
+npm run db:import        # seed dosyalarını veritabanına aktar
 npm run lint
 ```

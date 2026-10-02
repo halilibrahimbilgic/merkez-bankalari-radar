@@ -44,7 +44,7 @@ export default async function SpeechPage({ params }: PageProps<"/konusma/[id]">)
       </header>
 
       {speech.hawkDoveScore !== undefined ? (
-        <section className="rounded-lg border border-border bg-surface p-5">
+        <section className="card p-5">
           <div className="text-sm text-muted">Şahin/güvercin skoru</div>
           <div className="mt-1 text-2xl">
             <ScoreBadge score={speech.hawkDoveScore} />
@@ -52,8 +52,10 @@ export default async function SpeechPage({ params }: PageProps<"/konusma/[id]">)
           {speech.scoreRationaleTr && (
             <p className="prose-width mt-2 text-muted">{speech.scoreRationaleTr}</p>
           )}
+          {/* Kart içinde gömülü yüzey: aynı beyaz üstünde 1px kenarlık
+              hiyerarşi vermiyordu (bkz. --surface-sunken). */}
           {speech.hasPolicySignal === false && (
-            <p className="prose-width mt-3 rounded border border-border p-3 text-sm text-muted">
+            <p className="prose-width mt-3 rounded-lg bg-surface-sunken p-3 text-sm text-muted">
               Bu konuşma para politikası duruşuna dair sinyal taşımıyor. Sıfır
               puanı &quot;dengeli duruş&quot; değil &quot;sinyal yok&quot;
               anlamına gelir; bu yüzden bankanın ortalama skoruna katılmaz.
@@ -61,7 +63,7 @@ export default async function SpeechPage({ params }: PageProps<"/konusma/[id]">)
           )}
         </section>
       ) : (
-        <p className="rounded-lg border border-border bg-surface p-5 text-muted">
+        <p className="card p-5 text-muted">
           Bu konuşma henüz skorlanmadı.
         </p>
       )}
@@ -75,7 +77,7 @@ export default async function SpeechPage({ params }: PageProps<"/konusma/[id]">)
         </section>
       )}
 
-      <section className="rounded-lg border border-border bg-surface p-5 text-sm text-muted">
+      <section className="card p-5 text-sm text-muted">
         <p className="prose-width">
           Özet ve skor bir dil modeli tarafından üretilmiştir; orijinal metnin
           yerini tutmaz.{" "}

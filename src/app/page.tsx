@@ -1,6 +1,7 @@
 import Link from "next/link";
 import { BankCard } from "@/components/BankCard";
 import { BankTag, ScoreBadge } from "@/components/ScoreBadge";
+import { EmptyState, Row, Rows, SectionHeader } from "@/components/ui";
 import type { OddsRow } from "@/components/RateOdds";
 import { MVP_BANK_CODES } from "@/lib/banks";
 import { getUpcomingMeetings } from "@/lib/data/meetings";
@@ -80,58 +81,38 @@ export default async function HomePage() {
       </section>
 
       <section>
-        <div className="mb-3 flex flex-wrap items-baseline justify-between gap-2">
-          <h2 className="text-lg font-semibold">Yaklaşan toplantılar</h2>
-          <Link
-            href="/takvim"
-            className="inline-flex min-h-9 items-center text-sm text-accent hover:underline"
-          >
-            Tüm takvim →
-          </Link>
-        </div>
+        <SectionHeader
+          title="Yaklaşan toplantılar"
+          action={{ href: "/takvim", label: "Tüm takvim" }}
+        />
         {upcoming.length === 0 ? (
-          <p className="rounded-lg border border-border bg-surface p-5 text-muted">
-            Takvim verisi henüz yüklenmedi.{" "}
-            <code className="rounded bg-accent-soft px-1 text-accent">
-              npm run fetch:meetings
-            </code>{" "}
-            komutunu çalıştırın.
-          </p>
+          <EmptyState command="npm run fetch:meetings">
+            Takvim verisi henüz yüklenmedi.
+          </EmptyState>
         ) : (
-          <ul className="overflow-hidden rounded-lg border border-border bg-surface">
+          <Rows>
             {upcoming.slice(0, 6).map((m) => (
-              <li
-                key={m.id}
-                className="flex flex-wrap items-baseline gap-x-3 gap-y-1 border-b border-border px-4 py-2.5 last:border-b-0"
-              >
+              <Row key={m.id}>
                 <BankTag code={m.bankCode} />
                 <span className="tabular flex-1">{formatDateTr(m.meetingAt)}</span>
                 <span className="text-sm text-muted">
                   {daysLabel(m.meetingAt, now)}
                 </span>
-              </li>
+              </Row>
             ))}
-          </ul>
+          </Rows>
         )}
       </section>
 
       {recentSpeeches.length > 0 && (
         <section>
-          <div className="mb-3 flex flex-wrap items-baseline justify-between gap-2">
-            <h2 className="text-lg font-semibold">Son skorlanan konuşmalar</h2>
-            <Link
-              href="/konusmalar"
-              className="inline-flex min-h-9 items-center text-sm text-accent hover:underline"
-            >
-              Konuşma arşivi →
-            </Link>
-          </div>
-          <ul className="overflow-hidden rounded-lg border border-border bg-surface">
+          <SectionHeader
+            title="Son skorlanan konuşmalar"
+            action={{ href: "/konusmalar", label: "Konuşma arşivi" }}
+          />
+          <Rows>
             {recentSpeeches.map((s) => (
-              <li
-                key={s.id}
-                className="flex flex-wrap items-baseline gap-x-3 gap-y-1 border-b border-border px-4 py-2.5 last:border-b-0"
-              >
+              <Row key={s.id}>
                 <BankTag code={s.bankCode} />
                 <Link
                   href={`/konusma/${s.id}`}
@@ -140,9 +121,9 @@ export default async function HomePage() {
                   {s.speakerName} — {s.title}
                 </Link>
                 <ScoreBadge score={s.hawkDoveScore} />
-              </li>
+              </Row>
             ))}
-          </ul>
+          </Rows>
         </section>
       )}
     </div>

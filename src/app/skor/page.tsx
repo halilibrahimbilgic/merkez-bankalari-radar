@@ -15,6 +15,14 @@ import {
   getSpeeches,
 } from "@/lib/data/speeches";
 import { ScoringGap } from "@/components/ScoringGap";
+import {
+  Card,
+  Row,
+  Rows,
+  SectionHeader,
+  TableFrame,
+  Th,
+} from "@/components/ui";
 import { formatDateTr } from "@/lib/time";
 
 export const revalidate = 3600;
@@ -49,32 +57,23 @@ export default async function ScorePage() {
       <ScoringGap status={status} context="averages" />
 
       {summaries.length === 0 ? (
-        <p className="rounded-lg border border-border bg-surface p-5 text-muted">
-          Henüz skorlanmış konuşma yok. Skorlama elle yapılır; toplu iş için
-          bir Anthropic API anahtarı ve bakiyesi gerekir.
-        </p>
+        <Card>
+          <p className="prose-width text-muted">
+            Henüz skorlanmış konuşma yok. Skorlama elle yapılır; toplu iş için
+            bir Anthropic API anahtarı ve bakiyesi gerekir.
+          </p>
+        </Card>
       ) : (
         <section>
-          <h2 className="mb-3 text-lg font-semibold">Bir bakışta komite skorları</h2>
-          <div className="overflow-x-auto rounded-lg border border-border bg-surface">
-            <table className="w-full min-w-[36rem] text-sm">
+          <SectionHeader title="Bir bakışta komite skorları" />
+          <TableFrame minWidth="36rem">
               <thead>
-                <tr className="border-b border-border text-left text-muted">
-                  <th scope="col" className="px-4 py-2.5 font-medium">
-                    Banka
-                  </th>
-                  <th scope="col" className="px-4 py-2.5 font-medium">
-                    Eğilim
-                  </th>
-                  <th scope="col" className="px-4 py-2.5 text-right font-medium">
-                    Skor
-                  </th>
-                  <th scope="col" className="px-4 py-2.5 text-right font-medium">
-                    Konuşma
-                  </th>
-                  <th scope="col" className="px-4 py-2.5 text-right font-medium">
-                    Son
-                  </th>
+                <tr className="border-b border-border-strong text-left text-muted">
+                  <Th>Banka</Th>
+                  <Th>Eğilim</Th>
+                  <Th align="right">Skor</Th>
+                  <Th align="right">Konuşma</Th>
+                  <Th align="right">Son</Th>
                 </tr>
               </thead>
               <tbody>
@@ -108,8 +107,7 @@ export default async function ScorePage() {
                   </tr>
                 ))}
               </tbody>
-            </table>
-          </div>
+          </TableFrame>
           <p className="prose-width mt-2 text-sm text-muted">
             Konuşma sütunundaki parantezli sayı, para politikası sinyali
             taşımadığı için ortalamaya girmeyen konuşmaları gösterir.
@@ -121,21 +119,18 @@ export default async function ScorePage() {
 
       {recent.length > 0 && (
         <section>
-          <h2 className="mb-3 text-lg font-semibold">Son skorlanan konuşmalar</h2>
-          <ul className="overflow-hidden rounded-lg border border-border bg-surface">
+          <SectionHeader title="Son skorlanan konuşmalar" />
+          <Rows>
             {recent.map((s) => (
-              <li
-                key={s.id}
-                className="flex flex-wrap items-baseline gap-x-3 gap-y-1 border-b border-border px-4 py-3 last:border-b-0"
-              >
+              <Row key={s.id}>
                 <BankTag code={s.bankCode} />
                 <Link href={`/konusma/${s.id}`} className="flex-1 hover:text-accent">
                   {s.speakerName} — {s.title}
                 </Link>
                 <ScoreBadge score={s.hawkDoveScore} />
-              </li>
+              </Row>
             ))}
-          </ul>
+          </Rows>
         </section>
       )}
 
@@ -165,7 +160,7 @@ function ScoreMeter({ score }: { score: number }) {
 
 function Scale() {
   return (
-    <div className="rounded-lg border border-border bg-surface p-4 text-sm">
+    <Card pad="tight" className="text-sm">
       <div className="flex items-center justify-between text-muted">
         <span className="font-medium text-dove">-10 çok güvercin</span>
         <span>0 nötr</span>
@@ -178,7 +173,7 @@ function Scale() {
         ortalamaya katılmaz — bu &quot;dengeli duruş&quot; değil &quot;sinyal
         yok&quot; demektir.
       </p>
-    </div>
+    </Card>
   );
 }
 
@@ -223,24 +218,16 @@ function Coverage({
 }) {
   return (
     <section>
-      <h2 className="mb-3 text-lg font-semibold">Kapsam</h2>
-      <p className="prose-width mb-3 text-sm text-muted">
-        Arşivde fiilen bulunan konuşmacılar. Bu bir hedef liste değil, şu ana
-        kadar toplananın dökümüdür.
-      </p>
-      <div className="overflow-x-auto rounded-lg border border-border bg-surface">
-        <table className="w-full min-w-[32rem] text-sm">
+      <SectionHeader
+        title="Kapsam"
+        description="Arşivde fiilen bulunan konuşmacılar. Bu bir hedef liste değil, şu ana kadar toplananın dökümüdür."
+      />
+      <TableFrame minWidth="32rem">
           <thead>
-            <tr className="border-b border-border text-left text-muted">
-              <th scope="col" className="px-4 py-2.5 font-medium">
-                Banka
-              </th>
-              <th scope="col" className="px-4 py-2.5 font-medium">
-                İzlenen konuşmacılar
-              </th>
-              <th scope="col" className="px-4 py-2.5 text-right font-medium">
-                Konuşma
-              </th>
+            <tr className="border-b border-border-strong text-left text-muted">
+              <Th>Banka</Th>
+              <Th>İzlenen konuşmacılar</Th>
+              <Th align="right">Konuşma</Th>
             </tr>
           </thead>
           <tbody>
@@ -256,8 +243,7 @@ function Coverage({
               </tr>
             ))}
           </tbody>
-        </table>
-      </div>
+      </TableFrame>
     </section>
   );
 }

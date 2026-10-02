@@ -50,7 +50,7 @@ export default async function CalendarPage({
       <section>
         <h2 className="mb-3 text-lg font-semibold">Yaklaşan</h2>
         {upcoming.length === 0 ? (
-          <p className="rounded-lg border border-border bg-surface p-5 text-muted">
+          <p className="card p-5 text-muted">
             Bu filtre için yaklaşan toplantı yok.
           </p>
         ) : (
@@ -61,7 +61,7 @@ export default async function CalendarPage({
       {past.length > 0 && (
         <section>
           <h2 className="mb-3 text-lg font-semibold">Son toplantılar</h2>
-          <ul className="overflow-hidden rounded-lg border border-border bg-surface opacity-80">
+          <ul className="overflow-hidden card opacity-80">
             {past.map((m) => (
               <MeetingRow key={m.id} meeting={m} now={now} />
             ))}
@@ -89,7 +89,7 @@ function MonthGroupedList({ meetings, now }: { meetings: Meeting[]; now: Date })
           <h3 className="mb-2 text-sm font-medium uppercase tracking-wide text-muted">
             {month}
           </h3>
-          <ul className="overflow-hidden rounded-lg border border-border bg-surface">
+          <ul className="overflow-hidden card">
             {rows.map((m) => (
               <MeetingRow key={m.id} meeting={m} now={now} />
             ))}
