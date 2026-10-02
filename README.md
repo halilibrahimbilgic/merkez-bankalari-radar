@@ -4,6 +4,9 @@ Fed, ECB ve TCMB faiz toplantılarını Türkiye saatiyle tek yerde toplayan Tü
 merkez bankası takip platformu. Yol haritası ve gerekçe için
 `merkez_bankalari_radar_mvp_plani.docx` belgesine bakın.
 
+Mimari, bozulmaması gereken kurallar ve sıradaki işler için
+[`ARCHITECTURE.md`](ARCHITECTURE.md).
+
 ## Durum
 
 | Modül | Kapsam | Durum |
