@@ -46,9 +46,28 @@ export function stripTags(html: string): string {
 export function decodeEntities(s: string): string {
   return s
     .replace(/&nbsp;/g, " ")
+    // RBA takvimi aralıkları "2&ndash;3 February" diye yazıyor.
+    .replace(/&ndash;/g, "–")
+    .replace(/&mdash;/g, "—")
     .replace(/&amp;/g, "&")
     .replace(/&lt;/g, "<")
     .replace(/&gt;/g, ">")
     .replace(/&quot;/g, '"')
     .replace(/&#(\d+);/g, (_, d) => String.fromCharCode(Number(d)));
+}
+
+/**
+ * Bir oran serisinde son değerin yürürlüğe girdiği gün.
+ *
+ * Güncel faizin asOf'u son gözlem günü olsaydı her gün değişir, dosyayı her
+ * gün farklılaştırıp boş commit ve gereksiz dağıtım üretirdi. "Şu tarihten
+ * beri" hem sabit hem de okuyucu için daha bilgilendirici. Seri penceresi
+ * içinde hiç değişiklik yoksa pencerenin ilk günü döner (en azından o günden
+ * beri) — pencere bu yüzden geniş tutulur.
+ */
+export function effectiveSince(obs: { date: string; value: number }[]): string | undefined {
+  if (obs.length === 0) return undefined;
+  let i = obs.length - 1;
+  while (i > 0 && obs[i - 1].value === obs[i].value) i--;
+  return obs[i].date;
 }

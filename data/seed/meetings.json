@@ -1,5 +1,5 @@
 {
-  "fetchedAt": "2026-10-03T06:29:36.363Z",
+  "fetchedAt": "2026-10-03T16:58:21.616Z",
   "meetings": [
     {
       "id": "fed-2021-01-27",
@@ -490,6 +490,15 @@
       "previousRate": 38
     },
     {
+      "id": "boj-2026-01-23",
+      "bankCode": "boj",
+      "meetingAt": "2026-01-23T03:00:00.000Z",
+      "timeTbd": true,
+      "type": "rate_decision",
+      "status": "done",
+      "sourceUrl": "https://www.boj.or.jp/en/mopo/mpmsche_minu/index.htm"
+    },
+    {
       "id": "fed-2026-01-28",
       "bankCode": "fed",
       "meetingAt": "2026-01-28T19:00:00.000Z",
@@ -499,6 +508,28 @@
       "sourceUrl": "https://www.federalreserve.gov/monetarypolicy/fomccalendars.htm",
       "decisionRate": 3.75,
       "decisionRateLower": 3.5,
+      "previousRate": 3.75
+    },
+    {
+      "id": "rba-2026-02-03",
+      "bankCode": "rba",
+      "meetingAt": "2026-02-03T03:30:00.000Z",
+      "timeTbd": false,
+      "type": "rate_decision",
+      "status": "done",
+      "sourceUrl": "https://www.rba.gov.au/schedules-events/board-meeting-schedules.html",
+      "decisionRate": 3.85,
+      "previousRate": 3.6
+    },
+    {
+      "id": "boe-2026-02-05",
+      "bankCode": "boe",
+      "meetingAt": "2026-02-05T12:00:00.000Z",
+      "timeTbd": false,
+      "type": "rate_decision",
+      "status": "done",
+      "sourceUrl": "https://www.bankofengland.co.uk/monetary-policy/upcoming-mpc-dates",
+      "decisionRate": 3.75,
       "previousRate": 3.75
     },
     {
@@ -513,6 +544,17 @@
       "previousRate": 37
     },
     {
+      "id": "rba-2026-03-17",
+      "bankCode": "rba",
+      "meetingAt": "2026-03-17T03:30:00.000Z",
+      "timeTbd": false,
+      "type": "rate_decision",
+      "status": "done",
+      "sourceUrl": "https://www.rba.gov.au/schedules-events/board-meeting-schedules.html",
+      "decisionRate": 4.1,
+      "previousRate": 3.85
+    },
+    {
       "id": "fed-2026-03-18",
       "bankCode": "fed",
       "meetingAt": "2026-03-18T18:00:00.000Z",
@@ -522,6 +564,26 @@
       "sourceUrl": "https://www.federalreserve.gov/monetarypolicy/fomccalendars.htm",
       "decisionRate": 3.75,
       "decisionRateLower": 3.5,
+      "previousRate": 3.75
+    },
+    {
+      "id": "boj-2026-03-19",
+      "bankCode": "boj",
+      "meetingAt": "2026-03-19T03:00:00.000Z",
+      "timeTbd": true,
+      "type": "rate_decision",
+      "status": "done",
+      "sourceUrl": "https://www.boj.or.jp/en/mopo/mpmsche_minu/index.htm"
+    },
+    {
+      "id": "boe-2026-03-19",
+      "bankCode": "boe",
+      "meetingAt": "2026-03-19T12:00:00.000Z",
+      "timeTbd": false,
+      "type": "rate_decision",
+      "status": "done",
+      "sourceUrl": "https://www.bankofengland.co.uk/monetary-policy/upcoming-mpc-dates",
+      "decisionRate": 3.75,
       "previousRate": 3.75
     },
     {
@@ -536,6 +598,15 @@
       "previousRate": 37
     },
     {
+      "id": "boj-2026-04-28",
+      "bankCode": "boj",
+      "meetingAt": "2026-04-28T03:00:00.000Z",
+      "timeTbd": true,
+      "type": "rate_decision",
+      "status": "done",
+      "sourceUrl": "https://www.boj.or.jp/en/mopo/mpmsche_minu/index.htm"
+    },
+    {
       "id": "fed-2026-04-29",
       "bankCode": "fed",
       "meetingAt": "2026-04-29T18:00:00.000Z",
@@ -546,6 +617,28 @@
       "decisionRate": 3.75,
       "decisionRateLower": 3.5,
       "previousRate": 3.75
+    },
+    {
+      "id": "boe-2026-04-30",
+      "bankCode": "boe",
+      "meetingAt": "2026-04-30T11:00:00.000Z",
+      "timeTbd": false,
+      "type": "rate_decision",
+      "status": "done",
+      "sourceUrl": "https://www.bankofengland.co.uk/monetary-policy/upcoming-mpc-dates",
+      "decisionRate": 3.75,
+      "previousRate": 3.75
+    },
+    {
+      "id": "rba-2026-05-05",
+      "bankCode": "rba",
+      "meetingAt": "2026-05-05T04:30:00.000Z",
+      "timeTbd": false,
+      "type": "rate_decision",
+      "status": "done",
+      "sourceUrl": "https://www.rba.gov.au/schedules-events/board-meeting-schedules.html",
+      "decisionRate": 4.35,
+      "previousRate": 4.1
     },
     {
       "id": "tcmb-2026-06-11",
@@ -559,6 +652,26 @@
       "previousRate": 37
     },
     {
+      "id": "boj-2026-06-16",
+      "bankCode": "boj",
+      "meetingAt": "2026-06-16T03:00:00.000Z",
+      "timeTbd": true,
+      "type": "rate_decision",
+      "status": "done",
+      "sourceUrl": "https://www.boj.or.jp/en/mopo/mpmsche_minu/index.htm"
+    },
+    {
+      "id": "rba-2026-06-16",
+      "bankCode": "rba",
+      "meetingAt": "2026-06-16T04:30:00.000Z",
+      "timeTbd": false,
+      "type": "rate_decision",
+      "status": "done",
+      "sourceUrl": "https://www.rba.gov.au/schedules-events/board-meeting-schedules.html",
+      "decisionRate": 4.35,
+      "previousRate": 4.35
+    },
+    {
       "id": "fed-2026-06-17",
       "bankCode": "fed",
       "meetingAt": "2026-06-17T18:00:00.000Z",
@@ -568,6 +681,17 @@
       "sourceUrl": "https://www.federalreserve.gov/monetarypolicy/fomccalendars.htm",
       "decisionRate": 3.75,
       "decisionRateLower": 3.5,
+      "previousRate": 3.75
+    },
+    {
+      "id": "boe-2026-06-18",
+      "bankCode": "boe",
+      "meetingAt": "2026-06-18T11:00:00.000Z",
+      "timeTbd": false,
+      "type": "rate_decision",
+      "status": "done",
+      "sourceUrl": "https://www.bankofengland.co.uk/monetary-policy/upcoming-mpc-dates",
+      "decisionRate": 3.75,
       "previousRate": 3.75
     },
     {
@@ -592,6 +716,37 @@
       "decisionRate": 3.75,
       "decisionRateLower": 3.5,
       "previousRate": 3.75
+    },
+    {
+      "id": "boe-2026-07-30",
+      "bankCode": "boe",
+      "meetingAt": "2026-07-30T11:00:00.000Z",
+      "timeTbd": false,
+      "type": "rate_decision",
+      "status": "done",
+      "sourceUrl": "https://www.bankofengland.co.uk/monetary-policy/upcoming-mpc-dates",
+      "decisionRate": 3.75,
+      "previousRate": 3.75
+    },
+    {
+      "id": "boj-2026-07-31",
+      "bankCode": "boj",
+      "meetingAt": "2026-07-31T03:00:00.000Z",
+      "timeTbd": true,
+      "type": "rate_decision",
+      "status": "done",
+      "sourceUrl": "https://www.boj.or.jp/en/mopo/mpmsche_minu/index.htm"
+    },
+    {
+      "id": "rba-2026-08-11",
+      "bankCode": "rba",
+      "meetingAt": "2026-08-11T04:30:00.000Z",
+      "timeTbd": false,
+      "type": "rate_decision",
+      "status": "done",
+      "sourceUrl": "https://www.rba.gov.au/schedules-events/board-meeting-schedules.html",
+      "decisionRate": 4.35,
+      "previousRate": 4.35
     },
     {
       "id": "tcmb-2026-09-10",
@@ -628,6 +783,37 @@
       "previousRate": 3.75
     },
     {
+      "id": "boe-2026-09-17",
+      "bankCode": "boe",
+      "meetingAt": "2026-09-17T11:00:00.000Z",
+      "timeTbd": false,
+      "type": "rate_decision",
+      "status": "done",
+      "sourceUrl": "https://www.bankofengland.co.uk/monetary-policy/upcoming-mpc-dates",
+      "decisionRate": 3.75,
+      "previousRate": 3.75
+    },
+    {
+      "id": "boj-2026-09-18",
+      "bankCode": "boj",
+      "meetingAt": "2026-09-18T03:00:00.000Z",
+      "timeTbd": true,
+      "type": "rate_decision",
+      "status": "done",
+      "sourceUrl": "https://www.boj.or.jp/en/mopo/mpmsche_minu/index.htm"
+    },
+    {
+      "id": "rba-2026-09-29",
+      "bankCode": "rba",
+      "meetingAt": "2026-09-29T04:30:00.000Z",
+      "timeTbd": false,
+      "type": "rate_decision",
+      "status": "done",
+      "sourceUrl": "https://www.rba.gov.au/schedules-events/board-meeting-schedules.html",
+      "decisionRate": 4.6,
+      "previousRate": 4.35
+    },
+    {
       "id": "tcmb-2026-10-22",
       "bankCode": "tcmb",
       "meetingAt": "2026-10-22T11:00:00.000Z",
@@ -655,6 +841,42 @@
       "sourceUrl": "https://www.ecb.europa.eu/press/calendars/mgcgc/html/index.en.html"
     },
     {
+      "id": "boj-2026-10-30",
+      "bankCode": "boj",
+      "meetingAt": "2026-10-30T03:00:00.000Z",
+      "timeTbd": true,
+      "type": "rate_decision",
+      "status": "scheduled",
+      "sourceUrl": "https://www.boj.or.jp/en/mopo/mpmsche_minu/index.htm"
+    },
+    {
+      "id": "rba-2026-11-03",
+      "bankCode": "rba",
+      "meetingAt": "2026-11-03T03:30:00.000Z",
+      "timeTbd": false,
+      "type": "rate_decision",
+      "status": "scheduled",
+      "sourceUrl": "https://www.rba.gov.au/schedules-events/board-meeting-schedules.html"
+    },
+    {
+      "id": "boe-2026-11-05",
+      "bankCode": "boe",
+      "meetingAt": "2026-11-05T12:00:00.000Z",
+      "timeTbd": false,
+      "type": "rate_decision",
+      "status": "scheduled",
+      "sourceUrl": "https://www.bankofengland.co.uk/monetary-policy/upcoming-mpc-dates"
+    },
+    {
+      "id": "rba-2026-12-08",
+      "bankCode": "rba",
+      "meetingAt": "2026-12-08T03:30:00.000Z",
+      "timeTbd": false,
+      "type": "rate_decision",
+      "status": "scheduled",
+      "sourceUrl": "https://www.rba.gov.au/schedules-events/board-meeting-schedules.html"
+    },
+    {
       "id": "fed-2026-12-09",
       "bankCode": "fed",
       "meetingAt": "2026-12-09T19:00:00.000Z",
@@ -673,6 +895,15 @@
       "sourceUrl": "https://www.tcmb.gov.tr/wps/wcm/connect/TR/TCMB+TR/Main+Menu/Duyurular/Takvim"
     },
     {
+      "id": "boe-2026-12-17",
+      "bankCode": "boe",
+      "meetingAt": "2026-12-17T12:00:00.000Z",
+      "timeTbd": false,
+      "type": "rate_decision",
+      "status": "scheduled",
+      "sourceUrl": "https://www.bankofengland.co.uk/monetary-policy/upcoming-mpc-dates"
+    },
+    {
       "id": "ecb-2026-12-17",
       "bankCode": "ecb",
       "meetingAt": "2026-12-17T13:15:00.000Z",
@@ -680,6 +911,15 @@
       "type": "rate_decision",
       "status": "scheduled",
       "sourceUrl": "https://www.ecb.europa.eu/press/calendars/mgcgc/html/index.en.html"
+    },
+    {
+      "id": "boj-2026-12-18",
+      "bankCode": "boj",
+      "meetingAt": "2026-12-18T03:00:00.000Z",
+      "timeTbd": true,
+      "type": "rate_decision",
+      "status": "scheduled",
+      "sourceUrl": "https://www.boj.or.jp/en/mopo/mpmsche_minu/index.htm"
     },
     {
       "id": "tcmb-2027-01-21",
@@ -691,6 +931,15 @@
       "sourceUrl": "https://www.tcmb.gov.tr/wps/wcm/connect/TR/TCMB+TR/Main+Menu/Duyurular/Takvim"
     },
     {
+      "id": "boj-2027-01-22",
+      "bankCode": "boj",
+      "meetingAt": "2027-01-22T03:00:00.000Z",
+      "timeTbd": true,
+      "type": "rate_decision",
+      "status": "scheduled",
+      "sourceUrl": "https://www.boj.or.jp/en/mopo/mpmsche_minu/index.htm"
+    },
+    {
       "id": "fed-2027-01-27",
       "bankCode": "fed",
       "meetingAt": "2027-01-27T19:00:00.000Z",
@@ -698,6 +947,15 @@
       "type": "rate_decision",
       "status": "scheduled",
       "sourceUrl": "https://www.federalreserve.gov/monetarypolicy/fomccalendars.htm"
+    },
+    {
+      "id": "boe-2027-02-04",
+      "bankCode": "boe",
+      "meetingAt": "2027-02-04T12:00:00.000Z",
+      "timeTbd": false,
+      "type": "rate_decision",
+      "status": "scheduled",
+      "sourceUrl": "https://www.bankofengland.co.uk/monetary-policy/upcoming-mpc-dates"
     },
     {
       "id": "ecb-2027-02-04",
@@ -709,6 +967,15 @@
       "sourceUrl": "https://www.ecb.europa.eu/press/calendars/mgcgc/html/index.en.html"
     },
     {
+      "id": "rba-2027-02-09",
+      "bankCode": "rba",
+      "meetingAt": "2027-02-09T03:30:00.000Z",
+      "timeTbd": false,
+      "type": "rate_decision",
+      "status": "scheduled",
+      "sourceUrl": "https://www.rba.gov.au/schedules-events/board-meeting-schedules.html"
+    },
+    {
       "id": "fed-2027-03-17",
       "bankCode": "fed",
       "meetingAt": "2027-03-17T18:00:00.000Z",
@@ -716,6 +983,15 @@
       "type": "projections",
       "status": "scheduled",
       "sourceUrl": "https://www.federalreserve.gov/monetarypolicy/fomccalendars.htm"
+    },
+    {
+      "id": "boj-2027-03-18",
+      "bankCode": "boj",
+      "meetingAt": "2027-03-18T03:00:00.000Z",
+      "timeTbd": true,
+      "type": "rate_decision",
+      "status": "scheduled",
+      "sourceUrl": "https://www.boj.or.jp/en/mopo/mpmsche_minu/index.htm"
     },
     {
       "id": "tcmb-2027-03-18",
@@ -727,6 +1003,15 @@
       "sourceUrl": "https://www.tcmb.gov.tr/wps/wcm/connect/TR/TCMB+TR/Main+Menu/Duyurular/Takvim"
     },
     {
+      "id": "boe-2027-03-18",
+      "bankCode": "boe",
+      "meetingAt": "2027-03-18T12:00:00.000Z",
+      "timeTbd": false,
+      "type": "rate_decision",
+      "status": "scheduled",
+      "sourceUrl": "https://www.bankofengland.co.uk/monetary-policy/upcoming-mpc-dates"
+    },
+    {
       "id": "ecb-2027-03-18",
       "bankCode": "ecb",
       "meetingAt": "2027-03-18T13:15:00.000Z",
@@ -734,6 +1019,15 @@
       "type": "rate_decision",
       "status": "scheduled",
       "sourceUrl": "https://www.ecb.europa.eu/press/calendars/mgcgc/html/index.en.html"
+    },
+    {
+      "id": "rba-2027-03-23",
+      "bankCode": "rba",
+      "meetingAt": "2027-03-23T03:30:00.000Z",
+      "timeTbd": false,
+      "type": "rate_decision",
+      "status": "scheduled",
+      "sourceUrl": "https://www.rba.gov.au/schedules-events/board-meeting-schedules.html"
     },
     {
       "id": "tcmb-2027-04-22",
@@ -745,6 +1039,15 @@
       "sourceUrl": "https://www.tcmb.gov.tr/wps/wcm/connect/TR/TCMB+TR/Main+Menu/Duyurular/Takvim"
     },
     {
+      "id": "boj-2027-04-28",
+      "bankCode": "boj",
+      "meetingAt": "2027-04-28T03:00:00.000Z",
+      "timeTbd": true,
+      "type": "rate_decision",
+      "status": "scheduled",
+      "sourceUrl": "https://www.boj.or.jp/en/mopo/mpmsche_minu/index.htm"
+    },
+    {
       "id": "fed-2027-04-28",
       "bankCode": "fed",
       "meetingAt": "2027-04-28T18:00:00.000Z",
@@ -754,6 +1057,15 @@
       "sourceUrl": "https://www.federalreserve.gov/monetarypolicy/fomccalendars.htm"
     },
     {
+      "id": "boe-2027-04-29",
+      "bankCode": "boe",
+      "meetingAt": "2027-04-29T11:00:00.000Z",
+      "timeTbd": false,
+      "type": "rate_decision",
+      "status": "scheduled",
+      "sourceUrl": "https://www.bankofengland.co.uk/monetary-policy/upcoming-mpc-dates"
+    },
+    {
       "id": "ecb-2027-04-29",
       "bankCode": "ecb",
       "meetingAt": "2027-04-29T12:15:00.000Z",
@@ -761,6 +1073,15 @@
       "type": "rate_decision",
       "status": "scheduled",
       "sourceUrl": "https://www.ecb.europa.eu/press/calendars/mgcgc/html/index.en.html"
+    },
+    {
+      "id": "rba-2027-05-04",
+      "bankCode": "rba",
+      "meetingAt": "2027-05-04T04:30:00.000Z",
+      "timeTbd": false,
+      "type": "rate_decision",
+      "status": "scheduled",
+      "sourceUrl": "https://www.rba.gov.au/schedules-events/board-meeting-schedules.html"
     },
     {
       "id": "fed-2027-06-09",
@@ -790,6 +1111,42 @@
       "sourceUrl": "https://www.ecb.europa.eu/press/calendars/mgcgc/html/index.en.html"
     },
     {
+      "id": "boj-2027-06-11",
+      "bankCode": "boj",
+      "meetingAt": "2027-06-11T03:00:00.000Z",
+      "timeTbd": true,
+      "type": "rate_decision",
+      "status": "scheduled",
+      "sourceUrl": "https://www.boj.or.jp/en/mopo/mpmsche_minu/index.htm"
+    },
+    {
+      "id": "boe-2027-06-17",
+      "bankCode": "boe",
+      "meetingAt": "2027-06-17T11:00:00.000Z",
+      "timeTbd": false,
+      "type": "rate_decision",
+      "status": "scheduled",
+      "sourceUrl": "https://www.bankofengland.co.uk/monetary-policy/upcoming-mpc-dates"
+    },
+    {
+      "id": "rba-2027-06-22",
+      "bankCode": "rba",
+      "meetingAt": "2027-06-22T04:30:00.000Z",
+      "timeTbd": false,
+      "type": "rate_decision",
+      "status": "scheduled",
+      "sourceUrl": "https://www.rba.gov.au/schedules-events/board-meeting-schedules.html"
+    },
+    {
+      "id": "boj-2027-07-22",
+      "bankCode": "boj",
+      "meetingAt": "2027-07-22T03:00:00.000Z",
+      "timeTbd": true,
+      "type": "rate_decision",
+      "status": "scheduled",
+      "sourceUrl": "https://www.boj.or.jp/en/mopo/mpmsche_minu/index.htm"
+    },
+    {
       "id": "ecb-2027-07-22",
       "bankCode": "ecb",
       "meetingAt": "2027-07-22T12:15:00.000Z",
@@ -806,6 +1163,24 @@
       "type": "rate_decision",
       "status": "scheduled",
       "sourceUrl": "https://www.federalreserve.gov/monetarypolicy/fomccalendars.htm"
+    },
+    {
+      "id": "boe-2027-07-29",
+      "bankCode": "boe",
+      "meetingAt": "2027-07-29T11:00:00.000Z",
+      "timeTbd": false,
+      "type": "rate_decision",
+      "status": "scheduled",
+      "sourceUrl": "https://www.bankofengland.co.uk/monetary-policy/upcoming-mpc-dates"
+    },
+    {
+      "id": "rba-2027-08-10",
+      "bankCode": "rba",
+      "meetingAt": "2027-08-10T04:30:00.000Z",
+      "timeTbd": false,
+      "type": "rate_decision",
+      "status": "scheduled",
+      "sourceUrl": "https://www.rba.gov.au/schedules-events/board-meeting-schedules.html"
     },
     {
       "id": "ecb-2027-09-09",
@@ -826,6 +1201,33 @@
       "sourceUrl": "https://www.federalreserve.gov/monetarypolicy/fomccalendars.htm"
     },
     {
+      "id": "boe-2027-09-16",
+      "bankCode": "boe",
+      "meetingAt": "2027-09-16T11:00:00.000Z",
+      "timeTbd": false,
+      "type": "rate_decision",
+      "status": "scheduled",
+      "sourceUrl": "https://www.bankofengland.co.uk/monetary-policy/upcoming-mpc-dates"
+    },
+    {
+      "id": "boj-2027-09-22",
+      "bankCode": "boj",
+      "meetingAt": "2027-09-22T03:00:00.000Z",
+      "timeTbd": true,
+      "type": "rate_decision",
+      "status": "scheduled",
+      "sourceUrl": "https://www.boj.or.jp/en/mopo/mpmsche_minu/index.htm"
+    },
+    {
+      "id": "rba-2027-09-28",
+      "bankCode": "rba",
+      "meetingAt": "2027-09-28T04:30:00.000Z",
+      "timeTbd": false,
+      "type": "rate_decision",
+      "status": "scheduled",
+      "sourceUrl": "https://www.rba.gov.au/schedules-events/board-meeting-schedules.html"
+    },
+    {
       "id": "fed-2027-10-27",
       "bankCode": "fed",
       "meetingAt": "2027-10-27T18:00:00.000Z",
@@ -844,6 +1246,33 @@
       "sourceUrl": "https://www.ecb.europa.eu/press/calendars/mgcgc/html/index.en.html"
     },
     {
+      "id": "boj-2027-10-29",
+      "bankCode": "boj",
+      "meetingAt": "2027-10-29T03:00:00.000Z",
+      "timeTbd": true,
+      "type": "rate_decision",
+      "status": "scheduled",
+      "sourceUrl": "https://www.boj.or.jp/en/mopo/mpmsche_minu/index.htm"
+    },
+    {
+      "id": "rba-2027-11-02",
+      "bankCode": "rba",
+      "meetingAt": "2027-11-02T03:30:00.000Z",
+      "timeTbd": false,
+      "type": "rate_decision",
+      "status": "scheduled",
+      "sourceUrl": "https://www.rba.gov.au/schedules-events/board-meeting-schedules.html"
+    },
+    {
+      "id": "boe-2027-11-04",
+      "bankCode": "boe",
+      "meetingAt": "2027-11-04T12:00:00.000Z",
+      "timeTbd": false,
+      "type": "rate_decision",
+      "status": "scheduled",
+      "sourceUrl": "https://www.bankofengland.co.uk/monetary-policy/upcoming-mpc-dates"
+    },
+    {
       "id": "fed-2027-12-08",
       "bankCode": "fed",
       "meetingAt": "2027-12-08T19:00:00.000Z",
@@ -853,6 +1282,24 @@
       "sourceUrl": "https://www.federalreserve.gov/monetarypolicy/fomccalendars.htm"
     },
     {
+      "id": "rba-2027-12-14",
+      "bankCode": "rba",
+      "meetingAt": "2027-12-14T03:30:00.000Z",
+      "timeTbd": false,
+      "type": "rate_decision",
+      "status": "scheduled",
+      "sourceUrl": "https://www.rba.gov.au/schedules-events/board-meeting-schedules.html"
+    },
+    {
+      "id": "boe-2027-12-16",
+      "bankCode": "boe",
+      "meetingAt": "2027-12-16T12:00:00.000Z",
+      "timeTbd": false,
+      "type": "rate_decision",
+      "status": "scheduled",
+      "sourceUrl": "https://www.bankofengland.co.uk/monetary-policy/upcoming-mpc-dates"
+    },
+    {
       "id": "ecb-2027-12-16",
       "bankCode": "ecb",
       "meetingAt": "2027-12-16T13:15:00.000Z",
@@ -860,6 +1307,15 @@
       "type": "rate_decision",
       "status": "scheduled",
       "sourceUrl": "https://www.ecb.europa.eu/press/calendars/mgcgc/html/index.en.html"
+    },
+    {
+      "id": "boj-2027-12-17",
+      "bankCode": "boj",
+      "meetingAt": "2027-12-17T03:00:00.000Z",
+      "timeTbd": true,
+      "type": "rate_decision",
+      "status": "scheduled",
+      "sourceUrl": "https://www.boj.or.jp/en/mopo/mpmsche_minu/index.htm"
     },
     {
       "id": "ecb-2028-02-03",

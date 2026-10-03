@@ -40,31 +40,65 @@ function buildIcs(meetings: Meeting[]): string {
   for (const m of meetings) {
     const bank = BANKS[m.bankCode];
     const start = new Date(m.meetingAt);
-    // Faiz kararı anlıktır; takvimde 1 saatlik blok olarak gösterilir.
-    const end = new Date(start.getTime() + 3600_000);
 
     lines.push(
       "BEGIN:VEVENT",
       `UID:${m.id}@merkezbankalariradar`,
       `DTSTAMP:${icsTime(new Date())}`,
-      `DTSTART:${icsTime(start)}`,
-      `DTEND:${icsTime(end)}`,
+      ...(m.timeTbd ? allDay(m.meetingAt, bank.timezone) : timed(start)),
       `SUMMARY:${escapeIcs(`${bank.nameTr} faiz kararı`)}`,
       `DESCRIPTION:${escapeIcs(
         `${bank.nameEn} — ${bank.rateNameTr}.` +
+          (m.timeTbd ? " Açıklama saati önceden duyurulmuyor." : "") +
           (m.sourceUrl ? ` Kaynak: ${m.sourceUrl}` : ""),
       )}`,
-      "BEGIN:VALARM",
-      "TRIGGER:-PT1H",
-      "ACTION:DISPLAY",
-      `DESCRIPTION:${escapeIcs(`${bank.nameTr} kararına 1 saat kaldı`)}`,
-      "END:VALARM",
+      // Bir gün önce: hazırlık için. Tüm gün etkinliğinde başlangıç yerel gece
+      // yarısıdır; -P1D bir önceki günün başına düşer.
+      ...alarm("-P1D", `${bank.nameTr} faiz kararı yarın`),
+      // Saat belliyse bir saat önce de. Saat belirsizse (BoJ) bu alarm
+      // gece yarısına göre çalacağından anlamsız olurdu.
+      ...(m.timeTbd ? [] : alarm("-PT1H", `${bank.nameTr} kararına 1 saat kaldı`)),
       "END:VEVENT",
     );
   }
 
   lines.push("END:VCALENDAR");
   return lines.map(foldLine).join("\r\n") + "\r\n";
+}
+
+/** Faiz kararı anlıktır; takvimde 1 saatlik blok olarak gösterilir. */
+function timed(start: Date): string[] {
+  const end = new Date(start.getTime() + 3600_000);
+  return [`DTSTART:${icsTime(start)}`, `DTEND:${icsTime(end)}`];
+}
+
+/**
+ * Saat belli değilse (BoJ) tüm gün etkinliği: meetingAt'teki saat yer
+ * tutucudur ve takvimde kesin bir saat bloğu sahte kesinlik olurdu. Gün,
+ * bankanın kendi saat diliminde alınır (Tokyo'da 18 Eylül, TRT'de de öyle).
+ */
+function allDay(iso: string, timeZone: string): string[] {
+  const day = new Intl.DateTimeFormat("en-CA", {
+    timeZone,
+    year: "numeric",
+    month: "2-digit",
+    day: "2-digit",
+  }).format(new Date(iso));
+  const next = new Date(Date.parse(`${day}T00:00:00Z`) + 86_400_000).toISOString().slice(0, 10);
+  return [
+    `DTSTART;VALUE=DATE:${day.replace(/-/g, "")}`,
+    `DTEND;VALUE=DATE:${next.replace(/-/g, "")}`,
+  ];
+}
+
+function alarm(trigger: string, text: string): string[] {
+  return [
+    "BEGIN:VALARM",
+    `TRIGGER:${trigger}`,
+    "ACTION:DISPLAY",
+    `DESCRIPTION:${escapeIcs(text)}`,
+    "END:VALARM",
+  ];
 }
 
 function icsTime(d: Date): string {

@@ -1,4 +1,5 @@
 import type { Metadata } from "next";
+import { SITE_URL } from "@/lib/site";
 import { MeetingRow } from "@/components/MeetingRow";
 import { BankFilter } from "@/components/BankFilter";
 import { isBankCode } from "@/lib/banks";
@@ -15,7 +16,7 @@ export const revalidate = 3600;
 export const metadata: Metadata = {
   title: "Toplantı takvimi",
   description:
-    "Fed, ECB ve TCMB faiz toplantılarının tam takvimi — Türkiye saatiyle, geri sayımlı, takvime eklenebilir.",
+    "Fed, ECB, TCMB, BoE, BoJ ve RBA faiz toplantılarının tam takvimi — Türkiye saatiyle, geri sayımlı, takvime eklenebilir.",
 };
 
 export default async function CalendarPage({
@@ -32,18 +33,39 @@ export default async function CalendarPage({
   const availableCodes = await getBankCodesWithMeetings(now);
 
   const icalHref = bankCode ? `/takvim/takvim.ics?banka=${bankCode}` : "/takvim/takvim.ics";
+  // Abonelik, indirilen dosyadan farklı olarak takvim uygulamasınca düzenli
+  // yenilenir: ertelenen ya da yeni eklenen toplantılar kendiliğinden düşer.
+  const webcalHref = `${SITE_URL.replace(/^https?:/, "webcal:")}${icalHref}`;
 
   return (
     <div className="space-y-8">
       <div className="flex flex-wrap items-baseline justify-between gap-3">
         <h1 className="text-2xl font-semibold tracking-tight">Toplantı takvimi</h1>
-        <a
-          href={icalHref}
-          className="rounded border border-border px-3 py-1.5 text-sm text-accent hover:border-accent"
-        >
-          Takvime ekle (.ics)
-        </a>
+        <div className="flex flex-wrap gap-2">
+          <a
+            href={webcalHref}
+            className="rounded border border-border px-3 py-1.5 text-sm text-accent hover:border-accent"
+          >
+            Takvime abone ol
+          </a>
+          <a
+            href={icalHref}
+            className="rounded border border-border px-3 py-1.5 text-sm text-muted hover:border-accent hover:text-accent"
+          >
+            .ics indir
+          </a>
+          <a
+            href="/rss.xml"
+            className="rounded border border-border px-3 py-1.5 text-sm text-muted hover:border-accent hover:text-accent"
+          >
+            RSS
+          </a>
+        </div>
       </div>
+      <p className="-mt-5 text-sm text-muted">
+        Takvim aboneliği her kararı bir gün ve bir saat önce hatırlatır;
+        RSS akışı karardan bir hafta önce ve karar açıklanınca öğe yayımlar.
+      </p>
 
       <BankFilter basePath="/takvim" active={bankCode} availableCodes={availableCodes} />
 

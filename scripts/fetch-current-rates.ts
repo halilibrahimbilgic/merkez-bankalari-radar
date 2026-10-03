@@ -5,14 +5,25 @@
  *
  * Fed bir aralık ilan eder (FRED: DFEDTARL/DFEDTARU), ECB tek oran
  * (SDMX: mevduat kolaylığı), TCMB tek oran (EVDS: 1 hafta repo;
- * EVDS_API_KEY gerekir, yoksa atlanır).
+ * EVDS_API_KEY gerekir, yoksa atlanır), BoE (takvim sayfası), RBA (F1 CSV).
+ *
+ * asOf, oranın yürürlüğe girdiği gündür (effectiveSince) — son gözlem günü
+ * değil; aksi hâlde dosya her gün değişirdi.
  */
 import { readFile, writeFile, mkdir } from "node:fs/promises";
 import path from "node:path";
 import { config } from "dotenv";
 import { fetchSeries, SERIES } from "../src/lib/sources/fred";
 import { fetchEcbRates } from "../src/lib/sources/ecb-rates";
+import {
+  BOE_URL,
+  fetchBoePage,
+  parseBoeCalendar,
+  parseBoeCurrentRate,
+} from "../src/lib/sources/boe";
 import { fetchEvdsSeries, TCMB_POLICY_RATE, TCMB_RATES_PAGE_URL } from "../src/lib/sources/evds";
+import { fetchRbaCashRate, RBA_RATE_PAGE_URL } from "../src/lib/sources/rba";
+import { effectiveSince } from "../src/lib/sources/shared";
 import type { BankCode } from "../src/lib/types";
 
 config({ path: ".env.local", quiet: true });
@@ -41,7 +52,8 @@ async function loadPrevious(): Promise<CurrentRate[]> {
 async function main() {
   const rates: CurrentRate[] = [];
   const failed: BankCode[] = [];
-  const since = new Date(Date.now() - 400 * 86_400_000).toISOString().slice(0, 10);
+  // Geniş pencere: effectiveSince son değişikliği bu pencerede arar.
+  const since = new Date(Date.now() - 6 * 365 * 86_400_000).toISOString().slice(0, 10);
 
   try {
     const [upper, lower] = await Promise.all([
@@ -55,7 +67,7 @@ async function main() {
         bankCode: "fed",
         rate: u.value,
         rateLower: l.value,
-        asOf: u.date,
+        asOf: effectiveSince(upper) ?? u.date,
         sourceUrl: "https://fred.stlouisfed.org/series/DFEDTARU",
       });
       console.log(`✓  Fed: %${l.value}-${u.value} (${u.date})`);
@@ -72,7 +84,7 @@ async function main() {
       rates.push({
         bankCode: "ecb",
         rate: last.value,
-        asOf: last.date,
+        asOf: effectiveSince(obs) ?? last.date,
         sourceUrl:
           "https://www.ecb.europa.eu/stats/policy_and_exchange_rates/key_ecb_interest_rates/html/index.en.html",
       });
@@ -83,17 +95,41 @@ async function main() {
     failed.push("ecb");
   }
 
+  // BoE takvim sayfasındaki "Current Bank Rate" kutusu. Kutu tarih vermiyor;
+  // oran son karardan beri geçerli olduğu için asOf o kararın günüdür.
+  // Çekim günü yazmak dosyayı her gün değiştirip boş commit üretirdi.
+  try {
+    const html = await fetchBoePage();
+    const rate = parseBoeCurrentRate(html);
+    if (rate === undefined) throw new Error("Current Bank Rate kutusu bulunamadı");
+    const lastDecision = parseBoeCalendar(html)
+      .map((m) => m.meetingAt)
+      .filter((at) => new Date(at) < new Date())
+      .at(-1);
+    rates.push({
+      bankCode: "boe",
+      rate,
+      asOf: (lastDecision ?? new Date().toISOString()).slice(0, 10),
+      sourceUrl: BOE_URL,
+    });
+    console.log(`✓  BoE: %${rate}`);
+  } catch (err) {
+    console.error(`✗  BoE: ${(err as Error).message}`);
+    failed.push("boe");
+  }
+
   const evdsKey = process.env.EVDS_API_KEY;
   if (!evdsKey) {
     console.warn("⚠  EVDS_API_KEY tanımlı değil, TCMB atlandı.");
   } else {
     try {
-      const last = (await fetchEvdsSeries(TCMB_POLICY_RATE, since, evdsKey)).at(-1);
+      const obs = await fetchEvdsSeries(TCMB_POLICY_RATE, since, evdsKey);
+      const last = obs.at(-1);
       if (last) {
         rates.push({
           bankCode: "tcmb",
           rate: last.value,
-          asOf: last.date,
+          asOf: effectiveSince(obs) ?? last.date,
           sourceUrl: TCMB_RATES_PAGE_URL,
         });
         console.log(`✓  TCMB: %${last.value} (${last.date})`);
@@ -104,8 +140,25 @@ async function main() {
     }
   }
 
+  try {
+    const obs = await fetchRbaCashRate();
+    const last = obs.at(-1);
+    if (last) {
+      rates.push({
+        bankCode: "rba",
+        rate: last.value,
+        asOf: effectiveSince(obs) ?? last.date,
+        sourceUrl: RBA_RATE_PAGE_URL,
+      });
+      console.log(`✓  RBA: %${last.value} (${effectiveSince(obs)} itibarıyla)`);
+    }
+  } catch (err) {
+    console.error(`✗  RBA: ${(err as Error).message}`);
+    failed.push("rba");
+  }
+
   // Geçici bir kaynak hatası (ECB SDW 504 verdi) bankanın faizini siteden
-  // siliyordu. Önceki kayıt korunur; asOf tarihi bayatlığı zaten gösterir.
+  // siliyordu. Önceki kayıt korunur; hata cron'da kırmızı görünür.
   for (const prev of await loadPrevious()) {
     if (failed.includes(prev.bankCode)) {
       rates.push(prev);

@@ -8,12 +8,12 @@ olduğu**, bozulmaması gereken kurallar ve sıradaki işler var.
 
 ## 1. Projenin özeti
 
-Fed, ECB ve TCMB faiz kararlarını Türkçe ve Türkiye saatiyle takip eden bir
-site. Üç modül:
+Fed, ECB, TCMB, BoE, BoJ ve RBA faiz kararlarını Türkçe ve Türkiye saatiyle
+takip eden bir site. Üç modül:
 
 | Modül | Ne yapar | Veri otomatik mi |
 | --- | --- | --- |
-| A — Takvim | Toplantı tarihleri, TRT geri sayımı, geçmiş kararlar, iCal | ✅ tam otomatik |
+| A — Takvim | Toplantı tarihleri, TRT geri sayımı, geçmiş kararlar, iCal + RSS hatırlatma | ✅ tam otomatik |
 | B — Faiz olasılığı | Piyasanın fiyatladığı faiz dağılımı (Atlanta Fed MPT) | ✅ tam otomatik |
 | C — Şahin/güvercin | Merkez bankacısı konuşmaları + Türkçe özet ve skor | ✅ metin ve skor otomatik (Claude aboneliği; §5) |
 
@@ -28,11 +28,13 @@ amaçlıdır (bkz. §6).
   resmî kaynaklar            scripts/              data/seed/*.json
   ─────────────────          ────────              ────────────────
   federalreserve.gov  ─┐
-  ecb.europa.eu        ├──► fetch:meetings  ──────► meetings.json
-  tcmb.gov.tr         ─┘                              ▲
-                                                      │ (oranları doldurur,
-  FRED + ECB SDMX + EVDS ─► fetch:rates ──────────────┘  üzerine YAZMAZ)
-  FRED + ECB SDMX + EVDS ─► fetch:current-rates ───► current-rates.json
+  ecb.europa.eu        │
+  tcmb.gov.tr          ├──► fetch:meetings  ──────► meetings.json
+  bankofengland.co.uk  │                              ▲
+  boj.or.jp            │                              │ (oranları doldurur,
+  rba.gov.au          ─┘                              │  üzerine YAZMAZ)
+  FRED · ECB SDMX · EVDS · BoE xlsx · RBA F1 ─► fetch:rates
+  aynıları ────────────────► fetch:current-rates ───► current-rates.json
   atlantafed.org (.xlsx) ─► fetch:probabilities ──► probabilities.json
   bis.org (RSS + HTML) ───► fetch:speeches ───────► speeches.json
                                                       ▲
@@ -112,6 +114,19 @@ Sıfırdan yazmak 45 toplantının karar oranını siliyordu.
 **`fetch:current-rates` da birleştirir.** Bir bankanın kaynağı hata verirse
 önceki kaydı korunur ve adım yine hata koduyla biter. İlk cron koşusunda ECB
 SDW'nin geçici 504'ü ECB faizini siteden silmişti.
+
+**Güncel faizin `asOf`'u "şu tarihten beri"dir, son gözlem günü değil**
+(`effectiveSince`). Son gözlem günü her gün değişip `current-rates.json`'u
+her gün farklılaştırıyor, cron'un boş-commit korumasını delip her gün dağıtım
+tetikliyordu.
+
+**Kaynaklara dürüst user-agent ile gidilir, tarayıcı taklit edilmez.**
+rba.gov.au'nun Akamai'si curl'ün Chrome taklidine 403 veriyor ama projenin
+kendi UA'sını (`shared.ts`) geçiriyor. Taklit hem kırılgan hem yanlış.
+
+**Saati duyurulmayan karar (BoJ) `timeTbd`'dir ve hiçbir yerde saat gibi
+sunulmaz.** `meetingAt`'teki saat yalnızca sıralama için yer tutucudur:
+kartta ve listede gün düzeyinde etiket, iCal'de tüm gün etkinliği.
 
 **Geçmiş toplantılar kaynaktan düşse de arşivde kalır.** Bankalar takvim
 sayfalarını ileriye kaydırır; ECB'nin 10 Eylül 2026 toplantısı bu yüzden bir
@@ -219,11 +234,13 @@ Hiçbir sayfa yatırım tavsiyesi vermez; altbilgideki uyarı kaldırılmamalı.
 ## 7. Mevcut durum (3 Ekim 2026)
 
 ```
-Toplantı     87  (Fed 56, ECB 19, TCMB 12)  — 52'sinde karar oranı var (Fed 45, TCMB 6, ECB 1)
+Toplantı     135 (Fed 56, ECB 19, TCMB 12, BoE 16, BoJ 16, RBA 16)
+             — 64'ünde karar oranı var (Fed 45, TCMB 6, BoE 6, RBA 6, ECB 1)
 Konuşma      30  (Fed 13, ECB 9, RBA 3, BoE 3, BoJ 2) — 30'u skorlu, 17'si sinyalsiz
 Olasılık     2026-10-01 anlığı, 13 pencere
-Güncel faiz  Fed, ECB, TCMB
-Sayfa        48 (build çıktısı), ISR 1 saat
+Güncel faiz  Fed, ECB, TCMB, BoE, RBA (BoJ yok)
+Hatırlatma   /rss.xml (1 hafta önce + karar), iCal aboneliği (1 gün + 1 saat önce)
+Sayfa        49 (build çıktısı), ISR 1 saat
 ```
 
 ---
@@ -236,7 +253,9 @@ Sayfa        48 (build çıktısı), ISR 1 saat
    alabiliyor (Waller 16.09: yerelde +4, CI'da +5). Banka ortalamalarında
    bu gürültü küçük örneklemde hissedilir; bir kayıt bir kez skorlandıktan
    sonra yeniden skorlanmaz, bu yüzden puanlar zamanla kaymaz.
-2. **TCMB ve ECB arşivi 2026'dan başlıyor.** Karar oranları artık üç banka
+2. **Fed dışındaki bankaların arşivi 2026'dan başlıyor.** (BoE oylama
+   geçmişi ve RBA F1 tablosu 1997/2011'e uzanıyor ama takvim sayfaları
+   yalnızca bu yılı ve geleceği verdiği için eşlenecek toplantı yok.) Karar oranları artık üç banka
    için de dolduruluyor (TCMB: EVDS `TP.PY.P02.1H`; ECB'de 3 Ekim'e kadar
    "0 ECB" çıkmasının sebebi takvim değil, serinin toplantı gününden
    başlatılıp "önceki oran"ın bulunamamasıydı). Ancak iki bankanın takvim
@@ -251,18 +270,23 @@ Sayfa        48 (build çıktısı), ISR 1 saat
 4. **MPT bantları %100'e tamamlanmıyor** — Atlanta Fed uçtaki küçük bantları
    ayrı yayımlamıyor (toplam ~%96–99). `/faiz-olasiligi` eksik payı açıkça
    yazıyor; yön olasılıkları (`Prob: cut/hike`) bu payı içeriyor.
-5. **BoE, BoJ, RBA takvimi yok** — arayüzde "yakında" olarak pasif duruyor
-   (`src/components/ComingSoon.tsx`). Ayrıştırıcı yazılmadı.
+5. **BoJ'nin faizi yok.** Takvim geliyor ama güncel faiz ve geçmiş karar
+   oranları için doğrulanmış bir kaynak bağlanmadı (BoJ istatistik API'si
+   aday). Kart "—" gösteriyor.
+6. **E-posta bildirimi yok — bilinçli.** Gönderim servisi ve abone e-posta
+   adresi saklamak (KVKK, açık rıza, abonelikten çıkma) ürün kararı
+   gerektiriyor. Şimdilik RSS (e-posta köprülerine bağlanabilir) ve iCal
+   aboneliği var; site kişisel veri toplamıyor.
 
 ---
 
 ## 9. Yol haritası
 
 **Orta vade — kapsamı genişlet**
-- BoE, BoJ, RBA takvim ayrıştırıcıları (`src/lib/sources/` deseni hazır)
+- BoJ faizi (istatistik API'si)
 - Skor zaman serisi: "bir ay önce +6 olan komite bugün +4" — yön seviyeden
   daha çok şey söyler. Veritabanı şeması geçmiş anlıkları zaten destekliyor.
-- E-posta/RSS bildirimi: toplantı öncesi hatırlatma
+- E-posta bildirimi (§8.6'daki kararlardan sonra)
 
 **Uzun vade — ürünleşme**
 - Konuşmacı bazında eğilim sayfası (oy hakkı/kıdem ağırlıklandırması ile —

@@ -58,6 +58,10 @@ export function MeetingRow({ meeting, now }: { meeting: Meeting; now: Date }) {
               ? `${formatRate(meeting)}${rateDelta(meeting)}`
               : countdownLabelTr(meeting.meetingAt, now)}
           </span>
+        ) : meeting.timeTbd ? (
+          // Saat belli değilse (BoJ) meetingAt'teki saat yer tutucudur;
+          // saat/dakika hassasiyetinde geri sayım sahte kesinlik olurdu.
+          <span className="tabular">{countdownLabelTr(meeting.meetingAt, now)}</span>
         ) : (
           <Countdown
             meetingAt={meeting.meetingAt}

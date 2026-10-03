@@ -1,7 +1,12 @@
 import Link from "next/link";
 import { BANKS, bankColorVar } from "@/lib/banks";
 import type { BankCode, Meeting } from "@/lib/types";
-import { computeCountdownParts, formatDateTr, formatTimeTrt } from "@/lib/time";
+import {
+  computeCountdownParts,
+  countdownLabelTr,
+  formatDateTr,
+  formatTimeTrt,
+} from "@/lib/time";
 import { formatCurrentRate, type CurrentRate } from "@/lib/data/rates";
 import type { BankScoreSummary } from "@/lib/data/speeches";
 import { LiveCountdown } from "./LiveCountdown";
@@ -56,10 +61,17 @@ export function BankCard({
             {!nextMeeting.timeTbd && ` · ${formatTimeTrt(nextMeeting.meetingAt)} TRT`}
           </div>
           <div className="mt-2">
-            <LiveCountdown
-              meetingAt={nextMeeting.meetingAt}
-              initial={computeCountdownParts(nextMeeting.meetingAt)}
-            />
+            {nextMeeting.timeTbd ? (
+              // Saat yer tutucu (BoJ): gün düzeyinden ince geri sayım yanıltır.
+              <span className="text-sm text-muted">
+                {countdownLabelTr(nextMeeting.meetingAt)} · saat açıklanmadı
+              </span>
+            ) : (
+              <LiveCountdown
+                meetingAt={nextMeeting.meetingAt}
+                initial={computeCountdownParts(nextMeeting.meetingAt)}
+              />
+            )}
           </div>
         </div>
       ) : (

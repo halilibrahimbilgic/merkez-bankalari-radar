@@ -1,4 +1,4 @@
-import { unzipSync } from "fflate";
+import { excelSerialToDate, openWorkbook, readCells } from "./xlsx";
 
 /**
  * Atlanta Fed "Market Probability Tracker" veri dosyası okuyucusu.
@@ -105,17 +105,8 @@ export async function fetchMptWorkbook(): Promise<Uint8Array> {
 
 /** En güncel gözlem gününe ait tüm pencereleri çıkarır. */
 export function parseLatestSnapshot(xlsx: Uint8Array): ProbabilitySnapshot {
-  const files = unzipSync(xlsx);
-  const dec = new TextDecoder("utf-8");
-
-  const strings = parseSharedStrings(dec.decode(files["xl/sharedStrings.xml"]));
-  const sheetPath = findDataSheetPath(
-    dec.decode(files["xl/workbook.xml"]),
-    dec.decode(files["xl/_rels/workbook.xml.rels"]),
-  );
-  const sheet = dec.decode(files[sheetPath]);
-
-  const rows = readRows(sheet, strings);
+  const wb = openWorkbook(xlsx);
+  const rows = readRows(wb.sheet("DATA"), wb.strings);
 
   let asOf = "";
   for (const r of rows) if (r[0] > asOf) asOf = r[0];
@@ -169,53 +160,12 @@ function parseRange(text: string): { lowerBps: number; upperBps: number } | null
   return m ? { lowerBps: Number(m[1]), upperBps: Number(m[2]) } : null;
 }
 
-/** Excel seri numarası → ISO tarih. Excel'in 1900 artık yıl hatası nedeniyle taban 1899-12-30. */
-function excelSerialToDate(serial: string): string {
-  const days = Math.round(Number(serial));
-  if (!Number.isFinite(days)) return serial;
-  return new Date(Date.UTC(1899, 11, 30) + days * 86_400_000)
-    .toISOString()
-    .slice(0, 10);
-}
-
-function parseSharedStrings(xml: string): string[] {
-  const out: string[] = [];
-  for (const m of xml.matchAll(/<si>([\s\S]*?)<\/si>/g)) {
-    // Bir <si> birden çok <t> parçasına bölünmüş olabilir.
-    let text = "";
-    for (const t of m[1].matchAll(/<t[^>]*>([\s\S]*?)<\/t>/g)) text += t[1];
-    out.push(decodeXml(text));
-  }
-  return out;
-}
-
-function findDataSheetPath(workbookXml: string, relsXml: string): string {
-  const sheet = workbookXml.match(/<sheet name="DATA"[^>]*r:id="([^"]+)"/);
-  if (!sheet) throw new Error("MPT: DATA sayfası bulunamadı");
-  const target = relsXml.match(
-    new RegExp(`Id="${sheet[1]}"[^>]*Target="([^"]+)"`),
-  );
-  if (!target) throw new Error("MPT: DATA sayfasının yolu çözülemedi");
-  return "xl/" + target[1].replace(/^\/?(xl\/)?/, "");
-}
-
 /** Her satırı [date, reference_start, target_range, field, value] olarak döndürür. */
 function readRows(sheetXml: string, strings: string[]): string[][] {
   const rows: string[][] = [];
 
-  for (const row of sheetXml.matchAll(/<row[^>]*>([\s\S]*?)<\/row>/g)) {
-    const cells: string[] = [];
-    for (const c of row[1].matchAll(/<c([^>]*)>([\s\S]*?)<\/c>/g)) {
-      const attrs = c[1];
-      const v = c[2].match(/<v>([\s\S]*?)<\/v>/);
-      if (!v) {
-        cells.push("");
-        continue;
-      }
-      cells.push(
-        /\bt="s"/.test(attrs) ? (strings[Number(v[1])] ?? "") : decodeXml(v[1]),
-      );
-    }
+  for (const r of readCells(sheetXml, strings)) {
+    const cells = ["A", "B", "C", "D", "E"].map((col) => r[col] ?? "");
     // Başlık satırını ve eksik satırları ele
     if (cells.length >= 5 && /^\d{4}-\d{2}-\d{2}$/.test(cells[0])) {
       rows.push(cells);
@@ -223,14 +173,4 @@ function readRows(sheetXml: string, strings: string[]): string[][] {
   }
 
   return rows;
-}
-
-function decodeXml(s: string): string {
-  return s
-    .replace(/&lt;/g, "<")
-    .replace(/&gt;/g, ">")
-    .replace(/&quot;/g, '"')
-    .replace(/&apos;/g, "'")
-    .replace(/&amp;/g, "&")
-    .trim();
 }

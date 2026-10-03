@@ -67,8 +67,8 @@ export const BANKS: Record<BankCode, CentralBank> = {
   },
 };
 
-/** MVP'de canlı olan bankalar (plan: Faz 1 → Fed, ECB, TCMB). */
-export const MVP_BANK_CODES: BankCode[] = ["fed", "ecb", "tcmb"];
+/** Takvimi canlı olan bankalar — ana sayfa kartları. */
+export const CALENDAR_BANK_CODES: BankCode[] = ["fed", "ecb", "tcmb", "boe", "boj", "rba"];
 
 export const ALL_BANKS: CentralBank[] = Object.values(BANKS).sort(
   (a, b) => a.sortOrder - b.sortOrder,

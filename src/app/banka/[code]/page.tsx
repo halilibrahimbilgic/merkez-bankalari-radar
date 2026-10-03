@@ -96,7 +96,7 @@ export default async function BankPage({ params }: PageProps<"/banka/[code]">) {
         </section>
       ) : (
         <p className="card p-5 text-muted">
-          Bu banka için henüz takvim verisi yok. MVP&apos;de Fed, ECB ve TCMB canlıdır.
+          Bu banka için henüz takvim verisi yok.
         </p>
       )}
 
@@ -121,7 +121,8 @@ export default async function BankPage({ params }: PageProps<"/banka/[code]">) {
           </ul>
           <p className="mt-2 text-sm text-muted">
             Karar oranları Fed için FRED, ECB için ECB Data Portal, TCMB için
-            EVDS veri servisinden doldurulur.
+            EVDS, BoE için MPC oylama geçmişinden, RBA için F1 tablosundan
+            doldurulur. BoJ için henüz karar oranı kaynağı bağlı değil.
           </p>
         </section>
       )}

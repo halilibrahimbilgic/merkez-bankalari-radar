@@ -1,5 +1,5 @@
 /**
- * Fed, ECB ve TCMB resmi takvimlerini çeker, birleştirip data/seed/meetings.json
+ * Fed, ECB, TCMB, BoE, BoJ ve RBA resmi takvimlerini çeker, birleştirip data/seed/meetings.json
  * dosyasına yazar.
  *
  * Yalnızca dosyaya yazar; veritabanına aktarmak ayrı bir adımdır
@@ -13,6 +13,9 @@ import path from "node:path";
 import { fetchFomcMeetings } from "../src/lib/sources/fomc";
 import { fetchEcbMeetings } from "../src/lib/sources/ecb";
 import { fetchTcmbMeetings } from "../src/lib/sources/tcmb";
+import { fetchBoeMeetings } from "../src/lib/sources/boe";
+import { fetchBojMeetings } from "../src/lib/sources/boj";
+import { fetchRbaMeetings } from "../src/lib/sources/rba";
 import type { ScrapedMeeting } from "../src/lib/sources/shared";
 import { meetingId } from "../src/lib/data/ids";
 import type { Meeting } from "../src/lib/types";
@@ -23,6 +26,10 @@ const SOURCES = [
   { name: "Fed (FOMC)", run: fetchFomcMeetings },
   { name: "ECB (Governing Council)", run: fetchEcbMeetings },
   { name: "TCMB (PPK)", run: fetchTcmbMeetings },
+  { name: "BoE (MPC)", run: fetchBoeMeetings },
+  { name: "BoJ (MPM)", run: fetchBojMeetings },
+  // rba.gov.au tarayıcı taklidine 403 veriyor; dürüst UA ile çalışır (rba.ts).
+  { name: "RBA (Monetary Policy Board)", run: fetchRbaMeetings },
 ];
 
 async function main() {

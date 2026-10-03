@@ -1,6 +1,6 @@
 # Merkez Bankaları Radar
 
-Fed, ECB ve TCMB faiz toplantılarını Türkiye saatiyle tek yerde toplayan Türkçe
+Fed, ECB, TCMB, BoE, BoJ ve RBA faiz toplantılarını Türkiye saatiyle tek yerde toplayan Türkçe
 merkez bankası takip platformu. Yol haritası ve gerekçe için
 `merkez_bankalari_radar_mvp_plani.docx` belgesine bakın.
 
@@ -11,7 +11,7 @@ Mimari, bozulmaması gereken kurallar ve sıradaki işler için
 
 | Modül | Kapsam | Durum |
 | --- | --- | --- |
-| A — Toplantı takvimi | Fed, ECB, TCMB; TRT dönüşümü, geri sayım, filtre, iCal | **Yayında** |
+| A — Toplantı takvimi | Fed, ECB, TCMB, BoE, BoJ, RBA; TRT dönüşümü, geri sayım, filtre, iCal aboneliği, RSS | **Yayında** |
 | B — Faiz olasılığı | Atlanta Fed MPT dağılımları, Türkçe anlatım + grafik | **Yayında** |
 | C — Konuşma arşivi ve şahin/güvercin skoru | BIS arşivi + Türkçe özet/skor | **Yayında** — metin toplama ve skorlama otomatik (Claude aboneliği) |
 
@@ -75,6 +75,9 @@ kullanılmaz.
 | Fed | `federalreserve.gov` FOMC takvimi | Toplantının 2. günü 14:00 New York |
 | ECB | `ecb.europa.eu` Governing Council takvimi | Day 2, 14:15 Frankfurt |
 | TCMB | `tcmb.gov.tr` duyuru takvimi | Toplantı günü 14:00 Türkiye |
+| BoE | `bankofengland.co.uk` MPC takvimi | Duyuru günü 12:00 Londra |
+| BoJ | `boj.or.jp` MPM takvimi | Son gün, toplantı bitince (saat duyurulmaz) |
+| RBA | `rba.gov.au` kurul takvimi | 2. gün 14:30 Sidney |
 
 Faiz olasılıkları [Atlanta Fed Market Probability
 Tracker](https://www.atlantafed.org/research-and-data/data/market-probability-tracker)
@@ -122,6 +125,12 @@ banka ortalamalarının hangi örnekleme dayandığı gizlenmez.
 
 Takvim her gün 08:00 TRT'de GitHub Actions ile yenilenir
 (`.github/workflows/fetch-meetings.yml`).
+
+**Hatırlatma:** `/takvim` sayfasından takvime abone olunabilir (`webcal://`,
+her karar için bir gün ve bir saat önce alarm) ya da `/rss.xml` akışı
+izlenebilir (karardan bir hafta önce "yaklaşan" ve karar açıklanınca sonuç
+öğesi). E-posta için RSS bir e-posta köprüsüne bağlanabilir; site e-posta
+adresi toplamaz.
 
 ## Yayına alma (Vercel)
 

@@ -1,7 +1,8 @@
 /**
  * Geçmiş toplantıların karar oranlarını doldurur ve data/seed/meetings.json
  * dosyasını günceller: Fed için FRED, ECB için SDMX veri servisi, TCMB
- * için EVDS (EVDS_API_KEY gerekir; yoksa TCMB atlanır).
+ * için EVDS (EVDS_API_KEY gerekir; yoksa TCMB atlanır), BoE için MPC oylama
+ * geçmişi (xlsx).
  *
  *   npm run fetch:rates
  *
@@ -16,6 +17,8 @@ import { config } from "dotenv";
 import { fetchSeries, SERIES, valueAsOf } from "../src/lib/sources/fred";
 import { fetchEcbRates, rateAsOf } from "../src/lib/sources/ecb-rates";
 import { fetchEvdsSeries, TCMB_POLICY_RATE } from "../src/lib/sources/evds";
+import { fetchBoeDecisions } from "../src/lib/sources/boe-rates";
+import { fetchRbaCashRate } from "../src/lib/sources/rba";
 import type { Meeting } from "../src/lib/types";
 
 config({ path: ".env.local", quiet: true });
@@ -87,9 +90,28 @@ async function main() {
     tcmbFailed = true;
   }
 
+  let boeFilled = 0;
+  let boeFailed = false;
+  try {
+    boeFilled = await fillBoe(file.meetings);
+  } catch (err) {
+    console.error(`✗  BoE: ${(err as Error).message}`);
+    boeFailed = true;
+  }
+
+  let rbaFilled = 0;
+  let rbaFailed = false;
+  try {
+    rbaFilled = await fillRba(file.meetings);
+  } catch (err) {
+    console.error(`✗  RBA: ${(err as Error).message}`);
+    rbaFailed = true;
+  }
+
   await writeFile(SEED, JSON.stringify(file, null, 2) + "\n", "utf8");
   console.log(
-    `→ ${filled} Fed, ${ecbFilled} ECB, ${tcmbFilled} TCMB toplantısına karar oranı yazıldı.`,
+    `→ ${filled} Fed, ${ecbFilled} ECB, ${tcmbFilled} TCMB, ${boeFilled} BoE, ` +
+      `${rbaFilled} RBA toplantısına karar oranı yazıldı.`,
   );
 
   // Son 6 kararı özet olarak göster — gözle doğrulama için.
@@ -109,7 +131,7 @@ async function main() {
     );
   }
 
-  if (ecbFailed || tcmbFailed) process.exit(1);
+  if (ecbFailed || tcmbFailed || boeFailed || rbaFailed) process.exit(1);
 }
 
 /**
@@ -174,6 +196,60 @@ async function fillTcmb(meetings: Meeting[]): Promise<number> {
     const after = rateAsOf(obs, dayOffset(day, 4));
     if (before === undefined || after === undefined) continue;
 
+    m.decisionRate = after;
+    m.previousRate = before;
+    m.status = "done";
+    filled++;
+  }
+  return filled;
+}
+
+/**
+ * BoE oylama geçmişinde her karar duyuru gününe bağlı; takvimdeki tarihle
+ * doğrudan eşlenir. Önceki oran, bir önceki kararın oranıdır.
+ */
+async function fillBoe(meetings: Meeting[]): Promise<number> {
+  const past = meetings.filter(
+    (m) => m.bankCode === "boe" && new Date(m.meetingAt) < new Date(),
+  );
+  if (past.length === 0) return 0;
+
+  const decisions = await fetchBoeDecisions();
+  console.log(`BoE: ${decisions.length} karar`);
+  const index = new Map(decisions.map((d, i) => [d.date, i]));
+
+  let filled = 0;
+  for (const m of past) {
+    const i = index.get(m.meetingAt.slice(0, 10));
+    if (i === undefined || i === 0) continue;
+    m.decisionRate = decisions[i].rate;
+    m.previousRate = decisions[i - 1].rate;
+    m.status = "done";
+    filled++;
+  }
+  return filled;
+}
+
+/**
+ * RBA'da yeni nakit faiz hedefi karardan SONRAKİ gün yürürlüğe girer
+ * (29.09.2026 kararı → 30.09'da 4,60). Önceki oran karar gününün kendisinde,
+ * yeni oran +4 günde (hafta sonu/tatil boşlukları) okunur.
+ */
+async function fillRba(meetings: Meeting[]): Promise<number> {
+  const past = meetings.filter(
+    (m) => m.bankCode === "rba" && new Date(m.meetingAt) < new Date(),
+  );
+  if (past.length === 0) return 0;
+
+  const obs = await fetchRbaCashRate();
+  console.log(`RBA: ${obs.length} günlük gözlem`);
+
+  let filled = 0;
+  for (const m of past) {
+    const day = m.meetingAt.slice(0, 10);
+    const before = rateAsOf(obs, day);
+    const after = rateAsOf(obs, dayOffset(day, 4));
+    if (before === undefined || after === undefined) continue;
     m.decisionRate = after;
     m.previousRate = before;
     m.status = "done";

@@ -22,6 +22,21 @@ const SOURCES = [
     note: "Para politikası toplantısının ikinci günü, 14:15 Frankfurt saatinde karar; 14:45'te basın toplantısı.",
   },
   {
+    name: "Bank of England — MPC takvimi ve oylama geçmişi",
+    url: "https://www.bankofengland.co.uk/monetary-policy/upcoming-mpc-dates",
+    note: "Bank Rate kararı duyuru günü 12:00 Londra saatinde; geçmiş karar oranları MPC oylama geçmişi dosyasından.",
+  },
+  {
+    name: "Bank of Japan — MPM takvimi",
+    url: "https://www.boj.or.jp/en/mopo/mpmsche_minu/index.htm",
+    note: "Karar toplantının son günü, toplantı biter bitmez açıklanır; saat önceden duyurulmadığı için gün olarak gösterilir.",
+  },
+  {
+    name: "Reserve Bank of Australia — kurul takvimi ve F1 tablosu",
+    url: "https://www.rba.gov.au/schedules-events/board-meeting-schedules.html",
+    note: "Karar toplantının ikinci günü 14:30 Sidney saatinde açıklanır; nakit faiz hedefinin geçmişi RBA F1 istatistik tablosundan.",
+  },
+  {
     name: "Atlanta Fed — Market Probability Tracker",
     url: "https://www.atlantafed.org/research-and-data/data/market-probability-tracker",
     note: "Faiz olasılıkları. CME 3 aylık SOFR opsiyon fiyatlarından türetilen dağılımlar; toplantı bazlı değil, üçer aylık ortalama faiz üzerinedir.",
@@ -54,7 +69,7 @@ const SOURCES = [
 ];
 
 const PLANNED = [
-  "Bank of England, Bank of Japan ve Reserve Bank of Australia toplantı takvimleri",
+  "Bank of Japan politika faizi ve geçmiş kararlar",
 ];
 
 export default async function AboutPage() {

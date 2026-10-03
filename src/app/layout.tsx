@@ -16,14 +16,17 @@ export const metadata: Metadata = {
     template: "%s · Merkez Bankaları Radar",
   },
   description:
-    "Fed, ECB ve TCMB faiz toplantı takvimi Türkiye saatiyle; piyasanın fiyatladığı faiz olasılıkları ve merkez bankası konuşmalarının şahin/güvercin skoru — Türkçe, eğitim amaçlı.",
+    "Fed, ECB, TCMB, BoE, BoJ ve RBA faiz toplantı takvimi Türkiye saatiyle; piyasanın fiyatladığı faiz olasılıkları ve merkez bankası konuşmalarının şahin/güvercin skoru — Türkçe, eğitim amaçlı.",
   keywords: [
     "Fed toplantısı", "FOMC takvimi", "ECB faiz kararı", "TCMB PPK",
     "faiz olasılığı", "şahin güvercin", "merkez bankası takvimi",
     "Fed faiz kararı ne zaman", "PPK toplantısı tarihi",
   ],
   metadataBase: new URL(SITE_URL),
-  alternates: { canonical: "/" },
+  alternates: {
+    canonical: "/",
+    types: { "application/rss+xml": [{ url: "/rss.xml", title: "Faiz kararları" }] },
+  },
   openGraph: {
     type: "website",
     locale: "tr_TR",

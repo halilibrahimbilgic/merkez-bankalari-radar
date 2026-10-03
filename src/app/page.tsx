@@ -3,7 +3,7 @@ import { BankCard } from "@/components/BankCard";
 import { BankTag, ScoreBadge } from "@/components/ScoreBadge";
 import { EmptyState, Row, Rows, SectionHeader } from "@/components/ui";
 import type { OddsRow } from "@/components/RateOdds";
-import { MVP_BANK_CODES } from "@/lib/banks";
+import { CALENDAR_BANK_CODES } from "@/lib/banks";
 import { getUpcomingMeetings } from "@/lib/data/meetings";
 import { getCurrentRates } from "@/lib/data/rates";
 import { getProbabilitySnapshot } from "@/lib/data/probabilities";
@@ -46,7 +46,7 @@ export default async function HomePage() {
           Merkez bankası faiz kararlarını Türkçe takip et
         </h1>
         <p className="prose-width mt-2 text-muted">
-          Fed, ECB ve TCMB toplantı takvimi Türkiye saatiyle; piyasanın
+          Fed, ECB, TCMB, BoE, BoJ ve RBA toplantı takvimi Türkiye saatiyle; piyasanın
           fiyatladığı beklentiler ve yetkili konuşmalarının şahin/güvercin skoru
           tek yerde.
         </p>
@@ -62,7 +62,7 @@ export default async function HomePage() {
           Bankalara genel bakış
         </h2>
         <div className="grid gap-4 md:grid-cols-2 lg:grid-cols-3">
-          {MVP_BANK_CODES.map((code) => (
+          {CALENDAR_BANK_CODES.map((code) => (
             <BankCard
               key={code}
               bankCode={code}

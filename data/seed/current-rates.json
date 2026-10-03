@@ -1,24 +1,36 @@
 {
-  "fetchedAt": "2026-10-03T06:46:57.804Z",
+  "fetchedAt": "2026-10-03T16:58:02.165Z",
   "rates": [
     {
       "bankCode": "fed",
       "rate": 4,
       "rateLower": 3.75,
-      "asOf": "2026-10-02",
+      "asOf": "2026-09-17",
       "sourceUrl": "https://fred.stlouisfed.org/series/DFEDTARU"
     },
     {
       "bankCode": "ecb",
       "rate": 2.5,
-      "asOf": "2026-10-03",
+      "asOf": "2026-09-16",
       "sourceUrl": "https://www.ecb.europa.eu/stats/policy_and_exchange_rates/key_ecb_interest_rates/html/index.en.html"
+    },
+    {
+      "bankCode": "boe",
+      "rate": 3.75,
+      "asOf": "2026-09-17",
+      "sourceUrl": "https://www.bankofengland.co.uk/monetary-policy/upcoming-mpc-dates"
     },
     {
       "bankCode": "tcmb",
       "rate": 37,
-      "asOf": "2026-10-02",
+      "asOf": "2026-01-22",
       "sourceUrl": "https://www.tcmb.gov.tr/wps/wcm/connect/TR/TCMB+TR/Main+Menu/Temel+Faaliyetler/Para+Politikasi/Merkez+Bankasi+Faiz+Oranlari/1+Hafta+Repo"
+    },
+    {
+      "bankCode": "rba",
+      "rate": 4.6,
+      "asOf": "2026-09-30",
+      "sourceUrl": "https://www.rba.gov.au/statistics/cash-rate/"
     }
   ]
 }
