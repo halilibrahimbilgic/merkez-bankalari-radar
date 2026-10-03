@@ -42,8 +42,7 @@ export async function fetchSeries(
   if (opts.start) url.searchParams.set("observation_start", opts.start);
   if (opts.end) url.searchParams.set("observation_end", opts.end);
 
-  const res = await fetch(url, { signal: AbortSignal.timeout(30_000) });
-  if (!res.ok) throw new Error(`FRED ${seriesId} → HTTP ${res.status}`);
+  const res = await fetchWithRetry(url, seriesId);
 
   const json = (await res.json()) as {
     observations: { date: string; value: string }[];
@@ -53,6 +52,27 @@ export async function fetchSeries(
   return json.observations
     .filter((o) => o.value !== ".")
     .map((o) => ({ date: o.date, value: Number(o.value) }));
+}
+
+/**
+ * FRED ara sıra 502 veriyor (3 Ekim 2026 cron'unda DFEDTARL). 5xx ve ağ
+ * hatası yeniden denenir; 4xx (ör. geçersiz anahtar) denenmez.
+ */
+async function fetchWithRetry(url: URL, seriesId: string): Promise<Response> {
+  for (let attempt = 1; ; attempt++) {
+    let status: number | undefined;
+    try {
+      const res = await fetch(url, { signal: AbortSignal.timeout(30_000) });
+      if (res.ok) return res;
+      status = res.status;
+    } catch (err) {
+      if (attempt >= 3) throw err;
+    }
+    if (status !== undefined && (status < 500 || attempt >= 3)) {
+      throw new Error(`FRED ${seriesId} → HTTP ${status}`);
+    }
+    await new Promise((r) => setTimeout(r, 5_000 * attempt));
+  }
 }
 
 /** Verilen tarihte (ya da ondan önceki en yakın gözlemde) geçerli değer. */

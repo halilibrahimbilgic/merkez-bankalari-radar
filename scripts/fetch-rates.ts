@@ -25,19 +25,64 @@ config({ path: ".env.local", quiet: true });
 
 const SEED = path.join(process.cwd(), "data", "seed", "meetings.json");
 
+/**
+ * Her banka bağımsız doldurulur: biri kırılırsa (FRED 502, ECB SDW 504
+ * gördük) diğerlerinin oranları yine yazılır; adım sonunda hata koduyla
+ * biter ki kırılma cron'da görünür kalsın.
+ */
+const FILLERS: [string, (meetings: Meeting[]) => Promise<number>][] = [
+  ["Fed", fillFed],
+  ["ECB", fillEcb],
+  ["TCMB", fillTcmb],
+  ["BoE", fillBoe],
+  ["RBA", fillRba],
+];
+
 async function main() {
   const file = JSON.parse(await readFile(SEED, "utf8")) as {
     fetchedAt: string;
     meetings: Meeting[];
   };
 
-  const fedPast = file.meetings.filter(
+  const counts: string[] = [];
+  const failed: string[] = [];
+  for (const [name, fill] of FILLERS) {
+    try {
+      counts.push(`${await fill(file.meetings)} ${name}`);
+    } catch (err) {
+      console.error(`✗  ${name}: ${(err as Error).message}`);
+      failed.push(name);
+    }
+  }
+
+  await writeFile(SEED, JSON.stringify(file, null, 2) + "\n", "utf8");
+  console.log(`→ ${counts.join(", ")} toplantısına karar oranı yazıldı.`);
+
+  // Son kararlar — gözle doğrulama için.
+  for (const m of file.meetings
+    .filter((x) => x.decisionRate !== undefined && x.previousRate !== undefined)
+    .slice(-8)) {
+    const bps = Math.round(((m.decisionRate ?? 0) - (m.previousRate ?? 0)) * 100);
+    const rate =
+      m.decisionRateLower === undefined ? `%${m.decisionRate}` : `%${m.decisionRateLower}-${m.decisionRate}`;
+    console.log(
+      `   ${m.meetingAt.slice(0, 10)} ${m.bankCode.padEnd(4)} ${rate}  ` +
+        (bps === 0 ? "(değişiklik yok)" : `(${bps > 0 ? "+" : ""}${bps} bp)`),
+    );
+  }
+
+  if (failed.length > 0) process.exit(1);
+}
+
+/**
+ * Fed hedef aralığı bir bant olduğu için üst sınır decisionRate, alt sınır
+ * decisionRateLower olarak saklanır.
+ */
+async function fillFed(meetings: Meeting[]): Promise<number> {
+  const fedPast = meetings.filter(
     (m) => m.bankCode === "fed" && new Date(m.meetingAt) < new Date(),
   );
-  if (fedPast.length === 0) {
-    console.log("Doldurulacak geçmiş Fed toplantısı yok.");
-    return;
-  }
+  if (fedPast.length === 0) return 0;
 
   const start = fedPast[0].meetingAt.slice(0, 10);
   const [upper, lower] = await Promise.all([
@@ -47,10 +92,7 @@ async function main() {
   console.log(`FRED: ${upper.length} üst / ${lower.length} alt sınır gözlemi`);
 
   let filled = 0;
-  for (const m of file.meetings) {
-    if (m.bankCode !== "fed") continue;
-    if (new Date(m.meetingAt) >= new Date()) continue;
-
+  for (const m of fedPast) {
     const day = m.meetingAt.slice(0, 10);
     const before = dayOffset(day, -1);
     // Yeni aralık ertesi gün yürürlükte; hafta sonuna denk gelirse
@@ -60,7 +102,6 @@ async function main() {
     const newUpper = valueAsOf(upper, after);
     const newLower = valueAsOf(lower, after);
     const oldUpper = valueAsOf(upper, before);
-
     if (newUpper === undefined || oldUpper === undefined) continue;
 
     m.decisionRate = newUpper;
@@ -69,69 +110,7 @@ async function main() {
     m.status = "done";
     filled++;
   }
-
-  // ECB SDW kırılırsa Fed'in doldurduğu oranlar yine yazılmalı; adım
-  // sonunda hata koduyla biter ki kırılma görünür kalsın.
-  let ecbFilled = 0;
-  let ecbFailed = false;
-  try {
-    ecbFilled = await fillEcb(file.meetings);
-  } catch (err) {
-    console.error(`✗  ECB: ${(err as Error).message}`);
-    ecbFailed = true;
-  }
-
-  let tcmbFilled = 0;
-  let tcmbFailed = false;
-  try {
-    tcmbFilled = await fillTcmb(file.meetings);
-  } catch (err) {
-    console.error(`✗  TCMB: ${(err as Error).message}`);
-    tcmbFailed = true;
-  }
-
-  let boeFilled = 0;
-  let boeFailed = false;
-  try {
-    boeFilled = await fillBoe(file.meetings);
-  } catch (err) {
-    console.error(`✗  BoE: ${(err as Error).message}`);
-    boeFailed = true;
-  }
-
-  let rbaFilled = 0;
-  let rbaFailed = false;
-  try {
-    rbaFilled = await fillRba(file.meetings);
-  } catch (err) {
-    console.error(`✗  RBA: ${(err as Error).message}`);
-    rbaFailed = true;
-  }
-
-  await writeFile(SEED, JSON.stringify(file, null, 2) + "\n", "utf8");
-  console.log(
-    `→ ${filled} Fed, ${ecbFilled} ECB, ${tcmbFilled} TCMB, ${boeFilled} BoE, ` +
-      `${rbaFilled} RBA toplantısına karar oranı yazıldı.`,
-  );
-
-  // Son 6 kararı özet olarak göster — gözle doğrulama için.
-  for (const m of file.meetings.filter((x) => x.bankCode === "fed" && x.decisionRate).slice(-6)) {
-    const bps = Math.round(((m.decisionRate ?? 0) - (m.previousRate ?? 0)) * 100);
-    console.log(
-      `   ${m.meetingAt.slice(0, 10)}  ${m.decisionRateLower}-${m.decisionRate}%  ` +
-        (bps === 0 ? "(değişiklik yok)" : `(${bps > 0 ? "+" : ""}${bps} bp)`),
-    );
-  }
-
-  for (const m of file.meetings.filter((x) => x.bankCode === "tcmb" && x.decisionRate !== undefined)) {
-    const bps = Math.round(((m.decisionRate ?? 0) - (m.previousRate ?? 0)) * 100);
-    console.log(
-      `   TCMB ${m.meetingAt.slice(0, 10)}  %${m.decisionRate}  ` +
-        (bps === 0 ? "(değişiklik yok)" : `(${bps > 0 ? "+" : ""}${bps} bp)`),
-    );
-  }
-
-  if (ecbFailed || tcmbFailed || boeFailed || rbaFailed) process.exit(1);
+  return filled;
 }
 
 /**
