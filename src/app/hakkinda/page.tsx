@@ -37,6 +37,16 @@ const SOURCES = [
     note: "Konuşma metinleri. Besleme yalnızca son 25 konuşmayı verir ve sayfalama kabul etmez; arşiv günlük çalışan işle zaman içinde birikir.",
   },
   {
+    name: "ECB Data Portal (SDMX)",
+    url: "https://data.ecb.europa.eu/",
+    note: "Mevduat kolaylığı faizi — ECB'nin güncel politika faizi ve geçmiş karar oranları.",
+  },
+  {
+    name: "TCMB EVDS",
+    url: "https://evds3.tcmb.gov.tr/",
+    note: "Bir hafta vadeli repo (politika) faizi, TP.PY.P02.1H — TCMB'nin güncel faizi ve geçmiş PPK karar oranları.",
+  },
+  {
     name: "TCMB — Duyuru takvimi",
     url: "https://www.tcmb.gov.tr/wps/wcm/connect/TR/TCMB+TR/Main+Menu/Duyurular/Takvim",
     note: "PPK toplantı kararı, toplantı günü 14:00 Türkiye saatinde açıklanır.",
@@ -44,8 +54,7 @@ const SOURCES = [
 ];
 
 const PLANNED = [
-  "TCMB EVDS API — politika faizi, enflasyon, kur serileri",
-  "ECB SDW (SDMX REST) — ECB faiz kararları ve istatistikleri",
+  "Bank of England, Bank of Japan ve Reserve Bank of Australia toplantı takvimleri",
 ];
 
 export default async function AboutPage() {

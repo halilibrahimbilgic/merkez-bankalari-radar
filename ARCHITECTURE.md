@@ -31,8 +31,8 @@ amaçlıdır (bkz. §6).
   ecb.europa.eu        ├──► fetch:meetings  ──────► meetings.json
   tcmb.gov.tr         ─┘                              ▲
                                                       │ (oranları doldurur,
-  FRED API ───────────────► fetch:rates ──────────────┘  üzerine YAZMAZ)
-  FRED + ECB SDMX ────────► fetch:current-rates ───► current-rates.json
+  FRED + ECB SDMX + EVDS ─► fetch:rates ──────────────┘  üzerine YAZMAZ)
+  FRED + ECB SDMX + EVDS ─► fetch:current-rates ───► current-rates.json
   atlantafed.org (.xlsx) ─► fetch:probabilities ──► probabilities.json
   bis.org (RSS + HTML) ───► fetch:speeches ───────► speeches.json
                                                       ▲
@@ -194,10 +194,10 @@ Hiçbir sayfa yatırım tavsiyesi vermez; altbilgideki uyarı kaldırılmamalı.
 ## 7. Mevcut durum (3 Ekim 2026)
 
 ```
-Toplantı     87  (Fed 56, ECB 19, TCMB 12)  — 45'inde karar oranı var
+Toplantı     87  (Fed 56, ECB 19, TCMB 12)  — 52'sinde karar oranı var (Fed 45, TCMB 6, ECB 1)
 Konuşma      30  (Fed 13, ECB 9, RBA 3, BoE 3, BoJ 2) — 15'i skorlu, 9'u sinyalsiz
 Olasılık     2026-10-01 anlığı, 13 pencere
-Güncel faiz  Fed, ECB
+Güncel faiz  Fed, ECB, TCMB
 Sayfa        48 (build çıktısı), ISR 1 saat
 ```
 
@@ -217,23 +217,25 @@ Sayfa        48 (build çıktısı), ISR 1 saat
 2. **15 konuşma skorsuz** — BIS kırılması giderilince Eylül konuşmaları
    eklendi; 1. madde çözülünce otomatik skorlanırlar. `/konusmalar` ve `/skor` bunu gösteriyor; ortalamalar hâlâ
    Ağustos örneklemine dayanıyor.
-3. **TCMB'nin geçmiş karar oranları hiç yok.** Fed FRED'den, ECB SDMX'ten
-   geliyor; TCMB için kaynak bağlanmamış, geçmiş PPK satırları boş görünüyor.
-   TCMB EVDS API'si aday (anahtar gerektirir).
-4. **ECB geçmiş kararları da boş** — ECB takvim sayfası geçmiş toplantıları
-   yayımlamadığı için `fillEcb` doldurulacak kayıt bulamıyor. Arşiv zamanla
-   §4'teki koruma sayesinde birikecek.
-5. **Konuşma arşivi küçük.** BIS beslemesi yalnızca son 25 konuşmayı döndürür
+3. **TCMB ve ECB arşivi 2026'dan başlıyor.** Karar oranları artık üç banka
+   için de dolduruluyor (TCMB: EVDS `TP.PY.P02.1H`; ECB'de 3 Ekim'e kadar
+   "0 ECB" çıkmasının sebebi takvim değil, serinin toplantı gününden
+   başlatılıp "önceki oran"ın bulunamamasıydı). Ancak iki bankanın takvim
+   sayfası yalnızca içinde bulunulan/gelecek toplantıları veriyor; 2026
+   öncesi toplantılar arşivde hiç yok. Faiz serisinden geçmiş toplantı
+   *uydurulamaz* — seri yalnızca değişiklik günlerini gösterir, sabit tutma
+   kararlarını değil. Arşiv §4'teki koruma sayesinde ileriye doğru birikir.
+4. **Konuşma arşivi küçük.** BIS beslemesi yalnızca son 25 konuşmayı döndürür
    ve sayfalama kabul etmez; arşiv günlük işle birikir. Ağustos ortası–Eylül
    ortası arası (cron çalışmadığı için) kayıp. Ortalamalar tek haneli
    örneklemlerde yanıltıcı — `/skor` bunu yazıyor.
-6. **`rawText` depoda** — artık ~28 konuşmanın tam metni (PDF'ten) commit'li.
+5. **`rawText` depoda** — artık ~28 konuşmanın tam metni (PDF'ten) commit'li.
    Site için gereksiz ve public depoda telif açısından hassas kısım bu.
    Gitignore'lu bir önbelleğe taşınabilir.
-7. **MPT bantları %100'e tamamlanmıyor** — Atlanta Fed uçtaki küçük bantları
+6. **MPT bantları %100'e tamamlanmıyor** — Atlanta Fed uçtaki küçük bantları
    ayrı yayımlamıyor (toplam ~%96–99). `/faiz-olasiligi` eksik payı açıkça
    yazıyor; yön olasılıkları (`Prob: cut/hike`) bu payı içeriyor.
-8. **BoE, BoJ, RBA takvimi yok** — arayüzde "yakında" olarak pasif duruyor
+7. **BoE, BoJ, RBA takvimi yok** — arayüzde "yakında" olarak pasif duruyor
    (`src/components/ComingSoon.tsx`). Ayrıştırıcı yazılmadı.
 
 ---
@@ -241,8 +243,6 @@ Sayfa        48 (build çıktısı), ISR 1 saat
 ## 9. Yol haritası
 
 **Yakın vade — güveni sağlamlaştır**
-- Cron'u fiilen çalışır hale getir (secret'lar + bir elle tetikleme ile doğrula)
-- TCMB ve ECB geçmiş karar oranları için kaynak bağla
 - `rawText`'i depodan çıkar
 
 **Orta vade — kapsamı genişlet**

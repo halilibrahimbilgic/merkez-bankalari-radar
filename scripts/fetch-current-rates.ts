@@ -4,14 +4,15 @@
  *   npm run fetch:current-rates
  *
  * Fed bir aralık ilan eder (FRED: DFEDTARL/DFEDTARU), ECB tek oran
- * (SDMX: mevduat kolaylığı). TCMB için EVDS anahtarı gerektiğinden şimdilik
- * kapsam dışı.
+ * (SDMX: mevduat kolaylığı), TCMB tek oran (EVDS: 1 hafta repo;
+ * EVDS_API_KEY gerekir, yoksa atlanır).
  */
 import { readFile, writeFile, mkdir } from "node:fs/promises";
 import path from "node:path";
 import { config } from "dotenv";
 import { fetchSeries, SERIES } from "../src/lib/sources/fred";
 import { fetchEcbRates } from "../src/lib/sources/ecb-rates";
+import { fetchEvdsSeries, TCMB_POLICY_RATE, TCMB_RATES_PAGE_URL } from "../src/lib/sources/evds";
 import type { BankCode } from "../src/lib/types";
 
 config({ path: ".env.local", quiet: true });
@@ -80,6 +81,27 @@ async function main() {
   } catch (err) {
     console.error(`✗  ECB: ${(err as Error).message}`);
     failed.push("ecb");
+  }
+
+  const evdsKey = process.env.EVDS_API_KEY;
+  if (!evdsKey) {
+    console.warn("⚠  EVDS_API_KEY tanımlı değil, TCMB atlandı.");
+  } else {
+    try {
+      const last = (await fetchEvdsSeries(TCMB_POLICY_RATE, since, evdsKey)).at(-1);
+      if (last) {
+        rates.push({
+          bankCode: "tcmb",
+          rate: last.value,
+          asOf: last.date,
+          sourceUrl: TCMB_RATES_PAGE_URL,
+        });
+        console.log(`✓  TCMB: %${last.value} (${last.date})`);
+      }
+    } catch (err) {
+      console.error(`✗  TCMB: ${(err as Error).message}`);
+      failed.push("tcmb");
+    }
   }
 
   // Geçici bir kaynak hatası (ECB SDW 504 verdi) bankanın faizini siteden

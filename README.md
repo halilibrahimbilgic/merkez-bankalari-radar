@@ -21,8 +21,8 @@ Mimari, bozulmaması gereken kurallar ve sıradaki işler için
 npm install
 cp .env.example .env.local   # şimdilik boş bırakılabilir
 npm run fetch:meetings       # resmî takvimleri çeker → data/seed/meetings.json
-npm run fetch:rates          # geçmiş Fed karar oranları (FRED_API_KEY gerekir)
-npm run fetch:current-rates  # güncel politika faizleri (Fed, ECB)
+npm run fetch:rates          # geçmiş karar oranları (FRED_API_KEY; TCMB için EVDS_API_KEY)
+npm run fetch:current-rates  # güncel politika faizleri (Fed, ECB, TCMB)
 npm run fetch:probabilities  # Atlanta Fed olasılık dağılımları
 npm run fetch:speeches       # BIS konuşma arşivi (metinlerle birlikte)
 npm run score:speeches       # Türkçe özet + skor (ANTHROPIC_API_KEY gerekir)
@@ -123,7 +123,7 @@ Takvim her gün 08:00 TRT'de GitHub Actions ile yenilenir
 ## Yayına alma (Vercel)
 
 1. Depoyu Vercel'e bağlayın; Next.js otomatik algılanır, ek ayar gerekmez.
-2. Ortam değişkeni olarak `FRED_API_KEY` ve (skorlama için) `ANTHROPIC_API_KEY`
+2. Ortam değişkeni olarak `FRED_API_KEY`, `EVDS_API_KEY` ve (skorlama için) `ANTHROPIC_API_KEY`
    ekleyin. Kendi alan adınızı bağladığınızda `NEXT_PUBLIC_SITE_URL` tanımlayın —
    sitemap ve kanonik adresler bunu kullanır; tanımsızsa Vercel'in verdiği
    üretim alan adına düşer.

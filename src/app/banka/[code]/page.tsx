@@ -120,8 +120,8 @@ export default async function BankPage({ params }: PageProps<"/banka/[code]">) {
             ))}
           </ul>
           <p className="mt-2 text-sm text-muted">
-            Karar oranları Fed için FRED, ECB için SDMX veri servisinden
-            doldurulur. TCMB için EVDS anahtarı gerekiyor.
+            Karar oranları Fed için FRED, ECB için ECB Data Portal, TCMB için
+            EVDS veri servisinden doldurulur.
           </p>
         </section>
       )}

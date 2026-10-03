@@ -485,7 +485,9 @@
       "timeTbd": false,
       "type": "rate_decision",
       "status": "done",
-      "sourceUrl": "https://www.tcmb.gov.tr/wps/wcm/connect/TR/TCMB+TR/Main+Menu/Duyurular/Takvim"
+      "sourceUrl": "https://www.tcmb.gov.tr/wps/wcm/connect/TR/TCMB+TR/Main+Menu/Duyurular/Takvim",
+      "decisionRate": 37,
+      "previousRate": 38
     },
     {
       "id": "fed-2026-01-28",
@@ -506,7 +508,9 @@
       "timeTbd": false,
       "type": "rate_decision",
       "status": "done",
-      "sourceUrl": "https://www.tcmb.gov.tr/wps/wcm/connect/TR/TCMB+TR/Main+Menu/Duyurular/Takvim"
+      "sourceUrl": "https://www.tcmb.gov.tr/wps/wcm/connect/TR/TCMB+TR/Main+Menu/Duyurular/Takvim",
+      "decisionRate": 37,
+      "previousRate": 37
     },
     {
       "id": "fed-2026-03-18",
@@ -527,7 +531,9 @@
       "timeTbd": false,
       "type": "rate_decision",
       "status": "done",
-      "sourceUrl": "https://www.tcmb.gov.tr/wps/wcm/connect/TR/TCMB+TR/Main+Menu/Duyurular/Takvim"
+      "sourceUrl": "https://www.tcmb.gov.tr/wps/wcm/connect/TR/TCMB+TR/Main+Menu/Duyurular/Takvim",
+      "decisionRate": 37,
+      "previousRate": 37
     },
     {
       "id": "fed-2026-04-29",
@@ -548,7 +554,9 @@
       "timeTbd": false,
       "type": "rate_decision",
       "status": "done",
-      "sourceUrl": "https://www.tcmb.gov.tr/wps/wcm/connect/TR/TCMB+TR/Main+Menu/Duyurular/Takvim"
+      "sourceUrl": "https://www.tcmb.gov.tr/wps/wcm/connect/TR/TCMB+TR/Main+Menu/Duyurular/Takvim",
+      "decisionRate": 37,
+      "previousRate": 37
     },
     {
       "id": "fed-2026-06-17",
@@ -569,7 +577,9 @@
       "timeTbd": false,
       "type": "rate_decision",
       "status": "done",
-      "sourceUrl": "https://www.tcmb.gov.tr/wps/wcm/connect/TR/TCMB+TR/Main+Menu/Duyurular/Takvim"
+      "sourceUrl": "https://www.tcmb.gov.tr/wps/wcm/connect/TR/TCMB+TR/Main+Menu/Duyurular/Takvim",
+      "decisionRate": 37,
+      "previousRate": 37
     },
     {
       "id": "fed-2026-07-29",
@@ -590,7 +600,9 @@
       "timeTbd": false,
       "type": "rate_decision",
       "status": "done",
-      "sourceUrl": "https://www.tcmb.gov.tr/wps/wcm/connect/TR/TCMB+TR/Main+Menu/Duyurular/Takvim"
+      "sourceUrl": "https://www.tcmb.gov.tr/wps/wcm/connect/TR/TCMB+TR/Main+Menu/Duyurular/Takvim",
+      "decisionRate": 37,
+      "previousRate": 37
     },
     {
       "id": "ecb-2026-09-10",
@@ -598,8 +610,10 @@
       "meetingAt": "2026-09-10T12:15:00.000Z",
       "timeTbd": false,
       "type": "rate_decision",
-      "status": "scheduled",
-      "sourceUrl": "https://www.ecb.europa.eu/press/calendars/mgcgc/html/index.en.html"
+      "status": "done",
+      "sourceUrl": "https://www.ecb.europa.eu/press/calendars/mgcgc/html/index.en.html",
+      "decisionRate": 2.5,
+      "previousRate": 2.25
     },
     {
       "id": "fed-2026-09-16",

@@ -1,6 +1,7 @@
 /**
  * Geçmiş toplantıların karar oranlarını doldurur ve data/seed/meetings.json
- * dosyasını günceller: Fed için FRED, ECB için SDMX veri servisi.
+ * dosyasını günceller: Fed için FRED, ECB için SDMX veri servisi, TCMB
+ * için EVDS (EVDS_API_KEY gerekir; yoksa TCMB atlanır).
  *
  *   npm run fetch:rates
  *
@@ -14,6 +15,7 @@ import path from "node:path";
 import { config } from "dotenv";
 import { fetchSeries, SERIES, valueAsOf } from "../src/lib/sources/fred";
 import { fetchEcbRates, rateAsOf } from "../src/lib/sources/ecb-rates";
+import { fetchEvdsSeries, TCMB_POLICY_RATE } from "../src/lib/sources/evds";
 import type { Meeting } from "../src/lib/types";
 
 config({ path: ".env.local", quiet: true });
@@ -76,8 +78,19 @@ async function main() {
     ecbFailed = true;
   }
 
+  let tcmbFilled = 0;
+  let tcmbFailed = false;
+  try {
+    tcmbFilled = await fillTcmb(file.meetings);
+  } catch (err) {
+    console.error(`✗  TCMB: ${(err as Error).message}`);
+    tcmbFailed = true;
+  }
+
   await writeFile(SEED, JSON.stringify(file, null, 2) + "\n", "utf8");
-  console.log(`→ ${filled} Fed, ${ecbFilled} ECB toplantısına karar oranı yazıldı.`);
+  console.log(
+    `→ ${filled} Fed, ${ecbFilled} ECB, ${tcmbFilled} TCMB toplantısına karar oranı yazıldı.`,
+  );
 
   // Son 6 kararı özet olarak göster — gözle doğrulama için.
   for (const m of file.meetings.filter((x) => x.bankCode === "fed" && x.decisionRate).slice(-6)) {
@@ -88,7 +101,15 @@ async function main() {
     );
   }
 
-  if (ecbFailed) process.exit(1);
+  for (const m of file.meetings.filter((x) => x.bankCode === "tcmb" && x.decisionRate !== undefined)) {
+    const bps = Math.round(((m.decisionRate ?? 0) - (m.previousRate ?? 0)) * 100);
+    console.log(
+      `   TCMB ${m.meetingAt.slice(0, 10)}  %${m.decisionRate}  ` +
+        (bps === 0 ? "(değişiklik yok)" : `(${bps > 0 ? "+" : ""}${bps} bp)`),
+    );
+  }
+
+  if (ecbFailed || tcmbFailed) process.exit(1);
 }
 
 /**
@@ -102,7 +123,9 @@ async function fillEcb(meetings: Meeting[]): Promise<number> {
   );
   if (past.length === 0) return 0;
 
-  const obs = await fetchEcbRates(past[0].meetingAt.slice(0, 10));
+  // Seri toplantı gününden başlarsa "önceki oran" (gün-1) hiç bulunamaz ve
+  // hiçbir toplantı dolmaz — "0 ECB" çıktısının asıl sebebi buydu.
+  const obs = await fetchEcbRates(dayOffset(past[0].meetingAt.slice(0, 10), -10));
   console.log(`ECB SDW: ${obs.length} günlük gözlem`);
 
   let filled = 0;
@@ -110,6 +133,45 @@ async function fillEcb(meetings: Meeting[]): Promise<number> {
     const day = m.meetingAt.slice(0, 10);
     const before = rateAsOf(obs, dayOffset(day, -1));
     const after = rateAsOf(obs, dayOffset(day, 10));
+    if (before === undefined || after === undefined) continue;
+
+    m.decisionRate = after;
+    m.previousRate = before;
+    m.status = "done";
+    filled++;
+  }
+  return filled;
+}
+
+/**
+ * TCMB tek oran ilan eder ve yeni oran karar günü yürürlüğe girer (EVDS
+ * serisinde değişiklik karar tarihinde görünür). Hafta sonu/tatil boşlukları
+ * için +4 gün bakılır; rateAsOf en yakın önceki gözlemi alır.
+ */
+async function fillTcmb(meetings: Meeting[]): Promise<number> {
+  const apiKey = process.env.EVDS_API_KEY;
+  if (!apiKey) {
+    console.warn("⚠  EVDS_API_KEY tanımlı değil, TCMB karar oranları atlandı.");
+    return 0;
+  }
+
+  const past = meetings.filter(
+    (m) => m.bankCode === "tcmb" && new Date(m.meetingAt) < new Date(),
+  );
+  if (past.length === 0) return 0;
+
+  const obs = await fetchEvdsSeries(
+    TCMB_POLICY_RATE,
+    dayOffset(past[0].meetingAt.slice(0, 10), -10),
+    apiKey,
+  );
+  console.log(`EVDS: ${obs.length} günlük gözlem`);
+
+  let filled = 0;
+  for (const m of past) {
+    const day = m.meetingAt.slice(0, 10);
+    const before = rateAsOf(obs, dayOffset(day, -1));
+    const after = rateAsOf(obs, dayOffset(day, 4));
     if (before === undefined || after === undefined) continue;
 
     m.decisionRate = after;

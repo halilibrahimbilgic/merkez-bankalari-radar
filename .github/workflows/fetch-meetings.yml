@@ -27,10 +27,12 @@ jobs:
         if: ${{ !cancelled() }}
         env:
           FRED_API_KEY: ${{ secrets.FRED_API_KEY }}
+          EVDS_API_KEY: ${{ secrets.EVDS_API_KEY }}
       - run: npm run fetch:current-rates
         if: ${{ !cancelled() }}
         env:
           FRED_API_KEY: ${{ secrets.FRED_API_KEY }}
+          EVDS_API_KEY: ${{ secrets.EVDS_API_KEY }}
       - run: npm run fetch:probabilities
         if: ${{ !cancelled() }}
       - run: npm run fetch:speeches
