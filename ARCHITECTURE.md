@@ -180,7 +180,8 @@ score:import  → şema denetimi, aralık sınırı, mevcut skoru ezmeden yazar
 - `npm run score:speeches` (API yolu) yerel kullanım için duruyor ama cron'da
   çalışmaz. `apply-session-scores.ts` tarihsel dolgudur.
 
-Token yoksa skorlama adımları atlanır; varsa ama başarısızsa
+Cron'da doğrulandı (3 Ekim 2026: CLAUDE_CODE_OAUTH_TOKEN ile 7 turda 2
+konuşma, koruma adımı temiz). Token yoksa skorlama adımları atlanır; varsa ama başarısızsa
 `continue-on-error` — takvim, faiz, olasılık ve konuşma metinleri yine
 commit'lenir, konuşmalar siteye skorsuz düşer.
 
@@ -226,16 +227,11 @@ Sayfa        48 (build çıktısı), ISR 1 saat
 
 Öncelik sırasıyla:
 
-1. **`CLAUDE_CODE_OAUTH_TOKEN` secret'ı tanımlanmalı.** Skorlama hattı
-   yerelde aynı argümanlarla uçtan uca doğrulandı (15 konuşma skorlandı),
-   ancak cron'da token olmadan skorlama adımları atlanıyor. `claude
-   setup-token` ile üretilip
-   `gh secret set CLAUDE_CODE_OAUTH_TOKEN --repo halilibrahimbilgic/merkez-bankalari-radar`
-   ile yazılmalı. `ANTHROPIC_API_KEY` secret'ı geçersiz ve artık kullanılmıyor.
-2. **Koruma adımı CI'da henüz koşmadı.** Action'ın çalışma alanına kendi
-   dosyasını bırakması koruma adımını yanlış alarma düşürebilir; ilk token'lı
-   koşunun günlüğü kontrol edilmeli.
-3. **TCMB ve ECB arşivi 2026'dan başlıyor.** Karar oranları artık üç banka
+1. **Skorlar deterministik değil.** Aynı konuşma iki koşuda ±1 farklı puan
+   alabiliyor (Waller 16.09: yerelde +4, CI'da +5). Banka ortalamalarında
+   bu gürültü küçük örneklemde hissedilir; bir kayıt bir kez skorlandıktan
+   sonra yeniden skorlanmaz, bu yüzden puanlar zamanla kaymaz.
+2. **TCMB ve ECB arşivi 2026'dan başlıyor.** Karar oranları artık üç banka
    için de dolduruluyor (TCMB: EVDS `TP.PY.P02.1H`; ECB'de 3 Ekim'e kadar
    "0 ECB" çıkmasının sebebi takvim değil, serinin toplantı gününden
    başlatılıp "önceki oran"ın bulunamamasıydı). Ancak iki bankanın takvim
@@ -243,17 +239,17 @@ Sayfa        48 (build çıktısı), ISR 1 saat
    öncesi toplantılar arşivde hiç yok. Faiz serisinden geçmiş toplantı
    *uydurulamaz* — seri yalnızca değişiklik günlerini gösterir, sabit tutma
    kararlarını değil. Arşiv §4'teki koruma sayesinde ileriye doğru birikir.
-4. **Konuşma arşivi küçük.** BIS beslemesi yalnızca son 25 konuşmayı döndürür
+3. **Konuşma arşivi küçük.** BIS beslemesi yalnızca son 25 konuşmayı döndürür
    ve sayfalama kabul etmez; arşiv günlük işle birikir. Ağustos ortası–Eylül
    ortası arası (cron çalışmadığı için) kayıp. Ortalamalar tek haneli
    örneklemlerde yanıltıcı — `/skor` bunu yazıyor.
-5. **`rawText` depoda** — artık ~28 konuşmanın tam metni (PDF'ten) commit'li.
+4. **`rawText` depoda** — artık ~28 konuşmanın tam metni (PDF'ten) commit'li.
    Site için gereksiz ve public depoda telif açısından hassas kısım bu.
    Gitignore'lu bir önbelleğe taşınabilir.
-6. **MPT bantları %100'e tamamlanmıyor** — Atlanta Fed uçtaki küçük bantları
+5. **MPT bantları %100'e tamamlanmıyor** — Atlanta Fed uçtaki küçük bantları
    ayrı yayımlamıyor (toplam ~%96–99). `/faiz-olasiligi` eksik payı açıkça
    yazıyor; yön olasılıkları (`Prob: cut/hike`) bu payı içeriyor.
-7. **BoE, BoJ, RBA takvimi yok** — arayüzde "yakında" olarak pasif duruyor
+6. **BoE, BoJ, RBA takvimi yok** — arayüzde "yakında" olarak pasif duruyor
    (`src/components/ComingSoon.tsx`). Ayrıştırıcı yazılmadı.
 
 ---
