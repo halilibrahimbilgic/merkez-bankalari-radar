@@ -15,7 +15,7 @@ site. Üç modül:
 | --- | --- | --- |
 | A — Takvim | Toplantı tarihleri, TRT geri sayımı, geçmiş kararlar, iCal | ✅ tam otomatik |
 | B — Faiz olasılığı | Piyasanın fiyatladığı faiz dağılımı (Atlanta Fed MPT) | ✅ tam otomatik |
-| C — Şahin/güvercin | Merkez bankacısı konuşmaları + Türkçe özet ve skor | ⚠️ metin otomatik, **skor elle** |
+| C — Şahin/güvercin | Merkez bankacısı konuşmaları + Türkçe özet ve skor | ✅ metin ve skor otomatik (Claude aboneliği; §5) |
 
 Site **yatırım tavsiyesi vermez** ve veri lisansı gereği kişisel/eğitim
 amaçlıdır (bkz. §6).
@@ -36,7 +36,7 @@ amaçlıdır (bkz. §6).
   atlantafed.org (.xlsx) ─► fetch:probabilities ──► probabilities.json
   bis.org (RSS + HTML) ───► fetch:speeches ───────► speeches.json
                                                       ▲
-  Anthropic API ──────────► score:speeches ───────────┘ (elle; §5)
+  Claude Code (abonelik) ─► score:export/import ──────┘ (§5)
 
                          data/seed/*.json
                                 │
@@ -118,7 +118,7 @@ sayfalarını ileriye kaydırır; ECB'nin 10 Eylül 2026 toplantısı bu yüzden
 kez silinmişti. Yalnızca *gelecek* toplantıların kaybolması anlamlıdır
 (ertelenme/iptal).
 
-**`db:import` mevcut skorları ezmez.** Skorlama elle yürütülüyor ve günlük iş
+**`db:import` mevcut skorları ezmez.** Skorlama ayrı bir adım ve günlük iş
 skorsuz kayıt üretiyor; naif bir upsert her gece skorları silerdi.
 
 **Skor 0 ≠ nötr.** `hasPolicySignal: false` olan konuşmalar (düzenleme,
@@ -157,13 +157,32 @@ rehbere bakın.
 ## 5. Skorlamanın gerçeği
 
 Konuşma metinleri otomatik toplanır; **Türkçe özet ve şahin/güvercin skoru
-elle üretilir.** `npm run score:speeches` bir Anthropic API anahtarı ve
-bakiyesi ister; bakiye olmadığı için mevcut 15 kaydın skoru
-`scripts/apply-session-scores.ts` ile elle yazıldı (`scoredVia: "session"`).
+API anahtarı olmadan, Claude aboneliğiyle üretilir.** Cron'daki akış:
 
-Cron'da bu adım `continue-on-error: true` — çalışmasa bile takvim, faiz,
-olasılık ve konuşma metinleri commit'lenmeye devam eder; konuşmalar siteye
-skorsuz düşer.
+```
+score:export  → .scoring/TASK.md (score.ts'teki prompt) + .scoring/in/<id>.md
+claude-code-action (CLAUDE_CODE_OAUTH_TOKEN, --model opus)
+              → .scoring/out/<id>.json
+koruma        → .scoring dışında değişiklik varsa çalışma alanı sıfırlanır
+score:import  → şema denetimi, aralık sınırı, mevcut skoru ezmeden yazar
+```
+
+- Prompt tek kaynaktadır (`SYSTEM_PROMPT`, `buildUserMessage`); `api`,
+  `session` ve `claude-code` kayıtları aynı prompt sürümüyle karşılaştırılabilir.
+- Konuşma metni üçüncü taraf içeriktir (prompt injection yüzeyi). Claude'un
+  araçları `Read(./.scoring/**)`, `Edit(./.scoring/out/**)`, `Glob` ile
+  sınırlı; Bash/ağ yok. **Dosya izni `Write(...)` ile verilemez**, CLI bunu
+  yok sayıyor; `Edit(...)` tüm yazma araçlarını kapsar (2.1.288'de denendi).
+- Koşu başına en fazla 6 konuşma (`score:export`'taki `DEFAULT_LIMIT`):
+  bağlamı ve abonelik kullanımını sınırlar; birikim ertesi gün erir.
+- Yerelde aynı akış: `npm run score:export`, ardından aynı argümanlarla
+  `claude -p`, ardından `npm run score:import`.
+- `npm run score:speeches` (API yolu) yerel kullanım için duruyor ama cron'da
+  çalışmaz. `apply-session-scores.ts` tarihsel dolgudur.
+
+Token yoksa skorlama adımları atlanır; varsa ama başarısızsa
+`continue-on-error` — takvim, faiz, olasılık ve konuşma metinleri yine
+commit'lenir, konuşmalar siteye skorsuz düşer.
 
 Skorsuz kayıt sayısı `/konusmalar` ve `/skor` sayfalarında **açıkça
 gösterilir** (`src/components/ScoringGap.tsx`). Bu bilinçli: gizlenirse banka
@@ -195,7 +214,7 @@ Hiçbir sayfa yatırım tavsiyesi vermez; altbilgideki uyarı kaldırılmamalı.
 
 ```
 Toplantı     87  (Fed 56, ECB 19, TCMB 12)  — 52'sinde karar oranı var (Fed 45, TCMB 6, ECB 1)
-Konuşma      30  (Fed 13, ECB 9, RBA 3, BoE 3, BoJ 2) — 15'i skorlu, 9'u sinyalsiz
+Konuşma      30  (Fed 13, ECB 9, RBA 3, BoE 3, BoJ 2) — 30'u skorlu, 17'si sinyalsiz
 Olasılık     2026-10-01 anlığı, 13 pencere
 Güncel faiz  Fed, ECB, TCMB
 Sayfa        48 (build çıktısı), ISR 1 saat
@@ -207,16 +226,15 @@ Sayfa        48 (build çıktısı), ISR 1 saat
 
 Öncelik sırasıyla:
 
-1. **Anthropic anahtarı geçersiz.** Cron çalışıyor (3 Ekim'de elle tetiklenip
-   doğrulandı, `FRED_API_KEY` ve `ANTHROPIC_API_KEY` secret olarak tanımlı),
-   ancak `.env.local`'deki ve secret'taki Anthropic anahtarı 401
-   "invalid" dönüyor; bakiye sorunu değil. console.anthropic.com'dan yeni
-   anahtar alınıp hem `.env.local`'e hem
-   `gh secret set ANTHROPIC_API_KEY --repo halilibrahimbilgic/merkez-bankalari-radar`
-   ile yazılırsa (bakiye de varsa) skorlama ertesi sabah kendiliğinden başlar.
-2. **15 konuşma skorsuz** — BIS kırılması giderilince Eylül konuşmaları
-   eklendi; 1. madde çözülünce otomatik skorlanırlar. `/konusmalar` ve `/skor` bunu gösteriyor; ortalamalar hâlâ
-   Ağustos örneklemine dayanıyor.
+1. **`CLAUDE_CODE_OAUTH_TOKEN` secret'ı tanımlanmalı.** Skorlama hattı
+   yerelde aynı argümanlarla uçtan uca doğrulandı (15 konuşma skorlandı),
+   ancak cron'da token olmadan skorlama adımları atlanıyor. `claude
+   setup-token` ile üretilip
+   `gh secret set CLAUDE_CODE_OAUTH_TOKEN --repo halilibrahimbilgic/merkez-bankalari-radar`
+   ile yazılmalı. `ANTHROPIC_API_KEY` secret'ı geçersiz ve artık kullanılmıyor.
+2. **Koruma adımı CI'da henüz koşmadı.** Action'ın çalışma alanına kendi
+   dosyasını bırakması koruma adımını yanlış alarma düşürebilir; ilk token'lı
+   koşunun günlüğü kontrol edilmeli.
 3. **TCMB ve ECB arşivi 2026'dan başlıyor.** Karar oranları artık üç banka
    için de dolduruluyor (TCMB: EVDS `TP.PY.P02.1H`; ECB'de 3 Ekim'e kadar
    "0 ECB" çıkmasının sebebi takvim değil, serinin toplantı gününden
@@ -252,8 +270,6 @@ Sayfa        48 (build çıktısı), ISR 1 saat
 - E-posta/RSS bildirimi: toplantı öncesi hatırlatma
 
 **Uzun vade — ürünleşme**
-- Skorlamayı otomatikleştir (Anthropic bakiyesi gerekir); `scoredVia: "api"`
-  kayıtları çoğaldıkça elle süreç kendiliğinden sönümlenir
 - Konuşmacı bazında eğilim sayfası (oy hakkı/kıdem ağırlıklandırması ile —
   şu an herkesin ağırlığı eşit, `/skor` bunu açıkça yazıyor)
 - Ticarileşme düşünülürse **önce** §6'daki lisans sorunu çözülmeli

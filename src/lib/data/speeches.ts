@@ -2,7 +2,7 @@ import "server-only";
 import { readFile } from "node:fs/promises";
 import path from "node:path";
 import { getPool } from "../db";
-import type { BankCode, Speech } from "../types";
+import type { BankCode, ScoredVia, Speech } from "../types";
 
 const SEED_PATH = path.join(process.cwd(), "data", "seed", "speeches.json");
 
@@ -65,7 +65,7 @@ interface SpeechRow {
   model: string | null;
   prompt_version: string | null;
   scored_at: Date | null;
-  scored_via: "api" | "session" | null;
+  scored_via: ScoredVia | null;
   store_fetched_at: Date | null;
 }
 

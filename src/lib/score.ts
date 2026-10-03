@@ -16,6 +16,13 @@ export const SCORING_MODEL = "claude-opus-5";
 /** Prompt değişirse skorlar karşılaştırılamaz olur; sürüm kaydı tutulur. */
 export const PROMPT_VERSION = "2";
 
+/**
+ * Cron'da API anahtarı yerine Claude aboneliğiyle (claude-code-action +
+ * CLAUDE_CODE_OAUTH_TOKEN) skorlarken kullanılan model takma adı. Prompt
+ * aynı olduğu için skorlar "api" ve "session" kayıtlarıyla karşılaştırılabilir.
+ */
+export const CLAUDE_CODE_MODEL = "opus";
+
 export interface ScoreResult {
   summaryTr: string;
   hawkDoveScore: number;
@@ -23,7 +30,7 @@ export interface ScoreResult {
   hasPolicySignal: boolean;
 }
 
-const SYSTEM_PROMPT = `Sen merkez bankası iletişimini analiz eden bir makro ekonomi analistisin. Görevin, verilen konuşmayı Türkçe özetlemek ve para politikası duruşunu şahin/güvercin ölçeğinde puanlamaktır.
+export const SYSTEM_PROMPT = `Sen merkez bankası iletişimini analiz eden bir makro ekonomi analistisin. Görevin, verilen konuşmayı Türkçe özetlemek ve para politikası duruşunu şahin/güvercin ölçeğinde puanlamaktır.
 
 ÖLÇEK (-10 ile +10 arası):
   +7..+10  Çok şahin: açık sıkılaşma sinyali, faiz artırımı ima ediliyor
@@ -55,7 +62,7 @@ PUANLAMA KURALLARI:
 GEREKÇE KURALLARI:
 - 1-2 cümle. Puanı hangi ifadelere dayandırdığını somut olarak yaz.`;
 
-const OUTPUT_SCHEMA = {
+export const OUTPUT_SCHEMA = {
   type: "object",
   properties: {
     summary_tr: {
@@ -101,28 +108,23 @@ function getClient(): Anthropic {
 /** Uzun konuşmalarda maliyeti sınırlamak için metin kırpılır. */
 const MAX_CHARS = 60_000;
 
-export async function scoreSpeech(input: {
+export interface SpeechInput {
   bankCode: BankCode;
   speakerName: string;
   title: string;
   speechDate: string;
   text: string;
-}): Promise<ScoreResult> {
+}
+
+/** Modele giden kullanıcı mesajı — API ve Claude Code yolu aynı metni görür. */
+export function buildUserMessage(input: SpeechInput): string {
   const bank = BANKS[input.bankCode];
   const text =
     input.text.length > MAX_CHARS
       ? input.text.slice(0, MAX_CHARS) + "\n\n[metin uzunluk nedeniyle kırpıldı]"
       : input.text;
 
-  const response = await getClient().messages.create({
-    model: SCORING_MODEL,
-    max_tokens: 16000,
-    system: SYSTEM_PROMPT,
-    output_config: { format: { type: "json_schema", schema: OUTPUT_SCHEMA } },
-    messages: [
-      {
-        role: "user",
-        content: `Banka: ${bank.nameTr} (${bank.nameEn})
+  return `Banka: ${bank.nameTr} (${bank.nameEn})
 Konuşmacı: ${input.speakerName}
 Tarih: ${input.speechDate}
 Başlık: ${input.title}
@@ -130,9 +132,45 @@ Başlık: ${input.title}
 Konuşma metni:
 ---
 ${text}
----`,
-      },
-    ],
+---`;
+}
+
+/**
+ * Model çıktısını doğrular ve ScoreResult'a çevirir. Claude Code yolunda
+ * yapılandırılmış çıktı garantisi yok; bu yüzden her alan elle denetlenir.
+ */
+export function parseScoreOutput(raw: unknown): ScoreResult {
+  const o = raw as Record<string, unknown>;
+  if (
+    !o ||
+    typeof o.summary_tr !== "string" ||
+    typeof o.score_rationale_tr !== "string" ||
+    typeof o.has_policy_signal !== "boolean" ||
+    typeof o.hawk_dove_score !== "number" ||
+    !Number.isFinite(o.hawk_dove_score)
+  ) {
+    throw new Error("çıktı şemaya uymuyor");
+  }
+  if (o.summary_tr.trim().length < 50) throw new Error("özet çok kısa");
+
+  // Şema sayıyı garanti eder ama aralığı etmez — sınırla.
+  const score = Math.max(-10, Math.min(10, o.hawk_dove_score));
+  return {
+    summaryTr: o.summary_tr.trim(),
+    // Sinyalsiz konuşma tanım gereği 0'dır (bkz. PUANLAMA KURALLARI).
+    hawkDoveScore: o.has_policy_signal ? Math.round(score * 10) / 10 : 0,
+    scoreRationaleTr: o.score_rationale_tr.trim(),
+    hasPolicySignal: o.has_policy_signal,
+  };
+}
+
+export async function scoreSpeech(input: SpeechInput): Promise<ScoreResult> {
+  const response = await getClient().messages.create({
+    model: SCORING_MODEL,
+    max_tokens: 16000,
+    system: SYSTEM_PROMPT,
+    output_config: { format: { type: "json_schema", schema: OUTPUT_SCHEMA } },
+    messages: [{ role: "user", content: buildUserMessage(input) }],
   });
 
   if (response.stop_reason === "refusal") {
@@ -144,20 +182,5 @@ ${text}
     throw new Error("Modelden metin bloğu dönmedi");
   }
 
-  const parsed = JSON.parse(block.text) as {
-    summary_tr: string;
-    hawk_dove_score: number;
-    score_rationale_tr: string;
-    has_policy_signal: boolean;
-  };
-
-  // Şema sayıyı garanti eder ama aralığı etmez — sınırla.
-  const score = Math.max(-10, Math.min(10, parsed.hawk_dove_score));
-
-  return {
-    summaryTr: parsed.summary_tr,
-    hawkDoveScore: Math.round(score * 10) / 10,
-    scoreRationaleTr: parsed.score_rationale_tr,
-    hasPolicySignal: parsed.has_policy_signal,
-  };
+  return parseScoreOutput(JSON.parse(block.text));
 }

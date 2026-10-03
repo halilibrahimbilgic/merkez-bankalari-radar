@@ -121,9 +121,15 @@ export async function fetchBisSpeeches(): Promise<ScrapedSpeech[]> {
 export async function fetchSpeechText(url: string): Promise<string> {
   const html = await fetchText(url);
 
-  const pdfHref = html.match(/href="([^"]+\.pdf)"/i)?.[1];
+  // Yalnızca konuşmanın kendi PDF'i (sayfa adresi + ".pdf") kabul edilir.
+  // Sayfadaki ilk .pdf bağlantısı dipnottaki başka bir yayın olabiliyor:
+  // Lagarde'ın 30.09.2026 AP oturumu bir SUERF makalesiyle skorlanmıştı.
+  const ownPdf = new URL(url).pathname.replace(/\/$/, "") + ".pdf";
+  const pdfHref = [...html.matchAll(/href="([^"]+\.pdf)"/gi)]
+    .map((m) => new URL(m[1].replace(/&amp;/g, "&"), url))
+    .find((u) => u.hostname === new URL(url).hostname && u.pathname === ownPdf);
   if (pdfHref) {
-    const pdfText = await fetchPdfText(new URL(pdfHref, url).toString());
+    const pdfText = await fetchPdfText(pdfHref.toString());
     if (pdfText.length >= 500) return cutBoilerplate(normalizeWhitespace(pdfText));
   }
 
@@ -141,8 +147,14 @@ export async function fetchSpeechText(url: string): Promise<string> {
 }
 
 function htmlBody(html: string): string | null {
-  const drupal = html.match(/<div class="text__component">([\s\S]*?)<\/div>/);
-  if (drupal) return drupal[1];
+  // İçerikte iç içe div'ler (dipnot, tablo) olabildiği için ilk </div>'de
+  // durulmaz; kap, BIS'in sabit sorumluluk notuna (alert kutusu) kadar alınır.
+  const drupal = html.indexOf('<div class="text__component">');
+  if (drupal !== -1) {
+    const tail = html.slice(drupal);
+    const end = tail.search(/<div class="alert|<div class="publication-body__buttons/);
+    return end === -1 ? tail : tail.slice(0, end);
+  }
 
   const start = html.indexOf("cmsContent");
   if (start === -1) return null;

@@ -109,6 +109,12 @@ export default async function SpeechPage({ params }: PageProps<"/konusma/[id]">)
             oturumunda aynı ölçek ve kurallarla üretildi.
           </p>
         )}
+        {speech.scoredVia === "claude-code" && (
+          <p className="prose-width mt-2">
+            Bu skor, günlük veri işinde Claude Code ile aynı prompt, ölçek ve
+            kurallarla otomatik üretildi.
+          </p>
+        )}
         <p className="mt-2">
           {bank.nameTr} ({bank.nameEn}) · {bank.countryTr}
         </p>

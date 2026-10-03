@@ -31,6 +31,8 @@ export interface Meeting {
   sourceUrl?: string;
 }
 
+export type ScoredVia = "api" | "session" | "claude-code";
+
 export interface Speech {
   id: string;
   bankCode: BankCode;
@@ -58,9 +60,10 @@ export interface Speech {
   scoredAt?: string;
   /**
    * Skorun nasıl üretildiği. "api" = score:speeches script'i,
-   * "session" = Claude Code oturumunda elle üretildi (API kredisi yokken).
+   * "session" = Claude Code oturumunda elle üretildi (API kredisi yokken),
+   * "claude-code" = günlük cron'da Claude aboneliğiyle (claude-code-action).
    */
-  scoredVia?: "api" | "session";
+  scoredVia?: ScoredVia;
   /** BIS bazı konuşmaların yalnızca girişini HTML'de yayımlar; tam metin PDF'tedir. */
   textIsExcerpt?: boolean;
 }

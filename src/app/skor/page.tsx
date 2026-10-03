@@ -59,8 +59,8 @@ export default async function ScorePage() {
       {summaries.length === 0 ? (
         <Card>
           <p className="prose-width text-muted">
-            Henüz skorlanmış konuşma yok. Skorlama elle yapılır; toplu iş için
-            bir Anthropic API anahtarı ve bakiyesi gerekir.
+            Henüz skorlanmış konuşma yok. Skorlar günlük veri işinde
+            üretilir; yeni konuşmalar bir sonraki koşuda skorlanır.
           </p>
         </Card>
       ) : (

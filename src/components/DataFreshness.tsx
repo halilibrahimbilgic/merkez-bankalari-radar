@@ -11,7 +11,7 @@ import { formatDateTr, relativeTimeTr } from "@/lib/time";
  * zaman damgası olarak duruyordu. Üç besleme ayrı ayrı ve farklı hızlarda
  * tazelenir, bu yüzden tek bir "son güncelleme" yanıltıcı olurdu:
  * takvim günlük, olasılık verisi piyasa günü kapanışıyla, skorlama ise
- * elle yürütüldüğü için düzensiz.
+ * koşu başına sınırlı sayıda konuşmayla, birikimi günler içinde eriterek.
  */
 export async function DataFreshness() {
   const [meetings, speeches, probability] = await Promise.all([

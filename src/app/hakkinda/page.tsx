@@ -183,13 +183,13 @@ export default async function AboutPage() {
           </p>
           <p>
             <strong className="text-foreground">
-              Skorlama şu an otomatik değildir.
+              Skorlama bir dil modeliyle otomatik yapılır.
             </strong>{" "}
-            Konuşma metinleri her gün otomatik toplanır, ancak Türkçe özet ve
-            skor elle üretilir. Bu yüzden arşivde skorsuz kayıtlar bulunabilir
-            ve banka ortalamaları en güncel konuşmaları içermeyebilir. Skorlama
-            boşluğunun büyüklüğü konuşma arşivi ve skor sayfalarında açıkça
-            gösterilir.
+            Konuşma metinleri her gün toplanır; Türkçe özet ve skor aynı günlük
+            işte, sabit bir prompt ve ölçekle Claude tarafından üretilir. İş
+            başına skorlanan konuşma sayısı sınırlı olduğundan yeni kayıtlar
+            kısa süre skorsuz kalabilir; bu boşluğun büyüklüğü konuşma arşivi
+            ve skor sayfalarında açıkça gösterilir.
           </p>
         </div>
       </section>

@@ -37,8 +37,8 @@ export default async function SpeechesPage({
         <h1 className="text-2xl font-semibold tracking-tight">Konuşma arşivi</h1>
         <p className="prose-width mt-2 text-muted">
           BIS arşivinden derlenen merkez bankası konuşmaları. Konuşma metinleri
-          günlük olarak otomatik toplanır; Türkçe özet ve şahin/güvercin skoru
-          ise elle üretilir, bu yüzden her kayıtta bulunmayabilir.
+          ve Türkçe özet ile şahin/güvercin skoru günlük olarak otomatik
+          üretilir; en yeni kayıtlar bir sonraki koşuya kadar skorsuz kalabilir.
         </p>
       </header>
 

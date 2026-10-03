@@ -13,7 +13,7 @@ Mimari, bozulmaması gereken kurallar ve sıradaki işler için
 | --- | --- | --- |
 | A — Toplantı takvimi | Fed, ECB, TCMB; TRT dönüşümü, geri sayım, filtre, iCal | **Yayında** |
 | B — Faiz olasılığı | Atlanta Fed MPT dağılımları, Türkçe anlatım + grafik | **Yayında** |
-| C — Konuşma arşivi ve şahin/güvercin skoru | BIS arşivi + Türkçe özet/skor | **Yayında** — metin toplama otomatik, **skorlama elle** |
+| C — Konuşma arşivi ve şahin/güvercin skoru | BIS arşivi + Türkçe özet/skor | **Yayında** — metin toplama ve skorlama otomatik (Claude aboneliği) |
 
 ## Kurulum
 
@@ -25,7 +25,8 @@ npm run fetch:rates          # geçmiş karar oranları (FRED_API_KEY; TCMB içi
 npm run fetch:current-rates  # güncel politika faizleri (Fed, ECB, TCMB)
 npm run fetch:probabilities  # Atlanta Fed olasılık dağılımları
 npm run fetch:speeches       # BIS konuşma arşivi (metinlerle birlikte)
-npm run score:speeches       # Türkçe özet + skor (ANTHROPIC_API_KEY gerekir)
+npm run score:export         # skorsuz konuşmaları .scoring/ altına hazırlar
+npm run score:import         # Claude Code çıktılarını doğrulayıp arşive yazar
 npm run dev
 ```
 
@@ -54,7 +55,7 @@ Birkaç tasarım notu:
   geçerli olur; `db:import` doğal olarak idempotent kalır.
 - `central_banks` yalnızca bir referans çapasıdır. Görünen ad, saat dilimi ve
   faiz adı `src/lib/banks.ts`'te kalır — iki yerde tutmak kayma üretirdi.
-- `db:import` mevcut skorları **ezmez**: skorlama elle yürütülen bir süreçtir
+- `db:import` mevcut skorları **ezmez**: skorlama ayrı bir adımdır
   ve günlük veri çekme işi skorsuz kayıtlar üretir; naif bir upsert her gece
   skorları silerdi.
 - Olasılıklar üç tabloya ayrıktır (`probability_snapshots` → `_windows` →
@@ -107,12 +108,12 @@ sinyali taşımayan bir konuşma (düzenleme, denetim, ödeme sistemleri).
 `hasPolicySignal` alanı bunları ayırır; sinyalsiz konuşmalar banka
 ortalamalarına katılmaz.
 
-**Skorlama otomatik değildir.** Konuşma metinleri günlük cron ile toplanır,
-ancak Türkçe özet ve şahin/güvercin skoru elle üretilir
-(`scripts/apply-session-scores.ts`, kayıtlar `scoredVia: "session"` ile
-işaretli). `npm run score:speeches` toplu işi bir Anthropic API anahtarı ve
-bakiyesi gerektirir; cron'da `continue-on-error` ile işaretlidir, yani
-çalışmasa bile diğer veriler güncellenmeye devam eder.
+**Skorlama API anahtarı gerektirmez.** Günlük cron, Türkçe özeti ve
+şahin/güvercin skorunu Claude aboneliğiyle üretir
+(`anthropics/claude-code-action`, `CLAUDE_CODE_OAUTH_TOKEN` secret'ı —
+`claude setup-token` ile alınır). Akış `score:export → Claude Code →
+score:import`; ayrıntı ve güvenlik sınırları `ARCHITECTURE.md` §5'te. Kayıtlar
+`scoredVia: "claude-code"` ile işaretlenir.
 
 Skorsuz kayıt sayısı `/konusmalar` ve `/skor` sayfalarında açıkça gösterilir —
 banka ortalamalarının hangi örnekleme dayandığı gizlenmez.
@@ -123,11 +124,12 @@ Takvim her gün 08:00 TRT'de GitHub Actions ile yenilenir
 ## Yayına alma (Vercel)
 
 1. Depoyu Vercel'e bağlayın; Next.js otomatik algılanır, ek ayar gerekmez.
-2. Ortam değişkeni olarak `FRED_API_KEY`, `EVDS_API_KEY` ve (skorlama için) `ANTHROPIC_API_KEY`
-   ekleyin. Kendi alan adınızı bağladığınızda `NEXT_PUBLIC_SITE_URL` tanımlayın —
+2. Site yalnızca seed dosyalarını okur; Vercel'de veri anahtarı gerekmez.
+   Kendi alan adınızı bağladığınızda `NEXT_PUBLIC_SITE_URL` tanımlayın —
    sitemap ve kanonik adresler bunu kullanır; tanımsızsa Vercel'in verdiği
    üretim alan adına düşer.
-3. Aynı anahtarları GitHub deposunda **Secrets** olarak da ekleyin; günlük veri
+3. GitHub deposunda **Secrets** olarak `FRED_API_KEY`, `EVDS_API_KEY` ve
+   `CLAUDE_CODE_OAUTH_TOKEN` (skorlama; `claude setup-token`) ekleyin; günlük veri
    yenileme işi (`.github/workflows/fetch-meetings.yml`) bunları kullanır ve
    güncellenen `data/seed/*.json` dosyalarını commit'ler. Bu commit Vercel'de
    yeni bir dağıtım tetikler.
@@ -154,11 +156,13 @@ db/migrations/     sıralı şema göçleri
 npm run dev              # geliştirme sunucusu
 npm run build            # üretim derlemesi
 npm run fetch:meetings   # takvimleri yeniden çek
-npm run fetch:rates      # geçmiş Fed karar oranları
+npm run fetch:rates      # geçmiş karar oranları (Fed, ECB, TCMB)
 npm run fetch:current-rates  # güncel politika faizleri
 npm run fetch:probabilities  # olasılık dağılımları
 npm run fetch:speeches   # BIS konuşma arşivi
-npm run score:speeches   # özet + skor üret (--limit N ile sınırlanabilir)
+npm run score:export     # skorlanacakları .scoring/ altına hazırla (--limit N)
+npm run score:import     # Claude Code çıktılarını doğrula ve arşive yaz
+npm run score:speeches   # API yolu (ANTHROPIC_API_KEY gerekir; cron'da kullanılmaz)
 npm run db:migrate       # şema göçlerini uygula (DATABASE_URL gerekir)
 npm run db:import        # seed dosyalarını veritabanına aktar
 npm run lint

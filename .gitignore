@@ -39,3 +39,6 @@ yarn-error.log*
 # typescript
 *.tsbuildinfo
 next-env.d.ts
+
+# Cron skorlama çalışma alanı (score:export → claude-code-action → score:import)
+/.scoring/
