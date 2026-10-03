@@ -54,7 +54,9 @@ amaçlıdır (bkz. §6).
 ```
 
 Günlük iş `.github/workflows/fetch-meetings.yml` (05:00 UTC) script'leri
-çalıştırır ve değişen `data/seed/*.json` dosyalarını commit'ler. Bu commit
+çalıştırır ve değişen `data/seed/*.json` dosyalarını commit'ler (yalnızca
+`fetchedAt` değiştiyse commit atılmaz; cron'un sağlığı Actions geçmişinden
+izlenir). Bu commit
 Vercel'de yeni dağıtım tetikler. Yani **seed dosyaları üretimin asıl veri
 kaynağıdır**; Postgres isteğe bağlı bir alternatiftir.
 
@@ -196,7 +198,7 @@ Toplantı     87  (Fed 56, ECB 19, TCMB 12)  — 45'inde karar oranı var
 Konuşma      30  (Fed 13, ECB 9, RBA 3, BoE 3, BoJ 2) — 15'i skorlu, 9'u sinyalsiz
 Olasılık     2026-10-01 anlığı, 13 pencere
 Güncel faiz  Fed, ECB
-Sayfa        46 (build çıktısı), ISR 1 saat
+Sayfa        48 (build çıktısı), ISR 1 saat
 ```
 
 ---
