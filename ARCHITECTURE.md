@@ -132,9 +132,14 @@ metin PDF'e taşındı). Bu yüzden: MPT bağlantısı sayfadan keşfedilir ve z
 imzası kontrol edilir; konuşma metni önce PDF'ten okunur; cron adımları
 `if: !cancelled()` ile birbirinden bağımsızdır ama iş yine kırmızı biter.
 
-**`rawText` arayüze asla gitmez.** Üçüncü taraf telifli tam metin yalnızca
-skorlamanın girdisidir; okuma katmanı onu ayıklar, Postgres sorgusu kolonu
-seçmez bile.
+**Tam metin depoya ve arayüze girmez.** Üçüncü taraf telifli konuşma metni
+yalnızca skorlamanın girdisidir. `fetch:speeches` onu git'e girmeyen
+`.cache/speech-text/<id>.txt` önbelleğine yazar; `score:export` önbellekte
+bulamazsa `sourceUrl`'den yeniden indirir (`scripts/speech-text.ts`) — temiz
+CI checkout'unda da çalışır. Seed'de `rawText` alanı yoktur; okuma katmanı
+yine de savunma olarak ayıklar, Postgres sorgusu kolonu seçmez. (3 Ekim
+2026'ya kadarki 535 KB metin git geçmişinde duruyor; temizlemek geçmişi
+yeniden yazmayı ve force push'u gerektirir.)
 
 **Sunucu bileşeni `"use client"` modülünden değer içe aktaramaz.** Gerçek
 değeri değil istemci referansını alır. İki kez ısırdı: `computeCountdownParts`
@@ -243,21 +248,15 @@ Sayfa        48 (build çıktısı), ISR 1 saat
    ve sayfalama kabul etmez; arşiv günlük işle birikir. Ağustos ortası–Eylül
    ortası arası (cron çalışmadığı için) kayıp. Ortalamalar tek haneli
    örneklemlerde yanıltıcı — `/skor` bunu yazıyor.
-4. **`rawText` depoda** — artık ~28 konuşmanın tam metni (PDF'ten) commit'li.
-   Site için gereksiz ve public depoda telif açısından hassas kısım bu.
-   Gitignore'lu bir önbelleğe taşınabilir.
-5. **MPT bantları %100'e tamamlanmıyor** — Atlanta Fed uçtaki küçük bantları
+4. **MPT bantları %100'e tamamlanmıyor** — Atlanta Fed uçtaki küçük bantları
    ayrı yayımlamıyor (toplam ~%96–99). `/faiz-olasiligi` eksik payı açıkça
    yazıyor; yön olasılıkları (`Prob: cut/hike`) bu payı içeriyor.
-6. **BoE, BoJ, RBA takvimi yok** — arayüzde "yakında" olarak pasif duruyor
+5. **BoE, BoJ, RBA takvimi yok** — arayüzde "yakında" olarak pasif duruyor
    (`src/components/ComingSoon.tsx`). Ayrıştırıcı yazılmadı.
 
 ---
 
 ## 9. Yol haritası
-
-**Yakın vade — güveni sağlamlaştır**
-- `rawText`'i depodan çıkar
 
 **Orta vade — kapsamı genişlet**
 - BoE, BoJ, RBA takvim ayrıştırıcıları (`src/lib/sources/` deseni hazır)

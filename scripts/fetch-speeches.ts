@@ -11,6 +11,7 @@ import { readFile, writeFile, mkdir } from "node:fs/promises";
 import path from "node:path";
 import { fetchBisSpeeches, fetchSpeechText } from "../src/lib/sources/bis";
 import type { Speech } from "../src/lib/types";
+import { saveSpeechText } from "./speech-text";
 
 const OUT = path.join(process.cwd(), "data", "seed", "speeches.json");
 
@@ -71,14 +72,16 @@ async function main() {
         console.warn(`⚠  ${s.sourceUrl}: metin çok kısa (${rawText.length}), atlandı`);
         continue;
       }
+      // Tam metin depoya girmez (telif); skorlama için önbelleğe yazılır.
+      const id = speechId(s.sourceUrl);
+      await saveSpeechText(id, rawText);
       store.speeches.push({
-        id: speechId(s.sourceUrl),
+        id,
         bankCode: s.bankCode,
         speakerName: s.speakerName,
         title: s.title,
         speechDate: s.speechDate,
         sourceUrl: s.sourceUrl,
-        rawText,
       });
       added++;
       console.log(`✓  [${s.bankCode}] ${s.speechDate} — ${s.speakerName}`);

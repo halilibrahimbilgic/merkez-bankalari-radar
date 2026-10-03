@@ -1,5 +1,6 @@
 /**
  * Skorsuz konuşmaları Claude Code'un skorlayacağı çalışma alanına yazar.
+ * Tam metin .cache/speech-text'ten okunur, yoksa kaynaktan indirilir.
  *
  *   npm run score:export              # en fazla DEFAULT_LIMIT konuşma
  *   npm run score:export -- --limit 3
@@ -18,6 +19,7 @@ import { appendFile, mkdir, readFile, rm, writeFile } from "node:fs/promises";
 import path from "node:path";
 import { buildUserMessage, OUTPUT_SCHEMA, SYSTEM_PROMPT } from "../src/lib/score";
 import type { Speech } from "../src/lib/types";
+import { loadSpeechText } from "./speech-text";
 
 const SEED = path.join(process.cwd(), "data", "seed", "speeches.json");
 const DIR = path.join(process.cwd(), ".scoring");
@@ -73,7 +75,7 @@ ${SYSTEM_PROMPT}
 async function main() {
   const store = JSON.parse(await readFile(SEED, "utf8")) as { speeches: Speech[] };
   const pending = store.speeches
-    .filter((s) => s.hawkDoveScore === undefined && s.rawText)
+    .filter((s) => s.hawkDoveScore === undefined)
     .slice(0, parseLimit());
 
   await rm(DIR, { recursive: true, force: true });
@@ -87,7 +89,16 @@ async function main() {
   await mkdir(path.join(DIR, "in"), { recursive: true });
   await mkdir(path.join(DIR, "out"), { recursive: true });
 
+  // Metin depoda değil; önbellekte yoksa kaynaktan indirilir.
+  const exported: string[] = [];
   for (const s of pending) {
+    let text: string;
+    try {
+      text = await loadSpeechText(s);
+    } catch (err) {
+      console.error(`✗  ${s.id}: metin alınamadı — ${(err as Error).message}`);
+      continue;
+    }
     await writeFile(
       path.join(DIR, "in", `${s.id}.md`),
       buildUserMessage({
@@ -95,15 +106,16 @@ async function main() {
         speakerName: s.speakerName,
         title: s.title,
         speechDate: s.speechDate,
-        text: s.rawText!,
+        text,
       }),
       "utf8",
     );
+    exported.push(s.id);
   }
-  await writeFile(path.join(DIR, "TASK.md"), task(pending.map((s) => s.id)), "utf8");
+  await writeFile(path.join(DIR, "TASK.md"), task(exported), "utf8");
 
-  console.log(`${pending.length} konuşma .scoring/in/ altına yazıldı.`);
-  await setOutput("pending", String(pending.length));
+  console.log(`${exported.length} konuşma .scoring/in/ altına yazıldı.`);
+  await setOutput("pending", String(exported.length));
 }
 
 main().catch((err) => {

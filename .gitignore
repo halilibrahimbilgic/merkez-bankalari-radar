@@ -42,3 +42,5 @@ next-env.d.ts
 
 # Cron skorlama çalışma alanı (score:export → claude-code-action → score:import)
 /.scoring/
+# Konuşma tam metni önbelleği — telifli içerik, depoya girmez (scripts/speech-text.ts)
+/.cache/

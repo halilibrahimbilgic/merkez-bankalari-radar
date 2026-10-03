@@ -11,6 +11,7 @@ import path from "node:path";
 import { config } from "dotenv";
 import { scoreSpeech, SCORING_MODEL, PROMPT_VERSION } from "../src/lib/score";
 import type { Speech } from "../src/lib/types";
+import { loadSpeechText } from "./speech-text";
 
 config({ path: ".env.local", quiet: true });
 
@@ -32,7 +33,7 @@ async function main() {
   const store = JSON.parse(await readFile(SEED, "utf8")) as Store;
 
   const pending = store.speeches.filter(
-    (s) => s.hawkDoveScore === undefined && s.rawText,
+    (s) => s.hawkDoveScore === undefined,
   );
   const limit = parseLimit();
   const batch = limit ? pending.slice(0, limit) : pending;
@@ -53,7 +54,7 @@ async function main() {
         speakerName: speech.speakerName,
         title: speech.title,
         speechDate: speech.speechDate,
-        text: speech.rawText!,
+        text: await loadSpeechText(speech),
       });
 
       speech.summaryTr = result.summaryTr;
