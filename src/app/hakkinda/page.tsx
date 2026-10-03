@@ -101,7 +101,7 @@ export default async function AboutPage() {
         </p>
         {fetchedAt && (
           <p className="mt-2 text-sm text-muted tabular">
-            Takvim verisinin son çekilme zamanı: {formatDateTr(fetchedAt)},{" "}
+            Verinin son değiştiği zaman: {formatDateTr(fetchedAt)},{" "}
             {formatTimeTrt(fetchedAt)} TRT
           </p>
         )}

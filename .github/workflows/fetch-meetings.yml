@@ -44,15 +44,19 @@ jobs:
         continue-on-error: true
         env:
           ANTHROPIC_API_KEY: ${{ secrets.ANTHROPIC_API_KEY }}
+      # Script'ler her koşuda fetchedAt'i yeniler; yalnızca damga değiştiyse
+      # commit atmak her gün boş bir commit ve gereksiz bir Vercel dağıtımı
+      # üretiyordu. Cron'un çalışıp çalışmadığı Actions geçmişinden izlenir.
       - name: Değişiklik varsa commit'le
         if: ${{ !cancelled() }}
         run: |
-          if [[ -n "$(git status --porcelain data/seed)" ]]; then
+          if git diff --quiet -I '"fetchedAt"' -- data/seed \
+             && [[ -z "$(git ls-files --others --exclude-standard data/seed)" ]]; then
+            echo "Veride değişiklik yok (yalnızca fetchedAt)."
+          else
             git config user.name "github-actions[bot]"
             git config user.email "github-actions[bot]@users.noreply.github.com"
             git add data/seed
             git commit -m "chore: takvim ve piyasa verisini güncelle"
             git push
-          else
-            echo "Veride değişiklik yok."
           fi
