@@ -1,5 +1,5 @@
 {
-  "fetchedAt": "2026-10-03T16:58:02.165Z",
+  "fetchedAt": "2026-10-03T17:12:00.034Z",
   "rates": [
     {
       "bankCode": "fed",
@@ -31,6 +31,12 @@
       "rate": 4.6,
       "asOf": "2026-09-30",
       "sourceUrl": "https://www.rba.gov.au/statistics/cash-rate/"
+    },
+    {
+      "bankCode": "boj",
+      "rate": 1.25,
+      "asOf": "2026-09-18",
+      "sourceUrl": "https://www.boj.or.jp/en/mopo/mpmdeci/state_2026/index.htm"
     }
   ]
 }

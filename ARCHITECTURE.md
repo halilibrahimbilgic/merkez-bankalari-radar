@@ -33,7 +33,7 @@ amaçlıdır (bkz. §6).
   bankofengland.co.uk  │                              ▲
   boj.or.jp            │                              │ (oranları doldurur,
   rba.gov.au          ─┘                              │  üzerine YAZMAZ)
-  FRED · ECB SDMX · EVDS · BoE xlsx · RBA F1 ─► fetch:rates
+  FRED · ECB SDMX · EVDS · BoE xlsx · RBA F1 · BoJ karar PDF'leri ─► fetch:rates
   aynıları ────────────────► fetch:current-rates ───► current-rates.json
   atlantafed.org (.xlsx) ─► fetch:probabilities ──► probabilities.json
   bis.org (RSS + HTML) ───► fetch:speeches ───────► speeches.json
@@ -127,6 +127,13 @@ kendi UA'sını (`shared.ts`) geçiriyor. Taklit hem kırılgan hem yanlış.
 **Saati duyurulmayan karar (BoJ) `timeTbd`'dir ve hiçbir yerde saat gibi
 sunulmaz.** `meetingAt`'teki saat yalnızca sıralama için yer tutucudur:
 kartta ve listede gün düzeyinde etiket, iCal'de tüm gün etkinliği.
+
+**BoJ hedef faizi metinden okunur ve kalıp bulunamazsa hata verir.** BoJ'nin
+istatistik API'sinde hedef serisi yok; çağrı faizi (gerçekleşen) ve temel
+iskonto oranı (türetilmiş) hedef değildir, "politika faizi" diye
+gösterilmemeli. Karar metinleri PDF olduğu için `fillBoj` yalnızca
+doldurulmamış toplantıları indirir; BoJ güncel faizi `fetch:current-rates`'te
+yeniden indirilmeden meetings.json'dan türetilir (sıra: rates → current-rates).
 
 **Geçmiş toplantılar kaynaktan düşse de arşivde kalır.** Bankalar takvim
 sayfalarını ileriye kaydırır; ECB'nin 10 Eylül 2026 toplantısı bu yüzden bir
@@ -235,10 +242,10 @@ Hiçbir sayfa yatırım tavsiyesi vermez; altbilgideki uyarı kaldırılmamalı.
 
 ```
 Toplantı     135 (Fed 56, ECB 19, TCMB 12, BoE 16, BoJ 16, RBA 16)
-             — 64'ünde karar oranı var (Fed 45, TCMB 6, BoE 6, RBA 6, ECB 1)
+             — 70'inde karar oranı var (Fed 45, TCMB 6, BoE 6, RBA 6, BoJ 6, ECB 1)
 Konuşma      30  (Fed 13, ECB 9, RBA 3, BoE 3, BoJ 2) — 30'u skorlu, 17'si sinyalsiz
 Olasılık     2026-10-01 anlığı, 13 pencere
-Güncel faiz  Fed, ECB, TCMB, BoE, RBA (BoJ yok)
+Güncel faiz  Fed, ECB, TCMB, BoE, BoJ, RBA
 Hatırlatma   /rss.xml (1 hafta önce + karar), iCal aboneliği (1 gün + 1 saat önce)
 Sayfa        49 (build çıktısı), ISR 1 saat
 ```
@@ -270,10 +277,7 @@ Sayfa        49 (build çıktısı), ISR 1 saat
 4. **MPT bantları %100'e tamamlanmıyor** — Atlanta Fed uçtaki küçük bantları
    ayrı yayımlamıyor (toplam ~%96–99). `/faiz-olasiligi` eksik payı açıkça
    yazıyor; yön olasılıkları (`Prob: cut/hike`) bu payı içeriyor.
-5. **BoJ'nin faizi yok.** Takvim geliyor ama güncel faiz ve geçmiş karar
-   oranları için doğrulanmış bir kaynak bağlanmadı (BoJ istatistik API'si
-   aday). Kart "—" gösteriyor.
-6. **E-posta bildirimi yok — bilinçli.** Gönderim servisi ve abone e-posta
+5. **E-posta bildirimi yok — bilinçli.** Gönderim servisi ve abone e-posta
    adresi saklamak (KVKK, açık rıza, abonelikten çıkma) ürün kararı
    gerektiriyor. Şimdilik RSS (e-posta köprülerine bağlanabilir) ve iCal
    aboneliği var; site kişisel veri toplamıyor.
@@ -283,10 +287,9 @@ Sayfa        49 (build çıktısı), ISR 1 saat
 ## 9. Yol haritası
 
 **Orta vade — kapsamı genişlet**
-- BoJ faizi (istatistik API'si)
 - Skor zaman serisi: "bir ay önce +6 olan komite bugün +4" — yön seviyeden
   daha çok şey söyler. Veritabanı şeması geçmiş anlıkları zaten destekliyor.
-- E-posta bildirimi (§8.6'daki kararlardan sonra)
+- E-posta bildirimi (§8.5'teki kararlardan sonra)
 
 **Uzun vade — ürünleşme**
 - Konuşmacı bazında eğilim sayfası (oy hakkı/kıdem ağırlıklandırması ile —

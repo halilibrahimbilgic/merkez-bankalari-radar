@@ -27,9 +27,9 @@ const SOURCES = [
     note: "Bank Rate kararı duyuru günü 12:00 Londra saatinde; geçmiş karar oranları MPC oylama geçmişi dosyasından.",
   },
   {
-    name: "Bank of Japan — MPM takvimi",
+    name: "Bank of Japan — MPM takvimi ve karar metinleri",
     url: "https://www.boj.or.jp/en/mopo/mpmsche_minu/index.htm",
-    note: "Karar toplantının son günü, toplantı biter bitmez açıklanır; saat önceden duyurulmadığı için gün olarak gösterilir.",
+    note: "Karar toplantının son günü, toplantı biter bitmez açıklanır; saat önceden duyurulmadığı için gün olarak gösterilir. Politika faizi, her kararın metnindeki hedef cümlesinden okunur.",
   },
   {
     name: "Reserve Bank of Australia — kurul takvimi ve F1 tablosu",
@@ -66,10 +66,6 @@ const SOURCES = [
     url: "https://www.tcmb.gov.tr/wps/wcm/connect/TR/TCMB+TR/Main+Menu/Duyurular/Takvim",
     note: "PPK toplantı kararı, toplantı günü 14:00 Türkiye saatinde açıklanır.",
   },
-];
-
-const PLANNED = [
-  "Bank of Japan politika faizi ve geçmiş kararlar",
 ];
 
 export default async function AboutPage() {
@@ -129,15 +125,6 @@ export default async function AboutPage() {
             {formatTimeTrt(fetchedAt)} TRT
           </p>
         )}
-      </section>
-
-      <section>
-        <h2 className="mb-3 text-lg font-semibold">Yol haritasındaki kaynaklar</h2>
-        <ul className="prose-width list-inside list-disc space-y-1 text-muted">
-          {PLANNED.map((p) => (
-            <li key={p}>{p}</li>
-          ))}
-        </ul>
       </section>
 
       <section>

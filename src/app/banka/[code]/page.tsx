@@ -121,8 +121,8 @@ export default async function BankPage({ params }: PageProps<"/banka/[code]">) {
           </ul>
           <p className="mt-2 text-sm text-muted">
             Karar oranları Fed için FRED, ECB için ECB Data Portal, TCMB için
-            EVDS, BoE için MPC oylama geçmişinden, RBA için F1 tablosundan
-            doldurulur. BoJ için henüz karar oranı kaynağı bağlı değil.
+            EVDS, BoE için MPC oylama geçmişinden, RBA için F1 tablosundan, BoJ
+            için karar metinlerinden doldurulur.
           </p>
         </section>
       )}

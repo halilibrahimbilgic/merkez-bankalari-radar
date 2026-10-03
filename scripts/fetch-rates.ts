@@ -2,7 +2,7 @@
  * Geçmiş toplantıların karar oranlarını doldurur ve data/seed/meetings.json
  * dosyasını günceller: Fed için FRED, ECB için SDMX veri servisi, TCMB
  * için EVDS (EVDS_API_KEY gerekir; yoksa TCMB atlanır), BoE için MPC oylama
- * geçmişi (xlsx).
+ * geçmişi (xlsx), RBA için F1 tablosu, BoJ için karar metinleri.
  *
  *   npm run fetch:rates
  *
@@ -19,6 +19,7 @@ import { fetchEcbRates, rateAsOf } from "../src/lib/sources/ecb-rates";
 import { fetchEvdsSeries, TCMB_POLICY_RATE } from "../src/lib/sources/evds";
 import { fetchBoeDecisions } from "../src/lib/sources/boe-rates";
 import { fetchRbaCashRate } from "../src/lib/sources/rba";
+import { fetchBojStatementList, fetchBojStatementRate } from "../src/lib/sources/boj-rates";
 import type { Meeting } from "../src/lib/types";
 
 config({ path: ".env.local", quiet: true });
@@ -36,6 +37,7 @@ const FILLERS: [string, (meetings: Meeting[]) => Promise<number>][] = [
   ["TCMB", fillTcmb],
   ["BoE", fillBoe],
   ["RBA", fillRba],
+  ["BoJ", fillBoj],
 ];
 
 async function main() {
@@ -231,6 +233,56 @@ async function fillRba(meetings: Meeting[]): Promise<number> {
     if (before === undefined || after === undefined) continue;
     m.decisionRate = after;
     m.previousRate = before;
+    m.status = "done";
+    filled++;
+  }
+  return filled;
+}
+
+/**
+ * BoJ karar metinleri PDF; her gün hepsini indirmemek için yalnızca henüz
+ * doldurulmamış geçmiş toplantılar işlenir. Önceki oran, arşivdeki bir önceki
+ * BoJ kararından; yoksa (yılın ilk toplantısı) önceki yılın son metninden.
+ */
+async function fillBoj(meetings: Meeting[]): Promise<number> {
+  const boj = meetings
+    .filter((m) => m.bankCode === "boj" && new Date(m.meetingAt) < new Date())
+    .sort((a, b) => a.meetingAt.localeCompare(b.meetingAt));
+  const todo = boj.filter((m) => m.decisionRate === undefined);
+  if (todo.length === 0) return 0;
+
+  // Gereken yıllar: doldurulacak toplantıların yılları + ilkinin bir öncesi.
+  const firstYear = Number(todo[0].meetingAt.slice(0, 4));
+  const years = [...new Set([firstYear - 1, ...todo.map((m) => Number(m.meetingAt.slice(0, 4)))])];
+  const statements = (await Promise.all(years.map(fetchBojStatementList))).flat();
+  console.log(`BoJ: ${statements.length} karar metni (${years.join(", ")})`);
+
+  const rateCache = new Map<string, number>();
+  const rateOn = async (date: string) => {
+    if (!rateCache.has(date)) {
+      const s = statements.find((x) => x.date === date);
+      if (!s) return undefined;
+      rateCache.set(date, await fetchBojStatementRate(s.url));
+    }
+    return rateCache.get(date);
+  };
+
+  let filled = 0;
+  for (const m of todo) {
+    const day = m.meetingAt.slice(0, 10);
+    const rate = await rateOn(day);
+    if (rate === undefined) continue;
+
+    const i = boj.indexOf(m);
+    let previous = i > 0 ? boj[i - 1].decisionRate : undefined;
+    if (previous === undefined) {
+      const prior = statements.filter((s) => s.date < day).at(-1);
+      previous = prior ? await rateOn(prior.date) : undefined;
+    }
+    if (previous === undefined) continue;
+
+    m.decisionRate = rate;
+    m.previousRate = previous;
     m.status = "done";
     filled++;
   }

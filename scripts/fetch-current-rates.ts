@@ -5,7 +5,8 @@
  *
  * Fed bir aralık ilan eder (FRED: DFEDTARL/DFEDTARU), ECB tek oran
  * (SDMX: mevduat kolaylığı), TCMB tek oran (EVDS: 1 hafta repo;
- * EVDS_API_KEY gerekir, yoksa atlanır), BoE (takvim sayfası), RBA (F1 CSV).
+ * EVDS_API_KEY gerekir, yoksa atlanır), BoE (takvim sayfası), RBA (F1 CSV),
+ * BoJ (fetch:rates'in karar metinlerinden doldurduğu meetings.json).
  *
  * asOf, oranın yürürlüğe girdiği gündür (effectiveSince) — son gözlem günü
  * değil; aksi hâlde dosya her gün değişirdi.
@@ -24,6 +25,8 @@ import {
 import { fetchEvdsSeries, TCMB_POLICY_RATE, TCMB_RATES_PAGE_URL } from "../src/lib/sources/evds";
 import { fetchRbaCashRate, RBA_RATE_PAGE_URL } from "../src/lib/sources/rba";
 import { effectiveSince } from "../src/lib/sources/shared";
+import { BOJ_STATEMENTS_URL } from "../src/lib/sources/boj-rates";
+import type { Meeting } from "../src/lib/types";
 import type { BankCode } from "../src/lib/types";
 
 config({ path: ".env.local", quiet: true });
@@ -155,6 +158,32 @@ async function main() {
   } catch (err) {
     console.error(`✗  RBA: ${(err as Error).message}`);
     failed.push("rba");
+  }
+
+  // BoJ'nin hedef faizi yalnızca karar metinlerinde (PDF) yazıyor; fetch:rates
+  // onları zaten okuyup meetings.json'a yazdı. Burada yeniden indirmek yerine
+  // son karardan türetilir. asOf: oranın son değiştiği karar günü.
+  try {
+    const file = JSON.parse(
+      await readFile(path.join(process.cwd(), "data", "seed", "meetings.json"), "utf8"),
+    ) as { meetings: Meeting[] };
+    const decided = file.meetings
+      .filter((m) => m.bankCode === "boj" && m.decisionRate !== undefined)
+      .sort((a, b) => a.meetingAt.localeCompare(b.meetingAt));
+    const last = decided.at(-1);
+    if (!last) throw new Error("meetings.json'da karar oranı olan BoJ toplantısı yok");
+    const lastChange =
+      [...decided].reverse().find((m) => m.previousRate !== m.decisionRate) ?? decided[0];
+    rates.push({
+      bankCode: "boj",
+      rate: last.decisionRate!,
+      asOf: lastChange.meetingAt.slice(0, 10),
+      sourceUrl: BOJ_STATEMENTS_URL(Number(last.meetingAt.slice(0, 4))),
+    });
+    console.log(`✓  BoJ: %${last.decisionRate} (${lastChange.meetingAt.slice(0, 10)} itibarıyla)`);
+  } catch (err) {
+    console.error(`✗  BoJ: ${(err as Error).message}`);
+    failed.push("boj");
   }
 
   // Geçici bir kaynak hatası (ECB SDW 504 verdi) bankanın faizini siteden

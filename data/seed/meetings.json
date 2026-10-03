@@ -496,7 +496,9 @@
       "timeTbd": true,
       "type": "rate_decision",
       "status": "done",
-      "sourceUrl": "https://www.boj.or.jp/en/mopo/mpmsche_minu/index.htm"
+      "sourceUrl": "https://www.boj.or.jp/en/mopo/mpmsche_minu/index.htm",
+      "decisionRate": 0.75,
+      "previousRate": 0.75
     },
     {
       "id": "fed-2026-01-28",
@@ -573,7 +575,9 @@
       "timeTbd": true,
       "type": "rate_decision",
       "status": "done",
-      "sourceUrl": "https://www.boj.or.jp/en/mopo/mpmsche_minu/index.htm"
+      "sourceUrl": "https://www.boj.or.jp/en/mopo/mpmsche_minu/index.htm",
+      "decisionRate": 0.75,
+      "previousRate": 0.75
     },
     {
       "id": "boe-2026-03-19",
@@ -604,7 +608,9 @@
       "timeTbd": true,
       "type": "rate_decision",
       "status": "done",
-      "sourceUrl": "https://www.boj.or.jp/en/mopo/mpmsche_minu/index.htm"
+      "sourceUrl": "https://www.boj.or.jp/en/mopo/mpmsche_minu/index.htm",
+      "decisionRate": 0.75,
+      "previousRate": 0.75
     },
     {
       "id": "fed-2026-04-29",
@@ -658,7 +664,9 @@
       "timeTbd": true,
       "type": "rate_decision",
       "status": "done",
-      "sourceUrl": "https://www.boj.or.jp/en/mopo/mpmsche_minu/index.htm"
+      "sourceUrl": "https://www.boj.or.jp/en/mopo/mpmsche_minu/index.htm",
+      "decisionRate": 1,
+      "previousRate": 0.75
     },
     {
       "id": "rba-2026-06-16",
@@ -735,7 +743,9 @@
       "timeTbd": true,
       "type": "rate_decision",
       "status": "done",
-      "sourceUrl": "https://www.boj.or.jp/en/mopo/mpmsche_minu/index.htm"
+      "sourceUrl": "https://www.boj.or.jp/en/mopo/mpmsche_minu/index.htm",
+      "decisionRate": 1,
+      "previousRate": 1
     },
     {
       "id": "rba-2026-08-11",
@@ -800,7 +810,9 @@
       "timeTbd": true,
       "type": "rate_decision",
       "status": "done",
-      "sourceUrl": "https://www.boj.or.jp/en/mopo/mpmsche_minu/index.htm"
+      "sourceUrl": "https://www.boj.or.jp/en/mopo/mpmsche_minu/index.htm",
+      "decisionRate": 1.25,
+      "previousRate": 1
     },
     {
       "id": "rba-2026-09-29",
