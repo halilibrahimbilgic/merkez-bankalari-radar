@@ -98,7 +98,9 @@ Konuşmalar [BIS Central Bankers'
 Speeches](https://www.bis.org/cbspeeches/index.htm) beslemesinden gelir. Besleme
 yalnızca **son 25 konuşmayı** döndürür ve sayfalama parametresi kabul etmez —
 arşiv, günlük çalışan işle zaman içinde birikir. Tek bir çekişte yalnızca
-takip edilen 6 bankaya ait olanlar alınır (ilk çekişte 11 konuşma).
+takip edilen 6 bankaya ait olanlar alınır (ilk çekişte 11 konuşma). Eylül
+2026'dan beri BIS sayfaları yalnızca giriş paragraflarını içerdiği için tam
+metin konuşmanın PDF'inden okunur (`unpdf`).
 
 Skor sıfırsa iki durum olabilir: dengeli bir duruş, ya da hiç para politikası
 sinyali taşımayan bir konuşma (düzenleme, denetim, ödeme sistemleri).

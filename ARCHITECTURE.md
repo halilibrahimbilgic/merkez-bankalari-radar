@@ -119,6 +119,13 @@ skorsuz kayıt üretiyor; naif bir upsert her gece skorları silerdi.
 denetim, ödeme sistemleri) 0 alır ama banka ortalamasına **katılmaz**. Bu ayrım
 eklenmeden önce Fed ortalaması 1,78 görünüyordu; doğrusu 4,0.
 
+**Dış kaynaklar habersiz değişir; kırılma sessiz olmamalı.** 3 Ekim 2026'da
+iki kaynak aynı anda kırıldı: Atlanta Fed xlsx'i taşıdı (eski adres 200 +
+HTML 404 döndürdü) ve BIS Drupal'a geçti (HTML'de yalnızca özet kaldı, tam
+metin PDF'e taşındı). Bu yüzden: MPT bağlantısı sayfadan keşfedilir ve zip
+imzası kontrol edilir; konuşma metni önce PDF'ten okunur; cron adımları
+`if: !cancelled()` ile birbirinden bağımsızdır ama iş yine kırmızı biter.
+
 **`rawText` arayüze asla gitmez.** Üçüncü taraf telifli tam metin yalnızca
 skorlamanın girdisidir; okuma katmanı onu ayıklar, Postgres sorgusu kolonu
 seçmez bile.
@@ -182,10 +189,10 @@ Hiçbir sayfa yatırım tavsiyesi vermez; altbilgideki uyarı kaldırılmamalı.
 
 ```
 Toplantı     87  (Fed 56, ECB 19, TCMB 12)  — 45'inde karar oranı var
-Konuşma      15  (Fed 10, ECB 2, RBA 2, BoE 1) — 15'i skorlu, 9'u sinyalsiz
-Olasılık     2026-08-07 anlığı, 12 pencere
+Konuşma      28  (Fed 13, ECB 8, RBA 3, BoE 2, BoJ 2) — 15'i skorlu, 9'u sinyalsiz
+Olasılık     2026-10-01 anlığı, 13 pencere
 Güncel faiz  Fed, ECB
-Sayfa        33 (build çıktısı), ISR 1 saat
+Sayfa        46 (build çıktısı), ISR 1 saat
 ```
 
 ---
@@ -194,12 +201,15 @@ Sayfa        33 (build çıktısı), ISR 1 saat
 
 Öncelik sırasıyla:
 
-1. **Olasılık verisi bayat** — 7 Ağustos'tan, ~2 ay. `npm run fetch:probabilities`
-   çalıştırılıp commit'lenmeli. Cron'da adım var ama bir süredir koşmamış;
-   workflow'un gerçekten çalıştığı doğrulanmalı.
-2. **GitHub Actions secret'ları eksik** — `FRED_API_KEY` tanımlı değilse
-   `fetch:rates` ve `fetch:current-rates` adımları hata verir.
-   `gh secret set FRED_API_KEY --repo <owner>/<repo>`
+1. **Cron hiç çalışmadı ve secret'lar eksik.** Workflow 3 Ekim'de depoyla
+   birlikte oluştu, henüz tek koşusu yok; depoda hiç secret tanımlı değil.
+   `FRED_API_KEY` olmadan `fetch:rates` ve `fetch:current-rates` kırmızı
+   biter (diğer adımlar artık yine çalışır ve commit'lenir).
+   `gh secret set FRED_API_KEY --repo halilibrahimbilgic/merkez-bankalari-radar`,
+   ardından `gh workflow run "Veriyi güncelle"` ile elle doğrulayın.
+2. **13 konuşma skorsuz** — BIS kırılması giderilince Eylül sonu konuşmaları
+   eklendi. `/konusmalar` ve `/skor` bunu gösteriyor; ortalamalar hâlâ
+   Ağustos örneklemine dayanıyor.
 3. **TCMB'nin geçmiş karar oranları hiç yok.** Fed FRED'den, ECB SDMX'ten
    geliyor; TCMB için kaynak bağlanmamış, geçmiş PPK satırları boş görünüyor.
    TCMB EVDS API'si aday (anahtar gerektirir).
@@ -207,13 +217,16 @@ Sayfa        33 (build çıktısı), ISR 1 saat
    yayımlamadığı için `fillEcb` doldurulacak kayıt bulamıyor. Arşiv zamanla
    §4'teki koruma sayesinde birikecek.
 5. **Konuşma arşivi küçük.** BIS beslemesi yalnızca son 25 konuşmayı döndürür
-   ve sayfalama kabul etmez; arşiv günlük işle birikir. Ortalamalar tek
-   haneli örneklemlerde yanıltıcı — `/skor` bunu yazıyor ama örneklem
-   büyüyene kadar dikkat.
-6. **`rawText` depoda** — 136 KB üçüncü taraf konuşma metni commit'li. Site
-   için gereksiz ve public depoda telif açısından hassas kısım bu. Gitignore'lu
-   bir önbelleğe taşınabilir.
-7. **BoE, BoJ, RBA takvimi yok** — arayüzde "yakında" olarak pasif duruyor
+   ve sayfalama kabul etmez; arşiv günlük işle birikir. Ağustos ortası–Eylül
+   ortası arası (cron çalışmadığı için) kayıp. Ortalamalar tek haneli
+   örneklemlerde yanıltıcı — `/skor` bunu yazıyor.
+6. **`rawText` depoda** — artık ~28 konuşmanın tam metni (PDF'ten) commit'li.
+   Site için gereksiz ve public depoda telif açısından hassas kısım bu.
+   Gitignore'lu bir önbelleğe taşınabilir.
+7. **MPT bantları %100'e tamamlanmıyor** — Atlanta Fed uçtaki küçük bantları
+   ayrı yayımlamıyor (toplam ~%96–99). `/faiz-olasiligi` eksik payı açıkça
+   yazıyor; yön olasılıkları (`Prob: cut/hike`) bu payı içeriyor.
+8. **BoE, BoJ, RBA takvimi yok** — arayüzde "yakında" olarak pasif duruyor
    (`src/components/ComingSoon.tsx`). Ayrıştırıcı yazılmadı.
 
 ---

@@ -27,20 +27,35 @@ async function load(): Promise<Store> {
   }
 }
 
-/** Kaynak URL'sinden kararlı bir kimlik türetilir: r260805g */
+/**
+ * Kaynak URL'sinden kararlı bir kimlik türetilir. Eski BIS şablonu:
+ * `/review/r260805g.htm` → r260805g. Eylül 2026'dan beri:
+ * `/speeches/20260922-future-euro-cash` → 20260922-future-euro-cash.
+ * Eski kimlikler değişmez; `/konusma/<id>` bağlantıları kırılmaz.
+ */
 function speechId(sourceUrl: string): string {
-  const m = sourceUrl.match(/\/([a-z0-9]+)\.htm/i);
-  return m ? m[1] : sourceUrl.replace(/\W+/g, "-");
+  const legacy = sourceUrl.match(/\/([a-z0-9]+)\.htm/i);
+  if (legacy) return legacy[1];
+  const slug = sourceUrl.match(/\/speeches\/([a-z0-9-]+)\/?$/i);
+  return slug ? slug[1].toLowerCase() : sourceUrl.replace(/\W+/g, "-");
+}
+
+/**
+ * URL biçimi değiştiği için aynı konuşma eski ve yeni adresle iki kez
+ * görünebilir; tarih + başlık ikinci bir eşleşme anahtarıdır.
+ */
+function contentKey(s: { speechDate: string; title: string }): string {
+  return `${s.speechDate}|${s.title.trim().toLowerCase()}`;
 }
 
 async function main() {
   const store = await load();
-  const known = new Set(store.speeches.map((s) => s.sourceUrl));
+  const known = new Set(store.speeches.flatMap((s) => [s.sourceUrl, contentKey(s)]));
 
   const scraped = await fetchBisSpeeches();
   console.log(`Beslemede tanınan bankalara ait ${scraped.length} konuşma var.`);
 
-  const fresh = scraped.filter((s) => !known.has(s.sourceUrl));
+  const fresh = scraped.filter((s) => !known.has(s.sourceUrl) && !known.has(contentKey(s)));
   if (fresh.length === 0) {
     console.log("Yeni konuşma yok.");
     return;

@@ -18,24 +18,34 @@ jobs:
           node-version: 22
           cache: npm
       - run: npm ci
+      # Kaynaklar birbirinden bağımsızdır: biri kırılınca (ör. Atlanta Fed
+      # dosyayı taşıdığında) diğerlerinin verisi yine commit'lenmeli. Hata
+      # gizlenmez — iş yine kırmızı biter; continue-on-error bunu yeşile
+      # boyardı ve kırılma haftalarca fark edilmezdi.
       - run: npm run fetch:meetings
       - run: npm run fetch:rates
+        if: ${{ !cancelled() }}
         env:
           FRED_API_KEY: ${{ secrets.FRED_API_KEY }}
       - run: npm run fetch:current-rates
+        if: ${{ !cancelled() }}
         env:
           FRED_API_KEY: ${{ secrets.FRED_API_KEY }}
       - run: npm run fetch:probabilities
+        if: ${{ !cancelled() }}
       - run: npm run fetch:speeches
+        if: ${{ !cancelled() }}
       # Skorlama isteğe bağlıdır: ANTHROPIC_API_KEY yoksa ya da kredi
       # bittiyse script tek tek hata yazar ama 0 ile çıkar. Böylece ücretsiz
       # kaynaklardan gelen veri (takvim, faiz, olasılık, konuşma metinleri)
       # yine commit'lenir; konuşmalar skorsuz olarak siteye düşer.
       - run: npm run score:speeches
+        if: ${{ !cancelled() }}
         continue-on-error: true
         env:
           ANTHROPIC_API_KEY: ${{ secrets.ANTHROPIC_API_KEY }}
       - name: Değişiklik varsa commit'le
+        if: ${{ !cancelled() }}
         run: |
           if [[ -n "$(git status --porcelain data/seed)" ]]; then
             git config user.name "github-actions[bot]"

@@ -12,8 +12,13 @@ import { unzipSync } from "fflate";
  * Bkz. LICENSE_NOTICE.
  */
 
+/**
+ * Bilinen son dosya adresi. Atlanta Fed dosyayı bir kez taşıdı (cenfis/ →
+ * research-and-data/data/) ve eski adres 200 + HTML 404 sayfası döndürdü;
+ * bu yüzden önce sayfadaki bağlantıyı arıyoruz, bu sabit yalnızca yedek.
+ */
 export const MPT_URL =
-  "https://www.atlantafed.org/-/media/Project/Atlanta/FRBA/Documents/cenfis/market-probability-tracker/mpt_histdata.xlsx";
+  "https://www.atlantafed.org/-/media/Project/Atlanta/FRBA/Documents/research-and-data/data/market-probability-tracker/mpt_histdata.xlsx";
 
 export const MPT_PAGE_URL =
   "https://www.atlantafed.org/research-and-data/data/market-probability-tracker";
@@ -58,17 +63,44 @@ export interface ProbabilitySnapshot {
   windows: ProbabilityWindow[];
 }
 
+const UA =
+  "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 " +
+  "(KHTML, like Gecko) Chrome/120.0 Safari/537.36";
+
+/** Sayfadaki mpt_histdata.xlsx bağlantısını bulur; bulamazsa sabite düşer. */
+export async function resolveMptUrl(): Promise<string> {
+  try {
+    const res = await fetch(MPT_PAGE_URL, {
+      headers: { "user-agent": UA },
+      signal: AbortSignal.timeout(30_000),
+    });
+    if (res.ok) {
+      const m = (await res.text()).match(/href="([^"]*mpt_histdata\.xlsx[^"]*)"/i);
+      if (m) return new URL(m[1].replace(/&amp;/g, "&"), MPT_PAGE_URL).toString();
+    }
+  } catch {
+    // Sayfa erişilemezse sabit adresi denemek yine de anlamlı.
+  }
+  return MPT_URL;
+}
+
 export async function fetchMptWorkbook(): Promise<Uint8Array> {
-  const res = await fetch(MPT_URL, {
-    headers: {
-      "user-agent":
-        "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 " +
-        "(KHTML, like Gecko) Chrome/120.0 Safari/537.36",
-    },
+  const url = await resolveMptUrl();
+  const res = await fetch(url, {
+    headers: { "user-agent": UA },
     signal: AbortSignal.timeout(120_000),
   });
-  if (!res.ok) throw new Error(`Atlanta Fed MPT → HTTP ${res.status}`);
-  return new Uint8Array(await res.arrayBuffer());
+  if (!res.ok) throw new Error(`Atlanta Fed MPT → HTTP ${res.status} (${url})`);
+  const bytes = new Uint8Array(await res.arrayBuffer());
+  // Site eksik dosya için 200 + HTML döndürüyor; "invalid zip data" yerine
+  // nedeni söyleyen bir hata ver.
+  if (bytes[0] !== 0x50 || bytes[1] !== 0x4b) {
+    throw new Error(
+      `Atlanta Fed MPT → xlsx yerine ${res.headers.get("content-type") ?? "bilinmeyen içerik"} ` +
+        `döndü; dosya taşınmış olabilir (${url})`,
+    );
+  }
+  return bytes;
 }
 
 /** En güncel gözlem gününe ait tüm pencereleri çıkarır. */

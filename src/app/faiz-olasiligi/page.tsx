@@ -57,6 +57,13 @@ export default async function ProbabilityPage({
           : "inside",
   }));
 
+  // Atlanta Fed uçtaki küçük bantları ayrı yayımlamıyor; toplam %100'e
+  // tamamlanmıyor. Eksik payı gizlemek grafiği olduğundan kesin gösterirdi.
+  const tailPct = Math.max(
+    0,
+    100 - selected.buckets.reduce((s, b) => s + b.probabilityPct, 0),
+  );
+
   // Yön oklu özet — seçili pencere için.
   const odds: OddsRow[] | undefined =
     selected.probHikePct !== undefined && selected.probCutPct !== undefined
@@ -175,6 +182,13 @@ export default async function ProbabilityPage({
           <p className="mt-1 text-center text-sm text-muted">
             Ortalama SOFR&apos;un 25 baz puanlık bantlara düşme olasılığı
           </p>
+          {tailPct >= 0.5 && (
+            <p className="mt-1 text-center text-sm text-muted">
+              Gösterilen bantların toplamı {formatPct(100 - tailPct)}; kalan{" "}
+              {formatPct(tailPct)} kaynakta ayrı bant olarak yayımlanmayan uç
+              değerlere aittir. Yön olasılıkları bu payı içerir.
+            </p>
+          )}
         </div>
 
         {fomc.length > 0 && (

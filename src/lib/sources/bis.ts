@@ -110,32 +110,66 @@ export async function fetchBisSpeeches(): Promise<ScrapedSpeech[]> {
 }
 
 /**
- * Konuşmanın tam metnini BIS sayfasından çıkarır.
- * Metin `cmsContent` kabındadır; script/style ve dipnot bağlantıları atılır.
+ * Konuşmanın tam metnini çıkarır.
+ *
+ * BIS Eylül 2026'da Drupal'a geçti: `/review/r260813h.htm` adresleri
+ * `/speeches/20260817-<slug>` adresine 301 ile yönleniyor ve HTML sayfası
+ * artık yalnızca giriş paragraflarını (`text__component`) içeriyor; tam metin
+ * yalnızca PDF'te. Bu yüzden önce PDF denenir, olmazsa HTML'deki kaba düşülür.
+ * Eski şablon (`cmsContent`) da tanınır.
  */
 export async function fetchSpeechText(url: string): Promise<string> {
   const html = await fetchText(url);
 
-  const start = html.indexOf("cmsContent");
-  if (start === -1) throw new Error(`${url}: metin kabı bulunamadı`);
+  const pdfHref = html.match(/href="([^"]+\.pdf)"/i)?.[1];
+  if (pdfHref) {
+    const pdfText = await fetchPdfText(new URL(pdfHref, url).toString());
+    if (pdfText.length >= 500) return cutBoilerplate(normalizeWhitespace(pdfText));
+  }
 
-  // Kabın sonunu bulmak için içerik alanının bittiği yeri arıyoruz.
-  const tail = html.slice(start);
-  const end = tail.search(/<div[^>]*class="[^"]*(footer|related|share)/i);
-  const body = end === -1 ? tail : tail.slice(0, end);
+  const body = htmlBody(html);
+  if (body === null) throw new Error(`${url}: metin kabı bulunamadı`);
 
   const text = body
     .replace(/<(script|style)[\s\S]*?<\/\1>/gi, " ")
     .replace(/<\/(p|div|h[1-6]|li|br)>/gi, "\n")
     .replace(/<[^>]+>/g, " ");
 
-  const cleaned = decodeXml(text)
-    .replace(/[ \t ]+/g, " ")
-    .replace(/\n{3,}/g, "\n\n")
-    .replace(/^\s*cmsContent'?>?/, "")
-    .trim();
+  return cutBoilerplate(
+    normalizeWhitespace(decodeXml(text)).replace(/^\s*cmsContent'?>?/, "").trim(),
+  );
+}
 
-  return cutBoilerplate(cleaned);
+function htmlBody(html: string): string | null {
+  const drupal = html.match(/<div class="text__component">([\s\S]*?)<\/div>/);
+  if (drupal) return drupal[1];
+
+  const start = html.indexOf("cmsContent");
+  if (start === -1) return null;
+  // Kabın sonunu bulmak için içerik alanının bittiği yeri arıyoruz.
+  const tail = html.slice(start);
+  const end = tail.search(/<div[^>]*class="[^"]*(footer|related|share)/i);
+  return end === -1 ? tail : tail.slice(0, end);
+}
+
+async function fetchPdfText(url: string): Promise<string> {
+  const res = await fetch(url, {
+    headers: { "user-agent": "Mozilla/5.0 (compatible; MerkezBankalariRadar/0.1) Node" },
+    signal: AbortSignal.timeout(60_000),
+  });
+  if (!res.ok) throw new Error(`${url} → HTTP ${res.status}`);
+  // unpdf yalnızca ESM; dinamik içe aktarma CJS derlenen script'lerde de çalışır.
+  const { extractText, getDocumentProxy } = await import("unpdf");
+  const pdf = await getDocumentProxy(new Uint8Array(await res.arrayBuffer()));
+  const { text } = await extractText(pdf, { mergePages: true });
+  return text;
+}
+
+function normalizeWhitespace(s: string): string {
+  return s
+    .replace(/[ \t\u00a0]+/g, " ")
+    .replace(/\n{3,}/g, "\n\n")
+    .trim();
 }
 
 /**
@@ -148,6 +182,8 @@ const BOILERPLATE_MARKERS = [
   "About the author",
   "Stay connected",
   "Sign up to receive email alerts",
+  // Bankaların kendi PDF'lerinin sonundaki "ilgili içerik" listesi (ör. ECB).
+  "You may also be interested in",
 ];
 
 function cutBoilerplate(text: string): string {
