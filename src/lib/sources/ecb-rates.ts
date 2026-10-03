@@ -22,13 +22,25 @@ export async function fetchEcbRates(
   startPeriod: string,
 ): Promise<RateObservation[]> {
   const url = `${BASE}/${DEPOSIT_FACILITY_KEY}?format=csvdata&startPeriod=${startPeriod}`;
-  const res = await fetch(url, {
-    headers: { accept: "text/csv" },
-    signal: AbortSignal.timeout(60_000),
-  });
-  if (!res.ok) throw new Error(`ECB SDW → HTTP ${res.status}`);
-
-  return parseEcbCsv(await res.text());
+  // SDW aralıklı 504 veriyor (3 Ekim 2026'da iki cron koşusunda gözlendi);
+  // 5xx ve ağ hatası birkaç kez yeniden denenir, 4xx denenmez.
+  for (let attempt = 1; ; attempt++) {
+    let status: number | undefined;
+    try {
+      const res = await fetch(url, {
+        headers: { accept: "text/csv" },
+        signal: AbortSignal.timeout(60_000),
+      });
+      if (res.ok) return parseEcbCsv(await res.text());
+      status = res.status;
+    } catch (err) {
+      if (attempt >= 3) throw err;
+    }
+    if (status !== undefined && (status < 500 || attempt >= 3)) {
+      throw new Error(`ECB SDW → HTTP ${status}`);
+    }
+    await new Promise((r) => setTimeout(r, 5_000 * attempt));
+  }
 }
 
 /**

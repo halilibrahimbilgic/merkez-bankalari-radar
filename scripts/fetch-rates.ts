@@ -65,7 +65,16 @@ async function main() {
     filled++;
   }
 
-  const ecbFilled = await fillEcb(file.meetings);
+  // ECB SDW kırılırsa Fed'in doldurduğu oranlar yine yazılmalı; adım
+  // sonunda hata koduyla biter ki kırılma görünür kalsın.
+  let ecbFilled = 0;
+  let ecbFailed = false;
+  try {
+    ecbFilled = await fillEcb(file.meetings);
+  } catch (err) {
+    console.error(`✗  ECB: ${(err as Error).message}`);
+    ecbFailed = true;
+  }
 
   await writeFile(SEED, JSON.stringify(file, null, 2) + "\n", "utf8");
   console.log(`→ ${filled} Fed, ${ecbFilled} ECB toplantısına karar oranı yazıldı.`);
@@ -78,6 +87,8 @@ async function main() {
         (bps === 0 ? "(değişiklik yok)" : `(${bps > 0 ? "+" : ""}${bps} bp)`),
     );
   }
+
+  if (ecbFailed) process.exit(1);
 }
 
 /**
