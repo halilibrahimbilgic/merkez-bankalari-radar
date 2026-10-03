@@ -1,0 +1,333 @@
+SPEECH
+A new age of capital: growth, sovereignty and
+AI
+Speech by Christine Lagarde, President of the ECB, at “Hofburg im
+Dialog – Economy, Europe, Resilience” in Vienna, Austria
+Vienna, 14 September 2026
+Let me begin with a story that starts in this city.
+In this country, the years before 1873 have a name: the “Gründerzeit”, or “founders’ era”.
+The old city walls had come down and the Ringstrasse was rising where they had stood. Railways
+were pushing out across the empire. New banks and joint stock companies were being founded by the
+hundred.
+But money did not stop at borders. On a scale never before seen, savers in Vienna, Berlin, Paris and
+London could lend abroad. Their money went into the transformative technologies of the day. French
+savers financed the Suez Canal. Larger sums still went from British and German savers into the
+American railways.[ ]
+The historian Eric Hobsbawm called these decades the age of capital.[ ]
+In 1873 that age came to an end. Eight days after the Emperor opened the World Exhibition in the
+Prater, the Vienna stock exchange collapsed, and four months later Wall Street followed.
+The crash hit both continents. But what the money had built stayed in the United States, and so did the
+growth. By the end of the century, the US economy was the largest in the world, while Europe went
+through two decades of slow growth.
+Today, European savers are again financing the transformative technology of the age: artificial
+intelligence. Again, most of the money is flowing to the United States. Euro area households hold
+about €440 billion in US technology firms.[ ]
+The question I want to ask today is whether, this time, Europe will get its share of the benefits. I
+believe it can. But only if we are clear about why we need this technology, why we cannot simply buy
+it, and why part of it must be built here.
+Why Europe must adopt fast
+Let me start with some good news.
+Europe is often criticised when it comes to technology: good at running and regulating an advanced
+industrial society, but weaker at putting new digital tools to work. With AI, the picture is already
+different. Things are moving.
+1
+2
+3
+Firms are investing significantly. Euro area firms will devote around 10% of total investment to AI in
+2026, and ECB staff estimate that AI-related borrowing accounted for about a quarter of the growth in
+credit to firms in the first quarter of this year.
+Workers are adopting too. The share of euro area workers using AI on the job has doubled in two
+years and now exceeds 50%,[ ] a level it took the internet about a decade to reach.[ ]
+Yet progress is not as fast as it could be, as the gap with the United States shows. Over the last two
+years, US digital investment has grown twice as fast as in the euro area. US workers spend two to
+three times as much of the working week using AI as workers in the largest euro area economies.[ ]
+The reason this matters comes down to growth.
+An ageing society is straining our social model, and new strategic investment needs are adding to the
+bill: our analysis finds that existing budgets and EU instruments leave more than €100 billion a year of
+the public share of those investment needs uncovered.[ ] With a workforce that will shrink by more
+than a million people a year over the next 25 years, there is no way to pay for all this without faster
+productivity growth.[ ]
+AI is therefore arriving at the right moment. After years of stalling productivity, it is the best chance we
+have to make the arithmetic work.
+ECB estimates suggest that, if adopted quickly, AI could lift the level of productivity by up to 4% over a
+decade, which would be transformative for public finances.[ ] To put that in context, the Draghi report
+estimated that a 2% rise in productivity over a similar horizon would cover up to one-third of the fiscal
+cost of Europe’s strategic investments.[ ]
+But the case for speed may be even stronger than these estimates suggest, because Europe will pay
+for this boom whether or not it shares in the growth.
+AI investment is now growing so fast, above all in the United States, that the tech companies’ own
+cash flows no longer cover it. The big US hyperscalers issued more than USD 100 billion in bonds last
+year, most of it long-dated,[ ] and they now account for close to a tenth of new euro bond issuance by
+non-financial companies.[ ]
+Measured against the economy, the buildout is not unprecedented, at about half the size of the IT
+surge of the late 1990s.[ ] But it is arriving at a time when government deficits and debt are high, and
+market participants already attribute part of the rise in US long-term real yields to AI-related borrowing.
+[ ]
+Since euro area long-term rates move with US yields, Europe will bear part of the price of this boom in
+its own borrowing costs. The question is whether it will also get the growth that goes with it.
+Why importing is not enough
+Adopting, for Europe, means importing.
+Here, there is an important difference compared with the world of 1873. The railways were a European
+invention, and it was the United States that was catching up. The Gründerzeit earned its name
+4 5
+6
+7
+8
+9
+10
+11
+12
+13
+14
+because Europe turned the inventions of that age into companies.
+Today, the companies are being built elsewhere. Last year the United States produced 59 notable AI
+models and China produced 35. France and the United Kingdom produced one each.[ ] Along the
+rest of the AI value chain, the picture is the same: the United States hosts three-quarters of the world’s
+AI computing capacity; Europe hosts 5%.[ ]
+There is nothing inherently bad about importing rather than producing new technologies. Historically,
+the gains from great technologies have mostly gone to those who adopted them, and Europe benefits
+from US investment in AI.
+But there are three reasons why AI is special.
+The first concerns data.
+Much of what a firm knows now lies in its data. That knowledge is what sets it apart from its
+competitors, and economists have started to value it as an asset in its own right.[ ]
+Adopting AI means running that data through a system that belongs to someone else and sits under
+someone else’s law. Cloud computing already did this, but a cloud only stores data, whereas a model
+reads it. That puts the supplier of a model in a position to learn what an industry knows and to
+compete with it.
+European firms understand this, and without domestic alternatives many will hold back. Eurostat
+asked firms that had considered AI and decided against it why they had done so. Almost half cited
+data protection concerns.[ ]
+The second reason is access.
+Past technologies, once adopted, stayed with those who used them. The railway tracks that savers
+financed in the 1870s could not be taken up again from London or Berlin.
+Where Europe has remained reliant on others for inputs or services, the damage a cut-off could cause
+has been painful but bounded. Halving imports of critical inputs from China would cost us 2-3% of
+manufacturing value added, for example.[ ]
+With AI, the loss would be of a different kind. Within a few years it will be screening goods at the
+border, deciding which tax returns are audited, dispatching trains, watching patients on wards and
+clearing payments at banks. A withdrawal of access, or a change in its terms, would then reach every
+sector at once.
+That is leverage of a kind no trade partner has ever held over Europe, and it could be used in any
+negotiation, on tariffs or on digital taxes, for example.
+The third reason concerns the frontier.
+If we move to a world of many models, including open ones, the threat of a cut-off will diminish. For
+most of the economy, a model a year behind the best will do the job. But even then the frontier will
+matter in the most innovative sectors.
+Where competition is cut-throat, a small edge in capability can produce outsized gains. Pharma,
+finance and defence, for instance, all work this way. And this can produce winner-takes-all dynamics:
+15
+16
+17
+18
+19
+the firm with the best model earns the most from it and can spend the most on the next one, which can
+entrench its lead for good.
+Faced with these properties of AI, Europe has an awkward choice.
+Either it holds back on adopting, because it cannot protect its data, and forgoes the growth. Or it
+adopts AI quickly, becomes highly dependent, and risks losing the freedom to organise its economy
+according to its own values.
+Financing sovereign AI
+So what can we do to unite growth with sovereignty?
+The foundation is building more European computing capacity. Companies should be deciding
+whether to adopt AI on its merits, without worrying about where their data ends up.
+There is much debate about whether the AI buildout in the United States is a bubble. ECB staff have
+looked at past technological revolutions, and corrections have been part of the pattern. No one knows
+whether this one will follow a similar route, but if it does, we will feel the effects here in Europe.[ ]
+Most European savers’ exposure to US tech giants runs through investment funds, which would have
+to sell into a falling market to meet redemptions. Making sure our financial system can absorb that is a
+pressing task for supervisors and regulators. Banks, which the ECB is responsible for supervising, are
+well capitalised.
+None of this is a reason to delay building on this side of the Atlantic. Europe already has too little data
+centre capacity to meet its own demand, and on current trends, that gap is projected to grow more
+than sixfold within a decade.[ ]
+The EU’s new gigafactories are a start, but they will fill only a fraction of it. Europe needs to build at a
+different pace altogether.
+Next, Europe needs models that are “good enough” for most tasks and that run on European
+infrastructure, so that the threat of being cut off loses its force.
+Today such models are mostly released with open weights, and the best of them are currently
+Chinese, such as DeepSeek and Kimi. But they offer no guarantee: a lab can stop releasing new
+versions openly whenever it chooses, and the licence terms can change with each one.
+Europe has something to build on: Mistral in France has released its latest generation of models with
+open weights, and a firm in San Sebastián has compressed a Chinese open model into a version that
+now scores higher on independent benchmarks than any other European model. We need to grow that
+potential to give Europe a range of open models of its own.
+The final step is securing access to the frontier, so that Europe stays competitive in the innovative
+sectors that will drive the fastest productivity growth.[ ]
+No country controls the whole AI supply chain today. It runs through China for rare earths, Taiwan for
+chips, Europe for lithography and the United States for models. What countries can do is protect their
+access by being indispensable to the frontier.
+20
+21
+22
+Some call this holding a chokepoint. I prefer to see it as being a link in the chain that no one can afford
+to remove.
+Europe holds one of the most important links of all in ASML. But indispensability does not last on its
+own; others will try to build ways around it. When China restricted rare earth exports in 2010, Japan
+cut its dependence sharply within a few years. China is now spending heavily to replicate what ASML
+does.
+So Europe must keep innovating, to find the links in the chain where it can become indispensable
+next.
+Each step calls for many policies, and I will not list them all. But all of them come back to capital.
+Europe needs more of it, and it needs a different kind.
+More of it, because data centres are expensive. The cost of closing Europe’s data centre gap over the
+next decade could be as high as €600 billion, chips included.[ ]
+In the United States the whole of the capital market has been drawn in to make the buildout possible:
+bonds, private credit and securitisation alongside traditional lending. Europe is still relying largely on its
+banks.
+A different kind of capital, because new models and the links in the chain that keep us indispensable
+cannot be financed with debt alone. They take equity, and equity willing to carry a firm through years of
+losses before it earns anything.
+The news is better than it was. Mistral’s funding round last week was the largest equity raise ever by a
+European technology company. But that is one round, and Europe needs many more.
+In each case the money is there: European households save around €1.4 trillion a year.[ ] What is
+missing are the markets that channel it to our own uses.
+We hear a great deal about the savings and investments union. This, fundamentally, is what it is for.
+Savings will always go abroad in search of returns, as they have done since the age of capital. But
+Europe must first be able to deploy its savings at home.
+Conclusion
+Let me conclude by stressing the opportunity in front of us.
+Three years ago I argued that capital markets do not spring up because policymakers call for them.
+They emerge to finance transformative projects that are beyond the reach of banks.[ ]
+That is what happened in the 1860s and 1870s, when US railways needed financing on a scale no
+bank could provide, and capital markets sprung up to channel savings, many of them European, to
+where they were needed.
+I said then that Europe needed a project of its own to drive its capital markets forward. I believe AI is
+that project. It needs capital on a scale that only markets can provide, and the stakes for Europe could
+hardly be higher.
+Governments across Europe have understood this. The Commission has put its proposals on the
+table. What remains is to act on them, so that this time Europe’s savings can build Europe’s future.
+23
+24
+25
+Thank you.
+1.
+Wilkins, M. (1989), The History of Foreign Investment in the United States to 1914, Harvard University
+Press; Bonin, H. (2010), History of the Suez Canal Company, 1858-2008: Between Controversy and
+Utility, Droz.
+2.
+Hobsbawm, E. (1975), The Age of Capital, 1848-1875, Weidenfeld & Nicolson.
+3.
+Chart 3 in Andersson, M., Breckenfelder, J., Corradin, S., Nikolov, K. and Viola, M.A. (2026), “
+”, The ECB Blog, ECB, 17 August.
+4.
+Dias da Silva, A., Lebastard, L. and Sondermann, D. (2026), “
+”, The ECB Blog, ECB, 26 August.
+5.
+Lane, P.R. (2026), “ ”, keynote speech at the ECB-SAFE-RCEA
+International Conference on the Climate-Macro-Finance Interface (3CMFI), Frankfurt, 23 March.
+6.
+Bick, A., Blandin, A., Deming, D.J., Fuchs-Schündeln, N. and Jessen, J. (2026), “
+”, NBER Working Paper Series, No 34995, National Bureau of
+Economic Research, March.
+7.
+Bouabdallah, O., Dorrucci, E., Nerlich, C., Nickel, C. and Vlad, A. (2025), “
+”, The ECB Blog, ECB, 25
+July.
+8.
+European Commission (2026),
+, Publications Office of the European Union.
+9.
+Lane, P.R. (2026), op. cit. The ECB scenarios refer to total factor productivity.
+10.
+Draghi, M. (2024), , European Commission, September, as
+cited in Bouabdallah, O. et al. (2025), op. cit.
+11.
+The AI
+boom: rational enthusiasm or the next dot-com bubble?
+AI adoption and the productivity promise:
+what workers report
+AI and the euro area economy
+Mind the Gap: AI
+Adoption in Europe and the U.S.
+Time to be strategic: how
+public money could power Europe’s green, digital and defence transitions
+Demographic transformation in the EU: understanding change and
+adapting to its consequences
+The Future of European Competitiveness
+Bank for International Settlements (2026), “
+”, BIS Quarterly Review, March.
+12.
+Duquerroy, A., Furtuna, O., Rahmouni-Rousseau, I. and Vaz Cruz, L. (2026), “
+”, The ECB Blog, ECB, 31 August.
+13.
+Aldasoro, I., Doerr, S. and Rees, D. (2026), “ ”, BIS
+Bulletin, No 120, Bank for International Settlements, 7 January.
+14.
+Duquerroy, A. et al. (2026), op. cit.
+15.
+Stanford Institute for Human-Centered AI (2026), .
+16.
+Pilz, K.F., Rahman, R., Sanders, J., Emberson, L. and Heim, L. (2025), “
+”, Data Insights, Epoch AI, 5 June.
+17.
+Jones, C.I. and Tonetti, C. (2020), “Nonrivalry and the Economics of Data”, American Economic
+Review, Vol. 110, No 9, September, pp. 2819-2858; Veldkamp, L. (2023), “Valuing Data as an Asset”,
+Review of Finance, Vol. 27, No 5, pp. 1545-1562; Baley, I. and Veldkamp, L. (2025), The Data
+Economy: Tools and Applications, Princeton University Press.
+18.
+Eurostat (2026), Use of artificial intelligence in enterprises, survey year 2025. The concern has an
+economic basis independent of privacy law. Handing proprietary data to a model provider creates two
+risks that a cloud contract did not. First, a provider that sees the workflows of a whole industry is in a
+position to acquire the knowledge on which its customers’ margins rest and to launch a rival product.
+Second, once that knowledge is inside the system it can reach other subscribers, through models
+updated on customer data or through agents and shared features that carry information across firms.
+19.
+Essers, D., Lebastard, L., Mancini, M., Panon, L. and Timini, J. (2025), “
+”, Research Bulletin, No 128, ECB, 24 February.
+20.
+Andersson, M., Breckenfelder, J., Corradin, S., Nikolov, K. and Viola, M.A. (2026), “
+”, The ECB Blog, ECB, 17 August.
+21.
+Financing the AI infrastructure boom: on- and off-balance
+sheet borrowing
+Big tech, big debt: when
+US tech giants tap the euro area bond market
+Financing the AI boom: from cash flows to debt
+The 2026 AI Index Report
+The US hosts the majority of
+GPU cluster performance, followed by China
+Critical input disruptions –
+mapping out the road to EU resilience
+The AI boom:
+rational enthusiasm or the next dot-com bubble?
+According to a study commissioned by the European Commission’s Directorate-General for
+Communications Networks, Content and Technology, a capacity gap of 3 gigawatts in 2025 rises to
+around 20 gigawatts by 2036 under the baseline scenario. See Bergamaschi, R. et al. (2026), “Cloud
+& AI Study: Executive Summary”, European Commission DG CNECT, July.
+22.
+See “ ”, 14 September 2026.
+23.
+The Commission’s impact assessment report for the Cloud and AI Development Act (SWD(2026) 502)
+projects a gap of 19 gigawatts between EU data centre demand and installed capacity by 2036. Epoch
+AI estimates the up-front capital cost of a one-gigawatt AI data centre, including servers, at around
+USD 38 billion (Michael, A. and Cottier, B. (2026), “
+”, Epoch AI, 14 May). 19 gigawatts multiplied by USD 38
+billion equals around USD 720 billion, or roughly €600 billion at current exchange rates. This should be
+treated as an upper bound, since the gap covers data centre capacity of all types, while the cost
+estimate is for GPU-dense AI facilities.
+24.
+European Commission (2025),
+, 19 March.
+25.
+Lagarde, C. (2023), “ ”, speech at the European Banking
+Congress, Frankfurt am Main, 17 November.
+A Transformative AI Strategy for Europe
+Servers account for 60% of the total cost of
+ownership of a one-gigawatt AI data center
+Savings and Investments Union: A Strategy to Foster Citizens’ Wealth
+and Economic Competitiveness in the EU
+A Kantian shift for the capital markets union
+CONTACT
+European Central Bank
+Directorate General Communications
+Sonnemannstrasse 20
+
+60314 Frankfurt am Main, Germany
+
+ +49 69 1344 7455
+ media@ecb.europa.eu
+Reproduction is permitted provided that the source is acknowledged.
+Media contacts
+Copyright 2026,
+European Central Bank

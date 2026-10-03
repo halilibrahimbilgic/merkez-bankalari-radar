@@ -49,7 +49,7 @@ const SOURCES = [
   {
     name: "BIS — Central Bankers' Speeches",
     url: "https://www.bis.org/cbspeeches/index.htm",
-    note: "Konuşma metinleri. Besleme yalnızca son 25 konuşmayı verir ve sayfalama kabul etmez; arşiv günlük çalışan işle zaman içinde birikir.",
+    note: "Konuşma metinleri. Besleme yalnızca son 25 konuşmayı verir ve sayfalama kabul etmez; arşiv günlük çalışan işle zaman içinde birikir. Tam metin yalnızca yayımcısının şartları izin veriyorsa (Fed Board, ECB, BoJ, RBA) lisans notuyla gösterilir; Bank of England ve bölgesel/ulusal bankaların konuşmalarında kaynağa bağlantı verilir.",
   },
   {
     name: "ECB Data Portal (SDMX)",

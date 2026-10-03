@@ -1,0 +1,686 @@
+SPEECH
+Banking regulators, supervisors and their
+watchers
+Keynote speech by Claudia Buch, Chair of the Supervisory Board of
+the ECB, at the Watching European Financial Market Regulation and
+Supervision Conference, Goethe University Frankfurt
+Frankfurt am Main, 15 September 2026
+We all know about birdwatchers, and many of us know about central bank watchers. But how many of
+us know about watchers of regulation and supervision? Probably not many. This may seem surprising:
+savers, firms and taxpayers – they all care about sound banks.[ ]
+So what is “watching regulation and supervision”, the theme of this conference, all about?
+Ultimately, we are talking about accountability. As supervisors, we exercise public powers and carry
+out our tasks independently. Our independence requires accountability and transparency: the public
+must be able to assess how we use the responsibility we are given. Banks are the first to feel the
+effects of supervisory decisions. That’s why our decisions are open to administrative and judicial
+review.
+But the effects of supervision and regulation on society are much broader, and the transmission
+channels are seldom straight.
+How would banks have performed in the absence of supervisory measures? Is financial stability the
+result of good policy or good luck? How does the macroeconomic environment affect the performance
+of banks? What are the effects – and the potential unintended side effects – of regulation and
+supervision?
+Answering these questions requires detailed data, good analytical frameworks and time. This partly
+explains why our watchers are a relatively rare species.
+But we should not be content with the current state of play. We need to further develop the community
+of watchers.
+Let me focus on three areas where progress can be made.
+First, evaluations of regulation and supervision need to be comprehensive – assessing the direct
+effects on banks, but also the broader effects on the policy objectives that society cares about. The
+European Commission has recently published a report on the competitiveness of the European
+banking sector. The ensuing legislative process provides an opportunity to adopt that holistic
+perspective – looking at the implications of the prudential framework for growth, integration, financial
+stability and resilience. This is particularly important in the current environment characterised by
+heightened geopolitical risks and rapid structural changes in the financial system.[ ] Within our
+1
+2
+mandate to ensure the safety and soundness of banks, we are fully committed to contributing to such
+evaluations.
+Second, we need a broad community of watchers. Policymakers, banks, the public, academics,
+analysts, journalists – they all have a legitimate interest in our work. Here, I see room for improvement.
+Often, banks are the most vocal in public debates. But we need a broader debate representing the
+depositors who entrust their savings to banks, the firms that are financed by banks and society at large
+which benefits from a functioning banking system but also bears the cost of crises. Academics have a
+special role and responsibility – they have the analytical tools to shed light on the complex functioning
+of the banking system and its welfare effects.
+Third, we need to further develop the infrastructure that supports an informed debate. This
+infrastructure includes frameworks for policy evaluations, repositories of relevant studies, information
+platforms and data centres. It is essential to our accountability; it can promote independent evaluations
+of regulation and supervision. In the age of artificial intelligence (AI), we must harness advancements
+in terms of computing power and analytical capabilities to advance welfare.
+The case for comprehensive evaluations of prudential regulation
+and supervision
+There is a long tradition of watching central banks and monetary policy decisions among the media,
+academics and market analysts. Back in 1999, Ottmar Issing gave a speech entitled “The ECB and its
+watchers”.[ ] This marked the beginning of a series of conferences bringing together monetary
+policymakers and analysts.
+While there is no direct equivalent to “ECB watchers” in the field of banking regulation and supervision,
+this conference can serve as a catalyst for change.
+Monetary policy and supervisory decisions differ in terms of their objectives, instruments and
+communication channels. But these differences make assessing the effects – and potential side
+effects – of regulation and supervision no less important.[ ]
+The supervisory policy cycle
+As in monetary policy, a structured “policy cycle” – starting from the policy objective, the definition of
+intermediate targets and the choice of policy measures – can support policy evaluations. Let me give
+you an example – the setting of capital requirements.
+The first step in the policy cycle is a clear objective. The objective of supervision is well defined in
+European legislation – to ensure the safety and soundness of banks, thereby contributing to financial
+stability.[ ]
+The second step is identifying priorities and indicators that make progress towards that objective
+measurable. The safety and soundness of banks is shaped by sound capital, liquidity and governance
+and sustainable business models. These are the indicators we assess in our Supervisory Review and
+Evaluation Process (SREP) – some of them are quantifiable, some are more qualitative in nature.
+Let me focus on capital as one example of how the policy cycle works in practice.
+3
+4
+5
+Bank capital is key. In essence, capital is a source of funding for banks. Unlike debt, it has the ability to
+absorb losses. It enables, rather than discourages, banks to lend and take risks. Regulatory
+requirements ensure that banks’ capital levels are commensurate with society’s risk preferences. In a
+crisis, risks should not be shifted away from bank managers and owners onto depositors or taxpayers.
+In short: capital aligns incentives between banks and society.[ ]
+Bank capital is also a valuable indicator as it can be tracked over time and across institutions. As
+recent ECB work shows, capital requirements increased after the global financial crisis, when
+resilience needed to be built.[ ] They have stabilised in recent years, with a shift from microprudential
+requirements to macroprudential buffers that can be released in times of stress.
+This clear progress in terms of resilience is no coincidence. It is the result of improved regulation and
+the supervisory measures we take to ensure that a bank’s capital is adequate to cover the risks it
+takes – the third step in the policy cycle.
+We set capital requirements based on a clear methodology. According to the Basel framework, Pillar 1
+capital requirements are minimum requirements that address credit, operational and market risk.[ ]
+Pillar 2 capital requirements cover bank-specific risks that are not, or not sufficiently, covered by these
+minimum requirements.
+This year, we are using a new, revised methodology for setting Pillar 2 capital requirements. This
+methodology is more risk-based, while leaving room for supervisory judgement and ensuring that there
+are no overlaps between Pillar 1 and Pillar 2 requirements.[ ]
+Benchmarking is part of our methodological toolkit. Before informing banks of capital-related decisions,
+we ensure consistency across banks. A structured benchmarking process, conducted by an
+independent second-line function, identifies potential outliers and ensures that methodologies are
+used in a consistent way, while preserving judgement grounded in bank-specific risk profiles.[ ]
+Evaluations and impact assessments
+As a fourth step in our supervisory cycle, the effects of supervision can be evaluated ex post – at bank
+or aggregate level.
+As regards the bank-level perspective, our analysis shows, for example, that supervisory judgement
+adds relevant information that automatic indicators cannot capture, while ensuring that supervisory
+discretion remains anchored in common methodologies.[ ]
+But public interest in the effects of supervision is much wider, including the aggregate effects of overall
+capital requirements and resilience on macroeconomic outcomes. The European Commission’s report,
+for example, focuses on integration, innovation, growth and bank competitiveness. In the public
+discourse, distributional questions play an important role as well.
+Generally, assessing the impact of supervision and regulation must isolate the effects of other factors.
+Macroeconomic conditions, market developments and management decisions affect outcomes. This
+requires sound evaluation frameworks and analytical rigour, a point to which I will return later.
+6
+7
+8
+9
+10
+11
+Evaluations also need to consider the different layers of the capital stack. In addition to
+microprudential capital requirements, we set Pillar 2 guidance to ensure banks can absorb potential
+losses resulting from adverse macroeconomic scenarios. Unlike the legally binding Pillar 2
+requirement, Pillar 2 guidance is a non-binding supervisory expectation based on banks’ resilience
+under adverse scenarios. As an integral part of the framework, the Single Resolution Board defines
+gone-concern capital requirements to ensure that the costs of bank distress don’t fall on taxpayers.
+National competent authorities set macroprudential requirements to safeguard financial stability.
+All these requirements serve a purpose, but they also make the system rather complex.
+Last year, the ECB Governing Council’s High-Level Task Force thus tabled proposals on how the
+capital stack can be simplified by combining macroprudential buffers into “releasable” and “non-
+releasable” types.[ ] Moreover, different requirements should be applied consistently across Europe.
+Consistency and coordination is, in my view, what a “holistic” view of capital is all about – not the
+weakening or widening of policy mandates, or the setting of quantitative caps.
+In sum, we need a societal debate about the broader effects of regulation and supervision, building on
+the best evidence and independent analyses.
+As supervisors, we are strongly committed to contributing to these broader debates through our
+accountability channels, building a community of watchers and further developing the infrastructure for
+policy evaluation.
+Building a community of watchers
+Supervisors have a clear mandate to keep banks sound and safe. Within this mandate, they act as
+“delegated monitors” on behalf of depositors.[ ] Independence protects supervision from external
+influences. But this raises an important governance question: who monitors the monitor?
+The key is accountability. It requires us to explain and justify how we exercise our powers – through
+several channels.
+Generally, bank-specific supervisory decisions are subject to administrative and judicial review.[ ]
+As supervisors, we are explicitly accountable to the European Parliament, which represents European
+citizens, as well as the Council of the European Union. We have regular exchanges of views with the
+relevant parliamentary committee and the Eurogroup, and we engage directly with national
+parliaments.
+In addition, European banking supervision is subject to external scrutiny through the Commission’s
+periodic review of the SSM Regulation and through audits by the European Court of Auditors.[ ] And
+our work is regularly assessed under the International Monetary Fund’s Financial Sector Assessment
+Program.[ ]
+Accountability requires transparency. Our Annual Report is the central vehicle for communicating how
+we carry out our supervisory tasks. The next report will provide information on the comprehensive
+reform of European supervision currently under way, with a view to becoming more efficient, effective
+12
+13
+14
+15
+16
+and risk-based.[ ] Over the years, we have significantly enhanced our transparency through
+publications of methodologies, regular newsletters and blogs.
+But a broad public debate about the effects of regulation and supervision goes beyond formal
+accountability arrangements. To effectively discuss and challenge our actions, this debate needs to
+reflect the views and perspectives of all stakeholders.
+The Commission’s consultation on the competitiveness of the European banking sector is a case in
+point. It received 227 responses.[ ] Business associations accounted for 43% of the responses,
+individual banks for 16% and private-sector firms for 8%. Together, private-sector respondents made
+up around two-thirds of all responses. By comparison, public authorities accounted for 14% of
+responses, while academia, trade unions, NGOs and individual citizens together made up 19%.
+These contributions focus on different aspects.[ ] At the risk of over-simplifying, there are two trends:
+banks tend to focus on aspects that have a direct impact on them and highlight the cost of capital
+requirements. NGOs and academics tend to emphasise the role played by the banking sector in
+achieving broader societal objectives, such as reducing climate-related risks, and they stress the
+importance of sufficient capital to support financial stability.
+Each stakeholder offers a different and valuable perspective. But the uneven contribution of the
+various stakeholders shows the need to better balance the debate. The views of the public, savers and
+taxpayers are just as important as those of the industry. That’s why ECB Banking Supervision has
+stepped up its outreach to civil society across the banking union in the last few years. The
+Commission has several established outreach channels, such as the Financial Services User Group,
+representing consumers, retail investors and micro-enterprises.
+Given that we are here at Goethe University, let me focus on what can be done to involve the
+academic community more.
+More than 25 years ago, Ottmar Issing argued: “Although this may sound strange, we need to hear
+views even more when there is disagreement because this is when we learn. When views are not
+supportive of the ECB’s position but are well founded in good theory and obtain robust corroboration
+from the data, then again I think the ECB can only gain from a dialogue with academia.”[ ]
+In this spirit, academics can bring analytical frameworks, rigour and independent assessments to the
+debate. They can focus on aspects which may otherwise receive insufficient attention.
+Generally, our aim should be to build a stronger community of watchers, enhance the existing
+accountability channels and ensure that the debate is grounded in the best evidence. This requires
+further work to build a sound infrastructure.
+Further developing the infrastructure for policy evaluation
+To engage in birdwatching, you need good binoculars – and a lot of patience. Regulation and
+supervision-watching requires more than that: evaluation frameworks, repositories, access to data and
+information. This infrastructure has improved in recent years, but more in terms of investment and
+commitment is needed.[ ]
+17
+18
+19
+20
+21
+Frameworks for policy evaluation
+Higher capital requirements are good for resilience – but could they come at a cost in terms of weaker
+growth or reduced lending? Improved regulations have made banks safer – but have risks shifted to
+other parts of the financial system so that, overall, the system is not necessarily more stable? Has
+European regulation had a negative impact on banks’ ability to successfully compete internationally?
+In short: what have been the consequences – both intended and unintended – of improved regulation
+and supervision?
+These questions are at the core of current policy debates, but the answers are not straightforward.
+Answering them means going beyond descriptive statistics by disentangling the effects of the many
+factors that affect the performance of banks and the economy. Partial and general equilibrium effects
+need to be disentangled. Ultimately, identification of causal effects would be useful.
+This is what evaluation frameworks are about – they help us learn systematically from experience.
+Both the Financial Stability Board (FSB) and the Basel Committee on Banking Supervision have such
+frameworks in place.[ ] At the European level, there are frameworks to assess the impact of EU
+legislation, including the European Commission’s Better Regulation Guidelines[ ] and the Regulatory
+Scrutiny Board which has, among other things, issued an opinion on EU supervisory reporting
+requirements.[ ]
+These frameworks help manage the costs of policy evaluations. Not every aspect of the policy debate
+requires the same degree of scrutiny. Policy evaluations need to start from a discussion of the
+materiality of the issue at stake and the resources that are needed for evaluations. On this basis,
+evaluations can be prioritised.
+Following this strategy, FSB evaluations have provided highly relevant insights into the effects of the
+post crisis reforms: the too-big-to-fail reforms, the implications of higher capital requirements on
+lending for small and mid-sized firms and for infrastructure finance, and the effects of reforms to
+securitisation.[ ]
+The results of these evaluations show that the reforms have worked as intended, without material
+negative side effects on lending or growth.[ ] At the same time, they have provided insights into how
+the system can be further improved.
+Similarly, the Basel Committee has a dedicated evaluation programme that complements the
+monitoring of the implementation of standards.[ ] This work confirms the results of the FSB’s
+evaluations: implementing the Basel III reforms increased banking sector resilience and reduced
+systemic risk, with no indication that the aggregate supply of credit to the economy had been impaired.
+[ ]
+Importantly, these evaluation frameworks explicitly invite the views of stakeholders through public
+consultations, and they seek expertise from academics.
+Further developing and using the existing frameworks will have significant benefits for upcoming
+debates on reforms.
+22
+23
+24
+25
+26
+27
+28
+Repositories and meta-analyses
+Experience with evaluation frameworks shows that policy decisions need a comprehensive empirical
+foundation. Single studies are not sufficient; results need to be replicated over time and across
+countries.
+Repositories and meta-analyses can help by pooling dispersed findings. They are routinely used in
+other fields, such as medicine, where identifying the right treatment and separating intended and
+unintended effects is indeed critical.[ ]
+In the field of financial regulation, the Bank for International Settlements maintains a repository which
+can form the nucleus for additional work. The Financial Regulation Assessment: Meta Exercise
+( ) contains studies on the effects of capital and liquidity regulation as well as the too-big-to-fail
+reforms.[ ]
+These studies show that the impact of capital requirements needs to be assessed within the context of
+the cyclical environment and banks’ starting conditions.
+Banks entering a downturn in a stronger capital position tend to perform better and maintain lending
+more effectively than banks starting in a weaker capital position. Weakly-capitalised banks are more
+likely to restrict credit when losses materialise.[ ] At the system level, stronger banks may then use
+the opportunity to gain market share and increase lending.
+Over the longer term, higher capital requirements do not reduce lending.[ ] But when individual banks
+are already close to their minimum requirements, have weak profitability or face high costs to raise
+equity, increasing capital requirements can have a negative short-term impact on credit supply.[ ]
+Conversely, reducing capital requirements does not necessarily generate additional lending. The
+supporting factors that Europe has introduced as (temporary) deviations from the Basel framework are
+a case in point. Their purpose is to ensure that lending to small and medium-sized enterprises (SMEs)
+and infrastructure is not unduly disincentivised by bank capital regulation. These deviations indeed
+lead to lower capital requirements for the affected exposures. But there is no evidence that they have
+a relevant impact on lending. According to the European Banking Authority (EBA), the SME supporting
+factor in particular did not stimulate lending to small companies relative to larger ones. For the
+infrastructure supporting factor, the EBA found that the data are insufficiently detailed to identify
+impacts on lending or risk.[ ]
+These findings support the logic of building releasable buffers when economic and banking sector
+conditions are favourable, which banks can then use in bad times. But the benefit of releasing buffers
+during a crisis does not imply that permanent reductions in capital requirements during normal times
+will stimulate credit or growth.
+Overall, these studies are highly informative for the current policy debate. There is also a strong case
+for further developing repositories, potentially using artificial intelligence to identify relevant studies and
+extract information. I see two main areas for improvement.
+The first is to add more recent studies. Much of the analytical work on the impact of capital on bank
+lending was done around the great financial crisis. Adding more recent studies to FRAME would
+29
+FRAME
+30
+31
+32
+33
+34
+therefore be of great value.
+The second is to broaden the perspective and add studies on other outcome variables, such as bank
+performance and the cost of capital. Recent work shows that, broadly speaking, capital requirements
+for banks are comparable internationally and not a relevant driver of performance.[ ] Rather, banks’
+ability to compete successfully is driven by structural factors, such as the adoption of technology and
+the ability to achieve scale and operating efficiency.[ ]
+Moreover, better-capitalised banks tend to face lower costs of funding, regarding both debt and equity.
+[ ] This shows a positive trade-off: equity capital typically carries a higher required return than debt.
+But higher capitalisation also makes a bank less risky, reducing required returns. Effective and
+proportionate regulation can thus lower the cost of capital, while weak and ineffective regulation tends
+to raise it.[ ]
+Information platforms and data centres
+Without sufficient data and information as an input, evaluation frameworks remain rather empty.
+There is little shortage of aggregate information about the banking sector. ECB Banking Supervision,
+for example, publishes a wide range of supervisory information and data, mostly at an aggregate level
+in its ECB Data Portal.[ ] In 2023 quarterly data on less significant institutions were added to those on
+significant institutions. Over time, we have also added more detailed breakdowns including the cost of
+risk, funding ratios, net interest margins, Stage 2 exposures, non-performing loans and liquidity
+buffers. During the pandemic, we published specific information on loans subject to COVID-19-related
+measures.
+Data for policy evaluations, however, need to be more granular. But, traditionally, access to granular,
+bank-level information has been more limited for legal reasons, in particular when it comes to
+comparable datasets across countries. One way to address this limitation is to run similar empirical
+studies across different datasets, thus bringing together the output, not the data. The International
+Banking Research Network has successfully implemented this approach for more than a decade now.
+[ ]
+But access to granular banking data is now improving, following the lead taken by several national
+central banks.[ ]
+This year, the European Banking Authority (EBA) launched its Pillar 3 data hub, which provides access
+to prudential disclosures from individual banks.[ ]
+In addition, the EBA is developing an EU-wide public repository of European and national supervisory
+data requests, which is expected to become operational in early 2027. The repository will increase
+transparency about the data requested from banks.[ ]
+Last year, the ECB started a pilot project giving external researchers access to granular, statistical,
+bank-level data. Technically, access is organised via research data centres within the Eurosystem,
+showing the benefits of operating a decentralised system. The pilot provides anonymised balance
+sheet information for around 2,000 banks and bank-level interest rate information on loans and
+35
+36
+37
+38
+39
+40
+41
+42
+43
+deposits for around 300 banks for the period from 2007 to 2023. We also publish selected stress test
+results at bank level.[ ]
+These are positive developments. Access to granular data is provided while maintaining the
+safeguards required for statistical confidentiality. But we need to do more in order to enhance
+transparency and data access in a legally sound way.
+In addition to data, information about relevant legislation and supervisory practices is needed. The
+EBA’s Interactive Single Rulebook provides a searchable compendium linking EU banking legislation.
+[ ] Moreover, we are reviewing our supervisory guidance and, as part of this, we will make our guides
+more accessible and enhance the consistency of the language used.[ ]
+Not least, international work can help improve the evidence base for comparing capital requirements
+across jurisdictions. Recent work by the Financial Stability Institute, for example, brings together
+harmonised information on capital requirements for global systemically important banks.[ ] This helps
+make the capital stack more transparent and supports a more informed debate on international
+comparability.
+Towards strengthening the community of watchers
+Banks affect everyday life. If they perform well, the payments system runs smoothly, deposits are safe,
+and firms and households receive loans. But if banks are under stress and insufficiently resilient,
+society bears the cost in terms of disrupted services, weaker growth, higher unemployment or even
+outright fiscal costs.
+We therefore need to have an informed societal debate about the effects of regulation and supervision,
+based on evidence that can withstand serious scrutiny. This debate is needed to maintain resilience in
+the financial system in an environment of heightened geopolitical risks and rapid structural change due
+to the digitalisation of financial services.
+The stakes are high. The current debate about the role banks play in promoting growth, stability and
+welfare should lead to changes in regulation that can make the system stronger. But there is also a
+non-negligible risk that the balance might be tilted towards the perceived short-term benefits of weaker
+standards at the expense of higher long-term risks.
+This is why a broad community of watchers matters: policymakers, banks, researchers, analysts,
+journalists, civil society and citizens. Each group brings valuable input. Academics have a special role
+to play as they bring analytical rigour.
+That is how birdwatching developed. Individual observations become more valuable when they are
+consistently recorded and shared among a wide audience. This can reveal patterns that no single
+observer can see on their own, helping everyone learn more about how the entire ecosystem works.
+As European banking supervisors, we are strongly committed to further developing a community of
+watchers. We need a robust infrastructure for information sharing and rigorous impact assessments,
+including evaluation frameworks, we need repositories and we need transparent access to data and
+information. This is the foundation of our accountability.
+44
+45
+46
+47
+1.
+I would like to thank Mario Ascolese, Diana Bonfim, Konstantin Bottenberg, Agnese Leonello, Audrey
+Limouzin, Cyprien Milea, Florian Narring, Laura Parisi, Mario Quagliariello, John Roche, Vítor Tomé
+Rodrigues and Sebastian Scheffler for very useful input and comments on an earlier version. All
+remaining errors and inaccuracies are my own.
+2.
+Buch, Claudia (2026), “
+”, The Supervision Blog, ECB Banking Supervision, 11 September.
+3.
+Issing, Ottmar (1999), “ ”, speech at the ECB Watchers Conference,
+Frankfurt am Main, 17 June.
+4.
+Buch, Claudia (2025), “ ”,
+keynote speech at the ECB Banking Supervision Research Conference, Frankfurt am Main, 9
+December; Buch, Claudia (2019), “
+”, keynote prepared for the workshop “Women in Macro, Finance, and Economic
+History”, Berlin, 17 June; and Buch, Claudia (2017), “
+”, statement prepared for the panel discussion “Improving
+Financial Resilience” at the T20 Summit “Global Solutions”, Berlin, 30 May.
+5.
+Article 1 of Council Regulation (EU) No 1024/2013 confers on the ECB specific tasks relating to the
+prudential supervision of credit institutions “with a view to contributing to the safety and soundness of
+credit institutions and the stability of the financial system within the Union and each Member State”.
+See also recital 65 of the Regulation.
+6.
+Buch, Claudia (2026), “
+”, remarks prepared for the “Dewatripont Fest” conference, roundtable on “Banking and
+Finance”, Brussels, 6 May.
+7.
+Dzezulskis, Skirmantas, Libertucci, Massimo and McPhilemy, Samuel (2026), “
+”, Occasional Paper Series, No 387, ECB,
+April.
+8.
+Preparing for the unknown: lessons from the ECB’s reverse stress test on
+geopolitical risk
+The ECB and its watchers
+Evidence-based supervision: addressing evolving risks, maintaining resilience
+Policy Evaluation: Assessing the Effects of Post-Crisis Financial
+Sector Reforms
+Evaluating Financial Sector Reforms: A Joint
+Task for Academia and Policymakers
+‘The Prudential Regulation of Banks’ – Practical Implications for European
+Supervision
+Understanding the
+banking sector capital framework in the European Union
+Basel Committee on Banking Supervision, “
+”, Basel Framework, Bank for International Settlements, paras 20.1 and 20.3.
+9.
+ECB (2026), .
+10.
+Donnery, Sharon and Quagliariello, Mario (2026), “ ”, The
+Supervision Blog, ECB, 5 May.
+11.
+Bobeică, Gabriel and Oprică, Silviu (2026), “
+”, Working Paper Series, No 3233, ECB, May; Buch,
+Claudia (2025), “
+”, remarks at the tenth ECB Annual Research
+Conference, Frankfurt am Main, 18 September.
+12.
+ECB (2025), “
+”, report by the Governing Council’s High-Level Task Force on Simplification, December.
+13.
+See footnote 6.
+14.
+See ECB Banking Supervision, “ ”; Article 24 of Council Regulation
+(EU) No 1024/2013; and Article 263 TFEU.
+15.
+See ECB Banking Supervision, “ ”; Article 32 of Council Regulation (EU) No 1024/2013;
+and Article 20(7) of Council Regulation (EU) No 1024/2013.
+16.
+International Monetary Fund (2025), “ ”, IMF
+Country Report, No 25/203, July.
+17.
+See ECB Banking Supervision, “ ” and “ ”; Articles 20 and 21 of Council
+Regulation (EU) No 1024/2013.
+18.
+European Commission (2026), .
+19.
+RBC20 – Calculation of minimum risk-based capital
+requirements
+How the Pillar 2 requirement is set
+Supervising with a learning mindset
+The role of judgement in supervisory scores and
+additional capital requirements assigned to banks
+Comments on the paper by Sumit Agarwal, Bernardo Morais, Amit Seru and Kelly
+Shue entitled ‘Weighted Noise: Discretion in Regulation’
+Simplification of the European prudential regulatory, supervisory and reporting
+framework
+Administrative Board of Review
+Accountability
+Euro Area Policies: Financial System Stability Assessment
+Accountability Annual Report
+Targeted consultation on the competitiveness of the EU banking sector
+ibid. For illustrative contributions reflecting different perspectives, see European Banking Federation
+(2026), , 19
+April; Financial Services User Group (2026),
+, 17 April; and Finance Watch (2026),
+, 7 May.
+20.
+Issing, Otmar, op. cit.
+21.
+Buch, Claudia (2025), “
+”, keynote speech at the BIS Innovation Summit,
+10 September.
+22.
+See Financial Stability Board (2017),
+, 3 July; and Basel Committee on Banking Supervision (2022),
+, Bank for International Settlements, 14
+December.
+23.
+European Commission (2021), “ ”, Commission Staff Working Document,
+3 November.
+24.
+See section 3.5 of the European Commission’s ; and European
+Commission Regulatory Scrutiny Board (2019),
+, 3 July.
+25.
+See Financial Stability Board, “ ”, and in particular
+, March 2021;
+, November
+2019; , November
+2018; and
+, January 2025.
+26.
+Buch, Claudia (2025), “ ”,
+keynote speech at the 2025 EBA Policy Research Workshop on “Bridging capital and growth – the role
+of financial structures and intermediaries”, Paris, 19 November.
+EBF response to targeted consultation on the competitiveness of the EU banking sector
+Response to the targeted consultation on the
+competitiveness of the EU banking sector Response to the
+Commission’s targeted consultation on the competitiveness of the EU banking sector
+Financial stability, supervision and regulation: building a 21st century
+infrastructure for better, evidence-based policymaking
+Framework for Post-Implementation Evaluation of the Effects of
+the G20 Financial Regulatory Reforms
+Evaluation of the impact and efficacy of the Basel III reforms
+Better Regulation Guidelines
+Better Regulation Guidelines
+Opinion: Fitness Check of EU supervisory reporting
+requirements
+Assessing the Effects of Reforms Evaluation of the
+effects of too-big-to-fail reforms: Final Report Evaluation of the effects of financial
+regulatory reforms on small and medium-sized enterprise (SME) financing: Final report
+Evaluation of the effects of financial regulatory reforms on infrastructure finance
+Evaluation of the Effects of the G20 Financial Regulatory Reforms on Securitisation: Final
+report
+The evidence is in: resilient banks build Europe’s growth on solid ground
+27.
+See Basel Committee on Banking Supervision, “
+”, Bank for International Settlements; and Basel Committee on Banking Supervision, “
+”, Bank for International Settlements.
+28.
+See Basel Committee on Banking Supervision (2022), “
+”, Bank for International Settlements, 14 December.
+29.
+See Bank for International Settlements, .
+This is an online repository that tracks, organises, standardises and disseminates quantitative
+evidence on the economic effects of financial regulation. See also Boissay, Frederic, Cantú, Carlos,
+Claessens, Stijn and Villegas, Alan (2019), “
+”, BIS Quarterly Review, pp. 53-68, 5 March. The capital and lending analysis
+covers 17 studies and 37 estimates recorded in FRAME.
+30.
+See Bank for International Settlements,
+and Cochrane, .
+31.
+Berger, Allen N. and Bouwman, Christa H.S. (2013), “How does capital affect bank performance during
+financial crises?”, Journal of Financial Economics, Vol. 109, No 1, pp. 146-176; Demirgüç-Kunt, Asli,
+Detragiache, Enrica and Merrouche, Ouarda (2013), “Bank capital: Lessons from the financial crisis”,
+Journal of Money, Credit and Banking, Vol. 45, No 6, pp. 1147-1164, September; Gambacorta,
+Leonardo and Mistrulli, Paolo Emilio (2004), “Does bank capital affect lending behavior?”, Journal of
+Financial Intermediation, Vol. 13, No 4, pp. 436-457, October.
+32.
+See footnote 29.
+33.
+Malovaná, Simona and Ehrenbergerová, Dominika (2022), “The effect of higher capital requirements
+on bank lending: the capital surplus matters”, Empirica, Vol. 49, pp. 783-832; Lang, Jan Hannes and
+Menno, Dominik (2025), “The state-dependent impact of changes in bank capital requirements”,
+Journal of Banking and Finance, Vol. 176, No 107439.
+34.
+European Banking Authority (2016), , 23 March;
+European Banking Authority (2022), ,
+Implementation and evaluation of the Basel
+standards RCAP:
+role, remit and methodology
+Evaluation of the impact and efficacy of the
+Basel III reforms
+Financial Regulation Assessment: Meta Exercise (FRAME)
+Impact of financial regulations: insights from an online
+repository of studies
+Financial Regulation Assessment: Meta Exercise – FRAME
+What we do
+EBA Report on SMEs and SME Supporting Factor
+Report on the application of the Infrastructure Supporting Factor
+3 November.
+35.
+Behn, Markus and Reghezza, Alessio (2025), “
+”, Occasional Paper Series, No 376, ECB, Frankfurt am Main. The study finds no
+overall effect of capital requirements on profit efficiency but an inverted U-shaped relationship. See
+also Buchholz, Manuel, Loeffler, Axel and Sigel, Patrick (2025), “
+”, Discussion Papers, No 31, Deutsche Bundesbank.
+36.
+Scott, Susan V., Van Reenen, John Michael and Zachariadis, Markos (2017), “
+”,
+Research Policy, Vol. 46, No 5, pp. 984-1004, find positive long-term effects of technology adoption on
+profitability, including network effects; Beccalli, Elena, Anolli, Mario and Borello, Giuliana (2015), “
+”, Journal of Banking and Finance, Vol. 58,
+pp. 232-246, which finds some evidence for economies of scale in European banking; and Altavilla,
+Carlo, Begenau, Juliane, Burlon, Lorenzo and Maruhn, Franziska (2025), “
+”, Working Paper Series, No 2937, which finds
+structural cost inefficiencies as a key driver of underperformance. See also Siciliani, Paolo, Eccles,
+Peter, Netto, Felipe, Vitello, Elisabetta, Sivanathan, Vithushan and van Hasselt, Ivar (2023),
+, Prudential Regulation Authority, 11
+September; Berg, Jesper, Boivin, Nicolas and Geeroms, Hans (2025), “
+”, Working Papers, Issue 04, Bruegel, 15 April; Mejino-López,
+Juan and Véron, Nicolas (2025), “
+”, European Parliament ECON Committee, May.
+37.
+Behn, Markus, Cappiello, Lorenzo and Reghezza, Alessio (2026), “Capital headroom and bank cost of
+equity: Evidence from the euro area”, Economics Letters, Vol. 265, June.
+38.
+Bailey, Andrew (2026), “ ”, speech at Mansion House, London, 14 July.
+39.
+See ECB, “ ”; and ECB, “ ”. The ECB Data Portal provides access to
+official ECB statistics, including data, metadata, dashboards and tools for visualisation and download.
+40.
+See International Banking Research Network, “ ”. See also Buch, Claudia (2022), “
+”, introductory
+Capital requirements: a pillar or a burden for bank
+competitiveness?
+Do capital requirements and their
+international differences affect banks’ profitability?
+The long-term effect of
+digital innovation on bank performance: An empirical study of SWIFT adoption in financial services
+Are
+European banks too big? Evidence on economies of scale
+Determinants of bank
+performance: evidence from replicating portfolios
+The links
+between prudential regulation, competitiveness, and growth
+The quickly fading memory of
+why and when bank capital is important
+EU banking sector and competitiveness – Framing the policy
+debate
+Growth and regulation
+ECB Data Portal All data services
+About The
+International Banking Research Network (IBRN): the first decade and the way forward
+remarks prepared for the 10th anniversary of the IBRN, Eltville, 6 October.
+41.
+See Deutsche Bundesbank’s , Banque de France’s
+and Banca d’Italia’s . These institutions also
+participate in the
+.
+42.
+European Banking Authority (2026), “ ”, press release, 28 January.
+43.
+European Banking Authority (2026),
+, Efficient reporting: simpler, smarter, proportionate; and European
+Banking Authority (2026), , April.
+44.
+See ECB (2025), “ ”, press
+release, 13 March; and ECB, “ ”. See
+also ECB Banking Supervision (2025), “
+”, 1 August.
+45.
+European Banking Authority, .
+46.
+ECB Banking Supervision (2026), “
+”, press release, 26 June. The review covers approximately 130 supervisory guides,
+reports, letters and methodologies and is intended to improve their transparency, consistency and
+ease of use.
+47.
+See Baudino, Patrizia, Beissinger, Jonathan, Corrias, Renzo, Drehmann, Mathias, Eren, Egemen,
+Erik, Burcu and Tarashev, Nikola (2026), “
+”, FSI Insights on policy implementation, No 76, Bank for International
+Settlements, 8 July. See also Borio, Claudio, Coelho, Rodrigo, Restoy, Fernando and Tarashev, Nikola
+(2025), “ ”, FSI Briefs, No 28, Bank for International Settlements,
+24 November.
+Research Data and Service Centre (RDSC) Access
+to granular data Granular data – Research Data Center
+International Network for Exchanging Experience on Statistical Handling of Granular
+Data (INEXDA)
+The EBA Pillar 3 data hub goes live
+Improving coordination and raising transparency and
+accountability for national reporting
+Overview of data requests to banks by competent authorities in 2025
+ECB launches pilot project for research access to confidential statistical data
+Pilot project for research access to confidential statistical data
+Frequently asked questions on the 2025 stress test of euro
+area banks
+Interactive Single Rulebook Search
+ECB streamlines supervisory guidance to improve clarity and
+transparency
+On the comparison of capital requirements for global
+systemically important banks
+Revisiting the regulatory capital stack
+CONTACT
+European Central Bank
+Directorate General Communications
+Reproduction is permitted provided that the source is acknowledged.
+Sonnemannstrasse 20
+
+60314 Frankfurt am Main, Germany
+
+ +49 69 1344 7455
+ media@ecb.europa.eu
+Media contacts
+Copyright 2026,
+European Central Bank

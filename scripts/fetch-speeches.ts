@@ -12,6 +12,7 @@ import path from "node:path";
 import { fetchBisSpeeches, fetchSpeechText } from "../src/lib/sources/bis";
 import type { Speech } from "../src/lib/types";
 import { saveSpeechText } from "./speech-text";
+import { licenseFor } from "../src/lib/text-license";
 
 const OUT = path.join(process.cwd(), "data", "seed", "speeches.json");
 
@@ -72,11 +73,15 @@ async function main() {
         console.warn(`⚠  ${s.sourceUrl}: metin çok kısa (${rawText.length}), atlandı`);
         continue;
       }
-      // Tam metin depoya girmez (telif); skorlama için önbelleğe yazılır.
+      // Yayımcı izin veriyorsa metin depoya (sitede okunur), vermiyorsa
+      // yalnızca önbelleğe (skorlama girdisi) yazılır — text-license.ts.
       const id = speechId(s.sourceUrl);
-      await saveSpeechText(id, rawText);
+      const textLicense = licenseFor(s.bankCode, s.blurb);
+      await saveSpeechText(id, rawText, textLicense !== undefined);
       store.speeches.push({
         id,
+        contextEn: s.blurb || undefined,
+        textLicense,
         bankCode: s.bankCode,
         speakerName: s.speakerName,
         title: s.title,

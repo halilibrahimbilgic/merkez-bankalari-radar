@@ -1,0 +1,642 @@
+SPEECH
+Digital innovation: hindrance or booster for
+banks’ business models?
+Keynote speech by Claudia Buch, Chair of the Supervisory Board of
+the ECB, annual Foreign Bankers’ Association of the Netherlands
+conference
+Amsterdam, 22 September 2026
+Banking is, in essence, about processing information and making predictions[ ] – about the future
+liquidity needs of depositors, the ability of borrowers to repay loans, the quality of collateral.[ ] Some of
+the necessary information is measurable, while some is rather “soft” and comes from repeated
+interaction with customers.
+Traditionally, banks have had a key competitive advantage over other financial institutions: by
+providing different financial services under one roof, they obtain valuable information to make
+predictions.[ ]
+Digital innovation may thus change banks’ competitive advantages – it can hinder or boost their
+business models.
+New technologies, in particular artificial intelligence (AI), improve the processing of information. Banks
+use AI to upgrade their services, better manage risks and operate more efficiently. More than 80% of
+banks supervised by the ECB identify process automation as an important way of reducing costs.[ ]
+But digital innovation also accelerates structural change in the financial sector as new competitors
+enter the scene and provide services along the banking value chain.[ ] Banks under ECB supervision
+indeed see the potential loss of customers as one of the risks associated with the digital
+transformation.[ ]
+Moreover, digital innovation introduces new sources of risk. Increased competition may lead to
+excessive risk taking. Cyber risk and outsourcing dependencies increase operational and financial
+stability risks. AI increases the risk of fraud or of built-in biases in decision-making. It has the potential
+to shake the very foundations on which banks are built – trust and dependable information systems.
+Banks, supervisors and regulators must all act to ensure that digital innovation adds to, not
+undermines, welfare.[ ]
+Banks need long-term digitalisation strategies, built around good governance and risk management.
+This includes safeguards against operational vulnerabilities and the potential misuse of AI. Digital
+innovation cannot be left to the technical experts, it requires board-level attention and alignment with
+core corporate values. And it requires sufficient budget to build resilient and reliable IT infrastructures.
+1
+2
+3
+4
+5
+6
+7
+As supervisors, we are technology-neutral – not risk-neutral. It is not our role to determine which
+technologies banks should use. But in a more digital environment, risks can emerge faster, propagate
+through common infrastructures and service providers, and escape detection when viewed only on a
+bank-by-bank basis. That makes overarching sectoral analysis, interaction with the relevant
+stakeholders, and clear supervisory expectations even more important in strengthening resilience
+across the banking industry.
+Public policy needs to set guardrails beyond prudential regulation. The public sector shapes the digital
+infrastructure, in particular payments and securities settlement, around which banks develop their
+digital business models. The safe use of digital technologies requires frameworks that address cyber
+and AI-related risks. Effective competition policy can counter concentration risks. Policy responses
+need to have an international dimension – just as digital finance is international in scope.
+The current debate about the competitiveness of banks can make a significant contribution to
+strengthening the sector. Increasing their ability to embrace digital innovation and to safely provide
+financial services in an integrated market should be at the centre of that debate.
+Today, my focus is on the impact of digital innovation on the resilience of banks’ business models.[ ]
+This resilience is crucial because, in a wider economic context, the future evolution of AI, uncertainty
+about the sustainability of productivity gains, and the increasing proportion of debt finance mean that
+safeguards are needed against increasing risks to financial stability.
+How digital innovation is changing banks’ competitive advantage
+Digital innovation has several dimensions.
+AI makes it easier to make predictions from large sets of data. More than 90% of banks supervised
+directly by the ECB already integrate AI into their operations, and 85% use generative AI, according to
+supervisory data. Risk mitigation is the most important use case, with 64% of banks using AI for fraud
+and cybercrime prevention. Customer support and credit scoring are other important areas.
+Distributed ledger technology can improve record-keeping and enable tokenisation. Around one-third
+of banks under ECB supervision report engaging in digital-asset activities, including tokenisation and
+crypto-asset custody.
+Quantum computing could eventually enable attackers to break some of the cryptographic methods
+that banks currently rely on to protect data and transactions. Banks therefore need to prepare for a
+transition to quantum-resistant cryptography. For most banks, though, quantum computing remains at
+an exploratory stage.[ ]
+Cloud services can give banks access to computing capacity and advanced technologies that would
+be costly to reproduce internally. Around two-thirds of euro area banks have cooperation agreements
+with external providers, often residing outside the European Union.[ ] This reliance on external
+providers also creates dependencies – often in highly concentrated markets with limited
+substitutability.[ ]
+These technological innovations affect the way banks collect deposits, provide payment services and
+lend to their customers. Advances in computing power and the use of mobile phones accelerate these
+8
+9
+10
+11
+effects.
+Digital innovation and the stability of deposit funding
+Traditionally, deposits have been a relatively stable source of funding and of franchise value for banks.
+[ ]
+Digital innovation can reduce the stability of deposit funding. Depositors can compare deposit rates
+more easily, open accounts remotely and move funds faster. Deposits may become more sensitive to
+differences in pricing and risk.
+Online deposit platforms are one channel through which competition increases. They allow savers to
+compare deposit offers and to place deposits with the bank of their choice. The market for online
+platforms is currently small, though, accounting for 1% of the deposits of households and non-financial
+corporates.[ ] But for some smaller banks the share of deposits sourced through this channel can be
+quite significant.
+Digitalisation may change how depositors behave in periods of stress.[ ] Social media channels allow
+information and rumours to spread almost instantaneously. Online banking lets depositors respond just
+as quickly.[ ]
+We monitor these developments and potential vulnerabilities carefully. Recent ECB research finds that
+greater use of online banking can indeed amplify extreme deposit outflows to some degree. But there
+is no evidence that online banking or mobile apps have made deposits more volatile in normal times.
+[ ] Nor do we see a broader structural shift towards more volatile deposit flows in the euro area.[ ]
+Evidence on the impact of social media is similarly nuanced: it may be important during periods of
+stress, but there is so far no evidence of systematic effects on euro area deposit flows.
+Digital innovation and tokenised deposits
+Tokenisation is a channel through which financial innovation can affect the stability of deposits.
+Tokenisation makes it possible to represent financial assets, including claims on banks, on distributed
+ledgers, which means that it is much faster to create and manage assets.
+A digital token has two features: it provides information about the asset, such as its type and
+ownership structure, and it contains information about the rules, about what can and what cannot be
+done with the asset.
+Stablecoins are one form of tokenised asset. So far, the demand for stablecoins has been driven
+mostly by the trading of unbacked crypto-assets like bitcoin and ether.[ ] It largely comes from
+emerging markets with weak domestic currencies and high inflation, making it akin to a form of
+dollarisation. Most stablecoins are indeed denominated in US dollars.[ ]
+In principle, increased holdings of stablecoins could make banks’ funding sources less stable. For this
+to happen, funds would not even have to leave the banking system. Under current EU rules,
+stablecoin issuers must generally hold at least 30% of the relevant backing funds or reserves as
+12
+13
+14
+15
+16 17
+18
+19
+deposits with credit institutions.[ ] Greater use of stablecoins could thus shift deposits from relatively
+stable retail deposits to – potentially less stable – wholesale deposits.
+Yet stablecoins are unlikely to crowd out deposits as money created by banks. Savers hold deposits
+because banks are protected by a public sector safety net with deposit insurance at its core. For this
+reason, banks are comprehensively regulated and supervised, and they have access to central bank
+money. Giving the same features to stablecoins would imply stricter regulation, supervision and
+requirements for crisis management and resolution – as in the rules applying to banks. But this would
+make stablecoins commercially less attractive for the issuers.[ ]
+Still, banks need to develop strategic responses to financial innovation. Tokenisation of deposits is one
+response – an evolutionary, not a revolutionary one.[ ] Around 30% of banks under ECB supervision
+are planning the tokenisation of deposits, and around 20% plan to issue e-money tokens. Some banks
+plan both. Current activities remain limited, however.
+In essence, tokenisation means recording a claim against a bank – the deposit – on a distributed
+ledger, i.e. a shared digital record, not only the bank’s internal record. The legal relationship between
+the customer and the bank does not change.
+Banks mostly use permissioned networks. In these networks, only identified and authorised
+participants can join and validate transactions. Permissionless networks, in contrast, are in principle
+open to anyone; most stablecoins circulate on such public permissionless networks.
+Yet with permissioned networks tokenised deposits may have limited reach across banks.[ ] Some
+banks have thus formed consortia to broaden the use of tokenised deposits. Whether these initiatives
+have the potential to scale up depends to a large extent on how the public sector organises the
+payments system infrastructure.
+Digital innovation and payments systems
+Deposit-taking and the provision of payment services are indeed two sides of the same coin.
+Digitalisation is opening up this part of the banking value chain to greater competition.
+Payment services account for around 28% of the total fee and commission income of banks.[ ]
+Competition for this revenue and for the customer interface is increasing. In the first half of 2025, there
+were more than 700 payment institutions and just below 300 electronic money institutions active in the
+euro area.[ ] Mobile means of payment are increasingly important. In 2024, payment wallets and
+other mobile apps accounted for 29% of consumers’ online payments, while by 2026 68% of euro area
+companies reported accepting mobile payments.[ ] Often, banks still hold customer accounts, but
+must share part of the revenue with payment service providers.
+This illustrates a broader point. Digital innovation does not necessarily move financial activity away
+from banks. But it can redistribute value within the financial services chain. Banks need to develop
+digital strategies, with tokenisation of deposits as one element.
+Public infrastructure can build bridges between banks. The ECB is thus working on two projects to
+connect different private networks and preserve access to settlement in central bank money.
+20
+21
+22
+23
+24
+25
+26
+The Eurosystem’s “Pontes” initiative went live just yesterday.[ ] It allows transactions in tokenised
+financial assets to be settled in central bank money. In addition to tokenised deposits, use cases
+include markets for bonds, commercial paper and investment funds, repo transactions or collateral
+management.[ ] Banks can thus develop tokenised services without giving up the safety and liquidity
+advantages of central bank settlement.[ ]
+“Appia” is a longer-term project.[ ] By 2028 it will have developed a blueprint for an integrated
+European ecosystem for tokenised finance. Appia goes beyond settlement in that it will develop
+common standards and interoperability – thus reducing fragmentation and allowing banks to build
+scale.
+Beyond building such bridges, greater harmonisation of digital laws and a common definition of
+deposits are needed. Currently, for example, tokenised deposits cannot be clearly delineated from e-
+money tokens.[ ] This makes it difficult for banks to scale tokenised deposit models, especially when
+providing services across borders.
+Moreover, tokenisation may affect banks’ risk profiles. Deposits may move faster, operational
+dependencies may increase. From a supervisory perspective, these risks can largely be addressed
+within the existing prudential framework.[ ] We interact closely with the industry and other authorities
+to follow the rapid evolution of the market for payments services – and the associated risks.
+Digital innovation and lending
+Digital innovation can fundamentally change the lending process – the collection, processing and
+analysis of information.
+Traditionally, providing deposit services and monitoring payment flows give banks an information
+advantage over other providers of credit, especially where repeated interaction allows the collection of
+soft information about customers over time.[ ]
+Digitalisation may shift competitive advantage. New providers of payment services and less deposit
+funding may weaken banks’ information sources. This could have effects on the quantity and quality of
+lending.
+So far, though, negative effects of digitalisation on banks’ loan market share have been fairly
+contained.
+The market share of purely digital banks in the euro area has increased slightly but remains low –
+below 4% in 2024.[ ] Around 80% of their funding comes from retail deposits; lending activities remain
+limited.
+The growth of markets for private credit is another recent phenomenon that has moved lending activity
+away from banks.[ ] It is driven mainly by differences in regulation and business models rather than
+by digital innovation, though, and it remains to be seen how these markets will evolve once tested
+across a full credit cycle.
+Perhaps the biggest impact of digital innovation could come from improvements in banks’ own lending
+policies. AI-enabled credit scoring could improve the screening of loan portfolios, reduce default rates
+27
+28
+29
+30
+31
+32
+33
+34
+35
+and improve monitoring.[ ]
+While AI can improve predictions, it cannot substitute for human judgement. Many decisions taken
+within banks involve choices that cannot be reduced to statistical optimisation. How much risk to take,
+how to use qualitative and soft information, how to treat unusual cases – all of this requires human
+judgement. And AI can introduce new biases, requiring human intervention to align lending practices
+with the values of the organisation.
+The value of relationship-based information will remain high, especially in periods of stress.[ ] AI
+models predict the future on the basis of information from the past. But if the recent past does not
+contain relevant information about stress episodes, the information generated by AI can be of limited
+value.
+Managing the digital transformation of finance: the need for action
+from banks, supervisors and regulators
+The digital transformation of finance promises better financial services, but it also entails new risks.
+Managing these trade-offs well requires action – from banks, supervisors and regulators.
+Banks’ strategic responses to digital innovation
+Like other industries undergoing structural change, banks are facing a fundamental shift in their costs,
+technologies and competitive environment. Whether this ultimately strengthens or weakens their
+business models will depend critically on their long-term strategic response.
+Key elements of banks’ strategies are the quality of the information systems they rely on, the
+resources invested, and the guardrails put in place.
+First, new technologies cannot compensate for poor underlying data or fragmented legacy systems.
+Strong risk data aggregation and reporting capabilities determine how effectively banks can exploit AI
+and advanced analytics.[ ] Yet risk data aggregation remains an area where progress is often too
+slow. We thus closely monitor the action banks are taking to remediate open supervisory findings, and
+employ a supervisory escalation strategy if material deficiencies are not addressed in a timely manner.
+[ ]
+Second, digital transformation requires significant investment. Banks under ECB supervision invest on
+average 2.8% of their operating income in digital transformation projects, which is around one-fifth of
+total IT spending. Around 5% of their staff are allocated to digital transformation projects – and banks
+have reported difficulties in attracting and retaining digital and IT specialists.[ ] From a supervisory
+perspective, we expect banks to have multi-year budgets aligned with their strategic objectives and
+indicators to monitor delivery.[ ]
+Third, digitalisation cannot be managed as a collection of individual technology projects – good
+governance and risk management remain essential. The use of AI agents brings urgency to the
+question of how to establish guardrails and ensure that decisions taken are in line with core corporate
+values.
+36
+37
+38
+39
+40
+41
+There is no simple definition of good ethical behaviour – cultures, legal norms and the practical context
+all play a role. What we do know, though, is what promotes ethical behaviour – good governance.
+Banks remain accountable for ensuring that decisions are consistent with legal requirements, sound
+risk management and the fair treatment of customers. They need to align their policies with the values
+of the society to which they provide services. This cannot be outsourced to a model or to a third-party
+provider.
+In sum, technological capability depends on investment, data and IT architecture, just as much as on
+governance and control functions. These elements reinforce each other: a bank with reliable data,
+modern infrastructure and effective governance will be better placed to identify valuable applications of
+new technology and to deploy them safely at scale.
+Adapting supervision
+As supervisors in a world of digital finance, we continue to assess whether banks are financially and
+operationally resilient, and whether they have sound risk management and governance systems in
+place.[ ]
+But we also need to adapt. Risks can emerge faster, propagate through common infrastructures and
+service providers, and become visible only when developments are viewed across banks.
+This has several implications for our supervision.
+First, we take a perspective beyond the individual bank. Depositors cannot assess how new
+technologies create vulnerabilities and how risks can be amplified within the system. They need to rely
+on supervisors monitoring and analysing vulnerabilities and addressing weaknesses.
+Our system-wide view of outsourcing dependencies that the DORA framework provides is an example.
+[ ] Our Guide on outsourcing and supervisory follow-up addresses risks related to the disruption of a
+major cloud provider.[ ]
+Second, we share information about good practices across the sector.[ ] Advances in frontier AI
+models have, for example, increased the speed and scale at which cyber vulnerabilities can be
+identified and exploited. This summer, we therefore asked banks to reassess their defences and
+submit concrete action plans.[ ] These plans will be assessed horizontally to identify and share good
+practices.
+Banks also need to prepare for the transition to quantum-resistant cryptography well before the risks
+fully materialise.[ ] Our role is to raise awareness, promote industry dialogue and ensure that this
+longer-term risk is incorporated into banks’ strategic planning.
+Third, supervision needs to ensure that banks take a sufficiently long-term perspective. In particular,
+listed banks and banks depending on short-term market funding need to resist pressure to realise
+short-term payouts at the expense of sound, long-term digital strategies. By analysing the soundness
+of business models and medium-term capital planning, supervision can tilt the balance towards longer-
+term strategic planning.
+42
+43
+44
+45
+46
+47
+Fourth, open supervisory findings need to be remediated in a timely manner. In 2024 we conducted a
+cyber resilience stress test, which confirmed that banks have response and recovery frameworks in
+place. But it also identified weaknesses which need to be remediated.[ ] Moreover, cyber risk has
+implications beyond supervision. Effective resolution depends critically on timely and reliable data, but
+a severe cyber incident could compromise information needed to apply resolution tools.[ ]
+These examples illustrate our broader approach: supervision needs to look across institutions, identify
+emerging common vulnerabilities, communicate good practices and ensure that material weaknesses
+are remedied before they become embedded throughout the system.
+Setting regulatory guardrails
+Public authorities and regulators shape the environment in which innovation can develop safely. In
+payments and securities settlement, common standards, interoperability and public infrastructure
+shape how competition evolves and how services are provided.
+Some of the regulatory responses needed to address the risks and structural changes created by
+digital innovation lie outside the prudential remit, but they will provide the basis for a healthy
+ecosystem of financial service providers.
+Digital innovation can significantly alter the competitive structure of banking markets. It can lead to
+increased power for customers and suppliers, and it can lower barriers to entry. It can lead to market
+concentration, which may require responses from competition authorities.
+Structural change means that financial institutions need to be able to enter and leave the market
+without creating disruptions. This requires a further strengthening of the framework for dealing with
+failing financial institutions, ensuring that those with access to the public sector safety net are properly
+supervised and regulated.
+Systemic risks can increase, which calls for a system-wide perspective to be taken on evolving risks.
+Self-regulation is not enough. This applies not only to banks, but also to other providers and
+technologies that are becoming increasingly important in the financial system. Governance, sound risk
+management and safeguards against systemic risk are needed wherever new financial products and
+applications can have negative welfare implications. As in medicine, products that can have harmful
+effects have to undergo pre-testing before being launched on the market.
+Summing up
+For digital innovation to boost rather than hinder banks’ business models, investment and good
+governance are needed. Digital innovation requires significant upfront investment and sufficient scale.
+The more fragmented markets are, the less likely are such investments to pay off. Policy measures
+that contribute to more integrated banking markets in Europe – completing the banking union and
+harmonising national rules that, de facto, segment markets – can thus support banks’ long-term
+digitalisation strategies.[ ]
+Proposals tabled by the European Commission on ways to reduce market fragmentation in Europe[ ]
+can thus be a facilitator for banks’ development of sound digitalisation strategies.
+48
+49
+50
+51
+Weakening prudential standards, on the other hand, would undermine precisely the operational and
+financial resilience that banks need to successfully compete with new providers of financial services.
+Prudential supervision has a key role to play in ensuring that banks’ governance and risk management
+remain commensurate with the opportunities but also the risks that financial innovation entails.
+But prudential supervision does not operate in isolation. Cyber security, AI governance, financial
+integrity and market conduct interact to provide a comprehensive public policy framework.
+1.
+I would like to thank Nico Di Gabriele, Stephanie Czák-Ludwig, Emmanuelle Goulet, Mauritia Kroon,
+and John Roche for most helpful input and comments on an earlier version. All remaining errors and
+inaccuracies are my own.
+2.
+Diamond, Douglas W. (1984), “ ”, The Review of
+Economic Studies, Vol. 51, No 3, pp. 393-414; Fama, Eugene F. (1985), “
+”, Journal of Monetary Economics, Vol. 15, No 1.
+3.
+See Kashyap, Anil K., Rajan, Raghuram G. and Stein, Jeremy C. (2002), “
+”, The Journal of
+Finance, Vol. 57, No 1, pp. 33-73; and McAndrews, James and Roberds, William (1999), “
+”, Federal Reserve Bank of New York Staff Reports, No 85,
+September.
+4.
+ECB Banking Supervision (2023), “
+”, slides, ECB, 15 February.
+5.
+For a comprehensive account of the impact of digitalisation on banks, see Beck, Thorsten, Cecchetti,
+Stephen, Grothe, Magdalena, Kemp, Malcolm, Pelizzon, Loriana and Sanchez Serrano, Antonio
+(2022), “ ”, Reports of the
+Advisory Scientific Committee, No 12, European Systemic Risk Board, January. See also Basel
+Committee on Banking Supervision (2024), “ ”, Bank for International
+Settlements, May.
+6.
+ECB Banking Supervision (2024), “
+”, ECB, July.
+7.
+Financial Intermediation and Delegated Monitoring
+What’s Different About
+Banks?
+Banks as Liquidity
+Providers: An Explanation for the Coexistence of Lending and Deposit-Taking
+Payment
+Intermediation and the Origins of Banking
+Take-aways from the horizontal assessment of the survey on digital
+transformation and the use of fintech
+Will video kill the radio star? – Digitalisation and the future of banking
+Digitalisation of finance
+Digitalisation: key assessment criteria and collection of sound
+practices
+For a broader discussion of the response to AI across different stakeholders, see Financial Stability
+Board (2024), “ ”, Reports to the G20, 14
+November and OECD and Financial Stability Board (2024),
+30 September.
+8.
+For a broader discussion of the macroeconomic implications of AI, see Hernández de Cos, Pablo
+(2026), “ ”, speech at
+the Global Fintech Fest 2026, Mumbai, 10 September.
+9.
+ECB Banking Supervision (2025), “ ”, slides, ECB, November;
+ECB Banking Supervision (2024), “
+”, ECB, July.
+10.
+ECB Banking Supervision (2023), “
+”, slides, ECB, 15 February.
+11.
+See Section 1.2.4 of ECB (2026), .
+12.
+Koont, Naz, Santos, Tano and Zingales, Luigi (2024), “ ,” NBER
+Working Paper, No 32601, June, revised August 2025; Pancaro, Cosimo, Passantino, Valerio and
+Pietsch, Allegra (2025), “ ,” Financial Stability Review,
+ECB, May.
+13.
+Based on data for 160 significant and less-significant institutions under European banking supervision
+as at end-2025.
+14.
+Fascione, Luisa, Jacoubian, Juan Ignacio, Scheubel, Beatrice, Stracca, Livio and Wildmann, Nadya
+(2025), “ ”, Working Paper Series, No 3092,
+ECB, August.
+15.
+Cera, Katharina, Pietsch, Allegra and Sowiński, Andrzej (2023), “
+”, Financial Stability Review, ECB, November.
+16.
+The Financial Stability Implications of Artificial Intelligence
+OECD – FSB Roundtable on Artificial
+Intelligence (AI) in Finance: Summary of key findings,
+Artificial intelligence, growth and financial stability: challenges for central banks
+AI workshops with banks 2025 – Annex
+Digitalisation: key assessment criteria and collection of sound
+practices
+Take-aways from the horizontal assessment of the survey on digital
+transformation and the use of fintech
+ECB Annual Report on supervisory activities 2025
+Destabilizing Digital ‘Bank Walks’
+The deposit franchise value of euro area banks
+Mind the App: do European deposits react to digitalisation?
+Financial stability considerations
+arising from the digitalisation of financial services
+Fascione, Luisa, Jacoubian, Juan Ignacio, Scheubel, Beatrice, Stracca, Livio and Wildmann, Nadya
+(2025), “ ”, Working Paper Series, No 3092,
+ECB, August.
+17.
+Fascione, Luisa, Oosterhek, Koen, Scheubel, Beatrice, Stracca, Livio and Wildmann, Nadya (2024),
+“ ”, Occasional
+Paper Series, No 361, ECB, November.
+18.
+European Systemic Risk Board (2025), , October.
+19.
+Aerts, Senne, Lambert, Claudia and Reinhold, Elisa (2025), “
+”, Financial Stability Review, ECB, November.
+20.
+In Europe, the Markets in Crypto-Assets Regulation has established harmonised EU-wide rules for
+crypto-assets and stablecoins, reducing regulatory fragmentation and providing greater legal clarity for
+market participants. Article 36 of the Regulation sets the minimum amount to be held in deposits at
+30%, and the percentage is increased to 60% for significant stablecoins pursuant to Article 45.
+21.
+Hernández de Cos, Pablo (2026), “ ”, speech at a Bank of Japan
+seminar, Tokyo, 20 April.
+22.
+Schaaf, Jürgen (2025), “ ”, The ECB Blog,
+ECB, 28 July.
+23.
+In the non-bearer model of tokenised deposits, a deposit cannot simply be transferred from a customer
+of one bank to a customer of another. Instead, the payment requires corresponding adjustments to
+customer balances at the two banks and interbank settlement.
+24.
+European Banking Authority (2024), “ ”, Risk Assessment Report, November.
+25.
+See data on on the ECB Data Portal. In the first half
+of 2025 the euro area recorded 724 payment institutions and 292 electronic money institutions.
+26.
+Mind the App: do European deposits react to digitalisation?
+Keep calm, but watch the outliers: deposit flows in recent crisis episodes and beyond
+Crypto-assets and decentralised finance
+Stablecoins on the rise: still small in the
+euro area, but spillover risks loom
+Stablecoins: framing the debate
+From hype to hazard: what stablecoins mean for Europe
+Profitability
+institutions offering payment services to non-MFIs
+In 2024 payment wallets, PayPal and other mobile apps already accounted for 29% of online
+payments by euro area consumers; see ECB (2024),
+, December. The percentage of euro area companies accepting mobile payments
+increased from 36% in 2024 to 68% in 2026; see ECB (2026), “
+”, August.
+27.
+ECB (2026), “ ”, press release, 21
+September.
+28.
+Cipollone, Piero (2026), “
+”, keynote address at the 24th Annual Symposium on “Building the Financial System of the 21st
+Century: an Agenda for Europe and the United States”, Washington DC, 15 April. In the Eurosystem’s
+2024 exploratory work, market participants tested 58 different use cases. See Gaspar, Francisco and
+Koczan, Gergely (2026), “
+”, Financial integration and structure in the euro area, ECB, May.
+29.
+See the ECB’s web page; and Cipollone, Piero (2026), “
+”, keynote speech at an event on “Building Europe’s integrated digital asset
+ecosystem: from vision to implementation”, Brussels, 23 March.
+30.
+See ECB (2026),
+, March; and Lagarde, Christine (2026), “ ”, opening speech at
+the ECB conference on “Money in transition: digitalisation and innovation in payments”, Frankfurt am
+Main, 15 June.
+31.
+European Banking Authority (2024), , December.
+32.
+Montagner, Patrick (2026), “
+”, keynote speech at the 10th Annual FinTech and Regulation Conference, Brussels, 3
+February. See the box entitled “ ” in the ECB Annual Report on
+supervisory activities 2023.
+33.
+Liberti, José Maria and Petersen, Mitchell A. (2019), “ ,” The Review of
+Corporate Finance Studies, Vol. 8, No 1, pp. 1-41; Kysucky, Vlado and Norden, Lars (2016), “
+Study on the payment attitudes of consumers in
+the euro area 2024
+Use of cash by companies in the euro
+area in 2026
+Eurosystem brings central bank money to tokenised finance
+Sparking the transformation of finance: tokenisation and the role of central
+banks
+The role of the Eurosystem in the scaling-up of a tokenised financial
+ecosystem
+Pontes Building the rails for Europe’s
+tokenised financial markets
+Appia – paving the way for a future-ready, integrated financial ecosystem leveraging
+tokenisation and DLT Money in transition
+Report on tokenised deposits
+Encouraging innovation, managing risks: the ECB’s approach to digital
+transformation
+Developments in crypto-assets
+Information: Hard and Soft
+The
+,” Management Science,
+Vol. 62, No 1, pp. 90-110
+34.
+Garcia, Thomas, Grodzicki, Maciej and Radulova, Petya (2025), “
+”, Financial Stability Review, ECB, May. More recent
+evidence shows that digital banks adjust deposit rates faster than traditional banks, but expanded their
+lending less during the recent monetary policy tightening. Budnik, Katarzyna (2026), “
+”, The ECB Blog, ECB, 6 May.
+35.
+Matvos, Gregor, Piskorski, Tomasz, and Seru, Amit (2026), “
+,” NBER Working Paper, No 34991, 2026, revised August.
+36.
+Li, Chunxiao, Wang, Hongchang, Jiang, Songtao and Gu, Bin (2024), “
+One Million Underserved Population,” MIS Quarterly,
+forthcoming/SSRN working paper version.
+37.
+Gambacorta, Leonardo, Sabatini, Fabiana and Schiaffi, Stefano (2025), “
+”, BIS Working Paper, No 1244, Bank for International Settlements, 19 February
+2025.
+38.
+ECB (2025), , 18 November.
+39.
+ECB Banking Supervision (2025), “ ”, section 5.2.3, “Risk data
+aggregation and risk reporting”, November.
+40.
+ECB Banking Supervision (2023), “
+”, slides, ECB, 15 February.
+41.
+ECB Banking Supervision (2024), “
+”, ECB, July.
+42.
+European Central Bank (2025), , 18 November.
+43.
+Benefits of Relationship Lending in a Cross-Country Context: A Meta-Analysis
+Digital banking: how new bank
+business models are disrupting traditional banks
+Why apps
+matter: digital banks pass on monetary policy differently
+Private Credit Balance Sheets and
+Financial Stability
+The Effect of AI-Enabled Credit
+Scoring on Financial Inclusion: Evidence from
+Artificial intelligence and
+relationship lending
+Supervisory priorities 2026-28
+Aggregated results of the 2025 SREP
+Take-aways from the horizontal assessment of the survey on digital
+transformation and the use of fintech
+Digitalisation: key assessment criteria and collection of sound
+practices
+Supervisory priorities 2026-28
+ECB Banking Supervision (2025), “ ”, slides, ECB, 19
+February. DORA:
+.
+44.
+ECB (2025), “ ”, 16 July. ECB
+(2025), , 18 November.
+45.
+Elderson, Frank (2026), “ ”, keynote speech at the
+Goldman Sachs European Financials Conference 2026, Zurich, 3 June.
+46.
+Buch, Claudia (2026), “ ”, letter from the Chair of the
+Supervisory Board to the chief executive officers of significant institutions, ECB, 7 July.
+47.
+Auer, Raphael, Dodson, Donna, Dupont, Angela, Haghihi, Maryam, Margaine, Nicolas, Marsden,
+Danica, McCarthy, Sarah and Valko, Andras (2025), “
+”, BIS Papers, No 158, Bank for International Settlements, July. Montagner, Patrick (2026),
+“ ”, keynote
+speech at the 10th Annual FinTech and Regulation Conference, Brussels, 3 February.
+48.
+ECB (2024), “ ”, press release, 26 July.
+49.
+Laboureix, Dominique (2026), “ ”,
+speech at the Stockholm International Banking Crisis Management Conference, 16 June.
+50.
+See ECB (2025), “
+”, December; and ECB (2026), “
+”, April.
+51.
+European Commission (2026), “
+”, Communication on the competitiveness of the EU banking sector, 17 July.
+2024 Outsourcing Register – Horizontal analysis
+Regulation (EU) 2022/2554 of the European Parliament and of the Council of 14
+December 2022 on digital operational resilience for the financial sector and amending Regulations
+(EC) No 1060/2009, (EU) No 648/2012, (EU) No 600/2014, (EU) No 909/2014 and (EU) 2016/1011
+(OJ L 333, 27.12.2022, p. 1)
+ECB Guide on outsourcing cloud services to cloud service providers
+Supervisory priorities 2026-28
+Strengthening operational resilience for the age of AI
+Addressing AI-enabled cybersecurity threats
+Quantum-readiness for the financial system: a
+roadmap
+Encouraging innovation, managing risks: the ECB’s approach to digital transformation
+ECB concludes cyber resilience stress test
+Taking stock of crisis management reforms and remaining challenges
+Simplification of the European prudential regulatory, supervisory and reporting
+framework Eurosystem response to the EU Commission’s targeted
+consultation on the competitiveness of the EU banking sector
+Commission outlines measures to strengthen Europe’s banking sector
+and support growth
+CONTACT
+European Central Bank
+Directorate General Communications
+Reproduction is permitted provided that the source is acknowledged.
+Sonnemannstrasse 20
+
+60314 Frankfurt am Main, Germany
+
+ +49 69 1344 7455
+ media@ecb.europa.eu
+Media contacts
+Copyright 2026,
+European Central Bank

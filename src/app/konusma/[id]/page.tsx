@@ -3,7 +3,8 @@ import Link from "next/link";
 import { notFound } from "next/navigation";
 import { BankTag, ScoreBadge } from "@/components/ScoreBadge";
 import { BANKS } from "@/lib/banks";
-import { getSpeech, getSpeechIds } from "@/lib/data/speeches";
+import { getSpeech, getSpeechIds, getSpeechParagraphs } from "@/lib/data/speeches";
+import { LICENSE_NOTICE_TR } from "@/lib/text-license";
 import { formatDateTr } from "@/lib/time";
 
 export const revalidate = 3600;
@@ -30,6 +31,7 @@ export default async function SpeechPage({ params }: PageProps<"/konusma/[id]">)
   if (!speech) notFound();
 
   const bank = BANKS[speech.bankCode];
+  const paragraphs = await getSpeechParagraphs(speech);
 
   return (
     <article className="space-y-6">
@@ -41,6 +43,11 @@ export default async function SpeechPage({ params }: PageProps<"/konusma/[id]">)
           <span>{speech.speakerName}</span>
         </div>
         <h1 className="mt-2 text-2xl font-semibold tracking-tight">{speech.title}</h1>
+        {speech.contextEn && (
+          <p lang="en" className="prose-width mt-2 text-sm text-muted">
+            {speech.contextEn}
+          </p>
+        )}
       </header>
 
       {speech.hawkDoveScore !== undefined ? (
@@ -87,7 +94,7 @@ export default async function SpeechPage({ params }: PageProps<"/konusma/[id]">)
             rel="noopener noreferrer nofollow"
             className="text-accent hover:underline"
           >
-            Konuşmanın tam metni (BIS, İngilizce) →
+            Kaynak: BIS Central Bankers&apos; Speeches →
           </a>
         </p>
         {speech.textIsExcerpt && (
@@ -119,6 +126,39 @@ export default async function SpeechPage({ params }: PageProps<"/konusma/[id]">)
           {bank.nameTr} ({bank.nameEn}) · {bank.countryTr}
         </p>
       </section>
+
+      {paragraphs ? (
+        <section aria-labelledby="tam-metin">
+          <h2 id="tam-metin" className="mb-1 text-lg font-semibold">
+            {speech.textIsExcerpt ? "Konuşmanın giriş bölümü" : "Konuşmanın tam metni"}{" "}
+            <span className="text-sm font-normal text-muted">(İngilizce)</span>
+          </h2>
+          <p className="prose-width mb-4 text-sm text-muted">
+            {LICENSE_NOTICE_TR[speech.textLicense!]} Metin yayımcının PDF ya da
+            sayfasından otomatik çıkarıldı; yalnızca satır kırılımları
+            düzenlendi. Dipnotlar ve tablolar düz metne dönüşmüş olabilir —
+            resmî metin için kaynağa bakın.
+          </p>
+          <div lang="en" className="prose-width space-y-4 leading-relaxed text-foreground">
+            {paragraphs.map((p, i) => (
+              <p key={i}>{p}</p>
+            ))}
+          </div>
+        </section>
+      ) : (
+        <p className="card p-5 text-sm text-muted">
+          Bu konuşmanın tam metni, yayımcısının kullanım şartları sitede yeniden
+          yayımlanmasına izin vermediği için burada gösterilmiyor.{" "}
+          <a
+            href={speech.sourceUrl}
+            target="_blank"
+            rel="noopener noreferrer nofollow"
+            className="text-accent hover:underline"
+          >
+            Kaynakta okuyun →
+          </a>
+        </p>
+      )}
 
       <Link href="/konusmalar" className="inline-block text-sm text-accent hover:underline">
         ← Tüm konuşmalar

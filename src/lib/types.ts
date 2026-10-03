@@ -1,3 +1,4 @@
+import type { TextLicense } from "./text-license";
 export type BankCode = "fed" | "ecb" | "tcmb" | "boe" | "boj" | "rba";
 
 export interface CentralBank {
@@ -42,8 +43,15 @@ export interface Speech {
   /** YYYY-MM-DD */
   speechDate: string;
   sourceUrl: string;
-  /** Skorlamaya girdi olan tam metin; arayüzde gösterilmez. */
+  /** Eski seed alanı; artık yazılmıyor (bkz. scripts/speech-text.ts). */
   rawText?: string;
+  /**
+   * BIS beslemesindeki İngilizce tanıtım cümlesi: konuşmacının kurumu, etkinlik
+   * ve yer. Tam metnin yayımlanabilirliği buradaki kurumdan belirlenir.
+   */
+  contextEn?: string;
+  /** Tam metin sitede yayımlanabiliyorsa lisansı (src/lib/text-license.ts). */
+  textLicense?: TextLicense;
   summaryTr?: string;
   /** -10 (çok güvercin) .. +10 (çok şahin) */
   hawkDoveScore?: number;

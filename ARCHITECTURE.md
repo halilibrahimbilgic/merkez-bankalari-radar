@@ -154,14 +154,22 @@ metin PDF'e taşındı). Bu yüzden: MPT bağlantısı sayfadan keşfedilir ve z
 imzası kontrol edilir; konuşma metni önce PDF'ten okunur; cron adımları
 `if: !cancelled()` ile birbirinden bağımsızdır ama iş yine kırmızı biter.
 
-**Tam metin depoya ve arayüze girmez.** Üçüncü taraf telifli konuşma metni
-yalnızca skorlamanın girdisidir. `fetch:speeches` onu git'e girmeyen
-`.cache/speech-text/<id>.txt` önbelleğine yazar; `score:export` önbellekte
-bulamazsa `sourceUrl`'den yeniden indirir (`scripts/speech-text.ts`) — temiz
-CI checkout'unda da çalışır. Seed'de `rawText` alanı yoktur; okuma katmanı
-yine de savunma olarak ayıklar, Postgres sorgusu kolonu seçmez. (3 Ekim
-2026'ya kadarki 535 KB metin git geçmişinde duruyor; temizlemek geçmişi
-yeniden yazmayı ve force push'u gerektirir.)
+**Tam metin yalnızca yayımcı izin veriyorsa yayımlanır.** Konuşma metni
+üçüncü taraf içeriktir. `src/lib/text-license.ts` her bankanın kendi
+şartlarını kaynaklarından alıntılar: Fed Board kamu malı, ECB serbest
+kullanım (doğru aktarım + kaynak), BoJ kaynak göstererek, RBA CC BY 4.0;
+**BoE yalnızca kişisel kullanım** — yayımlanmaz. Kurum, konuşmacının
+*unvanından* (BIS tanıtım cümlesi, `contextEn`) okunur, kayıt bankasından
+değil: New York Fed başkanı "fed", ulusal banka başkanları "ecb" olarak
+etiketlenir ama metinleri Board'un/ECB'nin değildir. Etkinlik kısmı
+kuruma karışmaz (Jefferson'ın bölgesel Fed'deki konuşması bu yüzden
+yanlışlıkla dışlanmıştı). Cümle yoksa yayımlanmaz.
+
+İzinli metin `data/speech-text/<id>.txt`'de commit'lenir ve `/konusma/<id>`
+sayfasında lisans notuyla okunur; izinsiz olan git'e girmeyen
+`.cache/speech-text/`'te kalır, yalnızca skorlama girdisidir
+(`scripts/speech-text.ts`). Gösterimde yalnızca boşluk düzenlenir
+(`speech-format.ts`; sadakat testi: boşluk dışı karakterler birebir aynı).
 
 **Sunucu bileşeni `"use client"` modülünden değer içe aktaramaz.** Gerçek
 değeri değil istemci referansını alır. İki kez ısırdı: `computeCountdownParts`
@@ -204,6 +212,8 @@ score:import  → şema denetimi, aralık sınırı, mevcut skoru ezmeden yazar
   bağlamı ve abonelik kullanımını sınırlar; birikim ertesi gün erir.
 - Yerelde aynı akış: `npm run score:export`, ardından aynı argümanlarla
   `claude -p`, ardından `npm run score:import`.
+- Skorlama metni `loadSpeechText` ile okur: önce `data/speech-text`, sonra
+  önbellek, ikisinde de yoksa kaynaktan indirir.
 - `npm run score:speeches` (API yolu) yerel kullanım için duruyor ama cron'da
   çalışmaz. `apply-session-scores.ts` tarihsel dolgudur.
 
@@ -243,7 +253,8 @@ Hiçbir sayfa yatırım tavsiyesi vermez; altbilgideki uyarı kaldırılmamalı.
 ```
 Toplantı     135 (Fed 56, ECB 19, TCMB 12, BoE 16, BoJ 16, RBA 16)
              — 70'inde karar oranı var (Fed 45, TCMB 6, BoE 6, RBA 6, BoJ 6, ECB 1)
-Konuşma      30  (Fed 13, ECB 9, RBA 3, BoE 3, BoJ 2) — 30'u skorlu, 17'si sinyalsiz
+Konuşma      30  (Fed 13, ECB 9, RBA 3, BoE 3, BoJ 2) — 30'u skorlu, 17'si sinyalsiz,
+             26'sının metni sitede okunabilir (5'i yalnızca giriş bölümü)
 Olasılık     2026-10-01 anlığı, 13 pencere
 Güncel faiz  Fed, ECB, TCMB, BoE, BoJ, RBA
 Hatırlatma   /rss.xml (1 hafta önce + karar), iCal aboneliği (1 gün + 1 saat önce)

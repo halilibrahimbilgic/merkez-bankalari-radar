@@ -3,6 +3,8 @@ import { readFile } from "node:fs/promises";
 import path from "node:path";
 import { getPool } from "../db";
 import type { BankCode, ScoredVia, Speech } from "../types";
+import type { TextLicense } from "../text-license";
+import { toParagraphs } from "../speech-format";
 
 const SEED_PATH = path.join(process.cwd(), "data", "seed", "speeches.json");
 
@@ -23,13 +25,14 @@ let seedCache: Store | undefined;
 async function load(): Promise<Store> {
   const pool = getPool();
   if (pool) {
-    // raw_text kasıtlı olarak seçilmez: üçüncü taraf telifli tam metin
-    // arayüzde hiç gösterilmez, yalnızca skorlama script'inin girdisidir.
+    // raw_text kasıtlı olarak seçilmez. Sitede gösterilen tam metin yalnızca
+    // lisansı izin verenlerdir ve iki modda da data/speech-text'ten okunur.
     const { rows } = await pool.query<SpeechRow>(
       `select id, bank_code, speaker_name, speaker_role_tr, title,
               speech_date, source_url, text_is_excerpt, summary_tr,
               hawk_dove_score, has_policy_signal, score_rationale_tr,
               model, prompt_version, scored_at, scored_via,
+              context_en, text_license,
               max(created_at) over () as store_fetched_at
          from speeches
         order by speech_date desc`,
@@ -66,6 +69,8 @@ interface SpeechRow {
   prompt_version: string | null;
   scored_at: Date | null;
   scored_via: ScoredVia | null;
+  context_en: string | null;
+  text_license: TextLicense | null;
   store_fetched_at: Date | null;
 }
 
@@ -87,6 +92,8 @@ function toSpeech(r: SpeechRow): Speech {
     promptVersion: r.prompt_version ?? undefined,
     scoredAt: r.scored_at?.toISOString(),
     scoredVia: r.scored_via ?? undefined,
+    contextEn: r.context_en ?? undefined,
+    textLicense: r.text_license ?? undefined,
   };
 }
 
@@ -98,6 +105,22 @@ function withoutRawText(s: Speech): Speech {
   const copy = { ...s };
   delete copy.rawText;
   return copy;
+}
+
+const TEXT_DIR = path.join(process.cwd(), "data", "speech-text");
+
+/**
+ * Konuşmanın tam metni, paragraflara bölünmüş — yalnızca yayımcısı yeniden
+ * yayıma izin veriyorsa (textLicense). Lisansı olmayan bir kaydın dosyası
+ * yanlışlıkla depoda olsa bile gösterilmez.
+ */
+export async function getSpeechParagraphs(speech: Speech): Promise<string[] | null> {
+  if (!speech.textLicense || !/^[\w-]+$/.test(speech.id)) return null;
+  try {
+    return toParagraphs(await readFile(path.join(TEXT_DIR, `${speech.id}.txt`), "utf8"));
+  } catch {
+    return null;
+  }
 }
 
 /** Tüm konuşmalar, en yeni önce. */

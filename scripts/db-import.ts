@@ -104,9 +104,11 @@ async function importSpeeches(pool: Pool) {
          id, bank_code, speaker_name, speaker_role_tr, title, speech_date,
          source_url, raw_text, text_is_excerpt, summary_tr, hawk_dove_score,
          has_policy_signal, score_rationale_tr, model, prompt_version,
-         scored_at, scored_via
-       ) values ($1,$2,$3,$4,$5,$6,$7,$8,$9,$10,$11,$12,$13,$14,$15,$16,$17)
+         scored_at, scored_via, context_en, text_license
+       ) values ($1,$2,$3,$4,$5,$6,$7,$8,$9,$10,$11,$12,$13,$14,$15,$16,$17,$18,$19)
        on conflict (id) do update set
+         context_en      = coalesce(excluded.context_en, speeches.context_en),
+         text_license    = excluded.text_license,
          speaker_name    = excluded.speaker_name,
          speaker_role_tr = coalesce(excluded.speaker_role_tr, speeches.speaker_role_tr),
          title           = excluded.title,
@@ -152,6 +154,8 @@ async function importSpeeches(pool: Pool) {
         s.promptVersion ?? null,
         s.hawkDoveScore === undefined ? null : (s.scoredAt ?? new Date().toISOString()),
         s.scoredVia ?? null,
+        s.contextEn ?? null,
+        s.textLicense ?? null,
       ],
     );
   }

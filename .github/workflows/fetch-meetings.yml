@@ -90,13 +90,14 @@ jobs:
       - name: Değişiklik varsa commit'le
         if: ${{ !cancelled() }}
         run: |
-          if git diff --quiet -I '"fetchedAt"' -- data/seed \
-             && [[ -z "$(git ls-files --others --exclude-standard data/seed)" ]]; then
+          # data/speech-text: yayımcısı izin veren konuşmaların tam metni.
+          if git diff --quiet -I '"fetchedAt"' -- data/seed data/speech-text \
+             && [[ -z "$(git ls-files --others --exclude-standard data/seed data/speech-text)" ]]; then
             echo "Veride değişiklik yok (yalnızca fetchedAt)."
           else
             git config user.name "github-actions[bot]"
             git config user.email "github-actions[bot]@users.noreply.github.com"
-            git add data/seed
+            git add data/seed data/speech-text
             git commit -m "chore: takvim ve piyasa verisini güncelle"
             git push
           fi

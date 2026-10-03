@@ -104,9 +104,11 @@ yalnızca **son 25 konuşmayı** döndürür ve sayfalama parametresi kabul etme
 arşiv, günlük çalışan işle zaman içinde birikir. Tek bir çekişte yalnızca
 takip edilen 6 bankaya ait olanlar alınır (ilk çekişte 11 konuşma). Eylül
 2026'dan beri BIS sayfaları yalnızca giriş paragraflarını içerdiği için tam
-metin konuşmanın PDF'inden okunur (`unpdf`). Tam metin telifli olduğu için
-depoya girmez: git'e girmeyen `.cache/speech-text/` önbelleğine yazılır ve
-gerekirse kaynaktan yeniden indirilir.
+metin konuşmanın PDF'inden okunur (`unpdf`). Yayımcısının şartları izin
+veren konuşmaların (Fed Board, ECB, BoJ, RBA) tam metni `data/speech-text/`'te
+tutulur ve konuşma sayfasında lisans notuyla okunabilir; izin vermeyenlerin
+(BoE, bölgesel Fed bankaları, ulusal merkez bankaları) metni git'e girmeyen
+`.cache/speech-text/` önbelleğinde kalır ve yalnızca skorlamada kullanılır.
 
 Skor sıfırsa iki durum olabilir: dengeli bir duruş, ya da hiç para politikası
 sinyali taşımayan bir konuşma (düzenleme, denetim, ödeme sistemleri).

@@ -1,0 +1,9 @@
+Let me begin by congratulating everyone involved in the ChaMP research network on a remarkably successful research programme: it has delivered many new insights regarding the transmission of monetary policy and has been directly influential in our policy discussions in recent years.
+
+ In these dinner remarks, I would like to focus on one topic in particular: the implications of artificial intelligence (AI) for the monetary policy stance.
+
+ A natural benchmark analysis is to view AI as permanently increasing productivity, boosting incomes. If households and firms quickly internalise the permanent nature of the productivity shock and incorporate future increases in incomes into their spending decisions, the advent and adoption of AI could put upward pressure on inflation via this demand mechanism already early on during the transition phase.
+
+ Yet, assuming that households and firms know precisely the nature, size and persistence of future productivity shocks is hardly realistic. A more sluggish consumption response can also be rationalised if the level of lagged consumption is an important determinant of the benefits of current consumption, as in "habit formation" models. Consumers also face great individual-specific uncertainty about the income implications of the AI transition, providing a further reason to be slow to adjust consumption. It is more plausible to posit that households and firms will learn about the income and employment impact of productivity shocks over time in a concurrent manner and will only slowly adapt spending to it. In this event, the upfront inflationary effect would be strongly diminished.
+
+ More generally, within the span of macroeconomic outcomes originating from different degrees of incorporating productivity and income gains into spending decisions, the inflationary effects of the AI transition will depend on a range of factors.
