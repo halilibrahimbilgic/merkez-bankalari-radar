@@ -107,6 +107,10 @@ TRT (EDT); ECB Eylül → 15:15, Ekim → 16:15.
 yalnızca tarih verir; karar oranlarını `fetch:rates` ayrı adımda doldurur.
 Sıfırdan yazmak 45 toplantının karar oranını siliyordu.
 
+**`fetch:current-rates` da birleştirir.** Bir bankanın kaynağı hata verirse
+önceki kaydı korunur ve adım yine hata koduyla biter. İlk cron koşusunda ECB
+SDW'nin geçici 504'ü ECB faizini siteden silmişti.
+
 **Geçmiş toplantılar kaynaktan düşse de arşivde kalır.** Bankalar takvim
 sayfalarını ileriye kaydırır; ECB'nin 10 Eylül 2026 toplantısı bu yüzden bir
 kez silinmişti. Yalnızca *gelecek* toplantıların kaybolması anlamlıdır
@@ -189,7 +193,7 @@ Hiçbir sayfa yatırım tavsiyesi vermez; altbilgideki uyarı kaldırılmamalı.
 
 ```
 Toplantı     87  (Fed 56, ECB 19, TCMB 12)  — 45'inde karar oranı var
-Konuşma      28  (Fed 13, ECB 8, RBA 3, BoE 2, BoJ 2) — 15'i skorlu, 9'u sinyalsiz
+Konuşma      30  (Fed 13, ECB 9, RBA 3, BoE 3, BoJ 2) — 15'i skorlu, 9'u sinyalsiz
 Olasılık     2026-10-01 anlığı, 13 pencere
 Güncel faiz  Fed, ECB
 Sayfa        46 (build çıktısı), ISR 1 saat
@@ -201,14 +205,15 @@ Sayfa        46 (build çıktısı), ISR 1 saat
 
 Öncelik sırasıyla:
 
-1. **Cron hiç çalışmadı ve secret'lar eksik.** Workflow 3 Ekim'de depoyla
-   birlikte oluştu, henüz tek koşusu yok; depoda hiç secret tanımlı değil.
-   `FRED_API_KEY` olmadan `fetch:rates` ve `fetch:current-rates` kırmızı
-   biter (diğer adımlar artık yine çalışır ve commit'lenir).
-   `gh secret set FRED_API_KEY --repo halilibrahimbilgic/merkez-bankalari-radar`,
-   ardından `gh workflow run "Veriyi güncelle"` ile elle doğrulayın.
-2. **13 konuşma skorsuz** — BIS kırılması giderilince Eylül sonu konuşmaları
-   eklendi. `/konusmalar` ve `/skor` bunu gösteriyor; ortalamalar hâlâ
+1. **Anthropic anahtarı geçersiz.** Cron çalışıyor (3 Ekim'de elle tetiklenip
+   doğrulandı, `FRED_API_KEY` ve `ANTHROPIC_API_KEY` secret olarak tanımlı),
+   ancak `.env.local`'deki ve secret'taki Anthropic anahtarı 401
+   "invalid" dönüyor; bakiye sorunu değil. console.anthropic.com'dan yeni
+   anahtar alınıp hem `.env.local`'e hem
+   `gh secret set ANTHROPIC_API_KEY --repo halilibrahimbilgic/merkez-bankalari-radar`
+   ile yazılırsa (bakiye de varsa) skorlama ertesi sabah kendiliğinden başlar.
+2. **15 konuşma skorsuz** — BIS kırılması giderilince Eylül konuşmaları
+   eklendi; 1. madde çözülünce otomatik skorlanırlar. `/konusmalar` ve `/skor` bunu gösteriyor; ortalamalar hâlâ
    Ağustos örneklemine dayanıyor.
 3. **TCMB'nin geçmiş karar oranları hiç yok.** Fed FRED'den, ECB SDMX'ten
    geliyor; TCMB için kaynak bağlanmamış, geçmiş PPK satırları boş görünüyor.

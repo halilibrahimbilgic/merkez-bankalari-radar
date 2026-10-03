@@ -7,7 +7,7 @@
  * (SDMX: mevduat kolaylığı). TCMB için EVDS anahtarı gerektiğinden şimdilik
  * kapsam dışı.
  */
-import { writeFile, mkdir } from "node:fs/promises";
+import { readFile, writeFile, mkdir } from "node:fs/promises";
 import path from "node:path";
 import { config } from "dotenv";
 import { fetchSeries, SERIES } from "../src/lib/sources/fred";
@@ -29,8 +29,17 @@ export interface CurrentRate {
   sourceUrl: string;
 }
 
+async function loadPrevious(): Promise<CurrentRate[]> {
+  try {
+    return (JSON.parse(await readFile(OUT, "utf8")) as { rates: CurrentRate[] }).rates;
+  } catch {
+    return [];
+  }
+}
+
 async function main() {
   const rates: CurrentRate[] = [];
+  const failed: BankCode[] = [];
   const since = new Date(Date.now() - 400 * 86_400_000).toISOString().slice(0, 10);
 
   try {
@@ -52,6 +61,7 @@ async function main() {
     }
   } catch (err) {
     console.error(`✗  Fed: ${(err as Error).message}`);
+    failed.push("fed");
   }
 
   try {
@@ -69,6 +79,16 @@ async function main() {
     }
   } catch (err) {
     console.error(`✗  ECB: ${(err as Error).message}`);
+    failed.push("ecb");
+  }
+
+  // Geçici bir kaynak hatası (ECB SDW 504 verdi) bankanın faizini siteden
+  // siliyordu. Önceki kayıt korunur; asOf tarihi bayatlığı zaten gösterir.
+  for (const prev of await loadPrevious()) {
+    if (failed.includes(prev.bankCode)) {
+      rates.push(prev);
+      console.warn(`   ${prev.bankCode}: önceki kayıt korundu (${prev.asOf})`);
+    }
   }
 
   if (rates.length === 0) {
@@ -83,6 +103,9 @@ async function main() {
     "utf8",
   );
   console.log(`\n→ ${path.relative(process.cwd(), OUT)}`);
+
+  // Dosya yazıldı ama kırılma cron'da görünür kalsın.
+  if (failed.length > 0) process.exit(1);
 }
 
 main().catch((err) => {
