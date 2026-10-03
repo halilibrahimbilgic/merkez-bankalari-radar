@@ -1,5 +1,5 @@
 {
-  "fetchedAt": "2026-10-03T06:05:40.137Z",
+  "fetchedAt": "2026-10-03T06:24:37.449Z",
   "rates": [
     {
       "bankCode": "fed",
@@ -7,12 +7,6 @@
       "rateLower": 3.75,
       "asOf": "2026-10-02",
       "sourceUrl": "https://fred.stlouisfed.org/series/DFEDTARU"
-    },
-    {
-      "bankCode": "ecb",
-      "rate": 2.5,
-      "asOf": "2026-10-03",
-      "sourceUrl": "https://www.ecb.europa.eu/stats/policy_and_exchange_rates/key_ecb_interest_rates/html/index.en.html"
     }
   ]
 }
