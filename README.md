@@ -4,6 +4,8 @@ Fed, ECB, TCMB, BoE, BoJ ve RBA faiz toplantılarını Türkiye saatiyle tek yer
 merkez bankası takip platformu. Yol haritası ve gerekçe için
 `merkez_bankalari_radar_mvp_plani.docx` belgesine bakın.
 
+**Canlı:** https://www.faizradar.com
+
 Mimari, bozulmaması gereken kurallar ve sıradaki işler için
 [`ARCHITECTURE.md`](ARCHITECTURE.md).
 
