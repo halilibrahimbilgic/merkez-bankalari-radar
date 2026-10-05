@@ -1,0 +1,282 @@
+SPEECH
+Listening to households: expectations,
+behaviour and monetary policy
+Speech by Boris Vujčić, Vice-President of the ECB, at the
+inauguration of the Alexander von Humboldt Professorship
+awarded to Professor Michael Weber at the European School of
+Management and Technology (ESMT) Berlin
+Berlin, 1 September 2026
+Introduction
+Thank you, Michael, and thank you to ESMT for the invitation. It is a pleasure to be here for this
+inauguration and to speak about a topic to which Michael has made an outstanding contribution: how
+households form expectations and why those expectations matter for monetary policy.
+Monetary policy is, by its nature, forward-looking. We track inflation, wages, consumption, credit and
+financial conditions. But none of these data fully tell us what households believe and how these beliefs
+feed into their economic and financial decisions, how uncertain they are, or why similar shocks
+produce different responses across population sub-groups and countries.
+The insights from expectations surveys matter, because expectations about the future shape decisions
+and behaviour today. Expectations about inflation, income, employment, interest rates and house
+prices affect spending, saving, investment, borrowing and wage demands. They therefore play a key
+role in shaping the transmission mechanism of monetary policy.
+For a long time, macroeconomic analysis often relied on strong assumptions that expectations were
+rational. Over the past two decades, evidence has shown the limits of those assumptions for many
+policy questions. A foundational contribution was to measure expectations directly rather than infer
+them from outcomes alone.[ ]
+This became much more feasible as the internet and mobile technologies became more widely used.
+Online survey data collection, better questionnaire design and more effective sampling methods now
+allow high-quality, population-representative evidence to be collected in a very timely manner. The
+ECB’s Consumer Expectations Survey is a case in point, as is the recent work by the Bank for
+International Settlements.[ ] This research has improved our understanding of expectations formation
+and its role in shaping aggregate economic outcomes.
+Alexander von Humboldt would no doubt have approved of this enhanced approach to measuring
+expectations because it follows his maxim about observing carefully before generalising. Economists
+have not always followed that sequence as faithfully as they might. By contrast, Michael Weber has
+been at the forefront of research in this area, particularly in advancing our understanding of household
+inflation expectations and their implications for monetary policy.
+1
+2
+In my remarks today, I will focus on three areas: recent advances in our understanding of household
+expectations; how these insights have informed policy analysis in a period of inflation shocks and
+geopolitical stress; and the lessons we can draw for communication, trust and credibility.
+Recent advances in our understanding of household expectations
+Let me begin with a simple observation. Households do not form expectations in the same way as
+professional forecasters. Most people do not continuously process the full range of macroeconomic
+data. Their attention is selective, their information is incomplete and their beliefs are widely dispersed.
+This dispersion is not simply noise: it reflects differences in income, wealth, housing, financial literacy,
+lived experience and trust in institutions.[ ]
+Research co-authored by Michael has shown how salient prices, especially food and fuel prices, can
+disproportionately shape inflation perceptions and expectations.[ ] Related evidence helps explain the
+persistent gender gap in inflation expectations, partly through differences in the information
+environments and in exposure to shopping-related price signals.[ ]
+This is why harmonised, cross-country surveys with a panel component, such as the ECB’s Consumer
+Expectations Survey, are so important. They enable us to track beliefs over time and across
+environments, and to connect expectations to behaviour.
+And this evidence is valuable from a policymaking perspective because it sheds light on three
+dimensions of expectations: what households believe, how they update their beliefs and how those
+beliefs affect their behaviour.
+This body of work also has implications for macroeconomic models. If expectations vary and
+information is incomplete, as the evidence certainly suggests, policy models need to explicitly
+incorporate these variations and information frictions.[ ]
+How research on expectations has informed recent policy analysis
+Let me now turn to the usefulness of expectations in policy analysis.
+Insights about expectations have recently become directly useful for policy, especially in the current
+context of elevated uncertainty and geopolitical tension.
+First, data about expectations improve the way we interpret economic shocks. Aggregate and market
+data show what happens to prices and output. Household surveys reveal how people interpret shocks,
+how persistent they expect the shocks to be, and how those beliefs affect their choices. For example,
+recent evidence from the Consumer Expectations Survey shows that geopolitical risk can significantly
+worsen household sentiment and spending intentions in the euro area.[ ]
+These data are particularly relevant at the present juncture. For example, the June 2026 Eurosystem
+staff projections exercise underlined the need to communicate not only a baseline but also the
+uncertainty surrounding that baseline and the alternative scenarios that may unfold. Survey evidence
+can provide valuable contributions to the preparation and calibration of such scenarios by helping us to
+understand how households themselves perceive uncertainty: whether they see a shock as temporary,
+3
+4
+5
+6
+7
+whether they expect it to persist and whether they may respond by postponing spending and
+increasing precautionary saving.
+Such survey evidence can be particularly important when geopolitical shocks affect energy prices and
+the broader cost of living. Such shocks can lead to weaker confidence, higher inflation expectations
+and greater economic uncertainty. Surveys allow us to observe these perceptions directly rather than
+infer them at a later stage from aggregate outcomes.
+Second, uncertainty itself matters for demand. Evidence shows that higher perceived macroeconomic
+uncertainty can persistently reduce household spending.[ ] This helps policymakers distinguish
+between temporary caution and broader demand weakness.
+Third, transmission through household balance sheets can vary. Monetary tightening affects
+households differently depending on housing tenure, stock market participation, the type of mortgage
+contract and the timing of interest rate resets.[ ] Analysis based on the Consumer Expectations Survey
+shows how mortgage repricing feeds into consumption with long and uneven lags across household
+groups and countries.[ ] By taking these important sources of heterogeneity into account, it is
+possible to gain a more accurate understanding of aggregate macroeconomic dynamics.
+Fourth, there are differences in the anchoring of inflation expectations, which is key to understanding
+the likely persistence of shocks. Expectations of households are generally less well anchored than
+professional forecasts, but their longer-term expectations tend to be more centred around our 2%
+inflation target and less sensitive to surprises than the shorter-term expectations.[ ] This distinction
+helps us assess whether movements reflect temporary inflation episodes or deeper credibility risks.
+The broader lesson is that surveys do not replace aggregate, administrative or market data. They
+complement them by measuring perceptions, uncertainty and intended behaviour that other sources
+cannot observe directly. In this respect, the data in consumer surveys complement other evidence
+from the survey on the access to finance of enterprises and the bank lending survey, allowing
+policymakers to compare household beliefs, firm conditions and credit supply channels in near real
+time.
+Communication with the public: building trust and credibility
+This brings me to communication. Research shows that central bank communication can influence
+household inflation expectations.[ ] Since expectations affect transmission, communication is not an
+afterthought. It is part of policy transmission itself.
+One important finding in Michael’s research is that, for broad audiences, communication about the
+target and objective can be more effective than communication about technical instruments.[ ]
+In the euro area, evidence indicates that clear communication about the inflation target, paired with
+simple policy explanations, can improve perceived central bank credibility, including among groups
+with lower financial literacy.[ ]
+These effects matter because better-anchored expectations can reduce the output costs of inflationary
+or cost-push shocks.
+8
+9
+10
+11
+12
+13
+14
+But communication faces substantial constraints. Getting through to households is difficult. Technical
+language, though perfectly accurate, may not be accessible to all audiences. Monetary policy also
+competes for attention with work, bills and family life. And official communications by central banks
+may not always seem consistent with what people see in shops and in their energy bills.
+As Michael’s research shows, when inflation is low, reaching the public is particularly hard due to low
+consumer attention. When inflation is high, people pay more attention and are better informed.[ ] His
+research therefore paints a picture of two rather different communication environments. When inflation
+is low, the main challenge is to reach an inattentive public. But when we do get the public’s attention,
+direct communication can be powerful. Simple messages about our objective and the role of monetary
+policy can improve public understanding and the central bank’s credibility, particularly among groups
+with lower financial literacy.[ ]
+When inflation is high, by contrast, the public is much easier to reach because they are already paying
+more attention to prices. Yet it is also harder to convey genuinely new information, since households
+are closely following developments in shops, at petrol stations and in their energy bills. This can
+nevertheless create a window of opportunity to explain how the central bank is responding, what it can
+achieve, and why it must remain focused on price stability. In such circumstances, communication
+should be clear, accessible and candid about uncertainty.
+Another important finding from this area of research is that the messenger – and not just the message
+– can matter in central bank communication.[ ] Michael’s research has in fact shown that more
+diverse policy committees and messengers can help build trust among otherwise under-represented
+and harder-to-reach groups.[ ] In the euro area’s multi-country and multi-cultural setting, this can also
+strengthen the effectiveness of communication.
+As ECB President Christine Lagarde has argued, communication must adapt to changing media
+environments.[ ] The objective is to remain accessible and rigorous in our messaging, rather than
+using novel ways of communicating for the sake of it.
+Let me give you a concrete example: the ECB’s Valentine’s Day poem about returning inflation to 2%
+posted on one of our social media channels.[ ] Poetry is not a policy instrument, but the point this
+illustrated is important: communication sometimes needs to use alternative formats that people can
+better relate to.
+Still, communication cannot replace a central bank’s performance. As the saying goes, you need to
+walk the walk, not just talk the talk. Trust is gained through competence, consistency, transparency
+and accountability. When people trust the central bank, their inflation expectations tend to be closer to
+the inflation target.[ ] In the end, credibility depends on what we do, and whether it matches what we
+say.
+Surveys help in yet another way. They allow central banks to listen to the public. They show which
+messages reach their intended audience, where there are misunderstandings and how different
+groups experience economic shocks. Credible communication is therefore a “two-way street”.
+Conclusion
+15
+16
+17
+18
+19
+20
+21
+Let me close with a few remarks on the importance of data quality.
+High-quality surveys need to remain a priority. Representative sampling, harmonisation across
+countries, repeated interviewing and timely delivery of survey data are essential for tracking the
+interaction between beliefs and behaviour.
+In today’s fast-paced world, the risks to survey data quality must be actively managed. Survey fatigue
+and the potential rise of inauthentic responses, including AI-related risks, mean that strict quality
+assurance is needed and the burden on respondents has to be managed carefully. At the ECB these
+are among the top priorities for the teams running such surveys.
+Michael Weber’s work has helped shape this field, and I am confident he and his co-authors will
+continue delivering valuable insights in the years ahead.
+Thank you very much for your attention.
+1.
+See Manski, C.F. (2004), “Measuring Expectations”, Econometrica, Vol. 72, No 5, pp. 1329-1376.
+2.
+See the “ ” page on the ECB’s website and D’Acunto, F., De Fiore, F.,
+Sandri, D. and Weber, M. (2025), “ ”, BIS
+Quarterly Review, Bank for International Settlements, 15 September.
+3.
+See, for example, D’Acunto, F., Malmendier, U., Ospina, J. and Weber, M. (2021), “Exposure to
+Grocery Prices and Inflation Expectations”, Journal of Political Economy, Vol. 129, No 5, pp. 1615-
+1639, and D’Acunto, F., Charalambakis, E., Georgarakos, D., Kenny, G., Meyer, J. and Weber, M.
+(2024), “Household inflation expectations: an overview of recent insights for monetary policy”,
+Discussion Paper Series, No 24, ECB.
+4.
+See D’Acunto, F., Malmendier, U., Ospina, J. and Weber, M. (2021), “Exposure to Grocery Prices and
+Inflation Expectations”, Journal of Political Economy, Vol. 129, No 5, pp. 1615-1639.
+5.
+See D’Acunto, F., Charalambakis, E., Georgarakos, D., Kenny, G., Meyer, J. and Weber, M. (2024),
+“Household inflation expectations: an overview of recent insights for monetary policy”, Discussion
+Paper Series, No 24, ECB.
+6.
+See, for example, D’Acunto, F., Charalambakis, E., Georgarakos, D., Kenny, G., Meyer, J. and Weber,
+M. (2024), “ ”,
+Discussion Paper Series, No 24, ECB.
+Consumer Expectations Survey
+A global survey of household perceptions and expectations
+Household inflation expectations: an overview of recent insights for monetary policy
+7.
+See Coibion, O., Georgarakos, D., Gorodnichenko, Y., Kenny, G. and Meyer, J. (2025), “
+”, The ECB Blog, ECB, 7 April, and
+Gorodnichenko, Y., Georgarakos, D., Kenny, G. and Coibion, O. (2025), “The Impact of Geopolitical
+Risk on Consumer Expectations and Spending”, NBER Working Paper Series, National Bureau of
+Economic Research, No 34195.
+8.
+See Coibion, O., Georgarakos, D., Gorodnichenko, Y., Kenny, G. and Weber, M. (2024), “The Effect of
+Macroeconomic Uncertainty on Household Spending”, American Economic Review, Vol. 114, No 3,
+pp. 645-677.
+9.
+See Baldassarri, L., Georgarakos, D., Kenny, G. and Meyer, J. (2024), “
+”, The ECB Blog, ECB, 3 October.
+10.
+See Baptista, P., Dossche, M., Hannon, A., Henricot, D., Kouvavas, O., Malacrino, D. and
+Zimmermann, L. (2025), “ ”,
+Economic Bulletin, Issue 4, ECB.
+11.
+See Baptista, P., Bates, C., Kouvavas, O., Meyer, J. and Werkmeister, K. (2025), “
+”, Economic Bulletin, Issue 3, ECB.
+12.
+See Coibion, O., Gorodnichenko, Y. and Weber, M. (2022), “Monetary Policy Communications and
+Their Effects on Household Inflation Expectations”, Journal of Political Economy, Vol. 130, No 6, pp.
+1537-1584.
+13.
+D’Acunto, F., Hoang, D., Paloviita, M. and Weber, M. (2020), “Effective Policy Communication: Targets
+versus Instruments”, Chicago Booth Research Paper, No 20-38.
+14.
+See Ehrmann, M., Georgarakos, D. and Kenny, G. (2025), “Credibility gains from central bank
+communication with the public”, European Economic Review, Vol. 177, Article 105069.
+15.
+See Weber, M., Candia, B., Afrouzi, H., Ropele, T., Lluberas, R., Frache, S., Meyer, B.H., Kumar, S.,
+Gorodnichenko, Y., Georgarakos, D., Coibion, O., Kenny, G. and Ponce, J. (2025), “Tell Me Something
+Worrying
+about war: geopolitical risks weigh on consumer sentiment
+Monetary policy transmission:
+why consumers’ housing situations matter
+The transmission of monetary policy: from mortgage rates to consumption
+Long-term inflation
+expectations of consumers: an overview
+I Don’t Already Know: Learning in Low- and High-Inflation Settings”, Econometrica, Vol. 93, No 1, pp.
+229-264.
+16.
+See Coibion, O., Gorodnichenko, Y. and Weber, M. (2022), “Monetary Policy Communications and
+Their Effects on Household Inflation Expectations”, Journal of Political Economy, Vol. 130, No 6, pp.
+1537-1584, and Ehrmann, M., Georgarakos, D. and Kenny, G. (2025), “Credibility gains from central
+bank communication with the public”, European Economic Review, Vol. 177, Article 105069.
+17.
+Wabitsch, A. (2026), “ ”, The ECB Blog,
+ECB, 19 January.
+18.
+See D’Acunto, F., Hoang, D., Paloviita, M. and Weber, M. (2020), “Effective Policy Communication:
+Targets versus Instruments”, Chicago Booth Research Paper, No 20-38.
+19.
+See Lagarde, C. (2023), “ ”, speech at the Distinguished Speakers
+Seminar organised by the European Economics & Financial Centre, London, 4 September.
+20.
+See ECB (2023), “ ”,
+post on X (formerly Twitter), 14 February.
+21.
+Christelis, D., Georgarakos, D., Jappelli, T. and van Rooij, M. (2020), “Trust in the Central Bank and
+Inflation Expectations”, International Journal of Central Banking, Vol. 16, No 6, pp. 1-37.
+The messenger matters in monetary policy communication
+Communication and monetary policy
+Roses are red/Violets are blue/We will stay the course/And return inflation to 2
+CONTACT
+European Central Bank
+Directorate General Communications
+Sonnemannstrasse 20
+
+60314 Frankfurt am Main, Germany
+
+ +49 69 1344 7455
+ media@ecb.europa.eu
+Reproduction is permitted provided that the source is acknowledged.
+Media contacts
+Copyright 2026,
+European Central Bank
