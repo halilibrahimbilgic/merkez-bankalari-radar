@@ -1,6 +1,45 @@
 {
-  "fetchedAt": "2026-10-05T11:59:05.285Z",
+  "fetchedAt": "2026-10-06T11:40:05.574Z",
   "speeches": [
+    {
+      "id": "20261006-supervisory-risk-appetite-efficiency-and-effectiveness",
+      "contextEn": "Contribution by Mr Frank Elderson, Member of the Executive Board of the European Central Bank and Vice-Chair of the Supervisory Board of the European Central Bank, at the BCBS International Conference of Banking Supervisors panel on “Navigating the new financial landscape”, Bali, 30 September 2026.",
+      "textLicense": "ecb",
+      "bankCode": "ecb",
+      "speakerName": "Frank Elderson",
+      "title": "Supervisory risk appetite, efficiency and effectiveness",
+      "speechDate": "2026-10-06",
+      "sourceUrl": "https://www.bis.org/speeches/20261006-supervisory-risk-appetite-efficiency-and-effectiveness"
+    },
+    {
+      "id": "20261006-economic-conditions-and-monetary-policy",
+      "contextEn": "Speech by Mr Michael S Barr, Member of the Board of Governors of the Federal Reserve System, at the Detroit Economic Club, Detroit, Michigan, 29 September 2026.",
+      "textLicense": "frb-public-domain",
+      "bankCode": "fed",
+      "speakerName": "Michael S Barr",
+      "title": "Economic conditions and monetary policy",
+      "speechDate": "2026-10-06",
+      "sourceUrl": "https://www.bis.org/speeches/20261006-economic-conditions-and-monetary-policy"
+    },
+    {
+      "id": "20261005-payments-age-ai-agents",
+      "contextEn": "Speech by Mr Christopher J Waller, Member of the Board of Governors of the Federal Reserve System, at Sibos 2026, Miami, Florida, 29 September 2026.",
+      "textLicense": "frb-public-domain",
+      "bankCode": "fed",
+      "speakerName": "Christopher J Waller",
+      "title": "Payments in the age of AI agents",
+      "speechDate": "2026-10-05",
+      "sourceUrl": "https://www.bis.org/speeches/20261005-payments-age-ai-agents"
+    },
+    {
+      "id": "20261005-unwavering-dedication",
+      "contextEn": "Remarks by Mr John C Williams, President and Chief Executive Officer of the Federal Reserve Bank of New York, at the University at Buffalo, Buffalo, New York, 29 September 2026.",
+      "bankCode": "fed",
+      "speakerName": "John C Williams",
+      "title": "Unwavering dedication",
+      "speechDate": "2026-10-05",
+      "sourceUrl": "https://www.bis.org/speeches/20261005-unwavering-dedication"
+    },
     {
       "id": "20260930-digital-innovation-hindrance-or-booster-banks-business-models",
       "bankCode": "ecb",

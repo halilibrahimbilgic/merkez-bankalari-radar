@@ -1,0 +1,149 @@
+Banks are operating in an increasingly complex environment shaped by geopolitical fragmentation, rapid technological change, volatile energy and commodity prices, rising inflation, demographic changes, growing interconnectedness with non-bank financial institutions, and persistent climate and nature-related risks. What does it take for supervisors to remain effective and impactful in this new reality?
+
+ The challenge facing supervisors today is not simply that there are more risks. Rather, the risk landscape is increasingly uncertain, interconnected and volatile. But this does not mean that supervisors should try to monitor everything, everywhere, all at once. Quite the opposite. In a more complex world, effective supervision requires clearer, forward-looking prioritisation. In European banking supervision, we have therefore been adapting how we supervise. Our approach rests on three mutually reinforcing pillars: sharper risk prioritisation, simpler and more efficient supervision and timely remediation.
+
+ Supervisory risk appetite focusing on the root causes
+
+ We have learned – often the hard way when crises hit – that simply complying with minimum capital requirements is not enough to ensure banks remain safe and sound. The 2023 banking turmoil reminded us that banks can meet all of the formal capital and liquidity requirements, while underlying weaknesses in governance, risk culture or business models nonetheless continue to accumulate beneath the surface, until it’s too late 1 &nbsp;In our supervision we therefore focus on material risks wherever they arise – be they risks to capital or liquidity, governance, operational resilience or structural risk drivers like climate and nature related or geopolitical risks. 2 
+
+ However, we must challenge the assumption that effective supervision means looking at every single risk, in every bank, in every detail and do this every year. Supervisors simply cannot operate with a zero-risk-tolerance mindset.
+
+ Through our dedicated risk tolerance framework (RTF), we have consciously increased our supervisory risk tolerance. Risk-based supervision helps determine where supervisory attention should be focused. The RTF goes one step further: it clarifies how much residual supervisory risk can be accepted when certain areas are reviewed less intensively or deferred. This is an important point because de-prioritisation is not a passive outcome or a resource-driven omission. It is an active and conscious supervisory judgment, made within an institutional framework and supported by a culture that empowers supervisors to focus on what matters most. In practice, this means that lower-priority risk areas at individual banks are not subject to the same intensive supervisory scrutiny every year.
+
+ Put simply: in a more complex risk environment, supervisors must become more focused if they want to remain effective. The impact of this approach is already emerging, albeit that, naturally, it will take some time before the full effects are felt.
+
+ But a culture shift towards greater risk appetite – one that prioritises substance over form – is not something supervisors can deliver in isolation. As the European Commission rightly highlighted in its recent report on banking competitiveness, 3 &nbsp;creating a less risk averse and more agile environment is a shared responsibility. All stakeholders, including banks, must be willing to be part of this cultural shift and take more responsibility for applying the law based on materiality. This means that also banks need to play their part by refraining from continuous demands for guidance in search of an ever-higher degree of legal certainty.
+
+ A simpler and less prescriptive framework places even greater weight on supervisory judgement, not less. Regulation alone cannot fully capture in every precision every emerging risk or idiosyncratic business model. Any attempt to do so would result in an increasingly complex rulebook and could create new opportunities for regulatory arbitrage. Strong supervisory judgement, and the willingness to act when risks are not adequately managed, are therefore more important than ever.
+
+ Increasing efficiency through simplification
+
+ The second pillar of effective supervision is greater efficiency.
+
+ For example as part of our Next Level Supervision initiative, we have reviewed supervisory processes from end to end to identify where we can move faster, reduce duplication and ask only for information that is strictly necessary. 4 
+
+ Let me be clear: this is not only about trimming down procedures. It is a way to cut down on undue complexity and free up supervisory capacity for a more focused assessment of material risks, without lowering guardrails or weakening resilience.
+
+ It is about delivering the same level of safety and soundness with a framework that is easier to navigate for both banks and supervisors.
+
+ And we are already seeing tangible results.
+
+ For example, we have reviewed more than 100 supervisory guidance publications to make them more concise and user-friendly. 5 &nbsp;Around 40 have been discontinued, while others have been revised in a targeted manner and several are undergoing a more in-depth review.
+
+ Or take the approval of simple securitisation transactions. As part of our simplification work we have reduced processing days for standardised and less risky securitisations from three months to an average of around seven days.
+
+ We have also reduced stress testing data points by around 55%, shortened turnaround times in fit-and-proper assessments through digitalisation and AI-enabled tools, and reduced approval timelines for capital related decision from several months to less than six days.
+
+ In sum, our simplification activities have already started to yield tangible benefits, and we will continue rolling out these initiatives throughout the year. The aim is simple: more focus on material risks, while preserving only the necessary procedural safeguards
+
+ Ensuring timely remediation through escalation and full use of the supervisory toolkit
+
+ But increasing risk appetite and efficiency are only part of the story.
+
+ Ultimately, effective supervision is not only about the material risks it identifies, but about whether banks address those risks in a timely manner and lasting effect.
+
+ Supervision must lead to change where change is needed. Supervisors need to have the powers, ability and willingness to act to make sure that findings are addressed in good time. And when they have the powers, ability and willingness to act, when the circumstances require so supervisors should indeed do just that: act. And not just act: act in time and with the appropriate degree of forcefulness and tenacity. The March 2023 banking turmoil underscored how costly delays can be when known weaknesses remain unresolved. This is also a point on which the various IMF and BCBS post-mortem reports are all in agreement. 6 
+
+ A structured escalation framework is essential to driving concrete change at banks. Supervisors must set out remediation paths that are proportionate, time-bound and root-cause-oriented – and they must be prepared to timely escalate to enforcement measures when necessary. Timely remediation is not enough if it remains superficial. Findings need to be addressed durably, at the level of the underlying weaknesses that gave rise to them, whether these relate to banks’ governance, risk management, internal controls or business model. By remedying root causes, not only current, but also possible future manifestations of such root causes are addressed, thus killing many birds with one stone.
+
+ And to do that, supervisors need a comprehensive toolkit, including capital requirements but also qualitative measures that, when appropriate, can require banks to change governance, controls, processes, risk management or business-model practices. For example, European banking supervision uses qualitative requirements widely and the requirements span from requiring banks to reinforce risk management to imposing business restrictions or periodic penalty payments as an enforcement tool. Each of these instruments has an important place in the supervisory toolkit, and supervisors must be prepared to use the right tools at the right time, 7 &nbsp;considering the materiality of the weakness, the persistence of the issue as well as the bank’s responsiveness.
+
+ Policymakers are increasingly focusing on growth and competitiveness. How can international standards and supervisory cooperation help ensure that these objectives are pursued in a way that supports financial stability, rather than undermining it?
+
+ The starting point is to recognise that growth, banking sector competitiveness and financial stability are not competing objectives. In fact, they reinforce one another.
+
+ A resilient banking system is a precondition for sustainable economic growth. The global financial crisis showed very clearly that when financial stability is undermined, the costs to the real economy can be substantial and long-lasting. 8 &nbsp;And, more recently, the pandemic, the energy shock following Russia’s invasion of Ukraine and the conflict in the Middle East have all shown that a resilient banking sector can support the economy in challenging times.
+
+ Ultimately, banking sector competitiveness cannot be captured by a single metric, such as profitability. 9 &nbsp;Competitiveness depends on whether banks are resilient, efficient and innovative, and whether they can deploy new technologies quickly and effectively. Simply reducing prudential standards and capital requirements is no guarantee of greater competitiveness or lending. It would reduce resilience and could just as easily result in more share buybacks and higher distribution to shareholders. In other words, strong prudential standards are not an obstacle to competitiveness. They are one of its foundations.
+
+ International standards are important for resilience and a level playing field
+
+ The real question is therefore not whether we need strong standards, but how we can make them as effective, proportionate and coherent as possible. This is where international standards play an important role in safeguarding resilience and maintaining a level playing field across jurisdictions.
+
+ If we did not already have a Basel Committee on Banking Supervision and a Financial Stability Board, the current geopolitical fragmentation would be a compelling reason to create them. International standards act as a common foundation. They establish minimum expectations while preserving flexibility for local implementation. But there is a strong case for avoiding unnecessary divergence, particularly where banks operate across multiple markets. A fragmented regulatory landscape may create a race to the bottom while adding complexity and costs. The timely and full implementation of Basel III therefore remains critical.
+
+ At the same time, as we simplify the prudential framework and improve coordination between authorities, we must preserve one of the defining strengths of effective supervision: the ability to identify and address risks at individual banks. Common rules provide an essential and risk-based foundation, while banks can differ materially in their business models, governance, controls and exposure to emerging risks. Supervisors therefore need sufficient scope to use bank-specific qualitative and quantitative measures where warranted.
+
+ Close cooperation remains critical in a challenging risk environment
+
+ The same applies to supervisory cooperation. The risks we face are global – they don’t stop at borders. Tackling them effectively requires coordination and cooperation among authorities.
+
+ The rapid growth of the non-bank financial sector provides an illustration. The sector has doubled in size since 2008 and now accounts for over half of financial sector assets in the euro area. Yet parts of the sector remain comparatively opaque. Data gaps and limited transparency can make it difficult to fully assess how risks may spread between banks and non-banks during periods of stress. That’s why we are calling for greater transparency and better reporting for actors on private markets. We need international policy responses to ensure that pockets of vulnerability are adequately addressed. 10 
+
+ But, increasingly, risks also demand cooperation beyond prudential authorities.
+
+ Take cyber resilience. The emergence of increasingly sophisticated AI-enabled cyberattacks is a gamechanger in the threat landscape. The speed, scale and accessibility of advanced cyber capabilities are increasing rapidly. This is why European banking supervision is working closely on strengthening banks’ operational resilience to cyber risks, not only with the banks themselves, but also with cybersecurity authorities.
+
+ And the challenge to banks’ operational resilience does not stop with AI. Quantum computing is already appearing on the horizon and could become widely available by 2030. Quantum risk to cryptography is already a risk as sensitive, encrypted information can be collected today and stored with the expectation that future technological advances may allow it to be decrypted in a “harvest now, decrypt later” fashion. To stay ahead of these developments, supervisors increasingly need to engage with experts far beyond the financial sector.
+
+ The same applies to the risks from the ongoing climate and nature crises. To better model the transmission channels of climate and nature-related risks to the economy and banks’ balance sheets, we are increasingly teaming up with the scientific community, including climate scientists and biodiversity experts.
+
+ The risk landscape is evolving rapidly. New technologies are emerging, existing risks are changing in nature, scale and speed, and financial systems are becoming increasingly interconnected. Cooperation is therefore not merely a perk – it is a necessity. International standards and supervisory cooperation are essential if we are to support growth and competitiveness while preserving the financial stability on which both ultimately depend.
+
+ &nbsp;
+
+ 
+ 
+ 10 Footnotes
+ 
+ 
+ 
+
+ 
+ 
+ 
+ 
+
+ 
+ 
+ 
+ 
+ 
+ 
+ 1 
+ For more details on supervisory risk appetite statements in different jurisdictions, see Balan, M. and Zamil, R. (2026), “ Acting under uncertainty – the case for supervisory risk appetite frameworks ”, FSI Insights on policy implementation , No 74, Bank for International Settlements, May.
+ 
+ 
+ 
+ 2 
+ For why a broader view on resilience, including governance and risk culture, operational resilience and structural risk drivers are not peripheral issues but are at the core of prudential supervision, see Elderson, F. (2025),&nbsp;“ What good supervision looks like ”,&nbsp;keynote speech at the 24th Annual International Conference on Policy Challenges for the Financial Sector, Washington DC, 12 June; and Elderson, F. (2025), “Resilience offers a competitive advantage, especially in uncertain times” , keynote speech at the Morgan Stanley European Financials Conference, London, 19 March.
+ 
+ 
+ 
+ 3 
+ European Commission (2026), Communication on the Competitiveness of the Banking Sector and the Single Market in Banking , July.
+ 
+ 
+ 
+ 4 
+ For an overview of the SSM’s simplification work, please see Donnery, S. and Amis, P. (2026), “ Streamlining supervision, safeguarding resilience: tangible progress on our reform agenda ”, The Supervision Blog , ECB, 6 July . 
+ 
+ 
+ 
+ 5 
+ Elderson, F. (2026), “ Simpler guidance, more effective supervision ”, The Supervision Blog , ECB, 26 June.
+ 
+ 
+ 
+ 6 
+ ↑ 
+ 
+ 
+ 
+ 7 
+ For further information on supervisory effectiveness please read the following speeches in conjuncture: Elderson, F. (2023), “ Powers, ability and willingness to act – the mainstay of effective banking supervision ”, speech at the House of the Euro Brussels, 7 December. “ What good supervision looks like ”,&nbsp;keynote speech at the 24th Annual International Conference on Policy Challenges for the Financial Sector, Washington DC, 12 June.
+ 
+ 
+ 
+ 8 
+ The great financial crisis remains the biggest growth-destroying event in modern economic history. In Europe, previous systemic financial crises had resulted in average output losses of 8.5% of GDP in EU countries. See Lo Duca, M. et al. (2017), “ A new database for financial crises in European countries ”, Occasional Paper Series , No 194, ECB, July; and Woods, S. (2024), “ Competing for growth ”, speech at the Annual City Banquet, Mansion House, 17 October.
+ 
+ 
+ 
+ 9 
+ According to supervisory data , euro area banks’ return on equity has recovered significantly and stabilised at over 10%, reaching some of the highest levels observed since the establishment of the Single Supervisory Mechanism (SSM). Investors are increasingly recognising this progress. The valuation gap with US banks has narrowed significantly, with the average price-to-book ratio of European banks now close to 1.5. This demonstrates an important point: resilience, competitiveness and profitability are not conflicting objectives for banks.
+ 
+ 
+ 
+ 10 
+ Financial Stability Board (2025), Global Monitoring Report on Nonbank Financial Intermediation , 16 December.
