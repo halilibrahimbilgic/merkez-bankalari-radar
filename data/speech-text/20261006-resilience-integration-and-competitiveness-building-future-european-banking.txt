@@ -1,0 +1,177 @@
+It is a great pleasure to participate in this conference marking the ESRB’s 15th anniversary.
+
+ As we know, the ESRB was established 15 years ago as the EU’s macroprudential oversight body, in response to the global financial crisis. I have contributed to its work for the past 13 years, so I feel very at home here.
+
+ In 2009 the de Larosière Group recommended the establishment of an EU-level body with a mandate to oversee risks in the financial system as a whole, going beyond the supervision of individual firms.
+
+ The global financial crisis, followed by the sovereign debt crisis in Europe, clearly demonstrated both the potential severity and the long-lasting costs of financial crises – and the importance of preventing them (Slide 2).
+
+ Estimates put the median fiscal cost of a banking crisis at around 7% of GDP for advanced economies. And fiscal costs capture only part of the damage. Financial crises can also lead to broader and persistent losses in output, employment and investment, not least because they weaken confidence.
+
+ After 15 years, however, the global regulatory reforms introduced to limit this fallout from crises are increasingly being called into question.
+
+ The banking industry sees the EU regulatory framework as erring too far on the side of caution, putting European banks at a disadvantage. It suggests that capital requirements are constraining the provision of bank credit to the real economy, and that lowering them would make banks more competitive. But if we recall the generalised fragility of banks’ balance sheets 15 years ago, there is little doubt that, had banks entered the crisis with the stronger balance sheets of today, the economic costs would have been considerably lower. The fact that our banks are profitable and of sound standing today is a strategic advantage for Europe, because a resilient financial system is a prerequisite for sustainable economic growth.
+
+ At the same time, I agree that such resilience does not necessarily require complex rules. The same level of resilience can, in many cases, be achieved with simpler ones. I remember much simpler rules being discussed within the ESRB some 12 or 13 years ago, when Mark Carney was First Vice-Chair and Martin Hellwig was Chair of the Advisory Scientific Committee. But there was a lot of pushback at the time, and the rules have instead become gradually more complex. Complying with EU rules has become increasingly complicated and burdensome, and there is a clear case for simplifying them.
+
+ So today let me make the case for simplification – which can contribute to a prosperous financial sector – and at the same time focus on what will really make banks more competitive, namely financial integration in a truly Single Market which fosters economies of scale.
+
+ Simplification
+
+ At the end of last year, the Governing Council of the ECB put forward a set of high-level recommendations for simplifying the EU’s regulatory, supervisory and reporting frameworks for banks. 1 &nbsp;We identified the main areas where the rules could be made less complex and where legislative action would be required.
+
+ First, we proposed simplifying the capital stack within the risk-based prudential framework by merging the existing capital buffers into just two: a non-releasable buffer, combining the capital conservation buffer and the global systemically important institutions or other systemically important institutions buffer; and a releasable buffer, combining the countercyclical capital buffer and the systemic risk buffer.
+
+ We also proposed simplifying the leverage ratio framework by moving from four elements in the capital stack to two: a 3% minimum requirement and a single leverage ratio buffer.
+
+ Second, to simplify the resolution framework, we proposed more closely aligning the frameworks for MREL (the minimum requirement for own funds and eligible liabilities) and TLAC (total loss-absorbing capacity). In other words, we suggested bringing the resolution requirements that apply to all EU banks closer to those applying to global systemically important banks under the international TLAC framework, without reducing the resources that would be available in resolution.
+
+ Third, we recommended a dedicated, prudent and materially simpler regime for smaller banks, building on the existing EU regime for small and non-complex institutions, while introducing significantly greater proportionality. To preserve resilience, this simpler regime would be calibrated in a more conservative manner.
+
+ The Eurosystem also responded to the European Commission’s consultation on the competitiveness of the EU banking sector. 2 &nbsp;The Commission subsequently published its Communication on the competitiveness of the banking sector and the Single Market in banking – an initiative that the ECB very much welcomes. In parallel, the ECB’s supervisory arm is pursuing concrete simplification measures to make European banking supervision more efficient, effective and risk-focused. These include streamlining supervisory guidance and discontinuing around 40 guidance documents out of more than 100.
+
+ Competitiveness
+
+ All these will be important improvements, but what will ultimately drive the competitiveness of EU banks lies elsewhere.
+
+ Before addressing the broader debate, though, let me take a step back and consider what we actually mean by competitiveness. Competitiveness cannot be reduced to a single metric. It has multiple dimensions: sustained profitability, operating efficiency, the capacity to innovate, the ability to invest – for example, in IT – and the capacity to attract investment in bank equity.
+
+ So, what does the evidence tell us about the relationship between capital and competitiveness?
+
+ Since the global financial crisis, euro area bank capital ratios have steadily increased. The median Tier 1 ratio has more than doubled, from around 8% in 2009 to more than 16% today (Slide 3, left-hand side).
+
+ After more than a decade of structurally low profitability, euro area banks’ return on equity has risen steadily since the pandemic, alongside the normalisation of monetary policy, to reach historical highs (Slide 3, right-hand side). The earlier period of low profitability was reflected in price-to-book ratios below 1, indicating a substantial undervaluation of bank equity in Europe and a large gap with US banks. That gap has narrowed considerably since 2023. The average price-to-book ratio is now around 1.5, well above its long-term median (Slide 4, left-hand side). Stronger bank performance has also translated into higher dividend payouts, while contributing to greater capital headroom through retained earnings (Slide 4, right-hand side).
+
+ These developments call for caution when drawing immediate conclusions about the relationship between capital requirements and lending. It is too simplistic to suggest that the EU banks can be made more competitive simply by reducing their capital requirements.
+
+ The academic evidence on the relationship between capital requirements and banks’ ability to lend is nuanced. Some studies identify a negative effect of higher capital requirements on credit supply – looking at short-term adjustments, not at effects in the long run – while others find no significant effect. The effect is state-dependent, i.e. it varies with the economic environment in which the study is conducted.
+
+ Studies covering the period immediately following the global financial crisis tend to find that higher capital requirements have had a negative effect on lending. At that time, banks were dealing with the legacy of the crisis: high levels of non-performing loans, weak profitability and limited capacity to generate capital internally. Under such conditions, tighter capital requirements can induce banks to reduce lending.
+
+ More recent studies, covering periods of more favourable economic and financial conditions, reach different conclusions. 3 &nbsp;The impact of higher capital requirements on lending appears more limited among well-capitalised banks operating in a more positive macroeconomic environment.
+
+ The reason is straightforward. Comfortable capital positions and solid profitability allow banks to absorb tighter regulatory requirements through retained earnings or smaller voluntary management buffers. This limits their need to reduce the supply of credit.
+
+ The current situation in the euro area is important in this respect.
+
+ Banks’ financial reporting for the second quarter of 2026 confirms that profitability has improved further. Net interest income has continued to rebound and net fees and commissions have picked up.
+
+ Over the past few years, retained earnings have been the main driver of capital accumulation (Slide 5, left-hand side). While some of these resources have been absorbed by growth in risk-weighted assets, dividend payouts and somewhat higher capital requirements, aggregate capital headroom has continued to increase. This suggests that regulatory capital is not currently a binding constraint on lending.
+
+ Evidence from the euro area bank lending survey points in the same direction.
+
+ In recent years, banks have consistently reported that tighter credit standards primarily reflect risk perceptions, risk tolerance and uncertainty about the economic outlook, rather than their capital positions. Moreover, loan demand has remained subdued (Slide 5, right-hand side).
+
+ Taken together, these developments suggest that current lending dynamics are more likely to reflect the demand for credit, elevated uncertainty and broader macroeconomic conditions than a shortage of capital to meet regulatory requirements.
+
+ So, under the current conditions, would a reduction in capital requirements materially increase lending?
+
+ I would consider this very unlikely.
+
+ Financial integration
+
+ The present level of bank capital requirements is not a competitive disadvantage for European banks. Instead, the resilience of our banks is a source of strength for the euro area banking system and the EU more broadly, especially if we recall the situation 15 years ago.
+
+ This resilience has been demonstrated many times in recent years. An analysis of euro area bank data finds that better-capitalised banks tend to face lower equity costs (Slide 6, left-hand side) and are more able to meet heightened credit demand when financing needs surge. This was evident during the pandemic, an unprecedented economic shock, when well-capitalised banks lent more than those with less capital. (Slide 6, right-hand side). 4 
+
+ There is also evidence that banks that were more robust and better performing were less reliant on government-backed lending and other policy support measures during the pandemic. 5 
+
+ In addition, euro area banks successfully weathered the market tensions following the failure of several US regional banks and Credit Suisse in 2023, supported by strong profitability and ample capital and liquidity buffers.
+
+ So, I think we can agree that a resilient banking sector performs better during periods of stress and provides a solid foundation for competitiveness. But what is the most powerful tool for boosting the competitiveness of the European banking sector?
+
+ In my view, it is financial integration.
+
+ Only a genuine Single Market and a complete banking union can reduce fragmentation and enable European banks to realise their full potential in terms of scale and competitiveness.
+
+ At present, European banks clearly lack scale.
+
+ The fact remains that banking services in the euro area are still largely provided within national borders. Cross-border bank lending to non-financial firms within the euro area remains subdued, accounting for only around 16% of total corporate lending. &nbsp; &nbsp;This share is lower than lending to corporate borrowers outside the euro area – primarily US and UK-based firms – which represents about 20% of total corporate lending. This suggests that the Single Market has not yet managed to facilitate cross-border corporate lending within the euro area.
+
+ The euro area banking sector has become more concentrated over the past decade, but this has been driven mainly by domestic mergers and acquisitions (M&A). Banking sector concentration at the EU level is still lower than in the United States. Moreover, M&A activity in Europe often follows existing cross-border financial linkages and tends to be between neighbouring countries or remain within national markets.
+
+ This is a missed opportunity, as studies suggest that, on average, banks involved in M&A activities improve their profitability and cost efficiency. They also become more diversified in terms of assets and revenues after an M&A deal. 6 &nbsp;In addition, more competitive banking groups tend to have greater geographical reach, which helps them to reap efficiency gains, including through lower cost-to-income ratios (Slide 7). What’s more, cross-border M&As can also help tackle the bank-sovereign nexus.
+
+ Euro area banks tend to operate with, on average, lower lending margins than US banks (Slide 8, left-hand side). Cross-border integration in banking would lower borrowing costs for firms and households and benefit banks by spreading earnings and risk across countries.
+
+ Further progress on the savings and investments union by completing the banking union and the capital markets union is therefore needed to help EU banks become more competitive. Establishing a European deposit insurance scheme – the missing pillar of the banking union – is essential. It would ensure that deposits are protected equally across the euro area. This would, in turn, help create a credible crisis management framework, which is a precondition for building the trust necessary for financial integration. This would lead to a more competitive and integrated banking sector that is better placed to support European priorities.
+
+ Integration also offers opportunities for efficiency gains by allowing banks to exploit economies of scale.
+
+ This brings me to an area where EU banks are at a distinct competitive disadvantage compared with their US counterparts: capital market transactions. US banks are far more competitive when it comes to trading or global investment banking (Slide 8, right-hand side, and Slide 9). The United States has the deepest capital market in the world in terms of liquidity and investor demand. Meanwhile, EU capital markets still have to contend with significant legal and regulatory fragmentation.
+
+ Consider withholding taxes, for example: cross-border investors in the EU are confronted with 27 different regimes and face potential double-taxation burdens on dividends and interest. Insolvency laws are even more complex, with divergent national rules generating considerable uncertainty and potentially unpredictable outcomes for cross-border investments.
+
+ Ultimately, if Europe wants deep capital markets comparable to those in the United States, it must also address the underlying investor base. The large pool of pension fund assets in the United States provides a deep and stable source of long-term capital (Slide 10). Developing stronger funded pension systems in Europe would play an important role in deepening EU capital markets.
+
+ Growth-oriented policies require greater harmonisation to reduce national divergences in taxation, insolvency rules, labour law and corporate law that create fragmentation and frictions for cross-border investment.
+
+ That is quite a list, but these are the very issues that need to be tackled if we truly want to make the European financial ecosystem more competitive. Simplification, while important, will not on its own substantially boost competitiveness, and we must make sure that it does not weaken resilience.
+
+ Conclusion
+
+ I would like to finish by repeating three key messages from our response to the Commission’s consultation on the competitiveness of the EU banking sector. &nbsp; 
+
+ First, the resilience of banks is a prerequisite for economic growth and competitiveness.
+
+ This is particularly true in today’s uncertain environment, where preparedness for shocks is critical.
+
+ European firms rely heavily on banks as their main source of external funding. They therefore need banks with strong, resilient balance sheets that can continue to provide credit when conditions deteriorate.
+
+ Second, simplification and further harmonisation can foster competitiveness.
+
+ Substantial efforts are under way to simplify regulatory, supervisory and reporting frameworks and to address unnecessary complexity that may hamper competitiveness. These are valuable initiatives, and Europe has much to gain from designing and implementing them quickly.
+
+ Third, the most powerful tool to enhance the competitiveness of the European banking sector is financial integration.
+
+ Well-integrated markets and greater cross-border activity will enable banks to reap economies of scale, diversify, strengthen their business models and better support the real economy – particularly in times of stress.
+
+ Completing the banking union and achieving a fully integrated Single Market is therefore vital and will allow banks to operate across the euro area as if it were a single jurisdiction. Making further progress towards a genuine capital markets union must also be our priority.
+
+ Rome wasn’t built in a day, of course, and the same is true for resilience, simplification and integration. Yet while progress may take time, history also reminds us that destruction can occur rapidly – the Great Fire devastated Rome within days. Financial crises can also have devastating effects, as we witnessed 15 years ago, wiping out hard-earned gains in an instant and imposing heavy costs on taxpayers, businesses and banks. That should strengthen our resolve to preserve resilience and build a competitive financial system, based on the understanding that Europe is stronger together.
+
+ 
+ 
+ 6 Footnotes
+ 
+ 
+ 
+
+ 
+ 
+ 
+ 
+
+ 
+ 
+ 
+ 
+ 
+ 
+ 1 
+ ECB (2025), Simplification of the European prudential regulatory, supervisory and reporting framework , December.
+ 
+ 
+ 
+ 2 
+ ECB (2026), Eurosystem response to the EU Commission’s targeted consultation on the competitiveness of the EU banking sector , April.
+ 
+ 
+ 
+ 3 
+ Lang, J.H. and Menno, D. (2025), “ The state-dependent impact of changes in bank capital requirements ”, Journal of Banking & Finance , Vol. 176, 107439; Behn, M., Forletta, M. and Reghezza, A. (2024), “ Buying insurance at low economic cost – the effect of bank capital buffer increases since the pandemic ”, Working Paper Series , No 2951, ECB, July; Behn, M., Claessens, S., Gambacorta, L. and Reghezza, A. (2025), “ Macroprudential and monetary policy tightening: more than a double whammy? ”, Working Paper Series , No 3043, ECB, March.
+ 
+ 
+ 
+ 4 
+ Behn, M., Cappiello, L and Reghezza, A. (2026), “Capital headroom and bank cost of equity: Evidence from the Euro Area”, Economics Letters , Vol. 265, June; Couaillier, C., Lo Duca, M., Reghezza, A., Rodriguez d’Acri, C. (2025), “ Caution: Do not cross! Distance to regulatory capital buffers and corporate lending in a downturn ”, Journal of Money, Credit and Banking , Vol. 57
+ 
+ 
+ 
+ 5 
+ Altavilla, C., Begenau, J., Burlon, L. and Maruhn, F. (2024), “Determinants of bank performance: evidence from replicating portfolios”, Working Paper Series , No 2937, ECB, May.
+ 
+ 
+ 
+ 6 
+ Figueiras, I., Gardó, S. Grodzicki, M., Klaus, B., Lebastard, L., Meller, B. and Wakker, W. (2021), “ Bank mergers and acquisitions in the euro area ”, Financial Stability Review , ECB, November, and subsequent updates.

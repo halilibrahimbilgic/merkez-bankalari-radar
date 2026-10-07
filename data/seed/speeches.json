@@ -1,5 +1,5 @@
 {
-  "fetchedAt": "2026-10-06T11:40:05.574Z",
+  "fetchedAt": "2026-10-07T11:28:16.758Z",
   "speeches": [
     {
       "id": "20261006-supervisory-risk-appetite-efficiency-and-effectiveness",
@@ -20,6 +20,36 @@
       "title": "Economic conditions and monetary policy",
       "speechDate": "2026-10-06",
       "sourceUrl": "https://www.bis.org/speeches/20261006-economic-conditions-and-monetary-policy"
+    },
+    {
+      "id": "20261006-resilience-integration-and-competitiveness-building-future-european-banking",
+      "contextEn": "Keynote speech by Mr Boris Vujčić, Vice-President of the European Central Bank, at the tenth annual conference of the European Systemic Risk Board (ESRB), Frankfurt am Main, 2 October 2026.",
+      "textLicense": "ecb",
+      "bankCode": "ecb",
+      "speakerName": "Boris Vujčić",
+      "title": "Resilience, integration and competitiveness - building the future of European banking",
+      "speechDate": "2026-10-06",
+      "sourceUrl": "https://www.bis.org/speeches/20261006-resilience-integration-and-competitiveness-building-future-european-banking"
+    },
+    {
+      "id": "20261006-opening-remarks-community-bank-cyber-workshop",
+      "contextEn": "Speech (via pre-recorded video) by Ms Michelle W Bowman, Vice Chair for Supervision of the Board of Governors of the Federal Reserve System, at the Community Bank Cyber Workshop, Denver, Colorado, 29 September 2026.",
+      "textLicense": "frb-public-domain",
+      "bankCode": "fed",
+      "speakerName": "Michelle W Bowman",
+      "title": "Opening remarks - Community Bank Cyber Workshop",
+      "speechDate": "2026-10-06",
+      "sourceUrl": "https://www.bis.org/speeches/20261006-opening-remarks-community-bank-cyber-workshop"
+    },
+    {
+      "id": "20261006-dual-mandate-rural-america",
+      "contextEn": "Speech by Ms Lisa D Cook, Member of the Board of Governors of the Federal Reserve System, at the 2026 Investing in Rural America Conference, organised by the Federal Reserve Bank of Richmond, Asheville, North Carolina, 30 September 2026.",
+      "textLicense": "frb-public-domain",
+      "bankCode": "fed",
+      "speakerName": "Lisa D Cook",
+      "title": "The dual mandate in rural America",
+      "speechDate": "2026-10-06",
+      "sourceUrl": "https://www.bis.org/speeches/20261006-dual-mandate-rural-america"
     },
     {
       "id": "20261005-payments-age-ai-agents",
