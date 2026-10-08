@@ -1,0 +1,432 @@
+SPEECH
+Diagnostic Challenges for ECB Monetary Policy
+Keynote speech by Philip R. Lane, Member of the Executive Board
+of the ECB, at the ECB Conference on Monetary Policy 2026:
+bridging science and practice
+Frankfurt am Main, 5 October 2026
+It is a pleasure to welcome you to the 2026 edition of the ECB Conference on Monetary Policy:
+bridging science and practice.
+In this speech, I lay out some diagnostic challenges in determining the appropriate ECB monetary
+policy.[ ] Our interest rate decisions are based on three criteria: (i) our assessment of the inflation
+outlook and the risks surrounding it, in light of the incoming economic and financial data; (ii) the
+dynamics of underlying inflation; and (iii) the strength of monetary policy transmission.
+Taking these criteria in turn, the medium-term component of the inflation outlook plays a central role in
+setting the appropriate monetary policy.[ ] With multiple shocks hitting the economy and playing out
+over different time horizons, a primary diagnostic task is to distil the medium-term component of
+inflation. In line with our monetary policy strategy statement, the ECB formulates its medium-term
+outlook based on an integrated assessment of all relevant factors. This is a highly data-dependent
+process, but its comprehensive nature and medium-term orientation means that it is neither data point-
+dependent nor does it rely on a mono-causal narrative.
+In particular, while the energy supply shock is currently the main driver of inflation, our assessment of
+the medium-term inflation outlook draws on a wide range of considerations. First, the magnitude and
+likely duration of the energy supply shock requires careful assessment. Second, its impact on medium-
+term inflation depends on the scale and persistence of pass through from energy inflation to non-
+energy inflation. Third, a range of other factors (fiscal, AI, financial conditions) not only intermediate
+the transmission of the energy supply shock but also have direct implications for medium-term
+inflation.[ ]
+In terms of the assessment of the risks surrounding the inflation outlook, our monetary policy
+statement contains a substantial risk assessment section, which lists the main risks flagged by the
+Governing Council. It reports an array of economic and financial risks that might generate upside or
+downside shocks to inflation and activity levels. The potential macroeconomic impact of each of these
+risk factors is rigorously modelled by Eurosystem staff.
+In some cases, we publish scenarios that map out how inflation and activity levels might respond to
+specific risk events.[ ] This year, we have published scenarios that examine different paths for the
+energy supply shock. These scenarios have been helpful in guiding understanding of how the ECB
+assesses the macroeconomic impact of these alternative paths of energy prices.[ ]
+1
+2
+3
+4
+5
+At the same time, the published scenarios tend to focus on single risk factors, as with the current focus
+on the energy supply shock. In line with the wide-ranging risk assessment section of the monetary
+policy statement, our monetary policy decisions take into account a broad range of scenarios and
+sensitivity analyses in addition to the most recently-published scenarios.
+Moreover, it is important to be clear that each of the energy supply shock scenarios contains a set of
+ancillary assumptions in relation to the speed and intensity of pass-through to non-energy inflation and
+the impact on financial conditions and activity levels. Over time, these ancillary assumptions need to
+be compared with the accumulating evidence on these mechanisms.
+The second criterion is underlying inflation. In relation to the speed and intensity of passthrough, as
+time passes since the origination of the energy shock, it is increasingly valuable to examine the
+realised values of the indicators of underlying inflation. This is especially useful in the context of the
+wide error bands that surround medium-term forecasts at times of high uncertainty. No single indicator
+of underlying inflation provides sufficient guidance: the ECB maintains a battery of underlying inflation
+measures.[ ] Given that the strength and persistence of the pass-through of an energy shock to non-
+energy inflation is highly context-specific and depends on a range of covariates, learning from the
+evolution of underlying inflation provides important discipline in the conduct of monetary policy.[ ]
+The third criterion is the strength of monetary transmission. In calibrating monetary policy, overall
+financial conditions play a dual role. First, for any given level of the policy rate, a tightening in broader
+financial conditions (for instance, an increase in long-term bond yields) directly reduces activity levels
+and inflation. Second, financial conditions are a primary factor in determining the strength of monetary
+transmission and thereby the appropriate monetary policy stance for a given inflation outlook. As time
+passes since the origination of the energy supply shock, it is also increasingly relevant to study the
+impact of the policy rate decisions that have been taken in response to the shock.
+Accordingly, the ECB closely tracks measures of financial conditions and financing conditions. Some
+important aggregate measures include the ECB Macro-Finance Financial Conditions Index (a financial
+conditions index that is optimised in terms of predictive power for inflation and output) and the ECB-
+BIG index (an index which draws on a broad range of indicators to provide a timely, integrated
+assessment of intermediation conditions across banks and non-bank financial intermediaries, and their
+implications for investment dynamics).[ ]
+In reviewing recent developments, the just-released September inflation data show headline inflation
+at 3.8 per cent. The headline rate consists of a rate of energy inflation of 18.8 per cent and a rate of
+non-energy inflation of 2.3 per cent. Taking the fourth quarter of 2025 as a pre-shock benchmark,
+headline inflation stood at 2.1 per cent, with energy inflation in negative territory (-1.1 per cent) and
+non-energy inflation running at 2.4 per cent.
+Looking inside the non-energy aggregate, food inflation declined from 2.5 per cent in the fourth quarter
+of 2025 to 1.4 per cent in September 2026, and core inflation ticked up from 2.4 per cent to 2.5 per
+cent.[ ] Within the core basket, non-energy goods inflation moved up from 0.5 per cent in the fourth
+quarter of 2025 to 1.1 per cent in September 2026 but services inflation declined from 3.4 per cent to
+3.2 per cent.
+6
+7
+8
+9
+This profile shows that the energy supply shock has been the primary driver of the rise in inflation this
+year. While the non-energy inflation rate has not increased in the aggregate, the relative contributions
+of the individual components have shifted: although services inflation has been relatively stable, there
+has been a fall in food inflation but an upward move in goods inflation. With non-energy inflation
+remaining contained so far, underlying inflation indicators indicate that an upward shift in medium-term
+inflation has not taken hold. This suggests that the nonlinear rapid-adjustment mechanisms (such as
+an increase in the frequency of price adjustments) that were at play during 2022 have not been
+activated so far during the current shock.
+However, our September projections do anticipate an increase in non-energy inflation from 2.3 per
+cent in 2026 to an average of 2.6 per cent in 2027 before falling back to 2.3 per cent in 2028.[ ] The
+expected increase in non-energy inflation is primarily due to the lagged pass-through of the energy
+price level shock to other sectors, although there are also some marginal upward contributions from
+the upgraded baseline for economic activity and shifts in administered prices and indirect taxes in
+some countries. The peak inflation in 2027 is also due to the anticipated weather-related temporary
+increase in food prices. Our set of underlying inflation indicators will play a central role in diagnosing
+whether the evolution of medium-term inflation pressures will track our baseline projections.
+Looking ahead, there are several diagnostic challenges in differentiating between near-term inflation
+volatility and shifts in underlying inflation.
+In relation to the energy supply shock, the near-term and medium-term inflation outlook depends on its
+duration and intensity (via both the mechanical impact on energy inflation and also its adverse impact
+on activity levels) and the strength of pass-through to non-energy inflation. It follows that analysing
+energy markets and tracking the spillover from energy inflation to broader inflation measures are tasks
+that remain high on the analytical agenda.[ ]
+However, inflation dynamics will also be shaped by additional forces, including: (a) fiscal dynamics; (b)
+AI; and (c) overall financial conditions.[ ]
+In what follows, I first discuss the diagnostic challenges associated with the energy supply shock
+before turning to the issues raised by fiscal, AI and the evolution of financial conditions.
+In the spring, I outlined an analytical framework to assess the implications for monetary policy of an
+adverse energy supply shock.[ ] In particular, the appropriate monetary policy should take into
+account that such a shock has different characteristics relative to an equivalent shock to domestic
+demand.
+First, an increase in the relative price level of energy will lower activity levels in energy-using sectors,
+with more slack in the economy putting downward pressure on inflation over the medium term.
+Second, since energy has a high import content, an increase in the relative price level of energy
+constitutes a deterioration in the terms of trade for a net energy-importing region such as the euro
+area, reducing the real incomes of households and the profits of firms and thereby working against
+medium-term inflation pressures. Third, if the energy supply shock is the product of geopolitical
+tensions that might have broad and long-lasting implications for the global economy and international
+trading system, then the associated rise in uncertainty may induce a rise in precautionary saving and
+10
+11
+12
+13
+delay investment plans. Fourth, if the adverse supply shock also tightens financial conditions and
+causes banks and other financial intermediaries to restrict credit supply, demand will also be lowered.
+All else being equal, these “demand destruction” channels can limit the required adjustment in the
+monetary stance to ensure the timely return of inflation to the target.[ ] It follows that the ongoing
+assessment of how the energy supply shock is shaping the overall inflation outlook needs to take into
+account not only the direct impact but also the indirect impact via these channels.
+Since the onset of the conflict, activity levels in the euro area have been better than expected. The
+March projections at the start of the conflict specified quarter-on-quarter growth rates of 0.1 per cent
+for the second quarter and 0.2 per cent for the third. Adjusting for volatility in the multinational sector in
+Ireland, the growth rate in the second quarter turned out to be 0.3 per cent, while various survey
+indicators suggest that this momentum carried into the third quarter.[ ]
+Understanding the durability of current momentum is a major diagnostic challenge. First, compared
+with initial concerns at the start of the conflict, it is plausible that the energy shock during much of the
+second and the third quarters proved to be smaller than feared, contributing to better-than-expected
+economic performance. Since July, there has been a significant upward shift in oil prices, compounded
+by sharp increases in refining margins and a sustained surge in gas prices. Moreover, the information
+from the futures markets indicates that the reversion in oil and gas prices over 2027 and 2028 will be
+less steep than previously expected.
+This second wave of the energy supply shock poses direct upside risks to the inflation outlook but also
+downside risks to the growth outlook. It follows that the impact of the second wave on inflation and
+activity will require close monitoring. In any event, the overall size and duration of the energy supply
+shock remain highly dependent on geopolitical developments, such that the overall energy outlook
+may be subject to further revisions.
+Second, fiscal policy is currently providing substantial stimulus to economic activity. The fiscal stance
+(the change in the cyclically-adjusted primary balance) of the euro area has moved from neutral in
+2025 to a loosening of 0.5 percentage points in 2026. The fiscal loosening can be attributed both to
+the German defence and infrastructure programmes and spending under the Next Generation EU
+programme, which is in its final stages.[ ] In contrast, ECB staff expect fiscal tightening for 2027 and
+2028, amounting to 0.4 and 0.2 percentage points respectively.[ ] In terms of the direct role of public
+spending, the growth rates of both government consumption and government investment are expected
+to moderate notably in 2027 and 2028.
+The strong fiscal impulse this year is contributing to the current growth rate, while the expected fiscal
+tightening over the next couple of years constitutes a headwind to economic activity. Our models admit
+wide variation in the multipliers associated with fiscal policy, such that assessing the overall impact will
+require ongoing empirical assessment.
+Third, AI is boosting the euro area economy.[ ] The expansion in AI-related activity is visible in digital
+services, business investment and exports.
+Production in digital services grew by 6.8 per cent in the first half of 2026 compared with the same
+period last year, and the European Commission’s survey on confidence in digital services sectors rose
+14
+15
+16
+17
+18
+by about one percentage point so far in the third quarter of 2026 from the previous quarter.
+Spending on the AI-related ecosystem is a key factor spurring current euro area investment. Firms in
+the ECB Corporate Telephone Survey rank technological change as the most important development
+of the 2020s prompting them to rethink their investment strategies. Similarly, evidence from the Survey
+on the Access to Finance of Enterprises shows that firms expect to allocate on average around nine
+per cent of their investment to AI over the next twelve months, and this share is higher among firms
+that already use AI more intensively. Investment spending on data centres and digitalisation – proxied
+by buildings and R&D in the ICT sector, as well as investment in computer hardware, software and
+databases in the business economy – has increased by about 15 per cent since the launch of
+ChatGPT in late 2022.
+Intangible investment continues to be spurred by digitalisation. At the same time, the production of AI-
+related technological hardware is also important in some countries. More generally, the euro area is
+part of the global AI supply chain and is benefiting from the global AI investment boom. AI-related
+exports grew by 6.7 per cent over 2024-2025, in contrast to the muted export performance of other
+sectors.
+While the euro area is benefiting from the global AI boom, it is also important to appreciate that the
+quantitative scale of the European AI surge is of a different order to the AI boom in the US or East
+Asia. Although AI-related investment is growing, it is from a low base, and so its overall
+macroeconomic impact is contained. In addition, the spillover from rising global prices of AI-related
+components to euro area HICP inflation is bounded by the low HICP weighting of AI-adjacent product
+categories such as phones, laptops and cars.
+Although euro area households are direct and indirect holders of AI-related US equities, the scale of
+the wealth effect pales in comparison to the wealth effect enjoyed by higher-income cohorts in the
+United States. The increase in AI-related construction activity in the euro area is not of sufficient scale
+to put upward pressure on wage dynamics. More generally, the prospect of AI substituting for some
+types of employees may also be contributing to the moderation in labour demand in the euro area and
+weakening the bargaining power of workers seeking higher wages to offset the impact of higher
+energy prices.
+In terms of the overall macro-financial impact of AI, the global AI investment boom and expectations of
+a future global AI-driven productivity boost at longer-term horizons are plausibly contributing to the
+observed global increase in long-term interest rates. Especially since the scale of the European AI
+boom is not of the same order as the global AI boom, the increase in long-term interest rates
+constitutes a material tightening of financial conditions for the euro area. According to ECB models, an
+increase in long-term interest rates has a material adverse impact on activity levels and lowers
+inflation over the medium term.[ ]
+Turning to credit dynamics, corporate credit growth strengthened through the first half of 2026,
+reaching a peak around the summer. However, it has since lost some momentum, with monthly flows
+declining between June and August. Overall, in 2026 the growth in corporate debt has been broadly in
+line with that of nominal GDP. As a result, the corporate debt-to-GDP ratio has stabilised at around 66
+19
+per cent, returning to close to its pre-global-financial-crisis level and rebounding from the decline
+observed during the 2022-2024 tightening cycle.
+The increase in corporate credit reflects a combination of cyclical and structural factors, with effects
+varying across borrowing maturities.
+Cyclical factors include stronger than expected economic activity in the second quarter of the year and
+working capital needs related to the energy shock. The surge in energy prices can create an
+immediate cash-flow squeeze, even for healthy firms. Higher energy bills and input costs often have to
+be paid before firms can adjust their production processes or selling prices. This increases short-term
+financing needs and may lead firms to draw on credit lines or seek working capital finance to bridge
+the gap. In response, firms may aim to build liquidity buffers, consistent with the concurrent rise
+observed in corporate borrowing and deposits, and with the stronger correlation between corporate
+loans and corporate deposits.
+Structural factors, including investment in AI and energy infrastructure, have also supported borrowing.
+Firms across the AI ecosystem have recently recorded substantially stronger credit growth than
+otherwise comparable firms. Internal estimates suggest that the AI boom accounts for just under one
+percentage point of aggregate annual credit growth, or roughly one-quarter of the total. In the absence
+of the AI contribution, the ECB-BIG index would have shown a more marked tightening in credit
+intermediation conditions.
+Across different sources of corporate debt financing, relatively contained bond issuance amid
+uncertainty surrounding the conflict in the Middle East may have encouraged firms to rely more on
+bank loans. This may have been particularly relevant for large, highly-rated euro area companies,
+which have been the main contributors to the increase in bank borrowing in 2026. Smaller firms, by
+contrast, typically have more limited access to bond markets and remain more reliant on bank finance.
+Household credit growth has remained more subdued overall, with considerable variation across euro
+area countries. Annual mortgage growth stayed at around 3.1 per cent from the start of the year
+through August, while the cost of bank lending for house purchases rose to 3.6 per cent from 3.3 per
+cent at the end of 2025. Mortgage lending remains constrained by borrowing costs, housing
+affordability and cautious demand, although improving real incomes may gradually support new
+lending. The annual growth rate of consumer credit has been around 5 per cent since the start of the
+year. However, consumer credit appears to be driven by liquidity needs among financially vulnerable
+households.[ ]
+Moreover, households remain sensitive to financing costs and confidence. Overall, household credit
+growth has remained below growth in nominal income, reflecting housing market conditions,
+disposable income and interest rate expectations. The euro area household debt-to-income ratio is
+around 80 per cent, close to its average level since 2004.
+In closing, I have highlighted in this speech that the recent surge in energy prices can be interpreted
+as a second wave of the energy supply shock, following the initial jump at the start of the Middle East
+conflict and the temporary fall-back during the summer. In addition to tracking the ongoing
+transmission of the first wave, it is essential to assess whether the second wave will operate more
+powerfully on both activity levels and inflation dynamics than the first wave.
+20
+I have also emphasised that a collection of other driving forces (fiscal policy, AI and financial
+conditions) are also shaping output and inflation dynamics in the euro area, both directly and via their
+interactions with the energy supply shock. This means that the appropriate monetary policy should not
+be interpreted as solely driven by the energy supply shock but rather requires a multi-pronged
+diagnostic assessment.
+In particular, while growth has been holding up this year, the fiscal impulse is projected to turn from
+positive in 2026 to negative in 2027 and 2028, and the notable recent increases in long-term interest
+rates will slow growth and reduce pass-through by more than projected in our September exercise. AI
+constitutes a two-sided risk: its positive contribution to investment, services activity and exports has
+provided a welcome boost, but the global AI boom is also putting upward pressure on long-term
+interest rates which is outsized compared with the size of the euro area AI surge.[ ]
+Taken together, this means that we remain in the “middle path” for monetary policy, in which a
+measured response is appropriate to keep inflation in check.[ ] It was prudent to raise the policy rate
+from 2.00 to 2.50 per cent over the course of two projection rounds in June and September, given the
+energy supply shock and the other developments. However, we are not on a pre-committed rate path.
+We will base our future interest rate decisions on a meeting-by-meeting, data-dependent basis,
+drawing on a comprehensive and rigorous analytical framework and a thorough assessment of a
+broad range of data to take account of the unfolding evidence in relation to the shocks driving inflation
+deviations, the extent to which there are signs that the relative price shocks are transforming into
+broader inflation dynamics, and the extent to which demand destruction channels are operating. The
+set of diagnostic challenges outlined in this speech will drive the analytical work agenda over the
+coming months.
+21
+22
+1.
+The views expressed in this speech are personal and should not be interpreted as representing the
+collective view of the ECB Governing Council.
+2.
+See also my opening speech at last year’s edition of this conference: Lane, P.R. (2025), “
+,” keynote speech at the ECB Conference on Monetary Policy 2025: bridging
+science and practice, Frankfurt am Main, 6 October.
+3.
+This is a partial list. In particular, I do not address in this speech how the euro area outlook is being
+shaped by the loss of market share in the tradable sector to Chinese competitors nor do I examine
+how further shifts in international trade policies might affect the euro area. See P.R. Lane (2026),
+“ ,” Keynote speech at the Asian Monetary Policy Forum, Singapore, 22
+May.
+4.
+The conduct
+of monetary policy
+Europe and the world economy
+See also Lagarde, C. (2026), “ ”, speech at the ECB Forum
+on Central Banking 2026 “Shaping Europe’s future: innovation, growth and stability” in Sintra, 29 June.
+5.
+See the box entitled “Alternative scenarios for the economic impact of the Middle East conflict” in “
+”, ECB, 10 September 2026, which
+updates the milder, adverse and severe scenarios first presented in the June 2026 Eurosystem staff
+projections. The scenarios do not spell out how the ECB might adjust monetary policy but the
+quantification of the inflation and output effects provides helpful benchmarking.
+6.
+See the box entitled “ ”, Economic
+Bulletin, Issue 5, ECB, 2023. The box also cautions that, after large shocks, a sizeable and more
+slowly reverting transitory component can become embedded in underlying inflation measures,
+temporarily reducing their information content for the medium term. In particular, underlying inflation
+indicators typically focus on predicting inflation at a one-year or two-year horizon: an energy shock
+may still be feeding into core inflation at such horizons before dying out at longer horizons.
+7.
+See also Arce, Ó., Battistini, N., Bouabdallah, O. and Lis, E. (2026), “
+”, The ECB Blog, ECB.
+8.
+On the Macro-Finance Financial Conditions Index, see Bletzinger, T., Martorana, G. and Mistak, J.
+(2026), “ ”, Working Paper
+Series, No 3193, ECB, February; on the ECB-BIG index, see Allayioti, A., Di Casola, P. and
+Magistretti, G. (2026), “ ”, Economic
+Bulletin, Issue 5, ECB.
+9.
+Within the food category, there are divergent patterns for unprocessed food (September inflation at 4.0
+per cent) and processed food (September inflation at 0.4 per cent).
+10.
+See Table 3 in “ ”, ECB, 10
+September 2026. The increase in the path for non-energy inflation reflects some pass through of the
+energy shock to wage inflation. Relative to the pre-shock December 2025 projections, growth in
+compensation per employee has been revised up by 0.1, 0.4 and 0.3 percentage points for 2026, 2027
+and 2028 respectively.
+11.
+Back to basics in an uncertain environment
+ECB
+staff macroeconomic projections for the euro area, September 2026
+Underlying inflation measures: an analytical guide for the euro area
+A tale of two energy crises –
+Initial conditions matter
+Looser, tighter, clearer: a new Financial Conditions Index for the euro area
+The ECB-BIG index: tracking credit conditions in the euro area
+ECB staff macroeconomic projections for the euro area, September 2026
+See Bańbura, M., Bobeica, E., Giammaria, A., Porqueddu, M. and Van Spronsen, J. (2025), “
+”, Working Paper Series, No 3062, ECB. The model
+was also used to cross-check the pass-through of energy commodity prices to consumer energy
+prices in the scenarios accompanying the September 2026 staff projections.
+12.
+Weather-related shocks will also shape food inflation and affect the time profile for activity in some
+countries. However, weather-related shocks primarily generate increased inflation volatility rather than
+constituting a material source of medium-term inflation pressures. In separating volatility shocks and
+persistent shocks, it is highly valuable to incorporate the forecasting power of weather variables for
+short-term inflation dynamics. See also Kuik, F., Osbat, C., Vidal-Quadras Costa, I. (forthcoming),
+“Earth, Wind, Fire and grocery bills: exploring the forecasting power of weather variables for euro area
+food inflation” and the discussion in Lane, P.R. (2026), “ ”, keynote
+speech at the Climate, Nature and Monetary Policy Conference jointly organised by the ECB, the
+London School of Economics and Political Science (LSE) Centre for Economic Transition Expertise
+and the Frankfurt School of Finance and Management, Frankfurt am Main, 5 May.
+13.
+This section draws on: Lane, P.R. (2026), “ ,” Dinner
+remarks at the Centre for European Reform, London, 13 May.
+14.
+Running in the opposite direction, expansionary fiscal measures would reduce the scale of demand
+destruction and could thereby require a larger monetary policy response. At the aggregate euro area
+level, the fiscal response to the energy shock so far has been contained, even if it has been
+substantial in some member countries. See e.g. Bouabdallah, O., Checherita-Westphal, C. and
+Muggenthaler-Gerathewohl, P. (2026), "
+", Economic Bulletin, Issue 5, ECB.
+15.
+The raw GDP growth rate for the second quarter was 0.6 per cent. However, this includes a quarterly
+Irish GDP growth rate of 10.2 per cent. Modified domestic demand (which fell by 0.8 per cent in Q2) is
+a better proxy for activity levels in Ireland, such that the adjusted GDP growth rate of 0.3 per cent is a
+more useful indicator for the euro area. The accounting treatment of multinational firms also affects the
+data on productivity, investment, exports and imports.
+16.
+For a discussion of the role of defence spending see Checherita-Westphal, C., Rodríguez-Vives, M.,
+Lalinský, T and M. Parker (2026), "
+A new
+model to forecast energy inflation in the euro area
+Climate change and monetary policy
+Analytical perspectives on energy supply shocks
+Assessing the scope for compensatory fiscal measures in
+response to the recent energy shock
+Defence spending and its short and longer-term macroeconomic
+" Economic Bulletin, Issue 6, ECB and Lane, P.R. (2026), “
+”, Speech at the EEA/ESEM. Annual Meetings, Dublin, 17 August 2026.
+17.
+See the box entitled “Fiscal outlook” in “
+”, ECB, 10 September 2026. Beyond defence and infrastructure investment and
+NGEU-funded projects, the loosening in 2026 also reflects strong growth in pension expenditure and
+other social transfers, as well as temporary energy support measures of around 0.1 per cent of GDP.
+18.
+For more details on ECB analysis of the impact of AI on the euro are economy, see Lagarde, C.
+(2026), “ ”,
+speech at the Hearing of the Committee on Economic and Monetary Affairs of the European
+Parliament, Brussels, September; and Lane, P.R. (2026), “ ,” keynote
+speech at ECB-SAFE-RCEA International Conference on the Climate-Macro-Finance Interface
+(3CMFI), Frankfurt am Main, 23 March.
+19.
+See Slide 21: Lane, P.R. (2026), “ ”, lecture at the International
+Center for Monetary and Banking Studies (ICMB), Geneva, 23 September.
+20.
+Growth has been particularly strong in uncollateralised loans, despite a subdued outlook for durable-
+goods consumption. This is consistent with the Bank Lending Survey findings of weak demand amid
+low consumer confidence and reduced spending on durables. The Consumer Expectations Survey
+also indicates that consumer-credit applications in the euro area are more common among financially
+vulnerable households, who are more likely to expect difficulties repaying their mortgages.
+21.
+In addition, the risk assessment section of the monetary policy statement flags the downside risks from
+a reversal in financial market sentiment.
+22.
+See also Lagarde, C. (2026), “ ”, keynote speech
+at “The ECB and Its Watchers” conference organised by the Institute for Monetary and Financial
+Stability at Goethe University Frankfurt am Main, 25 March; Lane, P.R. (2025), “
+”, keynote speech at the 15th workshop on exchange rates, co-organised by
+Banka Slovenije with the Banca d’Italia, the Bank for International Settlements, the European Central
+Bank and the Nationale Bank van België/Banque nationale de Belgique.
+effects The rise in defence spending and the
+euro area economy
+ECB staff macroeconomic projections for the euro area,
+September 2026
+Hearing of the Committee on Economic and Monetary Affairs of the European Parliament
+AI and the euro area economy
+The Outlook for the Euro Area Economy
+Navigating energy shocks: risks and policy responses
+Inflation deviations
+and monetary policy
+CONTACT
+European Central Bank
+Directorate General Communications
+Reproduction is permitted provided that the source is acknowledged.
+Sonnemannstrasse 20
+
+60314 Frankfurt am Main, Germany
+
+ +49 69 1344 7455
+ media@ecb.europa.eu
+Media contacts
+Copyright 2026,
+European Central Bank

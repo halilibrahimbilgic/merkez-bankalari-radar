@@ -1,0 +1,369 @@
+SPEECH
+Monetary policy in a world of overlapping
+shocks
+Speech by Isabel Schnabel, Member of the Executive Board of the
+ECB, at the 8th Annual EC-EIB-ESM Capital Markets Seminar
+Luxembourg, 30 September 2026
+Inflation is back and weighing once again on people’s everyday lives. Just as the euro area was
+putting the post-pandemic inflation surge behind it, new shocks have hit.
+For monetary policy, this sequence of shocks poses challenges. It can affect the behaviour of
+households and firms, the formation of inflation expectations and, ultimately, the persistence of
+inflation.[ ]
+The ECB has adapted to this shock-prone environment in two ways.
+First, as of 2023 we have made our monetary policy framework more transparent by laying out our
+reaction function – that is, the factors that the Governing Council uses to determine the appropriate
+monetary policy stance: the inflation outlook and the risks surrounding it, the dynamics of underlying
+inflation and the strength of monetary policy transmission.
+ECB President Lagarde has referred to this as “framework guidance”.[ ]
+By clearly explaining what we are doing and why, we foster public trust in our commitment to
+maintaining price stability in an environment in which inflation has become more salient.
+Second, based on this framework, we have taken timely action in response to the deterioration in the
+inflation outlook since the start of the Middle East conflict.
+Since June, the Governing Council has raised the key ECB interest rates by 50 basis points, lifting the
+deposit facility rate from 2% to 2.5%, to ensure that inflation will return to our 2% target over the
+medium term (Slide 2, left-hand side).
+Our decisions have been well-anticipated and are being transmitted smoothly to financing conditions.
+Framework guidance was instrumental in containing excess volatility by reducing uncertainty about our
+reaction function, while encouraging investors to form their own assessment of the incoming data.
+It thus helps mitigate the “hall of mirrors” problem – the risk that market prices no longer reflect
+investors’ assessment of the economic outlook but rather expectations of what the central bank will do.
+[ ]
+In my remarks today, I will shed light on three aspects that are important for understanding how
+monetary policy responds to the sequence of shocks we are facing today: first, how the nature of the
+shock shapes the monetary policy response; second, what challenges arise when navigating
+1
+2
+3
+overlapping shocks; and third, how the inflation forecast and incoming data affect the policy
+assessment. Finally, I will explain how these aspects influence our monetary policy.
+Monetary policy response depends on projected deviation from
+inflation target
+The first aspect is how the nature of the shock determines the appropriate monetary policy response.
+It is often argued that inflation targeting implies that central banks should “look through” adverse
+supply shocks that push up inflation and weaken output.
+The reason given is that monetary policy cannot address the source of the shock.
+Higher interest rates, for example, will not remove supply disruptions or reopen the Strait of Hormuz.
+Tightening would therefore unnecessarily weaken the economy without eliminating the underlying
+cause of higher inflation, which will eventually vanish by itself.
+This characterisation, however, is too simple.
+In the benchmark models underlying modern monetary policy frameworks, the distinction between
+supply and demand shocks does not alter the direction of the optimal policy response.[ ]
+What matters instead is the effect of the shock – be it demand or supply – on the projected path of
+inflation over the relevant policy horizon.[ ]
+If a supply shock is sufficiently large or persistent to raise the projected inflation path above target, the
+optimal response is to tighten monetary policy to bring the forecast back to target.
+For this reason, in our June press conference President Lagarde firmly rejected the notion that the rate
+hike was an “insurance hike”. It rather was the optimal response to the effect the shock was having on
+the projected inflation path.
+The underlying mechanism in the models is as follows: in the absence of a policy response, higher
+expected inflation lowers the real interest rate and expands demand, thereby adding to the price
+pressures caused by the supply shock. Tightening monetary policy counteracts this effect.
+This mechanism can also be observed in the data.
+Inflation expectations rose in response to the conflict in the Middle East, pushing down real bank
+lending rates (Slide 2, right-hand side).[ ] Our policy adjustment helped to stabilise these rates.
+Furthermore, the strength of the economy is relevant to the risk of inflation pressures broadening
+beyond the initial shock: the stronger aggregate demand, the more scope firms have to pass higher
+input costs on to consumer prices.
+By restraining growth in aggregate demand, higher interest rates can limit the extent to which a
+relative price shock, often originating from the energy sector, can broaden into more persistent,
+economy-wide inflation.[ ]
+Therefore, it would often not be optimal for the central bank to do nothing in response to an adverse
+supply shock.
+4
+5
+6
+7
+Instead, the trade-off between inflation and output that arises under an adverse supply shock is
+resolved by allowing inflation to return to target more gradually in exchange for avoiding a larger
+decline in economic activity.[ ]
+In other words, the nature of the shock determines the appropriate speed at which inflation should be
+brought back to target, not the need to respond at all.
+This approach is reflected in the medium-term orientation of the ECB’s monetary policy strategy,
+where the appropriate horizon for bringing inflation back to target varies with the nature and
+persistence of the shock, and with the degree to which inflation expectations remain anchored.[ ]
+As long as expectations are firmly anchored and backed up by a track record of delivering on the
+inflation target, monetary policy can tolerate a more gradual return of inflation to target. But when
+expectations show signs of becoming less firmly anchored, a more forceful response may be required
+to prevent temporary shocks from becoming more persistent.
+Central banks are facing overlapping shocks
+The second aspect is that monetary policy is often analysed in terms of how it should respond to a
+single shock.
+However, this is not the environment in which monetary policy is operating today. Central banks are
+facing a sequence of overlapping shocks, with the effects of earlier disturbances still working their way
+through the economy.
+Before the conflict in the Middle East, headline inflation had returned to target, inflation was developing
+broadly as projected and wage growth was moderating. Underlying inflation was pointing towards a
+sustained return of inflation to 2%.
+But the new energy shock hit while the disinflation process was still in motion.
+Services inflation was still running above 3%, with most items in the services basket recording inflation
+rates between 3% and 5% (Slide 3).[ ] Unit labour costs were also still increasing at rates above their
+historical average, while households’ inflation perceptions were still elevated (Slide 4).
+So the new energy shock did not hit an economy in which all underlying inflationary pressures had
+disappeared, but one with some residual domestic price pressures, reflecting the delayed adjustment
+to the earlier inflation surge.
+Repeated episodes of high inflation make prices more salient, increasing the attention people pay to
+inflation and potentially influencing how households form expectations, how workers negotiate wages
+and how firms set prices.[ ]
+At the same time, the economy is being affected by several other forces.
+The rapid expansion of AI is boosting investment, raising foreign demand and driving up the prices of
+critical inputs; the 2025 tariff shock is fragmenting and rerouting global trade flows; and the fiscal
+shock from higher defence spending and the German fiscal package is stimulating demand.
+Each of these shocks has distinct, and in some cases offsetting, implications for supply, demand and
+the output gap.
+8
+9
+10
+11
+In this complex environment, it would be misleading to describe the ECB’s recent policy decisions as
+responding to an adverse supply shock alone.
+In fact, a substantial part of the analytical work of ECB staff is devoted to assessing the size,
+persistence and transmission of the different shocks and their implications for the inflation outlook and
+economic activity.
+These individual assessments are ultimately brought together in the staff macroeconomic projections.
+Monetary policy then responds to that comprehensive assessment: if the resulting inflation outlook is
+above target, policy needs to adjust to bring inflation back to 2% over the medium term.
+Monetary policy needs to focus on underlying inflation to assess
+price stability
+This brings me to the third aspect: although the ECB’s inflation target is expressed in terms of headline
+inflation, the best way to achieve that target sustainably is, in many circumstances, to focus on the
+dynamics of underlying inflation.
+Inflation forecasts are inherently uncertain, and forecast errors can be large, even for a central bank
+operating with the best information and tools available.
+The experience from the pandemic is a powerful reminder of this. Inflation turned out to be both
+substantially higher and more persistent than anticipated (Slide 5).[ ]
+The difficulty was not merely that the economy was hit by unforeseen shocks, but that the persistence
+of these shocks and their transmission to the economy were underestimated.
+In the case of energy shocks, this partly stems from the fact that central banks typically base their
+inflation projections on energy price assumptions implied by futures prices.
+As these futures are often in backwardation, the forecast embeds expectations of a decline in energy
+prices. Together with the mechanical base effects in year-on-year inflation, this will make an energy
+shock appear relatively short-lived and generate a drag on future projected headline inflation.
+The conflict in the Middle East illustrates this.
+Following the outbreak of the conflict, futures prices implied a swift decline in energy inflation over the
+projection horizon, which mechanically dragged down future projected headline inflation (Slide 6).
+A monetary policy framework that would have mechanically followed the headline inflation forecast
+would have risked drawing the wrong policy conclusions.[ ]
+Since there is no reliably better forecast for energy prices, the ECB has sought to reduce the risk of
+being wrong-footed in two ways.
+First, we have complemented the baseline with scenario analysis, exploring alternative assumptions
+about the intensity and persistence of the energy shock and its transmission to the economy (Slide 7).
+Second, as per our framework guidance, we are placing greater emphasis on measures of underlying
+inflation in both our communication and analysis.
+These measures are not only less volatile than headline inflation and less distorted by base effects,
+but they also contain more information about where headline inflation is likely to be in the medium
+12
+13
+term.[ ]
+This is also why there is no one-to-one relationship between the evolution of energy prices and policy
+rates. What matters for monetary policy is how energy prices translate into underlying price pressures.
+Monetary policy cannot wait for indirect and second-round effects
+to materialise
+Given this framework, raising interest rates twice since June was an appropriate policy decision.
+The September staff macroeconomic projections for the euro area foresee HICP inflation dropping
+from 3.0% this year to 2.1% in 2028.[ ] Since the projections’ cut-off date, oil and gas prices have
+moved closer to the adverse scenario, implying a larger and more persistent deviation of inflation from
+our 2% target.[ ]
+The projections also foresee an increase in core inflation. HICP inflation excluding energy and food –
+one measure of underlying inflation – is expected to rise to 2.6% in 2027 before falling to 2.3% in
+2028, hence remaining above 2%.[ ]
+This profile reflects the assumption of a gradual build-up of indirect effects and some second-round
+effects owing to persistently higher energy prices, as firms seek to pass at least part of those costs on
+to consumers to protect their profit margins.
+The global impact of the conflict in the Middle East amplifies this mechanism, as rising input costs
+ripple through globally integrated production chains.
+This can be seen in the increase in import and producer price inflation, especially for intermediate and
+capital goods (Slide 8). The AI boom is further contributing to the rise in import price inflation, as
+manifested in the price increases of semiconductors.
+These trends offer first evidence that higher input costs are being passed through successive stages
+of the production chain, although this is not yet visible in core inflation.
+Overall, compared with pre-conflict projections, ECB staff have revised up projected HICP inflation
+excluding energy by a cumulative one percentage point owing mainly to indirect effects and, to a
+lesser extent, second-round effects, as employees are expected to ask for some compensation for
+their loss in purchasing power (Slide 9).[ ]
+Pass-through effects also show up in higher projected food price inflation, which has additionally been
+affected by the summer heatwave and the potential impact of El Niño.
+Central banks cannot wait for these effects to materialise. If policymakers waited for firms to visibly
+raise prices and wage negotiations to conclude, they would be acting too late.
+Central banks must form a judgement about the transmission of shocks to underlying inflation and
+calibrate their policy accordingly.
+Assessing the projections against incoming data
+These assumptions must now be checked against the incoming data to assess whether the
+anticipated pass-through is materialising as expected, or whether the outlook needs to be revisited.
+14
+15
+16
+17
+18
+Three factors deserve particular attention.
+The first is how the more persistent rise in energy prices will affect inflation expectations, especially
+after the long, post-pandemic period of high inflation.
+After the start of the conflict, medium- and longer-term household inflation expectations moved up and
+continue to stand above pre-conflict levels (Slide 10).[ ] A more pronounced and persistent increase
+in energy and food prices could make the shock more salient for households and firms.
+At the same time, most measures of long-term inflation expectations remain in the vicinity of our 2%
+target, supported by the timely action we have taken to preserve price stability.
+The second factor is whether aggregate demand will continue to prove as resilient as it has in recent
+months despite the further increase in energy prices.
+Consumption in particular has held up well, and sentiment indicators suggest that the underlying
+momentum is improving in both manufacturing and services (Slide 11).
+The durability of this resilience will depend on the extent to which supportive demand-side factors,
+particularly the AI boom and the increase in defence spending, can offset the loss of real income
+associated with the deterioration in the euro area’s terms of trade caused by the energy shock.
+This matters directly for the inflation outlook, since the pass-through of higher input costs to consumer
+prices tends to be stronger the more resilient the economy.
+The third, and related, factor concerns the impact of the repricing of short- and long-term interest rates
+on the economy.
+This repricing reflects a range of factors, one of which is a reassessment of the inflation path as the
+energy shock intensifies. But it also reflects a rise in real rates.
+To the extent that the repricing reflects spillovers from expectations of a tighter monetary policy
+abroad, it will dampen global aggregate demand and contribute to tighter financial conditions in the
+euro area. This should help to contain the broader pass-through of the energy shock to inflation.[ ]
+The magnitude of the effect depends on the sensitivity of output and inflation to changes in interest
+rates. These are subject to considerable uncertainty, also because policy transmission can vary with
+the state of the economy.
+Some models imply stronger transmission than the elasticities used in the staff projections, especially
+with respect to the impact on GDP (Slide 12).
+It is therefore possible that the economy responds more to the recent tightening than currently
+assumed, which would dampen medium-term inflationary pressures compared with the baseline
+projection.
+At the same time, there is also uncertainty about the level at which policy becomes restrictive.
+In recent years, real interest rates at distant horizons have increased (Slide 13, left-hand side). This is
+happening at a time when the global economy is facing substantial demand for funding from both the
+public and private sectors, as fiscal deficits remain elevated across many countries and the AI buildout
+advances.
+19
+20
+To the extent that these forces raise the rate that equilibrates savings and investments, they would
+also raise the natural rate of interest, r*, in line with recent staff estimates (Slide 13, right-hand side).
+[ ]
+In any case, the recent robust credit dynamics suggest that financial conditions are not yet restrictive
+or that parts of lending – particularly related to AI investment – have become less sensitive to interest
+rates as expected returns have risen. The marked increase in lending to ICT companies and large
+conglomerates is consistent with this interpretation (Slide 14).
+Conclusion
+Let me conclude.
+We are living in a world of overlapping shocks, affecting both the demand and the supply sides of our
+economies and putting upward pressure on inflation.
+With public attention to inflation rising with each shock, the task facing central banks today is to
+maintain trust in their commitment to the price stability target.
+This is what the ECB is doing. Faced with a renewed deterioration in the inflation outlook, we adjusted
+policy rates in a timely manner to limit the pass-through to underlying inflation and bring inflation back
+to target.
+The coming months will provide a clearer picture of the extent to which current pipeline price
+pressures will start to feed through to underlying inflation and inflation expectations. And they will show
+how the economy is responding to the interest rate increases already delivered.
+These developments will inform us in calibrating our monetary policy stance to ensure that the current
+shocks do not become embedded in broader and more persistent inflation.
+Thank you.
+21
+Annexes
+30 September 2026
+Slides
+1.
+For a generation born around the turn of the millennium, for example, high inflation has become part of
+their formative economic experience. It will shape how they feel and think about price stability for years
+to come. See Malmendier, U. and Nagel, S. (2016), “Learning from Inflation Experiences,” The
+Quarterly Journal of Economics, Vol. 131, No 1, pp. 53-87.
+2.
+Lagarde, C. (2025), “ ”, speech at the 25th “ECB and Its Watchers”
+conference organised by the Institute for Monetary and Financial Stability at Goethe University in
+A robust strategy for a new era
+Frankfurt, Germany, 12 March; and Lagarde, C. (2026), “ ”,
+speech at the ECB Forum on Central Banking 2026 “Shaping Europe’s future: innovation, growth and
+stability” in Sintra, Portugal, 29 June.
+3.
+Morris, S. and Shin, H. (2002), “Social Value of Public Information”, American Economic Review,
+Vol. 92, No 5, pp. 1521-1534.
+4.
+The primary insight is delivered by Clarida, R., Gali, J. and Gertler, M. (1999), “The Science of
+Monetary Policy: A New Keynesian Perspective”, Journal of Economic Literature, Vol. 37, No 4, pp.
+1661-1707. See also Bodenstein, M., Erceg, C. and Guerrieri, L. (2008), “Optimal monetary policy with
+distinct core and headline inflation rates”, Journal of Monetary Economics, Vol. 55, Supplement, pp.
+18-33; and Karadi, P. et al. (2025), “
+”, Working Paper Series, No 3068, ECB.
+5.
+See also Schnabel, I. (2024), “ ”, keynote speech at the
+thirteenth conference organised by the International Research Forum on Monetary Policy, “Monetary
+Policy Challenges during Uncertain Times”, at the Federal Reserve Board, Washington, D.C., 17 April;
+and Svensson, L. (1997), “Inflation forecast targeting: implementing and monitoring inflation targets”,
+European Economic Review, Vol. 41, No 6, pp. 1111-1146.
+6.
+Using headline inflation to deflate nominal rates can exaggerate the decline in real rates when the
+initial shock is concentrated in energy prices. Firms’ selling price expectations provide a more forward-
+looking gauge of the inflation pressures relevant for financing conditions.
+7.
+For evidence of how oil supply shocks feed through to the economy, see Känzig, D.R. (2021), “The
+Macroeconomic Effects of Oil Supply News: Evidence from OPEC Announcements”, American
+Economic Review, Vol. 111, No 4, pp. 1092-1125.
+8.
+Even a central bank with a single inflation mandate will not find it optimal to close the projected
+inflation gap as quickly as the transmission mechanism would allow, as doing so would impose output
+costs disproportionate to the gain in faster disinflation. See, for example, Erceg, C., Henderson, D. and
+Levin, A. (2000), “Optimal Monetary Policy with Staggered Wage and Price Contracts”, Journal of
+Monetary Economics, Vol. 46, No 2, pp. 281-313.
+9.
+Back to basics in an uncertain environment
+Strike while the iron is hot – optimal monetary policy under state-
+dependent pricing
+The future of inflation (forecast) targeting
+ECB (2025), “ ”.
+10.
+At the same time, HICP excluding energy and food was being held down by subdued non-energy
+goods inflation, partly reflecting low import price inflation from China.
+11.
+See also Waller, C.J. (2026), “ ”, David Kaserman Memorial Lecture,
+Auburn University, 17 April.
+12.
+Chahad, M. et al. (2024), “
+”, Economic Bulletin, Issue 5, ECB.
+13.
+Research shows that by stabilising core inflation, central banks can provide a closer approximation to
+the welfare-maximising response to an energy shock. See Bodenstein, M., Erceg, C. and Guerrieri, L.
+(2008), op. cit.; and Aoki, K. (2001), “Optimal monetary policy responses to relative-price changes”,
+Journal of Monetary Economics, Vol. 48, No 1, pp. 55-80.
+14.
+Bańbura, M. et al. (2023), “ ”,
+Economic Bulletin, Issue 5, ECB.
+15.
+ECB (2026), .
+16.
+The cut-off date for the technical assumptions was 19 August 2026.
+17.
+The ECB monitors a range of underlying inflation measures, including exclusion-based measures and
+model-based measures. Most measures of underlying inflation have been broadly stable in recent
+months but remain above 2%. See ECB (2026), Economic Bulletin, Issue 6.
+18.
+This is in comparison with the
+.
+19.
+The mean has risen more strongly than the median, suggesting that the right tail of the distribution has
+become more pronounced, with a growing share of households expecting inflation to remain above our
+target for a prolonged period.
+The ECB’s monetary policy strategy statement
+One transitory shock after another
+The empirical performance of ECB/Eurosystem staff inflation projections
+since 2000
+Underlying inflation measures: an analytical guide for the euro area
+ECB staff macroeconomic projections for the euro area, September 2026
+December 2025 Eurosystem staff macroeconomic projections for the
+euro area
+20.
+See also Lagarde, C. (2026), Hearing of the Committee on Economic and Monetary Affairs of the
+European Parliament, Brussels, 28 September 2026.
+21.
+Such estimates, however, are surrounded by a high degree of uncertainty and should therefore be
+interpreted with caution. The bands in the charts only illustrate model uncertainty; estimation
+uncertainty is not shown.
+CONTACT
+European Central Bank
+Directorate General Communications
+Reproduction is permitted provided that the source is acknowledged.
+Sonnemannstrasse 20
+
+60314 Frankfurt am Main, Germany
+
+ +49 69 1344 7455
+ media@ecb.europa.eu
+Media contacts
+Copyright 2026,
+European Central Bank

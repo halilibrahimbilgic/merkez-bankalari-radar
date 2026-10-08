@@ -1,6 +1,66 @@
 {
-  "fetchedAt": "2026-10-07T11:28:16.758Z",
+  "fetchedAt": "2026-10-08T11:44:05.076Z",
   "speeches": [
+    {
+      "id": "20261007-where-ai-risks-meet",
+      "contextEn": "Welcome address by Ms Christine Lagarde, President of the European Central Bank and Chair of the European Systemic Risk Board, at the Tenth Annual Conference of the European Systemic Risk Board, Frankfurt am Main, 1 October 2026.",
+      "textLicense": "ecb",
+      "bankCode": "ecb",
+      "speakerName": "Christine Lagarde",
+      "title": "Where AI risks meet",
+      "speechDate": "2026-10-08",
+      "sourceUrl": "https://www.bis.org/speeches/20261007-where-ai-risks-meet"
+    },
+    {
+      "id": "20261007-data-version-godzilla-versus-kong-fred-takes-ai",
+      "contextEn": "Speech by Mr Christopher J Waller, Member of the Board of Governors of the Federal Reserve System, at \"Navigating trust, AI and storytelling in a world of data\", FRED Con 2026, Federal Reserve Bank of St. Louis, St. Louis, Missouri, 1 October 2026.",
+      "textLicense": "frb-public-domain",
+      "bankCode": "fed",
+      "speakerName": "Christopher J Waller",
+      "title": "The data version of Godzilla versus Kong - FRED takes on AI",
+      "speechDate": "2026-10-07",
+      "sourceUrl": "https://www.bis.org/speeches/20261007-data-version-godzilla-versus-kong-fred-takes-ai"
+    },
+    {
+      "id": "20261007-us-economy-and-monetary-policy",
+      "contextEn": "Speech by Mr Philip N Jefferson, Vice Chair of the Board of Governors of the Federal Reserve System, at the Darden School of Business, University of Virginia, Charlottesville, Virginia, 1 October 2026.",
+      "textLicense": "frb-public-domain",
+      "bankCode": "fed",
+      "speakerName": "Philip N Jefferson",
+      "title": "The US economy and monetary policy",
+      "speechDate": "2026-10-07",
+      "sourceUrl": "https://www.bis.org/speeches/20261007-us-economy-and-monetary-policy"
+    },
+    {
+      "id": "20261007-diagnostic-challenges-ecb-monetary-policy",
+      "contextEn": "Keynote speech by Philip R Lane, Member of the Executive Board of the European Central Bank, at the 9th “ECB Conference on Monetary Policy 2026: bridging science and practice”, Frankfurt am Main, 5 October 2026.",
+      "textLicense": "ecb",
+      "bankCode": "ecb",
+      "speakerName": "Philip R Lane",
+      "title": "Diagnostic challenges for ECB monetary policy",
+      "speechDate": "2026-10-07",
+      "sourceUrl": "https://www.bis.org/speeches/20261007-diagnostic-challenges-ecb-monetary-policy"
+    },
+    {
+      "id": "20261007-modernizing-financial-regulation-initial-observations-eslr",
+      "contextEn": "Speech by Ms Michelle W Bowman, Vice Chair for Supervision of the Board of Governors of the Federal Reserve System, at the Atlantic Council 2026 CEO &amp; Senior Management Summit, Washington DC, 1 October 2026.",
+      "textLicense": "frb-public-domain",
+      "bankCode": "fed",
+      "speakerName": "Michelle W Bowman",
+      "title": "Modernizing financial regulation - initial observations from eSLR",
+      "speechDate": "2026-10-07",
+      "sourceUrl": "https://www.bis.org/speeches/20261007-modernizing-financial-regulation-initial-observations-eslr"
+    },
+    {
+      "id": "20261007-monetary-policy-world-overlapping-shocks",
+      "contextEn": "Speech by Ms Isabel Schnabel, Member of the Executive Board of the European Central Bank, at the 8th Capital Markets Seminar, co-hosted by the European Commission, European Investment Bank and the European Stability Mechanism, Luxembourg, 30 September 2026.",
+      "textLicense": "ecb",
+      "bankCode": "ecb",
+      "speakerName": "Isabel Schnabel",
+      "title": "Monetary policy in a world of overlapping shocks",
+      "speechDate": "2026-10-07",
+      "sourceUrl": "https://www.bis.org/speeches/20261007-monetary-policy-world-overlapping-shocks"
+    },
     {
       "id": "20261006-supervisory-risk-appetite-efficiency-and-effectiveness",
       "contextEn": "Contribution by Mr Frank Elderson, Member of the Executive Board of the European Central Bank and Vice-Chair of the Supervisory Board of the European Central Bank, at the BCBS International Conference of Banking Supervisors panel on “Navigating the new financial landscape”, Bali, 30 September 2026.",
