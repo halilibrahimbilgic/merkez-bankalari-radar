@@ -9,7 +9,15 @@
       "speakerName": "Christine Lagarde",
       "title": "Where AI risks meet",
       "speechDate": "2026-10-08",
-      "sourceUrl": "https://www.bis.org/speeches/20261007-where-ai-risks-meet"
+      "sourceUrl": "https://www.bis.org/speeches/20261007-where-ai-risks-meet",
+      "summaryTr": "Lagarde, Avrupa Sistemik Risk Kurulu'nun (ESRB) 15. yılındaki onuncu yıllık konferansını açarak kurulun küresel finansal kriz ve Avrupa borç krizinden çıkarılan derslerle, finansal sisteme bütüncül bakmak amacıyla kurulduğunu hatırlattı. Yapay zekânın artan öneminin bu sistem çapındaki bakışı sınadığını belirtti. Euro bölgesindeki önemli bankaların yaklaşık onda dokuzunun üretken yapay zekâ kullandığını ve menkul kıymet firmalarının çoğunun bu alana yatırımı artırmayı beklediğini aktardı. Yapay zekânın veri analizi, risk değerlendirmesi ve verimlilik açısından sağlayabileceği faydalara değindi. Metin yalnızca giriş bölümünü içeriyor ve para politikasına değinmiyor.",
+      "hawkDoveScore": 0,
+      "scoreRationaleTr": "Konuşma finansal istikrar ve yapay zekânın finans sektöründeki kullanımına odaklanıyor; faiz, enflasyon veya para politikası duruşuna dair herhangi bir ifade içermediği için sinyal taşımıyor.",
+      "hasPolicySignal": false,
+      "model": "claude-code/opus",
+      "promptVersion": "2",
+      "scoredAt": "2026-10-12T12:42:35.427Z",
+      "scoredVia": "claude-code"
     },
     {
       "id": "20261007-data-version-godzilla-versus-kong-fred-takes-ai",
@@ -19,7 +27,15 @@
       "speakerName": "Christopher J Waller",
       "title": "The data version of Godzilla versus Kong - FRED takes on AI",
       "speechDate": "2026-10-07",
-      "sourceUrl": "https://www.bis.org/speeches/20261007-data-version-godzilla-versus-kong-fred-takes-ai"
+      "sourceUrl": "https://www.bis.org/speeches/20261007-data-version-godzilla-versus-kong-fred-takes-ai",
+      "summaryTr": "Waller, St. Louis Fed'in ekonomik veri platformu FRED'i Fed'in yarattığı en büyük kamu yararı olarak nitelendirdi ve 1961'deki daktilo bültenlerinden bugün 850 binden fazla seriye ulaşan gelişimini anlattı. Yapay zekânın verilere erişimi ve açıklamayı kolaylaştırdığını, ancak halüsinasyon, önyargı ve yanlış kaynak gösterme gibi yeni riskler getirdiğini vurguladı. FRED trafiğinin yılda yüzde 150 büyüdüğünü ve ziyaretlerin yaklaşık yarısının yapay zekâ ajanlarından geldiğini belirtti. Yapay zekâ sistemlerinin FRED verilerine bağlanmasını sağlayan FRED MCP Connector'ı ve Fed Board verilerinin yakında FRED'e yönlendirileceğini duyurdu.",
+      "hawkDoveScore": 0,
+      "scoreRationaleTr": "Konuşma veri erişimi, FRED platformu ve yapay zekâ konularına odaklanıyor; faiz, enflasyon veya para politikası duruşuna dair hiçbir ifade içermediği için sinyal taşımıyor.",
+      "hasPolicySignal": false,
+      "model": "claude-code/opus",
+      "promptVersion": "2",
+      "scoredAt": "2026-10-12T12:42:35.418Z",
+      "scoredVia": "claude-code"
     },
     {
       "id": "20261007-us-economy-and-monetary-policy",
@@ -29,7 +45,15 @@
       "speakerName": "Philip N Jefferson",
       "title": "The US economy and monetary policy",
       "speechDate": "2026-10-07",
-      "sourceUrl": "https://www.bis.org/speeches/20261007-us-economy-and-monetary-policy"
+      "sourceUrl": "https://www.bis.org/speeches/20261007-us-economy-and-monetary-policy",
+      "summaryTr": "Jefferson, ABD ekonomisinin enerji şoku, yapay zekâ yatırım patlaması ve ticaret politikası değişikliklerine rağmen dayanıklılığını koruduğunu, büyümenin potansiyele yakın seyrettiğini ve yüzde 4,1'lik işsizliğin azami istihdama yakın olduğunu söyledi. Enflasyonun beş yılı aşkın süredir yüzde 2 hedefinin üzerinde olduğunu, PCE enflasyonunun Ağustos'ta yüzde 3,4'e çıktığını ve enerji fiyatlarının enflasyonda kalıcı bir artışa yol açmasından endişe ettiğini belirtti. Büyüme ve istihdam risklerini dengeli, enflasyon risklerini ise yukarı yönlü gördüğünü ifade etti. Eylül'deki 25 baz puanlık faiz artırımını uzun vadeli enflasyon beklentilerini çapalamak için desteklediğini, gelecekteki adımların veriye, görünüme ve risk dengesine göre belirleneceğini ve enflasyonun hedefe yeterli hızla dönüp dönmediğini değerlendirmeye devam edeceğini söyledi.",
+      "hawkDoveScore": 4,
+      "scoreRationaleTr": "\"Enflasyon çok uzun süredir çok yüksek\", enflasyon risklerinin \"yukarı yönlü\" olduğu ve beklentilerin çapadan kopmasını önlemeye \"kararlı\" olduğu ifadeleri şahin bir duruşa işaret ediyor; ancak açık bir ek artırım sinyali yerine veri bağımlılığı ve daha fazla zaman gerekebileceği vurgulandığı için uç puandan kaçınıldı.",
+      "hasPolicySignal": true,
+      "model": "claude-code/opus",
+      "promptVersion": "2",
+      "scoredAt": "2026-10-12T12:42:35.427Z",
+      "scoredVia": "claude-code"
     },
     {
       "id": "20261007-diagnostic-challenges-ecb-monetary-policy",
@@ -39,7 +63,15 @@
       "speakerName": "Philip R Lane",
       "title": "Diagnostic challenges for ECB monetary policy",
       "speechDate": "2026-10-07",
-      "sourceUrl": "https://www.bis.org/speeches/20261007-diagnostic-challenges-ecb-monetary-policy"
+      "sourceUrl": "https://www.bis.org/speeches/20261007-diagnostic-challenges-ecb-monetary-policy",
+      "summaryTr": "Lane, ECB'nin faiz kararlarını enflasyon görünümü, temel enflasyon dinamikleri ve parasal aktarımın gücüne dayandırdığını anlatarak enerji arz şokunun orta vadeli enflasyona etkisini ayırt etmenin temel teşhis sorunu olduğunu söyledi. Eylül'de manşet enflasyonun yüzde 3,8'e çıktığını ancak enerji dışı enflasyonun yüzde 2,3 ile sınırlı kaldığını ve temel göstergelerin orta vadeli enflasyonda kalıcı bir yukarı kayma göstermediğini belirtti. Temmuz'dan bu yana enerji fiyatlarındaki ikinci dalganın enflasyon için yukarı, büyüme için aşağı yönlü risk oluşturduğunu; buna karşılık 2027-28'de sıkılaşacak maliye politikası, \"talep tahribatı\" kanalları ve uzun vadeli faizlerdeki belirgin artışın büyümeyi yavaşlatıp aktarımı projeksiyonlardan fazla azaltacağını vurguladı. Para politikasında ölçülü tepkinin uygun olduğu \"orta yol\"da kalındığını, faizi yüzde 2,00'den 2,50'ye çıkarmanın ihtiyatlı olduğunu, ancak önceden belirlenmiş bir faiz patikası olmadığını ve kararların toplantı bazında, veriye bağlı alınacağını söyledi.",
+      "hawkDoveScore": 1,
+      "scoreRationaleTr": "Enerji şokunun ikinci dalgasının yukarı yönlü enflasyon riski taşıdığı ve enflasyonu kontrol altında tutmak için \"ölçülü tepki\"nin sürdüğü vurgusu hafif şahin; ancak talep tahribatı, uzun vadeli faizlerin aktarımı beklenenden fazla azaltacağı ve \"önceden taahhüt edilmiş patika yok\" ifadeleri ek sıkılaşma iştahını sınırlıyor.",
+      "hasPolicySignal": true,
+      "model": "claude-code/opus",
+      "promptVersion": "2",
+      "scoredAt": "2026-10-12T12:42:35.419Z",
+      "scoredVia": "claude-code"
     },
     {
       "id": "20261007-modernizing-financial-regulation-initial-observations-eslr",
@@ -49,7 +81,15 @@
       "speakerName": "Michelle W Bowman",
       "title": "Modernizing financial regulation - initial observations from eSLR",
       "speechDate": "2026-10-07",
-      "sourceUrl": "https://www.bis.org/speeches/20261007-modernizing-financial-regulation-initial-observations-eslr"
+      "sourceUrl": "https://www.bis.org/speeches/20261007-modernizing-financial-regulation-initial-observations-eslr",
+      "summaryTr": "Bowman, büyük bankalara uygulanan geliştirilmiş tamamlayıcı kaldıraç oranı (eSLR) gereksiniminin bağlayıcı hâle gelerek bankaların Hazine tahvili piyasasında aracılık kapasitesini kısıtladığını anlattı. Kasım 2025'te kesinleşen ve Nisan 2026'da yürürlüğe giren yeniden kalibrasyonla eSLR tamponunun her GSIB'in sistemik ayak izine bağlandığını belirtti. İlk sonuçlara göre aracı kurumların Hazine pozisyonlarının yaklaşık 600 milyar dolardan 700 milyar doları aştığını, alım-satım makaslarının daraldığını ve piyasa işleyişinin iyileştiğini aktardı. Düzenlemelerin amaçlandığı gibi çalışmadığında veriye dayalı olarak sürekli gözden geçirilmesi gerektiğini vurguladı.",
+      "hawkDoveScore": 0,
+      "scoreRationaleTr": "Konuşma bankacılık sermaye düzenlemesi ve Hazine piyasasının işleyişine odaklanıyor; faiz patikası, enflasyon veya para politikası duruşuna dair bir ifade içermediği için sinyal taşımıyor.",
+      "hasPolicySignal": false,
+      "model": "claude-code/opus",
+      "promptVersion": "2",
+      "scoredAt": "2026-10-12T12:42:35.422Z",
+      "scoredVia": "claude-code"
     },
     {
       "id": "20261007-monetary-policy-world-overlapping-shocks",
@@ -59,7 +99,15 @@
       "speakerName": "Isabel Schnabel",
       "title": "Monetary policy in a world of overlapping shocks",
       "speechDate": "2026-10-07",
-      "sourceUrl": "https://www.bis.org/speeches/20261007-monetary-policy-world-overlapping-shocks"
+      "sourceUrl": "https://www.bis.org/speeches/20261007-monetary-policy-world-overlapping-shocks",
+      "summaryTr": "Schnabel, arz şoklarının \"görmezden gelinmesi\" gerektiği görüşünü fazla basit bulduğunu, şokun türünden bağımsız olarak öngörülen enflasyon patikası hedefin üzerine çıkıyorsa optimal tepkinin sıkılaşma olduğunu savundu. Yeni enerji şokunun hizmet enflasyonu ve birim işgücü maliyetlerinin hâlâ yüksek olduğu bir ekonomiye çarptığını, yapay zekâ patlaması ve savunma harcamalarının talebi desteklediğini belirtti. Projeksiyonların kesim tarihinden sonra petrol ve gaz fiyatlarının olumsuz senaryoya yaklaştığını, bunun enflasyonun hedeften daha büyük ve kalıcı sapması anlamına geldiğini ve merkez bankalarının dolaylı ve ikinci tur etkilerin gerçekleşmesini bekleyemeyeceğini vurguladı. Güçlü kredi dinamiklerinin finansal koşulların henüz kısıtlayıcı olmadığına işaret edebileceğini, doğal faizin de yükselmiş olabileceğini söyledi; bununla birlikte ekonominin son sıkılaşmaya beklenenden fazla tepki verebileceğini de kabul etti.",
+      "hawkDoveScore": 6,
+      "scoreRationaleTr": "\"Merkez bankaları bu etkilerin gerçekleşmesini bekleyemez\", enerji fiyatlarının enflasyonun hedeften \"daha büyük ve kalıcı\" sapmasını ima ettiği ve finansal koşulların \"henüz kısıtlayıcı olmadığı\" ifadeleri ek sıkılaşmaya açık, belirgin biçimde şahin bir duruş gösteriyor; açık bir artırım taahhüdü olmadığı ve aktarımın güçlü olabileceği kabul edildiği için çok şahin aralığa çıkılmadı.",
+      "hasPolicySignal": true,
+      "model": "claude-code/opus",
+      "promptVersion": "2",
+      "scoredAt": "2026-10-12T12:42:35.422Z",
+      "scoredVia": "claude-code"
     },
     {
       "id": "20261006-supervisory-risk-appetite-efficiency-and-effectiveness",
