@@ -54,6 +54,7 @@ async function main() {
         speakerName: speech.speakerName,
         title: speech.title,
         speechDate: speech.speechDate,
+        contextEn: speech.contextEn,
         text: await loadSpeechText(speech),
       });
 
@@ -61,6 +62,10 @@ async function main() {
       speech.hawkDoveScore = result.hawkDoveScore;
       speech.scoreRationaleTr = result.scoreRationaleTr;
       speech.hasPolicySignal = result.hasPolicySignal;
+      speech.summaryEn = result.summaryEn;
+      speech.scoreRationaleEn = result.scoreRationaleEn;
+      speech.titleTr = result.titleTr;
+      if (result.contextTr) speech.contextTr = result.contextTr;
       speech.model = SCORING_MODEL;
       speech.promptVersion = PROMPT_VERSION;
       speech.scoredAt = new Date().toISOString();

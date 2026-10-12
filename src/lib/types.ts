@@ -3,11 +3,19 @@ export type BankCode = "fed" | "ecb" | "tcmb" | "boe" | "boj" | "rba";
 
 export interface CentralBank {
   code: BankCode;
+  /** Kısa ad (Türkçe arayüz): "TCMB", "Fed". */
   nameTr: string;
+  /** Kısa ad (İngilizce arayüz): TCMB İngilizcede "CBRT" diye bilinir. */
+  shortEn: string;
+  /** Tam resmî ad, Türkçe: "Türkiye Cumhuriyet Merkez Bankası". */
+  fullTr: string;
+  /** Tam resmî ad, İngilizce. */
   nameEn: string;
   countryTr: string;
+  countryEn: string;
   timezone: string;
   rateNameTr: string;
+  rateNameEn: string;
   websiteUrl: string;
   sortOrder: number;
 }
@@ -53,6 +61,13 @@ export interface Speech {
   /** Tam metin sitede yayımlanabiliyorsa lisansı (src/lib/text-license.ts). */
   textLicense?: TextLicense;
   summaryTr?: string;
+  /** Başlığın Türkçesi (kaynak başlık İngilizce). Yoksa arayüz İngilizce başlığa düşer. */
+  titleTr?: string;
+  /** contextEn'in Türkçesi. */
+  contextTr?: string;
+  /** İngilizce arayüz için özet ve gerekçe. */
+  summaryEn?: string;
+  scoreRationaleEn?: string;
   /** -10 (çok güvercin) .. +10 (çok şahin) */
   hawkDoveScore?: number;
   /**

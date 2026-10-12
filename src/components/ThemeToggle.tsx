@@ -1,16 +1,16 @@
 "use client";
 
 import { useSyncExternalStore } from "react";
+import type { Lang } from "@/lib/i18n";
 import { THEME_KEY } from "@/lib/theme";
 
 type Theme = "system" | "light" | "dark";
 
 const ORDER: Theme[] = ["system", "light", "dark"];
 
-const LABEL: Record<Theme, string> = {
-  system: "Sistem teması",
-  light: "Açık tema",
-  dark: "Koyu tema",
+const LABEL: Record<Lang, Record<Theme, string>> = {
+  tr: { system: "Sistem teması", light: "Açık tema", dark: "Koyu tema" },
+  en: { system: "System theme", light: "Light theme", dark: "Dark theme" },
 };
 
 /**
@@ -24,7 +24,7 @@ const LABEL: Record<Theme, string> = {
  * Yerin korunması için düğme boyutunda boş bir kutu bırakılır, yoksa
  * gezinme çubuğu hidrasyonda zıplar.
  */
-export function ThemeToggle() {
+export function ThemeToggle({ lang }: { lang: Lang }) {
   /*
    * Seçili tema localStorage'da durur — React state'inde değil. Bu yüzden
    * useSyncExternalStore: tarayıcı dışı bir kaynağı okumanın hidrasyona
@@ -56,8 +56,12 @@ export function ThemeToggle() {
       onClick={cycle}
       // Durum ikonla değil, erişilebilir adla taşınıyor: ikon tek başına
       // "şu an hangi tema" sorusunu ekran okuyucuya anlatmaz.
-      aria-label={`${LABEL[theme]} — değiştirmek için tıklayın`}
-      title={LABEL[theme]}
+      aria-label={
+        lang === "en"
+          ? `${LABEL.en[theme]} — click to change`
+          : `${LABEL.tr[theme]} — değiştirmek için tıklayın`
+      }
+      title={LABEL[lang][theme]}
       className="inline-flex h-9 w-9 shrink-0 items-center justify-center rounded-lg text-muted hover:bg-surface-sunken hover:text-accent"
     >
       <Icon theme={theme} />

@@ -1,4 +1,4 @@
-import { formatPct } from "@/lib/data/probabilities";
+import { fmtPercent, type Lang } from "@/lib/i18n";
 
 /**
  * Yön oklu olasılık satırları — bu kategoride yerleşik gösterim
@@ -26,7 +26,7 @@ const TONE: Record<OddsRow["direction"], string> = {
   down: "text-dove",
 };
 
-export function RateOdds({ rows }: { rows: OddsRow[] }) {
+export function RateOdds({ rows, lang }: { rows: OddsRow[]; lang: Lang }) {
   const max = Math.max(...rows.map((r) => r.pct), 1);
 
   return (
@@ -53,7 +53,7 @@ export function RateOdds({ rows }: { rows: OddsRow[] }) {
             />
           </div>
           <dd className={`tabular min-w-14 text-right font-semibold ${TONE[row.direction]}`}>
-            {formatPct(row.pct)}
+            {fmtPercent(row.pct, lang, 1)}
           </dd>
         </div>
       ))}

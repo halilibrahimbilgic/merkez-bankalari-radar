@@ -23,8 +23,10 @@ const nextConfig: NextConfig = {
   // Konuşma tam metinleri dinamik dosya adıyla okunuyor (data/speech-text/
   // <id>.txt); izleyicinin kaçırmaması için ISR yeniden üretiminde gereken
   // dosyalar sunucu paketine açıkça eklenir.
+  // İki dilin konuşma rotası da (Türkçe kök, /en) aynı dosyaları okur.
   outputFileTracingIncludes: {
     "/konusma/*": ["./data/speech-text/**/*"],
+    "/en/konusma/*": ["./data/speech-text/**/*"],
   },
 };
 

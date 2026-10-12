@@ -63,3 +63,12 @@ export const LICENSE_NOTICE_TR: Record<TextLicense, string> = {
   "cc-by-4.0":
     "Kaynak: Reserve Bank of Australia. © Reserve Bank of Australia, Creative Commons Attribution 4.0 (CC BY 4.0) lisansıyla.",
 };
+
+export const LICENSE_NOTICE_EN: Record<TextLicense, string> = {
+  "frb-public-domain":
+    "Source: Board of Governors of the Federal Reserve System. The text is in the public domain.",
+  ecb: "Source: European Central Bank (ECB). © European Central Bank; reproduced with the source acknowledged.",
+  boj: "Source: Bank of Japan. © Bank of Japan; reproduced with the source acknowledged.",
+  "cc-by-4.0":
+    "Source: Reserve Bank of Australia. © Reserve Bank of Australia, licensed under Creative Commons Attribution 4.0 (CC BY 4.0).",
+};

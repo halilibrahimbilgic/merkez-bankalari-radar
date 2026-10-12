@@ -24,7 +24,7 @@ import { config } from "dotenv";
 import { BANKS } from "../src/lib/banks";
 import { num, resultTitle, whenTr } from "../src/lib/announce";
 import { SITE_URL } from "../src/lib/site";
-import { formatMeetingTr, trtDayKey } from "../src/lib/time";
+import { formatMeeting, trtDayKey } from "../src/lib/time";
 import type { BankCode, Meeting } from "../src/lib/types";
 
 config({ path: ".env.local", quiet: true });
@@ -117,7 +117,7 @@ function duePosts(meetings: Meeting[], rates: CurrentRate[], state: State, now: 
       const current = rates.find((r) => r.bankCode === m.bankCode);
       const lines = [
         `<b>${day === today ? "Bugün" : "Yarın"}: ${esc(bank.nameTr)} faiz kararı</b>`,
-        esc(formatMeetingTr(m.meetingAt, m.timeTbd)),
+        esc(formatMeeting(m.meetingAt, m.timeTbd)),
       ];
       if (current) {
         const rate =

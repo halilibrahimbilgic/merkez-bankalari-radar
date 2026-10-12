@@ -33,6 +33,7 @@ async function load(): Promise<Store> {
               hawk_dove_score, has_policy_signal, score_rationale_tr,
               model, prompt_version, scored_at, scored_via,
               context_en, text_license,
+              title_tr, context_tr, summary_en, score_rationale_en,
               max(created_at) over () as store_fetched_at
          from speeches
         order by speech_date desc`,
@@ -71,6 +72,10 @@ interface SpeechRow {
   scored_via: ScoredVia | null;
   context_en: string | null;
   text_license: TextLicense | null;
+  title_tr: string | null;
+  context_tr: string | null;
+  summary_en: string | null;
+  score_rationale_en: string | null;
   store_fetched_at: Date | null;
 }
 
@@ -94,6 +99,10 @@ function toSpeech(r: SpeechRow): Speech {
     scoredVia: r.scored_via ?? undefined,
     contextEn: r.context_en ?? undefined,
     textLicense: r.text_license ?? undefined,
+    titleTr: r.title_tr ?? undefined,
+    contextTr: r.context_tr ?? undefined,
+    summaryEn: r.summary_en ?? undefined,
+    scoreRationaleEn: r.score_rationale_en ?? undefined,
   };
 }
 

@@ -23,7 +23,25 @@ const COLORS: Record<ChartBucket["position"], string> = {
   above: "var(--hawk)",
 };
 
-export function ProbabilityChart({ data }: { data: ChartBucket[] }) {
+/** Metinler sunucudan gelir — istemci bileşeni dil seçimini bilmez. */
+export interface ProbabilityChartLabels {
+  probability: string;
+  band: string;
+  /** "%" başta mı sonda mı, ondalık ayırıcı ne. */
+  lang: "tr" | "en";
+}
+
+export function ProbabilityChart({
+  data,
+  labels,
+}: {
+  data: ChartBucket[];
+  labels: ProbabilityChartLabels;
+}) {
+  const pct = (v: number, digits: number) => {
+    const s = v.toFixed(digits);
+    return labels.lang === "en" ? `${s}%` : `%${s.replace(".", ",")}`;
+  };
   return (
     <div className="h-72 w-full">
       <ResponsiveContainer width="100%" height="100%">
@@ -41,7 +59,7 @@ export function ProbabilityChart({ data }: { data: ChartBucket[] }) {
             tick={{ fontSize: 11, fill: "var(--muted)" }}
             stroke="var(--border)"
             width={44}
-            tickFormatter={(v: number) => `%${v}`}
+            tickFormatter={(v: number) => pct(v, 0)}
           />
           <Tooltip
             cursor={{ fill: "var(--accent-soft)" }}
@@ -52,11 +70,8 @@ export function ProbabilityChart({ data }: { data: ChartBucket[] }) {
               color: "var(--foreground)",
               fontSize: 13,
             }}
-            formatter={(value) => [
-              `%${Number(value).toFixed(1).replace(".", ",")}`,
-              "Olasılık",
-            ]}
-            labelFormatter={(label) => `Bant: ${String(label)}`}
+            formatter={(value) => [pct(Number(value), 1), labels.probability]}
+            labelFormatter={(label) => `${labels.band}: ${String(label)}`}
           />
           <Bar dataKey="probabilityPct" radius={[3, 3, 0, 0]}>
             {data.map((d, i) => (

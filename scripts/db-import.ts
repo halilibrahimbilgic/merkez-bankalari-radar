@@ -104,9 +104,15 @@ async function importSpeeches(pool: Pool) {
          id, bank_code, speaker_name, speaker_role_tr, title, speech_date,
          source_url, raw_text, text_is_excerpt, summary_tr, hawk_dove_score,
          has_policy_signal, score_rationale_tr, model, prompt_version,
-         scored_at, scored_via, context_en, text_license
-       ) values ($1,$2,$3,$4,$5,$6,$7,$8,$9,$10,$11,$12,$13,$14,$15,$16,$17,$18,$19)
+         scored_at, scored_via, context_en, text_license,
+         title_tr, context_tr, summary_en, score_rationale_en
+       ) values ($1,$2,$3,$4,$5,$6,$7,$8,$9,$10,$11,$12,$13,$14,$15,$16,$17,$18,$19,$20,$21,$22,$23)
        on conflict (id) do update set
+         -- Çeviriler skordan bağımsız doldurulur; boş gelen mevcut olanı silmez.
+         title_tr           = coalesce(excluded.title_tr, speeches.title_tr),
+         context_tr         = coalesce(excluded.context_tr, speeches.context_tr),
+         summary_en         = coalesce(excluded.summary_en, speeches.summary_en),
+         score_rationale_en = coalesce(excluded.score_rationale_en, speeches.score_rationale_en),
          context_en      = coalesce(excluded.context_en, speeches.context_en),
          text_license    = excluded.text_license,
          speaker_name    = excluded.speaker_name,
@@ -156,6 +162,10 @@ async function importSpeeches(pool: Pool) {
         s.scoredVia ?? null,
         s.contextEn ?? null,
         s.textLicense ?? null,
+        s.titleTr ?? null,
+        s.contextTr ?? null,
+        s.summaryEn ?? null,
+        s.scoreRationaleEn ?? null,
       ],
     );
   }

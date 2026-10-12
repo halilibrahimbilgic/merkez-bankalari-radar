@@ -1,5 +1,6 @@
 import Link from "next/link";
-import { ALL_BANKS } from "@/lib/banks";
+import { ALL_BANKS, bankName } from "@/lib/banks";
+import { L, type Lang } from "@/lib/i18n";
 import type { BankCode } from "@/lib/types";
 
 /**
@@ -13,15 +14,19 @@ export function BankFilter({
   basePath,
   active,
   availableCodes,
+  lang,
 }: {
+  /** Dil önekli yol: "/takvim" ya da "/en/takvim". */
   basePath: string;
   active?: BankCode;
   availableCodes: BankCode[];
+  lang: Lang;
 }) {
+  const t = L(lang);
   const available = new Set(availableCodes);
 
   return (
-    <nav aria-label="Banka filtresi" className="flex flex-wrap gap-2">
+    <nav aria-label={t("Banka filtresi", "Bank filter")} className="flex flex-wrap gap-2">
       <Link
         href={basePath}
         aria-current={active === undefined ? "page" : undefined}
@@ -32,7 +37,7 @@ export function BankFilter({
             : "border-border text-muted hover:border-accent hover:text-accent")
         }
       >
-        Tümü
+        {t("Tümü", "All")}
       </Link>
 
       {ALL_BANKS.map((bank) => {
@@ -42,11 +47,14 @@ export function BankFilter({
           return (
             <span
               key={bank.code}
-              title={`${bank.nameTr} verisi henüz eklenmedi`}
+              title={t(
+                `${bank.nameTr} verisi henüz eklenmedi`,
+                `No ${bank.shortEn} data yet`,
+              )}
               className="inline-flex min-h-9 cursor-default items-center gap-1.5 rounded-full border border-dashed border-border px-3 text-sm text-muted opacity-60"
             >
-              {bank.nameTr}
-              <span className="text-xs">· yakında</span>
+              {bankName(bank, lang)}
+              <span className="text-xs">· {t("yakında", "soon")}</span>
             </span>
           );
         }
@@ -63,7 +71,7 @@ export function BankFilter({
                 : "border-border text-muted hover:border-accent hover:text-accent")
             }
           >
-            {bank.nameTr}
+            {bankName(bank, lang)}
           </Link>
         );
       })}

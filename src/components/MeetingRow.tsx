@@ -1,17 +1,19 @@
 import Link from "next/link";
-import { BANKS, bankColorVar } from "@/lib/banks";
+import { BANKS, bankColorVar, bankName } from "@/lib/banks";
+import { fmtPercent, fmtPercentRange, L, localePath, type Lang } from "@/lib/i18n";
 import type { Meeting } from "@/lib/types";
 import {
-  countdownLabelTr,
-  formatDateTr,
+  countdownLabel,
+  formatDate,
   formatTimeInZone,
   formatTimeTrt,
-  formatWeekdayTr,
+  formatWeekday,
 } from "@/lib/time";
 import { Countdown } from "./Countdown";
 import { Row } from "./ui";
 
-export function MeetingRow({ meeting, now }: { meeting: Meeting; now: Date }) {
+export function MeetingRow({ meeting, now, lang }: { meeting: Meeting; now: Date; lang: Lang }) {
+  const t = L(lang);
   const bank = BANKS[meeting.bankCode];
   const isPast = new Date(meeting.meetingAt) < now;
   const trtTime = formatTimeTrt(meeting.meetingAt);
@@ -20,32 +22,35 @@ export function MeetingRow({ meeting, now }: { meeting: Meeting; now: Date }) {
   return (
     <Row accentColor={bankColorVar(bank.code)}>
       <Link
-        href={`/banka/${bank.code}`}
+        href={localePath(lang, `/banka/${bank.code}`)}
         className="min-w-14 font-semibold text-accent hover:underline"
       >
-        {bank.nameTr}
+        {bankName(bank, lang)}
       </Link>
 
       <div className="min-w-56 flex-1">
         <div className="tabular">
-          {formatDateTr(meeting.meetingAt)}
-          <span className="text-muted"> · {formatWeekdayTr(meeting.meetingAt)}</span>
+          {formatDate(meeting.meetingAt, lang)}
+          <span className="text-muted"> · {formatWeekday(meeting.meetingAt, lang)}</span>
         </div>
         <div className="text-sm text-muted tabular">
           {meeting.timeTbd ? (
-            "Saat açıklanmadı"
+            t("Saat açıklanmadı", "Time not announced")
           ) : (
             <>
-              {formatTimeTrt(meeting.meetingAt)} TRT
+              {trtTime} TRT
               {/* TCMB'de yerel saat zaten TRT — tekrar göstermek gürültü. */}
               {localTime !== trtTime && (
-                <span className="opacity-70"> (yerel {localTime})</span>
+                <span className="opacity-70">
+                  {" "}
+                  ({t("yerel", "local")} {localTime})
+                </span>
               )}
             </>
           )}
           {meeting.type === "projections" && (
             <span className="ml-2 rounded bg-accent-soft px-1.5 py-0.5 text-xs text-accent">
-              projeksiyon
+              {t("projeksiyon", "projections")}
             </span>
           )}
         </div>
@@ -55,17 +60,18 @@ export function MeetingRow({ meeting, now }: { meeting: Meeting; now: Date }) {
         {isPast ? (
           <span className="text-muted tabular">
             {meeting.decisionRate !== undefined
-              ? `${formatRate(meeting)}${rateDelta(meeting)}`
-              : countdownLabelTr(meeting.meetingAt, now)}
+              ? `${formatRate(meeting, lang)}${rateDelta(meeting, lang)}`
+              : countdownLabel(meeting.meetingAt, now, lang)}
           </span>
         ) : meeting.timeTbd ? (
           // Saat belli değilse (BoJ) meetingAt'teki saat yer tutucudur;
           // saat/dakika hassasiyetinde geri sayım sahte kesinlik olurdu.
-          <span className="tabular">{countdownLabelTr(meeting.meetingAt, now)}</span>
+          <span className="tabular">{countdownLabel(meeting.meetingAt, now, lang)}</span>
         ) : (
           <Countdown
             meetingAt={meeting.meetingAt}
-            initialLabel={countdownLabelTr(meeting.meetingAt, now)}
+            initialLabel={countdownLabel(meeting.meetingAt, now, lang)}
+            lang={lang}
           />
         )}
       </div>
@@ -73,20 +79,16 @@ export function MeetingRow({ meeting, now }: { meeting: Meeting; now: Date }) {
   );
 }
 
-/** Fed bir aralık ilan eder ("%3,50-3,75"); diğer bankalar tek oran. */
-function formatRate(meeting: Meeting): string {
-  const upper = num(meeting.decisionRate!);
-  if (meeting.decisionRateLower === undefined) return `%${upper}`;
-  return `%${num(meeting.decisionRateLower)}-${upper}`;
+/** Fed bir aralık ilan eder ("%3,50–3,75"); diğer bankalar tek oran. */
+function formatRate(meeting: Meeting, lang: Lang): string {
+  return meeting.decisionRateLower === undefined
+    ? fmtPercent(meeting.decisionRate!, lang)
+    : fmtPercentRange(meeting.decisionRateLower, meeting.decisionRate!, lang);
 }
 
-function num(rate: number): string {
-  return rate.toFixed(2).replace(".", ",");
-}
-
-function rateDelta(meeting: Meeting): string {
+function rateDelta(meeting: Meeting, lang: Lang): string {
   if (meeting.previousRate === undefined || meeting.decisionRate === undefined) return "";
   const bps = Math.round((meeting.decisionRate - meeting.previousRate) * 100);
-  if (bps === 0) return " (değişiklik yok)";
+  if (bps === 0) return lang === "en" ? " (no change)" : " (değişiklik yok)";
   return ` (${bps > 0 ? "+" : ""}${bps} bp)`;
 }

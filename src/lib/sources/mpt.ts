@@ -38,6 +38,25 @@ export const LICENSE_NOTICE = {
     "eksiksizliğini garanti etmez.",
 } as const;
 
+/**
+ * İngilizce sayfa için. CME paragrafı Atlanta Fed MPT sayfasındaki metnin
+ * ilk cümleleridir (12 Ekim 2026'da kaynaktan alındı); Atlanta Fed notu
+ * yukarıdaki Türkçe notun karşılığıdır.
+ */
+export const LICENSE_NOTICE_EN = {
+  atlantaFed:
+    "The Atlanta Fed Market Probability Tracker is not an official forecast of the " +
+    "Atlanta Fed, its president, the Federal Reserve System or the FOMC. The data may " +
+    "be used for personal and educational purposes only. " +
+    "Copyright © Federal Reserve Bank of Atlanta.",
+  cme:
+    "CME Group market data are used, with permission from CME, as a source of " +
+    "information for this report. CME Group has no other connection to the Federal " +
+    "Reserve Bank of Atlanta's products and services and does not sponsor, endorse, " +
+    "recommend, or promote the report, its contents, or the authors. CME Group does " +
+    "not guarantee the accuracy and/or the completeness of any market data.",
+} as const;
+
 export interface ProbabilityBucket {
   lowerBps: number;
   upperBps: number;

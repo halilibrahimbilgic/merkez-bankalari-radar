@@ -1,6 +1,7 @@
 "use client";
 
 import { useEffect, useState } from "react";
+import type { Lang } from "@/lib/i18n";
 import { computeCountdownParts, type CountdownParts } from "@/lib/time";
 
 /**
@@ -13,10 +14,13 @@ import { computeCountdownParts, type CountdownParts } from "@/lib/time";
 export function LiveCountdown({
   meetingAt,
   initial,
+  lang,
 }: {
   meetingAt: string;
   initial: CountdownParts;
+  lang: Lang;
 }) {
+  const en = lang === "en";
   const [parts, setParts] = useState(initial);
 
   useEffect(() => {
@@ -27,14 +31,14 @@ export function LiveCountdown({
   }, [meetingAt]);
 
   if (parts.past) {
-    return <p className="text-sm text-muted">Karar açıklandı</p>;
+    return <p className="text-sm text-muted">{en ? "Decision announced" : "Karar açıklandı"}</p>;
   }
 
   return (
-    <div className="flex gap-2" aria-label="Toplantıya kalan süre">
-      <Segment value={parts.days} label="gün" />
-      <Segment value={parts.hours} label="saat" />
-      <Segment value={parts.minutes} label="dk" />
+    <div className="flex gap-2" aria-label={en ? "Time until the meeting" : "Toplantıya kalan süre"}>
+      <Segment value={parts.days} label={en ? "days" : "gün"} />
+      <Segment value={parts.hours} label={en ? "hrs" : "saat"} />
+      <Segment value={parts.minutes} label={en ? "min" : "dk"} />
     </div>
   );
 }

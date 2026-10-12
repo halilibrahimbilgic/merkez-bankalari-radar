@@ -1,7 +1,8 @@
 import { getMeetingsFetchedAt } from "@/lib/data/meetings";
 import { getSpeechesFetchedAt } from "@/lib/data/speeches";
 import { getProbabilitySnapshot } from "@/lib/data/probabilities";
-import { formatDateTr, relativeTimeTr } from "@/lib/time";
+import { L, type Lang } from "@/lib/i18n";
+import { formatDate, relativeTime } from "@/lib/time";
 
 /**
  * Veri tazeliği göstergesi.
@@ -13,7 +14,8 @@ import { formatDateTr, relativeTimeTr } from "@/lib/time";
  * takvim günlük, olasılık verisi piyasa günü kapanışıyla, skorlama ise
  * koşu başına sınırlı sayıda konuşmayla, birikimi günler içinde eriterek.
  */
-export async function DataFreshness() {
+export async function DataFreshness({ lang }: { lang: Lang }) {
+  const t = L(lang);
   const [meetings, speeches, probability] = await Promise.all([
     getMeetingsFetchedAt(),
     getSpeechesFetchedAt(),
@@ -21,14 +23,20 @@ export async function DataFreshness() {
   ]);
 
   const items = [
-    meetings && { label: "Takvim", value: relativeTimeTr(meetings) },
+    meetings && { label: t("Takvim", "Calendar"), value: relativeTime(meetings, undefined, lang) },
     probability && {
-      label: "Piyasa verisi",
+      label: t("Piyasa verisi", "Market data"),
       // Burada "kaç saat önce çekildi" değil, verinin AİT OLDUĞU piyasa
       // günü anlamlı: Atlanta Fed gün içinde güncellenmez.
-      value: `${formatDateTr(probability.asOf)} kapanışı`,
+      value: t(
+        `${formatDate(probability.asOf, lang)} kapanışı`,
+        `close of ${formatDate(probability.asOf, lang)}`,
+      ),
     },
-    speeches && { label: "Konuşma arşivi", value: relativeTimeTr(speeches) },
+    speeches && {
+      label: t("Konuşma arşivi", "Speech archive"),
+      value: relativeTime(speeches, undefined, lang),
+    },
   ].filter((x): x is { label: string; value: string } => Boolean(x));
 
   if (items.length === 0) return null;

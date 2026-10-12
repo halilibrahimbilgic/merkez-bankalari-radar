@@ -190,31 +190,15 @@ export function Callout({
 }
 
 /**
- * Veri yokluğu durumu.
- *
- * Boş bir liste yerine ne eksik olduğunu ve nasıl doldurulacağını söyler;
- * `command` geliştiriciye yöneliktir, ziyaretçiye değil — bu yüzden ayrı
- * ve soluk gösterilir.
+ * Veri yokluğu durumu: boş bir liste yerine ne eksik olduğunu söyler.
+ * (Önceden geliştiriciye yönelik "şu komutu çalıştırın" notu da taşıyordu;
+ * ziyaretçiye anlamsız olduğu ve iki dilde ayrı ayrı yazılması gerektiği
+ * için kaldırıldı — komutlar README'de.)
  */
-export function EmptyState({
-  children,
-  command,
-}: {
-  children: ReactNode;
-  command?: string;
-}) {
+export function EmptyState({ children }: { children: ReactNode }) {
   return (
     <Card>
-      <p className="prose-width text-muted">
-        {children}
-        {command && (
-          <>
-            {" "}
-            <code className="rounded bg-accent-soft px-1 text-accent">{command}</code>{" "}
-            komutunu çalıştırın.
-          </>
-        )}
-      </p>
+      <p className="prose-width text-muted">{children}</p>
     </Card>
   );
 }

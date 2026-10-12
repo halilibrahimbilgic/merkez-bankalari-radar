@@ -1,4 +1,5 @@
-import { BANKS, bankColorVar } from "@/lib/banks";
+import { BANKS, bankColorVar, bankName } from "@/lib/banks";
+import { fmtNum, type Lang } from "@/lib/i18n";
 import type { BankCode } from "@/lib/types";
 
 /** Skorun rengi ve etiketi — ölçek her yerde aynı okunsun diye tek yerde. */
@@ -8,33 +9,68 @@ export function scoreToneClass(score: number): string {
   return "text-muted";
 }
 
-export function scoreLabelTr(score: number): string {
-  if (score >= 7) return "çok şahin";
-  if (score >= 3) return "şahin";
-  if (score >= 1) return "hafif şahin";
-  if (score > -1) return "nötr";
-  if (score > -3) return "hafif güvercin";
-  if (score > -7) return "güvercin";
-  return "çok güvercin";
+export function scoreLabel(score: number, lang: Lang = "tr"): string {
+  const en = lang === "en";
+  if (score >= 7) return en ? "very hawkish" : "çok şahin";
+  if (score >= 3) return en ? "hawkish" : "şahin";
+  if (score >= 1) return en ? "slightly hawkish" : "hafif şahin";
+  if (score > -1) return en ? "neutral" : "nötr";
+  if (score > -3) return en ? "slightly dovish" : "hafif güvercin";
+  if (score > -7) return en ? "dovish" : "güvercin";
+  return en ? "very dovish" : "çok güvercin";
 }
 
-export function formatScore(score: number): string {
-  const s = score.toFixed(1).replace(".", ",");
+export function formatScore(score: number, lang: Lang = "tr"): string {
+  const s = fmtNum(score, lang, 1);
   return score > 0 ? `+${s}` : s;
 }
 
-export function ScoreBadge({ score }: { score?: number }) {
+/**
+ * Konuşma skoru rozeti. Sinyalsiz konuşmanın 0'ı "nötr" diye gösterilmez:
+ * listede "0,0 (nötr)" okuyan kullanıcı onu dengeli bir duruş — ya da
+ * skorlanmamış bir kayıt — sanıyordu. Ortalamaya da katılmaz
+ * (ARCHITECTURE.md §4).
+ */
+export function ScoreBadge({
+  score,
+  hasPolicySignal,
+  lang = "tr",
+}: {
+  score?: number;
+  hasPolicySignal?: boolean;
+  lang?: Lang;
+}) {
   if (score === undefined) {
+    return <Pill>{lang === "en" ? "not scored yet" : "skorlanmadı"}</Pill>;
+  }
+  if (hasPolicySignal === false) {
     return (
-      <span className="rounded-full border border-border px-2 py-0.5 text-xs text-muted">
-        skorlanmadı
-      </span>
+      <Pill
+        title={
+          lang === "en"
+            ? "This speech does not address the monetary policy stance; it is not included in the average."
+            : "Konuşma para politikası duruşuna değinmiyor; ortalamaya katılmaz."
+        }
+      >
+        {lang === "en" ? "no policy signal" : "politika sinyali yok"}
+      </Pill>
     );
   }
   return (
     <span className={`tabular font-semibold ${scoreToneClass(score)}`}>
-      {formatScore(score)}{" "}
-      <span className="text-xs font-normal">({scoreLabelTr(score)})</span>
+      {formatScore(score, lang)}{" "}
+      <span className="text-xs font-normal">({scoreLabel(score, lang)})</span>
+    </span>
+  );
+}
+
+function Pill({ children, title }: { children: React.ReactNode; title?: string }) {
+  return (
+    <span
+      title={title}
+      className="whitespace-nowrap rounded-full border border-border px-2 py-0.5 text-xs text-muted"
+    >
+      {children}
     </span>
   );
 }
@@ -44,7 +80,7 @@ export function ScoreBadge({ score }: { score?: number }) {
  * Renk tek başına anlam taşımaz — noktayı ayırt edemeyen okuyucu için ad
  * yeterlidir.
  */
-export function BankTag({ code }: { code: BankCode }) {
+export function BankTag({ code, lang = "tr" }: { code: BankCode; lang?: Lang }) {
   return (
     <span className="inline-flex items-center gap-1.5 rounded border border-border px-1.5 py-0.5 text-xs font-medium">
       <span
@@ -52,7 +88,7 @@ export function BankTag({ code }: { code: BankCode }) {
         className="inline-block size-2 shrink-0 rounded-full"
         style={{ backgroundColor: bankColorVar(code) }}
       />
-      {BANKS[code].nameTr}
+      {bankName(BANKS[code], lang)}
     </span>
   );
 }

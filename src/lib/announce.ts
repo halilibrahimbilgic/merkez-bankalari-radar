@@ -1,5 +1,5 @@
 import { BANKS } from "./banks";
-import { formatDateTr, formatTimeTrt } from "./time";
+import { formatDate, formatTimeTrt } from "./time";
 import type { Meeting } from "./types";
 
 /**
@@ -11,8 +11,8 @@ import type { Meeting } from "./types";
 /** "22 Ekim 2026, 14:00 TRT" — saat açıklanmadıysa saat yerine not. */
 export function whenTr(m: Meeting): string {
   return m.timeTbd
-    ? `${formatDateTr(m.meetingAt)} (saat açıklanmadı)`
-    : `${formatDateTr(m.meetingAt)}, ${formatTimeTrt(m.meetingAt)} TRT`;
+    ? `${formatDate(m.meetingAt)} (saat açıklanmadı)`
+    : `${formatDate(m.meetingAt)}, ${formatTimeTrt(m.meetingAt)} TRT`;
 }
 
 /** "TCMB faizi 250 baz puan indirdi: %34,50". Karar oranı dolu olmalı. */

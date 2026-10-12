@@ -26,14 +26,28 @@ export interface PathPoint {
   mean: number;
 }
 
+/** Metinler sunucudan gelir — istemci bileşeni dil seçimini bilmez. */
+export interface ExpectedPathLabels {
+  mean: string;
+  band: string;
+  target: string;
+  period: string;
+  lang: "tr" | "en";
+}
+
 export function ExpectedPathChart({
   data,
   targetRange,
+  labels,
 }: {
   data: PathPoint[];
   targetRange?: { lowerBps: number; upperBps: number };
+  labels: ExpectedPathLabels;
 }) {
-  const fmt = (bps: number) => `%${(bps / 100).toFixed(2).replace(".", ",")}`;
+  const fmt = (bps: number) => {
+    const s = (bps / 100).toFixed(2);
+    return labels.lang === "en" ? `${s}%` : `%${s.replace(".", ",")}`;
+  };
 
   return (
     <div>
@@ -44,21 +58,21 @@ export function ExpectedPathChart({
             aria-hidden
             className="inline-block h-0.5 w-5 rounded-full bg-accent"
           />
-          Ortalama beklenti
+          {labels.mean}
         </li>
         <li className="flex items-center gap-1.5">
           <span
             aria-hidden
             className="inline-block h-3 w-5 rounded-sm bg-muted opacity-25"
           />
-          Olası aralık (25.–75. yüzdelik)
+          {labels.band}
         </li>
         <li className="flex items-center gap-1.5">
           <span
             aria-hidden
             className="inline-block h-3 w-5 rounded-sm bg-accent opacity-25"
           />
-          Bugünkü hedef aralık
+          {labels.target}
         </li>
       </ul>
 
@@ -102,16 +116,16 @@ export function ExpectedPathChart({
             }}
             formatter={(value, name) => {
               if (Array.isArray(value)) {
-                return [`${fmt(value[0])} – ${fmt(value[1])}`, "Olası aralık"];
+                return [`${fmt(value[0])} – ${fmt(value[1])}`, labels.band];
               }
               return [fmt(Number(value)), String(name)];
             }}
-            labelFormatter={(l) => `Dönem: ${String(l)}`}
+            labelFormatter={(l) => `${labels.period}: ${String(l)}`}
           />
 
           <Area
             dataKey="band"
-            name="Olası aralık"
+            name={labels.band}
             stroke="none"
             fill="var(--muted)"
             fillOpacity={0.18}
@@ -119,7 +133,7 @@ export function ExpectedPathChart({
           />
           <Line
             dataKey="mean"
-            name="Ortalama beklenti"
+            name={labels.mean}
             stroke="var(--accent)"
             strokeWidth={2}
             dot={{ r: 2.5, fill: "var(--accent)" }}

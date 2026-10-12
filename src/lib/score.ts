@@ -14,7 +14,12 @@ import type { BankCode } from "./types";
 export const SCORING_MODEL = "claude-opus-5";
 
 /** Prompt değişirse skorlar karşılaştırılamaz olur; sürüm kaydı tutulur. */
-export const PROMPT_VERSION = "2";
+/**
+ * 3: puanlama ölçeği ve kuralları 2 ile aynı; çıktıya iki dilli site için
+ * İngilizce özet/gerekçe ve Türkçe başlık/tanıtım eklendi. Skorlar 2 ile
+ * karşılaştırılabilir.
+ */
+export const PROMPT_VERSION = "3";
 
 /**
  * Cron'da API anahtarı yerine Claude aboneliğiyle (claude-code-action +
@@ -28,6 +33,11 @@ export interface ScoreResult {
   hawkDoveScore: number;
   scoreRationaleTr: string;
   hasPolicySignal: boolean;
+  summaryEn: string;
+  scoreRationaleEn: string;
+  titleTr: string;
+  /** Tanıtım cümlesi yoksa boş. */
+  contextTr: string;
 }
 
 export const SYSTEM_PROMPT = `Sen merkez bankası iletişimini analiz eden bir makro ekonomi analistisin. Görevin, verilen konuşmayı Türkçe özetlemek ve para politikası duruşunu şahin/güvercin ölçeğinde puanlamaktır.
@@ -60,7 +70,14 @@ PUANLAMA KURALLARI:
 - Yatırım tavsiyesi verme, tahmin yürütme. Yalnızca konuşmada söyleneni aktar.
 
 GEREKÇE KURALLARI:
-- 1-2 cümle. Puanı hangi ifadelere dayandırdığını somut olarak yaz.`;
+- 1-2 cümle. Puanı hangi ifadelere dayandırdığını somut olarak yaz.
+
+İKİNCİ DİL (site Türkçe ve İngilizce yayımlanır):
+- summary_en ve score_rationale_en: Türkçe özetin ve gerekçenin aynı içerikte,
+  doğal İngilizcesi. Yeni bilgi ekleme, çıkarma. "Hawkish"/"dovish" kullan.
+- title_tr: konuşma başlığının Türkçesi. Özel adları (kurum, etkinlik adı)
+  koru; kısa ve doğal tut.
+- context_tr: "Tanıtım" satırının Türkçesi; tanıtım yoksa boş metin.`;
 
 export const OUTPUT_SCHEMA = {
   type: "object",
@@ -82,12 +99,32 @@ export const OUTPUT_SCHEMA = {
       description:
         "Konuşma para politikası duruşuna dair bir sinyal taşıyor mu? Düzenleme/denetim konuşmalarında false.",
     },
+    summary_en: {
+      type: "string",
+      description: "Türkçe özetin aynı içerikte İngilizcesi",
+    },
+    score_rationale_en: {
+      type: "string",
+      description: "Gerekçenin İngilizcesi",
+    },
+    title_tr: {
+      type: "string",
+      description: "Konuşma başlığının Türkçesi",
+    },
+    context_tr: {
+      type: "string",
+      description: "Tanıtım cümlesinin Türkçesi; tanıtım yoksa boş metin",
+    },
   },
   required: [
     "summary_tr",
     "hawk_dove_score",
     "score_rationale_tr",
     "has_policy_signal",
+    "summary_en",
+    "score_rationale_en",
+    "title_tr",
+    "context_tr",
   ],
   additionalProperties: false,
 } as const;
@@ -113,6 +150,8 @@ export interface SpeechInput {
   speakerName: string;
   title: string;
   speechDate: string;
+  /** BIS tanıtım cümlesi (konuşmacının unvanı, etkinlik, yer). */
+  contextEn?: string;
   text: string;
 }
 
@@ -128,6 +167,7 @@ export function buildUserMessage(input: SpeechInput): string {
 Konuşmacı: ${input.speakerName}
 Tarih: ${input.speechDate}
 Başlık: ${input.title}
+Tanıtım: ${input.contextEn ?? ""}
 
 Konuşma metni:
 ---
@@ -147,11 +187,17 @@ export function parseScoreOutput(raw: unknown): ScoreResult {
     typeof o.score_rationale_tr !== "string" ||
     typeof o.has_policy_signal !== "boolean" ||
     typeof o.hawk_dove_score !== "number" ||
-    !Number.isFinite(o.hawk_dove_score)
+    !Number.isFinite(o.hawk_dove_score) ||
+    typeof o.summary_en !== "string" ||
+    typeof o.score_rationale_en !== "string" ||
+    typeof o.title_tr !== "string" ||
+    typeof o.context_tr !== "string"
   ) {
     throw new Error("çıktı şemaya uymuyor");
   }
   if (o.summary_tr.trim().length < 50) throw new Error("özet çok kısa");
+  if (o.summary_en.trim().length < 50) throw new Error("İngilizce özet çok kısa");
+  if (!o.title_tr.trim()) throw new Error("Türkçe başlık boş");
 
   // Şema sayıyı garanti eder ama aralığı etmez — sınırla.
   const score = Math.max(-10, Math.min(10, o.hawk_dove_score));
@@ -161,6 +207,10 @@ export function parseScoreOutput(raw: unknown): ScoreResult {
     hawkDoveScore: o.has_policy_signal ? Math.round(score * 10) / 10 : 0,
     scoreRationaleTr: o.score_rationale_tr.trim(),
     hasPolicySignal: o.has_policy_signal,
+    summaryEn: o.summary_en.trim(),
+    scoreRationaleEn: o.score_rationale_en.trim(),
+    titleTr: o.title_tr.trim(),
+    contextTr: o.context_tr.trim(),
   };
 }
 

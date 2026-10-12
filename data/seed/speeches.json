@@ -17,7 +17,11 @@
       "model": "claude-code/opus",
       "promptVersion": "2",
       "scoredAt": "2026-10-12T12:42:35.427Z",
-      "scoredVia": "claude-code"
+      "scoredVia": "claude-code",
+      "titleTr": "Yapay zekâ risklerinin kesiştiği yer",
+      "contextTr": "Avrupa Merkez Bankası Başkanı ve Avrupa Sistemik Risk Kurulu Başkanı Christine Lagarde'ın, Avrupa Sistemik Risk Kurulu'nun Onuncu Yıllık Konferansı'ndaki açılış konuşması, Frankfurt am Main, 1 Ekim 2026.",
+      "summaryEn": "Opening the tenth annual conference of the European Systemic Risk Board (ESRB) in its 15th year, Lagarde recalled that the board was created to take a holistic view of the financial system, drawing on lessons from the global financial crisis and the European debt crisis. She said the growing importance of artificial intelligence is testing this system-wide perspective. She noted that around nine in ten significant euro area banks use generative AI and that most securities firms expect to increase their investment in this area. She touched on the benefits AI can bring for data analysis, risk assessment and efficiency. The text covers only the introductory section and does not address monetary policy.",
+      "scoreRationaleEn": "The speech focuses on financial stability and the use of AI in the financial sector; it contains no statement on interest rates, inflation or the monetary policy stance, so it carries no signal."
     },
     {
       "id": "20261007-data-version-godzilla-versus-kong-fred-takes-ai",
@@ -35,7 +39,11 @@
       "model": "claude-code/opus",
       "promptVersion": "2",
       "scoredAt": "2026-10-12T12:42:35.418Z",
-      "scoredVia": "claude-code"
+      "scoredVia": "claude-code",
+      "titleTr": "Godzilla Kong'a karşı, veri sürümü: FRED yapay zekâyla karşı karşıya",
+      "contextTr": "Federal Rezerv Sistemi Guvernörler Kurulu üyesi Christopher J. Waller'ın, St. Louis Fed'in düzenlediği FRED Con 2026'daki \"Veri dünyasında güven, yapay zekâ ve hikâye anlatıcılığı\" etkinliğindeki konuşması, St. Louis, Missouri, 1 Ekim 2026.",
+      "summaryEn": "Waller described FRED, the St. Louis Fed's economic data platform, as the greatest public good the Fed has created, and traced its development from typewritten bulletins in 1961 to more than 850,000 series today. He stressed that AI makes it easier to access and explain data but brings new risks such as hallucinations, bias and incorrect attribution of sources. He noted that FRED traffic is growing by 150 percent a year and that roughly half of visits now come from AI agents. He announced the FRED MCP Connector, which lets AI systems connect to FRED data, and said Fed Board data will soon be routed through FRED.",
+      "scoreRationaleEn": "The speech focuses on data access, the FRED platform and artificial intelligence; it contains no statement on interest rates, inflation or the monetary policy stance, so it carries no signal."
     },
     {
       "id": "20261007-us-economy-and-monetary-policy",
@@ -53,7 +61,11 @@
       "model": "claude-code/opus",
       "promptVersion": "2",
       "scoredAt": "2026-10-12T12:42:35.427Z",
-      "scoredVia": "claude-code"
+      "scoredVia": "claude-code",
+      "titleTr": "ABD ekonomisi ve para politikası",
+      "contextTr": "Federal Rezerv Sistemi Guvernörler Kurulu Başkan Yardımcısı Philip N. Jefferson'ın, Virginia Üniversitesi Darden İşletme Okulu'ndaki konuşması, Charlottesville, Virginia, 1 Ekim 2026.",
+      "summaryEn": "Jefferson said the US economy has remained resilient despite the energy shock, the AI investment boom and shifts in trade policy, with growth running close to potential and unemployment at 4.1 percent, close to maximum employment. He noted that inflation has been above the 2 percent target for more than five years, that PCE inflation rose to 3.4 percent in August, and that he is concerned energy prices could lead to a lasting increase in inflation. He described the risks to growth and employment as balanced and the risks to inflation as tilted to the upside. He said he supported September's 25 basis point rate hike to keep long-term inflation expectations anchored, that future moves will depend on the data, the outlook and the balance of risks, and that he will keep assessing whether inflation is returning to target fast enough.",
+      "scoreRationaleEn": "Statements that \"inflation has been too high for too long\", that inflation risks are \"to the upside\" and that he is \"committed\" to keeping expectations anchored point to a hawkish stance; extreme scores were avoided because he stressed data dependence and that more time may be needed rather than signalling a further hike outright."
     },
     {
       "id": "20261007-diagnostic-challenges-ecb-monetary-policy",
@@ -71,7 +83,11 @@
       "model": "claude-code/opus",
       "promptVersion": "2",
       "scoredAt": "2026-10-12T12:42:35.419Z",
-      "scoredVia": "claude-code"
+      "scoredVia": "claude-code",
+      "titleTr": "ECB para politikası için teşhis güçlükleri",
+      "contextTr": "Avrupa Merkez Bankası Yönetim Kurulu üyesi Philip R. Lane'in, 9. \"ECB Para Politikası Konferansı 2026: bilim ile uygulama arasında köprü\" etkinliğindeki açılış konuşması, Frankfurt am Main, 5 Ekim 2026.",
+      "summaryEn": "Lane explained that the ECB bases its rate decisions on the inflation outlook, underlying inflation dynamics and the strength of monetary transmission, and said the key diagnostic challenge is to identify how the energy supply shock affects medium-term inflation. He noted that headline inflation rose to 3.8 percent in September while non-energy inflation remained contained at 2.3 percent, and that underlying measures show no lasting upward shift in medium-term inflation. He said the second wave of energy prices since July poses upside risks to inflation and downside risks to growth; on the other hand, fiscal tightening in 2027-28, \"demand destruction\" channels and the marked rise in long-term rates will slow growth and dampen transmission more than projected. He said monetary policy remains in a \"middle ground\" where a measured response is appropriate, that raising the rate from 2.00 to 2.50 percent was prudent, but that there is no pre-set rate path and decisions will be taken meeting by meeting, based on the data.",
+      "scoreRationaleEn": "The emphasis that the second wave of the energy shock carries upside inflation risk and that a \"measured response\" continues to keep inflation in check is mildly hawkish; however, references to demand destruction, long-term rates dampening transmission more than expected and \"no pre-committed path\" limit the appetite for further tightening."
     },
     {
       "id": "20261007-modernizing-financial-regulation-initial-observations-eslr",
@@ -89,7 +105,11 @@
       "model": "claude-code/opus",
       "promptVersion": "2",
       "scoredAt": "2026-10-12T12:42:35.422Z",
-      "scoredVia": "claude-code"
+      "scoredVia": "claude-code",
+      "titleTr": "Finansal düzenlemenin modernleştirilmesi: eSLR'den ilk gözlemler",
+      "contextTr": "Federal Rezerv Sistemi Guvernörler Kurulu'nun Denetimden Sorumlu Başkan Yardımcısı Michelle W. Bowman'ın, Atlantic Council 2026 CEO ve Üst Yönetim Zirvesi'ndeki konuşması, Washington DC, 1 Ekim 2026.",
+      "summaryEn": "Bowman explained that the enhanced supplementary leverage ratio (eSLR) requirement for large banks had become binding and was constraining banks' capacity to intermediate in the Treasury market. She said the recalibration finalised in November 2025 and in effect since April 2026 ties each GSIB's eSLR buffer to its systemic footprint. Early results show dealers' Treasury positions rising from about 600 billion dollars to more than 700 billion dollars, bid-ask spreads narrowing and market functioning improving. She stressed that regulations should be reviewed continuously, based on data, when they do not work as intended.",
+      "scoreRationaleEn": "The speech focuses on bank capital regulation and the functioning of the Treasury market; it contains no statement on the rate path, inflation or the monetary policy stance, so it carries no signal."
     },
     {
       "id": "20261007-monetary-policy-world-overlapping-shocks",
@@ -107,7 +127,11 @@
       "model": "claude-code/opus",
       "promptVersion": "2",
       "scoredAt": "2026-10-12T12:42:35.422Z",
-      "scoredVia": "claude-code"
+      "scoredVia": "claude-code",
+      "titleTr": "Üst üste binen şoklar dünyasında para politikası",
+      "contextTr": "Avrupa Merkez Bankası Yönetim Kurulu üyesi Isabel Schnabel'in, Avrupa Komisyonu, Avrupa Yatırım Bankası ve Avrupa İstikrar Mekanizması'nın ortaklaşa düzenlediği 8. Sermaye Piyasaları Semineri'ndeki konuşması, Lüksemburg, 30 Eylül 2026.",
+      "summaryEn": "Schnabel argued that the view that supply shocks should be \"looked through\" is too simple: whatever the type of shock, the optimal response is to tighten if the projected inflation path rises above target. She said the new energy shock is hitting an economy in which services inflation and unit labour costs are still high, while the AI boom and defence spending are supporting demand. She stressed that oil and gas prices have moved towards the adverse scenario since the projections' cut-off date, implying a larger and more persistent deviation of inflation from target, and that central banks cannot wait for indirect and second-round effects to materialise. She said strong credit dynamics may signal that financial conditions are not yet restrictive and that the natural rate may have risen, while acknowledging that the economy could respond more strongly than expected to the recent tightening.",
+      "scoreRationaleEn": "Statements that \"central banks cannot wait for these effects to materialise\", that energy prices imply a \"larger and more persistent\" deviation of inflation from target and that financial conditions are \"not yet restrictive\" show a clearly hawkish stance open to further tightening; the very hawkish range was not reached because there was no explicit commitment to a hike and she acknowledged transmission could be strong."
     },
     {
       "id": "20261006-supervisory-risk-appetite-efficiency-and-effectiveness",
@@ -125,7 +149,11 @@
       "model": "claude-code/opus",
       "promptVersion": "2",
       "scoredAt": "2026-10-12T18:43:36.764Z",
-      "scoredVia": "claude-code"
+      "scoredVia": "claude-code",
+      "titleTr": "Denetimde risk iştahı, verimlilik ve etkinlik",
+      "contextTr": "Avrupa Merkez Bankası Yönetim Kurulu üyesi ve ECB Denetim Kurulu Başkan Yardımcısı Frank Elderson'ın, BCBS Uluslararası Bankacılık Denetçileri Konferansı'nın \"Yeni finansal ortamda yol bulmak\" panelindeki katkısı, Bali, 30 Eylül 2026.",
+      "summaryEn": "Frank Elderson, Vice-Chair of the ECB's Supervisory Board, said effective supervision in an environment complicated by geopolitical fragmentation, technological change and climate risks rests on three pillars: sharper risk prioritisation, simpler and more efficient supervision, and timely remediation. He said the ECB has consciously raised its supervisory risk appetite through its risk tolerance framework, streamlined guidance documents and shortened approval times. He stressed that the root causes of weaknesses must be addressed in a timely manner, with enforcement where necessary. He argued that strong prudential standards are a foundation for competitiveness rather than an obstacle, and underlined the importance of international standards and cooperation between authorities.",
+      "scoreRationaleEn": "The speech is about banking supervision, simplification and financial stability; inflation is mentioned only as one element of the risk environment and there is no forward-looking statement on interest rate policy. It was scored 0 because it carries no monetary policy signal."
     },
     {
       "id": "20261006-economic-conditions-and-monetary-policy",
@@ -143,7 +171,11 @@
       "model": "claude-code/opus",
       "promptVersion": "2",
       "scoredAt": "2026-10-12T18:43:36.763Z",
-      "scoredVia": "claude-code"
+      "scoredVia": "claude-code",
+      "titleTr": "Ekonomik koşullar ve para politikası",
+      "contextTr": "Federal Rezerv Sistemi Guvernörler Kurulu üyesi Michael S. Barr'ın, Detroit Ekonomi Kulübü'ndeki konuşması, Detroit, Michigan, 29 Eylül 2026.",
+      "summaryEn": "Fed Governor Michael Barr said the US economy has grown solidly and gained momentum in 2026, while the labour market is roughly in balance and unemployment of 4.1 percent is close to maximum employment. He noted that inflation has been above the 2 percent target for five and a half years; with high energy prices and the AI investment wave feeding into prices, progress towards the target has gone off track and he does not see inflation on course to return to 2 percent in a timely way. He added that AI could raise the neutral rate (r*) through higher productivity, but that it is too early to tell. Recalling that the FOMC raised rates unanimously this month, he said that in his baseline further policy adjustments will likely be needed to bring inflation back to target in a timely manner.",
+      "scoreRationaleEn": "Barr says \"inflation is too high\" and, by stating that in his baseline \"further policy adjustments will likely be needed\", clearly opens the door to more rate hikes; his remark that labour market risks have receded reinforces the tightening stance."
     },
     {
       "id": "20261006-resilience-integration-and-competitiveness-building-future-european-banking",
@@ -161,7 +193,11 @@
       "model": "claude-code/opus",
       "promptVersion": "2",
       "scoredAt": "2026-10-12T18:43:36.764Z",
-      "scoredVia": "claude-code"
+      "scoredVia": "claude-code",
+      "titleTr": "Dayanıklılık, entegrasyon ve rekabetçilik: Avrupa bankacılığının geleceğini inşa etmek",
+      "contextTr": "Avrupa Merkez Bankası Başkan Yardımcısı Boris Vujčić'in, Avrupa Sistemik Risk Kurulu'nun (ESRB) onuncu yıllık konferansındaki açılış konuşması, Frankfurt am Main, 2 Ekim 2026.",
+      "summaryEn": "At the ESRB's 15th anniversary conference, Boris Vujčić argued that although post-crisis reforms are being questioned, the strong balance sheets of European banks today are a strategic advantage. He outlined the ECB's simplification proposals, such as reducing capital buffers to two, bringing MREL and TLAC closer together and a simpler regime for small banks. He said capital requirements are not currently a binding constraint on lending and that lowering them is unlikely to increase credit meaningfully. He stressed that the real source of competitiveness is completing the banking union and the capital markets union, and financial integration.",
+      "scoreRationaleEn": "The speech is about macroprudential regulation, capital requirements and financial integration; the normalisation of monetary policy is mentioned only in retrospect and there is no statement on the direction of rates. It was scored 0 because it carries no monetary policy signal."
     },
     {
       "id": "20261006-opening-remarks-community-bank-cyber-workshop",
@@ -179,7 +215,11 @@
       "model": "claude-code/opus",
       "promptVersion": "2",
       "scoredAt": "2026-10-12T18:43:36.763Z",
-      "scoredVia": "claude-code"
+      "scoredVia": "claude-code",
+      "titleTr": "Açılış konuşması: Topluluk Bankaları Siber Çalıştayı",
+      "contextTr": "Federal Rezerv Sistemi Guvernörler Kurulu'nun Denetimden Sorumlu Başkan Yardımcısı Michelle W. Bowman'ın, Topluluk Bankaları Siber Çalıştayı'ndaki (önceden kaydedilmiş video ile) konuşması, Denver, Colorado, 29 Eylül 2026.",
+      "summaryEn": "Opening the 2026 Community Bank Cyber Workshop, Fed Governor Michelle Bowman stressed that many community banks have suffered serious cyber incidents over the past year and highlighted the importance of cyber hygiene. She said AI gives attackers the ability to find vulnerabilities quickly and run sophisticated social engineering campaigns, while also becoming a critical tool for defence. She presented the Financial Stability Board's report on the responsible use of AI and asked small banks for feedback. She said regulators continue to tailor IT examinations to banks' risk profiles.",
+      "scoreRationaleEn": "The speech is solely about cybersecurity and bank supervision; it contains no statement on monetary policy, inflation or the direction of rates. It was scored 0 because it carries no monetary policy signal."
     },
     {
       "id": "20261006-dual-mandate-rural-america",
@@ -197,7 +237,11 @@
       "model": "claude-code/opus",
       "promptVersion": "2",
       "scoredAt": "2026-10-12T18:43:36.763Z",
-      "scoredVia": "claude-code"
+      "scoredVia": "claude-code",
+      "titleTr": "Kırsal Amerika'da çifte görev",
+      "contextTr": "Federal Rezerv Sistemi Guvernörler Kurulu üyesi Lisa D. Cook'un, Richmond Fed'in düzenlediği 2026 Kırsal Amerika'ya Yatırım Konferansı'ndaki konuşması, Asheville, Kuzey Karolina, 30 Eylül 2026.",
+      "summaryEn": "Fed Governor Lisa Cook discussed labour market and inflation dynamics in rural America, saying the national labour market is largely stable and unemployment is historically low. She explained that labour force participation and job creation are lower in rural areas than in cities, and that energy and housing costs weigh more heavily on rural households. She stressed that, rural or urban, inflation has been too high for too long and has been above the 2 percent target for more than five years. Noting that she voted for the 25 basis point hike at the September meeting, she said she is committed to returning inflation to target while preserving the strength of the labour market.",
+      "scoreRationaleEn": "By saying \"inflation has been too high for too long\", Cook puts inflation concerns first and stresses her commitment to returning to target; however, she does not signal further hikes and emphasises protecting the labour market, so the score was kept moderately hawkish."
     },
     {
       "id": "20261005-payments-age-ai-agents",
@@ -215,7 +259,11 @@
       "model": "claude-code/opus",
       "promptVersion": "2",
       "scoredAt": "2026-10-12T18:43:36.762Z",
-      "scoredVia": "claude-code"
+      "scoredVia": "claude-code",
+      "titleTr": "Yapay zekâ ajanları çağında ödemeler",
+      "contextTr": "Federal Rezerv Sistemi Guvernörler Kurulu üyesi Christopher J. Waller'ın, Sibos 2026'daki konuşması, Miami, Florida, 29 Eylül 2026.",
+      "summaryEn": "In his speech at Sibos, Fed Governor Christopher Waller discussed the role of AI in payment systems. He said large language models could make cross-border payments more efficient and secure by reducing false alarms in sanctions screening and anti-money laundering, but that they also increase the risk of cyberattacks. He noted that \"agentic commerce\", in which AI agents make purchases, is at an early stage and that the biggest obstacle is building trust around identity verification, liability and fraud. He stressed that interoperable standards and the choice between open and closed systems could shape the market structure.",
+      "scoreRationaleEn": "The speech is about payment systems and AI agents; it contains no statement on inflation, employment or interest rate policy. It was scored 0 because it carries no monetary policy signal."
     },
     {
       "id": "20261005-unwavering-dedication",
@@ -232,7 +280,11 @@
       "model": "claude-code/opus",
       "promptVersion": "2",
       "scoredAt": "2026-10-12T18:49:34.721Z",
-      "scoredVia": "claude-code"
+      "scoredVia": "claude-code",
+      "titleTr": "Sarsılmaz bağlılık",
+      "contextTr": "New York Federal Rezerv Bankası Başkanı ve İcra Kurulu Başkanı John C. Williams'ın, Buffalo Üniversitesi'ndeki konuşması, Buffalo, New York, 29 Eylül 2026.",
+      "summaryEn": "New York Fed President Williams said the US economy has held up well despite major shocks, the labour market remains strong and risks to the employment goal have diminished. He stressed that inflation at around 3.7 percent is clearly too high and that risks to price stability have increased because of energy prices linked to the Middle East and demand pressure from AI investment. Recalling that the FOMC raised the policy rate by a quarter point to a 3.75-4 percent range in September, Williams said returning inflation to 2 percent is job number one. He said there is no need to rush, but that one more rate hike towards the end of the year may be appropriate if the economy evolves in line with his forecast.",
+      "scoreRationaleEn": "Williams finds inflation \"clearly too high\", says inflation is the priority and implies further tightening by saying \"one more hike towards the end of the year may be appropriate\"; the emphasis on \"no need to rush\" and data dependence keeps the score one notch below the most hawkish band."
     },
     {
       "id": "20260930-digital-innovation-hindrance-or-booster-banks-business-models",
@@ -250,7 +302,11 @@
       "scoredAt": "2026-10-03T07:20:50.398Z",
       "scoredVia": "claude-code",
       "contextEn": "Keynote speech by Prof Claudia Buch, Chair of the Supervisory Board of the European Central Bank, at the, annual Foreign Bankers’ Association of the Netherlands conference, Amsterdam, 22 September 2026.",
-      "textLicense": "ecb"
+      "textLicense": "ecb",
+      "titleTr": "Dijital inovasyon: bankaların iş modelleri için engel mi, itici güç mü?",
+      "contextTr": "Avrupa Merkez Bankası Denetim Kurulu Başkanı Prof. Claudia Buch'un, Hollanda Yabancı Bankacılar Derneği'nin yıllık konferansındaki açılış konuşması, Amsterdam, 22 Eylül 2026.",
+      "summaryEn": "ECB Supervisory Board Chair Claudia Buch discussed how digital innovation (AI, tokenisation, cloud services, quantum computing) is transforming banks' business models and creating new risks. She said online banking can amplify extreme deposit outflows to some extent, but that there is no evidence it increases deposit volatility in normal times. She highlighted tokenised deposits and the importance of preserving settlement in central bank money through the Eurosystem's Pontes and Appia projects. She said supervisors expect banks to have long-term digitalisation strategies, strong governance and adequate budgets, and stressed that loosening prudential standards would weaken banks' resilience.",
+      "scoreRationaleEn": "The speech focuses entirely on banking supervision, digital transformation and financial stability; it contains no forward-looking statement on rates, inflation or the monetary policy stance, so it was scored 0 and marked as carrying no policy signal."
     },
     {
       "id": "20260930-hearing-committee-economic-and-monetary-affairs-european-parliament",
@@ -268,7 +324,11 @@
       "scoredAt": "2026-10-03T07:25:48.675Z",
       "scoredVia": "claude-code",
       "contextEn": "Speech by Ms Christine Lagarde, President of the European Central Bank, at the Hearing of the Committee on Economic and Monetary Affairs of the European Parliament, Brussels, 28 September 2026.",
-      "textLicense": "ecb"
+      "textLicense": "ecb",
+      "titleTr": "Avrupa Parlamentosu Ekonomik ve Parasal İşler Komitesi oturumu",
+      "contextTr": "Avrupa Merkez Bankası Başkanı Christine Lagarde'ın, Avrupa Parlamentosu Ekonomik ve Parasal İşler Komitesi oturumundaki konuşması, Brüksel, 28 Eylül 2026.",
+      "summaryEn": "At the European Parliament hearing, Lagarde said the euro area economy has remained resilient despite the energy shock, with headline inflation rising to 3.2 percent in August and core inflation easing to 2.4 percent. She explained that the ECB raised policy rates by 25 basis points at its September meeting, justifying the move by its commitment to inflation stabilising at the 2 percent target over the medium term. She said the inflation outlook has risen but there is not yet evidence that energy prices are feeding into wages, and that higher long-term rates will slow growth, stressing that policy remains in a \"middle ground\". In the second half of the speech she discussed the possible effects of AI on inflation through productivity, investment and the labour market, and the steps Europe must take for AI sovereignty.",
+      "scoreRationaleEn": "Measured tightening is defended on the grounds that the shock is \"too large to look through\" and inflation risks are seen as tilted to the upside; however, the absence of pass-through to wages and the emphasis that higher long-term rates will dampen transmission limit expectations of aggressive tightening."
     },
     {
       "id": "20260929-update-ai-and-economy",
@@ -286,7 +346,11 @@
       "scoredAt": "2026-10-03T07:20:50.398Z",
       "scoredVia": "claude-code",
       "contextEn": "Opening keynote by Ms Lisa D Cook, Member of the Board of Governors of the Federal Reserve System, at the Oakland Tech Week, cohosted by the Kapor Center, Oakland, California, 28 September 2026.",
-      "textLicense": "frb-public-domain"
+      "textLicense": "frb-public-domain",
+      "titleTr": "Yapay zekâ ve ekonomi üzerine güncel değerlendirme",
+      "contextTr": "Federal Rezerv Sistemi Guvernörler Kurulu üyesi Lisa D. Cook'un, Kapor Center'ın ortak ev sahipliğinde düzenlenen Oakland Tech Week'teki açılış konuşması, Oakland, Kaliforniya, 28 Eylül 2026.",
+      "summaryEn": "Fed Board member Lisa Cook assessed the effects of AI on inflation and employment, saying AI investment is creating inflationary pressure in the short term and delaying the return to the 2 percent target. Pointing to rising prices for electricity, water and core goods, she said price pressures risk broadening, and that the moderate disinflation from productivity gains will not arrive in time to offset the pressure at the end of this year. She said she supported the 25 basis point rate hike at the September meeting, that inflation has been too high for too long and that she expects pressure from AI investment and oil prices to persist in the coming months. Stressing that the labour market can withstand higher rates, she said she will assess what policy rate may be needed to bring inflation back to target.",
+      "scoreRationaleEn": "By saying inflation has been \"too high for too long\", that she expects pressure to persist and that the labour market can withstand a rate increase, Cook opens the door to further tightening; however, because she ties future adjustments to the data and makes no explicit commitment to a hike, the score was not raised into the \"very hawkish\" range."
     },
     {
       "id": "20260929-quantitative-tightening-next-chapter",
@@ -303,7 +367,11 @@
       "promptVersion": "2",
       "scoredAt": "2026-10-03T07:20:50.397Z",
       "scoredVia": "claude-code",
-      "contextEn": "Speech by Sir David Ramsden, Deputy Governor for Markets and Banking of the Bank of England, at the Bank of England, co-hosted by the Money, Macro and Finance Society, London, 28 September 2026."
+      "contextEn": "Speech by Sir David Ramsden, Deputy Governor for Markets and Banking of the Bank of England, at the Bank of England, co-hosted by the Money, Macro and Finance Society, London, 28 September 2026.",
+      "titleTr": "Parasal sıkılaştırma (QT): bir sonraki bölüm",
+      "contextTr": "İngiltere Merkez Bankası Piyasalar ve Bankacılıktan Sorumlu Başkan Yardımcısı Sir David Ramsden'ın, Money, Macro and Finance Society'nin ortak ev sahipliğinde İngiltere Merkez Bankası'nda yaptığı konuşma, Londra, 28 Eylül 2026.",
+      "summaryEn": "BoE Deputy Governor Dave Ramsden explained the MPC's decision in September 2026 to move from an annual approach to QT to a multi-year path: running down the stock of gilts held for monetary policy purposes entirely by the end of 2034 through annual sales and redemptions of 20 billion pounds, holding 120 billion pounds as backing for banknotes, and considering sales to the Treasury rather than the market. He stressed that Bank Rate remains the active policy tool and that the effect of QT on yields is relatively limited. He said he supported holding Bank Rate at 3.75 percent; having expected cuts before the Middle East conflict, the current holds effectively amount to tightening. He said risks to the inflation outlook are skewed to the upside and that, if upward pressures continue to build, a case for raising rates could emerge.",
+      "scoreRationaleEn": "Ramsden gives a hawkish direction by saying inflation risks are \"skewed to the upside\" and that, if pressures persist, \"there could be a case for raising Bank Rate\"; however, he presents this as a conditional possibility and supports holding for now, so the score was kept moderately hawkish."
     },
     {
       "id": "20260928-discount-window-modernization-and-treasury-market-functioning",
@@ -321,7 +389,11 @@
       "scoredAt": "2026-10-03T07:20:50.397Z",
       "scoredVia": "claude-code",
       "contextEn": "Speech by Mr Philip N Jefferson, Vice Chair of the Board of Governors of the Federal Reserve System, at the 2026 US Treasury Market Conference, organised by the Federal Reserve Bank of New York, New York City, 22 September 2026.",
-      "textLicense": "frb-public-domain"
+      "textLicense": "frb-public-domain",
+      "titleTr": "İskonto penceresinin modernizasyonu ve Hazine piyasasının işleyişi",
+      "contextTr": "Federal Rezerv Sistemi Guvernörler Kurulu Başkan Yardımcısı Philip N. Jefferson'ın, New York Fed'in düzenlediği 2026 ABD Hazine Piyasası Konferansı'ndaki konuşması, New York, 22 Eylül 2026.",
+      "summaryEn": "Fed Vice Chair Philip Jefferson discussed modernising the discount window along three dimensions: standardising business processes, automation through the Discount Window Direct portal and collateral interoperability with the Federal Home Loan Banks. He said more than 60 percent of discount window loan requests are now made through this portal. He stressed that accepting Treasury securities as same-day collateral supports the functioning of the Treasury market by reducing forced sales in times of stress. He said the discount window eases temporary pressures in money markets and complements policy implementation, but that there is no room for complacency.",
+      "scoreRationaleEn": "The speech focuses on financial stability and liquidity topics such as the operational modernisation of the discount window and Treasury market functioning; there is no forward-looking statement on the rate path or the inflation outlook, so it was scored 0 and marked as carrying no policy signal."
     },
     {
       "id": "20260924-banking-regulators-supervisors-and-their-watchers",
@@ -339,7 +411,11 @@
       "scoredAt": "2026-10-03T07:20:50.396Z",
       "scoredVia": "claude-code",
       "contextEn": "Keynote speech by Prof Claudia Buch, Chair of the Supervisory Board of the European Central Bank, at the Watching European Financial Market Regulation and Supervision Conference, organised by Goethe University Frankfurt, Frankfurt am Main, 15 September 2026.",
-      "textLicense": "ecb"
+      "textLicense": "ecb",
+      "titleTr": "Bankacılık düzenleyicileri, denetçileri ve onları izleyenler",
+      "contextTr": "Avrupa Merkez Bankası Denetim Kurulu Başkanı Prof. Claudia Buch'un, Frankfurt Goethe Üniversitesi'nin düzenlediği Avrupa Finansal Piyasa Düzenlemesi ve Denetimini İzleme Konferansı'ndaki açılış konuşması, Frankfurt am Main, 15 Eylül 2026.",
+      "summaryEn": "ECB Supervisory Board Chair Claudia Buch argued that, for the accountability of banking regulation and supervision, a community of \"regulation and supervision watchers\" similar to central bank watchers should be developed. She called for regulations to be assessed comprehensively, not only by their direct effects on banks but also by their effects on societal goals such as growth, integration and financial stability. Drawing on FSB and Basel Committee evaluations, she said capital reforms have increased resilience without disrupting credit supply, while permanently lowering capital requirements has not boosted lending. She called for strengthening evaluation frameworks, working-paper repositories and infrastructure for access to granular data, and warned of the risk of loosening standards for short-term gains.",
+      "scoreRationaleEn": "The speech addresses institutional and prudential topics such as banking supervision, capital requirements and accountability; it contains no forward-looking statement on the monetary policy stance, so it was scored 0 and marked as carrying no policy signal."
     },
     {
       "id": "20260924-new-age-capital-growth-sovereignty-and-ai",
@@ -357,7 +433,11 @@
       "scoredAt": "2026-10-03T07:25:48.675Z",
       "scoredVia": "claude-code",
       "contextEn": "Speech by Ms Christine Lagarde, President of the European Central Bank, at “Hofburg im Dialog – economy, europe, resilience”, Vienna, 14 September 2026.",
-      "textLicense": "ecb"
+      "textLicense": "ecb",
+      "titleTr": "Sermayenin yeni çağı: büyüme, egemenlik ve yapay zekâ",
+      "contextTr": "Avrupa Merkez Bankası Başkanı Christine Lagarde'ın, \"Hofburg im Dialog – ekonomi, Avrupa, dayanıklılık\" etkinliğindeki konuşması, Viyana, 14 Eylül 2026.",
+      "summaryEn": "In her Vienna speech, Lagarde drew a parallel between the pre-1873 \"founders' era\" and today's AI investment wave, stressing that European savings are largely flowing to US technology companies. She argued that AI is the best opportunity for productivity growth in the face of an ageing population and rising strategic investment needs, but that relying solely on imports will not be enough because of data, access and the technology frontier. She noted that AI borrowing in the US could also push up euro area long-term rates and that a possible market correction could affect Europe. She said Europe needs to deliver the savings and investments union for data centre capacity, open models and equity financing.",
+      "scoreRationaleEn": "The speech is a structural assessment of AI, capital markets and technological sovereignty; it contains no forward-looking statement on the rate path or the monetary policy stance, so it carries no signal."
     },
     {
       "id": "20260922-europe-seen-normandy",
@@ -375,7 +455,11 @@
       "scoredAt": "2026-10-03T07:25:48.675Z",
       "scoredVia": "claude-code",
       "contextEn": "Speech by Ms Christine Lagarde, President of the European Central Bank, at the Fête de la Pomme, Épreville-en-Lieuvin, 12 September 2026.",
-      "textLicense": "ecb"
+      "textLicense": "ecb",
+      "titleTr": "Normandiya'dan Avrupa'ya bakış",
+      "contextTr": "Avrupa Merkez Bankası Başkanı Christine Lagarde'ın, Elma Festivali'ndeki (Fête de la Pomme) konuşması, Épreville-en-Lieuvin, 12 Eylül 2026.",
+      "summaryEn": "At the Apple Festival in Normandy, Lagarde explained how European integration has turned regional strengths into global success through the large single market, protection of geographical indications and structural funds. She pointed out that, alongside external pressures such as US tariffs, the energy shock and the conflict in the Middle East, fragmentation in services and capital markets is limiting growth. She identified interconnecting energy grids and channelling savings into investment in Europe as priorities. She recalled in general terms that the ECB will keep inflation at 2 percent over time and prevent shocks from turning into persistent inflation, and highlighted the digital euro's contribution to sovereignty in payments.",
+      "scoreRationaleEn": "The speech is about regional development, the single market and sovereignty in payments; it contains only a general commitment to the 2 percent target and gives no forward-looking signal on the direction of rates."
     },
     {
       "id": "20260922-future-euro-cash-trusted-today-designed-tomorrow",
@@ -393,7 +477,11 @@
       "scoredAt": "2026-10-03T07:25:48.675Z",
       "scoredVia": "claude-code",
       "contextEn": "Keynote speech by Mr Piero Cipollone, Member of the Executive Board of the European Central Bank, at the House of the Euro, Brussels, 14 September 2026.",
-      "textLicense": "ecb"
+      "textLicense": "ecb",
+      "titleTr": "Euro nakdinin geleceği: bugün güvenilir, yarın için tasarlanmış",
+      "contextTr": "Avrupa Merkez Bankası Yönetim Kurulu üyesi Piero Cipollone'nin, House of the Euro'daki açılış konuşması, Brüksel, 14 Eylül 2026.",
+      "summaryEn": "In his Brussels speech, marking 25 years of euro cash, Cipollone stressed that cash remains indispensable for financial inclusion, privacy, freedom of choice and resilience to disruptions. He welcomed the regulation proposal adopted by the European Parliament and the Council that strengthens the legal tender status of cash and the obligation to accept it. He said euro banknotes are being redesigned for security, sustainability and to connect with citizens, that ten design proposals have been put to a public survey and that a final decision will be taken towards the end of the year. He said cash and the digital euro will complement each other and strengthen monetary sovereignty.",
+      "scoreRationaleEn": "The speech focuses on institutional and payment system topics such as cash, banknote design and the digital euro; it contains no statement on the monetary policy stance, so it carries no signal."
     },
     {
       "id": "20260922-opening-statement-house-representatives-standing-committee-economics",
@@ -411,7 +499,11 @@
       "scoredAt": "2026-10-03T07:25:48.675Z",
       "scoredVia": "claude-code",
       "contextEn": "Opening statement by Ms Michele Bullock, Governor of the Reserve Bank of Australia, to the House of Representatives Standing Committee on Economics, Canberra, 18 September 2026.",
-      "textLicense": "cc-by-4.0"
+      "textLicense": "cc-by-4.0",
+      "titleTr": "Açılış konuşması: Temsilciler Meclisi Daimi Ekonomi Komitesi",
+      "contextTr": "Avustralya Merkez Bankası Başkanı Michele Bullock'un, Temsilciler Meclisi Daimi Ekonomi Komitesi'ne yaptığı açılış konuşması, Canberra, 18 Eylül 2026.",
+      "summaryEn": "In her opening statement to the House of Representatives Economics Committee, Bullock said the RBA has raised the policy rate by a total of 75 basis points this year and that inflation is running at around 3.5 percent, above target. She said the Middle East conflict, the AI boom and climate events have increased global cost pressures and that upside inflation risks have begun to materialise. She stressed that a stronger policy response may be needed if inflation becomes embedded in price- and wage-setting, and that the key question at the next meeting will be whether the tightening so far is sufficient. While acknowledging the softening housing market as a downside risk, she said bringing inflation down is imperative; the rest of the statement covered payment system reforms and cash distribution.",
+      "scoreRationaleEn": "Statements that \"inflation is too high\", that upside risks have materialised and that a \"stronger policy response\" may be needed if inflation becomes persistent, together with questioning whether current tightening is sufficient, keep the possibility of further hikes open; the reference to slowing growth and housing risk keeps the score below the most extreme level."
     },
     {
       "id": "20260921-economic-activity-prices-and-monetary-policy-japan",
@@ -429,7 +521,11 @@
       "scoredAt": "2026-10-03T07:25:48.674Z",
       "scoredVia": "claude-code",
       "contextEn": "Speech by Mr Kazuyuki Masu, Member of the Policy Board of the Bank of Japan, at a meeting with local leaders, Fukui, 10 September 2026.",
-      "textLicense": "boj"
+      "textLicense": "boj",
+      "titleTr": "Japonya'da ekonomik faaliyet, fiyatlar ve para politikası",
+      "contextTr": "Japonya Merkez Bankası Politika Kurulu üyesi Kazuyuki Masu'nun, yerel yöneticilerle toplantıdaki konuşması, Fukui, 10 Eylül 2026.",
+      "summaryEn": "In his speech in Fukui, BoJ Policy Board member Masu said developments in Iran and the closure of the Strait of Hormuz have pushed up oil and chemical prices, and that distribution costs, personnel expenses and food prices could create more persistent inflationary pressure. He said Japan has fully exited deflation, underlying inflation is very close to the 2 percent target and negative real interest rates should be eliminated as soon as possible. He said the policy rate (1.0 percent) remains below the neutral rate range (1.1-2.5 percent) and that he is convinced the rate needs to be raised firmly into this range to complete normalisation. He said the Bank will continue raising rates, judging the timing and pace in light of oil prices, AI-related demand and exchange rate developments.",
+      "scoreRationaleEn": "The speaker explicitly argues that negative real rates should be eliminated \"as soon as possible\" and that the rate should be raised \"firmly into\" the neutral range, supporting further hikes; his note that data must be examined more carefully as rates approach neutral keeps the score below the most extreme level."
     },
     {
       "id": "20260916-economic-activity-prices-and-monetary-policy-japan",
@@ -447,7 +543,11 @@
       "scoredAt": "2026-10-03T07:26:34.647Z",
       "scoredVia": "claude-code",
       "contextEn": "Speech by Mr Hajime Takata, Member of the Policy Board of the Bank of Japan, at a meeting with local leaders, Sapporo, 2 September 2026.",
-      "textLicense": "boj"
+      "textLicense": "boj",
+      "titleTr": "Japonya'da ekonomik faaliyet, fiyatlar ve para politikası",
+      "contextTr": "Japonya Merkez Bankası Politika Kurulu üyesi Hajime Takata'nın, yerel yöneticilerle toplantıdaki konuşması, Sapporo, 2 Eylül 2026.",
+      "summaryEn": "BoJ Policy Board member Hajime Takata said that, despite the rise in oil prices stemming from the Middle East, there is no marked slowdown in Japan's economy, wage growth remains strong, and rising producer prices are passing through to consumer prices, posing upside risks to inflation. Takata argued that 2026 marks a \"regime change\" in line with the global rate-hiking cycle and that rate hikes should no longer come at a fixed pace but in an agile, data-dependent way. Recalling that he proposed raising the policy rate to 1.25 percent at the July meeting, he stressed that the real interest rate is the lowest in the world and that the policy rate should be brought closer to the neutral rate. He said the Bank should move away from its current stance of supporting inflation and show the market its determination to prevent prices from overshooting the target. On reducing JGB purchases, he supported a cautious and gradual approach to preserve market functioning.",
+      "scoreRationaleEn": "Takata discloses that he proposed a rate hike in July, says the rate should be brought closer to neutral through \"agile\" hikes and that the Bank should show its determination to prevent prices from overshooting the target; this is a clear tightening signal."
     },
     {
       "id": "20260916-economic-outlook-and-some-comments-my-policy-communication",
@@ -465,7 +565,11 @@
       "scoredAt": "2026-10-03T07:26:34.648Z",
       "scoredVia": "claude-code",
       "contextEn": "Speech by Mr Christopher J Waller, Member of the Board of Governors of the Federal Reserve System, at Reuters NEXT Newsmaker Interview, Washington DC, 3 September 2026.",
-      "textLicense": "frb-public-domain"
+      "textLicense": "frb-public-domain",
+      "titleTr": "Ekonomik görünüm ve politika iletişimime dair bazı notlar",
+      "contextTr": "Federal Rezerv Sistemi Guvernörler Kurulu üyesi Christopher J. Waller'ın, Reuters NEXT Newsmaker Söyleşisi'ndeki konuşması, Washington DC, 3 Eylül 2026.",
+      "summaryEn": "Fed Governor Christopher Waller said the economy and the labour market are holding up well, but that inflation has been well above the 2 percent target for five and a half years. He found the decline in three-month core inflation from 4.76 percent in February to 3.05 percent encouraging, but said he sees upside risks from energy prices, AI-driven technology goods prices and possible tariff increases. He said he would support holding rates if the August data show disinflation continuing, but would consider a rate hike if inflation comes in high. He stressed that current policy is only mildly restricting demand and that it would not take a big acceleration in inflation to push him towards tightening. In the final part of the speech he explained the difference between conditional \"reaction function\" communication and forward guidance.",
+      "scoreRationaleEn": "The only options on Waller's table are holding or raising rates; saying policy is \"only mildly restrictive\" and that even a small pickup in inflation could push him to tighten points to a hawkish stance resistant to easing. His openness to holding if disinflation continues keeps the score below the very hawkish zone."
     },
     {
       "id": "20260916-bank-resilience-and-sustainable-growth-two-sides-same-coin",
@@ -483,7 +587,11 @@
       "scoredAt": "2026-10-03T07:26:34.647Z",
       "scoredVia": "claude-code",
       "contextEn": "Contribution by Prof Claudia Buch, Chair of the Supervisory Board of the European Central Bank, at the Bruegel Annual Meetings panel “Future-proofing European banking”, Brussels, 2 September 2026.",
-      "textLicense": "ecb"
+      "textLicense": "ecb",
+      "titleTr": "Banka dayanıklılığı ve sürdürülebilir büyüme: aynı madalyonun iki yüzü",
+      "contextTr": "Avrupa Merkez Bankası Denetim Kurulu Başkanı Prof. Claudia Buch'un, Bruegel Yıllık Toplantıları'nın \"Avrupa bankacılığını geleceğe hazırlamak\" panelindeki katkısı, Brüksel, 2 Eylül 2026.",
+      "summaryEn": "ECB Supervisory Board Chair Claudia Buch said the European banking sector has become much more resilient over the past decade, but that reforms that increase market integration and complete the banking union are needed to make the sector future-proof. She stressed that a common European deposit insurance scheme would support cross-border integration and weaken the bank-sovereign nexus. She said loosening capital requirements should not be seen as a growth strategy and that, with a CET1 ratio of around 16 percent, capital is not a binding constraint on credit supply. She also described steps to simplify supervision, such as reducing supervisory guidance, halving the reporting burden in stress tests and risk-based processes.",
+      "scoreRationaleEn": "The speech focuses entirely on banking supervision, capital regulation and the banking union; it contains no monetary policy signal on the rate path or the inflation outlook, so it was scored 0."
     },
     {
       "id": "20260916-institutional-form-independent-central-banks-history-contemporary-challenges",
@@ -500,7 +608,11 @@
       "promptVersion": "2",
       "scoredAt": "2026-10-03T07:26:34.648Z",
       "scoredVia": "claude-code",
-      "contextEn": "Speech by Mr Andrew Bailey, Governor of the Bank of England, at the LSE TRIUM Anniversary Conference, London, 4 September 2026."
+      "contextEn": "Speech by Mr Andrew Bailey, Governor of the Bank of England, at the LSE TRIUM Anniversary Conference, London, 4 September 2026.",
+      "titleTr": "Bağımsız merkez bankalarının kurumsal yapısı: tarihten günümüzün zorluklarına",
+      "contextTr": "İngiltere Merkez Bankası Başkanı Andrew Bailey'nin, LSE TRIUM Yıl Dönümü Konferansı'ndaki konuşması, Londra, 4 Eylül 2026.",
+      "summaryEn": "BoE Governor Andrew Bailey examined the institutional legitimacy of independent central banks, starting from the intellectual traditions of thinkers such as Montesquieu, Locke and Hume. He argued that monetary and financial stability are public goods belonging to society as a whole, and that central bank independence serves to protect these goods from short-term political pressures. He stressed that the legitimacy of independence derives from Parliament's delegation of authority and from accountability. Noting that central banks are criticised both for being too close to financial circles and for over-regulating, and that populist movements pose a separate challenge, he highlighted the importance of transparency and communication with the public.",
+      "scoreRationaleEn": "The speech is about the historical and institutional foundations of central bank independence; it contains no forward-looking statement on rates, the inflation outlook or the policy path, so it was scored 0."
     },
     {
       "id": "20260916-listening-households-expectations-behaviour-and-monetary-policy",
@@ -518,7 +630,11 @@
       "model": "claude-code/opus",
       "promptVersion": "2",
       "scoredAt": "2026-10-12T18:49:34.720Z",
-      "scoredVia": "claude-code"
+      "scoredVia": "claude-code",
+      "titleTr": "Hanehalkını dinlemek: beklentiler, davranış ve para politikası",
+      "contextTr": "Avrupa Merkez Bankası Başkan Yardımcısı Boris Vujčić'in, ESMT Berlin'de (European School of Management and Technology) Profesör Michael Weber'e verilen Alexander von Humboldt Profesörlüğü'nün açılışındaki konuşması, Berlin, 1 Eylül 2026.",
+      "summaryEn": "At the inauguration of Michael Weber's professorship, ECB Vice-President Vujčić explained how household expectations are formed and why this matters for monetary policy transmission. He said that, unlike professional forecasters, households form expectations with selective attention, looking especially at salient prices such as food and fuel, and that the ECB's Consumer Expectations Survey helps track how shocks are perceived, how uncertainty affects spending and how monetary tightening is transmitted differently through household balance sheets. He stressed that communication is part of policy transmission, that simple messages about the target increase credibility and that trust is ultimately earned through the central bank's performance. The speech ended with the importance of safeguarding survey data quality.",
+      "scoreRationaleEn": "The speech is academic in nature, covering expectations measurement, survey methodology and central bank communication; it contains no forward-looking statement on the rate path or the policy stance, so it carries no monetary policy signal."
     },
     {
       "id": "r260813h",
@@ -536,7 +652,11 @@
       "scoredAt": "2026-08-25T19:16:08.566Z",
       "scoredVia": "session",
       "contextEn": "Speech by Ms Lisa D Cook, Member of the Board of Governors of the Federal Reserve System, at the 2026 Economic Luncheon of the Anchorage Economic Development Corporation, Anchorage, Alaska, 5 August 2026.",
-      "textLicense": "frb-public-domain"
+      "textLicense": "frb-public-domain",
+      "titleTr": "ABD ve Alaska ekonomilerinin görünümü",
+      "contextTr": "Federal Rezerv Sistemi Guvernörler Kurulu üyesi Lisa D. Cook'un, Anchorage Ekonomik Kalkınma Kurumu'nun 2026 Ekonomi Öğle Yemeği'ndeki konuşması, Anchorage, Alaska, 5 Ağustos 2026.",
+      "summaryEn": "Cook finds the US economy resilient and growing at a solid pace, but says inflation remains stubbornly high and has exceeded the target for five years. In June, targeted PCE inflation was 3.7 percent year on year and core 3.3 percent, almost twice the target. She cites energy prices linked to the Middle East and the pressure that AI infrastructure investment is putting on chip, software and electricity prices as two new sources, and says the balance of risks has shifted towards inflation. She explains that she supports holding rates because three disinflationary forces are at work: tariff effects fading, oil falling back and AI-driven pressure easing. However, stressing the risk that five years of above-target inflation become embedded in pricing and wage behaviour, she says that in another environment one could afford to wait, but that this environment does not allow that luxury.",
+      "scoreRationaleEn": "The statements \"I am prepared to act by raising rates if needed\" and \"if I do not see signs of disinflation soon, I am prepared to act\" signal a clearly hawkish stance; on the other hand, listing three disinflationary forces, saying it \"may not be necessary\" and supporting a hold keep the score away from the top band."
     },
     {
       "id": "r260813c",
@@ -555,7 +675,11 @@
       "scoredVia": "session",
       "textIsExcerpt": true,
       "contextEn": "Dinner speech by Philip R. Lane, Member of the Executive Board of the European Central Bank, at the closing conference of the European System of Central Banks Research Network on Challenges for Monetary Policy Transmission in a Changing World (ChaMP), Rome, 6 July 2026.",
-      "textLicense": "ecb"
+      "textLicense": "ecb",
+      "titleTr": "Yapay zekâ ve para politikası",
+      "contextTr": "Avrupa Merkez Bankası Yönetim Kurulu üyesi Philip R. Lane'in, Avrupa Merkez Bankaları Sistemi'nin \"Değişen Dünyada Para Politikası Aktarımının Zorlukları\" (ChaMP) araştırma ağının kapanış konferansındaki akşam yemeği konuşması, Roma, 6 Temmuz 2026.",
+      "summaryEn": "In this speech at the closing dinner of the ChaMP research network, Lane discusses in theoretical terms how AI affects the monetary policy stance. He says a natural starting point is to treat AI as a shock that permanently raises productivity, and that if households and firms quickly internalise this permanence, inflationary pressure could arise through the demand channel at the start of the transition. However, he argues that this is unrealistic: because of habit formation and individual income uncertainty, spending will adjust slowly, in which case the upfront inflationary effect will be largely muted. (BIS publishes only the introductory section of this speech.)",
+      "scoreRationaleEn": "It discusses the inflationary effect of AI in theoretical terms and argues that the upfront effect will be weak; however, it contains no forward-looking statement on the ECB's current rate stance."
     },
     {
       "id": "r260813a",
@@ -574,7 +698,11 @@
       "scoredVia": "session",
       "textIsExcerpt": true,
       "contextEn": "Speech by Ms Michele Bullock, Governor of the Reserve Bank of Australia, at the Anika Foundation Fundraising Lunch, Sydney, 28 July 2026.",
-      "textLicense": "cc-by-4.0"
+      "textLicense": "cc-by-4.0",
+      "titleTr": "Şoklar çağında para politikası",
+      "contextTr": "Avustralya Merkez Bankası Başkanı Michele Bullock'un, Anika Vakfı Bağış Öğle Yemeği'ndeki konuşması, Sidney, 28 Temmuz 2026.",
+      "summaryEn": "Bullock says the defining feature of recent years has been supply shocks becoming more frequent and more powerful: first the pandemic, then the energy price spike triggered by the war in Ukraine, and now the Middle East conflict, severe weather events and ongoing trade tensions. She notes that the outlook can change quickly and that new uncertainties can emerge as old risks fade. She says she will compare the impact of these developments on Australia with the oil shocks of the 1970s, and that while the world has become more shock-prone, the economy is more resilient than in the past, thanks in part to central banks' credible inflation targets. (BIS publishes only the introductory section of this speech.)",
+      "scoreRationaleEn": "The available text sets out the framework of supply shocks and describes how credible inflation targeting contributes to resilience; it contains no statement on the RBA's current rate stance."
     },
     {
       "id": "r260813d",
@@ -593,7 +721,11 @@
       "scoredVia": "session",
       "textIsExcerpt": true,
       "contextEn": "Lecture by Mr Piero Cipollone, Member of the Executive Board of the European Central Bank, at the annual meeting of the Federation of Italian Cooperative Credit Banks (Federcasse), Rome, 17 July 2026.",
-      "textLicense": "ecb"
+      "textLicense": "ecb",
+      "titleTr": "Dijital euronun özündeki kooperatif ruhu",
+      "contextTr": "Avrupa Merkez Bankası Yönetim Kurulu üyesi Piero Cipollone'nin, İtalyan Kooperatif Kredi Bankaları Federasyonu'nun (Federcasse) yıllık toplantısındaki konferansı, Roma, 17 Temmuz 2026.",
+      "summaryEn": "Cipollone describes the common ground between the digital euro and cooperative banking. He recalls that money is the product of a social consensus, that it derives its value from the confidence that it will also be accepted tomorrow, and that this consensus is guaranteed by law. He stresses that the legal tender status of central bank money is the anchor of the monetary system and that trust in other forms of money rests on their convertibility at par into central bank money. Using the example of Italy's first cooperative bank, founded in 1883, he describes how the model based on mutual trust spread. (BIS publishes only the introductory section of this speech.)",
+      "scoreRationaleEn": "The speech is about the digital euro and payment systems; it contains no signal on the monetary policy stance."
     },
     {
       "id": "r260805c",
@@ -611,7 +743,11 @@
       "scoredVia": "session",
       "hasPolicySignal": false,
       "contextEn": "Opening remarks (virtual) by Ms Michelle W Bowman, Vice Chair for Supervision of the Board of Governors of the Federal Reserve System, at the Financial Stability Board Virtual Outreach Event, 7 July 2026.",
-      "textLicense": "frb-public-domain"
+      "textLicense": "frb-public-domain",
+      "titleTr": "Yapay zekâ için sağlam uygulamalar üzerine açılış konuşması",
+      "contextTr": "Federal Rezerv Sistemi Guvernörler Kurulu'nun Denetimden Sorumlu Başkan Yardımcısı Michelle W. Bowman'ın, Finansal İstikrar Kurulu'nun Sanal Bilgilendirme Etkinliği'ndeki (çevrim içi) açılış konuşması, 7 Temmuz 2026.",
+      "summaryEn": "Bowman introduces the FSB's consultation report on the responsible use of AI in financial institutions. She says the report stresses that supervisory intensity should be set according to the use case in which institutions deploy AI and how critically they rely on it. She argues that low-risk uses should be handled with a lighter supervisory touch and that requirements designed for large institutions should not be applied unchanged to small ones. She says the report will be submitted to the US G-20 presidency at the end of the year.",
+      "scoreRationaleEn": "The speech is about AI supervision and the regulatory framework; it contains no signal on the monetary policy stance."
     },
     {
       "id": "r260730o",
@@ -629,7 +765,11 @@
       "scoredVia": "session",
       "hasPolicySignal": false,
       "contextEn": "Speech (via pre-recorded video) by Ms Michelle W Bowman, Vice Chair for Supervision of the Board of Governors of the Federal Reserve System, at \"Next-gen financial inclusion\", the third annual Financial Inclusion Conference hosted by the Federal Reserve Board, Washington DC, 14 July 2026.",
-      "textLicense": "frb-public-domain"
+      "textLicense": "frb-public-domain",
+      "titleTr": "Sorumlu yenilik ve finansal kapsayıcılık",
+      "contextTr": "Federal Rezerv Sistemi Guvernörler Kurulu'nun Denetimden Sorumlu Başkan Yardımcısı Michelle W. Bowman'ın, Fed Guvernörler Kurulu'nun ev sahipliğinde düzenlenen üçüncü yıllık Finansal Kapsayıcılık Konferansı \"Yeni nesil finansal kapsayıcılık\"taki (önceden kaydedilmiş video ile) konuşması, Washington DC, 14 Temmuz 2026.",
+      "summaryEn": "In this speech at the financial inclusion conference, Bowman explains how banks can widen access through responsible innovation. She stresses that the Fed's role is to set clear expectations and be transparent, not to micromanage banks' business decisions. She notes that AI has the potential to expand access to credit for consumers with thin credit histories but adequate cash flow, while uses that directly affect credit decisions raise heavier legal compliance issues. She says small banks do not have the same resources as large ones and that supervisory guidance should not be an obstacle to innovation.",
+      "scoreRationaleEn": "The speech is about financial inclusion and bank regulation; it does not address rates or the inflation outlook."
     },
     {
       "id": "r260731b",
@@ -647,7 +787,11 @@
       "scoredVia": "session",
       "hasPolicySignal": true,
       "contextEn": "Speech by Mr Philip N Jefferson, Vice Chair of the Board of Governors of the Federal Reserve System, at the Stanford Institute for Economic Policy Research, Stanford University, Stanford, California, 16 July 2026.",
-      "textLicense": "frb-public-domain"
+      "textLicense": "frb-public-domain",
+      "titleTr": "Ekonomik şoklarla baş etmek: bir para politikası yapıcısının bakışı",
+      "contextTr": "Federal Rezerv Sistemi Guvernörler Kurulu Başkan Yardımcısı Philip N. Jefferson'ın, Stanford Üniversitesi Stanford Ekonomi Politikası Araştırma Enstitüsü'ndeki konuşması, Stanford, Kaliforniya, 16 Temmuz 2026.",
+      "summaryEn": "Most of Jefferson's speech sets out a conceptual framework for how policymakers classify and respond to supply and demand shocks in real time. He says he is watching two current developments: the energy shock stemming from the Middle East and the macroeconomic effects of AI. He notes that the energy shock arriving when inflation has already been above target for some time forces the FOMC into a delicate balance between the two sides of its mandate, and that back-to-back shocks increase the risk of inflation becoming persistent. He supported holding the rate in the 3.50-3.75 percent range in June and believes the current stance will allow inflation to continue declining.",
+      "scoreRationaleEn": "He sees the current stance as adequate and argues for waiting, but leans towards tightening with the statement that \"if inflation does not begin to cool soon, it may be appropriate to reassess the current policy stance\"."
     },
     {
       "id": "r260731a",
@@ -664,7 +808,11 @@
       "scoredAt": "2026-08-25T19:16:08.566Z",
       "scoredVia": "session",
       "hasPolicySignal": true,
-      "contextEn": "Remarks by Mr John C Williams, President and Chief Executive Officer of the Federal Reserve Bank of New York, at the Partnership for New York City, New York City, 15 July 2026."
+      "contextEn": "Remarks by Mr John C Williams, President and Chief Executive Officer of the Federal Reserve Bank of New York, at the Partnership for New York City, New York City, 15 July 2026.",
+      "titleTr": "Zamanının istikrarı",
+      "contextTr": "New York Federal Rezerv Bankası Başkanı ve İcra Kurulu Başkanı John C. Williams'ın, Partnership for New York City'deki konuşması, New York, 15 Temmuz 2026.",
+      "summaryEn": "Williams finds the US economy resilient despite the Middle East conflict, with growth around 2 percent and unemployment stable in the 4.25-4.50 percent band. He says inflation, at 4 percent, is unquestionably too high and attributes this to three factors: tariffs, the energy and supply chain shock, and demand pressure from AI investment in certain groups of goods. On the other hand, he lists six reasons why inflation has peaked and will decline in the coming quarters, among them tariff effects being largely complete, the downward trend in rent inflation, the pullback in oil prices and anchored inflation expectations. He projects inflation will fall to 3.25 percent by year-end and reach the target in 2028, and considers the current rate stance \"well positioned\" for this.",
+      "scoreRationaleEn": "Finding inflation \"unquestionably too high\" gives a mildly hawkish tone; however, his view that the peak is behind us, his projection of a gradual decline and the absence of any mention of tightening keep the score close to neutral."
     },
     {
       "id": "r260730j",
@@ -682,7 +830,11 @@
       "scoredVia": "session",
       "hasPolicySignal": false,
       "contextEn": "Speech by Ms Michelle W Bowman, Vice Chair for Supervision of the Board of Governors of the Federal Reserve System, at the Bank Policy Institute London Conference, London, 13 July 2026.",
-      "textLicense": "frb-public-domain"
+      "textLicense": "frb-public-domain",
+      "titleTr": "Finansal düzenlemenin modernleştirilmesi",
+      "contextTr": "Federal Rezerv Sistemi Guvernörler Kurulu'nun Denetimden Sorumlu Başkan Yardımcısı Michelle W. Bowman'ın, Bank Policy Institute Londra Konferansı'ndaki konuşması, Londra, 13 Temmuz 2026.",
+      "summaryEn": "Bowman describes the FSB's work on modernising supervision and regulation and its implementation in the United States. She sets out four principles: prioritising material financial risks, scaling regulation to an institution's risk profile, putting transparency and accountability first, and keeping the framework open to responsible innovation. Drawing on the example of Silicon Valley Bank, she argues that a large number of supervisory findings does not mean effective supervision. She cites steps in the US such as the 2026 Basel III capital framework reform, the first-ever publication of supervisory principles and the updating of outdated asset thresholds.",
+      "scoreRationaleEn": "The speech is entirely about financial regulation and supervision; it contains no statement on rates or the inflation outlook, so it carries no monetary policy signal."
     },
     {
       "id": "r260730s",
@@ -699,7 +851,11 @@
       "scoredAt": "2026-08-25T19:16:08.566Z",
       "scoredVia": "session",
       "hasPolicySignal": true,
-      "contextEn": "Speech by Mr Andrew Bailey, Deputy Governor of Prudential Regulation and Chief Executive Officer of the Prudential Regulation Authority at the Bank of England, at the Society of Business Economists Annual Dinner, London, 3 June 2013."
+      "contextEn": "Speech by Mr Andrew Bailey, Deputy Governor of Prudential Regulation and Chief Executive Officer of the Prudential Regulation Authority at the Bank of England, at the Society of Business Economists Annual Dinner, London, 3 June 2013.",
+      "titleTr": "Büyüme ve düzenleme",
+      "contextTr": "İngiltere Merkez Bankası İhtiyati Düzenlemeden Sorumlu Başkan Yardımcısı ve İhtiyati Düzenleme Kurumu İcra Kurulu Başkanı Andrew Bailey'nin, İşletme Ekonomistleri Derneği Yıllık Yemeği'ndeki konuşması, Londra, 3 Haziran 2013.",
+      "summaryEn": "Bailey's speech focuses mainly on growth and regulation, but the opening briefly addresses monetary policy: he says that before the Middle East conflict he expected inflation to return to the 2 percent target around April-May, and that evidence this would have happened without the shock had strengthened in recent months. He says he is confident inflation will return to target and that conditions are encouraging, but that it will take longer, adding that economic activity is \"quite soft\". The rest of the speech covers the UK's low potential growth over fifteen years, how well-designed regulation can support growth and the questions AI raises for both liability law and cybersecurity.",
+      "scoreRationaleEn": "Treating the energy-driven inflation overshoot as temporary, expressing confidence in a return to target and pointing to soft activity give a mildly dovish tone; because the monetary policy content is limited, the score was kept close to zero."
     },
     {
       "id": "r260730r",
@@ -717,7 +873,11 @@
       "scoredVia": "session",
       "hasPolicySignal": true,
       "contextEn": "Speech by Ms Lisa D Cook, Member of the Board of Governors of the Federal Reserve System, at The Exchequer Club of Washington DC, Washington DC, 15 July 2026.",
-      "textLicense": "frb-public-domain"
+      "textLicense": "frb-public-domain",
+      "titleTr": "Ekonomik görünüm",
+      "contextTr": "Federal Rezerv Sistemi Guvernörler Kurulu üyesi Lisa D. Cook'un, Washington DC Exchequer Club'daki konuşması, Washington DC, 15 Temmuz 2026.",
+      "summaryEn": "Cook says she watches both sides of the dual mandate but that at this stage the risks of high inflation concern her more. She reads unemployment of 4.2 percent near the natural rate, a stable labour market and growth above expectations as signs that risks on the employment side have diminished; by contrast, she takes targeted inflation rising to 3.7 percent year on year in June and core goods prices rising at a 5 percent annual pace as evidence that inflation risk has intensified. Comparing the balance of risks to a seesaw, she says the scale has now tipped towards inflation. She says she voted to hold rates at the June meeting, but is prepared to act if she does not see signs of disinflation soon.",
+      "scoreRationaleEn": "The assessment that \"the balance of risks has shifted towards inflation\" and the statement \"if I do not see signs of disinflation soon, I am prepared to act\" signal a clearly hawkish stance; it was not placed in the top band because the current decision favoured waiting."
     },
     {
       "id": "r260730n",
@@ -736,7 +896,11 @@
       "textIsExcerpt": true,
       "hasPolicySignal": false,
       "contextEn": "Speech by Mr Michael S Barr, Member of the Board of Governors of the Federal Reserve System, at \"Next-gen financial inclusion\", the third annual Financial Inclusion Conference hosted by the Federal Reserve Board, Washington DC, 14 July 2026.",
-      "textLicense": "frb-public-domain"
+      "textLicense": "frb-public-domain",
+      "titleTr": "Yapay zekâ yaşam standartlarını geniş ölçüde yükseltecek mi, yoksa gelir ve servet eşitsizliğini mi artıracak?",
+      "contextTr": "Federal Rezerv Sistemi Guvernörler Kurulu üyesi Michael S. Barr'ın, Fed Guvernörler Kurulu'nun ev sahipliğinde düzenlenen üçüncü yıllık Finansal Kapsayıcılık Konferansı \"Yeni nesil finansal kapsayıcılık\"taki konuşması, Washington DC, 14 Temmuz 2026.",
+      "summaryEn": "Barr discusses whether AI will raise living standards broadly or deepen income and wealth inequality. He recalls that every major technological leap has had profound effects on the labour market and has created more jobs than it destroyed in the long run, but that during the transition the number of people displaced and the harm they suffer can be large and lasting. Citing the spread of the internet, he says it may have increased inequality while raising productivity, because it disproportionately benefited knowledge-intensive occupations. (BIS publishes only the introductory section of this speech; the full text is in the PDF.)",
+      "scoreRationaleEn": "The speech focuses on the effects of AI on labour and inequality; it contains no signal on the monetary policy stance."
     },
     {
       "id": "r260730l",
@@ -754,7 +918,11 @@
       "scoredVia": "session",
       "hasPolicySignal": true,
       "contextEn": "Speech by Mr Christopher J Waller, Member of the Board of Governors of the Federal Reserve System, at the New York Association for Business Economics, New York City, 13 July 2026.",
-      "textLicense": "frb-public-domain"
+      "textLicense": "frb-public-domain",
+      "titleTr": "Yol ayrımında para politikası",
+      "contextTr": "Federal Rezerv Sistemi Guvernörler Kurulu üyesi Christopher J. Waller'ın, New York İşletme Ekonomisi Derneği'ndeki konuşması, New York, 13 Temmuz 2026.",
+      "summaryEn": "Waller finds the real side of the economy solid and says employment is close to the FOMC's maximum employment goal; his main concern is inflation. He finds the rise in core PCE inflation from 3 percent in December 2025 to 3.4 percent in May too broad-based to be explained by one-off effects from tariffs or the oil shock, and stresses that price increases have spread to services. He says he is determined not to repeat the mistake of acting too late in 2021, but that the FOMC can move more cautiously because today's labour market is not as tight as in 2022 and inflation expectations remain anchored. His baseline is to hold rates at the current level, but he states clearly that if another hot core inflation reading comes in, the FOMC will need to consider tightening in the near term.",
+      "scoreRationaleEn": "The statements \"if we get another hot reading on core inflation, the FOMC will have to consider tightening in the near term\" and \"no serious policy rule would say not to raise rates under these conditions\" are a clear tightening signal; the fact that his baseline is still to wait keeps the score away from the extreme."
     },
     {
       "id": "r260730g",
@@ -773,7 +941,11 @@
       "textIsExcerpt": true,
       "hasPolicySignal": false,
       "contextEn": "Address by Ms Sarah Hunter, Assistant Governor (Economic) of the Reserve Bank of Australia, to the Australian Conference of Economists, Canberra, 8 July 2026.",
-      "textLicense": "cc-by-4.0"
+      "textLicense": "cc-by-4.0",
+      "titleTr": "Arz şoklarını ve para politikası açısından sonuçlarını anlamak",
+      "contextTr": "Avustralya Merkez Bankası Ekonomiden Sorumlu Başkan Yardımcısı Sarah Hunter'ın, Avustralya Ekonomistler Konferansı'ndaki konuşması, Canberra, 8 Temmuz 2026.",
+      "summaryEn": "Recalling the RBA's mandate of 2-3 percent inflation on average over the medium term and sustainable full employment, Hunter begins to explain how supply shocks should be read from a monetary policy perspective. She says the many forces affecting the economy's productive capacity, aggregate demand and costs need to be assessed together. She presents a simplified framework that combines both sides of the mandate in a single diagram: inflation on the vertical axis and the labour market's position between spare capacity and excess tightness on the horizontal axis. (BIS publishes only the introductory section of this speech; the full text is in the PDF.)",
+      "scoreRationaleEn": "The available text is limited to introducing a conceptual framework for assessing supply shocks; it contains no statement on the current rate stance."
     },
     {
       "id": "r260730e",
@@ -791,7 +963,11 @@
       "scoredVia": "session",
       "hasPolicySignal": false,
       "contextEn": "Speech by Mr Christopher J Waller, Member of the Board of Governors of the Federal Reserve System, at the ChaMP Conference \"Challenges for monetary policy transmission in a changing world\", hosted by the Bank of Italy for the research network initiated by the European System of Central Banks, Rome, 6 July 2026.",
-      "textLicense": "frb-public-domain"
+      "textLicense": "frb-public-domain",
+      "titleTr": "Para politikasının aktarımı üzerine iki düşünce",
+      "contextTr": "Federal Rezerv Sistemi Guvernörler Kurulu üyesi Christopher J. Waller'ın, Avrupa Merkez Bankaları Sistemi'nin başlattığı araştırma ağı için İtalya Merkez Bankası'nın ev sahipliğinde düzenlenen ChaMP Konferansı \"Değişen dünyada para politikası aktarımının zorlukları\"ndaki konuşması, Roma, 6 Temmuz 2026.",
+      "summaryEn": "In this speech Waller discusses two methodological points about the monetary policy transmission mechanism without going into the current rate stance. First, initial conditions are decisive: in 2022, with two job openings per unemployed person, tightening worked mainly by reducing vacancies rather than sharply raising unemployment; linear models based on historical averages could not have predicted this. Second, forward guidance has two faces: used correctly it speeds up transmission, but when it is rigid, as in 2020-21, it can tie the FOMC's hands and needlessly delay rate increases.",
+      "scoreRationaleEn": "The speech is entirely a methodological discussion of the transmission mechanism and communication policy; it contains no forward-looking signal on the current rate stance, so it was scored neutral."
     }
   ]
 }

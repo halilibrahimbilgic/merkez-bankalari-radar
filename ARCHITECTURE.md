@@ -74,8 +74,11 @@ src/lib/data/      Okuma katmanı. Postgres ya da JSON'dan okur, türetilmiş
                    "server-only" ile işaretli — istemciye sızamaz.
 src/lib/           Saf yardımcılar: tz, time, banks, score, theme, types.
 src/components/    Arayüz. ui.tsx düzen ilkellerini barındırır.
-src/app/           Sayfalar. Hepsi sunucu bileşeni; istemci olanlar ayrı
-                   dosyada ve "use client" ile işaretli.
+src/views/         Sayfaların gövdesi, dil parametresiyle (lang). Her sayfa
+                   bir kez yazılır, iki dilin rotası onu çağırır.
+src/app/           Rotalar: (tr)/ kökte Türkçe, en/ altında İngilizce — ince
+                   sarmalayıcılar. Hepsi sunucu bileşeni; istemci olanlar
+                   ayrı dosyada ve "use client" ile işaretli.
 scripts/           Veri çekme işleri ve veritabanı araçları. Yalnızca
                    buradan yazılır; sayfalar asla dış kaynağa gitmez.
 db/migrations/     Sıralı SQL göçleri.
@@ -148,6 +151,21 @@ BoJ kararları o saatten önce açıklanır. Metin RSS ile ortaktır
 (`src/lib/announce.ts`). Token secret'ta (`TELEGRAM_BOT_TOKEN`), kanal
 repo değişkeninde (`TELEGRAM_CHAT_ID`); biri yoksa adım atlanır.
 
+**Site iki dillidir; Türkçe adresler değişmez.** Türkçe kökte (`app/(tr)/`),
+İngilizce `/en` altında (`app/en/`); yol adları iki dilde aynı (`/en/takvim`),
+dil değiştirici yalnızca öneki ekler/kaldırır. İki ayrı kök düzen var çünkü
+`<html lang>` başka türlü doğru verilemiyor. Arayüz metni kullanıldığı yerde
+çift olarak yazılır (`const t = L(lang); t("Takvim", "Calendar")`) — ayrı
+sözlükte anahtar unutulup bir dil sessizce boş kalamaz. Yeni sayfa: gövde
+`src/views/`'a, iki ince rota `(tr)/` ve `en/` altına; ikisinde de
+`languageAlternates` ile hreflang. Kontrol: iki dildeki bütün sayfaların
+metni yanlış dil için taranır (Türkçe sayfada `lang="en"` dışında İngilizce,
+İngilizce sayfada Türkçe kalmamalı). Konuşmaların karşılıkları
+(`titleTr`, `contextTr`, `summaryEn`, `scoreRationaleEn`) skorlamada üretilir
+(PROMPT_VERSION 3); yoksa arayüz diğer dile düşer ve bunu "(İngilizce)" /
+"(in Turkish)" notu ve doğru `lang` özniteliğiyle belli eder. RSS, iCal ve
+Telegram yalnızca Türkçedir.
+
 **Paylaşım görselleri koddan üretilir** (`opengraph-image.tsx`: kök, banka,
 konuşma; ortak kart `src/lib/og.tsx`). Derlemede statik üretilip saatlik
 yenilenir, böylece faiz ve tarih güncel kalır. Yazı tipi next/og'un gömülü
@@ -162,7 +180,9 @@ kez silinmişti. Yalnızca *gelecek* toplantıların kaybolması anlamlıdır
 skorsuz kayıt üretiyor; naif bir upsert her gece skorları silerdi.
 
 **Skor 0 ≠ nötr.** `hasPolicySignal: false` olan konuşmalar (düzenleme,
-denetim, ödeme sistemleri) 0 alır ama banka ortalamasına **katılmaz**. Bu ayrım
+denetim, ödeme sistemleri) 0 alır ama banka ortalamasına **katılmaz** ve
+listede "0,0 (nötr)" değil "politika sinyali yok" diye görünür (öyle
+göründüğünde skorlanmamış sanılıyordu). Bu ayrım
 eklenmeden önce Fed ortalaması 1,78 görünüyordu; doğrusu 4,0.
 
 **Dış kaynaklar habersiz değişir; kırılma sessiz olmamalı.** 3 Ekim 2026'da

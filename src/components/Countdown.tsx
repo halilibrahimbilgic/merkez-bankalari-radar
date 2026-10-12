@@ -1,7 +1,8 @@
 "use client";
 
 import { useEffect, useState } from "react";
-import { countdownLabelTr } from "@/lib/time";
+import type { Lang } from "@/lib/i18n";
+import { countdownLabel } from "@/lib/time";
 
 /**
  * Geri sayım sunucuda da render edilir (SEO + JS'siz görünüm); istemcide
@@ -11,29 +12,30 @@ import { countdownLabelTr } from "@/lib/time";
 export function Countdown({
   meetingAt,
   initialLabel,
+  lang,
 }: {
   meetingAt: string;
   initialLabel: string;
+  lang: Lang;
 }) {
   const [label, setLabel] = useState(initialLabel);
 
   useEffect(() => {
-    const tick = () => setLabel(liveLabel(meetingAt));
+    const tick = () => setLabel(liveLabel(meetingAt, lang));
     tick();
     const id = setInterval(tick, 30_000);
     return () => clearInterval(id);
-  }, [meetingAt]);
+  }, [meetingAt, lang]);
 
   return <span className="tabular">{label}</span>;
 }
 
-function liveLabel(meetingAt: string): string {
+function liveLabel(meetingAt: string, lang: Lang): string {
   const diffMs = new Date(meetingAt).getTime() - Date.now();
-  if (diffMs <= 0) return countdownLabelTr(meetingAt);
-  if (diffMs > 48 * 3600_000) return countdownLabelTr(meetingAt);
+  if (diffMs <= 0 || diffMs > 48 * 3600_000) return countdownLabel(meetingAt, undefined, lang);
 
   const hours = Math.floor(diffMs / 3600_000);
   const minutes = Math.floor((diffMs % 3600_000) / 60_000);
-  if (hours === 0) return `${minutes} dk kaldı`;
-  return `${hours} sa ${minutes} dk kaldı`;
+  if (lang === "en") return hours === 0 ? `${minutes} min left` : `${hours} h ${minutes} min left`;
+  return hours === 0 ? `${minutes} dk kaldı` : `${hours} sa ${minutes} dk kaldı`;
 }

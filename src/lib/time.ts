@@ -1,18 +1,23 @@
+import { INTL_LOCALE, type Lang } from "./i18n";
+
 export const TRT = "Europe/Istanbul";
 
-const dateFmt = new Intl.DateTimeFormat("tr-TR", {
-  timeZone: TRT,
-  day: "2-digit",
-  month: "long",
-  year: "numeric",
-});
+/**
+ * Biçimlendiriciler dil başına bir kez kurulur (her çağrıda yeni Intl nesnesi
+ * pahalı). Saat dilimi iki dilde de TRT: site Türkiye saatini gösterir,
+ * İngilizce sürüm de "Turkey time" diye açıkça yazar.
+ */
+function perLang(options: Intl.DateTimeFormatOptions): Record<Lang, Intl.DateTimeFormat> {
+  return {
+    tr: new Intl.DateTimeFormat(INTL_LOCALE.tr, { timeZone: TRT, ...options }),
+    en: new Intl.DateTimeFormat(INTL_LOCALE.en, { timeZone: TRT, ...options }),
+  };
+}
 
-const dateShortFmt = new Intl.DateTimeFormat("tr-TR", {
-  timeZone: TRT,
-  day: "2-digit",
-  month: "short",
-  year: "numeric",
-});
+const dateFmt = perLang({ day: "2-digit", month: "long", year: "numeric" });
+const dateShortFmt = perLang({ day: "2-digit", month: "short", year: "numeric" });
+const weekdayFmt = perLang({ weekday: "long" });
+const monthFmt = perLang({ month: "long", year: "numeric" });
 
 const timeFmt = new Intl.DateTimeFormat("tr-TR", {
   timeZone: TRT,
@@ -21,38 +26,34 @@ const timeFmt = new Intl.DateTimeFormat("tr-TR", {
   hour12: false,
 });
 
-const weekdayFmt = new Intl.DateTimeFormat("tr-TR", {
-  timeZone: TRT,
-  weekday: "long",
-});
-
-/** "14 Eylül 2026" */
-export function formatDateTr(iso: string): string {
-  return dateFmt.format(new Date(iso));
+/** "14 Eylül 2026" / "14 September 2026" */
+export function formatDate(iso: string, lang: Lang = "tr"): string {
+  return dateFmt[lang].format(new Date(iso));
 }
 
-/** "14 Eyl 2026" */
-export function formatDateShortTr(iso: string): string {
-  return dateShortFmt.format(new Date(iso));
+/** "14 Eyl 2026" / "14 Sept 2026" */
+export function formatDateShort(iso: string, lang: Lang = "tr"): string {
+  return dateShortFmt[lang].format(new Date(iso));
 }
 
-/** "21:00" — her zaman Türkiye saati. */
+/** "21:00" — her zaman Türkiye saati, iki dilde de 24 saat. */
 export function formatTimeTrt(iso: string): string {
   return timeFmt.format(new Date(iso));
 }
 
-/** "Pazartesi" */
-export function formatWeekdayTr(iso: string): string {
-  return weekdayFmt.format(new Date(iso));
+/** "Pazartesi" / "Monday" */
+export function formatWeekday(iso: string, lang: Lang = "tr"): string {
+  return weekdayFmt[lang].format(new Date(iso));
 }
 
 /**
  * Toplantı anını tek satırda sunar. Saat açıklanmamışsa saat kısmı düşer.
  * "14 Eylül 2026, Pazartesi · 21:00 TRT"
  */
-export function formatMeetingTr(iso: string, timeTbd: boolean): string {
-  const base = `${formatDateTr(iso)}, ${formatWeekdayTr(iso)}`;
-  return timeTbd ? `${base} · saat açıklanmadı` : `${base} · ${formatTimeTrt(iso)} TRT`;
+export function formatMeeting(iso: string, timeTbd: boolean, lang: Lang = "tr"): string {
+  const base = `${formatDate(iso, lang)}, ${formatWeekday(iso, lang)}`;
+  if (timeTbd) return `${base} · ${lang === "en" ? "time not announced" : "saat açıklanmadı"}`;
+  return `${base} · ${formatTimeTrt(iso)} TRT`;
 }
 
 /** Aynı anın kaynak bankanın yerel saatindeki karşılığı: "14:00" */
@@ -72,9 +73,15 @@ export function daysUntil(iso: string, now: Date = new Date()): number {
   return Math.round((b - a) / 86_400_000);
 }
 
-/** "3 gün kaldı" / "Bugün" / "Yarın" / "2 gün önce" */
-export function countdownLabelTr(iso: string, now: Date = new Date()): string {
+/** "3 gün kaldı" / "Bugün" / "Yarın" / "2 gün önce" — ve İngilizce karşılıkları. */
+export function countdownLabel(iso: string, now: Date = new Date(), lang: Lang = "tr"): string {
   const d = daysUntil(iso, now);
+  if (lang === "en") {
+    if (d === 0) return "Today";
+    if (d === 1) return "Tomorrow";
+    if (d === -1) return "Yesterday";
+    return d > 0 ? `in ${d} days` : `${Math.abs(d)} days ago`;
+  }
   if (d === 0) return "Bugün";
   if (d === 1) return "Yarın";
   if (d === -1) return "Dün";
@@ -105,13 +112,9 @@ export function trtDayKey(iso: string): string {
   }).format(new Date(iso));
 }
 
-/** "Eylül 2026" — takvimde ay başlıkları için. */
-export function trtMonthLabel(iso: string): string {
-  return new Intl.DateTimeFormat("tr-TR", {
-    timeZone: TRT,
-    month: "long",
-    year: "numeric",
-  }).format(new Date(iso));
+/** "Eylül 2026" / "September 2026" — takvimde ay başlıkları için. */
+export function monthLabel(iso: string, lang: Lang = "tr"): string {
+  return monthFmt[lang].format(new Date(iso));
 }
 
 /** Bölmeli geri sayım parçaları — sunucu ve istemcide aynı hesap. */
@@ -143,20 +146,23 @@ export function computeCountdownParts(
  * okuyucuya verinin bayat olup olmadığını söylemiyor, kafadan çıkarma
  * gerektiriyor. Göreli ifade bunu doğrudan verir.
  */
-export function relativeTimeTr(iso: string, now: Date = new Date()): string {
+export function relativeTime(iso: string, now: Date = new Date(), lang: Lang = "tr"): string {
   const diffMs = now.getTime() - new Date(iso).getTime();
   const minutes = Math.floor(diffMs / 60_000);
+  const en = lang === "en";
+  const unit = (n: number, tr: string, enOne: string) =>
+    en ? `${n} ${enOne}${n === 1 ? "" : "s"} ago` : `${n} ${tr} önce`;
 
-  if (minutes < 1) return "az önce";
-  if (minutes < 60) return `${minutes} dakika önce`;
+  if (minutes < 1) return en ? "just now" : "az önce";
+  if (minutes < 60) return unit(minutes, "dakika", "minute");
 
   const hours = Math.floor(minutes / 60);
-  if (hours < 24) return `${hours} saat önce`;
+  if (hours < 24) return unit(hours, "saat", "hour");
 
   const days = Math.floor(hours / 24);
-  if (days === 1) return "dün";
-  if (days < 30) return `${days} gün önce`;
+  if (days === 1) return en ? "yesterday" : "dün";
+  if (days < 30) return unit(days, "gün", "day");
 
   const months = Math.floor(days / 30);
-  return months < 12 ? `${months} ay önce` : `${Math.floor(months / 12)} yıl önce`;
+  return months < 12 ? unit(months, "ay", "month") : unit(Math.floor(months / 12), "yıl", "year");
 }

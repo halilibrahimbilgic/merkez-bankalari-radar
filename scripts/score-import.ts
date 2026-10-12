@@ -60,6 +60,10 @@ async function main() {
       speech.hawkDoveScore = result.hawkDoveScore;
       speech.scoreRationaleTr = result.scoreRationaleTr;
       speech.hasPolicySignal = result.hasPolicySignal;
+      speech.summaryEn = result.summaryEn;
+      speech.scoreRationaleEn = result.scoreRationaleEn;
+      speech.titleTr = result.titleTr;
+      if (result.contextTr) speech.contextTr = result.contextTr;
       speech.model = `claude-code/${CLAUDE_CODE_MODEL}`;
       speech.promptVersion = PROMPT_VERSION;
       speech.scoredAt = new Date().toISOString();

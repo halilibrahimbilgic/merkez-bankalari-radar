@@ -1,4 +1,5 @@
 import "server-only";
+import { fmtPercent, fmtPercentRange, type Lang } from "@/lib/i18n";
 import { readFile } from "node:fs/promises";
 import path from "node:path";
 import { getPool } from "../db";
@@ -73,10 +74,9 @@ export async function getCurrentRates(): Promise<CurrentRate[]> {
   return (await load()).rates;
 }
 
-/** "%3,50-3,75" ya da "%2,25" */
-export function formatCurrentRate(r: CurrentRate): string {
-  const num = (v: number) => v.toFixed(2).replace(".", ",");
+/** "%3,50–3,75" ya da "%2,25" (İngilizce: "3.50–3.75%", "2.25%") */
+export function formatCurrentRate(r: CurrentRate, lang: Lang = "tr"): string {
   return r.rateLower === undefined
-    ? `%${num(r.rate)}`
-    : `%${num(r.rateLower)}-${num(r.rate)}`;
+    ? fmtPercent(r.rate, lang)
+    : fmtPercentRange(r.rateLower, r.rate, lang);
 }

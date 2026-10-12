@@ -1,17 +1,18 @@
 import Link from "next/link";
-import { BANKS, bankColorVar } from "@/lib/banks";
+import { BANKS, bankColorVar, bankCountry, bankName } from "@/lib/banks";
+import { L, localePath, type Lang } from "@/lib/i18n";
 import type { BankCode, Meeting } from "@/lib/types";
 import {
   computeCountdownParts,
-  countdownLabelTr,
-  formatDateTr,
+  countdownLabel,
+  formatDate,
   formatTimeTrt,
 } from "@/lib/time";
 import { formatCurrentRate, type CurrentRate } from "@/lib/data/rates";
 import type { BankScoreSummary } from "@/lib/data/speeches";
 import { LiveCountdown } from "./LiveCountdown";
 import { RateOdds, type OddsRow } from "./RateOdds";
-import { formatScore, scoreLabelTr, scoreToneClass } from "./ScoreBadge";
+import { formatScore, scoreLabel, scoreToneClass } from "./ScoreBadge";
 
 /**
  * Ana sayfadaki banka kartı — bu kategorinin standart gösterge birimi.
@@ -24,6 +25,7 @@ export function BankCard({
   score,
   odds,
   oddsNote,
+  lang,
 }: {
   bankCode: BankCode;
   nextMeeting?: Meeting;
@@ -31,80 +33,94 @@ export function BankCard({
   score?: BankScoreSummary;
   odds?: OddsRow[];
   oddsNote?: string;
+  lang: Lang;
 }) {
+  const t = L(lang);
   const bank = BANKS[bankCode];
+  const name = bankName(bank, lang);
+  const href = localePath(lang, `/banka/${bank.code}`);
 
   return (
     <article className="flex flex-col card p-5">
       <header className="flex items-baseline justify-between gap-2">
         <h3 className="text-lg font-semibold">
-          <Link
-            href={`/banka/${bank.code}`}
-            className="inline-flex min-h-9 items-center gap-2 hover:text-accent"
-          >
+          <Link href={href} className="inline-flex min-h-9 items-center gap-2 hover:text-accent">
             <span
               aria-hidden
               className="inline-block size-2.5 shrink-0 rounded-full"
               style={{ backgroundColor: bankColorVar(bank.code) }}
             />
-            {bank.nameTr}
+            {name}
           </Link>
         </h3>
-        <span className="text-sm text-muted">{bank.countryTr}</span>
+        <span className="text-sm text-muted">{bankCountry(bank, lang)}</span>
       </header>
 
       {nextMeeting ? (
         <div className="mt-3">
-          <div className="text-sm text-muted">Sıradaki karar</div>
+          <div className="text-sm text-muted">{t("Sıradaki karar", "Next decision")}</div>
           <div className="tabular mt-0.5 font-medium">
-            {formatDateTr(nextMeeting.meetingAt)}
+            {formatDate(nextMeeting.meetingAt, lang)}
             {!nextMeeting.timeTbd && ` · ${formatTimeTrt(nextMeeting.meetingAt)} TRT`}
           </div>
           <div className="mt-2">
             {nextMeeting.timeTbd ? (
               // Saat yer tutucu (BoJ): gün düzeyinden ince geri sayım yanıltır.
               <span className="text-sm text-muted">
-                {countdownLabelTr(nextMeeting.meetingAt)} · saat açıklanmadı
+                {countdownLabel(nextMeeting.meetingAt, undefined, lang)} ·{" "}
+                {t("saat açıklanmadı", "time not announced")}
               </span>
             ) : (
               <LiveCountdown
                 meetingAt={nextMeeting.meetingAt}
                 initial={computeCountdownParts(nextMeeting.meetingAt)}
+                lang={lang}
               />
             )}
           </div>
         </div>
       ) : (
-        <p className="mt-3 text-sm text-muted">Takvim verisi henüz eklenmedi.</p>
+        <p className="mt-3 text-sm text-muted">
+          {t("Takvim verisi henüz eklenmedi.", "No calendar data yet.")}
+        </p>
       )}
 
       <dl className="mt-4 space-y-2 border-t border-border pt-3 text-sm">
         <div className="flex items-baseline justify-between gap-2">
-          <dt className="text-muted">Politika faizi</dt>
+          <dt className="text-muted">{t("Politika faizi", "Policy rate")}</dt>
           <dd className="tabular font-semibold">
             {currentRate ? (
-              formatCurrentRate(currentRate)
+              formatCurrentRate(currentRate, lang)
             ) : (
-              <span className="text-muted" title="Bu banka için faiz kaynağı henüz bağlanmadı">
+              <span
+                className="text-muted"
+                title={t(
+                  "Bu banka için faiz kaynağı henüz bağlanmadı",
+                  "No rate source connected for this bank yet",
+                )}
+              >
                 —
               </span>
             )}
           </dd>
         </div>
         <div className="flex items-baseline justify-between gap-2">
-          <dt className="text-muted">Şahin/güvercin</dt>
+          <dt className="text-muted">{t("Şahin/güvercin", "Hawk/dove")}</dt>
           <dd className="tabular font-semibold">
             {score ? (
               <span className={scoreToneClass(score.averageScore)}>
-                {formatScore(score.averageScore)}{" "}
+                {formatScore(score.averageScore, lang)}{" "}
                 <span className="text-xs font-normal">
-                  ({scoreLabelTr(score.averageScore)})
+                  ({scoreLabel(score.averageScore, lang)})
                 </span>
               </span>
             ) : (
               <span
                 className="text-muted"
-                title="Bu banka için skorlanmış konuşma yok"
+                title={t(
+                  "Bu banka için skorlanmış konuşma yok",
+                  "No scored speeches for this bank",
+                )}
               >
                 —
               </span>
@@ -115,17 +131,17 @@ export function BankCard({
 
       {odds && odds.length > 0 && (
         <div className="mt-4 border-t border-border pt-3">
-          <div className="mb-2 text-sm text-muted">Piyasa fiyatlaması</div>
-          <RateOdds rows={odds} />
+          <div className="mb-2 text-sm text-muted">{t("Piyasa fiyatlaması", "Market pricing")}</div>
+          <RateOdds rows={odds} lang={lang} />
           {oddsNote && <p className="mt-2 text-xs text-muted">{oddsNote}</p>}
         </div>
       )}
 
       <Link
-        href={`/banka/${bank.code}`}
+        href={href}
         className="mt-auto inline-flex min-h-9 items-center pt-4 text-sm text-accent hover:underline"
       >
-        {bank.nameTr} ayrıntısı →
+        {t(`${name} ayrıntısı →`, `${name} details →`)}
       </Link>
     </article>
   );

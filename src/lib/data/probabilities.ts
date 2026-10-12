@@ -1,4 +1,5 @@
 import "server-only";
+import { fmtPercent, fmtPercentRange, type Lang } from "@/lib/i18n";
 import { readFile } from "node:fs/promises";
 import path from "node:path";
 import { getPool } from "../db";
@@ -119,18 +120,18 @@ function num(value: string | null): number | undefined {
   return value === null ? undefined : Number(value);
 }
 
-/** Baz puanı yüzde metnine çevirir: 375 → "%3,75" */
-export function bpsToPercentTr(bps: number): string {
-  return `%${(bps / 100).toFixed(2).replace(".", ",")}`;
+/** Baz puanı yüzde metnine çevirir: 375 → "%3,75" / "3.75%" */
+export function bpsToPercent(bps: number, lang: Lang = "tr"): string {
+  return fmtPercent(bps / 100, lang);
 }
 
-export function formatPct(value: number): string {
-  return `%${value.toFixed(1).replace(".", ",")}`;
+export function formatPct(value: number, lang: Lang = "tr"): string {
+  return fmtPercent(value, lang, 1);
 }
 
-/** Bant metni — yüzde işareti yalnızca başta: "%3,50–3,75" */
-export function bpsRangeTr(lowerBps: number, upperBps: number): string {
-  return `${bpsToPercentTr(lowerBps)}–${bpsToPercentTr(upperBps).slice(1)}`;
+/** Bant metni — yüzde işareti bir kez: "%3,50–3,75" / "3.50–3.75%" */
+export function bpsRange(lowerBps: number, upperBps: number, lang: Lang = "tr"): string {
+  return fmtPercentRange(lowerBps / 100, upperBps / 100, lang);
 }
 
 /** En yüksek olasılıklı bant. */
@@ -142,37 +143,44 @@ export function modalBucket(w: ProbabilityWindow) {
 }
 
 /**
- * Pencereyi tek paragrafta Türkçe anlatır.
+ * Pencereyi tek paragrafta anlatır.
  *
  * Kasıtlı olarak "toplantıda şu kadar indirim ihtimali" demiyoruz — veri
  * toplantı bazlı değil, üç aylık ortalama faiz üzerinedir.
  */
-export function describeWindowTr(
+export function describeWindow(
   w: ProbabilityWindow,
   targetRange: ProbabilitySnapshot["targetRange"],
+  lang: Lang = "tr",
 ): string {
+  const en = lang === "en";
   const parts: string[] = [];
   const modal = modalBucket(w);
+  const pct = (v: number) => formatPct(v, lang);
 
   if (targetRange) {
-    parts.push(
-      `Bugünkü hedef aralık ${bpsRangeTr(targetRange.lowerBps, targetRange.upperBps)}.`,
-    );
+    const range = bpsRange(targetRange.lowerBps, targetRange.upperBps, lang);
+    parts.push(en ? `The current target range is ${range}.` : `Bugünkü hedef aralık ${range}.`);
   }
 
   if (w.probHikePct !== undefined && w.probCutPct !== undefined) {
     const hold = Math.max(0, 100 - w.probHikePct - w.probCutPct);
     parts.push(
-      `Piyasa bu dönemde ortalama faizin bu aralığın üzerine çıkmasına ` +
-        `${formatPct(w.probHikePct)}, altına inmesine ${formatPct(w.probCutPct)}, ` +
-        `aralık içinde kalmasına ${formatPct(hold)} ihtimal veriyor.`,
+      en
+        ? `For this period the market prices a ${pct(w.probHikePct)} chance that the average ` +
+            `rate ends up above this range, ${pct(w.probCutPct)} below it and ${pct(hold)} within it.`
+        : `Piyasa bu dönemde ortalama faizin bu aralığın üzerine çıkmasına ` +
+            `${pct(w.probHikePct)}, altına inmesine ${pct(w.probCutPct)}, ` +
+            `aralık içinde kalmasına ${pct(hold)} ihtimal veriyor.`,
     );
   }
 
   if (modal) {
+    const band = bpsRange(modal.lowerBps, modal.upperBps, lang);
     parts.push(
-      `En olası bant ${bpsRangeTr(modal.lowerBps, modal.upperBps)} ` +
-        `(${formatPct(modal.probabilityPct)}).`,
+      en
+        ? `The most likely band is ${band} (${pct(modal.probabilityPct)}).`
+        : `En olası bant ${band} (${pct(modal.probabilityPct)}).`,
     );
   }
 

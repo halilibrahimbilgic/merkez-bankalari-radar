@@ -1,7 +1,7 @@
 import { BANKS } from "@/lib/banks";
 import { getAllMeetings } from "@/lib/data/meetings";
 import { SITE_URL } from "@/lib/site";
-import { formatDateTr } from "@/lib/time";
+import { formatDate } from "@/lib/time";
 import { num, rateTr, resultTitle, whenTr } from "@/lib/announce";
 
 export const revalidate = 3600;
@@ -64,7 +64,7 @@ export async function GET() {
         guid: `${m.id}-karar`,
         title: resultTitle(m),
         description:
-          `${bank.nameEn}, ${formatDateTr(m.meetingAt)} tarihli toplantısında ` +
+          `${bank.nameEn}, ${formatDate(m.meetingAt)} tarihli toplantısında ` +
           `${bank.rateNameTr} için kararını açıkladı: ` +
           `${rateTr(m)} (önceki: %${num(m.previousRate)}).`,
         link,
