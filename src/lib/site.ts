@@ -16,4 +16,6 @@ export const SITE_URL = (
  */
 export const OPERATOR_NAME = "Halil İbrahim Bilgiç";
 export const CONTACT_EMAIL = "iletisim@faizradar.com";
+/** Karar hatırlatmaları ve sonuçlar (scripts/post-telegram.ts). */
+export const TELEGRAM_URL = "https://t.me/faizradar";
 export const REPO_URL = "https://github.com/halilibrahimbilgic/merkez-bankalari-radar";

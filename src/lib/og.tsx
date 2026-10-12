@@ -1,3 +1,4 @@
+import { LogoMark } from "@/components/LogoMark";
 import { ImageResponse } from "next/og";
 import type { BankCode } from "./types";
 
@@ -121,13 +122,15 @@ export function renderOgCard(opts: {
           style={{
             display: "flex",
             justifyContent: "space-between",
-            alignItems: "baseline",
+            alignItems: "center",
             fontSize: 28,
             color: C.muted,
           }}
         >
-          <div style={{ display: "flex", fontSize: 36, color: C.foreground }}>
-            Faiz<span style={{ color: C.accent, marginLeft: 8 }}>Radar</span>
+          <div style={{ display: "flex", alignItems: "center", fontSize: 36, color: C.foreground }}>
+            <LogoMark size={44} />
+            <span style={{ marginLeft: 16 }}>Faiz</span>
+            <span style={{ color: C.accent, marginLeft: 8 }}>Radar</span>
           </div>
           <div>{footer ?? "faizradar.com · Türkiye saatiyle"}</div>
         </div>
