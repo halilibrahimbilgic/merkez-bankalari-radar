@@ -57,12 +57,21 @@ interface Post {
 async function main() {
   const dryRun = process.argv.includes("--dry-run");
   const welcome = process.argv.includes("--welcome");
-  const token = process.env.TELEGRAM_BOT_TOKEN;
+  // Yapıştırırken araya giren boşluk/satır sonu 404 üretiyordu.
+  const token = process.env.TELEGRAM_BOT_TOKEN?.trim();
   const chatId = process.env.TELEGRAM_CHAT_ID;
 
   if (!dryRun && (!token || !chatId)) {
     console.log("TELEGRAM_BOT_TOKEN ya da TELEGRAM_CHAT_ID yok — Telegram adımı atlandı.");
     return;
+  }
+  // Token'ın kendisi asla yazdırılmaz; yalnızca biçimi denetlenir.
+  if (token && !/^\d+:[\w-]{30,}$/.test(token)) {
+    throw new Error(
+      `TELEGRAM_BOT_TOKEN biçimi beklenen "123456789:AA..." değil ` +
+        `(uzunluk ${token.length}, iki nokta ${token.includes(":") ? "var" : "yok"}, ` +
+        `boşluk ${/\s/.test(token) ? "var" : "yok"}).`,
+    );
   }
 
   const { meetings } = JSON.parse(await readFile(MEETINGS, "utf8")) as { meetings: Meeting[] };
