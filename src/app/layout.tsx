@@ -2,7 +2,6 @@ import type { Metadata } from "next";
 import Link from "next/link";
 import { Geist, Geist_Mono } from "next/font/google";
 import { DataFreshness } from "@/components/DataFreshness";
-import { LogoMark } from "@/components/LogoMark";
 import { ThemeToggle } from "@/components/ThemeToggle";
 import { SITE_URL, TELEGRAM_URL } from "@/lib/site";
 import { THEME_KEY } from "@/lib/theme";
@@ -89,7 +88,6 @@ export default function RootLayout({ children }: LayoutProps<"/">) {
               href="/"
               className="order-1 inline-flex min-h-11 items-center whitespace-nowrap font-semibold tracking-tight sm:min-h-0"
             >
-              <LogoMark size={24} className="mr-2 shrink-0" />
               Faiz <span className="ml-1 text-accent">Radar</span>
             </Link>
 
