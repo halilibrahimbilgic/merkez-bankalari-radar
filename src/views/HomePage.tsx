@@ -10,6 +10,8 @@ import { getCurrentRates } from "@/lib/data/rates";
 import { getProbabilitySnapshot } from "@/lib/data/probabilities";
 import { getBankScoreSummaries, getSpeeches } from "@/lib/data/speeches";
 import { getExpectations } from "@/lib/data/expectations";
+import { getNews } from "@/lib/data/news";
+import { NewsList } from "@/components/NewsList";
 import { moveOdds } from "@/lib/implied-path";
 import { fmtPercent, L, languageAlternates, localePath, type Lang } from "@/lib/i18n";
 import { speechTitle } from "@/lib/speech-i18n";
@@ -33,6 +35,7 @@ export async function HomePage({ lang }: { lang: Lang }) {
     getSpeeches({ scoredOnly: true, limit: 4 }),
     getExpectations(),
   ]);
+  const news = await getNews({ limit: 4 });
 
   // BoE: OIS eğrisinden sıradaki MPC için fiyatlanan 25 bp adım ihtimali.
   const boeNext = expectations.boe?.meetings.find((m) => new Date(m.meetingAt) > now);
@@ -136,6 +139,16 @@ export async function HomePage({ lang }: { lang: Lang }) {
           ))}
         </div>
       </section>
+
+      {news.length > 0 && (
+        <section>
+          <SectionHeader
+            title={t("Son haberler", "Latest news")}
+            action={{ href: p("/haberler"), label: t("Tüm haberler", "All news") }}
+          />
+          <NewsList items={news} lang={lang} />
+        </section>
+      )}
 
       <section>
         <SectionHeader

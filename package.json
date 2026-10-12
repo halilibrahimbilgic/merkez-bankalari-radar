@@ -18,7 +18,9 @@
     "db:import": "tsx scripts/db-import.ts",
     "score:export": "tsx scripts/score-export.ts",
     "score:import": "tsx scripts/score-import.ts",
-    "telegram:post": "tsx scripts/post-telegram.ts"
+    "telegram:post": "tsx scripts/post-telegram.ts",
+    "news:fetch": "tsx scripts/news-fetch.ts",
+    "news:import": "tsx scripts/news-import.ts"
   },
   "dependencies": {
     "@anthropic-ai/sdk": "^0.116.0",

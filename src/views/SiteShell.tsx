@@ -65,6 +65,7 @@ export function SiteShell({ lang, children }: { lang: Lang; children: React.Reac
   const p = (path: string) => localePath(lang, path);
   const nav = [
     { href: p("/takvim"), label: t("Takvim", "Calendar") },
+    { href: p("/haberler"), label: t("Haberler", "News") },
     { href: p("/faiz-olasiligi"), label: t("Faiz olasılığı", "Rate odds") },
     { href: p("/konusmalar"), label: t("Konuşmalar", "Speeches") },
     { href: p("/skor"), label: t("Şahin/Güvercin", "Hawk/Dove") },

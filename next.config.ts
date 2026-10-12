@@ -27,6 +27,10 @@ const nextConfig: NextConfig = {
   outputFileTracingIncludes: {
     "/konusma/*": ["./data/speech-text/**/*"],
     "/en/konusma/*": ["./data/speech-text/**/*"],
+    // Haber ve beklenti dosyaları sabit adla okunur ama ISR yeniden üretiminde
+    // de bulunduklarından emin olmak için açıkça eklenir.
+    "/*": ["./data/news/news.json", "./data/seed/expectations.json"],
+    "/en/*": ["./data/news/news.json", "./data/seed/expectations.json"],
   },
 };
 

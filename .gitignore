@@ -44,3 +44,6 @@ next-env.d.ts
 /.scoring/
 # Konuşma tam metni önbelleği — telifli içerik, depoya girmez (scripts/speech-text.ts)
 /.cache/
+
+# Haber işleme çalışma alanı (news.yml)
+/.news/

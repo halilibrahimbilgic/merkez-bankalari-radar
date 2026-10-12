@@ -15,6 +15,7 @@ takip eden bir site. Üç modül:
 | --- | --- | --- |
 | A — Takvim | Toplantı tarihleri, TRT geri sayımı, geçmiş kararlar, iCal + RSS + Telegram hatırlatma | ✅ tam otomatik |
 | B — Faiz olasılığı | Fed: piyasa dağılımı (Atlanta Fed MPT); BoE: OIS eğrisinden toplantı bazında beklenti; TCMB: Piyasa Katılımcıları Anketi | ✅ tam otomatik |
+| D — Haberler | Resmî açıklamalar + önemli kişilerin sözlerini aktaran haberler, Türkçe/İngilizce özet, önemliler Telegram'a | ✅ 30 dk'da bir (news.yml) |
 | C — Şahin/güvercin | Merkez bankacısı konuşmaları + Türkçe özet ve skor | ✅ metin ve skor otomatik (Claude aboneliği; §5) |
 
 Site **yatırım tavsiyesi vermez** ve veri lisansı gereği kişisel/eğitim
@@ -166,6 +167,17 @@ metni yanlış dil için taranır (Türkçe sayfada `lang="en"` dışında İngi
 (PROMPT_VERSION 3); yoksa arayüz diğer dile düşer ve bunu "(İngilizce)" /
 "(in Turkish)" notu ve doğru `lang` özniteliğiyle belli eder. RSS, iCal ve
 Telegram yalnızca Türkçedir.
+
+**Haber akışı telife ve kullanım şartlarına saygılıdır.** Yalnızca
+yayıncıların kendi RSS/Atom akışları okunur (`src/lib/news.ts`,
+NEWS_SOURCES); haber metni kopyalanmaz — başlık, akış açıklamasından
+modelin yazdığı 1–2 cümlelik özet ve kaynak bağlantısı. X/Twitter yok
+(şartlar otomatik çekmeyi yasaklıyor, API ücretli). Basın akışları önce
+anahtar kelimeyle süzülür, sonra model `relevant`/`important` der; yalnızca
+`important` ve 12 saatten taze olanlar Telegram'a gider, koşu başına en
+fazla 4. `.github/workflows/news.yml` günlük işle aynı `concurrency`
+grubundadır: ikisi aynı dala yazar. Model: Sonnet (özet işi; skorlamadaki
+Opus kotasını korur).
 
 **Paylaşım görselleri koddan üretilir** (`opengraph-image.tsx`: kök, banka,
 konuşma; ortak kart `src/lib/og.tsx`). Derlemede statik üretilip saatlik

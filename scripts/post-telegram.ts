@@ -4,6 +4,7 @@
  *   npm run telegram:post              # gönderilecekleri gönderir
  *   npm run telegram:post -- --dry-run # yalnızca ekrana yazar
  *   npm run telegram:post -- --welcome # yaklaşan kararların listesini gönderir
+ *   npm run telegram:post -- --news    # önemli haberler (news.yml, 30 dk'da bir)
  *   npm run telegram:post -- --dry-run --now=2026-10-21T05:00:00Z  # başka bir sabahı dene
  *
  * TELEGRAM_BOT_TOKEN (secret) ve TELEGRAM_CHAT_ID (ör. "@faizradar") gerekir;
@@ -23,9 +24,11 @@ import path from "node:path";
 import { config } from "dotenv";
 import { BANKS } from "../src/lib/banks";
 import { num, resultTitle, whenTr } from "../src/lib/announce";
+import type { NewsStore } from "../src/lib/news";
 import { SITE_URL } from "../src/lib/site";
 import { formatMeeting, trtDayKey } from "../src/lib/time";
 import type { BankCode, Meeting } from "../src/lib/types";
+import { loadNewsStore } from "./news-store";
 
 config({ path: ".env.local", quiet: true });
 
@@ -80,7 +83,12 @@ async function main() {
   const nowArg = process.argv.find((a) => a.startsWith("--now="))?.slice(6);
   const now = nowArg ? new Date(nowArg) : new Date();
 
-  const posts = welcome ? [welcomePost(meetings, now)] : duePosts(meetings, rates, state, now);
+  const news = process.argv.includes("--news");
+  const posts = welcome
+    ? [welcomePost(meetings, now)]
+    : news
+      ? newsPosts(await loadNewsStore(), state, now)
+      : duePosts(meetings, rates, state, now);
   if (posts.length === 0) {
     console.log("Gönderilecek mesaj yok.");
     return;
@@ -95,7 +103,33 @@ async function main() {
     state.posted[post.key] = now.toISOString();
     await writeState(state);
     console.log(`Gönderildi: ${post.key}`);
+    // Telegram kanal başına dakikada ~20 mesaj sınırı; arka arkaya göndermeyelim.
+    await new Promise((r) => setTimeout(r, 1500));
   }
+}
+
+/** Haberde en fazla bu kadar geç kalınmış öğe kanala gider — eski haber bildirim değildir. */
+const NEWS_MAX_AGE_HOURS = 12;
+/** Koşu başına üst sınır: yoğun bir günde kanalın sel olmaması için. */
+const NEWS_MAX_PER_RUN = 4;
+
+/** Modelin "önemli" dediği, henüz gönderilmemiş, taze haberler — eskiden yeniye. */
+function newsPosts(store: NewsStore, state: State, now: Date): Post[] {
+  const cutoff = now.getTime() - NEWS_MAX_AGE_HOURS * 3600_000;
+  return store.items
+    .filter((i) => i.important && !state.posted[`news-${i.id}`] && Date.parse(i.publishedAt) >= cutoff)
+    .sort((a, b) => a.publishedAt.localeCompare(b.publishedAt))
+    .slice(-NEWS_MAX_PER_RUN)
+    .map((i) => ({
+      key: `news-${i.id}`,
+      link: i.url,
+      text: [
+        `<b>${esc(i.titleTr)}</b>`,
+        esc(i.summaryTr),
+        "",
+        `${esc(i.sourceName)} · <a href="${esc(i.url)}">kaynak</a> · <a href="${SITE_URL}/haberler">Faiz Radar</a>`,
+      ].join("\n"),
+    }));
 }
 
 function duePosts(meetings: Meeting[], rates: CurrentRate[], state: State, now: Date): Post[] {

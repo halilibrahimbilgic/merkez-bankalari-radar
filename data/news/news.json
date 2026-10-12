@@ -1,0 +1,102 @@
+{
+  "fetchedAt": "2026-10-12T20:40:18.135Z",
+  "items": [
+    {
+      "id": "36889a6aea34",
+      "sourceKey": "cnbc-finance",
+      "sourceName": "CNBC",
+      "kind": "media",
+      "url": "https://www.cnbc.com/2026/10/12/beth-hammack-fed-inflation-policy.html",
+      "publishedAt": "2026-10-12T17:15:21.000Z",
+      "titleOriginal": "Higher rates could be needed to avoid 'inflationary mindset' taking hold, says Fed's Hammack",
+      "titleTr": "Fed'den Hammack: 'Enflasyonist zihniyet' yerleşmesin diye faiz artışı gerekebilir",
+      "summaryTr": "Cleveland Fed Başkanı Beth Hammack, enflasyonu düşürmek için daha sıkı bir para politikasına ihtiyaç duyulabileceğini söyledi.",
+      "titleEn": "Fed's Hammack: higher rates may be needed to keep an 'inflationary mindset' from taking hold",
+      "summaryEn": "Cleveland Fed President Beth Hammack said tighter monetary policy may be needed to bring inflation down.",
+      "important": true,
+      "processedAt": "2026-10-12T20:40:18.135Z"
+    },
+    {
+      "id": "61de6cf81026",
+      "sourceKey": "aa-economy",
+      "sourceName": "Anadolu Agency",
+      "kind": "media",
+      "url": "https://www.aa.com.tr/en/economy/imf-world-bank-annual-meetings-open-in-bangkok-amid-widening-mideast-conflict-/4086502",
+      "publishedAt": "2026-10-12T17:00:10.000Z",
+      "titleOriginal": "IMF-World Bank Annual Meetings open in Bangkok amid widening Mideast conflict",
+      "titleTr": "IMF-Dünya Bankası Yıllık Toplantıları Bangkok'ta başladı",
+      "summaryTr": "18 Ekim'e kadar sürecek toplantılarda, Orta Doğu'daki çatışmanın genişlediği bir dönemde küresel ekonominin durumu ele alınacak.",
+      "titleEn": "IMF-World Bank Annual Meetings open in Bangkok",
+      "summaryEn": "The meetings, running until 18 October, will discuss the state of the global economy as the Middle East conflict widens.",
+      "important": false,
+      "processedAt": "2026-10-12T20:40:18.135Z"
+    },
+    {
+      "id": "a9a472887268",
+      "sourceKey": "cnbc-finance",
+      "sourceName": "CNBC",
+      "kind": "media",
+      "url": "https://www.cnbc.com/2026/10/12/inflation-will-remain-sticky-in-2026-according-to-prediction-markets.html",
+      "publishedAt": "2026-10-12T15:37:26.000Z",
+      "titleOriginal": "Inflation likely peaked for 2026 but will remain sticky, according to prediction markets",
+      "titleTr": "Tahmin piyasaları: ABD'de enflasyon 2026 zirvesini görmüş olabilir ama inatçı kalacak",
+      "summaryTr": "Tahmin piyasalarındaki işlemciler, gıda ve enerji hariç çekirdek enflasyonun bu yıl %2,2'ye inme ihtimalini düşük görüyor.",
+      "titleEn": "Prediction markets: US inflation may have peaked for 2026 but will stay sticky",
+      "summaryEn": "Traders on prediction markets see little chance that core inflation, excluding food and energy, falls to 2.2% this year.",
+      "important": false,
+      "processedAt": "2026-10-12T20:40:18.135Z"
+    },
+    {
+      "id": "e4a4e3e941fd",
+      "sourceKey": "cnbc-economy",
+      "sourceName": "CNBC",
+      "kind": "media",
+      "url": "https://www.cnbc.com/2026/10/12/nobel-economics-prize-winner-woodford-hall.html",
+      "publishedAt": "2026-10-12T14:09:02.000Z",
+      "titleOriginal": "Nobel prize in economics awarded to Robert E. Hall and Michael Woodford",
+      "titleTr": "Ekonomi Nobeli, merkez bankalarının kullandığı modellere katkı veren Hall ve Woodford'a",
+      "summaryTr": "ABD'li ekonomistler Robert E. Hall ve Michael Woodford, merkez bankaları ve hükümetlerin ekonomiyi istikrara kavuşturmak için kullandığı modellerin temelini oluşturan çalışmalarıyla ödüllendirildi.",
+      "titleEn": "Economics Nobel goes to Hall and Woodford for work behind central bank models",
+      "summaryEn": "US economists Robert E. Hall and Michael Woodford were honoured for work underpinning the models central banks and governments use to stabilise the economy.",
+      "important": false,
+      "processedAt": "2026-10-12T20:40:18.135Z"
+    },
+    {
+      "id": "f3006f286281",
+      "sourceKey": "cnbc-economy",
+      "sourceName": "CNBC",
+      "kind": "media",
+      "url": "https://www.cnbc.com/2026/10/12/imf-world-bank-ai-jobs-inflation-.html",
+      "publishedAt": "2026-10-12T08:58:54.000Z",
+      "titleOriginal": "World Bank jobs council urges 'crisis-era' employment support measures as IMF warns of AI ‘tsunami’",
+      "titleTr": "IMF Başkanı Georgieva: Yapay zekâ işgücü piyasasına 'yavaş ilerleyen bir tsunami' gibi çarpıyor",
+      "summaryTr": "Georgieva, yapay zekânın küresel işgücü piyasasını etkilediğini ve en çok yeni işe başlayan gençlerin risk altında olduğunu söyledi; Dünya Bankası'nın istihdam konseyi de kriz dönemi destek önlemleri çağrısı yaptı.",
+      "titleEn": "IMF chief Georgieva: AI is hitting the labour market like a 'slow-moving tsunami'",
+      "summaryEn": "Georgieva said AI is affecting the global labour market, with young workers entering it the most exposed; a World Bank jobs council called for crisis-era support measures.",
+      "important": false,
+      "processedAt": "2026-10-12T20:40:18.135Z"
+    },
+    {
+      "id": "30cb1992b3b4",
+      "sourceKey": "guardian-business",
+      "sourceName": "The Guardian",
+      "kind": "media",
+      "url": "https://www.theguardian.com/business/2026/oct/12/ifs-budget-report-spending-pressures-tax-inflation-john-healey",
+      "publishedAt": "2026-10-12T05:49:11.000Z",
+      "titleOriginal": "IFS: budget will be ‘work of fiction’ without clear plan to cover UK’s £35bn spending pressures",
+      "titleTr": "IFS: İngiltere bütçesi 35 milyar sterlinlik harcama baskısı için net plan sunmazsa 'kurgu' olur",
+      "summaryTr": "İngiltere'nin önde gelen maliye düşünce kuruluşu IFS, bütçe öncesi raporunda kritik kararların ertelenmeden şimdi alınması çağrısında bulundu.",
+      "titleEn": "IFS: UK budget will be 'a work of fiction' without a plan for £35bn of spending pressures",
+      "summaryEn": "The Institute for Fiscal Studies' pre-budget report urged key decisions to be taken now rather than put off until next year.",
+      "important": false,
+      "processedAt": "2026-10-12T20:40:18.135Z"
+    }
+  ],
+  "rejected": {
+    "575ba553fb44": "2026-10-12",
+    "2d9b0974f8f9": "2026-10-12",
+    "52356d5a301a": "2026-10-12",
+    "afb7f178c061": "2026-10-12",
+    "3fa9c42c174b": "2026-10-12"
+  }
+}

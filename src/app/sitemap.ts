@@ -16,6 +16,7 @@ export default async function sitemap(): Promise<MetadataRoute.Sitemap> {
   const pages: { path: string; priority: number; changeFrequency: "daily" | "monthly" }[] = [
     { path: "/", priority: 1, changeFrequency: "daily" },
     { path: "/takvim", priority: 0.9, changeFrequency: "daily" },
+    { path: "/haberler", priority: 0.8, changeFrequency: "daily" },
     { path: "/faiz-olasiligi", priority: 0.8, changeFrequency: "daily" },
     { path: "/konusmalar", priority: 0.8, changeFrequency: "daily" },
     { path: "/skor", priority: 0.7, changeFrequency: "daily" },
