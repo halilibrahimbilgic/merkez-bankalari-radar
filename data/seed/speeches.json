@@ -224,7 +224,15 @@
       "speakerName": "John C Williams",
       "title": "Unwavering dedication",
       "speechDate": "2026-10-05",
-      "sourceUrl": "https://www.bis.org/speeches/20261005-unwavering-dedication"
+      "sourceUrl": "https://www.bis.org/speeches/20261005-unwavering-dedication",
+      "summaryTr": "New York Fed Başkanı Williams, ABD ekonomisinin büyük şoklara rağmen sağlam seyrettiğini, işgücü piyasasının güçlü kaldığını ve istihdam hedefine yönelik risklerin azaldığını söyledi. Yüzde 3,7 düzeyindeki enflasyonun açıkça çok yüksek olduğunu; Orta Doğu kaynaklı enerji fiyatları ve yapay zekâ yatırımlarının yarattığı talep baskısı nedeniyle fiyat istikrarına yönelik risklerin arttığını vurguladı. FOMC'nin Eylül'de politika faizini çeyrek puan artırarak yüzde 3,75-4 aralığına çektiğini hatırlatan Williams, enflasyonu yüzde 2'ye döndürmenin bir numaralı görev olduğunu belirtti. Acele gerektiren bir durum olmadığını, ancak ekonomi tahminlerine uygun seyrederse yıl sonuna doğru bir faiz artırımının daha uygun olabileceğini ifade etti.",
+      "hawkDoveScore": 6,
+      "scoreRationaleTr": "Williams enflasyonu 'açıkça çok yüksek' bulup önceliğin enflasyon olduğunu söylüyor ve 'yıl sonunda bir artırım daha uygun olabilir' diyerek ilave sıkılaşmayı ima ediyor; 'acele gerekmiyor' ve veri bağımlılığı vurgusu puanı en uç şahin banttan bir kademe aşağıda tutuyor.",
+      "hasPolicySignal": true,
+      "model": "claude-code/opus",
+      "promptVersion": "2",
+      "scoredAt": "2026-10-12T18:49:34.721Z",
+      "scoredVia": "claude-code"
     },
     {
       "id": "20260930-digital-innovation-hindrance-or-booster-banks-business-models",
@@ -502,7 +510,15 @@
       "speakerName": "Boris Vujčić",
       "title": "Listening to households - expectations, behaviour and monetary policy",
       "speechDate": "2026-09-16",
-      "sourceUrl": "https://www.bis.org/speeches/20260916-listening-households-expectations-behaviour-and-monetary-policy"
+      "sourceUrl": "https://www.bis.org/speeches/20260916-listening-households-expectations-behaviour-and-monetary-policy",
+      "summaryTr": "ECB Başkan Yardımcısı Vujčić, Michael Weber'in profesörlük açılışında hanehalkı beklentilerinin nasıl oluştuğunu ve bunun para politikası aktarımı için neden önemli olduğunu anlattı. Hanehalkının profesyonel tahmincilerden farklı olarak seçici dikkatle ve özellikle gıda ve akaryakıt gibi göze çarpan fiyatlara bakarak beklenti oluşturduğunu, ECB'nin Tüketici Beklentileri Anketi'nin şokların algılanmasını, belirsizliğin harcamaya etkisini ve parasal sıkılaşmanın hanehalkı bilançoları üzerinden farklı aktarımını izlemeye yardımcı olduğunu belirtti. İletişimin politika aktarımının bir parçası olduğunu, hedefe dair sade mesajların güvenilirliği artırdığını ve güvenin nihayetinde merkez bankasının performansıyla kazanıldığını vurguladı. Konuşma, anket veri kalitesinin korunmasının önemiyle sona erdi.",
+      "hawkDoveScore": 0,
+      "scoreRationaleTr": "Konuşma beklenti ölçümü, anket metodolojisi ve merkez bankası iletişimi üzerine akademik nitelikte; faiz patikası ya da politika duruşuna dair ileriye dönük bir ifade içermediği için para politikası sinyali taşımıyor.",
+      "hasPolicySignal": false,
+      "model": "claude-code/opus",
+      "promptVersion": "2",
+      "scoredAt": "2026-10-12T18:49:34.720Z",
+      "scoredVia": "claude-code"
     },
     {
       "id": "r260813h",
