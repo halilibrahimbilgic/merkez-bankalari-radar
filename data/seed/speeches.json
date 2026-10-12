@@ -117,7 +117,15 @@
       "speakerName": "Frank Elderson",
       "title": "Supervisory risk appetite, efficiency and effectiveness",
       "speechDate": "2026-10-06",
-      "sourceUrl": "https://www.bis.org/speeches/20261006-supervisory-risk-appetite-efficiency-and-effectiveness"
+      "sourceUrl": "https://www.bis.org/speeches/20261006-supervisory-risk-appetite-efficiency-and-effectiveness",
+      "summaryTr": "ECB Denetim Kurulu Başkan Yardımcısı Frank Elderson, jeopolitik parçalanma, teknolojik değişim ve iklim riskleriyle karmaşıklaşan ortamda etkin denetimin üç sütuna dayandığını anlattı: daha keskin risk önceliklendirmesi, daha basit ve verimli denetim ve zamanında iyileştirme. ECB'nin risk tolerans çerçevesiyle denetim risk iştahını bilinçli olarak artırdığını, rehber belgeleri sadeleştirdiğini ve onay sürelerini kısalttığını belirtti. Zayıflıkların kök nedenlerinin zamanında ve gerektiğinde yaptırımlarla giderilmesi gerektiğini vurguladı. Güçlü ihtiyati standartların rekabetçiliğin önünde engel değil temeli olduğunu, uluslararası standartların ve otoriteler arası işbirliğinin önemini savundu.",
+      "hawkDoveScore": 0,
+      "scoreRationaleTr": "Konuşma bankacılık denetimi, sadeleştirme ve finansal istikrar üzerinedir; enflasyondan yalnızca risk ortamının bir unsuru olarak söz edilir ve faiz politikasına dair ileriye dönük bir ifade içermez. Para politikası sinyali taşımadığı için 0 verildi.",
+      "hasPolicySignal": false,
+      "model": "claude-code/opus",
+      "promptVersion": "2",
+      "scoredAt": "2026-10-12T18:43:36.764Z",
+      "scoredVia": "claude-code"
     },
     {
       "id": "20261006-economic-conditions-and-monetary-policy",
@@ -127,7 +135,15 @@
       "speakerName": "Michael S Barr",
       "title": "Economic conditions and monetary policy",
       "speechDate": "2026-10-06",
-      "sourceUrl": "https://www.bis.org/speeches/20261006-economic-conditions-and-monetary-policy"
+      "sourceUrl": "https://www.bis.org/speeches/20261006-economic-conditions-and-monetary-policy",
+      "summaryTr": "Fed Guvernörü Michael Barr, ABD ekonomisinin 2026'da sağlam büyüdüğünü ve ivme kazandığını, işgücü piyasasının ise kabaca dengede olduğunu ve %4,1'lik işsizliğin azami istihdama yakın olduğunu söyledi. Enflasyonun beş buçuk yıldır %2 hedefin üzerinde seyrettiğini; yüksek enerji fiyatları ve yapay zekâ yatırım dalgasının fiyatlara etkisiyle hedefe doğru ilerlemenin rayından çıktığını ve zamanında %2'ye dönüş eğilimi görmediğini belirtti. Yapay zekânın verimlilik artışı yoluyla nötr faizi (r*) yükseltebileceğini ancak bunun için henüz erken olduğunu ekledi. FOMC'nin bu ay oybirliğiyle faiz artırdığını hatırlatarak, temel senaryosunda enflasyonu zamanında hedefe indirmek için ek politika ayarlamalarının muhtemelen gerekeceğini ifade etti.",
+      "hawkDoveScore": 7,
+      "scoreRationaleTr": "Barr \"enflasyon çok yüksek\" diyor ve temel senaryosunda \"ek politika ayarlamalarının muhtemelen gerekeceğini\" belirterek yeni faiz artışlarına açıkça kapı aralıyor; işgücü piyasası risklerinin gerilediğini söylemesi sıkılaşma yönündeki duruşu güçlendiriyor.",
+      "hasPolicySignal": true,
+      "model": "claude-code/opus",
+      "promptVersion": "2",
+      "scoredAt": "2026-10-12T18:43:36.763Z",
+      "scoredVia": "claude-code"
     },
     {
       "id": "20261006-resilience-integration-and-competitiveness-building-future-european-banking",
@@ -137,7 +153,15 @@
       "speakerName": "Boris Vujčić",
       "title": "Resilience, integration and competitiveness - building the future of European banking",
       "speechDate": "2026-10-06",
-      "sourceUrl": "https://www.bis.org/speeches/20261006-resilience-integration-and-competitiveness-building-future-european-banking"
+      "sourceUrl": "https://www.bis.org/speeches/20261006-resilience-integration-and-competitiveness-building-future-european-banking",
+      "summaryTr": "Boris Vujčić, ESRB'nin 15. yıl dönümü konferansında küresel finansal kriz sonrası reformların sorgulandığını, ancak Avrupa bankalarının bugünkü güçlü bilançolarının stratejik bir avantaj olduğunu savundu. ECB'nin sermaye tamponlarını ikiye indirme, MREL ile TLAC'ı yakınlaştırma ve küçük bankalar için daha basit bir rejim gibi sadeleştirme önerilerini anlattı. Mevcut koşullarda sermaye gereksinimlerinin kredi verme üzerinde bağlayıcı bir kısıt olmadığını, sermaye şartlarını düşürmenin krediyi anlamlı ölçüde artırmasının pek olası olmadığını belirtti. Rekabetçiliğin asıl kaynağının bankacılık birliğinin ve sermaye piyasaları birliğinin tamamlanması ile finansal entegrasyon olduğunu vurguladı.",
+      "hawkDoveScore": 0,
+      "scoreRationaleTr": "Konuşma makro ihtiyati düzenleme, sermaye gereksinimleri ve finansal entegrasyon üzerinedir; para politikasının normalleşmesinden yalnızca geçmişe dönük olarak söz edilir ve faiz yönüne dair bir ifade yoktur. Para politikası sinyali taşımadığı için 0 verildi.",
+      "hasPolicySignal": false,
+      "model": "claude-code/opus",
+      "promptVersion": "2",
+      "scoredAt": "2026-10-12T18:43:36.764Z",
+      "scoredVia": "claude-code"
     },
     {
       "id": "20261006-opening-remarks-community-bank-cyber-workshop",
@@ -147,7 +171,15 @@
       "speakerName": "Michelle W Bowman",
       "title": "Opening remarks - Community Bank Cyber Workshop",
       "speechDate": "2026-10-06",
-      "sourceUrl": "https://www.bis.org/speeches/20261006-opening-remarks-community-bank-cyber-workshop"
+      "sourceUrl": "https://www.bis.org/speeches/20261006-opening-remarks-community-bank-cyber-workshop",
+      "summaryTr": "Fed Guvernörü Michelle Bowman, 2026 Topluluk Bankaları Siber Çalıştayı'nın açılışında son bir yılda çok sayıda topluluk bankasının ciddi siber olaylar yaşadığını ve siber hijyenin önemini vurguladı. Yapay zekânın saldırganların elinde güvenlik açıklarını hızla bulma ve sofistike sosyal mühendislik kampanyaları yürütme imkânı sunduğunu, aynı zamanda savunmada da kritik bir araç haline geldiğini söyledi. Finansal İstikrar Kurulu'nun sorumlu yapay zekâ kullanımına dair raporunu tanıttı ve küçük bankalardan geri bildirim istedi. Düzenleyicilerin BT denetimlerini risk profiline göre uyarlamaya devam ettiğini belirtti.",
+      "hawkDoveScore": 0,
+      "scoreRationaleTr": "Konuşma yalnızca siber güvenlik ve banka denetimi üzerinedir; para politikası, enflasyon veya faiz yönüne dair hiçbir ifade içermez. Para politikası sinyali taşımadığı için 0 verildi.",
+      "hasPolicySignal": false,
+      "model": "claude-code/opus",
+      "promptVersion": "2",
+      "scoredAt": "2026-10-12T18:43:36.763Z",
+      "scoredVia": "claude-code"
     },
     {
       "id": "20261006-dual-mandate-rural-america",
@@ -157,7 +189,15 @@
       "speakerName": "Lisa D Cook",
       "title": "The dual mandate in rural America",
       "speechDate": "2026-10-06",
-      "sourceUrl": "https://www.bis.org/speeches/20261006-dual-mandate-rural-america"
+      "sourceUrl": "https://www.bis.org/speeches/20261006-dual-mandate-rural-america",
+      "summaryTr": "Fed Guvernörü Lisa Cook, kırsal Amerika'da işgücü piyasası ve enflasyon dinamiklerini ele aldı; ülke genelinde işgücü piyasasının büyük ölçüde istikrarlı, işsizliğin tarihsel olarak düşük olduğunu söyledi. Kırsal bölgelerde işgücüne katılımın ve iş yaratma hızının kentlere göre daha düşük olduğunu, enerji ve konut maliyetlerinin kırsal hane halkı üzerinde daha ağır bastığını anlattı. Kırsal mı kentsel mi olursa olsun enflasyonun çok uzun süredir çok yüksek olduğunu, beş yılı aşkın süredir %2 hedefin üzerinde seyrettiğini vurguladı. Eylül toplantısında 25 baz puanlık artış lehine oy verdiğini belirterek, işgücü piyasasının gücünü korurken enflasyonu hedefe döndürmeye kararlı olduğunu ifade etti.",
+      "hawkDoveScore": 4,
+      "scoreRationaleTr": "Cook \"enflasyon çok uzun süredir çok yüksek\" diyerek enflasyon endişesini öne çıkarıyor ve hedefe dönüşe kararlılığını vurguluyor; ancak ek artış ima etmiyor ve işgücü piyasasını koruma vurgusu yaptığı için puan orta düzeyde şahin tutuldu.",
+      "hasPolicySignal": true,
+      "model": "claude-code/opus",
+      "promptVersion": "2",
+      "scoredAt": "2026-10-12T18:43:36.763Z",
+      "scoredVia": "claude-code"
     },
     {
       "id": "20261005-payments-age-ai-agents",
@@ -167,7 +207,15 @@
       "speakerName": "Christopher J Waller",
       "title": "Payments in the age of AI agents",
       "speechDate": "2026-10-05",
-      "sourceUrl": "https://www.bis.org/speeches/20261005-payments-age-ai-agents"
+      "sourceUrl": "https://www.bis.org/speeches/20261005-payments-age-ai-agents",
+      "summaryTr": "Fed Guvernörü Christopher Waller, Sibos'taki konuşmasında yapay zekânın ödeme sistemlerindeki rolünü ele aldı. Büyük dil modellerinin yaptırım taraması ve kara para aklamayla mücadelede yanlış alarmları azaltarak sınır ötesi ödemelerin verimliliğini ve güvenliğini artırabileceğini, ancak siber saldırı riskini de büyüttüğünü söyledi. Yapay zekâ ajanlarının alışveriş yaptığı \"ajan ticareti\"nin erken aşamada olduğunu, en büyük engelin kimlik doğrulama, sorumluluk ve dolandırıcılık konularında güven inşa etmek olduğunu belirtti. Birlikte çalışabilir standartlar ile açık ve kapalı sistemler arasındaki tercihin pazar yapısını belirleyebileceğini vurguladı.",
+      "hawkDoveScore": 0,
+      "scoreRationaleTr": "Konuşma ödeme sistemleri ve yapay zekâ ajanları üzerinedir; enflasyon, istihdam veya faiz politikasına dair hiçbir ifade içermez. Para politikası sinyali taşımadığı için 0 verildi.",
+      "hasPolicySignal": false,
+      "model": "claude-code/opus",
+      "promptVersion": "2",
+      "scoredAt": "2026-10-12T18:43:36.762Z",
+      "scoredVia": "claude-code"
     },
     {
       "id": "20261005-unwavering-dedication",
