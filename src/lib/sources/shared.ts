@@ -10,8 +10,12 @@ export interface ScrapedMeeting {
   sourceUrl: string;
 }
 
-const UA =
-  "Mozilla/5.0 (compatible; MerkezBankalariRadar/0.1; +https://github.com/) Node";
+/**
+ * Kaynaklara giden dürüst kimlik: kim olduğumuz ve sorun olursa kime
+ * yazılacağı. Tarayıcı taklit edilmez (ARCHITECTURE.md §4). rba.gov.au'nun
+ * bot koruması bu dizeyi kabul ediyor; değiştirirseniz RBA'yı yeniden deneyin.
+ */
+export const UA = "Mozilla/5.0 (compatible; FaizRadar/1.0; +https://www.faizradar.com/iletisim)";
 
 /**
  * Ağ hatasında ve 5xx'te iki kez yeniden dener. BIS bağlantıyı ara sıra

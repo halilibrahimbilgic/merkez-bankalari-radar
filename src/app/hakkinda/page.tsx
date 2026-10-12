@@ -7,7 +7,7 @@ export const revalidate = 3600;
 export const metadata: Metadata = {
   title: "Metodoloji ve kaynaklar",
   description:
-    "Merkez Bankaları Radar'ın veri kaynakları, hesaplama yöntemi ve güncelleme sıklığı.",
+    "Faiz Radar'ın veri kaynakları, hesaplama yöntemi ve güncelleme sıklığı.",
 };
 
 const SOURCES = [

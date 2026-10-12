@@ -114,7 +114,7 @@ function buildRss(items: Item[]): string {
   return `<?xml version="1.0" encoding="UTF-8"?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
 <channel>
-<title>Merkez Bankaları Radar — faiz kararları</title>
+<title>Faiz Radar — merkez bankası faiz kararları</title>
 <link>${SITE_URL}/takvim</link>
 <atom:link href="${SITE_URL}/rss.xml" rel="self" type="application/rss+xml"/>
 <description>Fed, ECB, TCMB, BoE, BoJ ve RBA faiz kararları: bir hafta önceden hatırlatma ve açıklanan karar. Yatırım tavsiyesi değildir.</description>

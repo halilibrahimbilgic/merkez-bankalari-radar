@@ -13,8 +13,8 @@ const geistMono = Geist_Mono({ variable: "--font-geist-mono", subsets: ["latin"]
 
 export const metadata: Metadata = {
   title: {
-    default: "Merkez Bankaları Radar — Faiz toplantıları ve şahin/güvercin takibi",
-    template: "%s · Merkez Bankaları Radar",
+    default: "Faiz Radar — Merkez bankası faiz kararları, Türkiye saatiyle",
+    template: "%s · Faiz Radar",
   },
   description:
     "Fed, ECB, TCMB, BoE, BoJ ve RBA faiz toplantı takvimi Türkiye saatiyle; piyasanın fiyatladığı faiz olasılıkları ve merkez bankası konuşmalarının şahin/güvercin skoru — Türkçe, eğitim amaçlı.",
@@ -31,10 +31,11 @@ export const metadata: Metadata = {
   openGraph: {
     type: "website",
     locale: "tr_TR",
-    siteName: "Merkez Bankaları Radar",
+    siteName: "Faiz Radar",
     url: SITE_URL,
   },
-  twitter: { card: "summary" },
+  // Büyük görselli kart: önizleme görselleri opengraph-image.tsx'lerden gelir.
+  twitter: { card: "summary_large_image" },
   robots: { index: true, follow: true },
 };
 
@@ -87,7 +88,7 @@ export default function RootLayout({ children }: LayoutProps<"/">) {
               href="/"
               className="order-1 inline-flex min-h-11 items-center whitespace-nowrap font-semibold tracking-tight sm:min-h-0"
             >
-              Merkez Bankaları <span className="ml-1 text-accent">Radar</span>
+              Faiz <span className="ml-1 text-accent">Radar</span>
             </Link>
 
             <div className="order-2 ml-auto sm:order-3 sm:ml-2">

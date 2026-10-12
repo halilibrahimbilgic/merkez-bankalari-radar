@@ -21,7 +21,9 @@ export async function generateMetadata({
   if (!speech) return {};
   return {
     title: `${speech.speakerName} — ${speech.title}`,
-    description: speech.summaryTr ?? `${BANKS[speech.bankCode].nameTr} konuşması.`,
+    description: speech.summaryTr
+      ? firstSentences(speech.summaryTr, 200)
+      : `${BANKS[speech.bankCode].nameTr} konuşması.`,
   };
 }
 
@@ -165,4 +167,20 @@ export default async function SpeechPage({ params }: PageProps<"/konusma/[id]">)
       </Link>
     </article>
   );
+}
+
+/**
+ * Arama sonucu açıklaması: Google ~160 karakterden sonrasını keser; özetin
+ * tamamı (~900 karakter) yarım cümleyle biterdi. Cümle sınırında kısaltılır.
+ */
+function firstSentences(text: string, max: number): string {
+  let out = "";
+  for (const s of text.match(/[^.!?]+[.!?]+(\s|$)/g) ?? [text]) {
+    if (out && (out + s).length > max) break;
+    out += s;
+  }
+  if (out.length <= max) return out.trim();
+  // Tek cümle bile uzunsa kelime sınırında kes, kelimeyi bölme.
+  const cut = out.slice(0, max - 1);
+  return `${cut.slice(0, cut.lastIndexOf(" ")).replace(/[,;:]$/, "")}…`;
 }

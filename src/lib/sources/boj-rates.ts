@@ -1,4 +1,4 @@
-import { fetchText, stripTags } from "./shared";
+import { fetchText, stripTags, UA } from "./shared";
 
 /**
  * BoJ politika faizi — toplantı sonrası karar metinlerinden.
@@ -67,7 +67,7 @@ export async function fetchBojStatementRate(url: string): Promise<number> {
 
 async function pdfText(url: string): Promise<string> {
   const res = await fetch(url, {
-    headers: { "user-agent": "Mozilla/5.0 (compatible; MerkezBankalariRadar/0.1) Node" },
+    headers: { "user-agent": UA },
     signal: AbortSignal.timeout(60_000),
   });
   if (!res.ok) throw new Error(`${url} → HTTP ${res.status}`);

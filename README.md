@@ -1,4 +1,4 @@
-# Merkez Bankaları Radar
+# Faiz Radar
 
 Fed, ECB, TCMB, BoE, BoJ ve RBA faiz toplantılarını Türkiye saatiyle tek yerde toplayan Türkçe
 merkez bankası takip platformu. Yol haritası ve gerekçe için

@@ -1,3 +1,4 @@
+import { UA } from "./shared";
 import { excelSerialToDate, openWorkbook, readCells } from "./xlsx";
 
 /**
@@ -36,7 +37,7 @@ export function parseBoeDecisions(xlsx: Uint8Array): BoeDecision[] {
 export async function fetchBoeDecisions(): Promise<BoeDecision[]> {
   const res = await fetch(BOE_VOTING_URL, {
     headers: {
-      "user-agent": "Mozilla/5.0 (compatible; MerkezBankalariRadar/0.1) Node",
+      "user-agent": UA,
     },
     signal: AbortSignal.timeout(60_000),
   });

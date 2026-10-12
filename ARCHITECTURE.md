@@ -135,6 +135,16 @@ gösterilmemeli. Karar metinleri PDF olduğu için `fillBoj` yalnızca
 doldurulmamış toplantıları indirir; BoJ güncel faizi `fetch:current-rates`'te
 yeniden indirilmeden meetings.json'dan türetilir (sıra: rates → current-rates).
 
+**iCal UID'leri değişmez.** `UID:<id>@merkezbankalariradar` eski marka adını
+taşır ama abone takvimler etkinlikleri UID ile eşler; değişirse her
+toplantı abonelerin takviminde iki kez görünür. Marka "Faiz Radar" olsa da
+ek kalır.
+
+**Paylaşım görselleri koddan üretilir** (`opengraph-image.tsx`: kök, banka,
+konuşma; ortak kart `src/lib/og.tsx`). Derlemede statik üretilip saatlik
+yenilenir, böylece faiz ve tarih güncel kalır. Yazı tipi next/og'un gömülü
+Geist-Regular'ı; Türkçe karakterleri kapsadığı render edilerek doğrulandı.
+
 **Geçmiş toplantılar kaynaktan düşse de arşivde kalır.** Bankalar takvim
 sayfalarını ileriye kaydırır; ECB'nin 10 Eylül 2026 toplantısı bu yüzden bir
 kez silinmişti. Yalnızca *gelecek* toplantıların kaybolması anlamlıdır

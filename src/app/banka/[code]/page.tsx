@@ -7,7 +7,7 @@ import { getPastMeetings, getUpcomingMeetings } from "@/lib/data/meetings";
 import { formatCurrentRate, getCurrentRate } from "@/lib/data/rates";
 import { getBankScoreSummaries, getSpeeches } from "@/lib/data/speeches";
 import { ScoreBadge } from "@/components/ScoreBadge";
-import { formatDateTr, formatMeetingTr } from "@/lib/time";
+import { formatDateTr, formatMeetingTr, formatTimeTrt } from "@/lib/time";
 
 export const revalidate = 3600;
 
@@ -21,9 +21,29 @@ export async function generateMetadata({
   const { code } = await params;
   const bank = getBank(code);
   if (!bank) return {};
+
+  // Başlık, insanların gerçekten aradığı soruyla başlar ("TCMB faiz kararı ne
+  // zaman") ve cevabı içerir; tarih ve faiz günlük veriyle güncellenir.
+  const [next] = await getUpcomingMeetings({ bankCode: bank.code });
+  const rate = await getCurrentRate(bank.code);
+  const when = next
+    ? next.timeTbd
+      ? formatDateTr(next.meetingAt)
+      : `${formatDateTr(next.meetingAt)}, ${formatTimeTrt(next.meetingAt)} TRT`
+    : undefined;
+
   return {
-    title: `${bank.nameTr} faiz toplantıları`,
-    description: `${bank.nameTr} (${bank.nameEn}) toplantı takvimi ve faiz kararları — Türkiye saatiyle.`,
+    title: when
+      ? `${bank.nameTr} faiz kararı ne zaman? Sıradaki: ${formatDateTr(next!.meetingAt)}`
+      : `${bank.nameTr} faiz kararları`,
+    description:
+      [
+        rate && `${bank.nameTr} ${bank.rateNameTr}: ${formatCurrentRate(rate)} (${formatDateTr(rate.asOf)} itibarıyla).`,
+        when && `Sıradaki karar ${when}.`,
+        "Geçmiş kararlar ve Türkiye saatiyle toplantı takvimi.",
+      ]
+        .filter(Boolean)
+        .join(" "),
   };
 }
 

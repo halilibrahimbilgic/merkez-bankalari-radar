@@ -1,5 +1,5 @@
 import type { BankCode } from "../types";
-import { fetchText } from "./shared";
+import { fetchText, UA } from "./shared";
 
 /**
  * BIS "Central Bankers' Speeches" beslemesi.
@@ -166,7 +166,7 @@ function htmlBody(html: string): string | null {
 
 async function fetchPdfText(url: string): Promise<string> {
   const res = await fetch(url, {
-    headers: { "user-agent": "Mozilla/5.0 (compatible; MerkezBankalariRadar/0.1) Node" },
+    headers: { "user-agent": UA },
     signal: AbortSignal.timeout(60_000),
   });
   if (!res.ok) throw new Error(`${url} → HTTP ${res.status}`);

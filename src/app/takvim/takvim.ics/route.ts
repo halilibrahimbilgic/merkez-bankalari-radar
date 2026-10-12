@@ -30,7 +30,7 @@ function buildIcs(meetings: Meeting[]): string {
   const lines = [
     "BEGIN:VCALENDAR",
     "VERSION:2.0",
-    "PRODID:-//Merkez Bankalari Radar//TR//",
+    "PRODID:-//Faiz Radar//TR//",
     "CALSCALE:GREGORIAN",
     "METHOD:PUBLISH",
     "X-WR-CALNAME:Merkez Bankası Faiz Kararları",
@@ -43,6 +43,8 @@ function buildIcs(meetings: Meeting[]): string {
 
     lines.push(
       "BEGIN:VEVENT",
+      // UID'nin eki eski marka adıdır ve DEĞİŞMEMELİ: abone takvimler
+      // etkinlikleri UID ile eşler, değişirse her toplantı iki kez görünür.
       `UID:${m.id}@merkezbankalariradar`,
       `DTSTAMP:${icsTime(new Date())}`,
       ...(m.timeTbd ? allDay(m.meetingAt, bank.timezone) : timed(start)),
