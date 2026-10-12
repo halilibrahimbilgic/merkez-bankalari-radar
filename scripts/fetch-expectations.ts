@@ -20,7 +20,7 @@ import path from "node:path";
 import { config } from "dotenv";
 import { impliedPath } from "../src/lib/implied-path";
 import { BOE_YIELD_CURVES_URL, fetchBoeOisForwards } from "../src/lib/sources/boe-ois";
-import { fetchTcmbSurvey, TCMB_SURVEY_PAGE_URL } from "../src/lib/sources/tcmb-survey";
+import { fetchTcmbSurvey, mapSurveyMeetings, TCMB_SURVEY_PAGE_URL } from "../src/lib/sources/tcmb-survey";
 import type { Expectations } from "../src/lib/expectations";
 import type { BankCode, Meeting } from "../src/lib/types";
 
@@ -59,20 +59,15 @@ async function main() {
   } else {
     try {
       const survey = await fetchTcmbSurvey(evdsKey);
-      // "İlk toplantı" = anket ayının 1'inden sonraki ilk PPK (bkz. tcmb-survey.ts).
-      const from = `${survey.period}-01`;
-      const next = decisions("tcmb").filter((m) => m.meetingAt.slice(0, 10) >= from);
-      if (next.length < survey.meetings.length) {
-        throw new Error(`anket ${survey.meetings.length} toplantı veriyor, takvimde ${next.length} var`);
-      }
+      const mapped = mapSurveyMeetings(survey, decisions("tcmb"));
       out.tcmb = {
         kind: "survey",
         period: survey.period,
         sourceUrl: TCMB_SURVEY_PAGE_URL,
-        meetings: survey.meetings.map((rate, i) => ({
-          meetingId: next[i].id,
-          meetingAt: next[i].meetingAt,
-          expectedRate: rate,
+        meetings: mapped.map(({ meeting, expectedRate }) => ({
+          meetingId: meeting.id,
+          meetingAt: meeting.meetingAt,
+          expectedRate,
         })),
         yearEnd: survey.yearEnd,
         months12: survey.months12,

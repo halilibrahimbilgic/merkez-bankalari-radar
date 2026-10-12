@@ -375,7 +375,12 @@ Sayfa        49 (build çıktısı), ISR 1 saat
   projede plandaki üç iddia (FRED futures, ECB host'u, Hawkometer) deneyle
   yanlış çıktı.
 - Tasarım kararlarını ölçün: kontrast oranı, ton farkı, karakter sayısı.
-- Değişiklikten sonra `npx tsc --noEmit`, `npm run lint`, `npx next build`.
+- Değişiklikten sonra `npx tsc --noEmit`, `npm run lint`, `npm test`,
+  `npx next build`. İlk üçü her push'ta CI'da da koşar (`ci.yml`).
+- Testler `tests/` altında, Node'un yerleşik çalıştırıcısıyla (`tsx --test`);
+  bağımlılık yok. Bir kaynak ayrıştırıcısını ya da saf hesabı değiştirirken
+  önce o kaynağın gerçek bir örneğini teste ekleyin — bu projedeki
+  kırılmaların çoğu sessiz biçim değişikliğiydi.
   Veritabanı yolunu da değiştirdiyseniz `DATABASE_URL=... npx next build`
   ile iki modu da derleyin.
 - Dev sunucusunu elle `npm run dev &` ile başlatmayın — port çakışması

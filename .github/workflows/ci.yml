@@ -1,0 +1,24 @@
+name: Denetim
+
+# Kod değişikliklerinde tip, lint ve testler. Yalnızca veri commit'leri
+# (data/**) tetiklemez — onlar günlük iş ve haber işinden gelir.
+on:
+  push:
+    branches: [main]
+    paths-ignore: ["data/**"]
+  pull_request:
+
+jobs:
+  check:
+    runs-on: ubuntu-latest
+    timeout-minutes: 10
+    steps:
+      - uses: actions/checkout@v5
+      - uses: actions/setup-node@v5
+        with:
+          node-version: 22
+          cache: npm
+      - run: npm ci
+      - run: npx tsc --noEmit
+      - run: npm run lint
+      - run: npm test

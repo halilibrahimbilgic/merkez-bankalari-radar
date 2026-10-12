@@ -62,3 +62,22 @@ export function parseTcmbSurvey(json: unknown): TcmbSurvey {
   }
   throw new Error("EVDS anket: dolu ay bulunamadı");
 }
+
+/**
+ * Anketteki "ilk/ikinci/üçüncü toplantı"yı takvimdeki PPK'larla eşler:
+ * anket ayının 1'inden itibaren ilk üç toplantı. Takvimde yeterli toplantı
+ * yoksa hata — yanlış toplantıya beklenti yazmaktansa hiç yazmamak.
+ */
+export function mapSurveyMeetings<M extends { id: string; meetingAt: string }>(
+  survey: TcmbSurvey,
+  meetings: M[],
+): { meeting: M; expectedRate: number }[] {
+  const from = `${survey.period}-01`;
+  const next = [...meetings]
+    .sort((a, b) => a.meetingAt.localeCompare(b.meetingAt))
+    .filter((m) => m.meetingAt.slice(0, 10) >= from);
+  if (next.length < survey.meetings.length) {
+    throw new Error(`anket ${survey.meetings.length} toplantı veriyor, takvimde ${next.length} var`);
+  }
+  return survey.meetings.map((expectedRate, i) => ({ meeting: next[i], expectedRate }));
+}
