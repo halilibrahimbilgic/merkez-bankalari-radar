@@ -54,6 +54,16 @@ const SOURCES: Record<Lang, Source[]> = {
       note: "Faiz olasılıkları. CME 3 aylık SOFR opsiyon fiyatlarından türetilen dağılımlar; toplantı bazlı değil, üçer aylık ortalama faiz üzerinedir.",
     },
     {
+      name: "Bank of England — OIS faiz eğrisi",
+      url: "https://www.bankofengland.co.uk/statistics/yield-curves",
+      note: "BoE'nin günlük tahmin ettiği SONIA OIS forward eğrisi. Her MPC toplantısı sonrası beklenen Bank Rate ve sıradaki toplantıda 25 baz puanlık adım ihtimali bu eğriden yaklaşık olarak türetilir (toplantılar arası ortalama forward yöntemi).",
+    },
+    {
+      name: "TCMB — Piyasa Katılımcıları Anketi (EVDS)",
+      url: "https://www.tcmb.gov.tr/wps/wcm/connect/TR/TCMB+TR/Main+Menu/Istatistikler/Egilim+Anketleri/Piyasa+Katilimcilari+Anketi/",
+      note: "Aylık anket; sonraki üç PPK, yıl sonu ve 12 ay sonrası için politika faizi beklentisinin ortalaması. Piyasa fiyatlaması değil, ekonomist ve piyasa katılımcılarının beklentisidir.",
+    },
+    {
       name: "FRED (St. Louis Fed)",
       url: "https://fred.stlouisfed.org/",
       note: "Fed hedef aralığının geçmişi (DFEDTARU / DFEDTARL) — geçmiş toplantıların karar oranlarını doldurmak için.",
@@ -109,6 +119,16 @@ const SOURCES: Record<Lang, Source[]> = {
       name: "Atlanta Fed — Market Probability Tracker",
       url: "https://www.atlantafed.org/research-and-data/data/market-probability-tracker",
       note: "Rate probabilities. Distributions derived from CME three-month SOFR option prices; they refer to three-month average rates, not to individual meetings.",
+    },
+    {
+      name: "Bank of England — OIS yield curve",
+      url: "https://www.bankofengland.co.uk/statistics/yield-curves",
+      note: "The SONIA OIS forward curve estimated daily by the BoE. The Bank Rate expected after each MPC meeting and the probability of a 25 basis point move at the next meeting are derived approximately from this curve (average forward between meetings).",
+    },
+    {
+      name: "CBRT — Survey of Market Participants (EVDS)",
+      url: "https://www.tcmb.gov.tr/wps/wcm/connect/TR/TCMB+TR/Main+Menu/Istatistikler/Egilim+Anketleri/Piyasa+Katilimcilari+Anketi/",
+      note: "Monthly survey; the average expected policy rate for the next three MPC meetings, year-end and 12 months ahead. It reflects the expectations of economists and market participants, not market pricing.",
     },
     {
       name: "FRED (St. Louis Fed)",

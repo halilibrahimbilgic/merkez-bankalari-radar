@@ -14,7 +14,7 @@ takip eden bir site. Üç modül:
 | Modül | Ne yapar | Veri otomatik mi |
 | --- | --- | --- |
 | A — Takvim | Toplantı tarihleri, TRT geri sayımı, geçmiş kararlar, iCal + RSS + Telegram hatırlatma | ✅ tam otomatik |
-| B — Faiz olasılığı | Piyasanın fiyatladığı faiz dağılımı (Atlanta Fed MPT) | ✅ tam otomatik |
+| B — Faiz olasılığı | Fed: piyasa dağılımı (Atlanta Fed MPT); BoE: OIS eğrisinden toplantı bazında beklenti; TCMB: Piyasa Katılımcıları Anketi | ✅ tam otomatik |
 | C — Şahin/güvercin | Merkez bankacısı konuşmaları + Türkçe özet ve skor | ✅ metin ve skor otomatik (Claude aboneliği; §5) |
 
 Site **yatırım tavsiyesi vermez** ve veri lisansı gereği kişisel/eğitim
@@ -36,6 +36,7 @@ amaçlıdır (bkz. §6).
   FRED · ECB SDMX · EVDS · BoE xlsx · RBA F1 · BoJ karar PDF'leri ─► fetch:rates
   aynıları ────────────────► fetch:current-rates ───► current-rates.json
   atlantafed.org (.xlsx) ─► fetch:probabilities ──► probabilities.json
+  BoE OIS eğrisi · EVDS anket ─► fetch:expectations ─► expectations.json
   bis.org (RSS + HTML) ───► fetch:speeches ───────► speeches.json
                                                       ▲
   Claude Code (abonelik) ─► score:export/import ──────┘ (§5)
@@ -278,6 +279,14 @@ düşünülürse önce CME lisansı alınmalı ve bu kaynak değiştirilmelidir.
 metinleri `/faiz-olasiligi` ve `/hakkinda` sayfalarında aynen görünür.
 
 **CME otomatik veri çekmeyi kullanım şartlarıyla yasaklar.** Denemeyin.
+
+**Fed dışı beklentiler iki ayrı türdür ve arayüzde karıştırılmaz.** BoE:
+BoE'nin günlük OIS eğrisinden türetilen *piyasa fiyatlaması*
+(`src/lib/implied-path.ts`; BoE web kaynakları ticari olmayan kullanıma
+izinli). TCMB: Piyasa Katılımcıları Anketi — *ekonomist beklentisi*, aylık.
+ECB'nin analist anketi (SMA) yalnızca PDF; sıradaki iş. BoJ ve RBA için
+ücretsiz ve yayımlanabilir kaynak yok (piyasa verisi borsaların lisanslı
+ürünü — ASX, JSCC, Eurex/ICE). Her bölüm türünü rozetle söyler.
 
 **FRED'de Fed Funds futures fiyatı yoktur** — MVP planındaki bu varsayım
 hatalıydı, Atlanta Fed'e bu yüzden geçildi.

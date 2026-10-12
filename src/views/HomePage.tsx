@@ -9,7 +9,9 @@ import { getUpcomingMeetings } from "@/lib/data/meetings";
 import { getCurrentRates } from "@/lib/data/rates";
 import { getProbabilitySnapshot } from "@/lib/data/probabilities";
 import { getBankScoreSummaries, getSpeeches } from "@/lib/data/speeches";
-import { L, languageAlternates, localePath, type Lang } from "@/lib/i18n";
+import { getExpectations } from "@/lib/data/expectations";
+import { moveOdds } from "@/lib/implied-path";
+import { fmtPercent, L, languageAlternates, localePath, type Lang } from "@/lib/i18n";
 import { speechTitle } from "@/lib/speech-i18n";
 import { countdownLabel, formatDate } from "@/lib/time";
 
@@ -23,13 +25,38 @@ export async function HomePage({ lang }: { lang: Lang }) {
   const p = (path: string) => localePath(lang, path);
   const now = new Date();
 
-  const [upcoming, rates, scores, probability, recentSpeeches] = await Promise.all([
+  const [upcoming, rates, scores, probability, recentSpeeches, expectations] = await Promise.all([
     getUpcomingMeetings({ now }),
     getCurrentRates(),
     getBankScoreSummaries(),
     getProbabilitySnapshot(),
     getSpeeches({ scoredOnly: true, limit: 4 }),
+    getExpectations(),
   ]);
+
+  // BoE: OIS eğrisinden sıradaki MPC için fiyatlanan 25 bp adım ihtimali.
+  const boeNext = expectations.boe?.meetings.find((m) => new Date(m.meetingAt) > now);
+  const boeMove = boeNext && moveOdds(boeNext.changeBp);
+  const boeOdds: OddsRow[] | undefined = boeMove && [
+    { direction: "up", label: t("Artırım", "Hike"), pct: boeMove.direction === "hike" ? boeMove.pct : 0 },
+    { direction: "flat", label: t("Sabit", "Hold"), pct: boeMove.direction === "hold" ? 100 : 100 - boeMove.pct },
+    { direction: "down", label: t("İndirim", "Cut"), pct: boeMove.direction === "cut" ? boeMove.pct : 0 },
+  ];
+
+  // TCMB: anketin henüz gerçekleşmemiş ilk toplantısı.
+  const tcmbNext = expectations.tcmb?.meetings.find((m) => new Date(m.meetingAt) > now);
+  const tcmbNote =
+    tcmbNext &&
+    t(
+      `${formatDate(tcmbNext.meetingAt, lang)} PPK için ${fmtPercent(tcmbNext.expectedRate, lang)}` +
+        (expectations.tcmb?.yearEnd !== undefined
+          ? `, yıl sonu için ${fmtPercent(expectations.tcmb.yearEnd, lang)}`
+          : ""),
+      `${fmtPercent(tcmbNext.expectedRate, lang)} for the ${formatDate(tcmbNext.meetingAt, lang)} meeting` +
+        (expectations.tcmb?.yearEnd !== undefined
+          ? `, ${fmtPercent(expectations.tcmb.yearEnd, lang)} by year-end`
+          : ""),
+    );
 
   // Fed olasılıkları yalnızca Fed kartında gösterilir — kaynağımız
   // Fed Funds/SOFR üzerinedir, diğer bankalar için karşılığı yok.
@@ -85,15 +112,26 @@ export async function HomePage({ lang }: { lang: Lang }) {
               nextMeeting={upcoming.find((m) => m.bankCode === code)}
               currentRate={rates.find((r) => r.bankCode === code)}
               score={scores.find((s) => s.bankCode === code)}
-              odds={code === "fed" ? fedOdds : undefined}
+              odds={code === "fed" ? fedOdds : code === "boe" ? boeOdds : undefined}
+              oddsTitle={
+                code === "boe" && boeNext
+                  ? t(
+                      `Piyasa fiyatlaması · ${formatDate(boeNext.meetingAt, lang)} MPC`,
+                      `Market pricing · ${formatDate(boeNext.meetingAt, lang)} MPC`,
+                    )
+                  : undefined
+              }
               oddsNote={
                 code === "fed" && window
                   ? t(
                       `${formatDate(window.startDate, lang)} itibarıyla başlayan üç aylık dönem için ortalama faiz`,
                       `Average rate over the three-month period starting ${formatDate(window.startDate, lang)}`,
                     )
-                  : undefined
+                  : code === "boe" && boeOdds
+                    ? t("OIS eğrisinden yaklaşık, 25 bp adım varsayımıyla", "Approximate, from the OIS curve, assuming 25 bp steps")
+                    : undefined
               }
+              surveyNote={code === "tcmb" ? tcmbNote : undefined}
             />
           ))}
         </div>

@@ -1,0 +1,118 @@
+/**
+ * Fed dışındaki bankalar için faiz beklentileri → data/seed/expectations.json
+ *
+ *   npm run fetch:expectations
+ *
+ * TCMB: Piyasa Katılımcıları Anketi (EVDS) — ekonomist beklentisi, aylık.
+ *       EVDS_API_KEY gerekir; yoksa atlanır.
+ * BoE:  BoE'nin günlük OIS forward eğrisinden türetilen piyasa fiyatlaması
+ *       (src/lib/implied-path.ts). Güncel Bank Rate current-rates.json'dan
+ *       okunur — bu yüzden fetch:current-rates'ten SONRA çalışır.
+ *
+ * Fed'in olasılıkları ayrı (fetch:probabilities, Atlanta Fed). ECB, BoJ ve
+ * RBA için ücretsiz ve yayımlanabilir bir kaynak yok (ARCHITECTURE.md §6).
+ *
+ * Birleştirir, üzerine yazmaz: bir kaynak hata verirse önceki kaydı korunur
+ * ve iş hata koduyla biter (current-rates ile aynı kural).
+ */
+import { readFile, writeFile } from "node:fs/promises";
+import path from "node:path";
+import { config } from "dotenv";
+import { impliedPath } from "../src/lib/implied-path";
+import { BOE_YIELD_CURVES_URL, fetchBoeOisForwards } from "../src/lib/sources/boe-ois";
+import { fetchTcmbSurvey, TCMB_SURVEY_PAGE_URL } from "../src/lib/sources/tcmb-survey";
+import type { Expectations } from "../src/lib/expectations";
+import type { BankCode, Meeting } from "../src/lib/types";
+
+config({ path: ".env.local", quiet: true });
+
+const SEED = path.join(process.cwd(), "data", "seed");
+const OUT = path.join(SEED, "expectations.json");
+
+async function readJson<T>(file: string): Promise<T | undefined> {
+  try {
+    return JSON.parse(await readFile(path.join(SEED, file), "utf8")) as T;
+  } catch {
+    return undefined;
+  }
+}
+
+async function main() {
+  const previous = await readJson<Expectations>("expectations.json");
+  const { meetings } = (await readJson<{ meetings: Meeting[] }>("meetings.json")) ?? { meetings: [] };
+  const { rates } = (await readJson<{ rates: { bankCode: BankCode; rate: number }[] }>(
+    "current-rates.json",
+  )) ?? { rates: [] };
+  const decisions = (code: BankCode) =>
+    meetings
+      .filter((m) => m.bankCode === code && m.status !== "cancelled")
+      .sort((a, b) => a.meetingAt.localeCompare(b.meetingAt));
+
+  const out: Expectations = { fetchedAt: new Date().toISOString() };
+  const failed: string[] = [];
+
+  // TCMB — anket
+  const evdsKey = process.env.EVDS_API_KEY;
+  if (!evdsKey) {
+    console.log("–  TCMB: EVDS_API_KEY yok, atlandı");
+    if (previous?.tcmb) out.tcmb = previous.tcmb;
+  } else {
+    try {
+      const survey = await fetchTcmbSurvey(evdsKey);
+      // "İlk toplantı" = anket ayının 1'inden sonraki ilk PPK (bkz. tcmb-survey.ts).
+      const from = `${survey.period}-01`;
+      const next = decisions("tcmb").filter((m) => m.meetingAt.slice(0, 10) >= from);
+      if (next.length < survey.meetings.length) {
+        throw new Error(`anket ${survey.meetings.length} toplantı veriyor, takvimde ${next.length} var`);
+      }
+      out.tcmb = {
+        kind: "survey",
+        period: survey.period,
+        sourceUrl: TCMB_SURVEY_PAGE_URL,
+        meetings: survey.meetings.map((rate, i) => ({
+          meetingId: next[i].id,
+          meetingAt: next[i].meetingAt,
+          expectedRate: rate,
+        })),
+        yearEnd: survey.yearEnd,
+        months12: survey.months12,
+      };
+      console.log(`✓  TCMB anketi ${survey.period}: ${survey.meetings.join(" / ")}`);
+    } catch (err) {
+      console.error(`✗  TCMB anketi: ${(err as Error).message}`);
+      failed.push("tcmb");
+      if (previous?.tcmb) out.tcmb = previous.tcmb;
+    }
+  }
+
+  // BoE — OIS piyasa fiyatlaması
+  try {
+    const current = rates.find((r) => r.bankCode === "boe")?.rate;
+    if (current === undefined) throw new Error("güncel Bank Rate yok (önce fetch:current-rates)");
+    const curve = await fetchBoeOisForwards();
+    const path_ = impliedPath(curve, decisions("boe"), current);
+    if (path_.length === 0) throw new Error("eğri tarihinden sonra MPC toplantısı yok");
+    out.boe = {
+      kind: "market",
+      asOf: curve.date,
+      sourceUrl: BOE_YIELD_CURVES_URL,
+      currentRate: current,
+      meetings: path_,
+    };
+    console.log(
+      `✓  BoE OIS ${curve.date}: ` + path_.map((m) => `${m.meetingAt.slice(0, 10)} ${m.impliedRate}`).join(", "),
+    );
+  } catch (err) {
+    console.error(`✗  BoE OIS: ${(err as Error).message}`);
+    failed.push("boe");
+    if (previous?.boe) out.boe = previous.boe;
+  }
+
+  await writeFile(OUT, JSON.stringify(out, null, 2) + "\n", "utf8");
+  if (failed.length > 0) process.exit(1);
+}
+
+main().catch((err) => {
+  console.error(err instanceof Error ? err.message : err);
+  process.exit(1);
+});

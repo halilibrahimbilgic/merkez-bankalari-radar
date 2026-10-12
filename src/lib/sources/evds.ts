@@ -28,8 +28,13 @@ export async function fetchEvdsSeries(
   start: string,
   apiKey: string,
 ): Promise<RateObservation[]> {
+  return parseEvds(await fetchEvdsJson([code], start, apiKey), code);
+}
+
+/** Ham yanıt — birden çok seri tek istekte ("A-B-C"); tarih biçimi frekansa göre değişir. */
+export async function fetchEvdsJson(codes: string[], start: string, apiKey: string): Promise<unknown> {
   const url =
-    `${BASE}/series=${code}&startDate=${toEvdsDate(start)}` +
+    `${BASE}/series=${codes.join("-")}&startDate=${toEvdsDate(start)}` +
     `&endDate=${toEvdsDate(new Date().toISOString().slice(0, 10))}&type=json`;
 
   for (let attempt = 1; ; attempt++) {
@@ -39,7 +44,7 @@ export async function fetchEvdsSeries(
         headers: { key: apiKey, accept: "application/json" },
         signal: AbortSignal.timeout(60_000),
       });
-      if (res.ok) return parseEvds(await res.json(), code);
+      if (res.ok) return res.json();
       status = res.status;
     } catch (err) {
       if (attempt >= 3) throw err;

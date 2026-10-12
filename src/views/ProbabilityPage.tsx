@@ -4,25 +4,29 @@ import { ExpectedPathChart, type PathPoint } from "@/components/ExpectedPathChar
 import { ProbabilityChart, type ChartBucket } from "@/components/ProbabilityChart";
 import { RateOdds, type OddsRow } from "@/components/RateOdds";
 import { Callout, Card, EmptyState, SectionHeader, Stat } from "@/components/ui";
-import { getUpcomingMeetings } from "@/lib/data/meetings";
+import { getExpectations } from "@/lib/data/expectations";
+import { getPastMeetings, getUpcomingMeetings } from "@/lib/data/meetings";
+import { getCurrentRate } from "@/lib/data/rates";
 import {
   bpsRange,
   describeWindow,
   formatPct,
   getProbabilitySnapshot,
   windowEndDate,
+  type StoredSnapshot,
 } from "@/lib/data/probabilities";
 import { INTL_LOCALE, L, languageAlternates, localePath, type Lang } from "@/lib/i18n";
 import { LICENSE_NOTICE, LICENSE_NOTICE_EN, MPT_PAGE_URL } from "@/lib/sources/mpt";
 import { formatDate } from "@/lib/time";
+import { BoeExpectations, OtherBanksNote, TcmbExpectations } from "./ExpectationSections";
 
 export function probabilityMetadata(lang: Lang): Metadata {
   const t = L(lang);
   return {
-    title: t("Fed faiz olasılıkları", "Fed rate probabilities"),
+    title: t("Faiz olasılıkları ve beklentileri", "Rate probabilities and expectations"),
     description: t(
-      "Piyasanın fiyatladığı Fed faiz beklentileri — Atlanta Fed Market Probability Tracker verisiyle, Türkçe açıklamalı.",
-      "Market-implied Fed rate expectations — from the Atlanta Fed Market Probability Tracker, with explanations.",
+      "Fed, BoE ve TCMB için faiz beklentileri: piyasanın fiyatladığı olasılıklar (Atlanta Fed, BoE OIS eğrisi) ve TCMB Piyasa Katılımcıları Anketi — Türkçe açıklamalı.",
+      "Rate expectations for the Fed, BoE and CBRT: market-implied probabilities (Atlanta Fed, BoE OIS curve) and the CBRT Survey of Market Participants — with explanations.",
     ),
     alternates: languageAlternates(lang, "/faiz-olasiligi"),
   };
@@ -36,17 +40,78 @@ export async function ProbabilityPage({
   searchParams: Record<string, string | string[] | undefined>;
 }) {
   const t = L(lang);
-  const snapshot = await getProbabilitySnapshot();
-  const title = t("Fed faiz olasılıkları", "Fed rate probabilities");
+  const [snapshot, expectations, tcmbRate, tcmbMeetings] = await Promise.all([
+    getProbabilitySnapshot(),
+    getExpectations(),
+    getCurrentRate("tcmb"),
+    getPastMeetings({ bankCode: "tcmb", limit: 6 }),
+  ]);
 
-  if (!snapshot || snapshot.windows.length === 0) {
-    return (
-      <div className="space-y-4">
-        <h1 className="text-2xl font-semibold tracking-tight">{title}</h1>
-        <EmptyState>{t("Olasılık verisi henüz yüklenmedi.", "Probability data has not been loaded yet.")}</EmptyState>
-      </div>
-    );
-  }
+  return (
+    <div className="space-y-8">
+      <header>
+        <h1 className="text-2xl font-semibold tracking-tight">
+          {t("Faiz olasılıkları ve beklentileri", "Rate probabilities and expectations")}
+        </h1>
+        <p className="prose-width mt-2 text-muted">
+          {t(
+            "Fed ve BoE için piyasanın fiyatladığı beklentiler, TCMB için ekonomistlere sorulan anketin sonucu. İkisi farklı şeylerdir: piyasa fiyatlaması her gün değişir, anket ayda bir yapılır.",
+            "Market-implied expectations for the Fed and BoE, and the result of a survey of economists for the CBRT. They are different things: market pricing changes daily, the survey is run once a month.",
+          )}
+        </p>
+        <nav aria-label={t("Bankalar", "Banks")} className="mt-3 flex flex-wrap gap-2 text-sm">
+          {[
+            { id: "fed", label: "Fed" },
+            { id: "boe", label: "BoE", show: !!expectations.boe },
+            { id: "tcmb", label: t("TCMB", "CBRT"), show: !!expectations.tcmb },
+          ]
+            .filter((b) => b.show !== false)
+            .map((b) => (
+              <a
+                key={b.id}
+                href={`#${b.id}`}
+                className="inline-flex min-h-9 items-center rounded-full border border-border px-3 text-muted hover:border-accent hover:text-accent"
+              >
+                {b.label}
+              </a>
+            ))}
+        </nav>
+      </header>
+
+      <section id="fed" className="scroll-mt-4 space-y-8">
+        {snapshot && snapshot.windows.length > 0 ? (
+          <FedProbabilities lang={lang} snapshot={snapshot} searchParams={searchParams} />
+        ) : (
+          <EmptyState>{t("Fed olasılık verisi henüz yüklenmedi.", "Fed probability data has not been loaded yet.")}</EmptyState>
+        )}
+      </section>
+
+      {expectations.boe && <BoeExpectations data={expectations.boe} lang={lang} />}
+      {expectations.tcmb && (
+        <TcmbExpectations
+          data={expectations.tcmb}
+          currentRate={tcmbRate?.rate}
+          meetings={tcmbMeetings}
+          now={new Date()}
+          lang={lang}
+        />
+      )}
+      <OtherBanksNote lang={lang} />
+    </div>
+  );
+}
+
+/** Atlanta Fed MPT bölümü — sayfanın ilk ve en ayrıntılı kısmı. */
+async function FedProbabilities({
+  lang,
+  snapshot,
+  searchParams,
+}: {
+  lang: Lang;
+  snapshot: StoredSnapshot;
+  searchParams: Record<string, string | string[] | undefined>;
+}) {
+  const t = L(lang);
 
   const requested = typeof searchParams.donem === "string" ? searchParams.donem : undefined;
   const selected =
@@ -103,16 +168,21 @@ export async function ProbabilityPage({
   const notice = lang === "en" ? LICENSE_NOTICE_EN : LICENSE_NOTICE;
 
   return (
-    <div className="space-y-8">
-      <header>
-        <h1 className="text-2xl font-semibold tracking-tight">{title}</h1>
+    <>
+      <div>
+        <h2 className="text-xl font-semibold tracking-tight">
+          {t("Fed — faiz olasılıkları", "Fed — rate probabilities")}
+          <span className="ml-2 rounded-full bg-accent-soft px-2 py-0.5 align-middle text-xs font-normal text-accent">
+            {t("piyasa fiyatlaması", "market pricing")}
+          </span>
+        </h2>
         <p className="mt-2 max-w-2xl text-muted">
           {t(
             `Piyasanın opsiyon fiyatlarına yansıyan faiz beklentileri. Veri ${formatDate(snapshot.asOf, lang)} kapanışına aittir.`,
             `Rate expectations reflected in option prices. Data as of the close of ${formatDate(snapshot.asOf, lang)}.`,
           )}
         </p>
-      </header>
+      </div>
 
       <Callout title={t("Bu rakamlar ne anlama gelir?", "What do these numbers mean?")}>
         {lang === "en" ? (
@@ -263,7 +333,7 @@ export async function ProbabilityPage({
         <p className="prose-width">{notice.atlantaFed}</p>
         <p className="prose-width">{notice.cme}</p>
       </Card>
-    </div>
+    </>
   );
 }
 

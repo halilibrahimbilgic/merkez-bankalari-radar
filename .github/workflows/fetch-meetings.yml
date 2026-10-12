@@ -41,6 +41,11 @@ jobs:
         env:
           FRED_API_KEY: ${{ secrets.FRED_API_KEY }}
           EVDS_API_KEY: ${{ secrets.EVDS_API_KEY }}
+      # Güncel Bank Rate'i current-rates.json'dan okur — ondan sonra çalışmalı.
+      - run: npm run fetch:expectations
+        if: ${{ !cancelled() }}
+        env:
+          EVDS_API_KEY: ${{ secrets.EVDS_API_KEY }}
       - run: npm run fetch:probabilities
         if: ${{ !cancelled() }}
       - run: npm run fetch:speeches

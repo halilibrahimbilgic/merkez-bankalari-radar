@@ -25,6 +25,8 @@ export function BankCard({
   score,
   odds,
   oddsNote,
+  oddsTitle,
+  surveyNote,
   lang,
 }: {
   bankCode: BankCode;
@@ -33,6 +35,10 @@ export function BankCard({
   score?: BankScoreSummary;
   odds?: OddsRow[];
   oddsNote?: string;
+  /** Varsayılan "Piyasa fiyatlaması". */
+  oddsTitle?: string;
+  /** Anket beklentisi (TCMB) — piyasa fiyatlamasından ayrı başlıkla. */
+  surveyNote?: string;
   lang: Lang;
 }) {
   const t = L(lang);
@@ -131,9 +137,16 @@ export function BankCard({
 
       {odds && odds.length > 0 && (
         <div className="mt-4 border-t border-border pt-3">
-          <div className="mb-2 text-sm text-muted">{t("Piyasa fiyatlaması", "Market pricing")}</div>
+          <div className="mb-2 text-sm text-muted">{oddsTitle ?? t("Piyasa fiyatlaması", "Market pricing")}</div>
           <RateOdds rows={odds} lang={lang} />
           {oddsNote && <p className="mt-2 text-xs text-muted">{oddsNote}</p>}
+        </div>
+      )}
+
+      {surveyNote && (
+        <div className="mt-4 border-t border-border pt-3 text-sm">
+          <div className="mb-1 text-muted">{t("Ekonomist beklentisi (anket)", "Economist expectation (survey)")}</div>
+          <p>{surveyNote}</p>
         </div>
       )}
 

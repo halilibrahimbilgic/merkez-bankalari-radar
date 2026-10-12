@@ -13,6 +13,7 @@
     "fetch:speeches": "tsx scripts/fetch-speeches.ts",
     "score:speeches": "tsx scripts/score-speeches.ts",
     "fetch:current-rates": "tsx scripts/fetch-current-rates.ts",
+    "fetch:expectations": "tsx scripts/fetch-expectations.ts",
     "db:migrate": "tsx scripts/db-migrate.ts",
     "db:import": "tsx scripts/db-import.ts",
     "score:export": "tsx scripts/score-export.ts",
