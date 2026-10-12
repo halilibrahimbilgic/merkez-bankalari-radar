@@ -18,15 +18,15 @@ import {
 import { INTL_LOCALE, L, languageAlternates, localePath, type Lang } from "@/lib/i18n";
 import { LICENSE_NOTICE, LICENSE_NOTICE_EN, MPT_PAGE_URL } from "@/lib/sources/mpt";
 import { formatDate } from "@/lib/time";
-import { BoeExpectations, OtherBanksNote, TcmbExpectations } from "./ExpectationSections";
+import { BoeExpectations, EcbExpectations, OtherBanksNote, TcmbExpectations } from "./ExpectationSections";
 
 export function probabilityMetadata(lang: Lang): Metadata {
   const t = L(lang);
   return {
     title: t("Faiz olasılıkları ve beklentileri", "Rate probabilities and expectations"),
     description: t(
-      "Fed, BoE ve TCMB için faiz beklentileri: piyasanın fiyatladığı olasılıklar (Atlanta Fed, BoE OIS eğrisi) ve TCMB Piyasa Katılımcıları Anketi — Türkçe açıklamalı.",
-      "Rate expectations for the Fed, BoE and CBRT: market-implied probabilities (Atlanta Fed, BoE OIS curve) and the CBRT Survey of Market Participants — with explanations.",
+      "Fed, ECB, BoE ve TCMB için faiz beklentileri: piyasanın fiyatladığı olasılıklar (Atlanta Fed, BoE OIS eğrisi), ECB analist anketi ve TCMB Piyasa Katılımcıları Anketi — Türkçe açıklamalı.",
+      "Rate expectations for the Fed, ECB, BoE and CBRT: market-implied probabilities (Atlanta Fed, BoE OIS curve), the ECB Survey of Monetary Analysts and the CBRT Survey of Market Participants.",
     ),
     alternates: languageAlternates(lang, "/faiz-olasiligi"),
   };
@@ -40,12 +40,15 @@ export async function ProbabilityPage({
   searchParams: Record<string, string | string[] | undefined>;
 }) {
   const t = L(lang);
-  const [snapshot, expectations, tcmbRate, tcmbMeetings] = await Promise.all([
+  const [snapshot, expectations, tcmbRate, tcmbMeetings, ecbRate, ecbMeetings] = await Promise.all([
     getProbabilitySnapshot(),
     getExpectations(),
     getCurrentRate("tcmb"),
     getPastMeetings({ bankCode: "tcmb", limit: 6 }),
+    getCurrentRate("ecb"),
+    getPastMeetings({ bankCode: "ecb", limit: 6 }),
   ]);
+  const now = new Date();
 
   return (
     <div className="space-y-8">
@@ -55,13 +58,14 @@ export async function ProbabilityPage({
         </h1>
         <p className="prose-width mt-2 text-muted">
           {t(
-            "Fed ve BoE için piyasanın fiyatladığı beklentiler, TCMB için ekonomistlere sorulan anketin sonucu. İkisi farklı şeylerdir: piyasa fiyatlaması her gün değişir, anket ayda bir yapılır.",
-            "Market-implied expectations for the Fed and BoE, and the result of a survey of economists for the CBRT. They are different things: market pricing changes daily, the survey is run once a month.",
+            "Fed ve BoE için piyasanın fiyatladığı beklentiler; ECB ve TCMB için analist ve ekonomistlere sorulan anketlerin sonucu. İkisi farklı şeylerdir: piyasa fiyatlaması her gün değişir, anketler toplantı ya da ay başına bir kez yapılır.",
+            "Market-implied expectations for the Fed and BoE; results of surveys of analysts and economists for the ECB and CBRT. They are different things: market pricing changes daily, surveys are run once per meeting or month.",
           )}
         </p>
         <nav aria-label={t("Bankalar", "Banks")} className="mt-3 flex flex-wrap gap-2 text-sm">
           {[
             { id: "fed", label: "Fed" },
+            { id: "ecb", label: "ECB", show: !!expectations.ecb },
             { id: "boe", label: "BoE", show: !!expectations.boe },
             { id: "tcmb", label: t("TCMB", "CBRT"), show: !!expectations.tcmb },
           ]
@@ -86,13 +90,22 @@ export async function ProbabilityPage({
         )}
       </section>
 
+      {expectations.ecb && (
+        <EcbExpectations
+          data={expectations.ecb}
+          currentRate={ecbRate?.rate}
+          meetings={ecbMeetings}
+          now={now}
+          lang={lang}
+        />
+      )}
       {expectations.boe && <BoeExpectations data={expectations.boe} lang={lang} />}
       {expectations.tcmb && (
         <TcmbExpectations
           data={expectations.tcmb}
           currentRate={tcmbRate?.rate}
           meetings={tcmbMeetings}
-          now={new Date()}
+          now={now}
           lang={lang}
         />
       )}

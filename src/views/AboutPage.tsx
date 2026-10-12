@@ -59,6 +59,11 @@ const SOURCES: Record<Lang, Source[]> = {
       note: "BoE'nin günlük tahmin ettiği SONIA OIS forward eğrisi. Her MPC toplantısı sonrası beklenen Bank Rate ve sıradaki toplantıda 25 baz puanlık adım ihtimali bu eğriden yaklaşık olarak türetilir (toplantılar arası ortalama forward yöntemi).",
     },
     {
+      name: "ECB — Survey of Monetary Analysts",
+      url: "https://www.ecb.europa.eu/stats/ecb_surveys/sma/html/index.en.html",
+      note: "ECB'nin her Yönetim Konseyi toplantısı öncesi yaptığı analist anketi: toplantı başına mevduat faizi medyanı ve aralığı, sonraki iki toplantı için olasılık dağılımı. Sonuçlar yalnızca PDF olarak yayımlandığı için PDF metninden okunur.",
+    },
+    {
       name: "TCMB — Piyasa Katılımcıları Anketi (EVDS)",
       url: "https://www.tcmb.gov.tr/wps/wcm/connect/TR/TCMB+TR/Main+Menu/Istatistikler/Egilim+Anketleri/Piyasa+Katilimcilari+Anketi/",
       note: "Aylık anket; sonraki üç PPK, yıl sonu ve 12 ay sonrası için politika faizi beklentisinin ortalaması. Piyasa fiyatlaması değil, ekonomist ve piyasa katılımcılarının beklentisidir.",
@@ -124,6 +129,11 @@ const SOURCES: Record<Lang, Source[]> = {
       name: "Bank of England — OIS yield curve",
       url: "https://www.bankofengland.co.uk/statistics/yield-curves",
       note: "The SONIA OIS forward curve estimated daily by the BoE. The Bank Rate expected after each MPC meeting and the probability of a 25 basis point move at the next meeting are derived approximately from this curve (average forward between meetings).",
+    },
+    {
+      name: "ECB — Survey of Monetary Analysts",
+      url: "https://www.ecb.europa.eu/stats/ecb_surveys/sma/html/index.en.html",
+      note: "The analyst survey the ECB runs before each Governing Council meeting: the median and range of the deposit facility rate per meeting, and a probability distribution for the next two meetings. Results are only published as PDF, so they are read from the PDF text.",
     },
     {
       name: "CBRT — Survey of Market Participants (EVDS)",

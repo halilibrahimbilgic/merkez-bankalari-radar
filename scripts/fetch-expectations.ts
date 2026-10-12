@@ -9,8 +9,10 @@
  *       (src/lib/implied-path.ts). Güncel Bank Rate current-rates.json'dan
  *       okunur — bu yüzden fetch:current-rates'ten SONRA çalışır.
  *
- * Fed'in olasılıkları ayrı (fetch:probabilities, Atlanta Fed). ECB, BoJ ve
- * RBA için ücretsiz ve yayımlanabilir bir kaynak yok (ARCHITECTURE.md §6).
+ * ECB:  Survey of Monetary Analysts — analist anketi, yılda 8 tur, PDF.
+ *
+ * Fed'in olasılıkları ayrı (fetch:probabilities, Atlanta Fed). BoJ ve RBA
+ * için ücretsiz ve yayımlanabilir bir kaynak yok (ARCHITECTURE.md §6).
  *
  * Birleştirir, üzerine yazmaz: bir kaynak hata verirse önceki kaydı korunur
  * ve iş hata koduyla biter (current-rates ile aynı kural).
@@ -20,6 +22,7 @@ import path from "node:path";
 import { config } from "dotenv";
 import { impliedPath } from "../src/lib/implied-path";
 import { BOE_YIELD_CURVES_URL, fetchBoeOisForwards } from "../src/lib/sources/boe-ois";
+import { fetchEcbSma, summarizeChange } from "../src/lib/sources/ecb-sma";
 import { fetchTcmbSurvey, mapSurveyMeetings, TCMB_SURVEY_PAGE_URL } from "../src/lib/sources/tcmb-survey";
 import type { Expectations } from "../src/lib/expectations";
 import type { BankCode, Meeting } from "../src/lib/types";
@@ -101,6 +104,35 @@ async function main() {
     console.error(`✗  BoE OIS: ${(err as Error).message}`);
     failed.push("boe");
     if (previous?.boe) out.boe = previous.boe;
+  }
+
+  // ECB — analist anketi (SMA, PDF)
+  try {
+    const sma = await fetchEcbSma();
+    const ecbMeetings = decisions("ecb");
+    const odds = [sma.firstChange, sma.secondChange];
+    const meetingsOut: NonNullable<Expectations["ecb"]>["meetings"] = [];
+    sma.path.forEach((row, i) => {
+      // Aylık satır = o aydaki Yönetim Konseyi para politikası toplantısı.
+      const m = ecbMeetings.find((x) => x.meetingAt.slice(0, 7) === row.month);
+      if (!m) return;
+      const bins = i < 2 ? odds[i] : undefined;
+      meetingsOut.push({
+        meetingId: m.id,
+        meetingAt: m.meetingAt,
+        median: row.median,
+        p25: row.p25,
+        p75: row.p75,
+        odds: bins && summarizeChange(bins),
+      });
+    });
+    if (meetingsOut.length === 0) throw new Error("anketteki aylar takvimdeki toplantılarla eşleşmedi");
+    out.ecb = { kind: "survey", publishedOn: sma.publishedOn, sourceUrl: sma.sourceUrl, meetings: meetingsOut.slice(0, 8) };
+    console.log(`✓  ECB SMA ${sma.publishedOn}: ${meetingsOut.slice(0, 3).map((m) => `${m.meetingAt.slice(0, 10)} ${m.median}`).join(", ")}`);
+  } catch (err) {
+    console.error(`✗  ECB SMA: ${(err as Error).message}`);
+    failed.push("ecb");
+    if (previous?.ecb) out.ecb = previous.ecb;
   }
 
   await writeFile(OUT, JSON.stringify(out, null, 2) + "\n", "utf8");

@@ -26,8 +26,26 @@ export interface MarketExpectations {
   meetings: ImpliedMeeting[];
 }
 
+/** ECB analist anketi (SMA): toplantı başına DFR medyanı ve aralığı, ilk iki toplantı için olasılık. */
+export interface EcbSurveyExpectations {
+  kind: "survey";
+  /** Sonuçların yayım günü. */
+  publishedOn: string;
+  sourceUrl: string;
+  meetings: {
+    meetingId: string;
+    meetingAt: string;
+    median: number;
+    p25: number;
+    p75: number;
+    /** Analistlerin ortalama olasılığı (%) — yalnızca anketin ilk iki toplantısı. */
+    odds?: { cut: number; hold: number; hike: number };
+  }[];
+}
+
 export interface Expectations {
   fetchedAt: string;
   tcmb?: SurveyExpectations;
   boe?: MarketExpectations;
+  ecb?: EcbSurveyExpectations;
 }

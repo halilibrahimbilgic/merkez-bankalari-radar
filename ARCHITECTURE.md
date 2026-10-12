@@ -14,7 +14,7 @@ takip eden bir site. Üç modül:
 | Modül | Ne yapar | Veri otomatik mi |
 | --- | --- | --- |
 | A — Takvim | Toplantı tarihleri, TRT geri sayımı, geçmiş kararlar, iCal + RSS + Telegram hatırlatma | ✅ tam otomatik |
-| B — Faiz olasılığı | Fed: piyasa dağılımı (Atlanta Fed MPT); BoE: OIS eğrisinden toplantı bazında beklenti; TCMB: Piyasa Katılımcıları Anketi | ✅ tam otomatik |
+| B — Faiz olasılığı | Fed: piyasa dağılımı (Atlanta Fed MPT); BoE: OIS eğrisinden toplantı bazında beklenti; ECB: analist anketi (SMA); TCMB: Piyasa Katılımcıları Anketi | ✅ tam otomatik |
 | D — Haberler | Resmî açıklamalar + önemli kişilerin sözlerini aktaran haberler, Türkçe/İngilizce özet, önemliler Telegram'a | ✅ 30 dk'da bir (news.yml) |
 | C — Şahin/güvercin | Merkez bankacısı konuşmaları + Türkçe özet ve skor | ✅ metin ve skor otomatik (Claude aboneliği; §5) |
 
@@ -37,7 +37,7 @@ amaçlıdır (bkz. §6).
   FRED · ECB SDMX · EVDS · BoE xlsx · RBA F1 · BoJ karar PDF'leri ─► fetch:rates
   aynıları ────────────────► fetch:current-rates ───► current-rates.json
   atlantafed.org (.xlsx) ─► fetch:probabilities ──► probabilities.json
-  BoE OIS eğrisi · EVDS anket ─► fetch:expectations ─► expectations.json
+  BoE OIS · ECB SMA · EVDS anket ─► fetch:expectations ─► expectations.json
   bis.org (RSS + HTML) ───► fetch:speeches ───────► speeches.json
                                                       ▲
   Claude Code (abonelik) ─► score:export/import ──────┘ (§5)
@@ -296,7 +296,9 @@ metinleri `/faiz-olasiligi` ve `/hakkinda` sayfalarında aynen görünür.
 BoE'nin günlük OIS eğrisinden türetilen *piyasa fiyatlaması*
 (`src/lib/implied-path.ts`; BoE web kaynakları ticari olmayan kullanıma
 izinli). TCMB: Piyasa Katılımcıları Anketi — *ekonomist beklentisi*, aylık.
-ECB'nin analist anketi (SMA) yalnızca PDF; sıradaki iş. BoJ ve RBA için
+ECB: Survey of Monetary Analysts — *analist anketi*, yılda 8 tur; yalnızca
+PDF yayımlanıyor (PDF'teki seri anahtarları Data Portal API'sinde yok),
+`src/lib/sources/ecb-sma.ts` PDF metnini okur. BoJ ve RBA için
 ücretsiz ve yayımlanabilir kaynak yok (piyasa verisi borsaların lisanslı
 ürünü — ASX, JSCC, Eurex/ICE). Her bölüm türünü rozetle söyler.
 

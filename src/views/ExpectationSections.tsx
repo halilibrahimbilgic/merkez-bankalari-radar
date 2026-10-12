@@ -1,7 +1,7 @@
 import Link from "next/link";
 import { RateOdds, type OddsRow } from "@/components/RateOdds";
 import { Callout, Card, SectionHeader, Stat, TableFrame, Th } from "@/components/ui";
-import type { MarketExpectations, SurveyExpectations } from "@/lib/expectations";
+import type { EcbSurveyExpectations, MarketExpectations, SurveyExpectations } from "@/lib/expectations";
 import { fmtPercent, INTL_LOCALE, L, localePath, type Lang } from "@/lib/i18n";
 import { moveOdds } from "@/lib/implied-path";
 import { formatDate } from "@/lib/time";
@@ -21,7 +21,7 @@ function KindBadge({ kind, lang }: { kind: "market" | "survey"; lang: Lang }) {
     <span className="ml-2 rounded-full bg-accent-soft px-2 py-0.5 align-middle text-xs font-normal text-accent">
       {kind === "market"
         ? t("piyasa fiyatlaması", "market pricing")
-        : t("ekonomist anketi", "economist survey")}
+        : t("anket", "survey")}
     </span>
   );
 }
@@ -218,13 +218,111 @@ export function TcmbExpectations({
   );
 }
 
+export function EcbExpectations({
+  data,
+  currentRate,
+  meetings,
+  now,
+  lang,
+}: {
+  data: EcbSurveyExpectations;
+  currentRate?: number;
+  meetings: Meeting[];
+  now: Date;
+  lang: Lang;
+}) {
+  const t = L(lang);
+  // Anketin olasılık verdiği, henüz yapılmamış ilk toplantı.
+  const next = data.meetings.find((m) => m.odds && new Date(m.meetingAt) > now);
+  const rows: OddsRow[] | undefined = next?.odds && [
+    { direction: "up", label: t("Artırım", "Hike"), pct: next.odds.hike },
+    { direction: "flat", label: t("Sabit", "Hold"), pct: next.odds.hold },
+    { direction: "down", label: t("İndirim", "Cut"), pct: next.odds.cut },
+  ];
+
+  return (
+    <section id="ecb" className="scroll-mt-4">
+      <Card>
+        <SectionHeader
+          title={t("ECB — mevduat faizi beklentisi", "ECB — deposit facility rate expectations")}
+          description={t(
+            `ECB'nin para analistleri anketi (Survey of Monetary Analysts), sonuçlar ${formatDate(data.publishedOn, lang)} tarihinde yayımlandı. Analistlerin beklentisidir, piyasa fiyatlaması değildir; her Yönetim Konseyi toplantısından önce yapılır.`,
+            `The ECB Survey of Monetary Analysts, results published on ${formatDate(data.publishedOn, lang)}. It reflects analysts' expectations, not market pricing, and is run before each Governing Council meeting.`,
+          )}
+        />
+        <KindBadge kind="survey" lang={lang} />
+
+        <div className="mt-4 grid gap-4 sm:grid-cols-2">
+          {next && rows && (
+            <div>
+              <div className="mb-2 text-sm text-muted">
+                {t(
+                  `Sıradaki karar (${formatDate(next.meetingAt, lang)}) için analistlerin ortalama olasılığı`,
+                  `Analysts' average probability for the next decision (${formatDate(next.meetingAt, lang)})`,
+                )}
+              </div>
+              <RateOdds rows={rows} lang={lang} />
+            </div>
+          )}
+          {currentRate !== undefined && (
+            <Stat label={t("Güncel mevduat faizi", "Current deposit facility rate")} value={fmtPercent(currentRate, lang)} />
+          )}
+        </div>
+
+        <div className="mt-5">
+          <TableFrame minWidth="30rem">
+            <thead>
+              <tr className="border-b border-border-strong text-left text-muted">
+                <Th>{t("Toplantı", "Meeting")}</Th>
+                <Th align="right">{t("Medyan beklenti", "Median expectation")}</Th>
+                <Th align="right">{t("25.–75. yüzdelik", "25th–75th percentile")}</Th>
+                <Th align="right">{t("Gerçekleşen", "Actual")}</Th>
+              </tr>
+            </thead>
+            <tbody>
+              {data.meetings.map((e) => {
+                const meeting = meetings.find((x) => x.id === e.meetingId);
+                const past = new Date(e.meetingAt) <= now;
+                return (
+                  <tr key={e.meetingId} className="border-b border-border last:border-b-0">
+                    <td className="tabular px-4 py-2.5">{formatDate(e.meetingAt, lang)}</td>
+                    <td className="tabular px-4 py-2.5 text-right font-semibold">{fmtPercent(e.median, lang)}</td>
+                    <td className="tabular px-4 py-2.5 text-right text-muted">
+                      {e.p25 === e.p75 ? fmtPercent(e.p25, lang) : `${fmtPercent(e.p25, lang)} – ${fmtPercent(e.p75, lang)}`}
+                    </td>
+                    <td className="tabular px-4 py-2.5 text-right text-muted">
+                      {past && meeting?.decisionRate !== undefined ? fmtPercent(meeting.decisionRate, lang) : "—"}
+                    </td>
+                  </tr>
+                );
+              })}
+            </tbody>
+          </TableFrame>
+        </div>
+
+        <p className="prose-width mt-3 text-sm text-muted">
+          {t(
+            "Olasılıklar analistlerin her değişim büyüklüğüne verdiği ihtimallerin ortalamasıdır (indirim: −25 bp ve altı, sabit: 0 ve ±10 bp, artırım: +25 bp ve üstü). Anket toplantıdan önce yapılır, sonuçlar toplantıdan sonra yayımlanır; bu yüzden tablonun ilk satırı çoğunlukla geçmişte kalmıştır.",
+            "Probabilities are the average of the odds analysts assign to each size of change (cut: −25 bp or more, hold: 0 and ±10 bp, hike: +25 bp or more). The survey is run before the meeting and the results are published after it, so the first row of the table is usually already in the past.",
+          )}{" "}
+          {t("Kaynak", "Source")}:{" "}
+          <a href={data.sourceUrl} target="_blank" rel="noopener noreferrer nofollow" className="text-accent hover:underline">
+            ECB — Survey of Monetary Analysts
+          </a>
+          .
+        </p>
+      </Card>
+    </section>
+  );
+}
+
 export function OtherBanksNote({ lang }: { lang: Lang }) {
   const t = L(lang);
   return (
-    <Callout title={t("ECB, BoJ ve RBA neden yok?", "Why not the ECB, BoJ and RBA?")}>
+    <Callout title={t("BoJ ve RBA neden yok?", "Why not the BoJ and RBA?")}>
       {t(
-        "Bu bankalar için piyasanın fiyatladığı olasılıklar vadeli işlem borsalarının lisanslı verisinden hesaplanıyor ve otomatik çekilmesi kullanım şartlarına aykırı. ECB için ECB'nin kendi analist anketini ekleyeceğiz; BoJ ve RBA için ücretsiz ve yeniden yayımlanabilir bir kaynak bulduğumuzda eklenecek. Bu bankaların toplantı tarihleri ve güncel faizleri ",
-        "For these banks, market-implied probabilities are computed from futures exchanges' licensed data, and fetching it automatically would breach their terms of use. For the ECB we will add the ECB's own survey of monetary analysts; the BoJ and RBA will follow when we find a free source that can be republished. Their meeting dates and current rates are on the ",
+        "Bu bankalar için piyasanın fiyatladığı olasılıklar vadeli işlem borsalarının lisanslı verisinden hesaplanıyor ve otomatik çekilmesi kullanım şartlarına aykırı; ücretsiz bir anket kaynağı da bulamadık. Yeniden yayımlanabilir bir kaynak bulduğumuzda eklenecek. Bu bankaların toplantı tarihleri ve güncel faizleri ",
+        "For these banks, market-implied probabilities are computed from futures exchanges' licensed data, and fetching it automatically would breach their terms of use; we have not found a free survey source either. They will be added when we find a source that can be republished. Their meeting dates and current rates are on the ",
       )}
       <Link href={localePath(lang, "/takvim")} className="text-accent hover:underline">
         {t("takvim", "calendar")}

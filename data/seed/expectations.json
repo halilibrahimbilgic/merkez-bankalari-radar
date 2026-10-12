@@ -1,5 +1,5 @@
 {
-  "fetchedAt": "2026-10-12T20:17:13.727Z",
+  "fetchedAt": "2026-10-12T21:05:14.900Z",
   "tcmb": {
     "kind": "survey",
     "period": "2026-09",
@@ -65,6 +65,79 @@
         "meetingAt": "2027-06-17T11:00:00.000Z",
         "impliedRate": 4.62,
         "changeBp": 12
+      }
+    ]
+  },
+  "ecb": {
+    "kind": "survey",
+    "publishedOn": "2026-09-11",
+    "sourceUrl": "https://www.ecb.europa.eu/stats/ecb_surveys/sma/shared/pdf/ecb.smar260911_september.en.pdf",
+    "meetings": [
+      {
+        "meetingId": "ecb-2026-09-10",
+        "meetingAt": "2026-09-10T12:15:00.000Z",
+        "median": 2.5,
+        "p25": 2.5,
+        "p75": 2.5,
+        "odds": {
+          "cut": 0.1,
+          "hold": 14.7,
+          "hike": 85.1
+        }
+      },
+      {
+        "meetingId": "ecb-2026-10-29",
+        "meetingAt": "2026-10-29T13:15:00.000Z",
+        "median": 2.5,
+        "p25": 2.5,
+        "p75": 2.5,
+        "odds": {
+          "cut": 0.3,
+          "hold": 81.3,
+          "hike": 18.4
+        }
+      },
+      {
+        "meetingId": "ecb-2026-12-17",
+        "meetingAt": "2026-12-17T13:15:00.000Z",
+        "median": 2.5,
+        "p25": 2.5,
+        "p75": 2.5
+      },
+      {
+        "meetingId": "ecb-2027-02-04",
+        "meetingAt": "2027-02-04T13:15:00.000Z",
+        "median": 2.5,
+        "p25": 2.5,
+        "p75": 2.5
+      },
+      {
+        "meetingId": "ecb-2027-03-18",
+        "meetingAt": "2027-03-18T13:15:00.000Z",
+        "median": 2.5,
+        "p25": 2.5,
+        "p75": 2.5
+      },
+      {
+        "meetingId": "ecb-2027-04-29",
+        "meetingAt": "2027-04-29T12:15:00.000Z",
+        "median": 2.5,
+        "p25": 2.5,
+        "p75": 2.5
+      },
+      {
+        "meetingId": "ecb-2027-06-10",
+        "meetingAt": "2027-06-10T12:15:00.000Z",
+        "median": 2.5,
+        "p25": 2.25,
+        "p75": 2.5
+      },
+      {
+        "meetingId": "ecb-2027-07-22",
+        "meetingAt": "2027-07-22T12:15:00.000Z",
+        "median": 2.5,
+        "p25": 2.25,
+        "p75": 2.5
       }
     ]
   }

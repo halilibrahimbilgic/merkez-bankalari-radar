@@ -46,6 +46,14 @@ export async function HomePage({ lang }: { lang: Lang }) {
     { direction: "down", label: t("İndirim", "Cut"), pct: boeMove.direction === "cut" ? boeMove.pct : 0 },
   ];
 
+  // ECB: analist anketinin olasılık verdiği, henüz yapılmamış ilk toplantı.
+  const ecbNext = expectations.ecb?.meetings.find((m) => m.odds && new Date(m.meetingAt) > now);
+  const ecbOdds: OddsRow[] | undefined = ecbNext?.odds && [
+    { direction: "up", label: t("Artırım", "Hike"), pct: ecbNext.odds.hike },
+    { direction: "flat", label: t("Sabit", "Hold"), pct: ecbNext.odds.hold },
+    { direction: "down", label: t("İndirim", "Cut"), pct: ecbNext.odds.cut },
+  ];
+
   // TCMB: anketin henüz gerçekleşmemiş ilk toplantısı.
   const tcmbNext = expectations.tcmb?.meetings.find((m) => new Date(m.meetingAt) > now);
   const tcmbNote =
@@ -115,9 +123,14 @@ export async function HomePage({ lang }: { lang: Lang }) {
               nextMeeting={upcoming.find((m) => m.bankCode === code)}
               currentRate={rates.find((r) => r.bankCode === code)}
               score={scores.find((s) => s.bankCode === code)}
-              odds={code === "fed" ? fedOdds : code === "boe" ? boeOdds : undefined}
+              odds={code === "fed" ? fedOdds : code === "boe" ? boeOdds : code === "ecb" ? ecbOdds : undefined}
               oddsTitle={
-                code === "boe" && boeNext
+                code === "ecb" && ecbNext
+                  ? t(
+                      `Analist anketi · ${formatDate(ecbNext.meetingAt, lang)}`,
+                      `Analyst survey · ${formatDate(ecbNext.meetingAt, lang)}`,
+                    )
+                  : code === "boe" && boeNext
                   ? t(
                       `Piyasa fiyatlaması · ${formatDate(boeNext.meetingAt, lang)} MPC`,
                       `Market pricing · ${formatDate(boeNext.meetingAt, lang)} MPC`,
