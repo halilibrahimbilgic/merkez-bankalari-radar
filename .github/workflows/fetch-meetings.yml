@@ -5,6 +5,11 @@ on:
   schedule:
     - cron: "0 5 * * *"
   workflow_dispatch:
+    inputs:
+      telegram_welcome:
+        description: "Telegram kanalına tanıtım ve yaklaşan kararlar mesajı gönder"
+        type: boolean
+        default: false
 
 jobs:
   fetch:
@@ -84,6 +89,15 @@ jobs:
             exit 1
           fi
           npm run score:import
+      # Karar oranları dolduktan sonra: bir gün önce hatırlatma, açıklanınca
+      # sonuç. Gönderilenler data/telegram/posted.json'da, aşağıda commit'lenir.
+      - name: Telegram kanalına yaz
+        if: ${{ !cancelled() }}
+        env:
+          TELEGRAM_BOT_TOKEN: ${{ secrets.TELEGRAM_BOT_TOKEN }}
+          TELEGRAM_CHAT_ID: ${{ vars.TELEGRAM_CHAT_ID }}
+          NEXT_PUBLIC_SITE_URL: https://www.faizradar.com
+        run: npm run telegram:post -- ${{ inputs.telegram_welcome && '--welcome' || '' }}
       # Script'ler her koşuda fetchedAt'i yeniler; yalnızca damga değiştiyse
       # commit atmak her gün boş bir commit ve gereksiz bir Vercel dağıtımı
       # üretiyordu. Cron'un çalışıp çalışmadığı Actions geçmişinden izlenir.
@@ -91,13 +105,13 @@ jobs:
         if: ${{ !cancelled() }}
         run: |
           # data/speech-text: yayımcısı izin veren konuşmaların tam metni.
-          if git diff --quiet -I '"fetchedAt"' -- data/seed data/speech-text \
-             && [[ -z "$(git ls-files --others --exclude-standard data/seed data/speech-text)" ]]; then
+          if git diff --quiet -I '"fetchedAt"' -- data/seed data/speech-text data/telegram \
+             && [[ -z "$(git ls-files --others --exclude-standard data/seed data/speech-text data/telegram)" ]]; then
             echo "Veride değişiklik yok (yalnızca fetchedAt)."
           else
             git config user.name "github-actions[bot]"
             git config user.email "github-actions[bot]@users.noreply.github.com"
-            git add data/seed data/speech-text
+            git add data/seed data/speech-text data/telegram
             git commit -m "chore: takvim ve piyasa verisini güncelle"
             git push
           fi

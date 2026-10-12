@@ -1,8 +1,8 @@
 import { BANKS } from "@/lib/banks";
 import { getAllMeetings } from "@/lib/data/meetings";
 import { SITE_URL } from "@/lib/site";
-import { formatDateTr, formatTimeTrt } from "@/lib/time";
-import type { Meeting } from "@/lib/types";
+import { formatDateTr } from "@/lib/time";
+import { num, rateTr, resultTitle, whenTr } from "@/lib/announce";
 
 export const revalidate = 3600;
 
@@ -81,30 +81,6 @@ export async function GET() {
       "cache-control": "public, max-age=3600",
     },
   });
-}
-
-function whenTr(m: Meeting): string {
-  return m.timeTbd
-    ? `${formatDateTr(m.meetingAt)} (saat açıklanmadı)`
-    : `${formatDateTr(m.meetingAt)}, ${formatTimeTrt(m.meetingAt)} TRT`;
-}
-
-function resultTitle(m: Meeting): string {
-  const bank = BANKS[m.bankCode];
-  const bps = Math.round((m.decisionRate! - m.previousRate!) * 100);
-  if (bps === 0) return `${bank.nameTr} faizi değiştirmedi: ${rateTr(m)}`;
-  const verb = bps > 0 ? "artırdı" : "indirdi";
-  return `${bank.nameTr} faizi ${Math.abs(bps)} baz puan ${verb}: ${rateTr(m)}`;
-}
-
-/** Fed aralık ilan eder ("%3,75–4,00"); diğerleri tek oran. */
-function rateTr(m: Meeting): string {
-  const upper = num(m.decisionRate!);
-  return m.decisionRateLower === undefined ? `%${upper}` : `%${num(m.decisionRateLower)}–${upper}`;
-}
-
-function num(n: number): string {
-  return n.toFixed(2).replace(".", ",");
 }
 
 function buildRss(items: Item[]): string {

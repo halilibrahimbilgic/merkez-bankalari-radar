@@ -13,7 +13,7 @@ takip eden bir site. Üç modül:
 
 | Modül | Ne yapar | Veri otomatik mi |
 | --- | --- | --- |
-| A — Takvim | Toplantı tarihleri, TRT geri sayımı, geçmiş kararlar, iCal + RSS hatırlatma | ✅ tam otomatik |
+| A — Takvim | Toplantı tarihleri, TRT geri sayımı, geçmiş kararlar, iCal + RSS + Telegram hatırlatma | ✅ tam otomatik |
 | B — Faiz olasılığı | Piyasanın fiyatladığı faiz dağılımı (Atlanta Fed MPT) | ✅ tam otomatik |
 | C — Şahin/güvercin | Merkez bankacısı konuşmaları + Türkçe özet ve skor | ✅ metin ve skor otomatik (Claude aboneliği; §5) |
 
@@ -139,6 +139,14 @@ yeniden indirilmeden meetings.json'dan türetilir (sıra: rates → current-rate
 taşır ama abone takvimler etkinlikleri UID ile eşler; değişirse her
 toplantı abonelerin takviminde iki kez görünür. Marka "Faiz Radar" olsa da
 ek kalır.
+
+**Telegram aynı mesajı iki kez göndermez.** `scripts/post-telegram.ts`
+gönderdiği her mesajın anahtarını `data/telegram/posted.json`'a yazar ve cron
+bu dosyayı commit'ler; dosyayı silmek kanala son 4 günün kararlarını yeniden
+yollar. Hatırlatma *bir gün önce* atılır: cron 08:00 TRT'de çalışır, RBA ve
+BoJ kararları o saatten önce açıklanır. Metin RSS ile ortaktır
+(`src/lib/announce.ts`). Token secret'ta (`TELEGRAM_BOT_TOKEN`), kanal
+repo değişkeninde (`TELEGRAM_CHAT_ID`); biri yoksa adım atlanır.
 
 **Paylaşım görselleri koddan üretilir** (`opengraph-image.tsx`: kök, banka,
 konuşma; ortak kart `src/lib/og.tsx`). Derlemede statik üretilip saatlik
@@ -267,7 +275,8 @@ Konuşma      30  (Fed 13, ECB 9, RBA 3, BoE 3, BoJ 2) — 30'u skorlu, 17'si si
              26'sının metni sitede okunabilir (5'i yalnızca giriş bölümü)
 Olasılık     2026-10-01 anlığı, 13 pencere
 Güncel faiz  Fed, ECB, TCMB, BoE, BoJ, RBA
-Hatırlatma   /rss.xml (1 hafta önce + karar), iCal aboneliği (1 gün + 1 saat önce)
+Hatırlatma   /rss.xml (1 hafta önce + karar), iCal aboneliği (1 gün + 1 saat önce),
+             Telegram kanalı (1 gün önce + karar; scripts/post-telegram.ts)
 Sayfa        49 (build çıktısı), ISR 1 saat
 ```
 
