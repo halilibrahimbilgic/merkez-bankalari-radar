@@ -131,6 +131,17 @@ export default function RootLayout({ children }: LayoutProps<"/">) {
                 Kaynaklar ve yöntem
               </Link>
             </p>
+            <nav aria-label="Site bilgileri" className="mt-3 flex flex-wrap gap-x-4 gap-y-1">
+              <Link href="/gizlilik" className="text-accent hover:underline">
+                Gizlilik
+              </Link>
+              <Link href="/iletisim" className="text-accent hover:underline">
+                İletişim
+              </Link>
+              <a href="/rss.xml" className="text-accent hover:underline">
+                RSS
+              </a>
+            </nav>
           </div>
         </footer>
         <Analytics />

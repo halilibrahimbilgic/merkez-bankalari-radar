@@ -15,6 +15,8 @@ export default async function sitemap(): Promise<MetadataRoute.Sitemap> {
     { path: "/konusmalar", priority: 0.8 },
     { path: "/skor", priority: 0.7 },
     { path: "/hakkinda", priority: 0.5 },
+    { path: "/iletisim", priority: 0.3 },
+    { path: "/gizlilik", priority: 0.2 },
   ].map((p) => ({
     url: `${SITE_URL}${p.path}`,
     lastModified: now,
