@@ -1,4 +1,6 @@
+import { trtDayKey } from "../time";
 import { fetchEvdsJson } from "./evds";
+import { UA } from "./shared";
 
 /**
  * TCMB Piyasa Katılımcıları Anketi — politika faizi beklentileri (EVDS,
@@ -36,8 +38,20 @@ export async function fetchTcmbSurvey(apiKey: string): Promise<TcmbSurvey> {
   return parseTcmbSurvey(await fetchEvdsJson(Object.values(SERIES), start, apiKey));
 }
 
+/** Verilen günden bu yana her ayın anketi (politika faizi serileri 2025-06'dan başlıyor). */
+export async function fetchTcmbSurveyHistory(apiKey: string, start: string): Promise<TcmbSurvey[]> {
+  return parseTcmbSurveyHistory(await fetchEvdsJson(Object.values(SERIES), start, apiKey));
+}
+
 /** Aylık yanıtta Tarih "2026-9" biçimindedir. En son dolu ay alınır. */
 export function parseTcmbSurvey(json: unknown): TcmbSurvey {
+  const all = parseTcmbSurveyHistory(json);
+  if (all.length === 0) throw new Error("EVDS anket: dolu ay bulunamadı");
+  return all[all.length - 1];
+}
+
+/** Politika faizi beklentisi dolu her ay, eskiden yeniye. */
+export function parseTcmbSurveyHistory(json: unknown): TcmbSurvey[] {
   const items = (json as { items?: Record<string, unknown>[] }).items;
   if (!Array.isArray(items)) throw new Error("EVDS anket: beklenmeyen yanıt biçimi");
   const num = (item: Record<string, unknown>, code: string) => {
@@ -46,21 +60,57 @@ export function parseTcmbSurvey(json: unknown): TcmbSurvey {
     return Number.isFinite(n) ? n : undefined;
   };
 
-  for (const item of [...items].reverse()) {
+  const out: TcmbSurvey[] = [];
+  for (const item of items) {
     const m = String(item.Tarih ?? "").match(/^(\d{4})-(\d{1,2})$/);
     const first = num(item, SERIES.meeting1);
     if (!m || first === undefined) continue;
     const meetings = [first, num(item, SERIES.meeting2), num(item, SERIES.meeting3)].filter(
       (x): x is number => x !== undefined,
     );
-    return {
+    out.push({
       period: `${m[1]}-${m[2].padStart(2, "0")}`,
       meetings,
       yearEnd: num(item, SERIES.yearEnd),
       months12: num(item, SERIES.months12),
-    };
+    });
   }
-  throw new Error("EVDS anket: dolu ay bulunamadı");
+  return out.sort((a, b) => a.period.localeCompare(b.period));
+}
+
+/**
+ * Anketin yayım günleri — TCMB veri yayımlama takvimi (sitedeki takvim
+ * uygulamasının kendi JSON ucu; yayın kimliği 4 = Piyasa Katılımcıları
+ * Anketi). 2025 için kayıt yok; yalnızca içinde bulunulan yıl ve sonrası.
+ * Eşleşmeyen dönem için çağıran taraf ilk gördüğü günü kullanır.
+ */
+export async function fetchPkaReleaseDates(year: number): Promise<Map<string, string>> {
+  const url = `https://appg.tcmb.gov.tr/igmvytsms-dis/veriTakvimi/list?yil=${year}&yayinId=4&page=0&size=50&lang=tr`;
+  const res = await fetch(url, {
+    headers: { "user-agent": UA, accept: "application/json" },
+    signal: AbortSignal.timeout(60_000),
+  });
+  if (!res.ok) throw new Error(`TCMB veri takvimi → HTTP ${res.status}`);
+  return parsePkaReleaseDates(await res.json());
+}
+
+const TR_MONTHS: Record<string, string> = {
+  ocak: "01", şubat: "02", mart: "03", nisan: "04", mayıs: "05", haziran: "06",
+  temmuz: "07", ağustos: "08", eylül: "09", ekim: "10", kasım: "11", aralık: "12",
+};
+
+/** {content: [{donem: "Eylül 2026", tarih: "2026-09-11T10:00:00.000Z"}]} → "2026-09" → "2026-09-11" (TRT günü). */
+export function parsePkaReleaseDates(json: unknown): Map<string, string> {
+  const items = (json as { content?: { donem?: string; tarih?: string }[] }).content;
+  if (!Array.isArray(items)) throw new Error("TCMB veri takvimi: beklenmeyen yanıt biçimi");
+  const out = new Map<string, string>();
+  for (const it of items) {
+    const m = it.donem?.trim().match(/^(\S+)\s+(\d{4})$/);
+    const month = m && TR_MONTHS[m[1].toLocaleLowerCase("tr-TR")];
+    if (!m || !month || !it.tarih) continue;
+    out.set(`${m[2]}-${month}`, trtDayKey(it.tarih));
+  }
+  return out;
 }
 
 /**

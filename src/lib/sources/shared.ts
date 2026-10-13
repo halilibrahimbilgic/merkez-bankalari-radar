@@ -53,6 +53,9 @@ export function decodeEntities(s: string): string {
     // RBA takvimi aralıkları "2&ndash;3 February" diye yazıyor.
     .replace(/&ndash;/g, "–")
     .replace(/&mdash;/g, "—")
+    // BoE metinleri para birimini adlandırılmış varlıkla yazıyor ("&pound;46 billion").
+    .replace(/&pound;/g, "£")
+    .replace(/&euro;/g, "€")
     .replace(/&amp;/g, "&")
     .replace(/&lt;/g, "<")
     .replace(/&gt;/g, ">")

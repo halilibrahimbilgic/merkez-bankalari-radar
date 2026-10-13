@@ -13,9 +13,11 @@ import {
 import { getPastMeetings, getUpcomingMeetings } from "@/lib/data/meetings";
 import { formatCurrentRate, getCurrentRate } from "@/lib/data/rates";
 import { getBankScoreSummaries, getSpeeches } from "@/lib/data/speeches";
-import { L, languageAlternates, localePath, type Lang } from "@/lib/i18n";
+import { getInflationFor } from "@/lib/data/inflation";
+import { fmtPercent, fmtSignedPercent, L, languageAlternates, localePath, type Lang } from "@/lib/i18n";
+import { realRate } from "@/lib/real-rates";
 import { speechTitle } from "@/lib/speech-i18n";
-import { formatDate, formatMeeting, formatTimeTrt } from "@/lib/time";
+import { formatDate, formatMeeting, formatTimeTrt, monthLabel } from "@/lib/time";
 
 export async function bankMetadata(lang: Lang, code: string): Promise<Metadata> {
   const bank = getBank(code);
@@ -72,6 +74,8 @@ export async function BankPage({ lang, code }: { lang: Lang; code: string }) {
   const currentRate = await getCurrentRate(bank.code);
   const speeches = await getSpeeches({ bankCode: bank.code, limit: 5 });
   const scoreSummary = (await getBankScoreSummaries()).find((s) => s.bankCode === bank.code);
+  const inflation = await getInflationFor(bank.code);
+  const real = currentRate && inflation ? realRate(currentRate, inflation) : undefined;
 
   return (
     <div className="space-y-8">
@@ -93,7 +97,7 @@ export async function BankPage({ lang, code }: { lang: Lang; code: string }) {
         </a>
       </header>
 
-      <div className="grid gap-3 sm:grid-cols-2">
+      <div className="grid gap-3 sm:grid-cols-2 lg:grid-cols-3">
         {currentRate && (
           <section className="card p-5">
             <div className="text-sm text-muted">{t("Güncel politika faizi", "Current policy rate")}</div>
@@ -104,6 +108,22 @@ export async function BankPage({ lang, code }: { lang: Lang; code: string }) {
               {t(
                 `${formatDate(currentRate.asOf, lang)} itibarıyla`,
                 `Since ${formatDate(currentRate.asOf, lang)}`,
+              )}
+            </div>
+          </section>
+        )}
+        {real && (
+          <section className="card p-5">
+            <div className="text-sm text-muted">
+              <Link href={p("/reel-faiz")} className="hover:text-accent">
+                {t("Reel faiz", "Real interest rate")}
+              </Link>
+            </div>
+            <div className="mt-1 text-2xl font-semibold tabular">{fmtSignedPercent(real.real, lang)}</div>
+            <div className="mt-1 text-sm text-muted tabular">
+              {t(
+                `Yıllık enflasyon ${fmtPercent(real.inflation.yoy, lang, 1)} (${monthLabel(`${real.inflation.period}-15T12:00:00Z`, lang)})`,
+                `Annual inflation ${fmtPercent(real.inflation.yoy, lang, 1)} (${monthLabel(`${real.inflation.period}-15T12:00:00Z`, lang)})`,
               )}
             </div>
           </section>

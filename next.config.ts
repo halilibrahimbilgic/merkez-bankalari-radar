@@ -27,10 +27,25 @@ const nextConfig: NextConfig = {
   outputFileTracingIncludes: {
     "/konusma/*": ["./data/speech-text/**/*"],
     "/en/konusma/*": ["./data/speech-text/**/*"],
-    // Haber ve beklenti dosyaları sabit adla okunur ama ISR yeniden üretiminde
-    // de bulunduklarından emin olmak için açıkça eklenir.
-    "/*": ["./data/news/news.json", "./data/seed/expectations.json"],
-    "/en/*": ["./data/news/news.json", "./data/seed/expectations.json"],
+    // Haber, beklenti, geçmiş, enflasyon ve karar metni dosyaları sabit adla
+    // okunur ama ISR yeniden üretiminde de bulunduklarından emin olmak için
+    // açıkça eklenir. Karar metinleri dinamik adla (data/statements/<id>.<dil>.txt).
+    "/*": [
+      "./data/news/news.json",
+      "./data/seed/expectations.json",
+      "./data/seed/inflation.json",
+      "./data/seed/statements.json",
+      "./data/history/expectations.json",
+    ],
+    "/en/*": [
+      "./data/news/news.json",
+      "./data/seed/expectations.json",
+      "./data/seed/inflation.json",
+      "./data/seed/statements.json",
+      "./data/history/expectations.json",
+    ],
+    "/karar/*": ["./data/statements/**/*"],
+    "/en/karar/*": ["./data/statements/**/*"],
   },
 };
 

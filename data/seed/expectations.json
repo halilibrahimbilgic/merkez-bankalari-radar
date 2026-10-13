@@ -1,5 +1,5 @@
 {
-  "fetchedAt": "2026-10-13T12:24:57.424Z",
+  "fetchedAt": "2026-10-13T19:32:06.277Z",
   "tcmb": {
     "kind": "survey",
     "period": "2026-09",
@@ -33,37 +33,37 @@
       {
         "meetingId": "boe-2026-11-05",
         "meetingAt": "2026-11-05T12:00:00.000Z",
-        "impliedRate": 3.87,
-        "changeBp": 12
+        "impliedRate": 3.97,
+        "changeBp": 22
       },
       {
         "meetingId": "boe-2026-12-17",
         "meetingAt": "2026-12-17T12:00:00.000Z",
-        "impliedRate": 4.05,
+        "impliedRate": 4.15,
         "changeBp": 17
       },
       {
         "meetingId": "boe-2027-02-04",
         "meetingAt": "2027-02-04T12:00:00.000Z",
-        "impliedRate": 4.23,
+        "impliedRate": 4.33,
         "changeBp": 18
       },
       {
         "meetingId": "boe-2027-03-18",
         "meetingAt": "2027-03-18T12:00:00.000Z",
-        "impliedRate": 4.38,
+        "impliedRate": 4.48,
         "changeBp": 15
       },
       {
         "meetingId": "boe-2027-04-29",
         "meetingAt": "2027-04-29T11:00:00.000Z",
-        "impliedRate": 4.52,
+        "impliedRate": 4.62,
         "changeBp": 14
       },
       {
         "meetingId": "boe-2027-06-17",
         "meetingAt": "2027-06-17T11:00:00.000Z",
-        "impliedRate": 4.64,
+        "impliedRate": 4.74,
         "changeBp": 12
       }
     ]

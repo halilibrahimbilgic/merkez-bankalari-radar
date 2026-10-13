@@ -21,7 +21,10 @@
     "score:import": "tsx scripts/score-import.ts",
     "telegram:post": "tsx scripts/post-telegram.ts",
     "news:fetch": "tsx scripts/news-fetch.ts",
-    "news:import": "tsx scripts/news-import.ts"
+    "news:import": "tsx scripts/news-import.ts",
+    "fetch:inflation": "tsx scripts/fetch-inflation.ts",
+    "statements:fetch": "tsx scripts/fetch-statements.ts",
+    "statements:import": "tsx scripts/statements-import.ts"
   },
   "dependencies": {
     "@anthropic-ai/sdk": "^0.116.0",

@@ -1,6 +1,7 @@
 import Link from "next/link";
 import { BANKS, bankColorVar, bankName } from "@/lib/banks";
-import { fmtPercent, fmtPercentRange, L, localePath, type Lang } from "@/lib/i18n";
+import { formatDecisionRate, hasDecisionPage } from "@/lib/decision-format";
+import { L, localePath, type Lang } from "@/lib/i18n";
 import type { Meeting } from "@/lib/types";
 import {
   countdownLabel,
@@ -58,11 +59,17 @@ export function MeetingRow({ meeting, now, lang }: { meeting: Meeting; now: Date
 
       <div className="text-sm">
         {isPast ? (
-          <span className="text-muted tabular">
-            {meeting.decisionRate !== undefined
-              ? `${formatRate(meeting, lang)}${rateDelta(meeting, lang)}`
-              : countdownLabel(meeting.meetingAt, now, lang)}
-          </span>
+          hasDecisionPage(meeting, now) ? (
+            <Link href={localePath(lang, `/karar/${meeting.id}`)} className="tabular text-accent hover:underline">
+              {`${formatDecisionRate(meeting, lang)}${rateDelta(meeting, lang)}`} →
+            </Link>
+          ) : (
+            <span className="text-muted tabular">
+              {meeting.decisionRate !== undefined
+                ? `${formatDecisionRate(meeting, lang)}${rateDelta(meeting, lang)}`
+                : countdownLabel(meeting.meetingAt, now, lang)}
+            </span>
+          )
         ) : meeting.timeTbd ? (
           // Saat belli değilse (BoJ) meetingAt'teki saat yer tutucudur;
           // saat/dakika hassasiyetinde geri sayım sahte kesinlik olurdu.
@@ -77,13 +84,6 @@ export function MeetingRow({ meeting, now, lang }: { meeting: Meeting; now: Date
       </div>
     </Row>
   );
-}
-
-/** Fed bir aralık ilan eder ("%3,50–3,75"); diğer bankalar tek oran. */
-function formatRate(meeting: Meeting, lang: Lang): string {
-  return meeting.decisionRateLower === undefined
-    ? fmtPercent(meeting.decisionRate!, lang)
-    : fmtPercentRange(meeting.decisionRateLower, meeting.decisionRate!, lang);
 }
 
 function rateDelta(meeting: Meeting, lang: Lang): string {

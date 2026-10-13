@@ -25,7 +25,10 @@ cp .env.example .env.local   # şimdilik boş bırakılabilir
 npm run fetch:meetings       # resmî takvimleri çeker → data/seed/meetings.json
 npm run fetch:rates          # geçmiş karar oranları (FRED_API_KEY; TCMB için EVDS_API_KEY)
 npm run fetch:current-rates  # güncel politika faizleri (Fed, ECB, TCMB)
-npm run fetch:probabilities  # Atlanta Fed olasılık dağılımları
+npm run fetch:probabilities  # Atlanta Fed olasılık dağılımları (+ günlük seyir)
+npm run fetch:expectations   # BoE, ECB, TCMB beklentileri + beklenti geçmişi (data/history)
+npm run fetch:inflation      # altı ekonominin yıllık enflasyonu (reel faiz)
+npm run statements:fetch     # karar metinleri; karar günü kararı metinden yazar (--all: arşiv)
 npm run fetch:speeches       # BIS konuşma arşivi (metinlerle birlikte)
 npm run score:export         # skorsuz konuşmaları .scoring/ altına hazırlar
 npm run score:import         # Claude Code çıktılarını doğrulayıp arşive yazar
@@ -174,6 +177,11 @@ npm run fetch:meetings   # takvimleri yeniden çek
 npm run fetch:rates      # geçmiş karar oranları (Fed, ECB, TCMB)
 npm run fetch:current-rates  # güncel politika faizleri
 npm run fetch:probabilities  # olasılık dağılımları
+npm run fetch:expectations   # Fed dışı beklentiler ve beklenti geçmişi
+npm run fetch:inflation      # enflasyon (reel faiz tablosu)
+npm run statements:fetch     # karar metinleri ve özet görevi (.statements/)
+npm run statements:import    # Claude Code özetlerini doğrula ve yaz
+npx tsx scripts/backfill-expectations.ts  # beklenti geçmişini arşivlerden doldur (bir kez)
 npm run fetch:speeches   # BIS konuşma arşivi
 npm run score:export     # skorlanacakları .scoring/ altına hazırla (--limit N)
 npm run score:import     # Claude Code çıktılarını doğrula ve arşive yaz

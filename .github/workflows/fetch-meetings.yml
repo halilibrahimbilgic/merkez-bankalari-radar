@@ -47,9 +47,16 @@ jobs:
           FRED_API_KEY: ${{ secrets.FRED_API_KEY }}
           EVDS_API_KEY: ${{ secrets.EVDS_API_KEY }}
       # Güncel Bank Rate'i current-rates.json'dan okur — ondan sonra çalışmalı.
+      # Beklentilerin seyrini de (data/history) birleştirir.
       - run: npm run fetch:expectations
         if: ${{ !cancelled() }}
         env:
+          EVDS_API_KEY: ${{ secrets.EVDS_API_KEY }}
+      # Reel faiz tablosu: altı ekonominin son yıllık enflasyonu.
+      - run: npm run fetch:inflation
+        if: ${{ !cancelled() }}
+        env:
+          FRED_API_KEY: ${{ secrets.FRED_API_KEY }}
           EVDS_API_KEY: ${{ secrets.EVDS_API_KEY }}
       - run: npm run fetch:probabilities
         if: ${{ !cancelled() }}
@@ -115,13 +122,14 @@ jobs:
         if: ${{ !cancelled() }}
         run: |
           # data/speech-text: yayımcısı izin veren konuşmaların tam metni.
-          if git diff --quiet -I '"fetchedAt"' -- data/seed data/speech-text data/telegram \
-             && [[ -z "$(git ls-files --others --exclude-standard data/seed data/speech-text data/telegram)" ]]; then
+          # data/history: beklentilerin seyri (fetch:expectations, fetch:probabilities).
+          if git diff --quiet -I '"fetchedAt"' -- data/seed data/speech-text data/telegram data/history \
+             && [[ -z "$(git ls-files --others --exclude-standard data/seed data/speech-text data/telegram data/history)" ]]; then
             echo "Veride değişiklik yok (yalnızca fetchedAt)."
           else
             git config user.name "github-actions[bot]"
             git config user.email "github-actions[bot]@users.noreply.github.com"
-            git add data/seed data/speech-text data/telegram
+            git add data/seed data/speech-text data/telegram data/history
             git commit -m "chore: takvim ve piyasa verisini güncelle"
             git pull -q --rebase
             git push

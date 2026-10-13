@@ -37,14 +37,21 @@ export interface SmaRound {
   secondChange?: number[];
 }
 
-/** Sayfadaki en yeni sonuç PDF'i ("ecb.smar260911_september.en.pdf"). */
-export function latestSmaResultsUrl(html: string): { url: string; publishedOn: string } {
-  const links = [...html.matchAll(/href="([^"]*ecb\.smar(\d{6})[^"]*\.en\.pdf)[^"]*"/g)].map((m) => ({
-    url: new URL(m[1], BASE).toString(),
-    publishedOn: `20${m[2].slice(0, 2)}-${m[2].slice(2, 4)}-${m[2].slice(4, 6)}`,
-  }));
-  if (links.length === 0) throw new Error("SMA: sayfada sonuç PDF'i bulunamadı");
-  return links.sort((a, b) => b.publishedOn.localeCompare(a.publishedOn))[0];
+/** Tüm sürümlerin listesi — sayfanın kendisi bunu içeri alır (include). */
+export const SMA_LIST_URL = "https://www.ecb.europa.eu/stats/ecb_surveys/sma/html/index_include.en.html";
+
+/**
+ * Listedeki sonuç turları, en yeni önce. Yayım günü listedeki isoDate'tir:
+ * dosya adındaki tarih bazen farklı (Temmuz 2026 turu: dosya 260727, yayım
+ * 24 Temmuz) — dosyalar ambargo altında önceden konuyor.
+ */
+export function listSmaResults(html: string): { url: string; publishedOn: string }[] {
+  const out: { url: string; publishedOn: string }[] = [];
+  for (const m of html.matchAll(/<dt isoDate="(\d{4}-\d{2}-\d{2})">[\s\S]*?<\/dt>\s*<dd>([\s\S]*?)<\/dd>/g)) {
+    const link = m[2].match(/href="([^"]*ecb\.smar\d{6}[^"]*?\.en\.pdf)/);
+    if (link) out.push({ url: new URL(link[1], BASE).toString(), publishedOn: m[1] });
+  }
+  return out.sort((a, b) => b.publishedOn.localeCompare(a.publishedOn));
 }
 
 export function parseSmaText(text: string): Pick<SmaRound, "path" | "firstChange" | "secondChange"> {
@@ -91,7 +98,12 @@ export function summarizeChange(bins: number[]): { cut: number; hold: number; hi
 }
 
 export async function fetchEcbSma(): Promise<SmaRound> {
-  const { url, publishedOn } = latestSmaResultsUrl(await fetchText(SMA_PAGE_URL));
+  const [latest] = listSmaResults(await fetchText(SMA_LIST_URL));
+  if (!latest) throw new Error("SMA: listede sonuç PDF'i bulunamadı");
+  return fetchSmaRound(latest.url, latest.publishedOn);
+}
+
+export async function fetchSmaRound(url: string, publishedOn: string): Promise<SmaRound> {
   const res = await fetch(url, { headers: { "user-agent": UA }, signal: AbortSignal.timeout(60_000) });
   if (!res.ok) throw new Error(`SMA PDF → HTTP ${res.status}`);
   const { extractText, getDocumentProxy } = await import("unpdf");

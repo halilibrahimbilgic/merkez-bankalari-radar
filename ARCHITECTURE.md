@@ -17,6 +17,9 @@ takip eden bir site. Üç modül:
 | B — Faiz olasılığı | Fed: piyasa dağılımı (Atlanta Fed MPT); BoE: OIS eğrisinden toplantı bazında beklenti; ECB: analist anketi (SMA); TCMB: Piyasa Katılımcıları Anketi | ✅ tam otomatik |
 | D — Haberler | Resmî açıklamalar + önemli kişilerin sözlerini aktaran haberler, Türkçe/İngilizce özet, önemliler Telegram'a | ✅ 30 dk'da bir (news.yml) |
 | C — Şahin/güvercin | Merkez bankacısı konuşmaları + Türkçe özet ve skor | ✅ metin ve skor otomatik (Claude aboneliği; §5) |
+| E — Kararlar | Her karar, karardan önceki beklentiyle (sürpriz) ve bir önceki karar metniyle (fark + model özeti) karşılaştırılır; beklentinin seyri | ✅ karar metni 30 dk'da bir (news.yml), özet Claude; beklenti geçmişi günlük |
+| F — Reel faiz | Politika faizi − son yıllık TÜFE, altı ekonomi | ✅ günlük |
+| G — Rehber | Faiz kararlarını sade dille anlatan beş yazı | elle (içerik kodda, `src/lib/guides/`) |
 
 Site **yatırım tavsiyesi vermez** ve veri lisansı gereği kişisel/eğitim
 amaçlıdır (bkz. §6).
@@ -37,7 +40,11 @@ amaçlıdır (bkz. §6).
   FRED · ECB SDMX · EVDS · BoE xlsx · RBA F1 · BoJ karar PDF'leri ─► fetch:rates
   aynıları ────────────────► fetch:current-rates ───► current-rates.json
   atlantafed.org (.xlsx) ─► fetch:probabilities ──► probabilities.json
-  BoE OIS · ECB SMA · EVDS anket ─► fetch:expectations ─► expectations.json
+  BoE OIS+SONIA · ECB SMA · EVDS anket · NY Fed SME ─► fetch:expectations ─► expectations.json
+                                                     └► data/history/expectations.json (seyir)
+  FRED · ECB HICP · EVDS · ONS · e-Stat · RBA G4 ─► fetch:inflation ─► inflation.json
+  resmî karar metinleri ──► statements:fetch (news.yml) ─► statements.json + data/statements/
+                            └► meetings.json (karar günü, seri gelmeden)
   bis.org (RSS + HTML) ───► fetch:speeches ───────► speeches.json
                                                       ▲
   Claude Code (abonelik) ─► score:export/import ──────┘ (§5)
@@ -116,6 +123,47 @@ TRT (EDT); ECB Eylül → 15:15, Ekim → 16:15.
 yalnızca tarih verir; karar oranlarını `fetch:rates` ayrı adımda doldurur.
 Sıfırdan yazmak 45 toplantının karar oranını siliyordu.
 
+**Karar oranı, seri yürürlük gününe ulaşmadan seriden yazılmaz.** Resmî
+seriler yeni oranı karar günü değil yürürlük günü gösterir (ECB'de 6 gün
+sonra, Fed ve RBA'da ertesi gün). `rateAsOf` en yakın önceki gözleme
+düştüğü için seri yetişmeden okunan "yeni oran" eski orandı ve karar
+"değişiklik yok" diye yazılıyordu — sitede, RSS'te ve Telegram'da (13 Ekim
+2026'da fark edildi, yanlış mesaj gitmeden). `fetch:rates`'teki `covers()`
+bunu engeller. Arada karar, karar metninden gelir: `statements:fetch` 30
+dakikada bir resmî duyuruyu okur ve oranı `meetings.json`'a yazar; seri
+gelince esas alınır, çelişki uyarı verir (`setDecision`). İki yazar aynı
+dosyaya yazar ama iki iş aynı `concurrency` grubunda sırayla çalışır.
+
+**BoE beklentisinin tabanı SONIA'dır.** Eğri 1 aylık vadeden başlar;
+"bugünden ilk toplantıya" ortalaması eğimle dışarı uzatılan kısa uca
+dayanıyordu ve toplantı yaklaştıkça 10–15 bp kayıyordu. 2025–2026'nın 14
+kararında sınandı: tamamen fiyatlanmış indirimler eski yöntemle −3/−7 bp,
+SONIA tabanıyla −23/−25 bp; sabit tutmalar eskiyle +12 bp'ye kadar, yenisiyle
+±2 bp. Sitede Kasım 2026 MPC'si için "%52 artırım" görünüyordu; doğrusu
+~%88'di (`implied-path.ts`).
+
+**Sürpriz yalnızca önceki karardan sonra ve bu karardan önce oluşmuş
+beklentiyle hesaplanır** (`preDecisionPoint`). Beklenti geçmişi, beklentinin
+oluştuğu güne göre tutulur (eğri günü, anketin yanıt son günü ya da yayım
+günü) — çekildiği güne göre değil. Önceki karardan önce toplanmış bir anket
+eskimiştir: Fed'in Eylül 2026 artırımından önce toplanan SME turu Ekim
+kararıyla kıyaslansaydı Eylül'ün sürprizi Ekim'e yazılırdı. Bu yüzden
+sonuçları kararın ardından yayımlanan anketlerde (ECB SMA: ertesi gün, NY
+Fed SME: 2–3 hafta sonra) kart, anket yayımlanınca tamamlanır. Eşikler:
+<10 bp uyumlu, ≥25 bp sürpriz, arası "biraz" — anket ortalamasıyla
+kıyasta çoğunluğun beklediği karar "sürpriz" diye sunulmasın.
+
+**Karar metni yalnızca yayımcı izin veriyorsa gösterilir** (Fed, ECB, RBA:
+§4'teki konuşma lisansları; TCMB: "kaynak gösterilmek suretiyle
+yayımlanabilir; ticari kullanım yazılı izne tabidir"). BoE metni kişisel
+kullanıma açık, BoJ metni yalnızca PDF (satırları kırık, fark okunmaz):
+ikisinde yalnızca model özeti ve bağlantı var; metin `.cache/statements`'ta
+kalır. Fark önce cümleleri hizalar, sonra yalnızca değişen cümlelerde kelime
+farkına iner (`text-diff.ts`) — doğrudan kelime farkı ilgisiz cümleleri
+"the"/"ve" üzerinden eşleştirip okunmaz yapıyordu. Özet: `statements:fetch`
+→ claude-code-action (Opus; yazma yalnızca `.statements/out`) → koruma →
+`statements:import`; koşu başına 4, en yeni karar önce.
+
 **`fetch:current-rates` da birleştirir.** Bir bankanın kaynağı hata verirse
 önceki kaydı korunur ve adım yine hata koduyla biter. İlk cron koşusunda ECB
 SDW'nin geçici 504'ü ECB faizini siteden silmişti.
@@ -128,6 +176,8 @@ tetikliyordu.
 **Kaynaklara dürüst user-agent ile gidilir, tarayıcı taklit edilmez.**
 rba.gov.au'nun Akamai'si curl'ün Chrome taklidine 403 veriyor ama projenin
 kendi UA'sını (`shared.ts`) geçiriyor. Taklit hem kırılgan hem yanlış.
+(Atlanta Fed MPT okuyucusunda bir Chrome taklidi kalmıştı; 13 Ekim 2026'da
+kaldırıldı — dürüst UA ile sayfa 7–50 sn'de, dosya sorunsuz geliyor.)
 
 **Saati duyurulmayan karar (BoJ) `timeTbd`'dir ve hiçbir yerde saat gibi
 sunulmaz.** `meetingAt`'teki saat yalnızca sıralama için yer tutucudur:
@@ -310,6 +360,16 @@ metinleri `/faiz-olasiligi` ve `/hakkinda` sayfalarında aynen görünür.
 
 **CME otomatik veri çekmeyi kullanım şartlarıyla yasaklar.** Denemeyin.
 
+**NY Fed SME**: içerik kişisel ya da ticari amaçla kullanılabilir,
+kopyalanabilir, dağıtılabilir; New York Fed'in onayı ima edilemez
+(newyorkfed.org/privacy/termsofuse). Fed için toplantı bazlı beklentinin
+yeniden yayımlanabilir tek kaynağı; yalnızca karar kartında kullanılır.
+**Enflasyon**: BLS kamu malı (FRED üzerinden), Eurostat/ECB kaynak
+göstererek, ONS Open Government Licence, ABS CC BY 4.0 (RBA G4), TÜİK verisi
+EVDS'den TCMB şartlarıyla, Japonya İstatistik Bürosu hükümet standart
+kullanım şartları (CC BY uyumlu). OECD ve FRED'deki Japonya TÜFE serileri
+2021–2022'de kesildi; e-Stat Excel'i okunur.
+
 **Fed dışı beklentiler iki ayrı türdür ve arayüzde karıştırılmaz.** BoE:
 BoE'nin günlük OIS eğrisinden türetilen *piyasa fiyatlaması*
 (`src/lib/implied-path.ts`; BoE web kaynakları ticari olmayan kullanıma
@@ -327,7 +387,7 @@ Hiçbir sayfa yatırım tavsiyesi vermez; altbilgideki uyarı kaldırılmamalı.
 
 ---
 
-## 7. Mevcut durum (3 Ekim 2026)
+## 7. Mevcut durum (3 Ekim 2026; 13 Ekim eki aşağıda)
 
 ```
 Toplantı     135 (Fed 56, ECB 19, TCMB 12, BoE 16, BoJ 16, RBA 16)
@@ -340,6 +400,13 @@ Hatırlatma   /rss.xml (1 hafta önce + karar), iCal aboneliği (1 gün + 1 saat
              Telegram kanalı (1 gün önce + karar; scripts/post-telegram.ts)
 Sayfa        49 (build çıktısı), ISR 1 saat
 ```
+
+13 Ekim 2026: takvim arşivine ECB'nin 2026 ilk yarısı ve altı bankanın
+Aralık 2025 kararları (fark tabanı) eklendi — 145 toplantı. 36 karar
+sayfası (2026), 42 karar metni (28'i yayımlanabilir), beklenti geçmişi 2026
+başından (BoE günlük, ECB 7 SMA turu, Fed 7 SME turu, TCMB aylık), altı
+ekonominin enflasyonu, beş rehber yazısı. Özetler ilk günlerde 30 dakikalık
+işle birikimi eritir.
 
 ---
 

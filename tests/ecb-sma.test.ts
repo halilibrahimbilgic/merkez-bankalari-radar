@@ -1,6 +1,6 @@
 import { test } from "node:test";
 import assert from "node:assert/strict";
-import { latestSmaResultsUrl, parseSmaText, summarizeChange } from "../src/lib/sources/ecb-sma";
+import { listSmaResults, parseSmaText, summarizeChange } from "../src/lib/sources/ecb-sma";
 
 // Eylül 2026 sonuç PDF'inin metninden kısaltılmış (unpdf çıktısı).
 const TEXT = `Expectations for the DFR
@@ -39,11 +39,15 @@ test("tablo yoksa sessizce boş dönmez, hata verir", () => {
   assert.throws(() => parseSmaText("Expectations for the MRO\nSep-2026 2.65 2.65 2.65 69"));
 });
 
-test("en yeni sonuç PDF'i seçilir", () => {
-  const html = `<a href="/stats/ecb_surveys/sma/shared/pdf/ecb.smar260727_july.en.pdf?a">x</a>
-    <a href="/stats/ecb_surveys/sma/shared/pdf/ecb.smar260911_september.en.pdf?b">y</a>
-    <a href="/stats/ecb_surveys/sma/shared/pdf/ecb.sma261012_questionnaire.en.pdf?c">anket formu</a>`;
-  const r = latestSmaResultsUrl(html);
-  assert.equal(r.publishedOn, "2026-09-11");
-  assert.ok(r.url.startsWith("https://www.ecb.europa.eu/stats/ecb_surveys/sma/shared/pdf/ecb.smar260911"));
+test("sonuç listesi: yayım günü isoDate'ten, anket formları atlanır", () => {
+  // Gerçek listeden (13 Ekim 2026): Temmuz turunun dosyası 260727, yayımı 24 Temmuz.
+  const html = `<dt isoDate="2026-10-12"><div class="date">12 October 2026</div></dt><dd><div class="title"><a href="/stats/ecb_surveys/sma/shared/pdf/ecb.sma261012_questionnaire.en.pdf?4a">x</a></div></dd>
+<dt isoDate="2026-09-11"><div class="date">11 September 2026</div></dt><dd><div class="title"><a href="/stats/ecb_surveys/sma/shared/pdf/ecb.smar260911_september.en.pdf?8d">y</a></div></dd>
+<dt isoDate="2026-07-24"><div class="date">24 July 2026</div></dt><dd><div class="title"><a href="/stats/ecb_surveys/sma/shared/pdf/ecb.smar260727_july.en.pdf?19">z</a></div></dd>`;
+  const list = listSmaResults(html);
+  assert.deepEqual(
+    list.map((r) => r.publishedOn),
+    ["2026-09-11", "2026-07-24"],
+  );
+  assert.equal(list[1].url, "https://www.ecb.europa.eu/stats/ecb_surveys/sma/shared/pdf/ecb.smar260727_july.en.pdf");
 });

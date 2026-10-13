@@ -1,6 +1,8 @@
 import type { MetadataRoute } from "next";
 import { ALL_BANKS } from "@/lib/banks";
 import { getSpeechIds } from "@/lib/data/speeches";
+import { getDecisionIds } from "@/lib/data/decisions";
+import { GUIDES } from "@/lib/guides/index";
 import { LANGS, localePath } from "@/lib/i18n";
 import { SITE_URL } from "@/lib/site";
 
@@ -16,6 +18,10 @@ export default async function sitemap(): Promise<MetadataRoute.Sitemap> {
   const pages: { path: string; priority: number; changeFrequency: "daily" | "monthly" }[] = [
     { path: "/", priority: 1, changeFrequency: "daily" },
     { path: "/takvim", priority: 0.9, changeFrequency: "daily" },
+    { path: "/kararlar", priority: 0.8, changeFrequency: "daily" },
+    { path: "/reel-faiz", priority: 0.7, changeFrequency: "daily" },
+    { path: "/rehber", priority: 0.5, changeFrequency: "monthly" },
+    ...GUIDES.map((g) => ({ path: `/rehber/${g.slug}`, priority: 0.5, changeFrequency: "monthly" as const })),
     { path: "/haberler", priority: 0.8, changeFrequency: "daily" },
     { path: "/faiz-olasiligi", priority: 0.8, changeFrequency: "daily" },
     { path: "/konusmalar", priority: 0.8, changeFrequency: "daily" },
@@ -27,6 +33,11 @@ export default async function sitemap(): Promise<MetadataRoute.Sitemap> {
       path: `/banka/${b.code}`,
       priority: 0.7,
       changeFrequency: "daily" as const,
+    })),
+    ...(await getDecisionIds()).map((id) => ({
+      path: `/karar/${id}`,
+      priority: 0.6,
+      changeFrequency: "monthly" as const,
     })),
     ...(await getSpeechIds()).map((id) => ({
       path: `/konusma/${id}`,

@@ -1,12 +1,14 @@
 /**
  * Atlanta Fed Market Probability Tracker verisini indirir, en güncel gözlem
- * gününü çıkarır ve data/seed/probabilities.json dosyasına yazar.
+ * gününü çıkarır ve data/seed/probabilities.json dosyasına yazar; pencerelerin
+ * günlük seyrini data/history/expectations.json'a (fedWindows).
  *
  *   npm run fetch:probabilities
  */
 import { writeFile, mkdir } from "node:fs/promises";
 import path from "node:path";
-import { fetchMptWorkbook, parseLatestSnapshot } from "../src/lib/sources/mpt";
+import { fetchMptWorkbook, readMptRows, snapshotFromRows, windowHistoryFromRows } from "../src/lib/sources/mpt";
+import { loadHistory, saveHistory } from "./expectation-history";
 
 const OUT = path.join(process.cwd(), "data", "seed", "probabilities.json");
 
@@ -15,7 +17,8 @@ async function main() {
   const bytes = await fetchMptWorkbook();
   console.log(`  ${(bytes.length / 1_048_576).toFixed(1)} MB indirildi, ayrıştırılıyor…`);
 
-  const snapshot = parseLatestSnapshot(bytes);
+  const rows = readMptRows(bytes);
+  const snapshot = snapshotFromRows(rows);
 
   if (snapshot.windows.length === 0) {
     throw new Error("Hiç referans penceresi çıkarılamadı — dosya yapısı değişmiş olabilir.");
@@ -27,6 +30,13 @@ async function main() {
     JSON.stringify({ fetchedAt: new Date().toISOString(), ...snapshot }, null, 2) + "\n",
     "utf8",
   );
+
+  // Olasılıkların seyri (faiz olasılığı sayfasındaki grafik): dosya Atlanta
+  // Fed'in tüm geçmişini taşıdığı için her koşuda son bir yıl yeniden yazılır.
+  const since = new Date(Date.now() - 400 * 86_400_000).toISOString().slice(0, 10);
+  const history = await loadHistory();
+  history.fedWindows = windowHistoryFromRows(rows, since);
+  await saveHistory(history);
 
   const t = snapshot.targetRange;
   console.log(

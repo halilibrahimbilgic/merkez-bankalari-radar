@@ -1,10 +1,12 @@
 import Link from "next/link";
 import { RateOdds, type OddsRow } from "@/components/RateOdds";
+import { TimeSeriesChart } from "@/components/TimeSeriesChart";
 import { Callout, Card, SectionHeader, Stat, TableFrame, Th } from "@/components/ui";
+import type { ExpectationPoint } from "@/lib/expectation-history";
 import type { EcbSurveyExpectations, MarketExpectations, SurveyExpectations } from "@/lib/expectations";
-import { fmtPercent, INTL_LOCALE, L, localePath, type Lang } from "@/lib/i18n";
+import { fmtBp as bp, fmtPercent, INTL_LOCALE, L, localePath, type Lang } from "@/lib/i18n";
 import { moveOdds } from "@/lib/implied-path";
-import { formatDate } from "@/lib/time";
+import { formatDate, formatDateShort, monthLabel } from "@/lib/time";
 import type { Meeting } from "@/lib/types";
 
 /**
@@ -26,15 +28,22 @@ function KindBadge({ kind, lang }: { kind: "market" | "survey"; lang: Lang }) {
   );
 }
 
-/** "+13 bp" / "−8 bp" / "0 bp" */
-function bp(n: number): string {
-  if (n === 0) return "0 bp";
-  return `${n > 0 ? "+" : "−"}${Math.abs(n)} bp`;
-}
-
-export function BoeExpectations({ data, lang }: { data: MarketExpectations; lang: Lang }) {
+export function BoeExpectations({
+  data,
+  history,
+  lang,
+}: {
+  data: MarketExpectations;
+  /** Toplantı kimliği → günlük beklentiler (data/history). */
+  history?: Record<string, ExpectationPoint[]>;
+  lang: Lang;
+}) {
   const t = L(lang);
   const next = data.meetings[0];
+  const trend = (history?.[next.meetingId] ?? []).slice(-90).map((p) => ({
+    label: formatDateShort(p.date, lang),
+    expected: p.rate,
+  }));
   const odds = moveOdds(next.changeBp);
   const rows: OddsRow[] = [
     { direction: "up", label: t("25 bp artırım", "25 bp hike"), pct: odds.direction === "hike" ? odds.pct : 0 },
@@ -103,10 +112,36 @@ export function BoeExpectations({ data, lang }: { data: MarketExpectations; lang
           </TableFrame>
         </div>
 
+        {trend.length >= 5 && (
+          <div className="mt-6">
+            <h3 className="text-base font-semibold">
+              {t(
+                `${formatDate(next.meetingAt, lang)} toplantısı için beklentinin seyri`,
+                `How the expectation for the ${formatDate(next.meetingAt, lang)} meeting has moved`,
+              )}
+            </h3>
+            <p className="prose-width mt-1 text-sm text-muted">
+              {t(
+                `Son ${trend.length} piyasa gününde, bu toplantıdan sonra beklenen Bank Rate. Kesik çizgi bugünkü faiz.`,
+                `The Bank Rate expected after this meeting over the last ${trend.length} market days. The dashed line is today's rate.`,
+              )}
+            </p>
+            <div className="mt-3">
+              <TimeSeriesChart
+                data={trend}
+                series={[{ key: "expected", name: t("Beklenen Bank Rate", "Expected Bank Rate"), color: "var(--accent)" }]}
+                unit="rate"
+                lang={lang}
+                refLines={[{ y: data.currentRate, label: t("bugünkü faiz", "current rate"), color: "var(--muted)" }]}
+              />
+            </div>
+          </div>
+        )}
+
         <p className="prose-width mt-3 text-sm text-muted">
           {t(
-            "Yöntem: her toplantıdan bir sonrakine kadar eğrinin ortalaması, o dönemde beklenen gecelik faizdir; bugünkü döneme göre farkı toplantılarda beklenen değişimi verir. İhtimal, bu değişimin 25 baz puanlık adıma oranıdır (ör. +13 bp ≈ %52 ihtimalle artırım). Eğri yumuşatılmış olduğu ve vade primi ayrıştırılmadığı için rakamlar yaklaşıktır; uzak toplantılarda belirsizlik artar.",
-            "Method: the average of the curve between one meeting and the next is the overnight rate expected for that period; its difference from the current period gives the change expected at each meeting. The probability is that change divided by a 25 basis point step (e.g. +13 bp ≈ 52% chance of a hike). Because the curve is smoothed and the term premium is not separated out, the figures are approximate; uncertainty grows for later meetings.",
+            "Yöntem: her toplantıdan bir sonrakine kadar eğrinin ortalaması, o dönemde beklenen gecelik faizdir; bugün gerçekleşen gecelik faize (SONIA) göre farkı, toplantılarda beklenen değişimi verir. İhtimal, bu değişimin 25 baz puanlık adıma oranıdır (ör. +13 bp ≈ %52 ihtimalle artırım). Eğri yumuşatılmış olduğu ve vade primi ayrıştırılmadığı için rakamlar yaklaşıktır; uzak toplantılarda belirsizlik artar.",
+            "Method: the average of the curve between one meeting and the next is the overnight rate expected for that period; its difference from today's actual overnight rate (SONIA) gives the change expected at each meeting. The probability is that change divided by a 25 basis point step (e.g. +13 bp ≈ 52% chance of a hike). Because the curve is smoothed and the term premium is not separated out, the figures are approximate; uncertainty grows for later meetings.",
           )}{" "}
           {t("Kaynak", "Source")}:{" "}
           <a href={data.sourceUrl} target="_blank" rel="noopener noreferrer nofollow" className="text-accent hover:underline">
@@ -124,6 +159,7 @@ export function TcmbExpectations({
   currentRate,
   meetings,
   now,
+  history,
   lang,
 }: {
   data: SurveyExpectations;
@@ -131,9 +167,11 @@ export function TcmbExpectations({
   /** Gerçekleşen kararı göstermek için TCMB toplantıları. */
   meetings: Meeting[];
   now: Date;
+  history?: Record<string, ExpectationPoint[]>;
   lang: Lang;
 }) {
   const t = L(lang);
+  const upcoming = data.meetings.find((e) => new Date(e.meetingAt) > now);
   const [y, m] = data.period.split("-").map(Number);
   const period = new Intl.DateTimeFormat(INTL_LOCALE[lang], {
     month: "long",
@@ -202,6 +240,10 @@ export function TcmbExpectations({
           </TableFrame>
         </div>
 
+        {upcoming && (
+          <RoundsTable points={history?.[upcoming.meetingId] ?? []} meetingAt={upcoming.meetingAt} showOdds={false} lang={lang} />
+        )}
+
         <p className="prose-width mt-3 text-sm text-muted">
           {t(
             "Anketteki \"ilk toplantı\", anket ayında yapılan ilk PPK'dır; anket o toplantıdan önce toplandığı için bu satır geçmişte kalmış olabilir — o durumda gerçekleşen karar yanında gösterilir.",
@@ -223,12 +265,14 @@ export function EcbExpectations({
   currentRate,
   meetings,
   now,
+  history,
   lang,
 }: {
   data: EcbSurveyExpectations;
   currentRate?: number;
   meetings: Meeting[];
   now: Date;
+  history?: Record<string, ExpectationPoint[]>;
   lang: Lang;
 }) {
   const t = L(lang);
@@ -300,6 +344,8 @@ export function EcbExpectations({
           </TableFrame>
         </div>
 
+        {next && <RoundsTable points={history?.[next.meetingId] ?? []} meetingAt={next.meetingAt} showOdds lang={lang} />}
+
         <p className="prose-width mt-3 text-sm text-muted">
           {t(
             "Olasılıklar analistlerin her değişim büyüklüğüne verdiği ihtimallerin ortalamasıdır (indirim: −25 bp ve altı, sabit: 0 ve ±10 bp, artırım: +25 bp ve üstü). Anket toplantıdan önce yapılır, sonuçlar toplantıdan sonra yayımlanır; bu yüzden tablonun ilk satırı çoğunlukla geçmişte kalmıştır.",
@@ -329,5 +375,66 @@ export function OtherBanksNote({ lang }: { lang: Lang }) {
       </Link>
       {t(" sayfasında.", " page.")}
     </Callout>
+  );
+}
+
+/**
+ * Anket turları arasında bir toplantı için beklenti — anketler seyrek olduğu
+ * için grafik yerine tablo. Bkz. data/history.
+ */
+function RoundsTable({
+  points,
+  meetingAt,
+  showOdds,
+  lang,
+}: {
+  points: ExpectationPoint[];
+  meetingAt: string;
+  showOdds: boolean;
+  lang: Lang;
+}) {
+  const t = L(lang);
+  const rows = points.filter((p) => p.round).slice(-6).reverse();
+  if (rows.length < 2) return null;
+  return (
+    <div className="mt-6">
+      <h3 className="text-base font-semibold">
+        {t(
+          `${formatDate(meetingAt, lang)} toplantısı için turlar arasında beklenti`,
+          `Expectation for the ${formatDate(meetingAt, lang)} meeting across survey rounds`,
+        )}
+      </h3>
+      <div className="mt-3">
+        <TableFrame minWidth="26rem">
+          <thead>
+            <tr className="border-b border-border-strong text-left text-muted">
+              <Th>{t("Anket", "Survey")}</Th>
+              <Th align="right">{t("Beklenti", "Expectation")}</Th>
+              {showOdds && <Th align="right">{t("Artırım / sabit / indirim", "Hike / hold / cut")}</Th>}
+            </tr>
+          </thead>
+          <tbody>
+            {rows.map((p) => (
+              <tr key={p.date} className="border-b border-border last:border-b-0">
+                <td className="tabular px-4 py-2.5">
+                  {monthLabel(`${p.round}-15T12:00:00Z`, lang)}
+                  {p.publishedOn && (
+                    <span className="text-xs text-muted"> · {t("yayım", "published")} {formatDateShort(p.publishedOn, lang)}</span>
+                  )}
+                </td>
+                <td className="tabular px-4 py-2.5 text-right font-semibold">{fmtPercent(p.rate, lang)}</td>
+                {showOdds && (
+                  <td className="tabular px-4 py-2.5 text-right text-muted">
+                    {p.odds
+                      ? `${fmtPercent(p.odds.hike, lang, 0)} / ${fmtPercent(p.odds.hold, lang, 0)} / ${fmtPercent(p.odds.cut, lang, 0)}`
+                      : "—"}
+                  </td>
+                )}
+              </tr>
+            ))}
+          </tbody>
+        </TableFrame>
+      </div>
+    </div>
   );
 }

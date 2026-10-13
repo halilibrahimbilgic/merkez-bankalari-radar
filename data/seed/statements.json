@@ -1,0 +1,701 @@
+{
+  "fetchedAt": "2026-10-13T20:04:53.652Z",
+  "statements": [
+    {
+      "meetingId": "boe-2025-12-18",
+      "bankCode": "boe",
+      "urls": {
+        "en": "https://www.bankofengland.co.uk/monetary-policy-summary-and-minutes/2025/december-2025"
+      },
+      "langs": [
+        "en"
+      ],
+      "publishable": false,
+      "fetchedAt": "2026-10-13T19:41:25.238Z",
+      "rate": 3.75
+    },
+    {
+      "meetingId": "boe-2026-02-05",
+      "bankCode": "boe",
+      "urls": {
+        "en": "https://www.bankofengland.co.uk/monetary-policy-summary-and-minutes/2026/february-2026"
+      },
+      "langs": [
+        "en"
+      ],
+      "publishable": false,
+      "fetchedAt": "2026-10-13T19:41:40.295Z",
+      "rate": 3.75,
+      "previousId": "boe-2025-12-18"
+    },
+    {
+      "meetingId": "boe-2026-03-19",
+      "bankCode": "boe",
+      "urls": {
+        "en": "https://www.bankofengland.co.uk/monetary-policy-summary-and-minutes/2026/march-2026"
+      },
+      "langs": [
+        "en"
+      ],
+      "publishable": false,
+      "fetchedAt": "2026-10-13T19:41:55.322Z",
+      "rate": 3.75,
+      "previousId": "boe-2026-02-05"
+    },
+    {
+      "meetingId": "boe-2026-04-30",
+      "bankCode": "boe",
+      "urls": {
+        "en": "https://www.bankofengland.co.uk/monetary-policy-summary-and-minutes/2026/april-2026"
+      },
+      "langs": [
+        "en"
+      ],
+      "publishable": false,
+      "fetchedAt": "2026-10-13T19:42:05.958Z",
+      "rate": 3.75,
+      "previousId": "boe-2026-03-19"
+    },
+    {
+      "meetingId": "boe-2026-06-18",
+      "bankCode": "boe",
+      "urls": {
+        "en": "https://www.bankofengland.co.uk/monetary-policy-summary-and-minutes/2026/june-2026"
+      },
+      "langs": [
+        "en"
+      ],
+      "publishable": false,
+      "fetchedAt": "2026-10-13T19:42:27.131Z",
+      "rate": 3.75,
+      "previousId": "boe-2026-04-30"
+    },
+    {
+      "meetingId": "boe-2026-07-30",
+      "bankCode": "boe",
+      "urls": {
+        "en": "https://www.bankofengland.co.uk/monetary-policy-summary-and-minutes/2026/july-2026"
+      },
+      "langs": [
+        "en"
+      ],
+      "publishable": false,
+      "fetchedAt": "2026-10-13T19:42:34.630Z",
+      "rate": 3.75,
+      "previousId": "boe-2026-06-18"
+    },
+    {
+      "meetingId": "boe-2026-09-17",
+      "bankCode": "boe",
+      "urls": {
+        "en": "https://www.bankofengland.co.uk/monetary-policy-summary-and-minutes/2026/september-2026"
+      },
+      "langs": [
+        "en"
+      ],
+      "publishable": false,
+      "fetchedAt": "2026-10-13T19:42:50.458Z",
+      "rate": 3.75,
+      "previousId": "boe-2026-07-30",
+      "summary": {
+        "headlineTr": "BoE, Bank Rate'i 6–3 oyla %3,75'te tuttu; metin TÜFE'nin yükseldiğini ve enflasyon risklerinin Temmuz'a göre daha da yukarı yönlü olduğunu söylüyor, tahvil stokunun sıfıra indirilmesine de karar verildi.",
+        "headlineEn": "The BoE held Bank Rate at 3.75% by a 6–3 vote; the statement says CPI inflation has risen and the risks to inflation are more to the upside than in July, and it decided to run the gilt stock down to zero.",
+        "changesTr": [
+          "Oy dağılımı değişmedi: 6–3 ile sabit tutma, üç üye yine 25 baz puan artırım istedi.",
+          "Enflasyon değerlendirmesi değişti: TÜFE'nin %2,6'ya gerilediği ifadesinin yerine ağustosta %3,1'e yükseldiği ve önümüzdeki çeyreklerde daha da artmasının muhtemel olduğu yazıldı.",
+          "Risk dengesi sertleşti: enflasyon risklerinin Temmuz Para Politikası Raporu'ndakinden 'daha fazla' yukarı yönlü olduğu, ikinci tur etki riskinin enerji fiyatları daha oynak olursa da büyüyeceği belirtildi; 'temel dezenflasyonun açık işaretleri' ifadesi çıkarıldı.",
+          "Faaliyetin beklenenden biraz güçlü olduğu cümlesi eklendi.",
+          "MPC, para politikası amacıyla tutulan devlet tahvili stokunu oy birliğiyle sıfıra indirme kararı aldı: kalan stok 2034 sonuna kadar yılda ortalama 46 milyar sterlinlik hızla, yıllık 20 milyar sterlinlik satışlar ve itfalarla eritilecek."
+        ],
+        "changesEn": [
+          "The vote was unchanged: 6–3 to hold, with three members again preferring a 25 basis point increase.",
+          "The inflation assessment changed: instead of CPI inflation having fallen to 2.6%, the statement says it rose to 3.1% in August and is likely to rise further over coming quarters.",
+          "The balance of risks hardened: risks to inflation are tilted to the upside 'more so' than in the July Monetary Policy Report, the risk of second-round effects grows if energy prices are more volatile, and the reference to 'clear signs of underlying disinflation' was dropped.",
+          "A sentence was added saying activity has been slightly stronger than expected.",
+          "The MPC voted unanimously to reduce the stock of gilts held for monetary policy purposes to zero, unwinding the remainder by the end of 2034 at an average £46 billion a year through annual sales of £20 billion alongside maturing gilts."
+        ],
+        "tone": "more-hawkish",
+        "toneReasonTr": "Yükselen TÜFE, Temmuz'a göre daha da yukarı yönlü riskler ve beklenenden güçlü faaliyet vurgusu eklenirken dezenflasyon ifadesi çıkarıldı.",
+        "toneReasonEn": "Rising CPI inflation, risks more to the upside than in July and stronger-than-expected activity were added, while the reference to disinflation was dropped.",
+        "model": "claude-code/opus",
+        "promptVersion": "1",
+        "summarizedAt": "2026-10-13T20:04:53.651Z"
+      }
+    },
+    {
+      "meetingId": "boj-2025-12-19",
+      "bankCode": "boj",
+      "urls": {
+        "en": "https://www.boj.or.jp/en/mopo/mpmdeci/state_2025/k251219a.htm"
+      },
+      "langs": [
+        "en"
+      ],
+      "publishable": false,
+      "fetchedAt": "2026-10-13T19:41:31.441Z",
+      "rate": 0.75
+    },
+    {
+      "meetingId": "boj-2026-01-23",
+      "bankCode": "boj",
+      "urls": {
+        "en": "https://www.boj.or.jp/en/mopo/mpmdeci/state_2026/k260123a.htm"
+      },
+      "langs": [
+        "en"
+      ],
+      "publishable": false,
+      "fetchedAt": "2026-10-13T19:41:35.935Z",
+      "rate": 0.75,
+      "previousId": "boj-2025-12-19"
+    },
+    {
+      "meetingId": "boj-2026-03-19",
+      "bankCode": "boj",
+      "urls": {
+        "en": "https://www.boj.or.jp/en/mopo/mpmdeci/mpr_2026/k260319a.pdf"
+      },
+      "langs": [
+        "en"
+      ],
+      "publishable": false,
+      "fetchedAt": "2026-10-13T19:41:53.508Z",
+      "rate": 0.75,
+      "previousId": "boj-2026-01-23"
+    },
+    {
+      "meetingId": "boj-2026-04-28",
+      "bankCode": "boj",
+      "urls": {
+        "en": "https://www.boj.or.jp/en/mopo/mpmdeci/mpr_2026/k260428a.pdf"
+      },
+      "langs": [
+        "en"
+      ],
+      "publishable": false,
+      "fetchedAt": "2026-10-13T19:42:02.241Z",
+      "rate": 0.75,
+      "previousId": "boj-2026-03-19"
+    },
+    {
+      "meetingId": "boj-2026-06-16",
+      "bankCode": "boj",
+      "urls": {
+        "en": "https://www.boj.or.jp/en/mopo/mpmdeci/mpr_2026/k260616a.pdf"
+      },
+      "langs": [
+        "en"
+      ],
+      "publishable": false,
+      "fetchedAt": "2026-10-13T19:42:23.059Z",
+      "rate": 1,
+      "previousId": "boj-2026-04-28"
+    },
+    {
+      "meetingId": "boj-2026-07-31",
+      "bankCode": "boj",
+      "urls": {
+        "en": "https://www.boj.or.jp/en/mopo/mpmdeci/mpr_2026/k260731a.pdf"
+      },
+      "langs": [
+        "en"
+      ],
+      "publishable": false,
+      "fetchedAt": "2026-10-13T19:42:39.649Z",
+      "rate": 1,
+      "previousId": "boj-2026-06-16"
+    },
+    {
+      "meetingId": "boj-2026-09-18",
+      "bankCode": "boj",
+      "urls": {
+        "en": "https://www.boj.or.jp/en/mopo/mpmdeci/mpr_2026/k260918a.pdf"
+      },
+      "langs": [
+        "en"
+      ],
+      "publishable": false,
+      "fetchedAt": "2026-10-13T19:42:57.223Z",
+      "rate": 1.25,
+      "previousId": "boj-2026-07-31",
+      "summary": {
+        "headlineTr": "BoJ kısa vadeli politika faizini 7–2 oyla %1'den %1,25'e çıkardı; metin temel enflasyonun %2'ye yaklaştığını ve hedefin üzerine çıkma riski bulunduğunu vurguluyor.",
+        "headlineEn": "The BoJ raised its short-term policy rate from 1% to 1.25% by a 7–2 vote; the statement stresses that underlying inflation is approaching 2% and could overshoot the target.",
+        "changesTr": [
+          "Gecelik teminatsız çağrı faizi hedefi %1'den %1,25'e yükseltildi; tamamlayıcı mevduat imkânı faizi %1,25'e, temel kredi faizi %1,5'e çıkarıldı, yeni oranlar 24 Eylül'den geçerli.",
+          "Oylama 8–1'den 7–2'ye döndü ama yön değişti: Temmuz'da Takata artırım önermişti; bu kez Asada ve Sato, enflasyonun ve ekonominin artırımı haklı çıkaracak ölçüde hızlanmadığı gerekçesiyle sabit tutmayı savunarak karşı oy verdi.",
+          "Metne ekonomik değerlendirme eklendi: orta-uzun vadeli enflasyon beklentilerinin yükselmeye devam ettiği, temel TÜFE enflasyonunun %2'ye yaklaştığı ve firmaların ücret ve fiyat artırma davranışı nedeniyle %2'nin üzerine çıkma riski olduğu belirtiliyor.",
+          "İklim değişikliğine yönelik fonlama operasyonunda kredi faizi değişken faize çevrildi ve kredilere üst sınır getirildi (oy birliği)."
+        ],
+        "changesEn": [
+          "The target for the uncollateralised overnight call rate was raised from 1% to 1.25%; the complementary deposit facility rate rises to 1.25% and the basic loan rate to 1.5%, effective 24 September.",
+          "The vote went from 8–1 to 7–2, with the dissent reversing direction: in July Takata had proposed a hike, while this time Asada and Sato dissented in favour of holding, arguing that prices and the economy had not accelerated enough to justify a hike.",
+          "An economic assessment was added: medium- to long-term inflation expectations have continued to rise, underlying CPI inflation is approaching 2%, and there is a risk it overshoots 2% as firms lean more towards raising wages and prices.",
+          "For the climate-change funding operations, the loan rate was switched to a floating rate and upper limits were set on loans (unanimous)."
+        ],
+        "tone": "more-hawkish",
+        "toneReasonTr": "Faiz artırımına ek olarak temel enflasyonun %2'nin üzerine çıkma riskinin açıkça vurgulanması metni sıkılaşma yönünde güçlendiriyor; karşı oylar ise artık sabit tutma yönünde.",
+        "toneReasonEn": "Besides the hike, the explicit risk of underlying inflation overshooting 2% pushes the statement in a tightening direction; the dissents now favour holding.",
+        "model": "claude-code/opus",
+        "promptVersion": "1",
+        "summarizedAt": "2026-10-13T20:04:53.652Z"
+      }
+    },
+    {
+      "meetingId": "ecb-2025-12-18",
+      "bankCode": "ecb",
+      "urls": {
+        "en": "https://www.ecb.europa.eu/press/pr/date/2025/html/ecb.mp251218~58b0e415a6.en.html"
+      },
+      "langs": [
+        "en"
+      ],
+      "publishable": true,
+      "fetchedAt": "2026-10-13T19:41:28.107Z",
+      "rate": 2
+    },
+    {
+      "meetingId": "ecb-2026-02-05",
+      "bankCode": "ecb",
+      "urls": {
+        "en": "https://www.ecb.europa.eu/press/pr/date/2026/html/ecb.mp260205~001d26959b.en.html"
+      },
+      "langs": [
+        "en"
+      ],
+      "publishable": true,
+      "fetchedAt": "2026-10-13T19:41:43.478Z",
+      "rate": 2,
+      "previousId": "ecb-2025-12-18"
+    },
+    {
+      "meetingId": "ecb-2026-03-19",
+      "bankCode": "ecb",
+      "urls": {
+        "en": "https://www.ecb.europa.eu/press/pr/date/2026/html/ecb.mp260319~3057739775.en.html"
+      },
+      "langs": [
+        "en"
+      ],
+      "publishable": true,
+      "fetchedAt": "2026-10-13T19:41:56.931Z",
+      "rate": 2,
+      "previousId": "ecb-2026-02-05"
+    },
+    {
+      "meetingId": "ecb-2026-04-30",
+      "bankCode": "ecb",
+      "urls": {
+        "en": "https://www.ecb.europa.eu/press/pr/date/2026/html/ecb.mp260430~81b7179e6f.en.html"
+      },
+      "langs": [
+        "en"
+      ],
+      "publishable": true,
+      "fetchedAt": "2026-10-13T19:42:07.510Z",
+      "rate": 2,
+      "previousId": "ecb-2026-03-19"
+    },
+    {
+      "meetingId": "ecb-2026-06-11",
+      "bankCode": "ecb",
+      "urls": {
+        "en": "https://www.ecb.europa.eu/press/pr/date/2026/html/ecb.mp260611~4d41bd5e83.en.html"
+      },
+      "langs": [
+        "en"
+      ],
+      "publishable": true,
+      "fetchedAt": "2026-10-13T19:42:15.027Z",
+      "rate": 2.25,
+      "previousId": "ecb-2026-04-30"
+    },
+    {
+      "meetingId": "ecb-2026-07-23",
+      "bankCode": "ecb",
+      "urls": {
+        "en": "https://www.ecb.europa.eu/press/pr/date/2026/html/ecb.mp260723~29f24d99bc.en.html"
+      },
+      "langs": [
+        "en"
+      ],
+      "publishable": true,
+      "fetchedAt": "2026-10-13T19:42:32.162Z",
+      "rate": 2.25,
+      "previousId": "ecb-2026-06-11"
+    },
+    {
+      "meetingId": "ecb-2026-09-10",
+      "bankCode": "ecb",
+      "urls": {
+        "en": "https://www.ecb.europa.eu/press/pr/date/2026/html/ecb.mp260910~314e508016.en.html"
+      },
+      "langs": [
+        "en"
+      ],
+      "publishable": true,
+      "fetchedAt": "2026-10-13T19:42:46.945Z",
+      "rate": 2.5,
+      "previousId": "ecb-2026-07-23"
+    },
+    {
+      "meetingId": "fed-2025-12-10",
+      "bankCode": "fed",
+      "urls": {
+        "en": "https://www.federalreserve.gov/newsevents/pressreleases/monetary20251210a.htm"
+      },
+      "langs": [
+        "en"
+      ],
+      "publishable": true,
+      "fetchedAt": "2026-10-13T19:43:49.884Z",
+      "rate": 3.75,
+      "rateLower": 3.5,
+      "previousId": "fed-2025-10-29"
+    },
+    {
+      "meetingId": "fed-2026-01-28",
+      "bankCode": "fed",
+      "urls": {
+        "en": "https://www.federalreserve.gov/newsevents/pressreleases/monetary20260128a.htm"
+      },
+      "langs": [
+        "en"
+      ],
+      "publishable": true,
+      "fetchedAt": "2026-10-13T19:43:50.142Z",
+      "rate": 3.75,
+      "rateLower": 3.5,
+      "previousId": "fed-2025-12-10"
+    },
+    {
+      "meetingId": "fed-2026-03-18",
+      "bankCode": "fed",
+      "urls": {
+        "en": "https://www.federalreserve.gov/newsevents/pressreleases/monetary20260318a.htm"
+      },
+      "langs": [
+        "en"
+      ],
+      "publishable": true,
+      "fetchedAt": "2026-10-13T19:43:52.640Z",
+      "rate": 3.75,
+      "rateLower": 3.5,
+      "previousId": "fed-2026-01-28"
+    },
+    {
+      "meetingId": "fed-2026-04-29",
+      "bankCode": "fed",
+      "urls": {
+        "en": "https://www.federalreserve.gov/newsevents/pressreleases/monetary20260429a.htm"
+      },
+      "langs": [
+        "en"
+      ],
+      "publishable": true,
+      "fetchedAt": "2026-10-13T19:43:52.851Z",
+      "rate": 3.75,
+      "rateLower": 3.5,
+      "previousId": "fed-2026-03-18"
+    },
+    {
+      "meetingId": "fed-2026-06-17",
+      "bankCode": "fed",
+      "urls": {
+        "en": "https://www.federalreserve.gov/newsevents/pressreleases/monetary20260617a.htm"
+      },
+      "langs": [
+        "en"
+      ],
+      "publishable": true,
+      "fetchedAt": "2026-10-13T19:42:26.157Z",
+      "rate": 3.75,
+      "rateLower": 3.5,
+      "previousId": "fed-2026-04-29"
+    },
+    {
+      "meetingId": "fed-2026-07-29",
+      "bankCode": "fed",
+      "urls": {
+        "en": "https://www.federalreserve.gov/newsevents/pressreleases/monetary20260729a.htm"
+      },
+      "langs": [
+        "en"
+      ],
+      "publishable": true,
+      "fetchedAt": "2026-10-13T19:42:32.593Z",
+      "rate": 3.75,
+      "rateLower": 3.5,
+      "previousId": "fed-2026-06-17"
+    },
+    {
+      "meetingId": "fed-2026-09-16",
+      "bankCode": "fed",
+      "urls": {
+        "en": "https://www.federalreserve.gov/newsevents/pressreleases/monetary20260916a.htm"
+      },
+      "langs": [
+        "en"
+      ],
+      "publishable": true,
+      "fetchedAt": "2026-10-13T19:42:48.964Z",
+      "rate": 4,
+      "rateLower": 3.75,
+      "previousId": "fed-2026-07-29",
+      "summary": {
+        "headlineTr": "Fed hedef aralığı 25 baz puan artırarak %3,75–4,00 yaptı; karar bu kez oy birliğiyle alındı ve metin artırımın enflasyonun %2 hedefine daha zamanında dönmesini destekleyeceğini söylüyor.",
+        "headlineEn": "The Fed raised the target range by 25 basis points to 3.75–4.00%; the decision was unanimous this time and the statement says the move will support a timelier return of inflation to the 2% goal.",
+        "changesTr": [
+          "Hedef aralık sabit tutulmak yerine 1/4 puan artırıldı; yeni aralık %3,75–4,00.",
+          "Oylama 9–3'ten 12–0'a döndü: Temmuz'da artırım isteyerek karşı oy veren Hammack, Kashkari ve Logan'ın yerine bu kez karşı oy yok.",
+          "Enflasyon paragrafından enerji gibi sektörlerdeki arz şoklarına yapılan atıf çıkarıldı; yerine bugünkü kararın enflasyonun %2 hedefine daha zamanında dönmesini destekleyeceği cümlesi eklendi.",
+          "Ekonomik değerlendirmede Orta Doğu'daki çatışmaya doğrudan atıf yerine 'jeopolitik gelişmeler' ifadesi kullanıldı ve iç harcamaların dirençli olduğu eklendi; verimlilik artışı güçlü, sermaye yatırımı sağlam diye nitelendi."
+        ],
+        "changesEn": [
+          "The target range was raised by 1/4 percentage point instead of being held; the new range is 3.75–4.00%.",
+          "The vote moved from 9–3 to 12–0: Hammack, Kashkari and Logan, who dissented in July in favour of a hike, are no longer dissenting.",
+          "The reference to supply shocks in sectors such as energy was dropped from the inflation paragraph and replaced by a sentence saying today's action will support a timelier return of inflation to the 2% goal.",
+          "The assessment of the economy replaced the direct reference to the Middle East conflict with 'geopolitical developments' and added that domestic spending has been resilient; productivity growth is described as strong and capital investment as robust."
+        ],
+        "tone": "more-hawkish",
+        "toneReasonTr": "Artırımla birlikte enflasyonun hedefe 'daha zamanında' döneceği vurgusu ve iç talebin dirençli olduğu ifadesi metni sıkılaşma yönünde güçlendiriyor.",
+        "toneReasonEn": "Alongside the hike, the emphasis on a 'timelier' return of inflation to target and on resilient domestic demand pushes the statement in a tightening direction.",
+        "model": "claude-code/opus",
+        "promptVersion": "1",
+        "summarizedAt": "2026-10-13T20:04:53.652Z"
+      }
+    },
+    {
+      "meetingId": "rba-2025-12-09",
+      "bankCode": "rba",
+      "urls": {
+        "en": "https://www.rba.gov.au/media-releases/2025/mr-25-33.html"
+      },
+      "langs": [
+        "en"
+      ],
+      "publishable": true,
+      "fetchedAt": "2026-10-13T19:44:10.975Z",
+      "rate": 3.6
+    },
+    {
+      "meetingId": "rba-2026-02-03",
+      "bankCode": "rba",
+      "urls": {
+        "en": "https://www.rba.gov.au/media-releases/2026/mr-26-03.html"
+      },
+      "langs": [
+        "en"
+      ],
+      "publishable": true,
+      "fetchedAt": "2026-10-13T19:43:51.391Z",
+      "rate": 3.85,
+      "previousId": "rba-2025-12-09"
+    },
+    {
+      "meetingId": "rba-2026-03-17",
+      "bankCode": "rba",
+      "urls": {
+        "en": "https://www.rba.gov.au/media-releases/2026/mr-26-08.html"
+      },
+      "langs": [
+        "en"
+      ],
+      "publishable": true,
+      "fetchedAt": "2026-10-13T19:43:52.402Z",
+      "rate": 4.1,
+      "previousId": "rba-2026-02-03"
+    },
+    {
+      "meetingId": "rba-2026-05-05",
+      "bankCode": "rba",
+      "urls": {
+        "en": "https://www.rba.gov.au/media-releases/2026/mr-26-12.html"
+      },
+      "langs": [
+        "en"
+      ],
+      "publishable": true,
+      "fetchedAt": "2026-10-13T19:43:54.416Z",
+      "rate": 4.35,
+      "previousId": "rba-2026-03-17"
+    },
+    {
+      "meetingId": "rba-2026-06-16",
+      "bankCode": "rba",
+      "urls": {
+        "en": "https://www.rba.gov.au/media-releases/2026/mr-26-15.html"
+      },
+      "langs": [
+        "en"
+      ],
+      "publishable": true,
+      "fetchedAt": "2026-10-13T19:43:55.564Z",
+      "rate": 4.35,
+      "previousId": "rba-2026-05-05"
+    },
+    {
+      "meetingId": "rba-2026-08-11",
+      "bankCode": "rba",
+      "urls": {
+        "en": "https://www.rba.gov.au/media-releases/2026/mr-26-19.html"
+      },
+      "langs": [
+        "en"
+      ],
+      "publishable": true,
+      "fetchedAt": "2026-10-13T19:43:57.204Z",
+      "rate": 4.35,
+      "previousId": "rba-2026-06-16"
+    },
+    {
+      "meetingId": "rba-2026-09-29",
+      "bankCode": "rba",
+      "urls": {
+        "en": "https://www.rba.gov.au/media-releases/2026/mr-26-27.html"
+      },
+      "langs": [
+        "en"
+      ],
+      "publishable": true,
+      "fetchedAt": "2026-10-13T19:42:59.022Z",
+      "rate": 4.6,
+      "previousId": "rba-2026-08-11",
+      "summary": {
+        "headlineTr": "RBA nakit faiz hedefini 25 baz puan artırarak %4,60 yaptı; metin Ağustos'ta işaret edilen yukarı yönlü enflasyon risklerinin gerçekleşmeye başladığını söylüyor.",
+        "headlineEn": "The RBA raised the cash rate target by 25 basis points to 4.60%; the statement says the upside inflation risks flagged in August are starting to materialise.",
+        "changesTr": [
+          "Nakit faiz hedefi sabit tutulmak yerine 25 baz puan artırıldı; yeni oran %4,60, karar yine oy birliğiyle alındı.",
+          "Ağustos'ta işaret edilen yukarı yönlü enflasyon risklerinin gerçekleşmeye başladığı yazıldı: Orta Doğu'daki çatışma genişledi, küresel enerji fiyatları Ağustos tahminlerinde varsayılandan çok daha yüksek ve yapay zekâ talebi teknoloji ürünlerinin küresel fiyatlarını hızla artırıyor.",
+          "Avustralya'da son enflasyon verilerinin önceki toplantıda beklenenden güçlü geldiği ve haziran çeyreğinde büyümenin beklentiyi bir miktar aştığı belirtildi.",
+          "Önceki metindeki 'para politikası bir ölçüde kısıtlayıcı' değerlendirmesi ve sabit tutma gerekçesi çıkarıldı; Kurul finansal koşullarda daha fazla sıkılaşmanın gerekli olduğuna hükmetti.",
+          "Konut piyasasındaki düşüş (çoğu başkentte fiyat düşüşü ve yeni konut kredilerinde belirgin azalma) ekonomik görünüm için yeni bir belirsizlik olarak eklendi."
+        ],
+        "changesEn": [
+          "The cash rate target was raised by 25 basis points instead of being held; the new rate is 4.60% and the decision was again unanimous.",
+          "The statement says the upside inflation risks flagged in August are materialising: the Middle East conflict has broadened, global energy prices are much higher than assumed in the August forecasts, and AI-related demand is driving rapid growth in global prices for technology goods.",
+          "It notes that recent inflation outcomes in Australia were stronger than expected at the previous meeting and that output growth was slightly stronger than expected in the June quarter.",
+          "The earlier judgement that policy was 'somewhat restrictive' and the rationale for holding were dropped; the Board judged that a further tightening in financial conditions is warranted.",
+          "The downturn in the housing market (falling prices in most capital cities and a marked decline in new housing loans) was added as a new uncertainty for the outlook."
+        ],
+        "tone": "more-hawkish",
+        "toneReasonTr": "Risklerin gerçekleşmeye başladığı, enflasyonun beklenenden güçlü geldiği ve daha fazla sıkılaşmanın gerekli olduğu ifadeleri metni belirgin biçimde şahinleştiriyor.",
+        "toneReasonEn": "Statements that risks are materialising, inflation came in stronger than expected and further tightening is warranted make the text clearly more hawkish.",
+        "model": "claude-code/opus",
+        "promptVersion": "1",
+        "summarizedAt": "2026-10-13T20:04:53.652Z"
+      }
+    },
+    {
+      "meetingId": "tcmb-2025-12-11",
+      "bankCode": "tcmb",
+      "urls": {
+        "tr": "https://www.tcmb.gov.tr/wps/wcm/connect/TR/TCMB+TR/Main+Menu/Duyurular/Basin/2025/DUY2025-63",
+        "en": "https://www.tcmb.gov.tr/wps/wcm/connect/EN/TCMB+EN/Main+Menu/Announcements/Press+Releases/2025/ANO2025-61"
+      },
+      "langs": [
+        "tr",
+        "en"
+      ],
+      "publishable": true,
+      "fetchedAt": "2026-10-13T19:41:24.047Z",
+      "rate": 38
+    },
+    {
+      "meetingId": "tcmb-2026-01-22",
+      "bankCode": "tcmb",
+      "urls": {
+        "tr": "https://www.tcmb.gov.tr/wps/wcm/connect/TR/TCMB+TR/Main+Menu/Duyurular/Basin/2026/DUY2026-01",
+        "en": "https://www.tcmb.gov.tr/wps/wcm/connect/EN/TCMB+EN/Main+Menu/Announcements/Press+Releases/2026/ANO2026-01"
+      },
+      "langs": [
+        "tr",
+        "en"
+      ],
+      "publishable": true,
+      "fetchedAt": "2026-10-13T19:41:34.640Z",
+      "rate": 37,
+      "previousId": "tcmb-2025-12-11"
+    },
+    {
+      "meetingId": "tcmb-2026-03-12",
+      "bankCode": "tcmb",
+      "urls": {
+        "tr": "https://www.tcmb.gov.tr/wps/wcm/connect/TR/TCMB+TR/Main+Menu/Duyurular/Basin/2026/DUY2026-12",
+        "en": "https://www.tcmb.gov.tr/wps/wcm/connect/EN/TCMB+EN/Main+Menu/Announcements/Press+Releases/2026/ANO2026-12"
+      },
+      "langs": [
+        "tr",
+        "en"
+      ],
+      "publishable": true,
+      "fetchedAt": "2026-10-13T19:41:46.107Z",
+      "rate": 37,
+      "previousId": "tcmb-2026-01-22"
+    },
+    {
+      "meetingId": "tcmb-2026-04-22",
+      "bankCode": "tcmb",
+      "urls": {
+        "tr": "https://www.tcmb.gov.tr/wps/wcm/connect/TR/TCMB+TR/Main+Menu/Duyurular/Basin/2026/DUY2026-17",
+        "en": "https://www.tcmb.gov.tr/wps/wcm/connect/EN/TCMB+EN/Main+Menu/Announcements/Press+Releases/2026/ANO2026-17"
+      },
+      "langs": [
+        "tr",
+        "en"
+      ],
+      "publishable": true,
+      "fetchedAt": "2026-10-13T19:41:59.329Z",
+      "rate": 37,
+      "previousId": "tcmb-2026-03-12"
+    },
+    {
+      "meetingId": "tcmb-2026-06-11",
+      "bankCode": "tcmb",
+      "urls": {
+        "tr": "https://www.tcmb.gov.tr/wps/wcm/connect/TR/TCMB+TR/Main+Menu/Duyurular/Basin/2026/DUY2026-23",
+        "en": "https://www.tcmb.gov.tr/wps/wcm/connect/EN/TCMB+EN/Main+Menu/Announcements/Press+Releases/2026/ANO2026-23"
+      },
+      "langs": [
+        "tr",
+        "en"
+      ],
+      "publishable": true,
+      "fetchedAt": "2026-10-13T19:42:13.894Z",
+      "rate": 37,
+      "previousId": "tcmb-2026-04-22"
+    },
+    {
+      "meetingId": "tcmb-2026-07-23",
+      "bankCode": "tcmb",
+      "urls": {
+        "tr": "https://www.tcmb.gov.tr/wps/wcm/connect/TR/TCMB+TR/Main+Menu/Duyurular/Basin/2026/DUY2026-28",
+        "en": "https://www.tcmb.gov.tr/wps/wcm/connect/EN/TCMB+EN/Main+Menu/Announcements/Press+Releases/2026/ANO2026-28"
+      },
+      "langs": [
+        "tr",
+        "en"
+      ],
+      "publishable": true,
+      "fetchedAt": "2026-10-13T19:42:30.612Z",
+      "rate": 37,
+      "previousId": "tcmb-2026-06-11"
+    },
+    {
+      "meetingId": "tcmb-2026-09-10",
+      "bankCode": "tcmb",
+      "urls": {
+        "tr": "https://www.tcmb.gov.tr/wps/wcm/connect/TR/TCMB+TR/Main+Menu/Duyurular/Basin/2026/DUY2026-38",
+        "en": "https://www.tcmb.gov.tr/wps/wcm/connect/EN/TCMB+EN/Main+Menu/Announcements/Press+Releases/2026/ANO2026-38"
+      },
+      "langs": [
+        "tr",
+        "en"
+      ],
+      "publishable": true,
+      "fetchedAt": "2026-10-13T19:42:45.465Z",
+      "rate": 37,
+      "previousId": "tcmb-2026-07-23"
+    }
+  ]
+}

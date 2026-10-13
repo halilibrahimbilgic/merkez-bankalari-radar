@@ -4,6 +4,9 @@ import { BANKS, bankCountry, bankFullName, bankName, bankRateName, getBank } fro
 import { getUpcomingMeetings } from "@/lib/data/meetings";
 import { formatCurrentRate, getCurrentRate } from "@/lib/data/rates";
 import { getBankScoreSummaries, getSpeech } from "@/lib/data/speeches";
+import { getDecisionView } from "@/lib/data/decisions";
+import { decisionSentence, formatExpectedRate } from "@/lib/decision-format";
+import { surpriseText } from "@/components/SurpriseBadge";
 import { L, type Lang } from "@/lib/i18n";
 import { BANK_HEX, renderOgCard, scoreHex, type OgRow } from "@/lib/og";
 import { speechTitle } from "@/lib/speech-i18n";
@@ -99,5 +102,45 @@ export async function speechOgImage(lang: Lang, id: string) {
     title: speechTitle(speech, lang),
     rows,
     footer: t("Türkçe özet · faizradar.com", "Summary and score · faizradar.com"),
+  });
+}
+
+export async function decisionOgImage(lang: Lang, id: string) {
+  const view = await getDecisionView(id);
+  if (!view) notFound();
+  const t = L(lang);
+  const m = view.meeting;
+  const e = view.expectation;
+  const rows: OgRow[] = [];
+  if (e) {
+    rows.push({
+      label: t("Karardan önceki beklenti", "Expected before"),
+      value: formatExpectedRate(m.bankCode, e.point.rate, lang),
+    });
+    rows.push({
+      label: t("Sonuç", "Outcome"),
+      value: surpriseText(e.surprise.label, lang),
+      valueColor: e.surprise.label === "in-line" ? undefined : scoreHex(e.surprise.bp),
+    });
+  }
+  const tone = view.statement?.summary?.tone;
+  if (tone) {
+    rows.push({
+      label: t("Metnin tonu", "Statement tone"),
+      value: {
+        "more-hawkish": t("daha şahin", "more hawkish"),
+        "more-dovish": t("daha güvercin", "more dovish"),
+        "little-change": t("büyük ölçüde aynı", "largely unchanged"),
+        mixed: t("karışık", "mixed"),
+      }[tone],
+      valueColor: tone === "more-hawkish" ? scoreHex(1) : tone === "more-dovish" ? scoreHex(-1) : undefined,
+    });
+  }
+  return renderOgCard({
+    eyebrow: `${bankName(BANKS[m.bankCode], lang)} · ${formatDate(m.meetingAt, lang)}`,
+    eyebrowColor: BANK_HEX[m.bankCode],
+    title: decisionSentence(m, lang),
+    rows,
+    footer: t("Beklenti ve sonuç · faizradar.com", "Expectation vs outcome · faizradar.com"),
   });
 }

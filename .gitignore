@@ -47,3 +47,6 @@ next-env.d.ts
 
 # Haber işleme çalışma alanı (news.yml)
 /.news/
+
+# Karar metni özet çalışma alanı (news.yml)
+/.statements/

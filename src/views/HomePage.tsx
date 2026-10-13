@@ -11,6 +11,10 @@ import { getProbabilitySnapshot } from "@/lib/data/probabilities";
 import { getBankScoreSummaries, getSpeeches } from "@/lib/data/speeches";
 import { getExpectations } from "@/lib/data/expectations";
 import { getNews } from "@/lib/data/news";
+import { getDecisionViews } from "@/lib/data/decisions";
+import { getInflation } from "@/lib/data/inflation";
+import { realRate } from "@/lib/real-rates";
+import { DecisionRow } from "./DecisionsPage";
 import { NewsList } from "@/components/NewsList";
 import { moveOdds } from "@/lib/implied-path";
 import { fmtPercent, L, languageAlternates, localePath, type Lang } from "@/lib/i18n";
@@ -35,7 +39,16 @@ export async function HomePage({ lang }: { lang: Lang }) {
     getSpeeches({ scoredOnly: true, limit: 4 }),
     getExpectations(),
   ]);
-  const news = await getNews({ limit: 4 });
+  const [news, decisions, inflation] = await Promise.all([
+    getNews({ limit: 4 }),
+    getDecisionViews({ now }),
+    getInflation(),
+  ]);
+  const realRateOf = (code: (typeof CALENDAR_BANK_CODES)[number]) => {
+    const rate = rates.find((r) => r.bankCode === code);
+    const infl = inflation.find((i) => i.bankCode === code);
+    return rate && infl ? realRate(rate, infl) : undefined;
+  };
 
   // BoE: OIS eğrisinden sıradaki MPC için fiyatlanan 25 bp adım ihtimali.
   const boeNext = expectations.boe?.meetings.find((m) => new Date(m.meetingAt) > now);
@@ -148,10 +161,29 @@ export async function HomePage({ lang }: { lang: Lang }) {
                     : undefined
               }
               surveyNote={code === "tcmb" ? tcmbNote : undefined}
+              realRate={realRateOf(code)}
             />
           ))}
         </div>
       </section>
+
+      {decisions.length > 0 && (
+        <section>
+          <SectionHeader
+            title={t("Son kararlar", "Latest decisions")}
+            description={t(
+              "Karar, karardan önceki beklentiyle karşılaştırıldığında: uyumlu mu, sürpriz mi?",
+              "Each decision compared with the expectation before it: in line or a surprise?",
+            )}
+            action={{ href: p("/kararlar"), label: t("Tüm kararlar", "All decisions") }}
+          />
+          <Rows>
+            {decisions.slice(0, 5).map((v) => (
+              <DecisionRow key={v.meeting.id} view={v} lang={lang} />
+            ))}
+          </Rows>
+        </section>
+      )}
 
       {news.length > 0 && (
         <section>

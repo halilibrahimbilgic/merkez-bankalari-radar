@@ -32,7 +32,8 @@ export function openWorkbook(bytes: Uint8Array): Workbook {
     strings,
     sheet(name) {
       const escaped = name.replace(/[.*+?^${}()|[\]\\]/g, "\\$&");
-      const sheet = workbookXml.match(new RegExp(`<sheet name="${escaped}"[^>]*r:id="([^"]+)"`));
+      // Öznitelik sırası üreticiye göre değişiyor (SME: xmlns:r name'den önce).
+      const sheet = workbookXml.match(new RegExp(`<sheet\\b[^>]*\\bname="${escaped}"[^>]*\\br:id="([^"]+)"`));
       if (!sheet) throw new Error(`xlsx: "${name}" sayfası bulunamadı`);
       const target = relsXml.match(new RegExp(`Id="${sheet[1]}"[^>]*Target="([^"]+)"`));
       if (!target) throw new Error(`xlsx: "${name}" sayfasının yolu çözülemedi`);
@@ -48,8 +49,16 @@ export function readCells(sheetXml: string, strings: string[]): Record<string, s
     const cells: Record<string, string> = {};
     for (const c of row[1].matchAll(/<c\b([^>]*?)(?:\/>|>([\s\S]*?)<\/c>)/g)) {
       const col = c[1].match(/\br="([A-Z]+)\d+"/)?.[1];
+      if (!col) continue;
+      // NY Fed SME dosyası metni paylaşılan tabloda değil hücrenin içinde
+      // tutuyor (t="inlineStr" → <is><t>…</t></is>).
+      if (/\bt="inlineStr"/.test(c[1])) {
+        const text = [...(c[2] ?? "").matchAll(/<t[^>]*>([\s\S]*?)<\/t>/g)].map((t) => t[1]).join("");
+        cells[col] = decodeXml(text);
+        continue;
+      }
       const v = c[2]?.match(/<v>([\s\S]*?)<\/v>/)?.[1];
-      if (!col || v === undefined) continue;
+      if (v === undefined) continue;
       cells[col] = /\bt="s"/.test(c[1]) ? (strings[Number(v)] ?? "") : decodeXml(v);
     }
     rows.push(cells);

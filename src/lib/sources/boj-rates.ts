@@ -19,7 +19,7 @@ const BASE = "https://www.boj.or.jp";
 export const BOJ_STATEMENTS_URL = (year: number) =>
   `${BASE}/en/mopo/mpmdeci/state_${year}/index.htm`;
 
-const RATE_PATTERN =
+export const RATE_PATTERN =
   /encourage the uncollateralized overnight call rate to remain at around\s+([\d.]+)\s*percent/i;
 
 const EN_MONTHS: Record<string, number> = {

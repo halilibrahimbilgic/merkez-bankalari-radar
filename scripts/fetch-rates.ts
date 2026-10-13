@@ -100,16 +100,14 @@ async function fillFed(meetings: Meeting[]): Promise<number> {
     // Yeni aralık ertesi gün yürürlükte; hafta sonuna denk gelirse
     // valueAsOf en yakın önceki gözlemi bulur, bu yüzden +4 gün bakılır.
     const after = dayOffset(day, 4);
+    if (!covers(upper, dayOffset(day, 1)) || !covers(lower, dayOffset(day, 1))) continue;
 
     const newUpper = valueAsOf(upper, after);
     const newLower = valueAsOf(lower, after);
     const oldUpper = valueAsOf(upper, before);
     if (newUpper === undefined || oldUpper === undefined) continue;
 
-    m.decisionRate = newUpper;
-    m.decisionRateLower = newLower;
-    m.previousRate = oldUpper;
-    m.status = "done";
+    setDecision(m, newUpper, oldUpper, newLower);
     filled++;
   }
   return filled;
@@ -117,8 +115,9 @@ async function fillFed(meetings: Meeting[]): Promise<number> {
 
 /**
  * ECB tek bir oran ilan eder (mevduat kolaylığı), Fed gibi aralık değil.
- * Yeni oran karardan birkaç gün sonra yürürlüğe girer; bu yüzden karar
- * gününün sonrasındaki pencereye bakılır.
+ * Yeni oran karardan sonraki çarşamba (karar + 6 gün) yürürlüğe girer
+ * (10.09.2026 kararı → 16.09'da 2,50); bu yüzden karar gününün sonrasındaki
+ * pencereye bakılır ve seri o güne ulaşmadan doldurulmaz.
  */
 async function fillEcb(meetings: Meeting[]): Promise<number> {
   const past = meetings.filter(
@@ -134,13 +133,12 @@ async function fillEcb(meetings: Meeting[]): Promise<number> {
   let filled = 0;
   for (const m of past) {
     const day = m.meetingAt.slice(0, 10);
+    if (!covers(obs, dayOffset(day, 6))) continue;
     const before = rateAsOf(obs, dayOffset(day, -1));
     const after = rateAsOf(obs, dayOffset(day, 10));
     if (before === undefined || after === undefined) continue;
 
-    m.decisionRate = after;
-    m.previousRate = before;
-    m.status = "done";
+    setDecision(m, after, before);
     filled++;
   }
   return filled;
@@ -149,7 +147,9 @@ async function fillEcb(meetings: Meeting[]): Promise<number> {
 /**
  * TCMB tek oran ilan eder ve yeni oran karar günü yürürlüğe girer (EVDS
  * serisinde değişiklik karar tarihinde görünür). Hafta sonu/tatil boşlukları
- * için +4 gün bakılır; rateAsOf en yakın önceki gözlemi alır.
+ * için +4 gün bakılır; rateAsOf en yakın önceki gözlemi alır. Karar günü
+ * gözlemi kararın öncesinde yazılmış olabileceği için ertesi iş gününün
+ * gözlemi gelmeden doldurulmaz — o arada karar, karar metninden gelir.
  */
 async function fillTcmb(meetings: Meeting[]): Promise<number> {
   const apiKey = process.env.EVDS_API_KEY;
@@ -173,13 +173,12 @@ async function fillTcmb(meetings: Meeting[]): Promise<number> {
   let filled = 0;
   for (const m of past) {
     const day = m.meetingAt.slice(0, 10);
+    if (!covers(obs, dayOffset(day, 1))) continue;
     const before = rateAsOf(obs, dayOffset(day, -1));
     const after = rateAsOf(obs, dayOffset(day, 4));
     if (before === undefined || after === undefined) continue;
 
-    m.decisionRate = after;
-    m.previousRate = before;
-    m.status = "done";
+    setDecision(m, after, before);
     filled++;
   }
   return filled;
@@ -203,9 +202,7 @@ async function fillBoe(meetings: Meeting[]): Promise<number> {
   for (const m of past) {
     const i = index.get(m.meetingAt.slice(0, 10));
     if (i === undefined || i === 0) continue;
-    m.decisionRate = decisions[i].rate;
-    m.previousRate = decisions[i - 1].rate;
-    m.status = "done";
+    setDecision(m, decisions[i].rate, decisions[i - 1].rate);
     filled++;
   }
   return filled;
@@ -228,12 +225,11 @@ async function fillRba(meetings: Meeting[]): Promise<number> {
   let filled = 0;
   for (const m of past) {
     const day = m.meetingAt.slice(0, 10);
+    if (!covers(obs, dayOffset(day, 1))) continue;
     const before = rateAsOf(obs, day);
     const after = rateAsOf(obs, dayOffset(day, 4));
     if (before === undefined || after === undefined) continue;
-    m.decisionRate = after;
-    m.previousRate = before;
-    m.status = "done";
+    setDecision(m, after, before);
     filled++;
   }
   return filled;
@@ -287,6 +283,31 @@ async function fillBoj(meetings: Meeting[]): Promise<number> {
     filled++;
   }
   return filled;
+}
+
+/**
+ * Seri, kararın yürürlüğe girdiği günü içeriyor mu? İçermiyorsa "karardan
+ * sonraki değer" aslında eski orandır: rateAsOf en yakın önceki gözleme
+ * düşer ve karar "değişiklik yok" diye yazılırdı — sitede, RSS'te ve
+ * Telegram'da (ECB'de yürürlük 6 gün sonra; 13 Ekim 2026'da fark edildi).
+ */
+function covers(obs: { date: string }[], day: string): boolean {
+  return obs.length > 0 && obs[obs.length - 1].date >= day;
+}
+
+/**
+ * Karar oranını yazar. Karar metninden (fetch:statements) daha önce yazılmış
+ * oran seriyle çelişirse uyarır: yürürlükteki oranı gösteren seri esas alınır,
+ * ama çelişki iki ayrıştırıcıdan birinin bozulduğu anlamına gelir.
+ */
+function setDecision(m: Meeting, rate: number, previous: number, lower?: number) {
+  if (m.decisionRate !== undefined && m.decisionRate !== rate) {
+    console.warn(`⚠  ${m.id}: kayıtlı karar %${m.decisionRate}, seri %${rate} diyor — seri esas alındı.`);
+  }
+  m.decisionRate = rate;
+  if (lower !== undefined) m.decisionRateLower = lower;
+  m.previousRate = previous;
+  m.status = "done";
 }
 
 function dayOffset(day: string, days: number): string {

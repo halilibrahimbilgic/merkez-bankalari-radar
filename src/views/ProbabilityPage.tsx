@@ -5,6 +5,9 @@ import { ProbabilityChart, type ChartBucket } from "@/components/ProbabilityChar
 import { RateOdds, type OddsRow } from "@/components/RateOdds";
 import { Callout, Card, EmptyState, SectionHeader, Stat } from "@/components/ui";
 import { getExpectations } from "@/lib/data/expectations";
+import { getExpectationHistory } from "@/lib/data/history";
+import { TimeSeriesChart } from "@/components/TimeSeriesChart";
+import type { FedWindowPoint } from "@/lib/expectation-history";
 import { getPastMeetings, getUpcomingMeetings } from "@/lib/data/meetings";
 import { getCurrentRate } from "@/lib/data/rates";
 import {
@@ -17,7 +20,7 @@ import {
 } from "@/lib/data/probabilities";
 import { INTL_LOCALE, L, languageAlternates, localePath, type Lang } from "@/lib/i18n";
 import { LICENSE_NOTICE, LICENSE_NOTICE_EN, MPT_PAGE_URL } from "@/lib/sources/mpt";
-import { formatDate } from "@/lib/time";
+import { formatDate, formatDateShort } from "@/lib/time";
 import { BoeExpectations, EcbExpectations, OtherBanksNote, TcmbExpectations } from "./ExpectationSections";
 
 export function probabilityMetadata(lang: Lang): Metadata {
@@ -40,13 +43,14 @@ export async function ProbabilityPage({
   searchParams: Record<string, string | string[] | undefined>;
 }) {
   const t = L(lang);
-  const [snapshot, expectations, tcmbRate, tcmbMeetings, ecbRate, ecbMeetings] = await Promise.all([
+  const [snapshot, expectations, tcmbRate, tcmbMeetings, ecbRate, ecbMeetings, history] = await Promise.all([
     getProbabilitySnapshot(),
     getExpectations(),
     getCurrentRate("tcmb"),
     getPastMeetings({ bankCode: "tcmb", limit: 6 }),
     getCurrentRate("ecb"),
     getPastMeetings({ bankCode: "ecb", limit: 6 }),
+    getExpectationHistory(),
   ]);
   const now = new Date();
 
@@ -84,7 +88,7 @@ export async function ProbabilityPage({
 
       <section id="fed" className="scroll-mt-4 space-y-8">
         {snapshot && snapshot.windows.length > 0 ? (
-          <FedProbabilities lang={lang} snapshot={snapshot} searchParams={searchParams} />
+          <FedProbabilities lang={lang} snapshot={snapshot} searchParams={searchParams} windows={history.fedWindows} />
         ) : (
           <EmptyState>{t("Fed olasılık verisi henüz yüklenmedi.", "Fed probability data has not been loaded yet.")}</EmptyState>
         )}
@@ -96,16 +100,18 @@ export async function ProbabilityPage({
           currentRate={ecbRate?.rate}
           meetings={ecbMeetings}
           now={now}
+          history={history.banks.ecb?.meetings}
           lang={lang}
         />
       )}
-      {expectations.boe && <BoeExpectations data={expectations.boe} lang={lang} />}
+      {expectations.boe && <BoeExpectations data={expectations.boe} history={history.banks.boe?.meetings} lang={lang} />}
       {expectations.tcmb && (
         <TcmbExpectations
           data={expectations.tcmb}
           currentRate={tcmbRate?.rate}
           meetings={tcmbMeetings}
           now={now}
+          history={history.banks.tcmb?.meetings}
           lang={lang}
         />
       )}
@@ -119,10 +125,13 @@ async function FedProbabilities({
   lang,
   snapshot,
   searchParams,
+  windows,
 }: {
   lang: Lang;
   snapshot: StoredSnapshot;
   searchParams: Record<string, string | string[] | undefined>;
+  /** Pencere başlangıcı → günlük olasılıklar (data/history). */
+  windows?: Record<string, FedWindowPoint[]>;
 }) {
   const t = L(lang);
 
@@ -179,6 +188,13 @@ async function FedProbabilities({
   );
   const pct = (v?: number) => (v === undefined ? "—" : formatPct(v, lang));
   const notice = lang === "en" ? LICENSE_NOTICE_EN : LICENSE_NOTICE;
+
+  // Seçili pencerenin son ~4 ayı (Atlanta Fed her piyasa günü bir gözlem).
+  const trend = (windows?.[selected.startDate] ?? []).slice(-90).map((w) => ({
+    label: formatDateShort(w.date, lang),
+    hike: w.probHikePct ?? null,
+    cut: w.probCutPct ?? null,
+  }));
 
   return (
     <>
@@ -324,6 +340,29 @@ async function FedProbabilities({
           </p>
         )}
       </Card>
+
+      {trend.length >= 5 && (
+        <Card>
+          <SectionHeader
+            title={t("Bu dönem için olasılıkların seyri", "How the odds for this period have moved")}
+            description={t(
+              `${formatDate(selected.startDate, lang)} ile başlayan dönemde ortalama faizin bugünkü aralığın üzerinde ya da altında olma olasılığı, son ${trend.length} piyasa günü. Grafik, piyasanın fikrini ne zaman ve ne kadar değiştirdiğini gösterir.`,
+              `The probability that the average rate over the period starting ${formatDate(selected.startDate, lang)} ends up above or below today's range, over the last ${trend.length} market days. The chart shows when and how far the market changed its mind.`,
+            )}
+          />
+          <div className="mt-4">
+            <TimeSeriesChart
+              data={trend}
+              series={[
+                { key: "hike", name: t("Aralığın üzeri", "Above range"), color: "var(--hawk)" },
+                { key: "cut", name: t("Aralığın altı", "Below range"), color: "var(--dove)" },
+              ]}
+              unit="prob"
+              lang={lang}
+            />
+          </div>
+        </Card>
+      )}
 
       <Card className="space-y-3 text-sm text-muted">
         <h2 className="text-base font-semibold text-foreground">{t("Kaynak ve lisans", "Source and licence")}</h2>

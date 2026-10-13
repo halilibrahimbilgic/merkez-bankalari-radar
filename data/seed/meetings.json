@@ -467,6 +467,17 @@
       "previousRate": 4.25
     },
     {
+      "id": "rba-2025-12-09",
+      "bankCode": "rba",
+      "meetingAt": "2025-12-09T03:30:00.000Z",
+      "timeTbd": false,
+      "type": "rate_decision",
+      "status": "done",
+      "sourceUrl": "https://www.rba.gov.au/schedules-events/board-meeting-schedules.html",
+      "decisionRate": 3.6,
+      "previousRate": 3.6
+    },
+    {
       "id": "fed-2025-12-10",
       "bankCode": "fed",
       "meetingAt": "2025-12-10T19:00:00.000Z",
@@ -477,6 +488,50 @@
       "decisionRate": 3.75,
       "decisionRateLower": 3.5,
       "previousRate": 4
+    },
+    {
+      "id": "tcmb-2025-12-11",
+      "bankCode": "tcmb",
+      "meetingAt": "2025-12-11T11:00:00.000Z",
+      "timeTbd": false,
+      "type": "rate_decision",
+      "status": "done",
+      "sourceUrl": "https://www.tcmb.gov.tr/wps/wcm/connect/TR/TCMB+TR/Main+Menu/Duyurular/Takvim",
+      "decisionRate": 38,
+      "previousRate": 39.5
+    },
+    {
+      "id": "boe-2025-12-18",
+      "bankCode": "boe",
+      "meetingAt": "2025-12-18T12:00:00.000Z",
+      "timeTbd": false,
+      "type": "rate_decision",
+      "status": "done",
+      "sourceUrl": "https://www.bankofengland.co.uk/monetary-policy/upcoming-mpc-dates",
+      "decisionRate": 3.75,
+      "previousRate": 4
+    },
+    {
+      "id": "ecb-2025-12-18",
+      "bankCode": "ecb",
+      "meetingAt": "2025-12-18T13:15:00.000Z",
+      "timeTbd": false,
+      "type": "rate_decision",
+      "status": "done",
+      "sourceUrl": "https://www.ecb.europa.eu/press/calendars/mgcgc/html/index.en.html",
+      "decisionRate": 2,
+      "previousRate": 2
+    },
+    {
+      "id": "boj-2025-12-19",
+      "bankCode": "boj",
+      "meetingAt": "2025-12-19T03:00:00.000Z",
+      "timeTbd": true,
+      "type": "rate_decision",
+      "status": "done",
+      "sourceUrl": "https://www.boj.or.jp/en/mopo/mpmsche_minu/index.htm",
+      "decisionRate": 0.75,
+      "previousRate": 0.5
     },
     {
       "id": "tcmb-2026-01-22",
@@ -535,6 +590,17 @@
       "previousRate": 3.75
     },
     {
+      "id": "ecb-2026-02-05",
+      "bankCode": "ecb",
+      "meetingAt": "2026-02-05T13:15:00.000Z",
+      "timeTbd": false,
+      "type": "rate_decision",
+      "status": "done",
+      "sourceUrl": "https://www.ecb.europa.eu/press/calendars/mgcgc/html/index.en.html",
+      "decisionRate": 2,
+      "previousRate": 2
+    },
+    {
       "id": "tcmb-2026-03-12",
       "bankCode": "tcmb",
       "meetingAt": "2026-03-12T11:00:00.000Z",
@@ -591,6 +657,17 @@
       "previousRate": 3.75
     },
     {
+      "id": "ecb-2026-03-19",
+      "bankCode": "ecb",
+      "meetingAt": "2026-03-19T13:15:00.000Z",
+      "timeTbd": false,
+      "type": "rate_decision",
+      "status": "done",
+      "sourceUrl": "https://www.ecb.europa.eu/press/calendars/mgcgc/html/index.en.html",
+      "decisionRate": 2,
+      "previousRate": 2
+    },
+    {
       "id": "tcmb-2026-04-22",
       "bankCode": "tcmb",
       "meetingAt": "2026-04-22T11:00:00.000Z",
@@ -636,6 +713,17 @@
       "previousRate": 3.75
     },
     {
+      "id": "ecb-2026-04-30",
+      "bankCode": "ecb",
+      "meetingAt": "2026-04-30T12:15:00.000Z",
+      "timeTbd": false,
+      "type": "rate_decision",
+      "status": "done",
+      "sourceUrl": "https://www.ecb.europa.eu/press/calendars/mgcgc/html/index.en.html",
+      "decisionRate": 2,
+      "previousRate": 2
+    },
+    {
       "id": "rba-2026-05-05",
       "bankCode": "rba",
       "meetingAt": "2026-05-05T04:30:00.000Z",
@@ -656,6 +744,17 @@
       "sourceUrl": "https://www.tcmb.gov.tr/wps/wcm/connect/TR/TCMB+TR/Main+Menu/Duyurular/Takvim",
       "decisionRate": 37,
       "previousRate": 37
+    },
+    {
+      "id": "ecb-2026-06-11",
+      "bankCode": "ecb",
+      "meetingAt": "2026-06-11T12:15:00.000Z",
+      "timeTbd": false,
+      "type": "rate_decision",
+      "status": "done",
+      "sourceUrl": "https://www.ecb.europa.eu/press/calendars/mgcgc/html/index.en.html",
+      "decisionRate": 2.25,
+      "previousRate": 2
     },
     {
       "id": "boj-2026-06-16",
@@ -712,6 +811,17 @@
       "sourceUrl": "https://www.tcmb.gov.tr/wps/wcm/connect/TR/TCMB+TR/Main+Menu/Duyurular/Takvim",
       "decisionRate": 37,
       "previousRate": 37
+    },
+    {
+      "id": "ecb-2026-07-23",
+      "bankCode": "ecb",
+      "meetingAt": "2026-07-23T12:15:00.000Z",
+      "timeTbd": false,
+      "type": "rate_decision",
+      "status": "done",
+      "sourceUrl": "https://www.ecb.europa.eu/press/calendars/mgcgc/html/index.en.html",
+      "decisionRate": 2.25,
+      "previousRate": 2.25
     },
     {
       "id": "fed-2026-07-29",

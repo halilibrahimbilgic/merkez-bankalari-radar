@@ -56,7 +56,22 @@ const SOURCES: Record<Lang, Source[]> = {
     {
       name: "Bank of England — OIS faiz eğrisi",
       url: "https://www.bankofengland.co.uk/statistics/yield-curves",
-      note: "BoE'nin günlük tahmin ettiği SONIA OIS forward eğrisi. Her MPC toplantısı sonrası beklenen Bank Rate ve sıradaki toplantıda 25 baz puanlık adım ihtimali bu eğriden yaklaşık olarak türetilir (toplantılar arası ortalama forward yöntemi).",
+      note: "BoE'nin günlük tahmin ettiği SONIA OIS forward eğrisi. Her MPC toplantısı sonrası beklenen Bank Rate ve sıradaki toplantıda 25 baz puanlık adım ihtimali bu eğriden yaklaşık olarak türetilir (toplantılar arası ortalama forward yöntemi); taban, BoE istatistik veritabanından o günün gerçekleşen gecelik faizi (SONIA). Ayın her günü ve 2025'ten bugüne arşiv okunur; beklentinin seyri bu günlük kayıtlardan çizilir.",
+    },
+    {
+      name: "New York Fed — Survey of Market Expectations",
+      url: "https://www.newyorkfed.org/markets/market-intelligence/survey-of-market-expectations",
+      note: "Fed için toplantı bazlı beklenti: piyasa katılımcılarına her FOMC toplantısından önce sorulan anketin medyan beklentisi ve olasılık dağılımı. Sonuçlar toplantıdan birkaç hafta sonra yayımlandığı için Fed kararlarının beklentiyle karşılaştırması o zaman tamamlanır.",
+    },
+    {
+      name: "Merkez bankalarının karar metinleri",
+      url: "https://www.federalreserve.gov/newsevents/pressreleases.htm",
+      note: "Fed, ECB, TCMB, BoE, BoJ ve RBA'nın resmî karar duyuruları. Karar oranı karar günü metinden okunur (resmî seriler yeni oranı yürürlük gününde gösterir; ECB'de bu altı gün sonradır). Metin ve önceki metne göre farkı, yayımcının şartları izin veriyorsa gösterilir: Fed, ECB, TCMB ve RBA. BoE metni yalnızca kişisel kullanıma açık, BoJ metni yalnızca PDF; bu ikisinde yalnızca özet var.",
+    },
+    {
+      name: "Enflasyon (reel faiz tablosu)",
+      url: "https://www.ons.gov.uk/economy/inflationandpriceindices/timeseries/d7g7/mm23",
+      note: "Her ülkenin son yıllık tüketici enflasyonu, resmî istatistik kurumundan: ABD BLS (FRED), euro bölgesi Eurostat HICP (ECB Data Portal), Türkiye TÜİK (EVDS), Birleşik Krallık ONS, Japonya İstatistik Bürosu (e-Stat), Avustralya ABS (RBA G4 tablosu).",
     },
     {
       name: "ECB — Survey of Monetary Analysts",
@@ -128,7 +143,22 @@ const SOURCES: Record<Lang, Source[]> = {
     {
       name: "Bank of England — OIS yield curve",
       url: "https://www.bankofengland.co.uk/statistics/yield-curves",
-      note: "The SONIA OIS forward curve estimated daily by the BoE. The Bank Rate expected after each MPC meeting and the probability of a 25 basis point move at the next meeting are derived approximately from this curve (average forward between meetings).",
+      note: "The SONIA OIS forward curve estimated daily by the BoE. The Bank Rate expected after each MPC meeting and the probability of a 25 basis point move at the next meeting are derived approximately from this curve (average forward between meetings), using that day's actual overnight rate (SONIA) from the BoE's statistical database as the base. Every day of the month and the archive since 2025 are read; the charts of how expectations moved are drawn from these daily records.",
+    },
+    {
+      name: "New York Fed — Survey of Market Expectations",
+      url: "https://www.newyorkfed.org/markets/market-intelligence/survey-of-market-expectations",
+      note: "Meeting-by-meeting expectations for the Fed: the median expectation and probability distribution from the survey of market participants run before each FOMC meeting. Results are published a few weeks after the meeting, so the comparison of Fed decisions with expectations is completed then.",
+    },
+    {
+      name: "Central banks' decision statements",
+      url: "https://www.federalreserve.gov/newsevents/pressreleases.htm",
+      note: "The official decision announcements of the Fed, ECB, CBRT, BoE, BoJ and RBA. The decided rate is read from the statement on decision day (official series show a new rate on the day it takes effect; for the ECB that is six days later). The text and its difference from the previous statement are shown where the publisher's terms allow: Fed, ECB, CBRT and RBA. The BoE text is for personal use only and the BoJ text is PDF-only, so only a summary is shown for those two.",
+    },
+    {
+      name: "Inflation (real rate table)",
+      url: "https://www.ons.gov.uk/economy/inflationandpriceindices/timeseries/d7g7/mm23",
+      note: "Each economy's latest annual consumer price inflation from its official statistics agency: US BLS (FRED), euro area Eurostat HICP (ECB Data Portal), Türkiye TurkStat (EVDS), UK ONS, Japan Statistics Bureau (e-Stat), Australia ABS (RBA table G4).",
     },
     {
       name: "ECB — Survey of Monetary Analysts",
@@ -279,6 +309,26 @@ export async function AboutPage({ lang }: { lang: Lang }) {
               </p>
             </>
           )}
+        </div>
+      </section>
+
+      <section>
+        <h2 className="mb-3 text-lg font-semibold">
+          {t("Karar sürprizi ve karar metni özeti", "Decision surprise and statement summary")}
+        </h2>
+        <div className="prose-width space-y-3 text-muted">
+          <p>
+            {t(
+              "Her karar, bir önceki karardan sonra ve bu karardan önce oluşmuş son beklentiyle karşılaştırılır: BoE için karardan önceki iş gününün OIS eğrisi; ECB, TCMB ve Fed için yanıtları karardan önce toplanmış son anket turu (TCMB anketinde yayım günü esas alınır, toplama aralığı yayımlanmıyor). Daha eski beklentiler kullanılmaz; araya giren kararın sürprizini sonrakine yazardı. Fark baz puandır: 10'un altı \"beklentiyle uyumlu\", 25 ve üstü \"sürpriz\", arası \"biraz\".",
+              "Each decision is compared with the latest expectation formed after the previous decision and before this one: for the BoE, the OIS curve from the last business day before the decision; for the ECB, CBRT and Fed, the latest survey round whose responses were collected before the decision (for the CBRT survey the publication date is used, as the collection window is not published). Older expectations are not used, as they would carry the surprise of the decision in between. The gap is in basis points: below 10 is \"in line\", 25 or more a \"surprise\", in between \"slightly\".",
+            )}
+          </p>
+          <p>
+            {t(
+              "Karar metni, aynı bankanın bir önceki metniyle cümle cümle hizalanır ve yalnızca değişen cümlelerde kelime farkı gösterilir. \"Ne değişti?\" özeti ve metnin tonu (daha şahin / daha güvercin / büyük ölçüde aynı / karışık) bir dil modeliyle (Claude Opus) iki metin ve aralarındaki farktan üretilir; model yalnızca metinlere dayanır, yorum ve tahmin eklemez. Özet resmî metnin yerini tutmaz.",
+              "The statement is aligned sentence by sentence with the same bank's previous one, and word-level differences are shown only within changed sentences. The \"what changed?\" summary and the tone of the statement (more hawkish / more dovish / largely unchanged / mixed) are produced by a language model (Claude Opus) from the two texts and their difference; the model relies only on the texts and adds no commentary or forecasts. The summary is no substitute for the official text.",
+            )}
+          </p>
         </div>
       </section>
 

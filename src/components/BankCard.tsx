@@ -1,6 +1,7 @@
 import Link from "next/link";
 import { BANKS, bankColorVar, bankCountry, bankName } from "@/lib/banks";
-import { L, localePath, type Lang } from "@/lib/i18n";
+import { fmtSignedPercent, L, localePath, type Lang } from "@/lib/i18n";
+import type { RealRate } from "@/lib/real-rates";
 import type { BankCode, Meeting } from "@/lib/types";
 import {
   computeCountdownParts,
@@ -27,6 +28,7 @@ export function BankCard({
   oddsNote,
   oddsTitle,
   surveyNote,
+  realRate,
   lang,
 }: {
   bankCode: BankCode;
@@ -39,6 +41,7 @@ export function BankCard({
   oddsTitle?: string;
   /** Anket beklentisi (TCMB) — piyasa fiyatlamasından ayrı başlıkla. */
   surveyNote?: string;
+  realRate?: RealRate;
   lang: Lang;
 }) {
   const t = L(lang);
@@ -110,6 +113,16 @@ export function BankCard({
             )}
           </dd>
         </div>
+        {realRate && (
+          <div className="flex items-baseline justify-between gap-2">
+            <dt className="text-muted">
+              <Link href={localePath(lang, "/reel-faiz")} className="hover:text-accent">
+                {t("Reel faiz", "Real rate")}
+              </Link>
+            </dt>
+            <dd className="tabular font-semibold">{fmtSignedPercent(realRate.real, lang)}</dd>
+          </div>
+        )}
         <div className="flex items-baseline justify-between gap-2">
           <dt className="text-muted">{t("Şahin/güvercin", "Hawk/dove")}</dt>
           <dd className="tabular font-semibold">

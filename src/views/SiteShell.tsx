@@ -63,13 +63,17 @@ export function rootMetadata(lang: Lang): Metadata {
 export function SiteShell({ lang, children }: { lang: Lang; children: React.ReactNode }) {
   const t = L(lang);
   const p = (path: string) => localePath(lang, path);
+  // Metodoloji altbilgide: üst menü sekiz bağlantıyla geniş ekranda tek
+  // satıra ancak sığıyor.
   const nav = [
     { href: p("/takvim"), label: t("Takvim", "Calendar") },
-    { href: p("/haberler"), label: t("Haberler", "News") },
+    { href: p("/kararlar"), label: t("Kararlar", "Decisions") },
     { href: p("/faiz-olasiligi"), label: t("Faiz olasılığı", "Rate odds") },
+    { href: p("/reel-faiz"), label: t("Reel faiz", "Real rates") },
+    { href: p("/haberler"), label: t("Haberler", "News") },
     { href: p("/konusmalar"), label: t("Konuşmalar", "Speeches") },
     { href: p("/skor"), label: t("Şahin/Güvercin", "Hawk/Dove") },
-    { href: p("/hakkinda"), label: t("Metodoloji", "Methodology") },
+    { href: p("/rehber"), label: t("Rehber", "Guide") },
   ];
 
   return (
@@ -170,6 +174,9 @@ export function SiteShell({ lang, children }: { lang: Lang; children: React.Reac
               </Link>
             </p>
             <nav aria-label={t("Site bilgileri", "Site information")} className="mt-3 flex flex-wrap gap-x-4 gap-y-1">
+              <Link href={p("/hakkinda")} className="text-accent hover:underline">
+                {t("Metodoloji", "Methodology")}
+              </Link>
               <Link href={p("/gizlilik")} className="text-accent hover:underline">
                 {t("Gizlilik", "Privacy")}
               </Link>

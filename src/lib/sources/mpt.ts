@@ -1,3 +1,4 @@
+import { UA } from "./shared";
 import { excelSerialToDate, openWorkbook, readCells } from "./xlsx";
 
 /**
@@ -82,16 +83,15 @@ export interface ProbabilitySnapshot {
   windows: ProbabilityWindow[];
 }
 
-const UA =
-  "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 " +
-  "(KHTML, like Gecko) Chrome/120.0 Safari/537.36";
 
 /** Sayfadaki mpt_histdata.xlsx bağlantısını bulur; bulamazsa sabite düşer. */
 export async function resolveMptUrl(): Promise<string> {
   try {
     const res = await fetch(MPT_PAGE_URL, {
       headers: { "user-agent": UA },
-      signal: AbortSignal.timeout(30_000),
+      // Sayfa 3 MB ve yavaş: 13 Ekim 2026'da projenin kendi user-agent'ıyla
+      // 7–50 sn sürdü (tarayıcı taklidi gerekmedi; ARCHITECTURE.md §4).
+      signal: AbortSignal.timeout(60_000),
     });
     if (res.ok) {
       const m = (await res.text()).match(/href="([^"]*mpt_histdata\.xlsx[^"]*)"/i);
@@ -122,11 +122,51 @@ export async function fetchMptWorkbook(): Promise<Uint8Array> {
   return bytes;
 }
 
-/** En güncel gözlem gününe ait tüm pencereleri çıkarır. */
-export function parseLatestSnapshot(xlsx: Uint8Array): ProbabilitySnapshot {
+/** DATA sayfasının satırları — dosya ~65 MB XML; bir kez okunup iki hesapta kullanılır. */
+export function readMptRows(xlsx: Uint8Array): string[][] {
   const wb = openWorkbook(xlsx);
-  const rows = readRows(wb.sheet("DATA"), wb.strings);
+  return readRows(wb.sheet("DATA"), wb.strings);
+}
 
+/** Günlük geçmişte gün başına ilk bu kadar pencere tutulur — uzak dönemler grafikte okunmuyor. */
+const HISTORY_WINDOWS = 6;
+
+/**
+ * Pencerelerin gün gün seyri (olasılıkların zaman içindeki değişimi).
+ * Dosya Atlanta Fed'in tüm geçmişini taşır; `since` gününden itibaren alınır.
+ */
+export function windowHistoryFromRows(
+  rows: string[][],
+  since: string,
+): Record<string, { date: string; probCutPct?: number; probHikePct?: number; meanBps?: number }[]> {
+  const byDay = new Map<string, Map<string, { probCutPct?: number; probHikePct?: number; meanBps?: number }>>();
+  for (const [date, refStart, , field, value] of rows) {
+    if (date < since) continue;
+    if (field !== "Prob: cut" && field !== "Prob: hike" && field !== "Rate: mean") continue;
+    const v = Number(value);
+    if (!Number.isFinite(v)) continue;
+    const start = excelSerialToDate(refStart);
+    const day = byDay.get(date) ?? new Map();
+    byDay.set(date, day);
+    const w = day.get(start) ?? {};
+    day.set(start, w);
+    if (field === "Prob: cut") w.probCutPct = v;
+    else if (field === "Prob: hike") w.probHikePct = v;
+    else w.meanBps = v;
+  }
+
+  const out: Record<string, { date: string; probCutPct?: number; probHikePct?: number; meanBps?: number }[]> = {};
+  for (const date of [...byDay.keys()].sort()) {
+    const day = byDay.get(date)!;
+    for (const start of [...day.keys()].sort().slice(0, HISTORY_WINDOWS)) {
+      (out[start] ??= []).push({ date, ...day.get(start)! });
+    }
+  }
+  return out;
+}
+
+/** En güncel gözlem gününe ait tüm pencereleri çıkarır. */
+export function snapshotFromRows(rows: string[][]): ProbabilitySnapshot {
   let asOf = "";
   for (const r of rows) if (r[0] > asOf) asOf = r[0];
   if (!asOf) throw new Error("MPT: gözlem tarihi bulunamadı");

@@ -31,11 +31,16 @@ export async function fetchEvdsSeries(
   return parseEvds(await fetchEvdsJson([code], start, apiKey), code);
 }
 
-/** Ham yanıt — birden çok seri tek istekte ("A-B-C"); tarih biçimi frekansa göre değişir. */
-export async function fetchEvdsJson(codes: string[], start: string, apiKey: string): Promise<unknown> {
+/**
+ * Ham yanıt — birden çok seri tek istekte ("A-B-C"); tarih biçimi frekansa
+ * göre değişir. `formula` EVDS'nin hesaplaması: 3 = yıllık yüzde değişim;
+ * alan adı o zaman "TP_X_Y-3" olur.
+ */
+export async function fetchEvdsJson(codes: string[], start: string, apiKey: string, formula?: number): Promise<unknown> {
   const url =
     `${BASE}/series=${codes.join("-")}&startDate=${toEvdsDate(start)}` +
-    `&endDate=${toEvdsDate(new Date().toISOString().slice(0, 10))}&type=json`;
+    `&endDate=${toEvdsDate(new Date().toISOString().slice(0, 10))}&type=json` +
+    (formula === undefined ? "" : `&formulas=${codes.map(() => formula).join("-")}`);
 
   for (let attempt = 1; ; attempt++) {
     let status: number | undefined;

@@ -63,6 +63,18 @@ export function fmtPercent(n: number, lang: Lang, digits = 2): string {
   return lang === "en" ? `${s}%` : `%${s}`;
 }
 
+/** Baz puan, işaretli: "+13 bp" / "−8 bp" / "0 bp" (eksi işareti tipografik). İki dilde aynı. */
+export function fmtBp(n: number): string {
+  if (n === 0) return "0 bp";
+  return `${n > 0 ? "+" : "−"}${Math.abs(n)} bp`;
+}
+
+/** İşaretli yüzde: "+%7,27" / "−%1,30" — "+7.27%" / "−1.30%" (eksi işareti tipografik). */
+export function fmtSignedPercent(n: number, lang: Lang, digits = 2): string {
+  const sign = n > 0 ? "+" : n < 0 ? "−" : "";
+  return `${sign}${fmtPercent(Math.abs(n), lang, digits)}`;
+}
+
 /** Aralık, işaret bir kez: "%3,75–4,00" / "3.75–4.00%". */
 export function fmtPercentRange(lower: number, upper: number, lang: Lang, digits = 2): string {
   const a = fmtNum(lower, lang, digits);

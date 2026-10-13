@@ -14,7 +14,7 @@ function stepCurve(base: number, stepAtMonth: number, step: number): Curve {
 }
 
 test("düz eğri: değişim fiyatlanmaz", () => {
-  const path = impliedPath(stepCurve(3.7, 99, 0), [{ id: "a", meetingAt: "2026-11-05T12:00:00Z" }], 3.75);
+  const path = impliedPath(stepCurve(3.7, 99, 0), [{ id: "a", meetingAt: "2026-11-05T12:00:00Z" }], 3.75, 3.7);
   assert.equal(path[0].changeBp, 0);
   assert.equal(path[0].impliedRate, 3.75);
   assert.deepEqual(moveOdds(0), { direction: "hold", pct: 100 });
@@ -27,14 +27,14 @@ test("ikinci toplantıdan sonra 25 bp yukarı basamak", () => {
     { id: "m3", meetingAt: "2027-02-04T12:00:00Z" },
   ];
   // Basamak ~3. ayda: 17 Aralık sonrası penceresinin içinde.
-  const path = impliedPath(stepCurve(3.7, 3, 0.25), meetings, 3.75);
+  const path = impliedPath(stepCurve(3.7, 3, 0.25), meetings, 3.75, 3.7);
   const total = path.reduce((s, m) => s + m.changeBp, 0);
   assert.ok(Math.abs(total - 25) <= 2, `toplam ${total}`);
   // Aylık noktalar arası doğrusal okuma, basamağı komşu pencereye birkaç bp
   // sızdırır — gerçek eğri de yumuşak; arayüz bu yüzden "yaklaşık" der.
   assert.ok(path[0].changeBp <= 5, `ilk toplantı ${path[0].changeBp}`);
   assert.ok(path[1].changeBp >= 15, `ikinci toplantı ${path[1].changeBp}`);
-  // SONIA–Bank Rate makası (3,70 vs 3,75) taban farkıyla düşer: hedef ≈ %4,00.
+  // SONIA–Bank Rate makası (3,70 vs 3,75) SONIA tabanıyla düşer: hedef ≈ %4,00.
   assert.ok(Math.abs(path[2].impliedRate - 4) <= 0.03, `son ${path[2].impliedRate}`);
 });
 
@@ -66,4 +66,37 @@ test("TCMB anketi: ilk toplantı anket ayının 1'inden sonraki ilk PPK", () => 
   assert.deepEqual(mapped.map((m) => m.meeting.id), ["2026-09-10", "2026-10-22", "2026-12-10"]);
   // Eylül anketinde 3. toplantı (Aralık) yıl sonu beklentisine eşitti — eşlemenin doğrulaması.
   assert.throws(() => mapSurveyMeetings({ period: "2026-11", meetings: [35, 34, 33] }, meetings));
+});
+
+test("eğri gününde açıklanan karar sıradaki toplantı sayılmaz", () => {
+  const curve = { ...stepCurve(3.7, 99, 0), date: "2026-11-05" };
+  const path = impliedPath(
+    curve,
+    [
+      { id: "bugun", meetingAt: "2026-11-05T12:00:00Z" },
+      { id: "sonraki", meetingAt: "2026-12-17T12:00:00Z" },
+    ],
+    3.75,
+    3.7,
+  );
+  assert.deepEqual(path.map((m) => m.meetingId), ["sonraki"]);
+});
+
+test("toplantı arifesi: taban SONIA, eğrinin dışarı uzatılan kısa ucu değil", () => {
+  // 29 Nisan 2026 eğrisinin kısa ucu (BoE OIS): 1–3 ay 3,746 / 3,892 / 4,041,
+  // ertesi gün sabit tutuldu. Eski taban (eğrinin 0–ilk toplantı ortalaması,
+  // 1 ayın altı eğimle uzatılmış) ~3,60 çıkıyor ve +12 bp "artırım" fiyatlanmış
+  // görünüyordu; SONIA tabanıyla fark birkaç baz puan.
+  const months = [1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12];
+  const forwards = months.map((m) => (m <= 3 ? [3.746, 3.892, 4.041][m - 1] : 4.041 + (m - 3) * 0.1));
+  const path = impliedPath(
+    { date: "2026-04-29", months, forwards },
+    [
+      { id: "boe-2026-04-30", meetingAt: "2026-04-30T11:00:00Z" },
+      { id: "boe-2026-06-18", meetingAt: "2026-06-18T11:00:00Z" },
+    ],
+    3.75,
+    3.7298,
+  );
+  assert.ok(Math.abs(path[0].changeBp) <= 5, `arife ${path[0].changeBp}`);
 });

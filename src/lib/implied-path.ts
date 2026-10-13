@@ -4,10 +4,15 @@
  * Yöntem (yaygın "toplantı arası ortalama forward" yaklaşımı):
  *  - Her toplantıdan bir sonrakine kadarki pencerede forward eğrisinin
  *    ortalaması, o pencerede beklenen gecelik faizdir.
- *  - Bugünden ilk toplantıya kadarki pencere taban alınır; sonraki her
- *    pencerenin tabana farkı, o toplantıdan sonra beklenen faiz değişimidir.
- *    Böylece SONIA ile Bank Rate arasındaki küçük sabit makas (birkaç baz
- *    puan) kendiliğinden düşer — tahmin etmeye gerek kalmaz.
+ *  - Taban, eğri gününde GERÇEKLEŞEN gecelik faizdir (SONIA). Her pencerenin
+ *    tabana farkı, o toplantıdan sonra beklenen faiz değişimidir; SONIA ile
+ *    Bank Rate arasındaki küçük sabit makas (birkaç baz puan) böylece düşer.
+ *    Önceden taban, eğrinin bugünden ilk toplantıya kadarki ortalamasıydı;
+ *    ama eğri 1 aylık vadeden başlar, altı eğimle dışarı uzatılıyordu ve
+ *    toplantı yaklaştıkça taban 10–15 bp kayıyordu. 2025–2026'nın 14 BoE
+ *    kararında sınandı (13 Ekim 2026): tamamen fiyatlanmış indirimler eski
+ *    yöntemle −3/−7 bp, SONIA tabanıyla −23/−25 bp; sabit tutmalar eski
+ *    yöntemle +12 bp'ye kadar, yenisiyle ±2 bp.
  *  - İhtimal, değişimin 25 baz puanlık adıma oranıdır: +6 bp ≈ %24 ihtimalle
  *    25 bp artırım. Bu, piyasanın yalnızca 0 ya da 25 bp adımları
  *    fiyatladığını varsayar; sonuç yaklaşıktır ve arayüzde böyle yazılır.
@@ -64,19 +69,23 @@ export function impliedPath(
   curve: Curve,
   meetings: { id: string; meetingAt: string }[],
   currentRate: number,
+  /** Eğri günündeki gecelik faiz (SONIA). */
+  overnight: number,
   maxMeetings = 6,
 ): ImpliedMeeting[] {
   const t0 = Date.parse(`${curve.date}T00:00:00Z`);
   const toMonths = (iso: string) => (Date.parse(iso) - t0) / DAY / MONTH_DAYS;
 
+  // Eğri gün sonu verisidir: eğri gününde açıklanan karar ona çoktan
+  // yansımıştır, "sıradaki toplantı" sayılmaz.
   const upcoming = meetings
-    .filter((m) => Date.parse(m.meetingAt) > t0)
+    .filter((m) => m.meetingAt.slice(0, 10) > curve.date)
     .sort((a, b) => a.meetingAt.localeCompare(b.meetingAt))
     .slice(0, maxMeetings);
   if (upcoming.length === 0) return [];
 
   const at = upcoming.map((m) => toMonths(m.meetingAt));
-  const base = averageForward(curve, 0, at[0]);
+  const base = overnight;
 
   const out: ImpliedMeeting[] = [];
   let previous = base;

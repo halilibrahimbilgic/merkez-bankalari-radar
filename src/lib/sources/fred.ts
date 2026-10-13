@@ -33,7 +33,8 @@ function apiKey(): string {
 
 export async function fetchSeries(
   seriesId: string,
-  opts: { start?: string; end?: string } = {},
+  /** units: FRED dönüşümü — "pc1" = bir yıl öncesine göre % değişim. */
+  opts: { start?: string; end?: string; units?: string } = {},
 ): Promise<Observation[]> {
   const url = new URL(`${BASE}/series/observations`);
   url.searchParams.set("series_id", seriesId);
@@ -41,6 +42,7 @@ export async function fetchSeries(
   url.searchParams.set("file_type", "json");
   if (opts.start) url.searchParams.set("observation_start", opts.start);
   if (opts.end) url.searchParams.set("observation_end", opts.end);
+  if (opts.units) url.searchParams.set("units", opts.units);
 
   const res = await fetchWithRetry(url, seriesId);
 

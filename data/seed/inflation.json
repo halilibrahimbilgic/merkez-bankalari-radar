@@ -1,0 +1,42 @@
+{
+  "fetchedAt": "2026-10-13T19:58:57.979Z",
+  "readings": [
+    {
+      "bankCode": "fed",
+      "period": "2026-08",
+      "yoy": 3.4,
+      "sourceUrl": "https://fred.stlouisfed.org/series/CPIAUCNS"
+    },
+    {
+      "bankCode": "ecb",
+      "period": "2026-09",
+      "yoy": 3.8,
+      "flash": true,
+      "sourceUrl": "https://data.ecb.europa.eu/data/datasets/HICP"
+    },
+    {
+      "bankCode": "tcmb",
+      "period": "2026-09",
+      "yoy": 29.73,
+      "sourceUrl": "https://www.tcmb.gov.tr/wps/wcm/connect/TR/TCMB+TR/Main+Menu/Istatistikler/Enflasyon+Verileri/Tuketici+Fiyatlari"
+    },
+    {
+      "bankCode": "boe",
+      "period": "2026-08",
+      "yoy": 3.1,
+      "sourceUrl": "https://www.ons.gov.uk/economy/inflationandpriceindices/timeseries/d7g7/mm23"
+    },
+    {
+      "bankCode": "boj",
+      "period": "2026-08",
+      "yoy": 1.9,
+      "sourceUrl": "https://www.stat.go.jp/english/data/cpi/index.html"
+    },
+    {
+      "bankCode": "rba",
+      "period": "2026-08",
+      "yoy": 4,
+      "sourceUrl": "https://www.rba.gov.au/statistics/tables/#prices-inflation"
+    }
+  ]
+}
