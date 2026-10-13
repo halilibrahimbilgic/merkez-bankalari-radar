@@ -1,6 +1,21 @@
 {
-  "fetchedAt": "2026-10-13T18:06:51.191Z",
+  "fetchedAt": "2026-10-13T18:22:39.214Z",
   "items": [
+    {
+      "id": "a1e9dad552af",
+      "sourceKey": "cnbc-economy",
+      "sourceName": "CNBC",
+      "kind": "media",
+      "url": "https://www.cnbc.com/2026/10/13/september-consumer-price-index-inflation.html",
+      "publishedAt": "2026-10-13T18:05:57.000Z",
+      "titleOriginal": "The latest inflation data is expected to show price increases are accelerating",
+      "titleTr": "ABD'de eylül enflasyonunun hızlanması bekleniyor",
+      "summaryTr": "CNBC'ye göre ekonomistler, eylül ayı tüketici fiyat endeksinin aylık %0,6, yıllık %3,6 artmasını bekliyor. Beklenti, fiyat artışlarının hız kazandığına işaret ediyor.",
+      "titleEn": "US inflation expected to accelerate in September",
+      "summaryEn": "According to CNBC, economists expect the September consumer price index to rise 0.6% on the month and 3.6% year over year, pointing to faster price increases.",
+      "important": true,
+      "processedAt": "2026-10-13T18:22:39.214Z"
+    },
     {
       "id": "460512eb6608",
       "sourceKey": "fed-press",
