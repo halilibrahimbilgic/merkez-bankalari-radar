@@ -135,11 +135,21 @@ relevant: Öğe şu konulardan birine doğrudan ilişkin mi? Para politikası ve
   bir bankaya yönelik denetim/ceza işlemleri, istatistik yayın takvimleri ve
   etkinlik duyuruları İLGİSİZDİR (false).
 
-important: Kanala anında bildirim gönderilecek kadar önemli mi? Yalnızca:
-  faiz kararları ve olağanüstü politika adımları; merkez bankası başkanı,
-  maliye bakanı/hazine sekreteri gibi kilit kişilerin politika yönüne dair
-  sözleri; piyasaları belirgin biçimde etkileyen gelişmeler. Emin değilsen
-  false. ilgisiz öğe asla önemli değildir.
+important: Telegram kanalına gidecek mi? Kanal takipçileri faiz, enflasyon
+  ve piyasaları yakından izleyen kişilerdir; günde birkaç ile on arası haber
+  bekler. Şunlar önemlidir (true):
+  - faiz kararları ve her türlü politika adımı;
+  - Fed, ECB, BoE, BoJ, RBA ve TCMB'nin karar alıcılarının (başkan, yönetim
+    kurulu/komite üyeleri, bölgesel Fed başkanları) faiz veya enflasyon
+    görünümüne dair sözleri;
+  - bu ekonomilerin (ABD, Euro Bölgesi ve büyük üyeleri, Birleşik Krallık,
+    Japonya, Avustralya, Türkiye) enflasyon, istihdam ve büyüme verileri;
+  - IMF'nin büyüme/enflasyon tahminleri ve uyarıları; maliye bakanları ve
+    hazine sekreterinin ekonomi politikası açıklamaları;
+  - tahvil faizleri, dolar, euro ve TL'deki belirgin hareketler.
+  Önemsiz (false): rutin istatistik yayın duyuruları (ör. bir fiyat endeksinin
+  "yayımlandığı" bilgisi), etkinlik ve konferans duyuruları, genel yorum
+  yazıları, ilgisiz öğeler.
 
 title_tr / summary_tr: Türkçe başlık (en fazla ~90 karakter) ve 1–2 cümlelik
   özet. YALNIZCA verilen başlık ve açıklamadaki bilgiyi kullan; tahmin, yorum
