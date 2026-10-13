@@ -1,6 +1,21 @@
 {
-  "fetchedAt": "2026-10-13T18:31:37.450Z",
+  "fetchedAt": "2026-10-13T20:01:42.043Z",
   "items": [
+    {
+      "id": "c81a1f56e7ed",
+      "sourceKey": "cnbc-finance",
+      "sourceName": "CNBC",
+      "kind": "media",
+      "url": "https://www.cnbc.com/2026/10/13/john-williams-fed-rate-hikes-2027.html",
+      "publishedAt": "2026-10-13T19:46:12.000Z",
+      "titleOriginal": "Williams says Fed may not have to hike rates in 2027, at odds with traders",
+      "titleTr": "Williams: Fed 2027'de faiz artırmak zorunda kalmayabilir",
+      "summaryTr": "New York Fed Başkanı John Williams, enflasyon baskıları hafifledikçe 2026'da bir faiz artışı daha görüyor, 2027'de ek artış öngörmüyor. CNBC'ye göre bu görüş piyasadaki beklentilerle çelişiyor.",
+      "titleEn": "Williams says Fed may not have to hike rates in 2027",
+      "summaryEn": "New York Fed President John Williams sees one more rate hike in 2026 but none in 2027 as inflation pressures ease. CNBC reports this is at odds with trader expectations.",
+      "important": true,
+      "processedAt": "2026-10-13T20:01:42.043Z"
+    },
     {
       "id": "43ffdf97a343",
       "sourceKey": "ecb",
