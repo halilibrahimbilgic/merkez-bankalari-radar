@@ -1,6 +1,52 @@
 {
-  "fetchedAt": "2026-10-12T20:40:18.135Z",
+  "fetchedAt": "2026-10-13T02:32:27.315Z",
   "items": [
+    {
+      "id": "c6a0c96c09fa",
+      "sourceKey": "cnbc-economy",
+      "sourceName": "CNBC",
+      "kind": "media",
+      "url": "https://www.cnbc.com/2026/10/12/imf-world-bank-annual-meetings-october-bangkok-asia-.html",
+      "publishedAt": "2026-10-13T02:09:34.000Z",
+      "titleOriginal": "Global economy to slow less than expected in 2026 as AI boom offsets war hit: IMF",
+      "titleTr": "IMF 2026 küresel büyüme tahminini yüzde 3,1'e yükseltti",
+      "summaryTr": "IMF, yapay zekâ yatırımlarının savaşın yol açtığı enerji şokunu dengelemesiyle 2026 küresel büyüme tahminini yüzde 3,1'e çıkardı. Küresel ekonominin beklenenden az yavaşlayacağı belirtildi.",
+      "titleEn": "IMF raises 2026 global growth forecast to 3.1%",
+      "summaryEn": "The IMF lifted its 2026 global growth forecast to 3.1% as AI investment helped offset the war's energy shock. The global economy is expected to slow less than anticipated.",
+      "important": false,
+      "processedAt": "2026-10-13T02:32:27.315Z"
+    },
+    {
+      "id": "edd23d9789d1",
+      "sourceKey": "ft",
+      "sourceName": "Financial Times",
+      "kind": "media",
+      "url": "https://www.ft.com/content/c877685b-0f4a-4aa8-b52b-33f4babd1acb?syn-25a6b1a6=1",
+      "publishedAt": "2026-10-13T02:00:07.000Z",
+      "titleOriginal": "Top economies heading for biggest budget deficits since Covid, IMF warns",
+      "titleTr": "IMF: Büyük ekonomilerde bütçe açıkları Covid'den bu yana en yüksek seviyeye gidiyor",
+      "summaryTr": "Financial Times'a göre IMF, yıllık toplantısında önde gelen ekonomilerin Covid sonrası en büyük bütçe açıklarına doğru ilerlediği uyarısında bulundu. Fon, kamu maliyesini yeniden güçlendirmek için \"acil\" adım çağrısı yaptı.",
+      "titleEn": "IMF warns top economies face biggest budget deficits since Covid",
+      "summaryEn": "According to the Financial Times, the IMF warned at its annual meeting that leading economies are heading for their largest budget deficits since Covid. The fund called for urgent action to rebuild public finances.",
+      "important": false,
+      "processedAt": "2026-10-13T02:32:27.315Z"
+    },
+    {
+      "id": "75f9e403e48f",
+      "sourceKey": "boj",
+      "sourceName": "Bank of Japan",
+      "kind": "official",
+      "bankCode": "boj",
+      "url": "https://www.boj.or.jp/en/statistics/pi/cgpi_release/cgpi2609.pdf",
+      "publishedAt": "2026-10-12T23:50:00.000Z",
+      "titleOriginal": "Corporate Goods Price Index (Sept.)",
+      "titleTr": "BoJ: Kurumsal Mal Fiyat Endeksi (Eylül) yayımlandı",
+      "summaryTr": "Japonya Merkez Bankası, Eylül ayına ait Kurumsal Mal Fiyat Endeksi verisini yayımladı.",
+      "titleEn": "BoJ publishes Corporate Goods Price Index (Sept.)",
+      "summaryEn": "The Bank of Japan released the Corporate Goods Price Index data for September.",
+      "important": false,
+      "processedAt": "2026-10-13T02:32:27.315Z"
+    },
     {
       "id": "36889a6aea34",
       "sourceKey": "cnbc-finance",
@@ -97,6 +143,10 @@
     "2d9b0974f8f9": "2026-10-12",
     "52356d5a301a": "2026-10-12",
     "afb7f178c061": "2026-10-12",
-    "3fa9c42c174b": "2026-10-12"
+    "3fa9c42c174b": "2026-10-12",
+    "9b06b15f5fc1": "2026-10-13",
+    "0ea577901e1a": "2026-10-13",
+    "5674cc131a6f": "2026-10-13",
+    "f97085de6572": "2026-10-13"
   }
 }
