@@ -1,6 +1,22 @@
 {
-  "fetchedAt": "2026-10-13T18:22:39.214Z",
+  "fetchedAt": "2026-10-13T18:31:37.450Z",
   "items": [
+    {
+      "id": "43ffdf97a343",
+      "sourceKey": "ecb",
+      "sourceName": "ECB",
+      "kind": "official",
+      "bankCode": "ecb",
+      "url": "https://www.ecb.europa.eu//press/key/date/2026/html/ecb.sp261013~9db9bf4fd6.en.html",
+      "publishedAt": "2026-10-13T18:30:00.000Z",
+      "titleOriginal": "Philip R. Lane: The AI opportunity for Europe",
+      "titleTr": "ECB'den Lane: Avrupa için yapay zekâ fırsatı",
+      "summaryTr": "ECB'nin yayımladığı metinde Philip R. Lane, Avrupa için yapay zekânın sunduğu fırsatı ele alıyor.",
+      "titleEn": "ECB's Lane: The AI opportunity for Europe",
+      "summaryEn": "In a text published by the ECB, Philip R. Lane discusses the opportunity that artificial intelligence presents for Europe.",
+      "important": false,
+      "processedAt": "2026-10-13T18:31:37.450Z"
+    },
     {
       "id": "a1e9dad552af",
       "sourceKey": "cnbc-economy",
