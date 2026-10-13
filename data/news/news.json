@@ -1,6 +1,22 @@
 {
-  "fetchedAt": "2026-10-13T17:32:33.568Z",
+  "fetchedAt": "2026-10-13T18:06:51.191Z",
   "items": [
+    {
+      "id": "460512eb6608",
+      "sourceKey": "fed-press",
+      "sourceName": "Federal Reserve",
+      "kind": "official",
+      "bankCode": "fed",
+      "url": "https://www.federalreserve.gov/newsevents/pressreleases/monetary20261013a.htm",
+      "publishedAt": "2026-10-13T18:00:00.000Z",
+      "titleOriginal": "Minutes of the Board's discount rate meetings on August 17, September 9, and September 16, 2026",
+      "titleTr": "Fed, iskonto oranı toplantılarının tutanaklarını yayımladı",
+      "summaryTr": "Federal Reserve, Yönetim Kurulu'nun 17 Ağustos, 9 Eylül ve 16 Eylül 2026 tarihli iskonto oranı toplantılarının tutanaklarını yayımladı.",
+      "titleEn": "Fed releases minutes of discount rate meetings",
+      "summaryEn": "The Federal Reserve published the minutes of the Board's discount rate meetings held on August 17, September 9 and September 16, 2026.",
+      "important": false,
+      "processedAt": "2026-10-13T18:06:51.191Z"
+    },
     {
       "id": "a98f1594a3b1",
       "sourceKey": "guardian-business",
