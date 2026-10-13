@@ -1,6 +1,21 @@
 {
-  "fetchedAt": "2026-10-13T09:43:11.201Z",
+  "fetchedAt": "2026-10-13T17:32:33.568Z",
   "items": [
+    {
+      "id": "a98f1594a3b1",
+      "sourceKey": "guardian-business",
+      "sourceName": "The Guardian",
+      "kind": "media",
+      "url": "https://www.theguardian.com/business/2026/oct/13/ai-share-crash-risk-global-imf-debt-corrowing-cyber-attacks",
+      "publishedAt": "2026-10-13T12:30:01.000Z",
+      "titleOriginal": "Threat of AI share crash puts world financial stability at risk, says IMF",
+      "titleTr": "IMF: Yapay zekâ hisselerindeki çöküş riski küresel finansal istikrarı tehdit ediyor",
+      "summaryTr": "IMF, iki yılda bir yayımladığı Küresel Finansal İstikrar Raporu'nda yapay zekâ şirketlerinin yüksek değerlemeleri ve artan borçlarının riskleri yükselttiğini belirtti. Fon ayrıca devlet borçlanması ve siber saldırılara karşı uyardı.",
+      "titleEn": "IMF: AI share crash threat puts global financial stability at risk",
+      "summaryEn": "In its twice-yearly Global Financial Stability Report, the IMF said high valuations and rising debt among AI companies keep system risks elevated. The fund also warned about government borrowing and cyber-attacks.",
+      "important": false,
+      "processedAt": "2026-10-13T17:32:33.568Z"
+    },
     {
       "id": "2c2be5433c36",
       "sourceKey": "aa-ekonomi",
@@ -256,6 +271,13 @@
     "4c7837f3e30f": "2026-10-13",
     "d66522b0d5fe": "2026-10-13",
     "8969b6b45295": "2026-10-13",
-    "5a3a9ee83670": "2026-10-13"
+    "5a3a9ee83670": "2026-10-13",
+    "bb489b4ea2dd": "2026-10-13",
+    "4d1602fead7c": "2026-10-13",
+    "e78edfc631fb": "2026-10-13",
+    "e5f3924c3a0f": "2026-10-13",
+    "f80f91feed33": "2026-10-13",
+    "9d94c45a091b": "2026-10-13",
+    "42dd78bf5b71": "2026-10-13"
   }
 }
