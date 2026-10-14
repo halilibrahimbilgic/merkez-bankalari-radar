@@ -64,6 +64,12 @@ jobs:
         env:
           FRED_API_KEY: ${{ secrets.FRED_API_KEY }}
           EVDS_API_KEY: ${{ secrets.EVDS_API_KEY }}
+      # Bankaların kendi tahminleri: Fed'in nokta grafiği (FRED) ve TCMB'nin
+      # Enflasyon Raporu tahmini ile ara hedefleri (PDF yalnızca yeni sayıda).
+      - run: npm run fetch:projections
+        if: ${{ !cancelled() }}
+        env:
+          FRED_API_KEY: ${{ secrets.FRED_API_KEY }}
       - run: npm run fetch:probabilities
         if: ${{ !cancelled() }}
       - run: npm run fetch:speeches

@@ -95,6 +95,7 @@ async function main() {
         yearEnd: survey.yearEnd,
         months12: survey.months12,
         inflation12: survey.inflation12,
+        inflationYearEnd: survey.inflationYearEnd,
       };
       console.log(`✓  TCMB anketi ${survey.period}: ${survey.meetings.join(" / ")}`);
 

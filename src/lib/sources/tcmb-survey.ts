@@ -24,6 +24,12 @@ const SERIES = {
   months12: "TP.PKAUO.S04.D.U",
   /** 12 ay sonrasının yıllık TÜFE beklentisi — ileriye dönük reel faiz için. */
   inflation12: "TP.PKAUO.S01.E.U",
+  /**
+   * Cari yıl sonu yıllık TÜFE beklentisi — TCMB'nin yıl sonu tahmini ve ara
+   * hedefiyle kıyas için. Doğrulama (15 Ekim 2026): S01 tablosunda A–C aylık,
+   * D yıl sonu (Eylül anketi %29,61), E 12 ay (%23,70), F 24 ay sonrası.
+   */
+  inflationYearEnd: "TP.PKAUO.S01.D.U",
 } as const;
 
 export interface TcmbSurvey {
@@ -35,6 +41,8 @@ export interface TcmbSurvey {
   months12?: number;
   /** 12 ay sonrası için beklenen yıllık TÜFE (%). */
   inflation12?: number;
+  /** Anket yılının sonu için beklenen yıllık TÜFE (%). */
+  inflationYearEnd?: number;
 }
 
 export async function fetchTcmbSurvey(apiKey: string): Promise<TcmbSurvey> {
@@ -78,6 +86,7 @@ export function parseTcmbSurveyHistory(json: unknown): TcmbSurvey[] {
       yearEnd: num(item, SERIES.yearEnd),
       months12: num(item, SERIES.months12),
       inflation12: num(item, SERIES.inflation12),
+      inflationYearEnd: num(item, SERIES.inflationYearEnd),
     });
   }
   return out.sort((a, b) => a.period.localeCompare(b.period));

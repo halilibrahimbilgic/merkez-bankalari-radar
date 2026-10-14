@@ -10,6 +10,7 @@ import { fmtPercent, fmtSignedPercent, L, languageAlternates, localePath, type L
 import { forwardRealRate, realRate, type RealRate } from "@/lib/real-rates";
 import { INFLATION_SOURCES } from "@/lib/sources/inflation";
 import { getTcmbFunding } from "@/lib/data/tcmb-funding";
+import { getProjections } from "@/lib/data/projections";
 import { fundingNow } from "@/lib/tcmb-funding";
 import { monthLabel, trtDayKey } from "@/lib/time";
 
@@ -27,11 +28,12 @@ export function realRatesMetadata(lang: Lang): Metadata {
 
 export async function RealRatesPage({ lang }: { lang: Lang }) {
   const t = L(lang);
-  const [rates, inflation, expectations, funding] = await Promise.all([
+  const [rates, inflation, expectations, funding, projections] = await Promise.all([
     getCurrentRates(),
     getInflation(),
     getExpectations(),
     getTcmbFunding(),
+    getProjections(),
   ]);
   const rows: RealRate[] = ALL_BANKS.flatMap((b) => {
     const rate = rates.find((r) => r.bankCode === b.code);
@@ -44,6 +46,11 @@ export async function RealRatesPage({ lang }: { lang: Lang }) {
   const survey = expectations.tcmb;
   const forward =
     tcmb && survey?.inflation12 !== undefined ? forwardRealRate(tcmb.policy, survey.inflation12) : undefined;
+  // TCMB'nin kendi beklentisi: anket yılının sonu için Enflasyon Raporu tahmini ve ara hedefi.
+  const er = projections.tcmb;
+  const erYear = survey?.period.slice(0, 4);
+  const erForecast = er && erYear ? er.forecasts[erYear] : undefined;
+  const erTarget = er && erYear ? er.targets[erYear] : undefined;
   // Bankaların fiilen ödediği faiz politika faizinden ayrışıyorsa ona göre reel faiz de verilir.
   const tcmbFunding = funding && fundingNow(funding, trtDayKey(new Date().toISOString()));
   const effective =
@@ -158,6 +165,17 @@ export async function RealRatesPage({ lang }: { lang: Lang }) {
               `Policy rate ${fmtPercent(tcmb.policy, lang)}; the expectation is the average of participants in the CBRT Survey of Market Participants. The backward-looking real rate is ${fmtSignedPercent(tcmb.real, lang)}. We do not use a comparable, republishable expectation series for the other economies.`,
             )}
           </p>
+          {er && erForecast !== undefined && erTarget !== undefined && (
+            <p className="prose-width mt-2 text-sm text-muted">
+              {t(
+                `TCMB'nin kendi ${erYear} sonu enflasyon tahmini ${fmtPercent(erForecast, lang, 0)}, ara hedefi ${fmtPercent(erTarget, lang, 0)} (Enflasyon Raporu ${er.report}). `,
+                `The CBRT's own end-${erYear} inflation forecast is ${fmtPercent(erForecast, lang, 0)} and its interim target ${fmtPercent(erTarget, lang, 0)} (Inflation Report ${er.report}). `,
+              )}
+              <Link href={`${localePath(lang, "/banka/tcmb")}#enflasyon-gorunumu`} className="text-accent hover:underline">
+                {t("Hedef, tahmin ve beklenti", "Target, forecast and expectations")}
+              </Link>
+            </p>
+          )}
         </Card>
       )}
 

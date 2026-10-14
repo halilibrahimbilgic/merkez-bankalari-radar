@@ -29,6 +29,7 @@ npm run fetch:probabilities  # Atlanta Fed olasılık dağılımları (+ günlü
 npm run fetch:expectations   # BoE, ECB, TCMB beklentileri + beklenti geçmişi (data/history)
 npm run fetch:inflation      # altı ekonominin yıllık enflasyonu (reel faiz)
 npm run fetch:events         # Fed/ECB konuşma takvimi + TÜFE açıklama tarihleri ("Bu hafta")
+npm run fetch:projections    # Fed nokta grafiği (FRED) + TCMB Enflasyon Raporu tahmini ve ara hedefler
 npm run statements:fetch     # karar metinleri; karar günü kararı metinden yazar (--all: arşiv)
 npm run minutes:fetch        # toplantı tutanakları; özet görevi .minutes/ (minutes:import işler)
 npm run fetch:speeches       # BIS konuşma arşivi (metinlerle birlikte)
@@ -182,6 +183,7 @@ npm run fetch:probabilities  # olasılık dağılımları
 npm run fetch:expectations   # Fed dışı beklentiler ve beklenti geçmişi
 npm run fetch:inflation      # enflasyon (reel faiz tablosu)
 npm run fetch:events         # konuşma ve yayın takvimi ("Bu hafta")
+npm run fetch:projections    # bankaların kendi tahminleri (data/seed/projections.json)
 npm run statements:fetch     # karar metinleri ve özet görevi (.statements/)
 npm run statements:import    # Claude Code özetlerini doğrula ve yaz
 npm run minutes:fetch        # toplantı tutanakları ve özet görevi (.minutes/)

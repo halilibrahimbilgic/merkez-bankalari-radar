@@ -1,0 +1,48 @@
+{
+  "fetchedAt": "2026-10-14T22:47:08.114Z",
+  "fed": {
+    "releasedOn": "2026-09-16",
+    "years": [
+      {
+        "year": 2026,
+        "median": 4.1,
+        "low": 3.9,
+        "high": 4.4
+      },
+      {
+        "year": 2027,
+        "median": 4.1,
+        "low": 3.1,
+        "high": 4.4
+      },
+      {
+        "year": 2028,
+        "median": 3.9,
+        "low": 3.1,
+        "high": 4.1
+      },
+      {
+        "year": 2029,
+        "median": 3.6,
+        "low": 2.9,
+        "high": 3.9
+      }
+    ],
+    "longerRun": 3.2
+  },
+  "tcmb": {
+    "report": "2026-III",
+    "publishedOn": "2026-08-13",
+    "url": "https://www.tcmb.gov.tr/wps/wcm/connect/TR/TCMB+TR/Main+Menu/Yayinlar/Raporlar/Enflasyon+Raporu/2026/Enflasyon+Raporu+2026+-+III",
+    "forecasts": {
+      "2026": 28,
+      "2027": 15,
+      "2028": 9
+    },
+    "targets": {
+      "2026": 24,
+      "2027": 15,
+      "2028": 9
+    }
+  }
+}

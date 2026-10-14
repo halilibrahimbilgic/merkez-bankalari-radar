@@ -27,7 +27,8 @@
     "statements:import": "tsx scripts/statements-import.ts",
     "minutes:fetch": "tsx scripts/fetch-minutes.ts",
     "minutes:import": "tsx scripts/minutes-import.ts",
-    "fetch:events": "tsx scripts/fetch-events.ts"
+    "fetch:events": "tsx scripts/fetch-events.ts",
+    "fetch:projections": "tsx scripts/fetch-projections.ts"
   },
   "dependencies": {
     "@anthropic-ai/sdk": "^0.116.0",

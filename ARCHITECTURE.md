@@ -14,7 +14,7 @@ takip eden bir site. Üç modül:
 | Modül | Ne yapar | Veri otomatik mi |
 | --- | --- | --- |
 | A — Takvim | Toplantı tarihleri, TRT geri sayımı, geçmiş kararlar, iCal + RSS + Telegram hatırlatma | ✅ tam otomatik |
-| B — Faiz olasılığı | Fed: piyasa dağılımı (Atlanta Fed MPT); BoE: OIS eğrisinden toplantı bazında beklenti; ECB: analist anketi (SMA); TCMB: Piyasa Katılımcıları Anketi | ✅ tam otomatik |
+| B — Faiz olasılığı | Fed: piyasa dağılımı (Atlanta Fed MPT) ve Fed'in kendi patikası (nokta grafiği) ile kıyası; BoE: OIS eğrisinden toplantı bazında beklenti; ECB: analist anketi (SMA); TCMB: Piyasa Katılımcıları Anketi, Enflasyon Raporu tahmini ve ara hedefler | ✅ tam otomatik |
 | D — Haberler | Resmî açıklamalar + önemli kişilerin sözlerini aktaran haberler, Türkçe/İngilizce özet, önemliler Telegram'a | ✅ 30 dk'da bir (news.yml) |
 | C — Şahin/güvercin | Merkez bankacısı konuşmaları + Türkçe özet ve skor; karar metinlerinin aynı ölçekte puanı; konuşmacı sayfaları, aylık seyir | ✅ metin ve skor otomatik (Claude aboneliği; §5) |
 | E — Kararlar | Her karar, karardan önceki beklentiyle (sürpriz) ve bir önceki karar metniyle (fark + model özeti) karşılaştırılır; toplantı tutanağının özeti ve puanı; beklentinin seyri; sayfa başında son 12 ayın faiz döngüsü | ✅ karar metni ve tutanak 30 dk'da bir (news.yml), özet Claude; beklenti geçmişi günlük |
@@ -50,6 +50,7 @@ amaçlıdır (bkz. §6).
   resmî karar metinleri ──► statements:fetch (news.yml) ─► statements.json + data/statements/
                             └► meetings.json (karar günü, seri gelmeden)
   toplantı tutanakları ───► minutes:fetch (news.yml) ──► minutes.json (metin .cache'te)
+  FRED SEP · TCMB Enflasyon Raporu ─► fetch:projections ─► projections.json
   bis.org (RSS + HTML) ───► fetch:speeches ───────► speeches.json
                                                       ▲
   Claude Code (abonelik) ─► score:export/import ──────┘ (§5)
@@ -193,6 +194,18 @@ gösterilmez (lisans sorusu doğmaz), `.cache/minutes`'te model girdisidir;
 karar metinleriyle aynı ölçekte — karar sayfasında karar metninin
 puanının yanında. BoJ PDF'i tek akışa inip cümle sınırından yeniden
 bölünür: tek satırlık 13 bin karakteri okuma aracı kırpabilir.
+
+**Bankanın kendi tahmini, piyasa ve anket beklentisinin yanında durur**
+(`src/lib/sources/projections.ts`). Fed: SEP medyanı ve katılımcı aralığı
+FRED'den; piyasa tarafı Atlanta Fed'in o yılın Aralık ayında başlayan
+dönemi (yıl sonuna en yakın gözlem). Eylül 2026'da piyasa her yıl için
+Fed'in medyanından yüksek faiz fiyatlıyordu (2027 sonu: %4,75 / %4,1).
+TCMB: Enflasyon Raporu'nun "Genel Değerlendirme" PDF'indeki kalıplı
+cümlelerden yıl sonu tahmini ve ara hedefler — dizinde yeni sayı yoksa PDF
+indirilmez, kalıp tutmazsa hata (önceki kayıt korunur). Ondalık virgül
+yalnızca ardından rakam gelirse sayılır: "yüzde 24, yüzde 15" listesinde
+virgül ayraçtır, ilk denemede liste "24," ile kopmuştu. Anketin cari yıl
+sonu TÜFE beklentisi (S01.D) tahminle aynı yılın sütununa yazılır.
 
 **`fetch:current-rates` da birleştirir.** Bir bankanın kaynağı hata verirse
 önceki kaydı korunur ve adım yine hata koduyla biter. İlk cron koşusunda ECB
@@ -542,7 +555,8 @@ aynı hesap: `src/views/bank-expectations.ts`).
 (§4); TCMB sayfasında son 12 ayın grafiği, sözlükte iki yeni terim.
 Karar metinlerine konuşmalarla aynı ölçekte puan; altı bankanın 2026
 toplantılarının 36 tutanağı bulundu, özetleri haber işinde birikimi
-eritiyor.
+eritiyor. Fed'in nokta grafiği piyasayla, TCMB'nin Enflasyon Raporu
+tahmini ve ara hedefleri anketle yan yana.
 
 ---
 

@@ -16,6 +16,8 @@ export interface SurveyExpectations {
   months12?: number;
   /** 12 ay sonrası için beklenen yıllık TÜFE (%) — ileriye dönük reel faiz. */
   inflation12?: number;
+  /** Anket yılının sonu için beklenen yıllık TÜFE (%) — TCMB'nin tahminiyle kıyas. */
+  inflationYearEnd?: number;
 }
 
 export interface MarketExpectations {

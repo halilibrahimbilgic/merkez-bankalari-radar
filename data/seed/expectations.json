@@ -1,5 +1,5 @@
 {
-  "fetchedAt": "2026-10-14T18:23:34.901Z",
+  "fetchedAt": "2026-10-14T22:49:28.814Z",
   "tcmb": {
     "kind": "survey",
     "period": "2026-09",
@@ -23,7 +23,8 @@
     ],
     "yearEnd": 35.07,
     "months12": 29.22,
-    "inflation12": 23.7
+    "inflation12": 23.7,
+    "inflationYearEnd": 29.61
   },
   "boe": {
     "kind": "market",

@@ -228,6 +228,13 @@ export const guide: Guide = {
           },
         },
         {
+          term: { tr: "Ara hedef (TCMB)", en: "Interim target (CBRT)" },
+          def: {
+            tr: "TCMB'nin yıl sonları için koyduğu ve Enflasyon Raporu'nda açıkladığı enflasyon hedefleri; orta vadeli yüzde 5 hedefine giden yoldaki duraklar. Raporun yıl sonu tahmini ise TCMB'nin beklediği enflasyondur ve ara hedeften ayrışabilir (Enflasyon Raporu 2026-III: 2026 için ara hedef yüzde 24, tahmin yüzde 28).",
+            en: "The inflation targets the CBRT sets for year-ends and publishes in its Inflation Report — waypoints towards the 5% medium-term target. The report's year-end forecast is the inflation the CBRT expects and can differ from the interim target (Inflation Report 2026-III: 24% interim target and 28% forecast for 2026).",
+          },
+        },
+        {
           term: { tr: "Bir hafta vadeli repo ihale faizi", en: "One-week repo auction rate" },
           def: {
             tr: "TCMB'nin politika faizi: bankalara bir hafta vadeyle sağladığı fonun faizi.",
