@@ -1,5 +1,5 @@
 {
-  "fetchedAt": "2026-10-14T02:02:30.115Z",
+  "fetchedAt": "2026-10-14T02:32:22.877Z",
   "statements": [
     {
       "meetingId": "boe-2025-12-18",
@@ -26,7 +26,31 @@
       "publishable": false,
       "fetchedAt": "2026-10-13T19:41:40.295Z",
       "rate": 3.75,
-      "previousId": "boe-2025-12-18"
+      "previousId": "boe-2025-12-18",
+      "summary": {
+        "headlineTr": "BoE, Banka Faizini 5'e 4 oyla yüzde 3,75'te sabit tuttu; metin TÜFE enflasyonunun nisandan itibaren hedef civarına inmesinin beklendiğini ve faizin daha da indirilmesinin muhtemel olduğunu söylüyor.",
+        "headlineEn": "The BoE held Bank Rate at 3.75% by a 5–4 vote; the statement says CPI inflation is expected to fall back to around the target from April and that Bank Rate is likely to be reduced further.",
+        "changesTr": [
+          "Önceki toplantıdaki indirimin ardından faiz 5'e 4 oyla yüzde 3,75'te sabit tutuldu; dört üye 0,25 puanlık indirimle yüzde 3,5'e düşürülmesi yönünde oy kullandı.",
+          "TÜFE enflasyonunun, 2025 Bütçesi dahil enerji fiyatlarındaki gelişmeler nedeniyle nisandan itibaren yüzde 2 hedefi civarına inmesinin beklendiği belirtildi.",
+          "Enflasyon kalıcılığı riskinin azalmaya devam ettiği, zayıf talep ve gevşeyen işgücü piyasasından kaynaklanan bazı enflasyon risklerinin ise sürdüğü ifade edildi.",
+          "Yönlendirme \"kademeli bir düşüş patikasını sürdürmesi muhtemel\" yerine \"faizin daha da indirilmesi muhtemel\" oldu; daha fazla gevşemenin kapsamına ek olarak zamanlamasının da enflasyon görünümüne bağlı olacağı eklendi.",
+          "Para politikasının amacı, enflasyonun yalnızca yüzde 2'ye ulaşmasını değil orta vadede bu düzeyde kalıcı olarak kalmasını sağlamak şeklinde yeniden ifade edildi."
+        ],
+        "changesEn": [
+          "Following the previous cut, Bank Rate was held at 3.75% by a 5–4 vote, with four members voting to reduce it by 0.25 percentage points to 3.5%.",
+          "CPI inflation is now expected to fall back to around the 2% target from April, owing to developments in energy prices including from Budget 2025.",
+          "The risk from greater inflation persistence has continued to become less pronounced, while some risks to inflation from weaker demand and a loosening labour market remain.",
+          "Guidance changed from Bank Rate being likely to \"continue on a gradual downward path\" to being \"likely to be reduced further\", and both the extent and the timing of further easing are now said to depend on the inflation outlook.",
+          "The policy aim was restated as ensuring CPI inflation not only reaches 2% but remains sustainably at that level in the medium term."
+        ],
+        "tone": "more-dovish",
+        "toneReasonTr": "Enflasyonun nisandan itibaren hedef civarına inmesinin beklenmesi, kalıcılık riskinin \"azalmaya devam ettiği\", \"gevşeyen işgücü piyasası\" vurgusu ve faizin \"daha da indirilmesinin muhtemel\" olduğu ifadesi, \"zamanlama\" ve \"kalıcı olarak\" eklerine rağmen dili gevşeme yönüne taşıyor.",
+        "toneReasonEn": "Inflation expected back around target from April, the persistence risk having \"continued to become less pronounced\", the reference to \"a loosening labour market\" and Bank Rate \"likely to be reduced further\" tilt the language dovish despite the added references to \"timing\" and remaining at 2% \"sustainably\".",
+        "model": "claude-code/opus",
+        "promptVersion": "1",
+        "summarizedAt": "2026-10-14T02:32:22.876Z"
+      }
     },
     {
       "meetingId": "boe-2026-03-19",
@@ -454,7 +478,29 @@
       "publishable": true,
       "fetchedAt": "2026-10-13T19:41:43.478Z",
       "rate": 2,
-      "previousId": "ecb-2025-12-18"
+      "previousId": "ecb-2025-12-18",
+      "summary": {
+        "headlineTr": "ECB üç politika faizini değiştirmedi (mevduat faizi yüzde 2,00) ve enflasyonun orta vadede yüzde 2 hedefinde dengeleneceğini yineledi; metin yeni projeksiyonlar yerine ekonominin dayanıklılığını ve belirsizlikleri anlatıyor.",
+        "headlineEn": "The ECB kept its three key interest rates unchanged (deposit facility rate at 2.00%) and reiterated that inflation should stabilise at its 2% target in the medium term; the statement now describes the economy's resilience and uncertainties instead of new projections.",
+        "changesTr": [
+          "Önceki metindeki personel projeksiyonları paragrafı (manşet ve çekirdek enflasyon ile büyüme tahminleri) bu metinde yer almıyor.",
+          "Ekonominin zorlu bir küresel ortamda dayanıklı kaldığı; düşük işsizlik, sağlam özel sektör bilançoları, savunma ve altyapı harcamaları ile geçmiş faiz indirimlerinin büyümeyi desteklediği eklendi.",
+          "Görünümün özellikle küresel ticaret politikası belirsizliği ve jeopolitik gerilimler nedeniyle belirsiz olmaya devam ettiği belirtildi.",
+          "Veri odaklı, toplantı bazlı yaklaşım, belirli bir faiz patikasına önceden bağlanmama ilkesi ve bilanço (APP, PEPP) ile TPI ifadeleri değişmedi."
+        ],
+        "changesEn": [
+          "The staff projections paragraph from the previous statement (headline and core inflation and growth forecasts) does not appear in this statement.",
+          "It added that the economy remains resilient in a challenging global environment, with low unemployment, solid private sector balance sheets, defence and infrastructure spending and past rate cuts underpinning growth.",
+          "It said the outlook is still uncertain, owing particularly to ongoing global trade policy uncertainty and geopolitical tensions.",
+          "The data-dependent, meeting-by-meeting approach, the absence of pre-commitment to a rate path and the wording on the balance sheet (APP, PEPP) and the TPI are unchanged."
+        ],
+        "tone": "little-change",
+        "toneReasonTr": "Enflasyonun \"orta vadede yüzde 2 hedefinde dengeleneceği\" değerlendirmesi ve politika yönlendirmesi aynen korunurken, eklenen \"ekonomi dayanıklı\" ve \"görünüm belirsiz\" ifadeleri birbirini dengeliyor.",
+        "toneReasonEn": "The assessment that inflation \"should stabilise at its 2% target in the medium term\" and the policy guidance are unchanged, while the added \"economy remains resilient\" and \"outlook is still uncertain\" lines balance each other.",
+        "model": "claude-code/opus",
+        "promptVersion": "1",
+        "summarizedAt": "2026-10-14T02:32:22.876Z"
+      }
     },
     {
       "meetingId": "ecb-2026-03-19",
@@ -898,7 +944,31 @@
       "publishable": true,
       "fetchedAt": "2026-10-13T19:43:52.402Z",
       "rate": 4.1,
-      "previousId": "rba-2026-02-03"
+      "previousId": "rba-2026-02-03",
+      "summary": {
+        "headlineTr": "RBA nakit faiz hedefini 25 baz puan artırarak yüzde 4,10'a yükseltti ve risklerin enflasyon beklentileri dahil daha da yukarı yöne kaydığını belirtti; karar oybirliğiyle değil 5'e 4 oy çokluğuyla alındı.",
+        "headlineEn": "The RBA raised the cash rate target by 25 basis points to 4.10 per cent and said risks have tilted further to the upside, including to inflation expectations; the decision was made by a 5–4 majority rather than unanimously.",
+        "changesTr": [
+          "Kurul, enflasyonun daha önce öngörülenden daha uzun süre hedefin üzerinde kalması yönünde belirgin bir risk olduğunu ve risklerin enflasyon beklentileri dahil daha da yukarı yöne kaydığını belirtti.",
+          "Orta Doğu'daki çatışmanın yakıt fiyatlarını keskin biçimde artırdığı, kısa vadeli enflasyon beklentilerinin şimdiden yükseldiği ve çatışmanın her iki yönde de önemli riskler taşıdığı, büyümeyi de aşağı çekebileceği eklendi.",
+          "Talep değerlendirmesi yumuşadı: Aralık çeyreğinde iş yatırımı beklentinin üzerinde, tüketim altında kaldı, birim işgücü maliyeti artışı geriledi ve konut fiyat artışı 2026 başında bir miktar yavaşladı.",
+          "Finansal koşulların bu yıl bir miktar sıkılaştığı belirtilirken, işgücü piyasasının son dönemde biraz daha sıkılaştığı ve kapasite baskılarının önceki değerlendirmeden biraz daha yüksek olduğu ifade edildi.",
+          "Karar oybirliği yerine oy çokluğuyla alındı: beş üye artırım, dört üye faizin yüzde 3,85'te sabit tutulması yönünde oy kullandı."
+        ],
+        "changesEn": [
+          "The Board said there is a material risk that inflation will remain above target for longer than previously anticipated and that risks have tilted further to the upside, including to inflation expectations.",
+          "It added that the Middle East conflict has sharply raised fuel prices, that short-term inflation expectations have already risen, and that the conflict poses substantial risks in both directions, including to growth.",
+          "The demand assessment softened: in the December quarter business investment was above and consumption below expectations, unit labour cost growth declined, and housing price growth moderated somewhat at the start of 2026.",
+          "Financial conditions are now described as having tightened a little this year, while the labour market is said to have tightened a little recently and capacity pressures to be slightly greater than previously assessed.",
+          "The decision was made by majority rather than unanimously: five members voted for the increase and four voted to hold the cash rate at 3.85 per cent."
+        ],
+        "tone": "more-hawkish",
+        "toneReasonTr": "\"Enflasyonun daha önce öngörülenden uzun süre hedefin üzerinde kalması yönünde belirgin risk\" ve \"riskler enflasyon beklentileri dahil daha da yukarı yöne kaydı\" ifadeleri, 5'e 4'lük oy dağılımı ve yumuşayan talep tespitlerine rağmen dili sıkılaştırma yönüne taşıyor.",
+        "toneReasonEn": "The phrases \"a material risk that inflation will remain above target for longer than previously anticipated\" and \"risks have tilted further to the upside, including to inflation expectations\" shift the language in a hawkish direction despite the 5–4 vote and softer demand details.",
+        "model": "claude-code/opus",
+        "promptVersion": "1",
+        "summarizedAt": "2026-10-14T02:32:22.877Z"
+      }
     },
     {
       "meetingId": "rba-2026-05-05",
@@ -1097,7 +1167,31 @@
       "publishable": true,
       "fetchedAt": "2026-10-13T19:41:46.107Z",
       "rate": 37,
-      "previousId": "tcmb-2026-01-22"
+      "previousId": "tcmb-2026-01-22",
+      "summary": {
+        "headlineTr": "TCMB politika faizini yüzde 37'de sabit tutarak indirimlere ara verdi ve jeopolitik gelişmeler ile enerji fiyatlarındaki yükselişin enflasyon görünümüne yönelik risklerini öne çıkardı.",
+        "headlineEn": "The CBRT held the policy rate at 37 per cent, pausing its cuts, and highlighted risks to the inflation outlook from geopolitical developments and rising energy prices.",
+        "changesTr": [
+          "Bir önceki toplantıdaki 100 baz puanlık indirimin ardından politika faizi yüzde 37'de, gecelik borç verme ve borçlanma faizleri yüzde 40 ve yüzde 35,5'te sabit tutuldu.",
+          "Enflasyonun ana eğiliminin aralıkta gerilediği tespitinin yerini, şubatta yataya yakın seyrettiği tespiti aldı.",
+          "Jeopolitik gelişmelerle belirsizliklerin arttığı, küresel risk iştahının bozulduğu ve enerji fiyatlarının yükseldiği; bu risklere karşı sıkı para politikasını destekleyici kararlar ve eşgüdüm içinde mali tedbirler alındığı belirtildi.",
+          "Sıkılaştırma koşulu \"enflasyon görünümünün ara hedeflerden belirgin ayrışması\" yerine \"son dönem gelişmelerin de etkisiyle enflasyon görünümünde belirgin ve kalıcı bir bozulma\" olarak yeniden yazıldı.",
+          "\"Adımların büyüklüğü\" ifadesi çıkarılarak para politikası kararlarının enflasyon görünümü odaklı, toplantı bazlı ve ihtiyatlı bir yaklaşımla alındığı belirtildi."
+        ],
+        "changesEn": [
+          "After a 100 basis point cut at the previous meeting, the policy rate was held at 37 per cent and the overnight lending and borrowing rates at 40 per cent and 35.5 per cent.",
+          "The statement that the underlying trend of inflation declined in December was replaced by one saying it stayed broadly flat in February.",
+          "It said geopolitical developments have increased uncertainty, global risk appetite has deteriorated and energy prices have risen, and that decisions supporting tight monetary policy and coordinated fiscal measures have been taken to contain these risks.",
+          "The tightening condition was rewritten from the inflation outlook \"significantly deviating from interim targets\" to \"a significant and persistent deterioration in the inflation outlook, also due to recent developments\".",
+          "The reference to \"the size of the steps\" was dropped; policy decisions are now said to be taken with a prudent, meeting-by-meeting approach focused on the inflation outlook."
+        ],
+        "tone": "more-hawkish",
+        "toneReasonTr": "Ana eğilimin \"gerilemiştir\"den \"yataya yakın\"a dönmesi, jeopolitik ve enerji kaynaklı risklere karşı sıkı politikayı destekleyici kararlar alındığının vurgulanması ve indirim adımlarına işaret eden \"adımların büyüklüğü\" ifadesinin çıkarılması dili sıkılaştırma yönüne kaydırıyor.",
+        "toneReasonEn": "The shift from the underlying trend having \"declined\" to being \"broadly flat\", the emphasis on measures supporting tight policy against geopolitical and energy risks, and the removal of \"the size of the steps\", which referred to cuts, move the language in a hawkish direction.",
+        "model": "claude-code/opus",
+        "promptVersion": "1",
+        "summarizedAt": "2026-10-14T02:32:22.877Z"
+      }
     },
     {
       "meetingId": "tcmb-2026-04-22",
