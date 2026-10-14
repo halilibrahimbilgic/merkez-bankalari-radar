@@ -66,18 +66,20 @@ export async function getBankExpectations(lang: Lang, now: Date): Promise<Partia
     );
 
   // Fed olasılıkları yalnızca Fed için — kaynağımız Fed Funds/SOFR
-  // üzerinedir, diğer bankalar için karşılığı yok.
+  // üzerinedir, diğer bankalar için karşılığı yok. Özet yerlerde sade dil:
+  // "%93 aralığın üzeri" ilk okumada anlaşılmıyordu. "Artırım" denmez, veri
+  // toplantı bazlı değil (ayrıntı ve bant dili /faiz-olasiligi'nde).
   const window = probability?.windows[0];
   const fedOdds: OddsRow[] | undefined =
     window && window.probHikePct !== undefined && window.probCutPct !== undefined
       ? [
-          { direction: "up", label: t("Aralığın üzeri", "Above range"), pct: window.probHikePct },
+          { direction: "up", label: t("Bugünkünden yüksek", "Above today's range"), pct: window.probHikePct },
           {
             direction: "flat",
-            label: t("Aralık içinde", "Within range"),
+            label: t("Bugünkü aralıkta", "Within today's range"),
             pct: Math.max(0, 100 - window.probHikePct - window.probCutPct),
           },
-          { direction: "down", label: t("Aralığın altı", "Below range"), pct: window.probCutPct },
+          { direction: "down", label: t("Bugünkünden düşük", "Below today's range"), pct: window.probCutPct },
         ]
       : undefined;
 
