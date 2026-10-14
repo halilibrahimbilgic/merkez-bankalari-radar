@@ -100,3 +100,25 @@ test("TÜFE takvimleri: TÜİK, ONS, Japonya tablosu, ABS", async () => {
   );
   assert.deepEqual(parseAbsNextReleases("Future releases Next Release 28/10/2026 x Next Release 25/11/2026"), ["2026-10-28", "2026-11-25"]);
 });
+
+test("TÜFE açıklaması: ait olduğu ay ve haber işinin bakacağı ekonomiler", async () => {
+  const { cpiReferenceMonth, dueCpiReleases } = await import("../src/lib/cpi-release");
+  assert.equal(cpiReferenceMonth("2026-10-14T12:30:00.000Z"), "2026-09");
+  assert.equal(cpiReferenceMonth("2027-01-13T13:30:00.000Z"), "2026-12"); // yıl dönümü
+  // Japonya: 22 Ekim 23:30 UTC = 23 Ekim TRT; ay yine Ekim → Eylül verisi.
+  assert.equal(cpiReferenceMonth("2026-10-22T23:30:00.000Z"), "2026-09");
+  const events = [
+    { kind: "cpi" as const, bankCode: "fed" as const, at: "2026-10-14T12:30:00.000Z" },
+    { kind: "cpi" as const, bankCode: "boe" as const, at: "2026-10-21T06:00:00.000Z" },
+    { kind: "speech" as const, bankCode: "ecb" as const, at: "2026-10-14T10:00:00.000Z" },
+  ];
+  const readings = [
+    { bankCode: "fed" as const, period: "2026-08" },
+    { bankCode: "boe" as const, period: "2026-08" },
+  ];
+  assert.deepEqual(dueCpiReleases(events, readings, new Date("2026-10-14T13:00:00Z")), ["fed"]);
+  // Rakam geldiyse ya da 12 saat geçtiyse bakılmaz; açıklanmamış olana da bakılmaz.
+  assert.deepEqual(dueCpiReleases(events, [{ bankCode: "fed", period: "2026-09" }], new Date("2026-10-14T13:00:00Z")), []);
+  assert.deepEqual(dueCpiReleases(events, readings, new Date("2026-10-15T01:00:00Z")), []);
+  assert.deepEqual(dueCpiReleases(events, readings, new Date("2026-10-14T12:00:00Z")), []);
+});

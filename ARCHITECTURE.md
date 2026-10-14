@@ -334,7 +334,12 @@ yalnızca *o kaynağın* önceki kayıtları korunur. TÜFE kayıtları banka
 koduyla tutulur (ABD → `fed`), banka başına koruma Fed takvimi kırıldığında
 eski TÜFE kaydını yenisinin yanına ikinci kez eklerdi. Euro bölgesi TÜFE
 takvimi yok: Eurostat'ın takvimi tarayıcıda JavaScript'le yükleniyor,
-makinece okunur ucu bulunamadı (14 Ekim 2026).
+makinece okunur ucu bulunamadı (14 Ekim 2026). TÜFE satırı açıklanmadan önce
+bir önceki ayın rakamını, açıklanıp veri gelince yenisini gösterir; haber işi
+açıklamadan sonraki 12 saat yalnızca o ekonominin kaynağına bakar
+(`fetch:inflation -- --if-due`, `src/lib/cpi-release.ts`). Verinin ait
+olduğu ay, açıklandığı ayın bir öncesidir — beş ekonominin hepsinde.
+Konsensüs beklentisi lisanslı veri; gösterilmez.
 
 **Faiz döngüsü seviye değil değişim gösterir** (`src/lib/rate-cycle.ts`,
 `/kararlar` başı). TCMB'nin %37'si seviye grafiğinde diğer beş bankayı düz

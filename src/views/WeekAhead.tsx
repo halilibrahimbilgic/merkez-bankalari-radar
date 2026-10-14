@@ -7,13 +7,16 @@ import { getDecisionView } from "@/lib/data/decisions";
 import { getEvents } from "@/lib/data/events";
 import { getExpectations } from "@/lib/data/expectations";
 import { getAllMeetings } from "@/lib/data/meetings";
+import { getInflation } from "@/lib/data/inflation";
 import { getCurrentRates } from "@/lib/data/rates";
+import { cpiReferenceMonth } from "@/lib/cpi-release";
 import { decisionSentence, isPendingDecision, pendingNote } from "@/lib/decision-format";
 import type { Expectations } from "@/lib/expectations";
 import { fmtBp, fmtPercent, L, localePath, type Lang } from "@/lib/i18n";
 import { moveOdds } from "@/lib/implied-path";
+import type { InflationReading } from "@/lib/sources/inflation";
 import type { CalendarEvent, EventKind } from "@/lib/sources/speaking-calendars";
-import { countdownLabel, daysUntil, formatDate, formatTimeTrt, formatWeekday, trtDayKey } from "@/lib/time";
+import { countdownLabel, daysUntil, formatDate, formatTimeTrt, formatWeekday, monthLabel, trtDayKey } from "@/lib/time";
 import type { Meeting } from "@/lib/types";
 
 /**
@@ -48,11 +51,12 @@ function groupByDay(items: Item[]): [string, Item[]][] {
 
 export async function WeekAhead({ lang, now }: { lang: Lang; now: Date }) {
   const t = L(lang);
-  const [meetings, events, expectations, rates] = await Promise.all([
+  const [meetings, events, expectations, rates, inflation] = await Promise.all([
     getAllMeetings(),
     getEvents(),
     getExpectations(),
     getCurrentRates(),
+    getInflation(),
   ]);
   const today = trtDayKey(now.toISOString());
   const inWeek = (iso: string) => {
@@ -125,6 +129,7 @@ export async function WeekAhead({ lang, now }: { lang: Lang; now: Date }) {
               lang={lang}
               expectations={expectations}
               rates={rates}
+              inflation={inflation}
             />
             {hidden > 0 && (
               <details className="group mt-4 border-t border-border pt-3">
@@ -132,7 +137,14 @@ export async function WeekAhead({ lang, now }: { lang: Lang; now: Date }) {
                   {t(`Programın tamamı (${weekEvents.length} etkinlik)`, `Full schedule (${weekEvents.length} events)`)}
                 </summary>
                 <div className="mt-3">
-                  <DayList days={groupByDay(all)} now={now} lang={lang} expectations={expectations} rates={rates} />
+                  <DayList
+                    days={groupByDay(all)}
+                    now={now}
+                    lang={lang}
+                    expectations={expectations}
+                    rates={rates}
+                    inflation={inflation}
+                  />
                 </div>
               </details>
             )}
@@ -156,12 +168,14 @@ function DayList({
   lang,
   expectations,
   rates,
+  inflation,
 }: {
   days: [string, Item[]][];
   now: Date;
   lang: Lang;
   expectations: Expectations;
   rates: { bankCode: Meeting["bankCode"]; rate: number }[];
+  inflation: InflationReading[];
 }) {
   return (
     <ol className="space-y-4">
@@ -184,6 +198,7 @@ function DayList({
                   key={it.event.id}
                   event={it.event}
                   past={!it.event.timeTbd && new Date(it.event.at) <= now}
+                  reading={inflation.find((r) => r.bankCode === it.event.bankCode)}
                   lang={lang}
                 />
               ),
@@ -322,7 +337,18 @@ const ROLE_TR: Record<string, string> = {
   President: "Başkan",
 };
 
-function EventItem({ event, past, lang }: { event: CalendarEvent; past: boolean; lang: Lang }) {
+function EventItem({
+  event,
+  past,
+  reading,
+  lang,
+}: {
+  event: CalendarEvent;
+  past: boolean;
+  /** O ekonominin son TÜFE okuması (yalnızca veri açıklamalarında kullanılır). */
+  reading?: InflationReading;
+  lang: Lang;
+}) {
   const t = L(lang);
   // Geçmiş etkinlik soluklaştırılmaz (gri metnin kontrastı düşerdi): saatin
   // altında "geçti" yazar, metin gri tona iner.
@@ -343,6 +369,7 @@ function EventItem({ event, past, lang }: { event: CalendarEvent; past: boolean;
             {t(`${bank.countryTr} enflasyonu (TÜFE)`, `${bank.countryEn} inflation (CPI)`)}
           </span>
           {event.period && lang === "tr" && <span className="text-muted"> · {event.period}</span>}
+          {reading && <CpiReading reading={reading} releasedAt={event.at} past={past} lang={lang} />}
         </div>
       </li>
     );
@@ -366,5 +393,34 @@ function EventItem({ event, past, lang }: { event: CalendarEvent; past: boolean;
         )}
       </div>
     </li>
+  );
+}
+
+/**
+ * Açıklanmadan önce bir önceki ayın rakamı, açıklanıp veri gelince yenisi.
+ * Haber işi açıklamadan sonra yarım saatte bir bakar (fetch:inflation
+ * --if-due). Beklenti (konsensüs) lisanslı veri; gösterilmez.
+ */
+function CpiReading({
+  reading,
+  releasedAt,
+  past,
+  lang,
+}: {
+  reading: InflationReading;
+  releasedAt: string;
+  past: boolean;
+  lang: Lang;
+}) {
+  const t = L(lang);
+  const released = past && reading.period >= cpiReferenceMonth(releasedAt);
+  const value = fmtPercent(reading.yoy, lang, 1);
+  const month = monthLabel(`${reading.period}-15T12:00:00Z`, lang);
+  return (
+    <p className={`mt-0.5 text-xs ${released ? "font-medium text-foreground" : "text-muted"}`}>
+      {released
+        ? t(`Açıklandı: yıllık ${value} (${month})`, `Released: ${value} y/y (${month})`)
+        : t(`Önceki: yıllık ${value} (${month})`, `Previous: ${value} y/y (${month})`)}
+    </p>
   );
 }

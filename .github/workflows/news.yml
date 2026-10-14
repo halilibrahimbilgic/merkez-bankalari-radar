@@ -4,9 +4,10 @@ name: Haberler
 # ile Türkçe/İngilizce özetler, önemlileri Telegram'a yollar. Ayrıntı:
 # src/lib/news.ts. Aynı işte karar metinleri de alınır: karar günü sitede
 # karar ~30 dakika içinde görünür (src/lib/statements.ts). Fed olasılıkları
-# da burada tazelenir: Atlanta Fed dosyası değiştiyse indirilir. Dakika 7 ve 37:
-# GitHub tam saatlerde cron'u geciktiriyor; asıl tetikleyici cron-job.org
-# (ARCHITECTURE.md §4) — iş dosyasının adı (news.yml) o yüzden değişmemeli.
+# (dosya değiştiyse) ve yeni açıklanan TÜFE de burada tazelenir. Dakika 7
+# ve 37: GitHub tam saatlerde cron'u geciktiriyor; asıl tetikleyici
+# cron-job.org (ARCHITECTURE.md §4) — iş dosyasının adı (news.yml) o yüzden
+# değişmemeli.
 on:
   schedule:
     - cron: "7,37 * * * *"
@@ -123,12 +124,22 @@ jobs:
         if: ${{ !cancelled() }}
         continue-on-error: true
         run: npm run fetch:probabilities -- --if-changed
+      # Enflasyon: TÜFE'si son 12 saatte açıklanmış ve kaydı eski kalmış
+      # ekonominin kaynağına bakılır (fetch:inflation --if-due); yoksa adım
+      # hiçbir yere gitmez. Rakam ertesi sabahı beklemeden sitede olur.
+      - name: Açıklanan enflasyon (varsa)
+        if: ${{ !cancelled() }}
+        continue-on-error: true
+        env:
+          FRED_API_KEY: ${{ secrets.FRED_API_KEY }}
+          EVDS_API_KEY: ${{ secrets.EVDS_API_KEY }}
+        run: npm run fetch:inflation -- --if-due
       - name: Değişiklik varsa commit'le
         if: ${{ !cancelled() }}
         run: |
           # Karar metinleri her koşuda statements.json'un fetchedAt'ini yeniler;
           # yalnızca damga değiştiyse commit yok.
-          PATHS="data/news data/telegram data/statements data/seed/statements.json data/seed/meetings.json data/seed/probabilities.json data/history/expectations.json"
+          PATHS="data/news data/telegram data/statements data/seed/statements.json data/seed/meetings.json data/seed/probabilities.json data/history/expectations.json data/seed/inflation.json"
           if git diff --quiet -I '"fetchedAt"' -- $PATHS \
              && [[ -z "$(git ls-files --others --exclude-standard $PATHS)" ]]; then
             echo "Yeni haber ya da karar yok."
