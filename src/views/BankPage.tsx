@@ -45,29 +45,37 @@ export async function bankMetadata(lang: Lang, code: string): Promise<Metadata> 
   const name = bankName(bank, lang);
 
   // Başlık, insanların gerçekten aradığı soruyla başlar ("TCMB faiz kararı ne
-  // zaman") ve cevabı içerir; tarih ve faiz günlük veriyle güncellenir.
+  // zaman, saat kaçta") ve cevabı içerir; tarih ve faiz günlük veriyle
+  // güncellenir. Saati duyurulmayan kararda (BoJ) saat sorulmaz.
   const [next] = await getUpcomingMeetings({ bankCode: bank.code });
   const rate = await getCurrentRate(bank.code);
-  const when = next
-    ? next.timeTbd
-      ? formatDate(next.meetingAt, lang)
-      : `${formatDate(next.meetingAt, lang)}, ${formatTimeTrt(next.meetingAt)} TRT`
-    : undefined;
+  const date = next && formatDate(next.meetingAt, lang);
+  const time = next && !next.timeTbd ? formatTimeTrt(next.meetingAt) : undefined;
 
   return {
-    title: next
-      ? t(
-          `${name} faiz kararı ne zaman? Sıradaki: ${formatDate(next.meetingAt, lang)}`,
-          `When is the next ${name} rate decision? ${formatDate(next.meetingAt, lang)}`,
-        )
-      : t(`${name} faiz kararları`, `${name} rate decisions`),
+    title: !next
+      ? t(`${name} faiz kararları`, `${name} rate decisions`)
+      : time
+        ? t(
+            `${name} faiz kararı ne zaman, saat kaçta? ${date}, ${time}`,
+            `When is the next ${name} rate decision? ${date}, ${time} Turkey time`,
+          )
+        : t(`${name} faiz kararı ne zaman? ${date}`, `When is the next ${name} rate decision? ${date}`),
+    // Önce cevap; faiz adı ayraçla — "Fed Fed Funds", "BoJ Kısa vadeli…" gibi
+    // ad tekrarı ve cümle ortasında büyük harf olmasın.
     description: [
+      next &&
+        (time
+          ? t(`Sıradaki karar ${date}, Türkiye saatiyle ${time}.`, `Next decision: ${date}, ${time} Turkey time.`)
+          : t(
+              `Sıradaki karar ${date}; açıklama saati önceden duyurulmuyor.`,
+              `Next decision: ${date}; the announcement time is not published in advance.`,
+            )),
       rate &&
         t(
-          `${name} ${bank.rateNameTr}: ${formatCurrentRate(rate, lang)} (${formatDate(rate.asOf, lang)} itibarıyla).`,
-          `${name} ${bank.rateNameEn}: ${formatCurrentRate(rate, lang)} (since ${formatDate(rate.asOf, lang)}).`,
+          `Güncel faiz: ${formatCurrentRate(rate, lang)} · ${bank.rateNameTr} · ${formatDate(rate.asOf, lang)} itibarıyla.`,
+          `Current rate: ${formatCurrentRate(rate, lang)} · ${bank.rateNameEn} · since ${formatDate(rate.asOf, lang)}.`,
         ),
-      when && t(`Sıradaki karar ${when}.`, `Next decision: ${when}.`),
       t(
         "Geçmiş kararlar ve Türkiye saatiyle toplantı takvimi.",
         "Past decisions and the meeting calendar in Turkey time.",
