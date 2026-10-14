@@ -3,7 +3,8 @@ name: Haberler
 # Yarım saatte bir: resmî açıklama ve haber akışlarını okur, yenileri Claude
 # ile Türkçe/İngilizce özetler, önemlileri Telegram'a yollar. Ayrıntı:
 # src/lib/news.ts. Aynı işte karar metinleri de alınır: karar günü sitede
-# karar ~30 dakika içinde görünür (src/lib/statements.ts). Dakika 7 ve 37:
+# karar ~30 dakika içinde görünür (src/lib/statements.ts). Fed olasılıkları
+# da burada tazelenir: Atlanta Fed dosyası değiştiyse indirilir. Dakika 7 ve 37:
 # GitHub tam saatlerde cron'u geciktiriyor; asıl tetikleyici cron-job.org
 # (ARCHITECTURE.md §4) — iş dosyasının adı (news.yml) o yüzden değişmemeli.
 on:
@@ -114,12 +115,20 @@ jobs:
           TELEGRAM_CHAT_ID: ${{ vars.TELEGRAM_CHAT_ID }}
           NEXT_PUBLIC_SITE_URL: https://www.faizradar.com
         run: npm run telegram:post -- --news
+      # Atlanta Fed ABD sabahı yayımlıyor, günlük iş bizim sabahımızda koşuyor:
+      # site bir tur geriden geliyordu. Her koşuda yalnızca dosyanın tarihine
+      # bakılır (HEAD); değiştiyse indirilir. Kırılırsa haber işi düşmesin —
+      # günlük iş aynı adımı koşulsuz çalıştırıp kırmızı biter.
+      - name: Fed olasılıkları (dosya değiştiyse)
+        if: ${{ !cancelled() }}
+        continue-on-error: true
+        run: npm run fetch:probabilities -- --if-changed
       - name: Değişiklik varsa commit'le
         if: ${{ !cancelled() }}
         run: |
           # Karar metinleri her koşuda statements.json'un fetchedAt'ini yeniler;
           # yalnızca damga değiştiyse commit yok.
-          PATHS="data/news data/telegram data/statements data/seed/statements.json data/seed/meetings.json"
+          PATHS="data/news data/telegram data/statements data/seed/statements.json data/seed/meetings.json data/seed/probabilities.json data/history/expectations.json"
           if git diff --quiet -I '"fetchedAt"' -- $PATHS \
              && [[ -z "$(git ls-files --others --exclude-standard $PATHS)" ]]; then
             echo "Yeni haber ya da karar yok."

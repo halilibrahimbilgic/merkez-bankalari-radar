@@ -103,6 +103,19 @@ export async function resolveMptUrl(): Promise<string> {
   return MPT_URL;
 }
 
+/**
+ * Dosyanın yayım zamanı (Last-Modified): indirmeden "değişti mi?" sorusu
+ * için. Atlanta Fed veriyi bir iş günü gecikmeyle ABD sabahı yayımlıyor
+ * (9 Ekim 2026 verisi 13 Ekim 13:55 UTC'de); 3 MB'lık sayfayı ve 6,7 MB'lık
+ * dosyayı yarım saatte bir indirmek yerine HEAD yeter.
+ */
+export async function fetchMptLastModified(url = MPT_URL): Promise<string | undefined> {
+  const res = await fetch(url, { method: "HEAD", headers: { "user-agent": UA }, signal: AbortSignal.timeout(30_000) });
+  // Taşınan dosyanın eski adresi 200 + HTML döndürüyordu: yalnızca xlsx'in tarihine güvenilir.
+  if (!res.ok || !res.headers.get("content-type")?.includes("spreadsheetml")) return undefined;
+  return res.headers.get("last-modified") ?? undefined;
+}
+
 export async function fetchMptWorkbook(): Promise<Uint8Array> {
   const url = await resolveMptUrl();
   const res = await fetch(url, {

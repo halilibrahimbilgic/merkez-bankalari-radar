@@ -250,6 +250,15 @@ token cron-job.org'da durur, repoda değil.
 > Actions geçmişinde `workflow_dispatch` olarak görünüyorsa dış tetikleme
 > çalışıyordur, yalnızca `schedule` görünüyorsa durmuştur.
 
+**Fed olasılıkları yarım saatte bir, yalnızca dosya değiştiyse tazelenir.**
+Atlanta Fed MPT'yi bir iş günü gecikmeyle ABD sabahı yayımlıyor (9 Ekim 2026
+verisi 13 Ekim 13:55 UTC'de); günlük iş bizim sabahımızda koştuğu için site
+bir tur geriden geliyordu (14 Ekim'de 5 gün). Haber işi her koşuda dosyanın
+`Last-Modified`'ına HEAD ile bakar (`fetch:probabilities -- --if-changed`)
+ve değiştiyse indirir; tarih `probabilities.json`'da `sourceModified` olarak
+durur. Tarihe yalnızca içerik türü xlsx ise güvenilir — taşınan dosyanın eski
+adresi 200 + HTML döndürmüştü. Günlük iş aynı adımı koşulsuz çalıştırır.
+
 **Paylaşım görselleri koddan üretilir** (`opengraph-image.tsx`: kök, banka,
 konuşma; ortak kart `src/lib/og.tsx`). Derlemede statik üretilip saatlik
 yenilenir, böylece faiz ve tarih güncel kalır. Yazı tipi next/og'un gömülü
