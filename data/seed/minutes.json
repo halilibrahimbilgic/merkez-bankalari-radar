@@ -1,0 +1,299 @@
+{
+  "fetchedAt": "2026-10-14T22:32:49.204Z",
+  "minutes": [
+    {
+      "meetingId": "boe-2026-02-05",
+      "bankCode": "boe",
+      "urls": {
+        "en": "https://www.bankofengland.co.uk/monetary-policy-summary-and-minutes/2026/february-2026"
+      },
+      "fetchedAt": "2026-10-14T22:32:17.754Z"
+    },
+    {
+      "meetingId": "boe-2026-03-19",
+      "bankCode": "boe",
+      "urls": {
+        "en": "https://www.bankofengland.co.uk/monetary-policy-summary-and-minutes/2026/march-2026"
+      },
+      "fetchedAt": "2026-10-14T22:32:27.405Z"
+    },
+    {
+      "meetingId": "boe-2026-04-30",
+      "bankCode": "boe",
+      "urls": {
+        "en": "https://www.bankofengland.co.uk/monetary-policy-summary-and-minutes/2026/april-2026"
+      },
+      "fetchedAt": "2026-10-14T22:32:35.247Z"
+    },
+    {
+      "meetingId": "boe-2026-06-18",
+      "bankCode": "boe",
+      "urls": {
+        "en": "https://www.bankofengland.co.uk/monetary-policy-summary-and-minutes/2026/june-2026"
+      },
+      "fetchedAt": "2026-10-14T22:32:40.347Z"
+    },
+    {
+      "meetingId": "boe-2026-07-30",
+      "bankCode": "boe",
+      "urls": {
+        "en": "https://www.bankofengland.co.uk/monetary-policy-summary-and-minutes/2026/july-2026"
+      },
+      "fetchedAt": "2026-10-14T22:32:41.808Z"
+    },
+    {
+      "meetingId": "boe-2026-09-17",
+      "bankCode": "boe",
+      "urls": {
+        "en": "https://www.bankofengland.co.uk/monetary-policy-summary-and-minutes/2026/september-2026"
+      },
+      "fetchedAt": "2026-10-14T22:32:47.132Z"
+    },
+    {
+      "meetingId": "boj-2026-01-23",
+      "bankCode": "boj",
+      "urls": {
+        "en": "https://www.boj.or.jp/en/mopo/mpmsche_minu/opinion_2026/opi260123.htm"
+      },
+      "fetchedAt": "2026-10-14T22:32:13.686Z"
+    },
+    {
+      "meetingId": "boj-2026-03-19",
+      "bankCode": "boj",
+      "urls": {
+        "en": "https://www.boj.or.jp/en/mopo/mpmsche_minu/opinion_2026/opi260319.pdf"
+      },
+      "fetchedAt": "2026-10-14T22:32:24.473Z"
+    },
+    {
+      "meetingId": "boj-2026-04-28",
+      "bankCode": "boj",
+      "urls": {
+        "en": "https://www.boj.or.jp/en/mopo/mpmsche_minu/opinion_2026/opi260428.pdf"
+      },
+      "fetchedAt": "2026-10-14T22:32:34.406Z"
+    },
+    {
+      "meetingId": "boj-2026-06-16",
+      "bankCode": "boj",
+      "urls": {
+        "en": "https://www.boj.or.jp/en/mopo/mpmsche_minu/opinion_2026/opi260616.pdf"
+      },
+      "fetchedAt": "2026-10-14T22:32:38.149Z"
+    },
+    {
+      "meetingId": "boj-2026-07-31",
+      "bankCode": "boj",
+      "urls": {
+        "en": "https://www.boj.or.jp/en/mopo/mpmsche_minu/opinion_2026/opi260731.pdf"
+      },
+      "fetchedAt": "2026-10-14T22:32:43.813Z"
+    },
+    {
+      "meetingId": "boj-2026-09-18",
+      "bankCode": "boj",
+      "urls": {
+        "en": "https://www.boj.or.jp/en/mopo/mpmsche_minu/opinion_2026/opi260918.pdf"
+      },
+      "fetchedAt": "2026-10-14T22:32:48.679Z"
+    },
+    {
+      "meetingId": "ecb-2026-02-05",
+      "bankCode": "ecb",
+      "urls": {
+        "en": "https://www.ecb.europa.eu/press/accounts/2026/html/ecb.mg260305~4a9b7afe1c.en.html"
+      },
+      "fetchedAt": "2026-10-14T22:32:19.356Z"
+    },
+    {
+      "meetingId": "ecb-2026-03-19",
+      "bankCode": "ecb",
+      "urls": {
+        "en": "https://www.ecb.europa.eu/press/accounts/2026/html/ecb.mg260416~6a27b0c258.en.html"
+      },
+      "fetchedAt": "2026-10-14T22:32:32.965Z"
+    },
+    {
+      "meetingId": "ecb-2026-04-30",
+      "bankCode": "ecb",
+      "urls": {
+        "en": "https://www.ecb.europa.eu/press/accounts/2026/html/ecb.mg260528~a93230dc4b.en.html"
+      },
+      "fetchedAt": "2026-10-14T22:32:35.890Z"
+    },
+    {
+      "meetingId": "ecb-2026-06-11",
+      "bankCode": "ecb",
+      "urls": {
+        "en": "https://www.ecb.europa.eu/press/accounts/2026/html/ecb.mg260709~0e7f8241c9.en.html"
+      },
+      "fetchedAt": "2026-10-14T22:32:37.615Z"
+    },
+    {
+      "meetingId": "ecb-2026-07-23",
+      "bankCode": "ecb",
+      "urls": {
+        "en": "https://www.ecb.europa.eu/press/accounts/2026/html/ecb.mg260827~f06c21fd54.en.html"
+      },
+      "fetchedAt": "2026-10-14T22:32:40.981Z"
+    },
+    {
+      "meetingId": "ecb-2026-09-10",
+      "bankCode": "ecb",
+      "urls": {
+        "en": "https://www.ecb.europa.eu/press/accounts/2026/html/ecb.mg261008~a10153d090.en.html"
+      },
+      "fetchedAt": "2026-10-14T22:32:45.689Z"
+    },
+    {
+      "meetingId": "fed-2026-01-28",
+      "bankCode": "fed",
+      "urls": {
+        "en": "https://www.federalreserve.gov/monetarypolicy/fomcminutes20260128.htm"
+      },
+      "fetchedAt": "2026-10-14T22:32:14.590Z"
+    },
+    {
+      "meetingId": "fed-2026-03-18",
+      "bankCode": "fed",
+      "urls": {
+        "en": "https://www.federalreserve.gov/monetarypolicy/fomcminutes20260318.htm"
+      },
+      "fetchedAt": "2026-10-14T22:32:22.017Z"
+    },
+    {
+      "meetingId": "fed-2026-04-29",
+      "bankCode": "fed",
+      "urls": {
+        "en": "https://www.federalreserve.gov/monetarypolicy/fomcminutes20260429.htm"
+      },
+      "fetchedAt": "2026-10-14T22:32:34.699Z"
+    },
+    {
+      "meetingId": "fed-2026-06-17",
+      "bankCode": "fed",
+      "urls": {
+        "en": "https://www.federalreserve.gov/monetarypolicy/fomcminutes20260617.htm"
+      },
+      "fetchedAt": "2026-10-14T22:32:39.603Z"
+    },
+    {
+      "meetingId": "fed-2026-07-29",
+      "bankCode": "fed",
+      "urls": {
+        "en": "https://www.federalreserve.gov/monetarypolicy/fomcminutes20260729.htm"
+      },
+      "fetchedAt": "2026-10-14T22:32:41.292Z"
+    },
+    {
+      "meetingId": "fed-2026-09-16",
+      "bankCode": "fed",
+      "urls": {
+        "en": "https://www.federalreserve.gov/monetarypolicy/fomcminutes20260916.htm"
+      },
+      "fetchedAt": "2026-10-14T22:32:45.977Z"
+    },
+    {
+      "meetingId": "rba-2026-02-03",
+      "bankCode": "rba",
+      "urls": {
+        "en": "https://www.rba.gov.au/monetary-policy/rba-board-minutes/2026/2026-02-03.html"
+      },
+      "fetchedAt": "2026-10-14T22:32:16.701Z"
+    },
+    {
+      "meetingId": "rba-2026-03-17",
+      "bankCode": "rba",
+      "urls": {
+        "en": "https://www.rba.gov.au/monetary-policy/rba-board-minutes/2026/2026-03-17.html"
+      },
+      "fetchedAt": "2026-10-14T22:32:21.677Z"
+    },
+    {
+      "meetingId": "rba-2026-05-05",
+      "bankCode": "rba",
+      "urls": {
+        "en": "https://www.rba.gov.au/monetary-policy/rba-board-minutes/2026/2026-05-05.html"
+      },
+      "fetchedAt": "2026-10-14T22:32:36.946Z"
+    },
+    {
+      "meetingId": "rba-2026-06-16",
+      "bankCode": "rba",
+      "urls": {
+        "en": "https://www.rba.gov.au/monetary-policy/rba-board-minutes/2026/2026-06-16.html"
+      },
+      "fetchedAt": "2026-10-14T22:32:38.889Z"
+    },
+    {
+      "meetingId": "rba-2026-08-11",
+      "bankCode": "rba",
+      "urls": {
+        "en": "https://www.rba.gov.au/monetary-policy/rba-board-minutes/2026/2026-08-11.html"
+      },
+      "fetchedAt": "2026-10-14T22:32:44.879Z"
+    },
+    {
+      "meetingId": "rba-2026-09-29",
+      "bankCode": "rba",
+      "urls": {
+        "en": "https://www.rba.gov.au/monetary-policy/rba-board-minutes/2026/2026-09-29.html"
+      },
+      "fetchedAt": "2026-10-14T22:32:49.202Z"
+    },
+    {
+      "meetingId": "tcmb-2026-01-22",
+      "bankCode": "tcmb",
+      "urls": {
+        "tr": "https://www.tcmb.gov.tr/wps/wcm/connect/TR/TCMB+TR/Main+Menu/Duyurular/Basin/2026/DUY2026-05",
+        "en": "https://www.tcmb.gov.tr/wps/wcm/connect/EN/TCMB+EN/Main+Menu/Announcements/Press+Releases/2026/ANO2026-05"
+      },
+      "fetchedAt": "2026-10-14T22:32:11.438Z"
+    },
+    {
+      "meetingId": "tcmb-2026-03-12",
+      "bankCode": "tcmb",
+      "urls": {
+        "tr": "https://www.tcmb.gov.tr/wps/wcm/connect/TR/TCMB+TR/Main+Menu/Duyurular/Basin/2026/DUY2026-14",
+        "en": "https://www.tcmb.gov.tr/wps/wcm/connect/EN/TCMB+EN/Main+Menu/Announcements/Press+Releases/2026/ANO2026-14"
+      },
+      "fetchedAt": "2026-10-14T22:32:20.554Z"
+    },
+    {
+      "meetingId": "tcmb-2026-04-22",
+      "bankCode": "tcmb",
+      "urls": {
+        "tr": "https://www.tcmb.gov.tr/wps/wcm/connect/TR/TCMB+TR/Main+Menu/Duyurular/Basin/2026/DUY2026-19",
+        "en": "https://www.tcmb.gov.tr/wps/wcm/connect/EN/TCMB+EN/Main+Menu/Announcements/Press+Releases/2026/ANO2026-19"
+      },
+      "fetchedAt": "2026-10-14T22:32:33.216Z"
+    },
+    {
+      "meetingId": "tcmb-2026-06-11",
+      "bankCode": "tcmb",
+      "urls": {
+        "tr": "https://www.tcmb.gov.tr/wps/wcm/connect/TR/TCMB+TR/Main+Menu/Duyurular/Basin/2026/DUY2026-24",
+        "en": "https://www.tcmb.gov.tr/wps/wcm/connect/EN/TCMB+EN/Main+Menu/Announcements/Press+Releases/2026/ANO2026-24"
+      },
+      "fetchedAt": "2026-10-14T22:32:37.024Z"
+    },
+    {
+      "meetingId": "tcmb-2026-07-23",
+      "bankCode": "tcmb",
+      "urls": {
+        "tr": "https://www.tcmb.gov.tr/wps/wcm/connect/TR/TCMB+TR/Main+Menu/Duyurular/Basin/2026/DUY2026-32",
+        "en": "https://www.tcmb.gov.tr/wps/wcm/connect/EN/TCMB+EN/Main+Menu/Announcements/Press+Releases/2026/ANO2026-32"
+      },
+      "fetchedAt": "2026-10-14T22:32:40.516Z"
+    },
+    {
+      "meetingId": "tcmb-2026-09-10",
+      "bankCode": "tcmb",
+      "urls": {
+        "tr": "https://www.tcmb.gov.tr/wps/wcm/connect/TR/TCMB+TR/Main+Menu/Duyurular/Basin/2026/DUY2026-42",
+        "en": "https://www.tcmb.gov.tr/wps/wcm/connect/EN/TCMB+EN/Main+Menu/Announcements/Press+Releases/2026/ANO2026-42"
+      },
+      "fetchedAt": "2026-10-14T22:32:45.115Z"
+    }
+  ]
+}

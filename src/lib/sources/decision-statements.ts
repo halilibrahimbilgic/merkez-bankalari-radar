@@ -61,7 +61,7 @@ export function localDay(iso: string, timeZone: string): string {
 }
 
 /** 404 → null (henüz yayımlanmadı); diğer hatalar yukarı. */
-async function fetchOptional(url: string): Promise<string | null> {
+export async function fetchOptional(url: string): Promise<string | null> {
   try {
     return await fetchText(url);
   } catch (err) {
@@ -158,7 +158,7 @@ async function fetchEcb(day: string): Promise<FetchedStatement | null> {
 
 // ── TCMB ─────────────────────────────────────────────────────────────────
 
-const TCMB_LIST = {
+export const TCMB_LIST = {
   tr: (y: string) => `https://www.tcmb.gov.tr/wps/wcm/connect/TR/TCMB+TR/Main+Menu/Duyurular/Basin/${y}`,
   en: (y: string) => `https://www.tcmb.gov.tr/wps/wcm/connect/EN/TCMB+EN/Main+Menu/Announcements/Press+Releases/${y}`,
 };
@@ -232,14 +232,19 @@ export function parseBoeSummary(html: string): { text: string; rate?: number } {
   return { text, rate: r ? Number(r[1]) : undefined };
 }
 
-const EN_MONTH_NAMES = [
+export const EN_MONTH_NAMES = [
   "january", "february", "march", "april", "may", "june",
   "july", "august", "september", "october", "november", "december",
 ];
 
-async function fetchBoe(day: string): Promise<FetchedStatement | null> {
+/** Karar özeti ve tutanak aynı sayfada (ayın kararı başına bir sayfa). */
+export function boeSummaryUrl(day: string): string {
   const [y, m] = day.split("-");
-  const url = `https://www.bankofengland.co.uk/monetary-policy-summary-and-minutes/${y}/${EN_MONTH_NAMES[Number(m) - 1]}-${y}`;
+  return `https://www.bankofengland.co.uk/monetary-policy-summary-and-minutes/${y}/${EN_MONTH_NAMES[Number(m) - 1]}-${y}`;
+}
+
+async function fetchBoe(day: string): Promise<FetchedStatement | null> {
+  const url = boeSummaryUrl(day);
   const html = await fetchOptional(url);
   if (!html) return null;
   const { text, rate } = parseBoeSummary(html);
@@ -270,7 +275,7 @@ async function fetchBoj(day: string): Promise<FetchedStatement | null> {
   };
 }
 
-async function pdfText(url: string): Promise<string> {
+export async function pdfText(url: string): Promise<string> {
   const res = await fetch(url, { headers: { "user-agent": UA }, signal: AbortSignal.timeout(60_000) });
   if (!res.ok) throw new Error(`${url} → HTTP ${res.status}`);
   const { extractText, getDocumentProxy } = await import("unpdf");
@@ -284,6 +289,7 @@ async function pdfText(url: string): Promise<string> {
 
 /** RBA bazı tırnakları Windows-1252 kod numarasıyla yazıyor (&#146; = ’). */
 const CP1252: Record<number, string> = { 133: "…", 145: "‘", 146: "’", 147: "“", 148: "”", 150: "–", 151: "—" };
+export const decodeCp1252Refs = (html: string) => html.replace(/&#(1[2-5]\d);/g, (m, d) => CP1252[Number(d)] ?? m);
 
 const RBA_DECISION =
   /the Board decided to (?:leave|keep|maintain|hold|increase|raise|lower|reduce|cut) the cash rate(?: target)?(?: unchanged)?(?: by \d+\s*basis points)?(?: (?:at|to) ([\d.]+)\s*per\s*cent)/i;
@@ -302,9 +308,7 @@ export function findRbaRelease(listHtml: string, day: string): string | undefine
 export function parseRbaStatement(html: string): { text: string; rate?: number } {
   const start = html.indexOf('<div class="rss-mr-content"');
   if (start === -1) throw new Error("RBA: duyuru gövdesi bulunamadı — sayfa biçimi değişmiş olabilir");
-  const body = html
-    .slice(start, html.indexOf("</div>", start))
-    .replace(/&#(1[2-5]\d);/g, (m, d) => CP1252[Number(d)] ?? m);
+  const body = decodeCp1252Refs(html.slice(start, html.indexOf("</div>", start)));
   const text = blocksToText(body).join("\n\n");
   const r = text.match(RBA_DECISION);
   return { text, rate: r ? Number(r[1]) : undefined };

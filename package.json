@@ -25,6 +25,8 @@
     "fetch:inflation": "tsx scripts/fetch-inflation.ts",
     "statements:fetch": "tsx scripts/fetch-statements.ts",
     "statements:import": "tsx scripts/statements-import.ts",
+    "minutes:fetch": "tsx scripts/fetch-minutes.ts",
+    "minutes:import": "tsx scripts/minutes-import.ts",
     "fetch:events": "tsx scripts/fetch-events.ts"
   },
   "dependencies": {

@@ -17,7 +17,7 @@ takip eden bir site. Üç modül:
 | B — Faiz olasılığı | Fed: piyasa dağılımı (Atlanta Fed MPT); BoE: OIS eğrisinden toplantı bazında beklenti; ECB: analist anketi (SMA); TCMB: Piyasa Katılımcıları Anketi | ✅ tam otomatik |
 | D — Haberler | Resmî açıklamalar + önemli kişilerin sözlerini aktaran haberler, Türkçe/İngilizce özet, önemliler Telegram'a | ✅ 30 dk'da bir (news.yml) |
 | C — Şahin/güvercin | Merkez bankacısı konuşmaları + Türkçe özet ve skor; karar metinlerinin aynı ölçekte puanı; konuşmacı sayfaları, aylık seyir | ✅ metin ve skor otomatik (Claude aboneliği; §5) |
-| E — Kararlar | Her karar, karardan önceki beklentiyle (sürpriz) ve bir önceki karar metniyle (fark + model özeti) karşılaştırılır; beklentinin seyri; sayfa başında son 12 ayın faiz döngüsü | ✅ karar metni 30 dk'da bir (news.yml), özet Claude; beklenti geçmişi günlük |
+| E — Kararlar | Her karar, karardan önceki beklentiyle (sürpriz) ve bir önceki karar metniyle (fark + model özeti) karşılaştırılır; toplantı tutanağının özeti ve puanı; beklentinin seyri; sayfa başında son 12 ayın faiz döngüsü | ✅ karar metni ve tutanak 30 dk'da bir (news.yml), özet Claude; beklenti geçmişi günlük |
 | F — Reel faiz | Politika faizi − son yıllık TÜFE, altı ekonomi; TCMB için 12 ay sonrası enflasyon beklentisiyle ileriye dönük | ✅ günlük |
 | G — Rehber | Faiz kararlarını sade dille anlatan beş yazı | elle (içerik kodda, `src/lib/guides/`) |
 | H — Bu hafta | Ana sayfada önümüzdeki 7 günün kararları (beklentisiyle), Fed ve ECB yönetim kurullarının konuşma ve yayınları, TCMB'nin PPK özeti ve raporları, beş ekonominin enflasyon (TÜFE) açıklamaları | ✅ günlük (`fetch:events`) |
@@ -49,6 +49,7 @@ amaçlıdır (bkz. §6).
   TÜFE takvimleri: FRED · TÜİK · ONS · stat.go.jp · ABS ──┘
   resmî karar metinleri ──► statements:fetch (news.yml) ─► statements.json + data/statements/
                             └► meetings.json (karar günü, seri gelmeden)
+  toplantı tutanakları ───► minutes:fetch (news.yml) ──► minutes.json (metin .cache'te)
   bis.org (RSS + HTML) ───► fetch:speeches ───────► speeches.json
                                                       ▲
   Claude Code (abonelik) ─► score:export/import ──────┘ (§5)
@@ -177,6 +178,21 @@ güvercin ama hâlâ şahin. Eski sürümdeki özetler aynı kuyrukta yenilenir;
 `/skor`'da "karar metni" sütunu komitenin ortak sesini üyelerin konuşma
 ortalamasının yanına koyar (skorlu konuşması olmayan TCMB de böylece
 tabloya girer).
+
+**Tutanak kararın arkasındaki tartışmadır; yalnızca özeti gösterilir**
+(`src/lib/sources/minutes.ts`, `src/lib/minutes.ts`). Fed üç, ECB dört,
+RBA iki hafta, TCMB ve BoJ yaklaşık bir hafta sonra yayımlar; BoE
+tutanağı karar özetiyle aynı sayfadadır. Kaynağa ancak çıkma zamanı
+gelince gidilir (`MINUTES_LAG_DAYS`), liste sayfaları koşu başına bir kez
+okunur. Eşleştirme kaynağın kendi işaretiyle: Fed ve RBA adresi karar
+günüdür, ECB listesinde toplantının son günü, BoJ dosya adında karar günü;
+TCMB'de karardan sonraki ilk "Toplantı Özeti" alınır ve sayfadaki
+"Toplantı Tarihi" kararın günü değilse hata verilir. Metin sitede
+gösterilmez (lisans sorusu doğmaz), `.cache/minutes`'te model girdisidir;
+özet koşu başına iki (ECB tutanağı ~60 bin karakter), puan konuşma ve
+karar metinleriyle aynı ölçekte — karar sayfasında karar metninin
+puanının yanında. BoJ PDF'i tek akışa inip cümle sınırından yeniden
+bölünür: tek satırlık 13 bin karakteri okuma aracı kırpabilir.
 
 **`fetch:current-rates` da birleştirir.** Bir bankanın kaynağı hata verirse
 önceki kaydı korunur ve adım yine hata koduyla biter. İlk cron koşusunda ECB
@@ -524,6 +540,9 @@ aynı hesap: `src/views/bank-expectations.ts`).
 
 15 Ekim 2026: TCMB'nin fiilî fonlama maliyeti (AOFM) ve faiz koridoru
 (§4); TCMB sayfasında son 12 ayın grafiği, sözlükte iki yeni terim.
+Karar metinlerine konuşmalarla aynı ölçekte puan; altı bankanın 2026
+toplantılarının 36 tutanağı bulundu, özetleri haber işinde birikimi
+eritiyor.
 
 ---
 

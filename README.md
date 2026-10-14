@@ -30,6 +30,7 @@ npm run fetch:expectations   # BoE, ECB, TCMB beklentileri + beklenti geçmişi 
 npm run fetch:inflation      # altı ekonominin yıllık enflasyonu (reel faiz)
 npm run fetch:events         # Fed/ECB konuşma takvimi + TÜFE açıklama tarihleri ("Bu hafta")
 npm run statements:fetch     # karar metinleri; karar günü kararı metinden yazar (--all: arşiv)
+npm run minutes:fetch        # toplantı tutanakları; özet görevi .minutes/ (minutes:import işler)
 npm run fetch:speeches       # BIS konuşma arşivi (metinlerle birlikte)
 npm run score:export         # skorsuz konuşmaları .scoring/ altına hazırlar
 npm run score:import         # Claude Code çıktılarını doğrulayıp arşive yazar
@@ -183,6 +184,8 @@ npm run fetch:inflation      # enflasyon (reel faiz tablosu)
 npm run fetch:events         # konuşma ve yayın takvimi ("Bu hafta")
 npm run statements:fetch     # karar metinleri ve özet görevi (.statements/)
 npm run statements:import    # Claude Code özetlerini doğrula ve yaz
+npm run minutes:fetch        # toplantı tutanakları ve özet görevi (.minutes/)
+npm run minutes:import       # tutanak özetlerini doğrula ve yaz
 npx tsx scripts/backfill-expectations.ts  # beklenti geçmişini arşivlerden doldur (bir kez)
 npm run fetch:speeches   # BIS konuşma arşivi
 npm run score:export     # skorlanacakları .scoring/ altına hazırla (--limit N)

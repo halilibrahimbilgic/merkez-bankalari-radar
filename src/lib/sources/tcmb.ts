@@ -65,7 +65,7 @@ export function parseTcmbCalendar(html: string): ScrapedMeeting[] {
 }
 
 /** "22 Ocak 2026" → {year, month, day} */
-function parseTrDate(text: string): { year: number; month: number; day: number } | null {
+export function parseTrDate(text: string): { year: number; month: number; day: number } | null {
   const m = text.match(/(\d{1,2})\s+([A-Za-zÇĞİÖŞÜçğıöşü]+)\s+(\d{4})/);
   if (!m) return null;
   const month = TR_MONTHS[m[2].toLocaleLowerCase("tr-TR")];
