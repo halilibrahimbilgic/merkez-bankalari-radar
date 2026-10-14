@@ -1,5 +1,5 @@
 {
-  "fetchedAt": "2026-10-14T23:25:47.984Z",
+  "fetchedAt": "2026-10-14T23:32:30.504Z",
   "statements": [
     {
       "meetingId": "boe-2025-12-18",
@@ -142,28 +142,31 @@
       "rate": 3.75,
       "previousId": "boe-2026-04-30",
       "summary": {
-        "headlineTr": "BoE, Bank Rate'i %3,75'te sabit tuttu; artırım yönünde oy veren üye sayısı birden ikiye çıkarken metin enflasyonun %2,8'e gerilediğini ve enerji fiyatlarının düştüğünü kaydetti.",
-        "headlineEn": "The BoE held Bank Rate at 3.75%; the number of members voting for a hike rose from one to two, while the statement noted that inflation had fallen to 2.8% and energy prices had declined.",
+        "headlineTr": "BoE faizi %3,75'te sabit tuttu, ancak artırım yönünde oy veren üye sayısı birden ikiye çıktı (7–2).",
+        "headlineEn": "The BoE held Bank Rate at 3.75%, but the number of members voting for a hike rose from one to two (7–2).",
         "changesTr": [
-          "Karar 8–1 yerine 7–2 çoğunlukla alındı; iki üye faizin 0,25 puan artırılarak %4'e çıkarılmasını savundu.",
-          "TÜFE enflasyonunun %3,3'e yükseldiği ifadesi, %2,8'e gerilediği şeklinde değişti; ancak enerji fiyatlarının etkisiyle yıl içinde yeniden yükselmesi bekleniyor.",
-          "Küresel enerji fiyatlarının belirsizliği vurgusunun yerine, fiyatların önceki toplantıdan bu yana düştüğü ama çatışma öncesinin üzerinde ve oynak kaldığı tespiti geldi.",
-          "İkinci tur etkilerine karşı politikanın 'yaslanması gerekir' ifadesi koşul kipinden çıkarıldı ve bu riskin yüksek enerji fiyatları ne kadar uzun sürerse o kadar büyük olduğu eklendi.",
-          "Finansal koşulların sıkılaştığı ifadesi, hane halkı ve şirketlerin karşılaştığı faizlerin çatışma öncesinin üzerinde kaldığı ifadesiyle değiştirildi; Nisan raporundaki üç senaryoya atıf çıkarıldı."
+          "Oylama 8–1'den 7–2'ye döndü; iki üye faizin 0,25 puan artırılarak %4'e çıkarılmasını savundu.",
+          "TÜFE enflasyonunun %3,3'ten %2,8'e gerilediği belirtildi, ancak enerji fiyatlarının etkisiyle yıl içinde yeniden yükselmesinin beklendiği eklendi.",
+          "İkinci tur etkiler riskinin, enerji fiyatları ne kadar uzun süre yüksek kalırsa o kadar büyük olduğu ve politikanın buna karşı durması gerektiği daha kesin bir dille yazıldı.",
+          "Küresel enerji fiyatlarının son toplantıdan bu yana düştüğü ama çatışma öncesinin üzerinde ve oynak kaldığı belirtildi.",
+          "Sıkılaşan finansal koşullar yerine hane ve şirketlerin karşılaştığı faizlerin çatışma öncesinden yüksek kaldığı ve enflasyonu düşüreceği ifadesi kullanıldı; ekonomideki zayıflama işaretlerine de değinildi."
         ],
         "changesEn": [
-          "The decision was taken by a 7–2 majority instead of 8–1, with two members favouring a 0.25 percentage point increase to 4%.",
-          "The statement that CPI inflation had risen to 3.3% was replaced by one saying it has fallen to 2.8%, though it is expected to rise later this year as higher energy prices pass through.",
-          "The emphasis on highly uncertain energy price prospects was replaced by the observation that global energy prices have fallen since the previous meeting but remain above pre-conflict levels and volatile.",
-          "Policy now 'needs' rather than 'would need' to lean against second-round effects, and the text adds that this risk grows the longer higher energy prices persist.",
-          "The reference to tighter financial conditions was replaced by a note that rates faced by households and businesses remain higher than before the conflict, and the reference to the April report's three scenarios was dropped."
+          "The vote shifted from 8–1 to 7–2, with two members favouring a 0.25 percentage point increase to 4%.",
+          "CPI inflation was noted to have fallen from 3.3% to 2.8%, although it is expected to rise later this year as higher energy prices pass through.",
+          "The statement now says more firmly that policy needs to lean against second-round effects, a risk that grows the longer higher energy prices persist.",
+          "Global energy prices were said to have fallen since the previous meeting but to remain above pre-conflict levels and volatile.",
+          "Instead of tighter financial conditions, the statement cites household and business borrowing rates remaining above pre-conflict levels as a force reducing inflation, and mentions signs of a weakening economy."
         ],
         "tone": "mixed",
-        "toneReasonTr": "Artırım yönündeki ikinci muhalif oy ve ikinci tur etkilerine karşı politikanın 'yaslanması gerekir' ifadesi şahin yönde, enflasyonun %2,8'e gerilemesi ve enerji fiyatlarının düşmesi ise güvercin yönde değişiklikler.",
-        "toneReasonEn": "A second dissenting vote for a hike and the firmer statement that policy 'needs to lean' against second-round effects are hawkish, while inflation falling to 2.8% and lower energy prices point the dovish way.",
+        "toneReasonTr": "Artırım yönünde ikinci bir oy ve ikinci tur etkilere karşı \"durması gerekir\" ifadesi şahin, TÜFE'nin %2,8'e düşmesi, enerji fiyatlarının gerilemesi ve ekonomideki zayıflama işaretleri güvercin yönde.",
+        "toneReasonEn": "A second vote for a hike and the firmer \"needs to lean\" against second-round effects are hawkish, while CPI falling to 2.8%, lower energy prices and signs of a weakening economy point the dovish way.",
+        "score": 3,
+        "scoreReasonTr": "Faiz sabit tutulsa da iki üye artırım istiyor, enflasyonun yeniden yükselmesi bekleniyor ve komite ikinci tur etkilere karşı durmak ve gerekirse harekete geçmek için hazır olduğunu söylüyor; işgücü piyasasındaki gevşeme ise duruşu yumuşatıyor.",
+        "scoreReasonEn": "Although rates were held, two members want a hike, inflation is expected to rise again and the Committee says it must lean against second-round effects and stands ready to act, while a loosening labour market tempers the stance.",
         "model": "claude-code/opus",
-        "promptVersion": "1",
-        "summarizedAt": "2026-10-14T01:03:19.144Z"
+        "promptVersion": "2",
+        "summarizedAt": "2026-10-14T23:32:30.500Z"
       }
     },
     {
@@ -383,28 +386,31 @@
       "rate": 1,
       "previousId": "boj-2026-04-28",
       "summary": {
-        "headlineTr": "BoJ, teminatsız gecelik çağrı faizi hedefini 7–1 oyla yaklaşık %0,75'ten yaklaşık %1,0'e yükseltti ve faiz artırımlarını sürdüreceğini belirtti.",
-        "headlineEn": "The BoJ raised its target for the uncollateralized overnight call rate from around 0.75 percent to around 1.0 percent by a 7–1 vote and said it will continue to raise the policy interest rate.",
+        "headlineTr": "BoJ 7–1 oyla politika faizini %0,75'ten %1,0'e yükseltti ve faiz artırmaya devam edeceğini belirtti.",
+        "headlineEn": "The BoJ raised the policy rate from 0.75 percent to 1.0 percent by a 7–1 vote and said it will continue to raise the policy interest rate.",
         "changesTr": [
-          "Çağrı faizi hedefi yaklaşık %1,0'e çıkarıldı; tamamlayıcı mevduat imkânı faizi %1,0, temel kredi faizi %1,25 olarak belirlendi.",
-          "Oy dağılımı 6–3'ten 7–1'e döndü: önceki toplantıda %1,0 öneren üç üye artırımı destekledi, Asada ise Orta Doğu kaynaklı üretim ve istihdam risklerini gerekçe göstererek sabit tutmayı savundu; Başkan Ueda toplantıda yoktu.",
-          "Metin, ana enflasyonun %2 hedefinin üzerine yukarı yönlü sapma riski bulunduğunu, petrol fiyatı artışının firmalar arası işlemlere hızla yansıdığını ve orta-uzun vadeli enflasyon beklentilerinin yükselmeye devam ettiğini belirtti.",
-          "İleriye dönük yönlendirme eklendi: Banka, ekonomik gelişmelere göre politika faizini artırmayı ve parasal genişleme derecesini ayarlamayı sürdürecek, zamanlama ve hızı Orta Doğu'daki gelişmeleri izleyerek değerlendirecek.",
-          "Ekonominin ılımlı toparlandığı, ciddi yavaşlama riskinin azaldığı belirtildi; Takata ve Tamura, ana enflasyonun zaten hedefle uyumlu olduğu gerekçesiyle fiyat görünümü ifadesine karşı çıktı."
+          "Teminatsız gecelik çağrı faizi hedefi yaklaşık %0,75'ten yaklaşık %1,0'e çıkarıldı; tamamlayıcı mevduat faizi %1,0, temel kredi faizi %1,25 oldu.",
+          "Metin, temel enflasyonun %2'ye yaklaştığını ve finansal koşulların gevşek olduğunu belirterek bankanın politika faizini artırmaya ve parasal genişlemenin derecesini ayarlamaya devam edeceğini söyledi.",
+          "Ham petrol fiyatlarının şirketler arası işlemlerde hızla yansıdığı ve orta-uzun vadeli enflasyon beklentilerinin yükselmeye devam ettiği için temel enflasyonun %2'nin üzerine sapma riski olduğu belirtildi.",
+          "Oylama 6–3'ten 7–1'e döndü; önceki toplantıda artırım isteyen üç üye bu kez çoğunluktaydı, Asada Toichiro üretim ve istihdama yönelik aşağı yönlü riskleri gerekçe göstererek faizin sabit kalmasını savundu.",
+          "Ekonominin ılımlı toparlandığı, ancak Orta Doğu'daki durumun etkisiyle kısmen zayıflık görüldüğü ve ciddi yavaşlama riskinin azaldığı değerlendirildi."
         ],
         "changesEn": [
-          "The call rate target was raised to around 1.0 percent, with the complementary deposit facility rate set at 1.0 percent and the basic loan rate at 1.25 percent.",
-          "The vote shifted from 6–3 to 7–1: the three members who proposed 1.0 percent last time backed the hike, while Asada dissented in favour of holding, citing Middle East-related downside risks to production and employment; Governor Ueda was absent.",
-          "The statement cites a risk of underlying CPI inflation deviating upward above the 2 percent target, fast pass-through of higher crude oil prices in business-to-business transactions, and continued rises in medium- to long-term inflation expectations.",
-          "Forward guidance was added: the Bank will continue to raise the policy interest rate and adjust monetary accommodation in response to developments, considering timing and pace while monitoring the Middle East situation.",
-          "The economy is described as recovering moderately with a reduced risk of a significant slowdown; Takata and Tamura opposed the price outlook description, arguing underlying inflation was already consistent with the target."
+          "The uncollateralized overnight call rate target was raised from around 0.75 percent to around 1.0 percent, with the complementary deposit facility rate at 1.0 percent and the basic loan rate at 1.25 percent.",
+          "Citing underlying CPI inflation approaching 2 percent and accommodative financial conditions, the statement said the Bank will continue to raise the policy interest rate and adjust the degree of monetary accommodation.",
+          "It flagged a risk of underlying inflation deviating upward above 2 percent, as crude oil pass-through is progressing quickly in business-to-business prices and medium- to long-term inflation expectations have continued to rise.",
+          "The vote moved from 6–3 to 7–1: the three members who sought a hike last time were in the majority, while Asada Toichiro dissented in favour of holding, citing greater downside risks to production and employment.",
+          "The economy was assessed as recovering moderately with some weakness linked to the Middle East, while the risk of a significant slowdown appears to have decreased."
         ],
         "tone": "more-hawkish",
-        "toneReasonTr": "Ana enflasyonun hedefin üzerine sapma riskine yapılan vurgu, faiz artırımlarının süreceğine dair yeni yönlendirme ve ciddi yavaşlama riskinin azaldığı değerlendirmesi metnin sıkılaşma yönünde olduğunu gösteriyor.",
-        "toneReasonEn": "The emphasis on upside risk to underlying inflation, new guidance that the Bank will continue to raise the policy rate, and the view that the risk of a significant slowdown has decreased make the text more hawkish.",
+        "toneReasonTr": "Faiz artırımı, \"politika faizini artırmaya devam edecek\" yönlendirmesi ve enflasyonun hedefin üzerine sapma riskinin vurgulanması metni öncekine göre belirgin biçimde sıkılaşma yönüne taşıyor.",
+        "toneReasonEn": "The rate hike, the guidance that the Bank \"will continue to raise the policy interest rate\" and the emphasis on upside risk to inflation make the statement clearly more hawkish than the previous one.",
+        "score": 6,
+        "scoreReasonTr": "Banka faizi artırdı, artırımlara devam edeceğini açıkça söyledi ve enflasyonun yukarı sapma riskini öne çıkardı; ancak finansal koşulların gevşek kalacağını ve ayarlamanın zamanlama ve hızının Orta Doğu'daki gelişmelere göre belirleneceğini de belirtiyor.",
+        "scoreReasonEn": "The Bank hiked, explicitly said it will continue raising rates and highlighted upside inflation risk, though it also expects financial conditions to remain accommodative and ties the timing and pace of adjustment to Middle East developments.",
         "model": "claude-code/opus",
-        "promptVersion": "1",
-        "summarizedAt": "2026-10-14T01:03:19.145Z"
+        "promptVersion": "2",
+        "summarizedAt": "2026-10-14T23:32:30.503Z"
       }
     },
     {
@@ -871,28 +877,31 @@
       "rateLower": 3.5,
       "previousId": "fed-2026-04-29",
       "summary": {
-        "headlineTr": "Fed, politika faizini %3,50–3,75 aralığında oybirliğiyle sabit tuttu ve metinden 'ek ayarlamaların kapsamı ve zamanlaması' ifadesiyle verilen gevşeme eğilimini çıkardı.",
-        "headlineEn": "The Fed unanimously held the federal funds rate target range at 3-1/2 to 3-3/4 percent and dropped the easing bias conveyed by the reference to 'the extent and timing of additional adjustments'.",
+        "headlineTr": "Fed faizi %3,50–3,75 aralığında oybirliğiyle (12–0) sabit tuttu ve önceki metindeki \"ek ayarlamalar\" ifadesiyle verilen gevşeme eğilimini metinden çıkardı.",
+        "headlineEn": "The Fed unanimously (12–0) held the federal funds rate at 3-1/2 to 3-3/4 percent and dropped the \"additional adjustments\" language that had signalled an easing bias.",
         "changesTr": [
-          "Faiz aralığında 'ek ayarlamaların kapsamı ve zamanlaması' değerlendirilirken verilere bakılacağına dair ileriye dönük yönlendirme metinden çıkarıldı.",
-          "Karar 12–0 oybirliğiyle alındı; önceki toplantıda bir üye indirim istemiş, üç üye ise metindeki gevşeme eğilimine karşı çıkmıştı.",
-          "Enflasyonun %2 hedefine göre yüksek kaldığı, kısmen enerji dahil bazı sektörlerdeki arz şoklarını yansıttığı belirtildi ve 'Komite fiyat istikrarını sağlayacak' cümlesi eklendi.",
-          "İstihdam artışlarının 'düşük kaldığı' ifadesi, iş gücüne ayak uydurduğu şeklinde değişti; verimlilik artışının ve sermaye yatırımlarının güçlü olduğu eklendi.",
-          "Çift yönlü risklere dikkat çeken ifadeler çıkarıldı ve Komite'nin bankacılık sisteminde bol rezerv politikasını sürdürdüğü eklendi."
+          "Faiz aralığına \"ek ayarlamaların kapsamı ve zamanlaması\" değerlendirilirken verilere bakılacağını söyleyen ileriye dönük yönlendirme kaldırıldı.",
+          "Enflasyonun %2 hedefine göre yüksek kaldığı, bunun kısmen enerji gibi bazı sektörlerdeki arz şoklarından kaynaklandığı belirtildi ve \"Komite fiyat istikrarını sağlayacak\" cümlesi eklendi.",
+          "Oylama dörtlü muhalefetten (biri indirim, üçü gevşeme eğilimine itiraz) 12–0 oybirliğine döndü.",
+          "İstihdam artışının \"düşük\" yerine işgücüyle aynı hızda olduğu yazıldı; verimlilik artışının ve sermaye yatırımlarının güçlü olduğu eklendi.",
+          "Bankacılık sisteminde bol rezerv sürdürme politikasının teyit edildiği belirtildi; çift yönlü risklere dikkat ve maksimum istihdam vurgusu metinden çıktı."
         ],
         "changesEn": [
-          "The forward guidance on assessing incoming data when considering 'the extent and timing of additional adjustments' to the target range was removed.",
-          "The decision was unanimous at 12–0, whereas at the previous meeting one member preferred a cut and three objected to the easing bias in the statement.",
-          "The statement says inflation remains elevated relative to the 2 percent goal, partly reflecting supply shocks in sectors including energy, and adds that 'The Committee will deliver price stability.'",
-          "Job gains are no longer described as having 'remained low' but as having kept pace with the workforce, and strong productivity growth and capital investment were added.",
-          "Language on attentiveness to risks to both sides of the dual mandate was dropped, and the Committee reaffirmed its policy of maintaining ample reserves in the banking system."
+          "The forward guidance about assessing data when considering \"the extent and timing of additional adjustments\" to the target range was removed.",
+          "Inflation was described as elevated relative to the 2 percent goal, partly reflecting supply shocks in sectors including energy, and the sentence \"The Committee will deliver price stability\" was added.",
+          "The vote moved from four dissents (one for a cut, three objecting to the easing bias) to a unanimous 12–0.",
+          "Job gains were described as keeping pace with the workforce rather than \"low\", and strong productivity growth and capital investment were added.",
+          "The Committee reaffirmed its policy of maintaining ample reserves, while references to attending to risks on both sides of the mandate and to maximum employment were dropped."
         ],
         "tone": "more-hawkish",
-        "toneReasonTr": "'Ek ayarlamalar' ifadesindeki gevşeme eğiliminin çıkarılması, 'Komite fiyat istikrarını sağlayacak' cümlesi ve istihdam ile büyümenin daha olumlu değerlendirilmesi sıkılaşma yönünü gösteriyor.",
-        "toneReasonEn": "Removing the easing bias in the 'additional adjustments' language, adding 'The Committee will deliver price stability,' and a more upbeat view of jobs and growth all point in a hawkish direction.",
+        "toneReasonTr": "\"Ek ayarlamalar\" ifadesiyle verilen gevşeme eğiliminin kaldırılması, \"fiyat istikrarını sağlayacak\" taahhüdünün eklenmesi ve istihdam değerlendirmesinin iyileşmesi metni sıkılaşma yönüne çekiyor.",
+        "toneReasonEn": "Removing the easing bias embedded in the \"additional adjustments\" language, adding the pledge to \"deliver price stability\" and a stronger labour-market assessment shift the statement in a hawkish direction.",
+        "score": 3,
+        "scoreReasonTr": "Metin faizi sabit tutarken enflasyonun yüksek olduğunu vurguluyor, fiyat istikrarını sağlama taahhüdü veriyor ve gevşeme sinyali içermiyor; ancak artırım ima edilmiyor.",
+        "scoreReasonEn": "The statement holds rates while stressing elevated inflation and pledging to deliver price stability with no easing signal, but it does not imply a hike.",
         "model": "claude-code/opus",
-        "promptVersion": "1",
-        "summarizedAt": "2026-10-14T01:03:19.145Z"
+        "promptVersion": "2",
+        "summarizedAt": "2026-10-14T23:32:30.503Z"
       }
     },
     {
@@ -1112,28 +1121,31 @@
       "rate": 4.35,
       "previousId": "rba-2026-05-05",
       "summary": {
-        "headlineTr": "RBA, nakit faiz hedefini oybirliğiyle %4,35'te sabit tuttu ve önceki artırımların etkisini değerlendirirken gerekirse faizi yeniden artırabileceğini ekledi.",
-        "headlineEn": "The RBA unanimously left the cash rate target unchanged at 4.35 per cent and added that it could increase the cash rate further if required while it assesses the effect of previous rises.",
+        "headlineTr": "RBA nakit faiz hedefini oybirliğiyle %4,35'te sabit tuttu ve gerekirse faizi yeniden artırabileceğini metne ekledi.",
+        "headlineEn": "The RBA unanimously left the cash rate target unchanged at 4.35 per cent and added that it could increase the cash rate further if required.",
         "changesTr": [
-          "Önceki toplantıdaki 25 baz puanlık artırımın ardından faiz sabit tutuldu; kurul, önceki artırımlara tepkiyi ve petrol arzındaki aksamanın etkisini değerlendirdiğini belirtti.",
-          "İleriye dönük yönlendirmeye 'gerekirse nakit faiz hedefini daha da artırmak dahil' ifadesi eklendi ve enflasyonun 'hâlâ çok yüksek' olduğu vurgulandı.",
-          "Petrol fiyatlarının son haftalarda gerilediği, kısa vadeli enflasyon beklentilerinin düştüğü ama yılın başındakinden yüksek kaldığı belirtildi.",
-          "Tüketim harcamalarında yavaşlama, bazı başkentlerde konut fiyatlarında düşüş ve Nisan'da beklenenden yüksek işsizlik eklendi; iş yatırımlarının güçlü olduğu da kaydedildi.",
-          "Karar, önceki toplantıdaki 8–1'lik bölünmenin aksine oybirliğiyle alındı."
+          "Önceki toplantıdaki 25 baz puanlık artırımın ardından faiz sabit tutuldu; kurul önceki artırımlara ve petrol arzındaki aksamaya tepkiyi değerlendirirken beklemeyi seçti.",
+          "İleriye dönük yönlendirmeye \"gerekirse nakit faiz hedefini daha da artırmak dahil\" ifadesi eklendi.",
+          "Enflasyonun hâlâ çok yüksek olduğu ve yakıt fiyatlarının diğer mal ve hizmet fiyatlarına geçmeye başladığı, bu nedenle bir süre yüksek kalacağı belirtildi; kısa vadeli enflasyon beklentilerinin ise gerilediği ama yılın başındakinden yüksek olduğu yazıldı.",
+          "Tüketici harcamalarında yavaşlama, bazı başkentlerde konut fiyatlarında düşüş ve Nisan'da beklenenden yüksek işsizlik oranına değinilirken iş yatırımlarının güçlü olduğu eklendi.",
+          "Karar, önceki 8–1'lik çoğunluk oyunun ardından oybirliğiyle alındı; risklerin yukarı yönlü olduğu cümlesi metinden çıkarıldı."
         ],
         "changesEn": [
-          "After the 25 basis point increase at the previous meeting, the rate was held, with the Board saying it is assessing the response to previous rises and the impact of the oil supply disruption.",
-          "The forward guidance now adds 'including increasing the cash rate target further if required', and the statement stresses that inflation is 'still too high'.",
-          "The statement notes that oil prices have eased in recent weeks and that short-term inflation expectations have eased, though they remain higher than earlier in the year.",
-          "Slowing consumer spending growth, falling housing prices in some capital cities and a higher-than-expected unemployment rate in April were added, along with strong business investment growth.",
-          "The decision was unanimous, in contrast to the 8–1 split at the previous meeting."
+          "After the previous meeting's 25 basis point increase, the rate was held while the Board assesses the response to previous rate rises and the impact of the oil supply disruption.",
+          "The phrase \"including increasing the cash rate target further if required\" was added to the forward guidance.",
+          "Inflation was described as still too high, with fuel prices passing through to other goods and services so that it is likely to remain high for some time, while short-term inflation expectations were said to have eased but remain higher than earlier in the year.",
+          "The statement noted slowing consumer spending, falling housing prices in some capital cities and a higher-than-expected unemployment rate in April, while adding that business investment growth is strong.",
+          "The decision was unanimous after the previous 8–1 majority vote, and the sentence saying risks remain tilted to the upside was removed."
         ],
         "tone": "mixed",
-        "toneReasonTr": "'Gerekirse faizi daha da artırmak' ifadesinin eklenmesi şahin yönde, petrol fiyatları ve enflasyon beklentilerindeki gerileme ile tüketim, konut ve işsizlikteki zayıflama işaretleri ise güvercin yönde.",
-        "toneReasonEn": "Adding 'increasing the cash rate target further if required' is hawkish, while eased oil prices and inflation expectations and signs of weaker spending, housing and employment lean dovish.",
+        "toneReasonTr": "\"Gerekirse faizi daha da artırmak\" ifadesi ve enflasyonun \"hâlâ çok yüksek\" olduğu vurgusu şahin; artırım yerine bekleme, ekonominin yavaşladığı işaretleri ve enflasyon beklentilerinin gerilemesi güvercin yönde.",
+        "toneReasonEn": "The explicit \"increasing the cash rate target further if required\" and \"inflation is still too high\" are hawkish, while pausing instead of hiking, signs of a slowing economy and easing inflation expectations lean dovish.",
+        "score": 4,
+        "scoreReasonTr": "Kurul faizi sabit tutsa da enflasyonun çok yüksek olduğunu, talebin yavaşlaması gerektiğini vurguluyor ve gerekirse ek artırım kapısını açık bırakıyor; gevşeme sinyali yok.",
+        "scoreReasonEn": "Although the Board held, it stresses that inflation is too high and demand growth needs to slow, keeps the door open to further increases and gives no easing signal.",
         "model": "claude-code/opus",
-        "promptVersion": "1",
-        "summarizedAt": "2026-10-14T01:03:19.146Z"
+        "promptVersion": "2",
+        "summarizedAt": "2026-10-14T23:32:30.504Z"
       }
     },
     {
