@@ -1,6 +1,21 @@
 {
-  "fetchedAt": "2026-10-14T11:44:01.533Z",
+  "fetchedAt": "2026-10-14T12:01:52.767Z",
   "items": [
+    {
+      "id": "0e40bd8c2c39",
+      "sourceKey": "aa-economy",
+      "sourceName": "Anadolu Agency",
+      "kind": "media",
+      "url": "https://www.aa.com.tr/en/economy/us-dollar-s-rally-pauses-as-markets-brace-for-inflation-report/4088481",
+      "publishedAt": "2026-10-14T11:52:53.000Z",
+      "titleOriginal": "US dollar’s rally pauses as markets brace for inflation report",
+      "titleTr": "Dolarda yükseliş duraksadı, piyasalar enflasyon verisine odaklandı",
+      "summaryTr": "Döviz piyasaları temkinli; manşet enflasyon beklentisi %3,6 seviyesinde. Uzmanlara göre beklentiyi aşan bir veri doları destekleyip Fed'in Aralık'ta faiz artıracağı beklentisini pekiştirebilir.",
+      "titleEn": "US dollar's rally pauses as markets await inflation report",
+      "summaryEn": "Currency markets are cautious, with headline inflation expected at 3.6%. Experts say a higher-than-expected reading could further lift the dollar and strengthen expectations of a Fed rate hike in December.",
+      "important": true,
+      "processedAt": "2026-10-14T12:01:52.767Z"
+    },
     {
       "id": "867c2305ba87",
       "sourceKey": "aa-economy",
