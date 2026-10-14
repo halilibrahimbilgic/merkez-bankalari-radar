@@ -1,6 +1,21 @@
 {
-  "fetchedAt": "2026-10-14T17:01:52.475Z",
+  "fetchedAt": "2026-10-14T18:01:53.659Z",
   "items": [
+    {
+      "id": "4f29aab8eaf5",
+      "sourceKey": "aa-ekonomi",
+      "sourceName": "Anadolu Ajansı",
+      "kind": "media",
+      "url": "https://www.aa.com.tr/tr/ekonomi/kuresel-piyasalarda-altin-ve-gumus-fiyatlari-abd-enflasyon-verisi-sonrasi-geriliyor/4088935",
+      "publishedAt": "2026-10-14T17:49:46.000Z",
+      "titleOriginal": "Küresel piyasalarda altın ve gümüş fiyatları ABD enflasyon verisi sonrası geriliyor",
+      "titleTr": "Altın ve gümüş, ABD enflasyon verisi sonrası geriledi",
+      "summaryTr": "Anadolu Ajansı'na göre altın ve gümüşün ons fiyatı, ABD'de enflasyon verilerinin beklentilerin üzerinde gelmesinin ardından düştü.",
+      "titleEn": "Gold and silver slip after US inflation data",
+      "summaryEn": "According to Anadolu Agency, gold and silver ounce prices fell after US inflation data came in above expectations.",
+      "important": false,
+      "processedAt": "2026-10-14T18:01:53.659Z"
+    },
     {
       "id": "99e22204bd6c",
       "sourceKey": "cnbc-economy",
