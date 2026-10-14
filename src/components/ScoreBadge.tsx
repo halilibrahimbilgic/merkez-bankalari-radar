@@ -25,6 +25,21 @@ export function formatScore(score: number, lang: Lang = "tr"): string {
   return score > 0 ? `+${s}` : s;
 }
 
+/** İki puanın farkı, işaretli: "+1,5", "−0,5", "±0,0". */
+export function formatScoreDelta(score: number, previous: number, lang: Lang = "tr"): string {
+  const d = Math.round((score - previous) * 10) / 10;
+  return `${d > 0 ? "+" : d < 0 ? "−" : "±"}${fmtNum(Math.abs(d), lang, 1)}`;
+}
+
+/** İki puan arasındaki yön, sade dille. Yarım puandan küçük fark gürültüdür (skorlar ±1 oynayabiliyor). */
+export function scoreShift(score: number, previous: number, lang: Lang = "tr"): string {
+  const en = lang === "en";
+  const d = score - previous;
+  if (Math.abs(d) < 0.5) return en ? "about the same" : "aynı kaldı";
+  const more = d > 0 ? (en ? "more hawkish" : "daha şahin") : en ? "more dovish" : "daha güvercin";
+  return Math.abs(d) < 2 ? (en ? `slightly ${more}` : `biraz ${more}`) : more;
+}
+
 /**
  * Konuşma skoru rozeti. Sinyalsiz konuşmanın 0'ı "nötr" diye gösterilmez:
  * listede "0,0 (nötr)" okuyan kullanıcı onu dengeli bir duruş — ya da

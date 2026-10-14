@@ -21,3 +21,7 @@ async function load(): Promise<MinutesStore> {
 export async function getMinutes(meetingId: string): Promise<MinutesRecord | undefined> {
   return (await load()).minutes.find((r) => r.meetingId === meetingId);
 }
+
+export async function getAllMinutes(): Promise<MinutesRecord[]> {
+  return (await load()).minutes;
+}

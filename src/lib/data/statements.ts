@@ -28,15 +28,27 @@ export async function getStatement(meetingId: string): Promise<StatementRecord |
   return (await load()).statements.find((s) => s.meetingId === meetingId);
 }
 
+export interface StatementScore {
+  meetingId: string;
+  score: number;
+  /** Bir önceki karar metninin puanı — ton hangi yöne gitti. */
+  previousScore?: number;
+}
+
 /** Her bankanın puanlanmış en son karar metni (konuşma skoruyla aynı ölçek). */
-export async function getLatestStatementScores(): Promise<Partial<Record<BankCode, { meetingId: string; score: number }>>> {
-  const out: Partial<Record<BankCode, { meetingId: string; score: number }>> = {};
-  for (const rec of (await load()).statements) {
+export async function getLatestStatementScores(): Promise<Partial<Record<BankCode, StatementScore>>> {
+  const statements = (await load()).statements;
+  const out: Partial<Record<BankCode, StatementScore>> = {};
+  for (const rec of statements) {
     const score = rec.summary?.score;
     if (score === undefined) continue;
     const prev = out[rec.bankCode];
     // Kimlik "<banka>-YYYY-AA-GG": aynı bankada metin sırası tarih sırasıdır.
     if (!prev || rec.meetingId > prev.meetingId) out[rec.bankCode] = { meetingId: rec.meetingId, score };
+  }
+  for (const latest of Object.values(out)) {
+    const rec = statements.find((s) => s.meetingId === latest.meetingId);
+    latest.previousScore = statements.find((s) => s.meetingId === rec?.previousId)?.summary?.score;
   }
   return out;
 }

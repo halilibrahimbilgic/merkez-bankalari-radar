@@ -5,6 +5,7 @@ import {
   BankTag,
   ScoreBadge,
   formatScore,
+  formatScoreDelta,
   scoreLabel,
   scoreToneClass,
 } from "@/components/ScoreBadge";
@@ -136,6 +137,11 @@ export async function ScorePage({ lang }: { lang: Lang }) {
                           className={`inline-flex min-h-9 items-center justify-end font-semibold hover:underline ${scoreToneClass(st.score)}`}
                         >
                           {formatScore(st.score, lang)}
+                          {st.previousScore !== undefined && (
+                            <span className="ml-1 text-xs font-normal text-muted">
+                              ({formatScoreDelta(st.score, st.previousScore, lang)})
+                            </span>
+                          )}
                         </Link>
                       ) : (
                         <span className="text-muted">—</span>
@@ -155,8 +161,8 @@ export async function ScorePage({ lang }: { lang: Lang }) {
           </TableFrame>
           <p className="prose-width mt-2 text-sm text-muted">
             {t(
-              "Karar metni: bankanın en son resmî karar metninin aynı ölçekteki puanı — komitenin ortak sesi; skor ise üyelerin tek tek konuşmalarının ortalaması. Konuşma sütunundaki parantezli sayı, para politikası sinyali taşımadığı için ortalamaya girmeyen konuşmaları gösterir.",
-              "Statement: the score of the bank's latest official policy statement on the same scale — the committee's collective voice; the score is the average of individual members' speeches. The number in brackets in the speeches column counts speeches left out of the average because they carry no monetary policy signal.",
+              "Karar metni: bankanın en son resmî karar metninin aynı ölçekteki puanı — komitenin ortak sesi; parantezde bir önceki karar metnine göre fark. Skor ise üyelerin tek tek konuşmalarının ortalaması. Konuşma sütunundaki parantezli sayı, para politikası sinyali taşımadığı için ortalamaya girmeyen konuşmaları gösterir.",
+              "Statement: the score of the bank's latest official policy statement on the same scale — the committee's collective voice; in brackets, the change from the previous statement. The score is the average of individual members' speeches. The number in brackets in the speeches column counts speeches left out of the average because they carry no monetary policy signal.",
             )}
           </p>
         </section>

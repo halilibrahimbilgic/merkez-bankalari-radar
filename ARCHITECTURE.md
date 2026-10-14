@@ -585,14 +585,23 @@ eritiyor.
 
 **Orta vade — kapsamı genişlet**
 - Skor zaman serisi: "bir ay önce +6 olan komite bugün +4" — yön seviyeden
-  daha çok şey söyler. İlk adım `/skor`'daki aylık seyir tablosu (14 Ekim
-  2026); örneklem büyüdükçe grafiğe çevrilebilir.
+  daha çok şey söyler. `/skor`'daki aylık seyir tablosu (14 Ekim 2026) ve
+  banka sayfasındaki "Komitenin tonu" (15 Ekim): karar metinlerinin ve
+  tutanakların puanı kararlardan karara, bir öncekine göre yön. Konuşma
+  arşivi büyüdükçe konuşma ortalaması da aynı biçimde gösterilebilir.
 - E-posta bildirimi (§8.5'teki kararlardan sonra)
 
 **Uzun vade — ürünleşme**
 - Konuşmacı ağırlıklandırması (oy hakkı/kıdem): konuşmacı sayfaları var
   (`/konusmaci/<ad>`), ama banka ortalamasında herkesin ağırlığı hâlâ eşit
-  — `/skor` bunu açıkça yazıyor
+  — `/skor` bunu açıkça yazıyor. 15 Ekim 2026'da bakıldı: sinyal taşıyan
+  konuşmaların hepsi oy kullanan üyelerin (Fed'de Waller, Williams, Cook,
+  Barr, Jefferson; diğerlerinde kurul üyeleri); oy hakkı olmayan iki
+  konuşmacının (ECB'de Buch, RBA'da Hunter) konuşmaları zaten sinyalsiz.
+  Ağırlık bugün hiçbir rakamı değiştirmezdi; dönüşümlü oy hakkı olan
+  bölgesel Fed başkanları BIS akışında neredeyse yok. Kaynak genişlerse
+  (bölgesel Fed konuşmaları) yeniden değerlendirilmeli; üye listesi elle
+  tutulacağı için yıllık rotasyonun takibi gerekir.
 - Ticarileşme düşünülürse **önce** §6'daki lisans sorunu çözülmeli
 
 ---
