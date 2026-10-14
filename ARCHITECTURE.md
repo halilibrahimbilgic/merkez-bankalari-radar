@@ -20,6 +20,7 @@ takip eden bir site. Üç modül:
 | E — Kararlar | Her karar, karardan önceki beklentiyle (sürpriz) ve bir önceki karar metniyle (fark + model özeti) karşılaştırılır; beklentinin seyri | ✅ karar metni 30 dk'da bir (news.yml), özet Claude; beklenti geçmişi günlük |
 | F — Reel faiz | Politika faizi − son yıllık TÜFE, altı ekonomi | ✅ günlük |
 | G — Rehber | Faiz kararlarını sade dille anlatan beş yazı | elle (içerik kodda, `src/lib/guides/`) |
+| H — Bu hafta | Ana sayfada önümüzdeki 7 günün kararları (beklentisiyle), Fed ve ECB yönetim kurullarının konuşma ve yayınları | ✅ günlük (`fetch:events`) |
 
 Site **yatırım tavsiyesi vermez** ve veri lisansı gereği kişisel/eğitim
 amaçlıdır (bkz. §6).
@@ -43,6 +44,7 @@ amaçlıdır (bkz. §6).
   BoE OIS+SONIA · ECB SMA · EVDS anket · NY Fed SME ─► fetch:expectations ─► expectations.json
                                                      └► data/history/expectations.json (seyir)
   FRED · ECB HICP · EVDS · ONS · e-Stat · RBA G4 ─► fetch:inflation ─► inflation.json
+  Fed takvim JSON · ECB haftalık program ─► fetch:events ─► events.json
   resmî karar metinleri ──► statements:fetch (news.yml) ─► statements.json + data/statements/
                             └► meetings.json (karar günü, seri gelmeden)
   bis.org (RSS + HTML) ───► fetch:speeches ───────► speeches.json
@@ -294,6 +296,14 @@ sayfasında lisans notuyla okunur; izinsiz olan git'e girmeyen
 değeri değil istemci referansını alır. İki kez ısırdı: `computeCountdownParts`
 (`src/lib/time.ts`'e taşındı) ve `THEME_KEY` (`src/lib/theme.ts`'e taşındı —
 inline script'e `localStorage.getItem(undefined)` olarak gömülüyordu, sessizce).
+
+**Arayüz 390 px'te gerçekten bakılarak denetlenir.** Başsız Chrome'un
+pencere genişliği ~500 px'in altına inmiyor; düz ekran görüntüsü dar ekranı
+taklit etmez. Geliştirici protokolüyle (Emulation.setDeviceMetricsOverride)
+bakıldı (14 Ekim 2026): tablolar telefonda sabit genişlikle kaydığı için
+reel faiz tablosunun asıl sütunu görünmüyordu — `TableFrame` artık asgari
+genişliği yalnızca sm ve üstünde uygular. Tek başına duran bağlantılar en az
+24 px yüksekliğinde (WCAG 2.5.8; metin içi bağlantılar muaf).
 
 **Renk tek başına anlam taşımaz** (WCAG 1.4.1). Banka renkleri ikincil
 ipucudur, yanında her zaman banka adı metni durur. Tonlar ölçülerek seçildi:

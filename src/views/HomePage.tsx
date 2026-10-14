@@ -15,6 +15,7 @@ import { getDecisionViews } from "@/lib/data/decisions";
 import { getInflation } from "@/lib/data/inflation";
 import { realRate } from "@/lib/real-rates";
 import { DecisionRow } from "./DecisionsPage";
+import { WeekAhead } from "./WeekAhead";
 import { NewsList } from "@/components/NewsList";
 import { moveOdds } from "@/lib/implied-path";
 import { fmtPercent, L, languageAlternates, localePath, type Lang } from "@/lib/i18n";
@@ -123,6 +124,8 @@ export async function HomePage({ lang }: { lang: Lang }) {
         )}
       </section>
 
+      <WeekAhead lang={lang} now={now} />
+
       <section aria-labelledby="bankalar-baslik">
         <h2 id="bankalar-baslik" className="sr-only">
           {t("Bankalara genel bakış", "Bank overview")}
@@ -206,7 +209,10 @@ export async function HomePage({ lang }: { lang: Lang }) {
           <Rows>
             {upcoming.slice(0, 6).map((m) => (
               <Row key={m.id}>
-                <BankTag code={m.bankCode} lang={lang} />
+                {/* Sabit genişlik: etiket boyları farklı (TCMB/Fed), tarihler alt alta hizalansın. */}
+                <span className="w-16 shrink-0">
+                  <BankTag code={m.bankCode} lang={lang} />
+                </span>
                 <span className="tabular flex-1">{formatDate(m.meetingAt, lang)}</span>
                 <span className="text-sm text-muted">{countdownLabel(m.meetingAt, now, lang)}</span>
               </Row>
@@ -225,7 +231,8 @@ export async function HomePage({ lang }: { lang: Lang }) {
             {recentSpeeches.map((s) => (
               <Row key={s.id}>
                 <BankTag code={s.bankCode} lang={lang} />
-                <Link href={p(`/konusma/${s.id}`)} className="flex-1 hover:text-accent">
+                {/* Asgari genişlik: dar ekranda puan rozeti başlığı sıkıştırmak yerine alt satıra iner. */}
+                <Link href={p(`/konusma/${s.id}`)} className="min-w-56 flex-1 hover:text-accent">
                   {s.speakerName} — {speechTitle(s, lang)}
                 </Link>
                 <ScoreBadge score={s.hawkDoveScore} hasPolicySignal={s.hasPolicySignal} lang={lang} />

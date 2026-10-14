@@ -69,6 +69,11 @@ const SOURCES: Record<Lang, Source[]> = {
       note: "Fed, ECB, TCMB, BoE, BoJ ve RBA'nın resmî karar duyuruları. Karar oranı karar günü metinden okunur (resmî seriler yeni oranı yürürlük gününde gösterir; ECB'de bu altı gün sonradır). Metin ve önceki metne göre farkı, yayımcının şartları izin veriyorsa gösterilir: Fed, ECB, TCMB ve RBA. BoE metni yalnızca kişisel kullanıma açık, BoJ metni yalnızca PDF; bu ikisinde yalnızca özet var.",
     },
     {
+      name: "Fed ve ECB konuşma takvimleri",
+      url: "https://www.federalreserve.gov/newsevents/calendar.htm",
+      note: "\"Bu hafta\" bölümü: Fed Yönetim Kurulu takvimi (konuşmalar, Kongre sunumları, FOMC tutanakları, Bej Kitap) ve ECB Yönetim Kurulu'nun haftalık programı. Diğer bankalar ileriye dönük konuşma programını makinece okunur biçimde yayımlamıyor; bölgesel Fed başkanları Fed takviminde yok.",
+    },
+    {
       name: "Enflasyon (reel faiz tablosu)",
       url: "https://www.ons.gov.uk/economy/inflationandpriceindices/timeseries/d7g7/mm23",
       note: "Her ülkenin son yıllık tüketici enflasyonu, resmî istatistik kurumundan: ABD BLS (FRED), euro bölgesi Eurostat HICP (ECB Data Portal), Türkiye TÜİK (EVDS), Birleşik Krallık ONS, Japonya İstatistik Bürosu (e-Stat), Avustralya ABS (RBA G4 tablosu).",
@@ -154,6 +159,11 @@ const SOURCES: Record<Lang, Source[]> = {
       name: "Central banks' decision statements",
       url: "https://www.federalreserve.gov/newsevents/pressreleases.htm",
       note: "The official decision announcements of the Fed, ECB, CBRT, BoE, BoJ and RBA. The decided rate is read from the statement on decision day (official series show a new rate on the day it takes effect; for the ECB that is six days later). The text and its difference from the previous statement are shown where the publisher's terms allow: Fed, ECB, CBRT and RBA. The BoE text is for personal use only and the BoJ text is PDF-only, so only a summary is shown for those two.",
+    },
+    {
+      name: "Fed and ECB speaking calendars",
+      url: "https://www.federalreserve.gov/newsevents/calendar.htm",
+      note: "The \"This week\" section: the Federal Reserve Board calendar (speeches, congressional testimony, FOMC minutes, Beige Book) and the ECB Executive Board's weekly schedule. The other banks do not publish forward speaking schedules in a machine-readable form; regional Fed presidents are not on the Board calendar.",
     },
     {
       name: "Inflation (real rate table)",

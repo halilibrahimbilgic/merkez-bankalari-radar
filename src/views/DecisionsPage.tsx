@@ -97,9 +97,13 @@ export function DecisionRow({ view, lang }: { view: DecisionView; lang: Lang }) 
   const bp = view.changeBp ?? 0;
   const tone = view.statement?.summary?.tone;
   return (
-    <Row>
+    // Bağlantının ::after'ı satırı kaplar: bütün satır tıklanır (rozetler bağlantı değil).
+    <Row className="relative hover:bg-surface-sunken">
       <BankTag code={m.bankCode} lang={lang} />
-      <Link href={localePath(lang, `/karar/${m.id}`)} className="min-w-40 flex-1 hover:text-accent">
+      <Link
+        href={localePath(lang, `/karar/${m.id}`)}
+        className="min-w-40 flex-1 after:absolute after:inset-0 after:content-[''] hover:text-accent"
+      >
         <span className="tabular">{formatDate(m.meetingAt, lang)}</span>
         <span className="text-muted"> · </span>
         <span className="tabular font-medium">{formatDecisionRate(m, lang)}</span>{" "}

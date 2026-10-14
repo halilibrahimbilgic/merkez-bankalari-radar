@@ -28,6 +28,7 @@ npm run fetch:current-rates  # güncel politika faizleri (Fed, ECB, TCMB)
 npm run fetch:probabilities  # Atlanta Fed olasılık dağılımları (+ günlük seyir)
 npm run fetch:expectations   # BoE, ECB, TCMB beklentileri + beklenti geçmişi (data/history)
 npm run fetch:inflation      # altı ekonominin yıllık enflasyonu (reel faiz)
+npm run fetch:events         # Fed ve ECB konuşma/yayın takvimi ("Bu hafta")
 npm run statements:fetch     # karar metinleri; karar günü kararı metinden yazar (--all: arşiv)
 npm run fetch:speeches       # BIS konuşma arşivi (metinlerle birlikte)
 npm run score:export         # skorsuz konuşmaları .scoring/ altına hazırlar
@@ -179,6 +180,7 @@ npm run fetch:current-rates  # güncel politika faizleri
 npm run fetch:probabilities  # olasılık dağılımları
 npm run fetch:expectations   # Fed dışı beklentiler ve beklenti geçmişi
 npm run fetch:inflation      # enflasyon (reel faiz tablosu)
+npm run fetch:events         # konuşma ve yayın takvimi ("Bu hafta")
 npm run statements:fetch     # karar metinleri ve özet görevi (.statements/)
 npm run statements:import    # Claude Code özetlerini doğrula ve yaz
 npx tsx scripts/backfill-expectations.ts  # beklenti geçmişini arşivlerden doldur (bir kez)

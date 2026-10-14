@@ -130,7 +130,7 @@ export async function ScorePage({ lang }: { lang: Lang }) {
             {recent.map((s) => (
               <Row key={s.id}>
                 <BankTag code={s.bankCode} lang={lang} />
-                <Link href={p(`/konusma/${s.id}`)} className="flex-1 hover:text-accent">
+                <Link href={p(`/konusma/${s.id}`)} className="min-w-56 flex-1 hover:text-accent">
                   {s.speakerName} — {speechTitle(s, lang)}
                 </Link>
                 <ScoreBadge score={s.hawkDoveScore} hasPolicySignal={s.hasPolicySignal} lang={lang} />

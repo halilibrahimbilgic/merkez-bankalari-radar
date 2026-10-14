@@ -24,7 +24,8 @@
     "news:import": "tsx scripts/news-import.ts",
     "fetch:inflation": "tsx scripts/fetch-inflation.ts",
     "statements:fetch": "tsx scripts/fetch-statements.ts",
-    "statements:import": "tsx scripts/statements-import.ts"
+    "statements:import": "tsx scripts/statements-import.ts",
+    "fetch:events": "tsx scripts/fetch-events.ts"
   },
   "dependencies": {
     "@anthropic-ai/sdk": "^0.116.0",

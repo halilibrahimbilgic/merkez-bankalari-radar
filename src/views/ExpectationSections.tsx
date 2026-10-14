@@ -99,7 +99,7 @@ export function BoeExpectations({
                 const total = Math.round((m.impliedRate - data.currentRate) * 100);
                 return (
                   <tr key={m.meetingId} className="border-b border-border last:border-b-0">
-                    <td className="tabular px-4 py-2.5">{formatDate(m.meetingAt, lang)}</td>
+                    <td className="tabular whitespace-nowrap px-4 py-2.5">{formatDateShort(m.meetingAt, lang)}</td>
                     <td className="tabular px-4 py-2.5 text-right font-semibold">
                       {fmtPercent(m.impliedRate, lang)}
                     </td>
@@ -220,7 +220,7 @@ export function TcmbExpectations({
                   currentRate !== undefined ? Math.round((e.expectedRate - currentRate) * 100) : undefined;
                 return (
                   <tr key={e.meetingId} className="border-b border-border last:border-b-0">
-                    <td className="tabular px-4 py-2.5">{formatDate(e.meetingAt, lang)}</td>
+                    <td className="tabular whitespace-nowrap px-4 py-2.5">{formatDateShort(e.meetingAt, lang)}</td>
                     <td className="tabular px-4 py-2.5 text-right font-semibold">
                       {fmtPercent(e.expectedRate, lang)}
                     </td>
@@ -320,7 +320,7 @@ export function EcbExpectations({
                 <Th>{t("Toplantı", "Meeting")}</Th>
                 <Th align="right">{t("Medyan beklenti", "Median expectation")}</Th>
                 <Th align="right">{t("25.–75. yüzdelik", "25th–75th percentile")}</Th>
-                <Th align="right">{t("Gerçekleşen", "Actual")}</Th>
+                <Th align="right">{t("Karar", "Actual")}</Th>
               </tr>
             </thead>
             <tbody>
@@ -329,7 +329,7 @@ export function EcbExpectations({
                 const past = new Date(e.meetingAt) <= now;
                 return (
                   <tr key={e.meetingId} className="border-b border-border last:border-b-0">
-                    <td className="tabular px-4 py-2.5">{formatDate(e.meetingAt, lang)}</td>
+                    <td className="tabular whitespace-nowrap px-4 py-2.5">{formatDateShort(e.meetingAt, lang)}</td>
                     <td className="tabular px-4 py-2.5 text-right font-semibold">{fmtPercent(e.median, lang)}</td>
                     <td className="tabular px-4 py-2.5 text-right text-muted">
                       {e.p25 === e.p75 ? fmtPercent(e.p25, lang) : `${fmtPercent(e.p25, lang)} – ${fmtPercent(e.p75, lang)}`}

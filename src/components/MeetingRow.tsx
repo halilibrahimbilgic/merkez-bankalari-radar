@@ -60,7 +60,10 @@ export function MeetingRow({ meeting, now, lang }: { meeting: Meeting; now: Date
       <div className="text-sm">
         {isPast ? (
           hasDecisionPage(meeting, now) ? (
-            <Link href={localePath(lang, `/karar/${meeting.id}`)} className="tabular text-accent hover:underline">
+            <Link
+              href={localePath(lang, `/karar/${meeting.id}`)}
+              className="inline-flex min-h-9 items-center tabular text-accent hover:underline"
+            >
               {`${formatDecisionRate(meeting, lang)}${rateDelta(meeting, lang)}`} →
             </Link>
           ) : (

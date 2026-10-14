@@ -52,6 +52,9 @@ jobs:
         if: ${{ !cancelled() }}
         env:
           EVDS_API_KEY: ${{ secrets.EVDS_API_KEY }}
+      # "Bu hafta": Fed ve ECB yönetim kurullarının konuşma ve yayın takvimi.
+      - run: npm run fetch:events
+        if: ${{ !cancelled() }}
       # Reel faiz tablosu: altı ekonominin son yıllık enflasyonu.
       - run: npm run fetch:inflation
         if: ${{ !cancelled() }}

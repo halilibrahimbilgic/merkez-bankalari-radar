@@ -11,6 +11,7 @@ import { BANKS, bankName, bankRateName } from "@/lib/banks";
 import { getDecisionView, type DecisionView } from "@/lib/data/decisions";
 import { getStatement, getStatementText } from "@/lib/data/statements";
 import {
+  decisionParts,
   decisionSentence,
   formatDecisionRate,
   hasDecisionPage,
@@ -21,7 +22,7 @@ import { fmtBp, fmtPercent, L, languageAlternates, localePath, type Lang } from 
 import type { StatementLang, StatementRecord, StatementSummary } from "@/lib/statements";
 import { diffText } from "@/lib/text-diff";
 import { LICENSE_NOTICE_EN, LICENSE_NOTICE_TR } from "@/lib/text-license";
-import { formatDate, formatDateShort, formatMeeting, monthLabel } from "@/lib/time";
+import { formatDate, formatDateShort, formatTimeTrt, formatWeekday, monthLabel } from "@/lib/time";
 
 export async function decisionMetadata(lang: Lang, id: string): Promise<Metadata> {
   const view = await getDecisionView(id);
@@ -56,19 +57,25 @@ export async function DecisionPage({ lang, id }: { lang: Lang; id: string }) {
   const m = view.meeting;
   const bank = BANKS[m.bankCode];
   const name = bankName(bank, lang);
+  const parts = decisionParts(m, lang);
 
   return (
     <article className="space-y-8">
       <header>
         <div className="flex flex-wrap items-center gap-2 text-sm text-muted">
           <BankTag code={m.bankCode} lang={lang} />
-          <span className="tabular">{formatMeeting(m.meetingAt, m.timeTbd, lang)}</span>
+          <span className="tabular">
+            {formatWeekday(m.meetingAt, lang)} ·{" "}
+            {m.timeTbd ? t("saat açıklanmadı", "time not announced") : `${formatTimeTrt(m.meetingAt)} TRT`}
+          </span>
         </div>
         <h1 className="mt-2 text-2xl font-semibold tracking-tight">
           {t(`${name} faiz kararı`, `${name} rate decision`)}
           <span className="text-base font-normal text-muted"> · {formatDate(m.meetingAt, lang)}</span>
         </h1>
-        <p className="mt-1 text-lg">{decisionSentence(m, lang)}.</p>
+        <p className="mt-1 text-lg">
+          {parts.lead} <span className="whitespace-nowrap tabular">{parts.rate}</span>.
+        </p>
       </header>
 
       <DecisionCard view={view} lang={lang} />
@@ -77,23 +84,23 @@ export async function DecisionPage({ lang, id }: { lang: Lang; id: string }) {
 
       <nav aria-label={t("Bu bankanın diğer kararları", "Other decisions by this bank")} className="flex flex-wrap justify-between gap-3 text-sm">
         {view.previous && hasDecisionPage(view.previous, now) ? (
-          <Link href={p(`/karar/${view.previous.id}`)} className="text-accent hover:underline">
+          <Link href={p(`/karar/${view.previous.id}`)} className="inline-flex min-h-9 items-center text-accent hover:underline">
             ← {t("Önceki karar", "Previous decision")} ({formatDate(view.previous.meetingAt, lang)})
           </Link>
         ) : (
           <span />
         )}
         {view.next && hasDecisionPage(view.next, now) && (
-          <Link href={p(`/karar/${view.next.id}`)} className="text-accent hover:underline">
+          <Link href={p(`/karar/${view.next.id}`)} className="inline-flex min-h-9 items-center text-accent hover:underline">
             {t("Sonraki karar", "Next decision")} ({formatDate(view.next.meetingAt, lang)}) →
           </Link>
         )}
       </nav>
       <div className="flex flex-wrap gap-x-4 gap-y-1 text-sm">
-        <Link href={p("/kararlar")} className="text-accent hover:underline">
+        <Link href={p("/kararlar")} className="inline-flex min-h-9 items-center text-accent hover:underline">
           {t("← Tüm kararlar", "← All decisions")}
         </Link>
-        <Link href={p(`/banka/${m.bankCode}`)} className="text-accent hover:underline">
+        <Link href={p(`/banka/${m.bankCode}`)} className="inline-flex min-h-9 items-center text-accent hover:underline">
           {t(`${name} sayfası`, `${name} page`)}
         </Link>
       </div>
@@ -108,14 +115,15 @@ function DecisionCard({ view, lang }: { view: DecisionView; lang: Lang }) {
   return (
     <Card>
       <h2 className="text-lg font-semibold">{t("Karar", "Decision")}</h2>
-      <div className="mt-3 grid gap-3 sm:grid-cols-3">
+      <div className="mt-3 grid grid-cols-3 gap-2 sm:gap-3">
         {m.previousRate !== undefined && (
-          <Stat label={t("Önceki oran", "Previous rate")} value={formatPreviousRate(m, lang)} />
+          <Stat compact label={t("Önceki oran", "Previous rate")} value={formatPreviousRate(m, lang)} />
         )}
-        <Stat label={t("Yeni oran", "New rate")} value={formatDecisionRate(m, lang)} />
+        <Stat compact label={t("Yeni oran", "New rate")} value={formatDecisionRate(m, lang)} />
         <Stat
+          compact
           label={t("Değişim", "Change")}
-          value={bp === 0 ? t("değişiklik yok", "no change") : fmtBp(bp)}
+          value={bp === 0 ? t("yok", "none") : fmtBp(bp)}
           tone={bp > 0 ? "text-hawk" : bp < 0 ? "text-dove" : "text-foreground"}
         />
       </div>
@@ -198,14 +206,24 @@ function ExpectationCard({ view, lang }: { view: DecisionView; lang: Lang }) {
         {e.kind === "market" ? t("piyasa fiyatlaması", "market pricing") : t("anket", "survey")}
       </span>
 
-      <div className="mt-4 grid gap-3 sm:grid-cols-3">
-        <Stat label={t("Beklenen oran", "Expected rate")} value={expected} note={fmtBp(e.expectedChangeBp)} />
-        <Stat label={t("Karar", "Decision")} value={formatDecisionRate(m, lang)} note={view.changeBp !== undefined ? fmtBp(view.changeBp) : undefined} />
+      <div className="mt-4 grid grid-cols-3 gap-2 sm:gap-3">
         <Stat
+          compact
+          label={t("Beklenen", "Expected")}
+          value={expected}
+          note={t(`değişim ${fmtBp(e.expectedChangeBp)}`, `change ${fmtBp(e.expectedChangeBp)}`)}
+        />
+        <Stat
+          compact
+          label={t("Karar", "Decision")}
+          value={formatDecisionRate(m, lang)}
+          note={view.changeBp !== undefined ? t(`değişim ${fmtBp(view.changeBp)}`, `change ${fmtBp(view.changeBp)}`) : undefined}
+        />
+        <Stat
+          compact
           label={t("Fark", "Gap")}
           value={fmtBp(s.bp)}
           tone={s.bp > 0 ? "text-hawk" : s.bp < 0 ? "text-dove" : "text-foreground"}
-          note={surpriseText(s.label, lang)}
         />
       </div>
 

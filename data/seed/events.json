@@ -1,0 +1,140 @@
+{
+  "fetchedAt": "2026-10-13T20:22:55.359Z",
+  "events": [
+    {
+      "id": "ecb-2026-10-13-1h8o6s9",
+      "bankCode": "ecb",
+      "at": "2026-10-13T07:15:00.000Z",
+      "timeTbd": false,
+      "kind": "discussion",
+      "speaker": "Frank Elderson",
+      "title": "Participation by Mr Elderson in a Panel 1 \"The Clean Industrial Deal and a European growth strategy\" at Friends of Europe Energy and Climate Summit in Brussels, Belgium",
+      "url": "https://www.friendsofeurope.org/events/energy-geopolitics-and-europes-strategic-transition/#about"
+    },
+    {
+      "id": "fed-2026-10-13-1mr7697",
+      "bankCode": "fed",
+      "at": "2026-10-13T07:45:00.000Z",
+      "timeTbd": false,
+      "kind": "discussion",
+      "speaker": "Christopher J. Waller",
+      "role": "Governor",
+      "title": "At the Bloomberg New Economy Forum 2026, New Delhi, India",
+      "url": "https://www.federalreserve.gov/newsevents/calendar.htm"
+    },
+    {
+      "id": "ecb-2026-10-13-13zsx9l",
+      "bankCode": "ecb",
+      "at": "2026-10-13T18:30:00.000Z",
+      "timeTbd": false,
+      "kind": "speech",
+      "speaker": "Philip R. Lane",
+      "title": "Speech by Mr Lane at pre-Summit dinner hosted by Micheál Martin, Prime Minister of Ireland ahead of International AI Summit in Dublin, Ireland",
+      "url": "https://internationalaisummit.ie/"
+    },
+    {
+      "id": "ecb-2026-10-14-hr17ij",
+      "bankCode": "ecb",
+      "at": "2026-10-14T02:10:00.000Z",
+      "timeTbd": false,
+      "kind": "discussion",
+      "speaker": "Christine Lagarde",
+      "role": "President",
+      "title": "Participation by Ms Lagarde in on-stage conversation with Richard Quest \"Leadership in an age of change\" at CNN Global Perspectives event in Bangkok, Thailand",
+      "url": "https://www.ecb.europa.eu/press/calendars/weekly/html/index.en.html"
+    },
+    {
+      "id": "ecb-2026-10-14-14ltm1l",
+      "bankCode": "ecb",
+      "at": "2026-10-14T08:00:00.000Z",
+      "timeTbd": false,
+      "kind": "speech",
+      "speaker": "Frank Elderson",
+      "title": "Keynote speech by Mr Elderson at ECB-BoE Conference on Supervising Climate Risk in a Non-Linear World in Frankfurt, Germany",
+      "url": "https://www.ecb.europa.eu/press/calendars/weekly/html/index.en.html"
+    },
+    {
+      "id": "ecb-2026-10-14-ru4xb4",
+      "bankCode": "ecb",
+      "at": "2026-10-14T08:15:00.000Z",
+      "timeTbd": false,
+      "kind": "discussion",
+      "speaker": "Claudia Buch",
+      "title": "Fireside chat by Claudia Buch at World’s Bank Knowledge Café session in Bangkok, Thailand",
+      "url": "https://www.worldbank.org/en/events/2026/10/13/civil-society-policy-forum-annual-meetings-2026"
+    },
+    {
+      "id": "ecb-2026-10-14-jjwhh2",
+      "bankCode": "ecb",
+      "at": "2026-10-14T08:30:00.000Z",
+      "timeTbd": false,
+      "kind": "discussion",
+      "speaker": "Christine Lagarde",
+      "role": "President",
+      "title": "Participation by Ms Lagarde in fireside chat with Josh Lipsky organised by the Atlantic Council in Bangkok, Thailand",
+      "url": "https://www.ecb.europa.eu/press/calendars/weekly/html/index.en.html"
+    },
+    {
+      "id": "fed-2026-10-14-1asem21",
+      "bankCode": "fed",
+      "at": "2026-10-14T09:40:00.000Z",
+      "timeTbd": false,
+      "kind": "discussion",
+      "speaker": "Michelle W. Bowman",
+      "role": "Vice Chair for Supervision",
+      "title": "At the 2026 IIF Annual Membership Summit, Bangkok, Thailand",
+      "url": "https://www.federalreserve.gov/newsevents/calendar.htm"
+    },
+    {
+      "id": "ecb-2026-10-14-hbn79k",
+      "bankCode": "ecb",
+      "at": "2026-10-14T16:15:00.000Z",
+      "timeTbd": false,
+      "kind": "speech",
+      "speaker": "Isabel Schnabel",
+      "title": "Public lecture by Ms Schnabel at event to celebrate the foundation of Verein der Freunde und Förderer der Volkswirtschaftslehre an der Universität Mannheim e.V. in Mannheim, Germany",
+      "url": "https://www.ecb.europa.eu/press/calendars/weekly/html/index.en.html"
+    },
+    {
+      "id": "fed-2026-10-14-3dfpwl",
+      "bankCode": "fed",
+      "at": "2026-10-14T18:00:00.000Z",
+      "timeTbd": false,
+      "kind": "beige-book",
+      "title": "Beige Book",
+      "url": "https://www.federalreserve.gov/newsevents/calendar.htm"
+    },
+    {
+      "id": "ecb-2026-10-15-loy2r2",
+      "bankCode": "ecb",
+      "at": "2026-10-15T02:45:00.000Z",
+      "timeTbd": false,
+      "kind": "discussion",
+      "speaker": "Claudia Buch",
+      "title": "Participation by Ms Buch in panel discussion at Bloomberg Global Policy Series 2026 in Bangkok, Thailand",
+      "url": "https://www.ecb.europa.eu/press/calendars/weekly/html/index.en.html"
+    },
+    {
+      "id": "fed-2026-10-14-k30rtv",
+      "bankCode": "fed",
+      "at": "2026-10-15T02:55:00.000Z",
+      "timeTbd": false,
+      "kind": "speech",
+      "speaker": "Michelle W. Bowman",
+      "role": "Vice Chair for Supervision",
+      "title": "At the Bangkok Economic Festival 2026",
+      "url": "https://www.federalreserve.gov/newsevents/calendar.htm"
+    },
+    {
+      "id": "fed-2026-10-15-1ydsy2m",
+      "bankCode": "fed",
+      "at": "2026-10-16T03:30:00.000Z",
+      "timeTbd": false,
+      "kind": "discussion",
+      "speaker": "Kevin Warsh",
+      "role": "Chair",
+      "title": "At the Fireside Chat with International Monetary Fund (IMF) Managing Director Kristalina Georgieva, Bangkok, Thailand",
+      "url": "https://www.federalreserve.gov/newsevents/calendar.htm"
+    }
+  ]
+}

@@ -116,7 +116,7 @@ export function BankCard({
         {realRate && (
           <div className="flex items-baseline justify-between gap-2">
             <dt className="text-muted">
-              <Link href={localePath(lang, "/reel-faiz")} className="hover:text-accent">
+              <Link href={localePath(lang, "/reel-faiz")} className="inline-flex min-h-6 items-center hover:text-accent">
                 {t("Reel faiz", "Real rate")}
               </Link>
             </dt>

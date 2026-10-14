@@ -44,7 +44,10 @@ function clean(s: string | undefined): string {
   if (!s) return "";
   const raw = s.replace(/<!\[CDATA\[([\s\S]*?)\]\]>/g, "$1");
   // Açıklamalar kodlanmış HTML içerebilir (&lt;p&gt;): önce çöz, sonra sök.
-  return stripTags(decodeEntities(raw).replace(/&rsquo;|&lsquo;/g, "'").replace(/&ldquo;|&rdquo;/g, '"'));
+  // Akış başlıklarında düz tırnak. Ortak çözücü bu varlıkları tipografik tırnağa
+  // çevirdiği için dönüşüm ondan önce de yapılır; sonrası çift kodlanmış (&amp;rsquo;) için.
+  const straight = (t: string) => t.replace(/&rsquo;|&lsquo;/g, "'").replace(/&ldquo;|&rdquo;/g, '"');
+  return stripTags(straight(decodeEntities(straight(raw))));
 }
 
 const TR_MONTHS: Record<string, number> = {

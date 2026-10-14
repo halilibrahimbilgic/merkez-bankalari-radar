@@ -203,7 +203,7 @@ export async function BankPage({ lang, code }: { lang: Lang; code: string }) {
                 className="flex flex-wrap items-baseline gap-x-3 gap-y-1 border-b border-border px-4 py-3 last:border-b-0"
               >
                 <span className="text-sm text-muted tabular">{formatDate(s.speechDate, lang)}</span>
-                <Link href={p(`/konusma/${s.id}`)} className="flex-1 hover:text-accent">
+                <Link href={p(`/konusma/${s.id}`)} className="min-w-56 flex-1 hover:text-accent">
                   {s.speakerName} — {speechTitle(s, lang)}
                 </Link>
                 <ScoreBadge score={s.hawkDoveScore} hasPolicySignal={s.hasPolicySignal} lang={lang} />

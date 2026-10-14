@@ -65,7 +65,7 @@ export async function RealRatesPage({ lang }: { lang: Lang }) {
                 <td className="px-4 py-2.5">
                   <Link href={localePath(lang, `/banka/${r.bankCode}`)} className="inline-flex items-center gap-2 hover:text-accent">
                     <BankTag code={r.bankCode} lang={lang} />
-                    <span className="text-muted">{bankCountry(bank, lang)}</span>
+                    <span className="hidden text-muted sm:inline">{bankCountry(bank, lang)}</span>
                   </Link>
                 </td>
                 <td className="tabular px-4 py-2.5 text-right">

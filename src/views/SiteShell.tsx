@@ -108,7 +108,9 @@ export function SiteShell({ lang, children }: { lang: Lang; children: React.Reac
           {/*
             Mobilde iki satır: marka + dil/tema düğmeleri üstte, gezinme
             altta. Gezinme sarmak yerine yatay kayar — sarmalı düzen 375px'te
-            başlığı üç satıra çıkarıyordu. sm ve üzerinde tek satır.
+            başlığı üç satıra çıkarıyordu; sağ kenardaki solma kaydırılabildiğini
+            belli eder, sondaki boşluk son bağlantıyı solmadan çıkarır. sm ve
+            üzerinde tek satır.
 
             Düğmeler tek bir DOM kopyasıdır; satırlar arası yeri `order` ile
             değişir. İki kopya render etmek aynı denetimi ekran okuyucuya
@@ -134,7 +136,7 @@ export function SiteShell({ lang, children }: { lang: Lang; children: React.Reac
 
             <nav
               aria-label={t("Ana gezinme", "Main navigation")}
-              className="order-3 -mx-4 flex w-full gap-x-4 overflow-x-auto px-4 text-sm text-muted sm:order-2 sm:mx-0 sm:ml-auto sm:w-auto sm:flex-wrap sm:gap-y-1 sm:overflow-visible sm:px-0"
+              className="order-3 -mx-4 flex w-full gap-x-4 overflow-x-auto px-4 pr-16 text-sm text-muted [mask-image:linear-gradient(to_right,black_82%,transparent)] sm:order-2 sm:mx-0 sm:ml-auto sm:w-auto sm:flex-wrap sm:gap-y-1 sm:overflow-visible sm:px-0 sm:[mask-image:none]"
             >
               {nav.map((item) => (
                 <Link
@@ -173,20 +175,20 @@ export function SiteShell({ lang, children }: { lang: Lang; children: React.Reac
                 {t("Kaynaklar ve yöntem", "Sources and methodology")}
               </Link>
             </p>
-            <nav aria-label={t("Site bilgileri", "Site information")} className="mt-3 flex flex-wrap gap-x-4 gap-y-1">
-              <Link href={p("/hakkinda")} className="text-accent hover:underline">
+            <nav aria-label={t("Site bilgileri", "Site information")} className="mt-3 flex flex-wrap gap-x-4">
+              <Link href={p("/hakkinda")} className="inline-flex min-h-8 items-center text-accent hover:underline">
                 {t("Metodoloji", "Methodology")}
               </Link>
-              <Link href={p("/gizlilik")} className="text-accent hover:underline">
+              <Link href={p("/gizlilik")} className="inline-flex min-h-8 items-center text-accent hover:underline">
                 {t("Gizlilik", "Privacy")}
               </Link>
-              <Link href={p("/iletisim")} className="text-accent hover:underline">
+              <Link href={p("/iletisim")} className="inline-flex min-h-8 items-center text-accent hover:underline">
                 {t("İletişim", "Contact")}
               </Link>
-              <a href="/rss.xml" className="text-accent hover:underline">
+              <a href="/rss.xml" className="inline-flex min-h-8 items-center text-accent hover:underline">
                 {t("RSS", "RSS (Turkish)")}
               </a>
-              <a href={TELEGRAM_URL} className="text-accent hover:underline" rel="me">
+              <a href={TELEGRAM_URL} className="inline-flex min-h-8 items-center text-accent hover:underline" rel="me">
                 {t("Telegram", "Telegram (Turkish)")}
               </a>
             </nav>

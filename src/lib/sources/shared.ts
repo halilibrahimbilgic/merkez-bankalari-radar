@@ -47,6 +47,10 @@ export function stripTags(html: string): string {
     .trim();
 }
 
+const COMBINING: Record<string, string> = {
+  acute: "\u0301", grave: "\u0300", uml: "\u0308", circ: "\u0302", tilde: "\u0303", cedil: "\u0327", ring: "\u030A",
+};
+
 export function decodeEntities(s: string): string {
   return s
     .replace(/&nbsp;/g, " ")
@@ -56,6 +60,14 @@ export function decodeEntities(s: string): string {
     // BoE metinleri para birimini adlandırılmış varlıkla yazıyor ("&pound;46 billion").
     .replace(/&pound;/g, "£")
     .replace(/&euro;/g, "€")
+    // ECB programı tırnak ve aksanlı harfleri adıyla yazıyor ("Miche&aacute;l", "World&rsquo;s").
+    .replace(/&[lr]squo;/g, (e) => (e === "&lsquo;" ? "‘" : "’"))
+    .replace(/&[lr]dquo;/g, (e) => (e === "&ldquo;" ? "“" : "”"))
+    .replace(/&hellip;/g, "…")
+    .replace(/&([a-zA-Z])(acute|grave|uml|circ|tilde|cedil|ring);/g, (_, ch: string, mark: string) =>
+      (ch + COMBINING[mark]).normalize("NFC"),
+    )
+    .replace(/&szlig;/g, "ß")
     .replace(/&amp;/g, "&")
     .replace(/&lt;/g, "<")
     .replace(/&gt;/g, ">")

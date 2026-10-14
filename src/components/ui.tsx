@@ -1,5 +1,5 @@
 import Link from "next/link";
-import type { ReactNode } from "react";
+import type { CSSProperties, ReactNode } from "react";
 
 /**
  * Düzen ilkelleri.
@@ -71,10 +71,14 @@ export function SectionHeader({
 }
 
 /**
- * Kart çerçevesi içinde yatay kayan tablo.
+ * Kart çerçevesi içindeki tablo.
  *
- * Tablolar mobilde daralmaz, kendi kabında kayar — gövde asla yatay
- * kaymaz. `minWidth` sütunların okunabilir kaldığı en küçük genişliktir.
+ * `minWidth` yalnızca sm ve üstünde uygulanır; telefonda tablo kabın
+ * genişliğine sığar, hücre boşlukları daralır ve metin satır kırar. Önceden
+ * telefonda da sabit genişlikle kayıyordu ve sağdaki sütunlar — reel faiz
+ * tablosunda sayfanın asıl rakamı — kaydırma ipucu olmadan görünmüyordu
+ * (14 Ekim 2026, 390 px ekran görüntüsünde fark edildi). Kap yine yatay
+ * kayabilir; gövde asla kaymaz.
  */
 export function TableFrame({
   children,
@@ -85,7 +89,10 @@ export function TableFrame({
 }) {
   return (
     <div className="card overflow-x-auto">
-      <table className="w-full text-sm" style={{ minWidth }}>
+      <table
+        className="w-full text-sm max-sm:[&_td]:px-2.5 max-sm:[&_th]:px-2.5 sm:[min-width:var(--table-min)]"
+        style={{ "--table-min": minWidth } as CSSProperties}
+      >
         {children}
       </table>
     </div>
@@ -148,16 +155,21 @@ export function Stat({
   value,
   tone = "text-foreground",
   note,
+  compact = false,
 }: {
   label: string;
   value: string;
   tone?: string;
   note?: string;
+  /** Telefonda üç gösterge yan yana sığsın: küçük yazı ve dolgu (sm'den sonra normal). */
+  compact?: boolean;
 }) {
   return (
-    <div className="rounded-lg bg-surface-sunken p-3">
-      <div className="text-sm text-muted">{label}</div>
-      <div className={`tabular mt-1 text-xl font-semibold ${tone}`}>{value}</div>
+    <div className={`rounded-lg bg-surface-sunken ${compact ? "p-2.5 sm:p-3" : "p-3"}`}>
+      <div className={`text-muted ${compact ? "text-xs sm:text-sm" : "text-sm"}`}>{label}</div>
+      <div className={`tabular mt-1 font-semibold ${compact ? "whitespace-nowrap text-sm sm:text-xl" : "text-xl"} ${tone}`}>
+        {value}
+      </div>
       {note && <div className="mt-0.5 text-xs text-muted">{note}</div>}
     </div>
   );

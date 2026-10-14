@@ -37,17 +37,27 @@ export function formatExpectedRate(bankCode: Meeting["bankCode"], rate: number, 
   return fmtPercent(rate, lang);
 }
 
-/** "Politika faizi 25 baz puan artırıldı: %3,75–4,00" / "Policy rate raised by 25 bp to 3.75–4.00%" */
-export function decisionSentence(m: Meeting, lang: Lang): string {
+/**
+ * Karar cümlesi iki parça: oran ayrı döner ki sayfada satır sonunda
+ * bölünmesin ("%3,75–" / "4,00").
+ * "Politika faizi 25 baz puan artırıldı:" + "%3,75–4,00"
+ */
+export function decisionParts(m: Meeting, lang: Lang): { lead: string; rate: string } {
   const rate = formatDecisionRate(m, lang);
   const bp = m.previousRate === undefined ? 0 : Math.round((m.decisionRate! - m.previousRate) * 100);
   const abs = Math.abs(bp);
   if (lang === "en") {
-    if (bp > 0) return `Policy rate raised by ${abs} bp to ${rate}`;
-    if (bp < 0) return `Policy rate cut by ${abs} bp to ${rate}`;
-    return `Policy rate held at ${rate}`;
+    if (bp > 0) return { lead: `Policy rate raised by ${abs} bp to`, rate };
+    if (bp < 0) return { lead: `Policy rate cut by ${abs} bp to`, rate };
+    return { lead: "Policy rate held at", rate };
   }
-  if (bp > 0) return `Politika faizi ${abs} baz puan artırıldı: ${rate}`;
-  if (bp < 0) return `Politika faizi ${abs} baz puan indirildi: ${rate}`;
-  return `Politika faizi sabit tutuldu: ${rate}`;
+  if (bp > 0) return { lead: `Politika faizi ${abs} baz puan artırıldı:`, rate };
+  if (bp < 0) return { lead: `Politika faizi ${abs} baz puan indirildi:`, rate };
+  return { lead: "Politika faizi sabit tutuldu:", rate };
+}
+
+/** "Politika faizi 25 baz puan artırıldı: %3,75–4,00" / "Policy rate raised by 25 bp to 3.75–4.00%" */
+export function decisionSentence(m: Meeting, lang: Lang): string {
+  const { lead, rate } = decisionParts(m, lang);
+  return `${lead} ${rate}`;
 }
