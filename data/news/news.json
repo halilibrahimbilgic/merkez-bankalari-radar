@@ -1,5 +1,5 @@
 {
-  "fetchedAt": "2026-10-14T07:02:33.399Z",
+  "fetchedAt": "2026-10-14T08:01:44.658Z",
   "items": [
     {
       "id": "16ddfa3d6bf0",
@@ -45,6 +45,22 @@
       "summaryEn": "Anadolu Agency reports that swings in tech stocks and rising oil prices stood out in global markets. Attention is now on the US inflation figure due today.",
       "important": false,
       "processedAt": "2026-10-14T06:31:30.939Z"
+    },
+    {
+      "id": "57797761c5d8",
+      "sourceKey": "tcmb-baskan",
+      "sourceName": "TCMB",
+      "kind": "official",
+      "bankCode": "tcmb",
+      "url": "https://www.tcmb.gov.tr/wps/wcm/connect/2323f020-63b3-4f38-ae1f-6049c72fe4f6/SunumB14_10_2026.pdf?MOD=AJPERES",
+      "publishedAt": "2026-10-14T04:37:33.000Z",
+      "titleOriginal": "Başkan Fatih Karahan'ın \"Türkiye'de Makroekonomik Görünüm ve Para Politikası\" Başlıklı Sunumu (İngilizce) (Bangkok)",
+      "titleTr": "TCMB Başkanı Karahan Bangkok'ta makroekonomik görünüm ve para politikası sunumu yaptı",
+      "summaryTr": "TCMB Başkanı Fatih Karahan, Bangkok'ta \"Türkiye'de Makroekonomik Görünüm ve Para Politikası\" başlıklı bir sunum yaptı. Sunum İngilizce olarak TCMB sitesinde yayımlandı.",
+      "titleEn": "CBRT Governor Karahan presents Turkey's macro outlook and monetary policy in Bangkok",
+      "summaryEn": "CBRT Governor Fatih Karahan gave a presentation titled \"Macroeconomic Outlook and Monetary Policy in Türkiye\" in Bangkok. The English-language presentation was published on the central bank's website.",
+      "important": true,
+      "processedAt": "2026-10-14T08:01:44.658Z"
     },
     {
       "id": "d5ea138eab79",
@@ -437,6 +453,7 @@
     "8dc17f20149e": "2026-10-14",
     "6aca5936ba76": "2026-10-14",
     "cb9359e632c8": "2026-10-14",
-    "06638524dcae": "2026-10-14"
+    "06638524dcae": "2026-10-14",
+    "7ee8cf4a7f1e": "2026-10-14"
   }
 }
