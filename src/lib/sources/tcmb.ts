@@ -1,6 +1,7 @@
 import { zonedWallTimeToUtc } from "../tz";
 import type { ScrapedMeeting } from "./shared";
 import { fetchText, stripTags } from "./shared";
+import type { CalendarEvent, EventKind } from "./speaking-calendars";
 
 const TCMB_URL =
   "https://www.tcmb.gov.tr/wps/wcm/connect/TR/TCMB+TR/Main+Menu/Duyurular/Takvim";
@@ -19,20 +20,23 @@ const TR_MONTHS: Record<string, number> = {
 /**
  * TCMB duyuru takvimi 4 sütunlu tek bir tablodur:
  *   [PPK Toplantı Kararı | PPK Toplantı Özeti | Enflasyon Raporu | Finansal İstikrar Raporu]
- * Faiz kararı yalnızca ilk sütundadır; diğer sütunlar rapor tarihleridir.
+ * Faiz kararı yalnızca ilk sütundadır; diğer sütunlar rapor tarihleridir
+ * (parseTcmbReleases).
  */
-export function parseTcmbCalendar(html: string): ScrapedMeeting[] {
+function tableRows(html: string): string[][] {
   const start = html.indexOf("PARA POL");
   if (start === -1) return [];
   const tableEnd = html.indexOf("</table>", start);
   const table = html.slice(start, tableEnd === -1 ? html.length : tableEnd);
+  return [...table.matchAll(/<tr[^>]*>([\s\S]*?)<\/tr>/g)].map((row) =>
+    [...row[1].matchAll(/<t[dh][^>]*>([\s\S]*?)<\/t[dh]>/g)].map((c) => stripTags(c[1])),
+  );
+}
 
+export function parseTcmbCalendar(html: string): ScrapedMeeting[] {
   const meetings: ScrapedMeeting[] = [];
 
-  for (const row of table.matchAll(/<tr[^>]*>([\s\S]*?)<\/tr>/g)) {
-    const cells = [...row[1].matchAll(/<t[dh][^>]*>([\s\S]*?)<\/t[dh]>/g)].map((c) =>
-      stripTags(c[1]),
-    );
+  for (const cells of tableRows(html)) {
     const decisionCell = cells[0];
     if (!decisionCell) continue;
 
@@ -71,4 +75,43 @@ function parseTrDate(text: string): { year: number; month: number; day: number }
 
 export async function fetchTcmbMeetings(): Promise<ScrapedMeeting[]> {
   return parseTcmbCalendar(await fetchText(TCMB_URL));
+}
+
+/** Takvimin rapor sütunları ("Bu hafta"). */
+const RELEASE_COLUMNS: [number, EventKind, string][] = [
+  [1, "mpc-summary", "Para Politikası Kurulu Toplantı Özeti"],
+  [2, "inflation-report", "Enflasyon Raporu"],
+  [3, "fsr", "Finansal İstikrar Raporu"],
+];
+
+/**
+ * PPK toplantı özeti, Enflasyon Raporu ve Finansal İstikrar Raporu
+ * tarihleri. Takvim saat vermiyor: özet karardan sonraki beş iş günü
+ * içinde, raporlar her seferinde ayrıca duyurulan saatte yayımlanıyor
+ * (Enflasyon Raporu 2026-III sunumu 10:30'daydı). Saat uydurulmaz:
+ * gün başı + timeTbd, sayfada saat yerine "—".
+ */
+export function parseTcmbReleases(html: string): CalendarEvent[] {
+  const events: CalendarEvent[] = [];
+  for (const cells of tableRows(html)) {
+    for (const [col, kind, title] of RELEASE_COLUMNS) {
+      const date = cells[col] ? parseTrDate(cells[col]) : null;
+      if (!date) continue; // başlık satırı ve boş hücreler
+      const day = `${date.year}-${String(date.month).padStart(2, "0")}-${String(date.day).padStart(2, "0")}`;
+      events.push({
+        id: `tcmb-${day}-${kind}`,
+        bankCode: "tcmb",
+        at: zonedWallTimeToUtc(date.year, date.month, date.day, 0, 0, TZ).toISOString(),
+        timeTbd: true,
+        kind,
+        title,
+        url: TCMB_URL,
+      });
+    }
+  }
+  return events;
+}
+
+export async function fetchTcmbReleases(): Promise<CalendarEvent[]> {
+  return parseTcmbReleases(await fetchText(TCMB_URL));
 }

@@ -6,7 +6,8 @@
  * Kaynaklar: src/lib/sources/speaking-calendars.ts (Fed Yönetim Kurulu
  * takvimi, ECB Yönetim Kurulu'nun haftalık programı) ve
  * release-calendars.ts (beş ekonominin TÜFE açıklama takvimi; ABD için
- * FRED_API_KEY). Pencere: dünden üç hafta sonrasına. Bir kaynak hata
+ * FRED_API_KEY), tcmb.ts (PPK toplantı özeti, Enflasyon Raporu, Finansal
+ * İstikrar Raporu). Pencere: dünden üç hafta sonrasına. Bir kaynak hata
  * verirse yalnızca o kaynağın önceki kayıtları korunur ve iş hata koduyla
  * biter (current-rates ile aynı kural).
  */
@@ -21,6 +22,7 @@ import {
   fetchUsCpiReleases,
 } from "../src/lib/sources/release-calendars";
 import { fetchEcbEvents, fetchFedEvents, type CalendarEvent } from "../src/lib/sources/speaking-calendars";
+import { fetchTcmbReleases } from "../src/lib/sources/tcmb";
 import { trtDayKey } from "../src/lib/time";
 config({ path: ".env.local", quiet: true });
 
@@ -50,6 +52,7 @@ async function main() {
   const sources: [string, () => Promise<CalendarEvent[]>, (e: CalendarEvent) => boolean][] = [
     ["Fed takvimi", () => fetchFedEvents(from, to), (e) => e.bankCode === "fed" && e.kind !== "cpi"],
     ["ECB programı", fetchEcbEvents, (e) => e.bankCode === "ecb" && e.kind !== "cpi"],
+    ["TCMB yayınları", fetchTcmbReleases, (e) => e.bankCode === "tcmb" && e.kind !== "cpi"],
     ["ABD TÜFE", () => fetchUsCpiReleases(from, to), cpi("fed")],
     ["Türkiye TÜFE", () => fetchTrCpiReleases(from, to), cpi("tcmb")],
     ["İngiltere TÜFE", () => fetchUkCpiReleases(from, to), cpi("boe")],

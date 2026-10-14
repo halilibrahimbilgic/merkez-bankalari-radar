@@ -116,7 +116,7 @@ const SOURCES: Record<Lang, Source[]> = {
     {
       name: "TCMB — Duyuru takvimi",
       url: "https://www.tcmb.gov.tr/wps/wcm/connect/TR/TCMB+TR/Main+Menu/Duyurular/Takvim",
-      note: "PPK toplantı kararı, toplantı günü 14:00 Türkiye saatinde açıklanır.",
+      note: "PPK toplantı kararı, toplantı günü 14:00 Türkiye saatinde açıklanır. PPK toplantı özeti, Enflasyon Raporu ve Finansal İstikrar Raporu tarihleri de buradan (\"Bu hafta\"; saatleri önceden duyurulmuyor).",
     },
   ],
   en: [
@@ -213,7 +213,7 @@ const SOURCES: Record<Lang, Source[]> = {
     {
       name: "CBRT — Announcement calendar",
       url: "https://www.tcmb.gov.tr/wps/wcm/connect/TR/TCMB+TR/Main+Menu/Duyurular/Takvim",
-      note: "The MPC decision is announced on the meeting day at 14:00 Turkey time.",
+      note: "The MPC decision is announced on the meeting day at 14:00 Turkey time. The dates of the MPC meeting summary, the Inflation Report and the Financial Stability Report also come from here (\"This week\"; their times are not announced in advance).",
     },
   ],
 };

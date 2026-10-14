@@ -2,6 +2,7 @@ import { test } from "node:test";
 import assert from "node:assert/strict";
 import { parseEcbWeekly, parseFedCalendar, parseUsTime } from "../src/lib/sources/speaking-calendars";
 import { decodeEntities } from "../src/lib/sources/shared";
+import { parseTcmbCalendar, parseTcmbReleases } from "../src/lib/sources/tcmb";
 
 // Örnekler 13 Ekim 2026'da federalreserve.gov/json/calendar.json ve ECB'nin
 // haftalık programından, kısaltılmış.
@@ -121,4 +122,63 @@ test("TÜFE açıklaması: ait olduğu ay ve haber işinin bakacağı ekonomiler
   assert.deepEqual(dueCpiReleases(events, [{ bankCode: "fed", period: "2026-09" }], new Date("2026-10-14T13:00:00Z")), []);
   assert.deepEqual(dueCpiReleases(events, readings, new Date("2026-10-15T01:00:00Z")), []);
   assert.deepEqual(dueCpiReleases(events, readings, new Date("2026-10-14T12:00:00Z")), []);
+});
+
+// TCMB duyuru takvimi, 15 Ekim 2026'da tcmb.gov.tr'den, üç satıra kısaltılmış.
+const TCMB_TABLE = `<h2 dir="ltr">PARA POLİTİKASI KURULU TOPLANTILARI VE RAPOR TAKVİMİ</h2>
+<table><tbody><tr>
+			<td>
+			<h3>Para Politikası Kurulu Toplantı Kararı</h3>
+			</td>
+			<td style="width: 27.5%">
+			<h3>Para Politikası Kurulu Toplantı Özeti</h3>
+			</td>
+			<td style="width: 22.5%">
+			<h3>Enflasyon Raporu</h3>
+			</td>
+			<td style="width: 22.5%">
+			<h3>Finansal İstikrar Raporu</h3>
+			</td>
+		</tr>
+<tr>
+			<td style="text-align: center;">22 Nisan 2026</td>
+			<td style="text-align: center;">30 Nisan 2026</td>
+			<td style="text-align: center;">14 Mayıs 2026</td>
+			<td style="text-align: center;">22 Mayıs 2026</td>
+		</tr>
+<tr>
+			<td style="text-align: center;">11 Haziran 2026</td>
+			<td style="text-align: center;">18 Haziran 2026</td>
+			<td style="text-align: center;">&nbsp;</td>
+			<td style="text-align: center;">&nbsp;</td>
+		</tr>
+<tr>
+			<td style="text-align: center;">22 Ekim 2026</td>
+			<td style="text-align: center;">30 Ekim 2026</td>
+			<td style="text-align: center;">12 Kasım 2026</td>
+			<td style="text-align: center;">27 Kasım 2026</td>
+		</tr></tbody></table>`;
+
+test("TCMB takvimi: karar sütunu 14:00 TRT, rapor sütunları gün düzeyinde", () => {
+  assert.deepEqual(
+    parseTcmbCalendar(TCMB_TABLE).map((m) => m.meetingAt),
+    ["2026-04-22T11:00:00.000Z", "2026-06-11T11:00:00.000Z", "2026-10-22T11:00:00.000Z"],
+  );
+  const releases = parseTcmbReleases(TCMB_TABLE);
+  assert.deepEqual(
+    releases.map((e) => e.id),
+    [
+      "tcmb-2026-04-30-mpc-summary",
+      "tcmb-2026-05-14-inflation-report",
+      "tcmb-2026-05-22-fsr",
+      "tcmb-2026-06-18-mpc-summary",
+      "tcmb-2026-10-30-mpc-summary",
+      "tcmb-2026-11-12-inflation-report",
+      "tcmb-2026-11-27-fsr",
+    ],
+  );
+  // Saat duyurulmuyor: TRT gün başı + timeTbd (sayfada "—").
+  const summary = releases.find((e) => e.id === "tcmb-2026-10-30-mpc-summary")!;
+  assert.equal(summary.at, "2026-10-29T21:00:00.000Z");
+  assert.equal(summary.timeTbd, true);
 });

@@ -32,10 +32,11 @@ type Item = { at: string; meeting: Meeting } | { at: string; event: CalendarEven
 
 /** Piyasa için önem sırası: parlamento sunumu, yayın, başkanların sözleri, diğerleri. */
 function weight(e: CalendarEvent): number {
-  // Türkiye enflasyonu bu sitenin okuru için haftanın en önemli verisi.
+  // Türkiye enflasyonu ve Enflasyon Raporu bu sitenin okuru için haftanın en önemlileri.
   if (e.kind === "cpi") return e.bankCode === "tcmb" ? 0 : 1;
-  if (e.kind === "testimony") return 0;
-  if (e.kind === "minutes" || e.kind === "beige-book") return 1;
+  if (e.kind === "testimony" || e.kind === "inflation-report") return 0;
+  if (e.kind === "minutes" || e.kind === "beige-book" || e.kind === "mpc-summary") return 1;
+  if (e.kind === "fsr") return 2;
   if (e.role === "Chair" || e.role === "President") return 2;
   return e.kind === "speech" ? 3 : 4;
 }
@@ -153,8 +154,8 @@ export async function WeekAhead({ lang, now }: { lang: Lang; now: Date }) {
 
         <p className="mt-4 text-xs text-muted">
           {t(
-            "Konuşmalar Fed ve ECB yönetim kurullarının resmî takviminden; diğer bankalar ileriye dönük program yayımlamıyor. Etkinlik adları kaynağın dilinde (İngilizce). Enflasyon tarihleri ABD, Türkiye, İngiltere, Japonya ve Avustralya'nın istatistik kurumlarından; Eurostat takvimi makinece okunamıyor.",
-            "Speeches come from the official calendars of the Fed Board and the ECB Executive Board; the other banks do not publish forward schedules. Inflation release dates come from the statistics agencies of the US, Türkiye, the UK, Japan and Australia; Eurostat's calendar is not machine-readable.",
+            "Konuşmalar Fed ve ECB yönetim kurullarının resmî takviminden; diğer bankalar ileriye dönük program yayımlamıyor. Etkinlik adları kaynağın dilinde (İngilizce). TCMB'nin PPK özeti ve rapor tarihleri TCMB'nin duyuru takviminden; saatleri önceden duyurulmuyor. Enflasyon tarihleri ABD, Türkiye, İngiltere, Japonya ve Avustralya'nın istatistik kurumlarından; Eurostat takvimi makinece okunamıyor.",
+            "Speeches come from the official calendars of the Fed Board and the ECB Executive Board; the other banks do not publish forward schedules. The CBRT's MPC summary and report dates come from its announcement calendar; their times are not announced in advance. Inflation release dates come from the statistics agencies of the US, Türkiye, the UK, Japan and Australia; Eurostat's calendar is not machine-readable.",
           )}
         </p>
       </div>
@@ -327,7 +328,13 @@ const KIND: Record<EventKind, [string, string]> = {
   minutes: ["FOMC tutanağı", "FOMC minutes"],
   "beige-book": ["Bej Kitap (bölgesel ekonomi raporu)", "Beige Book (regional economy report)"],
   cpi: ["enflasyon verisi", "inflation data"],
+  "mpc-summary": ["PPK toplantı özeti", "MPC meeting summary"],
+  "inflation-report": ["Enflasyon Raporu (Başkan'ın sunumu)", "Inflation Report (Governor's presentation)"],
+  fsr: ["Finansal İstikrar Raporu", "Financial Stability Report"],
 };
+
+/** Konuşmacısı olmayan yayınlar: satırda konuşmacı yerine türün adı yazar. */
+const PUBLICATIONS: EventKind[] = ["minutes", "beige-book", "mpc-summary", "inflation-report", "fsr"];
 
 const ROLE_TR: Record<string, string> = {
   Chair: "Başkan",
@@ -376,7 +383,7 @@ function EventItem({
   }
   const [kindTr, kindEn] = KIND[event.kind];
   const role = event.role && (lang === "en" ? event.role : (ROLE_TR[event.role] ?? event.role));
-  const publication = event.kind === "minutes" || event.kind === "beige-book";
+  const publication = PUBLICATIONS.includes(event.kind);
   return (
     <li className={`flex gap-3 text-sm ${past ? "text-muted" : ""}`}>
       {time}

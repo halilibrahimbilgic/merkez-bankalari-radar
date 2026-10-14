@@ -20,7 +20,7 @@ takip eden bir site. Üç modül:
 | E — Kararlar | Her karar, karardan önceki beklentiyle (sürpriz) ve bir önceki karar metniyle (fark + model özeti) karşılaştırılır; beklentinin seyri; sayfa başında son 12 ayın faiz döngüsü | ✅ karar metni 30 dk'da bir (news.yml), özet Claude; beklenti geçmişi günlük |
 | F — Reel faiz | Politika faizi − son yıllık TÜFE, altı ekonomi; TCMB için 12 ay sonrası enflasyon beklentisiyle ileriye dönük | ✅ günlük |
 | G — Rehber | Faiz kararlarını sade dille anlatan beş yazı | elle (içerik kodda, `src/lib/guides/`) |
-| H — Bu hafta | Ana sayfada önümüzdeki 7 günün kararları (beklentisiyle), Fed ve ECB yönetim kurullarının konuşma ve yayınları, beş ekonominin enflasyon (TÜFE) açıklamaları | ✅ günlük (`fetch:events`) |
+| H — Bu hafta | Ana sayfada önümüzdeki 7 günün kararları (beklentisiyle), Fed ve ECB yönetim kurullarının konuşma ve yayınları, TCMB'nin PPK özeti ve raporları, beş ekonominin enflasyon (TÜFE) açıklamaları | ✅ günlük (`fetch:events`) |
 
 Site **yatırım tavsiyesi vermez** ve veri lisansı gereği kişisel/eğitim
 amaçlıdır (bkz. §6).
@@ -357,8 +357,9 @@ menü "Menü" düğmesinin arkasındadır (`MobileMenu`): yatay kayan menüde se
 bağlantının dördü ilk ekranda görünmüyordu, sarmalı menü başlığı üç satıra
 çıkarıyordu.
 
-**"Bu hafta" takvimi kaynak başına korunur.** Yedi kaynak (Fed takvimi,
-ECB programı, beş TÜFE takvimi) ayrı ayrı çekilir; biri hata verirse
+**"Bu hafta" takvimi kaynak başına korunur.** Sekiz kaynak (Fed takvimi,
+ECB programı, TCMB'nin PPK özeti ve rapor takvimi, beş TÜFE takvimi) ayrı
+ayrı çekilir; biri hata verirse
 yalnızca *o kaynağın* önceki kayıtları korunur. TÜFE kayıtları banka
 koduyla tutulur (ABD → `fed`), banka başına koruma Fed takvimi kırıldığında
 eski TÜFE kaydını yenisinin yanına ikinci kez eklerdi. Euro bölgesi TÜFE
@@ -368,7 +369,10 @@ bir önceki ayın rakamını, açıklanıp veri gelince yenisini gösterir; habe
 açıklamadan sonraki 12 saat yalnızca o ekonominin kaynağına bakar
 (`fetch:inflation -- --if-due`, `src/lib/cpi-release.ts`). Verinin ait
 olduğu ay, açıklandığı ayın bir öncesidir — beş ekonominin hepsinde.
-Konsensüs beklentisi lisanslı veri; gösterilmez.
+Konsensüs beklentisi lisanslı veri; gösterilmez. TCMB'nin PPK toplantı
+özeti, Enflasyon Raporu ve Finansal İstikrar Raporu karar takviminin diğer
+sütunlarından okunur; takvim saat vermediği için gün düzeyindedir
+(`timeTbd`, saat yerine "—").
 
 **Faiz döngüsü seviye değil değişim gösterir** (`src/lib/rate-cycle.ts`,
 `/kararlar` başı). TCMB'nin %37'si seviye grafiğinde diğer beş bankayı düz

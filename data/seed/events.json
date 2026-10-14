@@ -1,37 +1,6 @@
 {
-  "fetchedAt": "2026-10-14T18:23:49.540Z",
+  "fetchedAt": "2026-10-14T22:14:44.304Z",
   "events": [
-    {
-      "id": "ecb-2026-10-13-1h8o6s9",
-      "bankCode": "ecb",
-      "at": "2026-10-13T07:15:00.000Z",
-      "timeTbd": false,
-      "kind": "discussion",
-      "speaker": "Frank Elderson",
-      "title": "Participation by Mr Elderson in a Panel 1 \"The Clean Industrial Deal and a European growth strategy\" at Friends of Europe Energy and Climate Summit in Brussels, Belgium",
-      "url": "https://www.friendsofeurope.org/events/energy-geopolitics-and-europes-strategic-transition/#about"
-    },
-    {
-      "id": "fed-2026-10-13-1mr7697",
-      "bankCode": "fed",
-      "at": "2026-10-13T07:45:00.000Z",
-      "timeTbd": false,
-      "kind": "discussion",
-      "speaker": "Christopher J. Waller",
-      "role": "Governor",
-      "title": "At the Bloomberg New Economy Forum 2026, New Delhi, India",
-      "url": "https://www.federalreserve.gov/newsevents/calendar.htm"
-    },
-    {
-      "id": "ecb-2026-10-13-13zsx9l",
-      "bankCode": "ecb",
-      "at": "2026-10-13T18:30:00.000Z",
-      "timeTbd": false,
-      "kind": "speech",
-      "speaker": "Philip R. Lane",
-      "title": "Speech by Mr Lane at pre-Summit dinner hosted by Micheál Martin, Prime Minister of Ireland ahead of International AI Summit in Dublin, Ireland",
-      "url": "https://internationalaisummit.ie/"
-    },
     {
       "id": "ecb-2026-10-14-hr17ij",
       "bankCode": "ecb",
@@ -191,6 +160,15 @@
       "kind": "cpi",
       "title": "CPI",
       "url": "https://www.abs.gov.au/statistics/economy/price-indexes-and-inflation/consumer-price-index-australia/latest-release"
+    },
+    {
+      "id": "tcmb-2026-10-30-mpc-summary",
+      "bankCode": "tcmb",
+      "at": "2026-10-29T21:00:00.000Z",
+      "timeTbd": true,
+      "kind": "mpc-summary",
+      "title": "Para Politikası Kurulu Toplantı Özeti",
+      "url": "https://www.tcmb.gov.tr/wps/wcm/connect/TR/TCMB+TR/Main+Menu/Duyurular/Takvim"
     },
     {
       "id": "tcmb-cpi-2026-11-03",

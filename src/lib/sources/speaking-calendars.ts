@@ -19,8 +19,21 @@ import { decodeEntities, fetchText, stripTags, UA } from "./shared";
  * (İngilizce) saklanır; sayfada lang="en" ile gösterilir.
  */
 
-/** "cpi": bir ekonominin enflasyon verisi açıklaması (release-calendars.ts). */
-export type EventKind = "speech" | "discussion" | "testimony" | "minutes" | "beige-book" | "cpi";
+/**
+ * "cpi": bir ekonominin enflasyon verisi açıklaması (release-calendars.ts).
+ * "mpc-summary", "inflation-report", "fsr": TCMB'nin PPK toplantı özeti ve
+ * raporları (tcmb.ts, parseTcmbReleases).
+ */
+export type EventKind =
+  | "speech"
+  | "discussion"
+  | "testimony"
+  | "minutes"
+  | "beige-book"
+  | "cpi"
+  | "mpc-summary"
+  | "inflation-report"
+  | "fsr";
 
 export interface CalendarEvent {
   id: string;
