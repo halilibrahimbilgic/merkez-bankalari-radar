@@ -133,7 +133,10 @@ düştüğü için seri yetişmeden okunan "yeni oran" eski orandı ve karar
 "değişiklik yok" diye yazılıyordu — sitede, RSS'te ve Telegram'da (13 Ekim
 2026'da fark edildi, yanlış mesaj gitmeden). `fetch:rates`'teki `covers()`
 bunu engeller. Arada karar, karar metninden gelir: `statements:fetch` 30
-dakikada bir resmî duyuruyu okur ve oranı `meetings.json`'a yazar; seri
+dakikada bir resmî duyuruyu okur ve oranı `meetings.json`'a yazar (saati son
+10 dakikada geçmiş karar için aynı koşuda dakikada bir, 15 dakikaya kadar
+yeniden bakar: kararların çoğu tam saatte, haber işi de :00/:30'da
+tetikleniyor — dış zamanlayıcıya karar günü alarmı gerekmez); seri
 gelince esas alınır, çelişki uyarı verir (`setDecision`). İki yazar aynı
 dosyaya yazar ama iki iş aynı `concurrency` grubunda sırayla çalışır.
 
@@ -183,8 +186,8 @@ kendi UA'sını (`shared.ts`) geçiriyor. Taklit hem kırılgan hem yanlış.
 kaldırıldı — dürüst UA ile sayfa 7–50 sn'de, dosya sorunsuz geliyor.)
 
 **Saati geçmiş, sonucu gelmemiş karar "bekleyen" karardır**
-(`isPendingDecision`). Sonuç resmî metinden yarım saate kadar gecikmeyle
-gelir; o arada sayfalar bugünkü kararı atlayıp bir sonraki toplantıyı
+(`isPendingDecision`). Sonuç resmî metinden birkaç dakika (tam saatte
+açıklananlar) ile yarım saat (ECB :15, BoJ) arasında gecikmeyle gelir; o arada sayfalar bugünkü kararı atlayıp bir sonraki toplantıyı
 gösteriyordu — kullanıcının en çok baktığı anda. Ana sayfa kartı, telefon
 listesi, banka sayfası, "Bu hafta" ve takvim satırı onu "Karar açıklandı:
 sonuç kısa süre içinde burada" diye tutar; canlı sayaç önbellekteki sayfada

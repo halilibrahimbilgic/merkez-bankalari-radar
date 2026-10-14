@@ -3,7 +3,7 @@ name: Haberler
 # Yarım saatte bir: resmî açıklama ve haber akışlarını okur, yenileri Claude
 # ile Türkçe/İngilizce özetler, önemlileri Telegram'a yollar. Ayrıntı:
 # src/lib/news.ts. Aynı işte karar metinleri de alınır: karar günü sitede
-# karar ~30 dakika içinde görünür (src/lib/statements.ts). Fed olasılıkları
+# karar birkaç dakika içinde görünür (scripts/fetch-statements.ts, FRESH_MS). Fed olasılıkları
 # (dosya değiştiyse) ve yeni açıklanan TÜFE de burada tazelenir. Dakika 7
 # ve 37: GitHub tam saatlerde cron'u geciktiriyor; asıl tetikleyici
 # cron-job.org (ARCHITECTURE.md §4) — iş dosyasının adı (news.yml) o yüzden
@@ -21,7 +21,8 @@ concurrency:
 jobs:
   news:
     runs-on: ubuntu-latest
-    timeout-minutes: 25
+    # Karar anında karar metni için ~15 dk beklenebilir (fetch-statements.ts).
+    timeout-minutes: 40
     permissions:
       contents: write
     env:

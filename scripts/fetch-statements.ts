@@ -6,7 +6,8 @@
  *   npm run statements:fetch -- --all     # arşiv: Aralık 2025'ten bu yana (bir kez)
  *
  * Haber işinde (news.yml, 30 dakikada bir) çalışır: karar günü sitede karar
- * metinden ~30 dakika içinde görünür. Seriler (fetch:rates) yeni oranı
+ * metinden birkaç dakika içinde görünür (saati yeni geçmiş karar için aynı
+ * koşuda dakikada bir yeniden bakılır; FRESH_MS). Seriler (fetch:rates) yeni oranı
  * yürürlük gününde gösterir — ECB'de 6 gün sonra; o güne kadar karar buradan
  * gelir, seri gelince esas alınır (setDecision çelişkiyi uyarır).
  *
@@ -40,6 +41,18 @@ const RECENT_DAYS = 10;
 /** Koşu başına özet: karar günleri genelde bir-iki karar; birikim sonraki koşulara kalır. */
 const SUMMARY_LIMIT = 4;
 
+/**
+ * Karar anı: haber işi :00 ve :30'da tetikleniyor, kararların çoğu da tam
+ * saatte ya da buçukta (TCMB 14:00, BoE 14:00/15:00, Fed 21:00/22:00, RBA
+ * 06:30/07:30). Metin o dakikada henüz yayımlanmamışsa bir sonraki deneme 30
+ * dakika sonraydı. Saati son FRESH_MS içinde geçmiş karar için dakikada bir,
+ * karar saatinden en çok WAIT_MS sonrasına kadar yeniden bakılır — dış
+ * zamanlayıcıya ek alarm gerekmeden. ECB (:15) bir sonraki koşuda gelir.
+ */
+const FRESH_MS = 10 * 60_000;
+const WAIT_MS = 15 * 60_000;
+const RETRY_MS = 60_000;
+
 const ALL = process.argv.includes("--all");
 
 async function setOutput(name: string, value: string) {
@@ -61,8 +74,8 @@ async function main() {
   let meetingsChanged = false;
   let failed = 0;
 
-  for (const m of decisions) {
-    if (m.meetingAt < from || Date.parse(m.meetingAt) > now) continue;
+  /** Bir kararın metnini alır; "missing": henüz yayımlanmamış. */
+  const processDecision = async (m: Meeting): Promise<"missing" | "done"> => {
     const existing = byId.get(m.id);
     if (existing) {
       // TCMB'nin İngilizce duyurusu Türkçesinden sonra çıkabiliyor: eksikse tamamla.
@@ -75,7 +88,7 @@ async function main() {
           console.log(`✓  ${m.id}: İngilizce metin eklendi`);
         }
       }
-      continue;
+      return "done";
     }
     let fetched;
     try {
@@ -83,13 +96,13 @@ async function main() {
     } catch (err) {
       console.error(`✗  ${m.id}: ${(err as Error).message}`);
       failed++;
-      continue;
+      return "done";
     }
     if (!fetched) {
       // Karar saatinden saatler sonra hâlâ yoksa adres kalıbı değişmiş olabilir.
-      const late = now - Date.parse(m.meetingAt) > 6 * 3_600_000;
+      const late = Date.now() - Date.parse(m.meetingAt) > 6 * 3_600_000;
       (late ? console.warn : console.log)(`${late ? "⚠ " : "– "} ${m.id}: metin henüz yayımlanmadı`);
-      continue;
+      return "missing";
     }
 
     const rec: StatementRecord = {
@@ -132,6 +145,22 @@ async function main() {
         console.warn(`⚠  ${m.id}: seri %${m.decisionRate}, karar metni %${rec.rate} diyor`);
       }
     }
+    return "done";
+  };
+
+  let waiting: Meeting[] = [];
+  for (const m of decisions) {
+    if (m.meetingAt < from || Date.parse(m.meetingAt) > now) continue;
+    const result = await processDecision(m);
+    if (result === "missing" && now - Date.parse(m.meetingAt) < FRESH_MS) waiting.push(m);
+  }
+  // Karar anı (FRESH_MS): metin birkaç dakika içinde çıkar, bu koşuda bekle.
+  while (waiting.length > 0 && Date.now() + RETRY_MS < Math.max(...waiting.map((m) => Date.parse(m.meetingAt))) + WAIT_MS) {
+    console.log(`… ${waiting.map((m) => m.id).join(", ")}: ${RETRY_MS / 1000} sn sonra yeniden bakılacak`);
+    await new Promise((r) => setTimeout(r, RETRY_MS));
+    const still: Meeting[] = [];
+    for (const m of waiting) if ((await processDecision(m)) === "missing") still.push(m);
+    waiting = still;
   }
 
   if (meetingsChanged) await writeFile(MEETINGS, JSON.stringify(file, null, 2) + "\n", "utf8");
