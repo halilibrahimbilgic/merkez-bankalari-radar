@@ -1,6 +1,36 @@
 {
-  "fetchedAt": "2026-10-14T09:31:23.469Z",
+  "fetchedAt": "2026-10-14T10:01:46.994Z",
   "items": [
+    {
+      "id": "ad281a2e8698",
+      "sourceKey": "aa-economy",
+      "sourceName": "Anadolu Agency",
+      "kind": "media",
+      "url": "https://www.aa.com.tr/en/economy/residents-preference-for-turkish-lira-remains-strong-despite-fund-outflows-central-bank/4088307",
+      "publishedAt": "2026-10-14T09:46:40.000Z",
+      "titleOriginal": "Residents’ preference for Turkish lira remains strong despite fund outflows: Central bank",
+      "titleTr": "TCMB Başkanı Karahan: Fon çıkışına rağmen yerleşiklerin TL tercihi güçlü",
+      "summaryTr": "TCMB Başkanı Fatih Karahan, fon çıkışlarına rağmen yurt içi yerleşiklerin Türk lirası tercihinin güçlü kaldığını söyledi. Karahan'a göre yüksek enerji fiyatlarına rağmen ana eğilimdeki enflasyon geriliyor ve sıkı para politikası dezenflasyonu destekliyor.",
+      "titleEn": "Central bank's Karahan: residents' preference for lira remains strong despite outflows",
+      "summaryEn": "Turkish central bank Governor Fatih Karahan said residents' preference for the lira remains strong despite fund outflows. He said underlying inflation is moderating despite elevated energy prices, and tight monetary policy supports disinflation.",
+      "important": true,
+      "processedAt": "2026-10-14T10:01:46.994Z"
+    },
+    {
+      "id": "3c80a89d462a",
+      "sourceKey": "aa-ekonomi",
+      "sourceName": "Anadolu Ajansı",
+      "kind": "media",
+      "url": "https://www.aa.com.tr/tr/ekonomi/dolar-endeksi-abd-enflasyonu-oncesinde-yukselisine-ara-verdi/4088297",
+      "publishedAt": "2026-10-14T09:37:53.000Z",
+      "titleOriginal": "Dolar endeksi, ABD enflasyonu öncesinde yükselişine ara verdi",
+      "titleTr": "Dolar endeksi, ABD enflasyon verisi öncesinde yatay seyretti",
+      "summaryTr": "Dolar endeksi, ABD'de bugün açıklanacak enflasyon verileri öncesinde yatırımcıların temkinli duruşuyla yatay seyretti. Endeks yükselişine ara verdi.",
+      "titleEn": "Dollar index flat ahead of US inflation data",
+      "summaryEn": "The dollar index moved sideways as investors turned cautious ahead of US inflation data due today. The index paused its recent rise.",
+      "important": true,
+      "processedAt": "2026-10-14T10:01:46.994Z"
+    },
     {
       "id": "6bd7d6fe7911",
       "sourceKey": "aa-economy",
@@ -471,6 +501,7 @@
     "06638524dcae": "2026-10-14",
     "7ee8cf4a7f1e": "2026-10-14",
     "ce90d942faa7": "2026-10-14",
-    "c335c72cc9c4": "2026-10-14"
+    "c335c72cc9c4": "2026-10-14",
+    "68116294d752": "2026-10-14"
   }
 }
