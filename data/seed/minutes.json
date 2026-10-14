@@ -1,5 +1,5 @@
 {
-  "fetchedAt": "2026-10-14T23:03:47.514Z",
+  "fetchedAt": "2026-10-14T23:26:32.529Z",
   "minutes": [
     {
       "meetingId": "boe-2026-02-05",
@@ -47,7 +47,31 @@
       "urls": {
         "en": "https://www.bankofengland.co.uk/monetary-policy-summary-and-minutes/2026/september-2026"
       },
-      "fetchedAt": "2026-10-14T22:32:47.132Z"
+      "fetchedAt": "2026-10-14T22:32:47.132Z",
+      "summary": {
+        "headlineTr": "Faizi %3,75'te tutan altı üyenin çoğu da çatışma uzar ve ikincil etkiler belirginleşirse faiz artırımının gerekebileceğini söyledi; üç üye şimdiden %4'e artırım istedi.",
+        "headlineEn": "Most of the six members who held Bank Rate at 3.75% also said tightening may be needed if the conflict persists and second-round effects build, while three members already wanted a rise to 4%.",
+        "pointsTr": [
+          "Komite, enflasyon risklerinin önceki toplantıya göre daha da yukarı yöne kaydığını ve ikincil etkilerin gecikmeli ortaya çıkması nedeniyle politika tepkisi için çok uzun beklemenin uygun olmadığını değerlendirdi.",
+          "Enerji fiyatlarındaki artışla TÜFE enflasyonunun 2026'nın son çeyreğinde yaklaşık %3¾'e, 2027'nin ilk çeyreğinde %4'ün biraz üzerine çıkması bekleniyor; enerjinin dolaylı etkileri şimdiye kadar zayıf kalsa da gecikmiş olabileceği belirtildi.",
+          "Greene, Mann ve Pill, iş gücü piyasasındaki atıl kapasitenin zirve yapmış göründüğünü ve enflasyonun ücret pazarlıklarının yapılacağı 2027 başında zirveye çıkacağını öne sürerek risk yönetimi gerekçesiyle 25 baz puan artırım istedi.",
+          "Faizi sabit tutan üyelerden Dhingra ve Taylor atıl kapasiteye ve politikanın sıkı düzeyine ağırlık verdi; Taylor, jeopolitik gerilim azalırsa gevşemenin de gündeme gelebileceğini söyledi.",
+          "Komite oybirliğiyle niceliksel sıkılaştırmada çok yıllı bir plan benimsedi: kalan 368 milyar sterlinlik tahvil stoku yılda 20 milyar sterlinlik satış ve vadesi dolan tahvillerle 2034 sonuna kadar sıfırlanacak, 120 milyar sterlinlik tahvil banknot karşılığı olarak ayrılacak."
+        ],
+        "pointsEn": [
+          "The Committee judged that risks to the inflation outlook had tilted further to the upside since the previous meeting and that, given the lags of second-round effects, it was not appropriate to wait too long before responding with policy.",
+          "Higher energy prices are expected to lift CPI inflation to around 3¾% in 2026 Q4 and slightly above 4% in 2027 Q1; indirect energy effects have been weak so far but may have been delayed rather than diminished.",
+          "Greene, Mann and Pill voted for a 25 basis point increase on risk-management grounds, arguing that slack appeared to have peaked and that inflation would peak in early 2027 just as wage settlements are agreed.",
+          "Among those voting to hold, Dhingra and Taylor placed particular weight on slack and the restrictive level of Bank Rate, with Taylor saying an easing of policy could come into sight if geopolitical tensions abate.",
+          "The Committee unanimously adopted a multi-year QT plan to unwind the remaining £368 billion of gilts to zero by the end of 2034 through annual sales of £20 billion alongside maturities, setting aside £120 billion of gilts to back banknote issuance."
+        ],
+        "score": 5,
+        "scoreReasonTr": "Üç üyenin artırım oyu, komitenin risklerin daha da yukarı kaydığı ve beklemenin uygun olmadığı değerlendirmesi ile Bailey, Breeden, Lombardelli ve Ramsden'in artırım gerekçesinin güçlendiğini söylemesi şahin bir duruşa işaret ediyor; Dhingra ve Taylor'ın sabırlı tutumu puanı daha yükseğe taşımıyor.",
+        "scoreReasonEn": "Three votes for a hike, the Committee's view that risks had tilted further to the upside and that it should not wait too long, and Bailey, Breeden, Lombardelli and Ramsden saying the case for tightening was building point to a hawkish stance, tempered by Dhingra's and Taylor's patience.",
+        "model": "claude-code/opus",
+        "promptVersion": "1",
+        "summarizedAt": "2026-10-14T23:26:32.526Z"
+      }
     },
     {
       "meetingId": "boj-2026-01-23",
@@ -215,7 +239,31 @@
       "urls": {
         "en": "https://www.federalreserve.gov/monetarypolicy/fomcminutes20260916.htm"
       },
-      "fetchedAt": "2026-10-14T22:32:45.977Z"
+      "fetchedAt": "2026-10-14T22:32:45.977Z",
+      "summary": {
+        "headlineTr": "Katılımcıların çoğu, faizi %3,75–4,00'e çıkaran oybirlikli kararın ardından yıl sonuna kadar bir artırımın daha muhtemelen uygun olacağını değerlendirdi.",
+        "headlineEn": "Following the unanimous hike to 3.75–4.00%, most participants assessed that another increase in the target range would likely be appropriate by year end.",
+        "pointsTr": [
+          "Katılımcılar son aylarda enflasyonu düşürmede yeterli ilerleme görmediklerini, enflasyon risklerinin yukarı yönlü olduğunu ve bazılarına göre bu eğilimin son aylarda güçlendiğini belirtti.",
+          "Neredeyse tüm katılımcılar iş gücü piyasasına yönelik risklerin azaldığını ve artık dengeli olduğunu değerlendirdi; çoğunluk iş gücü piyasasının son dönemde biraz güçlendiğini söyledi.",
+          "Birçok katılımcı daha yüksek faiz patikasını risk yönetimi gerekçesiyle ihtiyatlı bulurken, bir kısmı bunu temel senaryoları gereği zorunlu gördü; birkaç katılımcı mevcut faizin sıkı olmadığını ya da yalnızca hafif sıkı olduğunu söyledi.",
+          "Enerji fiyatları, yapay zekâ yatırımlarının talebi arzın önüne geçirebilmesi ve olası yeni gümrük vergileri yukarı yönlü enflasyon riskleri olarak sayıldı; bazı katılımcılar beş yılı aşan yüksek enflasyonun beklentileri etkileyebileceğinden endişe etti.",
+          "Personel, toplam enflasyonun yıl sonuna doğru gerilemesini ve 2029'da %2'ye ulaşmasını öngörüyor; enflasyon tahmini Temmuz'a göre yükseltildi, büyüme ve iş gücü görünümü de güçlendirildi."
+        ],
+        "pointsEn": [
+          "Participants said they had not seen sufficient progress on lowering inflation in recent months, judged inflation risks skewed to the upside, and some said those risks had become more skewed recently.",
+          "Almost all participants assessed that risks to the labor market had diminished and were now broadly balanced, and a majority said the labor market had strengthened a bit recently.",
+          "Many participants saw a higher policy path as prudent on risk-management grounds, while a number viewed it as necessary based on their modal outlooks; several said the current policy rate was not restrictive or only mildly restrictive.",
+          "Energy prices, the AI buildout potentially pushing demand ahead of supply, and possible further tariff increases were cited as upside inflation risks, and some participants worried that more than five years of above-2 percent inflation could affect expectations.",
+          "Staff projected total inflation to decline over the rest of the year and reach 2 percent in 2029, with the inflation forecast revised up from July and the outlook for activity and the labor market strengthened."
+        ],
+        "score": 8,
+        "scoreReasonTr": "Oybirliğiyle artırım, çoğu katılımcının yıl sonuna kadar bir artırımı daha uygun görmesi, enflasyonda yetersiz ilerleme vurgusu ve bazı katılımcıların mevcut faizi sıkı bulmaması açık bir sıkılaşma sinyali veriyor.",
+        "scoreReasonEn": "A unanimous hike, most participants seeing another increase as likely appropriate by year end, the stress on insufficient progress on inflation, and several viewing the current rate as not restrictive signal clear further tightening.",
+        "model": "claude-code/opus",
+        "promptVersion": "1",
+        "summarizedAt": "2026-10-14T23:26:32.529Z"
+      }
     },
     {
       "meetingId": "rba-2026-02-03",
