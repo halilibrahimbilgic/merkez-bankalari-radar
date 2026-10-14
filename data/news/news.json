@@ -1,6 +1,21 @@
 {
-  "fetchedAt": "2026-10-14T12:31:34.342Z",
+  "fetchedAt": "2026-10-14T13:01:51.403Z",
   "items": [
+    {
+      "id": "921a4b2cfb1b",
+      "sourceKey": "aa-ekonomi",
+      "sourceName": "Anadolu Ajansı",
+      "kind": "media",
+      "url": "https://www.aa.com.tr/tr/ekonomi/abdde-enflasyon-yillik-yuzde-3-7-ile-beklentilerin-uzerinde-artti/4088535",
+      "publishedAt": "2026-10-14T12:35:20.000Z",
+      "titleOriginal": "ABD'de enflasyon yıllık yüzde 3,7 ile beklentilerin üzerinde arttı",
+      "titleTr": "ABD'de yıllık enflasyon eylülde yüzde 3,7 ile beklentilerin üzerinde arttı",
+      "summaryTr": "ABD'de Tüketici Fiyat Endeksi eylülde aylık yüzde 0,6 arttı; bu artış beklentilerle uyumlu oldu. Yıllık enflasyon ise yüzde 3,7 ile beklentilerin üzerinde gerçekleşti.",
+      "titleEn": "US annual inflation rises to 3.7% in September, above expectations",
+      "summaryEn": "US consumer prices rose 0.6% month-on-month in September, in line with expectations. Annual inflation came in at 3.7%, above expectations.",
+      "important": true,
+      "processedAt": "2026-10-14T13:01:51.403Z"
+    },
     {
       "id": "0e40bd8c2c39",
       "sourceKey": "aa-economy",
@@ -581,6 +596,10 @@
     "3a01d2bb7242": "2026-10-14",
     "67a79d03f145": "2026-10-14",
     "40e4ce862692": "2026-10-14",
-    "2e487a182d22": "2026-10-14"
+    "2e487a182d22": "2026-10-14",
+    "547afbd8ae07": "2026-10-14",
+    "7491e13dd054": "2026-10-14",
+    "63683e5df339": "2026-10-14",
+    "38a3862610e1": "2026-10-14"
   }
 }
