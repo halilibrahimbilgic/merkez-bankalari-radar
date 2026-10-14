@@ -1,6 +1,36 @@
 {
-  "fetchedAt": "2026-10-14T11:01:40.090Z",
+  "fetchedAt": "2026-10-14T11:31:35.044Z",
   "items": [
+    {
+      "id": "571ba4918280",
+      "sourceKey": "marketwatch",
+      "sourceName": "MarketWatch",
+      "kind": "media",
+      "url": "https://www.marketwatch.com/story/heres-how-much-the-ai-boom-is-contributing-to-inflation-according-to-goldman-sachs-calculations-5ec717ff?mod=mw_rss_topstories",
+      "publishedAt": "2026-10-14T11:18:00.000Z",
+      "titleOriginal": "Here’s how much the AI boom is contributing to inflation, according to Goldman Sachs calculations",
+      "titleTr": "Goldman Sachs: Yapay zekâ patlamasının enflasyona katkısı hesaplandı",
+      "summaryTr": "Goldman Sachs ekonomistleri, yapay zekâ patlamasının enflasyona ne kadar katkı yaptığını hesapladı.",
+      "titleEn": "Goldman Sachs calculates AI boom's contribution to inflation",
+      "summaryEn": "Goldman Sachs economists have calculated how much the AI boom has added to inflation.",
+      "important": false,
+      "processedAt": "2026-10-14T11:31:35.044Z"
+    },
+    {
+      "id": "a852eca73596",
+      "sourceKey": "bbc-business",
+      "sourceName": "BBC News",
+      "kind": "media",
+      "url": "https://www.bbc.co.uk/news/articles/cx30eq0vyed4o?at_medium=RSS&at_campaign=rss",
+      "publishedAt": "2026-10-14T11:04:12.000Z",
+      "titleOriginal": "Faisal Islam: What surprise praise for UK economy tells us about the Budget",
+      "titleTr": "IMF yetkilileri İngiltere'nin borçlanmayı azaltma planlarını övdü",
+      "summaryTr": "BBC'den Faisal Islam'a göre IMF'nin üst düzey isimleri son 24 saatte üç kez İngiltere'nin yıllık borçlanmayı azaltma planlarını takdir etti. Yazı bunun bütçe açısından ne anlama geldiğini ele alıyor.",
+      "titleEn": "IMF officials praise UK plans to cut borrowing",
+      "summaryEn": "According to the BBC's Faisal Islam, top IMF officials have three times in the past 24 hours praised UK plans to reduce annual borrowing. The piece looks at what this means for the Budget.",
+      "important": false,
+      "processedAt": "2026-10-14T11:31:35.044Z"
+    },
     {
       "id": "ad281a2e8698",
       "sourceKey": "aa-economy",
