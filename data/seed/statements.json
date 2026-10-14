@@ -1,5 +1,5 @@
 {
-  "fetchedAt": "2026-10-14T22:32:48.828Z",
+  "fetchedAt": "2026-10-14T23:02:49.259Z",
   "statements": [
     {
       "meetingId": "boe-2025-12-18",
@@ -418,26 +418,27 @@
       "rate": 1,
       "previousId": "boj-2026-06-16",
       "summary": {
-        "headlineTr": "BoJ gecelik teminatsız çağrı faizi hedefini yaklaşık yüzde 1,0'da 8-1 oyla sabit tuttu; Takata Hajime faizin yüzde 1,25'e çıkarılmasını önerdi ve önerisi reddedildi.",
-        "headlineEn": "The BoJ kept its uncollateralized overnight call rate guideline at around 1.0 percent by an 8-1 vote, with Takata Hajime proposing a rise to 1.25 percent, a proposal that was defeated.",
+        "headlineTr": "BoJ, haziranda yüzde 1,0'a yükselttiği gecelik çağrı faizi hedefini 8-1 oyla korudu; Takata Hajime faizin yüzde 1,25'e artırılmasını önererek karşı oy kullandı.",
+        "headlineEn": "The BoJ kept its uncollateralized overnight call rate guideline at around 1.0 percent, after raising it to that level in June, by an 8-1 vote, with Takata Hajime dissenting and proposing a hike to 1.25 percent.",
         "changesTr": [
-          "Haziran'da faiz yaklaşık yüzde 1,0'a yükseltilmişken, bu toplantıda politika yönlendirmesi değiştirilmeden yaklaşık yüzde 1,0'da tutuldu.",
-          "Karşı oy yön değiştirdi: Haziran'da Asada Toichiro faizin sabit tutulmasını isteyerek karşı oy verirken, bu kez Takata Hajime yurt dışı kaynaklı talep şoklarının fiyatlarda yukarı yönlü risk yarattığını belirterek yüzde 1,25'lik faiz önerdi.",
-          "Oy dağılımı 7-1'den 8-1'e değişti; Haziran'da katılmayan Başkan Ueda Kazuo ve yeni üye Sato Ayano çoğunlukla oy kullandı, Asada bu kez kararı destekledi.",
-          "Bu metin yalnızca politika kararını içeriyor; Haziran metnindeki ekonomi, fiyatlar ve ileriye dönük faiz artırımı değerlendirmesi burada yer almıyor, görünüm aynı gün ayrı yayımlanan Görünüm Raporu'na bırakıldı."
+          "Haziranda faiz yüzde 1,0'a yükseltilmişti; bu toplantıda hedef yüzde 1,0 civarında değiştirilmedi.",
+          "Haziranda tek karşı oy (Asada Toichiro) faizin sabit tutulmasını istemişti; bu kez tek karşı oy (Takata Hajime) yurt dışı kaynaklı talep şoklarının yarattığı yukarı yönlü fiyat risklerine dikkat çekerek yüzde 1,25'e artırım önerdi ve öneri reddedildi.",
+          "Haziran metnindeki ekonomik değerlendirme ve \"politika faizini artırmaya devam edecek\" yönündeki ileriye dönük yönlendirme bu kısa karar metninde yer almıyor; görünüm ayrı yayımlanan Görünüm Raporu'na bırakılmış."
         ],
         "changesEn": [
-          "After the rate was raised to around 1.0 percent in June, the guideline was kept unchanged at around 1.0 percent at this meeting.",
-          "The dissent changed direction: in June Asada Toichiro dissented in favour of holding, while this time Takata Hajime proposed 1.25 percent, citing upside risks to prices from demand shocks stemming from overseas developments.",
-          "The vote moved from 7-1 to 8-1; Governor Ueda Kazuo, absent in June, and new member Sato Ayano voted with the majority, and Asada supported the decision this time.",
-          "This statement covers only the policy decision; the June text's assessment of activity, prices and the guidance to continue raising rates is absent here, with the outlook left to the Outlook Report released separately the same day."
+          "The rate was raised to 1.0 percent in June; at this meeting the guideline was left unchanged at around 1.0 percent.",
+          "In June the single dissenter (Asada Toichiro) wanted to hold rates; this time the single dissenter (Takata Hajime) cited upside risks to prices from overseas demand shocks and proposed a hike to 1.25 percent, which was defeated.",
+          "The June statement's economic assessment and forward guidance that the Bank \"will continue to raise the policy interest rate\" do not appear in this short statement, with the outlook left to the separately released Outlook Report."
         ],
-        "tone": "more-hawkish",
-        "toneReasonTr": "Metindeki tek görüş ayrılığı artık şahin yönde: Takata, fiyatlardaki yukarı yönlü risklere 'çevik' yanıt verilmesi gereken 'yeni bir aşamaya' geçildiğini söyleyerek yüzde 1,25 önerdi; Haziran'daki güvercin karşı oy ise ortadan kalktı.",
-        "toneReasonEn": "The only dissent in the text is now hawkish: Takata proposed 1.25 percent, arguing the situation had shifted to 'a new phase' requiring a 'nimble approach' to upside price risks, while June's dovish dissent disappeared.",
+        "tone": "mixed",
+        "toneReasonTr": "Karşı oy güvercin yönden (sabit tutma) şahin yöne (yüzde 1,25'e artırım) dönerken, faiz artırımlarının süreceği yönündeki ileriye dönük yönlendirme metinde yer almıyor.",
+        "toneReasonEn": "The dissent shifted from the dovish side (hold) to the hawkish side (hike to 1.25 percent), while the forward guidance that rate increases would continue is absent from the statement.",
+        "score": 1,
+        "scoreReasonTr": "Metin yalnızca yüzde 1,0'da sabit tutmayı ve yukarı yönlü fiyat risklerini gerekçe gösteren tek bir artırım önerisini içeriyor; ileriye dönük yönlendirme olmadığından hafif şahin.",
+        "scoreReasonEn": "The statement contains only the hold at 1.0 percent and a single dissenting hike proposal citing upside risks to prices; with no forward guidance, it is mildly hawkish.",
         "model": "claude-code/opus",
-        "promptVersion": "1",
-        "summarizedAt": "2026-10-13T20:09:27.024Z"
+        "promptVersion": "2",
+        "summarizedAt": "2026-10-14T23:02:49.257Z"
       }
     },
     {
@@ -694,28 +695,31 @@
       "rate": 2.5,
       "previousId": "ecb-2026-07-23",
       "summary": {
-        "headlineTr": "ECB üç politika faizini 25 baz puan artırarak mevduat faizini %2,50'ye yükseltti ve Orta Doğu'daki çatışmanın enflasyonu uzun süre hedefin belirgin biçimde üzerinde tutacağını vurguladı.",
-        "headlineEn": "The ECB raised its three key interest rates by 25 basis points, lifting the deposit facility rate to 2.50%, and stressed that the Middle East conflict will keep inflation well above target for an extended period.",
+        "headlineTr": "ECB üç politika faizini 25 baz puan artırarak mevduat faizini %2,50'ye çıkardı ve Orta Doğu'daki çatışmanın enflasyon baskısı yaratmaya devam ettiğini, enflasyonun uzun süre hedefin belirgin biçimde üzerinde kalacağını söyledi.",
+        "headlineEn": "The ECB raised its three key interest rates by 25 basis points, lifting the deposit facility rate to 2.50%, saying the Middle East conflict continues to generate inflation pressures and inflation is set to remain well above target for an extended period.",
         "changesTr": [
-          "Faizler sabit tutulmak yerine 25 baz puan artırıldı; mevduat, ana refinansman ve marjinal borç verme faizleri 16 Eylül 2026'dan itibaren sırasıyla %2,50, %2,65 ve %2,90 olacak.",
-          "Önceki metindeki enerji şokunun etkisini 'yakından izleme' ifadesinin yerini, çatışmanın enflasyon baskısı yaratmaya devam ettiği ve enflasyonun uzun süre hedefin belirgin biçimde üzerinde kalacağı tespiti aldı.",
-          "Yeni projeksiyonlarda manşet enflasyon 2026 için %3,0, 2027 için %2,5, 2028 için %2,1; 2026 değişmezken 2027 ve 2028 tahminleri yukarı revize edildi.",
-          "Büyüme tahmini 2026 için %0,9, 2027 için %1,4 ve 2028 için %1,5 oldu; euro bölgesi ekonomisinin beklenenden dirençli olması nedeniyle 2026 ve 2027 yukarı revize edildi.",
-          "Metne, enflasyonda yukarı ve büyümede aşağı yönlü risklerin bulunduğu belirsiz bir görünüm değerlendirmesi eklendi; veri bağımlı, toplantı bazlı yaklaşım ve belirli bir faiz patikasına bağlanmama ifadesi korundu."
+          "Mevduat, ana refinansman ve marjinal borç verme faizleri sırasıyla %2,50, %2,65 ve %2,90'a yükseltildi (16 Eylül 2026'dan geçerli); önceki toplantıda faizler sabit tutulmuştu.",
+          "Enerji şokunun etkisinin henüz tam görülmediği yönündeki bekle-gör dili, çatışmanın enflasyon baskısı yarattığı ve enflasyonun uzun süre hedefin belirgin biçimde üzerinde kalacağı tespitiyle değiştirildi.",
+          "Yeni personel projeksiyonları manşet enflasyonu 2026'da %3,0, 2027'de %2,5, 2028'de %2,1 öngörüyor; 2027 ve 2028 tahminleri yukarı revize edildi.",
+          "Büyüme tahminleri 2026 için %0,9'a ve 2027 için %1,4'e yukarı revize edildi; gerekçe ekonominin beklenenden dayanıklı olması.",
+          "Risk dengesi açıkça yazıldı: enflasyonda yukarı, büyümede aşağı yönlü riskler; veri bağımlı, toplantı bazlı ve önceden taahhütte bulunmayan yaklaşım korundu."
         ],
         "changesEn": [
-          "Rates were raised by 25 basis points instead of being kept unchanged; the deposit facility, main refinancing and marginal lending rates will be 2.50%, 2.65% and 2.90% respectively from 16 September 2026.",
-          "The earlier language about closely monitoring the energy shock was replaced by the statement that the conflict continues to generate inflation pressures and that inflation is set to remain well above target for an extended period.",
-          "New projections see headline inflation at 3.0% in 2026, 2.5% in 2027 and 2.1% in 2028; 2026 is unchanged while 2027 and 2028 were revised up.",
-          "Growth is projected at 0.9% in 2026, 1.4% in 2027 and 1.5% in 2028, revised up for 2026 and 2027 on the euro area economy's greater than expected resilience.",
-          "A new assessment of a highly uncertain outlook with upside risks to inflation and downside risks to growth was added; the data-dependent, meeting-by-meeting approach and the refusal to pre-commit to a rate path were retained."
+          "The deposit facility, main refinancing and marginal lending rates were raised to 2.50%, 2.65% and 2.90% respectively (effective 16 September 2026), after rates were kept unchanged at the previous meeting.",
+          "Wait-and-see language that the full impact of the energy shock had yet to play out was replaced by the assessment that the conflict continues to generate inflation pressures and inflation will remain well above target for an extended period.",
+          "New staff projections see headline inflation at 3.0% in 2026, 2.5% in 2027 and 2.1% in 2028, with 2027 and 2028 revised up.",
+          "Growth projections were revised up to 0.9% for 2026 and 1.4% for 2027, reflecting the economy's greater than expected resilience.",
+          "The balance of risks is now stated explicitly as upside for inflation and downside for growth, while the data-dependent, meeting-by-meeting approach with no pre-commitment was retained."
         ],
         "tone": "more-hawkish",
-        "toneReasonTr": "Metin, enflasyonun 'uzun süre hedefin belirgin biçimde üzerinde' kalacağını söylüyor, 2027–2028 enflasyon tahminlerini yukarı çekiyor ve enflasyonda yukarı yönlü riskleri öne çıkarıyor.",
-        "toneReasonEn": "The text says inflation is 'set to remain well above target for an extended period', revises up the 2027–2028 inflation projections and highlights upside risks to inflation.",
+        "toneReasonTr": "Metin faiz artırımına geçiyor, enflasyonun \"uzun süre hedefin belirgin biçimde üzerinde kalacağını\" ekliyor, 2027–2028 enflasyon tahminlerini yükseltiyor ve enflasyonda yukarı yönlü riskleri vurguluyor.",
+        "toneReasonEn": "The statement moves to a rate hike, adds that inflation is \"set to remain well above target for an extended period\", revises up 2027–2028 inflation projections and highlights upside risks to inflation.",
+        "score": 5,
+        "scoreReasonTr": "Faiz artırımı ve enflasyonun uzun süre hedefin üzerinde kalacağı vurgusu şahin; ancak veri bağımlı, toplantı bazlı yaklaşım ve belirli bir faiz patikasına taahhüt edilmemesi yeni artırımları açıkça ima etmiyor.",
+        "scoreReasonEn": "The rate hike and the emphasis on inflation staying above target for an extended period are hawkish, but the data-dependent, meeting-by-meeting approach and no pre-commitment to a rate path stop short of signalling further hikes.",
         "model": "claude-code/opus",
-        "promptVersion": "1",
-        "summarizedAt": "2026-10-13T20:09:27.025Z"
+        "promptVersion": "2",
+        "summarizedAt": "2026-10-14T23:02:49.258Z"
       }
     },
     {
@@ -1135,28 +1139,31 @@
       "rate": 4.35,
       "previousId": "rba-2026-06-16",
       "summary": {
-        "headlineTr": "RBA nakit faiz hedefini yüzde 4,35'te sabit tuttu ve enflasyonun hedef aralığın ortasına ancak 2027 sonunda dönmesinin beklendiğini, bu tahminde yukarı yönlü riskler bulunduğunu ekledi.",
+        "headlineTr": "RBA nakit faiz hedefini yüzde 4,35'te sabit tuttu ve enflasyonun 2027 sonuna kadar hedef aralığın ortasına dönmesinin beklenmediğini, bu tahminde yukarı yönlü riskler bulunduğunu ekledi.",
         "headlineEn": "The RBA left the cash rate target unchanged at 4.35 per cent and added that inflation is not expected to return to around the midpoint of the target range until late 2027, with upside risks to that projection.",
         "changesTr": [
-          "Metne, enflasyonun hedef aralığın ortasına ancak 2027 sonunda dönmesinin beklendiği ve bu tahminde yukarı yönlü risklerin bulunduğu eklendi; para politikası 'bir ölçüde kısıtlayıcı' olarak nitelendi.",
-          "Ek faiz artırımı ifadesi 'gerekirse' yerine 'yukarı yönlü riskler gerçekleşirse' koşuluna bağlandı; talep büyümesinin 'yavaşlaması' yerine 'baskılı kalması' gerektiği yazıldı.",
-          "Orta Doğu çatışmasının enflasyona etkisinin şimdiye kadar beklenenden az olduğu, ancak manşet enflasyonun hâlâ çok yüksek ve budanmış ortalama enflasyonun Mart çeyreğinden bu yana pek değişmediği belirtildi.",
-          "İşgücü piyasası koşullarının son aylarda beklenenden biraz fazla gevşediği, öncü göstergelerin ise yakın dönemde yalnızca sınırlı gevşeme gösterdiği eklendi; yeni konut kredilerinin belirgin biçimde azaldığı not edildi.",
-          "Ana ticaret ortaklarında büyümenin yapay zekâ yatırımları sayesinde beklenenden güçlü olduğu ve Avustralya'da zayıf verimlilik artışının potansiyel büyümeyi sınırladığı eklendi."
+          "Enflasyonun hedef aralığın ortasına ancak 2027 sonunda dönmesinin beklendiği, bu tahminde yukarı yönlü riskler olduğu ve para politikasının \"bir ölçüde sıkı\" olduğu değerlendirmesi eklendi.",
+          "Ek faiz artırımı koşulu \"gerekirse\" yerine \"yukarı yönlü riskler gerçekleşirse\" olarak yeniden yazıldı.",
+          "Orta Doğu çatışmasının enflasyona etkisinin şimdiye kadar beklenenden az olduğu, ancak budanmış ortalama enflasyonun yüksek kalıp mart çeyreğinden pek değişmediği belirtildi.",
+          "İşgücü piyasası koşullarının son aylarda beklenenden biraz fazla gevşediği, öncü göstergelerin ise yakın vadede sınırlı gevşemeye işaret ettiği yazıldı; konut kredilerinde belirgin düşüş eklendi.",
+          "Ticaret ortaklarındaki büyümenin yapay zekâ yatırımları sayesinde beklenenden güçlü olduğu ve zayıf verimliliğin potansiyel büyümeyi sınırladığı eklendi."
         ],
         "changesEn": [
-          "The statement added that inflation is not expected to return to around the midpoint of the target range until late 2027, with upside risks to this projection, and described monetary policy as 'somewhat restrictive'.",
-          "Further rate increases are now conditioned on 'if upside risks materialise' instead of 'if required', and demand growth now needs to 'remain subdued' rather than 'slow'.",
-          "The Middle East conflict's impact on inflation was described as less than expected so far, while headline inflation is still too high and trimmed mean inflation is little changed from the March quarter.",
-          "Labour market conditions were said to have eased by a little more than expected in recent months, with leading indicators pointing to only limited near-term easing, and new housing loans were noted to be declining noticeably.",
-          "New text says growth in major trading partners has been stronger than expected thanks to AI-related investment, and that weak productivity growth continues to constrain Australia's potential growth."
+          "The statement added that inflation is not expected to return to around the midpoint of the target range until late 2027, that there are upside risks to this projection, and that monetary policy is judged to be somewhat restrictive.",
+          "The condition for further rate increases was reworded from \"if required\" to \"if upside risks materialise\".",
+          "It noted that the Middle East conflict's impact on inflation has so far been less than expected, but trimmed mean inflation remains elevated and little changed from the March quarter.",
+          "Labour market conditions were described as having eased by a little more than expected in recent months, with leading indicators pointing to only limited near-term easing; a noticeable decline in new housing loans was added.",
+          "It added that trading partner growth has been stronger than expected thanks to AI-related investment and that weak productivity growth constrains potential growth."
         ],
         "tone": "mixed",
-        "toneReasonTr": "Çatışmanın enflasyon etkisinin beklenenden az olması, işgücü piyasasındaki gevşeme ve politikanın 'bir ölçüde kısıtlayıcı' sayılması güvercin; enflasyonun 2027 sonuna kadar hedef ortasına dönmeyeceği ve yurt içi enflasyon baskılarının beklenenden yüksek olabileceği ifadeleri şahin yönde.",
-        "toneReasonEn": "The smaller-than-expected inflation impact of the conflict, the easing labour market and policy judged 'somewhat restrictive' lean dovish, while inflation not returning to the midpoint until late 2027 and domestic inflationary pressures possibly being higher than expected lean hawkish.",
+        "toneReasonTr": "Enflasyonun 2027 sonuna kadar hedefe dönmeyeceği ve tahminde yukarı yönlü riskler olduğu ifadeleri şahin; çatışmanın enflasyon etkisinin beklenenden az olması, işgücü piyasasının beklenenden fazla gevşemesi ve politikanın \"bir ölçüde sıkı\" sayılması güvercin yönde.",
+        "toneReasonEn": "Saying inflation will not return to target until late 2027 with upside risks is hawkish, while the conflict's smaller-than-expected inflation impact, a labour market easing more than expected and policy judged \"somewhat restrictive\" lean dovish.",
+        "score": 4,
+        "scoreReasonTr": "Faiz sabit tutulsa da enflasyonun \"hâlâ çok yüksek\" olduğu, tahminde yukarı yönlü riskler bulunduğu ve riskler gerçekleşirse faizin daha da artırılabileceği mesajı sıkılaşma eğilimli şahin bir duruş gösteriyor.",
+        "scoreReasonEn": "Despite the hold, the messages that inflation is \"still too high\", that there are upside risks to the projection and that the cash rate could be increased further if those risks materialise show a hawkish stance with a tightening bias.",
         "model": "claude-code/opus",
-        "promptVersion": "1",
-        "summarizedAt": "2026-10-13T20:09:27.026Z"
+        "promptVersion": "2",
+        "summarizedAt": "2026-10-14T23:02:49.258Z"
       }
     },
     {
@@ -1427,26 +1434,29 @@
       "rate": 37,
       "previousId": "tcmb-2026-07-23",
       "summary": {
-        "headlineTr": "TCMB politika faizini yüzde 37'de sabit tuttu ve son verilerin enflasyonun ana eğiliminin gerilediğine işaret ettiğini belirtti.",
-        "headlineEn": "The CBRT kept its policy rate unchanged at 37 percent and said recent data point to a decline in the underlying trend of inflation.",
+        "headlineTr": "TCMB politika faizini yüzde 37'de sabit tuttu ve enflasyonun ana eğiliminin gerilediğini, iç talepteki zayıf seyrin teyit edildiğini belirtirken enerji fiyatlarını yukarı yönlü risk olarak öne çıkardı.",
+        "headlineEn": "The CBRT held its policy rate at 37 percent, noting that the underlying trend of inflation has declined and weak domestic demand has been confirmed, while flagging elevated energy prices as an upside risk.",
         "changesTr": [
-          "Önceki metindeki 'ana eğilim haziranda sınırlı geriledi, temmuzda geçici olarak yükselecek' ifadesi yerine, aylık dalgalanmalara karşın son gerçekleşmelerin ve öncü göstergelerin ana eğilimin gerilediğine işaret ettiği yazıldı.",
-          "İç talepteki zayıf seyrin 'belirginleştiği' ifadesi, iktisadi faaliyet verileri ve arz şoklarının yurt içi fiyatlara sınırlı yansımasıyla 'teyit edildiği' biçiminde güçlendirildi.",
-          "Enerji fiyatlarının 'yeniden yükselme eğilimine girdiği' tespitinin yerini, yüksek seyreden enerji fiyatlarının enflasyon görünümü üzerinde yukarı yönlü risk oluşturduğu ifadesi aldı.",
-          "Sıkı para politikası duruşu, bozulma halinde sıkılaştırma taahhüdü ve yukarı yönlü risklere karşı ihtiyatlı duruş vurgusu değişmeden korundu."
+          "Ana eğilimin haziranda sınırlı gerilediği ve temmuzda geçici olarak yükseleceği ifadesinin yerine, aylık dalgalanmalara karşın son gerçekleşmeler ve öncü göstergelerin ana eğilimin gerilediğine işaret ettiği yazıldı.",
+          "İç talepteki zayıf seyir \"belirginleşiyor\" yerine, iktisadi faaliyet verileri ve arz şoklarının yurt içi fiyatlara sınırlı yansımasıyla \"teyit ediliyor\" olarak güçlendirildi.",
+          "Enerji fiyatları için \"yeniden yükselme eğilimine girdi\" tespiti, yüksek seyreden enerji fiyatlarının enflasyon görünümü üzerinde yukarı yönlü risk oluşturduğu ifadesiyle değiştirildi.",
+          "Sıkı duruşun fiyat istikrarı sağlanana kadar süreceği, bozulma halinde sıkılaştırma yapılacağı ve yukarı yönlü risklere karşı ihtiyatlı duruş dahil ileriye dönük yönlendirme değişmedi."
         ],
         "changesEn": [
-          "The previous wording that the underlying trend declined slightly in June and would rise temporarily in July was replaced by the statement that, despite monthly fluctuations, recent inflation data and leading indicators point to a decline in the underlying trend.",
-          "The description of weak domestic demand was strengthened from 'becoming more evident' to 'confirmed' by activity data and the limited pass-through of supply shocks to domestic prices.",
-          "The observation that energy prices had resumed an upward trend was replaced by the statement that elevated energy prices pose an upside risk to the inflation outlook.",
-          "The tight policy stance, the commitment to tighten in case of a significant and persistent deterioration, and the emphasis on a cautious stance against upside risks were kept unchanged."
+          "The statement that the underlying trend eased slightly in June and would rise temporarily in July was replaced by the assessment that, despite monthly fluctuations, recent data and leading indicators point to a decline in the underlying trend of inflation.",
+          "Weak domestic demand was upgraded from \"becoming more evident\" to \"confirmed\" by economic activity data and the limited pass-through of supply shocks to domestic prices.",
+          "The observation that energy prices had started rising again was replaced by language that elevated energy prices pose an upside risk to the inflation outlook.",
+          "Forward guidance was unchanged, including maintaining the tight stance until price stability is achieved, tightening in case of deterioration and a cautious stance against upside risks to inflation."
         ],
         "tone": "more-dovish",
-        "toneReasonTr": "Ana eğilimin 'gerilediği' ve iç talepteki zayıflığın 'teyit edildiği' ifadeleri dezenflasyon değerlendirmesini güçlendirirken, enerji fiyatlarına ilişkin yukarı yönlü risk vurgusu ve sıkılaştırma taahhüdü korunuyor.",
-        "toneReasonEn": "The statements that the underlying trend 'has declined' and that weak domestic demand is 'confirmed' strengthen the disinflation assessment, while the upside-risk warning on energy prices and the tightening commitment remain.",
+        "toneReasonTr": "Metin enflasyonun ana eğiliminin gerilediğini ve iç talepteki zayıflığın teyit edildiğini söylüyor; enerji fiyatlarına ilişkin yukarı yönlü risk vurgusu ise yönlendirmeyi değiştirmiyor.",
+        "toneReasonEn": "The statement says the underlying trend of inflation has declined and weak domestic demand is confirmed, while the upside risk from energy prices does not alter the guidance.",
+        "score": 4,
+        "scoreReasonTr": "Yüzde 37'de sabit tutma, sıkı duruşun fiyat istikrarı sağlanana kadar süreceği, bozulma halinde sıkılaştırma yapılacağı ve yukarı yönlü risklere karşı ihtiyatlı duruş vurgusu gevşemeye dirençli şahin bir duruşa işaret ediyor.",
+        "scoreReasonEn": "Holding at 37 percent, keeping the tight stance until price stability is achieved, pledging tightening if the outlook deteriorates and stressing caution against upside risks point to a hawkish stance resistant to easing.",
         "model": "claude-code/opus",
-        "promptVersion": "1",
-        "summarizedAt": "2026-10-13T20:09:27.026Z"
+        "promptVersion": "2",
+        "summarizedAt": "2026-10-14T23:02:49.259Z"
       }
     }
   ]

@@ -1,5 +1,5 @@
 {
-  "fetchedAt": "2026-10-14T22:32:49.204Z",
+  "fetchedAt": "2026-10-14T23:03:47.514Z",
   "minutes": [
     {
       "meetingId": "boe-2026-02-05",
@@ -95,7 +95,31 @@
       "urls": {
         "en": "https://www.boj.or.jp/en/mopo/mpmsche_minu/opinion_2026/opi260918.pdf"
       },
-      "fetchedAt": "2026-10-14T22:32:48.679Z"
+      "fetchedAt": "2026-10-14T22:32:48.679Z",
+      "summary": {
+        "headlineTr": "Görüşlerin çoğu, temel enflasyonun %2'ye yaklaştığı ve finansal koşulların gevşek kaldığı bir dönemde para politikasının enflasyonu yukarı itmekten fiyatlardaki yukarı sapmayı önlemeye geçtiğini ve faiz artırımlarının süreceğini vurguladı.",
+        "headlineEn": "Most opinions stressed that, with underlying inflation approaching 2 percent and financial conditions still accommodative, monetary policy has shifted from pushing inflation up to preventing upward price deviations, and that rate hikes should continue.",
+        "pointsTr": [
+          "Üyelerin çoğu ekonomi ve fiyatların Temmuz 2026 tahminleriyle genel olarak uyumlu seyrettiğini, dikkatin ekonomideki aşağı yönlü sapmadan çok fiyatlardaki yukarı yönlü sapmaya verilmesi gerektiğini belirtti; bir görüş temel enflasyonun genel olarak %2'ye ulaştığını söyledi.",
+          "Gelecek politikaya dair görüşler faiz artırımlarının sürmesinden yanaydı: bir görüş fiyatlarda yukarı sapma işareti görülürse artırım hızının artırılması gerektiğini, bir diğeri faizin \"yaklaşık hedefe\" görece yakın zamanda getirilmesini savundu.",
+          "Bazı görüşler TÜFE artışının %2'nin altında kaldığı ve ekonominin güçlü olmadığı gerekçesiyle bu toplantıda faizin sabit tutulmasını istedi; bir başka görüş ise enflasyonun geride kalmayı gerektirecek hızda ivmelenmediğini, aceleye gerek olmadığını söyledi.",
+          "Orta Doğu'daki durumun ekonomide ciddi bir bozulmaya yol açacağı endişesi gerçekleşmezken, ithalat fiyatları ve yüksek kalabilecek petrol fiyatları nedeniyle fiyatlara yönelik yukarı riskler yüksek görüldü; dağıtım ve ambalaj maliyetlerindeki artışın fiyatlara yansıması beklendi.",
+          "Nötr faizin dış gelişmelere bağlı olarak önceki tahminlerin üstünde olabileceği, bu yüzden gevşeklik derecesinin her artırımdan sonra firmaların ve finansal koşulların gözlemiyle değerlendirilmesi gerektiği belirtildi; hükümet temsilcileri geçmiş artırımların birikimli etkisinin dikkatle incelenmesini istedi."
+        ],
+        "pointsEn": [
+          "Most members said economic activity and prices were developing generally in line with the July 2026 projections and that attention was warranted on upward deviations in prices more than on downward deviations in activity; one opinion held that underlying CPI inflation has generally reached 2 percent.",
+          "Opinions on future policy favoured continued rate hikes: one said the Bank should accelerate the pace of hikes if signs of upward price deviations appear, and another called for bringing the policy rate closer to the approximate goal relatively soon.",
+          "Some opinions favoured keeping the rate unchanged at this meeting, citing CPI inflation below 2 percent and an economy that is not strong; another said inflation was not accelerating at a pace that risked falling behind the curve, so there was no need for hasty action.",
+          "Concerns that the Middle East situation would sharply weaken the economy had not materialised, while upside risks to prices were seen as high due to higher import prices and potentially persistent high crude oil prices; rising distribution and packaging costs were expected to pass through to consumer prices.",
+          "Members noted that the neutral rate may deviate upward from prior estimates depending on overseas developments, so the degree of accommodation should be assessed after each hike by observing firms and financial conditions; government representatives asked the Bank to examine carefully the cumulative effects of past hikes."
+        ],
+        "score": 5,
+        "scoreReasonTr": "Görüşlerin çoğu fiyatlardaki yukarı risklere, gevşek finansal koşullara ve artırımların sürmesi gerektiğine (gerekirse hızlandırılmasına) vurgu yaparken, sabit tutma isteyen ve acele etmemeyi öneren görüşler duruşu çok şahin olmaktan alıkoyuyor.",
+        "scoreReasonEn": "Most opinions emphasised upside price risks, accommodative financial conditions and the need to keep raising rates (and to accelerate if needed), while opinions favouring a hold and warning against hasty action keep the stance short of very hawkish.",
+        "model": "claude-code/opus",
+        "promptVersion": "1",
+        "summarizedAt": "2026-10-14T23:03:47.514Z"
+      }
     },
     {
       "meetingId": "ecb-2026-02-05",
@@ -239,7 +263,31 @@
       "urls": {
         "en": "https://www.rba.gov.au/monetary-policy/rba-board-minutes/2026/2026-09-29.html"
       },
-      "fetchedAt": "2026-10-14T22:32:49.202Z"
+      "fetchedAt": "2026-10-14T22:32:49.202Z",
+      "summary": {
+        "headlineTr": "Kurul, Ağustos'ta belirlediği yukarı yönlü enflasyon risklerinin büyük ölçüde gerçekleştiğine ve ekonomideki talep fazlasının sanıldığından büyük olduğuna karar verdi; gerekirse faizi yeniden artırmaya açık olduğunu belirtti.",
+        "headlineEn": "The Board judged that the upside inflation risks it identified in August had largely materialised and that excess demand was greater than previously assessed, and said it is open to raising the cash rate further if required.",
+        "pointsTr": [
+          "Üyeler artırımın üç gerekçesini sıraladı: Orta Doğu çatışmasının tırmanmasıyla petrolün varsayımın çok üstüne çıkması ve yapay zekâ kaynaklı küresel maliyet baskıları, Temmuz enflasyonunun beklentiyi aşması ve yurt içi kapasite baskılarının daha geniş görünmesi, ayrıca %4,35'lik faizin nötr faizin yükselmiş olabileceği düşünüldüğünde yeterince sıkı olmayabileceği.",
+          "Personel, işsizliğin enflasyon hedefiyle uyumlu düzeyinin önceden tahmin edilenden yüksek olabileceğini sorguluyor; birim işgücü maliyetleri zayıf verimlilik nedeniyle hedefle uyumlu düzeyin üstünde ve firmaların kısa-orta vadeli enflasyon beklentileri bu yıl yükseldi.",
+          "Üyeler, Ağustos tahminlerinin enflasyonun 2027 sonuna doğru hedefe dönmesi için birçok olumlu gelişmeye dayandığını ve bunların hepsinin artık gerçekleşmesinin olası görünmediğini kaydetti.",
+          "Faizi sabit tutma seçeneği yalnızca kısaca ele alındı (konut fiyatlarındaki düşüş, belirsizlik, önceki sıkılaşmanın etkisi), ancak tüm üyeler 25 baz puanlık artırımı uygun buldu; enflasyon ile tam istihdam arasındaki dengenin küresel maliyet baskıları nedeniyle kötüleştiği, talep ve istihdamda daha yavaş büyümenin kabul edilmesi gerektiği belirtildi.",
+          "Finansal istikrar değerlendirmesinde hane halkı bilançoları sağlam bulundu ve finansal istikrarın para politikasını kısıtlamadığı belirtilirken küresel tahvil piyasaları ve yapay zekâ kaynaklı varlık fiyatlamasından doğan riskler vurgulandı; Kurul ayrıca 2027'de işlemeye başlayacak vadeli repo operasyonlarını onayladı."
+        ],
+        "pointsEn": [
+          "Members set out three arguments for the hike: oil prices well above assumptions as the Middle East conflict escalated, along with AI-driven global cost pressures; a stronger-than-expected July inflation outcome and signs of more extensive domestic capacity pressures; and the possibility that the 4.35 per cent cash rate was not restrictive enough if the neutral rate had risen.",
+          "Staff are increasingly questioning whether the unemployment rate consistent with the inflation target is higher than previously assessed; unit labour cost growth is above target-consistent levels due to weak productivity, and firms' short- to medium-term inflation expectations have drifted higher this year.",
+          "Members noted that the August forecasts required a number of favourable developments for inflation to return to the target midpoint by around late 2027, and that it no longer appeared likely all of these would eventuate.",
+          "The case for holding was considered only briefly (falling housing prices, uncertainty, the effects of earlier tightening), and all members judged a 25 basis point increase appropriate; they acknowledged the inflation–employment trade-off had deteriorated and that slower growth in demand and employment would have to be accepted.",
+          "The financial stability review found household balance sheets sound and concluded that financial stability was not constraining monetary policy, while highlighting risks from global bond markets and AI-related asset pricing; the Board also endorsed Term Repo Operations, expected to be operational in 2027."
+        ],
+        "score": 7,
+        "scoreReasonTr": "Tüm üyeler artırımı desteklerken talep fazlasının sanıldığından büyük olduğu, beklemenin maliyetli olabileceği, mevcut faizin yeterli olmayabileceği ve \"gerekirse faizin daha da artırılacağı\" ifadeleri açık bir ek sıkılaşma eğilimi gösteriyor.",
+        "scoreReasonEn": "Unanimous support for the hike, alongside statements that excess demand was greater than assessed, that waiting could be costly, that the current rate might not be sufficient, and that the Board would increase the cash rate further if required, signal a clear tightening bias.",
+        "model": "claude-code/opus",
+        "promptVersion": "1",
+        "summarizedAt": "2026-10-14T23:03:47.514Z"
+      }
     },
     {
       "meetingId": "tcmb-2026-01-22",
