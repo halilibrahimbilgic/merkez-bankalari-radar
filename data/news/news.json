@@ -1,6 +1,36 @@
 {
-  "fetchedAt": "2026-10-14T13:31:40.197Z",
+  "fetchedAt": "2026-10-14T14:01:46.357Z",
   "items": [
+    {
+      "id": "58a2102346e9",
+      "sourceKey": "aa-economy",
+      "sourceName": "Anadolu Agency",
+      "kind": "media",
+      "url": "https://www.aa.com.tr/en/economy/imf-chief-warns-growth-alone-cannot-bring-us-debt-under-control/4088651",
+      "publishedAt": "2026-10-14T13:47:07.000Z",
+      "titleOriginal": "IMF chief warns growth alone cannot bring US debt under control",
+      "titleTr": "IMF Başkanı: Büyüme tek başına ABD borcunu kontrol altına almaya yetmez",
+      "summaryTr": "IMF Başkanı Kristalina Georgieva, hükümetlerin artan borç baskısıyla karşılaştığını belirterek açıkları azaltmak için mali tedbirler alınması çağrısı yaptı.",
+      "titleEn": "IMF chief warns growth alone cannot bring US debt under control",
+      "summaryEn": "IMF chief Kristalina Georgieva called for fiscal measures to reduce deficits as governments face mounting debt pressures.",
+      "important": true,
+      "processedAt": "2026-10-14T14:01:46.357Z"
+    },
+    {
+      "id": "6ec0ca84ce0d",
+      "sourceKey": "aa-economy",
+      "sourceName": "Anadolu Agency",
+      "kind": "media",
+      "url": "https://www.aa.com.tr/en/economy/us-dollar-index-hits-18-month-high-after-hotter-than-expected-inflation/4088623",
+      "publishedAt": "2026-10-14T13:32:57.000Z",
+      "titleOriginal": "US dollar index hits 18-month high after hotter-than-expected inflation",
+      "titleTr": "Dolar endeksi, beklentilerin üzerindeki enflasyonun ardından 18 ayın zirvesinde",
+      "summaryTr": "ABD'de yıllık tüketici enflasyonu eylülde %3,7'ye yükselince dolar endeksi %0,57 artarak 102,75'e çıktı.",
+      "titleEn": "US dollar index hits 18-month high after hotter-than-expected inflation",
+      "summaryEn": "The dollar index rose 0.57% to 102.75 after annual US consumer inflation accelerated to 3.7% in September.",
+      "important": true,
+      "processedAt": "2026-10-14T14:01:46.357Z"
+    },
     {
       "id": "01ce03b43e3f",
       "sourceKey": "marketwatch",
