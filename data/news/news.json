@@ -1,5 +1,5 @@
 {
-  "fetchedAt": "2026-10-14T12:01:52.767Z",
+  "fetchedAt": "2026-10-14T12:31:34.342Z",
   "items": [
     {
       "id": "0e40bd8c2c39",
@@ -15,6 +15,21 @@
       "summaryEn": "Currency markets are cautious, with headline inflation expected at 3.6%. Experts say a higher-than-expected reading could further lift the dollar and strengthen expectations of a Fed rate hike in December.",
       "important": true,
       "processedAt": "2026-10-14T12:01:52.767Z"
+    },
+    {
+      "id": "94e510fa7a81",
+      "sourceKey": "guardian-business",
+      "sourceName": "The Guardian",
+      "kind": "media",
+      "url": "https://www.theguardian.com/business/live/2026/oct/14/imf-rising-government-borrowing-costs-inflation-oil-stock-markets-latest-news-updates",
+      "publishedAt": "2026-10-14T11:44:49.000Z",
+      "titleOriginal": "Diesel squeeze expected to continue into 2027 despite Trump’s deal with Russia – business live",
+      "titleTr": "Dizel sıkışıklığının 2027'ye sarkması bekleniyor; İngiltere tahvil faizleri geriledi",
+      "summaryTr": "Guardian'ın canlı akışına göre dizel arzındaki sıkışıklığın 2027'ye kadar sürmesi bekleniyor. İngiltere'de 10 yıllık tahvil faizi 3,5 baz puan düşüşle %5,4'e indi.",
+      "titleEn": "Diesel squeeze expected to last into 2027; UK bond yields fall",
+      "summaryEn": "The Guardian's live blog says the diesel squeeze is expected to continue into 2027. The UK 10-year bond yield fell 3.5 basis points to 5.4%.",
+      "important": false,
+      "processedAt": "2026-10-14T12:31:34.342Z"
     },
     {
       "id": "867c2305ba87",
@@ -564,6 +579,8 @@
     "c335c72cc9c4": "2026-10-14",
     "68116294d752": "2026-10-14",
     "3a01d2bb7242": "2026-10-14",
-    "67a79d03f145": "2026-10-14"
+    "67a79d03f145": "2026-10-14",
+    "40e4ce862692": "2026-10-14",
+    "2e487a182d22": "2026-10-14"
   }
 }
