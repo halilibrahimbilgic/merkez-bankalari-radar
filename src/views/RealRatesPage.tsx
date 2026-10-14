@@ -1,12 +1,13 @@
 import type { Metadata } from "next";
 import Link from "next/link";
 import { BankTag } from "@/components/ScoreBadge";
-import { Callout, TableFrame, Th } from "@/components/ui";
+import { Callout, Card, Stat, TableFrame, Th } from "@/components/ui";
+import { getExpectations } from "@/lib/data/expectations";
 import { ALL_BANKS, BANKS, bankCountry } from "@/lib/banks";
 import { getInflation } from "@/lib/data/inflation";
 import { formatCurrentRate, getCurrentRates } from "@/lib/data/rates";
 import { fmtPercent, fmtSignedPercent, L, languageAlternates, localePath, type Lang } from "@/lib/i18n";
-import { realRate, type RealRate } from "@/lib/real-rates";
+import { forwardRealRate, realRate, type RealRate } from "@/lib/real-rates";
 import { INFLATION_SOURCES } from "@/lib/sources/inflation";
 import { monthLabel } from "@/lib/time";
 
@@ -24,13 +25,18 @@ export function realRatesMetadata(lang: Lang): Metadata {
 
 export async function RealRatesPage({ lang }: { lang: Lang }) {
   const t = L(lang);
-  const [rates, inflation] = await Promise.all([getCurrentRates(), getInflation()]);
+  const [rates, inflation, expectations] = await Promise.all([getCurrentRates(), getInflation(), getExpectations()]);
   const rows: RealRate[] = ALL_BANKS.flatMap((b) => {
     const rate = rates.find((r) => r.bankCode === b.code);
     const infl = inflation.find((i) => i.bankCode === b.code);
     return rate && infl ? [realRate(rate, infl)] : [];
   });
   const high = rows.filter((r) => Math.abs(r.real - r.fisher) >= 0.5);
+  // TCMB: Piyasa Katılımcıları Anketi'nin 12 ay sonrası enflasyon beklentisiyle.
+  const tcmb = rows.find((r) => r.bankCode === "tcmb");
+  const survey = expectations.tcmb;
+  const forward =
+    tcmb && survey?.inflation12 !== undefined ? forwardRealRate(tcmb.policy, survey.inflation12) : undefined;
 
   return (
     <div className="space-y-6">
@@ -90,12 +96,49 @@ export async function RealRatesPage({ lang }: { lang: Lang }) {
                   <div className="text-xs font-normal text-muted">
                     {r.real > 0 ? t("pozitif", "positive") : r.real < 0 ? t("negatif", "negative") : t("sıfır", "zero")}
                   </div>
+                  {r.bankCode === "tcmb" && forward && (
+                    <div className="mt-1 text-xs font-normal text-muted">
+                      <a href="#ileriye-donuk" className="text-accent hover:underline">
+                        {t(`beklentiye göre ${fmtSignedPercent(forward.real, lang)}`, `${fmtSignedPercent(forward.real, lang)} vs expected`)}
+                      </a>
+                    </div>
+                  )}
                 </td>
               </tr>
             );
           })}
         </tbody>
       </TableFrame>
+
+      {tcmb && survey?.inflation12 !== undefined && forward && (
+        <Card>
+          <h2 id="ileriye-donuk" className="scroll-mt-4 text-lg font-semibold">
+            {t("TCMB: beklenen enflasyona göre reel faiz", "CBRT: real rate against expected inflation")}
+          </h2>
+          <p className="prose-width mt-1 text-sm text-muted">
+            {t(
+              "Tablodaki rakam geçmiş 12 ayın enflasyonuyla hesaplanır. Para politikasının duruşu çoğunlukla önümüzdeki 12 ay için beklenen enflasyona göre okunur (ileriye dönük reel faiz); enflasyon düşerken bu rakam tablodakinden yüksek çıkar.",
+              "The table uses inflation over the past 12 months. The policy stance is often read against inflation expected over the next 12 months (the forward-looking real rate); while inflation is falling, this figure comes out higher than the one in the table.",
+            )}
+          </p>
+          <div className="mt-4 grid grid-cols-3 gap-2 sm:gap-3">
+            <Stat
+              compact
+              label={t("Beklenen enflasyon", "Expected inflation")}
+              value={fmtPercent(survey.inflation12, lang)}
+              note={t(`12 ay sonrası · ${monthLabel(`${survey.period}-15T12:00:00Z`, lang)} anketi`, `12 months ahead · ${monthLabel(`${survey.period}-15T12:00:00Z`, lang)} survey`)}
+            />
+            <Stat compact label={t("Reel faiz", "Real rate")} value={fmtSignedPercent(forward.real, lang)} note={t("basit fark", "simple difference")} />
+            <Stat compact label={t("Kesin hesap", "Exact")} value={fmtSignedPercent(forward.fisher, lang)} note="Fisher" />
+          </div>
+          <p className="prose-width mt-3 text-sm text-muted">
+            {t(
+              `Politika faizi ${fmtPercent(tcmb.policy, lang)}; beklenti, TCMB Piyasa Katılımcıları Anketi'ndeki katılımcıların ortalamasıdır. Geçmişe dönük reel faiz ${fmtSignedPercent(tcmb.real, lang)}. Diğer ekonomiler için yayımlanabilir, karşılaştırılabilir bir beklenti serisi kullanmıyoruz.`,
+              `Policy rate ${fmtPercent(tcmb.policy, lang)}; the expectation is the average of participants in the CBRT Survey of Market Participants. The backward-looking real rate is ${fmtSignedPercent(tcmb.real, lang)}. We do not use a comparable, republishable expectation series for the other economies.`,
+            )}
+          </p>
+        </Card>
+      )}
 
       {high.length > 0 && (
         <Callout title={t("Yüksek enflasyonda kesin hesap", "The exact calculation when inflation is high")}>

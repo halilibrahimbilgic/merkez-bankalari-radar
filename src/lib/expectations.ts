@@ -14,6 +14,8 @@ export interface SurveyExpectations {
   meetings: { meetingId: string; meetingAt: string; expectedRate: number }[];
   yearEnd?: number;
   months12?: number;
+  /** 12 ay sonrası için beklenen yıllık TÜFE (%) — ileriye dönük reel faiz. */
+  inflation12?: number;
 }
 
 export interface MarketExpectations {

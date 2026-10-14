@@ -29,3 +29,17 @@ export function realRate(
     fisher: r2(((1 + policy / 100) / (1 + inflation.yoy / 100) - 1) * 100),
   };
 }
+
+/**
+ * İleriye dönük reel faiz: bugünkü politika faizi − önümüzdeki 12 ay için
+ * beklenen enflasyon. Merkez bankaları duruşu çoğunlukla buna göre okur;
+ * yalnızca TCMB için yayımlanabilir bir beklenti serisi kullanıyoruz
+ * (Piyasa Katılımcıları Anketi).
+ */
+export function forwardRealRate(policy: number, expectedInflation: number): { real: number; fisher: number } {
+  const r2 = (n: number) => Math.round(n * 100) / 100;
+  return {
+    real: r2(policy - expectedInflation),
+    fisher: r2(((1 + policy / 100) / (1 + expectedInflation / 100) - 1) * 100),
+  };
+}

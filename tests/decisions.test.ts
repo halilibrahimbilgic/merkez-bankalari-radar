@@ -89,3 +89,9 @@ test("reel faiz: Fed orta nokta, yüksek enflasyonda Fisher farkı", async () =>
   // 1,37 / 1,2973 − 1 = %5,60 — basit fark gerçek getiriyi 1,7 puan abartıyor.
   assert.equal(tcmb.fisher, 5.6);
 });
+
+test("ileriye dönük reel faiz: basit fark ve Fisher", async () => {
+  const { forwardRealRate } = await import("../src/lib/real-rates");
+  // %37 politika faizi, anketin 12 ay sonrası TÜFE beklentisi %23,70 (Eylül 2026).
+  assert.deepEqual(forwardRealRate(37, 23.7), { real: 13.3, fisher: 10.75 });
+});

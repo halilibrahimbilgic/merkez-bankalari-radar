@@ -15,7 +15,8 @@ import { formatCurrentRate, getCurrentRate } from "@/lib/data/rates";
 import { getBankScoreSummaries, getSpeeches } from "@/lib/data/speeches";
 import { getInflationFor } from "@/lib/data/inflation";
 import { fmtPercent, fmtSignedPercent, L, languageAlternates, localePath, type Lang } from "@/lib/i18n";
-import { realRate } from "@/lib/real-rates";
+import { forwardRealRate, realRate } from "@/lib/real-rates";
+import { getExpectations } from "@/lib/data/expectations";
 import { speechTitle } from "@/lib/speech-i18n";
 import { formatDate, formatMeeting, formatTimeTrt, monthLabel } from "@/lib/time";
 
@@ -76,6 +77,8 @@ export async function BankPage({ lang, code }: { lang: Lang; code: string }) {
   const scoreSummary = (await getBankScoreSummaries()).find((s) => s.bankCode === bank.code);
   const inflation = await getInflationFor(bank.code);
   const real = currentRate && inflation ? realRate(currentRate, inflation) : undefined;
+  const survey = bank.code === "tcmb" ? (await getExpectations()).tcmb : undefined;
+  const forward = real && survey?.inflation12 !== undefined ? forwardRealRate(real.policy, survey.inflation12) : undefined;
 
   return (
     <div className="space-y-8">
@@ -126,6 +129,16 @@ export async function BankPage({ lang, code }: { lang: Lang; code: string }) {
                 `Annual inflation ${fmtPercent(real.inflation.yoy, lang, 1)} (${monthLabel(`${real.inflation.period}-15T12:00:00Z`, lang)})`,
               )}
             </div>
+            {forward && (
+              <div className="mt-1 text-sm text-muted tabular">
+                <Link href={`${p("/reel-faiz")}#ileriye-donuk`} className="hover:text-accent">
+                  {t(
+                    `Beklenen enflasyona göre ${fmtSignedPercent(forward.real, lang)}`,
+                    `${fmtSignedPercent(forward.real, lang)} against expected inflation`,
+                  )}
+                </Link>
+              </div>
+            )}
           </section>
         )}
         {scoreSummary && (

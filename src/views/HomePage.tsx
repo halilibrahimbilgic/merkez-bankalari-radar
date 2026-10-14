@@ -1,6 +1,7 @@
 import type { Metadata } from "next";
 import Link from "next/link";
 import { BankCard } from "@/components/BankCard";
+import { BankSummaryList, type ExpectationChip } from "@/components/BankSummaryList";
 import { BankTag, ScoreBadge } from "@/components/ScoreBadge";
 import { EmptyState, Row, Rows, SectionHeader } from "@/components/ui";
 import type { OddsRow } from "@/components/RateOdds";
@@ -99,6 +100,25 @@ export async function HomePage({ lang }: { lang: Lang }) {
         ]
       : undefined;
 
+  // Telefon listesi için beklentinin tek bakışlık özeti — kartlardaki
+  // satırlarla aynı veri, en olası sonuç.
+  const top = (rows?: OddsRow[]) => rows?.reduce((a, b) => (b.pct > a.pct ? b : a));
+  const chipFrom = (row: OddsRow | undefined, suffix = ""): ExpectationChip | undefined =>
+    row && { direction: row.direction, text: `${fmtPercent(row.pct, lang, 0)} ${row.label.toLocaleLowerCase(lang === "en" ? "en" : "tr")}${suffix}` };
+  const tcmbCurrent = rates.find((r) => r.bankCode === "tcmb")?.rate;
+  const chips: Partial<Record<(typeof CALENDAR_BANK_CODES)[number], ExpectationChip>> = {
+    fed: chipFrom(top(fedOdds), t(" (3 ay ort.)", " (3-month avg.)")),
+    ecb: chipFrom(top(ecbOdds)),
+    boe: chipFrom(top(boeOdds)),
+    tcmb:
+      tcmbNext && tcmbCurrent !== undefined
+        ? {
+            direction: tcmbNext.expectedRate > tcmbCurrent ? "up" : tcmbNext.expectedRate < tcmbCurrent ? "down" : "flat",
+            text: t(`anket ${fmtPercent(tcmbNext.expectedRate, lang)}`, `survey ${fmtPercent(tcmbNext.expectedRate, lang)}`),
+          }
+        : undefined,
+  };
+
   return (
     <div className="space-y-10">
       <section>
@@ -130,7 +150,18 @@ export async function HomePage({ lang }: { lang: Lang }) {
         <h2 id="bankalar-baslik" className="sr-only">
           {t("Bankalara genel bakış", "Bank overview")}
         </h2>
-        <div className="grid gap-4 md:grid-cols-2 lg:grid-cols-3">
+        <BankSummaryList
+          now={now}
+          lang={lang}
+          rows={CALENDAR_BANK_CODES.map((code) => ({
+            code,
+            next: upcoming.find((m) => m.bankCode === code),
+            rate: rates.find((r) => r.bankCode === code),
+            real: realRateOf(code),
+            chip: chips[code],
+          }))}
+        />
+        <div className="hidden gap-4 sm:grid md:grid-cols-2 lg:grid-cols-3">
           {CALENDAR_BANK_CODES.map((code) => (
             <BankCard
               key={code}

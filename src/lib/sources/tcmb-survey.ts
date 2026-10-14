@@ -22,6 +22,8 @@ const SERIES = {
   meeting3: "TP.PKAUO.S04.G.U",
   yearEnd: "TP.PKAUO.S04.H.U",
   months12: "TP.PKAUO.S04.D.U",
+  /** 12 ay sonrasının yıllık TÜFE beklentisi — ileriye dönük reel faiz için. */
+  inflation12: "TP.PKAUO.S01.E.U",
 } as const;
 
 export interface TcmbSurvey {
@@ -31,6 +33,8 @@ export interface TcmbSurvey {
   meetings: number[];
   yearEnd?: number;
   months12?: number;
+  /** 12 ay sonrası için beklenen yıllık TÜFE (%). */
+  inflation12?: number;
 }
 
 export async function fetchTcmbSurvey(apiKey: string): Promise<TcmbSurvey> {
@@ -73,6 +77,7 @@ export function parseTcmbSurveyHistory(json: unknown): TcmbSurvey[] {
       meetings,
       yearEnd: num(item, SERIES.yearEnd),
       months12: num(item, SERIES.months12),
+      inflation12: num(item, SERIES.inflation12),
     });
   }
   return out.sort((a, b) => a.period.localeCompare(b.period));
