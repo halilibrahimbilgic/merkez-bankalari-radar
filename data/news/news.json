@@ -1,6 +1,21 @@
 {
-  "fetchedAt": "2026-10-14T08:31:36.346Z",
+  "fetchedAt": "2026-10-14T09:01:42.199Z",
   "items": [
+    {
+      "id": "6bd7d6fe7911",
+      "sourceKey": "aa-economy",
+      "sourceName": "Anadolu Agency",
+      "kind": "media",
+      "url": "https://www.aa.com.tr/en/economy/global-markets-seek-direction-as-oil-rises-ahead-of-us-inflation-release/4088217",
+      "publishedAt": "2026-10-14T08:50:57.000Z",
+      "titleOriginal": "Global markets seek direction as oil rises ahead of US inflation release",
+      "titleTr": "Küresel piyasalar ABD enflasyon verisi öncesi yön arıyor, petrol yükseldi",
+      "summaryTr": "Yatırımcılar, yükselen enerji maliyetlerinin Fed'in gelecekteki politika yol haritasına etkisini ölçmek için ABD enflasyon verisini bekliyor. Teknoloji hisselerindeki satış ise ABD ve Avrupa'daki hisse piyasalarını baskılıyor.",
+      "titleEn": "Global markets seek direction as oil rises ahead of US inflation data",
+      "summaryEn": "Investors are awaiting US inflation data to gauge how rising energy costs may affect the Fed's future policy path. A tech selloff is also weighing on equity markets in the US and Europe.",
+      "important": true,
+      "processedAt": "2026-10-14T09:01:42.199Z"
+    },
     {
       "id": "16ddfa3d6bf0",
       "sourceKey": "aa-economy",
