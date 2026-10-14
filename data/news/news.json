@@ -1,6 +1,36 @@
 {
-  "fetchedAt": "2026-10-14T06:31:30.939Z",
+  "fetchedAt": "2026-10-14T07:02:33.399Z",
   "items": [
+    {
+      "id": "16ddfa3d6bf0",
+      "sourceKey": "aa-economy",
+      "sourceName": "Anadolu Agency",
+      "kind": "media",
+      "url": "https://www.aa.com.tr/en/economy/imf-warns-rising-borrowing-costs-intensify-global-debt-pressures/4088026",
+      "publishedAt": "2026-10-14T06:56:46.000Z",
+      "titleOriginal": "IMF warns rising borrowing costs intensify global debt pressures",
+      "titleTr": "IMF: Yükselen borçlanma maliyetleri küresel borç baskısını artırıyor",
+      "summaryTr": "IMF, artan borçlanma maliyetlerinin küresel borç baskısını yoğunlaştırdığı uyarısında bulundu. G7 tahvil faizleri yaklaşık 20 yılın en yüksek seviyesine çıkarak kamu harcaması alanını daraltıyor.",
+      "titleEn": "IMF warns rising borrowing costs intensify global debt pressures",
+      "summaryEn": "The IMF warned that rising borrowing costs are intensifying global debt pressures. G7 bond yields have reached their highest level in nearly two decades, squeezing room for public spending.",
+      "important": true,
+      "processedAt": "2026-10-14T07:02:33.399Z"
+    },
+    {
+      "id": "8541022e0748",
+      "sourceKey": "aa-economy",
+      "sourceName": "Anadolu Agency",
+      "kind": "media",
+      "url": "https://www.aa.com.tr/en/economy/china-s-producer-inflation-hits-highest-level-since-june-2022/4087996",
+      "publishedAt": "2026-10-14T06:33:35.000Z",
+      "titleOriginal": "China’s producer inflation hits highest level since June 2022",
+      "titleTr": "Çin'de üretici enflasyonu Haziran 2022'den bu yana en yüksek seviyede",
+      "summaryTr": "Çin'de üretici fiyatları Eylül'de yüzde 5 arttı ve Haziran 2022'den bu yana en yüksek düzeye ulaştı. Tüketici enflasyonu ise yüzde 0,9'a yükseldi.",
+      "titleEn": "China's producer inflation hits highest level since June 2022",
+      "summaryEn": "Chinese producer prices rose 5% in September, the highest since June 2022. Consumer inflation edged up to 0.9%.",
+      "important": false,
+      "processedAt": "2026-10-14T07:02:33.399Z"
+    },
     {
       "id": "e53c34ae273e",
       "sourceKey": "aa-ekonomi",
@@ -406,6 +436,7 @@
     "5a90a3393261": "2026-10-14",
     "8dc17f20149e": "2026-10-14",
     "6aca5936ba76": "2026-10-14",
-    "cb9359e632c8": "2026-10-14"
+    "cb9359e632c8": "2026-10-14",
+    "06638524dcae": "2026-10-14"
   }
 }
