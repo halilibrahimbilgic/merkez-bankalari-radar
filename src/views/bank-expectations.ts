@@ -97,8 +97,8 @@ export async function getBankExpectations(lang: Lang, now: Date): Promise<Partia
       oddsNote:
         window &&
         t(
-          `${formatDate(window.startDate, lang)} itibarıyla başlayan üç aylık dönem için ortalama faiz`,
-          `Average rate over the three-month period starting ${formatDate(window.startDate, lang)}`,
+          `${formatDate(window.startDate, lang)} itibarıyla başlayan üç aylık dönem için ortalama faiz; toplantı bazlı değil`,
+          `Average rate over the three-month period starting ${formatDate(window.startDate, lang)}; not per meeting`,
         ),
       chip: chipFrom(top(fedOdds), t(" (3 ay ort.)", " (3-month avg.)")),
     },

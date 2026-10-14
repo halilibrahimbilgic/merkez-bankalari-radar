@@ -207,9 +207,17 @@ async function FedProbabilities({
 
   // Bu pencereye denk gelen FOMC toplantıları — okuyucuya bağlam verir.
   const end = windowEndDate(selected.startDate);
-  const fomc = (await getUpcomingMeetings({ bankCode: "fed" })).filter(
+  const upcomingFomc = await getUpcomingMeetings({ bankCode: "fed" });
+  const fomc = upcomingFomc.filter(
     (m) => m.meetingAt.slice(0, 10) >= selected.startDate && m.meetingAt.slice(0, 10) < end,
   );
+  // İlk dönemden önceki toplantılar: sonuçları o dönemin ortalamasına birlikte girer.
+  // FedWatch/Investing'i yan yana açan okur "28 Ekim" rakamını burada arıyor.
+  const firstStart = snapshot.windows[0].startDate;
+  const absorbed = upcomingFomc
+    .filter((m) => m.meetingAt.slice(0, 10) < firstStart)
+    .map((m) => formatDate(m.meetingAt, lang));
+  const absorbedText = absorbed.join(lang === "en" ? " and " : " ve ");
   const pct = (v?: number) => (v === undefined ? "—" : formatPct(v, lang));
   const notice = lang === "en" ? LICENSE_NOTICE_EN : LICENSE_NOTICE;
 
@@ -237,25 +245,57 @@ async function FedProbabilities({
         </p>
       </div>
 
-      <Callout title={t("Bu rakamlar ne anlama gelir?", "What do these numbers mean?")}>
-        {lang === "en" ? (
-          <>
-            These probabilities <strong>do not belong to a single FOMC meeting</strong>. They show
-            which band the <em>average</em> overnight rate is likely to fall into over a
-            three-month period. So they cannot be read as &quot;the probability of a 25 basis
-            point cut at the September meeting is X%&quot;, but as &quot;the probability that the
-            average rate over September–December is in this band is X%&quot;.
-          </>
-        ) : (
-          <>
-            Buradaki olasılıklar <strong>tek bir FOMC toplantısına ait değildir</strong>. Üçer
-            aylık bir dönemde <em>ortalama</em> gecelik faizin hangi bantta kalacağını
-            gösterirler. Yani &quot;Eylül toplantısında 25 baz puan indirim ihtimali %X&quot;
-            şeklinde okunamaz; &quot;Eylül–Aralık döneminde ortalama faizin şu bantta olma
-            ihtimali %X&quot; şeklinde okunur.
-          </>
-        )}
-      </Callout>
+      <div id="fedwatch-farki" className="scroll-mt-4">
+        <Callout title={t("Bu rakamlar ne anlama gelir?", "What do these numbers mean?")}>
+          {lang === "en" ? (
+            <>
+              <p>
+                These probabilities <strong>do not belong to a single FOMC meeting</strong>. They show
+                which band the <em>average</em> overnight rate is likely to fall into over a
+                three-month period. So they cannot be read as &quot;the probability of a 25 basis
+                point cut at the September meeting is X%&quot;, but as &quot;the probability that the
+                average rate over September–December is in this band is X%&quot;.
+              </p>
+              <p className="mt-2">
+                <strong>Why this differs from CME FedWatch.</strong> FedWatch and sites using the
+                same futures data (such as Investing.com) calculate a probability for each meeting;
+                that data is CME&apos;s licensed product and cannot be republished here. The first
+                period here starts on {formatDate(firstStart, lang)}
+                {absorbed.length > 0 &&
+                  (absorbed.length > 1
+                    ? `, so the outcomes of the ${absorbedText} meetings feed into its average together`
+                    : `, so the outcome of the ${absorbedText} meeting feeds into its average`)}
+                . The Atlanta Fed publishes with a one-business-day lag: the figures here are for the
+                close of {formatDate(snapshot.asOf, lang)}. On the same day the two sources can show
+                different numbers, each answering its own question.
+              </p>
+            </>
+          ) : (
+            <>
+              <p>
+                Buradaki olasılıklar <strong>tek bir FOMC toplantısına ait değildir</strong>. Üçer
+                aylık bir dönemde <em>ortalama</em> gecelik faizin hangi bantta kalacağını
+                gösterirler. Yani &quot;Eylül toplantısında 25 baz puan indirim ihtimali %X&quot;
+                şeklinde okunamaz; &quot;Eylül–Aralık döneminde ortalama faizin şu bantta olma
+                ihtimali %X&quot; şeklinde okunur.
+              </p>
+              <p className="mt-2">
+                <strong>CME FedWatch&apos;tan neden farklı?</strong> FedWatch ve aynı vadeli işlem
+                verisini kullanan siteler (ör. Investing.com) olasılığı her toplantı için ayrı
+                hesaplar; bu veri CME&apos;nin lisanslı ürünüdür, burada yeniden yayımlanamaz.
+                Buradaki ilk dönemin başlangıcı {formatDate(firstStart, lang)}
+                {absorbed.length > 0 &&
+                  (absorbed.length > 1
+                    ? `: ${absorbedText} toplantılarının sonuçları bu dönemin ortalamasına birlikte girer`
+                    : `: ${absorbedText} toplantısının sonucu bu dönemin ortalamasına girer`)}
+                . Atlanta Fed veriyi bir iş günü gecikmeyle yayımlıyor: buradaki rakamlar{" "}
+                {formatDate(snapshot.asOf, lang)} kapanışına ait. Aynı gün iki kaynak farklı rakam
+                gösterebilir; her biri kendi sorusunu cevaplar.
+              </p>
+            </>
+          )}
+        </Callout>
+      </div>
 
       {path.length > 1 && (
         <Card>
