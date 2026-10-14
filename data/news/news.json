@@ -1,6 +1,21 @@
 {
-  "fetchedAt": "2026-10-14T20:35:07.640Z",
+  "fetchedAt": "2026-10-14T22:31:30.402Z",
   "items": [
+    {
+      "id": "2b0ae0c2e223",
+      "sourceKey": "aa-economy",
+      "sourceName": "Anadolu Agency",
+      "kind": "media",
+      "url": "https://www.aa.com.tr/en/americas/us-economy-shows-slight-to-moderate-growth-feds-beige-book-shows/4089128",
+      "publishedAt": "2026-10-14T22:05:36.000Z",
+      "titleOriginal": "US economy shows slight to moderate growth, Fed's Beige Book shows",
+      "titleTr": "Fed Bej Kitap: ABD ekonomisi hafif ila orta ölçüde büyüyor",
+      "summaryTr": "Fed'in Bej Kitap raporuna göre ABD ekonomisi hafif ila orta ölçüde büyüme gösterdi. Çoğu bölge genel fiyat artışını ılımlı olarak nitelerken girdi maliyeti baskılarının arttığı belirtildi.",
+      "titleEn": "Fed's Beige Book: US economy shows slight to moderate growth",
+      "summaryEn": "The Fed's Beige Book says the US economy grew at a slight to moderate pace. Most districts describe overall price growth as moderate, while input price pressures have intensified.",
+      "important": true,
+      "processedAt": "2026-10-14T22:31:30.402Z"
+    },
     {
       "id": "0dcebf94a0c8",
       "sourceKey": "aa-ekonomi",
@@ -801,6 +816,7 @@
     "69ef757a95f3": "2026-10-14",
     "b991d9872c2b": "2026-10-14",
     "084f63bc06d7": "2026-10-14",
-    "01bbcdaf947a": "2026-10-14"
+    "01bbcdaf947a": "2026-10-14",
+    "646dad399bc1": "2026-10-14"
   }
 }

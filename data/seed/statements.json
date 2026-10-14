@@ -1,5 +1,5 @@
 {
-  "fetchedAt": "2026-10-14T20:35:07.943Z",
+  "fetchedAt": "2026-10-14T22:32:48.828Z",
   "statements": [
     {
       "meetingId": "boe-2025-12-18",
@@ -218,28 +218,31 @@
       "rate": 3.75,
       "previousId": "boe-2026-07-30",
       "summary": {
-        "headlineTr": "BoE, Bank Rate'i 6–3 oyla %3,75'te tuttu; metin TÜFE'nin yükseldiğini ve enflasyon risklerinin Temmuz'a göre daha da yukarı yönlü olduğunu söylüyor, tahvil stokunun sıfıra indirilmesine de karar verildi.",
-        "headlineEn": "The BoE held Bank Rate at 3.75% by a 6–3 vote; the statement says CPI inflation has risen and the risks to inflation are more to the upside than in July, and it decided to run the gilt stock down to zero.",
+        "headlineTr": "BoE, Bank Rate'i 6-3 oyla %3,75'te sabit tuttı; TÜFE'nin Ağustos'ta %3,1'e yükseldiğini ve enflasyon risklerinin Temmuz'dakinden daha fazla yukarı yönlü olduğunu belirtti.",
+        "headlineEn": "The BoE held Bank Rate at 3.75% by a 6–3 vote, noting that CPI inflation rose to 3.1% in August and that inflation risks are tilted to the upside more so than in July.",
         "changesTr": [
-          "Oy dağılımı değişmedi: 6–3 ile sabit tutma, üç üye yine 25 baz puan artırım istedi.",
-          "Enflasyon değerlendirmesi değişti: TÜFE'nin %2,6'ya gerilediği ifadesinin yerine ağustosta %3,1'e yükseldiği ve önümüzdeki çeyreklerde daha da artmasının muhtemel olduğu yazıldı.",
-          "Risk dengesi sertleşti: enflasyon risklerinin Temmuz Para Politikası Raporu'ndakinden 'daha fazla' yukarı yönlü olduğu, ikinci tur etki riskinin enerji fiyatları daha oynak olursa da büyüyeceği belirtildi; 'temel dezenflasyonun açık işaretleri' ifadesi çıkarıldı.",
-          "Faaliyetin beklenenden biraz güçlü olduğu cümlesi eklendi.",
-          "MPC, para politikası amacıyla tutulan devlet tahvili stokunu oy birliğiyle sıfıra indirme kararı aldı: kalan stok 2034 sonuna kadar yılda ortalama 46 milyar sterlinlik hızla, yıllık 20 milyar sterlinlik satışlar ve itfalarla eritilecek."
+          "Enflasyon değerlendirmesi tersine döndü: önceki metindeki 'TÜFE %2,6'ya geriledi' ve 'temel dezenflasyonun açık işaretleri' ifadeleri yerini TÜFE'nin Ağustos'ta %3,1'e çıktığı ve önümüzdeki çeyreklerde daha da yükselmesinin muhtemel olduğu tespitine bıraktı.",
+          "Komite, enflasyon görünümüne ilişkin risklerin yukarı yönlü olduğunu ve bunun Temmuz Para Politikası Raporu dönemindekinden daha belirgin olduğunu söyledi.",
+          "Orta Doğu'daki uzayan çatışmanın enerji fiyatlarını önceki toplantıdan bu yana daha da artırdığı belirtildi; ikinci tur etkilerin riski, yüksek fiyatlar sürdükçe ya da daha oynak oldukça artıyor diye genişletildi.",
+          "Faaliyetin beklenenden biraz güçlü olduğu eklendi, işgücü piyasası 'gevşek' yerine 'zayıf' diye nitelendi.",
+          "MPC oybirliğiyle, parasal politika amaçlı tahvil stokunu 2034 sonuna kadar yıllık ortalama 46 milyar sterlin hızla (yılda 20 milyar sterlin satış ve vadesi dolanlar) sıfıra indirmeye karar verdi; faiz oyu 6-3 olarak değişmedi."
         ],
         "changesEn": [
-          "The vote was unchanged: 6–3 to hold, with three members again preferring a 25 basis point increase.",
-          "The inflation assessment changed: instead of CPI inflation having fallen to 2.6%, the statement says it rose to 3.1% in August and is likely to rise further over coming quarters.",
-          "The balance of risks hardened: risks to inflation are tilted to the upside 'more so' than in the July Monetary Policy Report, the risk of second-round effects grows if energy prices are more volatile, and the reference to 'clear signs of underlying disinflation' was dropped.",
-          "A sentence was added saying activity has been slightly stronger than expected.",
-          "The MPC voted unanimously to reduce the stock of gilts held for monetary policy purposes to zero, unwinding the remainder by the end of 2034 at an average £46 billion a year through annual sales of £20 billion alongside maturing gilts."
+          "The inflation assessment reversed: the previous references to CPI falling to 2.6% and 'clear signs of underlying disinflation' were replaced by CPI rising to 3.1% in August and being likely to rise further over coming quarters.",
+          "The Committee said the risks to the inflation outlook are tilted to the upside, and more so than at the time of the July Monetary Policy Report.",
+          "Protracted conflict in the Middle East has pushed energy prices further up since the previous meeting, and the risk of second-round effects is now said to grow the longer higher energy prices persist or the more volatile they are.",
+          "Activity was described as slightly stronger than expected, and labour market conditions as soft rather than loose.",
+          "The MPC voted unanimously to reduce the stock of gilts held for monetary policy purposes to zero by the end of 2034 at an annual average pace of £46 billion, through £20 billion of annual sales alongside maturing gilts; the rate vote remained 6–3."
         ],
         "tone": "more-hawkish",
-        "toneReasonTr": "Yükselen TÜFE, Temmuz'a göre daha da yukarı yönlü riskler ve beklenenden güçlü faaliyet vurgusu eklenirken dezenflasyon ifadesi çıkarıldı.",
-        "toneReasonEn": "Rising CPI inflation, risks more to the upside than in July and stronger-than-expected activity were added, while the reference to disinflation was dropped.",
+        "toneReasonTr": "Metin 'temel dezenflasyonun açık işaretleri' ifadesini çıkardı, TÜFE'nin %3,1'e yükselip daha da artacağını ve yukarı yönlü risklerin Temmuz'dakinden fazla olduğunu ekledi.",
+        "toneReasonEn": "The statement dropped 'clear signs of underlying disinflation' and added that CPI rose to 3.1% and is likely to rise further, with upside risks greater than in July.",
+        "score": 4,
+        "scoreReasonTr": "Sabit tutmaya rağmen üç üyenin artırım istemesi, yukarı yönlü enflasyon risklerine vurgu ve 'gerektiğinde harekete geçmeye hazır' ifadesi sıkılaşma eğilimli bir duruş gösteriyor; zayıf işgücü piyasası ve daha yüksek faizlerin enflasyonu düşüreceği notu bunu dengeliyor.",
+        "scoreReasonEn": "Despite the hold, three members voting for a hike, the emphasis on upside inflation risks and readiness to act as necessary point to a tightening bias, tempered by the note that soft labour markets and higher interest rates will reduce inflation over time.",
         "model": "claude-code/opus",
-        "promptVersion": "1",
-        "summarizedAt": "2026-10-13T20:04:53.651Z"
+        "promptVersion": "2",
+        "summarizedAt": "2026-10-14T22:32:48.824Z"
       }
     },
     {
@@ -451,26 +454,29 @@
       "rate": 1.25,
       "previousId": "boj-2026-07-31",
       "summary": {
-        "headlineTr": "BoJ kısa vadeli politika faizini 7–2 oyla %1'den %1,25'e çıkardı; metin temel enflasyonun %2'ye yaklaştığını ve hedefin üzerine çıkma riski bulunduğunu vurguluyor.",
-        "headlineEn": "The BoJ raised its short-term policy rate from 1% to 1.25% by a 7–2 vote; the statement stresses that underlying inflation is approaching 2% and could overshoot the target.",
+        "headlineTr": "BoJ, 7-2 oyla teminatsız gecelik çağrı faizi hedefini %1,0'dan %1,25 civarına yükseltti ve politika faizini artırmayı sürdüreceğini belirtti.",
+        "headlineEn": "The BoJ raised its guideline for the uncollateralized overnight call rate from around 1.0 percent to around 1.25 percent by a 7-2 vote and said it will continue to raise the policy interest rate.",
         "changesTr": [
-          "Gecelik teminatsız çağrı faizi hedefi %1'den %1,25'e yükseltildi; tamamlayıcı mevduat imkânı faizi %1,25'e, temel kredi faizi %1,5'e çıkarıldı, yeni oranlar 24 Eylül'den geçerli.",
-          "Oylama 8–1'den 7–2'ye döndü ama yön değişti: Temmuz'da Takata artırım önermişti; bu kez Asada ve Sato, enflasyonun ve ekonominin artırımı haklı çıkaracak ölçüde hızlanmadığı gerekçesiyle sabit tutmayı savunarak karşı oy verdi.",
-          "Metne ekonomik değerlendirme eklendi: orta-uzun vadeli enflasyon beklentilerinin yükselmeye devam ettiği, temel TÜFE enflasyonunun %2'ye yaklaştığı ve firmaların ücret ve fiyat artırma davranışı nedeniyle %2'nin üzerine çıkma riski olduğu belirtiliyor.",
-          "İklim değişikliğine yönelik fonlama operasyonunda kredi faizi değişken faize çevrildi ve kredilere üst sınır getirildi (oy birliği)."
+          "Banka, temel TÜFE enflasyonunun %2'ye yaklaştığını ve %2 hedefinin üzerine çıkma riski bulunduğunu belirterek parasal genişlemenin derecesini ayarlamayı uygun gördü; artırımdan sonra da finansal koşulların gevşek kalmasının beklendiğini ekledi.",
+          "İleriye dönük yönlendirme olarak Banka, ekonomik faaliyet, fiyatlar ve finansal koşullara göre politika faizini artırmayı sürdüreceğini, zamanlama ve hızı Orta Doğu, yapay zekâ talebi ve döviz kuru gelişmelerini gözeterek belirleyeceğini söyledi.",
+          "Oy dağılımı 8-1'den 7-2'ye döndü: önceki toplantıda artırım öneren Takata bu kez çoğunluğa katıldı, Asada ve Sato ise TÜFE'nin %2'nin altında olduğu ve gelişmelerin belirgin hızlanmadığı gerekçesiyle artırıma karşı oy verdi.",
+          "Tamamlayıcı mevduat imkânı faizi %1,25'e, temel kredi faizi %1,5'e çıkarıldı; iklim değişikliği finansmanı fon sağlama işlemlerinde kredi faizi değişken faize çevrilip kredi tutarlarına üst sınır getirildi."
         ],
         "changesEn": [
-          "The target for the uncollateralised overnight call rate was raised from 1% to 1.25%; the complementary deposit facility rate rises to 1.25% and the basic loan rate to 1.5%, effective 24 September.",
-          "The vote went from 8–1 to 7–2, with the dissent reversing direction: in July Takata had proposed a hike, while this time Asada and Sato dissented in favour of holding, arguing that prices and the economy had not accelerated enough to justify a hike.",
-          "An economic assessment was added: medium- to long-term inflation expectations have continued to rise, underlying CPI inflation is approaching 2%, and there is a risk it overshoots 2% as firms lean more towards raising wages and prices.",
-          "For the climate-change funding operations, the loan rate was switched to a floating rate and upper limits were set on loans (unanimous)."
+          "The Bank judged it appropriate to adjust the degree of monetary accommodation, noting that underlying CPI inflation has been approaching 2 percent with a risk of overshooting the 2 percent target, and added that accommodative financial conditions are expected to be maintained after the hike.",
+          "In new forward guidance, the Bank said it will continue to raise the policy interest rate in response to economic activity, prices and financial conditions, weighing the timing and pace against the Middle East situation, AI-related demand and exchange rates.",
+          "The vote shifted from 8-1 to 7-2: Takata, who proposed a hike at the previous meeting, joined the majority, while Asada and Sato dissented, citing CPI below 2 percent and no substantial acceleration in developments.",
+          "The complementary deposit facility rate was raised to 1.25 percent and the basic loan rate to 1.5 percent, and the climate change funds-supplying operations moved to a floating loan rate with upper limits on loan amounts."
         ],
         "tone": "more-hawkish",
-        "toneReasonTr": "Faiz artırımına ek olarak temel enflasyonun %2'nin üzerine çıkma riskinin açıkça vurgulanması metni sıkılaşma yönünde güçlendiriyor; karşı oylar ise artık sabit tutma yönünde.",
-        "toneReasonEn": "Besides the hike, the explicit risk of underlying inflation overshooting 2% pushes the statement in a tightening direction; the dissents now favour holding.",
+        "toneReasonTr": "Önceki kısa metinde bulunmayan 'politika faizini artırmayı sürdürecek' yönlendirmesi ve temel enflasyonun %2'nin üzerine çıkma riskine vurgu eklendi; iki üyenin artırıma karşı çıkması ise kurul içinde güvercin bir azınlık olduğunu gösteriyor.",
+        "toneReasonEn": "The guidance that the Bank 'will continue to raise the policy interest rate' and the emphasis on the risk of underlying inflation overshooting 2 percent are new compared with the brief previous statement, though two members dissenting against the hike shows a dovish minority on the board.",
+        "score": 5,
+        "scoreReasonTr": "Artırım ve faiz artışlarının süreceği mesajı şahin, ancak finansal koşulların artırımdan sonra da gevşek kalacağı ifadesi ve iki karşı oy duruşu ölçülü tutuyor.",
+        "scoreReasonEn": "The hike and the message that rate increases will continue are hawkish, but the statement that financial conditions will remain accommodative after the hike and the two dissents keep the stance measured.",
         "model": "claude-code/opus",
-        "promptVersion": "1",
-        "summarizedAt": "2026-10-13T20:04:53.652Z"
+        "promptVersion": "2",
+        "summarizedAt": "2026-10-14T22:32:48.826Z"
       }
     },
     {
@@ -927,26 +933,27 @@
       "rateLower": 3.75,
       "previousId": "fed-2026-07-29",
       "summary": {
-        "headlineTr": "Fed hedef aralığı 25 baz puan artırarak %3,75–4,00 yaptı; karar bu kez oy birliğiyle alındı ve metin artırımın enflasyonun %2 hedefine daha zamanında dönmesini destekleyeceğini söylüyor.",
-        "headlineEn": "The Fed raised the target range by 25 basis points to 3.75–4.00%; the decision was unanimous this time and the statement says the move will support a timelier return of inflation to the 2% goal.",
+        "headlineTr": "Fed, federal fon faizi hedef aralığını oybirliğiyle 25 baz puan artırarak %3,75–4,00'e yükseltti ve bu adımın enflasyonun %2 hedefine daha zamanında dönmesini destekleyeceğini belirtti.",
+        "headlineEn": "The Fed unanimously raised the federal funds rate target range by 1/4 percentage point to 3-3/4 to 4 percent, saying the action will support a timelier return of inflation to its 2 percent goal.",
         "changesTr": [
-          "Hedef aralık sabit tutulmak yerine 1/4 puan artırıldı; yeni aralık %3,75–4,00.",
-          "Oylama 9–3'ten 12–0'a döndü: Temmuz'da artırım isteyerek karşı oy veren Hammack, Kashkari ve Logan'ın yerine bu kez karşı oy yok.",
-          "Enflasyon paragrafından enerji gibi sektörlerdeki arz şoklarına yapılan atıf çıkarıldı; yerine bugünkü kararın enflasyonun %2 hedefine daha zamanında dönmesini destekleyeceği cümlesi eklendi.",
-          "Ekonomik değerlendirmede Orta Doğu'daki çatışmaya doğrudan atıf yerine 'jeopolitik gelişmeler' ifadesi kullanıldı ve iç harcamaların dirençli olduğu eklendi; verimlilik artışı güçlü, sermaye yatırımı sağlam diye nitelendi."
+          "Enflasyonun kısmen enerji gibi sektörlerdeki arz şoklarını yansıttığı ifadesi çıkarıldı; yerine 'bugünkü politika adımı %2 hedefine daha zamanında dönüşü destekleyecek' cümlesi geldi.",
+          "Ekonomik değerlendirmede iç harcamaların dirençli olduğu eklendi; belirsizlik Orta Doğu çatışması yerine genel olarak jeopolitik gelişmelere bağlandı.",
+          "Oylama 9-3'ten 12-0'a döndü: önceki toplantıda artırım isteyen Hammack, Kashkari ve Logan'ın karşı oyları artık yok."
         ],
         "changesEn": [
-          "The target range was raised by 1/4 percentage point instead of being held; the new range is 3.75–4.00%.",
-          "The vote moved from 9–3 to 12–0: Hammack, Kashkari and Logan, who dissented in July in favour of a hike, are no longer dissenting.",
-          "The reference to supply shocks in sectors such as energy was dropped from the inflation paragraph and replaced by a sentence saying today's action will support a timelier return of inflation to the 2% goal.",
-          "The assessment of the economy replaced the direct reference to the Middle East conflict with 'geopolitical developments' and added that domestic spending has been resilient; productivity growth is described as strong and capital investment as robust."
+          "The reference to inflation partly reflecting supply shocks in sectors such as energy was removed and replaced with 'Today's policy action will support a timelier return to the Committee's 2 percent goal.'",
+          "The economic assessment adds that domestic spending has been resilient, and attributes elevated uncertainty to geopolitical developments rather than specifically the Middle East conflict.",
+          "The vote moved from 9–3 to 12–0, with the previous dissents by Hammack, Kashkari and Logan in favour of a hike no longer present."
         ],
         "tone": "more-hawkish",
-        "toneReasonTr": "Artırımla birlikte enflasyonun hedefe 'daha zamanında' döneceği vurgusu ve iç talebin dirençli olduğu ifadesi metni sıkılaşma yönünde güçlendiriyor.",
-        "toneReasonEn": "Alongside the hike, the emphasis on a 'timelier' return of inflation to target and on resilient domestic demand pushes the statement in a tightening direction.",
+        "toneReasonTr": "Enflasyonu geçici arz şoklarına bağlayan ifade çıkarıldı, iç harcamaların dirençli olduğu eklendi ve artırım 'enflasyonun daha zamanında dönmesi' gerekçesiyle sunuldu.",
+        "toneReasonEn": "The language attributing inflation to supply shocks was removed, resilient domestic spending was added, and the hike was framed as supporting a 'timelier return' of inflation to 2 percent.",
+        "score": 6,
+        "scoreReasonTr": "Oybirliğiyle yapılan artırım, 'enflasyon yüksek seyrediyor' ve 'fiyat istikrarını sağlayacak' ifadeleri şahin; ancak metin ek artırım için açık bir sinyal vermiyor.",
+        "scoreReasonEn": "A unanimous hike alongside 'inflation remains elevated' and 'will deliver price stability' is hawkish, though the statement gives no explicit signal of further increases.",
         "model": "claude-code/opus",
-        "promptVersion": "1",
-        "summarizedAt": "2026-10-13T20:04:53.652Z"
+        "promptVersion": "2",
+        "summarizedAt": "2026-10-14T22:32:48.827Z"
       }
     },
     {
@@ -1166,28 +1173,31 @@
       "rate": 4.6,
       "previousId": "rba-2026-08-11",
       "summary": {
-        "headlineTr": "RBA nakit faiz hedefini 25 baz puan artırarak %4,60 yaptı; metin Ağustos'ta işaret edilen yukarı yönlü enflasyon risklerinin gerçekleşmeye başladığını söylüyor.",
-        "headlineEn": "The RBA raised the cash rate target by 25 basis points to 4.60%; the statement says the upside inflation risks flagged in August are starting to materialise.",
+        "headlineTr": "RBA nakit faiz hedefini 25 baz puan artırarak %4,60'a yükseltti ve Ağustos'ta işaret ettiği enflasyondaki yukarı yönlü risklerin gerçekleşmeye başladığını söyledi.",
+        "headlineEn": "The RBA raised the cash rate target by 25 basis points to 4.60 per cent, saying some of the upside risks to inflation flagged in August are materialising.",
         "changesTr": [
-          "Nakit faiz hedefi sabit tutulmak yerine 25 baz puan artırıldı; yeni oran %4,60, karar yine oy birliğiyle alındı.",
-          "Ağustos'ta işaret edilen yukarı yönlü enflasyon risklerinin gerçekleşmeye başladığı yazıldı: Orta Doğu'daki çatışma genişledi, küresel enerji fiyatları Ağustos tahminlerinde varsayılandan çok daha yüksek ve yapay zekâ talebi teknoloji ürünlerinin küresel fiyatlarını hızla artırıyor.",
-          "Avustralya'da son enflasyon verilerinin önceki toplantıda beklenenden güçlü geldiği ve haziran çeyreğinde büyümenin beklentiyi bir miktar aştığı belirtildi.",
-          "Önceki metindeki 'para politikası bir ölçüde kısıtlayıcı' değerlendirmesi ve sabit tutma gerekçesi çıkarıldı; Kurul finansal koşullarda daha fazla sıkılaşmanın gerekli olduğuna hükmetti.",
-          "Konut piyasasındaki düşüş (çoğu başkentte fiyat düşüşü ve yeni konut kredilerinde belirgin azalma) ekonomik görünüm için yeni bir belirsizlik olarak eklendi."
+          "Önceki metindeki 'ekonominin nasıl geliştiğini değerlendirirken faizi sabit tutma' kararı yerini, son gelişmeler ışığında finansal koşulların daha da sıkılaştırılmasının gerekli olduğu yargısına bıraktı.",
+          "Enflasyon değerlendirmesi sertleşti: Orta Doğu çatışması genişledi, küresel enerji fiyatları Ağustos tahminlerinde varsayılandan çok daha yüksek ve Avustralya'daki son enflasyon verileri beklenenden güçlü geldi.",
+          "Yeni olarak yapay zekâ kaynaklı talebin teknoloji ürünlerinin küresel fiyatlarını hızla artırdığı ve firmaların fiyat artırdığı ya da artırmaya hazırlandığı vurgulandı; kısa vadeli enflasyon beklentilerinin 'gerilediği' ifadesi çıkarıldı.",
+          "Büyüme Haziran çeyreğinde beklenenden biraz güçlü bulundu, işgücü piyasasının gevşemesi 'beklenenden biraz fazla' yerine 'genel olarak beklendiği gibi' diye nitelendi; konut piyasasındaki düşüşün etkilerine dair belirsizlik eklendi.",
+          "İleriye dönük yönlendirmede ek artırım koşulu 'yukarı yönlü riskler gerçekleşirse' yerine 'gerekirse' oldu; karar oybirliğiyle alındı."
         ],
         "changesEn": [
-          "The cash rate target was raised by 25 basis points instead of being held; the new rate is 4.60% and the decision was again unanimous.",
-          "The statement says the upside inflation risks flagged in August are materialising: the Middle East conflict has broadened, global energy prices are much higher than assumed in the August forecasts, and AI-related demand is driving rapid growth in global prices for technology goods.",
-          "It notes that recent inflation outcomes in Australia were stronger than expected at the previous meeting and that output growth was slightly stronger than expected in the June quarter.",
-          "The earlier judgement that policy was 'somewhat restrictive' and the rationale for holding were dropped; the Board judged that a further tightening in financial conditions is warranted.",
-          "The downturn in the housing market (falling prices in most capital cities and a marked decline in new housing loans) was added as a new uncertainty for the outlook."
+          "The previous decision to hold the cash rate while assessing how the economy evolves gave way to the judgement that, in light of recent developments, a further tightening in financial conditions is warranted.",
+          "The inflation assessment hardened: the Middle East conflict has broadened, global energy prices are much higher than assumed in the August forecasts, and recent Australian inflation outcomes were stronger than expected.",
+          "The statement newly notes that AI-related demand is driving rapid growth in global technology goods prices and that firms are raising or looking to raise prices, and it drops the remark that short-term inflation expectations had eased.",
+          "Output growth was slightly stronger than expected in the June quarter and labour market easing is now described as broadly as expected rather than a little more than expected, while uncertainty about the effects of the housing downturn was added.",
+          "Forward guidance on further increases now reads 'if needed' instead of 'if upside risks materialise'; the decision was unanimous."
         ],
         "tone": "more-hawkish",
-        "toneReasonTr": "Risklerin gerçekleşmeye başladığı, enflasyonun beklenenden güçlü geldiği ve daha fazla sıkılaşmanın gerekli olduğu ifadeleri metni belirgin biçimde şahinleştiriyor.",
-        "toneReasonEn": "Statements that risks are materialising, inflation came in stronger than expected and further tightening is warranted make the text clearly more hawkish.",
+        "toneReasonTr": "Metin 'yukarı yönlü risklerin bir kısmı gerçekleşiyor', 'enerji fiyatları varsayılandan çok daha yüksek' ve 'finansal koşulların daha da sıkılaştırılması gerekli' ifadelerini ekledi, enflasyon beklentilerinin gerilediği ifadesini çıkardı.",
+        "toneReasonEn": "The statement adds that 'some of the upside risks are materialising', that energy prices are 'much higher than had been assumed', and that 'a further tightening in financial conditions is warranted', while dropping the note that inflation expectations had eased.",
+        "score": 7,
+        "scoreReasonTr": "Yılın dördüncü artırımı, 'enflasyon hâlâ çok yüksek' tespiti ve gerekirse faizi daha da artırma taahhüdü açık bir sıkılaşma duruşu gösteriyor.",
+        "scoreReasonEn": "A fourth increase this year, the judgement that 'inflation is still too high' and the commitment to increase the cash rate further if needed signal a clearly tightening stance.",
         "model": "claude-code/opus",
-        "promptVersion": "1",
-        "summarizedAt": "2026-10-13T20:04:53.652Z"
+        "promptVersion": "2",
+        "summarizedAt": "2026-10-14T22:32:48.828Z"
       }
     },
     {
