@@ -8,7 +8,7 @@ import { getEvents } from "@/lib/data/events";
 import { getExpectations } from "@/lib/data/expectations";
 import { getAllMeetings } from "@/lib/data/meetings";
 import { getCurrentRates } from "@/lib/data/rates";
-import { decisionSentence } from "@/lib/decision-format";
+import { decisionSentence, isPendingDecision, pendingNote } from "@/lib/decision-format";
 import type { Expectations } from "@/lib/expectations";
 import { fmtBp, fmtPercent, L, localePath, type Lang } from "@/lib/i18n";
 import { moveOdds } from "@/lib/implied-path";
@@ -238,6 +238,11 @@ async function DecisionItem({
           {view.expectation && (
             <SurpriseBadge label={view.expectation.surprise.label} bp={view.expectation.surprise.bp} lang={lang} />
           )}
+        </p>
+      ) : isPendingDecision(meeting, now) ? (
+        <p className="mt-1.5 text-sm">
+          <span className="font-medium">{pendingNote(meeting, lang)}</span>{" "}
+          <span className="text-muted">{expectationLine(meeting, expectations, currentRate, lang)}</span>
         </p>
       ) : (
         <p className="mt-1.5 text-sm text-muted">{expectationLine(meeting, expectations, currentRate, lang)}</p>

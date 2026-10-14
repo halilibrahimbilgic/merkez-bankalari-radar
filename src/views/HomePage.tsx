@@ -5,7 +5,7 @@ import { BankSummaryList } from "@/components/BankSummaryList";
 import { BankTag, ScoreBadge } from "@/components/ScoreBadge";
 import { EmptyState, Row, Rows, SectionHeader } from "@/components/ui";
 import { CALENDAR_BANK_CODES } from "@/lib/banks";
-import { getUpcomingMeetings } from "@/lib/data/meetings";
+import { getAllMeetings, getUpcomingMeetings } from "@/lib/data/meetings";
 import { getCurrentRates } from "@/lib/data/rates";
 import { getProbabilitySnapshot } from "@/lib/data/probabilities";
 import { getBankScoreSummaries, getSpeeches } from "@/lib/data/speeches";
@@ -13,6 +13,7 @@ import { getNews } from "@/lib/data/news";
 import { getDecisionViews } from "@/lib/data/decisions";
 import { getInflation } from "@/lib/data/inflation";
 import { realRate } from "@/lib/real-rates";
+import { isPendingDecision } from "@/lib/decision-format";
 import { getBankExpectations } from "./bank-expectations";
 import { DecisionRow } from "./DecisionsPage";
 import { WeekAhead } from "./WeekAhead";
@@ -31,14 +32,20 @@ export async function HomePage({ lang }: { lang: Lang }) {
   const p = (path: string) => localePath(lang, path);
   const now = new Date();
 
-  const [upcoming, rates, scores, probability, recentSpeeches, expectations] = await Promise.all([
+  const [upcoming, rates, scores, probability, recentSpeeches, expectations, allMeetings] = await Promise.all([
     getUpcomingMeetings({ now }),
     getCurrentRates(),
     getBankScoreSummaries(),
     getProbabilitySnapshot(),
     getSpeeches({ scoredOnly: true, limit: 4 }),
     getBankExpectations(lang, now),
+    getAllMeetings(),
   ]);
+  // Saati geçmiş, sonucu henüz gelmemiş karar sıradakinin önüne geçer: karar
+  // anında kart bir sonraki toplantıya atlamasın (isPendingDecision).
+  const nextOf = (code: (typeof CALENDAR_BANK_CODES)[number]) =>
+    allMeetings.filter((m) => m.bankCode === code && isPendingDecision(m, now)).at(-1) ??
+    upcoming.find((m) => m.bankCode === code);
   const [news, decisions, inflation] = await Promise.all([
     getNews({ limit: 4 }),
     getDecisionViews({ now }),
@@ -86,7 +93,7 @@ export async function HomePage({ lang }: { lang: Lang }) {
           lang={lang}
           rows={CALENDAR_BANK_CODES.map((code) => ({
             code,
-            next: upcoming.find((m) => m.bankCode === code),
+            next: nextOf(code),
             rate: rates.find((r) => r.bankCode === code),
             real: realRateOf(code),
             chip: expectations[code]?.chip,
@@ -98,7 +105,7 @@ export async function HomePage({ lang }: { lang: Lang }) {
               key={code}
               lang={lang}
               bankCode={code}
-              nextMeeting={upcoming.find((m) => m.bankCode === code)}
+              nextMeeting={nextOf(code)}
               currentRate={rates.find((r) => r.bankCode === code)}
               score={scores.find((s) => s.bankCode === code)}
               odds={expectations[code]?.odds}

@@ -32,7 +32,9 @@ export function Countdown({
 
 function liveLabel(meetingAt: string, lang: Lang): string {
   const diffMs = new Date(meetingAt).getTime() - Date.now();
-  if (diffMs <= 0 || diffMs > 48 * 3600_000) return countdownLabel(meetingAt, undefined, lang);
+  // Yalnızca saati belli toplantılarda kullanılır; saat geçtiyse karar açıklanmıştır.
+  if (diffMs <= 0) return lang === "en" ? "decision announced" : "karar açıklandı";
+  if (diffMs > 48 * 3600_000) return countdownLabel(meetingAt, undefined, lang);
 
   const hours = Math.floor(diffMs / 3600_000);
   const minutes = Math.floor((diffMs % 3600_000) / 60_000);

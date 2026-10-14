@@ -1,5 +1,6 @@
 import Link from "next/link";
 import { BANKS, bankColorVar, bankCountry, bankName } from "@/lib/banks";
+import { isPendingDecision, pendingNote } from "@/lib/decision-format";
 import { formatCurrentRate, type CurrentRate } from "@/lib/data/rates";
 import { fmtSignedPercent, L, localePath, type Lang } from "@/lib/i18n";
 import type { RealRate } from "@/lib/real-rates";
@@ -35,6 +36,7 @@ export function BankSummaryList({ rows, now, lang }: { rows: BankSummary[]; now:
     <ul className="card overflow-hidden sm:hidden">
       {rows.map(({ code, next, rate, real, chip }) => {
         const bank = BANKS[code];
+        const pending = next && isPendingDecision(next, now);
         return (
           <li key={code} className="border-b border-border last:border-b-0">
             <Link
@@ -50,13 +52,17 @@ export function BankSummaryList({ rows, now, lang }: { rows: BankSummary[]; now:
                   {next ? (
                     <>
                       {formatDateShort(next.meetingAt, lang)}
-                      {!next.timeTbd && ` · ${formatTimeTrt(next.meetingAt)}`} · {countdownLabel(next.meetingAt, now, lang)}
+                      {!next.timeTbd && ` · ${formatTimeTrt(next.meetingAt)}`}
+                      {!pending && ` · ${countdownLabel(next.meetingAt, now, lang)}`}
                     </>
                   ) : (
                     t("takvim yok", "no calendar")
                   )}
                 </div>
-                {chip && (
+                {/* Bekleyen kararda çip bir sonraki toplantıya ait olurdu; yerine not. */}
+                {pending && next ? (
+                  <div className="mt-0.5 text-xs font-medium">{pendingNote(next, lang)}</div>
+                ) : chip && (
                   <div className="mt-0.5 text-xs">
                     <span aria-hidden className={TONE[chip.direction]}>
                       {ARROW[chip.direction]}

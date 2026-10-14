@@ -30,8 +30,14 @@ export function LiveCountdown({
     return () => clearInterval(id);
   }, [meetingAt]);
 
+  // Sayfa karar saatinden önce üretilmiş olabilir (ISR); saat geçince sonuç
+  // birkaç dakikadan yarım saate kadar gecikmeyle gelir.
   if (parts.past) {
-    return <p className="text-sm text-muted">{en ? "Decision announced" : "Karar açıklandı"}</p>;
+    return (
+      <p className="text-sm font-medium">
+        {en ? "Decision announced: the result will be here shortly." : "Karar açıklandı: sonuç kısa süre içinde burada."}
+      </p>
+    );
   }
 
   return (

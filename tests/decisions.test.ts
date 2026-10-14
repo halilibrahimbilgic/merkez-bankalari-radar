@@ -117,3 +117,21 @@ test("faiz döngüsü: yıl başından değişim, artırım/indirim sayısı ve 
   const series = cycleSeries(meetings, ["rba"], "2026-01-01", now);
   assert.deepEqual(series.map((r) => r.rba), [0, 25, 50, 50]);
 });
+
+test("bekleyen karar: saati geçmiş, sonucu yok, 12 saatten taze", async () => {
+  const { isPendingDecision, pendingNote } = await import("../src/lib/decision-format");
+  const m = {
+    id: "tcmb-2026-10-22", bankCode: "tcmb" as const, meetingAt: "2026-10-22T11:00:00.000Z", timeTbd: false,
+    type: "rate_decision" as const, status: "scheduled" as const,
+  };
+  const at = (iso: string) => new Date(iso);
+  assert.equal(isPendingDecision(m, at("2026-10-22T10:59:00Z")), false); // henüz değil
+  assert.equal(isPendingDecision(m, at("2026-10-22T11:05:00Z")), true);
+  assert.equal(isPendingDecision(m, at("2026-10-22T22:59:00Z")), true);
+  assert.equal(isPendingDecision(m, at("2026-10-22T23:01:00Z")), false); // 12 saat geçti
+  assert.equal(isPendingDecision({ ...m, decisionRate: 36 }, at("2026-10-22T11:30:00Z")), false);
+  assert.equal(isPendingDecision({ ...m, status: "cancelled" as const }, at("2026-10-22T11:30:00Z")), false);
+  // Saati açıklanmayan kararda "açıklandı" denmez.
+  assert.equal(pendingNote({ ...m, timeTbd: true }, "tr", true), "sonuç bekleniyor");
+  assert.equal(pendingNote(m, "tr", true), "karar açıklandı");
+});

@@ -182,6 +182,16 @@ kendi UA'sını (`shared.ts`) geçiriyor. Taklit hem kırılgan hem yanlış.
 (Atlanta Fed MPT okuyucusunda bir Chrome taklidi kalmıştı; 13 Ekim 2026'da
 kaldırıldı — dürüst UA ile sayfa 7–50 sn'de, dosya sorunsuz geliyor.)
 
+**Saati geçmiş, sonucu gelmemiş karar "bekleyen" karardır**
+(`isPendingDecision`). Sonuç resmî metinden yarım saate kadar gecikmeyle
+gelir; o arada sayfalar bugünkü kararı atlayıp bir sonraki toplantıyı
+gösteriyordu — kullanıcının en çok baktığı anda. Ana sayfa kartı, telefon
+listesi, banka sayfası, "Bu hafta" ve takvim satırı onu "Karar açıklandı:
+sonuç kısa süre içinde burada" diye tutar; canlı sayaç önbellekteki sayfada
+da aynısını yazar. 12 saatten eskisi sayılmaz (metin okunamazsa sonuç seriden
+günler sonra gelir). BoJ'de yer tutucu saat geçti diye kararın açıklandığı
+bilinmez: "sonuç bekleniyor" der.
+
 **Saati duyurulmayan karar (BoJ) `timeTbd`'dir ve hiçbir yerde saat gibi
 sunulmaz.** `meetingAt`'teki saat yalnızca sıralama için yer tutucudur:
 kartta ve listede gün düzeyinde etiket, iCal'de tüm gün etkinliği.

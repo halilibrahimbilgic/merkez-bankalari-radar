@@ -11,6 +11,38 @@ import type { Meeting } from "./types";
 /** Karar sayfaları bu günden başlar — altı bankanın takvim arşivi 2026'dan. */
 export const DECISIONS_FROM = "2026-01-01";
 
+/**
+ * Saati geçmiş ama sonucu henüz veride olmayan karar. Haber işi resmî metni
+ * yarım saatte bir okur; o arada sayfalar bugünkü kararı atlayıp bir sonraki
+ * toplantıyı gösteriyordu. 12 saatten eskisi sayılmaz: metin okunamadıysa
+ * sonuç seriden ertesi gün (ECB'de 6 gün sonra) gelir, o kadar süre "kısa
+ * süre içinde" demek yanlış olurdu.
+ */
+export function isPendingDecision(m: Meeting, now: Date): boolean {
+  const passed = now.getTime() - Date.parse(m.meetingAt);
+  return (
+    m.status !== "cancelled" &&
+    (m.type === "rate_decision" || m.type === "projections") &&
+    m.decisionRate === undefined &&
+    passed >= 0 &&
+    passed < 12 * 3_600_000
+  );
+}
+
+/**
+ * Bekleyen kararın notu. Saati açıklanmayan kararda (BoJ) yer tutucu saat
+ * geçti diye kararın açıklandığı bilinmez.
+ */
+export function pendingNote(m: Meeting, lang: Lang, short = false): string {
+  const en = lang === "en";
+  if (m.timeTbd) {
+    if (short) return en ? "result pending" : "sonuç bekleniyor";
+    return en ? "Decision day: the result will appear here once announced." : "Karar günü: sonuç açıklanınca burada.";
+  }
+  if (short) return en ? "decision announced" : "karar açıklandı";
+  return en ? "Decision announced: the result will be here shortly." : "Karar açıklandı: sonuç kısa süre içinde burada.";
+}
+
 /** Karar sayfası var mı: arşiv döneminde ve oranı belli bir karar. */
 export function hasDecisionPage(m: Meeting, now: Date): boolean {
   return m.meetingAt >= DECISIONS_FROM && m.decisionRate !== undefined && new Date(m.meetingAt) <= now;

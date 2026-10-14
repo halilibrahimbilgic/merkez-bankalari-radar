@@ -1,5 +1,6 @@
 import Link from "next/link";
 import { BANKS, bankColorVar, bankCountry, bankName } from "@/lib/banks";
+import { isPendingDecision, pendingNote } from "@/lib/decision-format";
 import { fmtSignedPercent, L, localePath, type Lang } from "@/lib/i18n";
 import type { RealRate } from "@/lib/real-rates";
 import type { BankCode, Meeting } from "@/lib/types";
@@ -48,6 +49,7 @@ export function BankCard({
   const bank = BANKS[bankCode];
   const name = bankName(bank, lang);
   const href = localePath(lang, `/banka/${bank.code}`);
+  const pending = nextMeeting && isPendingDecision(nextMeeting, new Date());
 
   return (
     <article className="flex flex-col card p-5">
@@ -67,13 +69,17 @@ export function BankCard({
 
       {nextMeeting ? (
         <div className="mt-3">
-          <div className="text-sm text-muted">{t("Sıradaki karar", "Next decision")}</div>
+          <div className="text-sm text-muted">
+            {pending ? t("Karar günü", "Decision day") : t("Sıradaki karar", "Next decision")}
+          </div>
           <div className="tabular mt-0.5 font-medium">
             {formatDate(nextMeeting.meetingAt, lang)}
             {!nextMeeting.timeTbd && ` · ${formatTimeTrt(nextMeeting.meetingAt)} TRT`}
           </div>
           <div className="mt-2">
-            {nextMeeting.timeTbd ? (
+            {pending ? (
+              <p className="text-sm font-medium">{pendingNote(nextMeeting, lang)}</p>
+            ) : nextMeeting.timeTbd ? (
               // Saat yer tutucu (BoJ): gün düzeyinden ince geri sayım yanıltır.
               <span className="text-sm text-muted">
                 {countdownLabel(nextMeeting.meetingAt, undefined, lang)} ·{" "}

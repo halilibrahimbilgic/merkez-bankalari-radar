@@ -1,6 +1,6 @@
 import Link from "next/link";
 import { BANKS, bankColorVar, bankName } from "@/lib/banks";
-import { formatDecisionRate, hasDecisionPage } from "@/lib/decision-format";
+import { formatDecisionRate, hasDecisionPage, isPendingDecision, pendingNote } from "@/lib/decision-format";
 import { L, localePath, type Lang } from "@/lib/i18n";
 import type { Meeting } from "@/lib/types";
 import {
@@ -70,7 +70,9 @@ export function MeetingRow({ meeting, now, lang }: { meeting: Meeting; now: Date
             <span className="text-muted tabular">
               {meeting.decisionRate !== undefined
                 ? `${formatDecisionRate(meeting, lang)}${rateDelta(meeting, lang)}`
-                : countdownLabel(meeting.meetingAt, now, lang)}
+                : isPendingDecision(meeting, now)
+                  ? pendingNote(meeting, lang, true)
+                  : countdownLabel(meeting.meetingAt, now, lang)}
             </span>
           )
         ) : meeting.timeTbd ? (

@@ -20,6 +20,7 @@ import { forwardRealRate, realRate } from "@/lib/real-rates";
 import { getExpectations } from "@/lib/data/expectations";
 import { speechTitle } from "@/lib/speech-i18n";
 import { formatDate, formatMeeting, formatTimeTrt, monthLabel } from "@/lib/time";
+import { isPendingDecision, pendingNote } from "@/lib/decision-format";
 import { getBankExpectations } from "./bank-expectations";
 
 export async function bankMetadata(lang: Lang, code: string): Promise<Metadata> {
@@ -73,7 +74,10 @@ export async function BankPage({ lang, code }: { lang: Lang; code: string }) {
   const now = new Date();
   const upcoming = await getUpcomingMeetings({ bankCode: bank.code, now });
   const past = await getPastMeetings({ bankCode: bank.code, limit: 12, now });
-  const next = upcoming[0];
+  // Saati geçmiş, sonucu gelmemiş karar sıradakinin önüne geçer (isPendingDecision).
+  const pending = past.find((m) => isPendingDecision(m, now));
+  const next = pending ?? upcoming[0];
+  const later = pending ? upcoming : upcoming.slice(1);
   const currentRate = await getCurrentRate(bank.code);
   const speeches = await getSpeeches({ bankCode: bank.code, limit: 5 });
   const scoreSummary = (await getBankScoreSummaries()).find((s) => s.bankCode === bank.code);
@@ -163,12 +167,17 @@ export async function BankPage({ lang, code }: { lang: Lang; code: string }) {
 
       {next ? (
         <section className="card p-5">
-          <div className="text-sm text-muted">{t("Sıradaki toplantı", "Next meeting")}</div>
+          <div className="text-sm text-muted">
+            {pending ? t("Karar günü", "Decision day") : t("Sıradaki toplantı", "Next meeting")}
+          </div>
           <div className="mt-1 text-lg font-semibold tabular">
             {formatMeeting(next.meetingAt, next.timeTbd, lang)}
           </div>
-          {/* "Ne bekleniyor?" banka sayfasının asıl sorusu; önceden yalnızca ana sayfada vardı. */}
-          {hasExpectation ? (
+          {/* "Ne bekleniyor?" banka sayfasının asıl sorusu; önceden yalnızca ana sayfada vardı.
+              Bekleyen kararda beklenti bir sonraki toplantıya ait olurdu: yerine not. */}
+          {pending ? (
+            <p className="mt-2 text-sm font-medium">{pendingNote(pending, lang)}</p>
+          ) : hasExpectation ? (
             <>
               <ExpectationDetails
                 odds={expectation?.odds}
@@ -202,11 +211,11 @@ export async function BankPage({ lang, code }: { lang: Lang; code: string }) {
         </p>
       )}
 
-      {upcoming.length > 1 && (
+      {later.length > 0 && (
         <section>
           <h2 className="mb-3 text-lg font-semibold">{t("Yaklaşan toplantılar", "Upcoming meetings")}</h2>
           <ul className="overflow-hidden card">
-            {upcoming.slice(1).map((m) => (
+            {later.map((m) => (
               <MeetingRow key={m.id} meeting={m} now={now} lang={lang} />
             ))}
           </ul>
