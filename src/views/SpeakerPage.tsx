@@ -48,6 +48,12 @@ export async function SpeakerPage({ lang, slug }: { lang: Lang; slug: string }) 
           <span>{bankFullName(bank, lang)}</span>
         </div>
         <h1 className="mt-2 text-2xl font-semibold tracking-tight">{speaker.name}</h1>
+        {/* Türkçe unvan yoksa İngilizcesi, dili belirtilerek. */}
+        {(lang === "tr" ? (speaker.roleTr ?? speaker.roleEn) : speaker.roleEn) && (
+          <p lang={lang === "tr" && speaker.roleTr ? "tr" : "en"} className="mt-1 text-muted">
+            {lang === "tr" ? (speaker.roleTr ?? speaker.roleEn) : speaker.roleEn}
+          </p>
+        )}
         <p className="prose-width mt-2 text-muted">
           {t(
             `Arşivde ${speechCount(speaker.speechCount, lang)}; ${speaker.signalCount} tanesi para politikası sinyali taşıyor ve ortalamaya giriyor.`,

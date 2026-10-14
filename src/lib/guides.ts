@@ -1,4 +1,5 @@
 import type { Lang } from "./i18n";
+import { slugify } from "./slug";
 
 /**
  * Rehber yazıları — faiz kararlarını sade dille anlatan kısa metinler.
@@ -36,4 +37,12 @@ export interface Guide {
 
 export function pick(pair: Pair, lang: Lang): string {
   return lang === "en" ? pair.en : pair.tr;
+}
+
+/**
+ * Sözlük teriminin çapası, Türkçesinden: "Sürpriz" → "surpriz". İki dilde
+ * aynı, böylece sayfalardaki terim bağlantıları dilden bağımsız.
+ */
+export function termId(term: Pair): string {
+  return slugify(term.tr);
 }

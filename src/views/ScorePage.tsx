@@ -9,6 +9,7 @@ import {
   scoreToneClass,
 } from "@/components/ScoreBadge";
 import { ScoringGap } from "@/components/ScoringGap";
+import { Term } from "@/components/Term";
 import { Card, Row, Rows, SectionHeader, TableFrame, Th } from "@/components/ui";
 import { BANKS, bankName } from "@/lib/banks";
 import {
@@ -247,9 +248,31 @@ function Scale({ lang }: { lang: Lang }) {
       </div>
       <div className="mt-2 h-2 rounded-full bg-gradient-to-r from-dove via-border to-hawk" />
       <p className="prose-width mt-3 text-muted">
-        {t(
-          "Güvercin duruş faiz indirimine, şahin duruş faiz artırımına eğilimi gösterir. Düzenleme veya denetim konulu konuşmalar 0 puan alır ve ortalamaya katılmaz — bu \"dengeli duruş\" değil \"sinyal yok\" demektir.",
-          "A dovish stance leans towards rate cuts, a hawkish stance towards rate hikes. Speeches on regulation or supervision score 0 and are left out of the average — that means \"no signal\", not \"balanced stance\".",
+        {lang === "en" ? (
+          <>
+            A{" "}
+            <Term id="guvercin" lang={lang}>
+              dovish
+            </Term>{" "}
+            stance leans towards rate cuts, a{" "}
+            <Term id="sahin" lang={lang}>
+              hawkish
+            </Term>{" "}
+            stance towards rate hikes. Speeches on regulation or supervision score 0 and are left out of the average —
+            that means &quot;no signal&quot;, not &quot;balanced stance&quot;.
+          </>
+        ) : (
+          <>
+            <Term id="guvercin" lang={lang}>
+              Güvercin
+            </Term>{" "}
+            duruş faiz indirimine,{" "}
+            <Term id="sahin" lang={lang}>
+              şahin
+            </Term>{" "}
+            duruş faiz artırımına eğilimi gösterir. Düzenleme veya denetim konulu konuşmalar 0 puan alır ve ortalamaya
+            katılmaz — bu &quot;dengeli duruş&quot; değil &quot;sinyal yok&quot; demektir.
+          </>
         )}
       </p>
     </Card>

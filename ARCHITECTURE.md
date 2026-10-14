@@ -353,6 +353,13 @@ kaçırmıyormuş gibi görünürdü. "Yıl başından" seçilmedi; Ocak'ta boş
 "J." / "J" farkı aynı adrese düşer; ad gerçekten değişirse eski adres 404
 verir. Konuşmacının bankası en yeni konuşmasındaki bankadır; ortalama,
 banka ortalamasıyla aynı kuralla (yalnızca sinyal taşıyan skorlu konuşmalar).
+Unvan BIS tanıtım cümlesinden okunur ("…, <unvan>, at …"); Türkçesi modelin
+çevirdiği cümlede addan önceki kısımdır, yoksa İngilizcesi `lang="en"` ile.
+
+**Jargon sözlüğe bağlanır, kırık çapa derlemeyi kırar** (`Term`). Sözlük
+terimlerinin çapası Türkçe terimden türer (`termId`: "Sürpriz" → `surpriz`),
+iki dilde aynıdır. Bağlantı düz `<a>`: istemci tarafı gezinme `pushState`
+kullanır ve `:target` vurgusu tetiklenmez.
 
 **Renk tek başına anlam taşımaz** (WCAG 1.4.1). Banka renkleri ikincil
 ipucudur, yanında her zaman banka adı metni durur. Tonlar ölçülerek seçildi:

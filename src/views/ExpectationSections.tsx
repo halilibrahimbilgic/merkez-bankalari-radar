@@ -1,5 +1,6 @@
 import Link from "next/link";
 import { RateOdds, type OddsRow } from "@/components/RateOdds";
+import { Term } from "@/components/Term";
 import { TimeSeriesChart } from "@/components/TimeSeriesChart";
 import { Callout, Card, SectionHeader, Stat, TableFrame, Th } from "@/components/ui";
 import type { ExpectationPoint } from "@/lib/expectation-history";
@@ -56,10 +57,27 @@ export function BoeExpectations({
       <Card>
         <SectionHeader
           title={t("BoE — Bank Rate beklentisi", "BoE — Bank Rate expectations")}
-          description={t(
-            `İngiltere Merkez Bankası'nın yayımladığı OIS faiz eğrisinden türetildi; eğri ${formatDate(data.asOf, lang)} tarihli. Güncel Bank Rate ${fmtPercent(data.currentRate, lang)}.`,
-            `Derived from the OIS yield curve published by the Bank of England; curve dated ${formatDate(data.asOf, lang)}. Current Bank Rate ${fmtPercent(data.currentRate, lang)}.`,
-          )}
+          description={
+            lang === "en" ? (
+              <>
+                Derived from the{" "}
+                <Term id="ois" lang={lang}>
+                  OIS
+                </Term>{" "}
+                yield curve published by the Bank of England; curve dated {formatDate(data.asOf, lang)}. Current Bank
+                Rate {fmtPercent(data.currentRate, lang)}.
+              </>
+            ) : (
+              <>
+                İngiltere Merkez Bankası&apos;nın yayımladığı{" "}
+                <Term id="ois" lang={lang}>
+                  OIS
+                </Term>{" "}
+                faiz eğrisinden türetildi; eğri {formatDate(data.asOf, lang)} tarihli. Güncel Bank Rate{" "}
+                {fmtPercent(data.currentRate, lang)}.
+              </>
+            )
+          }
         />
         <KindBadge kind="market" lang={lang} />
 

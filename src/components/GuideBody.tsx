@@ -1,6 +1,6 @@
 import Link from "next/link";
 import type { ReactNode } from "react";
-import { pick, type GuideBlock } from "@/lib/guides";
+import { pick, termId, type GuideBlock } from "@/lib/guides";
 import { localePath, type Lang } from "@/lib/i18n";
 import { Callout } from "./ui";
 
@@ -30,7 +30,8 @@ export function GuideBody({ blocks, lang }: { blocks: GuideBlock[]; lang: Lang }
         return (
           <dl key={i} className="space-y-3">
             {block.terms.map((t, j) => (
-              <div key={j}>
+              // Çapa: sayfalardaki terim bağlantıları (Term) buraya iner; hedef vurgulanır.
+              <div key={j} id={termId(t.term)} className="-mx-2 scroll-mt-4 rounded-lg px-2 py-1 target:bg-accent-soft">
                 <dt className="font-semibold">{pick(t.term, lang)}</dt>
                 <dd className="text-muted">{inline(pick(t.def, lang), lang)}</dd>
               </div>

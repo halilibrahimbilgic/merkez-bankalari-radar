@@ -5,6 +5,7 @@ import { RateOdds, type OddsRow } from "@/components/RateOdds";
 import { BankTag } from "@/components/ScoreBadge";
 import { StatementDiff } from "@/components/StatementDiff";
 import { SurpriseBadge, surpriseText } from "@/components/SurpriseBadge";
+import { Term } from "@/components/Term";
 import { TimeSeriesChart } from "@/components/TimeSeriesChart";
 import { Card, SectionHeader, Stat } from "@/components/ui";
 import { BANKS, bankName, bankRateName } from "@/lib/banks";
@@ -294,9 +295,32 @@ function ExpectationCard({ view, lang }: { view: DecisionView; lang: Lang }) {
       )}
 
       <p className="prose-width mt-4 text-sm text-muted">
-        {t(
-          "Fark 10 baz puanın altındaysa karar beklentiyle uyumlu, 25 baz puan ve üstündeyse sürpriz sayılır; aradaki fark \"biraz\" diye gösterilir. Yalnızca önceki karardan sonra ve bu karardan önce oluşmuş beklentiler kullanılır.",
-          "A gap below 10 basis points counts as in line, 25 basis points or more as a surprise, and anything between as \"slightly\". Only expectations formed after the previous decision and before this one are used.",
+        {lang === "en" ? (
+          <>
+            A gap below 10{" "}
+            <Term id="baz-puan-bp" lang={lang}>
+              basis points
+            </Term>{" "}
+            counts as in line, 25 basis points or more as a{" "}
+            <Term id="surpriz" lang={lang}>
+              surprise
+            </Term>
+            , and anything between as &quot;slightly&quot;. Only expectations formed after the previous decision and before
+            this one are used.
+          </>
+        ) : (
+          <>
+            Fark 10{" "}
+            <Term id="baz-puan-bp" lang={lang}>
+              baz puanın
+            </Term>{" "}
+            altındaysa karar beklentiyle uyumlu, 25 baz puan ve üstündeyse{" "}
+            <Term id="surpriz" lang={lang}>
+              sürpriz
+            </Term>{" "}
+            sayılır; aradaki fark &quot;biraz&quot; diye gösterilir. Yalnızca önceki karardan sonra ve bu karardan önce
+            oluşmuş beklentiler kullanılır.
+          </>
         )}{" "}
         <Link href={localePath(lang, "/rehber/beklenti-nasil-olculur")} className="text-accent hover:underline">
           {t("Beklenti nasıl ölçülür?", "How are expectations measured?")}

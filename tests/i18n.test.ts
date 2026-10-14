@@ -35,3 +35,26 @@ test("konuşmacı adresi: aksan ve noktalama atılır, aynı kişi tek adrese d�
   assert.equal(speakerSlug("Şebnem Kalemli-Özcan"), "sebnem-kalemli-ozcan");
   assert.equal(speakerSlug("Işık Ilgın"), "isik-ilgin");
 });
+
+test("konuşmacı unvanı: BIS tanıtım cümlesi ve modelin Türkçesi", async () => {
+  const { roleFromContext, roleFromContextTr } = await import("../src/lib/speakers");
+  // Örnekler 14 Ekim 2026'da data/seed/speeches.json'dan.
+  assert.equal(
+    roleFromContext("Speech by Mr Christopher J Waller, Member of the Board of Governors of the Federal Reserve System, at the Istanbul Economic Forum, Istanbul, 8 October 2026.", "Christopher J Waller"),
+    "Member of the Board of Governors of the Federal Reserve System",
+  );
+  assert.equal(
+    roleFromContext("Opening statement by Ms Michele Bullock, Governor of the Reserve Bank of Australia, to the House of Representatives Standing Committee on Economics, Canberra, 18 September 2026.", "Michele Bullock"),
+    "Governor of the Reserve Bank of Australia",
+  );
+  assert.equal(roleFromContext("Speech at an event.", "Michele Bullock"), undefined);
+  assert.equal(
+    roleFromContextTr("Avrupa Merkez Bankası Denetim Kurulu Başkanı Prof. Claudia Buch'un, Hollanda Yabancı Bankacılar Derneği'nin yıllık konferansındaki açılış konuşması.", "Claudia Buch"),
+    "Avrupa Merkez Bankası Denetim Kurulu Başkanı",
+  );
+  assert.equal(
+    roleFromContextTr("Federal Rezerv Sistemi Guvernörler Kurulu Başkan Yardımcısı Philip N. Jefferson'ın, Darden İşletme Okulu'ndaki konuşması.", "Philip N Jefferson"),
+    "Federal Rezerv Sistemi Guvernörler Kurulu Başkan Yardımcısı",
+  );
+  assert.equal(roleFromContextTr("Philip N. Jefferson'ın konuşması.", "Philip N Jefferson"), undefined);
+});

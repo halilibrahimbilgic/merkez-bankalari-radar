@@ -3,7 +3,7 @@ import { readFile } from "node:fs/promises";
 import path from "node:path";
 import { getPool } from "../db";
 import { ALL_BANKS } from "../banks";
-import { speakerSlug } from "../speakers";
+import { roleFromContext, roleFromContextTr, speakerSlug } from "../speakers";
 import type { BankCode, ScoredVia, Speech } from "../types";
 import type { TextLicense } from "../text-license";
 import { toParagraphs } from "../speech-format";
@@ -226,6 +226,9 @@ export interface SpeakerSummary {
   signalCount: number;
   averageScore?: number;
   latestDate: string;
+  /** Unvan, en yeni tanıtım cümlesinden; Türkçesi modelin çevirisinden. */
+  roleEn?: string;
+  roleTr?: string;
 }
 
 /** Arşivdeki konuşmacılar, en çok konuşan önce. */
@@ -239,9 +242,12 @@ export async function getSpeakers(): Promise<SpeakerSummary[]> {
   return [...bySlug]
     .map(([slug, list]) => {
       const { average, count } = signalAverage(list);
+      const name = list[0].speakerName;
       return {
         slug,
-        name: list[0].speakerName,
+        name,
+        roleEn: list.map((s) => roleFromContext(s.contextEn, s.speakerName)).find(Boolean),
+        roleTr: list.map((s) => roleFromContextTr(s.contextTr, s.speakerName)).find(Boolean),
         bankCode: list[0].bankCode,
         speechCount: list.length,
         signalCount: count,

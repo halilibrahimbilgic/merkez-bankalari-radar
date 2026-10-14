@@ -7,6 +7,7 @@ import { Callout, Card, EmptyState, SectionHeader, Stat } from "@/components/ui"
 import { getExpectations } from "@/lib/data/expectations";
 import { getExpectationHistory } from "@/lib/data/history";
 import { TimeSeriesChart } from "@/components/TimeSeriesChart";
+import { Term } from "@/components/Term";
 import type { FedWindowPoint } from "@/lib/expectation-history";
 import { getPastMeetings, getUpcomingMeetings } from "@/lib/data/meetings";
 import { getCurrentRate } from "@/lib/data/rates";
@@ -61,9 +62,32 @@ export async function ProbabilityPage({
           {t("Faiz olasılıkları ve beklentileri", "Rate probabilities and expectations")}
         </h1>
         <p className="prose-width mt-2 text-muted">
-          {t(
-            "Fed ve BoE için piyasanın fiyatladığı beklentiler; ECB ve TCMB için analist ve ekonomistlere sorulan anketlerin sonucu. İkisi farklı şeylerdir: piyasa fiyatlaması her gün değişir, anketler toplantı ya da ay başına bir kez yapılır.",
-            "Market-implied expectations for the Fed and BoE; results of surveys of analysts and economists for the ECB and CBRT. They are different things: market pricing changes daily, surveys are run once per meeting or month.",
+          {lang === "en" ? (
+            <>
+              Market-implied expectations for the Fed and BoE; results of surveys of analysts and economists for the ECB
+              and CBRT. They are different things:{" "}
+              <Term id="piyasa-fiyatlamasi" lang={lang}>
+                market pricing
+              </Term>{" "}
+              changes daily,{" "}
+              <Term id="anket-beklentisi" lang={lang}>
+                surveys
+              </Term>{" "}
+              are run once per meeting or month.
+            </>
+          ) : (
+            <>
+              Fed ve BoE için piyasanın fiyatladığı beklentiler; ECB ve TCMB için analist ve ekonomistlere sorulan
+              anketlerin sonucu. İkisi farklı şeylerdir:{" "}
+              <Term id="piyasa-fiyatlamasi" lang={lang}>
+                piyasa fiyatlaması
+              </Term>{" "}
+              her gün değişir,{" "}
+              <Term id="anket-beklentisi" lang={lang}>
+                anketler
+              </Term>{" "}
+              toplantı ya da ay başına bir kez yapılır.
+            </>
           )}
         </p>
         <nav aria-label={t("Bankalar", "Banks")} className="mt-3 flex flex-wrap gap-2 text-sm">

@@ -46,7 +46,7 @@ export function SectionHeader({
   title: string;
   id?: string;
   action?: { href: string; label: string };
-  description?: string;
+  description?: ReactNode;
 }) {
   return (
     <div className="mb-3">
