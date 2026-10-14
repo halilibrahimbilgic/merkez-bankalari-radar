@@ -323,7 +323,10 @@ taklit etmez. Geliştirici protokolüyle (Emulation.setDeviceMetricsOverride)
 bakıldı (14 Ekim 2026): tablolar telefonda sabit genişlikle kaydığı için
 reel faiz tablosunun asıl sütunu görünmüyordu — `TableFrame` artık asgari
 genişliği yalnızca sm ve üstünde uygular. Tek başına duran bağlantılar en az
-24 px yüksekliğinde (WCAG 2.5.8; metin içi bağlantılar muaf).
+24 px yüksekliğinde (WCAG 2.5.8; metin içi bağlantılar muaf). Telefonda üst
+menü "Menü" düğmesinin arkasındadır (`MobileMenu`): yatay kayan menüde sekiz
+bağlantının dördü ilk ekranda görünmüyordu, sarmalı menü başlığı üç satıra
+çıkarıyordu.
 
 **"Bu hafta" takvimi kaynak başına korunur.** Yedi kaynak (Fed takvimi,
 ECB programı, beş TÜFE takvimi) ayrı ayrı çekilir; biri hata verirse

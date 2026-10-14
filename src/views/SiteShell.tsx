@@ -4,6 +4,7 @@ import { Geist, Geist_Mono } from "next/font/google";
 import { Analytics } from "@vercel/analytics/next";
 import { DataFreshness } from "@/components/DataFreshness";
 import { LangSwitch } from "@/components/LangSwitch";
+import { MobileMenu } from "@/components/MobileMenu";
 import { ThemeToggle } from "@/components/ThemeToggle";
 import { L, languageAlternates, localePath, type Lang } from "@/lib/i18n";
 import { SITE_URL, TELEGRAM_URL } from "@/lib/site";
@@ -104,13 +105,13 @@ export function SiteShell({ lang, children }: { lang: Lang; children: React.Reac
           {t("İçeriğe atla", "Skip to content")}
         </a>
 
-        <header className="border-b border-border bg-surface">
+        <header className="relative border-b border-border bg-surface">
           {/*
-            Mobilde iki satır: marka + dil/tema düğmeleri üstte, gezinme
-            altta. Gezinme sarmak yerine yatay kayar — sarmalı düzen 375px'te
-            başlığı üç satıra çıkarıyordu; sağ kenardaki solma kaydırılabildiğini
-            belli eder, sondaki boşluk son bağlantıyı solmadan çıkarır. sm ve
-            üzerinde tek satır.
+            Telefonda tek satır: marka, dil/tema ve "Menü"; menü açılınca
+            sekiz bağlantı iki sütunda (MobileMenu). Önceden gezinme yatay
+            kayıyordu ve sekiz bağlantının dördü ilk ekranda görünmüyordu
+            (14 Ekim 2026, 390 px); sarmalı düzen ise başlığı üç satıra
+            çıkarıyordu. sm ve üzerinde gezinme başlıkta tek satır.
 
             Düğmeler tek bir DOM kopyasıdır; satırlar arası yeri `order` ile
             değişir. İki kopya render etmek aynı denetimi ekran okuyucuya
@@ -132,17 +133,18 @@ export function SiteShell({ lang, children }: { lang: Lang; children: React.Reac
             <div className="order-2 ml-auto flex items-center gap-1 sm:order-3 sm:ml-2">
               <LangSwitch lang={lang} />
               <ThemeToggle lang={lang} />
+              <MobileMenu items={nav} label={t("Menü", "Menu")} navLabel={t("Ana gezinme", "Main navigation")} />
             </div>
 
             <nav
               aria-label={t("Ana gezinme", "Main navigation")}
-              className="order-3 -mx-4 flex w-full gap-x-4 overflow-x-auto px-4 pr-16 text-sm text-muted [mask-image:linear-gradient(to_right,black_82%,transparent)] sm:order-2 sm:mx-0 sm:ml-auto sm:w-auto sm:flex-wrap sm:gap-y-1 sm:overflow-visible sm:px-0 sm:[mask-image:none]"
+              className="hidden gap-x-4 gap-y-1 text-sm text-muted sm:order-2 sm:ml-auto sm:flex sm:flex-wrap"
             >
               {nav.map((item) => (
                 <Link
                   key={item.href}
                   href={item.href}
-                  className="inline-flex min-h-11 shrink-0 items-center hover:text-accent sm:min-h-0"
+                  className="inline-flex shrink-0 items-center hover:text-accent"
                 >
                   {item.label}
                 </Link>
