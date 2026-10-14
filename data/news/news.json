@@ -1,6 +1,36 @@
 {
-  "fetchedAt": "2026-10-14T15:31:32.293Z",
+  "fetchedAt": "2026-10-14T16:01:38.564Z",
   "items": [
+    {
+      "id": "d8b256ae29de",
+      "sourceKey": "bbc-business",
+      "sourceName": "BBC News",
+      "kind": "media",
+      "url": "https://www.bbc.co.uk/news/articles/c305649p2d6o?at_medium=RSS&at_campaign=rss",
+      "publishedAt": "2026-10-14T15:57:11.000Z",
+      "titleOriginal": "'It's rough out here': Americans struggle with rising inflation",
+      "titleTr": "ABD'de enflasyon beklentilerin üzerinde artmaya devam ediyor",
+      "summaryTr": "BBC'ye göre ABD'de enflasyon yükselişini sürdürüyor ve bu ayki artış tahminlerin üzerinde geldi. Haber, Amerikalıların artan fiyatlarla nasıl başa çıktığına değiniyor.",
+      "titleEn": "US inflation keeps rising, above forecasts this month",
+      "summaryEn": "BBC reports that US inflation continues to climb, with this month's jump coming in above forecasts. The piece looks at how Americans are coping with higher prices.",
+      "important": true,
+      "processedAt": "2026-10-14T16:01:38.564Z"
+    },
+    {
+      "id": "df7820d7ecb4",
+      "sourceKey": "ft",
+      "sourceName": "Financial Times",
+      "kind": "media",
+      "url": "https://www.ft.com/content/13929c26-1c01-41b2-b81a-d337fa5c9d27?syn-25a6b1a6=1",
+      "publishedAt": "2026-10-14T14:14:28.000Z",
+      "titleOriginal": "US grocery prices poised to climb as soaring fuel costs drive inflation",
+      "titleTr": "ABD'de market fiyatlarının yakıt maliyetleriyle artması bekleniyor",
+      "summaryTr": "Financial Times'a göre gıda üreticileri, yükselen yakıt maliyetlerinin enflasyonu körüklediği ve market fiyatlarını artıracağı uyarısında bulundu. Uyarı, ara seçimler öncesinde tüketicileri etkileyebilecek bir etken olarak aktarıldı.",
+      "titleEn": "US grocery prices set to rise as fuel costs drive inflation",
+      "summaryEn": "The Financial Times reports that food manufacturers warn soaring fuel costs are pushing inflation and will lift grocery prices. The impact on consumers comes ahead of the midterm elections.",
+      "important": false,
+      "processedAt": "2026-10-14T16:01:38.564Z"
+    },
     {
       "id": "58a2102346e9",
       "sourceKey": "aa-economy",

@@ -1,10 +1,10 @@
 {
-  "fetchedAt": "2026-10-14T09:52:59.079Z",
+  "fetchedAt": "2026-10-14T16:01:45.801Z",
   "readings": [
     {
       "bankCode": "fed",
-      "period": "2026-08",
-      "yoy": 3.4,
+      "period": "2026-09",
+      "yoy": 3.74,
       "sourceUrl": "https://fred.stlouisfed.org/series/CPIAUCNS"
     },
     {
