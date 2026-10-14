@@ -1,6 +1,36 @@
 {
-  "fetchedAt": "2026-10-14T13:01:51.403Z",
+  "fetchedAt": "2026-10-14T13:31:40.197Z",
   "items": [
+    {
+      "id": "01ce03b43e3f",
+      "sourceKey": "marketwatch",
+      "sourceName": "MarketWatch",
+      "kind": "media",
+      "url": "https://www.marketwatch.com/story/social-securitys-cola-will-be-3-6-in-2027-as-inflation-persists-f7c9dff2?mod=mw_rss_topstories",
+      "publishedAt": "2026-10-14T13:27:00.000Z",
+      "titleOriginal": "Social Security’s COLA will be 3.6% in 2027 as inflation persists",
+      "titleTr": "ABD'de emekli aylığı artışı 2027 için yüzde 3,6 oldu",
+      "summaryTr": "Sosyal güvenlik yardımlarındaki yaşam maliyeti ayarlaması (COLA) 2027 için yüzde 3,6 olarak belirlendi. Artışın yaklaşık 68 milyon yararlanıcının enflasyona ayak uydurmasını amaçladığı belirtildi.",
+      "titleEn": "US Social Security COLA set at 3.6% for 2027",
+      "summaryEn": "The Social Security cost-of-living adjustment for 2027 was set at 3.6%. The increase is meant to help about 68 million beneficiaries keep pace with inflation.",
+      "important": false,
+      "processedAt": "2026-10-14T13:31:40.197Z"
+    },
+    {
+      "id": "ea16918dc170",
+      "sourceKey": "aa-economy",
+      "sourceName": "Anadolu Agency",
+      "kind": "media",
+      "url": "https://www.aa.com.tr/en/economy/gold-drops-below-4-100-as-us-inflation-fuels-rate-hike-bets/4088602",
+      "publishedAt": "2026-10-14T13:24:28.000Z",
+      "titleOriginal": "Gold drops below $4,100 as US inflation fuels rate hike bets",
+      "titleTr": "Altın, ABD enflasyonunun ardından 4.100 doların altına indi",
+      "summaryTr": "Beklentiden güçlü gelen ABD enflasyonu faiz artışı beklentilerini besledi ve değerli metaller baskı altında kaldı. Gümüş yüzde 3,9 düşüşle ons başına 59,80 dolara geriledi.",
+      "titleEn": "Gold falls below $4,100 as US inflation fuels rate hike bets",
+      "summaryEn": "Stronger-than-expected US inflation weighed on precious metals and fed bets on rate hikes. Silver fell 3.9% to $59.80 an ounce.",
+      "important": false,
+      "processedAt": "2026-10-14T13:31:40.197Z"
+    },
     {
       "id": "921a4b2cfb1b",
       "sourceKey": "aa-ekonomi",
@@ -15,6 +45,21 @@
       "summaryEn": "US consumer prices rose 0.6% month-on-month in September, in line with expectations. Annual inflation came in at 3.7%, above expectations.",
       "important": true,
       "processedAt": "2026-10-14T13:01:51.403Z"
+    },
+    {
+      "id": "e1888659613a",
+      "sourceKey": "aa-ekonomi",
+      "sourceName": "Anadolu Ajansı",
+      "kind": "media",
+      "url": "https://www.aa.com.tr/tr/ekonomi/abdde-enflasyon-eylulde-hizlandi/4088535",
+      "publishedAt": "2026-10-14T12:35:20.000Z",
+      "titleOriginal": "ABD'de enflasyon eylülde hızlandı",
+      "titleTr": "ABD'de enflasyon eylülde hızlandı",
+      "summaryTr": "ABD'de tüketici fiyat endeksi (TÜFE) eylülde aylık bazda yüzde 0,6, yıllık bazda yüzde 3,7 arttı.",
+      "titleEn": "US inflation accelerated in September",
+      "summaryEn": "US consumer prices (CPI) rose 0.6% month-on-month and 3.7% year-on-year in September.",
+      "important": true,
+      "processedAt": "2026-10-14T13:31:40.197Z"
     },
     {
       "id": "0e40bd8c2c39",
