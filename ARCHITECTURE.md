@@ -16,7 +16,7 @@ takip eden bir site. Üç modül:
 | A — Takvim | Toplantı tarihleri, TRT geri sayımı, geçmiş kararlar, iCal + RSS + Telegram hatırlatma | ✅ tam otomatik |
 | B — Faiz olasılığı | Fed: piyasa dağılımı (Atlanta Fed MPT); BoE: OIS eğrisinden toplantı bazında beklenti; ECB: analist anketi (SMA); TCMB: Piyasa Katılımcıları Anketi | ✅ tam otomatik |
 | D — Haberler | Resmî açıklamalar + önemli kişilerin sözlerini aktaran haberler, Türkçe/İngilizce özet, önemliler Telegram'a | ✅ 30 dk'da bir (news.yml) |
-| C — Şahin/güvercin | Merkez bankacısı konuşmaları + Türkçe özet ve skor; konuşmacı sayfaları, aylık seyir | ✅ metin ve skor otomatik (Claude aboneliği; §5) |
+| C — Şahin/güvercin | Merkez bankacısı konuşmaları + Türkçe özet ve skor; karar metinlerinin aynı ölçekte puanı; konuşmacı sayfaları, aylık seyir | ✅ metin ve skor otomatik (Claude aboneliği; §5) |
 | E — Kararlar | Her karar, karardan önceki beklentiyle (sürpriz) ve bir önceki karar metniyle (fark + model özeti) karşılaştırılır; beklentinin seyri; sayfa başında son 12 ayın faiz döngüsü | ✅ karar metni 30 dk'da bir (news.yml), özet Claude; beklenti geçmişi günlük |
 | F — Reel faiz | Politika faizi − son yıllık TÜFE, altı ekonomi; TCMB için 12 ay sonrası enflasyon beklentisiyle ileriye dönük | ✅ günlük |
 | G — Rehber | Faiz kararlarını sade dille anlatan beş yazı | elle (içerik kodda, `src/lib/guides/`) |
@@ -169,7 +169,14 @@ kalır. Fark önce cümleleri hizalar, sonra yalnızca değişen cümlelerde kel
 farkına iner (`text-diff.ts`) — doğrudan kelime farkı ilgisiz cümleleri
 "the"/"ve" üzerinden eşleştirip okunmaz yapıyordu. Özet: `statements:fetch`
 → claude-code-action (Opus; yazma yalnızca `.statements/out`) → koruma →
-`statements:import`; koşu başına 4, en yeni karar önce.
+`statements:import`; koşu başına 4, en yeni karar önce. Özet sürüm 2'den
+(15 Ekim 2026) beri metnin kendi duruşunu konuşmalarla aynı -10..+10
+ölçeğinde puanlar (ölçek tek kaynakta: `score-scale.ts`). `tone` önceki
+metne göre yöndür, `score` düzeydir: Eylül 2026 TCMB metni öncekinden
+güvercin ama hâlâ şahin. Eski sürümdeki özetler aynı kuyrukta yenilenir;
+`/skor`'da "karar metni" sütunu komitenin ortak sesini üyelerin konuşma
+ortalamasının yanına koyar (skorlu konuşması olmayan TCMB de böylece
+tabloya girer).
 
 **`fetch:current-rates` da birleştirir.** Bir bankanın kaynağı hata verirse
 önceki kaydı korunur ve adım yine hata koduyla biter. İlk cron koşusunda ECB

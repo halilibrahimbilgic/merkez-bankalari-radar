@@ -2,7 +2,7 @@ import type { Metadata } from "next";
 import Link from "next/link";
 import { notFound } from "next/navigation";
 import { RateOdds, type OddsRow } from "@/components/RateOdds";
-import { BankTag } from "@/components/ScoreBadge";
+import { BankTag, formatScore, scoreLabel, scoreToneClass } from "@/components/ScoreBadge";
 import { StatementDiff } from "@/components/StatementDiff";
 import { SurpriseBadge, surpriseText } from "@/components/SurpriseBadge";
 import { Term } from "@/components/Term";
@@ -429,7 +429,7 @@ async function StatementSection({ view, lang }: { view: DecisionView; lang: Lang
     <Card>
       <h2 className="text-lg font-semibold">{t("Karar metninde ne değişti?", "What changed in the statement?")}</h2>
       {rec.summary ? (
-        <SummaryBlock summary={rec.summary} lang={lang} />
+        <SummaryBlock summary={rec.summary} previousScore={prevRec?.summary?.score} lang={lang} />
       ) : (
         <p className="mt-2 text-sm text-muted">
           {t(
@@ -483,7 +483,16 @@ async function StatementSection({ view, lang }: { view: DecisionView; lang: Lang
   );
 }
 
-function SummaryBlock({ summary, lang }: { summary: StatementSummary; lang: Lang }) {
+function SummaryBlock({
+  summary,
+  previousScore,
+  lang,
+}: {
+  summary: StatementSummary;
+  /** Bir önceki karar metninin puanı — düzeyin nereden geldiği görülsün. */
+  previousScore?: number;
+  lang: Lang;
+}) {
   const t = L(lang);
   const en = lang === "en";
   const tone = {
@@ -507,10 +516,24 @@ function SummaryBlock({ summary, lang }: { summary: StatementSummary; lang: Lang
         <span className={`font-medium ${toneClass}`}>{tone}</span>
         <span className="text-muted"> — {en ? summary.toneReasonEn : summary.toneReasonTr}</span>
       </p>
+      {summary.score !== undefined && (
+        <p className="prose-width mt-2 text-sm">
+          <span className="text-muted">{t("Metnin duruşu:", "Stance of the statement:")}</span>{" "}
+          <span className={`tabular font-semibold ${scoreToneClass(summary.score)}`}>{formatScore(summary.score, lang)}</span>{" "}
+          <span className="text-xs">({scoreLabel(summary.score, lang)})</span>
+          {previousScore !== undefined && (
+            <span className="tabular text-muted">
+              {" "}
+              · {t("önceki karar metni", "previous statement")} {formatScore(previousScore, lang)}
+            </span>
+          )}
+          <span className="text-muted"> — {en ? summary.scoreReasonEn : summary.scoreReasonTr}</span>
+        </p>
+      )}
       <p className="mt-2 text-xs text-muted">
         {t(
-          `Özet ve ton değerlendirmesi bir dil modeli tarafından üretildi (${summary.model}, prompt sürümü ${summary.promptVersion}); resmî metnin yerini tutmaz.`,
-          `The summary and tone assessment were produced by a language model (${summary.model}, prompt version ${summary.promptVersion}); they are no substitute for the official text.`,
+          `Özet, ton ve puan bir dil modeli tarafından üretildi (${summary.model}, prompt sürümü ${summary.promptVersion}); resmî metnin yerini tutmaz. Puan, konuşmalarla aynı -10 (çok güvercin) ile +10 (çok şahin) arası ölçektedir.`,
+          `The summary, tone and score were produced by a language model (${summary.model}, prompt version ${summary.promptVersion}); they are no substitute for the official text. The score uses the same -10 (very dovish) to +10 (very hawkish) scale as the speeches.`,
         )}
       </p>
     </div>

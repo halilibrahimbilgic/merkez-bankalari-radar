@@ -2,7 +2,7 @@ import type { Metadata } from "next";
 import Link from "next/link";
 import { BankFilter } from "@/components/BankFilter";
 import { CycleChart } from "@/components/CycleChart";
-import { BankTag } from "@/components/ScoreBadge";
+import { BankTag, formatScore, scoreToneClass } from "@/components/ScoreBadge";
 import { SurpriseBadge } from "@/components/SurpriseBadge";
 import { Card, EmptyState, Row, Rows, SectionHeader, TableFrame, Th } from "@/components/ui";
 import { BANKS, bankColorVar, bankName, CALENDAR_BANK_CODES, isBankCode } from "@/lib/banks";
@@ -103,6 +103,15 @@ export function DecisionRow({ view, lang }: { view: DecisionView; lang: Lang }) 
   const m = view.meeting;
   const bp = view.changeBp ?? 0;
   const tone = view.statement?.summary?.tone;
+  const score = view.statement?.summary?.score;
+  const toneText =
+    tone === "more-hawkish"
+      ? t("daha şahin", "more hawkish")
+      : tone === "more-dovish"
+        ? t("daha güvercin", "more dovish")
+        : tone === "mixed"
+          ? t("karışık", "mixed")
+          : undefined;
   return (
     // Bağlantının ::after'ı satırı kaplar: bütün satır tıklanır (rozetler bağlantı değil).
     <Row className="relative hover:bg-surface-sunken">
@@ -126,14 +135,14 @@ export function DecisionRow({ view, lang }: { view: DecisionView; lang: Lang }) 
             {view.missing === "no-source" ? t("beklenti kaynağı yok", "no expectation source") : t("anket bekleniyor", "survey pending")}
           </span>
         )}
-        {tone && tone !== "little-change" && (
+        {(score !== undefined || toneText) && (
           <span className="text-xs text-muted">
             {t("metin:", "statement:")}{" "}
-            {tone === "more-hawkish"
-              ? t("daha şahin", "more hawkish")
-              : tone === "more-dovish"
-                ? t("daha güvercin", "more dovish")
-                : t("karışık", "mixed")}
+            {score !== undefined && (
+              <span className={`tabular font-semibold ${scoreToneClass(score)}`}>{formatScore(score, lang)}</span>
+            )}
+            {score !== undefined && toneText && ", "}
+            {toneText}
           </span>
         )}
       </span>

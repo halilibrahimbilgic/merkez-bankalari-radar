@@ -11,7 +11,8 @@ import {
 import { ScoringGap } from "@/components/ScoringGap";
 import { Term } from "@/components/Term";
 import { Card, Row, Rows, SectionHeader, TableFrame, Th } from "@/components/ui";
-import { BANKS, bankName } from "@/lib/banks";
+import { BANKS, bankName, CALENDAR_BANK_CODES } from "@/lib/banks";
+import { getLatestStatementScores } from "@/lib/data/statements";
 import {
   getBankScoreSummaries,
   getCoverage,
@@ -45,13 +46,16 @@ export async function ScorePage({ lang }: { lang: Lang }) {
   const months = [3, 2, 1, 0].map((k) =>
     new Date(Date.UTC(now.getUTCFullYear(), now.getUTCMonth() - k, 1)).toISOString().slice(0, 7),
   );
-  const [summaries, recent, coverage, status, trend] = await Promise.all([
+  const [summaries, recent, coverage, status, trend, statements] = await Promise.all([
     getBankScoreSummaries(),
     getSpeeches({ scoredOnly: true, limit: 10 }),
     getCoverage(),
     getScoringStatus(),
     getScoreTrend(months),
+    getLatestStatementScores(),
   ]);
+  // Karar metni puanı olan ama skorlu konuşması olmayan banka (TCMB) da tabloda yer alır.
+  const tableBanks = CALENDAR_BANK_CODES.filter((code) => summaries.some((s) => s.bankCode === code) || statements[code]);
 
   return (
     <div className="space-y-8">
@@ -71,7 +75,7 @@ export async function ScorePage({ lang }: { lang: Lang }) {
 
       <ScoringGap status={status} context="averages" lang={lang} />
 
-      {summaries.length === 0 ? (
+      {tableBanks.length === 0 ? (
         <Card>
           <p className="prose-width text-muted">
             {t(
@@ -89,47 +93,70 @@ export async function ScorePage({ lang }: { lang: Lang }) {
                 <Th>{t("Banka", "Bank")}</Th>
                 <Th>{t("Eğilim", "Tilt")}</Th>
                 <Th align="right">{t("Skor", "Score")}</Th>
-                <Th align="right">{t("Konuşma", "Speeches")}</Th>
-                {/* Telefonda beş sütun sığmıyor, son iki sütun görünmüyordu (390 px). */}
+                <Th align="right">{t("Karar metni", "Statement")}</Th>
+                {/* Telefonda altı sütun sığmıyor (390 px): sayı ve tarih gizlenir. */}
+                <Th align="right" className="max-sm:hidden">
+                  {t("Konuşma", "Speeches")}
+                </Th>
                 <Th align="right" className="max-sm:hidden">
                   {t("Son", "Latest")}
                 </Th>
               </tr>
             </thead>
             <tbody>
-              {summaries.map((s) => (
-                <tr key={s.bankCode} className="border-b border-border last:border-b-0">
-                  <th scope="row" className="px-4 py-3 text-left font-medium">
-                    <Link
-                      href={p(`/banka/${s.bankCode}`)}
-                      className="inline-flex min-h-9 items-center text-accent hover:underline"
+              {tableBanks.map((code) => {
+                const s = summaries.find((x) => x.bankCode === code);
+                const st = statements[code];
+                return (
+                  <tr key={code} className="border-b border-border last:border-b-0">
+                    <th scope="row" className="px-4 py-3 text-left font-medium">
+                      <Link
+                        href={p(`/banka/${code}`)}
+                        className="inline-flex min-h-9 items-center text-accent hover:underline"
+                      >
+                        {bankName(BANKS[code], lang)}
+                      </Link>
+                    </th>
+                    <td className="px-4 py-3">
+                      {s ? (
+                        <ScoreMeter score={s.averageScore} lang={lang} />
+                      ) : (
+                        <span className="text-xs text-muted">{t("skorlu konuşma yok", "no scored speeches")}</span>
+                      )}
+                    </td>
+                    <td
+                      className={`tabular px-4 py-3 text-right font-semibold ${s ? scoreToneClass(s.averageScore) : "text-muted"}`}
                     >
-                      {bankName(BANKS[s.bankCode], lang)}
-                    </Link>
-                  </th>
-                  <td className="px-4 py-3">
-                    <ScoreMeter score={s.averageScore} lang={lang} />
-                  </td>
-                  <td
-                    className={`tabular px-4 py-3 text-right font-semibold ${scoreToneClass(s.averageScore)}`}
-                  >
-                    {formatScore(s.averageScore, lang)}
-                  </td>
-                  <td className="tabular px-4 py-3 text-right text-muted">
-                    {s.speechCount}
-                    {s.noSignalCount > 0 && <span className="opacity-70"> (+{s.noSignalCount})</span>}
-                  </td>
-                  <td className="tabular px-4 py-3 text-right text-muted max-sm:hidden">
-                    {formatDate(s.latestDate, lang)}
-                  </td>
-                </tr>
-              ))}
+                      {s ? formatScore(s.averageScore, lang) : "—"}
+                    </td>
+                    <td className="tabular px-4 py-3 text-right">
+                      {st ? (
+                        <Link
+                          href={p(`/karar/${st.meetingId}`)}
+                          className={`inline-flex min-h-9 items-center justify-end font-semibold hover:underline ${scoreToneClass(st.score)}`}
+                        >
+                          {formatScore(st.score, lang)}
+                        </Link>
+                      ) : (
+                        <span className="text-muted">—</span>
+                      )}
+                    </td>
+                    <td className="tabular px-4 py-3 text-right text-muted max-sm:hidden">
+                      {s ? s.speechCount : 0}
+                      {s && s.noSignalCount > 0 && <span className="opacity-70"> (+{s.noSignalCount})</span>}
+                    </td>
+                    <td className="tabular px-4 py-3 text-right text-muted max-sm:hidden">
+                      {s ? formatDate(s.latestDate, lang) : "—"}
+                    </td>
+                  </tr>
+                );
+              })}
             </tbody>
           </TableFrame>
           <p className="prose-width mt-2 text-sm text-muted">
             {t(
-              "Konuşma sütunundaki parantezli sayı, para politikası sinyali taşımadığı için ortalamaya girmeyen konuşmaları gösterir.",
-              "The number in brackets in the speeches column counts speeches left out of the average because they carry no monetary policy signal.",
+              "Karar metni: bankanın en son resmî karar metninin aynı ölçekteki puanı — komitenin ortak sesi; skor ise üyelerin tek tek konuşmalarının ortalaması. Konuşma sütunundaki parantezli sayı, para politikası sinyali taşımadığı için ortalamaya girmeyen konuşmaları gösterir.",
+              "Statement: the score of the bank's latest official policy statement on the same scale — the committee's collective voice; the score is the average of individual members' speeches. The number in brackets in the speeches column counts speeches left out of the average because they carry no monetary policy signal.",
             )}
           </p>
         </section>

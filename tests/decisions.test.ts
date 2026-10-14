@@ -56,9 +56,30 @@ test("karar metni özeti: geçerli çıktı okunur, ton eşlenir", () => {
     tone: "more_hawkish",
     tone_reason_tr: "Yukarı yönlü risk vurgusu güçlendi.",
     tone_reason_en: "The emphasis on upside risks grew.",
+    score: 3.25,
+    score_reason_tr: "Sıkı duruşun süreceği vurgulanıyor.",
+    score_reason_en: "It stresses that the tight stance will be maintained.",
   });
   assert.equal(out.tone, "more-hawkish");
   assert.equal(out.changesTr.length, 1);
+  // Puan konuşmalarla aynı ölçekte, bir ondalığa yuvarlanır.
+  assert.equal(out.score, 3.3);
+});
+
+test("karar metni özeti: puan yoksa reddedilir, aralık dışıysa kırpılır", () => {
+  const base = {
+    headline_tr: "a",
+    headline_en: "b",
+    changes_tr: ["x"],
+    changes_en: ["x"],
+    tone: "little_change",
+    tone_reason_tr: "c",
+    tone_reason_en: "d",
+    score_reason_tr: "e",
+    score_reason_en: "f",
+  };
+  assert.throws(() => parseStatementOutput(base), /score sayı değil/);
+  assert.equal(parseStatementOutput({ ...base, score: 14 }).score, 10);
 });
 
 test("karar metni özeti: madde sayısı iki dilde farklıysa reddedilir", () => {

@@ -24,6 +24,7 @@ import {
   primaryLang,
   STATEMENT_OUTPUT_SCHEMA,
   STATEMENT_PROMPT,
+  STATEMENT_PROMPT_VERSION,
   type StatementLang,
   type StatementRecord,
 } from "../src/lib/statements";
@@ -173,7 +174,8 @@ async function main() {
   const queue = [...store.statements].sort((a, b) => b.meetingId.slice(-10).localeCompare(a.meetingId.slice(-10)));
   for (const rec of queue) {
     if (ids.length >= SUMMARY_LIMIT) break;
-    if (rec.summary || !rec.previousId || rec.meetingId < `${rec.bankCode}-2026`) continue;
+    // Eski istem sürümündeki özet de yenilenir (sürüm 2: metnin puanı).
+    if (rec.summary?.promptVersion === STATEMENT_PROMPT_VERSION || !rec.previousId || rec.meetingId < `${rec.bankCode}-2026`) continue;
     const meeting = decisions.find((x) => x.id === rec.meetingId);
     const prevRec = byId.get(rec.previousId);
     if (!meeting || !prevRec || meeting.decisionRate === undefined) continue;

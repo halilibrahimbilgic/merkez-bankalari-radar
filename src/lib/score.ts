@@ -1,5 +1,6 @@
 import Anthropic from "@anthropic-ai/sdk";
 import { BANKS } from "./banks";
+import { SCORE_SCALE } from "./score-scale";
 import type { BankCode } from "./types";
 
 /**
@@ -42,14 +43,7 @@ export interface ScoreResult {
 
 export const SYSTEM_PROMPT = `Sen merkez bankası iletişimini analiz eden bir makro ekonomi analistisin. Görevin, verilen konuşmayı Türkçe özetlemek ve para politikası duruşunu şahin/güvercin ölçeğinde puanlamaktır.
 
-ÖLÇEK (-10 ile +10 arası):
-  +7..+10  Çok şahin: açık sıkılaşma sinyali, faiz artırımı ima ediliyor
-  +3..+6   Şahin: enflasyon endişesi baskın, gevşemeye direnç
-  +1..+2   Hafif şahin
-   0       Nötr / dengeli: iki yönlü risklere eşit vurgu, veri bağımlılığı
-  -1..-2   Hafif güvercin
-  -3..-6   Güvercin: büyüme/istihdam endişesi baskın, gevşemeye açık
-  -7..-10  Çok güvercin: açık gevşeme sinyali, faiz indirimi ima ediliyor
+${SCORE_SCALE}
 
 PUANLAMA KURALLARI:
 - Yalnızca para politikası duruşunu puanla. Finansal istikrar, ödeme sistemleri,

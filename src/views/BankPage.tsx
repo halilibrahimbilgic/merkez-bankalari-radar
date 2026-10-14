@@ -4,7 +4,8 @@ import { notFound } from "next/navigation";
 import { AddToCalendar } from "@/components/AddToCalendar";
 import { ExpectationDetails } from "@/components/BankCard";
 import { MeetingRow } from "@/components/MeetingRow";
-import { ScoreBadge } from "@/components/ScoreBadge";
+import { formatScore, ScoreBadge, scoreToneClass } from "@/components/ScoreBadge";
+import { getLatestStatementScores } from "@/lib/data/statements";
 import { Term } from "@/components/Term";
 import { TimeSeriesChart } from "@/components/TimeSeriesChart";
 import { Stat } from "@/components/ui";
@@ -104,6 +105,7 @@ export async function BankPage({ lang, code }: { lang: Lang; code: string }) {
   const currentRate = await getCurrentRate(bank.code);
   const speeches = await getSpeeches({ bankCode: bank.code, limit: 5 });
   const scoreSummary = (await getBankScoreSummaries()).find((s) => s.bankCode === bank.code);
+  const statementScore = (await getLatestStatementScores())[bank.code];
   const inflation = await getInflationFor(bank.code);
   const real = currentRate && inflation ? realRate(currentRate, inflation) : undefined;
   const survey = bank.code === "tcmb" ? (await getExpectations()).tcmb : undefined;
@@ -184,18 +186,35 @@ export async function BankPage({ lang, code }: { lang: Lang; code: string }) {
             )}
           </section>
         )}
-        {scoreSummary && (
+        {(scoreSummary || statementScore) && (
           <section className="card p-5">
             <div className="text-sm text-muted">{t("Şahin/güvercin eğilimi", "Hawk/dove tilt")}</div>
-            <div className="mt-1 text-2xl">
-              <ScoreBadge score={scoreSummary.averageScore} lang={lang} />
-            </div>
-            <div className="mt-1 text-sm text-muted tabular">
-              {t(
-                `${scoreSummary.speechCount} sinyalli konuşmanın ortalaması`,
-                `Average of ${scoreSummary.speechCount} speeches with a policy signal`,
-              )}
-            </div>
+            {scoreSummary ? (
+              <>
+                <div className="mt-1 text-2xl">
+                  <ScoreBadge score={scoreSummary.averageScore} lang={lang} />
+                </div>
+                <div className="mt-1 text-sm text-muted tabular">
+                  {t(
+                    `${scoreSummary.speechCount} sinyalli konuşmanın ortalaması`,
+                    `Average of ${scoreSummary.speechCount} speeches with a policy signal`,
+                  )}
+                </div>
+              </>
+            ) : (
+              <div className="mt-1 text-sm text-muted">{t("Skorlanmış konuşma yok.", "No scored speeches.")}</div>
+            )}
+            {/* Komitenin ortak sesi: son karar metninin aynı ölçekteki puanı. */}
+            {statementScore && (
+              <div className="mt-1 text-sm tabular">
+                <Link href={p(`/karar/${statementScore.meetingId}`)} className="inline-flex min-h-6 items-center text-muted hover:text-accent">
+                  {t("Son karar metni:", "Latest statement:")}&nbsp;
+                  <span className={`font-semibold ${scoreToneClass(statementScore.score)}`}>
+                    {formatScore(statementScore.score, lang)}
+                  </span>
+                </Link>
+              </div>
+            )}
           </section>
         )}
       </div>

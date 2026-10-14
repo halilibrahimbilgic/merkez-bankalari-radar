@@ -2,6 +2,7 @@ import "server-only";
 import { readFile } from "node:fs/promises";
 import path from "node:path";
 import type { StatementLang, StatementRecord, StatementStore } from "../statements";
+import type { BankCode } from "../types";
 
 const STORE = path.join(process.cwd(), "data", "seed", "statements.json");
 const TEXT_DIR = path.join(process.cwd(), "data", "statements");
@@ -25,6 +26,19 @@ export async function getStatements(): Promise<StatementRecord[]> {
 
 export async function getStatement(meetingId: string): Promise<StatementRecord | undefined> {
   return (await load()).statements.find((s) => s.meetingId === meetingId);
+}
+
+/** Her bankanın puanlanmış en son karar metni (konuşma skoruyla aynı ölçek). */
+export async function getLatestStatementScores(): Promise<Partial<Record<BankCode, { meetingId: string; score: number }>>> {
+  const out: Partial<Record<BankCode, { meetingId: string; score: number }>> = {};
+  for (const rec of (await load()).statements) {
+    const score = rec.summary?.score;
+    if (score === undefined) continue;
+    const prev = out[rec.bankCode];
+    // Kimlik "<banka>-YYYY-AA-GG": aynı bankada metin sırası tarih sırasıdır.
+    if (!prev || rec.meetingId > prev.meetingId) out[rec.bankCode] = { meetingId: rec.meetingId, score };
+  }
+  return out;
 }
 
 /** Yalnızca yayımlanabilen metin; dosya adı kimlikten türediği için kimlik denetlenir. */

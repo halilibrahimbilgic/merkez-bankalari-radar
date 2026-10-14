@@ -4,9 +4,10 @@
  *
  *   npm run statements:import
  *
- * Model çıktısı güvenilmez girdidir: yalnızca dışa aktarılmış ve hâlâ özetsiz
- * kayıtlar kabul edilir, alanlar parseStatementOutput'ta denetlenir; mevcut
- * bir özet ezilmez.
+ * Model çıktısı güvenilmez girdidir: yalnızca dışa aktarılmış ve güncel
+ * istem sürümünde özeti olmayan kayıtlar kabul edilir, alanlar
+ * parseStatementOutput'ta denetlenir. Güncel sürümdeki bir özet ezilmez;
+ * eski sürümdeki (1: puansız) yenilenir.
  */
 import { readdir, readFile } from "node:fs/promises";
 import path from "node:path";
@@ -36,7 +37,7 @@ async function main() {
   let failed = 0;
   for (const id of exported) {
     const rec = store.statements.find((s) => s.meetingId === id);
-    if (!rec || rec.summary) continue;
+    if (!rec || rec.summary?.promptVersion === STATEMENT_PROMPT_VERSION) continue;
     if (!produced.has(id)) {
       console.error(`✗  ${id}: çıktı yok — bir sonraki koşuda yeniden denenir`);
       failed++;
@@ -53,7 +54,7 @@ async function main() {
         summarizedAt: new Date().toISOString(),
       };
       ok++;
-      console.log(`✓  ${id}: ${parsed.tone} — ${parsed.headlineTr}`);
+      console.log(`✓  ${id}: ${parsed.tone}, ${parsed.score} — ${parsed.headlineTr}`);
     } catch (err) {
       console.error(`✗  ${id}: ${(err as Error).message}`);
       failed++;
