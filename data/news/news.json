@@ -1,6 +1,21 @@
 {
-  "fetchedAt": "2026-10-14T11:31:35.044Z",
+  "fetchedAt": "2026-10-14T11:44:01.533Z",
   "items": [
+    {
+      "id": "867c2305ba87",
+      "sourceKey": "aa-economy",
+      "sourceName": "Anadolu Agency",
+      "kind": "media",
+      "url": "https://www.aa.com.tr/en/economy/germany-s-wholesale-inflation-hits-87-in-september-highest-since-february-2023/4088450",
+      "publishedAt": "2026-10-14T11:34:34.000Z",
+      "titleOriginal": "Germany’s wholesale inflation hits 8.7% in September, highest since February 2023",
+      "titleTr": "Almanya'da toptan eşya enflasyonu Eylül'de %8,7 ile Şubat 2023'ten bu yana en yüksekte",
+      "summaryTr": "Almanya'da toptan eşya fiyatları Eylül'de yıllık %8,7 arttı; bu, Şubat 2023'ten bu yana en yüksek oran oldu. Artışta mineral yağ fiyatlarındaki yükseliş etkili oldu, Orta Doğu'daki çatışma enerji maliyetlerini yukarı itiyor.",
+      "titleEn": "Germany's wholesale inflation hits 8.7% in September, highest since February 2023",
+      "summaryEn": "German wholesale prices rose 8.7% year on year in September, the highest rate since February 2023. Surging mineral oil prices drove the increase, as the Middle East conflict pushes up energy costs.",
+      "important": true,
+      "processedAt": "2026-10-14T11:44:01.533Z"
+    },
     {
       "id": "571ba4918280",
       "sourceKey": "marketwatch",
