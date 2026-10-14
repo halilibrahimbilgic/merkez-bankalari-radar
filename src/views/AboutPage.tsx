@@ -111,7 +111,7 @@ const SOURCES: Record<Lang, Source[]> = {
     {
       name: "TCMB EVDS",
       url: "https://evds3.tcmb.gov.tr/",
-      note: "Bir hafta vadeli repo (politika) faizi, TP.PY.P02.1H — TCMB'nin güncel faizi ve geçmiş PPK karar oranları.",
+      note: "Bir hafta vadeli repo (politika) faizi, TP.PY.P02.1H — TCMB'nin güncel faizi ve geçmiş PPK karar oranları. Ağırlıklı ortalama fonlama maliyeti (TP.APIFON4) ile gecelik borç alma ve verme faizleri (faiz koridoru) — bankaların fiilen ödediği faiz.",
     },
     {
       name: "TCMB — Duyuru takvimi",
@@ -208,7 +208,7 @@ const SOURCES: Record<Lang, Source[]> = {
     {
       name: "CBRT EVDS",
       url: "https://evds3.tcmb.gov.tr/",
-      note: "One-week repo (policy) rate, TP.PY.P02.1H — the CBRT's current rate and past MPC decision rates.",
+      note: "One-week repo (policy) rate, TP.PY.P02.1H — the CBRT's current rate and past MPC decision rates. Weighted average cost of funding (TP.APIFON4) and the overnight borrowing and lending rates (the rate corridor) — the rate banks actually pay.",
     },
     {
       name: "CBRT — Announcement calendar",

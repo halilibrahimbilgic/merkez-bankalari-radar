@@ -22,6 +22,8 @@ export interface Series {
   key: string;
   name: string;
   color: string;
+  /** Kesik çizgi: dayanak/sınır serileri (ör. faiz koridorunun bantları). */
+  dashed?: boolean;
 }
 
 export function TimeSeriesChart({
@@ -30,6 +32,7 @@ export function TimeSeriesChart({
   unit,
   lang,
   stepped = false,
+  dots = stepped,
   refLines = [],
 }: {
   /** Her satır: label (x ekseni) + seri anahtarları. */
@@ -39,12 +42,33 @@ export function TimeSeriesChart({
   unit: "rate" | "prob";
   lang: "tr" | "en";
   stepped?: boolean;
+  /** Noktalar gözlemi gösterir; günlük doldurulmuş seride her gün nokta olurdu. */
+  dots?: boolean;
   refLines?: { y: number; label: string; color: string }[];
 }) {
   const fmt = (v: number) => {
     const s = v.toFixed(unit === "rate" ? 2 : 0);
     return lang === "en" ? `${s}%` : `%${s.replace(".", ",")}`;
   };
+
+  // Faiz ekseni yuvarlak değerlerde: "dataMin - 0.1" sınırı %43,60 / %38,40
+  // gibi okunması zor etiketler üretiyordu (15 Ekim 2026; bkz. ExpectedPathChart).
+  let rateAxis: { domain: [number, number]; ticks: number[] } | undefined;
+  if (unit === "rate") {
+    const values = data
+      .flatMap((d) => series.map((s) => d[s.key]))
+      .filter((v): v is number => typeof v === "number")
+      .concat(refLines.map((r) => r.y));
+    if (values.length > 0) {
+      const min = Math.min(...values);
+      const max = Math.max(...values);
+      const step = [0.25, 0.5, 1, 2, 5, 10].find((st) => Math.max(max - min, 0.25) / st <= 5) ?? 10;
+      const lo = Math.floor((min - step / 4) / step) * step;
+      const hi = Math.ceil((max + step / 4) / step) * step;
+      const ticks = Array.from({ length: Math.round((hi - lo) / step) + 1 }, (_, i) => Math.round((lo + i * step) * 100) / 100);
+      rateAxis = { domain: [lo, hi], ticks };
+    }
+  }
   return (
     <div className="h-64 w-full">
       <ResponsiveContainer width="100%" height="100%">
@@ -62,7 +86,8 @@ export function TimeSeriesChart({
             stroke="var(--border)"
             width={52}
             tickFormatter={fmt}
-            domain={unit === "prob" ? [0, 100] : ["dataMin - 0.1", "dataMax + 0.1"]}
+            domain={unit === "prob" ? [0, 100] : (rateAxis?.domain ?? ["dataMin - 0.1", "dataMax + 0.1"])}
+            ticks={rateAxis?.ticks}
           />
           <Tooltip
             contentStyle={{
@@ -92,8 +117,9 @@ export function TimeSeriesChart({
               name={s.name}
               stroke={s.color}
               strokeWidth={2}
+              strokeDasharray={s.dashed ? "5 4" : undefined}
               type={stepped ? "stepAfter" : "monotone"}
-              dot={stepped ? { r: 3, fill: s.color } : false}
+              dot={dots ? { r: 3, fill: s.color } : false}
               connectNulls
               isAnimationActive={false}
             />

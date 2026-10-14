@@ -36,6 +36,7 @@ const nextConfig: NextConfig = {
       "./data/seed/inflation.json",
       "./data/seed/statements.json",
       "./data/seed/events.json",
+      "./data/seed/tcmb-funding.json",
       "./data/history/expectations.json",
     ],
     "/en/*": [
@@ -44,6 +45,7 @@ const nextConfig: NextConfig = {
       "./data/seed/inflation.json",
       "./data/seed/statements.json",
       "./data/seed/events.json",
+      "./data/seed/tcmb-funding.json",
       "./data/history/expectations.json",
     ],
     "/karar/*": ["./data/statements/**/*"],

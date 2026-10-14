@@ -23,7 +23,9 @@ import { fmtBp, fmtPercent, L, languageAlternates, localePath, type Lang } from 
 import type { StatementLang, StatementRecord, StatementSummary } from "@/lib/statements";
 import { diffText } from "@/lib/text-diff";
 import { LICENSE_NOTICE_EN, LICENSE_NOTICE_TR } from "@/lib/text-license";
-import { formatDate, formatDateShort, formatTimeTrt, formatWeekday, monthLabel } from "@/lib/time";
+import { formatDate, formatDateShort, formatTimeTrt, formatWeekday, monthLabel, trtDayKey } from "@/lib/time";
+import { getTcmbFunding } from "@/lib/data/tcmb-funding";
+import { divergencePeriods, DIVERGENCE_PP, periodSentence, periodsBetween, valueAt, type DivergencePeriod } from "@/lib/tcmb-funding";
 
 export async function decisionMetadata(lang: Lang, id: string): Promise<Metadata> {
   const view = await getDecisionView(id);
@@ -59,6 +61,28 @@ export async function DecisionPage({ lang, id }: { lang: Lang; id: string }) {
   const bank = BANKS[m.bankCode];
   const name = bankName(bank, lang);
   const parts = decisionParts(m, lang);
+  // TCMB: önceki karardan bu karara kadar fiilî fonlama politika faizinden ayrıştıysa.
+  const funding = m.bankCode === "tcmb" ? await getTcmbFunding() : undefined;
+  const day = trtDayKey(m.meetingAt);
+  const fundingPeriods = funding
+    ? periodsBetween(
+        divergencePeriods(funding, trtDayKey(now.toISOString())),
+        view.previous && trtDayKey(view.previous.meetingAt),
+        day,
+      )
+    : [];
+  const aofmOnDay = funding && valueAt(funding.aofm, day);
+  const fundingNote =
+    fundingPeriods.length > 0
+      ? {
+          periods: fundingPeriods,
+          // Karar günü AOFM o günün fonlamasını eski oranla gösterir: önceki oranla kıyaslanır.
+          onDay:
+            aofmOnDay !== undefined && m.previousRate !== undefined && Math.abs(aofmOnDay - m.previousRate) >= DIVERGENCE_PP
+              ? aofmOnDay
+              : undefined,
+        }
+      : undefined;
 
   return (
     <article className="space-y-8">
@@ -79,7 +103,7 @@ export async function DecisionPage({ lang, id }: { lang: Lang; id: string }) {
         </p>
       </header>
 
-      <DecisionCard view={view} lang={lang} />
+      <DecisionCard view={view} lang={lang} funding={fundingNote} />
       <ExpectationCard view={view} lang={lang} />
       <StatementSection view={view} lang={lang} />
 
@@ -109,7 +133,15 @@ export async function DecisionPage({ lang, id }: { lang: Lang; id: string }) {
   );
 }
 
-function DecisionCard({ view, lang }: { view: DecisionView; lang: Lang }) {
+function DecisionCard({
+  view,
+  lang,
+  funding,
+}: {
+  view: DecisionView;
+  lang: Lang;
+  funding?: { periods: DivergencePeriod[]; onDay?: number };
+}) {
   const t = L(lang);
   const m = view.meeting;
   const bp = view.changeBp ?? 0;
@@ -129,6 +161,33 @@ function DecisionCard({ view, lang }: { view: DecisionView; lang: Lang }) {
         />
       </div>
       <p className="mt-3 text-sm text-muted">{bankRateName(BANKS[m.bankCode], lang)}</p>
+      {funding && (
+        <div className="mt-3 border-t border-border pt-3 text-sm">
+          <p className="font-medium">{t("Fiilî fonlama", "Effective funding")}</p>
+          <div className="prose-width mt-1 space-y-1 text-muted">
+            {funding.onDay !== undefined && (
+              <p className="tabular">
+                {t(
+                  `Karar günü bankaların fiilen ödediği ortalama faiz ${fmtPercent(funding.onDay, lang)}.`,
+                  `On the decision day, banks were paying ${fmtPercent(funding.onDay, lang)} on average.`,
+                )}
+              </p>
+            )}
+            {funding.periods.map((p) => (
+              <p key={p.start}>{periodSentence(p, lang)}</p>
+            ))}
+            <p>
+              {t(
+                "Bu fark politika faizi değiştirilmeden oluştu; yukarıdaki oranlar yalnızca politika faizini gösterir. ",
+                "This gap arose without a change in the policy rate; the rates above show the policy rate only. ",
+              )}
+              <Link href={`${localePath(lang, "/banka/tcmb")}#fiili-fonlama`} className="text-accent hover:underline">
+                {t("Ayrıntı", "Details")}
+              </Link>
+            </p>
+          </div>
+        </div>
+      )}
     </Card>
   );
 }
@@ -283,12 +342,17 @@ function ExpectationCard({ view, lang }: { view: DecisionView; lang: Lang }) {
               unit="rate"
               lang={lang}
               stepped={e.kind === "survey"}
-              refLines={[
-                ...(m.previousRate !== undefined
-                  ? [{ y: m.previousRate, label: t("önceki oran", "previous rate"), color: "var(--muted)" }]
-                  : []),
-                { y: m.decisionRate!, label: t("karar", "decision"), color: "var(--hawk)" },
-              ]}
+              // Sabit tutmada iki çizgi aynı yerde, etiketleri üst üste biniyordu: tek çizgi.
+              refLines={
+                m.previousRate === m.decisionRate
+                  ? [{ y: m.decisionRate!, label: t("karar: sabit", "decision: hold"), color: "var(--hawk)" }]
+                  : [
+                      ...(m.previousRate !== undefined
+                        ? [{ y: m.previousRate, label: t("önceki oran", "previous rate"), color: "var(--muted)" }]
+                        : []),
+                      { y: m.decisionRate!, label: t("karar", "decision"), color: "var(--hawk)" },
+                    ]
+              }
             />
           </div>
         </div>

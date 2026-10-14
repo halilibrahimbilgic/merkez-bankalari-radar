@@ -2,8 +2,9 @@ import Link from "next/link";
 import { BANKS, bankColorVar, bankCountry, bankName } from "@/lib/banks";
 import { isPendingDecision, pendingNote } from "@/lib/decision-format";
 import { formatCurrentRate, type CurrentRate } from "@/lib/data/rates";
-import { fmtSignedPercent, L, localePath, type Lang } from "@/lib/i18n";
+import { fmtPercent, fmtSignedPercent, L, localePath, type Lang } from "@/lib/i18n";
 import type { RealRate } from "@/lib/real-rates";
+import type { FundingNow } from "@/lib/tcmb-funding";
 import { countdownLabel, formatDateShort, formatTimeTrt } from "@/lib/time";
 import type { BankCode, Meeting } from "@/lib/types";
 
@@ -19,6 +20,8 @@ export interface BankSummary {
   rate?: CurrentRate;
   real?: RealRate;
   chip?: ExpectationChip;
+  /** TCMB: fiilî fonlama politika faizinden ayrıştığında. */
+  funding?: FundingNow;
 }
 
 const ARROW = { up: "↗", flat: "→", down: "↘" } as const;
@@ -34,7 +37,7 @@ export function BankSummaryList({ rows, now, lang }: { rows: BankSummary[]; now:
   const t = L(lang);
   return (
     <ul className="card overflow-hidden sm:hidden">
-      {rows.map(({ code, next, rate, real, chip }) => {
+      {rows.map(({ code, next, rate, real, chip, funding }) => {
         const bank = BANKS[code];
         const pending = next && isPendingDecision(next, now);
         return (
@@ -73,6 +76,11 @@ export function BankSummaryList({ rows, now, lang }: { rows: BankSummary[]; now:
               </div>
               <div className="shrink-0 text-right">
                 <div className="tabular font-semibold">{rate ? formatCurrentRate(rate, lang) : "—"}</div>
+                {funding?.divergence && (
+                  <div className="tabular text-xs font-medium">
+                    {t("fiilî", "effective")} {fmtPercent(funding.aofm, lang)}
+                  </div>
+                )}
                 {real && (
                   <div className="tabular text-xs text-muted">
                     {t("reel", "real")} {fmtSignedPercent(real.real, lang)}

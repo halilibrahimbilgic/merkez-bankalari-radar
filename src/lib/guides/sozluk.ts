@@ -8,7 +8,7 @@ export const guide: Guide = {
     tr: "Baz puan, şahin, güvercin, ileriye dönük yönlendirme, OIS, reel faiz, PPK, FOMC… Faiz kararlarını izlerken sık geçen terimlerin kısa tanımları.",
     en: "Basis point, hawkish, dovish, forward guidance, OIS, real rate, FOMC… Short definitions of terms that come up when following rate decisions.",
   },
-  updatedOn: "2026-10-13",
+  updatedOn: "2026-10-15",
   blocks: [
     {
       p: {
@@ -221,10 +221,24 @@ export const guide: Guide = {
     {
       terms: [
         {
+          term: { tr: "Ağırlıklı ortalama fonlama maliyeti (AOFM)", en: "Weighted average cost of funding (CBRT)" },
+          def: {
+            tr: "TCMB'nin bankalara sağladığı fonların ortalama faizi; bankaların fiilen ödediği faiz. Fonlamanın tamamı bir hafta vadeli repo ihalesinden yapıldığında politika faizine eşittir. TCMB ihaleye ara verip bankaları koridorun üst bandından fonladığında politika faizinin üstüne çıkar: faiz değiştirilmeden yapılan bir sıkılaştırmadır (ör. 3 Mart–24 Ağustos 2026'da politika faizi %37, AOFM %40).",
+            en: "The average rate on the funds the CBRT provides to banks, i.e. the rate banks actually pay. It equals the policy rate when all funding goes through the one-week repo auction. When the CBRT suspends the auction and funds banks at the top of the corridor, it rises above the policy rate: tightening without a rate change (for example, from 3 March to 24 August 2026 the policy rate was 37% and the funding cost 40%).",
+          },
+        },
+        {
           term: { tr: "Bir hafta vadeli repo ihale faizi", en: "One-week repo auction rate" },
           def: {
             tr: "TCMB'nin politika faizi: bankalara bir hafta vadeyle sağladığı fonun faizi.",
             en: "The CBRT's policy rate: the rate on funds it provides to banks for one week.",
+          },
+        },
+        {
+          term: { tr: "Faiz koridoru", en: "Interest rate corridor" },
+          def: {
+            tr: "TCMB'nin gecelik borç alma faizi (alt bant) ile gecelik borç verme faizi (üst bant) arasındaki aralık. Politika faizi bu aralığın içindedir; kısa vadeli piyasa faizleri ve fiilî fonlama maliyeti de aralığın içinde oluşur.",
+            en: "The range between the CBRT's overnight borrowing rate (lower band) and overnight lending rate (upper band). The policy rate sits inside it, and short-term market rates and the actual funding cost settle within it.",
           },
         },
         {

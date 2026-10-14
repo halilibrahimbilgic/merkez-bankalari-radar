@@ -10,6 +10,11 @@
  *
  * asOf, oranın yürürlüğe girdiği gündür (effectiveSince) — son gözlem günü
  * değil; aksi hâlde dosya her gün değişirdi.
+ *
+ * TCMB'nin fiilî fonlama maliyeti (AOFM) ve faiz koridoru ayrıca
+ * data/seed/tcmb-funding.json'a yazılır: politika faizinden ayrışabilir
+ * (src/lib/tcmb-funding.ts). Seriler değişim noktası olarak tutulur; dosya
+ * yalnızca bir oran değişince değişir.
  */
 import { readFile, writeFile, mkdir } from "node:fs/promises";
 import path from "node:path";
@@ -22,9 +27,19 @@ import {
   parseBoeCalendar,
   parseBoeCurrentRate,
 } from "../src/lib/sources/boe";
-import { fetchEvdsSeries, TCMB_POLICY_RATE, TCMB_RATES_PAGE_URL } from "../src/lib/sources/evds";
+import {
+  fetchEvdsJson,
+  fetchEvdsSeries,
+  parseEvds,
+  TCMB_AOFM,
+  TCMB_ON_BORROWING,
+  TCMB_ON_LENDING,
+  TCMB_POLICY_RATE,
+  TCMB_RATES_PAGE_URL,
+} from "../src/lib/sources/evds";
 import { fetchRbaCashRate, RBA_RATE_PAGE_URL } from "../src/lib/sources/rba";
 import { effectiveSince } from "../src/lib/sources/shared";
+import { toSteps, type TcmbFunding } from "../src/lib/tcmb-funding";
 import { BOJ_STATEMENTS_URL } from "../src/lib/sources/boj-rates";
 import type { Meeting } from "../src/lib/types";
 import type { BankCode } from "../src/lib/types";
@@ -32,6 +47,9 @@ import type { BankCode } from "../src/lib/types";
 config({ path: ".env.local", quiet: true });
 
 const OUT = path.join(process.cwd(), "data", "seed", "current-rates.json");
+const FUNDING_OUT = path.join(process.cwd(), "data", "seed", "tcmb-funding.json");
+/** Sabit başlangıç: kayan pencere ilk noktayı her gün değiştirirdi. */
+const FUNDING_FROM = "2025-01-01";
 
 export interface CurrentRate {
   bankCode: BankCode;
@@ -55,6 +73,7 @@ async function loadPrevious(): Promise<CurrentRate[]> {
 async function main() {
   const rates: CurrentRate[] = [];
   const failed: BankCode[] = [];
+  let fundingFailed = false;
   // Geniş pencere: effectiveSince son değişikliği bu pencerede arar.
   const since = new Date(Date.now() - 6 * 365 * 86_400_000).toISOString().slice(0, 10);
 
@@ -141,6 +160,32 @@ async function main() {
       console.error(`✗  TCMB: ${(err as Error).message}`);
       failed.push("tcmb");
     }
+
+    // Hata olursa önceki dosya yerinde kalır; kırılma yine kırmızı görünür.
+    try {
+      const json = await fetchEvdsJson(
+        [TCMB_POLICY_RATE, TCMB_AOFM, TCMB_ON_BORROWING, TCMB_ON_LENDING],
+        FUNDING_FROM,
+        evdsKey,
+      );
+      const funding: TcmbFunding = {
+        fetchedAt: new Date().toISOString(),
+        policy: toSteps(parseEvds(json, TCMB_POLICY_RATE)),
+        aofm: toSteps(parseEvds(json, TCMB_AOFM)),
+        lower: toSteps(parseEvds(json, TCMB_ON_BORROWING)),
+        upper: toSteps(parseEvds(json, TCMB_ON_LENDING)),
+      };
+      if (!funding.policy.length || !funding.aofm.length || !funding.lower.length || !funding.upper.length) {
+        throw new Error("seriler boş geldi");
+      }
+      await writeFile(FUNDING_OUT, JSON.stringify(funding, null, 2) + "\n", "utf8");
+      console.log(
+        `✓  TCMB fiilî fonlama: AOFM %${funding.aofm.at(-1)!.value}, koridor %${funding.lower.at(-1)!.value}–${funding.upper.at(-1)!.value}`,
+      );
+    } catch (err) {
+      console.error(`✗  TCMB fiilî fonlama: ${(err as Error).message}`);
+      fundingFailed = true;
+    }
   }
 
   try {
@@ -209,7 +254,7 @@ async function main() {
   console.log(`\n→ ${path.relative(process.cwd(), OUT)}`);
 
   // Dosya yazıldı ama kırılma cron'da görünür kalsın.
-  if (failed.length > 0) process.exit(1);
+  if (failed.length > 0 || fundingFailed) process.exit(1);
 }
 
 main().catch((err) => {

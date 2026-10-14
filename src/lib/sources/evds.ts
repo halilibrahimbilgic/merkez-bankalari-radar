@@ -20,6 +20,17 @@ const BASE = "https://evds3.tcmb.gov.tr/igmevdsms-dis";
  */
 export const TCMB_POLICY_RATE = "TP.PY.P02.1H";
 
+/**
+ * Ağırlıklı ortalama fonlama maliyeti (AOFM) — bankaların fiilen ödediği
+ * ortalama faiz. Doğrulama (15 Ekim 2026): 3–6 Mart 2026'da %39,35 → %40,
+ * 24 Ağustos'ta %37'ye dönüş; karar günleri bir iş günü geriden gelir.
+ */
+export const TCMB_AOFM = "TP.APIFON4";
+/** Faiz koridoru: gecelik borç alma (alt bant) ve gecelik borç verme (üst bant). Ocak 2026'dan beri %35,50–40,00. */
+export const TCMB_ON_BORROWING = "TP.PY.P01.ON";
+export const TCMB_ON_LENDING = "TP.PY.P02.ON";
+export const EVDS_URL = "https://evds3.tcmb.gov.tr/";
+
 export const TCMB_RATES_PAGE_URL =
   "https://www.tcmb.gov.tr/wps/wcm/connect/TR/TCMB+TR/Main+Menu/Temel+Faaliyetler/Para+Politikasi/Merkez+Bankasi+Faiz+Oranlari/1+Hafta+Repo";
 

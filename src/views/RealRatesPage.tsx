@@ -9,7 +9,9 @@ import { formatCurrentRate, getCurrentRates } from "@/lib/data/rates";
 import { fmtPercent, fmtSignedPercent, L, languageAlternates, localePath, type Lang } from "@/lib/i18n";
 import { forwardRealRate, realRate, type RealRate } from "@/lib/real-rates";
 import { INFLATION_SOURCES } from "@/lib/sources/inflation";
-import { monthLabel } from "@/lib/time";
+import { getTcmbFunding } from "@/lib/data/tcmb-funding";
+import { fundingNow } from "@/lib/tcmb-funding";
+import { monthLabel, trtDayKey } from "@/lib/time";
 
 export function realRatesMetadata(lang: Lang): Metadata {
   const t = L(lang);
@@ -25,7 +27,12 @@ export function realRatesMetadata(lang: Lang): Metadata {
 
 export async function RealRatesPage({ lang }: { lang: Lang }) {
   const t = L(lang);
-  const [rates, inflation, expectations] = await Promise.all([getCurrentRates(), getInflation(), getExpectations()]);
+  const [rates, inflation, expectations, funding] = await Promise.all([
+    getCurrentRates(),
+    getInflation(),
+    getExpectations(),
+    getTcmbFunding(),
+  ]);
   const rows: RealRate[] = ALL_BANKS.flatMap((b) => {
     const rate = rates.find((r) => r.bankCode === b.code);
     const infl = inflation.find((i) => i.bankCode === b.code);
@@ -37,6 +44,10 @@ export async function RealRatesPage({ lang }: { lang: Lang }) {
   const survey = expectations.tcmb;
   const forward =
     tcmb && survey?.inflation12 !== undefined ? forwardRealRate(tcmb.policy, survey.inflation12) : undefined;
+  // Bankaların fiilen ödediği faiz politika faizinden ayrışıyorsa ona göre reel faiz de verilir.
+  const tcmbFunding = funding && fundingNow(funding, trtDayKey(new Date().toISOString()));
+  const effective =
+    tcmb && tcmbFunding?.divergence ? realRate({ bankCode: "tcmb", rate: tcmbFunding.aofm }, tcmb.inflation) : undefined;
 
   return (
     <div className="space-y-6">
@@ -96,6 +107,16 @@ export async function RealRatesPage({ lang }: { lang: Lang }) {
                   <div className="text-xs font-normal text-muted">
                     {r.real > 0 ? t("pozitif", "positive") : r.real < 0 ? t("negatif", "negative") : t("sıfır", "zero")}
                   </div>
+                  {r.bankCode === "tcmb" && effective && (
+                    <div className="mt-1 text-xs font-normal text-muted">
+                      <Link href={`${localePath(lang, "/banka/tcmb")}#fiili-fonlama`} className="text-accent hover:underline">
+                        {t(
+                          `fiilî fonlamayla ${fmtSignedPercent(effective.real, lang)}`,
+                          `${fmtSignedPercent(effective.real, lang)} at the funding cost`,
+                        )}
+                      </Link>
+                    </div>
+                  )}
                   {r.bankCode === "tcmb" && forward && (
                     <div className="mt-1 text-xs font-normal text-muted">
                       <a href="#ileriye-donuk" className="text-accent hover:underline">
@@ -160,6 +181,16 @@ export async function RealRatesPage({ lang }: { lang: Lang }) {
             "Reel faiz burada politika faizi ile son açıklanan yıllık tüketici enflasyonunun farkıdır (geçmişe dönük ölçü). Fed bir aralık ilan ettiği için aralığın orta noktası alınır. Enflasyon geçmiş bir ayı anlatır ve birkaç gün ile birkaç hafta gecikmeyle açıklanır; politika faizi ise bugünkü düzeydir. Merkez bankaları çoğunlukla beklenen enflasyona göre bakar (ileriye dönük reel faiz) — o, buradaki rakamdan farklı olabilir.",
             "The real rate here is the policy rate minus the latest published annual consumer inflation (a backward-looking measure). As the Fed announces a range, its midpoint is used. Inflation describes a past month and is published with a lag of days to weeks, while the policy rate is today's level. Central banks often look at expected inflation instead (the forward-looking real rate), which can differ from the figure here.",
           )}
+        </p>
+        <p>
+          {t(
+            "TCMB'de bankaların fiilen ödediği ortalama faiz (AOFM) politika faizinden ayrışabilir: TCMB bankaları koridorun üst bandından fonladığında politika faizinin üstüne çıkar. Bu durumda TCMB satırında fiilî fonlamaya göre reel faiz de gösterilir; ",
+            "At the CBRT, the average rate banks actually pay can differ from the policy rate: it rises above it when the CBRT funds banks at the top of the corridor. In that case the CBRT row also shows the real rate at the funding cost; ",
+          )}
+          <Link href={`${localePath(lang, "/banka/tcmb")}#fiili-fonlama`} className="text-accent hover:underline">
+            {t("ayrıntı TCMB sayfasında", "details on the CBRT page")}
+          </Link>
+          .
         </p>
         <p>
           {t(

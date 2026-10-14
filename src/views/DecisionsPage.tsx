@@ -11,7 +11,9 @@ import { getAllMeetings } from "@/lib/data/meetings";
 import { DECISIONS_FROM, fedRange, formatDecisionRate, hasDecisionPage } from "@/lib/decision-format";
 import { fmtBp, fmtPercent, L, languageAlternates, localePath, type Lang } from "@/lib/i18n";
 import { cycleSeries, rateCycle } from "@/lib/rate-cycle";
-import { formatDate, formatDateShort, monthLabel } from "@/lib/time";
+import { formatDate, formatDateShort, monthLabel, trtDayKey } from "@/lib/time";
+import { getTcmbFunding } from "@/lib/data/tcmb-funding";
+import { divergencePeriods, periodSentence } from "@/lib/tcmb-funding";
 import type { BankCode } from "@/lib/types";
 
 export function decisionsMetadata(lang: Lang): Metadata {
@@ -153,6 +155,11 @@ async function CycleSection({ lang }: { lang: Lang }) {
   const rows = rateCycle(meetings, CALENDAR_BANK_CODES, from, now);
   const data = cycleSeries(meetings, CALENDAR_BANK_CODES, from, now) as Record<string, number>[];
   const byId = new Map(meetings.map((m) => [m.id, m]));
+  // TCMB'nin politika faizi değiştirilmeden oluşan fonlama farkı tabloda görünmez; altına not düşülür.
+  const funding = await getTcmbFunding();
+  const fundingPeriods = funding
+    ? divergencePeriods(funding, trtDayKey(now.toISOString())).filter((p) => !p.end || p.end > from)
+    : [];
 
   return (
     <section aria-labelledby="dongu" className="space-y-3">
@@ -231,6 +238,19 @@ async function CycleSection({ lang }: { lang: Lang }) {
           })}
         </tbody>
       </TableFrame>
+      {fundingPeriods.length > 0 && (
+        <p className="prose-width text-sm text-muted">
+          {t("TCMB: ", "CBRT: ")}
+          {fundingPeriods.map((p) => periodSentence(p, lang)).join(" ")}{" "}
+          {t(
+            "Bu fark politika faizi değiştirilmeden oluştuğu için tablodaki değişime dahil değil. ",
+            "It arose without a change in the policy rate, so it is not part of the change in the table. ",
+          )}
+          <Link href={`${localePath(lang, "/banka/tcmb")}#fiili-fonlama`} className="text-accent hover:underline">
+            {t("Ayrıntı", "Details")}
+          </Link>
+        </p>
+      )}
     </section>
   );
 }

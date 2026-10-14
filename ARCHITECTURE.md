@@ -40,6 +40,7 @@ amaçlıdır (bkz. §6).
   rba.gov.au          ─┘                              │  üzerine YAZMAZ)
   FRED · ECB SDMX · EVDS · BoE xlsx · RBA F1 · BoJ karar PDF'leri ─► fetch:rates
   aynıları ────────────────► fetch:current-rates ───► current-rates.json
+                                                     └► tcmb-funding.json (AOFM, koridor)
   atlantafed.org (.xlsx) ─► fetch:probabilities ──► probabilities.json
   BoE OIS+SONIA · ECB SMA · EVDS anket · NY Fed SME ─► fetch:expectations ─► expectations.json
                                                      └► data/history/expectations.json (seyir)
@@ -173,6 +174,24 @@ farkına iner (`text-diff.ts`) — doğrudan kelime farkı ilgisiz cümleleri
 **`fetch:current-rates` da birleştirir.** Bir bankanın kaynağı hata verirse
 önceki kaydı korunur ve adım yine hata koduyla biter. İlk cron koşusunda ECB
 SDW'nin geçici 504'ü ECB faizini siteden silmişti.
+
+**TCMB'nin fiilî faizi politika faizinden ayrışabilir** (`src/lib/tcmb-funding.ts`).
+Bankaların fiilen ödediği ortalama faiz AOFM'dir (EVDS `TP.APIFON4`); TCMB
+bir hafta vadeli repo ihalesine ara verip koridorun üst bandından
+fonladığında politika faizinin üstüne çıkar. 3 Mart–24 Ağustos 2026'da
+politika faizi %37 iken AOFM %40'tı ve site altı ay boyunca yalnızca %37
+gösterdi (24 Mart–12 Haziran 2025'te de fark 2–3 puandı). AOFM ve koridor
+`tcmb-funding.json`'da değişim noktası olarak durur (dosya yalnızca oran
+değişince değişir). Ayrışma sayılması için iki kural var, ikisi de gerçek
+veriden: AOFM bir önceki iş gününün politika faiziyle kıyaslanır (seri yeni
+oranı karar günü, AOFM ertesi iş günü gösterir — dokuz kararın hepsinde) ve
+fark ≥0,25 puan en az beş iş günü sürmelidir (karar sonrası %37,30 → %37,01
+oturması ve Ocak 2025'in üç günlük yarım puanı ayrışma değil). Ayrışma
+sürerken ana sayfa kartı, telefon listesi, reel faiz tablosu ve TCMB
+sayfasının başı fiilî oranı da gösterir; TCMB sayfasında oranlar ve
+koridor her zaman, karar sayfasında ve `/kararlar`'daki faiz döngüsünün
+altında dönem cümlesi durur. Sınır: kararın hemen ardından haftalık bir
+bayram tatili gelirse gözlem olmadığı için AOFM eski değerinde "durur".
 
 **Güncel faizin `asOf`'u "şu tarihten beri"dir, son gözlem günü değil**
 (`effectiveSince`). Son gözlem günü her gün değişip `current-rates.json`'u
@@ -489,6 +508,9 @@ seyir tablosu; TCMB için ileriye dönük reel faiz; site haritasında gerçek
 `updatedOn`; yasal sayfalarda alan yok). 47 konuşma, hepsi skorlu. Banka
 sayfaları sıradaki toplantının beklentisini gösterir (ana sayfa kartıyla
 aynı hesap: `src/views/bank-expectations.ts`).
+
+15 Ekim 2026: TCMB'nin fiilî fonlama maliyeti (AOFM) ve faiz koridoru
+(§4); TCMB sayfasında son 12 ayın grafiği, sözlükte iki yeni terim.
 
 ---
 

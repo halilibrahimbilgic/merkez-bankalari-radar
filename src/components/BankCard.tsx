@@ -1,8 +1,9 @@
 import Link from "next/link";
 import { BANKS, bankColorVar, bankCountry, bankName } from "@/lib/banks";
 import { isPendingDecision, pendingNote } from "@/lib/decision-format";
-import { fmtSignedPercent, L, localePath, type Lang } from "@/lib/i18n";
+import { fmtPercent, fmtSignedPercent, L, localePath, type Lang } from "@/lib/i18n";
 import type { RealRate } from "@/lib/real-rates";
+import type { FundingNow } from "@/lib/tcmb-funding";
 import type { BankCode, Meeting } from "@/lib/types";
 import {
   computeCountdownParts,
@@ -30,6 +31,7 @@ export function BankCard({
   oddsTitle,
   surveyNote,
   realRate,
+  funding,
   lang,
 }: {
   bankCode: BankCode;
@@ -43,6 +45,8 @@ export function BankCard({
   /** Anket beklentisi (TCMB) — piyasa fiyatlamasından ayrı başlıkla. */
   surveyNote?: string;
   realRate?: RealRate;
+  /** TCMB: fiilî fonlama politika faizinden ayrıştığında ayrı satır. */
+  funding?: FundingNow;
   lang: Lang;
 }) {
   const t = L(lang);
@@ -119,6 +123,16 @@ export function BankCard({
             )}
           </dd>
         </div>
+        {funding?.divergence && (
+          <div className="flex items-baseline justify-between gap-2">
+            <dt className="text-muted">
+              <Link href={`${href}#fiili-fonlama`} className="inline-flex min-h-6 items-center hover:text-accent">
+                {t("Fiilî fonlama", "Effective funding")}
+              </Link>
+            </dt>
+            <dd className="tabular font-semibold">{fmtPercent(funding.aofm, lang)}</dd>
+          </div>
+        )}
         {realRate && (
           <div className="flex items-baseline justify-between gap-2">
             <dt className="text-muted">

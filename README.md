@@ -24,7 +24,7 @@ npm install
 cp .env.example .env.local   # şimdilik boş bırakılabilir
 npm run fetch:meetings       # resmî takvimleri çeker → data/seed/meetings.json
 npm run fetch:rates          # geçmiş karar oranları (FRED_API_KEY; TCMB için EVDS_API_KEY)
-npm run fetch:current-rates  # güncel politika faizleri (Fed, ECB, TCMB)
+npm run fetch:current-rates  # güncel politika faizleri; TCMB fiilî fonlaması (AOFM) ve koridoru
 npm run fetch:probabilities  # Atlanta Fed olasılık dağılımları (+ günlük seyir)
 npm run fetch:expectations   # BoE, ECB, TCMB beklentileri + beklenti geçmişi (data/history)
 npm run fetch:inflation      # altı ekonominin yıllık enflasyonu (reel faiz)
@@ -176,7 +176,7 @@ npm run dev              # geliştirme sunucusu
 npm run build            # üretim derlemesi
 npm run fetch:meetings   # takvimleri yeniden çek
 npm run fetch:rates      # geçmiş karar oranları (Fed, ECB, TCMB)
-npm run fetch:current-rates  # güncel politika faizleri
+npm run fetch:current-rates  # güncel politika faizleri + TCMB fiilî fonlama (data/seed/tcmb-funding.json)
 npm run fetch:probabilities  # olasılık dağılımları
 npm run fetch:expectations   # Fed dışı beklentiler ve beklenti geçmişi
 npm run fetch:inflation      # enflasyon (reel faiz tablosu)

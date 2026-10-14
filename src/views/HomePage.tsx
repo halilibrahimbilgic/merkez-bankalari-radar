@@ -12,7 +12,9 @@ import { getBankScoreSummaries, getSpeeches } from "@/lib/data/speeches";
 import { getNews } from "@/lib/data/news";
 import { getDecisionViews } from "@/lib/data/decisions";
 import { getInflation } from "@/lib/data/inflation";
+import { getTcmbFunding } from "@/lib/data/tcmb-funding";
 import { realRate } from "@/lib/real-rates";
+import { fundingNow } from "@/lib/tcmb-funding";
 import { isPendingDecision } from "@/lib/decision-format";
 import { getBankExpectations } from "./bank-expectations";
 import { DecisionRow } from "./DecisionsPage";
@@ -20,7 +22,7 @@ import { WeekAhead } from "./WeekAhead";
 import { NewsList } from "@/components/NewsList";
 import { L, languageAlternates, localePath, type Lang } from "@/lib/i18n";
 import { speechTitle } from "@/lib/speech-i18n";
-import { countdownLabel, formatDate } from "@/lib/time";
+import { countdownLabel, formatDate, trtDayKey } from "@/lib/time";
 
 export function homeMetadata(lang: Lang): Metadata {
   // Başlık ve açıklama kök düzenden gelir; burada yalnızca dil karşılıkları.
@@ -46,11 +48,13 @@ export async function HomePage({ lang }: { lang: Lang }) {
   const nextOf = (code: (typeof CALENDAR_BANK_CODES)[number]) =>
     allMeetings.filter((m) => m.bankCode === code && isPendingDecision(m, now)).at(-1) ??
     upcoming.find((m) => m.bankCode === code);
-  const [news, decisions, inflation] = await Promise.all([
+  const [news, decisions, inflation, funding] = await Promise.all([
     getNews({ limit: 4 }),
     getDecisionViews({ now }),
     getInflation(),
+    getTcmbFunding(),
   ]);
+  const tcmbFunding = funding && fundingNow(funding, trtDayKey(now.toISOString()));
   const realRateOf = (code: (typeof CALENDAR_BANK_CODES)[number]) => {
     const rate = rates.find((r) => r.bankCode === code);
     const infl = inflation.find((i) => i.bankCode === code);
@@ -97,6 +101,7 @@ export async function HomePage({ lang }: { lang: Lang }) {
             rate: rates.find((r) => r.bankCode === code),
             real: realRateOf(code),
             chip: expectations[code]?.chip,
+            funding: code === "tcmb" ? tcmbFunding : undefined,
           }))}
         />
         <div className="hidden gap-4 sm:grid md:grid-cols-2 lg:grid-cols-3">
@@ -113,6 +118,7 @@ export async function HomePage({ lang }: { lang: Lang }) {
               oddsNote={expectations[code]?.oddsNote}
               surveyNote={expectations[code]?.surveyNote}
               realRate={realRateOf(code)}
+              funding={code === "tcmb" ? tcmbFunding : undefined}
             />
           ))}
         </div>
