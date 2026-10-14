@@ -1,6 +1,36 @@
 {
-  "fetchedAt": "2026-10-14T16:01:38.564Z",
+  "fetchedAt": "2026-10-14T16:31:35.550Z",
   "items": [
+    {
+      "id": "a3ff2c6c0b6f",
+      "sourceKey": "marketwatch",
+      "sourceName": "MarketWatch",
+      "kind": "media",
+      "url": "https://www.marketwatch.com/story/rising-bond-yields-and-higher-inflation-leave-the-fed-trapped-in-a-rate-hike-dilemma-d34ba326?mod=mw_rss_topstories",
+      "publishedAt": "2026-10-14T16:27:00.000Z",
+      "titleOriginal": "Rising bond yields and higher inflation leave the Fed trapped in a rate-hike dilemma",
+      "titleTr": "Yüksek enflasyon ve tahvil faizleri Fed'i faiz artırımı ikilemine itiyor",
+      "summaryTr": "MarketWatch'a göre çarşamba günü açıklanan sıcak tüketici fiyat endeksi raporunu olumlu göstermenin yolu yok. Yazı, özellikle tahvil piyasasının tepkisine dikkat çekiyor ve Fed'in faiz artırımı ikileminde sıkıştığını savunuyor.",
+      "titleEn": "Rising bond yields and hot inflation leave the Fed in a rate-hike dilemma",
+      "summaryEn": "MarketWatch says Wednesday's hot consumer-price index report is hard to portray as good news, particularly given the bond market's reaction. It argues the Fed is caught in a dilemma over raising rates.",
+      "important": true,
+      "processedAt": "2026-10-14T16:31:35.550Z"
+    },
+    {
+      "id": "365750cb85e8",
+      "sourceKey": "marketwatch",
+      "sourceName": "MarketWatch",
+      "kind": "media",
+      "url": "https://www.marketwatch.com/story/rising-diesel-prices-have-helped-fuel-inflation-and-were-about-to-see-how-much-worse-it-could-get-430f36d1?mod=mw_rss_topstories",
+      "publishedAt": "2026-10-14T16:07:00.000Z",
+      "titleOriginal": "Rising diesel prices have helped fuel inflation — and we’re about to see how much worse it could get",
+      "titleTr": "Dizel fiyatlarındaki artış enflasyonu besledi, yeni veriler perşembe günü geliyor",
+      "summaryTr": "MarketWatch'a göre tüketici enflasyonu beklentinin üzerinde geldi. Rekor seviyedeki dizel fiyatlarının etkisine dair yeni ipuçları perşembe günü açıklanacak veriyle görülecek.",
+      "titleEn": "Rising diesel prices have fueled inflation, with more data due Thursday",
+      "summaryEn": "MarketWatch reports that consumer inflation just came in hot. Thursday's data should offer more clues on the impact of record diesel prices.",
+      "important": false,
+      "processedAt": "2026-10-14T16:31:35.550Z"
+    },
     {
       "id": "d8b256ae29de",
       "sourceKey": "bbc-business",
