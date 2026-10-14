@@ -50,3 +50,6 @@ next-env.d.ts
 
 # Karar metni özet çalışma alanı (news.yml)
 /.statements/
+
+# graphify çıktısı (yerel bilgi grafiği)
+/graphify-out/
