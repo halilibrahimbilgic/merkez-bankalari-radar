@@ -1,5 +1,5 @@
 {
-  "fetchedAt": "2026-10-13T20:09:27.026Z",
+  "fetchedAt": "2026-10-14T00:32:24.386Z",
   "statements": [
     {
       "meetingId": "boe-2025-12-18",
@@ -82,7 +82,31 @@
       "publishable": false,
       "fetchedAt": "2026-10-13T19:42:34.630Z",
       "rate": 3.75,
-      "previousId": "boe-2026-06-18"
+      "previousId": "boe-2026-06-18",
+      "summary": {
+        "headlineTr": "BoE, Bank Rate'i %3,75'te sabit tuttu; artırım yönünde oy kullanan üye sayısı ikiden üçe çıktı ve Komite enflasyon risklerinin yukarı yönlü olduğunu belirtti.",
+        "headlineEn": "The BoE held Bank Rate at 3.75%; the number of members voting for a hike rose from two to three and the Committee said inflation risks are tilted to the upside.",
+        "changesTr": [
+          "Oylama 7–2'den 6–3'e döndü; üç üye faizin 0,25 puan artırılarak %4'e çıkarılmasını savundu.",
+          "Komite, enflasyon görünümüne ilişkin risklerin Temmuz Para Politikası Raporu'ndaki ana projeksiyona göre yukarı yönlü olduğunu ilk kez belirtti; ancak Orta Doğu'daki gelişmelerle görünümün belirgin biçimde değişebileceğini ekledi.",
+          "TÜFE enflasyonunun %2,8'den %2,6'ya gerilediği belirtildi; ikinci tur etkilere dair şimdilik az kanıt bulunduğu ve son verilerde ana eğilimde dezenflasyonun açık işaretleri sürdüğü eklendi.",
+          "Ekonominin zayıflamasının enflasyonist baskıları sınırlayabileceği ifadesi çıkarıldı; gevşek işgücü piyasası ve çatışma öncesine göre yüksek faizlerin enflasyonu zamanla düşüreceği vurgulandı.",
+          "Enerji fiyatlarının önceki toplantıdan bu yana düştüğü ifadesi kaldırıldı; ham ve rafine enerji fiyatlarının oynak ve çatışma öncesinin üzerinde kaldığı, şokun finansal koşullar üzerinden de yayılabileceği belirtildi."
+        ],
+        "changesEn": [
+          "The vote shifted from 7–2 to 6–3, with three members favouring a 0.25 percentage point increase to 4%.",
+          "The Committee newly stated that risks to the inflation outlook are tilted to the upside relative to the central projection in the July Monetary Policy Report, while noting the outlook could change materially as events in the Middle East unfold.",
+          "CPI inflation was reported to have fallen to 2.6% from 2.8%, with the statement adding there is little evidence so far of second-round effects and continued clear signs of underlying disinflation.",
+          "The line that signs of a weakening economy could contain inflationary pressures was dropped; loose labour market conditions and higher interest rates than before the conflict are said to reduce inflation over time.",
+          "The statement that energy prices had fallen since the previous meeting was removed; crude and refined energy prices are described as volatile and above pre-conflict levels, with propagation also via financial conditions."
+        ],
+        "tone": "mixed",
+        "toneReasonTr": "Artırım yönündeki oyların üçe çıkması ve risklerin yukarı yönlü olduğu ifadesi şahin, ikinci tur etkilere dair az kanıt bulunması ve ana eğilimde dezenflasyonun açık işaretleri ise güvercin yöndedir.",
+        "toneReasonEn": "Three votes for a hike and upside-tilted inflation risks are hawkish, while little evidence of second-round effects and clear signs of underlying disinflation are dovish.",
+        "model": "claude-code/opus",
+        "promptVersion": "1",
+        "summarizedAt": "2026-10-14T00:32:24.384Z"
+      }
     },
     {
       "meetingId": "boe-2026-09-17",
@@ -344,7 +368,31 @@
       "publishable": true,
       "fetchedAt": "2026-10-13T19:42:32.162Z",
       "rate": 2.25,
-      "previousId": "ecb-2026-06-11"
+      "previousId": "ecb-2026-06-11",
+      "summary": {
+        "headlineTr": "ECB, önceki toplantıdaki 25 baz puanlık artırımın ardından üç temel faizi sabit tuttu (mevduat %2,25) ve enerji fiyatı görünümünün Haziran projeksiyonlarının ana senaryosuna yakın olduğunu belirtti.",
+        "headlineEn": "After a 25 basis point hike at the previous meeting, the ECB kept its three key rates unchanged (deposit facility 2.25%) and said the energy price outlook stands close to the June projections baseline.",
+        "changesTr": [
+          "Faizler artırılmak yerine sabit tutuldu; mevduat, ana refinansman ve marjinal borç verme faizleri sırasıyla %2,25, %2,40 ve %2,65'te kaldı.",
+          "Savaşın enflasyon baskısı yarattığı ve artırımın farklı senaryolarda sağlam olduğu ifadesi çıkarıldı; yerine enerji fiyatı görünümünün oynak olmakla birlikte Haziran projeksiyonlarının ana senaryosuna yakın, çatışma öncesinin ise belirgin üzerinde olduğu yazıldı.",
+          "Belirsizliğin yüksek kaldığı ve enerji şokunun enflasyonist etkisinin henüz tam ortaya çıkmadığı belirtildi; şokun yoğunluğu, süresi ile dolaylı ve ikinci tur etkilerinin yakından izlendiği eklendi.",
+          "Personel projeksiyonları ile enflasyonda yukarı, büyümede aşağı yönlü risklere dair paragraflar metinden çıkarıldı.",
+          "Veri odaklı, toplantı bazlı yaklaşım ve belirli bir faiz patikasına önceden bağlanmama ifadesi korundu."
+        ],
+        "changesEn": [
+          "Rates were held rather than raised; the deposit facility, main refinancing and marginal lending rates remain at 2.25%, 2.40% and 2.65% respectively.",
+          "The statement that the war is generating inflation pressures and that the hike was robust across scenarios was dropped, replaced by a note that the energy price outlook, while highly volatile, stands close to the June projections baseline and well above pre-conflict levels.",
+          "The statement says uncertainty remains high and the full inflationary impact of the energy shock has yet to play out, adding that the intensity and duration of the shock and its indirect and second-round effects are being closely monitored.",
+          "The paragraphs on staff projections and on upside risks to inflation and downside risks to growth were removed.",
+          "The data-dependent, meeting-by-meeting approach and the absence of pre-commitment to a rate path were retained."
+        ],
+        "tone": "mixed",
+        "toneReasonTr": "Savaşın enflasyon baskısı yarattığı ifadesinin çıkarılması ve enerji görünümünün ana senaryoya yakın olduğunun belirtilmesi güvercin, şokun enflasyonist etkisinin henüz tam ortaya çıkmadığı ve ikinci tur etkilerin izlendiği vurgusu ise şahin yöndedir.",
+        "toneReasonEn": "Dropping the line that the war is generating inflation pressures and noting energy prices are close to baseline is dovish, while stressing that the full inflationary impact has yet to play out and that second-round effects are being monitored is hawkish.",
+        "model": "claude-code/opus",
+        "promptVersion": "1",
+        "summarizedAt": "2026-10-14T00:32:24.385Z"
+      }
     },
     {
       "meetingId": "ecb-2026-09-10",
@@ -472,7 +520,25 @@
       "fetchedAt": "2026-10-13T19:42:32.593Z",
       "rate": 3.75,
       "rateLower": 3.5,
-      "previousId": "fed-2026-06-17"
+      "previousId": "fed-2026-06-17",
+      "summary": {
+        "headlineTr": "Fed, federal fon oranı hedef aralığını %3,50–3,75'te sabit tuttu; karar oybirliğiyle değil 9–3 oyla alındı ve üç üye faiz artırımını savundu.",
+        "headlineEn": "The Fed held the federal funds target range at 3-1/2 to 3-3/4 percent; the decision passed 9–3 rather than unanimously, with three members favouring a hike.",
+        "changesTr": [
+          "Oylama 12–0'dan 9–3'e döndü: Beth M. Hammack, Neel Kashkari ve Lorie K. Logan hedef aralığın 0,25 puan artırılmasını tercih etti.",
+          "Ekonomik faaliyet, istihdam ve enflasyon değerlendirmesi önceki metinle aynı kaldı; yalnızca bol rezerv politikasının sürdürüldüğüne ilişkin ifade biçimsel olarak değişti."
+        ],
+        "changesEn": [
+          "The vote shifted from 12–0 to 9–3: Beth M. Hammack, Neel Kashkari and Lorie K. Logan preferred to raise the target range by 1/4 percentage point.",
+          "The assessment of activity, employment and inflation was unchanged; only the wording on continuing the ample-reserves policy changed slightly."
+        ],
+        "tone": "more-hawkish",
+        "toneReasonTr": "Metnin geri kalanı değişmezken üç üyenin faiz artırımı yönünde karşı oy kullanması şahin yönde bir değişikliktir.",
+        "toneReasonEn": "With the rest of the text unchanged, three dissents in favour of a rate hike mark a hawkish shift.",
+        "model": "claude-code/opus",
+        "promptVersion": "1",
+        "summarizedAt": "2026-10-14T00:32:24.386Z"
+      }
     },
     {
       "meetingId": "fed-2026-09-16",
@@ -749,7 +815,29 @@
       "publishable": true,
       "fetchedAt": "2026-10-13T19:42:30.612Z",
       "rate": 37,
-      "previousId": "tcmb-2026-06-11"
+      "previousId": "tcmb-2026-06-11",
+      "summary": {
+        "headlineTr": "TCMB politika faizini yüzde 37'de sabit tuttu; metinde enerji fiyatlarının yeniden yükselme eğilimine girdiği ve ana eğilimin temmuzda geçici olarak yükselebileceği belirtildi.",
+        "headlineEn": "The CBRT held its policy rate at 37 percent; the statement noted that energy prices have resumed an upward trend and that the underlying trend may rise temporarily in July.",
+        "changesTr": [
+          "Enerji fiyatlarına ilişkin değerlendirme, oynaklık ve yüksek seyrin sürmesinden artan belirsizlikler nedeniyle yeniden yükselme eğilimine girilmesine dönüştü.",
+          "Enflasyonun ana eğiliminin haziranda sınırlı bir miktar gerilediği, ancak öncü verilerin temmuzda geçici bir yükselişe işaret ettiği belirtildi.",
+          "İç talepteki zayıf seyrin sürdüğü ifadesi, zayıf seyrin belirginleştiği şeklinde güçlendirildi; iktisadi faaliyetin yavaşlamaya devam ettiğine dair ilk çeyrek atfı çıkarıldı.",
+          "Faiz kararları, sıkı duruş ve gerekirse sıkılaştırma yönlendirmesi ile makroihtiyati ve likidite ifadeleri değişmedi."
+        ],
+        "changesEn": [
+          "The assessment of energy prices shifted from continued volatility and elevated levels to a renewed upward trend amid rising uncertainty.",
+          "The underlying trend of inflation is said to have declined slightly in June, but leading indicators point to a temporary rise in July.",
+          "The reference to continued weak domestic demand was strengthened to weakness becoming more pronounced, and the first-quarter reference to slowing activity was dropped.",
+          "The rate decisions, the tight-stance and tightening-if-needed guidance, and the macroprudential and liquidity language were unchanged."
+        ],
+        "tone": "mixed",
+        "toneReasonTr": "Enerji fiyatlarının yeniden yükselmesi ve ana eğilimin temmuzda geçici olarak artacağı ifadeleri şahin, iç talepteki zayıflığın belirginleştiği ifadesi ise güvercin yöndedir.",
+        "toneReasonEn": "The renewed rise in energy prices and an expected temporary rise in the underlying trend in July are hawkish, while domestic demand weakness becoming more pronounced is dovish.",
+        "model": "claude-code/opus",
+        "promptVersion": "1",
+        "summarizedAt": "2026-10-14T00:32:24.386Z"
+      }
     },
     {
       "meetingId": "tcmb-2026-09-10",
