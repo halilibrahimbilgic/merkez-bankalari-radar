@@ -250,22 +250,27 @@ GitHub zamanlanmış işleri "en iyi çaba" ile çalıştırır: 13 Ekim 2026'da
 30 dakikalık iş 21 saatte yalnızca 3 kez çalıştı, kanal sessiz kaldı.
 Çözüm: cron-job.org her 30 dakikada
 `POST https://api.github.com/repos/halilibrahimbilgic/merkez-bankalari-radar/actions/workflows/news.yml/dispatches`
-(gövde `{"ref":"main"}`) çağırır. Yetki, yalnızca bu repoda *Actions: Read
-and write* izni olan fine-grained token (`faizradar-cron`) ile verilir;
-token cron-job.org'da durur, repoda değil.
+(gövde `{"ref":"main"}`) çağırır. Günlük iş de aynı yolla her gün 08:00
+TRT'de tetiklenir (`fetch-meetings.yml/dispatches`, 14 Ekim 2026'dan beri):
+GitHub onu son altı günde 05:00 UTC yerine 09:52–12:40 UTC arasında
+başlatmıştı. İki işin GitHub zamanlaması yedek olarak duruyor; çift koşu
+zararsız (veri değişmediyse commit yok, Telegram aynı mesajı iki kez
+göndermez). Yetki, yalnızca bu repoda *Actions: Read and write* izni olan
+fine-grained token (`faizradar-cron`) ile verilir; token cron-job.org'da
+durur, repoda değil.
 
 > ⚠️ **Token Ekim 2027'de (oluşturulduktan 1 yıl sonra) sona erer.** Süresi
-> dolunca cron-job.org 401 alır ve haberler yine yalnızca düzensiz GitHub
-> cron'uyla gelir — kimse fark etmeyebilir. Bitmeden: GitHub → Settings →
+> dolunca cron-job.org 401 alır; haberler ve günlük veri yine yalnızca
+> düzensiz GitHub cron'uyla gelir — kimse fark etmeyebilir. Bitmeden: GitHub → Settings →
 > Developer settings → Fine-grained tokens → `faizradar-cron` →
 > *Regenerate token*, yeni değeri cron-job.org'daki `Authorization: Bearer …`
-> başlığına yapıştırın; *Test run* 204 dönmeli. Haber işlerinin `event`'i
+> başlığına yapıştırın (iki işte de); *Test run* 204 dönmeli. Haber işlerinin `event`'i
 > Actions geçmişinde `workflow_dispatch` olarak görünüyorsa dış tetikleme
 > çalışıyordur, yalnızca `schedule` görünüyorsa durmuştur.
 
 **Fed olasılıkları yarım saatte bir, yalnızca dosya değiştiyse tazelenir.**
-Atlanta Fed MPT'yi bir iş günü gecikmeyle ABD sabahı yayımlıyor (9 Ekim 2026
-verisi 13 Ekim 13:55 UTC'de); günlük iş bizim sabahımızda koştuğu için site
+Atlanta Fed MPT'yi bir iş günü gecikmeyle ABD gündüzü yayımlıyor (9 Ekim 2026
+verisi 13 Ekim 13:55, 13 Ekim verisi 14 Ekim 17:54 UTC'de); günlük iş bizim sabahımızda koştuğu için site
 bir tur geriden geliyordu (14 Ekim'de 5 gün). Haber işi her koşuda dosyanın
 `Last-Modified`'ına HEAD ile bakar (`fetch:probabilities -- --if-changed`)
 ve değiştiyse indirir; tarih `probabilities.json`'da `sourceModified` olarak
