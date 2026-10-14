@@ -68,8 +68,13 @@ export async function WeekAhead({ lang, now }: { lang: Lang; now: Date }) {
     ...decisions.map((m) => ({ at: m.meetingAt, meeting: m })),
     ...weekEvents.map((e) => ({ at: e.at, event: e })),
   ];
+  // Öne çıkanlar yalnızca henüz olmamışlardan: bugünün sabah konuşmaları
+  // akşam da beş yerden birini tutuyordu. Geçmişler tam programda kalır.
   const highlighted = new Set(
-    [...weekEvents].sort((a, b) => weight(a) - weight(b) || a.at.localeCompare(b.at)).slice(0, HIGHLIGHTS),
+    weekEvents
+      .filter((e) => e.timeTbd || new Date(e.at) > now)
+      .sort((a, b) => weight(a) - weight(b) || a.at.localeCompare(b.at))
+      .slice(0, HIGHLIGHTS),
   );
   const main = all.filter((it) => "meeting" in it || highlighted.has(it.event));
   const hidden = weekEvents.length - highlighted.size;
@@ -175,7 +180,12 @@ function DayList({
                   currentRate={rates.find((r) => r.bankCode === it.meeting.bankCode)?.rate}
                 />
               ) : (
-                <EventItem key={it.event.id} event={it.event} lang={lang} />
+                <EventItem
+                  key={it.event.id}
+                  event={it.event}
+                  past={!it.event.timeTbd && new Date(it.event.at) <= now}
+                  lang={lang}
+                />
               ),
             )}
           </ul>
@@ -307,13 +317,21 @@ const ROLE_TR: Record<string, string> = {
   President: "Başkan",
 };
 
-function EventItem({ event, lang }: { event: CalendarEvent; lang: Lang }) {
+function EventItem({ event, past, lang }: { event: CalendarEvent; past: boolean; lang: Lang }) {
   const t = L(lang);
+  // Geçmiş etkinlik soluklaştırılmaz (gri metnin kontrastı düşerdi): saatin
+  // altında "geçti" yazar, metin gri tona iner.
+  const time = (
+    <span className="tabular w-11 shrink-0 pt-0.5 text-muted">
+      {event.timeTbd ? "—" : formatTimeTrt(event.at)}
+      {past && <span className="block text-xs">{t("geçti", "past")}</span>}
+    </span>
+  );
   if (event.kind === "cpi") {
     const bank = BANKS[event.bankCode];
     return (
-      <li className="flex gap-3 text-sm">
-        <span className="tabular w-11 shrink-0 pt-0.5 text-muted">{formatTimeTrt(event.at)}</span>
+      <li className={`flex gap-3 text-sm ${past ? "text-muted" : ""}`}>
+        {time}
         <div className="min-w-0 flex-1">
           <span className="rounded border border-border px-1.5 py-0.5 text-xs text-muted">{t("veri", "data")}</span>{" "}
           <span className="font-medium">
@@ -328,8 +346,8 @@ function EventItem({ event, lang }: { event: CalendarEvent; lang: Lang }) {
   const role = event.role && (lang === "en" ? event.role : (ROLE_TR[event.role] ?? event.role));
   const publication = event.kind === "minutes" || event.kind === "beige-book";
   return (
-    <li className="flex gap-3 text-sm">
-      <span className="tabular w-11 shrink-0 pt-0.5 text-muted">{event.timeTbd ? "—" : formatTimeTrt(event.at)}</span>
+    <li className={`flex gap-3 text-sm ${past ? "text-muted" : ""}`}>
+      {time}
       <div className="min-w-0 flex-1">
         <div>
           <BankTag code={event.bankCode} lang={lang} />{" "}

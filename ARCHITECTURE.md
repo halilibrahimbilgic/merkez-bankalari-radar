@@ -444,7 +444,9 @@ işle birikimi eritir.
 `/kararlar` başında faiz döngüsü; 19 konuşmacı sayfası; `/skor`'da aylık
 seyir tablosu; TCMB için ileriye dönük reel faiz; site haritasında gerçek
 `lastModified` (karar: özet tarihi, konuşma: skor tarihi, rehber:
-`updatedOn`; yasal sayfalarda alan yok). 47 konuşma, hepsi skorlu.
+`updatedOn`; yasal sayfalarda alan yok). 47 konuşma, hepsi skorlu. Banka
+sayfaları sıradaki toplantının beklentisini gösterir (ana sayfa kartıyla
+aynı hesap: `src/views/bank-expectations.ts`).
 
 ---
 

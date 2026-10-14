@@ -49,6 +49,17 @@ export function ExpectedPathChart({
     return labels.lang === "en" ? `${s}%` : `%${s.replace(".", ",")}`;
   };
 
+  // Eksen yuvarlak değerlerde: "dataMin - 20" sınırı %2,12 / %7,02 gibi
+  // okunması zor etiketler üretiyordu (14 Ekim 2026).
+  const values = data.flatMap((d) => [...d.band, d.mean]);
+  if (targetRange) values.push(targetRange.lowerBps, targetRange.upperBps);
+  const min = Math.min(...values) - 20;
+  const max = Math.max(...values) + 20;
+  const step = max - min > 300 ? 100 : 50;
+  const lo = Math.floor(min / step) * step;
+  const hi = Math.ceil(max / step) * step;
+  const ticks = Array.from({ length: (hi - lo) / step + 1 }, (_, i) => lo + i * step);
+
   return (
     <div>
       {/* Grafikte üç ayrı görsel eleman var; hangisinin ne olduğunu yazıyoruz. */}
@@ -104,7 +115,8 @@ export function ExpectedPathChart({
             stroke="var(--border)"
             width={52}
             tickFormatter={fmt}
-            domain={["dataMin - 20", "dataMax + 20"]}
+            domain={[lo, hi]}
+            ticks={ticks}
           />
           <Tooltip
             contentStyle={{

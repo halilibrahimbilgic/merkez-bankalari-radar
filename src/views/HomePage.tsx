@@ -1,25 +1,23 @@
 import type { Metadata } from "next";
 import Link from "next/link";
 import { BankCard } from "@/components/BankCard";
-import { BankSummaryList, type ExpectationChip } from "@/components/BankSummaryList";
+import { BankSummaryList } from "@/components/BankSummaryList";
 import { BankTag, ScoreBadge } from "@/components/ScoreBadge";
 import { EmptyState, Row, Rows, SectionHeader } from "@/components/ui";
-import type { OddsRow } from "@/components/RateOdds";
 import { CALENDAR_BANK_CODES } from "@/lib/banks";
 import { getUpcomingMeetings } from "@/lib/data/meetings";
 import { getCurrentRates } from "@/lib/data/rates";
 import { getProbabilitySnapshot } from "@/lib/data/probabilities";
 import { getBankScoreSummaries, getSpeeches } from "@/lib/data/speeches";
-import { getExpectations } from "@/lib/data/expectations";
 import { getNews } from "@/lib/data/news";
 import { getDecisionViews } from "@/lib/data/decisions";
 import { getInflation } from "@/lib/data/inflation";
 import { realRate } from "@/lib/real-rates";
+import { getBankExpectations } from "./bank-expectations";
 import { DecisionRow } from "./DecisionsPage";
 import { WeekAhead } from "./WeekAhead";
 import { NewsList } from "@/components/NewsList";
-import { moveOdds } from "@/lib/implied-path";
-import { fmtPercent, L, languageAlternates, localePath, type Lang } from "@/lib/i18n";
+import { L, languageAlternates, localePath, type Lang } from "@/lib/i18n";
 import { speechTitle } from "@/lib/speech-i18n";
 import { countdownLabel, formatDate } from "@/lib/time";
 
@@ -39,7 +37,7 @@ export async function HomePage({ lang }: { lang: Lang }) {
     getBankScoreSummaries(),
     getProbabilitySnapshot(),
     getSpeeches({ scoredOnly: true, limit: 4 }),
-    getExpectations(),
+    getBankExpectations(lang, now),
   ]);
   const [news, decisions, inflation] = await Promise.all([
     getNews({ limit: 4 }),
@@ -50,73 +48,6 @@ export async function HomePage({ lang }: { lang: Lang }) {
     const rate = rates.find((r) => r.bankCode === code);
     const infl = inflation.find((i) => i.bankCode === code);
     return rate && infl ? realRate(rate, infl) : undefined;
-  };
-
-  // BoE: OIS eğrisinden sıradaki MPC için fiyatlanan 25 bp adım ihtimali.
-  const boeNext = expectations.boe?.meetings.find((m) => new Date(m.meetingAt) > now);
-  const boeMove = boeNext && moveOdds(boeNext.changeBp);
-  const boeOdds: OddsRow[] | undefined = boeMove && [
-    { direction: "up", label: t("Artırım", "Hike"), pct: boeMove.direction === "hike" ? boeMove.pct : 0 },
-    { direction: "flat", label: t("Sabit", "Hold"), pct: boeMove.direction === "hold" ? 100 : 100 - boeMove.pct },
-    { direction: "down", label: t("İndirim", "Cut"), pct: boeMove.direction === "cut" ? boeMove.pct : 0 },
-  ];
-
-  // ECB: analist anketinin olasılık verdiği, henüz yapılmamış ilk toplantı.
-  const ecbNext = expectations.ecb?.meetings.find((m) => m.odds && new Date(m.meetingAt) > now);
-  const ecbOdds: OddsRow[] | undefined = ecbNext?.odds && [
-    { direction: "up", label: t("Artırım", "Hike"), pct: ecbNext.odds.hike },
-    { direction: "flat", label: t("Sabit", "Hold"), pct: ecbNext.odds.hold },
-    { direction: "down", label: t("İndirim", "Cut"), pct: ecbNext.odds.cut },
-  ];
-
-  // TCMB: anketin henüz gerçekleşmemiş ilk toplantısı.
-  const tcmbNext = expectations.tcmb?.meetings.find((m) => new Date(m.meetingAt) > now);
-  const tcmbNote =
-    tcmbNext &&
-    t(
-      `${formatDate(tcmbNext.meetingAt, lang)} PPK için ${fmtPercent(tcmbNext.expectedRate, lang)}` +
-        (expectations.tcmb?.yearEnd !== undefined
-          ? `, yıl sonu için ${fmtPercent(expectations.tcmb.yearEnd, lang)}`
-          : ""),
-      `${fmtPercent(tcmbNext.expectedRate, lang)} for the ${formatDate(tcmbNext.meetingAt, lang)} meeting` +
-        (expectations.tcmb?.yearEnd !== undefined
-          ? `, ${fmtPercent(expectations.tcmb.yearEnd, lang)} by year-end`
-          : ""),
-    );
-
-  // Fed olasılıkları yalnızca Fed kartında gösterilir — kaynağımız
-  // Fed Funds/SOFR üzerinedir, diğer bankalar için karşılığı yok.
-  const window = probability?.windows[0];
-  const fedOdds: OddsRow[] | undefined =
-    window && window.probHikePct !== undefined && window.probCutPct !== undefined
-      ? [
-          { direction: "up", label: t("Aralığın üzeri", "Above range"), pct: window.probHikePct },
-          {
-            direction: "flat",
-            label: t("Aralık içinde", "Within range"),
-            pct: Math.max(0, 100 - window.probHikePct - window.probCutPct),
-          },
-          { direction: "down", label: t("Aralığın altı", "Below range"), pct: window.probCutPct },
-        ]
-      : undefined;
-
-  // Telefon listesi için beklentinin tek bakışlık özeti — kartlardaki
-  // satırlarla aynı veri, en olası sonuç.
-  const top = (rows?: OddsRow[]) => rows?.reduce((a, b) => (b.pct > a.pct ? b : a));
-  const chipFrom = (row: OddsRow | undefined, suffix = ""): ExpectationChip | undefined =>
-    row && { direction: row.direction, text: `${fmtPercent(row.pct, lang, 0)} ${row.label.toLocaleLowerCase(lang === "en" ? "en" : "tr")}${suffix}` };
-  const tcmbCurrent = rates.find((r) => r.bankCode === "tcmb")?.rate;
-  const chips: Partial<Record<(typeof CALENDAR_BANK_CODES)[number], ExpectationChip>> = {
-    fed: chipFrom(top(fedOdds), t(" (3 ay ort.)", " (3-month avg.)")),
-    ecb: chipFrom(top(ecbOdds)),
-    boe: chipFrom(top(boeOdds)),
-    tcmb:
-      tcmbNext && tcmbCurrent !== undefined
-        ? {
-            direction: tcmbNext.expectedRate > tcmbCurrent ? "up" : tcmbNext.expectedRate < tcmbCurrent ? "down" : "flat",
-            text: t(`anket ${fmtPercent(tcmbNext.expectedRate, lang)}`, `survey ${fmtPercent(tcmbNext.expectedRate, lang)}`),
-          }
-        : undefined,
   };
 
   return (
@@ -158,7 +89,7 @@ export async function HomePage({ lang }: { lang: Lang }) {
             next: upcoming.find((m) => m.bankCode === code),
             rate: rates.find((r) => r.bankCode === code),
             real: realRateOf(code),
-            chip: chips[code],
+            chip: expectations[code]?.chip,
           }))}
         />
         <div className="hidden gap-4 sm:grid md:grid-cols-2 lg:grid-cols-3">
@@ -170,31 +101,10 @@ export async function HomePage({ lang }: { lang: Lang }) {
               nextMeeting={upcoming.find((m) => m.bankCode === code)}
               currentRate={rates.find((r) => r.bankCode === code)}
               score={scores.find((s) => s.bankCode === code)}
-              odds={code === "fed" ? fedOdds : code === "boe" ? boeOdds : code === "ecb" ? ecbOdds : undefined}
-              oddsTitle={
-                code === "ecb" && ecbNext
-                  ? t(
-                      `Analist anketi · ${formatDate(ecbNext.meetingAt, lang)}`,
-                      `Analyst survey · ${formatDate(ecbNext.meetingAt, lang)}`,
-                    )
-                  : code === "boe" && boeNext
-                  ? t(
-                      `Piyasa fiyatlaması · ${formatDate(boeNext.meetingAt, lang)} MPC`,
-                      `Market pricing · ${formatDate(boeNext.meetingAt, lang)} MPC`,
-                    )
-                  : undefined
-              }
-              oddsNote={
-                code === "fed" && window
-                  ? t(
-                      `${formatDate(window.startDate, lang)} itibarıyla başlayan üç aylık dönem için ortalama faiz`,
-                      `Average rate over the three-month period starting ${formatDate(window.startDate, lang)}`,
-                    )
-                  : code === "boe" && boeOdds
-                    ? t("OIS eğrisinden yaklaşık, 25 bp adım varsayımıyla", "Approximate, from the OIS curve, assuming 25 bp steps")
-                    : undefined
-              }
-              surveyNote={code === "tcmb" ? tcmbNote : undefined}
+              odds={expectations[code]?.odds}
+              oddsTitle={expectations[code]?.oddsTitle}
+              oddsNote={expectations[code]?.oddsNote}
+              surveyNote={expectations[code]?.surveyNote}
               realRate={realRateOf(code)}
             />
           ))}

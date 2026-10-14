@@ -1,6 +1,7 @@
 import type { Metadata } from "next";
 import Link from "next/link";
 import { notFound } from "next/navigation";
+import { ExpectationDetails } from "@/components/BankCard";
 import { MeetingRow } from "@/components/MeetingRow";
 import { ScoreBadge } from "@/components/ScoreBadge";
 import {
@@ -19,6 +20,7 @@ import { forwardRealRate, realRate } from "@/lib/real-rates";
 import { getExpectations } from "@/lib/data/expectations";
 import { speechTitle } from "@/lib/speech-i18n";
 import { formatDate, formatMeeting, formatTimeTrt, monthLabel } from "@/lib/time";
+import { getBankExpectations } from "./bank-expectations";
 
 export async function bankMetadata(lang: Lang, code: string): Promise<Metadata> {
   const bank = getBank(code);
@@ -79,6 +81,8 @@ export async function BankPage({ lang, code }: { lang: Lang; code: string }) {
   const real = currentRate && inflation ? realRate(currentRate, inflation) : undefined;
   const survey = bank.code === "tcmb" ? (await getExpectations()).tcmb : undefined;
   const forward = real && survey?.inflation12 !== undefined ? forwardRealRate(real.policy, survey.inflation12) : undefined;
+  const expectation = (await getBankExpectations(lang, now))[bank.code];
+  const hasExpectation = !!(expectation?.odds || expectation?.surveyNote);
 
   return (
     <div className="space-y-8">
@@ -163,6 +167,34 @@ export async function BankPage({ lang, code }: { lang: Lang; code: string }) {
           <div className="mt-1 text-lg font-semibold tabular">
             {formatMeeting(next.meetingAt, next.timeTbd, lang)}
           </div>
+          {/* "Ne bekleniyor?" banka sayfasının asıl sorusu; önceden yalnızca ana sayfada vardı. */}
+          {hasExpectation ? (
+            <>
+              <ExpectationDetails
+                odds={expectation?.odds}
+                oddsTitle={expectation?.oddsTitle}
+                oddsNote={expectation?.oddsNote}
+                surveyNote={expectation?.surveyNote}
+                lang={lang}
+              />
+              <Link
+                href={`${p("/faiz-olasiligi")}#${bank.code}`}
+                className="mt-2 inline-flex min-h-9 items-center text-sm text-accent hover:underline"
+              >
+                {t("Beklentinin ayrıntısı ve seyri →", "Expectation details and history →")}
+              </Link>
+            </>
+          ) : (
+            // BoJ ve RBA için kaynak yok (ARCHITECTURE.md §6); diğerlerinde veri geçici olarak eksik olabilir.
+            (bank.code === "boj" || bank.code === "rba") && (
+              <p className="mt-4 border-t border-border pt-3 text-sm text-muted">
+                {t(
+                  "Bu banka için yeniden yayımlanabilir bir beklenti kaynağı yok: piyasa verisi borsaların lisanslı ürünü.",
+                  "There is no republishable expectation source for this bank: the market data is the exchanges' licensed product.",
+                )}
+              </p>
+            )
+          )}
         </section>
       ) : (
         <p className="card p-5 text-muted">

@@ -148,6 +148,35 @@ export function BankCard({
         </div>
       </dl>
 
+      <ExpectationDetails odds={odds} oddsTitle={oddsTitle} oddsNote={oddsNote} surveyNote={surveyNote} lang={lang} />
+
+      <Link
+        href={href}
+        className="mt-auto inline-flex min-h-9 items-center pt-4 text-sm text-accent hover:underline"
+      >
+        {t(`${name} ayrıntısı →`, `${name} details →`)}
+      </Link>
+    </article>
+  );
+}
+
+/** Beklenti blokları — piyasa olasılıkları ve/veya anket; kart ve banka sayfası ortak. */
+export function ExpectationDetails({
+  odds,
+  oddsTitle,
+  oddsNote,
+  surveyNote,
+  lang,
+}: {
+  odds?: OddsRow[];
+  oddsTitle?: string;
+  oddsNote?: string;
+  surveyNote?: string;
+  lang: Lang;
+}) {
+  const t = L(lang);
+  return (
+    <>
       {odds && odds.length > 0 && (
         <div className="mt-4 border-t border-border pt-3">
           <div className="mb-2 text-sm text-muted">{oddsTitle ?? t("Piyasa fiyatlaması", "Market pricing")}</div>
@@ -162,13 +191,6 @@ export function BankCard({
           <p>{surveyNote}</p>
         </div>
       )}
-
-      <Link
-        href={href}
-        className="mt-auto inline-flex min-h-9 items-center pt-4 text-sm text-accent hover:underline"
-      >
-        {t(`${name} ayrıntısı →`, `${name} details →`)}
-      </Link>
-    </article>
+    </>
   );
 }
