@@ -1,6 +1,21 @@
 {
-  "fetchedAt": "2026-10-14T16:31:35.550Z",
+  "fetchedAt": "2026-10-14T17:01:52.475Z",
   "items": [
+    {
+      "id": "99e22204bd6c",
+      "sourceKey": "cnbc-economy",
+      "sourceName": "CNBC",
+      "kind": "media",
+      "url": "https://www.cnbc.com/2026/10/14/high-inflation-fed-expectations.html",
+      "publishedAt": "2026-10-14T16:49:18.000Z",
+      "titleOriginal": "How high inflation became a 'fact of life' in the U.S.",
+      "titleTr": "ABD'de yüksek enflasyon nasıl \"hayatın gerçeği\" oldu",
+      "summaryTr": "CNBC'ye göre ABD enflasyonu yıllardır yüksek seyrediyor. Bu durum Fed'de, tüketicilerin yüksek fiyatları kalıcı olarak beklemeye başlayabileceği endişesini artırıyor.",
+      "titleEn": "How high inflation became a 'fact of life' in the U.S.",
+      "summaryEn": "CNBC reports that U.S. inflation has stayed elevated for years. This is raising concern at the Fed that consumers may come to expect persistently high prices.",
+      "important": false,
+      "processedAt": "2026-10-14T17:01:52.475Z"
+    },
     {
       "id": "a3ff2c6c0b6f",
       "sourceKey": "marketwatch",
@@ -737,6 +752,7 @@
     "63683e5df339": "2026-10-14",
     "38a3862610e1": "2026-10-14",
     "0afe5f57a7e7": "2026-10-14",
-    "f944148494f6": "2026-10-14"
+    "f944148494f6": "2026-10-14",
+    "69ef757a95f3": "2026-10-14"
   }
 }
