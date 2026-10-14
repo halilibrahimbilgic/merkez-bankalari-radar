@@ -29,6 +29,8 @@ type Item = { at: string; meeting: Meeting } | { at: string; event: CalendarEven
 
 /** Piyasa için önem sırası: parlamento sunumu, yayın, başkanların sözleri, diğerleri. */
 function weight(e: CalendarEvent): number {
+  // Türkiye enflasyonu bu sitenin okuru için haftanın en önemli verisi.
+  if (e.kind === "cpi") return e.bankCode === "tcmb" ? 0 : 1;
   if (e.kind === "testimony") return 0;
   if (e.kind === "minutes" || e.kind === "beige-book") return 1;
   if (e.role === "Chair" || e.role === "President") return 2;
@@ -86,8 +88,8 @@ export async function WeekAhead({ lang, now }: { lang: Lang; now: Date }) {
         id="bu-hafta"
         title={t("Bu hafta", "This week")}
         description={t(
-          `${formatDate(now.toISOString(), lang)} – ${formatDate(lastDay, lang)} · faiz kararları ve merkez bankacılarının programı, Türkiye saatiyle`,
-          `${formatDate(now.toISOString(), lang)} – ${formatDate(lastDay, lang)} · rate decisions and central bankers' schedules, in Turkey time`,
+          `${formatDate(now.toISOString(), lang)} – ${formatDate(lastDay, lang)} · faiz kararları, merkez bankacılarının programı ve enflasyon verileri, Türkiye saatiyle`,
+          `${formatDate(now.toISOString(), lang)} – ${formatDate(lastDay, lang)} · rate decisions, central bankers' schedules and inflation releases, in Turkey time`,
         )}
         action={{ href: localePath(lang, "/takvim"), label: t("Takvim", "Calendar") }}
       />
@@ -134,8 +136,8 @@ export async function WeekAhead({ lang, now }: { lang: Lang; now: Date }) {
 
         <p className="mt-4 text-xs text-muted">
           {t(
-            "Konuşmalar Fed ve ECB yönetim kurullarının resmî takviminden; diğer bankalar ileriye dönük program yayımlamıyor. Etkinlik adları kaynağın dilinde (İngilizce).",
-            "Speeches come from the official calendars of the Fed Board and the ECB Executive Board; the other banks do not publish forward schedules.",
+            "Konuşmalar Fed ve ECB yönetim kurullarının resmî takviminden; diğer bankalar ileriye dönük program yayımlamıyor. Etkinlik adları kaynağın dilinde (İngilizce). Enflasyon tarihleri ABD, Türkiye, İngiltere, Japonya ve Avustralya'nın istatistik kurumlarından; Eurostat takvimi makinece okunamıyor.",
+            "Speeches come from the official calendars of the Fed Board and the ECB Executive Board; the other banks do not publish forward schedules. Inflation release dates come from the statistics agencies of the US, Türkiye, the UK, Japan and Australia; Eurostat's calendar is not machine-readable.",
           )}
         </p>
       </div>
@@ -294,6 +296,7 @@ const KIND: Record<EventKind, [string, string]> = {
   testimony: ["parlamento sunumu", "testimony"],
   minutes: ["FOMC tutanağı", "FOMC minutes"],
   "beige-book": ["Bej Kitap (bölgesel ekonomi raporu)", "Beige Book (regional economy report)"],
+  cpi: ["enflasyon verisi", "inflation data"],
 };
 
 const ROLE_TR: Record<string, string> = {
@@ -306,6 +309,21 @@ const ROLE_TR: Record<string, string> = {
 
 function EventItem({ event, lang }: { event: CalendarEvent; lang: Lang }) {
   const t = L(lang);
+  if (event.kind === "cpi") {
+    const bank = BANKS[event.bankCode];
+    return (
+      <li className="flex gap-3 text-sm">
+        <span className="tabular w-11 shrink-0 pt-0.5 text-muted">{formatTimeTrt(event.at)}</span>
+        <div className="min-w-0 flex-1">
+          <span className="rounded border border-border px-1.5 py-0.5 text-xs text-muted">{t("veri", "data")}</span>{" "}
+          <span className="font-medium">
+            {t(`${bank.countryTr} enflasyonu (TÜFE)`, `${bank.countryEn} inflation (CPI)`)}
+          </span>
+          {event.period && lang === "tr" && <span className="text-muted"> · {event.period}</span>}
+        </div>
+      </li>
+    );
+  }
   const [kindTr, kindEn] = KIND[event.kind];
   const role = event.role && (lang === "en" ? event.role : (ROLE_TR[event.role] ?? event.role));
   const publication = event.kind === "minutes" || event.kind === "beige-book";

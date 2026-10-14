@@ -2,6 +2,8 @@ import "server-only";
 import { readFile } from "node:fs/promises";
 import path from "node:path";
 import { getPool } from "../db";
+import { ALL_BANKS } from "../banks";
+import { speakerSlug } from "../speakers";
 import type { BankCode, ScoredVia, Speech } from "../types";
 import type { TextLicense } from "../text-license";
 import { toParagraphs } from "../speech-format";
@@ -204,6 +206,78 @@ export async function getBankScoreSummaries(): Promise<BankScoreSummary[]> {
     })
     .filter((s) => s.speechCount > 0)
     .sort((a, b) => b.averageScore - a.averageScore);
+}
+
+/** Sinyal taşıyan skorlu konuşmaların ortalaması — banka ortalamasıyla aynı kural. */
+function signalAverage(list: Speech[]): { average?: number; count: number } {
+  const signal = list.filter((s) => s.hawkDoveScore !== undefined && s.hasPolicySignal !== false);
+  if (signal.length === 0) return { count: 0 };
+  const sum = signal.reduce((acc, s) => acc + s.hawkDoveScore!, 0);
+  return { average: Math.round((sum / signal.length) * 10) / 10, count: signal.length };
+}
+
+export interface SpeakerSummary {
+  slug: string;
+  name: string;
+  /** En yeni konuşmasındaki banka. */
+  bankCode: BankCode;
+  speechCount: number;
+  /** Ortalamaya giren (sinyal taşıyan, skorlu) konuşma sayısı. */
+  signalCount: number;
+  averageScore?: number;
+  latestDate: string;
+}
+
+/** Arşivdeki konuşmacılar, en çok konuşan önce. */
+export async function getSpeakers(): Promise<SpeakerSummary[]> {
+  const speeches = await getSpeeches();
+  const bySlug = new Map<string, Speech[]>();
+  for (const s of speeches) {
+    const slug = speakerSlug(s.speakerName);
+    bySlug.set(slug, [...(bySlug.get(slug) ?? []), s]);
+  }
+  return [...bySlug]
+    .map(([slug, list]) => {
+      const { average, count } = signalAverage(list);
+      return {
+        slug,
+        name: list[0].speakerName,
+        bankCode: list[0].bankCode,
+        speechCount: list.length,
+        signalCount: count,
+        averageScore: average,
+        latestDate: list[0].speechDate,
+      };
+    })
+    .sort((a, b) => b.speechCount - a.speechCount || a.name.localeCompare(b.name, "tr"));
+}
+
+/** Bir konuşmacının konuşmaları, en yeni önce. */
+export async function getSpeakerSpeeches(slug: string): Promise<Speech[]> {
+  return (await getSpeeches()).filter((s) => speakerSlug(s.speakerName) === slug);
+}
+
+export interface BankScoreTrend {
+  bankCode: BankCode;
+  /** `months` sırasıyla; konuşma yoksa count 0. */
+  months: { month: string; average?: number; count: number }[];
+}
+
+/**
+ * Banka başına aylık ortalama (konuşma tarihine göre) — "bir ay önce +6
+ * olan komite bugün +4" sorusu için. Ayları çağıran verir (YYYY-AA).
+ */
+export async function getScoreTrend(months: string[]): Promise<BankScoreTrend[]> {
+  const speeches = await getSpeeches({ scoredOnly: true });
+  return ALL_BANKS.map((b) => b.code)
+    .map((bankCode) => ({
+      bankCode,
+      months: months.map((month) => ({
+        month,
+        ...signalAverage(speeches.filter((s) => s.bankCode === bankCode && s.speechDate.startsWith(month))),
+      })),
+    }))
+    .filter((b) => b.months.some((m) => m.count > 0));
 }
 
 export interface BankCoverage {

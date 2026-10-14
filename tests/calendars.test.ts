@@ -72,3 +72,31 @@ Participation by Ms Lagarde in fireside chat with Josh Lipsky
 test("varlık çözücü: aksanlı harfler ve tipografik tırnaklar", () => {
   assert.equal(decodeEntities("World&rsquo;s Caf&eacute; &ldquo;x&rdquo; M&uuml;nchen"), "World’s Café “x” München");
 });
+
+test("TÜFE takvimleri: TÜİK, ONS, Japonya tablosu, ABS", async () => {
+  const { parseTuikCalendar, parseOnsNextRelease, parseJapanSchedule, parseAbsNextReleases } = await import(
+    "../src/lib/sources/release-calendars"
+  );
+  const tuik = parseTuikCalendar(
+    {
+      yayindaOlmayanlarList: [
+        { adi: "Tüketici Fiyat Endeksi (TÜFE)", gTarih: "2026-11-03T10:00:00", donemi: "Ekim 2026", dilId: 1 },
+        { adi: "Consumer Price Index", gTarih: "2026-11-03T10:00:00", dilId: 2 },
+        { adi: "Yurt İçi Üretici Fiyat Endeksi (Yİ-ÜFE)", gTarih: "2026-11-03T10:00:00", dilId: 1 },
+      ],
+    },
+    "2026-10-01",
+    "2026-11-30",
+  );
+  assert.equal(tuik.length, 1);
+  assert.equal(tuik[0].at, "2026-11-03T07:00:00.000Z");
+  assert.equal(tuik[0].period, "Ekim 2026");
+  assert.equal(parseOnsNextRelease({ description: { nextRelease: "21 October 2026" } }), "2026-10-21");
+  // Yıl yalnızca ilk satırda; aralıktan ocağa geçişte artar.
+  const row = (a: string, b: string) => `<tr><td>${a}</td><td>${b}</td><td>x</td><td>y</td><td></td></tr>`;
+  assert.deepEqual(
+    parseJapanSchedule(`<table>${row("December, 2025", "January 23, 2026")}${row("October", "November 20")}${row("November", "December 18")}${row("December", "January 22")}</table>`),
+    ["2026-01-23", "2026-11-20", "2026-12-18", "2027-01-22"],
+  );
+  assert.deepEqual(parseAbsNextReleases("Future releases Next Release 28/10/2026 x Next Release 25/11/2026"), ["2026-10-28", "2026-11-25"]);
+});

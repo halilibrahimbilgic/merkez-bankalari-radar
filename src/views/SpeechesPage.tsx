@@ -6,6 +6,7 @@ import { ScoringGap } from "@/components/ScoringGap";
 import { isBankCode } from "@/lib/banks";
 import { getBankCodesWithSpeeches, getScoringStatus, getSpeeches } from "@/lib/data/speeches";
 import { L, languageAlternates, localePath, type Lang } from "@/lib/i18n";
+import { speakerSlug } from "@/lib/speakers";
 import { speechSummary, speechTitle } from "@/lib/speech-i18n";
 import { formatDate } from "@/lib/time";
 import type { BankCode } from "@/lib/types";
@@ -70,7 +71,12 @@ export async function SpeechesPage({
                   <BankTag code={s.bankCode} lang={lang} />
                   <span className="tabular">{formatDate(s.speechDate, lang)}</span>
                   <span>·</span>
-                  <span>{s.speakerName}</span>
+                  <Link
+                    href={localePath(lang, `/konusmaci/${speakerSlug(s.speakerName)}`)}
+                    className="hover:text-accent hover:underline"
+                  >
+                    {s.speakerName}
+                  </Link>
                   <span className="ml-auto">
                     <ScoreBadge score={s.hawkDoveScore} hasPolicySignal={s.hasPolicySignal} lang={lang} />
                   </span>

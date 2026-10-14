@@ -79,6 +79,11 @@ const SOURCES: Record<Lang, Source[]> = {
       note: "Her ülkenin son yıllık tüketici enflasyonu, resmî istatistik kurumundan: ABD BLS (FRED), euro bölgesi Eurostat HICP (ECB Data Portal), Türkiye TÜİK (EVDS), Birleşik Krallık ONS, Japonya İstatistik Bürosu (e-Stat), Avustralya ABS (RBA G4 tablosu).",
     },
     {
+      name: "Enflasyon açıklama takvimleri",
+      url: "https://www.tuik.gov.tr/Kurumsal/Veri_Takvimi",
+      note: "\"Bu hafta\" bölümündeki TÜFE açıklama tarihleri: ABD (FRED yayın takvimi), Türkiye (TÜİK veri takvimi), Birleşik Krallık (ONS), Japonya (İstatistik Bürosu) ve Avustralya (ABS). Eurostat'ın takvimi makinece okunur biçimde sunulmadığı için euro bölgesi yok.",
+    },
+    {
       name: "ECB — Survey of Monetary Analysts",
       url: "https://www.ecb.europa.eu/stats/ecb_surveys/sma/html/index.en.html",
       note: "ECB'nin her Yönetim Konseyi toplantısı öncesi yaptığı analist anketi: toplantı başına mevduat faizi medyanı ve aralığı, sonraki iki toplantı için olasılık dağılımı. Sonuçlar yalnızca PDF olarak yayımlandığı için PDF metninden okunur.",
@@ -169,6 +174,11 @@ const SOURCES: Record<Lang, Source[]> = {
       name: "Inflation (real rate table)",
       url: "https://www.ons.gov.uk/economy/inflationandpriceindices/timeseries/d7g7/mm23",
       note: "Each economy's latest annual consumer price inflation from its official statistics agency: US BLS (FRED), euro area Eurostat HICP (ECB Data Portal), Türkiye TurkStat (EVDS), UK ONS, Japan Statistics Bureau (e-Stat), Australia ABS (RBA table G4).",
+    },
+    {
+      name: "Inflation release calendars",
+      url: "https://www.tuik.gov.tr/Kurumsal/Veri_Takvimi",
+      note: "The CPI release dates in the \"This week\" section: the United States (FRED release calendar), Türkiye (TurkStat data calendar), the United Kingdom (ONS), Japan (Statistics Bureau) and Australia (ABS). The euro area is missing because Eurostat's calendar is not offered in a machine-readable form.",
     },
     {
       name: "ECB — Survey of Monetary Analysts",

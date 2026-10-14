@@ -1,5 +1,5 @@
 {
-  "fetchedAt": "2026-10-13T20:22:55.359Z",
+  "fetchedAt": "2026-10-14T12:10:59.470Z",
   "events": [
     {
       "id": "ecb-2026-10-13-1h8o6s9",
@@ -86,6 +86,15 @@
       "url": "https://www.federalreserve.gov/newsevents/calendar.htm"
     },
     {
+      "id": "fed-cpi-2026-10-14",
+      "bankCode": "fed",
+      "at": "2026-10-14T12:30:00.000Z",
+      "timeTbd": false,
+      "kind": "cpi",
+      "title": "CPI",
+      "url": "https://www.bls.gov/schedule/news_release/cpi.htm"
+    },
+    {
       "id": "ecb-2026-10-14-hbn79k",
       "bankCode": "ecb",
       "at": "2026-10-14T16:15:00.000Z",
@@ -126,6 +135,26 @@
       "url": "https://www.federalreserve.gov/newsevents/calendar.htm"
     },
     {
+      "id": "ecb-2026-10-15-7kdfaz",
+      "bankCode": "ecb",
+      "at": "2026-10-15T06:30:00.000Z",
+      "timeTbd": false,
+      "kind": "discussion",
+      "speaker": "Piero Cipollone",
+      "title": "Participation by Mr Cipollone in roundtable discussion on cross border payments at GFTN Select Thailand in Bangkok, Thailand",
+      "url": "https://www.ecb.europa.eu/press/calendars/weekly/html/index.en.html"
+    },
+    {
+      "id": "ecb-2026-10-15-awri9a",
+      "bankCode": "ecb",
+      "at": "2026-10-15T08:15:00.000Z",
+      "timeTbd": false,
+      "kind": "discussion",
+      "speaker": "Piero Cipollone",
+      "title": "Participation by Mr Cipollone in roundtable discussion on tokenisation at GFTN Select Thailand in Bangkok, Thailand",
+      "url": "https://www.ecb.europa.eu/press/calendars/weekly/html/index.en.html"
+    },
+    {
       "id": "fed-2026-10-15-1ydsy2m",
       "bankCode": "fed",
       "at": "2026-10-16T03:30:00.000Z",
@@ -135,6 +164,43 @@
       "role": "Chair",
       "title": "At the Fireside Chat with International Monetary Fund (IMF) Managing Director Kristalina Georgieva, Bangkok, Thailand",
       "url": "https://www.federalreserve.gov/newsevents/calendar.htm"
+    },
+    {
+      "id": "boe-cpi-2026-10-21",
+      "bankCode": "boe",
+      "at": "2026-10-21T06:00:00.000Z",
+      "timeTbd": false,
+      "kind": "cpi",
+      "title": "CPI",
+      "url": "https://www.ons.gov.uk/releasecalendar"
+    },
+    {
+      "id": "boj-cpi-2026-10-22",
+      "bankCode": "boj",
+      "at": "2026-10-22T23:30:00.000Z",
+      "timeTbd": false,
+      "kind": "cpi",
+      "title": "CPI",
+      "url": "https://www.stat.go.jp/english/data/cpi/1582.html"
+    },
+    {
+      "id": "rba-cpi-2026-10-28",
+      "bankCode": "rba",
+      "at": "2026-10-28T00:30:00.000Z",
+      "timeTbd": false,
+      "kind": "cpi",
+      "title": "CPI",
+      "url": "https://www.abs.gov.au/statistics/economy/price-indexes-and-inflation/consumer-price-index-australia/latest-release"
+    },
+    {
+      "id": "tcmb-cpi-2026-11-03",
+      "bankCode": "tcmb",
+      "at": "2026-11-03T07:00:00.000Z",
+      "timeTbd": false,
+      "kind": "cpi",
+      "title": "CPI Ekim 2026",
+      "period": "Ekim 2026",
+      "url": "https://www.tuik.gov.tr/Kurumsal/Veri_Takvimi"
     }
   ]
 }

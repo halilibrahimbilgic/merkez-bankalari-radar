@@ -103,14 +103,17 @@ export function TableFrame({
 export function Th({
   children,
   align = "left",
+  className = "",
 }: {
   children: ReactNode;
   align?: "left" | "right";
+  /** Ör. telefonda gizlenen sütun için "max-sm:hidden". */
+  className?: string;
 }) {
   return (
     <th
       scope="col"
-      className={`px-4 py-2.5 font-medium ${align === "right" ? "text-right" : "text-left"}`}
+      className={`px-4 py-2.5 font-medium ${align === "right" ? "text-right" : "text-left"} ${className}`}
     >
       {children}
     </th>

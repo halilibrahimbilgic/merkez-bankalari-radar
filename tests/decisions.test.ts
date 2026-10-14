@@ -95,3 +95,25 @@ test("ileriye dönük reel faiz: basit fark ve Fisher", async () => {
   // %37 politika faizi, anketin 12 ay sonrası TÜFE beklentisi %23,70 (Eylül 2026).
   assert.deepEqual(forwardRealRate(37, 23.7), { real: 13.3, fisher: 10.75 });
 });
+
+test("faiz döngüsü: yıl başından değişim, artırım/indirim sayısı ve birikimli seri", async () => {
+  const { rateCycle, cycleSeries } = await import("../src/lib/rate-cycle");
+  const m = (id: string, at: string, prev: number, rate: number) => ({
+    id, bankCode: "rba" as const, meetingAt: at, timeTbd: false, type: "rate_decision" as const, status: "done" as const,
+    previousRate: prev, decisionRate: rate,
+  });
+  const meetings = [
+    m("rba-2025-12-09", "2025-12-09T03:30:00Z", 3.6, 3.6),
+    m("rba-2026-02-03", "2026-02-03T03:30:00Z", 3.6, 3.85),
+    m("rba-2026-06-16", "2026-06-16T04:30:00Z", 3.85, 3.85),
+    m("rba-2026-09-29", "2026-09-29T04:30:00Z", 3.85, 4.1),
+  ];
+  const now = new Date("2026-10-14T00:00:00Z");
+  const [row] = rateCycle(meetings, ["rba"], "2026-01-01", now);
+  assert.equal(row.start, 3.6);
+  assert.equal(row.totalBp, 50);
+  assert.equal(row.hikes, 2);
+  assert.equal(row.lastChange?.meetingId, "rba-2026-09-29");
+  const series = cycleSeries(meetings, ["rba"], "2026-01-01", now);
+  assert.deepEqual(series.map((r) => r.rba), [0, 25, 50, 50]);
+});

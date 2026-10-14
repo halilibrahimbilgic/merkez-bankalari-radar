@@ -16,11 +16,11 @@ takip eden bir site. Üç modül:
 | A — Takvim | Toplantı tarihleri, TRT geri sayımı, geçmiş kararlar, iCal + RSS + Telegram hatırlatma | ✅ tam otomatik |
 | B — Faiz olasılığı | Fed: piyasa dağılımı (Atlanta Fed MPT); BoE: OIS eğrisinden toplantı bazında beklenti; ECB: analist anketi (SMA); TCMB: Piyasa Katılımcıları Anketi | ✅ tam otomatik |
 | D — Haberler | Resmî açıklamalar + önemli kişilerin sözlerini aktaran haberler, Türkçe/İngilizce özet, önemliler Telegram'a | ✅ 30 dk'da bir (news.yml) |
-| C — Şahin/güvercin | Merkez bankacısı konuşmaları + Türkçe özet ve skor | ✅ metin ve skor otomatik (Claude aboneliği; §5) |
-| E — Kararlar | Her karar, karardan önceki beklentiyle (sürpriz) ve bir önceki karar metniyle (fark + model özeti) karşılaştırılır; beklentinin seyri | ✅ karar metni 30 dk'da bir (news.yml), özet Claude; beklenti geçmişi günlük |
-| F — Reel faiz | Politika faizi − son yıllık TÜFE, altı ekonomi | ✅ günlük |
+| C — Şahin/güvercin | Merkez bankacısı konuşmaları + Türkçe özet ve skor; konuşmacı sayfaları, aylık seyir | ✅ metin ve skor otomatik (Claude aboneliği; §5) |
+| E — Kararlar | Her karar, karardan önceki beklentiyle (sürpriz) ve bir önceki karar metniyle (fark + model özeti) karşılaştırılır; beklentinin seyri; sayfa başında son 12 ayın faiz döngüsü | ✅ karar metni 30 dk'da bir (news.yml), özet Claude; beklenti geçmişi günlük |
+| F — Reel faiz | Politika faizi − son yıllık TÜFE, altı ekonomi; TCMB için 12 ay sonrası enflasyon beklentisiyle ileriye dönük | ✅ günlük |
 | G — Rehber | Faiz kararlarını sade dille anlatan beş yazı | elle (içerik kodda, `src/lib/guides/`) |
-| H — Bu hafta | Ana sayfada önümüzdeki 7 günün kararları (beklentisiyle), Fed ve ECB yönetim kurullarının konuşma ve yayınları | ✅ günlük (`fetch:events`) |
+| H — Bu hafta | Ana sayfada önümüzdeki 7 günün kararları (beklentisiyle), Fed ve ECB yönetim kurullarının konuşma ve yayınları, beş ekonominin enflasyon (TÜFE) açıklamaları | ✅ günlük (`fetch:events`) |
 
 Site **yatırım tavsiyesi vermez** ve veri lisansı gereği kişisel/eğitim
 amaçlıdır (bkz. §6).
@@ -45,6 +45,7 @@ amaçlıdır (bkz. §6).
                                                      └► data/history/expectations.json (seyir)
   FRED · ECB HICP · EVDS · ONS · e-Stat · RBA G4 ─► fetch:inflation ─► inflation.json
   Fed takvim JSON · ECB haftalık program ─► fetch:events ─► events.json
+  TÜFE takvimleri: FRED · TÜİK · ONS · stat.go.jp · ABS ──┘
   resmî karar metinleri ──► statements:fetch (news.yml) ─► statements.json + data/statements/
                             └► meetings.json (karar günü, seri gelmeden)
   bis.org (RSS + HTML) ───► fetch:speeches ───────► speeches.json
@@ -305,6 +306,27 @@ reel faiz tablosunun asıl sütunu görünmüyordu — `TableFrame` artık asgar
 genişliği yalnızca sm ve üstünde uygular. Tek başına duran bağlantılar en az
 24 px yüksekliğinde (WCAG 2.5.8; metin içi bağlantılar muaf).
 
+**"Bu hafta" takvimi kaynak başına korunur.** Yedi kaynak (Fed takvimi,
+ECB programı, beş TÜFE takvimi) ayrı ayrı çekilir; biri hata verirse
+yalnızca *o kaynağın* önceki kayıtları korunur. TÜFE kayıtları banka
+koduyla tutulur (ABD → `fed`), banka başına koruma Fed takvimi kırıldığında
+eski TÜFE kaydını yenisinin yanına ikinci kez eklerdi. Euro bölgesi TÜFE
+takvimi yok: Eurostat'ın takvimi tarayıcıda JavaScript'le yükleniyor,
+makinece okunur ucu bulunamadı (14 Ekim 2026).
+
+**Faiz döngüsü seviye değil değişim gösterir** (`src/lib/rate-cycle.ts`,
+`/kararlar` başı). TCMB'nin %37'si seviye grafiğinde diğer beş bankayı düz
+çizgiye çevirirdi. Pencere son 12 ay (ay başından) ama arşivin başından
+(`DECISIONS_FROM`) geriye gitmez: Fed dışındaki bankaların 2026 öncesi
+toplantısı yok, daha geriden başlayan pencere değişiklik kaçırırken
+kaçırmıyormuş gibi görünürdü. "Yıl başından" seçilmedi; Ocak'ta boş kalırdı.
+
+**Konuşmacı adresi addan türer** (`src/lib/speakers.ts`):
+`/konusmaci/christopher-j-waller`. Aksan ve noktalama atılır, BIS'in
+"J." / "J" farkı aynı adrese düşer; ad gerçekten değişirse eski adres 404
+verir. Konuşmacının bankası en yeni konuşmasındaki bankadır; ortalama,
+banka ortalamasıyla aynı kuralla (yalnızca sinyal taşıyan skorlu konuşmalar).
+
 **Renk tek başına anlam taşımaz** (WCAG 1.4.1). Banka renkleri ikincil
 ipucudur, yanında her zaman banka adı metni durur. Tonlar ölçülerek seçildi:
 hepsi yüzeye karşı ≥5:1, en sık görünen üçlü birbirinden ≥68° ayrık.
@@ -397,7 +419,7 @@ Hiçbir sayfa yatırım tavsiyesi vermez; altbilgideki uyarı kaldırılmamalı.
 
 ---
 
-## 7. Mevcut durum (3 Ekim 2026; 13 Ekim eki aşağıda)
+## 7. Mevcut durum (3 Ekim 2026; 13 ve 14 Ekim ekleri aşağıda)
 
 ```
 Toplantı     135 (Fed 56, ECB 19, TCMB 12, BoE 16, BoJ 16, RBA 16)
@@ -417,6 +439,12 @@ sayfası (2026), 42 karar metni (28'i yayımlanabilir), beklenti geçmişi 2026
 başından (BoE günlük, ECB 7 SMA turu, Fed 7 SME turu, TCMB aylık), altı
 ekonominin enflasyonu, beş rehber yazısı. Özetler ilk günlerde 30 dakikalık
 işle birikimi eritir.
+
+14 Ekim 2026: "Bu hafta"ya beş ekonominin TÜFE açıklama tarihleri;
+`/kararlar` başında faiz döngüsü; 19 konuşmacı sayfası; `/skor`'da aylık
+seyir tablosu; TCMB için ileriye dönük reel faiz; site haritasında gerçek
+`lastModified` (karar: özet tarihi, konuşma: skor tarihi, rehber:
+`updatedOn`; yasal sayfalarda alan yok). 47 konuşma, hepsi skorlu.
 
 ---
 
@@ -449,6 +477,9 @@ işle birikimi eritir.
    adresi saklamak (KVKK, açık rıza, abonelikten çıkma) ürün kararı
    gerektiriyor. Şimdilik RSS (e-posta köprülerine bağlanabilir) ve iCal
    aboneliği var; site kişisel veri toplamıyor.
+6. **"Bu hafta" eksik.** Euro bölgesi TÜFE takvimi yok (§4) ve bölgesel
+   Fed başkanları Board takviminde yer almıyor; BoE, BoJ, RBA ve TCMB
+   ileriye dönük konuşma programını makinece okunur yayımlamıyor.
 
 ---
 
@@ -456,12 +487,14 @@ işle birikimi eritir.
 
 **Orta vade — kapsamı genişlet**
 - Skor zaman serisi: "bir ay önce +6 olan komite bugün +4" — yön seviyeden
-  daha çok şey söyler. Veritabanı şeması geçmiş anlıkları zaten destekliyor.
+  daha çok şey söyler. İlk adım `/skor`'daki aylık seyir tablosu (14 Ekim
+  2026); örneklem büyüdükçe grafiğe çevrilebilir.
 - E-posta bildirimi (§8.5'teki kararlardan sonra)
 
 **Uzun vade — ürünleşme**
-- Konuşmacı bazında eğilim sayfası (oy hakkı/kıdem ağırlıklandırması ile —
-  şu an herkesin ağırlığı eşit, `/skor` bunu açıkça yazıyor)
+- Konuşmacı ağırlıklandırması (oy hakkı/kıdem): konuşmacı sayfaları var
+  (`/konusmaci/<ad>`), ama banka ortalamasında herkesin ağırlığı hâlâ eşit
+  — `/skor` bunu açıkça yazıyor
 - Ticarileşme düşünülürse **önce** §6'daki lisans sorunu çözülmeli
 
 ---

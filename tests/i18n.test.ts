@@ -25,3 +25,13 @@ test("yüzde biçimi dile göre", () => {
   assert.equal(fmtPercentRange(3.75, 4, "tr"), "%3,75–4,00");
   assert.equal(fmtPercentRange(3.75, 4, "en"), "3.75–4.00%");
 });
+
+test("konuşmacı adresi: aksan ve noktalama atılır, aynı kişi tek adrese düşer", async () => {
+  const { speakerSlug } = await import("../src/lib/speakers");
+  assert.equal(speakerSlug("Boris Vujčić"), "boris-vujcic");
+  assert.equal(speakerSlug("Christopher J. Waller"), speakerSlug("Christopher J Waller"));
+  assert.equal(speakerSlug("Christopher J Waller"), "christopher-j-waller");
+  assert.equal(speakerSlug("Fatih Karahan"), "fatih-karahan");
+  assert.equal(speakerSlug("Şebnem Kalemli-Özcan"), "sebnem-kalemli-ozcan");
+  assert.equal(speakerSlug("Işık Ilgın"), "isik-ilgin");
+});

@@ -1,14 +1,17 @@
 import type { Metadata } from "next";
 import Link from "next/link";
 import { BankFilter } from "@/components/BankFilter";
+import { CycleChart } from "@/components/CycleChart";
 import { BankTag } from "@/components/ScoreBadge";
 import { SurpriseBadge } from "@/components/SurpriseBadge";
-import { EmptyState, Row, Rows } from "@/components/ui";
-import { isBankCode } from "@/lib/banks";
+import { Card, EmptyState, Row, Rows, SectionHeader, TableFrame, Th } from "@/components/ui";
+import { BANKS, bankColorVar, bankName, CALENDAR_BANK_CODES, isBankCode } from "@/lib/banks";
 import { getDecisionViews, type DecisionView } from "@/lib/data/decisions";
-import { formatDecisionRate } from "@/lib/decision-format";
-import { fmtBp, L, languageAlternates, localePath, type Lang } from "@/lib/i18n";
-import { formatDate, monthLabel } from "@/lib/time";
+import { getAllMeetings } from "@/lib/data/meetings";
+import { DECISIONS_FROM, fedRange, formatDecisionRate, hasDecisionPage } from "@/lib/decision-format";
+import { fmtBp, fmtPercent, L, languageAlternates, localePath, type Lang } from "@/lib/i18n";
+import { cycleSeries, rateCycle } from "@/lib/rate-cycle";
+import { formatDate, formatDateShort, monthLabel } from "@/lib/time";
 import type { BankCode } from "@/lib/types";
 
 export function decisionsMetadata(lang: Lang): Metadata {
@@ -57,6 +60,8 @@ export async function DecisionsPage({
           </Link>
         </p>
       </header>
+
+      {!bankCode && <CycleSection lang={lang} />}
 
       <BankFilter
         basePath={localePath(lang, "/kararlar")}
@@ -131,5 +136,101 @@ export function DecisionRow({ view, lang }: { view: DecisionView; lang: Lang }) 
         )}
       </span>
     </Row>
+  );
+}
+
+/**
+ * Kim artırıyor, kim indiriyor: son 12 aydaki toplam değişim, grafik ve
+ * tablo. Pencere ayın başından başlar (başlıktaki ay adı tam doğru olsun)
+ * ve arşivden geriye gidemez; Ocak'ta "yıl başından" boş kalırdı.
+ */
+async function CycleSection({ lang }: { lang: Lang }) {
+  const t = L(lang);
+  const now = new Date();
+  const yearAgo = new Date(Date.UTC(now.getUTCFullYear() - 1, now.getUTCMonth(), 1)).toISOString().slice(0, 10);
+  const from = yearAgo > DECISIONS_FROM ? yearAgo : DECISIONS_FROM;
+  const meetings = await getAllMeetings();
+  const rows = rateCycle(meetings, CALENDAR_BANK_CODES, from, now);
+  const data = cycleSeries(meetings, CALENDAR_BANK_CODES, from, now) as Record<string, number>[];
+  const byId = new Map(meetings.map((m) => [m.id, m]));
+
+  return (
+    <section aria-labelledby="dongu" className="space-y-3">
+      <Card>
+        <SectionHeader
+          id="dongu"
+          title={`${t("Faiz döngüsü", "Rate cycle")}: ${monthLabel(from, lang)} – ${t("bugün", "today")}`}
+          description={t(
+            "Hangi banka artırıyor, hangisi indiriyor: dönem başından bu yana politika faizindeki toplam değişim, baz puan cinsinden. Faiz düzeyleri çok farklı olduğu için seviye yerine değişim gösteriliyor.",
+            "Who is hiking and who is cutting: the cumulative change in each policy rate over the period, in basis points. Changes rather than levels, because the rates themselves differ so much.",
+          )}
+        />
+        <CycleChart
+          data={data}
+          lang={lang}
+          banks={CALENDAR_BANK_CODES.map((code) => ({
+            key: code,
+            name: bankName(BANKS[code], lang),
+            color: bankColorVar(code),
+          }))}
+        />
+      </Card>
+      <TableFrame minWidth="34rem">
+        <thead>
+          <tr className="border-b border-border-strong text-left text-muted">
+            <Th>{t("Banka", "Bank")}</Th>
+            <Th align="right">{t("Faiz", "Rate")}</Th>
+            <Th align="right">{t("Değişim", "Change")}</Th>
+            {/* Telefonda dördüncü sütun tabloyu kaydırıyordu; karar listesi zaten aşağıda. */}
+            <Th align="right" className="max-sm:hidden">
+              {t("Son değişiklik", "Last change")}
+            </Th>
+          </tr>
+        </thead>
+        <tbody>
+          {rows.map((r) => {
+            const total = r.totalBp ?? 0;
+            const last = r.lastChange && byId.get(r.lastChange.meetingId);
+            const lastText = r.lastChange && `${fmtBp(r.lastChange.bp)} · ${formatDateShort(r.lastChange.at, lang)}`;
+            return (
+              <tr key={r.bankCode} className="border-b border-border last:border-b-0">
+                <td className="px-4 py-2.5">
+                  <BankTag code={r.bankCode} lang={lang} />
+                </td>
+                <td className="tabular whitespace-nowrap px-4 py-2.5 text-right">
+                  {r.current === undefined ? "—" : r.bankCode === "fed" ? fedRange(r.current, lang) : fmtPercent(r.current, lang)}
+                </td>
+                <td className="tabular px-4 py-2.5 text-right">
+                  <span className={`font-semibold ${total > 0 ? "text-hawk" : total < 0 ? "text-dove" : ""}`}>
+                    {r.totalBp === undefined ? "—" : total === 0 ? t("değişmedi", "unchanged") : fmtBp(total)}
+                  </span>
+                  {(r.hikes > 0 || r.cuts > 0) && (
+                    <div className="text-xs text-muted">
+                      {[
+                        r.hikes > 0 && t(`${r.hikes} artırım`, `${r.hikes} hike${r.hikes > 1 ? "s" : ""}`),
+                        r.cuts > 0 && t(`${r.cuts} indirim`, `${r.cuts} cut${r.cuts > 1 ? "s" : ""}`),
+                      ]
+                        .filter(Boolean)
+                        .join(", ")}
+                    </div>
+                  )}
+                </td>
+                <td className="tabular whitespace-nowrap px-4 py-2.5 text-right max-sm:hidden">
+                  {!lastText ? (
+                    "—"
+                  ) : last && hasDecisionPage(last, now) ? (
+                    <Link href={localePath(lang, `/karar/${last.id}`)} className="text-accent hover:underline">
+                      {lastText}
+                    </Link>
+                  ) : (
+                    <span className="text-muted">{lastText}</span>
+                  )}
+                </td>
+              </tr>
+            );
+          })}
+        </tbody>
+      </TableFrame>
+    </section>
   );
 }

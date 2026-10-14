@@ -19,7 +19,8 @@ import { decodeEntities, fetchText, stripTags, UA } from "./shared";
  * (İngilizce) saklanır; sayfada lang="en" ile gösterilir.
  */
 
-export type EventKind = "speech" | "discussion" | "testimony" | "minutes" | "beige-book";
+/** "cpi": bir ekonominin enflasyon verisi açıklaması (release-calendars.ts). */
+export type EventKind = "speech" | "discussion" | "testimony" | "minutes" | "beige-book" | "cpi";
 
 export interface CalendarEvent {
   id: string;
@@ -34,6 +35,8 @@ export interface CalendarEvent {
   role?: string;
   /** Etkinliğin kaynaktaki adı/yeri (İngilizce). */
   title: string;
+  /** Veri açıklamalarında referans dönem ("Ekim 2026"), kaynak veriyorsa. */
+  period?: string;
   url?: string;
 }
 

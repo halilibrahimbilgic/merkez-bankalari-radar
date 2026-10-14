@@ -1,5 +1,6 @@
 import type { Metadata } from "next";
 import Link from "next/link";
+import { Fragment } from "react";
 import {
   BankTag,
   ScoreBadge,
@@ -13,12 +14,15 @@ import { BANKS, bankName } from "@/lib/banks";
 import {
   getBankScoreSummaries,
   getCoverage,
+  getScoreTrend,
   getScoringStatus,
   getSpeeches,
+  type BankScoreTrend,
 } from "@/lib/data/speeches";
 import { L, languageAlternates, localePath, type Lang } from "@/lib/i18n";
+import { speakerSlug } from "@/lib/speakers";
 import { speechTitle } from "@/lib/speech-i18n";
-import { formatDate } from "@/lib/time";
+import { formatDate, monthShortLabel } from "@/lib/time";
 
 export function scoreMetadata(lang: Lang): Metadata {
   const t = L(lang);
@@ -35,11 +39,17 @@ export function scoreMetadata(lang: Lang): Metadata {
 export async function ScorePage({ lang }: { lang: Lang }) {
   const t = L(lang);
   const p = (path: string) => localePath(lang, path);
-  const [summaries, recent, coverage, status] = await Promise.all([
+  // Son dört takvim ayı, bu ay dahil (YYYY-AA).
+  const now = new Date();
+  const months = [3, 2, 1, 0].map((k) =>
+    new Date(Date.UTC(now.getUTCFullYear(), now.getUTCMonth() - k, 1)).toISOString().slice(0, 7),
+  );
+  const [summaries, recent, coverage, status, trend] = await Promise.all([
     getBankScoreSummaries(),
     getSpeeches({ scoredOnly: true, limit: 10 }),
     getCoverage(),
     getScoringStatus(),
+    getScoreTrend(months),
   ]);
 
   return (
@@ -79,7 +89,10 @@ export async function ScorePage({ lang }: { lang: Lang }) {
                 <Th>{t("Eğilim", "Tilt")}</Th>
                 <Th align="right">{t("Skor", "Score")}</Th>
                 <Th align="right">{t("Konuşma", "Speeches")}</Th>
-                <Th align="right">{t("Son", "Latest")}</Th>
+                {/* Telefonda beş sütun sığmıyor, son iki sütun görünmüyordu (390 px). */}
+                <Th align="right" className="max-sm:hidden">
+                  {t("Son", "Latest")}
+                </Th>
               </tr>
             </thead>
             <tbody>
@@ -105,7 +118,7 @@ export async function ScorePage({ lang }: { lang: Lang }) {
                     {s.speechCount}
                     {s.noSignalCount > 0 && <span className="opacity-70"> (+{s.noSignalCount})</span>}
                   </td>
-                  <td className="tabular px-4 py-3 text-right text-muted">
+                  <td className="tabular px-4 py-3 text-right text-muted max-sm:hidden">
                     {formatDate(s.latestDate, lang)}
                   </td>
                 </tr>
@@ -120,6 +133,8 @@ export async function ScorePage({ lang }: { lang: Lang }) {
           </p>
         </section>
       )}
+
+      {trend.length > 0 && <Trend trend={trend} months={months} lang={lang} />}
 
       <HowToRead lang={lang} />
 
@@ -145,12 +160,69 @@ export async function ScorePage({ lang }: { lang: Lang }) {
   );
 }
 
+/**
+ * Banka başına aylık ortalama. Hücrede ortalamaya giren konuşma sayısı da
+ * yazar: tek konuşmalık bir ay eğilim değil, tek bir görüştür.
+ */
+function Trend({ trend, months, lang }: { trend: BankScoreTrend[]; months: string[]; lang: Lang }) {
+  const t = L(lang);
+  return (
+    <section>
+      <SectionHeader
+        title={t("Aylık seyir", "Month by month")}
+        description={t(
+          "Her ay, o ayın sinyal taşıyan konuşmalarının ortalaması ve kaç konuşmaya dayandığı. Tek konuşmalık bir ay eğilim değil, tek bir görüştür.",
+          "For each month, the average of that month's speeches that carry a signal, and how many speeches it rests on. A month with a single speech is one view, not a trend.",
+        )}
+      />
+      <TableFrame minWidth="30rem">
+        <thead>
+          <tr className="border-b border-border-strong text-left text-muted">
+            <Th>{t("Banka", "Bank")}</Th>
+            {/* Telefonda dört ay sütunu sığmıyor: en eski ay gizlenir. */}
+            {months.map((m, i) => (
+              <Th key={m} align="right" className={i === 0 ? "max-sm:hidden" : ""}>
+                {monthShortLabel(`${m}-15T12:00:00Z`, lang)}
+              </Th>
+            ))}
+          </tr>
+        </thead>
+        <tbody>
+          {trend.map((b) => (
+            <tr key={b.bankCode} className="border-b border-border last:border-b-0">
+              <th scope="row" className="px-4 py-3 text-left font-medium">
+                {bankName(BANKS[b.bankCode], lang)}
+              </th>
+              {b.months.map((m, i) => (
+                <td key={m.month} className={`tabular px-4 py-3 text-right ${i === 0 ? "max-sm:hidden" : ""}`}>
+                  {m.average === undefined ? (
+                    <span className="text-muted">—</span>
+                  ) : (
+                    <>
+                      <span className={`font-semibold ${scoreToneClass(m.average)}`}>
+                        {formatScore(m.average, lang)}
+                      </span>
+                      <div className="whitespace-nowrap text-xs text-muted">
+                        {lang === "en" ? `${m.count} speech${m.count === 1 ? "" : "es"}` : `${m.count} konuşma`}
+                      </div>
+                    </>
+                  )}
+                </td>
+              ))}
+            </tr>
+          ))}
+        </tbody>
+      </TableFrame>
+    </section>
+  );
+}
+
 /** -10..+10 ölçeğini yatay çubukta konumlandırır. */
 function ScoreMeter({ score, lang }: { score: number; lang: Lang }) {
   const pct = ((score + 10) / 20) * 100;
   return (
     <div className="flex items-center gap-3">
-      <div className="relative h-2 w-full min-w-32 rounded-full bg-border">
+      <div className="relative h-2 w-full min-w-16 rounded-full bg-border sm:min-w-32">
         <div className="absolute left-1/2 top-1/2 h-3 w-px -translate-y-1/2 bg-muted opacity-50" />
         <div
           className="absolute top-1/2 h-3.5 w-1 -translate-y-1/2 rounded-full bg-foreground"
@@ -195,7 +267,7 @@ function HowToRead({ lang }: { lang: Lang }) {
           ],
           [
             "Direction says more than level.",
-            "A committee that was at +6 a month ago and is at +4 today is turning more dovish, even if the number still looks hawkish. As the archive grows we will show this change separately.",
+            "A committee that was at +6 a month ago and is at +4 today is turning more dovish, even if the number still looks hawkish. The month-by-month table above shows this change.",
           ],
           [
             "Everyone currently carries equal weight.",
@@ -213,7 +285,7 @@ function HowToRead({ lang }: { lang: Lang }) {
           ],
           [
             "Yön, seviyeden daha çok şey söyler.",
-            "Bir ay önce +6 olan bir komitenin bugün +4 olması, rakam hâlâ şahin görünse bile güvercinleşme anlamına gelir. Arşiv biriktikçe bu değişimi ayrıca göstereceğiz.",
+            "Bir ay önce +6 olan bir komitenin bugün +4 olması, rakam hâlâ şahin görünse bile güvercinleşme anlamına gelir. Yukarıdaki aylık seyir tablosu bu değişimi gösterir.",
           ],
           [
             "Herkesin ağırlığı şu an eşit.",
@@ -270,7 +342,19 @@ function Coverage({
               <th scope="row" className="px-4 py-3 text-left font-medium">
                 {bankName(BANKS[c.bankCode], lang)}
               </th>
-              <td className="px-4 py-3 text-muted">{c.speakers.join(", ")}</td>
+              <td className="px-4 py-3 leading-7 text-muted">
+                {c.speakers.map((name, i) => (
+                  <Fragment key={name}>
+                    {i > 0 && ", "}
+                    <Link
+                      href={localePath(lang, `/konusmaci/${speakerSlug(name)}`)}
+                      className="text-accent hover:underline"
+                    >
+                      {name}
+                    </Link>
+                  </Fragment>
+                ))}
+              </td>
               <td className="tabular px-4 py-3 text-right text-muted">{c.speechCount}</td>
             </tr>
           ))}

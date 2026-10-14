@@ -28,7 +28,7 @@ npm run fetch:current-rates  # güncel politika faizleri (Fed, ECB, TCMB)
 npm run fetch:probabilities  # Atlanta Fed olasılık dağılımları (+ günlük seyir)
 npm run fetch:expectations   # BoE, ECB, TCMB beklentileri + beklenti geçmişi (data/history)
 npm run fetch:inflation      # altı ekonominin yıllık enflasyonu (reel faiz)
-npm run fetch:events         # Fed ve ECB konuşma/yayın takvimi ("Bu hafta")
+npm run fetch:events         # Fed/ECB konuşma takvimi + TÜFE açıklama tarihleri ("Bu hafta")
 npm run statements:fetch     # karar metinleri; karar günü kararı metinden yazar (--all: arşiv)
 npm run fetch:speeches       # BIS konuşma arşivi (metinlerle birlikte)
 npm run score:export         # skorsuz konuşmaları .scoring/ altına hazırlar

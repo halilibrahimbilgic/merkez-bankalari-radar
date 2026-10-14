@@ -5,6 +5,7 @@ import { BankTag, ScoreBadge } from "@/components/ScoreBadge";
 import { BANKS, bankCountry, bankFullName, bankName } from "@/lib/banks";
 import { getSpeech, getSpeechParagraphs } from "@/lib/data/speeches";
 import { L, languageAlternates, localePath, type Lang } from "@/lib/i18n";
+import { speakerSlug } from "@/lib/speakers";
 import { speechContext, speechRationale, speechSummary, speechTitle } from "@/lib/speech-i18n";
 import { LICENSE_NOTICE_EN, LICENSE_NOTICE_TR } from "@/lib/text-license";
 import { formatDate } from "@/lib/time";
@@ -47,7 +48,9 @@ export async function SpeechPage({ lang, id }: { lang: Lang; id: string }) {
           <BankTag code={speech.bankCode} lang={lang} />
           <span className="tabular">{formatDate(speech.speechDate, lang)}</span>
           <span>·</span>
-          <span>{speech.speakerName}</span>
+          <Link href={p(`/konusmaci/${speakerSlug(speech.speakerName)}`)} className="text-accent hover:underline">
+            {speech.speakerName}
+          </Link>
         </div>
         <h1 className="mt-2 text-2xl font-semibold tracking-tight">{speechTitle(speech, lang)}</h1>
         {/* Türkçe başlık bir çeviridir; kaynaktaki özgün başlık da görünür. */}

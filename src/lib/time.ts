@@ -18,6 +18,7 @@ const dateFmt = perLang({ day: "2-digit", month: "long", year: "numeric" });
 const dateShortFmt = perLang({ day: "2-digit", month: "short", year: "numeric" });
 const weekdayFmt = perLang({ weekday: "long" });
 const monthFmt = perLang({ month: "long", year: "numeric" });
+const monthShortFmt = perLang({ month: "short" });
 
 const timeFmt = new Intl.DateTimeFormat("tr-TR", {
   timeZone: TRT,
@@ -115,6 +116,11 @@ export function trtDayKey(iso: string): string {
 /** "Eylül 2026" / "September 2026" — takvimde ay başlıkları için. */
 export function monthLabel(iso: string, lang: Lang = "tr"): string {
   return monthFmt[lang].format(new Date(iso));
+}
+
+/** "Eki" / "Oct" — dar tablo başlıkları için. */
+export function monthShortLabel(iso: string, lang: Lang = "tr"): string {
+  return monthShortFmt[lang].format(new Date(iso));
 }
 
 /** Bölmeli geri sayım parçaları — sunucu ve istemcide aynı hesap. */
