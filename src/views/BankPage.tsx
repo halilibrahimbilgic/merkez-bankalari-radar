@@ -1,6 +1,7 @@
 import type { Metadata } from "next";
 import Link from "next/link";
 import { notFound } from "next/navigation";
+import { AddToCalendar } from "@/components/AddToCalendar";
 import { ExpectationDetails } from "@/components/BankCard";
 import { MeetingRow } from "@/components/MeetingRow";
 import { ScoreBadge } from "@/components/ScoreBadge";
@@ -199,6 +200,7 @@ export async function BankPage({ lang, code }: { lang: Lang; code: string }) {
           <div className="mt-1 text-lg font-semibold tabular">
             {formatMeeting(next.meetingAt, next.timeTbd, lang)}
           </div>
+          {!pending && <AddToCalendar meeting={next} lang={lang} className="mt-1" />}
           {/* "Ne bekleniyor?" banka sayfasının asıl sorusu; önceden yalnızca ana sayfada vardı.
               Bekleyen kararda beklenti bir sonraki toplantıya ait olurdu: yerine not. */}
           {pending ? (

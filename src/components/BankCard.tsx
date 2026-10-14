@@ -13,6 +13,7 @@ import {
 } from "@/lib/time";
 import { formatCurrentRate, type CurrentRate } from "@/lib/data/rates";
 import type { BankScoreSummary } from "@/lib/data/speeches";
+import { AddToCalendar } from "./AddToCalendar";
 import { LiveCountdown } from "./LiveCountdown";
 import { RateOdds, type OddsRow } from "./RateOdds";
 import { formatScore, scoreLabel, scoreToneClass } from "./ScoreBadge";
@@ -97,6 +98,7 @@ export function BankCard({
               />
             )}
           </div>
+          {!pending && <AddToCalendar meeting={nextMeeting} lang={lang} className="mt-2" />}
         </div>
       ) : (
         <p className="mt-3 text-sm text-muted">

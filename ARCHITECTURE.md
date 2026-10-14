@@ -228,7 +228,9 @@ yeniden indirilmeden meetings.json'dan türetilir (sıra: rates → current-rate
 **iCal UID'leri değişmez.** `UID:<id>@merkezbankalariradar` eski marka adını
 taşır ama abone takvimler etkinlikleri UID ile eşler; değişirse her
 toplantı abonelerin takviminde iki kez görünür. Marka "Faiz Radar" olsa da
-ek kalır.
+ek kalır. Sayfalardaki "Takvime ekle" (`?toplanti=<id>`, Google Takvim
+bağlantısı ayrıca) aynı UID'yi kullanır: hem abone olan hem tek toplantıyı
+ekleyen okurun takviminde etkinlik bir kez görünür.
 
 **Telegram aynı mesajı iki kez göndermez.** `scripts/post-telegram.ts`
 gönderdiği her mesajın anahtarını `data/telegram/posted.json`'a yazar ve cron

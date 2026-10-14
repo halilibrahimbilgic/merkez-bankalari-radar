@@ -21,8 +21,13 @@ import { DecisionRow } from "./DecisionsPage";
 import { WeekAhead } from "./WeekAhead";
 import { NewsList } from "@/components/NewsList";
 import { L, languageAlternates, localePath, type Lang } from "@/lib/i18n";
+import { subscribeHref } from "@/lib/calendar-links";
+import { TELEGRAM_URL } from "@/lib/site";
 import { speechTitle } from "@/lib/speech-i18n";
 import { countdownLabel, formatDate, trtDayKey } from "@/lib/time";
+
+const PILL =
+  "inline-flex min-h-9 items-center rounded-full border border-border px-3 text-accent hover:border-accent";
 
 export function homeMetadata(lang: Lang): Metadata {
   // Başlık ve açıklama kök düzenden gelir; burada yalnızca dil karşılıkları.
@@ -84,6 +89,19 @@ export async function HomePage({ lang }: { lang: Lang }) {
             )}
           </p>
         )}
+        {/* Hatırlatma kanalları önceden yalnızca altbilgide ve takvim sayfasındaydı. */}
+        <div className="mt-3 flex flex-wrap items-center gap-2 text-sm">
+          <span className="text-muted">{t("Kararları kaçırmayın:", "Never miss a decision:")}</span>
+          <a href={TELEGRAM_URL} className={PILL} rel="me">
+            {t("Telegram kanalı", "Telegram channel (Turkish)")}
+          </a>
+          <a href={subscribeHref()} className={PILL}>
+            {t("Takvime abone ol", "Subscribe to calendar")}
+          </a>
+          <a href="/rss.xml" className={PILL}>
+            {t("RSS", "RSS (Turkish)")}
+          </a>
+        </div>
       </section>
 
       <WeekAhead lang={lang} now={now} />

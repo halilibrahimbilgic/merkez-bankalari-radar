@@ -1,4 +1,5 @@
 import { BANKS, isBankCode } from "@/lib/banks";
+import { meetingDay } from "@/lib/calendar-links";
 import { getUpcomingMeetings } from "@/lib/data/meetings";
 import type { BankCode, Meeting } from "@/lib/types";
 
@@ -7,15 +8,22 @@ export const revalidate = 3600;
 /**
  * Google Takvim / Outlook için iCalendar akışı.
  * Toplantı anları UTC olarak yazılır; takvim uygulaması kullanıcının
- * kendi saat dilimine çevirir.
+ * kendi saat dilimine çevirir. `?toplanti=<id>` tek toplantıyı verir
+ * (sayfalardaki "Takvime ekle"); UID abonelikteki ile aynıdır.
  */
 export async function GET(request: Request) {
-  const raw = new URL(request.url).searchParams.get("banka") ?? undefined;
+  const params = new URL(request.url).searchParams;
+  const raw = params.get("banka") ?? undefined;
   const bankCode: BankCode | undefined = raw && isBankCode(raw) ? raw : undefined;
+  const id = params.get("toplanti") ?? undefined;
 
-  const meetings = await getUpcomingMeetings({ bankCode });
+  let meetings = await getUpcomingMeetings({ bankCode });
+  if (id) {
+    meetings = meetings.filter((m) => m.id === id);
+    if (meetings.length === 0) return new Response("Toplantı bulunamadı.", { status: 404 });
+  }
   const body = buildIcs(meetings);
-  const filename = bankCode ? `${bankCode}-toplantilari.ics` : "merkez-bankalari.ics";
+  const filename = id ? `${id}.ics` : bankCode ? `${bankCode}-toplantilari.ics` : "merkez-bankalari.ics";
 
   return new Response(body, {
     headers: {
@@ -80,12 +88,7 @@ function timed(start: Date): string[] {
  * bankanın kendi saat diliminde alınır (Tokyo'da 18 Eylül, TRT'de de öyle).
  */
 function allDay(iso: string, timeZone: string): string[] {
-  const day = new Intl.DateTimeFormat("en-CA", {
-    timeZone,
-    year: "numeric",
-    month: "2-digit",
-    day: "2-digit",
-  }).format(new Date(iso));
+  const day = meetingDay(iso, timeZone);
   const next = new Date(Date.parse(`${day}T00:00:00Z`) + 86_400_000).toISOString().slice(0, 10);
   return [
     `DTSTART;VALUE=DATE:${day.replace(/-/g, "")}`,

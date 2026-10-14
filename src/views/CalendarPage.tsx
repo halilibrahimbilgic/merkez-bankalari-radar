@@ -8,7 +8,8 @@ import {
   getUpcomingMeetings,
 } from "@/lib/data/meetings";
 import { L, languageAlternates, localePath, type Lang } from "@/lib/i18n";
-import { SITE_URL } from "@/lib/site";
+import { subscribeHref } from "@/lib/calendar-links";
+import { TELEGRAM_URL } from "@/lib/site";
 import { monthLabel } from "@/lib/time";
 import type { BankCode, Meeting } from "@/lib/types";
 
@@ -43,9 +44,7 @@ export async function CalendarPage({
   // Takvim dosyası ve RSS tek dildedir (Türkçe); etkinlik başlıkları banka
   // kısaltmalarıyla okunur, bu yüzden İngilizce sayfa da aynı dosyayı verir.
   const icalHref = bankCode ? `/takvim/takvim.ics?banka=${bankCode}` : "/takvim/takvim.ics";
-  // Abonelik, indirilen dosyadan farklı olarak takvim uygulamasınca düzenli
-  // yenilenir: ertelenen ya da yeni eklenen toplantılar kendiliğinden düşer.
-  const webcalHref = `${SITE_URL.replace(/^https?:/, "webcal:")}${icalHref}`;
+  const webcalHref = subscribeHref(bankCode);
 
   return (
     <div className="space-y-8">
@@ -71,6 +70,13 @@ export async function CalendarPage({
             className="rounded border border-border px-3 py-1.5 text-sm text-muted hover:border-accent hover:text-accent"
           >
             RSS
+          </a>
+          <a
+            href={TELEGRAM_URL}
+            rel="me"
+            className="rounded border border-border px-3 py-1.5 text-sm text-muted hover:border-accent hover:text-accent"
+          >
+            Telegram
           </a>
         </div>
       </div>
