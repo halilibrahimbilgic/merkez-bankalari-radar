@@ -1,6 +1,21 @@
 {
-  "fetchedAt": "2026-10-14T19:31:33.174Z",
+  "fetchedAt": "2026-10-14T20:01:44.542Z",
   "items": [
+    {
+      "id": "0dcebf94a0c8",
+      "sourceKey": "aa-ekonomi",
+      "sourceName": "Anadolu Ajansı",
+      "kind": "media",
+      "url": "https://www.aa.com.tr/tr/ekonomi/fedin-bej-kitabi-fiyat-baskilarinin-surdugune-ve-bazi-bolgelerde-yogunlastigina-isaret-etti/4089025",
+      "publishedAt": "2026-10-14T19:46:37.000Z",
+      "titleOriginal": "Fed'in Bej Kitabı, fiyat baskılarının sürdüğüne ve bazı bölgelerde yoğunlaştığına işaret etti",
+      "titleTr": "Fed'in Bej Kitabı: Fiyat baskıları sürüyor, bazı bölgelerde yoğunlaştı",
+      "summaryTr": "Fed, ABD'de fiyat baskılarının sürdüğünü bildirdi. Bazı bölgelerde girdi maliyetlerinden kaynaklanan baskıların yoğunlaştığı belirtildi.",
+      "titleEn": "Fed's Beige Book: price pressures persist and intensify in some regions",
+      "summaryEn": "The Fed said price pressures continue across the US. Pressures from input costs have intensified in some regions.",
+      "important": true,
+      "processedAt": "2026-10-14T20:01:44.542Z"
+    },
     {
       "id": "95cc93cbbc5f",
       "sourceKey": "marketwatch",
@@ -784,6 +799,7 @@
     "0afe5f57a7e7": "2026-10-14",
     "f944148494f6": "2026-10-14",
     "69ef757a95f3": "2026-10-14",
-    "b991d9872c2b": "2026-10-14"
+    "b991d9872c2b": "2026-10-14",
+    "084f63bc06d7": "2026-10-14"
   }
 }
