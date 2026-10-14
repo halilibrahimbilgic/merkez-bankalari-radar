@@ -1,6 +1,21 @@
 {
-  "fetchedAt": "2026-10-14T05:02:20.583Z",
+  "fetchedAt": "2026-10-14T06:31:30.939Z",
   "items": [
+    {
+      "id": "e53c34ae273e",
+      "sourceKey": "aa-ekonomi",
+      "sourceName": "Anadolu Ajansı",
+      "kind": "media",
+      "url": "https://www.aa.com.tr/tr/ekonomi/kuresel-piyasalar-abdde-aciklanacak-enflasyon-verilerine-odaklandi/4087976",
+      "publishedAt": "2026-10-14T06:08:20.000Z",
+      "titleOriginal": "Küresel piyasalar ABD'de açıklanacak enflasyon verilerine odaklandı",
+      "titleTr": "Küresel piyasalar ABD enflasyon verisine odaklandı",
+      "summaryTr": "Anadolu Ajansı'na göre küresel piyasalarda teknoloji hisselerindeki dalgalanma ve yükselen petrol fiyatları öne çıkıyor. Yatırımcıların gözü bugün ABD'de açıklanacak enflasyon verisinde.",
+      "titleEn": "Global markets focus on US inflation data",
+      "summaryEn": "Anadolu Agency reports that swings in tech stocks and rising oil prices stood out in global markets. Attention is now on the US inflation figure due today.",
+      "important": false,
+      "processedAt": "2026-10-14T06:31:30.939Z"
+    },
     {
       "id": "d5ea138eab79",
       "sourceKey": "cnbc-economy",
