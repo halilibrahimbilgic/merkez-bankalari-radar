@@ -1,5 +1,5 @@
 {
-  "fetchedAt": "2026-10-14T02:32:22.877Z",
+  "fetchedAt": "2026-10-14T03:02:46.671Z",
   "statements": [
     {
       "meetingId": "boe-2025-12-18",
@@ -267,7 +267,27 @@
       "publishable": false,
       "fetchedAt": "2026-10-13T19:41:35.935Z",
       "rate": 0.75,
-      "previousId": "boj-2025-12-19"
+      "previousId": "boj-2025-12-19",
+      "summary": {
+        "headlineTr": "BoJ teminatsız gecelik çağrı faizini yaklaşık yüzde 0,75'te tuttu; karar 8-1 oyla alındı ve Takata Hajime faizin yüzde 1,0'a çıkarılmasını önerdi.",
+        "headlineEn": "The BoJ kept the uncollateralized overnight call rate at around 0.75 percent in an 8-1 vote, with Takata Hajime proposing a rise to 1.0 percent.",
+        "changesTr": [
+          "Önceki karar oybirliğiyle alınmışken bu kez Takata Hajime karşı oy kullanarak faizin yaklaşık yüzde 1,0'a yükseltilmesini önerdi; öneri oy çokluğuyla reddedildi.",
+          "Takata, fiyat istikrarı hedefine aşağı yukarı ulaşıldığını ve dış ekonomilerin toparlanma evresinde olmasıyla Japonya'da fiyatlara yönelik risklerin yukarı yönlü olduğunu savundu.",
+          "Bu karar metni yalnızca para piyasası yönergesini ve oylamayı içeriyor; önceki metindeki ekonomik değerlendirme, ücret ve fiyat görünümü ile faiz artışlarının süreceğine dair yönlendirme bu metinde yer almıyor, bu yüzden bu konularda kıyas yapılamıyor."
+        ],
+        "changesEn": [
+          "The previous decision was unanimous, whereas this time Takata Hajime dissented and proposed raising the rate to around 1.0 percent; the proposal was defeated by a majority vote.",
+          "Takata argued that the price stability target had been more or less achieved and that, with overseas economies recovering, risks to prices in Japan were skewed to the upside.",
+          "This statement contains only the money market guideline and the vote; the previous statement's economic assessment, wage and price outlook and guidance on continuing rate rises do not appear here, so those topics cannot be compared."
+        ],
+        "tone": "more-hawkish",
+        "toneReasonTr": "Metindeki tek önemli değişiklik, fiyat risklerinin \"yukarı yönlü\" olduğu gerekçesiyle yüzde 1,0'a artırım öneren muhalif oydur.",
+        "toneReasonEn": "The only substantive change is a dissent proposing a hike to 1.0 percent on the grounds that risks to prices were \"skewed to the upside\".",
+        "model": "claude-code/opus",
+        "promptVersion": "1",
+        "summarizedAt": "2026-10-14T03:02:46.670Z"
+      }
     },
     {
       "meetingId": "boj-2026-03-19",
@@ -720,7 +740,31 @@
       "fetchedAt": "2026-10-13T19:43:50.142Z",
       "rate": 3.75,
       "rateLower": 3.5,
-      "previousId": "fed-2025-12-10"
+      "previousId": "fed-2025-12-10",
+      "summary": {
+        "headlineTr": "Fed politika faizi hedef aralığını yüzde 3-1/2 ile 3-3/4'te sabit tuttu ve istihdama yönelik aşağı yönlü risklerin arttığı ifadesini metinden çıkardı.",
+        "headlineEn": "The Fed held the target range for the federal funds rate at 3-1/2 to 3-3/4 percent and dropped its statement that downside risks to employment had risen.",
+        "changesTr": [
+          "Komitenin istihdama yönelik aşağı yönlü risklerin son aylarda arttığı değerlendirmesi ve kararın \"risk dengesindeki kaymaya\" dayandırılması metinden çıkarıldı.",
+          "Ekonomik faaliyetin artık \"ılımlı\" değil \"sağlam\" hızla genişlediği belirtildi.",
+          "İstihdam artışının düşük kaldığı ve işsizlik oranının bazı istikrar işaretleri gösterdiği yazıldı; önceki metinde istihdam artışının yavaşladığı ve işsizliğin yükseldiği belirtiliyordu.",
+          "Rezervlerin yeterli düzeye indiği ve kısa vadeli Hazine kâğıdı alımlarının başlatılacağına ilişkin paragraf çıkarıldı.",
+          "Miran ve Waller 25 baz puanlık indirim yönünde muhalif oy kullandı; önceki toplantıda Miran 50 baz puan indirim, Goolsbee ve Schmid ise faizin sabit tutulmasını istemişti."
+        ],
+        "changesEn": [
+          "The Committee's judgement that downside risks to employment rose in recent months, and the reference to a shift in the balance of risks as the basis for the decision, were removed.",
+          "Economic activity is now described as expanding at a \"solid\" rather than \"moderate\" pace.",
+          "Job gains are said to have remained low and the unemployment rate to have shown some signs of stabilization, replacing language that job gains had slowed and unemployment had edged up.",
+          "The paragraph saying reserve balances had declined to ample levels and that purchases of shorter-term Treasury securities would be initiated was dropped.",
+          "Miran and Waller dissented in favour of a 1/4 point cut; at the previous meeting Miran had preferred a 1/2 point cut while Goolsbee and Schmid had preferred no change."
+        ],
+        "tone": "more-hawkish",
+        "toneReasonTr": "\"İstihdama yönelik aşağı yönlü riskler arttı\" ifadesinin çıkarılması, büyümenin \"sağlam\" olarak nitelenmesi ve işsizlikte \"istikrar işaretleri\" vurgusu gevşeme gerekçesini zayıflatıyor.",
+        "toneReasonEn": "Removing \"downside risks to employment rose\", describing growth as \"solid\" and noting \"signs of stabilization\" in unemployment weaken the case for further easing.",
+        "model": "claude-code/opus",
+        "promptVersion": "1",
+        "summarizedAt": "2026-10-14T03:02:46.670Z"
+      }
     },
     {
       "meetingId": "fed-2026-03-18",
@@ -930,7 +974,31 @@
       "publishable": true,
       "fetchedAt": "2026-10-13T19:43:51.391Z",
       "rate": 3.85,
-      "previousId": "rba-2025-12-09"
+      "previousId": "rba-2025-12-09",
+      "summary": {
+        "headlineTr": "RBA nakit faiz hedefini 25 baz puan artırarak yüzde 3,85'e yükseltti ve enflasyonun bir süre hedefin üzerinde kalmasının muhtemel olduğunu söyledi.",
+        "headlineEn": "The RBA raised the cash rate target by 25 basis points to 3.85 per cent and said inflation is likely to remain above target for some time.",
+        "changesTr": [
+          "Enflasyonun 2025'in ikinci yarısında belirgin biçimde arttığı ve bunun bir kısmının daha büyük kapasite baskılarını yansıttığı belirtildi; önceki metindeki artışın kısmen geçici etkenlerden kaynaklandığı ve aylık TÜFE verisinin sinyal değerinin belirsiz olduğu vurgusu çıkarıldı.",
+          "Özel talebin beklenenden çok daha güçlü arttığı, kapasite baskılarının önceden değerlendirilenden büyük olduğu ve finansal koşulların hâlâ sıkı olup olmadığının belirsiz olduğu yazıldı.",
+          "İşgücü piyasasının biraz sıkı kaldığı ve son aylarda istikrar kazandığı, işsizlik oranının beklenenden biraz düşük olduğu belirtildi; önceki metindeki işsizliğin kademeli arttığı ve işgücü piyasasında ılımlı gevşeme beklendiği ifadeleri çıkarıldı.",
+          "Ana ticaret ortaklarındaki büyüme ve ticaretin yukarı yönlü sürpriz yaptığı ve küresel belirsizliğin Avustralya ekonomisi üzerinde baskılayıcı etkisinin çok az olduğu eklendi.",
+          "Döviz kurunun ve piyasa faizlerinin nakit faiz beklentilerindeki artışın ardından yükseldiği eklendi; karar yine oybirliğiyle alındı."
+        ],
+        "changesEn": [
+          "Inflation is described as having picked up materially in the second half of 2025, partly reflecting greater capacity pressures; the earlier emphasis on temporary factors and uncertainty about the monthly CPI signal was removed.",
+          "Private demand is said to have strengthened substantially more than expected, capacity pressures are greater than previously assessed, and it is now uncertain whether financial conditions remain restrictive.",
+          "The labour market is described as a little tight and stabilising, with unemployment a little lower than expected; earlier references to gradually rising unemployment and expected further modest easing were dropped.",
+          "The statement adds that growth and trade in major trading partners surprised on the upside and global uncertainty has had little or no depressing effect on Australia.",
+          "It notes the exchange rate and market interest rates rose following higher cash rate expectations; the decision was again unanimous."
+        ],
+        "tone": "more-hawkish",
+        "toneReasonTr": "\"Enflasyonun bir süre hedefin üzerinde kalması muhtemel\", \"kapasite baskıları önceden değerlendirilenden büyük\" ve \"özel talep beklenenden hızlı büyüyor\" ifadeleri, önceki metnin temkinli bekleme dilinin yerini aldı.",
+        "toneReasonEn": "Phrases such as \"inflation is likely to remain above target for some time\", \"capacity pressures are greater than previously assessed\" and \"private demand is growing more quickly than expected\" replaced the previous statement's cautious wait-and-see language.",
+        "model": "claude-code/opus",
+        "promptVersion": "1",
+        "summarizedAt": "2026-10-14T03:02:46.671Z"
+      }
     },
     {
       "meetingId": "rba-2026-03-17",
@@ -1151,7 +1219,31 @@
       "publishable": true,
       "fetchedAt": "2026-10-13T19:41:34.640Z",
       "rate": 37,
-      "previousId": "tcmb-2025-12-11"
+      "previousId": "tcmb-2025-12-11",
+      "summary": {
+        "headlineTr": "TCMB politika faizini yüzde 38'den yüzde 37'ye indirdi ve öncü verilerin ocakta aylık enflasyonun gıda öncülüğünde arttığına işaret ettiğini belirtti.",
+        "headlineEn": "The CBRT cut the policy rate from 38 percent to 37 percent and noted that leading data point to a food-led rise in monthly consumer inflation in January.",
+        "changesTr": [
+          "Öncü verilerin ocak ayında aylık tüketici enflasyonunun gıda öncülüğünde arttığına, ana eğilimdeki artışın ise sınırlı olduğuna işaret ettiği eklendi.",
+          "Enflasyonun ana eğiliminin aralık ayında gerilediği belirtildi; kasım enflasyonunun beklenenden düşük gerçekleştiği ifadesi çıkarıldı.",
+          "Talep koşullarının dezenflasyona verdiği desteğin \"azalmasına karşın sürdüğü\" yazıldı; önceki metinde desteğin sürdüğü söyleniyordu.",
+          "Üçüncü çeyrek büyümesinin öngörülenden yüksek gerçekleştiği ifadesi çıkarıldı.",
+          "Gecelik borç verme faizi yüzde 41'den yüzde 40'a, gecelik borçlanma faizi yüzde 36,5'ten yüzde 35,5'e indirildi; ileriye dönük yönlendirme değişmedi."
+        ],
+        "changesEn": [
+          "The statement adds that leading data indicate a food-led rise in monthly consumer inflation in January, with a limited increase in the underlying trend.",
+          "The underlying trend of inflation is said to have declined in December; the remark that November inflation came in below expectations was removed.",
+          "Demand conditions' support to disinflation is now described as continuing \"despite diminishing\", whereas before it was simply said to continue.",
+          "The reference to third-quarter growth exceeding forecasts was removed.",
+          "The overnight lending rate was cut from 41 to 40 percent and the overnight borrowing rate from 36.5 to 35.5 percent; forward guidance was unchanged."
+        ],
+        "tone": "mixed",
+        "toneReasonTr": "Ocakta gıda öncülüğünde aylık enflasyon artışına dikkat çekilmesi şahin yönde, talebin dezenflasyona desteğinin azaldığı ve ana eğilimin aralıkta gerilediği ifadeleri ise güvercin yönde.",
+        "toneReasonEn": "Flagging a food-led rise in January monthly inflation leans hawkish, while noting diminishing demand support to disinflation and a December decline in the underlying trend leans dovish.",
+        "model": "claude-code/opus",
+        "promptVersion": "1",
+        "summarizedAt": "2026-10-14T03:02:46.671Z"
+      }
     },
     {
       "meetingId": "tcmb-2026-03-12",
