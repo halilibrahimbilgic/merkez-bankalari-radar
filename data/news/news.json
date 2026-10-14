@@ -1,6 +1,21 @@
 {
-  "fetchedAt": "2026-10-14T03:01:41.940Z",
+  "fetchedAt": "2026-10-14T04:31:52.560Z",
   "items": [
+    {
+      "id": "d5ea138eab79",
+      "sourceKey": "cnbc-economy",
+      "sourceName": "CNBC",
+      "kind": "media",
+      "url": "https://www.cnbc.com/2026/10/14/godzilla-el-nino-asia-inflation-philippines.html",
+      "publishedAt": "2026-10-14T04:24:28.000Z",
+      "titleOriginal": "'Godzilla El Niño' is wreaking havoc with Philippine central bank's inflation forecasts",
+      "titleTr": "Filipinler Merkez Bankası, El Niño riskiyle enflasyon tahminlerinde belirsizlik yaşıyor",
+      "summaryTr": "Filipinler Merkez Bankası, petrol şokunun üzerine şiddetli bir El Niño senaryosu için politika simülasyonları yürütüyor. Enflasyon üç yılın en yüksek seviyesinde.",
+      "titleEn": "Philippine central bank's inflation forecasts clouded by severe El Niño risk",
+      "summaryEn": "The Philippine central bank is running policy scenarios for a severe El Niño on top of the oil shock. Inflation is at a three-year high.",
+      "important": false,
+      "processedAt": "2026-10-14T04:31:52.560Z"
+    },
     {
       "id": "c81a1f56e7ed",
       "sourceKey": "cnbc-finance",
