@@ -1,5 +1,5 @@
 {
-  "fetchedAt": "2026-10-15T05:32:03.533Z",
+  "fetchedAt": "2026-10-15T06:02:13.999Z",
   "minutes": [
     {
       "meetingId": "boe-2026-02-05",
@@ -271,7 +271,31 @@
       "urls": {
         "en": "https://www.ecb.europa.eu/press/accounts/2026/html/ecb.mg260709~0e7f8241c9.en.html"
       },
-      "fetchedAt": "2026-10-14T22:32:37.615Z"
+      "fetchedAt": "2026-10-14T22:32:37.615Z",
+      "summary": {
+        "headlineTr": "Üyeler enerji şokunun artık \"görmezden gelinebilecek\" bir şok olmadığını, dolaylı etkilerin yaygınlaştığını ve artırımın tüm senaryolarda doğru olduğunu belirtti; ileriye dönük yönlendirme verilmemesi ama projeksiyonlarda yeni artırımların yer aldığının kabul edilmesi kararlaştırıldı.",
+        "headlineEn": "Members said the energy shock no longer qualified as one to look through, with indirect effects broadening and a hike justified under every scenario; they agreed to give no forward guidance while acknowledging further hikes are embedded in the projections.",
+        "pointsTr": [
+          "Bütün üyeler 25 baz puanlık artırımı destekledi ve enflasyon risklerini yukarı yönlü gördü; daha ılımlı senaryoda bile mevduat faizini %2'de tutmanın uygun olmayacağı değerlendirildi.",
+          "Çekirdek enflasyonun Mayıs'ta %2,2'den %2,5'e, hizmet enflasyonunun %3,0'tan %3,5'e beklenmedik biçimde yükselmesi, dolaylı etkilerin görünür ve yaygın hale geldiğinin işareti sayıldı; ikinci tur etkiler henüz görülmese de riskin şokun süresiyle arttığı belirtildi.",
+          "Enflasyonun hedefe dönüşünün vadeli enerji fiyatlarındaki düşüşe dayandığı ve bunun riskli olduğu vurgulandı; birkaç üye olumsuz senaryonun temel senaryodan bile daha olası olabileceğini söyledi.",
+          "Büyüme görünümü zayıf ve aşağı yönlü riskli bulundu, ancak durumun stagflasyon olarak nitelendirilemeyeceği ve büyümedeki aşağı risklerin enflasyondaki yukarı risklerden daha sınırlı olduğu dile getirildi.",
+          "İletişimin tarafsız kalması, kararın ne bir artırım serisinin başı ne de tek seferlik bir adım olarak sunulması istendi; 2011'deki artırımların dersinin önceden taahhütte bulunmamak olduğu not edildi."
+        ],
+        "pointsEn": [
+          "All members supported the 25 basis point hike and saw inflation risks to the upside; even under the milder scenario, keeping the deposit facility rate at 2% in June was judged inappropriate.",
+          "The surprise rise in core inflation from 2.2% to 2.5% and in services inflation from 3.0% to 3.5% in May was seen as a sign of increasingly visible and broad-based indirect effects; second-round effects were not yet observed but their risk was said to rise with the shock's duration.",
+          "Members stressed that the return of inflation to target relies on the decline in energy prices implied by futures curves, which was seen as risky; a few members suggested the adverse scenario could be more likely than the baseline.",
+          "The growth outlook was judged sluggish with downside risks, but the situation was not characterised as stagflation and downside risks to growth were seen as more limited than upside risks to inflation.",
+          "Communication was to remain neutral, presenting the decision neither as the first of a sequence nor as a one-off; members noted the lesson from the 2011 hikes was to avoid pre-commitment."
+        ],
+        "score": 6,
+        "scoreReasonTr": "Oybirlikli artırım, \"şoku görmezden gelme\" seçeneğinin artık geçerli olmadığı, tüm senaryolarda artırımın uygun olduğu ve projeksiyonlarda yeni artırımların bulunduğu ifadeleri şahin; ileriye dönük taahhütten kaçınılması puanı uç değerden uzak tutuyor.",
+        "scoreReasonEn": "The unanimous hike and statements that the shock no longer qualified for looking through, that a hike was appropriate under all scenarios and that further hikes are embedded in the projections are hawkish, while the refusal to pre-commit keeps the score off the extreme.",
+        "model": "claude-code/opus",
+        "promptVersion": "1",
+        "summarizedAt": "2026-10-15T06:02:13.997Z"
+      }
     },
     {
       "meetingId": "ecb-2026-07-23",
@@ -487,7 +511,31 @@
       "urls": {
         "en": "https://www.rba.gov.au/monetary-policy/rba-board-minutes/2026/2026-06-16.html"
       },
-      "fetchedAt": "2026-10-14T22:32:38.889Z"
+      "fetchedAt": "2026-10-14T22:32:38.889Z",
+      "summary": {
+        "headlineTr": "Üyeler, ekonominin hâlâ talep fazlasıyla çalıştığını ve enflasyonun hedefe dönmesinin iki yıl daha sürebileceğini belirterek para politikasının sıkı kalması gerektiğinde birleşti ve önceki artırımların etkisini izlemek için beklemeyi uygun gördü.",
+        "headlineEn": "Members agreed that policy needs to stay restrictive because the economy is still running with excess demand and inflation may take another two years to return to target, and judged it useful to pause and assess the effect of earlier hikes.",
+        "pointsTr": [
+          "Üyeler finansal koşulların artık muhtemelen bir ölçüde sıkı olduğunu değerlendirdi; politika faizi nötr faiz model tahminlerinin üst ucunda, piyasa ekonomistlerinin tahmin aralığının ise üzerinde duruyor.",
+          "Personelin Mayıs tahminleri enflasyonun hedefe kalıcı olarak dönmesi için iki yıl daha gerektiğini öngörüyor; maliyet baskıları yaygın ve çekirdek enflasyonun Haziran çeyreğinde yükselmesi bekleniyor.",
+          "Orta Doğu'daki çatışma, olası barış yoluna rağmen enflasyon için yukarı, büyüme için aşağı yönlü önemli bir risk olarak görüldü; petrol arzının normale dönmesinin uzun süreceği vurgulandı.",
+          "Sendikaların uzun vadeli enflasyon beklentileri Mayıs'ta 2022'deki gibi sert yükseldi; zayıf verimlilik ve veri merkezi yatırımlarının kapasite baskısını artırma ihtimali de riskler arasında sayıldı.",
+          "Kurul faizi oybirliğiyle %4,35'te sabit tuttu ve gerekirse faizi artırmak dahil gereken her şeyi yapacağını yineledi; konut piyasasındaki belirgin zayıflama aşağı yönlü risk olarak not edildi."
+        ],
+        "pointsEn": [
+          "Members judged that financial conditions were now probably somewhat restrictive, with the cash rate at around the top of model estimates of the neutral rate and above the range of market economists' estimates.",
+          "Staff's May forecasts envisaged a further two years before inflation returns sustainably to target; cost pressures remain widespread and underlying inflation is expected to rise in the June quarter.",
+          "The Middle East conflict was seen as still posing material upside risks to inflation and downside risks to growth despite an emerging path to resolution, with oil supply expected to take considerable time to normalise.",
+          "Unions' long-term inflation expectations picked up sharply in May, as in 2022, while weak productivity and the potential for data-centre investment to add to capacity pressures were also flagged as risks.",
+          "The Board unanimously held the cash rate at 4.35 per cent and reiterated it will do what is necessary, including increasing the cash rate if necessary; a material weakening in housing was noted as a downside risk."
+        ],
+        "score": 4,
+        "scoreReasonTr": "Üyelerin politikanın sıkı kalması gerektiği, enflasyon risklerinin yukarı yönlü olduğu ve gerekirse faizi artırmaya hazır oldukları vurgusu şahin; ancak bekleme kararı ve büyümenin yavaşladığı tespiti puanı sınırlıyor.",
+        "scoreReasonEn": "Members' emphasis that policy must remain restrictive, that inflation risks are to the upside and that they stand ready to raise the cash rate if necessary is hawkish, tempered by the decision to wait and the acknowledgement that growth is easing.",
+        "model": "claude-code/opus",
+        "promptVersion": "1",
+        "summarizedAt": "2026-10-15T06:02:13.999Z"
+      }
     },
     {
       "meetingId": "rba-2026-08-11",
