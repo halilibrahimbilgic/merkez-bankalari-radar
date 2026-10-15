@@ -1,6 +1,21 @@
 {
-  "fetchedAt": "2026-10-15T14:31:34.536Z",
+  "fetchedAt": "2026-10-15T15:31:35.669Z",
   "items": [
+    {
+      "id": "0bb661079c0c",
+      "sourceKey": "marketwatch",
+      "sourceName": "MarketWatch",
+      "kind": "media",
+      "url": "https://www.marketwatch.com/story/traders-pile-into-bonds-and-defensive-stocks-as-the-tech-wreck-picks-up-steam-48c04374?mod=mw_rss_topstories",
+      "publishedAt": "2026-10-15T15:21:00.000Z",
+      "titleOriginal": "Traders pile into bonds and defensive stocks as the ‘tech wreck’ picks up steam",
+      "titleTr": "Yapay zekâ hisselerindeki satış yatırımcıyı tahvile ve defansif hisselere itiyor",
+      "summaryTr": "MarketWatch'a göre yapay zekâ temalı teknoloji hisselerindeki satış sürerken yatırımcılar devlet tahvillerine ve defansif hisselere yöneliyor. Haberde, yüksek enflasyonun bu tercihi zorlaştırabileceği belirtiliyor.",
+      "titleEn": "AI-stock selloff pushes traders into bonds and defensive shares",
+      "summaryEn": "MarketWatch reports that the continuing selloff in AI-linked tech stocks is driving investors toward government bonds and defensive stocks. It notes that hot inflation could complicate that trade.",
+      "important": false,
+      "processedAt": "2026-10-15T15:31:35.669Z"
+    },
     {
       "id": "8eb1c3f0cfe7",
       "sourceKey": "aa-economy",
