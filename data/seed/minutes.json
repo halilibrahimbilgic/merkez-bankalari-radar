@@ -1,5 +1,5 @@
 {
-  "fetchedAt": "2026-10-15T04:03:18.112Z",
+  "fetchedAt": "2026-10-15T04:33:27.855Z",
   "minutes": [
     {
       "meetingId": "boe-2026-02-05",
@@ -31,7 +31,31 @@
       "urls": {
         "en": "https://www.bankofengland.co.uk/monetary-policy-summary-and-minutes/2026/june-2026"
       },
-      "fetchedAt": "2026-10-14T22:32:40.347Z"
+      "fetchedAt": "2026-10-14T22:32:40.347Z",
+      "summary": {
+        "headlineTr": "Kurulun çoğunluğu, çatışma sonrası sıkılaşan finansal koşulları enflasyon risklerine karşı yeterli bir sigorta olarak görürken iki üye ikincil etkilere karşı hemen artırım istedi ve politika yanıtının ikincil etkilerin seyrine bağlı olacağı vurgulandı.",
+        "headlineEn": "Most of the Committee saw the post-conflict tightening in financial conditions as sufficient insurance against inflation risks, while two members wanted an immediate hike against second-round effects, and members stressed that the policy response would hinge on how second-round effects evolve.",
+        "pointsTr": [
+          "Karar 7-2 ile alındı: Megan Greene ve Huw Pill, ikincil etkilere karşı risk yönetimi gerekçesiyle Bank Rate'in 0,25 puan artırılarak %4'e çıkarılmasını istedi; sabit tutmayı destekleyen Catherine L Mann da yukarı yönlü enflasyon risklerinin daha belirgin olduğunu söyledi.",
+          "Tüm üyeler, enerji fiyatları kalıcı yurt içi enflasyona yansırsa üretimin istikrarına verilen ağırlığın azalacağını ve politikanın daha uzun süre sıkı kalması ya da daha da sıkılaşması gerekeceğini kabul etti.",
+          "Üyeler enerji fiyatlarına ilişkin risklerin hâlâ yukarı yönlü olduğunu, ancak Mayıs'ta %2,8 olan TÜFE'nin Nisan tahmininin 0,4 puan altında kaldığını ve çatışma öncesi dezenflasyonun yolunda olduğuna dair güvencenin arttığını değerlendirdi.",
+          "Kurul, işgücü piyasası dahil ekonomide atıl kapasitenin oluşmaya devam ettiğini ve zayıf talebin ikincil etkileri sınırlayacağını düşünürken bazı üyeler hanehalkı enflasyon beklentilerinin yakın vadeli enflasyon haberlerine daha duyarlı hale gelmiş olabileceği uyarısında bulundu.",
+          "Alan Taylor çatışmanın çözümü kalıcı olur ve riskler azalırsa daha düşük faizin tercih edilebileceğini söylerken, Swati Dhingra durum kötüleşirse ek sıkılaşmanın gerekebileceğini ama önleyici artırım için ikna edici bir gerekçe görmediğini belirtti."
+        ],
+        "pointsEn": [
+          "The decision was 7-2: Megan Greene and Huw Pill wanted a 0.25 percentage point increase in Bank Rate to 4% as a risk-management response to second-round effects, and Catherine L Mann, who backed the hold, said upside inflation risks were more prominent.",
+          "All members agreed that if higher energy prices fed into more persistent domestic inflation, the weight on output stabilisation would diminish and policy would need to remain restrictive for longer or become more restrictive.",
+          "Members judged that energy price risks were still skewed to the upside, but that May CPI inflation of 2.8%, 0.4 percentage points below the April forecast, gave greater reassurance that pre-conflict disinflation had been on track.",
+          "The Committee saw a margin of slack continuing to emerge, including in the labour market, with weak demand limiting second-round effects, though some members warned that household inflation expectations may have become more sensitive to near-term inflation news.",
+          "Alan Taylor said lower rates could be preferred if the conflict resolution holds and risks diminish, while Swati Dhingra said further tightening may be warranted if the situation worsened but saw no compelling case for a pre-emptive hike."
+        ],
+        "score": 3,
+        "scoreReasonTr": "Yukarı yönlü enflasyon riskleri, iki üyenin artırım oyu, sıkılaşan finansal koşulların enflasyona karşı sigorta sayılması ve ikincil etkiler görülürse daha sıkı politika uyarısı şahin bir duruş gösterirken çoğunluğun sabit tutma ve zayıf talep vurgusu bunu yumuşatıyor.",
+        "scoreReasonEn": "Upside inflation risks, two votes for a hike, tighter financial conditions framed as insurance against inflation and the warning of tighter policy if second-round effects appear point hawkish, tempered by the majority's hold and emphasis on weak demand.",
+        "model": "claude-code/opus",
+        "promptVersion": "1",
+        "summarizedAt": "2026-10-15T04:33:27.854Z"
+      }
     },
     {
       "meetingId": "boe-2026-07-30",
@@ -319,7 +343,31 @@
       "urls": {
         "en": "https://www.federalreserve.gov/monetarypolicy/fomcminutes20260617.htm"
       },
-      "fetchedAt": "2026-10-14T22:32:39.603Z"
+      "fetchedAt": "2026-10-14T22:32:39.603Z",
+      "summary": {
+        "headlineTr": "Komite, karar metnindeki gevşeme eğilimini işaret eden ifadeyi çıkarırken katılımcıların önemli bir kısmı yıl sonunda uygun faizin mevcut aralığın üzerinde olacağını değerlendirdi ve enflasyon yüksek kalırsa sıkılaşmanın gerekebileceğini belirtti.",
+        "headlineEn": "The Committee dropped the statement language suggesting an easing bias, while a large group of participants judged the appropriate rate would be above the current range at year-end and said firming would likely be warranted if inflation stays elevated.",
+        "pointsTr": [
+          "Katılımcıların çoğu, istikrarlı istihdam koşullarında yapay zekâ talebi, Orta Doğu'daki çatışma ya da gümrük tarifeleri nedeniyle enflasyonun yüksek kaldığı senaryolarda bir miktar sıkılaşmanın gerekeceğini söyledi; birkaç katılımcı artırım için gerekçe olduğunu belirtse de sabit tutmayı destekledi.",
+          "Yıl sonu için uygun faiz konusunda görüşler bölündü: birçok katılımcı mevcut aralık içinde ya da biraz altında, birçok diğeri ise mevcut aralığın üzerinde bir düzey öngördü; birkaç katılımcı mevcut duruşu sıkı görmediğini söyledi.",
+          "Katılımcılar enflasyonun daha da yükseldiğini ve risklerin yukarı yönlü olduğunu belirtti; personel Nisan'da %3,8 olan toplam PCE enflasyonunun Mayıs'ta %4,1'e, çekirdek PCE'nin %3,4'e çıktığını tahmin etti ve çoğunluk uzun süren yüksek enflasyonun beklentileri etkileyebileceği uyarısında bulundu.",
+          "İşgücü piyasası dengeli ve istikrarlı görüldü, ücret artışı enflasyon baskısı kaynağı sayılmadı; büyümenin yapay zekâ yatırımlarıyla güçlü seyrettiği, potansiyeli aşan büyümenin ise enflasyonu kalıcılaştırabileceği belirtildi.",
+          "Katılımcıların çoğunluğu karar metninin kısaltılmasında yarar gördü ve Başkan para politikasının genel yürütülmesini incelemek üzere beş bağımsız çalışma grubu kurulacağını açıkladı."
+        ],
+        "pointsEn": [
+          "Most participants said some policy firming would likely be warranted in scenarios where, with stable labor market conditions, inflation stays elevated due to AI-related demand, the Middle East conflict or tariffs; a few saw a case for a hike but supported holding at this meeting.",
+          "Views on the appropriate year-end rate were split: many participants placed it within or slightly below the current target range, while many others placed it above; several said they did not see the current stance as restrictive.",
+          "Participants noted that inflation had increased further with risks tilted to the upside; staff estimated total PCE inflation rose from 3.8 percent in April to 4.1 percent in May with core PCE at 3.4 percent, and a majority warned that persistently elevated inflation could begin to affect expectations.",
+          "The labor market was seen as balanced and stable, with wage growth not a source of inflationary pressure, while growth remained solid on AI investment and above-potential growth was flagged as a possible source of more persistent inflation.",
+          "A majority of participants saw advantages in shortening the postmeeting statement, and the Chairman described plans to establish five independent task forces on the broad conduct of monetary policy."
+        ],
+        "score": 5,
+        "scoreReasonTr": "Gevşeme eğiliminin metinden çıkarılması, yukarı yönlü enflasyon riskleri, yüksek enflasyon senaryolarında sıkılaşma gerekeceği görüşü ve birçok katılımcının yıl sonu faizini mevcut aralığın üzerinde görmesi şahin bir duruşa işaret ediyor.",
+        "scoreReasonEn": "Dropping the easing-bias language, upside inflation risks, the view that firming would be warranted if inflation stays elevated and many participants placing the year-end rate above the current range point to a hawkish stance.",
+        "model": "claude-code/opus",
+        "promptVersion": "1",
+        "summarizedAt": "2026-10-15T04:33:27.854Z"
+      }
     },
     {
       "meetingId": "fed-2026-07-29",

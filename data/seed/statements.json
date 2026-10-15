@@ -1,5 +1,5 @@
 {
-  "fetchedAt": "2026-10-15T04:02:28.511Z",
+  "fetchedAt": "2026-10-15T04:32:38.017Z",
   "statements": [
     {
       "meetingId": "boe-2025-12-18",
@@ -285,24 +285,27 @@
       "rate": 0.75,
       "previousId": "boj-2025-12-19",
       "summary": {
-        "headlineTr": "BoJ teminatsız gecelik çağrı faizini yaklaşık yüzde 0,75'te tuttu; karar 8-1 oyla alındı ve Takata Hajime faizin yüzde 1,0'a çıkarılmasını önerdi.",
-        "headlineEn": "The BoJ kept the uncollateralized overnight call rate at around 0.75 percent in an 8-1 vote, with Takata Hajime proposing a rise to 1.0 percent.",
+        "headlineTr": "BoJ teminatsız gecelik çağrı faizi hedefini yüzde 0,75 civarında sabit tuttu; karar 8-1 oyla alındı ve Takata Hajime faizin yüzde 1,0'a çıkarılmasını önerdi.",
+        "headlineEn": "The BoJ kept its target for the uncollateralized overnight call rate at around 0.75 percent by an 8-1 vote, with Takata Hajime proposing a rise to 1.0 percent.",
         "changesTr": [
-          "Önceki karar oybirliğiyle alınmışken bu kez Takata Hajime karşı oy kullanarak faizin yaklaşık yüzde 1,0'a yükseltilmesini önerdi; öneri oy çokluğuyla reddedildi.",
-          "Takata, fiyat istikrarı hedefine aşağı yukarı ulaşıldığını ve dış ekonomilerin toparlanma evresinde olmasıyla Japonya'da fiyatlara yönelik risklerin yukarı yönlü olduğunu savundu.",
-          "Bu karar metni yalnızca para piyasası yönergesini ve oylamayı içeriyor; önceki metindeki ekonomik değerlendirme, ücret ve fiyat görünümü ile faiz artışlarının süreceğine dair yönlendirme bu metinde yer almıyor, bu yüzden bu konularda kıyas yapılamıyor."
+          "Önceki toplantıda faiz yüzde 0,75'e çıkarılmıştı; bu toplantıda hedef yüzde 0,75 civarında sabit tutuldu.",
+          "Karar oybirliği yerine 8-1 çoğunlukla alındı: Takata Hajime fiyat istikrarı hedefine büyük ölçüde ulaşıldığını ve yurt içi fiyat risklerinin yukarı yönlü olduğunu düşünerek faizin yüzde 1,0'a çıkarılmasını önerdi, öneri reddedildi.",
+          "Bu metin yalnızca piyasa operasyonları yönergesini ve oylamayı içeriyor; önceki metindeki ekonomik değerlendirme, ücret-fiyat mekanizması ve 'faizi artırmaya devam etme' yönlendirmesi bu metinde yer almıyor."
         ],
         "changesEn": [
-          "The previous decision was unanimous, whereas this time Takata Hajime dissented and proposed raising the rate to around 1.0 percent; the proposal was defeated by a majority vote.",
-          "Takata argued that the price stability target had been more or less achieved and that, with overseas economies recovering, risks to prices in Japan were skewed to the upside.",
-          "This statement contains only the money market guideline and the vote; the previous statement's economic assessment, wage and price outlook and guidance on continuing rate rises do not appear here, so those topics cannot be compared."
+          "The rate had been raised to 0.75 percent at the previous meeting; at this meeting the target was held at around 0.75 percent.",
+          "The decision was taken by an 8-1 majority rather than unanimously: Takata Hajime, judging the price stability target more or less achieved and price risks skewed to the upside, proposed raising the rate to 1.0 percent, and the proposal was defeated.",
+          "This statement contains only the money market guideline and the vote; the previous statement's economic assessment, wage-price mechanism and guidance to 'continue to raise the policy interest rate' do not appear in it."
         ],
-        "tone": "more-hawkish",
-        "toneReasonTr": "Metindeki tek önemli değişiklik, fiyat risklerinin \"yukarı yönlü\" olduğu gerekçesiyle yüzde 1,0'a artırım öneren muhalif oydur.",
-        "toneReasonEn": "The only substantive change is a dissent proposing a hike to 1.0 percent on the grounds that risks to prices were \"skewed to the upside\".",
+        "tone": "mixed",
+        "toneReasonTr": "Bir üyenin yukarı yönlü fiyat risklerine dayanan artırım önerisi şahin bir unsur eklerken, önceki metindeki faizi artırmaya devam etme yönlendirmesi bu metinde yer almıyor.",
+        "toneReasonEn": "One member's hike proposal citing upside price risks adds a hawkish element, while the previous statement's guidance to continue raising the policy rate is absent from this text.",
+        "score": 2,
+        "scoreReasonTr": "Faiz sabit tutuldu ve metinde ileriye dönük yönlendirme yok; tek şahin unsur, fiyat risklerinin yukarı yönlü olduğunu savunan bir üyenin yüzde 1,0'a artırım önerisi.",
+        "scoreReasonEn": "The rate was held and the text contains no forward guidance; the only hawkish element is one member's proposal to raise the rate to 1.0 percent on upside price risks.",
         "model": "claude-code/opus",
-        "promptVersion": "1",
-        "summarizedAt": "2026-10-14T03:02:46.670Z"
+        "promptVersion": "2",
+        "summarizedAt": "2026-10-15T04:32:38.014Z"
       }
     },
     {
@@ -787,28 +790,31 @@
       "rateLower": 3.5,
       "previousId": "fed-2025-12-10",
       "summary": {
-        "headlineTr": "Fed politika faizi hedef aralığını yüzde 3-1/2 ile 3-3/4'te sabit tuttu ve istihdama yönelik aşağı yönlü risklerin arttığı ifadesini metinden çıkardı.",
-        "headlineEn": "The Fed held the target range for the federal funds rate at 3-1/2 to 3-3/4 percent and dropped its statement that downside risks to employment had risen.",
+        "headlineTr": "Fed federal fon faizi hedef aralığını yüzde 3-1/2 ile 3-3/4'te sabit tuttu ve istihdama yönelik aşağı yönlü risklerin arttığı ifadesini metinden çıkardı.",
+        "headlineEn": "The Fed held the federal funds target range at 3-1/2 to 3-3/4 percent and dropped its statement that downside risks to employment had risen.",
         "changesTr": [
-          "Komitenin istihdama yönelik aşağı yönlü risklerin son aylarda arttığı değerlendirmesi ve kararın \"risk dengesindeki kaymaya\" dayandırılması metinden çıkarıldı.",
-          "Ekonomik faaliyetin artık \"ılımlı\" değil \"sağlam\" hızla genişlediği belirtildi.",
-          "İstihdam artışının düşük kaldığı ve işsizlik oranının bazı istikrar işaretleri gösterdiği yazıldı; önceki metinde istihdam artışının yavaşladığı ve işsizliğin yükseldiği belirtiliyordu.",
-          "Rezervlerin yeterli düzeye indiği ve kısa vadeli Hazine kâğıdı alımlarının başlatılacağına ilişkin paragraf çıkarıldı.",
-          "Miran ve Waller 25 baz puanlık indirim yönünde muhalif oy kullandı; önceki toplantıda Miran 50 baz puan indirim, Goolsbee ve Schmid ise faizin sabit tutulmasını istemişti."
+          "Önceki toplantıdaki 1/4 puanlık indirimin ardından hedef aralık yüzde 3-1/2 ile 3-3/4'te sabit tutuldu; 'risk dengesindeki kayma' gerekçesi metinden çıkarıldı.",
+          "İstihdama yönelik aşağı yönlü risklerin son aylarda arttığı değerlendirmesi kaldırıldı; Komite yalnızca çift görevinin iki yönündeki risklere dikkat ettiğini söylüyor.",
+          "Ekonomik değerlendirme güçlendi: faaliyetin 'ılımlı' yerine 'sağlam' hızda genişlediği, istihdam artışının düşük kaldığı ve işsizlik oranının bazı istikrar işaretleri gösterdiği yazıldı; enflasyon hâlâ 'bir miktar yüksek'.",
+          "Rezervlerin yeterli düzeye indiği ve kısa vadeli Hazine kâğıdı alımlarına başlanacağına dair paragraf metinden çıkarıldı.",
+          "Oy dağılımı değişti: Miran ve Waller 1/4 puanlık indirim yönünde karşı oy kullandı; önceki toplantıda iki üye faizi sabit tutmayı, Miran ise 1/2 puan indirimi istemişti."
         ],
         "changesEn": [
-          "The Committee's judgement that downside risks to employment rose in recent months, and the reference to a shift in the balance of risks as the basis for the decision, were removed.",
-          "Economic activity is now described as expanding at a \"solid\" rather than \"moderate\" pace.",
-          "Job gains are said to have remained low and the unemployment rate to have shown some signs of stabilization, replacing language that job gains had slowed and unemployment had edged up.",
-          "The paragraph saying reserve balances had declined to ample levels and that purchases of shorter-term Treasury securities would be initiated was dropped.",
-          "Miran and Waller dissented in favour of a 1/4 point cut; at the previous meeting Miran had preferred a 1/2 point cut while Goolsbee and Schmid had preferred no change."
+          "After a 1/4-point cut at the previous meeting, the target range was held at 3-1/2 to 3-3/4 percent, and the reference to 'the shift in the balance of risks' was removed.",
+          "The judgement that downside risks to employment rose in recent months was dropped; the Committee now only says it is attentive to the risks to both sides of its dual mandate.",
+          "The economic assessment improved: activity is described as expanding at a 'solid' rather than 'moderate' pace, job gains have remained low and the unemployment rate has shown some signs of stabilization; inflation remains 'somewhat elevated'.",
+          "The paragraph saying reserve balances had declined to ample levels and that purchases of shorter-term Treasury securities would begin was removed.",
+          "The vote changed: Miran and Waller dissented in favour of a 1/4-point cut, whereas at the previous meeting two members preferred no change and Miran favoured a 1/2-point cut."
         ],
         "tone": "more-hawkish",
-        "toneReasonTr": "\"İstihdama yönelik aşağı yönlü riskler arttı\" ifadesinin çıkarılması, büyümenin \"sağlam\" olarak nitelenmesi ve işsizlikte \"istikrar işaretleri\" vurgusu gevşeme gerekçesini zayıflatıyor.",
-        "toneReasonEn": "Removing \"downside risks to employment rose\", describing growth as \"solid\" and noting \"signs of stabilization\" in unemployment weaken the case for further easing.",
+        "toneReasonTr": "'İstihdama yönelik aşağı yönlü riskler arttı' ifadesinin çıkarılması, büyümenin 'sağlam' diye nitelenmesi ve işsizlikte istikrar işaretlerinin eklenmesi gevşeme gerekçesini zayıflatıyor.",
+        "toneReasonEn": "Removing 'downside risks to employment rose', describing growth as 'solid' and adding signs of stabilization in unemployment weaken the case for further easing.",
+        "score": 0,
+        "scoreReasonTr": "Faiz sabit tutuldu ve Komite çift görevin iki yönündeki risklere eşit dikkat ile veriye bağlı bir yaklaşım vurguluyor; enflasyonun bir miktar yüksek olduğu notu ile iki üyenin indirim yönündeki karşı oyu birbirini dengeliyor.",
+        "scoreReasonEn": "The rate was held and the Committee stresses equal attention to both sides of its dual mandate and a data-dependent approach; the note that inflation remains somewhat elevated is balanced by two dissents in favour of a cut.",
         "model": "claude-code/opus",
-        "promptVersion": "1",
-        "summarizedAt": "2026-10-14T03:02:46.670Z"
+        "promptVersion": "2",
+        "summarizedAt": "2026-10-15T04:32:38.016Z"
       }
     },
     {
@@ -1034,28 +1040,31 @@
       "rate": 3.85,
       "previousId": "rba-2025-12-09",
       "summary": {
-        "headlineTr": "RBA nakit faiz hedefini 25 baz puan artırarak yüzde 3,85'e yükseltti ve enflasyonun bir süre hedefin üzerinde kalmasının muhtemel olduğunu söyledi.",
-        "headlineEn": "The RBA raised the cash rate target by 25 basis points to 3.85 per cent and said inflation is likely to remain above target for some time.",
+        "headlineTr": "RBA politika faizini 25 baz puan artırarak yüzde 3,85'e yükseltti ve enflasyonun bir süre hedefin üzerinde kalmasının muhtemel olduğunu, artışın bir kısmının daha büyük kapasite baskılarını yansıttığını belirtti.",
+        "headlineEn": "The RBA raised the cash rate target by 25 basis points to 3.85 per cent, saying inflation is likely to remain above target for some time and that part of its rise reflects greater capacity pressures.",
         "changesTr": [
-          "Enflasyonun 2025'in ikinci yarısında belirgin biçimde arttığı ve bunun bir kısmının daha büyük kapasite baskılarını yansıttığı belirtildi; önceki metindeki artışın kısmen geçici etkenlerden kaynaklandığı ve aylık TÜFE verisinin sinyal değerinin belirsiz olduğu vurgusu çıkarıldı.",
-          "Özel talebin beklenenden çok daha güçlü arttığı, kapasite baskılarının önceden değerlendirilenden büyük olduğu ve finansal koşulların hâlâ sıkı olup olmadığının belirsiz olduğu yazıldı.",
-          "İşgücü piyasasının biraz sıkı kaldığı ve son aylarda istikrar kazandığı, işsizlik oranının beklenenden biraz düşük olduğu belirtildi; önceki metindeki işsizliğin kademeli arttığı ve işgücü piyasasında ılımlı gevşeme beklendiği ifadeleri çıkarıldı.",
-          "Ana ticaret ortaklarındaki büyüme ve ticaretin yukarı yönlü sürpriz yaptığı ve küresel belirsizliğin Avustralya ekonomisi üzerinde baskılayıcı etkisinin çok az olduğu eklendi.",
-          "Döviz kurunun ve piyasa faizlerinin nakit faiz beklentilerindeki artışın ardından yükseldiği eklendi; karar yine oybirliğiyle alındı."
+          "Kurul faizi yüzde 3,60'ta sabit tutmak yerine 25 baz puan artırarak yüzde 3,85'e çıkardı; önceki 'temkinli kalma' ifadesi yerine faiz artırımının uygun olduğu kararı geldi.",
+          "Enflasyon değerlendirmesi sertleşti: önceki metindeki geçici etkenler ve aylık TÜFE serisine dair belirsizlik vurgusu çıkarıldı, enflasyonun 2025'in ikinci yarısında belirgin biçimde arttığı ve bir süre hedefin üzerinde kalmasının muhtemel olduğu yazıldı.",
+          "Özel talebin beklenenden 'çok daha güçlü' arttığı ve kapasite baskılarının önceden değerlendirilenden büyük olduğu eklendi; finansal koşulların hâlâ sıkı olup olmadığının belirsiz olduğu belirtildi.",
+          "İşgücü piyasası değerlendirmesi değişti: işsizliğin kademeli yükseldiği ifadesi çıkarıldı, piyasanın son aylarda dengelendiği ve işsizliğin beklenenden biraz düşük olduğu yazıldı.",
+          "Küresel ekonomi için 'Avustralya'ya baskılayıcı etkisi az ya da hiç yok' denildi ve ana ticaret ortaklarındaki büyümenin beklentileri aştığı eklendi."
         ],
         "changesEn": [
-          "Inflation is described as having picked up materially in the second half of 2025, partly reflecting greater capacity pressures; the earlier emphasis on temporary factors and uncertainty about the monthly CPI signal was removed.",
-          "Private demand is said to have strengthened substantially more than expected, capacity pressures are greater than previously assessed, and it is now uncertain whether financial conditions remain restrictive.",
-          "The labour market is described as a little tight and stabilising, with unemployment a little lower than expected; earlier references to gradually rising unemployment and expected further modest easing were dropped.",
-          "The statement adds that growth and trade in major trading partners surprised on the upside and global uncertainty has had little or no depressing effect on Australia.",
-          "It notes the exchange rate and market interest rates rose following higher cash rate expectations; the decision was again unanimous."
+          "The Board raised the cash rate by 25 basis points to 3.85 per cent instead of holding it at 3.60 per cent, replacing the earlier 'remain cautious' stance with a judgement that a hike was appropriate.",
+          "The inflation assessment hardened: references to temporary factors and uncertainty over the monthly CPI series were dropped, and the statement now says inflation picked up materially in the second half of 2025 and is likely to remain above target for some time.",
+          "It added that private demand has strengthened 'substantially more than expected' and that capacity pressures are greater than previously assessed, while noting it is uncertain whether financial conditions remain restrictive.",
+          "The labour market assessment changed: the reference to gradually rising unemployment was removed, and conditions are now described as having stabilised, with unemployment a little lower than expected.",
+          "On the global economy, it now says there has been little or no depressing effect on Australia and that growth among major trading partners has surprised on the upside."
         ],
         "tone": "more-hawkish",
-        "toneReasonTr": "\"Enflasyonun bir süre hedefin üzerinde kalması muhtemel\", \"kapasite baskıları önceden değerlendirilenden büyük\" ve \"özel talep beklenenden hızlı büyüyor\" ifadeleri, önceki metnin temkinli bekleme dilinin yerini aldı.",
-        "toneReasonEn": "Phrases such as \"inflation is likely to remain above target for some time\", \"capacity pressures are greater than previously assessed\" and \"private demand is growing more quickly than expected\" replaced the previous statement's cautious wait-and-see language.",
+        "toneReasonTr": "Geçici etkenlere dair çekinceler çıkarılıp yerine 'enflasyonun bir süre hedefin üzerinde kalması muhtemel', 'kapasite baskıları önceden değerlendirilenden büyük' ve 'talep beklenenden çok daha güçlü' ifadeleri geldi.",
+        "toneReasonEn": "Caveats about temporary factors were replaced by 'inflation is likely to remain above target for some time', 'capacity pressures are greater than previously assessed' and demand 'strengthened substantially more than expected'.",
+        "score": 6,
+        "scoreReasonTr": "Faiz artırımı, enflasyonun bir süre hedefin üzerinde kalacağı ve kapasite baskılarının arttığı değerlendirmesiyle gerekçelendirildi; ancak metin ek artırımı açıkça ima etmiyor, veriye bağlı kalacağını söylüyor.",
+        "scoreReasonEn": "The hike is justified by inflation staying above target for some time and rising capacity pressures, though the statement does not explicitly signal further hikes and remains data-dependent.",
         "model": "claude-code/opus",
-        "promptVersion": "1",
-        "summarizedAt": "2026-10-14T03:02:46.671Z"
+        "promptVersion": "2",
+        "summarizedAt": "2026-10-15T04:32:38.017Z"
       }
     },
     {
@@ -1294,28 +1303,31 @@
       "rate": 37,
       "previousId": "tcmb-2025-12-11",
       "summary": {
-        "headlineTr": "TCMB politika faizini yüzde 38'den yüzde 37'ye indirdi ve öncü verilerin ocakta aylık enflasyonun gıda öncülüğünde arttığına işaret ettiğini belirtti.",
-        "headlineEn": "The CBRT cut the policy rate from 38 percent to 37 percent and noted that leading data point to a food-led rise in monthly consumer inflation in January.",
+        "headlineTr": "TCMB politika faizini yüzde 38'den yüzde 37'ye indirdi ve öncü verilerin ocak ayında aylık enflasyonun gıda öncülüğünde arttığına işaret ettiğini belirtti.",
+        "headlineEn": "The CBRT cut its policy rate from 38 percent to 37 percent and noted that leading indicators point to a food-led rise in monthly consumer inflation in January.",
         "changesTr": [
-          "Öncü verilerin ocak ayında aylık tüketici enflasyonunun gıda öncülüğünde arttığına, ana eğilimdeki artışın ise sınırlı olduğuna işaret ettiği eklendi.",
-          "Enflasyonun ana eğiliminin aralık ayında gerilediği belirtildi; kasım enflasyonunun beklenenden düşük gerçekleştiği ifadesi çıkarıldı.",
-          "Talep koşullarının dezenflasyona verdiği desteğin \"azalmasına karşın sürdüğü\" yazıldı; önceki metinde desteğin sürdüğü söyleniyordu.",
-          "Üçüncü çeyrek büyümesinin öngörülenden yüksek gerçekleştiği ifadesi çıkarıldı.",
-          "Gecelik borç verme faizi yüzde 41'den yüzde 40'a, gecelik borçlanma faizi yüzde 36,5'ten yüzde 35,5'e indirildi; ileriye dönük yönlendirme değişmedi."
+          "Politika faizi yüzde 38'den yüzde 37'ye indirildi; gecelik borç verme faizi yüzde 41'den yüzde 40'a, gecelik borçlanma faizi yüzde 36,5'ten yüzde 35,5'e düşürüldü.",
+          "Kasım enflasyonunun beklenenden düşük gerçekleştiği ifadesi çıkarıldı; yerine öncü verilerin ocak ayında aylık tüketici enflasyonunun gıda öncülüğünde arttığına, ana eğilimdeki artışın ise sınırlı olduğuna işaret ettiği yazıldı.",
+          "Enflasyonun ana eğiliminin aralık ayında gerilediği belirtildi.",
+          "Talep koşullarının dezenflasyona verdiği desteğin artık 'azalmasına karşın' sürdüğü yazıldı; üçüncü çeyrek büyümesinin öngörülenden yüksek olduğu cümlesi çıkarıldı.",
+          "İleriye dönük yönlendirme, sıkılaştırma koşulu ve makroihtiyati/likidite ifadeleri değişmedi."
         ],
         "changesEn": [
-          "The statement adds that leading data indicate a food-led rise in monthly consumer inflation in January, with a limited increase in the underlying trend.",
-          "The underlying trend of inflation is said to have declined in December; the remark that November inflation came in below expectations was removed.",
-          "Demand conditions' support to disinflation is now described as continuing \"despite diminishing\", whereas before it was simply said to continue.",
-          "The reference to third-quarter growth exceeding forecasts was removed.",
-          "The overnight lending rate was cut from 41 to 40 percent and the overnight borrowing rate from 36.5 to 35.5 percent; forward guidance was unchanged."
+          "The policy rate was cut from 38 percent to 37 percent; the overnight lending rate was lowered from 41 percent to 40 percent and the overnight borrowing rate from 36.5 percent to 35.5 percent.",
+          "The statement that November inflation came in below expectations was removed; it now says leading indicators point to a food-led rise in monthly consumer inflation in January, with a limited increase in the underlying trend.",
+          "It notes that the underlying trend of inflation declined in December.",
+          "Demand conditions are now said to support disinflation 'albeit to a lesser extent'; the sentence on third-quarter growth exceeding projections was dropped.",
+          "Forward guidance, the conditional tightening clause and the macroprudential and liquidity language were unchanged."
         ],
         "tone": "mixed",
-        "toneReasonTr": "Ocakta gıda öncülüğünde aylık enflasyon artışına dikkat çekilmesi şahin yönde, talebin dezenflasyona desteğinin azaldığı ve ana eğilimin aralıkta gerilediği ifadeleri ise güvercin yönde.",
-        "toneReasonEn": "Flagging a food-led rise in January monthly inflation leans hawkish, while noting diminishing demand support to disinflation and a December decline in the underlying trend leans dovish.",
+        "toneReasonTr": "Ana eğilimin aralıkta gerilediği ve ocaktaki artışın sınırlı olduğu ifadeleri güvercin, ocakta gıda öncülüğünde aylık enflasyon artışı ve talebin dezenflasyona desteğinin azalması ifadeleri şahin yönde.",
+        "toneReasonEn": "The decline in the underlying trend in December and the limited rise in January are dovish, while the food-led rise in monthly inflation in January and the weakening demand support for disinflation are hawkish.",
+        "score": 3,
+        "scoreReasonTr": "Faiz indirilse de metin, fiyat istikrarı sağlanana kadar sıkı duruşun süreceğini, adımların ihtiyatlı ve toplantı bazlı olacağını ve görünüm ara hedeflerden ayrışırsa sıkılaştırma yapılacağını vurguluyor.",
+        "scoreReasonEn": "Despite the cut, the statement stresses that a tight stance will be maintained until price stability is achieved, that steps will be cautious and meeting-by-meeting, and that policy will be tightened if the outlook deviates from the interim targets.",
         "model": "claude-code/opus",
-        "promptVersion": "1",
-        "summarizedAt": "2026-10-14T03:02:46.671Z"
+        "promptVersion": "2",
+        "summarizedAt": "2026-10-15T04:32:38.017Z"
       }
     },
     {
