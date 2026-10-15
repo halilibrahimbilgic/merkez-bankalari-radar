@@ -1,5 +1,5 @@
 {
-  "fetchedAt": "2026-10-15T08:32:31.209Z",
+  "fetchedAt": "2026-10-15T09:02:26.418Z",
   "minutes": [
     {
       "meetingId": "boe-2026-02-05",
@@ -687,7 +687,31 @@
       "urls": {
         "en": "https://www.rba.gov.au/monetary-policy/rba-board-minutes/2026/2026-03-17.html"
       },
-      "fetchedAt": "2026-10-14T22:32:21.677Z"
+      "fetchedAt": "2026-10-14T22:32:21.677Z",
+      "summary": {
+        "headlineTr": "Kurul üyelerinin tamamı enflasyonu hedefe döndürmek için yakın vadede daha fazla sıkılaşma gerektiği konusunda hemfikirdi; ayrılık yalnızca artırımın bu toplantıda mı yoksa Orta Doğu'daki çatışmanın etkileri netleştikten sonra mı yapılacağındaydı.",
+        "headlineEn": "All Board members agreed that further tightening would likely be required in the near term to return inflation to target; the split was only over whether to raise at this meeting or wait until the effects of the Middle East conflict became clearer.",
+        "pointsTr": [
+          "Karar 5'e 4 oyla alındı: dört üye faizi %3,85'te sabit tutmayı savundu; bu üyeler de sıkılaşmanın muhtemelen gerekeceğini kabul etti ama tüketimin beklenenden zayıf gelmesi, birim işgücü maliyetlerindeki yavaşlama ve çatışmanın belirsiz etkileri nedeniyle beklemeyi tercih etti.",
+          "Çoğunluk, şubat tahminlerinde zaten hedefin üzerinde kalması beklenen enflasyonun risklerinin yukarı yönlü arttığını, finansal koşulların aşırı talebi azaltacak kadar sıkı olmadığını ve hedefe kararlılığın açıkça gösterilmesi gerektiğini savundu.",
+          "Personelin basit hesabına göre petrolün varil başına 100 ABD doları civarında kalması, akaryakıt yoluyla manşet enflasyonu haziran çeyreğine kadar yıllık yaklaşık yüzde 5'e, şubattaki beklentinin yaklaşık ¾ puan üzerine çıkarabilir.",
+          "Üyeler ekonominin aşırı talep altında çalıştığını, işgücü piyasasının biraz daha sıkılaştığını ve nötr faiz tahminlerinin yükselmesi ile kısa vadeli reel faizin düşmesi nedeniyle para politikasının sanıldığından daha az sıkı olabileceğini değerlendirdi.",
+          "Üyeler, çatışmanın süresi ve kapsamına ilişkin yüksek belirsizlik nedeniyle faizin gelecekteki patikasının güvenle öngörülemeyeceğini ve gelecek kararlarda fiyat istikrarı ile tam istihdam hedeflerinin dikkatle dengelenmesi gerekeceğini belirtti."
+        ],
+        "pointsEn": [
+          "The decision was taken 5–4: four members favoured holding the cash rate at 3.85 per cent; they also accepted that tightening would probably be required but preferred to wait given weaker-than-expected consumption, slowing unit labour cost growth and the uncertain effects of the conflict.",
+          "The majority argued that inflation, already projected in February to stay above target for some time, faced risks tilted further to the upside, that financial conditions were not restrictive enough to reduce excess demand, and that a clear commitment to the target needed to be demonstrated.",
+          "A simple staff estimate showed that oil prices remaining around US$100 per barrel would, via petrol prices alone, lift headline inflation to around 5 per cent over the year to the June quarter, around ¾ of a percentage point higher than expected in February.",
+          "Members judged that the economy was operating with excess demand, that the labour market had tightened a little further, and that policy might be less restrictive than previously assessed given higher neutral rate estimates and a lower short-term real interest rate.",
+          "Members said the future path of the cash rate could not be predicted with any confidence given high uncertainty about the breadth and duration of the conflict, and that future decisions would require carefully balancing price stability and full employment."
+        ],
+        "score": 6,
+        "scoreReasonTr": "Tüm üyelerin yakın vadede daha fazla sıkılaşmanın muhtemelen gerekeceğinde birleşmesi, çoğunluğun risklerin yukarı yönlü arttığını ve finansal koşulların yeterince sıkı olmadığını söylemesi şahin bir duruşa işaret ediyor; ancak çatışma kaynaklı belirsizlik vurgusu ve gelecek patikanın öngörülemeyeceği ifadesi puanı uçtan uzak tutuyor.",
+        "scoreReasonEn": "All members agreeing that further tightening would likely be required in the near term, and the majority stating that risks had tilted further to the upside and financial conditions were not sufficiently restrictive, point to a hawkish stance, while the emphasis on conflict-related uncertainty and an unpredictable future path keeps the score away from the extreme.",
+        "model": "claude-code/opus",
+        "promptVersion": "1",
+        "summarizedAt": "2026-10-15T09:02:26.417Z"
+      }
     },
     {
       "meetingId": "rba-2026-05-05",
@@ -833,7 +857,31 @@
         "tr": "https://www.tcmb.gov.tr/wps/wcm/connect/TR/TCMB+TR/Main+Menu/Duyurular/Basin/2026/DUY2026-14",
         "en": "https://www.tcmb.gov.tr/wps/wcm/connect/EN/TCMB+EN/Main+Menu/Announcements/Press+Releases/2026/ANO2026-14"
       },
-      "fetchedAt": "2026-10-14T22:32:20.554Z"
+      "fetchedAt": "2026-10-14T22:32:20.554Z",
+      "summary": {
+        "headlineTr": "Kurul politika faizini yüzde 37'de tutsa da 2 Mart'tan itibaren bir hafta vadeli repo ihalelerine ara vererek ağırlıklı ortalama fonlama maliyetini yüzde 40'a çıkardığını ve enflasyon görünümünde belirgin ve kalıcı bir bozulma olursa duruşu sıkılaştıracağını vurguladı.",
+        "headlineEn": "Although the Committee held the policy rate at 37 percent, it highlighted that suspending one-week repo auctions from 2 March had lifted the weighted average funding cost to 40 percent and that it would tighten the stance if the inflation outlook deteriorated significantly and persistently.",
+        "pointsTr": [
+          "Jeopolitik gelişmelerle Brent petrol şubattaki ortalama 71,1 ABD dolarından 11 Mart itibarıyla 88,5 ABD dolarına çıktı; Kurul enflasyon görünümüne yönelik belirsizliğin önemli ölçüde yükseldiğini belirtti.",
+          "Yıllık enflasyon şubatta gıda kaynaklı olarak yüzde 31,53'e yükselirken B ve C endeksleri yüzde 29,91 ve yüzde 29,46'ya geriledi; ana eğilim yataya yakın seyretti, hizmet enflasyonu yüzde 40 civarında atalet göstermeye devam etti.",
+          "Piyasa katılımcılarının 2026 yıl sonu enflasyon beklentisi yüzde 24,1'e, 2027 beklentisi yüzde 18,4'e yükseldi; hane halkının 12 ay sonrası beklentisi yüzde 48,8'de yatay kaldı ve beklentiler risk unsuru olmaya devam ediyor.",
+          "Para politikasının yanında TL uzlaşmalı vadeli döviz satımına başlandı; eşel mobil, gübre ithalatında gümrük vergisinin kaldırılması ve gübre ihracatına kısıtlama gibi mali tedbirlerle emtia fiyatlarının enflasyona geçişi sınırlanmaya çalışılıyor.",
+          "İktisadi faaliyet son çeyrekte potansiyelin altında büyüdü, sanayi üretiminin ana eğilimi zayıf ve talep koşulları dezenflasyonu desteklemeyi sürdürüyor; TCMB brüt rezervleri 23 Ocak'tan bu yana 18,1 milyar ABD doları azalarak 197,5 milyar ABD dolarına geriledi."
+        ],
+        "pointsEn": [
+          "Due to geopolitical developments, Brent crude rose from an average of US$71.1 in February to US$88.5 as of 11 March; the Committee said uncertainty about the inflation outlook had increased significantly.",
+          "Annual inflation rose to 31.53 percent in February on food, while the B and C indices fell to 29.91 percent and 29.46 percent; the underlying trend was broadly flat, and services inflation of around 40 percent continued to show inertia.",
+          "Market participants' year-end inflation expectations rose to 24.1 percent for 2026 and 18.4 percent for 2027; households' 12-month-ahead expectation was flat at 48.8 percent, and expectations remain a risk factor.",
+          "Alongside monetary policy, TL-settled forward FX sales were launched, and fiscal measures such as the sliding-scale fuel tax, removal of customs duties on fertiliser imports and restrictions on fertiliser exports aim to limit the pass-through of commodity prices to inflation.",
+          "Economic activity grew below potential in the last quarter, the underlying trend in industrial production is weak and demand conditions continue to support disinflation; the CBRT's gross reserves fell by US$18.1 billion since 23 January to US$197.5 billion."
+        ],
+        "score": 6,
+        "scoreReasonTr": "Fiilî fonlama maliyetinin yüzde 40'a çıkarılması, sıkı duruşun fiyat istikrarı sağlanana kadar sürdürüleceği ve enflasyon görünümünde belirgin ve kalıcı bozulma halinde sıkılaştırılacağı ifadeleri şahin bir duruşa işaret ediyor; politika faizinin sabit tutulması ve talep koşullarının dezenflasyonu desteklediği tespiti puanı uçtan uzak tutuyor.",
+        "scoreReasonEn": "Raising the effective funding cost to 40 percent, maintaining the tight stance until price stability is achieved, and pledging to tighten if the inflation outlook deteriorates significantly and persistently point to a hawkish stance, while holding the policy rate and noting that demand conditions support disinflation keep the score away from the extreme.",
+        "model": "claude-code/opus",
+        "promptVersion": "1",
+        "summarizedAt": "2026-10-15T09:02:26.418Z"
+      }
     },
     {
       "meetingId": "tcmb-2026-04-22",
