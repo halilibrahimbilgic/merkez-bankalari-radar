@@ -1,5 +1,5 @@
 {
-  "fetchedAt": "2026-10-15T03:02:44.039Z",
+  "fetchedAt": "2026-10-15T03:32:37.119Z",
   "statements": [
     {
       "meetingId": "boe-2025-12-18",
@@ -66,28 +66,31 @@
       "rate": 3.75,
       "previousId": "boe-2026-02-05",
       "summary": {
-        "headlineTr": "BoE politika faizini %3,75'te oy birliğiyle sabit tuttu ve Orta Doğu'daki çatışmanın enerji fiyatlarını yükseltmesiyle daha fazla faiz indirimi beklentisini metinden çıkardı.",
-        "headlineEn": "The BoE unanimously held Bank Rate at 3.75% and dropped its signal of further rate cuts as conflict in the Middle East pushed up energy prices.",
+        "headlineTr": "BoE, Banka Faizini oy birliğiyle %3,75'te sabit tuttu ve Orta Doğu'daki çatışmanın yol açtığı enerji şoku nedeniyle daha fazla faiz indirimi beklentisini metinden çıkardı.",
+        "headlineEn": "The BoE unanimously held Bank Rate at 3.75% and dropped its signal of further rate cuts, citing the energy shock from the conflict in the Middle East.",
         "changesTr": [
-          "Önceki metindeki \"politika faizinin daha da düşürülmesi muhtemel\" ifadesi ve gevşemenin kapsamı ile zamanlamasına ilişkin yönlendirme kaldırıldı; yerine Komite'nin enflasyonun %2 hedefine ulaşması için gerektiğinde harekete geçmeye hazır olduğu yazıldı.",
-          "Oylama 5–4'ten (dört üye 25 baz puan indirimle %3,5'i istemişti) oy birliğine döndü.",
-          "Enflasyonun Nisan'dan itibaren hedefe yakın seviyeye ineceği beklentisinin yerine, Orta Doğu'daki çatışmanın enerji ve emtia fiyatlarını belirgin biçimde artırdığı ve TÜFE enflasyonunun yakın vadede daha yüksek olacağı değerlendirmesi geldi.",
-          "Komite, ücret ve fiyat belirlemede ikincil etkiler yoluyla yurt içi enflasyon baskısı riskinin arttığını ve bu riskin yüksek enerji fiyatları sürdükçe büyüyeceğini vurguladı.",
-          "Öte yandan yüksek enerji maliyetlerinin yol açması muhtemel ekonomik zayıflamanın enflasyon üzerindeki etkilerinin de değerlendirildiği belirtildi."
+          "\"Banka Faizinin muhtemelen daha da indirileceği\" yönlendirmesi kaldırıldı; yerine Komite'nin enflasyonun %2 hedefinde kalması için gerektiğinde harekete geçmeye hazır olduğu ifadesi geldi.",
+          "Enflasyonun Nisan'dan itibaren hedef civarına ineceği beklentisi yerini, Orta Doğu'daki çatışmanın enerji ve emtia fiyatlarını önemli ölçüde artırması nedeniyle TÜFE enflasyonunun yakın vadede daha yüksek olacağı değerlendirmesine bıraktı.",
+          "PPK'nın, yüksek enerji fiyatları ne kadar uzun sürerse o kadar büyüyecek olan ücret ve fiyat belirlemedeki ikinci tur etkiler yoluyla yurt içi enflasyon baskısı riskine karşı tetikte olduğu eklendi.",
+          "Oy dağılımı 5–4'ten (dört üye 25 baz puan indirim istemişti) oy birliğine döndü.",
+          "Komite ayrıca yüksek enerji maliyetlerinin yol açması muhtemel ekonomik zayıflamanın enflasyona etkilerini değerlendirdiğini belirtti."
         ],
         "changesEn": [
-          "The previous statement's \"Bank Rate is likely to be reduced further\" and its guidance on the extent and timing of further easing were removed, replaced by the Committee standing ready to act as necessary to keep inflation on track for the 2% target.",
-          "The vote moved from 5–4 (four members had preferred a 0.25 percentage point cut to 3.5%) to unanimous.",
-          "The expectation that inflation would fall back to around target from April was replaced by an assessment that conflict in the Middle East has significantly raised energy and commodity prices and that CPI inflation will be higher in the near term.",
-          "The Committee highlighted an increased risk of domestic inflationary pressures through second-round effects in wage and price-setting, which grows the longer higher energy prices persist.",
-          "It also noted it is assessing the inflation implications of the weakening in activity likely to result from higher energy costs."
+          "The guidance that \"Bank Rate is likely to be reduced further\" was removed and replaced by a statement that the Committee stands ready to act as necessary to keep CPI inflation on track for the 2% target.",
+          "The expectation that inflation would fall back to around target from April gave way to an assessment that CPI inflation will be higher in the near term because the Middle East conflict has significantly raised energy and commodity prices.",
+          "The MPC added that it is alert to the increased risk of domestic inflationary pressures through second-round effects in wage and price-setting, a risk that grows the longer higher energy prices persist.",
+          "The vote moved from a 5–4 split, with four members favouring a 25 bp cut, to unanimity.",
+          "The Committee also said it is assessing the inflation implications of the weakening in activity likely to result from higher energy costs."
         ],
         "tone": "more-hawkish",
-        "toneReasonTr": "Daha fazla indirim sinyali çıkarıldı, indirim yönündeki dört oy ortadan kalktı ve ikincil etkiler yoluyla enflasyon riskine vurgu yapılarak \"gerektiğinde harekete geçmeye hazır\" ifadesi eklendi.",
-        "toneReasonEn": "The signal of further cuts was dropped, the four votes for a cut disappeared, and emphasis on second-round inflation risks was added alongside \"stands ready to act as necessary\".",
+        "toneReasonTr": "İndirim yönlendirmesinin ve dört üyenin indirim oyunun ortadan kalkması, yakın vadede daha yüksek enflasyon ve ikinci tur etkiler riskine yapılan vurgu metni sıkılaşma yönüne çekiyor.",
+        "toneReasonEn": "The removal of the easing guidance and of the four votes for a cut, together with the emphasis on higher near-term inflation and second-round risks, shifts the language in a hawkish direction.",
+        "score": 2,
+        "scoreReasonTr": "Oy birliğiyle sabit tutma, ikinci tur enflasyon riskine karşı tetikte olma ve gerekirse harekete geçmeye hazırlık şahin yönde ağır basarken, enerji şokunun ekonomik faaliyeti zayıflatacağının da tartılması duruşu hafif şahin düzeyde tutuyor.",
+        "scoreReasonEn": "A unanimous hold, alertness to second-round inflation risks and readiness to act lean hawkish, while the parallel assessment of weaker activity from the energy shock keeps the stance only mildly hawkish.",
         "model": "claude-code/opus",
-        "promptVersion": "1",
-        "summarizedAt": "2026-10-14T02:02:30.114Z"
+        "promptVersion": "2",
+        "summarizedAt": "2026-10-15T03:32:37.117Z"
       }
     },
     {
@@ -313,28 +316,31 @@
       "rate": 0.75,
       "previousId": "boj-2026-01-23",
       "summary": {
-        "headlineTr": "BoJ kısa vadeli faizi 8-1 oyla yaklaşık %0,75'te sabit tuttu; metin, Orta Doğu'daki gerilimle yükselen petrol fiyatlarının enflasyon üzerinde yukarı yönlü baskı yaratacağını ekledi.",
-        "headlineEn": "The BoJ kept the overnight call rate at around 0.75% by an 8-1 vote, and the statement added that higher crude oil prices amid Middle East tensions are expected to put upward pressure on inflation.",
+        "headlineTr": "BoJ, gecelik teminatsız çağrı faizini 8-1 oyla yaklaşık %0,75'te sabit tuttu ve görünüm gerçekleşirse faizi artırmaya devam edeceğini yinelerken Orta Doğu kaynaklı petrol fiyatı artışını yeni bir risk olarak öne çıkardı.",
+        "headlineEn": "The BoJ kept the uncollateralized overnight call rate at around 0.75% by an 8-1 vote and, while reiterating that it will continue raising rates if its outlook is realized, highlighted the oil price surge linked to the Middle East as a new risk.",
         "changesTr": [
-          "Önceki metin yalnızca kararı ve oylamayı içeriyordu; yeni metin ekonomik değerlendirme ekliyor: TÜFE (taze gıda hariç) artışı hükümet önlemleriyle yaklaşık %2'ye geriledi, geçici olarak %2'nin altına inmesi, ardından petrol fiyatlarındaki artışla yukarı yönlü baskıya girmesi bekleniyor.",
-          "Orta Doğu'daki gerilim nedeniyle piyasaların oynaklaştığı ve ham petrol fiyatlarının belirgin biçimde yükseldiği, bunun temel enflasyona etkisine dikkat edilmesi gerektiği belirtildi.",
-          "Yeni metin, Ocak Görünüm Raporu'ndaki görünüm gerçekleşirse Banka'nın politika faizini artırmaya devam edeceği yönlendirmesini içeriyor.",
-          "Takata faizin %1,0'a çıkarılması önerisini sürdürdü; gerekçesi olarak yurt dışı kaynaklı fiyat artışlarının ikincil etkilerini gösterdi.",
-          "Takata ve Tamura fiyat görünümü ifadesine karşı çıktı; Tamura temel enflasyonun 2026 mali yılı başından itibaren hedefle genel olarak uyumlu olacağını düşündü."
+          "Metin, Orta Doğu'daki gerginliğin ardından piyasaların dalgalandığını ve ham petrol fiyatlarının önemli ölçüde yükseldiğini, bunun TÜFE artış hızı üzerinde yukarı yönlü baskı yaratmasının beklendiğini belirtiyor.",
+          "Gıda fiyatı etkilerinin azalması ve hükümet önlemleriyle çekirdek TÜFE artış hızının geçici olarak %2'nin altına inmesi bekleniyor; temel enflasyonun ise projeksiyon döneminin ikinci yarısında fiyat istikrarı hedefiyle genel olarak uyumlu olması öngörülüyor.",
+          "Reel faizlerin belirgin biçimde düşük olduğu, görünüm gerçekleşirse politika faizinin artırılmaya ve parasal genişliğin derecesinin ayarlanmaya devam edileceği ifade ediliyor (önceki metinde bu değerlendirme bölümü yer almıyordu).",
+          "Karşı oy veren Takata, fiyat risklerinin yukarı yönlü olma gerekçesini yurt dışı gelişmelerden kaynaklanan fiyat artışlarının ikinci tur etkilerine bağladı ve yine faizin %1,0'a çıkarılmasını önerdi.",
+          "Fiyat görünümü ifadelerine Takata ve Tamura karşı çıktı; Tamura temel enflasyonun 2026 mali yılı başından itibaren hedefle uyumlu olacağını düşünüyor."
         ],
         "changesEn": [
-          "The previous text contained only the decision and the vote; the new statement adds an economic assessment: CPI (all items less fresh food) inflation has fallen to around 2% due to government measures and is expected to dip temporarily below 2% before coming under upward pressure from higher oil prices.",
-          "It notes that tension in the Middle East has made markets volatile and pushed crude oil prices up significantly, and that attention should be paid to the impact on underlying inflation.",
-          "The new statement includes guidance that the Bank will continue to raise the policy interest rate if the January Outlook Report projections are realized.",
-          "Takata again proposed raising the rate to 1.0%, now citing second-round effects of price rises stemming from overseas developments.",
-          "Takata and Tamura dissented on the price outlook description, with Tamura considering that underlying inflation would be generally consistent with the target from the beginning of fiscal 2026."
+          "The statement notes that markets have been volatile and crude oil prices have risen significantly after increased tension in the Middle East, and that this is expected to put upward pressure on CPI inflation.",
+          "Core CPI inflation is expected to temporarily decelerate below 2% as food price effects wane and due to government measures, while underlying inflation is projected to be generally consistent with the price stability target in the second half of the projection period.",
+          "It states that real interest rates are at significantly low levels and that, if the outlook is realized, the Bank will continue to raise the policy rate and adjust the degree of accommodation (the previous text did not include this assessment section).",
+          "Dissenter Takata attributed upside risks to prices to second-round effects of price rises stemming from overseas developments and again proposed raising the rate to 1.0%.",
+          "Takata and Tamura opposed the description of the price outlook, with Tamura considering that underlying inflation would be consistent with the target from the beginning of fiscal 2026."
         ],
         "tone": "more-hawkish",
-        "toneReasonTr": "Faiz artışlarının süreceği yönlendirmesi, petrol kaynaklı yukarı yönlü enflasyon baskısı ve enflasyon görünümünün fazla temkinli olduğu gerekçesiyle iki üyenin muhalefeti metne eklendi; ancak önceki metin değerlendirme içermediği için karşılaştırma sınırlı.",
-        "toneReasonEn": "Guidance that rate hikes will continue, upward oil-driven inflation pressure and two members' dissent that the inflation outlook is too cautious were added, though the comparison is limited because the previous text contained no assessment.",
+        "toneReasonTr": "Petrol fiyatlarının enflasyon üzerinde yukarı yönlü baskı yaratacağı ifadesi, temel enflasyon görünümüne petrol etkisine dikkat çağrısı ve iki üyenin fiyat görünümünü fazla düşük bulması metni sıkılaşma yönüne çekiyor.",
+        "toneReasonEn": "The statement that oil prices will put upward pressure on inflation, the call for attention to oil's impact on underlying inflation and two members finding the price outlook too low tilt the language hawkish.",
+        "score": 3,
+        "scoreReasonTr": "Faiz sabit tutulsa da metin reel faizlerin belirgin biçimde düşük olduğunu ve görünüm gerçekleşirse faiz artırımlarının süreceğini açıkça söylüyor, bir üye de %1,0'a artırım öneriyor.",
+        "scoreReasonEn": "Although the rate was held, the statement says real interest rates are significantly low and that rate hikes will continue if the outlook is realized, with one member proposing a hike to 1.0%.",
         "model": "claude-code/opus",
-        "promptVersion": "1",
-        "summarizedAt": "2026-10-14T02:02:30.114Z"
+        "promptVersion": "2",
+        "summarizedAt": "2026-10-15T03:32:37.118Z"
       }
     },
     {
@@ -556,28 +562,31 @@
       "rate": 2,
       "previousId": "ecb-2026-02-05",
       "summary": {
-        "headlineTr": "ECB üç politika faizini sabit tuttu (mevduat faizi %2,00) ve Orta Doğu'daki savaşın enflasyon için yukarı, büyüme için aşağı yönlü risk yarattığını belirterek enflasyon projeksiyonlarını yükseltti.",
-        "headlineEn": "The ECB kept its three key rates unchanged (deposit facility at 2.00%) and said the war in the Middle East creates upside risks to inflation and downside risks to growth, revising its inflation projections up.",
+        "headlineTr": "ECB, üç temel faizi değiştirmedi (mevduat faizi %2,00) ve Orta Doğu'daki savaşın görünümü önemli ölçüde belirsizleştirerek enflasyonda yukarı, büyümede aşağı yönlü riskler yarattığını ekledi.",
+        "headlineEn": "The ECB left its three key rates unchanged (deposit rate 2.00%) and added that the war in the Middle East has made the outlook significantly more uncertain, creating upside risks for inflation and downside risks for growth.",
         "changesTr": [
-          "Enflasyonun %2 hedefinde istikrar kazanacağının \"yeniden teyit edildiği\" ifadesi çıkarıldı; yerine savaşın görünümü belirgin biçimde belirsizleştirdiği, enflasyon için yukarı ve büyüme için aşağı yönlü riskler yarattığı yazıldı.",
-          "Yeni projeksiyonlarda manşet enflasyon 2026'da %2,6, 2027'de %2,0, 2028'de %2,1; enerji ve gıda hariç enflasyon %2,3, %2,2 ve %2,1 olarak Aralık'a göre yukarı revize edildi.",
-          "Büyüme beklentisi 2026'da %0,9, 2027'de %1,3, 2028'de %1,4 olarak özellikle 2026 için aşağı revize edildi.",
-          "Senaryo analizine göre petrol ve gaz arzındaki uzun süreli bir aksama enflasyonu temel senaryonun üzerine, büyümeyi altına taşır; orta vadeli etki ikincil etkilerin büyüklüğüne bağlı.",
-          "Konsey'in belirsizliği yönetmek için iyi konumda olduğu ve veriye bağlı, toplantı bazlı yaklaşımın sürdüğü, belirli bir faiz patikasına bağlanılmadığı belirtildi."
+          "Savaşın yüksek enerji fiyatları yoluyla yakın vadeli enflasyon üzerinde belirgin etkisi olacağı, orta vadeli etkilerinin ise çatışmanın şiddeti ve süresine bağlı olduğu belirtildi.",
+          "Yeni projeksiyonlarda manşet enflasyon 2026'da %2,6, 2027'de %2,0, 2028'de %2,1; enerji ve gıda hariç enflasyon %2,3, %2,2 ve %2,1 olarak, Aralık'a göre yukarı revize edildi.",
+          "Büyüme beklentisi 2026'da %0,9, 2027'de %1,3, 2028'de %1,4 ile özellikle 2026 için aşağı revize edildi; önceki metindeki \"ekonomi dirençli\" değerlendirmesi ve geçmiş faiz indirimlerinin destekleyici etkisine yapılan atıf çıkarıldı.",
+          "Senaryo analizine göre petrol ve gaz arzında uzun süreli bir aksama enflasyonu temel senaryonun üstüne, büyümeyi altına taşır; orta vadeli etki ikinci tur etkilerin büyüklüğüne bağlı.",
+          "Konsey belirsizliği yönetmek için iyi konumda olduğunu, enflasyonun %2 civarında ve uzun vadeli beklentilerin çıpalı olduğunu belirterek veriye bağlı, toplantı bazında yaklaşımını ve faiz patikası taahhüdü vermediğini korudu."
         ],
         "changesEn": [
-          "The phrase that the updated assessment \"reconfirms\" inflation should stabilise at 2% was removed, replaced by a statement that the war has made the outlook significantly more uncertain, with upside risks for inflation and downside risks for growth.",
-          "New projections revised inflation up from December: headline at 2.6% in 2026, 2.0% in 2027 and 2.1% in 2028; inflation excluding energy and food at 2.3%, 2.2% and 2.1%.",
-          "Growth was revised down, especially for 2026, to 0.9% in 2026, 1.3% in 2027 and 1.4% in 2028.",
-          "Scenario analysis suggests a prolonged disruption in oil and gas supply would push inflation above and growth below the baseline, with medium-term effects depending on second-round effects.",
-          "The Governing Council said it is well positioned to navigate the uncertainty and kept its data-dependent, meeting-by-meeting approach without pre-committing to a rate path."
+          "It stated that the war will have a material impact on near-term inflation through higher energy prices, while its medium-term implications depend on the intensity and duration of the conflict.",
+          "New projections revised inflation up from December, with headline at 2.6% in 2026, 2.0% in 2027 and 2.1% in 2028, and inflation excluding energy and food at 2.3%, 2.2% and 2.1%.",
+          "Growth was revised down, especially for 2026, to 0.9% in 2026, 1.3% in 2027 and 1.4% in 2028, and the earlier \"economy remains resilient\" assessment and the reference to the supportive effects of past rate cuts were dropped.",
+          "Scenario analysis suggests a prolonged disruption in oil and gas supply would push inflation above and growth below the baseline, with medium-term effects depending on the size of second-round effects.",
+          "The Council said it is well positioned to navigate the uncertainty, with inflation around 2% and longer-term expectations well anchored, and kept its data-dependent, meeting-by-meeting approach without pre-committing to a rate path."
         ],
-        "tone": "more-hawkish",
-        "toneReasonTr": "Enflasyon için yukarı yönlü riskler, yükseltilen enflasyon projeksiyonları ve hedefe ulaşılacağının \"teyidinin\" çıkarılması öne çıkıyor; büyüme için aşağı yönlü riskler ise dengeleyici unsur olarak yer alıyor.",
-        "toneReasonEn": "Upside inflation risks, higher inflation projections and the removal of the \"reconfirms\" language dominate, while downside growth risks act as a partial offset.",
+        "tone": "mixed",
+        "toneReasonTr": "Enflasyon projeksiyonlarının yukarı revizyonu ve enflasyonda yukarı yönlü riskler şahin yönde, büyümenin aşağı revizyonu ve büyümede aşağı yönlü riskler güvercin yönde değişiklikler.",
+        "toneReasonEn": "Upward inflation revisions and upside inflation risks point hawkish, while the downward growth revision and downside growth risks point dovish.",
+        "score": 1,
+        "scoreReasonTr": "Sabit tutma, veri bağımlılığı ve iki yönlü risk vurgusu dengeli bir duruşa işaret ederken, enerji kaynaklı yükselen enflasyon projeksiyonları ve ikinci tur etkilere dikkat duruşu hafif şahine kaydırıyor.",
+        "scoreReasonEn": "A hold, data dependence and two-sided risks signal a balanced stance, while energy-driven higher inflation projections and attention to second-round effects tilt it slightly hawkish.",
         "model": "claude-code/opus",
-        "promptVersion": "1",
-        "summarizedAt": "2026-10-14T02:02:30.115Z"
+        "promptVersion": "2",
+        "summarizedAt": "2026-10-15T03:32:37.119Z"
       }
     },
     {
@@ -813,26 +822,27 @@
       "rateLower": 3.5,
       "previousId": "fed-2026-01-28",
       "summary": {
-        "headlineTr": "Fed politika faizini %3,50–3,75 aralığında sabit tuttu; Waller çoğunluğa katıldı ve indirim yönünde tek muhalif oy Miran'dan geldi.",
-        "headlineEn": "The Fed held the federal funds rate target range at 3-1/2 to 3-3/4 percent; Waller joined the majority, leaving Miran as the sole dissent in favour of a cut.",
+        "headlineTr": "Fed, federal fon faizi hedef aralığını %3,50–3,75'te sabit tuttu; metne Orta Doğu'daki gelişmelerin ABD ekonomisine etkilerinin belirsiz olduğu eklendi ve indirim yönünde karşı oy sayısı ikiden bire indi.",
+        "headlineEn": "The Fed held the federal funds target range at 3-1/2 to 3-3/4 percent, added that the implications of Middle East developments for the U.S. economy are uncertain, and dissents in favour of a cut fell from two to one.",
         "changesTr": [
-          "Waller bu kez karara destek verdi; 25 baz puanlık indirim isteyen muhalif oy sayısı ikiden (Miran ve Waller) bire (Miran) indi.",
           "Orta Doğu'daki gelişmelerin ABD ekonomisi üzerindeki etkilerinin belirsiz olduğu ifadesi eklendi.",
-          "İşsizlik oranı için \"bazı istikrar işaretleri gösterdi\" yerine \"son aylarda çok az değişti\" ifadesi kullanıldı.",
-          "Faiz yönlendirmesi ve enflasyonun \"bir miktar yüksek\" olduğu değerlendirmesi değişmedi."
+          "İşsizlik oranı için \"bazı istikrar işaretleri gösterdi\" ifadesi \"son aylarda pek değişmedi\" olarak güncellendi.",
+          "Waller bu kez karar lehine oy verdi; 25 baz puan indirim isteyerek karşı oy kullanan yalnızca Miran kaldı."
         ],
         "changesEn": [
-          "Waller supported the decision this time, so dissents in favour of a 1/4 percentage point cut fell from two (Miran and Waller) to one (Miran).",
           "A sentence was added saying the implications of developments in the Middle East for the U.S. economy are uncertain.",
-          "The unemployment rate is now described as \"little changed in recent months\" instead of having \"shown some signs of stabilization\".",
-          "Policy guidance and the assessment that inflation remains \"somewhat elevated\" were unchanged."
+          "The description of the unemployment rate changed from having \"shown some signs of stabilization\" to having \"been little changed in recent months.\"",
+          "Waller voted with the majority this time, leaving Miran as the sole dissenter in favour of a 25 bp cut."
         ],
-        "tone": "more-hawkish",
-        "toneReasonTr": "İndirim yönündeki muhalif oyların ikiden bire düşmesi metni bir miktar şahin yöne kaydırıyor; ekonomik değerlendirme ve yönlendirme büyük ölçüde aynı kaldı.",
-        "toneReasonEn": "The drop from two to one dissent in favour of a cut shifts the statement slightly hawkish, while the economic assessment and guidance are largely unchanged.",
+        "tone": "little-change",
+        "toneReasonTr": "Politika yönlendirmesi aynen korundu; tek anlamlı farklar yeni bir belirsizlik cümlesi ve indirim yönündeki karşı oyların ikiden bire inmesi.",
+        "toneReasonEn": "The policy guidance was kept verbatim; the only meaningful differences are a new uncertainty sentence and dissents for a cut falling from two to one.",
+        "score": 0,
+        "scoreReasonTr": "Metin sabit tutma kararını, gelen verilerin ve risk dengesinin dikkatle değerlendirileceği ifadesini ve çift yönlü görevin her iki tarafındaki risklere eşit dikkati vurguluyor; bir üyenin indirim istemesi ve enflasyonun \"bir miktar yüksek\" olması birbirini dengeliyor.",
+        "scoreReasonEn": "The statement pairs a hold with a pledge to carefully assess incoming data and the balance of risks and attention to both sides of the dual mandate, with one member's preference for a cut offset by inflation remaining \"somewhat elevated.\"",
         "model": "claude-code/opus",
-        "promptVersion": "1",
-        "summarizedAt": "2026-10-14T02:02:30.115Z"
+        "promptVersion": "2",
+        "summarizedAt": "2026-10-15T03:32:37.119Z"
       }
     },
     {

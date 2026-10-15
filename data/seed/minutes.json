@@ -1,5 +1,5 @@
 {
-  "fetchedAt": "2026-10-15T03:03:39.165Z",
+  "fetchedAt": "2026-10-15T03:33:30.034Z",
   "minutes": [
     {
       "meetingId": "boe-2026-02-05",
@@ -39,7 +39,31 @@
       "urls": {
         "en": "https://www.bankofengland.co.uk/monetary-policy-summary-and-minutes/2026/july-2026"
       },
-      "fetchedAt": "2026-10-14T22:32:41.808Z"
+      "fetchedAt": "2026-10-14T22:32:41.808Z",
+      "summary": {
+        "headlineTr": "MPC'nin çoğunluğu, çatışma sonrası sıkılaşan finansal koşullarla birlikte faizi sabit tutmanın enerji kaynaklı yukarı yönlü enflasyon risklerine karşı şimdilik yeterli sigorta sağladığını düşünürken, üç üye ikinci tur etkilerin önüne geçmek için artırım istedi.",
+        "headlineEn": "Most MPC members judged that holding Bank Rate, combined with financial conditions that have tightened since the conflict began, provides sufficient insurance for now against energy-driven upside inflation risks, while three members wanted a hike to pre-empt second-round effects.",
+        "pointsTr": [
+          "Üyelerin tamamı enerji fiyatı risklerinin yukarı yönlü olduğunda birleşti ve Komite, güçlü enflasyonist baskı riskini zayıf enflasyonist baskı riskinden büyük gördü.",
+          "Altı üye faizi %3,75'te tutmayı tercih etti; üç üye (Greene, Mann, Pill) ise beş yılı aşkın süredir hedefin üzerinde seyreden enflasyon ve olası ikinci tur etkiler nedeniyle faizin 0,25 puan artırılarak %4'e çıkarılmasını savundu.",
+          "Çoğu üyeye göre çatışma öncesi dezenflasyon ekonomide atıl kapasite olduğunu gösteriyor ve bu, orta vadede enflasyon kalıcılığını sınırlayacak; diğer üyeler bu dezenflasyonun geleceğe dair bilgi vermediğini ya da ikinci tur etki riskinin yine de önemli olduğunu düşündü.",
+          "Komite şimdiye dek belirgin ikinci tur etkilere dair az kanıt olduğunu, ancak gecikmeler nedeniyle bunun güçlü bir sinyal sayılamayacağını belirtti; 2027 ücret anlaşmalarına dair işaretler henüz gelmedi.",
+          "Sabit tutmayı destekleyenler, ikinci tur etkiler belirginleşirse ek sıkılaştırma gerekebileceğini, yukarı yönlü riskler kalıcı biçimde azalırsa ise politika stratejisinin değişebileceğini not etti; Ramsden ve Taylor koşullar uygun olursa indirimlere dönmeyi düşüneceklerini söyledi."
+        ],
+        "pointsEn": [
+          "All members agreed that risks to energy prices remained skewed to the upside, and the Committee judged the risk of strong inflationary pressures to be greater than the risk of weak inflationary pressures.",
+          "Six members preferred to hold Bank Rate at 3.75%, while three members (Greene, Mann, Pill) favoured a 0.25 percentage point increase to 4%, citing inflation above target for more than five years and the risk of second-round effects.",
+          "For most members, pre-conflict disinflation was consistent with a margin of slack that would constrain inflation persistence in the medium term; other members saw this disinflation as uninformative or still saw a significant risk of second-round effects.",
+          "The Committee noted little evidence so far of material second-round effects, but said lags meant this could not be taken as a strong signal, and indications of 2027 pay settlements were yet to come.",
+          "Members backing the hold noted additional restraint could be needed if material second-round effects emerged, but that the strategy could change if upside risks subsided durably; Ramsden and Taylor said they would consider resuming cuts if conditions allowed."
+        ],
+        "score": 3,
+        "scoreReasonTr": "Komitenin yukarı yönlü enflasyon risklerini baskın görmesi, ikinci tur etkiler belirirse ek sıkılaştırma ihtimalini açık tutması ve üç üyenin artırım yönünde oy kullanması şahin bir tona işaret ederken, çoğunluğun mevcut duruşu yeterli bulması ve bazı üyelerin indirime dönüşten söz etmesi bunu sınırlıyor.",
+        "scoreReasonEn": "The Committee's view that upside inflation risks dominate, its openness to further restraint if second-round effects emerge, and three votes for a hike point to a hawkish tone, tempered by the majority judging the current stance sufficient and some members mentioning a return to cuts.",
+        "model": "claude-code/opus",
+        "promptVersion": "1",
+        "summarizedAt": "2026-10-15T03:33:30.033Z"
+      }
     },
     {
       "meetingId": "boe-2026-09-17",
@@ -279,7 +303,31 @@
       "urls": {
         "en": "https://www.federalreserve.gov/monetarypolicy/fomcminutes20260729.htm"
       },
-      "fetchedAt": "2026-10-14T22:32:41.292Z"
+      "fetchedAt": "2026-10-14T22:32:41.292Z",
+      "summary": {
+        "headlineTr": "Katılımcıların çoğu enflasyon düşmezse para politikasında sıkılaştırmanın büyük olasılıkla gerekeceğini değerlendirdi ve enflasyon risklerini yukarı yönlü gördü.",
+        "headlineEn": "Many participants assessed that policy tightening would likely be necessary if inflation did not decline, and saw inflation risks as skewed to the upside.",
+        "pointsTr": [
+          "Faiz %3,50–3,75 aralığında 9'a karşı 3 oyla sabit tutuldu; Hammack, Kashkari ve Logan fiyat baskılarının geniş tabanlı olduğunu belirterek 25 baz puanlık artırım istedi.",
+          "Katılımcılar enflasyonun yüksek kaldığını ve risklerin yukarı yönlü olduğunu belirtti; birçoğu Orta Doğu'daki yeniden tırmanmanın görünümü bulandırdığını ve 2 yüzdenin üzerindeki yıllardan sonra enflasyon beklentilerinin, ücret ve fiyat belirleme kararlarının etkilenebileceğini vurguladı.",
+          "Bazı katılımcılar finansal koşulların enflasyonu 2 yüzdeye döndürmeye yetecek kadar sıkı olmayabileceğini söyledi; artırımı destekleyenlerden birkaçı şimdi artırmanın ileride daha dik ve maliyetli bir sıkılaştırma ihtiyacını önleyebileceğini savundu.",
+          "İşgücü piyasası istikrarlı, ekonomik faaliyet yapay zekâ yatırımları ve tüketici harcamalarıyla güçlü görüldü; bazı katılımcılar düşük ve orta gelirli hanelerin artan baskı altında olduğunu not etti.",
+          "Başkan yılda altı toplantılık bir takvimin daha fazla bilgi birikmesine imkân vereceğini söyleyerek görüş istedi, ancak karar alınmadı ve 2026'nın kalan takvimi değişmeyecek."
+        ],
+        "pointsEn": [
+          "The target range was held at 3.50–3.75% by a 9–3 vote; Hammack, Kashkari and Logan preferred a 25 basis point increase, citing broad-based price pressures.",
+          "Participants said inflation remained elevated with risks skewed to the upside; many noted the re-escalation of the Middle East conflict clouded the outlook and that years of above-2-percent inflation could begin to affect expectations and wage- and price-setting decisions.",
+          "Some participants said financial conditions might not be sufficiently restrictive to return inflation to 2 percent, and a few of those favouring a hike argued that moving now could forestall a steeper and more costly tightening sequence later.",
+          "The labour market was seen as stable and activity as solid, supported by AI-related investment and consumer spending, though some participants noted increasing strains on low- and moderate-income households.",
+          "The Chairman sought input on moving to six scheduled meetings a year to allow more information to accumulate, but no decision was made and the remaining 2026 schedule will not change."
+        ],
+        "score": 5,
+        "scoreReasonTr": "Birçok katılımcının enflasyon düşmezse sıkılaştırmanın gerekeceğini söylemesi, bazılarının finansal koşulları yeterince sıkı bulmaması ve üç üyenin artırım yönünde oy kullanması belirgin bir şahin eğilim gösteriyor; çoğunluğun yine de beklemeyi tercih etmesi daha uç bir puanı engelliyor.",
+        "scoreReasonEn": "Many participants saying tightening would likely be needed if inflation did not decline, some judging financial conditions insufficiently restrictive, and three dissents in favour of a hike signal a clearly hawkish bias, while the majority's preference to wait keeps the score from being more extreme.",
+        "model": "claude-code/opus",
+        "promptVersion": "1",
+        "summarizedAt": "2026-10-15T03:33:30.033Z"
+      }
     },
     {
       "meetingId": "fed-2026-09-16",
