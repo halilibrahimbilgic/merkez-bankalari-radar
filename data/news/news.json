@@ -1,6 +1,21 @@
 {
-  "fetchedAt": "2026-10-15T17:31:48.100Z",
+  "fetchedAt": "2026-10-15T23:31:23.664Z",
   "items": [
+    {
+      "id": "f40c95130ce7",
+      "sourceKey": "cnbc-finance",
+      "sourceName": "CNBC",
+      "kind": "media",
+      "url": "https://www.cnbc.com/2026/10/15/chinese-spending-nearly-as-much-of-income-as-americans-on-healthcare.html",
+      "publishedAt": "2026-10-15T23:00:01.000Z",
+      "titleOriginal": "People in China are spending nearly as much of their income as Americans on healthcare",
+      "titleTr": "IMF: Sağlık harcamalarını artırmak Çin'de tüketimi destekleyebilir",
+      "summaryTr": "Çin'de insanlar gelirlerinin neredeyse Amerikalılar kadarını sağlığa harcıyor. IMF, hükümetin sağlık harcamalarını artırmasının Çin'de tüketimi canlandırabileceğini belirtti.",
+      "titleEn": "IMF: Higher health spending could boost consumption in China",
+      "summaryEn": "People in China spend nearly as large a share of their income on healthcare as Americans do. The IMF said increased government health spending could help lift consumption in China.",
+      "important": false,
+      "processedAt": "2026-10-15T23:31:23.664Z"
+    },
     {
       "id": "688c3ddd9d64",
       "sourceKey": "cnbc-economy",
