@@ -1,6 +1,21 @@
 {
-  "fetchedAt": "2026-10-15T08:31:38.826Z",
+  "fetchedAt": "2026-10-15T10:01:42.224Z",
   "items": [
+    {
+      "id": "c9267b3fa1f4",
+      "sourceKey": "cnbc-economy",
+      "sourceName": "CNBC",
+      "kind": "media",
+      "url": "https://www.cnbc.com/2026/10/15/treasury-yields-deficit-national-debt-ai.html",
+      "publishedAt": "2026-10-15T09:30:06.000Z",
+      "titleOriginal": "Analysis: Why a $2 trillion deficit and 5% Treasury yields are becoming America's biggest economic challenge",
+      "titleTr": "CNBC analizi: 2 trilyon dolarlık açık ve yüzde 5'in üzerindeki tahvil faizleri",
+      "summaryTr": "CNBC'nin analizine göre yüzde 5'in üzerindeki ABD Hazine tahvili faizleri hanehalkları ve federal hükümet için borçlanma maliyetini artırıyor. Analiz, 2 trilyon dolarlık bütçe açıklarının finansmanındaki zorluğa dikkat çekiyor.",
+      "titleEn": "CNBC analysis: $2 trillion deficit and Treasury yields above 5%",
+      "summaryEn": "CNBC's analysis says Treasury yields above 5% are raising borrowing costs for households and the federal government. It highlights the challenge of financing $2 trillion deficits.",
+      "important": false,
+      "processedAt": "2026-10-15T10:01:42.224Z"
+    },
     {
       "id": "921a2ea42fb7",
       "sourceKey": "aa-ekonomi",

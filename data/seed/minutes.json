@@ -1,5 +1,5 @@
 {
-  "fetchedAt": "2026-10-15T09:32:12.756Z",
+  "fetchedAt": "2026-10-15T10:02:32.874Z",
   "minutes": [
     {
       "meetingId": "boe-2026-02-05",
@@ -559,7 +559,31 @@
       "urls": {
         "en": "https://www.federalreserve.gov/monetarypolicy/fomcminutes20260128.htm"
       },
-      "fetchedAt": "2026-10-14T22:32:14.590Z"
+      "fetchedAt": "2026-10-14T22:32:14.590Z",
+      "summary": {
+        "headlineTr": "Katılımcıların çoğu enflasyonun hedefe dönüşünün beklenenden yavaş olabileceği uyarısında bulundu; bazıları faizin bir süre sabit kalması gerektiğini, birkaçı ise ileriye dönük yönlendirmenin faiz artırımı olasılığını da içermesini destekleyeceğini söyledi.",
+        "headlineEn": "Most participants warned that progress toward the inflation goal might be slower than expected; some saw the rate staying on hold for some time, and several would have supported guidance that also allowed for rate increases.",
+        "pointsTr": [
+          "Katılımcıların büyük çoğunluğu istihdama yönelik aşağı yönlü risklerin son aylarda azaldığını, kalıcı enflasyon riskinin ise sürdüğünü değerlendirdi; birkaçı yüksek enflasyon ortamında yeni gevşemenin %2 hedefine bağlılığın zayıfladığı biçiminde yorumlanabileceği uyarısında bulundu.",
+          "Bazı katılımcılar faizi bir süre sabit tutmanın uygun olacağını, bunların bir kısmı dezenflasyonun yeniden rayına oturduğu net görülmeden ek gevşemenin gerekmeyebileceğini söyledi; birkaçı ise enflasyon beklendiği gibi düşerse indirimlere devam edilebileceğini belirtti.",
+          "Sabit tutmayı destekleyenler, geçen yılki 75 baz puanlık indirimin ardından politika duruşunun nötr faiz tahminleri aralığında olduğunu düşündü; indirim isteyen iki üye (Miran ve Waller) ise duruşun hâlâ anlamlı ölçüde sıkı olduğunu ve işgücü piyasası risklerinin daha öncelikli olduğunu savundu.",
+          "Katılımcılar yüksek enflasyonun büyük ölçüde gümrük tarifelerinin çekirdek mallara etkisinden kaynaklandığını ve bu etkinin bu yıl azalmaya başlayacağını, konut hizmetlerinde dezenflasyonun sürdüğünü belirtti; personel PCE enflasyonunu Aralık için %2,9, çekirdeği %3,0 tahmin etti.",
+          "Finansal istikrar tartışmasında yüksek varlık değerlemeleri, yapay zekâ yatırımlarının borçla ve opak özel piyasalarda finansmanı, özel kredi sektörü ve hedge fonların artan kaldıracı risk olarak öne çıkarıldı."
+        ],
+        "pointsEn": [
+          "The vast majority of participants judged that downside risks to employment had moderated while the risk of more persistent inflation remained; several cautioned that further easing amid elevated inflation could be misread as diminished commitment to the 2 percent objective.",
+          "Some participants said it would likely be appropriate to hold the rate steady for some time, with a number of them judging further easing may not be warranted until disinflation was clearly back on track, while several said further cuts would likely be appropriate if inflation declined as expected.",
+          "Those favoring a hold viewed the stance as within the range of neutral estimates after last year's 75 basis points of cuts; the two members who preferred a cut (Miran and Waller) argued policy was still meaningfully restrictive and labor market risks were the more prominent concern.",
+          "Participants attributed elevated inflation largely to tariff effects on core goods, expected to start diminishing this year, with disinflation continuing in housing services; staff estimated December PCE inflation at 2.9 percent and core at 3.0 percent.",
+          "In the financial stability discussion, participants highlighted high asset valuations, debt-financed AI investment including in opaque private markets, the private credit sector and rising hedge fund leverage."
+        ],
+        "score": 2,
+        "scoreReasonTr": "Çoğunluğun enflasyonun hedefin üzerinde kalma riskini anlamlı bulması, bazı üyelerin dezenflasyon netleşmeden gevşemeye karşı çıkması ve birkaçının artırım olasılığını içeren iki yönlü yönlendirmeyi desteklemesi hafif şahin bir tona işaret ediyor; buna karşın birkaç katılımcı enflasyon düşerse indirimlerin uygun olacağını, iki üye ise hemen indirimi savundu.",
+        "scoreReasonEn": "Most participants seeing a meaningful risk of persistently above-target inflation, some opposing easing until disinflation is clearly on track, and several supporting two-sided guidance that allows for hikes point to a mildly hawkish tone, tempered by several participants seeing further cuts if inflation falls and two members favoring an immediate cut.",
+        "model": "claude-code/opus",
+        "promptVersion": "1",
+        "summarizedAt": "2026-10-15T10:02:32.873Z"
+      }
     },
     {
       "meetingId": "fed-2026-03-18",
@@ -727,7 +751,31 @@
       "urls": {
         "en": "https://www.rba.gov.au/monetary-policy/rba-board-minutes/2026/2026-02-03.html"
       },
-      "fetchedAt": "2026-10-14T22:32:16.701Z"
+      "fetchedAt": "2026-10-14T22:32:16.701Z",
+      "summary": {
+        "headlineTr": "Kurul, enflasyondaki artışın bir kısmının kalıcı kapasite baskısından kaynaklandığına ve finansal koşulların artık yeterince sıkı olmadığına karar vererek bekleme seçeneğini reddetti.",
+        "headlineEn": "The Board rejected the option of waiting, judging that part of the rise in inflation reflected persistent capacity pressure and that financial conditions were no longer restrictive enough.",
+        "pointsTr": [
+          "Üyeler enflasyonun 2025'in ikinci yarısında geniş tabanlı biçimde yükseldiğini ve %2–3 hedef aralığını açıkça aştığını belirtti; personel, budanmış ortalama enflasyonun 2026 ortasında %3,7, manşetin %4,2 ile zirve yapacağını öngörüyor.",
+          "Personel toplam talebin toplam arzı açıkça aştığını ve işgücü piyasasının tam istihdamla uyumlu düzeyden biraz daha sıkı olduğunu değerlendirdi; üyeler istihdama yönelik aşağı yönlü risklerin azaldığı görüşünde birleşti.",
+          "Konut ve şirket kredisinin hızla büyümesi ve düşük risk primleri nedeniyle üyeler finansal koşulların 2025 ortasından bu yana belirgin biçimde gevşediğini ve sıkı olduklarından artık emin olamayacaklarını söyledi; Avustralya dolarının değerlenmesi bu gevşemenin yalnızca bir kısmını dengeledi.",
+          "Faizi sabit tutma seçeneği, enflasyon artışının büyük ölçüde geçici olduğu kanaatine bağlı görülerek tartışıldı ancak üyeler oybirliğiyle 25 baz puanlık artırımın daha güçlü gerekçeye dayandığına karar verdi.",
+          "Üyeler herhangi bir faiz patikasına yüksek güvenle bağlanamayacaklarını, enflasyon tahmininin iki yönlü riskler taşıdığını ve sonraki kararların gelen veriye göre verileceğini vurguladı."
+        ],
+        "pointsEn": [
+          "Members noted that inflation had risen on a broad basis in the second half of 2025 and clearly exceeded the 2–3 per cent target range; staff project trimmed mean inflation to peak at 3.7 per cent and headline at 4.2 per cent in mid-2026.",
+          "Staff assessed that aggregate demand clearly exceeded aggregate supply and that the labour market was a little tighter than full employment; members agreed that downside risks to employment had abated.",
+          "Citing strong growth in housing and business credit and low risk premia, members said financial conditions had eased materially since mid-2025 and they could no longer be confident they were restrictive; the Australian dollar's appreciation offset only part of that easing.",
+          "Members discussed leaving the cash rate unchanged, an option that would rest on judging the inflation rise to be largely temporary, but unanimously concluded there was a stronger case for a 25 basis point increase.",
+          "Members stressed that they could not have high confidence in any particular cash rate path, that risks to the inflation outlook were two-sided and that future decisions would respond to incoming data."
+        ],
+        "score": 6,
+        "scoreReasonTr": "Üyeler finansal koşulların enflasyonu makul sürede hedefe döndürecek kadar sıkı olmadığını, politika tepkisi olmadan enflasyonun çok uzun süre hedefin üstünde kalabileceğini ve faiz %3,60'ta kalırsa talep fazlasının düzelmeyeceğini söyledi; ancak sonraki adımlar için belirli bir patikaya bağlanmadı.",
+        "scoreReasonEn": "Members said financial conditions were not restrictive enough to return inflation to target within a reasonable period, that without a policy response inflation could stay above target for too long and that excess demand would not be corrected with the cash rate at 3.60 per cent, though they did not commit to any particular path.",
+        "model": "claude-code/opus",
+        "promptVersion": "1",
+        "summarizedAt": "2026-10-15T10:02:32.874Z"
+      }
     },
     {
       "meetingId": "rba-2026-03-17",
