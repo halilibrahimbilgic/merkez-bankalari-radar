@@ -1,6 +1,21 @@
 {
-  "fetchedAt": "2026-10-15T12:50:01.102Z",
+  "fetchedAt": "2026-10-15T13:01:39.007Z",
   "items": [
+    {
+      "id": "daf9e09258b8",
+      "sourceKey": "cnbc-economy",
+      "sourceName": "CNBC",
+      "kind": "media",
+      "url": "https://www.cnbc.com/2026/10/15/zervos-imf-us-debt-warning.html",
+      "publishedAt": "2026-10-15T12:40:58.000Z",
+      "titleOriginal": "U.S. Treasury dismisses IMF debt warning and 'messy' forecasting",
+      "titleTr": "ABD Hazinesi, IMF'nin borç uyarısını ve tahminlerini reddetti",
+      "summaryTr": "ABD Hazinesi, IMF'nin borç uyarısını ve tahmin yöntemini \"dağınık\" diyerek geri çevirdi. Açıklama, ABD borcunun 40 trilyon doları aştığı ve 10 yıllık tahvil faizlerinin %5'in üzerinde seyrettiği bir dönemde geldi.",
+      "titleEn": "U.S. Treasury dismisses IMF debt warning and forecasts",
+      "summaryEn": "The U.S. Treasury rejected the IMF's debt warning and called its forecasting \"messy\". The exchange comes as U.S. debt tops $40 trillion and 10-year Treasury yields stay above 5%.",
+      "important": true,
+      "processedAt": "2026-10-15T13:01:39.007Z"
+    },
     {
       "id": "a45e31c4e266",
       "sourceKey": "aa-ekonomi",
