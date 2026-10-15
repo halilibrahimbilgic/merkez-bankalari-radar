@@ -1,6 +1,21 @@
 {
-  "fetchedAt": "2026-10-15T10:31:35.971Z",
+  "fetchedAt": "2026-10-15T11:31:38.840Z",
   "items": [
+    {
+      "id": "273bcf4d4b65",
+      "sourceKey": "aa-economy",
+      "sourceName": "Anadolu Agency",
+      "kind": "media",
+      "url": "https://www.aa.com.tr/en/economy/global-markets-trade-mostly-negative-after-us-inflation-accelerates/4089692",
+      "publishedAt": "2026-10-15T11:21:08.000Z",
+      "titleOriginal": "Global markets trade mostly negative after US inflation accelerates",
+      "titleTr": "ABD enflasyonu beklentiyi aştı, küresel piyasalar ağırlıklı olarak düştü",
+      "summaryTr": "ABD'de yıllık enflasyon beklentilerin üzerinde yüzde 3,7 arttı. Teknoloji hisselerindeki satış Asya piyasalarını sert düşürdü; Avrupa borsalarının erken dayanıklılığı ise Fed'e yönelik şahin beklentiler ve yükselen petrol fiyatlarıyla gölgelendi.",
+      "titleEn": "Global markets mostly lower after US inflation beats expectations",
+      "summaryEn": "US annual inflation rose a stronger-than-expected 3.7%, fueling a tech selloff that sent Asian markets sharply lower. European stocks' early resilience was overshadowed by rising hawkish Fed expectations and higher oil prices.",
+      "important": true,
+      "processedAt": "2026-10-15T11:31:38.840Z"
+    },
     {
       "id": "c9267b3fa1f4",
       "sourceKey": "cnbc-economy",
