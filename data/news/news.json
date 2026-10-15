@@ -1,6 +1,21 @@
 {
-  "fetchedAt": "2026-10-15T11:31:38.840Z",
+  "fetchedAt": "2026-10-15T12:01:38.291Z",
   "items": [
+    {
+      "id": "7624e5fb9cda",
+      "sourceKey": "aa-ekonomi",
+      "sourceName": "Anadolu Ajansı",
+      "kind": "media",
+      "url": "https://www.aa.com.tr/tr/ekonomi/merkez-bankasi-rezervleri-171-6-milyar-dolar-oldu/4089754",
+      "publishedAt": "2026-10-15T11:53:39.000Z",
+      "titleOriginal": "Merkez Bankası rezervleri 171,6 milyar dolar oldu",
+      "titleTr": "TCMB rezervleri 171,6 milyar dolara yükseldi",
+      "summaryTr": "TCMB'nin toplam rezervleri 9 Ekim haftasında bir önceki haftaya göre 4 milyar 187 milyon dolar artarak 171 milyar 575 milyon dolara çıktı.",
+      "titleEn": "Turkish central bank reserves rise to $171.6 billion",
+      "summaryEn": "The central bank's total reserves rose by $4.187 billion week on week in the week of October 9, reaching $171.575 billion.",
+      "important": false,
+      "processedAt": "2026-10-15T12:01:38.291Z"
+    },
     {
       "id": "273bcf4d4b65",
       "sourceKey": "aa-economy",
