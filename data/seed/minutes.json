@@ -1,5 +1,5 @@
 {
-  "fetchedAt": "2026-10-15T09:02:26.418Z",
+  "fetchedAt": "2026-10-15T09:32:12.756Z",
   "minutes": [
     {
       "meetingId": "boe-2026-02-05",
@@ -7,7 +7,31 @@
       "urls": {
         "en": "https://www.bankofengland.co.uk/monetary-policy-summary-and-minutes/2026/february-2026"
       },
-      "fetchedAt": "2026-10-14T22:32:17.754Z"
+      "fetchedAt": "2026-10-14T22:32:17.754Z",
+      "summary": {
+        "headlineTr": "Kurul, mevcut verilere göre Banka Faizinin büyük olasılıkla daha da düşürüleceğini değerlendirdi; ancak zamanlama ve ölçek konusunda üyeler ayrıştı ve 5'e karşı 4 oyla faiz sabit tutuldu.",
+        "headlineEn": "The Committee judged that, on current evidence, Bank Rate was likely to be reduced further, but members were split on timing and extent, with the hold carried by a 5–4 vote.",
+        "pointsTr": [
+          "Dört üye (Breeden, Dhingra, Ramsden, Taylor) 25 baz puanlık indirimle %3,5'e inilmesini istedi; enflasyon kalıcılığı riskinin belirgin biçimde azaldığını ve zayıf talebin aşağı yönlü risk oluşturduğunu savundular.",
+          "Sabit tutma yönünde oy veren beş üyeden üçü (Greene, Lombardelli, Pill) daha uzun süreli sıkı politika gerekebileceğini düşünürken, Bailey ve Mann aşağı yönlü risklere daha çok ağırlık verdi ama henüz indirim için kanıtı yeterli görmedi.",
+          "Kurul, enflasyonun Aralık'taki %3,4'ten Nisan'dan itibaren %2 hedef civarına inmesini bekliyor; bu düşüş ağırlıkla enerji fiyatları ve 2025 Bütçesi önlemleri gibi tek seferlik etkenlerden kaynaklanıyor.",
+          "İşsizlik oranının %5'in biraz üzerine çıktığı ve çıktı açığının Kasım'da beklenenden biraz daha geniş tahmin edildiği belirtildi; üyelerin çoğu talep tarafında aşağı yönlü riskler gördü.",
+          "Nötr faizin ne kadar kesin tahmin edilebileceğine dair belirsizlik nedeniyle gevşeme hızının yavaşlatılmasının risklerin seyrini görmek için alan sağlayabileceği ve ileriki indirim kararlarının daha yakın çekişmeli olacağı vurgulandı."
+        ],
+        "pointsEn": [
+          "Four members (Breeden, Dhingra, Ramsden, Taylor) preferred a 25 basis point cut to 3.5%, arguing that the risk from inflation persistence had receded materially and that weaker demand posed downside risks.",
+          "Of the five who voted to hold, three (Greene, Lombardelli, Pill) saw a more prolonged period of restriction as likely warranted, while Bailey and Mann placed more weight on downside risks but did not yet see sufficient evidence to cut.",
+          "The Committee expects CPI inflation to fall from 3.4% in December to around the 2% target from April, mainly reflecting one-off factors such as energy prices and Budget 2025 measures.",
+          "Unemployment had risen to just over 5% and the output gap was projected slightly wider than in November, with most members seeing downside risks to demand.",
+          "Given uncertainty about the neutral level of Bank Rate, slowing the pace of easing could provide space to assess how risks evolve, and further easing decisions would become a closer call."
+        ],
+        "score": -3,
+        "scoreReasonTr": "Kurulun Banka Faizinin büyük olasılıkla daha da düşürüleceği yargısı, kalıcılık riskinin azaldığı değerlendirmesi ve dokuz üyeden altısının aşağı yönlü risklere ağırlık vermesi gevşemeye açıklığı gösteriyor; üç üyenin sıkı politikayı sürdürme eğilimi puanı ılımlılaştırıyor.",
+        "scoreReasonEn": "The Committee's judgement that Bank Rate was likely to be reduced further, its view that persistence risk had become less pronounced, and six of nine members weighting downside risks signal openness to easing, tempered by three members favouring prolonged restriction.",
+        "model": "claude-code/opus",
+        "promptVersion": "1",
+        "summarizedAt": "2026-10-15T09:32:12.755Z"
+      }
     },
     {
       "meetingId": "boe-2026-03-19",
@@ -343,7 +367,31 @@
       "urls": {
         "en": "https://www.ecb.europa.eu/press/accounts/2026/html/ecb.mg260305~4a9b7afe1c.en.html"
       },
-      "fetchedAt": "2026-10-14T22:32:19.356Z"
+      "fetchedAt": "2026-10-14T22:32:19.356Z",
+      "summary": {
+        "headlineTr": "Üyelerin çoğu enflasyon risklerini iki yönlü ve dengeli görürken, Ocak'taki beklenenden düşük enflasyon ve Çin kaynaklı dezenflasyon baskısı nedeniyle bazı üyeler risklerin aşağı yönlü olduğunu savundu.",
+        "headlineEn": "Most members saw inflation risks as two-sided and balanced, while some argued risks were tilted to the downside given January's lower-than-expected inflation and disinflationary pressure from China.",
+        "pointsTr": [
+          "Çoğunluk, enerji fiyatları, ücretler ve hizmet enflasyonundan gelen yukarı yönlü risklerin, kur ve ucuz Çin ithalatından gelen aşağı yönlü risklerle şimdilik dengelendiğini değerlendirdi.",
+          "Bazı üyeler, \"ikinci Çin şoku\", güçlü euro ve olası pozitif arz şoku nedeniyle hedefin kalıcı biçimde altında kalınması riskine dikkat çekerken, birkaç üye güçlü büyüme, sıkı işgücü piyasası ve emtia fiyatları nedeniyle riskleri yukarı yönlü gördü.",
+          "Ocak'ta manşet enflasyon %1,7'ye, çekirdek enflasyon %2,2'ye, hizmet enflasyonu %3,2'ye geriledi; üyeler bu tek veri noktasından güçlü sonuçlar çıkarılmaması gerektiğini vurguladı.",
+          "Ekonominin 2025'in son çeyreğinde %0,3 büyüyerek dirençli olduğu belirtildi; ancak bankaların firmalara yönelik kredi standartlarını yeniden sıkılaştırması izlenmesi gereken bir gelişme olarak öne çıktı.",
+          "Bir görüş faizlerin uzun süre mevcut düzeyde kalabileceğini savunurken, diğeri aşağı yönlü risklere karşı rehavetten kaçınılmasını istedi; tüm üyeler gelecek toplantılar için her iki yönde tam esnekliğin korunmasında birleşti."
+        ],
+        "pointsEn": [
+          "The majority judged that upside risks from energy prices, wages and services inflation were for now offset by downside risks from the exchange rate and cheap Chinese imports.",
+          "Some members warned of a persistent undershoot owing to the \"second China shock\", the stronger euro and a possible positive supply shock, while a few saw upside risks from strong growth, a tight labour market and commodity prices.",
+          "Headline inflation fell to 1.7% in January, core to 2.2% and services to 3.2%; members cautioned against drawing strong conclusions from this single data point.",
+          "The economy proved resilient, growing 0.3% in the fourth quarter of 2025, but a renewed tightening of banks' credit standards for firms was flagged as warranting close monitoring.",
+          "One view held that rates could stay at current levels for an extended period, another urged avoiding complacency about downside risks; all agreed on keeping full optionality in either direction for future meetings."
+        ],
+        "score": 0,
+        "scoreReasonTr": "Çoğunluğun riskleri iki yönlü görmesi, \"iyi bir yerdeyiz\" değerlendirmesi ve veri bağımlı, her iki yönde esnekliği koruyan yaklaşım dengeli bir duruşa işaret ediyor; aşağı ve yukarı yönlü risk görüşleri birbirini dengeliyor.",
+        "scoreReasonEn": "The majority's view of two-sided risks, the assessment that policy is \"in a good place\", and a data-dependent approach preserving optionality in either direction point to a balanced stance, with downside and upside risk views offsetting each other.",
+        "model": "claude-code/opus",
+        "promptVersion": "1",
+        "summarizedAt": "2026-10-15T09:32:12.756Z"
+      }
     },
     {
       "meetingId": "ecb-2026-03-19",
