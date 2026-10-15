@@ -1,6 +1,21 @@
 {
-  "fetchedAt": "2026-10-15T15:31:35.669Z",
+  "fetchedAt": "2026-10-15T17:31:48.100Z",
   "items": [
+    {
+      "id": "688c3ddd9d64",
+      "sourceKey": "cnbc-economy",
+      "sourceName": "CNBC",
+      "kind": "media",
+      "url": "https://www.cnbc.com/2026/10/15/pce-ppi-september-fed-reserve-rate-hike.html",
+      "publishedAt": "2026-10-15T15:37:59.000Z",
+      "titleOriginal": "Economists: Hot PPI shows Fed's work is not done",
+      "titleTr": "Ekonomistler: Yüksek ÜFE, Fed'in işinin bitmediğini gösteriyor",
+      "summaryTr": "CNBC'ye göre ekonomistler, güçlü gelen üretici fiyatları verisinin Fed'in işinin bitmediğine işaret ettiğini söylüyor. Bir Fed izleyicisi, iki hafta içinde Fed'in bir faiz artırımı daha yapma riskinin gerçek olduğunu belirtti.",
+      "titleEn": "Economists: Hot PPI shows Fed's work is not done",
+      "summaryEn": "Economists cited by CNBC say the hot producer price data shows the Fed is not finished. One Fed watcher warns of a real risk of another rate hike in two weeks.",
+      "important": true,
+      "processedAt": "2026-10-15T17:31:48.100Z"
+    },
     {
       "id": "0bb661079c0c",
       "sourceKey": "marketwatch",
@@ -1051,6 +1066,7 @@
     "6143d224b3c4": "2026-10-15",
     "807f130dddc6": "2026-10-15",
     "396369492f54": "2026-10-15",
-    "26cc97d97ab4": "2026-10-15"
+    "26cc97d97ab4": "2026-10-15",
+    "bdc9d86db9f1": "2026-10-15"
   }
 }
