@@ -1,6 +1,36 @@
 {
-  "fetchedAt": "2026-10-15T13:01:39.007Z",
+  "fetchedAt": "2026-10-15T13:31:39.721Z",
   "items": [
+    {
+      "id": "8eb1c3f0cfe7",
+      "sourceKey": "aa-economy",
+      "sourceName": "Anadolu Agency",
+      "kind": "media",
+      "url": "https://www.aa.com.tr/en/economy/accelerating-us-inflation-fuels-hawkish-fed-expectations/4089904",
+      "publishedAt": "2026-10-15T13:26:28.000Z",
+      "titleOriginal": "Accelerating US inflation fuels hawkish Fed expectations",
+      "titleTr": "ABD enflasyonu 4 ayın zirvesi %3,7'de; piyasa Aralık'ta Fed artırımı fiyatlıyor",
+      "summaryTr": "Gaz ve konut fiyatlarındaki artış ABD enflasyonunu 4 ayın en yüksek seviyesi olan %3,7'ye taşıdı. Yükselen tahvil faizleri ve dolar faiz duraklaması beklentilerini zayıflatırken piyasalar Aralık'ta 25 baz puanlık artırım fiyatlıyor.",
+      "titleEn": "US inflation at 4-month high of 3.7%; markets price in December Fed hike",
+      "summaryEn": "Rising gas and housing prices pushed US inflation to 3.7%, its highest in four months. Higher Treasury yields and a stronger dollar are dampening hopes of a rate pause, with markets pricing in a 25-basis-point hike in December.",
+      "important": true,
+      "processedAt": "2026-10-15T13:31:39.721Z"
+    },
+    {
+      "id": "57fab92c0d21",
+      "sourceKey": "aa-economy",
+      "sourceName": "Anadolu Agency",
+      "kind": "media",
+      "url": "https://www.aa.com.tr/en/economy/us-producer-inflation-hits-63-in-september-exceeding-expectations-of-53-/4089880",
+      "publishedAt": "2026-10-15T13:12:29.000Z",
+      "titleOriginal": "US producer inflation hits 6.3% in September, exceeding expectations of 5.3%",
+      "titleTr": "ABD üretici enflasyonu Eylül'de %6,3'e çıktı, beklenti %5,3'tü",
+      "summaryTr": "ABD'de üretici fiyatları aylık %1,3 artarak Mart 2022'den bu yana en büyük yükselişi kaydetti. Artışta enerji maliyetlerindeki sıçrama etkili oldu.",
+      "titleEn": "US producer inflation hits 6.3% in September, above 5.3% forecast",
+      "summaryEn": "US producer prices rose 1.3% month-on-month, the biggest increase since March 2022, as energy costs surged.",
+      "important": true,
+      "processedAt": "2026-10-15T13:31:39.721Z"
+    },
     {
       "id": "daf9e09258b8",
       "sourceKey": "cnbc-economy",
