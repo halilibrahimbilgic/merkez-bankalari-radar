@@ -1,5 +1,5 @@
 {
-  "fetchedAt": "2026-10-15T07:02:22.898Z",
+  "fetchedAt": "2026-10-15T07:19:42.091Z",
   "minutes": [
     {
       "meetingId": "boe-2026-02-05",
@@ -167,7 +167,31 @@
       "urls": {
         "en": "https://www.boj.or.jp/en/mopo/mpmsche_minu/opinion_2026/opi260428.pdf"
       },
-      "fetchedAt": "2026-10-14T22:32:34.406Z"
+      "fetchedAt": "2026-10-14T22:32:34.406Z",
+      "summary": {
+        "headlineTr": "Üyeler Orta Doğu belirsizliği nedeniyle beklemeyi uygun görse de görüşlerin çoğu fiyatlarda yukarı yönlü risklere dikkat çekerek faiz artırımlarının sürmesi, hatta bir sonraki toplantıdan itibaren gelmesi gerektiğine işaret etti.",
+        "headlineEn": "Although members saw a wait-and-see approach as appropriate given uncertainty over the Middle East, most opinions stressed upside risks to prices and pointed to continued rate hikes, possibly from the next meeting onward.",
+        "pointsTr": [
+          "Bir görüşe göre Orta Doğu'daki durum belirsiz kalsa bile Banka'nın bir sonraki toplantıdan itibaren faizi artırması oldukça olası; bir diğeri ekonomik yavaşlamaya dair belirgin işaretler olmadıkça faizin yakında artırılması gerektiğini söyledi.",
+          "Üyeler, ham petrol fiyatlarındaki artışın fiyat risklerini yukarı yönlü çarpıttığını ve uyarlamalı enflasyon beklentileri nedeniyle temel TÜFE enflasyonunun temel senaryodan yukarı sapabileceğini belirtti; bir görüş tüm senaryoların fiyatlarda ek yukarı yönlü risk gösterdiğini vurguladı.",
+          "Bir görüşe göre politika faizi nötr faizden hâlâ uzak ve artırımların birkaç ay arayla sürmesi, yukarı yönlü riskler artarsa hızlandırılması gerekiyor; gerilim uzarsa faizin nötr seviyeye daha erken çıkarılması gerektiği de dile getirildi.",
+          "Buna karşın bazı görüşler, Mart ayında çekirdek TÜFE'nin yüzde 2'nin altında kalması ve enflasyonu öne alan bir artırımın istihdam ve üretime zarar verebileceği gerekçesiyle faizin korunmasını savundu; tedarik zincirlerinde ciddi aksama olursa artırım yapılmaması gerektiği de belirtildi.",
+          "Bir görüş, para politikası yönergesindeki \"ekonomik faaliyet ve fiyatlardaki iyileşmeye paralel olarak\" ifadesinin revize edilmesini önerdi; bir diğeri Banka'nın her zaman faiz artırımını önceden işaret ediyor gibi algılanmasının istenmediğini söyledi."
+        ],
+        "pointsEn": [
+          "One opinion said it is quite possible the Bank will raise the policy rate from the next MPM onward even if the Middle East situation remains unclear, and another said that, barring evident signs of an economic slowdown, the Bank should raise the rate soon.",
+          "Members noted that the rise in crude oil prices skews risks to prices to the upside and that, with adaptive inflation expectations, underlying CPI inflation could deviate upward from the baseline, with one opinion stressing that all scenarios point to further upside risks to prices.",
+          "One opinion held that the policy rate is still some way from the neutral rate and hikes should continue at intervals of a few months, accelerating if upside risks increase; another said a prolonged Middle East tension would call for reaching the neutral rate earlier.",
+          "Some opinions, however, favored holding because March core CPI remained below 2 percent and a hike prioritizing inflation containment could harm employment and production, and it was noted that significant supply-chain disruptions would warrant not raising rates.",
+          "One opinion proposed revising the guideline wording \"in accordance with improvement in economic activity and prices,\" while another said the Bank should not be perceived as always signaling rate hikes in advance."
+        ],
+        "score": 5,
+        "scoreReasonTr": "Faizin \"bir sonraki toplantıdan itibaren\" ya da \"yakında\" artırılması, nötr faize doğru birkaç ay arayla artırımların sürmesi ve fiyatlarda yukarı yönlü risklere yapılan vurgu şahin bir ton gösteriyor; kararın beklemek yönünde olması ve bazı üyelerin büyüme endişeleri puanı sınırlıyor.",
+        "scoreReasonEn": "Calls to raise the rate \"from the next MPM onward\" or \"soon,\" to keep hiking at intervals of a few months toward neutral, and repeated emphasis on upside price risks indicate a hawkish tone, tempered by the wait-and-see decision and some members' growth concerns.",
+        "model": "claude-code/opus",
+        "promptVersion": "1",
+        "summarizedAt": "2026-10-15T07:19:42.090Z"
+      }
     },
     {
       "meetingId": "boj-2026-06-16",
@@ -431,7 +455,31 @@
       "urls": {
         "en": "https://www.federalreserve.gov/monetarypolicy/fomcminutes20260429.htm"
       },
-      "fetchedAt": "2026-10-14T22:32:34.699Z"
+      "fetchedAt": "2026-10-14T22:32:34.699Z",
+      "summary": {
+        "headlineTr": "Üyelerin çoğunluğu, enflasyon 2 yüzdenin kalıcı biçimde üzerinde kalırsa faiz artırımının uygun olabileceğini vurguladı; birçoğu karar metnindeki gevşeme eğilimini işaret eden ifadenin çıkarılmasını tercih ederdi.",
+        "headlineEn": "A majority of participants highlighted that some policy firming would likely become appropriate if inflation kept running persistently above 2 percent, and many would have preferred to remove the statement's easing-bias language.",
+        "pointsTr": [
+          "Katılımcıların büyük çoğunluğu enflasyonun yüzde 2 hedefe dönmesinin önceden beklenenden uzun sürme riskinin arttığını belirtti; neredeyse tamamı Orta Doğu'daki çatışmanın uzaması ya da emtia fiyatlarının yüksek kalması halinde enflasyon üzerinde süreğen yukarı yönlü baskı uyarısında bulundu.",
+          "Katılımcılar genel olarak yüksek enflasyon ve çatışmaya ilişkin belirsizliğin mevcut duruşun önceden düşünülenden daha uzun süre korunmasını gerektirebileceği görüşündeydi; birkaçı ise dezenflasyonun yeniden rayına oturduğuna dair net işaretler ya da işgücü piyasasında belirgin zayıflama görülürse indirimin uygun olacağını söyledi.",
+          "Kararda dört ret oyu vardı: Miran 25 baz puanlık indirim istedi; Hammack, Kashkari ve Logan faizin sabit tutulmasını desteklediler ancak karar metnindeki gevşeme eğilimine karşı çıktılar.",
+          "Çoğu katılımcı işgücü piyasasının istikrar kazandığını, ancak istihdam tarafındaki risklerin aşağı yönlü olduğunu değerlendirdi; birkaçı işgücü talebindeki bir düşüşün işsizliği hızla artırabileceğini belirtti.",
+          "Personel, Mart ayında toplam PCE enflasyonunun yüzde 3,5'e, çekirdek PCE enflasyonunun yüzde 3,2'ye yükseldiğini tahmin etti ve enflasyonun beklenenden kalıcı olmasını belirgin bir risk olarak gördü."
+        ],
+        "pointsEn": [
+          "The vast majority of participants noted an increased risk that inflation would take longer to return to the 2 percent objective than previously expected, and almost all warned of continued upward pressure on inflation if the Middle East conflict persisted or commodity prices stayed elevated.",
+          "Participants generally judged that elevated inflation and conflict-related uncertainty could necessitate maintaining the current stance for longer than previously anticipated, while several said a cut would be appropriate once disinflation was clearly back on track or if solid signs of labor-market weakness emerged.",
+          "There were four dissents: Miran preferred a 25 basis point cut, while Hammack, Kashkari and Logan supported holding the rate but opposed the easing bias in the statement.",
+          "Most participants judged that the labor market had stabilized but that risks to employment were tilted to the downside, with several noting that a fall in labor demand could push unemployment sharply higher.",
+          "Staff estimated that total PCE inflation rose to 3.5 percent and core PCE inflation to 3.2 percent in March, and viewed more persistent than anticipated inflation as a salient risk."
+        ],
+        "score": 4,
+        "scoreReasonTr": "Çoğunluğun enflasyon kalıcı olursa sıkılaşmanın uygun olabileceğini vurgulaması, birçok üyenin gevşeme eğilimini metinden çıkarmak istemesi ve duruşun daha uzun korunması beklentisi şahin bir tona işaret ediyor; tek indirim talebi ve birkaç üyenin indirim koşullarını sayması bunu sınırlıyor.",
+        "scoreReasonEn": "A majority flagging that firming would likely become appropriate if inflation persisted, many wanting to drop the easing bias and expectations of holding for longer point to a hawkish tone, tempered by a single cut dissent and several members outlining conditions for cuts.",
+        "model": "claude-code/opus",
+        "promptVersion": "1",
+        "summarizedAt": "2026-10-15T07:19:42.090Z"
+      }
     },
     {
       "meetingId": "fed-2026-06-17",
