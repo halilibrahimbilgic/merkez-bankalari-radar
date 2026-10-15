@@ -1,6 +1,37 @@
 {
-  "fetchedAt": "2026-10-14T22:31:30.402Z",
+  "fetchedAt": "2026-10-15T02:31:33.122Z",
   "items": [
+    {
+      "id": "5ab9af7f2da6",
+      "sourceKey": "ft",
+      "sourceName": "Financial Times",
+      "kind": "media",
+      "url": "https://www.ft.com/content/cf5f1209-da29-4ce1-b425-0e83818bf9ec?syn-25a6b1a6=1",
+      "publishedAt": "2026-10-15T01:44:46.000Z",
+      "titleOriginal": "Global tech sell-off deepens as Asian markets tumble",
+      "titleTr": "Küresel teknoloji satışı derinleşiyor, Asya borsaları sert düştü",
+      "summaryTr": "Financial Times'a göre ABD'de enflasyonun beklentilerin üzerinde gelmesiyle Wall Street'in düşmesinin ardından Güney Kore ve Japonya'da yapay zekâ ile ilişkili hisseler değer kaybetti.",
+      "titleEn": "Global tech sell-off deepens as Asian markets tumble",
+      "summaryEn": "According to the Financial Times, AI-related stocks in South Korea and Japan fell after Wall Street declined on hot US inflation data.",
+      "important": true,
+      "processedAt": "2026-10-15T02:31:33.122Z"
+    },
+    {
+      "id": "51aea73c9e84",
+      "sourceKey": "boj",
+      "sourceName": "Bank of Japan",
+      "kind": "official",
+      "bankCode": "boj",
+      "url": "https://www.boj.or.jp/en/about/press/koen_2026/ko261015a.htm",
+      "publishedAt": "2026-10-15T01:30:00.000Z",
+      "titleOriginal": "Speech by Board Member KOEDA in Kumamoto (Economic Activity, Prices, and Monetary Policy in Japan)",
+      "titleTr": "BoJ Kurul Üyesi Koeda Kumamoto'da konuştu: Japonya'da ekonomik faaliyet, fiyatlar ve para politikası",
+      "summaryTr": "BoJ Kurul Üyesi Koeda, Kumamoto'da Japonya'daki ekonomik faaliyet, fiyatlar ve para politikası üzerine bir konuşma yaptı. Konuşmanın içeriği akışta yer almıyor.",
+      "titleEn": "BoJ Board Member Koeda speaks in Kumamoto on Japan's economy, prices and monetary policy",
+      "summaryEn": "BoJ Board Member Koeda gave a speech in Kumamoto on economic activity, prices and monetary policy in Japan. The feed does not include the speech content.",
+      "important": true,
+      "processedAt": "2026-10-15T02:31:33.122Z"
+    },
     {
       "id": "2b0ae0c2e223",
       "sourceKey": "aa-economy",
@@ -817,6 +848,8 @@
     "b991d9872c2b": "2026-10-14",
     "084f63bc06d7": "2026-10-14",
     "01bbcdaf947a": "2026-10-14",
-    "646dad399bc1": "2026-10-14"
+    "646dad399bc1": "2026-10-14",
+    "086f99f392e7": "2026-10-15",
+    "602e60044868": "2026-10-15"
   }
 }

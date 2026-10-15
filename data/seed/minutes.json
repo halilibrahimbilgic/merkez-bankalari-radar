@@ -1,5 +1,5 @@
 {
-  "fetchedAt": "2026-10-14T23:26:32.529Z",
+  "fetchedAt": "2026-10-15T02:33:46.012Z",
   "minutes": [
     {
       "meetingId": "boe-2026-02-05",
@@ -191,7 +191,31 @@
       "urls": {
         "en": "https://www.ecb.europa.eu/press/accounts/2026/html/ecb.mg261008~a10153d090.en.html"
       },
-      "fetchedAt": "2026-10-14T22:32:45.689Z"
+      "fetchedAt": "2026-10-14T22:32:45.689Z",
+      "summary": {
+        "headlineTr": "Tüm üyeler enflasyon risklerini yukarı yönlü görse de Konsey, iletişimin tarafsız kalmasını, artırımın ne önceden belirlenmiş bir sıkılaşma döngüsünün adımı ne de son artırım gibi sunulmamasını istedi.",
+        "headlineEn": "Although all members saw upside risks to inflation, the Governing Council wanted communication to stay neutral, presenting the hike neither as a step in a predetermined tightening cycle nor as the last one.",
+        "pointsTr": [
+          "Tüm üyeler enflasyon risklerini personel temel senaryosuna göre yukarı yönlü gördü; kesim tarihinden bu yana özellikle gaz fiyatlarındaki artış, düşük depolama seviyeleri ve yüksek rafineri marjları başlıca risk olarak öne çıktı.",
+          "Bazı üyeler enerji şokunun siyasi kaynaklı olduğunu ve Orta Doğu çatışmasının bu sonbahar çözülebileceğini, bu nedenle ılımlı senaryonun dışlanmaması gerektiğini savunurken, bir görüş olumsuz senaryonun temel senaryodan daha olası olduğu yönündeydi.",
+          "Çekirdek enflasyonun ağustosta %2,4'e, hizmet enflasyonunun %3,0'a gerilemesi ve ücret artışının yavaşlaması nedeniyle ikinci tur etkilerin henüz görülmediği, ancak ücretler konusunda rehavete kapılmamak gerektiği vurgulandı.",
+          "Piyasalar 2027 sonuna kadar iki-üç artırım daha fiyatlarken anketler mevduat faizinin %2,50'de sabitleneceğini gösteriyordu; üyeler bu farkın nedenlerinin incelenmesi gerektiğini belirtti.",
+          "Yüksek piyasa faizleri, euro'nun değer kazanması, zayıflayan konut kredisi ve düşük gelirli hanehalklarındaki baskının talebin bazı kısımlarını şimdiden sınırladığı, KOBİ'lerin krediye erişiminin kısıtlanabileceği ifade edildi."
+        ],
+        "pointsEn": [
+          "All members saw the risks to inflation as tilted to the upside relative to the staff baseline, with the rise in gas prices since the cut-off date, low storage levels and elevated refining margins cited as key risks.",
+          "Some members argued the energy shock was politically driven and that the Middle East conflict could be settled this autumn, so the milder scenario should not be excluded, while one view held that the adverse scenario was more likely than the baseline.",
+          "With core inflation easing to 2.4% and services inflation to 3.0% in August and wage growth moderating, second-round effects had not yet been seen, though members stressed the need not to be complacent about wages.",
+          "Markets were pricing two to three further hikes by end-2027 while surveys pointed to the deposit facility rate plateauing at 2.50%, a gap members said warranted further examination.",
+          "Members noted that higher market rates, the euro's appreciation, weaker mortgage activity and pressure on lower-income households were already restraining parts of demand, and that credit to SMEs could be constrained."
+        ],
+        "score": 5,
+        "scoreReasonTr": "Artırıma oybirliğiyle destek verilmesi, tüm üyelerin enflasyon risklerini yukarı yönlü görmesi ve dönüşün hedefe zamanında sağlanması için artırımın \"gerekli\" bulunması şahin bir duruşa işaret ediyor; ancak ileriye dönük yönlendirmeden kaçınılması, iletişimin tarafsız tutulması ve ikinci tur etkilerin henüz görülmediğinin vurgulanması puanı sınırlıyor.",
+        "scoreReasonEn": "Unanimous support for the hike, all members seeing upside inflation risks and the hike being deemed \"necessary\" for a timely return to target signal a hawkish stance, while the refusal to give forward guidance, neutral communication and the absence of second-round effects so far temper the score.",
+        "model": "claude-code/opus",
+        "promptVersion": "1",
+        "summarizedAt": "2026-10-15T02:33:46.011Z"
+      }
     },
     {
       "meetingId": "fed-2026-01-28",
@@ -389,7 +413,31 @@
         "tr": "https://www.tcmb.gov.tr/wps/wcm/connect/TR/TCMB+TR/Main+Menu/Duyurular/Basin/2026/DUY2026-42",
         "en": "https://www.tcmb.gov.tr/wps/wcm/connect/EN/TCMB+EN/Main+Menu/Announcements/Press+Releases/2026/ANO2026-42"
       },
-      "fetchedAt": "2026-10-14T22:32:45.115Z"
+      "fetchedAt": "2026-10-14T22:32:45.115Z",
+      "summary": {
+        "headlineTr": "Kurul, iç talepteki zayıflığın jeopolitik arz şoklarına karşın enflasyonun ana eğilimini sınırladığını değerlendirirken, enerji fiyatlarını ve bozulan beklentileri yukarı yönlü risk olarak öne çıkardı.",
+        "headlineEn": "The Committee judged that weak domestic demand was containing the underlying trend of inflation despite geopolitical supply shocks, while highlighting energy prices and deteriorating expectations as upside risks.",
+        "pointsTr": [
+          "İkinci çeyrek GSYH verileri ve üçüncü çeyreğe ilişkin öncü göstergeler iç talepteki zayıf seyrin belirginleştiğine işaret ederken, işsizlik oranı %8,1'e yükseldi.",
+          "Ağustostaki ana eğilim yükselişinde vakıf üniversite ücretleri ile hac ücretlerinin zamanlamasının etkili olduğu, bu kaymanın ağustos enflasyonunu yaklaşık 0,25 puan artırıp eylülde mekanik biçimde aşağı çekeceği ve buna temkinli yaklaşılması gerektiği belirtildi.",
+          "Brent petrolün eylülün ilk on gününde ortalama 103 ABD dolarına çıkması, Hürmüz Boğazı kaynaklı riskler ve El Niño'nun tarım emtiası üzerindeki etkisi enflasyon görünümüne yukarı yönlü risk olarak değerlendirildi.",
+          "Piyasa katılımcılarının 2026 yıl sonu enflasyon beklentisi %29,4'e, hanehalkının 12 ay sonrası beklentisi %45,6'ya yükseldi; beklentiler ve fiyatlama davranışları dezenflasyon için risk unsuru olmaya devam ediyor.",
+          "TCMB'nin 1 Mart 2026'da ara verdiği bir hafta vadeli repo ihalelerine yeniden başladığı ve YTAK program limitinin 300 milyar TL'den 750 milyar TL'ye çıkarıldığı aktarıldı."
+        ],
+        "pointsEn": [
+          "Second-quarter GDP data and leading indicators for the third quarter pointed to clearer weakness in domestic demand, while the unemployment rate rose to 8.1%.",
+          "The rise in the underlying trend in August was attributed partly to the timing of foundation university fees and pilgrimage fees, a shift that added about 0.25 points to August inflation and will mechanically lower September's, which the Committee said should be read with caution.",
+          "Brent crude averaging USD 103 in the first ten days of September, risks related to the Strait of Hormuz and El Niño's impact on agricultural commodities were assessed as upside risks to the inflation outlook.",
+          "Market participants' end-2026 inflation expectation rose to 29.4% and households' 12-month-ahead expectation to 45.6%; expectations and pricing behaviour remain a risk to disinflation.",
+          "The summary noted that the CBRT resumed the one-week repo auctions it had paused on 1 March 2026 and raised the investment-commitment advance loan (YTAK) programme limit from TRY 300 billion to TRY 750 billion."
+        ],
+        "score": 4,
+        "scoreReasonTr": "Sıkı para politikası duruşunun fiyat istikrarı sağlanana kadar sürdürüleceği, enflasyon görünümünde belirgin ve kalıcı bir bozulmada politikanın sıkılaştırılacağı ve yukarı yönlü risklere karşı ihtiyatlı duruşun vurgulanması şahin bir tona işaret ediyor; zayıf talebin ana eğilimi sınırladığı değerlendirmesi puanı sınırlıyor.",
+        "scoreReasonEn": "The commitment to maintain the tight stance until price stability is achieved, to tighten further if the inflation outlook deteriorates significantly and persistently, and the emphasis on caution against upside risks signal a hawkish tone, tempered by the assessment that weak demand is containing the underlying trend.",
+        "model": "claude-code/opus",
+        "promptVersion": "1",
+        "summarizedAt": "2026-10-15T02:33:46.012Z"
+      }
     }
   ]
 }
