@@ -1,5 +1,5 @@
 {
-  "fetchedAt": "2026-10-15T10:02:32.874Z",
+  "fetchedAt": "2026-10-15T10:32:28.689Z",
   "minutes": [
     {
       "meetingId": "boe-2026-02-05",
@@ -199,7 +199,31 @@
       "urls": {
         "en": "https://www.boj.or.jp/en/mopo/mpmsche_minu/opinion_2026/opi260123.htm"
       },
-      "fetchedAt": "2026-10-14T22:32:13.686Z"
+      "fetchedAt": "2026-10-14T22:32:13.686Z",
+      "summary": {
+        "headlineTr": "Kurul üyeleri, reel faizin çok düşük olduğunu ve fiyat risklerinin yukarı yönlü olduğunu vurgulayarak faiz artırımlarına zamanında, birkaç ay arayla devam edilmesi gerektiğini savundu.",
+        "headlineEn": "Board members argued that, with real interest rates very low and price risks skewed to the upside, the Bank should keep raising the policy rate in a timely manner, at intervals of a few months.",
+        "pointsTr": [
+          "Görüşlere göre bahar ücret pazarlıkları, fiyatlar ve enflasyon beklentileri öngörüldüğü gibi giderse fiyatların ana eğiliminin %2'ye ulaştığına bu baharda karar verilebilir.",
+          "Bazı görüşler, yenin değer kaybının fiyatlara geçişinin belirginleştiğini, işgücü arz kısıtı, maliye politikası kaynaklı talep ve Çin'in ihracat kısıtlamaları nedeniyle fiyat risklerinin yukarı yönlü olduğunu belirtti.",
+          "Bir görüş, Japonya'nın reel politika faizinin dünyadaki en düşük düzeyde olduğunu, yurt dışı faiz ortamı değişirse Banka'nın istemeden geride kalabileceğini ve bir sonraki artırımın uygun zamanı kaçırılmadan yapılması gerektiğini savundu.",
+          "Aralık'taki artırımdan sonra finansal koşulların gevşek kalmaya devam ettiği, artan faiz yükünün genel olarak güçlü kârlılıkla karşılandığı, ancak bazı küçük ve orta ölçekli firmaların ağır faiz yüküyle karşılaşabileceği belirtildi.",
+          "Son iki haftada getiri eğrisinin tek yönlü dikleşmesi dikkat çekici bulundu; tahvil alımlarının azaltılmasına devam edilmesi, olağanüstü koşullarda ise alımların artırılması dahil esnek davranılması gerektiği ifade edildi."
+        ],
+        "pointsEn": [
+          "According to the opinions, if spring wage negotiations, prices and inflation expectations evolve as projected, the Bank could judge as early as this spring that the underlying trend in prices has reached 2 percent.",
+          "Some opinions noted that the pass-through of yen depreciation to prices has become more pronounced and that price risks are skewed to the upside due to labor supply constraints, fiscally driven demand and China's export restrictions.",
+          "One opinion argued that Japan's real policy rate is the lowest globally, that the Bank could unintentionally fall behind the curve if overseas rate environments change, and that the next hike should come without missing the appropriate timing.",
+          "Financial conditions were said to have remained accommodative after the December hike, with the higher interest burden largely absorbed by solid business conditions, although some small and medium-sized firms may face a heavy burden.",
+          "The one-sided steepening of the yield curve over the past two weeks was seen as warranting attention; members said JGB purchase reductions should continue, with a flexible response, including increased purchases, in exceptional circumstances."
+        ],
+        "score": 5,
+        "scoreReasonTr": "Üyelerin \"faiz artırımlarına devam edilmesi uygundur\", \"birkaç ay arayla artırım\" ve \"bir sonraki adım olan artırım uygun zamanı kaçırılmadan yapılmalı\" ifadeleri ile fiyat risklerinin yukarı yönlü olduğu vurgusu.",
+        "scoreReasonEn": "Members' statements that it is \"appropriate to continue to raise the policy interest rate\", to hike \"at intervals of a few months\" and to \"proceed with the next step, a rate hike, without missing the appropriate timing\", together with the emphasis on upside price risks.",
+        "model": "claude-code/opus",
+        "promptVersion": "1",
+        "summarizedAt": "2026-10-15T10:32:28.688Z"
+      }
     },
     {
       "meetingId": "boj-2026-03-19",
@@ -944,7 +968,31 @@
         "tr": "https://www.tcmb.gov.tr/wps/wcm/connect/TR/TCMB+TR/Main+Menu/Duyurular/Basin/2026/DUY2026-05",
         "en": "https://www.tcmb.gov.tr/wps/wcm/connect/EN/TCMB+EN/Main+Menu/Announcements/Press+Releases/2026/ANO2026-05"
       },
-      "fetchedAt": "2026-10-14T22:32:11.438Z"
+      "fetchedAt": "2026-10-14T22:32:11.438Z",
+      "summary": {
+        "headlineTr": "Kurul, aralıkta ana eğilimin yüzde 1,9'a gerilediğini ve beklentilerin düştüğünü kaydederken, beklentilerin ve hizmet fiyatlarındaki ataletin dezenflasyon için risk olmaya devam ettiğini vurguladı.",
+        "headlineEn": "The Committee noted that the underlying trend eased to 1.9 percent in December and expectations declined, but stressed that expectations and inertia in services prices remain risks to disinflation.",
+        "pointsTr": [
+          "Enflasyonun ana eğilimi üç aylık ortalamalar bazında yüzde 1,9'a gerilerken, hizmet enflasyonu 2025'te yüzde 44 ile mal enflasyonunun (yüzde 25) belirgin biçimde üzerinde kaldı ve önemli atalet taşıyor.",
+          "Piyasa Katılımcıları Anketi'nde 2026 yıl sonu beklentisi yüzde 23,2'ye, 12 ay sonrası beklentisi yüzde 22,2'ye geriledi; ancak hanehalkının 12 ay sonrası beklentisi yüzde 50,9, firmalarınki yüzde 34,8 ile yüksek seyrediyor.",
+          "Öncü veriler ocak ayında aylık enflasyonun gıda öncülüğünde arttığına, ana eğilimdeki artışın sınırlı kaldığına işaret ediyor; yönetilen fiyat ve maktu vergi güncellemeleri geçmiş yıllara göre ılımlı oldu.",
+          "Son çeyrek göstergeleri talep koşullarının dezenflasyona desteğinin azalarak sürdüğünü gösteriyor; işsizlik oranı yüzde 8,6'ya yükseldi.",
+          "Kurul, adımların büyüklüğünün toplantı bazlı ve ihtiyatlı bir yaklaşımla belirleneceğini, enflasyon görünümü ara hedeflerden belirgin biçimde ayrışırsa para politikasının sıkılaştırılacağını yineledi."
+        ],
+        "pointsEn": [
+          "The underlying trend of inflation fell to 1.9 percent on a three-month average basis, while services inflation, at 44 percent in 2025, remained well above goods inflation (25 percent) and carries significant inertia.",
+          "In the Survey of Market Participants, the end-2026 expectation fell to 23.2 percent and the 12-month-ahead expectation to 22.2 percent, but households' 12-month-ahead expectation remains high at 50.9 percent and firms' at 34.8 percent.",
+          "Leading indicators point to a food-led rise in monthly inflation in January with a limited increase in the underlying trend; administered price and lump-sum tax updates were milder than in previous years.",
+          "Fourth-quarter indicators suggest demand conditions continue to support disinflation, though to a lesser extent; the unemployment rate rose to 8.6 percent.",
+          "The Committee reiterated that the size of steps will be set on a meeting-by-meeting, prudent basis, and that policy will be tightened if the inflation outlook deviates significantly from the interim targets."
+        ],
+        "score": 2,
+        "scoreReasonTr": "Faiz indirimine karşın \"fiyat istikrarı sağlanana kadar sürdürülecek sıkı para politikası duruşu\", \"ihtiyatlı yaklaşım\" ve ara hedeflerden sapma halinde sıkılaştırma vurgusu ile beklentilerin hâlâ risk unsuru olduğu tespiti.",
+        "scoreReasonEn": "Despite the rate cut, the emphasis on a \"tight monetary policy stance maintained until price stability is achieved\", a \"prudent approach\" and tightening if the outlook deviates from interim targets, along with the view that expectations remain a risk factor.",
+        "model": "claude-code/opus",
+        "promptVersion": "1",
+        "summarizedAt": "2026-10-15T10:32:28.689Z"
+      }
     },
     {
       "meetingId": "tcmb-2026-03-12",
