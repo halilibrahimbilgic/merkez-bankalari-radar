@@ -1,6 +1,36 @@
 {
-  "fetchedAt": "2026-10-15T06:31:32.786Z",
+  "fetchedAt": "2026-10-15T07:01:35.855Z",
   "items": [
+    {
+      "id": "052f105dbf8c",
+      "sourceKey": "aa-economy",
+      "sourceName": "Anadolu Agency",
+      "kind": "media",
+      "url": "https://www.aa.com.tr/en/economy/south-korean-stocks-plunge-as-us-inflation-ai-concerns-trigger-trading-halts/4089222",
+      "publishedAt": "2026-10-15T06:45:00.000Z",
+      "titleOriginal": "South Korean stocks plunge as US inflation, AI concerns trigger trading halts",
+      "titleTr": "Güney Kore borsaları ABD enflasyonu ve yapay zekâ endişeleriyle sert düştü",
+      "summaryTr": "Samsung Electronics ve SK hynix satışları yönlendirirken Kospi ve Kosdaq'ta devre kesici devreye girdi. Düşüşte ABD enflasyonu ve yapay zekâ kaygıları etkili oldu.",
+      "titleEn": "South Korean stocks plunge on US inflation and AI concerns",
+      "summaryEn": "Samsung Electronics and SK hynix led the selloff, and circuit breakers were triggered on both the Kospi and Kosdaq. US inflation and AI worries were cited as drivers.",
+      "important": false,
+      "processedAt": "2026-10-15T07:01:35.855Z"
+    },
+    {
+      "id": "01981cdbd359",
+      "sourceKey": "cnbc-economy",
+      "sourceName": "CNBC",
+      "kind": "media",
+      "url": "https://www.cnbc.com/2026/10/15/uk-gdp-august-2026-economy.html",
+      "publishedAt": "2026-10-15T06:37:10.000Z",
+      "titleOriginal": "UK economy grew 0.1% in August, beating expectations",
+      "titleTr": "Birleşik Krallık ekonomisi Ağustos'ta beklentilerin üzerinde %0,1 büyüdü",
+      "summaryTr": "Birleşik Krallık ekonomisi Ağustos'ta %0,1 büyüyerek beklentileri aştı. Ülke, kalıcı enflasyon ve yükselen enerji maliyetlerinin yol açtığı bir hayat pahalılığı sorunuyla karşı karşıya.",
+      "titleEn": "UK economy grew 0.1% in August, beating expectations",
+      "summaryEn": "The UK economy expanded 0.1% in August, ahead of expectations. The country is grappling with a cost-of-living squeeze driven by sticky inflation and surging energy costs.",
+      "important": true,
+      "processedAt": "2026-10-15T07:01:35.855Z"
+    },
     {
       "id": "8cbe786dd3f0",
       "sourceKey": "aa-ekonomi",

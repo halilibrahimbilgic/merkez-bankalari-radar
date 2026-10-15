@@ -1,5 +1,5 @@
 {
-  "fetchedAt": "2026-10-15T06:32:23.149Z",
+  "fetchedAt": "2026-10-15T07:02:22.898Z",
   "minutes": [
     {
       "meetingId": "boe-2026-02-05",
@@ -23,7 +23,31 @@
       "urls": {
         "en": "https://www.bankofengland.co.uk/monetary-policy-summary-and-minutes/2026/april-2026"
       },
-      "fetchedAt": "2026-10-14T22:32:35.247Z"
+      "fetchedAt": "2026-10-14T22:32:35.247Z",
+      "summary": {
+        "headlineTr": "Kurul, Orta Doğu kaynaklı enerji şokunun ikincil etkileri konusunda bölünmüş durumda: çoğunluk sıkılaşan finansal koşullara güvenerek beklerken birkaç üye ilerleyen toplantılarda artırımın gerekebileceğini söyledi.",
+        "headlineEn": "The Committee is divided over the second-round effects of the Middle East energy shock: the majority is waiting while relying on tighter financial conditions, but several members said a hike may be needed at upcoming meetings.",
+        "pointsTr": [
+          "Faiz 8'e 1 oyla %3,75'te sabit tutuldu; Huw Pill, enflasyonun kalıcılığına karşı faizin 0,25 puan artırılarak %4'e çıkarılmasını savundu.",
+          "Banka personeli TÜFE enflasyonunun 2026'nın ikinci çeyreğinde ortalama %3,1'e inmesini, üçüncü çeyrekte %3,3'e çıkmasını bekliyor; üçüncü çeyrek tahmini Şubat'takinden 1,4 puan yüksek ve dördüncü çeyrekte bir miktar daha yükseliş öngörülüyor.",
+          "Üyeler, para politikasının enerjinin doğrudan etkilerini görmezden gelmesi ama ücret ve fiyat belirlemedeki ikincil etkilere karşı durması gerektiğinde birleşti; hanehalkının kısa vadeli enflasyon beklentilerinin yükselmesi ve firmaların fiyat artırma eğilimi endişe kaynağı.",
+          "Greene ve Mann, enflasyon yükselmeye devam ederse yakın toplantılarda faiz artırımını bekleyebileceklerini belirtirken Taylor ve Dhingra zayıf talep ve işgücü piyasasındaki gevşekliği vurguladı; enerji fiyatları hızla düşerse Dhingra yeniden indirim seçeneğini dile getirdi.",
+          "Tüm üyeler çatışmanın başlangıcından bu yana finansal koşulların belirgin biçimde sıkılaştığını not etti; politika tepkisi senaryoya bağlı ve C senaryosu gibi güçlü bir enflasyon aşımı sert sıkılaşma gerektirecek."
+        ],
+        "pointsEn": [
+          "Bank Rate was held at 3.75% by an 8–1 vote; Huw Pill favoured a 0.25 percentage point increase to 4% to guard against inflation persistence.",
+          "Bank staff expect CPI inflation to fall to 3.1% on average in 2026 Q2 before rising back to 3.3% in Q3, 1.4 percentage points higher than in February, with a further rise expected in Q4.",
+          "Members agreed policy should look through the direct energy effects but lean against second-round effects in wage and price-setting, with higher household short-term inflation expectations and firms' intentions to raise prices a source of concern.",
+          "Greene and Mann said they could expect to raise Bank Rate at upcoming meetings if inflation keeps rising, while Taylor and Dhingra stressed weak demand and labour market slack, and Dhingra raised the option of further cuts if energy prices fall swiftly.",
+          "All members noted that financial conditions had tightened materially since the conflict began; the policy response is state-contingent, and a pronounced overshoot as in Scenario C would warrant forceful tightening."
+        ],
+        "score": 3,
+        "scoreReasonTr": "Çoğunluk beklemeyi tercih etse de enflasyon risklerinin yukarı kaydığı vurgulanıyor, bir üye artırım yönünde oy kullandı ve birkaç üye yakında artırımın gerekebileceğini söyledi.",
+        "scoreReasonEn": "Although the majority preferred to hold, upside inflation risks are emphasised, one member voted for a hike and several said an increase may soon be needed.",
+        "model": "claude-code/opus",
+        "promptVersion": "1",
+        "summarizedAt": "2026-10-15T07:02:22.898Z"
+      }
     },
     {
       "meetingId": "boe-2026-06-18",
@@ -263,7 +287,31 @@
       "urls": {
         "en": "https://www.ecb.europa.eu/press/accounts/2026/html/ecb.mg260528~a93230dc4b.en.html"
       },
-      "fetchedAt": "2026-10-14T22:32:35.890Z"
+      "fetchedAt": "2026-10-14T22:32:35.890Z",
+      "summary": {
+        "headlineTr": "Yönetim Konseyi, enerji şokunun görmezden gelinmesinin giderek uygun olmaktan çıktığını ve odağın faiz artırımının zamanlamasına kaydığını tartıştı; birkaç üye bu toplantıda artırıma karşı çıkmayacaklarını söyledi.",
+        "headlineEn": "The Governing Council discussed that \"looking through\" the energy shock had become increasingly inappropriate and that the focus was shifting to the timing of a rate hike; a number of members said they would not have opposed a hike at this meeting.",
+        "pointsTr": [
+          "Birkaç üye kararın kıl payı olduğunu, gündemde olsaydı artırıma karşı çıkmayacaklarını belirtti; bekleme seçeneğinin değerinin azaldığını ve Mart'ta yayımlanan olumsuz senaryonun giderek olası hale geldiğini savundular.",
+          "Mart temel projeksiyonlarının yıl sonuna kadar iki artırımı varsaydığı ve buna rağmen enflasyonun orta vadede hedefin hafif üzerinde kaldığı vurgulandı; iletişimin şokun görmezden gelineceği izlenimi vermemesi ve \"tam\" seçeneklilik ifadesinden kaçınması kararlaştırıldı.",
+          "Enflasyon Nisan'da %3,0'a, enerji enflasyonu %10,9'a çıktı; uzun vadeli beklentiler yaklaşık %2'de çapalı kalsa da hanehalkının beş yıl sonrası beklentisinin ortalaması rekor seviyeye ulaştı ve dağılımın sağ kuyruğu kalınlaştı.",
+          "İkincil etkilere dair henüz güçlü kanıt yok, ücretlerde etki 2027'den önce beklenmiyor; ancak Nisan PMI'larında girdi maliyetleri 2022'den bu yana en hızlı arttı ve satış fiyatı beklentileri üç yılın zirvesinde.",
+          "Büyüme risklerinin aşağı yönlü yoğunlaştığı, ilk çeyrek büyümesinin beklenenden düşük %0,1 olduğu ve bileşik PMI'ın 48,6'ya gerilediği not edildi; Haziran'daki yeni projeksiyonlar ve senaryolar bir sonraki adım için belirleyici olacak."
+        ],
+        "pointsEn": [
+          "A number of members said the decision was a close call and they would not have opposed a hike had it been on the table, arguing that the option value of waiting had decreased and the adverse scenario published in March was becoming increasingly likely.",
+          "It was highlighted that the March baseline projections were conditional on two rate hikes by year-end and still had inflation marginally above target in the medium term; communication was to avoid any impression of looking through the shock and avoid references to \"full\" optionality.",
+          "Inflation rose to 3.0% in April with energy inflation at 10.9%; longer-term expectations remain anchored around 2%, but the mean of households' five-year-ahead expectations hit a record high and the right tail of the distribution fattened.",
+          "There was no evidence yet of strong second-round effects and wage effects were not expected before 2027, but April PMIs showed the fastest rise in input costs since 2022 and selling price expectations at a three-year high.",
+          "Downside risks to growth were judged to have intensified, with Q1 GDP growth at a lower-than-expected 0.1% and the composite PMI falling to 48.6; the June projections and scenarios will be key for the next step."
+        ],
+        "score": 6,
+        "scoreReasonTr": "Görmezden gelme yaklaşımının giderek uygun olmadığı, odağın artırımın zamanlamasına kaydığı ve birkaç üyenin artırıma karşı çıkmayacağı ifadeleri belirgin bir sıkılaşma eğilimini gösteriyor.",
+        "scoreReasonEn": "Statements that looking through was increasingly inappropriate, that the focus had shifted to the timing of a hike and that several members would not have opposed a hike point to a clear tightening bias.",
+        "model": "claude-code/opus",
+        "promptVersion": "1",
+        "summarizedAt": "2026-10-15T07:02:22.898Z"
+      }
     },
     {
       "meetingId": "ecb-2026-06-11",
