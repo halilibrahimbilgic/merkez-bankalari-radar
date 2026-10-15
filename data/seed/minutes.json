@@ -1,5 +1,5 @@
 {
-  "fetchedAt": "2026-10-15T04:33:27.855Z",
+  "fetchedAt": "2026-10-15T05:32:03.533Z",
   "minutes": [
     {
       "meetingId": "boe-2026-02-05",
@@ -151,7 +151,31 @@
       "urls": {
         "en": "https://www.boj.or.jp/en/mopo/mpmsche_minu/opinion_2026/opi260616.pdf"
       },
-      "fetchedAt": "2026-10-14T22:32:38.149Z"
+      "fetchedAt": "2026-10-14T22:32:38.149Z",
+      "summary": {
+        "headlineTr": "Görüş özeti, üyelerin çoğunluğunun nötr faizin (yaklaşık yüzde 2) altında kalan politika faizini birkaç aylık aralıklarla artırmaya devam etmekten yana olduğunu, JGB alım azaltımının Nisan 2027'den itibaren durdurulması konusunda ise görüşlerin ayrıştığını gösteriyor.",
+        "headlineEn": "The Summary of Opinions shows most members favour continuing to raise the policy rate, which remains below the neutral rate (around 2 percent), at intervals of a few months, while views diverged on halting the reduction of JGB purchases from April 2027.",
+        "pointsTr": [
+          "Üyeler, ham petrol fiyatlarından kaynaklanan fiyat artışlarının geniş bir ürün yelpazesine yayılması ve temel TÜFE enflasyonunun yüzde 2 hedefinin üzerine çıkması riskine dikkat çekti; firmalar arası fiyatlar, dağıtım maliyetleri ve enflasyon beklentilerindeki kayma bu riskin işaretleri olarak anıldı.",
+          "Bir üye nötr faizin yaklaşık yüzde 2 olduğunu söyleyerek faizin birkaç aylık aralıklarla artırılmasının değerlendirilmesini önerdi; diğerleri ani ve büyük artırımlardan kaçınmak için faizin nötr düzeye bir an önce yaklaştırılması gerektiğini ve 'reel faizler belirgin biçimde düşük' ifadesinin revize edilmesini savundu.",
+          "Bir üye, faiz artırımının yatırımları bastırarak enflasyon, üretim ve istihdamda eşzamanlı düşüşe yol açabileceği gerekçesiyle faizin sabit tutulması gerektiğini savundu; bir diğeri ise Orta Doğu kaynaklı arz şoklarının üretim ve istihdam üzerindeki aşağı yönlü risklerinin fiyatlar üzerindeki yukarı yönlü risklerden büyük olduğunu ve en kötü senaryoda deflasyona dönülebileceğini belirtti.",
+          "Birçok üye JGB alım miktarındaki azaltımın Nisan 2027'den itibaren durdurulmasını uygun buldu; bir üye ise piyasada aksaklık olmadığını, durdurmanın hiçbir gerekçesi bulunmadığını ve bunun mali finansman olarak algılanıp Banka'nın güvenilirliğini zedeleyebileceğini savundu.",
+          "Üyeler, ekonominin Nisan 2026 Görünüm Raporu'ndaki temel senaryo doğrultusunda ılımlı büyümeye devam ettiğini, yapay zekâ kaynaklı küresel talep ve güçlü kârlar sayesinde büyüme üzerindeki aşağı yönlü risklerin azaldığını değerlendirdi."
+        ],
+        "pointsEn": [
+          "Members highlighted the risk that price increases stemming from crude oil prices will spread across a wide range of items and that underlying CPI inflation will deviate above the 2 percent target, citing business-to-business prices, distribution costs and shifting inflation expectations as signs of this risk.",
+          "One member said the neutral rate appears to be around 2 percent and suggested considering rate hikes at intervals of a few months, while others argued the policy rate should be brought closer to neutral sooner to avoid rapid and significant hikes and that the wording 'real interest rates are at significantly low levels' should be revised.",
+          "One member argued the Bank should hold the rate steady because a hike could curb business investment and cause simultaneous declines in inflation, production and employment; another said the downside risks to production and employment from Middle East supply shocks outweigh upside risks to prices and could, in the worst case, push Japan back into deflation.",
+          "Several members supported halting the reduction of JGB purchases from April 2027, while one member argued there have been no market disruptions, no reason at all to halt the reduction, and that doing so could be perceived as fiscal financing and undermine the Bank's credibility.",
+          "Members assessed that the economy continues to grow moderately in line with the baseline scenario of the April 2026 Outlook Report, with downside risks to activity having decreased thanks to global AI-related demand and robust corporate profits."
+        ],
+        "score": 6,
+        "scoreReasonTr": "Çoğunluğun temel enflasyonun hedefin üzerine çıkma riskine vurgu yapması, faizi nötr düzeye bir an önce yaklaştırma ve birkaç ay arayla artırmaya devam etme isteği şahin bir duruşa işaret ediyor; tek bir üyenin sabit tutma görüşü ve JGB alım azaltımının durdurulması puanı daha yukarı taşımıyor.",
+        "scoreReasonEn": "The majority's emphasis on the risk of underlying inflation overshooting the target and its wish to bring the rate closer to neutral sooner and keep hiking at intervals of a few months point to a hawkish stance, while one member's call to hold and the halt in JGB purchase reductions keep the score from going higher.",
+        "model": "claude-code/opus",
+        "promptVersion": "1",
+        "summarizedAt": "2026-10-15T05:32:03.531Z"
+      }
     },
     {
       "meetingId": "boj-2026-07-31",
