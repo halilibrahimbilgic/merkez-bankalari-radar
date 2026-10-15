@@ -1,5 +1,5 @@
 {
-  "fetchedAt": "2026-10-15T02:33:46.012Z",
+  "fetchedAt": "2026-10-15T03:03:39.165Z",
   "minutes": [
     {
       "meetingId": "boe-2026-02-05",
@@ -111,7 +111,31 @@
       "urls": {
         "en": "https://www.boj.or.jp/en/mopo/mpmsche_minu/opinion_2026/opi260731.pdf"
       },
-      "fetchedAt": "2026-10-14T22:32:43.813Z"
+      "fetchedAt": "2026-10-14T22:32:43.813Z",
+      "summary": {
+        "headlineTr": "Görüşlerin ağırlığı, enflasyonda belirgin yukarı yönlü riskler ve gevşek finansal koşullar nedeniyle faiz artırımlarının sürmesi gerektiğini savundu; bazıları artırım hızının piyasa beklentilerinden yüksek olabileceğini ve hızlandırılması gerektiğini söyledi.",
+        "headlineEn": "The weight of opinions argued that rate hikes should continue given significant upside risks to prices and accommodative financial conditions, with some saying the pace of hikes could exceed market expectations and should be accelerated.",
+        "pointsTr": [
+          "Görüşlerde, temel TÜFE enflasyonunun yüzde 2'ye yaklaştığı ve finansal koşulların gevşek kaldığı göz önüne alınarak politika faizinin artırılmaya devam edilmesinin uygun olduğu vurgulandı.",
+          "Bir görüşe göre artırımların hızı ekonomik gelişmelere bağlı olarak piyasa beklentilerinden daha yüksek olabilir; bir diğeri politikanın odağının \"enflasyonu yüzde 2'ye çıkarmaktan\" \"yukarı sapmayı önlemeye\" kaydığını ve gevşemenin azaltılmasının hızlandırılması gerektiğini söyledi.",
+          "Fiyatlara yönelik risklerin, petrol fiyatlarının yansıması, arz açığına işaret eden çıktı açığı, küresel yapay zekâ talebi ve yen değer kaybı nedeniyle belirgin biçimde yukarı yönlü olduğu belirtildi; orta-uzun vadeli enflasyon beklentilerinin son dönemde yükseldiği not edildi.",
+          "Bir görüş, faiz artırımının etkisinin bir ila bir buçuk yılda ortaya çıktığını ve önceki toplantıdaki artırımın etkisini incelemek için bu toplantıda faizin sabit tutulmasının uygun olduğunu savundu.",
+          "Ekonomi, Orta Doğu kaynaklı aşağı yönlü baskıya rağmen yapay zekâ talebi ve dirençli tüketimle ılımlı toparlanıyor; yapay zekâ şirketlerine ilişkin beklentilerin zayıflaması ve borsada sert düzeltme aşağı yönlü risk olarak anıldı."
+        ],
+        "pointsEn": [
+          "Opinions stressed that, with underlying CPI inflation approaching 2 percent and financial conditions accommodative, it is appropriate to continue raising the policy interest rate.",
+          "One opinion said the pace of hikes could be faster than market expectations depending on developments; another said the focus of policy has shifted from \"lifting underlying CPI inflation to 2 percent\" to \"avoiding further upward deviation\" and that the pace of adjustment should be accelerated.",
+          "Risks to prices were described as significantly skewed to the upside owing to oil price pass-through, an output gap indicating supply shortages, global AI-related demand and yen depreciation, and medium- to long-term inflation expectations were noted to have been rising recently.",
+          "One opinion argued that rate hikes take around one to one and a half years to affect inflation and activity, so keeping the rate unchanged at this meeting was appropriate to examine the impact of the previous hike.",
+          "The economy has recovered moderately, supported by AI-related demand and resilient consumption despite downward pressure from the Middle East, with a decline in expectations for AI firms and a sharp stock market adjustment cited as downside risks."
+        ],
+        "score": 6,
+        "scoreReasonTr": "Faiz artırımlarına devam edilmesi, artırım hızının piyasa beklentilerini aşabileceği ve gevşemenin azaltılmasının hızlandırılması gerektiği yönündeki görüşler ile fiyat risklerinin belirgin biçimde yukarı yönlü değerlendirilmesi güçlü bir şahin duruşa işaret ediyor; sabit tutma yalnızca önceki artırımın etkisini izleme gerekçesine dayanıyor.",
+        "scoreReasonEn": "Opinions calling for continued hikes, a pace possibly faster than market expectations and an accelerated reduction of accommodation, along with risks to prices seen as significantly skewed to the upside, signal a strongly hawkish stance, with the hold justified only by the need to assess the previous hike.",
+        "model": "claude-code/opus",
+        "promptVersion": "1",
+        "summarizedAt": "2026-10-15T03:03:39.164Z"
+      }
     },
     {
       "meetingId": "boj-2026-09-18",
@@ -327,7 +351,31 @@
       "urls": {
         "en": "https://www.rba.gov.au/monetary-policy/rba-board-minutes/2026/2026-08-11.html"
       },
-      "fetchedAt": "2026-10-14T22:32:44.879Z"
+      "fetchedAt": "2026-10-14T22:32:44.879Z",
+      "summary": {
+        "headlineTr": "Kurul faizi oybirliğiyle sabit tutsa da 25 baz puanlık artırımı ciddi biçimde tartıştı; birkaç üye enflasyondaki yukarı yönlü risklerin gerçekleşip ek sıkılaşma gerektirmesinin oldukça olası olduğunu düşünüyor.",
+        "headlineEn": "Although the Board held rates unanimously, it seriously debated a 25 basis point hike, and several members judged it quite possible that upside inflation risks would materialise and require further tightening.",
+        "pointsTr": [
+          "Üyeler enflasyon tahminine yönelik riskler belirgin biçimde yukarı yönlüyse önleyici sıkılaşmanın uygun olabileceğini tartıştı; Orta Doğu çatışmasının uzaması, maliyetlerin fiyatlara daha güçlü yansıması, yapay zekâ ve veri merkezi yatırım patlaması ile zayıf verimlilik başlıca yukarı yönlü riskler olarak sayıldı.",
+          "Sabit tutma kararı, yıl başındaki üç artırımın ardından para politikasının enflasyonu makul sürede hedefe indirecek kadar sıkı göründüğü ve gelen verileri değerlendirmek için zaman olduğu yargısına dayandı.",
+          "Haziran çeyreğinde manşet enflasyon beklenmedik biçimde gerilese de budanmış ortalama enflasyon yüzde 3,6'ya yükseldi; personel enflasyonun ancak 2027 sonunda hedef aralığın ortasına döneceğini ve risklerin yukarı yönlü olduğunu öngörüyor.",
+          "İşgücü piyasası beklenenden biraz fazla gevşedi ancak hâlâ biraz sıkı; işsizlik oranının 2028 sonuna kadar yüzde 4,8'e yükselmesi ve atıl kapasitenin 2027 sonundan itibaren oluşması bekleniyor.",
+          "Üyeler, enflasyonun mevcut politika ayarıyla hedefe döneceğinden emin olabilmek için merkezi projeksiyonda daha fazla ilerleme görülmesi gerektiği ve yukarı yönlü riskler gerçekleşirse faiz artırımına hazır oldukları konusunda uzlaştı."
+        ],
+        "pointsEn": [
+          "Members discussed that pre-emptive tightening could be appropriate if risks to the inflation forecast were significantly skewed to the upside, citing a prolonged Middle East conflict, fuller pass-through of cost pressures, a larger AI and data centre investment boom and weak productivity as the main upside risks.",
+          "The case for holding rested on the judgement that, after three increases earlier in the year, policy appeared sufficiently restrictive to bring inflation back to target within a reasonable timeframe and that there was still time to assess incoming data.",
+          "Although headline inflation eased unexpectedly in the June quarter, trimmed mean inflation increased to 3.6 per cent; staff expect inflation to return to around the midpoint of the target range only in late 2027, with risks tilted to the upside.",
+          "The labour market eased by a little more than expected but remains a little tight; the unemployment rate is forecast to rise to 4.8 per cent by end-2028, with spare capacity emerging from late 2027.",
+          "Members agreed that further progress along the central projection was needed before they could be confident inflation would return to target with the current setting, and that they stood ready to raise the cash rate if upside risks materialise."
+        ],
+        "score": 5,
+        "scoreReasonTr": "Üyelerin artırımı ciddi biçimde tartışması, birkaç üyenin ek sıkılaşmayı oldukça olası görmesi, risklerin yukarı yönlü değerlendirilmesi ve \"yukarı yönlü riskler gerçekleşirse faizi artırma\" taahhüdü belirgin bir sıkılaşma eğilimine işaret ediyor.",
+        "scoreReasonEn": "The serious debate over a hike, several members judging further tightening quite possible, risks assessed as skewed to the upside and the commitment to increase the cash rate if upside risks materialise point to a clear tightening bias.",
+        "model": "claude-code/opus",
+        "promptVersion": "1",
+        "summarizedAt": "2026-10-15T03:03:39.165Z"
+      }
     },
     {
       "meetingId": "rba-2026-09-29",

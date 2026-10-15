@@ -1,5 +1,5 @@
 {
-  "fetchedAt": "2026-10-15T02:32:57.053Z",
+  "fetchedAt": "2026-10-15T03:02:44.039Z",
   "statements": [
     {
       "meetingId": "boe-2025-12-18",
@@ -351,26 +351,29 @@
       "rate": 0.75,
       "previousId": "boj-2026-03-19",
       "summary": {
-        "headlineTr": "BoJ gecelik çağrı faizi hedefini yaklaşık %0,75'te sabit tuttu; ancak karar 8-1 yerine 6-3 oyla alındı ve üç üye faizin %1,0'a yükseltilmesini önerdi.",
-        "headlineEn": "The BoJ kept its uncollateralized overnight call rate target at around 0.75 percent, but the decision passed 6-3 instead of 8-1, with three members proposing a rise to 1.0 percent.",
+        "headlineTr": "BoJ gecelik çağrı faizini yaklaşık %0,75'te tuttu; ancak karar 8-1 yerine 6-3 oyla alındı ve üç üye faizin %1,0'a çıkarılmasını önerdi.",
+        "headlineEn": "The BoJ kept the overnight call rate at around 0.75 percent, but the decision passed 6-3 instead of 8-1, with three members proposing a rise to 1.0 percent.",
         "changesTr": [
-          "Karşı oy sayısı birden üçe çıktı: Takata'ya Nakagawa ve Tamura katıldı ve üçü de faizin yaklaşık %1,0'a yükseltilmesini önerdi.",
-          "Nakagawa, Orta Doğu'daki belirsizliğe rağmen gevşek finansal koşullarda fiyat risklerinin yukarı yönlü olduğunu; Tamura, fiyat risklerinin belirgin biçimde yukarı yönlü hale geldiğini ve faizin nötr faize olabildiğince yaklaştırılması gerektiğini savundu.",
-          "Takata fiyat risklerinin \"zaten\" yukarı yönlü olduğunu belirterek önceki gerekçesini yineledi.",
-          "Bu metin ekonomik değerlendirme, fiyat görünümü ve faiz artırımlarını sürdürme yönlendirmesi bölümlerini içermiyor; aynı gün Görünüm Raporu'nun (Outlook Report) yayımlandığı belirtiliyor."
+          "Faizi %1,0'a çıkarma önerisine destek bir üyeden üçe çıktı: Takata'ya Nakagawa ve Tamura katıldı.",
+          "Nakagawa, Orta Doğu'daki durum belirsizliğini korusa da gevşek finansal koşullar altında fiyat risklerinin yukarı yönlü olduğunu savundu.",
+          "Tamura, fiyat risklerinin belirgin biçimde yukarı yönlü hale geldiğini ve politika faizinin nötr faize olabildiğince yaklaştırılması gerektiğini savundu.",
+          "Önceki metindeki ekonomik değerlendirme, fiyat görünümü ve faiz artırımlarının süreceğine ilişkin yönlendirme bu metinde yer almıyor; görünüm aynı gün yayımlanan Outlook Report'a bırakıldı."
         ],
         "changesEn": [
-          "Dissents rose from one to three: Nakagawa and Tamura joined Takata, and all three proposed raising the rate to around 1.0 percent.",
-          "Nakagawa argued that, despite the unclear Middle East situation, risks to prices were skewed to the upside under accommodative financial conditions; Tamura argued that price risks had become significantly skewed to the upside and the policy rate should be set as close to neutral as possible.",
-          "Takata repeated the earlier rationale, saying price risks were \"already\" skewed to the upside.",
-          "This text does not contain the sections on the economic assessment, price outlook and guidance on continuing rate hikes; it notes that the Outlook Report was released the same day."
+          "Support for raising the rate to 1.0 percent rose from one member to three: Nakagawa and Tamura joined Takata.",
+          "Nakagawa argued that, although the Middle East situation remained unclear, risks to prices were skewed to the upside under accommodative financial conditions.",
+          "Tamura argued that risks to prices were becoming significantly skewed to the upside and the policy rate should be set as close to the neutral rate as possible.",
+          "The economic assessment, price outlook and guidance on continuing rate hikes from the previous statement are not included here; the outlook is left to the Outlook Report released the same day."
         ],
         "tone": "more-hawkish",
-        "toneReasonTr": "Faiz artırımı isteyen üye sayısının birden üçe çıkması ve karşı oy gerekçelerinde fiyat risklerinin \"belirgin biçimde yukarı yönlü\" olduğunun vurgulanması sıkılaşma yönünde bir kaymayı gösteriyor.",
-        "toneReasonEn": "The number of members favoring a hike rising from one to three, with dissent rationales stressing price risks \"significantly skewed to the upside,\" marks a hawkish shift.",
+        "toneReasonTr": "Faiz artırımı için muhalefet oylarının birden üçe çıkması ve fiyat risklerinin \"belirgin biçimde yukarı yönlü\" olduğu gerekçeleri metni sıkılaşma yönüne kaydırıyor.",
+        "toneReasonEn": "The rise in hike-favouring dissents from one to three and their reasoning that price risks are \"significantly skewed to the upside\" shift the text in a hawkish direction.",
+        "score": 3,
+        "scoreReasonTr": "Çoğunluk faizi sabit tuttu, ancak metnin tek gerekçe içeriği üç üyenin yukarı yönlü fiyat riskleri nedeniyle %1,0'a artırım önerisi; bu, sıkılaşma yönünde güçlü bir baskıya işaret ediyor.",
+        "scoreReasonEn": "The majority held rates, but the statement's only reasoning is three members' proposal to hike to 1.0 percent on upside price risks, signalling strong pressure toward tightening.",
         "model": "claude-code/opus",
-        "promptVersion": "1",
-        "summarizedAt": "2026-10-14T01:32:23.076Z"
+        "promptVersion": "2",
+        "summarizedAt": "2026-10-15T03:02:44.037Z"
       }
     },
     {
@@ -594,25 +597,28 @@
         "headlineTr": "ECB üç politika faizini sabit tuttu (mevduat faizi %2,00) ve enflasyondaki yukarı yönlü risklerle büyümedeki aşağı yönlü risklerin yoğunlaştığını belirtti.",
         "headlineEn": "The ECB kept its three key interest rates unchanged (deposit facility rate at 2.00%) and said upside risks to inflation and downside risks to growth have intensified.",
         "changesTr": [
-          "Önceki metin savaşın enflasyona yukarı, büyümeye aşağı yönlü riskler yarattığını söylerken yeni metin bu risklerin yoğunlaştığını belirtiyor; gelen verilerin önceki enflasyon değerlendirmesiyle genel olarak uyumlu olduğu da ekleniyor.",
-          "Uzun vadeli enflasyon beklentileri hâlâ çıpalı olsa da kısa vadeli enflasyon beklentilerinin belirgin biçimde yükseldiği ilk kez yazılıyor.",
-          "Savaşın enerji fiyatlarında keskin artışa yol açarak enflasyonu yükselttiği ve ekonomik güveni zayıflattığı, savaş ve yüksek enerji fiyatları uzadıkça daha geniş enflasyon ve ekonomi üzerindeki etkinin güçleneceği belirtiliyor.",
-          "Mart metnindeki personel projeksiyonları (2026 için %2,6 manşet enflasyon, %0,9 büyüme) ve senaryo analizi paragrafları çıkarıldı.",
-          "Kurul durumu yakından izleyeceğini ve veriye bağlı, toplantı bazlı yaklaşımını sürdüreceğini yineliyor; belirli bir faiz patikasına bağlanmıyor."
+          "Gelen verilerin önceki enflasyon değerlendirmesiyle büyük ölçüde uyumlu olduğu, ancak enflasyondaki yukarı yönlü ve büyümedeki aşağı yönlü risklerin yoğunlaştığı eklendi.",
+          "Orta Doğu'daki savaşın enerji fiyatlarında sert artışa yol açarak enflasyonu yükselttiği ve ekonomik güveni zayıflattığı, savaş ve yüksek enerji fiyatları sürdükçe etkinin güçleneceği yazıldı.",
+          "Uzun vadeli enflasyon beklentilerinin çıpalı kaldığı, ancak kısa vadeli beklentilerin belirgin biçimde yükseldiği yeni bir tespit olarak eklendi.",
+          "Önceki metindeki personel projeksiyonları ve senaryo analizi bu metinde yer almıyor.",
+          "Veriye bağlı, toplantı bazlı yaklaşım ve belirli bir faiz patikasına bağlanmama ifadesi korunurken durumun yakından izleneceği eklendi."
         ],
         "changesEn": [
-          "Whereas the previous text said the war created upside risks to inflation and downside risks to growth, the new text says these risks have intensified, adding that incoming information has been broadly consistent with the previous inflation assessment.",
-          "It newly notes that while longer-term inflation expectations remain well anchored, inflation expectations over shorter horizons have moved up significantly.",
-          "It says the war has led to a sharp increase in energy prices, pushing up inflation and weighing on sentiment, and that the longer the war and high energy prices last, the stronger the likely impact on broader inflation and the economy.",
-          "The paragraphs on the March staff projections (2.6% headline inflation and 0.9% growth in 2026) and the scenario analysis were removed.",
-          "The Governing Council reiterates it will closely monitor the situation and follow a data-dependent, meeting-by-meeting approach, without pre-committing to a rate path."
+          "It added that incoming information has been broadly consistent with the previous inflation assessment, but upside risks to inflation and downside risks to growth have intensified.",
+          "It said the war in the Middle East has sharply raised energy prices, pushing up inflation and weighing on sentiment, and that the impact will be stronger the longer the war and high energy prices last.",
+          "It newly noted that while longer-term inflation expectations remain well anchored, shorter-horizon expectations have moved up significantly.",
+          "The staff projections and scenario analysis in the previous statement are not included in this one.",
+          "The data-dependent, meeting-by-meeting approach with no pre-commitment to a rate path was kept, with an added pledge to closely monitor the situation."
         ],
         "tone": "more-hawkish",
-        "toneReasonTr": "Yukarı yönlü enflasyon risklerinin \"yoğunlaştığı\" ve kısa vadeli enflasyon beklentilerinin \"belirgin biçimde yükseldiği\" ifadeleri, büyüme risklerindeki artışa rağmen metnin enflasyon endişesini öne çıkarıyor.",
-        "toneReasonEn": "The statements that upside inflation risks \"have intensified\" and that shorter-horizon inflation expectations \"have moved up significantly\" put inflation concerns to the fore, despite the heightened growth risks.",
+        "toneReasonTr": "Enflasyondaki yukarı yönlü risklerin \"yoğunlaştığı\" ve kısa vadeli enflasyon beklentilerinin \"belirgin biçimde yükseldiği\" ifadeleri metni sıkılaşma yönüne kaydırıyor.",
+        "toneReasonEn": "The statements that upside risks to inflation \"have intensified\" and that shorter-horizon inflation expectations \"have moved up significantly\" shift the text in a hawkish direction.",
+        "score": 2,
+        "scoreReasonTr": "Faiz sabit ve belirli bir patikaya bağlanılmıyor, büyüme riskleri de anılıyor, ancak enflasyon risklerinin yoğunlaşması ve kısa vadeli beklentilerdeki yükseliş vurgusu hafif şahin bir duruş oluşturuyor.",
+        "scoreReasonEn": "Rates are on hold with no pre-commitment and growth risks are acknowledged, but the emphasis on intensified inflation risks and rising short-term expectations makes the stance mildly hawkish.",
         "model": "claude-code/opus",
-        "promptVersion": "1",
-        "summarizedAt": "2026-10-14T01:32:23.077Z"
+        "promptVersion": "2",
+        "summarizedAt": "2026-10-15T03:02:44.038Z"
       }
     },
     {
@@ -844,26 +850,29 @@
       "rateLower": 3.5,
       "previousId": "fed-2026-03-18",
       "summary": {
-        "headlineTr": "Fed politika faizini %3,50–3,75 aralığında sabit tuttu; metin enflasyonu \"bir miktar yüksek\" yerine \"yüksek\" diye nitelendirdi ve kararın karşısında oy sayısı bire dörde çıktı.",
-        "headlineEn": "The Fed held the federal funds rate target range at 3-1/2 to 3-3/4 percent; the statement described inflation as \"elevated\" rather than \"somewhat elevated\" and dissents rose from one to four.",
+        "headlineTr": "Fed politika faizini %3,50–3,75 aralığında sabit tuttu; metin enflasyonu \"bir miktar yüksek\" yerine \"yüksek\" diye niteledi ve üç üye metindeki gevşeme eğilimine karşı oy kullandı.",
+        "headlineEn": "The Fed held the federal funds rate at 3-1/2 to 3-3/4 percent; the statement described inflation as \"elevated\" rather than \"somewhat elevated\" and three members dissented against the easing bias in the statement.",
         "changesTr": [
-          "Enflasyon değerlendirmesi \"bir miktar yüksek kalmaya devam ediyor\"dan \"yüksek, kısmen küresel enerji fiyatlarındaki son artışı yansıtıyor\"a değişti.",
-          "Hammack, Kashkari ve Logan faizin sabit tutulmasını desteklemekle birlikte metne gevşeme eğilimi eklenmesini desteklemedikleri için karşı oy kullandı; Miran yine 25 baz puan indirim istedi.",
-          "Orta Doğu'daki gelişmelerin ekonomik görünüm hakkındaki yüksek belirsizliğe katkıda bulunduğu belirtiliyor; önceki metin bu gelişmelerin ABD ekonomisine etkilerinin belirsiz olduğunu söylüyordu.",
-          "İstihdam artışının \"ortalamada\" düşük kaldığı belirtiliyor; ekonomik faaliyetin sağlam hızda genişlediği değerlendirmesi değişmedi."
+          "Enflasyon değerlendirmesi \"bir miktar yüksek\"ten \"yüksek\"e çevrildi ve bunun kısmen küresel enerji fiyatlarındaki son artışı yansıttığı eklendi.",
+          "Oy dağılımı değişti: Miran yine 25 baz puanlık indirimi savundu; Hammack, Kashkari ve Logan ise faizi sabit tutmayı desteklemekle birlikte metne gevşeme eğilimi konmasına karşı çıktı.",
+          "Orta Doğu'daki gelişmelerin ekonomik görünüme ilişkin yüksek belirsizliğe katkıda bulunduğu yazıldı; önceki metin bu gelişmelerin etkilerini yalnızca \"belirsiz\" diye nitelemişti.",
+          "İstihdam artışının \"ortalamada\" düşük kaldığı belirtildi; ek ayarlamaların kapsamı ve zamanlamasına ilişkin yönlendirme değişmedi."
         ],
         "changesEn": [
-          "The inflation assessment changed from \"remains somewhat elevated\" to \"elevated, in part reflecting the recent increase in global energy prices.\"",
-          "Hammack, Kashkari and Logan dissented because, while supporting the hold, they did not support the inclusion of an easing bias in the statement; Miran again preferred a 25 basis point cut.",
-          "Developments in the Middle East are now said to be contributing to a high level of uncertainty about the outlook, whereas the previous text said their implications for the U.S. economy were uncertain.",
-          "Job gains are now described as having remained low \"on average\"; the assessment that activity has been expanding at a solid pace is unchanged."
+          "The inflation assessment was changed from \"somewhat elevated\" to \"elevated\", with an added note that this partly reflects the recent increase in global energy prices.",
+          "The vote changed: Miran again preferred a 25 basis point cut, while Hammack, Kashkari and Logan supported the hold but opposed including an easing bias in the statement.",
+          "It said developments in the Middle East are contributing to a high level of uncertainty about the outlook; the previous statement had only called their implications \"uncertain\".",
+          "Job gains were described as low \"on average\"; the guidance on the extent and timing of additional adjustments was unchanged."
         ],
         "tone": "more-hawkish",
-        "toneReasonTr": "Enflasyonun \"bir miktar yüksek\" yerine \"yüksek\" olarak nitelendirilmesi ve üç üyenin metindeki gevşeme eğilimine itiraz ederek karşı oy kullanması metni sıkılaşma yönüne kaydırıyor.",
-        "toneReasonEn": "Describing inflation as \"elevated\" instead of \"somewhat elevated\" and three members dissenting against the easing bias in the statement shift the text in a hawkish direction.",
+        "toneReasonTr": "Enflasyonun \"bir miktar yüksek\"ten \"yüksek\"e yükseltilmesi ve gevşeme eğilimine karşı üç yeni muhalefet oyu metni şahin yöne kaydırıyor.",
+        "toneReasonEn": "Upgrading inflation from \"somewhat elevated\" to \"elevated\" and three new dissents against the easing bias move the statement in a hawkish direction.",
+        "score": 1,
+        "scoreReasonTr": "Metin \"ek ayarlamalar\" ifadesiyle gevşeme eğilimini koruyor ve çift yönlü risklere dikkat çekiyor, ancak enflasyonun yüksek olduğu vurgusu ve sıkı yönlü muhalefet oyları duruşu hafif şahin tarafa çekiyor.",
+        "scoreReasonEn": "The statement keeps its easing bias via \"additional adjustments\" and stresses risks to both sides of the mandate, but the emphasis on elevated inflation and the hawkish dissents tilt the stance slightly hawkish.",
         "model": "claude-code/opus",
-        "promptVersion": "1",
-        "summarizedAt": "2026-10-14T01:32:23.077Z"
+        "promptVersion": "2",
+        "summarizedAt": "2026-10-15T03:02:44.039Z"
       }
     },
     {
@@ -1348,28 +1357,31 @@
       "rate": 37,
       "previousId": "tcmb-2026-03-12",
       "summary": {
-        "headlineTr": "TCMB politika faizini %37'de sabit tuttu ve metne Kurul'un enflasyondaki yukarı yönlü risklere karşı ihtiyatlı duruşunu vurguladığı cümlesini ekledi.",
-        "headlineEn": "The CBRT held the policy rate at 37 percent and added a sentence stating that the Committee emphasized its cautious stance against upside risks to inflation.",
+        "headlineTr": "TCMB politika faizini %37'de sabit tuttu ve yukarı yönlü enflasyon risklerine karşı ihtiyatlı duruşunu vurgulayan yeni bir cümle ekledi.",
+        "headlineEn": "The CBRT held the policy rate at 37% and added a new sentence emphasising its cautious stance against upside risks to inflation.",
         "changesTr": [
-          "Kurul'un enflasyon üzerindeki yukarı yönlü risklere karşı ihtiyatlı duruşunu vurguladığı cümlesi eklendi.",
-          "Enflasyonun ana eğiliminin mart ayında gerilediği, ancak öncü verilerin nisanda bir miktar yükselişe işaret ettiği belirtiliyor; önceki metin şubatta yataya yakın seyir diyordu.",
-          "Göstergelerin iktisadi faaliyette yavaşlamaya işaret ettiği ve son gelişmelerin enflasyon üzerindeki olası ikincil etkilerinin önem taşıyacağı eklendi.",
-          "Enerji fiyatlarında artış yerine yüksek seyir ve belirgin oynaklık vurgulanıyor; yurt içi enerji fiyatlarının etkileri de takip edilen unsurlara eklendi.",
-          "Risklerin sınırlanması için alınan sıkı para politikasını destekleyici kararlar ve mali tedbirlere ilişkin cümle çıkarıldı."
+          "Kurulun enflasyon üzerindeki yukarı yönlü risklere karşı ihtiyatlı duruşunu vurguladığı cümlesi eklendi.",
+          "Enflasyonun ana eğiliminin mart ayında gerilediği, ancak öncü verilerin nisanda bir miktar yükselişe işaret ettiği belirtildi; önceki metinde şubatta yataya yakın seyir vardı.",
+          "Göstergelerin iktisadi faaliyette yavaşlamaya işaret ettiği ve son gelişmelerin olası ikincil etkilerinin önem taşıyacağı eklendi.",
+          "Enerji fiyatlarında yüksek seyir ve belirgin oynaklık gözlendiği yazıldı; yurt içi enerji fiyatlarının etkileri de takip edilen unsurlara katıldı.",
+          "Önceki metindeki, riskleri sınırlamak için sıkı para politikasını destekleyici kararlar ve mali tedbirler alındığına dair cümle çıkarıldı."
         ],
         "changesEn": [
-          "A sentence was added stating that the Committee emphasized its cautious stance against upside risks to inflation.",
-          "The underlying trend of inflation is said to have declined in March, while leading indicators point to a slight rise in April; the previous text said it was close to flat in February.",
-          "It adds that indicators point to a slowdown in economic activity and that possible second-round effects of recent developments on inflation will be important.",
-          "Instead of a rise in energy prices, it now stresses elevated levels and marked volatility, and adds domestic energy prices to the factors being monitored.",
-          "The sentence on supportive tight monetary policy decisions and coordinated fiscal measures taken to limit risks was removed."
+          "A sentence was added saying the Committee emphasised its cautious stance against upside risks to inflation.",
+          "It said the underlying trend of inflation declined in March but leading indicators point to a slight rise in April; the previous statement said it was broadly flat in February.",
+          "It added that indicators point to a slowdown in economic activity and that possible second-round effects of recent developments will be important.",
+          "It noted elevated and markedly volatile energy prices, and added domestic energy prices to the factors being monitored.",
+          "The previous sentence on decisions supporting tight monetary policy and coordinated fiscal measures taken to limit risks was removed."
         ],
         "tone": "mixed",
-        "toneReasonTr": "Yukarı yönlü risklere karşı ihtiyat vurgusu, nisanda ana eğilimde yükseliş ve ikincil etkiler uyarısı sıkılaşma yönündeyken, mart ayında ana eğilimin gerilemesi ve iktisadi faaliyetteki yavaşlama gevşeme yönünde işaretler.",
-        "toneReasonEn": "The emphasis on caution against upside risks, the expected rise in the underlying trend in April and the warning on second-round effects are hawkish, while the March decline in the underlying trend and the slowdown in activity point the other way.",
+        "toneReasonTr": "Ana eğilimin gerilemesi ve iktisadi faaliyetteki yavaşlama güvercin yönde, nisanda ana eğilimin yükselmesi beklentisi, ikincil etkiler ve yukarı yönlü risklere karşı ihtiyat vurgusu şahin yönde.",
+        "toneReasonEn": "The decline in the underlying trend and the slowdown in activity point dovish, while the expected rise in April, second-round effects and the emphasis on caution against upside risks point hawkish.",
+        "score": 5,
+        "scoreReasonTr": "Sıkı duruşun fiyat istikrarı sağlanana kadar sürdürüleceği, görünüm bozulursa sıkılaştırılacağı ve yukarı yönlü risklere karşı ihtiyat vurgusu şahin bir duruşu gösteriyor.",
+        "scoreReasonEn": "The commitment to maintain the tight stance until price stability is achieved, to tighten if the outlook deteriorates, and the emphasis on caution against upside risks indicate a hawkish stance.",
         "model": "claude-code/opus",
-        "promptVersion": "1",
-        "summarizedAt": "2026-10-14T01:32:23.078Z"
+        "promptVersion": "2",
+        "summarizedAt": "2026-10-15T03:02:44.039Z"
       }
     },
     {
