@@ -1,5 +1,5 @@
 {
-  "fetchedAt": "2026-10-15T12:01:38.291Z",
+  "fetchedAt": "2026-10-15T12:31:39.209Z",
   "items": [
     {
       "id": "7624e5fb9cda",
@@ -30,6 +30,21 @@
       "summaryEn": "US annual inflation rose a stronger-than-expected 3.7%, fueling a tech selloff that sent Asian markets sharply lower. European stocks' early resilience was overshadowed by rising hawkish Fed expectations and higher oil prices.",
       "important": true,
       "processedAt": "2026-10-15T11:31:38.840Z"
+    },
+    {
+      "id": "916b5431efe2",
+      "sourceKey": "guardian-business",
+      "sourceName": "The Guardian",
+      "kind": "media",
+      "url": "https://www.theguardian.com/business/2026/oct/15/tech-market-sell-off-deepens-amid-fears-over-us-inflation-and-ai-debt",
+      "publishedAt": "2026-10-15T10:38:26.000Z",
+      "titleOriginal": "Tech market sell-off deepens amid fears over US inflation and AI debt",
+      "titleTr": "Teknoloji hisselerinde satış derinleşti: Kospi 200 yüzde 8'den fazla düştü",
+      "summaryTr": "Yapay zekâ bağlantılı hisselerdeki satış, ABD'de enflasyon ve olası faiz artırımı endişeleriyle küresel piyasalara yayıldı. Çip üreticilerinin ağırlıkta olduğu Güney Kore Kospi 200 endeksi gece boyunca yüzde 8'den fazla düşerek altı ayın en düşük kapanışına indi ve devre kesiciler devreye girdi.",
+      "titleEn": "Tech sell-off deepens as Kospi 200 falls more than 8%",
+      "summaryEn": "A sell-off in AI-linked shares spread across global markets on fears of US inflation and possible rate hikes. South Korea's chip-heavy Kospi 200 fell more than 8% overnight to a six-month closing low, triggering circuit breakers.",
+      "important": true,
+      "processedAt": "2026-10-15T12:31:39.209Z"
     },
     {
       "id": "c9267b3fa1f4",
@@ -959,6 +974,7 @@
     "3f04d15ecb5d": "2026-10-15",
     "f37efd9d6525": "2026-10-15",
     "6143d224b3c4": "2026-10-15",
-    "807f130dddc6": "2026-10-15"
+    "807f130dddc6": "2026-10-15",
+    "396369492f54": "2026-10-15"
   }
 }
