@@ -1,5 +1,5 @@
 {
-  "fetchedAt": "2026-10-15T07:31:57.472Z",
+  "fetchedAt": "2026-10-15T08:02:34.256Z",
   "minutes": [
     {
       "meetingId": "boe-2026-02-05",
@@ -183,7 +183,31 @@
       "urls": {
         "en": "https://www.boj.or.jp/en/mopo/mpmsche_minu/opinion_2026/opi260319.pdf"
       },
-      "fetchedAt": "2026-10-14T22:32:24.473Z"
+      "fetchedAt": "2026-10-14T22:32:24.473Z",
+      "summary": {
+        "headlineTr": "Üyeler Orta Doğu belirsizliği nedeniyle faizi sabit tutmayı uygun bulsa da, reel faizlerin çok düşük olduğunu ve ekonomi koşulları elverdikçe faiz artırımlarının sürmesi gerektiğini vurguladı; bazıları gerekirse artırım hızının da yükseltilebileceğini dile getirdi.",
+        "headlineEn": "Although members judged it appropriate to hold the rate amid uncertainty over the Middle East, they stressed that real interest rates are significantly low and that rate hikes should continue as conditions allow, with some raising the possibility of accelerating the pace if needed.",
+        "pointsTr": [
+          "Bir üye, ekonomik ortamda ya da küçük ve orta ölçekli firmaların ücret belirleme tutumunda belirgin bir bozulma görülmezse Banka'nın politika faizini tereddütsüz artırması gerektiğini söyledi; bir diğeri politika faizi nötr faizden hâlâ çok uzakken eğrinin gerisinde kalmanın hızlı ve büyük bir sıkılaştırmayı zorunlu kılacağını belirtti.",
+          "Ham petrol fiyatlarındaki artış ve yen değer kaybının, yaklaşık yüzde 2'ye yükselmiş enflasyon beklentileri ve firmaların aktif fiyatlama davranışı nedeniyle enflasyonu uzun süre belirgin biçimde yukarı itebileceği endişesi dile getirildi.",
+          "Orta Doğu gerilimi uzarsa faiz artırım hızının önceki projeksiyonların ötesine çıkarılıp nötr ya da sıkı finansal koşullara geçilmesinin gerekip gerekmediğine dikkat edilmesi gerektiği görüşü ifade edildi.",
+          "Bazı üyeler gıda ve enerji hariç mal ile hizmet fiyatlarındaki artışın yaklaşık yüzde 1,5'te, yüzde 2'nin altında istikrarlı seyrettiğini ve enflasyonda keskin bir artış kaygısı gerektiren bir durum olmadığını söyledi; maliyet itişli enflasyonda temel tepkinin aceleci davranmadan beklemek olduğu da not edildi.",
+          "Artırım zamanlamasının ücretler, fiyatlar, finansal koşullar ve Orta Doğu'nun etkisine bakılarak belirleneceği; bir sonraki toplantıdan itibaren ücret artışlarının ve dönem başı fiyat artışlarının yaygınlığının ayrıntılı değerlendirileceği belirtildi."
+        ],
+        "pointsEn": [
+          "One member said that, absent signs of a significant deterioration in the economic environment or in small and medium-sized firms' wage-setting stance, the Bank will need to raise the policy rate without hesitation; another noted that with the policy rate still far from neutral, falling behind the curve would force rapid and significant tightening.",
+          "Concern was voiced that the surge in crude oil prices and yen depreciation could push inflation up significantly for an extended period, given inflation expectations having risen to around 2 percent and firms' active price-setting behavior.",
+          "One view held that if tension in the Middle East became prolonged, attention should be paid to whether rate hikes need to accelerate beyond previous projections and shift toward neutral or restrictive financial conditions.",
+          "Some members said price increases for goods excluding food and energy and for services had been stable at around 1.5 percent, below 2 percent, so a sharp rise in inflation is not a concern; it was also noted that the basic response to cost-push inflation is to wait without hasty action.",
+          "The timing of the next hike will be determined by wages, prices, financial conditions and the Middle East's impact, with a detailed assessment from the next meeting onwards of how widespread wage increases and beginning-of-period price hikes are."
+        ],
+        "score": 5,
+        "scoreReasonTr": "Faiz artırımlarını sürdürme, \"tereddütsüz\" artırma ve eğrinin gerisinde kalma riskine ilişkin baskın vurgu şahin; bekleme yanlısı ve yüzde 2'nin altındaki temel enflasyona dikkat çeken görüşler bunu kısmen dengeliyor.",
+        "scoreReasonEn": "The dominant emphasis on continuing rate hikes, raising rates \"without hesitation\" and the risk of falling behind the curve is hawkish, partly balanced by views favoring patience and noting underlying inflation below 2 percent.",
+        "model": "claude-code/opus",
+        "promptVersion": "1",
+        "summarizedAt": "2026-10-15T08:02:34.255Z"
+      }
     },
     {
       "meetingId": "boj-2026-04-28",
@@ -327,7 +351,31 @@
       "urls": {
         "en": "https://www.ecb.europa.eu/press/accounts/2026/html/ecb.mg260416~6a27b0c258.en.html"
       },
-      "fetchedAt": "2026-10-14T22:32:32.965Z"
+      "fetchedAt": "2026-10-14T22:32:32.965Z",
+      "summary": {
+        "headlineTr": "Tüm üyeler enflasyon risklerini yukarı yönlü gördü ve hedefin altında kalma riskinin şimdilik ortadan kalktığını kabul etti; ancak savaşın orta vadeli etkisi belirsiz olduğundan beklemenin opsiyon değerinin yüksek olduğuna, gerekirse tereddütsüz harekete geçileceğine karar verdi.",
+        "headlineEn": "All members saw inflation risks tilted to the upside and agreed the risk of undershooting the target had disappeared for now, but judged the option value of waiting high given uncertainty over the war's medium-term effects, while standing ready to act without hesitation if needed.",
+        "pointsTr": [
+          "Üyeler, 2022 enflasyonunun hafızası, düşük işsizlik ve firmaların fiyatları kolayca artırabileceğini öğrenmiş olması nedeniyle ikinci tur etkilerin bu kez daha hızlı ortaya çıkabileceğini ve orta vadeli beklentilerin daha kırılgan olabileceğini tartıştı; bazı büyük sanayi şirketlerinin fiyat artışı duyurduğu not edildi.",
+          "Öte yandan, ücret artışının yavaşladığı, işgücü piyasasının soğuduğu ve enerjiden ücretlere geçişin sınırlı olduğunu gösteren analizler nedeniyle büyük ikinci tur etkilerin kesin sayılmaması gerektiği de savunuldu.",
+          "Mevcut durum 2022'den belirgin biçimde farklı görüldü: başlangıçta enflasyon yaklaşık yüzde 6 yerine yüzde 2'ye yakın, para ve maliye politikası duruşu genel olarak nötr ve arz kesintisinin beklenen şiddeti daha sınırlı.",
+          "Büyüme risklerinin aşağı yönlü olduğu, temel senaryodaki büyüme tahmininin (2026 için yüzde 0,9) tasarruf oranı, yapay zekâ yatırımları ve işgücü piyasasındaki doğrusal olmayan etkiler nedeniyle fazla iyimser kalabileceği belirtildi; bazı üyeler son verilerin olumsuz senaryoya daha yakın olup olmadığını sorguladı.",
+          "Bir sonraki toplantıya kadar firma ve hane halkı enflasyon beklentileri, fiyat belirleme davranışı, kâr marjları, işgücü piyasası sıkılığı, temel enflasyon ve tedarik zinciri göstergeleri gibi erken uyarı göstergeleri izlenecek; olumsuz senaryolara dayanarak erken harekete geçilmemesi gerektiği de vurgulandı."
+        ],
+        "pointsEn": [
+          "Members discussed how memories of the 2022 inflation episode, low unemployment and firms having learnt they can easily raise prices could make second-round effects materialise more quickly this time and leave medium-term expectations more fragile; it was noted that some large industrial companies had already announced price increases.",
+          "On the other hand, it was argued that large second-round effects should not be taken for granted, given slowing wage growth, a cooling labour market and empirical analysis showing limited pass-through from energy prices to wages.",
+          "The current situation was seen as clearly distinct from 2022: inflation started close to 2% rather than almost 6%, the fiscal and monetary stance was broadly neutral, and the expected severity of the supply disruption had been more contained.",
+          "Risks to growth were seen as tilted to the downside, and the baseline growth projection (0.9% for 2026) was argued to be possibly too benign given non-linear effects via the saving rate, AI investment and the labour market; some members wondered whether the latest information was more consistent with the adverse scenario.",
+          "Before the next meeting, early warning indicators will be monitored, including firms' and households' inflation expectations, price-setting behaviour, profit margins, labour market tightness, underlying inflation and supply chain indicators; it was also stressed that policy should not act prematurely on adverse or severe scenarios."
+        ],
+        "score": 3,
+        "scoreReasonTr": "Tüm üyelerin enflasyon risklerini yukarı yönlü görmesi, hedefin altında kalma riskinin kaybolduğunun tespiti ve fiyat istikrarına tehdit olursa \"tereddüt etmeden\" harekete geçme vurgusu şahin; beklemenin opsiyon değeri ve erken harekete geçmeme uyarısı tonu ölçülü tutuyor.",
+        "scoreReasonEn": "All members seeing inflation risks tilted to the upside, the finding that the undershooting risk had disappeared and the stress on acting \"without hesitation\" if price stability is threatened are hawkish, while the option value of waiting and the caution against acting prematurely keep the tone measured.",
+        "model": "claude-code/opus",
+        "promptVersion": "1",
+        "summarizedAt": "2026-10-15T08:02:34.256Z"
+      }
     },
     {
       "meetingId": "ecb-2026-04-30",
