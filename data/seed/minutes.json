@@ -1,5 +1,5 @@
 {
-  "fetchedAt": "2026-10-15T03:33:30.034Z",
+  "fetchedAt": "2026-10-15T04:03:18.112Z",
   "minutes": [
     {
       "meetingId": "boe-2026-02-05",
@@ -231,7 +231,31 @@
       "urls": {
         "en": "https://www.ecb.europa.eu/press/accounts/2026/html/ecb.mg260827~f06c21fd54.en.html"
       },
-      "fetchedAt": "2026-10-14T22:32:40.981Z"
+      "fetchedAt": "2026-10-14T22:32:40.981Z",
+      "summary": {
+        "headlineTr": "Üyeler beklemeyi Eylül'deki yeni projeksiyonlara kadar makul bulsa da enflasyon görünümü belirgin biçimde iyileşmedikçe bir faiz artırımının daha muhtemelen gerekeceğini ve duraklamanın sıkılaşma döngüsünün sonu olarak okunmaması gerektiğini vurguladı.",
+        "headlineEn": "Although members found it reasonable to wait for the new projections in September, they stressed that another rate hike would likely be necessary unless the inflation outlook improved significantly, and that the pause should not be read as the end of the tightening cycle.",
+        "pointsTr": [
+          "Bazı üyeler, Haziran'dan bu yana gelen verilerin sıkılaşmayı desteklediğini, Haziran senaryolarının hepsinde faizin daha da artması gerektiğini ve beklemenin opsiyon değerinin küçük olduğunu belirterek bu toplantıda artırıma karşı çıkmayacaklarını söyledi; ancak tüm üyeler sabit tutma kararında birleşti.",
+          "Haziran'da enflasyonun %3,2'den %2,8'e geniş tabanlı biçimde düşmesine karşın üyeler bu sonuçtan fazla rahatlık çıkarılmaması gerektiğini, çatışmanın yeniden başlamasıyla enerji fiyatlarının tekrar yükseldiğini ve enflasyonun 2027'nin ilk yarısına kadar hedefin belirgin biçimde üzerinde kalacağını değerlendirdi.",
+          "Enflasyon riskleri yukarı yönlü görüldü: düşük gaz stokları, rafineri marjları, Kızıldeniz dahil enerji darboğazları, sıcak hava dalgaları ve El Niño kaynaklı gıda fiyatları; firmaların net %58'i satış fiyatlarını artırmayı bekliyor.",
+          "Ücretler ılımlı seyrediyor ve ikinci tur etkilere dair kanıt az; uzun vadeli beklentiler yaklaşık %2'de çıpalı, ancak kısa vadeli beklentiler savaşın başından beri yüksek kalıyor.",
+          "Büyüme beklenenden dirençli, büyümeye yönelik aşağı yönlü riskler azaldı; buna karşın üyeler yapay zekâ hisselerinde sert bir satış ve artan kaldıraç kaynaklı finansal piyasa düzeltmesi riskine dikkat çekti."
+        ],
+        "pointsEn": [
+          "Some members said incoming data since June had underlined the case for further tightening, that rates needed to rise under all June scenarios and that the option value of waiting was small, so they would not have opposed a hike at this meeting; however, all members rallied behind the hold.",
+          "Despite the broad-based fall in inflation from 3.2% to 2.8% in June, members warned against taking too much reassurance from it, as renewed hostilities had pushed energy prices back up, and saw inflation staying well above target into the first half of 2027.",
+          "Risks to inflation were seen as tilted to the upside: low gas storage, refining margins, energy choke points including the Red Sea, heatwaves and El Niño-driven food prices; a net 58% of firms expect to raise selling prices.",
+          "Wage growth is moderating and there is little evidence of second-round effects; longer-term expectations are anchored at around 2%, but short-term expectations have stayed elevated since the start of the war.",
+          "Growth has been more resilient than expected and downside risks to growth have become less pronounced, though members flagged the risk of a sharp sell-off in AI stocks and a market correction amplified by rising leverage."
+        ],
+        "score": 5,
+        "scoreReasonTr": "Riskler yukarı yönlü görülüyor, enflasyon görünümü belirgin biçimde iyileşmedikçe bir artırımın daha muhtemelen gerekeceği ve duraklamanın döngünün sonu olmadığı vurgulanıyor, bazı üyeler bu toplantıda artırıma da açıktı; ancak çoğunluk Eylül'e kadar beklemeyi ve önceden taahhütte bulunmamayı tercih etti.",
+        "scoreReasonEn": "Risks are seen to the upside, members stress another hike would likely be needed unless the outlook improves significantly and that the pause is not the end of the cycle, and some were open to hiking now; but the majority preferred to wait until September without pre-committing.",
+        "model": "claude-code/opus",
+        "promptVersion": "1",
+        "summarizedAt": "2026-10-15T04:03:18.111Z"
+      }
     },
     {
       "meetingId": "ecb-2026-09-10",
@@ -500,7 +524,31 @@
         "tr": "https://www.tcmb.gov.tr/wps/wcm/connect/TR/TCMB+TR/Main+Menu/Duyurular/Basin/2026/DUY2026-32",
         "en": "https://www.tcmb.gov.tr/wps/wcm/connect/EN/TCMB+EN/Main+Menu/Announcements/Press+Releases/2026/ANO2026-32"
       },
-      "fetchedAt": "2026-10-14T22:32:40.516Z"
+      "fetchedAt": "2026-10-14T22:32:40.516Z",
+      "summary": {
+        "headlineTr": "Kurul, öncü verilerin enflasyonun ana eğiliminin temmuzda geçici olarak yükseleceğine işaret ettiğini ve enerji fiyatlarının jeopolitik gerilimle yeniden arttığını belirterek, enflasyon görünümünde belirgin ve kalıcı bir bozulma olursa para politikasını sıkılaştıracağını yineledi.",
+        "headlineEn": "The Committee noted that leading indicators point to a temporary rise in underlying inflation in July and that energy prices are rising again on geopolitical tensions, reiterating that it will tighten policy if the inflation outlook deteriorates significantly and persistently.",
+        "pointsTr": [
+          "Haziranda yıllık enflasyon yüzde 32,11'e gerilese de öncü veriler temmuzda sağlık hizmetleri (muayene katılım payı düzenlemesinin 0,22 puanlık etkisi), enerji, gıda ve alkollü içeceklerdeki artışlarla ana eğilimin geçici olarak yükseleceğine işaret ediyor.",
+          "Piyasa katılımcılarının 2026 yıl sonu enflasyon beklentisi yüzde 29,2'ye, 12 ay sonrası beklentisi yüzde 24,0'a yükseldi; Kurul, enflasyon beklentileri ve fiyatlama davranışlarının dezenflasyon açısından risk unsuru olmaya devam ettiğini belirtti.",
+          "Yakın dönem verileri iç talepteki zayıf seyrin belirginleştiğine işaret ediyor; işsizlik oranı yüzde 8,2'de yatay, firmaların istihdam beklentileri tarihsel ortalamanın altında.",
+          "Hizmet enflasyonu yüzde 40 civarında, mal enflasyonu yüzde 28 civarında seyrediyor; hizmetlerdeki fiyatlama davranışının yarattığı atalet öne çıkarılıyor.",
+          "Karar metninin ötesinde, döviz cinsinden mevduat için TL cinsinden ilave zorunlu karşılık (yüzde 2,5) kaldırılarak yabancı para mevduat zorunlu karşılık oranları 2 puan artırılıp yüzde 32 ve yüzde 28'e yükseltildi."
+        ],
+        "pointsEn": [
+          "Although annual inflation fell to 32.11% in June, leading indicators point to a temporary rise in the underlying trend in July due to increases in health services (a 0.22-point effect from the co-payment regulation), energy, food and alcoholic beverages.",
+          "Market participants' 2026 year-end inflation expectation rose to 29.2% and the 12-month-ahead expectation to 24.0%; the Committee said inflation expectations and pricing behaviour remain a risk to disinflation.",
+          "Recent data indicate that the weakness in domestic demand has become more pronounced; unemployment was flat at 8.2% and firms' employment expectations remain below the historical average.",
+          "Services inflation is running at around 40% and goods inflation at around 28%, with the inertia created by pricing behaviour in services highlighted.",
+          "Beyond the decision statement, the additional TL reserve requirement on FX deposits (2.5%) was abolished, while reserve requirement ratios on FX deposits were raised by 2 points to 32% and 28%."
+        ],
+        "score": 4,
+        "scoreReasonTr": "Sıkı duruşun fiyat istikrarı sağlanana kadar süreceği, belirgin ve kalıcı bozulmada sıkılaştırılacağı ve yukarı yönlü risklere karşı ihtiyatlı duruş vurgulanıyor; zayıflayan iç talep ve gerileyen yıllık enflasyon ise artırım sinyalini sınırlıyor.",
+        "scoreReasonEn": "The minutes stress that the tight stance will be maintained until price stability is achieved, that policy will be tightened in case of a significant and persistent deterioration, and a cautious stance against upside risks; weakening domestic demand and falling annual inflation limit any hike signal.",
+        "model": "claude-code/opus",
+        "promptVersion": "1",
+        "summarizedAt": "2026-10-15T04:03:18.112Z"
+      }
     },
     {
       "meetingId": "tcmb-2026-09-10",
