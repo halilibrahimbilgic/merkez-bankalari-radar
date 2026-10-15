@@ -1,5 +1,5 @@
 {
-  "fetchedAt": "2026-10-15T07:19:42.091Z",
+  "fetchedAt": "2026-10-15T07:31:57.472Z",
   "minutes": [
     {
       "meetingId": "boe-2026-02-05",
@@ -15,7 +15,31 @@
       "urls": {
         "en": "https://www.bankofengland.co.uk/monetary-policy-summary-and-minutes/2026/march-2026"
       },
-      "fetchedAt": "2026-10-14T22:32:27.405Z"
+      "fetchedAt": "2026-10-14T22:32:27.405Z",
+      "summary": {
+        "headlineTr": "Orta Doğu çatışmasının yarattığı enerji şoku, Şubat'ta indirime yakın duran komiteyi beklemeye geçirdi; üyeler orta vadeli enflasyonda yukarı yönlü risklerin en belirgin biçimde arttığını, şokun büyüklüğü ve süresine göre politikanın iki yönde de değişebileceğini belirtti.",
+        "headlineEn": "The energy shock from the Middle East conflict moved a Committee that had been leaning towards a cut in February into a hold; members said upside risks to medium-term inflation had increased most notably and that policy could move in either direction depending on the scale and duration of the shock.",
+        "pointsTr": [
+          "Personel tahminlerine göre TÜFE enflasyonunun önümüzdeki birkaç çeyrekte yüzde 3 ile 3½ arasında olması bekleniyor; Şubat Raporu'nda Nisan'dan itibaren yüzde 2 hedefine inmesi öngörülüyordu ve 2. çeyrek beklentisi yüzde 2,1'den yaklaşık yüzde 3'e yükseldi.",
+          "Komite, ücret ve fiyat belirlemede ikincil etkiler riskine karşı tetikte olduğunu, enerji fiyatlarının yüksek kalma süresi uzadıkça bu riskin artacağını ve art arda gelen arz şoklarından sonra hane ve firmaların yeni bir enflasyon şokuna daha duyarlı olabileceğini vurguladı.",
+          "Öte yandan şok, büyümenin potansiyelin altında olduğu ve atıl kapasitenin bulunduğu bir dönemde geldi; reel gelirlerin sıkışması ve ihtiyati tasarruf işsizliği (yüzde 5,2) daha hızlı artırarak ikincil etkileri sınırlayabilir.",
+          "Üyeler, daha büyük ya da uzun süreli bir şokun daha sıkı bir politika gerektireceğini, çok kısa süreli bir şokta ya da atıl kapasite belirgin biçimde açılırsa politikanın daha az sıkı olması gerekeceğini belirtti.",
+          "Breeden ve Ramsden çatışma olmasa indirim yönünde oy vereceklerini söyledi; Mann dengenin indirimden uzun süreli beklemeye, hatta bir noktada artırıma kaydığını, Dhingra ve Taylor ise ılımlı senaryoda hızlı indirimler olabileceğini dile getirdi."
+        ],
+        "pointsEn": [
+          "Staff estimates suggest CPI inflation is likely to be between 3 and 3½% over the next couple of quarters, versus the February Report's expectation of a fall back to around the 2% target from April, with the Q2 projection raised from 2.1% to around 3%.",
+          "The Committee said it was alert to the risk of second-round effects in wage and price-setting, which would grow the longer energy prices stayed high, and that households and businesses could be more sensitive to a new inflationary shock after successive supply shocks.",
+          "On the other hand, the shock arrived with growth below potential and spare capacity in the economy; squeezed real incomes and precautionary saving could push unemployment (5.2%) up faster, potentially constraining second-round effects.",
+          "Members said a larger or more protracted shock would require a more restrictive stance, while policy would need to be less restrictive if the shock were very short-lived or slack opened up more.",
+          "Breeden and Ramsden said they would otherwise have voted for a cut; Mann saw the balance shifting from a cut towards a longer hold or even a hike at some point, while Dhingra and Taylor said a benign scenario could bring rapid cuts."
+        ],
+        "score": 2,
+        "scoreReasonTr": "Tutanak yukarı yönlü enflasyon risklerinin \"en belirgin biçimde arttığını\" ve ikincil etkilere karşı tetikte olunduğunu vurgularken, indirime yakın bir komitenin beklemeye geçmesi ve iki yönlü politika senaryolarına yer verilmesi duruşu hafif şahin kılıyor.",
+        "scoreReasonEn": "The minutes stress that upside risks to inflation had \"increased most notably\" and that the Committee was alert to second-round effects, while the shift from a near-cut to a hold and the explicit two-way policy scenarios make the stance mildly hawkish.",
+        "model": "claude-code/opus",
+        "promptVersion": "1",
+        "summarizedAt": "2026-10-15T07:31:57.470Z"
+      }
     },
     {
       "meetingId": "boe-2026-04-30",
@@ -746,7 +770,31 @@
         "tr": "https://www.tcmb.gov.tr/wps/wcm/connect/TR/TCMB+TR/Main+Menu/Duyurular/Basin/2026/DUY2026-19",
         "en": "https://www.tcmb.gov.tr/wps/wcm/connect/EN/TCMB+EN/Main+Menu/Announcements/Press+Releases/2026/ANO2026-19"
       },
-      "fetchedAt": "2026-10-14T22:32:33.216Z"
+      "fetchedAt": "2026-10-14T22:32:33.216Z",
+      "summary": {
+        "headlineTr": "Kurul, jeopolitik gelişmelerle yükselen enerji fiyatları ve bozulan enflasyon beklentileri karşısında, enflasyon görünümünde belirgin ve kalıcı bir bozulma olursa para politikası duruşunun sıkılaştırılacağını vurguladı.",
+        "headlineEn": "The Committee stressed that the monetary policy stance would be tightened if the inflation outlook deteriorates significantly and persistently, as energy prices driven by geopolitical developments rise and inflation expectations worsen.",
+        "pointsTr": [
+          "Nisan Piyasa Katılımcıları Anketi'nde 2026 yıl sonu enflasyon beklentisi 2,2 puan artışla yüzde 27,5'e, 12 ay sonrası beklenti yüzde 23,4'e yükseldi; hane halkının 12 ay sonrası beklentisi yüzde 49,9 oldu ve Kurul beklentileri ile fiyatlama davranışlarını dezenflasyon için risk unsuru olarak gördü.",
+          "Mart'ta yıllık enflasyon yüzde 30,87'ye gerilese de B ve C endekslerinin yıllık artışı yükseldi; öncü veriler Nisan'da meskenlere yönelik doğal gaz ve elektrik zamları ile akaryakıt ve gıda kaynaklı olarak ana eğilimin bir miktar yükseleceğine işaret ediyor.",
+          "Kurul, emtia fiyatlarındaki oynaklık ve arz kısıtları nedeniyle enflasyon görünümüne ilişkin belirsizliğin önemli ölçüde yükseldiğini ve olası ikincil etkilerin önem taşıyacağını belirtti.",
+          "Göstergeler iktisadi faaliyette yavaşlamaya işaret ediyor: sanayi üretiminin ana eğilimi zayıf, istihdam çeyreklik bazda yüzde 1,3 azaldı, işsizlik oranı yüzde 8,3'te yatay kaldı.",
+          "TCMB rezervleri 13 Mart'tan bu yana 15,2 milyar dolar azalarak 174,5 milyar dolara geriledi, toplam 3,7 milyar dolar net portföy çıkışı yaşandı; TL mevduat faizleri yüzde 47,2'ye, ihtiyaç kredisi faizleri yüzde 63,1'e yükseldi."
+        ],
+        "pointsEn": [
+          "In the April Survey of Market Participants, year-end 2026 inflation expectations rose by 2.2 points to 27.5 percent and 12-month-ahead expectations to 23.4 percent; households' 12-month-ahead expectations reached 49.9 percent, and the Committee saw expectations and pricing behaviour as a risk to disinflation.",
+          "Although annual inflation fell to 30.87 percent in March, annual B and C index inflation rose; leading indicators point to a slight rise in the underlying trend in April, driven by residential natural gas and electricity price hikes, fuel and food.",
+          "The Committee noted that uncertainty over the inflation outlook had risen significantly due to commodity price volatility and supply constraints, and that possible second-round effects would be important.",
+          "Indicators point to a slowdown in economic activity: the underlying trend in industrial production is weak, employment fell 1.3 percent quarter on quarter, and the unemployment rate was flat at 8.3 percent.",
+          "CBRT reserves fell by USD 15.2 billion since 13 March to USD 174.5 billion, with total net portfolio outflows of USD 3.7 billion; Turkish lira deposit rates rose to 47.2 percent and consumer loan rates to 63.1 percent."
+        ],
+        "score": 6,
+        "scoreReasonTr": "Kurul'un \"enflasyon görünümünde belirgin ve kalıcı bir bozulma olması durumunda para politikası duruşu sıkılaştırılacaktır\" ve \"yukarı yönlü risklere karşı ihtiyatlı duruşunu vurgulamıştır\" ifadeleri, yükselen beklentilerle birlikte şahin bir duruşa ve koşullu sıkılaşma sinyaline işaret ediyor.",
+        "scoreReasonEn": "The Committee's statements that \"the monetary policy stance will be tightened in case of a significant and persistent deterioration in the inflation outlook\" and its emphasis on a cautious stance against upside risks, alongside rising expectations, signal a hawkish stance with conditional tightening.",
+        "model": "claude-code/opus",
+        "promptVersion": "1",
+        "summarizedAt": "2026-10-15T07:31:57.472Z"
+      }
     },
     {
       "meetingId": "tcmb-2026-06-11",
