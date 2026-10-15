@@ -1,5 +1,5 @@
 {
-  "fetchedAt": "2026-10-15T08:02:34.256Z",
+  "fetchedAt": "2026-10-15T08:32:31.209Z",
   "minutes": [
     {
       "meetingId": "boe-2026-02-05",
@@ -519,7 +519,31 @@
       "urls": {
         "en": "https://www.federalreserve.gov/monetarypolicy/fomcminutes20260318.htm"
       },
-      "fetchedAt": "2026-10-14T22:32:22.017Z"
+      "fetchedAt": "2026-10-14T22:32:22.017Z",
+      "summary": {
+        "headlineTr": "Üyelerin büyük çoğunluğu Orta Doğu'daki çatışma ve petrol fiyatlarındaki sıçrama nedeniyle enflasyonun hedefin üzerinde kalıcı olma riskinin arttığını değerlendirdi; bazı üyeler faiz artırımı ihtimalini de içeren iki yönlü bir yönlendirme istedi.",
+        "headlineEn": "The vast majority of participants judged that the conflict in the Middle East and the surge in oil prices had increased the risk of inflation running persistently above target, and some called for two-sided guidance that includes the possibility of rate hikes.",
+        "pointsTr": [
+          "Üyelerin büyük çoğunluğu %2 hedefe doğru ilerlemenin önceden beklenenden yavaş olabileceğini ve enflasyonun kalıcı olarak hedefin üzerinde seyretme riskinin arttığını belirtti; bazıları birkaç yıllık hedef üstü enflasyondan sonra uzun vadeli beklentilerin enerji fiyatlarına daha duyarlı hale gelebileceği uyarısında bulundu.",
+          "Birçok üye enflasyon beklentilerine uygun gerilerse zamanla faiz indiriminin uygun olacağını düşünürken, bazı üyeler enflasyon hedefin üzerinde kalırsa faiz artırımının da uygun olabileceğini yansıtan iki yönlü bir ifadenin karar metnine girmesi için güçlü gerekçe olduğunu savundu; birkaç üye indirim zamanlamasını ileriye ittiğini söyledi.",
+          "Üyelerin büyük çoğunluğu istihdam tarafındaki risklerin aşağı yönlü olduğunu değerlendirdi; birçok üye düşük istihdam yaratımı ortamında işgücü piyasasının olumsuz şoklara karşı kırılgan olduğunu ve firmaların yapay zekâ beklentisiyle işe alımı erteleyebileceğini belirtti.",
+          "Çoğu üye uzun süren bir çatışmanın işgücü piyasasını zayıflatıp ek indirim gerektirebileceği, birçok üye ise kalıcı petrol fiyatı artışında enflasyonun yüksek kalıp artırım gerektirebileceği riskine dikkat çekti; politika faizi genel olarak nötr düzey tahminleri aralığında görüldü.",
+          "Bir üye (Stephen I. Miran), mevcut duruşun sıkı olduğu ve zayıf işgücü talebine katkı yaptığı gerekçesiyle 25 baz puan indirim yönünde oy kullandı."
+        ],
+        "pointsEn": [
+          "The vast majority of participants noted that progress toward the 2 percent objective could be slower than previously expected and that the risk of inflation running persistently above target had increased; some warned that after several years of above-target inflation, longer-term expectations could become more sensitive to energy price increases.",
+          "Many participants judged that rate cuts would likely become appropriate in time if inflation declined as expected, while some saw a strong case for two-sided language in the statement reflecting that rate increases could be appropriate if inflation remained above target; a couple said they had pushed back the likely timing of cuts.",
+          "The vast majority of participants judged risks to employment as skewed to the downside; many cautioned that, with low net job creation, the labor market appeared vulnerable to adverse shocks and that firms might delay hiring in anticipation of AI adoption.",
+          "Most participants pointed to the risk that a protracted conflict could soften the labor market and warrant further cuts, while many highlighted the risk that persistently higher oil prices could keep inflation elevated and call for rate increases; the policy rate was generally viewed as within the range of neutral estimates.",
+          "One member (Stephen I. Miran) voted for a 25 basis point cut, arguing that the current stance remained restrictive and was contributing to weak labor demand."
+        ],
+        "score": 1,
+        "scoreReasonTr": "Enflasyonun kalıcı olarak hedef üstünde kalma riskinin arttığı ve bazı üyelerin artırım ihtimalini içeren iki yönlü yönlendirme istediği vurgulanıyor, ancak birçok üye zamanla indirim beklentisini koruyor ve istihdamdaki aşağı yönlü risklere de güçlü vurgu var.",
+        "scoreReasonEn": "The minutes stress an increased risk of inflation persisting above target and some participants' call for two-sided guidance including possible hikes, but many still expect eventual cuts and downside employment risks receive strong emphasis.",
+        "model": "claude-code/opus",
+        "promptVersion": "1",
+        "summarizedAt": "2026-10-15T08:32:31.206Z"
+      }
     },
     {
       "meetingId": "fed-2026-04-29",

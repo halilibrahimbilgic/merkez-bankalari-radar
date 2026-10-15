@@ -1,6 +1,21 @@
 {
-  "fetchedAt": "2026-10-15T08:01:39.806Z",
+  "fetchedAt": "2026-10-15T08:31:38.826Z",
   "items": [
+    {
+      "id": "921a2ea42fb7",
+      "sourceKey": "aa-ekonomi",
+      "sourceName": "Anadolu Ajansı",
+      "kind": "media",
+      "url": "https://www.aa.com.tr/tr/ekonomi/abdde-hizlanan-enflasyon-yil-sonuna-kadar-yeni-bir-faiz-artisi-ihtimalini-guclendiriyor/4089358",
+      "publishedAt": "2026-10-15T08:08:55.000Z",
+      "titleOriginal": "ABD'de hızlanan enflasyon yıl sonuna kadar yeni bir faiz artışı ihtimalini güçlendiriyor",
+      "titleTr": "ABD'de hızlanan enflasyon, Fed'in aralıkta faiz artırma ihtimalini güçlendiriyor",
+      "summaryTr": "ABD'de eylül enflasyonunun hızlandığını gösteren verilerin ardından Fed'in bu ay politika faizini sabit tutacağı beklentisi sürüyor. Aralıkta 25 baz puanlık artış yapılabileceği öngörüleri öne çıkıyor.",
+      "titleEn": "Faster US inflation raises odds of another Fed rate hike by year-end",
+      "summaryEn": "After US data showed inflation accelerating in September, expectations remain that the Fed will hold its policy rate this month. Forecasts of a 25 basis point hike in December are gaining prominence.",
+      "important": true,
+      "processedAt": "2026-10-15T08:31:38.826Z"
+    },
     {
       "id": "052f105dbf8c",
       "sourceKey": "aa-economy",
