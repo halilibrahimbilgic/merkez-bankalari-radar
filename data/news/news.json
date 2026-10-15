@@ -1,6 +1,21 @@
 {
-  "fetchedAt": "2026-10-15T05:01:44.253Z",
+  "fetchedAt": "2026-10-15T06:31:32.786Z",
   "items": [
+    {
+      "id": "8cbe786dd3f0",
+      "sourceKey": "aa-ekonomi",
+      "sourceName": "Anadolu Ajansı",
+      "kind": "media",
+      "url": "https://www.aa.com.tr/tr/ekonomi/-abdde-enflasyonun-hizlanmasi-kuresel-piyasalarda-satis-baskisini-artirdi/4089196",
+      "publishedAt": "2026-10-15T06:03:49.000Z",
+      "titleOriginal": "ABD'de enflasyonun hızlanması küresel piyasalarda satış baskısını artırdı",
+      "titleTr": "ABD'de enflasyon hızlandı, küresel piyasalarda satış baskısı arttı",
+      "summaryTr": "Anadolu Ajansı'na göre ABD'de enflasyonun hızlanması, Fed'in faiz artırabileceği beklentilerini güçlendirdi. Teknoloji hisselerindeki sert düşüşle birlikte küresel piyasalarda satış baskısı arttı.",
+      "titleEn": "US inflation picks up, selling pressure builds in global markets",
+      "summaryEn": "According to Anadolu Agency, faster US inflation strengthened expectations that the Fed could raise rates. Together with sharp falls in tech stocks, this increased selling pressure across global markets.",
+      "important": true,
+      "processedAt": "2026-10-15T06:31:32.786Z"
+    },
     {
       "id": "5ab9af7f2da6",
       "sourceKey": "ft",

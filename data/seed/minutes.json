@@ -1,5 +1,5 @@
 {
-  "fetchedAt": "2026-10-15T06:02:13.999Z",
+  "fetchedAt": "2026-10-15T06:32:23.149Z",
   "minutes": [
     {
       "meetingId": "boe-2026-02-05",
@@ -503,7 +503,31 @@
       "urls": {
         "en": "https://www.rba.gov.au/monetary-policy/rba-board-minutes/2026/2026-05-05.html"
       },
-      "fetchedAt": "2026-10-14T22:32:36.946Z"
+      "fetchedAt": "2026-10-14T22:32:36.946Z",
+      "summary": {
+        "headlineTr": "Üyelerin çoğu, Orta Doğu'daki çatışmanın farklı senaryolarında çekirdek enflasyonun uzun süre hedefin üzerinde kalacağı öngörüsüyle artırımı gerekli gördü; ancak bu kararın Kurul'a çatışmanın etkilerini izlemek için alan tanıdığı değerlendirildi.",
+        "headlineEn": "Most members judged a hike necessary as underlying inflation was projected to stay above target for an extended period across scenarios for the Middle East conflict, but agreed the decision gives the Board space to watch how the conflict's effects unfold.",
+        "pointsTr": [
+          "Karar 8'e 1 oyla alındı; bir üye, savaş öncesi kapasite baskılarının personelin değerlendirmesinden düşük olduğu, uzun süren çatışmanın talebi daha fazla zayıflatabileceği ve uzun vadeli beklentilerin bozulduğuna dair yeterli kanıt olmadığı gerekçesiyle faizin yüzde 4,10'da sabit tutulmasını savundu.",
+          "Personelin temel senaryosunda manşet enflasyonun haziran çeyreğinde yüzde 4,8 ile zirve yapması, çekirdek (budanmış ortalama) enflasyonun ise 2027 sonlarına kadar yüzde 3'ün üzerinde kalıp ancak 2028 ortasında yüzde 2,5'e dönmesi bekleniyor.",
+          "Büyümenin potansiyelin altına yavaşlaması ve işsizliğin 2028 ortasında yüzde 4,7'ye çıkması öngörülürken, üyeler enflasyon ile istihdam hedefleri arasındaki kısa vadeli ödünleşimin kötüleştiğini kabul etti.",
+          "Üyeler, nakit faizinin model tahminlerine göre nötr aralığın üst kısmında olduğunu, kredi büyümesinin güçlü seyrettiğini ve finansal koşulların ne kadar kısıtlayıcı olduğunun belirsiz olduğunu not etti; bu karardan sonra koşulların muhtemelen bir miktar kısıtlayıcı olacağı değerlendirildi.",
+          "Firmaların artan bir kısmının önümüzdeki yıl ortalamanın üzerinde fiyat artışı beklediği ve bazı çalışanların daha yüksek ücret talep edebileceği, orta-uzun vadeli enflasyon beklentilerinin çıpasını kaybetme riskine işaret olarak tartışıldı."
+        ],
+        "pointsEn": [
+          "The decision was taken by 8 votes to 1; one member favoured holding at 4.10 per cent, judging pre-conflict capacity pressures lower than staff assessed, the risk of a demand-sapping prolonged conflict higher, and evidence of de-anchoring longer-term expectations insufficient.",
+          "In the staff baseline, headline inflation peaks at 4.8 per cent in the June quarter, while underlying (trimmed mean) inflation stays above 3 per cent until late 2027 and returns to 2½ per cent only in mid-2028.",
+          "GDP growth is forecast to slow below potential and unemployment to rise to 4.7 per cent by mid-2028, and members acknowledged a worsening short-term trade-off between the inflation and employment objectives.",
+          "Members noted the cash rate sits near the top of model-based neutral estimates, credit growth remains strong and it is unclear how restrictive financial conditions are, judging they would probably be somewhat restrictive after this decision.",
+          "Liaison showing a growing share of firms expecting above-average price rises and some workers likely to seek higher wages was discussed as a risk that medium- to long-term inflation expectations could become de-anchored."
+        ],
+        "score": 5,
+        "scoreReasonTr": "Çoğunluğun yukarı yönlü enflasyon risklerini ve beklentilerin çıpasını kaybetme riskini vurgulayarak artırım yapması şahin bir duruşu gösteriyor; ancak kararın Kurul'a bekleme alanı tanıdığı ifadesi ilave artırım sinyalini yumuşatıyor.",
+        "scoreReasonEn": "The majority's hike, citing upside inflation risks and the risk of de-anchored expectations, is hawkish, though the statement that the decision gives the Board space to wait tempers any signal of further hikes.",
+        "model": "claude-code/opus",
+        "promptVersion": "1",
+        "summarizedAt": "2026-10-15T06:32:23.148Z"
+      }
     },
     {
       "meetingId": "rba-2026-06-16",
@@ -635,7 +659,31 @@
         "tr": "https://www.tcmb.gov.tr/wps/wcm/connect/TR/TCMB+TR/Main+Menu/Duyurular/Basin/2026/DUY2026-24",
         "en": "https://www.tcmb.gov.tr/wps/wcm/connect/EN/TCMB+EN/Main+Menu/Announcements/Press+Releases/2026/ANO2026-24"
       },
-      "fetchedAt": "2026-10-14T22:32:37.024Z"
+      "fetchedAt": "2026-10-14T22:32:37.024Z",
+      "summary": {
+        "headlineTr": "Kurul, enflasyonun ana eğiliminin mayısta gerilediğini ancak beklentilerin yükseldiğini not ederek, enflasyon görünümünde belirgin ve kalıcı bir bozulma olursa para politikasının sıkılaştırılacağını yineledi.",
+        "headlineEn": "The Committee noted that the underlying trend of inflation eased in May but expectations rose, and reiterated that policy would be tightened if the inflation outlook deteriorated significantly and persistently.",
+        "pointsTr": [
+          "Yıllık enflasyon mayısta 0,24 puan artışla yüzde 32,61'e yükseldi; hizmet enflasyonu yüzde 41, mal enflasyonu yüzde 28 civarında olup hizmetlerdeki fiyatlama ataleti vurgulandı, öncü veriler ise ana eğilimdeki düşüşün haziranda da sürdüğüne işaret ediyor.",
+          "Piyasa katılımcılarının 2026 yıl sonu enflasyon beklentisi 1,4 puan artışla yüzde 28,9'a, 2027 beklentisi yüzde 21,1'e çıktı; Kurul beklentileri ve fiyatlama davranışlarını dezenflasyon için risk unsuru olarak gördü.",
+          "Sıkı duruşu desteklemek için 23 Mayıs'ta zorunlu karşılık uygulamasında kredi büyüme sınırları düşürüldü (örneğin ihtiyaç ve taşıt kredilerinde sekiz haftalık sınır yüzde 4'ten yüzde 3'e); kredi ve mevduat faizleri yükseldi, bireysel kredi büyümesi yavaşladı.",
+          "İlk çeyrekte GSYH yıllık yüzde 2,5, çeyreklik yüzde 0,1 büyüdü; öncü veriler iç talepteki zayıf seyrin ikinci çeyrekte sürdüğünü, işsizlik oranının yüzde 8,2'de yatay kaldığını gösteriyor.",
+          "Jeopolitik gelişmeler kaynaklı enerji fiyatı oynaklığı, Hürmüz Boğazı riskleri ve artan arz yönlü baskılar maliyet, faaliyet ve beklenti kanallarıyla yakından izleniyor; TCMB brüt rezervleri 11,6 milyar dolar azalarak 159,4 milyar dolara geriledi."
+        ],
+        "pointsEn": [
+          "Annual inflation rose 0.24 points to 32.61 per cent in May; services inflation is around 41 per cent and goods around 28 per cent, with inertia in services pricing highlighted, while leading indicators point to a continued decline in the underlying trend in June.",
+          "Market participants' 2026 year-end inflation expectation rose 1.4 points to 28.9 per cent and the 2027 expectation to 21.1 per cent; the Committee saw expectations and pricing behaviour as a continued risk to disinflation.",
+          "To support the tight stance, loan growth caps under reserve requirements were lowered on 23 May (e.g. the eight-week cap for personal and vehicle loans from 4 to 3 per cent); loan and deposit rates rose and retail credit growth slowed.",
+          "GDP grew 2.5 per cent year on year and 0.1 per cent quarter on quarter in Q1; leading data show domestic demand remained weak in Q2, with the unemployment rate flat at 8.2 per cent.",
+          "Energy price volatility from geopolitical developments, Strait of Hormuz risks and rising supply-side pressures are being closely monitored through cost, activity and expectations channels; gross reserves fell by 11.6 billion dollars to 159.4 billion dollars."
+        ],
+        "score": 5,
+        "scoreReasonTr": "Fiyat istikrarı sağlanana kadar sıkı duruşun sürdürüleceği, görünüm bozulursa sıkılaştırma yapılacağı, yukarı yönlü risklere karşı ihtiyatın vurgulanması ve makroihtiyati sıkılaştırma şahin bir duruşa işaret ediyor; faiz artırımı ise doğrudan ima edilmiyor.",
+        "scoreReasonEn": "The commitment to maintain a tight stance until price stability, the pledge to tighten if the outlook deteriorates, the emphasis on caution against upside risks and macroprudential tightening point to a hawkish stance, though a rate hike is not directly signalled.",
+        "model": "claude-code/opus",
+        "promptVersion": "1",
+        "summarizedAt": "2026-10-15T06:32:23.149Z"
+      }
     },
     {
       "meetingId": "tcmb-2026-07-23",
