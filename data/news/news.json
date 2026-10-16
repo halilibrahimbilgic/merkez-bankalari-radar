@@ -1,6 +1,21 @@
 {
-  "fetchedAt": "2026-10-16T15:01:46.374Z",
+  "fetchedAt": "2026-10-16T16:01:56.682Z",
   "items": [
+    {
+      "id": "99c5520809e9",
+      "sourceKey": "cnbc-economy",
+      "sourceName": "CNBC",
+      "kind": "media",
+      "url": "https://www.cnbc.com/2026/10/16/kevin-warsh-fed-october-rate-hike-interest-rates-markets.html",
+      "publishedAt": "2026-10-16T15:46:07.000Z",
+      "titleOriginal": "Analysis: Everyone expects the Fed to hold rates in October. Kevin Warsh could surprise us all",
+      "titleTr": "Analiz: Fed'in Ekim'de faizi sabit tutması bekleniyor, Warsh sürpriz yapabilir",
+      "summaryTr": "CNBC analizine göre yatırımcılar Fed'in Ekim'de faiz artırımına ara vermesini bekliyor. Kevin Warsh'ın geleneksel iletişim uygulamalarını reddetmesi ve enflasyon endişesinin sürmesi kararı belirsiz kılıyor.",
+      "titleEn": "Analysis: Fed expected to hold in October, but Warsh could surprise",
+      "summaryEn": "A CNBC analysis says investors expect the Fed to pause rate hikes in October. Kevin Warsh's rejection of traditional communications practices and lingering inflation concerns leave the decision uncertain.",
+      "important": false,
+      "processedAt": "2026-10-16T16:01:56.682Z"
+    },
     {
       "id": "a3cc02c463ee",
       "sourceKey": "marketwatch",
