@@ -1,6 +1,21 @@
 {
-  "fetchedAt": "2026-10-16T16:31:36.971Z",
+  "fetchedAt": "2026-10-16T17:31:32.257Z",
   "items": [
+    {
+      "id": "60c59a7fcfeb",
+      "sourceKey": "marketwatch",
+      "sourceName": "MarketWatch",
+      "kind": "media",
+      "url": "https://www.marketwatch.com/story/heres-how-the-fed-should-reveal-its-outlook-for-the-economy-79629f25?mod=mw_rss_topstories",
+      "publishedAt": "2026-10-16T17:07:00.000Z",
+      "titleOriginal": "Here’s how the Fed should reveal its outlook for the economy",
+      "titleTr": "Fed'in ekonomi görünümünü nasıl açıklaması gerektiği tartışılıyor",
+      "summaryTr": "MarketWatch'ın yazısına göre Fed Başkanı Kevin Warsh merkez bankasının iletişim stratejisini yeniden düzenlemeye bakarken nokta grafiği değişime açık görünüyor.",
+      "titleEn": "How the Fed should reveal its economic outlook",
+      "summaryEn": "MarketWatch writes that as Fed Chairman Kevin Warsh looks to revamp the central bank's communication strategy, the dot plot is ripe for change.",
+      "important": false,
+      "processedAt": "2026-10-16T17:31:32.257Z"
+    },
     {
       "id": "99c5520809e9",
       "sourceKey": "cnbc-economy",
