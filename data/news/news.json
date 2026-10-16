@@ -1,5 +1,5 @@
 {
-  "fetchedAt": "2026-10-16T13:31:26.149Z",
+  "fetchedAt": "2026-10-16T14:01:47.472Z",
   "items": [
     {
       "id": "8735e7c35bd8",
@@ -195,6 +195,22 @@
       "summaryEn": "People in China spend nearly as large a share of their income on healthcare as Americans do. The IMF said increased government health spending could help lift consumption in China.",
       "important": false,
       "processedAt": "2026-10-15T23:31:23.664Z"
+    },
+    {
+      "id": "2205fb166b0a",
+      "sourceKey": "tcmb-baskan",
+      "sourceName": "TCMB",
+      "kind": "official",
+      "bankCode": "tcmb",
+      "url": "https://www.tcmb.gov.tr/wps/wcm/connect/de0532ee-0512-4d10-a912-fbc46cc664f1/SunumB14_10_2026_2.pdf?MOD=AJPERES",
+      "publishedAt": "2026-10-15T21:00:00.000Z",
+      "titleOriginal": "Başkan Fatih Karahan'ın \"Türkiye'de Makroekonomik Görünüm ve Para Politikası\" Başlıklı Sunumu (Türkçe) (Bangkok)",
+      "titleTr": "Karahan'dan Bangkok'ta \"Türkiye'de Makroekonomik Görünüm ve Para Politikası\" sunumu",
+      "summaryTr": "TCMB Başkanı Fatih Karahan, Bangkok'ta Türkiye'nin makroekonomik görünümü ve para politikası başlıklı bir sunum yaptı. Sunumun Türkçe metni TCMB sitesinde yayımlandı.",
+      "titleEn": "Karahan presents Turkey's macroeconomic outlook and monetary policy in Bangkok",
+      "summaryEn": "Central Bank of Turkey (CBRT) Governor Fatih Karahan gave a presentation in Bangkok titled \"Macroeconomic Outlook and Monetary Policy in Turkey\". The Turkish version of the presentation was published on the CBRT website.",
+      "important": true,
+      "processedAt": "2026-10-16T14:01:47.472Z"
     },
     {
       "id": "688c3ddd9d64",
