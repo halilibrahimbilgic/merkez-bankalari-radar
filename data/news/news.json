@@ -1,6 +1,21 @@
 {
-  "fetchedAt": "2026-10-16T09:15:05.127Z",
+  "fetchedAt": "2026-10-16T09:31:26.911Z",
   "items": [
+    {
+      "id": "edf02b07f174",
+      "sourceKey": "aa-ekonomi",
+      "sourceName": "Anadolu Ajansı",
+      "kind": "media",
+      "url": "https://www.aa.com.tr/tr/ekonomi/bakan-simsek-sermaye-piyasasi-suclariyla-mucadeleyi-guclendirecek-yasal-duzenlemeleri-2027-yilinda-tamamlayacagiz/4090773",
+      "publishedAt": "2026-10-16T09:19:28.000Z",
+      "titleOriginal": "Bakan Şimşek: Sermaye piyasası suçlarıyla mücadeleyi güçlendirecek yasal düzenlemeleri 2027 yılında tamamlayacağız",
+      "titleTr": "Şimşek: Sermaye piyasası suçlarına karşı yasal düzenlemeler 2027 başına kadar tamamlanacak",
+      "summaryTr": "Hazine ve Maliye Bakanı Mehmet Şimşek, fonların koordineli işlemleri dahil sermaye piyasası suçlarıyla mücadeleyi güçlendirecek yasal düzenlemeleri 2027 yılı başına kadar tamamlamayı planladıklarını söyledi.",
+      "titleEn": "Şimşek: Capital markets crime legislation to be completed by early 2027",
+      "summaryEn": "Treasury and Finance Minister Mehmet Şimşek said they plan to complete, by the start of 2027, legal changes to strengthen the fight against capital markets crimes, including coordinated trading by funds.",
+      "important": false,
+      "processedAt": "2026-10-16T09:31:26.911Z"
+    },
     {
       "id": "d0120b95889e",
       "sourceKey": "aa-economy",
