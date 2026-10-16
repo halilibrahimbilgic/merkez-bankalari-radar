@@ -1,6 +1,22 @@
 {
-  "fetchedAt": "2026-10-16T19:31:26.075Z",
+  "fetchedAt": "2026-10-16T20:01:35.091Z",
   "items": [
+    {
+      "id": "4877808825a6",
+      "sourceKey": "boe-speeches",
+      "sourceName": "Bank of England",
+      "kind": "official",
+      "bankCode": "boe",
+      "url": "https://www.bankofengland.co.uk/speech/2026/october/financial-innovation-dollar-dominance-and-their-uk-monetary-policy-implications",
+      "publishedAt": "2026-10-16T20:00:00.000Z",
+      "titleOriginal": "Financial innovation, dollar dominance and their UK monetary policy implications",
+      "titleTr": "BoE konuşması: Finansal yenilik, dolar hakimiyeti ve Birleşik Krallık para politikası",
+      "summaryTr": "Bank of England, Jackson Hole Ekonomi Politikası Sempozyumu'nda sunulan konuşmanın metnini yayımladı. Konuşma finansal yenilik ve dolar hakimiyetinin Birleşik Krallık para politikasına etkilerini ele alıyor.",
+      "titleEn": "BoE speech: financial innovation, dollar dominance and UK monetary policy",
+      "summaryEn": "The Bank of England published a speech presented at the Jackson Hole Economic Policy Symposium. It addresses the implications of financial innovation and dollar dominance for UK monetary policy.",
+      "important": false,
+      "processedAt": "2026-10-16T20:01:35.091Z"
+    },
     {
       "id": "9347d7265ef8",
       "sourceKey": "ft",
