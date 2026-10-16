@@ -1,6 +1,21 @@
 {
-  "fetchedAt": "2026-10-16T07:01:42.098Z",
+  "fetchedAt": "2026-10-16T07:31:29.504Z",
   "items": [
+    {
+      "id": "48c1d6616d7d",
+      "sourceKey": "aa-economy",
+      "sourceName": "Anadolu Agency",
+      "kind": "media",
+      "url": "https://www.aa.com.tr/en/economy/fed-chair-reaffirms-price-stability-commitment-avoids-signaling-next-rate-move/4090551",
+      "publishedAt": "2026-10-16T06:57:45.000Z",
+      "titleOriginal": "Fed chair reaffirms price stability commitment, avoids signaling next rate move",
+      "titleTr": "Fed Başkanı Warsh fiyat istikrarı taahhüdünü yineledi, sonraki faiz adımına işaret vermedi",
+      "summaryTr": "Fed Başkanı Kevin Warsh, ABD'deki yatırım artışının büyümeyi desteklediğini söyledi. Warsh, yapay zekânın orta vadede arzı artıracağını öngördüğünü belirtti; ancak bir sonraki faiz hamlesine dair sinyal vermedi.",
+      "titleEn": "Fed's Warsh reaffirms price stability commitment, gives no signal on next rate move",
+      "summaryEn": "Fed Chair Kevin Warsh said the surge in US investment is supporting growth. He said he sees AI boosting supply over the medium term, but avoided signaling the next rate move.",
+      "important": true,
+      "processedAt": "2026-10-16T07:31:29.504Z"
+    },
     {
       "id": "4e96014dad08",
       "sourceKey": "guardian-business",
@@ -1160,6 +1175,7 @@
     "bdc9d86db9f1": "2026-10-15",
     "ed8862b889fa": "2026-10-16",
     "d35ec191d474": "2026-10-16",
-    "2d2cb100b527": "2026-10-16"
+    "2d2cb100b527": "2026-10-16",
+    "e62ca9d4516f": "2026-10-16"
   }
 }
