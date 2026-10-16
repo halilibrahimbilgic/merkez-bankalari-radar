@@ -1,6 +1,21 @@
 {
-  "fetchedAt": "2026-10-16T20:01:35.091Z",
+  "fetchedAt": "2026-10-16T21:37:54.687Z",
   "items": [
+    {
+      "id": "a5feba2b4fbc",
+      "sourceKey": "marketwatch",
+      "sourceName": "MarketWatch",
+      "kind": "media",
+      "url": "https://www.marketwatch.com/story/the-bond-market-shrugged-off-two-inflation-shocks-why-stock-investors-should-pay-attention-5da4f771?mod=mw_rss_topstories",
+      "publishedAt": "2026-10-16T21:30:00.000Z",
+      "titleOriginal": "The bond market shrugged off two inflation shocks. Why stock investors should pay attention.",
+      "titleTr": "Tahvil piyasası iki yüksek enflasyon verisine rağmen sakin kaldı",
+      "summaryTr": "MarketWatch'a göre sıcak gelen TÜFE ve ÜFE verileri ABD hazine tahvil faizlerini yukarı itmeliydi. Bunun yerine tahvil alıcıları devreye girdi; bu, faizlerin yatırımcı için cazip olacak kadar yükseldiğine işaret ediyor.",
+      "titleEn": "Bond market shrugs off two inflation shocks",
+      "summaryEn": "MarketWatch says hot CPI and PPI readings should have pushed Treasury yields higher. Instead, bond buyers stepped in, suggesting yields have risen enough to look attractive to investors.",
+      "important": false,
+      "processedAt": "2026-10-16T21:37:54.687Z"
+    },
     {
       "id": "4877808825a6",
       "sourceKey": "boe-speeches",
