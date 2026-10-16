@@ -1,6 +1,36 @@
 {
-  "fetchedAt": "2026-10-16T06:31:26.990Z",
+  "fetchedAt": "2026-10-16T07:01:42.098Z",
   "items": [
+    {
+      "id": "4e96014dad08",
+      "sourceKey": "guardian-business",
+      "sourceName": "The Guardian",
+      "kind": "media",
+      "url": "https://www.theguardian.com/business/live/2026/oct/16/john-healey-set-to-raise-bank-taxes-shares-profits-stock-markets-imf-latest-news-updates",
+      "publishedAt": "2026-10-16T06:40:22.000Z",
+      "titleOriginal": "John Healey set to raise bank taxes in the budget – business live",
+      "titleTr": "BoE'den Bailey: İkinci tur enflasyon etkileri için henüz erken, belirtiler zayıf",
+      "summaryTr": "Bank of England Başkanı Andrew Bailey, enflasyonun enerji sektörü dışına yayıldığını gösteren \"ikinci tur etkiler\" için henüz erken olduğunu, şimdiye kadarki işaretlerin oldukça sınırlı kaldığını söyledi. BoE'nin faiz kararı üç hafta sonra bekleniyor.",
+      "titleEn": "BoE's Bailey: too early for second-round inflation effects, signs so far subdued",
+      "summaryEn": "Bank of England governor Andrew Bailey said it is too early to judge \"second round effects\" showing inflation spreading beyond energy, and that evidence so far has been quite subdued. The MPC is due to set rates in three weeks.",
+      "important": true,
+      "processedAt": "2026-10-16T07:01:42.098Z"
+    },
+    {
+      "id": "5431cb76f075",
+      "sourceKey": "aa-ekonomi",
+      "sourceName": "Anadolu Ajansı",
+      "kind": "media",
+      "url": "https://www.aa.com.tr/tr/ekonomi/fed-baskani-warsh-fed-olarak-fiyat-istikrarini-saglayacagimizi-cok-net-bir-sekilde-ortaya-koyduk/4090509",
+      "publishedAt": "2026-10-16T06:14:16.000Z",
+      "titleOriginal": "Fed Başkanı Warsh: Fed olarak fiyat istikrarını sağlayacağımızı çok net bir şekilde ortaya koyduk",
+      "titleTr": "Fed Başkanı Warsh: Fiyat istikrarını sağlama kararlılığımız net",
+      "summaryTr": "Fed Başkanı Kevin Warsh, gelecek toplantılardaki kararlara ilişkin yönlendirme yapmadı; bankanın fiyat istikrarını sağlama kararlılığını vurguladı.",
+      "titleEn": "Fed's Warsh: our commitment to price stability is very clear",
+      "summaryEn": "Fed Chair Kevin Warsh gave no guidance on decisions at upcoming meetings and stressed the bank's determination to deliver price stability.",
+      "important": true,
+      "processedAt": "2026-10-16T07:01:42.098Z"
+    },
     {
       "id": "602eb5fc58f7",
       "sourceKey": "aa-ekonomi",
@@ -1129,6 +1159,7 @@
     "26cc97d97ab4": "2026-10-15",
     "bdc9d86db9f1": "2026-10-15",
     "ed8862b889fa": "2026-10-16",
-    "d35ec191d474": "2026-10-16"
+    "d35ec191d474": "2026-10-16",
+    "2d2cb100b527": "2026-10-16"
   }
 }
