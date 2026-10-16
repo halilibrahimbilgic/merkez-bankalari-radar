@@ -1,6 +1,36 @@
 {
-  "fetchedAt": "2026-10-16T09:31:26.911Z",
+  "fetchedAt": "2026-10-16T11:01:55.670Z",
   "items": [
+    {
+      "id": "3edd224e2715",
+      "sourceKey": "aa-economy",
+      "sourceName": "Anadolu Agency",
+      "kind": "media",
+      "url": "https://www.aa.com.tr/en/economy/turkiye-targets-stronger-laws-against-capital-market-crimes-by-early-2027/4090837",
+      "publishedAt": "2026-10-16T10:31:31.000Z",
+      "titleOriginal": "Türkiye targets stronger laws against capital market crimes by early 2027",
+      "titleTr": "Türkiye, sermaye piyasası suçlarına karşı yasaları 2027 başına kadar güçlendirmeyi hedefliyor",
+      "summaryTr": "Hazine ve Maliye Bakanı Şimşek, yatırımcı korumasının ve sorunlu fonların tasfiyesinin öncelik olmayı sürdürdüğünü söyledi. Şimşek'e göre yetkililer şeffaflığı da güçlendiriyor.",
+      "titleEn": "Türkiye aims to strengthen laws against capital market crimes by early 2027",
+      "summaryEn": "Treasury and Finance Minister Simsek said investor protection and the liquidation of problematic funds remain priorities. He said authorities are also strengthening transparency.",
+      "important": false,
+      "processedAt": "2026-10-16T11:01:55.670Z"
+    },
+    {
+      "id": "b16930984e48",
+      "sourceKey": "aa-economy",
+      "sourceName": "Anadolu Agency",
+      "kind": "media",
+      "url": "https://www.aa.com.tr/en/economy/turkiye-targets-42-growth-in-2027-as-government-unveils-budget-proposal/4090834",
+      "publishedAt": "2026-10-16T10:27:45.000Z",
+      "titleOriginal": "Türkiye targets 4.2% growth in 2027 as government unveils budget proposal",
+      "titleTr": "Türkiye 2027 için %4,2 büyüme hedefliyor, bütçe teklifi açıklandı",
+      "summaryTr": "Cumhurbaşkanı Yardımcısı Cevdet Yılmaz, enflasyonun gelecek yıl %21'e gerilemesinin beklendiğini söyledi. Bütçe harcamalarının 551,2 milyar dolar olması öngörülüyor.",
+      "titleEn": "Türkiye targets 4.2% growth in 2027 as government unveils budget proposal",
+      "summaryEn": "Vice President Cevdet Yilmaz said inflation is expected to fall to 21% next year. Budget spending is projected at $551.2 billion.",
+      "important": true,
+      "processedAt": "2026-10-16T11:01:55.670Z"
+    },
     {
       "id": "edf02b07f174",
       "sourceKey": "aa-ekonomi",
@@ -1223,6 +1253,8 @@
     "2d2cb100b527": "2026-10-16",
     "e62ca9d4516f": "2026-10-16",
     "3df97b179392": "2026-10-16",
-    "46125ac7aadd": "2026-10-16"
+    "46125ac7aadd": "2026-10-16",
+    "037efef7899b": "2026-10-16",
+    "9499a2a213fd": "2026-10-16"
   }
 }
