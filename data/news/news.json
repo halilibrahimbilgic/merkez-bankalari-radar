@@ -1,6 +1,21 @@
 {
-  "fetchedAt": "2026-10-16T11:01:55.670Z",
+  "fetchedAt": "2026-10-16T13:31:26.149Z",
   "items": [
+    {
+      "id": "8735e7c35bd8",
+      "sourceKey": "aa-economy",
+      "sourceName": "Anadolu Agency",
+      "kind": "media",
+      "url": "https://www.aa.com.tr/en/economy/energy-shock-pushes-major-central-banks-toward-higher-rates-as-growth-risks-mount/4090918",
+      "publishedAt": "2026-10-16T11:48:13.000Z",
+      "titleOriginal": "Energy shock pushes major central banks toward higher rates as growth risks mount",
+      "titleTr": "Enerji şoku büyük merkez bankalarını faiz artışına yaklaştırıyor",
+      "summaryTr": "Anadolu Ajansı'na göre İran savaşıyla bağlantılı enerji fiyatı artışları enflasyon baskısını yükseltiyor. Bu durum merkez bankalarını para politikalarını yeniden değerlendirmeye itiyor.",
+      "titleEn": "Energy shock pushes major central banks toward higher rates",
+      "summaryEn": "Anadolu Agency reports that rising energy prices linked to the Iran war are intensifying inflation pressures. This is pushing central banks to reassess their monetary policy.",
+      "important": false,
+      "processedAt": "2026-10-16T13:31:26.149Z"
+    },
     {
       "id": "3edd224e2715",
       "sourceKey": "aa-economy",
