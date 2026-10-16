@@ -1,6 +1,21 @@
 {
-  "fetchedAt": "2026-10-16T18:19:08.412Z",
+  "fetchedAt": "2026-10-16T19:31:26.075Z",
   "items": [
+    {
+      "id": "9347d7265ef8",
+      "sourceKey": "ft",
+      "sourceName": "Financial Times",
+      "kind": "media",
+      "url": "https://www.ft.com/content/4c4f03f4-f878-4bd6-8128-5be7e3bb8ca1?syn-25a6b1a6=1",
+      "publishedAt": "2026-10-16T18:58:24.000Z",
+      "titleOriginal": "Big Tech stocks head for biggest weekly drop since ‘liberation day’",
+      "titleTr": "Büyük teknoloji hisseleri 'kurtuluş günü'nden beri en sert haftalık düşüşte",
+      "summaryTr": "Financial Times'a göre yapay zekâ kaynaklı kaygılar yatırımcıları devlet tahvillerine yöneltti. Bu hareket, aylardır süren ABD Hazine tahvili satışını durdurdu.",
+      "titleEn": "Big Tech stocks head for biggest weekly drop since 'liberation day'",
+      "summaryEn": "According to the Financial Times, AI-related jitters sent investors into government debt. The move halted a months-long sell-off in US Treasuries.",
+      "important": false,
+      "processedAt": "2026-10-16T19:31:26.075Z"
+    },
     {
       "id": "22a1cc8a212f",
       "sourceKey": "cnbc-economy",
