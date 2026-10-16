@@ -1,6 +1,21 @@
 {
-  "fetchedAt": "2026-10-16T08:01:29.688Z",
+  "fetchedAt": "2026-10-16T08:31:33.462Z",
   "items": [
+    {
+      "id": "d0120b95889e",
+      "sourceKey": "aa-economy",
+      "sourceName": "Anadolu Agency",
+      "kind": "media",
+      "url": "https://www.aa.com.tr/en/economy/global-markets-rally-as-tech-stocks-gain-despite-hotter-than-expected-us-producer-inflation/4090707",
+      "publishedAt": "2026-10-16T08:26:35.000Z",
+      "titleOriginal": "Global markets rally as tech stocks gain despite hotter-than-expected US producer inflation",
+      "titleTr": "ABD'de üretici enflasyonu beklentilerin üzerinde, küresel piyasalar yükselişte",
+      "summaryTr": "ABD'de yıllık üretici enflasyonu %6,3'e yükseldi ve perakende satışlar beklentileri aştı. Teknoloji hisseleri toparlanırken petrol fiyatları, piyasaya yeni dizel stoku sürülmesiyle geriledi.",
+      "titleEn": "Global markets rally despite hotter-than-expected US producer inflation",
+      "summaryEn": "US annual producer inflation rose to 6.3% and retail sales beat expectations. Tech stocks recovered, while oil prices dipped as new diesel stock was released into the market.",
+      "important": true,
+      "processedAt": "2026-10-16T08:31:33.462Z"
+    },
     {
       "id": "48c1d6616d7d",
       "sourceKey": "aa-economy",
