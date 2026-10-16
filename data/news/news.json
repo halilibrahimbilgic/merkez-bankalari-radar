@@ -1,6 +1,21 @@
 {
-  "fetchedAt": "2026-10-16T06:01:45.720Z",
+  "fetchedAt": "2026-10-16T06:31:26.990Z",
   "items": [
+    {
+      "id": "602eb5fc58f7",
+      "sourceKey": "aa-ekonomi",
+      "sourceName": "Anadolu Ajansı",
+      "kind": "media",
+      "url": "https://www.aa.com.tr/tr/ekonomi/kuresel-piyasalarda-tahvil-faizlerindeki-dusus-ve-teknoloji-hisselerindeki-toparlanmayla-risk-istahi-artti/4090500",
+      "publishedAt": "2026-10-16T06:04:48.000Z",
+      "titleOriginal": "Küresel piyasalarda tahvil faizlerindeki düşüş ve teknoloji hisselerindeki toparlanmayla risk iştahı arttı",
+      "titleTr": "Tahvil faizlerindeki düşüş ve teknoloji hisseleri küresel risk iştahını artırdı",
+      "summaryTr": "Anadolu Ajansı'na göre küresel piyasalarda tahvil faizleri geriledi ve teknoloji hisselerindeki satış baskısı azaldı. Bu gelişmeler risk iştahını artırdı.",
+      "titleEn": "Falling bond yields and tech rebound lift global risk appetite",
+      "summaryEn": "According to Anadolu Agency, bond yields declined in global markets and selling pressure on tech stocks eased. Risk appetite rose as a result.",
+      "important": false,
+      "processedAt": "2026-10-16T06:31:26.990Z"
+    },
     {
       "id": "302b7dc97ddc",
       "sourceKey": "ft",
