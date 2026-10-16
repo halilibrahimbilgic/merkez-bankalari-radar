@@ -1,6 +1,21 @@
 {
-  "fetchedAt": "2026-10-16T17:31:32.257Z",
+  "fetchedAt": "2026-10-16T18:19:08.412Z",
   "items": [
+    {
+      "id": "22a1cc8a212f",
+      "sourceKey": "cnbc-economy",
+      "sourceName": "CNBC",
+      "kind": "media",
+      "url": "https://www.cnbc.com/2026/10/16/us-budget-deficit-2026.html",
+      "publishedAt": "2026-10-16T18:00:15.000Z",
+      "titleOriginal": "U.S. budget deficit swells to almost $2 trillion for fiscal 2026, up 12% in a single year",
+      "titleTr": "ABD bütçe açığı 2026 mali yılında yaklaşık 2 trilyon dolara çıktı",
+      "summaryTr": "ABD Hazinesi 2026 mali yılı bütçe açığını yayımladı. CNBC'ye göre açık bir yılda yüzde 12 artarak yaklaşık 2 trilyon dolara ulaştı.",
+      "titleEn": "U.S. budget deficit swells to nearly $2 trillion in fiscal 2026",
+      "summaryEn": "The Treasury Department published the U.S. budget deficit for fiscal 2026. According to CNBC, it rose 12% in a year to almost $2 trillion.",
+      "important": false,
+      "processedAt": "2026-10-16T18:19:08.412Z"
+    },
     {
       "id": "60c59a7fcfeb",
       "sourceKey": "marketwatch",
@@ -30,6 +45,21 @@
       "summaryEn": "A CNBC analysis says investors expect the Fed to pause rate hikes in October. Kevin Warsh's rejection of traditional communications practices and lingering inflation concerns leave the decision uncertain.",
       "important": false,
       "processedAt": "2026-10-16T16:01:56.682Z"
+    },
+    {
+      "id": "059ca7c0162b",
+      "sourceKey": "guardian-business",
+      "sourceName": "The Guardian",
+      "kind": "media",
+      "url": "https://www.theguardian.com/business/2026/oct/16/target-pensions-or-welfare-not-banks-imf-tells-john-healey",
+      "publishedAt": "2026-10-16T15:33:29.000Z",
+      "titleOriginal": "Target pensions or welfare, not banks, IMF tells John Healey",
+      "titleTr": "IMF'den Healey'e: Bankalar yerine emeklilik ve sosyal yardımlara odaklanın",
+      "summaryTr": "IMF Avrupa Departmanı Başkan Yardımcısı Helge Berger, John Healey'i bütçede bankaları vergilendirmek yerine emeklilik ve sosyal yardımlardan tasarruf sağlamaya çağırdı. Planı destekleyenler ise bankaların mali krizde vergi mükelleflerince kurtarıldığını hatırlatıyor.",
+      "titleEn": "IMF tells Healey to target pensions and welfare, not banks",
+      "summaryEn": "IMF European department deputy director Helge Berger urged John Healey to seek savings in pensions and welfare rather than taxing banks in the budget. Supporters of the plan note that taxpayers bailed out banks during the financial crisis.",
+      "important": true,
+      "processedAt": "2026-10-16T18:19:08.412Z"
     },
     {
       "id": "a3cc02c463ee",
@@ -1334,6 +1364,8 @@
     "9499a2a213fd": "2026-10-16",
     "33f93c821603": "2026-10-16",
     "dcb18a3f0d5a": "2026-10-16",
-    "6d57153def88": "2026-10-16"
+    "6d57153def88": "2026-10-16",
+    "4a4e5ea598b4": "2026-10-16",
+    "712252b29b72": "2026-10-16"
   }
 }
