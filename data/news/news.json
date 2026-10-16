@@ -1,5 +1,5 @@
 {
-  "fetchedAt": "2026-10-16T08:31:33.462Z",
+  "fetchedAt": "2026-10-16T09:01:51.027Z",
   "items": [
     {
       "id": "d0120b95889e",
@@ -15,6 +15,21 @@
       "summaryEn": "US annual producer inflation rose to 6.3% and retail sales beat expectations. Tech stocks recovered, while oil prices dipped as new diesel stock was released into the market.",
       "important": true,
       "processedAt": "2026-10-16T08:31:33.462Z"
+    },
+    {
+      "id": "b6265aa366ca",
+      "sourceKey": "aa-ekonomi",
+      "sourceName": "Anadolu Ajansı",
+      "kind": "media",
+      "url": "https://www.aa.com.tr/tr/ekonomi/tcmbnin-ekim-ayi-piyasa-katilimcilari-anketi-yayimlandi/4090688",
+      "publishedAt": "2026-10-16T08:14:42.000Z",
+      "titleOriginal": "TCMB'nin ekim ayı Piyasa Katılımcıları Anketi yayımlandı",
+      "titleTr": "TCMB Ekim Piyasa Katılımcıları Anketi: yıl sonu TÜFE beklentisi %29,63",
+      "summaryTr": "TCMB'nin ekim ayı Piyasa Katılımcıları Anketi'ne göre yıl sonu TÜFE artışı beklentisi yüzde 29,61'den yüzde 29,63'e yükseldi.",
+      "titleEn": "CBRT October Market Participants Survey: year-end CPI expectation at 29.63%",
+      "summaryEn": "According to the Central Bank of Turkey's October Market Participants Survey, the year-end consumer price inflation expectation edged up from 29.61% to 29.63%.",
+      "important": true,
+      "processedAt": "2026-10-16T09:01:51.027Z"
     },
     {
       "id": "48c1d6616d7d",
