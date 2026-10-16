@@ -1,6 +1,21 @@
 {
-  "fetchedAt": "2026-10-16T14:01:47.472Z",
+  "fetchedAt": "2026-10-16T14:31:48.710Z",
   "items": [
+    {
+      "id": "a3cc02c463ee",
+      "sourceKey": "marketwatch",
+      "sourceName": "MarketWatch",
+      "kind": "media",
+      "url": "https://www.marketwatch.com/story/a-stock-market-sell-signal-has-been-silenced-but-these-bank-of-america-strategists-say-its-too-early-to-buy-8cdf98c8?mod=mw_rss_topstories",
+      "publishedAt": "2026-10-16T14:14:00.000Z",
+      "titleOriginal": "A stock-market ‘sell’ signal has been silenced — but these Bank of America strategists say it’s too early to buy",
+      "titleTr": "Bank of America stratejistleri: Hisselerde alım için henüz erken",
+      "summaryTr": "MarketWatch'a göre Ekim düzeltmesi tahvil piyasalarına nefes aldırdı ve faize duyarlı hisse sektörlerini canlandırdı. Bank of America stratejistleri yine de ara seçimler ve bir sonraki Fed toplantısına kadar risk almaktan kaçınılmasını öneriyor.",
+      "titleEn": "Bank of America strategists say it is still too early to buy stocks",
+      "summaryEn": "According to MarketWatch, October's correction has eased pressure on bond markets and revived rate-sensitive stock sectors. Bank of America strategists still recommend staying risk-off until after the midterms and the next Fed meeting.",
+      "important": false,
+      "processedAt": "2026-10-16T14:31:48.710Z"
+    },
     {
       "id": "8735e7c35bd8",
       "sourceKey": "aa-economy",
