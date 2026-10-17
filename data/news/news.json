@@ -1,6 +1,22 @@
 {
-  "fetchedAt": "2026-10-16T21:37:54.687Z",
+  "fetchedAt": "2026-10-17T05:31:22.036Z",
   "items": [
+    {
+      "id": "749e3ba3cb0e",
+      "sourceKey": "ecb",
+      "sourceName": "ECB",
+      "kind": "official",
+      "bankCode": "ecb",
+      "url": "https://www.ecb.europa.eu//press/key/date/2026/html/ecb.sp261017~7015ea3099.en.html",
+      "publishedAt": "2026-10-17T05:00:00.000Z",
+      "titleOriginal": "Christine Lagarde: IMFC Statement",
+      "titleTr": "Lagarde'ın IMFC bildirisi yayımlandı",
+      "summaryTr": "ECB Başkanı Christine Lagarde'ın Uluslararası Para ve Finans Komitesi'ne (IMFC) sunduğu bildiri ECB tarafından yayımlandı.",
+      "titleEn": "Lagarde's IMFC statement published",
+      "summaryEn": "The ECB published the statement ECB President Christine Lagarde delivered to the International Monetary and Financial Committee (IMFC).",
+      "important": true,
+      "processedAt": "2026-10-17T05:31:22.036Z"
+    },
     {
       "id": "a5feba2b4fbc",
       "sourceKey": "marketwatch",
@@ -1412,6 +1428,7 @@
     "dcb18a3f0d5a": "2026-10-16",
     "6d57153def88": "2026-10-16",
     "4a4e5ea598b4": "2026-10-16",
-    "712252b29b72": "2026-10-16"
+    "712252b29b72": "2026-10-16",
+    "e8205c143bcd": "2026-10-17"
   }
 }
