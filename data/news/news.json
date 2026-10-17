@@ -1,6 +1,21 @@
 {
-  "fetchedAt": "2026-10-17T05:31:22.036Z",
+  "fetchedAt": "2026-10-17T08:31:30.258Z",
   "items": [
+    {
+      "id": "af1d9a209972",
+      "sourceKey": "aa-ekonomi",
+      "sourceName": "Anadolu Ajansı",
+      "kind": "media",
+      "url": "https://www.aa.com.tr/tr/ekonomi/kuresel-piyasalar-yogun-veri-gundemine-odaklandi/4091724",
+      "publishedAt": "2026-10-17T08:23:35.000Z",
+      "titleOriginal": "Küresel piyasalar yoğun veri gündemine odaklandı",
+      "titleTr": "Küresel piyasalar yoğun veri gündemine odaklandı",
+      "summaryTr": "Küresel pay piyasaları haftayı ABD enflasyon verileri, Orta Doğu gündemi ve yapay zeka gelişmeleri etkisiyle karışık tamamladı. Gözler gelecek haftanın yoğun veri takvimine ve şirket bilançolarına çevrildi.",
+      "titleEn": "Global markets turn to a busy data calendar",
+      "summaryEn": "Global equity markets ended the week mixed, influenced by US inflation data, Middle East developments and AI-related news. Attention now shifts to next week's heavy data calendar and major corporate earnings.",
+      "important": false,
+      "processedAt": "2026-10-17T08:31:30.258Z"
+    },
     {
       "id": "749e3ba3cb0e",
       "sourceKey": "ecb",
