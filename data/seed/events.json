@@ -1,46 +1,25 @@
 {
-  "fetchedAt": "2026-10-16T09:26:35.399Z",
+  "fetchedAt": "2026-10-17T08:58:17.917Z",
   "events": [
     {
-      "id": "ecb-2026-10-15-loy2r2",
+      "id": "ecb-2026-10-19-16yfki4",
       "bankCode": "ecb",
-      "at": "2026-10-15T02:45:00.000Z",
+      "at": "2026-10-19T06:00:00.000Z",
       "timeTbd": false,
-      "kind": "discussion",
-      "speaker": "Claudia Buch",
-      "title": "Participation by Ms Buch in panel discussion at Bloomberg Global Policy Series 2026 in Bangkok, Thailand",
-      "url": "https://www.ecb.europa.eu/press/calendars/weekly/html/index.en.html"
+      "kind": "speech",
+      "speaker": "Frank Elderson",
+      "title": "Keynote speech by Mr Elderson at 5th Green Swan Conference 2026 organised by Bank for International Settlements, Bangko Sentral ng Pilipinas, Banca d’Italia and Network for Greening the Financial System in Manila, Philippines",
+      "url": "https://www.bis.org/events/20261019-green-swan-2026-navigating-climate-risks-amid-uncertainties"
     },
     {
-      "id": "ecb-2026-10-15-7kdfaz",
+      "id": "ecb-2026-10-21-tj09mx",
       "bankCode": "ecb",
-      "at": "2026-10-15T06:30:00.000Z",
+      "at": "2026-10-21T04:15:00.000Z",
       "timeTbd": false,
       "kind": "discussion",
-      "speaker": "Piero Cipollone",
-      "title": "Participation by Mr Cipollone in roundtable discussion on cross border payments at GFTN Select Thailand in Bangkok, Thailand",
-      "url": "https://www.ecb.europa.eu/press/calendars/weekly/html/index.en.html"
-    },
-    {
-      "id": "ecb-2026-10-15-awri9a",
-      "bankCode": "ecb",
-      "at": "2026-10-15T08:15:00.000Z",
-      "timeTbd": false,
-      "kind": "discussion",
-      "speaker": "Piero Cipollone",
-      "title": "Participation by Mr Cipollone in roundtable discussion on tokenisation at GFTN Select Thailand in Bangkok, Thailand",
-      "url": "https://www.ecb.europa.eu/press/calendars/weekly/html/index.en.html"
-    },
-    {
-      "id": "fed-2026-10-15-1ydsy2m",
-      "bankCode": "fed",
-      "at": "2026-10-16T03:30:00.000Z",
-      "timeTbd": false,
-      "kind": "discussion",
-      "speaker": "Kevin Warsh",
-      "role": "Chair",
-      "title": "At the Fireside Chat with International Monetary Fund (IMF) Managing Director Kristalina Georgieva, Bangkok, Thailand",
-      "url": "https://www.federalreserve.gov/newsevents/calendar.htm"
+      "speaker": "Philip R. Lane",
+      "title": "Participation by Mr Lane in panel at CF40-Euro50 Closed-Door Luncheon \"Monetary System Beyond the Dollar\" in Shanghai, China",
+      "url": "https://www.bundsummit.org/en/"
     },
     {
       "id": "boe-cpi-2026-10-21",
@@ -52,6 +31,17 @@
       "url": "https://www.ons.gov.uk/releasecalendar"
     },
     {
+      "id": "ecb-2026-10-21-1i9itzi",
+      "bankCode": "ecb",
+      "at": "2026-10-21T16:30:00.000Z",
+      "timeTbd": false,
+      "kind": "discussion",
+      "speaker": "Christine Lagarde",
+      "role": "President",
+      "title": "Participation by Ms Lagarde in on-stage conversation at Museum Reinhard Ernst in Wiesbaden, Germany",
+      "url": "https://www.ecb.europa.eu/press/calendars/weekly/html/index.en.html"
+    },
+    {
       "id": "boj-cpi-2026-10-22",
       "bankCode": "boj",
       "at": "2026-10-22T23:30:00.000Z",
@@ -59,6 +49,26 @@
       "kind": "cpi",
       "title": "CPI",
       "url": "https://www.stat.go.jp/english/data/cpi/1582.html"
+    },
+    {
+      "id": "ecb-2026-10-23-hxcke1",
+      "bankCode": "ecb",
+      "at": "2026-10-23T07:55:00.000Z",
+      "timeTbd": false,
+      "kind": "speech",
+      "speaker": "Patrick Montagner",
+      "title": "Keynote speech by Mr Montagner at ESRB Standing Task Force on Scenario Design and Development (STF-SDaD) annual stress test workshop in Kraków, Poland",
+      "url": "https://www.ecb.europa.eu/press/calendars/weekly/html/index.en.html"
+    },
+    {
+      "id": "ecb-2026-10-23-1ha0qhe",
+      "bankCode": "ecb",
+      "at": "2026-10-23T14:00:00.000Z",
+      "timeTbd": false,
+      "kind": "testimony",
+      "speaker": "Piero Cipollone",
+      "title": "Participation by Mr Cipollone in fireside chat at International Festival of Economics in Turin, Italy",
+      "url": "https://www.festivalinternazionaledelleconomia.com/en/event/1486/"
     },
     {
       "id": "rba-cpi-2026-10-28",
