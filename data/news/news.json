@@ -1,6 +1,21 @@
 {
-  "fetchedAt": "2026-10-17T08:31:30.258Z",
+  "fetchedAt": "2026-10-17T11:01:44.225Z",
   "items": [
+    {
+      "id": "cd681ed2eb1a",
+      "sourceKey": "marketwatch",
+      "sourceName": "MarketWatch",
+      "kind": "media",
+      "url": "https://www.marketwatch.com/story/fed-interest-rate-decision-this-month-is-a-closer-call-than-markets-think-f96ccf95?mod=mw_rss_topstories",
+      "publishedAt": "2026-10-17T11:00:00.000Z",
+      "titleOriginal": "Fed interest-rate decision this month is a closer call than markets think",
+      "titleTr": "Fed'in bu ayki faiz kararı piyasanın düşündüğünden daha çetrefilli",
+      "summaryTr": "MarketWatch, Fed'in faiz artırımına karşı öne sürülen argümanları ve bazı ekonomistlerin bu argümanlara neden katılmadığını ele alıyor.",
+      "titleEn": "Fed's rate decision this month is a closer call than markets think",
+      "summaryEn": "MarketWatch looks at the arguments against a Fed rate hike and why some economists disagree with them.",
+      "important": false,
+      "processedAt": "2026-10-17T11:01:44.225Z"
+    },
     {
       "id": "af1d9a209972",
       "sourceKey": "aa-ekonomi",
