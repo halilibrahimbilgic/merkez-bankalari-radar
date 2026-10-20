@@ -1,0 +1,80 @@
+European banking supervision is increasingly placing effectiveness and timely remediation of supervisory findings at the centre of its dialogue with banks. At the same time, there is a growing drive in Europe about simplifying regulation and supervision while maintaining strong standards. How do you see the relationship between simplification and effective supervision? Can a stronger focus on supervisory outcomes and impact also reduce unnecessary complexity for banks?
+
+ Simplification and effective supervision are not competing objectives. In fact, they reinforce one another. If we want to have a simpler supervisory dialogue that is easier for banks to navigate, we need supervision that is (i) more focused on material risks with a greater risk appetite, (ii) more efficient, and (iii) even more effective in driving concrete and timely improvements in banks with identified weaknesses. 1 
+
+ A stronger focus on supervisory effectiveness can actually help reduce undue complexity for banks: when supervisors concentrate on the issues that matter most for a bank’s safety and soundness, discussions become more targeted and the follow-up process for remediation becomes more focused until the bank has resolved the underlying issue. As a result, supervisors and banks can devote more time and attention to addressing the root causes of material weaknesses while addressing other issues with lower impact from a prudential perspective in a more proportionate manner. Such an approach can improve supervisory outcomes while reducing undue complexity and the burden for banks. 2 
+
+ Analysing risks and identifying weaknesses are essential parts of supervision. Ultimately, however, supervision creates value only when it leads to effective risk management and coverage. The timely identification of shortcomings, or “findings” as we call them, and the corresponding requests for remedial action, referred to as “measures”, are therefore two sides of the same coin. This is why ECB Banking Supervision is making it clearer to banks that all supervisory findings need to be remediated in a timely and durable manner. Simplification has already been introduced in this respect: for low-severity findings, we expect banks to simply confirm that they have taken sufficient action to ensure compliance, without any need to submit further documentation. 3 At the same time, high-severity findings and measures that remain open for years without meaningful progress do not strengthen resilience and do not contribute to simplification. A clear focus on outcomes ensures that supervisory efforts translate into tangible improvements in risk management, governance and internal controls.
+
+ However, a stronger focus on remediation also means that supervisors need to be prepared to escalate where necessary. That’s why, when material weaknesses are not addressed in a timely manner, we are making greater use of a clear escalation ladder involving more intrusive supervisory tools to ensure remediation. Our toolkit is well-equipped. It includes capital requirements as well as qualitative measures that range from requiring banks to strengthen their risk management to imposing business restrictions or periodic penalty payments as enforcement measures. Each instrument in the supervisory toolkit has a particular purpose, and supervisors must be prepared to use the right tools at the right time, in a proportionate manner, considering the materiality of the weakness, the persistence of the issue and the bank’s responsiveness. 4 
+
+ These efforts are not lowering supervisory standards or reducing resilience. Rather, this more risk-based and outcome-focused approach allows us to concentrate – and intervene more forcefully where necessary – on the issues that matter most.
+
+ In that sense, effectiveness and simplification go hand in hand. Both aim to achieve the same overarching goal: a resilient banking sector supported by proportionate, risk-based and impactful supervision. By focusing their supervisory efforts where they have the biggest impact and ensuring that material findings are addressed without undue delay, supervisors can make the dialogue with banks both simpler and more effective. So, in short, our approach is simpler where possible, more intrusive where needed.
+
+ In a complex and fast-changing risk environment, not all supervisory findings and measures are equally important. How can supervisors ensure that they focus their attention on the areas that matter most for banks’ safety and soundness, while maintaining pressure for timely remediation where it is needed?
+
+ In an increasingly complex and challenging external risk environment – think of geopolitical fragmentation, high asset valuations, AI-powered cyberattacks, interlinkages between banks and non-banks, and more material manifestations of climate and nature-related risks – supervisors must be able to distinguish between issues that are critical for a bank’s safety and soundness and those that, while still relevant, are less consequential from a prudential perspective. Ultimately, effective supervision is about focusing on what matters most and acting when necessary.
+
+ Supervisory findings and measures have accumulated over time. By the end of 2025 the stock of outstanding measures across significant banks had increased to around 12,000 – around 100 measures per bank, on average, with a level of severity ranging from very low to very high. While one could possibly see this as a sign of thorough supervision, it clearly also raises the question of whether all underlying findings are equally relevant in the current risk environment or whether some reflect past priorities that are no longer as relevant today.
+
+ That’s why in 2025 the ECB started to implement a tiered approach for findings and measures, aligning supervisory follow-up with risk severity. 5 &nbsp;In simple terms, this approach recognises that the severity and urgency of findings can vary. The most serious weaknesses naturally require swift action by supervisors and timely follow-up by banks. Less severe issues are still important, but they can be addressed through a more proportionate supervisory response and engagement. The tiered approach therefore establishes a simplified follow-up process for low-severity findings in which banks can close those findings directly and autonomously, while retaining evidence for future supervisory reviews. This risk-based differentiation allows supervisors and banks to focus their attention on the areas where it has the greatest prudential impact. The overall aim is to prioritise more clearly and reduce risks more quickly, while ensuring that key risks remain fully covered
+
+ Encouragingly, this approach is starting to bear fruit. In 2025 the number of supervisory measures closed by ECB Banking Supervision was 1,200 higher than the number of measures created. And in 2026 the stock has already fallen by a further 600.
+
+ Building on this progress, ECB Banking Supervision will continue to sharpen its focus on the risks that are most relevant from a prudential perspective. 6 &nbsp;Through a refocusing exercise to be launched in mid-October, we will critically review the stock of measures accumulated in recent years and tailor our supervisory engagement to the risk profile of the underlying weakness. As part of this exercise, banks will receive further information on the implications for their individual stock of findings and measures, taking into account their severity, prudential relevance and remediation status, the time elapsed since they were identified and the likelihood of further supervisory intervention being required. Importantly, this is not a one-off clean-up: these considerations will continue to guide the identification of and follow-up to findings and measures.
+
+ For banks, this more agile process will reduce the previously required supervisory engagement for low-severity measures, allowing them to focus their resources on addressing the matters that pose the greatest prudential impact. In practical terms, this means that the least severe findings 7 &nbsp;– what we call F1 findings – will in future be communicated as supervisory observations to banks rather than generating corresponding measures. Moreover, in line with the tiered approach, low-severity F2 findings and measures will be handled more proportionately and may even be closed where further supervisory assessment is no longer warranted. In the same vein, the mandatory verification of remediation by internal audit or internal validation will be removed for low-severity (F1 or F2) findings related to internal models.
+
+ Understanding whether remediation genuinely addresses the root cause of a problem remains a key element of effective supervision. In practice, this means that supervisors assess whether banks have implemented durable solutions to prevent weaknesses from recurring, rather than simply checking whether individual findings can be closed. Supervisors must set out ex ante a remediation path for banks to follow that is proportionate, addresses the root cause and has a clear final deadline as well as appropriate interim deadlines. They must also be prepared to escalate issues promptly and take enforcement measures when necessary. However, timely remediation is not enough if it remains superficial. Findings need to be addressed at the level of the underlying weaknesses that give rise to them, regardless of whether they are related to banks’ governance, risk management, internal controls or business models. Importantly, tackling root causes can remediate existing weaknesses and prevent further shortcomings from materialising in the future, thus killing two birds with one stone.
+
+ 
+ 
+ 7 Footnotes
+ 
+ 
+ 
+
+ 
+ 
+ 
+ 
+
+ 
+ 
+ 
+ 
+ 
+ 
+ 1 
+ For more information on the simplification work to make European banking supervision more risk-based, efficient and effective, see Donnery, S. and Amis, P. (2026), “ Streamlining supervision, safeguarding resilience: tangible progress on our reform agenda ”, The Supervision Blog , ECB, 6 July; “ Next-level supervision: reforming other supervisory activities ” on the ECB’s banking supervision website; Elderson, F. (2026), “ Simpler guidance, more effective supervision ”, The Supervision Blog , ECB, 26 June; and Elderson, F. (2026), “ Enhancing proportionality for small and non-complex banks ”, The Supervision Blog , ECB, 5 October.
+ 
+ 
+ 
+ 2 
+ For more information on why increasing risk focus, efficiency and effectiveness is vital for supervisors to remain impactful in an uncertain risk environment, see Elderson, F. (2026), “ Supervisory risk appetite, efficiency and effectiveness ”, contribution at the BCBS international conference of banking supervisors panel on “Navigating the new financial landscape”, Bali, 30 September.
+ 
+ 
+ 
+ 3 
+ For more information on the tiered approach to supervisory findings and measures that was introduced in 2025, see Sheridan, R., Woulfe, S. and Catarineu Rabell, E. (2025), “ SREP reform: towards more efficient and effective supervision ”, Supervision Newsletter , ECB, 14 May, and Narring, F., Catarineu Rabell, E., Petritz, E. and Woulfe, S. (2026), “ Timely remediation for more resilient banks ”, Supervision Newsletter , ECB, 12 August.
+ 
+ 
+ 
+ 4 
+ For further information on supervisory effectiveness and the escalation ladder, see Elderson, F. (2023), “ Powers, ability and willingness to act – the mainstay of effective banking supervision ”, speech at the House of the Euro, Brussels, 7 December and Elderson, F. (2025), “ What good supervision looks like” , keynote speech at the 24th Annual International Conference on Policy Challenges for the Financial Sector, Washington DC, 12 June.
+ 
+ 
+ 
+ 5 
+ Sheridan, R., Woulfe, S. and Catarineu Rabell, E. (2025), “ SREP reform: towards more efficient and effective supervision ”, Supervision Newsletter , ECB, 14 May.
+ 
+ 
+ 
+ 6 
+ Narring, F., Catarineu Rabell, E., Petritz, E. and Woulfe, S. (2026), “ Timely remediation for more resilient banks ”, Supervision Newsletter , ECB, 12 August.
+ 
+ 
+ 
+ 7 
+ The ECB categorises the severity of supervisory findings on a scale from F1 to F4, where F1 refers to a low impact and F4 to a very high impact. Similarly, the corresponding supervisory measures are also categorised on a scale from 1 to 4, from low impact to high impact.

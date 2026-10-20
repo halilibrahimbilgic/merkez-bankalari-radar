@@ -1,6 +1,55 @@
 {
-  "fetchedAt": "2026-10-13T12:25:07.238Z",
+  "fetchedAt": "2026-10-20T09:45:54.802Z",
   "speeches": [
+    {
+      "id": "20261019-financial-resilience-age-repeated-shocks",
+      "contextEn": "Speech by Mr Andrew Bailey, Governor of the Bank of England, at the Istanbul Economic Forum, organised by the Central Bank of the Republic of Türkiye, Istanbul, 8 October 2026.",
+      "bankCode": "tcmb",
+      "speakerName": "Andrew Bailey",
+      "title": "Financial resilience in an age of repeated shocks",
+      "speechDate": "2026-10-19",
+      "sourceUrl": "https://www.bis.org/speeches/20261019-financial-resilience-age-repeated-shocks"
+    },
+    {
+      "id": "20261019-ai-opportunity-europe",
+      "contextEn": "Dinner remarks by Philip R Lane, Member of the Executive Board of the European Central Bank, at the International AI Summit, Dublin, 13 October 2026.",
+      "textLicense": "ecb",
+      "bankCode": "ecb",
+      "speakerName": "Philip R Lane",
+      "title": "The AI opportunity for Europe",
+      "speechDate": "2026-10-19",
+      "sourceUrl": "https://www.bis.org/speeches/20261019-ai-opportunity-europe"
+    },
+    {
+      "id": "20261019-supervisory-modernisation-after-silicon-valley-bank",
+      "contextEn": "Speech by Ms Michelle W Bowman, Vice Chair for Supervision of the Board of Governors of the Federal Reserve System, at the Bangkok Economic Festival, Reinventing Bretton Woods Committee, Bangkok, 14 October 2026.",
+      "textLicense": "frb-public-domain",
+      "bankCode": "fed",
+      "speakerName": "Michelle W Bowman",
+      "title": "Supervisory modernisation after Silicon Valley Bank",
+      "speechDate": "2026-10-19",
+      "sourceUrl": "https://www.bis.org/speeches/20261019-supervisory-modernisation-after-silicon-valley-bank"
+    },
+    {
+      "id": "20261016-ensuring-resilience-face-uncertainty",
+      "contextEn": "Keynote speech by Mr Frank Elderson, Member of the Executive Board of the European Central Bank and Vice-Chair of the Supervisory Board of the European Central Bank, at the ECB-Bank of England Conference on supervising climate risk in a non-linear world, Frankfurt am Main, 14 October 2026.",
+      "textLicense": "ecb",
+      "bankCode": "ecb",
+      "speakerName": "Frank Elderson",
+      "title": "Ensuring resilience in the face of uncertainty",
+      "speechDate": "2026-10-19",
+      "sourceUrl": "https://www.bis.org/speeches/20261016-ensuring-resilience-face-uncertainty"
+    },
+    {
+      "id": "20261016-effective-supervision-through-timely-remediation",
+      "contextEn": "Contribution by Mr Frank Elderson, Member of the Executive Board of the European Central Bank and Vice-Chair of the Supervisory Board of the European Central Bank, to the panel discussion “Effective supervision and enforcement” at the 17th FMA Supervisory Conference “Europe’s financial future: sovereignty and resilience”, hosted by the Austrian Financial Market Authority, Vienna, 6 October 2026.",
+      "textLicense": "ecb",
+      "bankCode": "ecb",
+      "speakerName": "Frank Elderson",
+      "title": "Effective supervision through timely remediation",
+      "speechDate": "2026-10-19",
+      "sourceUrl": "https://www.bis.org/speeches/20261016-effective-supervision-through-timely-remediation"
+    },
     {
       "id": "20261013-signaling-value-summary-economic-projections",
       "contextEn": "Speech by Mr Christopher J Waller, Member of the Board of Governors of the Federal Reserve System, at the Istanbul Economic Forum, organised by the Central Bank of the Republic of Türkiye, Istanbul, 8 October 2026.",
