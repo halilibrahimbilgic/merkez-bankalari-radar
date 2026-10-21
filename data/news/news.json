@@ -1,6 +1,21 @@
 {
-  "fetchedAt": "2026-10-21T13:31:52.673Z",
+  "fetchedAt": "2026-10-21T14:01:42.172Z",
   "items": [
+    {
+      "id": "c97ed1fa5d36",
+      "sourceKey": "aa-ekonomi",
+      "sourceName": "Anadolu Ajansı",
+      "kind": "media",
+      "url": "https://www.aa.com.tr/tr/ekonomi/ticaret-bakani-bolat-hem-otomotivde-hem-de-konut-fiyatlarinda-artis-manset-enflasyon-oraninin-altinda/4096045",
+      "publishedAt": "2026-10-21T13:36:18.000Z",
+      "titleOriginal": "Ticaret Bakanı Bolat: Hem otomotivde hem de konut fiyatlarında (artış) manşet enflasyon oranının altında",
+      "titleTr": "Bolat: Otomotiv ve konut fiyatlarındaki artış manşet enflasyonun altında",
+      "summaryTr": "Ticaret Bakanı Ömer Bolat, hayata geçirdikleri düzenlemeler sayesinde hem otomotivde hem de konut fiyatlarında artışın manşet enflasyonun altında kaldığını söyledi.",
+      "titleEn": "Bolat: Car and housing price rises are below headline inflation",
+      "summaryEn": "Trade Minister Ömer Bolat said that, thanks to the regulations they introduced, price increases in both automotive and housing have stayed below headline inflation.",
+      "important": false,
+      "processedAt": "2026-10-21T14:01:42.172Z"
+    },
     {
       "id": "301656761d01",
       "sourceKey": "guardian-business",
