@@ -1,16 +1,6 @@
 {
-  "fetchedAt": "2026-10-20T09:45:35.148Z",
+  "fetchedAt": "2026-10-21T09:47:23.718Z",
   "events": [
-    {
-      "id": "ecb-2026-10-19-16yfki4",
-      "bankCode": "ecb",
-      "at": "2026-10-19T06:00:00.000Z",
-      "timeTbd": false,
-      "kind": "speech",
-      "speaker": "Frank Elderson",
-      "title": "Keynote speech by Mr Elderson at 5th Green Swan Conference 2026 organised by Bank for International Settlements, Bangko Sentral ng Pilipinas, Banca d’Italia and Network for Greening the Financial System in Manila, Philippines",
-      "url": "https://www.bis.org/events/20261019-green-swan-2026-navigating-climate-risks-amid-uncertainties"
-    },
     {
       "id": "ecb-2026-10-21-tj09mx",
       "bankCode": "ecb",
@@ -20,15 +10,6 @@
       "speaker": "Philip R. Lane",
       "title": "Participation by Mr Lane in panel at CF40-Euro50 Closed-Door Luncheon \"Monetary System Beyond the Dollar\" in Shanghai, China",
       "url": "https://www.bundsummit.org/en/"
-    },
-    {
-      "id": "boe-cpi-2026-10-21",
-      "bankCode": "boe",
-      "at": "2026-10-21T06:00:00.000Z",
-      "timeTbd": false,
-      "kind": "cpi",
-      "title": "CPI",
-      "url": "https://www.ons.gov.uk/releasecalendar"
     },
     {
       "id": "ecb-2026-10-21-1i9itzi",
@@ -106,6 +87,15 @@
       "kind": "cpi",
       "title": "CPI",
       "url": "https://www.bls.gov/schedule/news_release/cpi.htm"
+    },
+    {
+      "id": "tcmb-2026-11-12-inflation-report",
+      "bankCode": "tcmb",
+      "at": "2026-11-11T21:00:00.000Z",
+      "timeTbd": true,
+      "kind": "inflation-report",
+      "title": "Enflasyon Raporu",
+      "url": "https://www.tcmb.gov.tr/wps/wcm/connect/TR/TCMB+TR/Main+Menu/Duyurular/Takvim"
     }
   ]
 }
