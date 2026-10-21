@@ -1,6 +1,21 @@
 {
-  "fetchedAt": "2026-10-21T09:34:06.456Z",
+  "fetchedAt": "2026-10-21T11:01:53.536Z",
   "items": [
+    {
+      "id": "65eea275a328",
+      "sourceKey": "bbc-business",
+      "sourceName": "BBC News",
+      "kind": "media",
+      "url": "https://www.bbc.co.uk/news/articles/cm3wv9pn22e5o?at_medium=RSS&at_campaign=rss",
+      "publishedAt": "2026-10-21T10:20:15.000Z",
+      "titleOriginal": "Faisal Islam: Inflation and borrowing figures illustrate chancellor's Budget challenge",
+      "titleTr": "Faisal Islam: Enflasyon ve borçlanma verileri Birleşik Krallık bütçesindeki zorluğu gösteriyor",
+      "summaryTr": "BBC'den Faisal Islam'a göre çarşamba günü açıklanan ekonomik veriler, Maliye Bakanı John Healey'nin bütçeyi son haline getirirken karşılaştığı kısıtları ortaya koyuyor.",
+      "titleEn": "Faisal Islam: Inflation and borrowing figures show the chancellor's Budget challenge",
+      "summaryEn": "The BBC's Faisal Islam says the economic figures released on Wednesday show the constraints facing Chancellor John Healey as he finalises his Budget.",
+      "important": false,
+      "processedAt": "2026-10-21T11:01:53.536Z"
+    },
     {
       "id": "ab9a83bfbdc9",
       "sourceKey": "guardian-business",
@@ -1678,6 +1693,7 @@
     "818dae122fcc": "2026-10-21",
     "ac1491de2e45": "2026-10-21",
     "5956317c88e5": "2026-10-21",
-    "2e1e67fc6b01": "2026-10-21"
+    "2e1e67fc6b01": "2026-10-21",
+    "a784ac9d7a66": "2026-10-21"
   }
 }
