@@ -1,6 +1,21 @@
 {
-  "fetchedAt": "2026-10-21T18:01:40.854Z",
+  "fetchedAt": "2026-10-21T19:01:41.299Z",
   "items": [
+    {
+      "id": "8ce31659c25e",
+      "sourceKey": "ft",
+      "sourceName": "Financial Times",
+      "kind": "media",
+      "url": "https://www.ft.com/content/5b7c2fdf-2300-4208-860e-6389ceb18886?syn-25a6b1a6=1",
+      "publishedAt": "2026-10-21T18:46:59.000Z",
+      "titleOriginal": "Bessent shrugs off ‘systemic’ AI risks at closed-door investor conference",
+      "titleTr": "Bessent, yapay zekanın 'sistemik' risklerini küçümsedi",
+      "summaryTr": "Financial Times'a göre ABD Hazine Bakanı Bessent, bilet fiyatı 7.500 dolar olan bir hayır etkinliğinde finansçılara kapalı kapılar ardında konuştu ve yapay zekanın sistemik risklerini önemsemedi.",
+      "titleEn": "Bessent shrugs off 'systemic' AI risks",
+      "summaryEn": "According to the Financial Times, US Treasury Secretary Bessent spoke to financiers behind closed doors at a charity event with $7,500 tickets and downplayed systemic risks from AI.",
+      "important": false,
+      "processedAt": "2026-10-21T19:01:41.299Z"
+    },
     {
       "id": "81a981fcd62b",
       "sourceKey": "aa-ekonomi",
