@@ -1,6 +1,21 @@
 {
-  "fetchedAt": "2026-10-21T08:01:51.438Z",
+  "fetchedAt": "2026-10-21T08:31:43.624Z",
   "items": [
+    {
+      "id": "ab8ef1be4019",
+      "sourceKey": "aa-ekonomi",
+      "sourceName": "Anadolu Ajansı",
+      "kind": "media",
+      "url": "https://www.aa.com.tr/tr/ekonomi/abdnin-1-trilyon-dolari-asan-faiz-faturasi-butceyi-zorluyor/4095434",
+      "publishedAt": "2026-10-21T08:20:03.000Z",
+      "titleOriginal": "ABD'nin 1 trilyon doları aşan faiz faturası bütçeyi zorluyor",
+      "titleTr": "ABD'nin net faiz ödemesi 1 trilyon doları aştı",
+      "summaryTr": "ABD federal hükümetinin ulusal borç için ödediği net faiz tutarı, 30 Eylül'de sona eren 2026 mali yılında 1 trilyon doları aştı. Bu durum bütçe üzerindeki yükü artırıyor.",
+      "titleEn": "US net interest payments top $1 trillion",
+      "summaryEn": "The net interest the US federal government pays on the national debt exceeded $1 trillion in fiscal 2026, which ended on September 30. This is adding to the strain on the budget.",
+      "important": false,
+      "processedAt": "2026-10-21T08:31:43.624Z"
+    },
     {
       "id": "d7d3bdde4d6d",
       "sourceKey": "cnbc-economy",
