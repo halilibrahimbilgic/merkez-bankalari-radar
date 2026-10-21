@@ -1,6 +1,21 @@
 {
-  "fetchedAt": "2026-10-21T14:01:42.172Z",
+  "fetchedAt": "2026-10-21T18:01:40.854Z",
   "items": [
+    {
+      "id": "81a981fcd62b",
+      "sourceKey": "aa-ekonomi",
+      "sourceName": "Anadolu Ajansı",
+      "kind": "media",
+      "url": "https://www.aa.com.tr/tr/ekonomi/abdde-mortgage-faizleri-iki-aydan-uzun-sure-sonra-ilk-kez-dustu/4096339",
+      "publishedAt": "2026-10-21T17:54:05.000Z",
+      "titleOriginal": "ABD'de mortgage faizleri iki aydan uzun süre sonra ilk kez düştü",
+      "titleTr": "ABD'de mortgage faizleri iki aydan uzun süre sonra ilk kez düştü",
+      "summaryTr": "ABD'de 30 yıl vadeli konut kredisi için ortalama faiz geçen hafta yüzde 7,41'e geriledi. Bu, iki aydan uzun süredir ilk düşüş oldu.",
+      "titleEn": "US mortgage rates fall for the first time in over two months",
+      "summaryEn": "The average rate on a 30-year US mortgage dropped to 7.41% last week. It was the first decline in more than two months.",
+      "important": false,
+      "processedAt": "2026-10-21T18:01:40.854Z"
+    },
     {
       "id": "c97ed1fa5d36",
       "sourceKey": "aa-ekonomi",
