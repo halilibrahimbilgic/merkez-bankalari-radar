@@ -1,6 +1,36 @@
 {
-  "fetchedAt": "2026-10-21T08:31:43.624Z",
+  "fetchedAt": "2026-10-21T09:01:45.628Z",
   "items": [
+    {
+      "id": "3a52340ddcff",
+      "sourceKey": "bbc-business",
+      "sourceName": "BBC News",
+      "kind": "media",
+      "url": "https://www.bbc.co.uk/news/articles/c17rgd8e9gjo?at_medium=RSS&at_campaign=rss",
+      "publishedAt": "2026-10-21T08:35:47.000Z",
+      "titleOriginal": "What is happening to UK prices?",
+      "titleTr": "Birleşik Krallık'ta enflasyon eylülde yükseldi",
+      "summaryTr": "BBC'ye göre Birleşik Krallık'ta enflasyon eylülde arttı. Yükselişte benzin ve motorin fiyatlarındaki artış etkili oldu.",
+      "titleEn": "UK inflation rose in September",
+      "summaryEn": "UK inflation rose in September, according to BBC News. Higher petrol and diesel prices pushed it up.",
+      "important": true,
+      "processedAt": "2026-10-21T09:01:45.628Z"
+    },
+    {
+      "id": "3ba4cde0a4ea",
+      "sourceKey": "aa-ekonomi",
+      "sourceName": "Anadolu Ajansı",
+      "kind": "media",
+      "url": "https://www.aa.com.tr/tr/ekonomi/sp-global-turkiyenin-kredi-notunda-olasi-artis-icin-dezenflasyon-ve-rezervlere-isaret-etti/4095445",
+      "publishedAt": "2026-10-21T08:26:12.000Z",
+      "titleOriginal": "S&P Global, Türkiye'nin kredi notunda olası artış için dezenflasyon ve rezervlere işaret etti",
+      "titleTr": "S&P: Türkiye'nin not artışı için dezenflasyon ve rezervler belirleyici",
+      "summaryTr": "S&P Global Ratings Türkiye Lider Analisti Karen Vartapetov, olası bir kredi notu artışı için dezenflasyonun ve uluslararası rezervlerin önemine işaret etti.",
+      "titleEn": "S&P: Disinflation and reserves key to a Turkish rating upgrade",
+      "summaryEn": "S&P Global Ratings' lead Türkiye analyst Karen Vartapetov pointed to disinflation and international reserves as important for a possible credit rating upgrade.",
+      "important": true,
+      "processedAt": "2026-10-21T09:01:45.628Z"
+    },
     {
       "id": "ab8ef1be4019",
       "sourceKey": "aa-ekonomi",
@@ -15,6 +45,21 @@
       "summaryEn": "The net interest the US federal government pays on the national debt exceeded $1 trillion in fiscal 2026, which ended on September 30. This is adding to the strain on the budget.",
       "important": false,
       "processedAt": "2026-10-21T08:31:43.624Z"
+    },
+    {
+      "id": "1a6f019ff052",
+      "sourceKey": "ft",
+      "sourceName": "Financial Times",
+      "kind": "media",
+      "url": "https://www.ft.com/content/76f076e4-9db2-4971-8ac9-73d9f39e4876?syn-25a6b1a6=1",
+      "publishedAt": "2026-10-21T08:17:23.000Z",
+      "titleOriginal": "France’s borrowing costs poised to hit 5% for first time since 2002",
+      "titleTr": "Fransa'nın borçlanma maliyeti 2002'den bu yana ilk kez %5'e yaklaşıyor",
+      "summaryTr": "Financial Times'a göre kamu maliyesi ve siyasi istikrar endişeleri, Fransa'nın 10 yıllık tahvil faizini şubat sonundaki %3,2'den yukarı itti.",
+      "titleEn": "France's borrowing costs poised to hit 5% for first time since 2002",
+      "summaryEn": "The Financial Times reports that concerns over public finances and political stability have pushed France's 10-year bond yields up from 3.2% in late February.",
+      "important": true,
+      "processedAt": "2026-10-21T09:01:45.628Z"
     },
     {
       "id": "d7d3bdde4d6d",
