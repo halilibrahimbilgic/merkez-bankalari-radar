@@ -1,6 +1,21 @@
 {
-  "fetchedAt": "2026-10-21T06:01:55.826Z",
+  "fetchedAt": "2026-10-21T06:31:31.947Z",
   "items": [
+    {
+      "id": "d7d3bdde4d6d",
+      "sourceKey": "cnbc-economy",
+      "sourceName": "CNBC",
+      "kind": "media",
+      "url": "https://www.cnbc.com/2026/10/21/inflation-uk-cpi-interest-rates.html",
+      "publishedAt": "2026-10-21T06:30:27.000Z",
+      "titleOriginal": "UK inflation jumps to 3.5% — cementing rate hike expectations",
+      "titleTr": "Birleşik Krallık'ta enflasyon beklentilerin üzerinde %3,5'e çıktı",
+      "summaryTr": "Birleşik Krallık'ta yıllık enflasyon eylülde beklentilerden hızlı artarak %3,5 oldu; artışta akaryakıt maliyetlerindeki yükseliş etkili oldu. Haberde, verinin faiz artırımı beklentilerini pekiştirdiği belirtiliyor.",
+      "titleEn": "UK inflation jumps to 3.5%, above expectations",
+      "summaryEn": "UK annual inflation rose by more than expected to 3.5% in September, driven by surging motor fuel costs. The report says the data cements expectations of a rate hike.",
+      "important": true,
+      "processedAt": "2026-10-21T06:31:31.947Z"
+    },
     {
       "id": "5234d0c6df05",
       "sourceKey": "ecb",
@@ -1581,6 +1596,8 @@
     "c7b16e39e814": "2026-10-21",
     "c9a0cd7c632e": "2026-10-21",
     "ce1ffd682749": "2026-10-21",
-    "ed4da1ccb408": "2026-10-21"
+    "ed4da1ccb408": "2026-10-21",
+    "5d4746c929fb": "2026-10-21",
+    "bb489b4ea2dd": "2026-10-21"
   }
 }
