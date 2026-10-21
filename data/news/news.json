@@ -1,6 +1,21 @@
 {
-  "fetchedAt": "2026-10-21T09:31:31.494Z",
+  "fetchedAt": "2026-10-21T09:34:06.456Z",
   "items": [
+    {
+      "id": "ab9a83bfbdc9",
+      "sourceKey": "guardian-business",
+      "sourceName": "The Guardian",
+      "kind": "media",
+      "url": "https://www.theguardian.com/business/live/2026/oct/21/uk-inflation-jump-rising-motor-fuels-cost-jackdaw-gas-field-latest-news-updates",
+      "publishedAt": "2026-10-21T09:16:59.000Z",
+      "titleOriginal": "Total UK government debt hits £3tn for first time while inflation jumps to highest in nearly a year – business live",
+      "titleTr": "Birleşik Krallık'ta enflasyon yaklaşık bir yılın zirvesine çıktı, kamu borcu 3 trilyon sterlini aştı",
+      "summaryTr": "Guardian'ın canlı yayınına göre Birleşik Krallık'ta enflasyon yaklaşık bir yılın en yüksek seviyesine yükseldi; benzin ve dizel fiyatları son dört yılın en büyük artışını gösterirken gıda fiyatları aylık bazda geriledi. Toplam kamu borcu da ilk kez 3 trilyon sterline ulaştı.",
+      "titleEn": "UK inflation jumps to near one-year high as government debt tops £3tn",
+      "summaryEn": "According to the Guardian's live blog, UK inflation rose to its highest level in nearly a year, with petrol and diesel prices posting their biggest rise in four years while food prices dipped on the month. Total government debt also reached £3tn for the first time.",
+      "important": true,
+      "processedAt": "2026-10-21T09:34:06.456Z"
+    },
     {
       "id": "3a52340ddcff",
       "sourceKey": "bbc-business",
@@ -1660,6 +1675,9 @@
     "5d4746c929fb": "2026-10-21",
     "bb489b4ea2dd": "2026-10-21",
     "2bfdd2692734": "2026-10-21",
-    "818dae122fcc": "2026-10-21"
+    "818dae122fcc": "2026-10-21",
+    "ac1491de2e45": "2026-10-21",
+    "5956317c88e5": "2026-10-21",
+    "2e1e67fc6b01": "2026-10-21"
   }
 }
