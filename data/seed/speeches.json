@@ -1,6 +1,28 @@
 {
-  "fetchedAt": "2026-10-21T09:47:40.997Z",
+  "fetchedAt": "2026-10-22T09:47:32.825Z",
   "speeches": [
+    {
+      "id": "20261021-euro-liquidity-lines-and-international-monetary-system",
+      "contextEn": "Remarks by Philip R Lane, Member of the Executive Board of the European Central Bank, at the CF40-Euro50 luncheon “Monetary system beyond the dollar”, Shanghai, 21 October 2026.",
+      "textLicense": "ecb",
+      "bankCode": "ecb",
+      "speakerName": "Philip R Lane",
+      "title": "Euro liquidity lines and the international monetary system",
+      "speechDate": "2026-10-21",
+      "sourceUrl": "https://www.bis.org/speeches/20261021-euro-liquidity-lines-and-international-monetary-system",
+      "summaryTr": "Lane, ECB'nin yalnızca yurt içi karşı taraflarla çalıştığını, bu nedenle uluslararası likidite hatlarının (repo ve swap) yurt dışındaki euro likidite şoklarının para piyasası faizlerine ve parasal aktarıma yayılmasını önlemek için gerekli olduğunu anlatıyor. Bu yıl güçlendirilen EUREP repo imkânının tüm merkez bankalarına ilke olarak sürekli erişim sunduğunu, banka başına 50 milyar euroya kadar, MRO faizi artı bir marjla yüksek kaliteli euro teminat karşılığında likidite sağladığını ve 2026'nın son çeyreğinden itibaren kullanılabileceğini belirtiyor. Swap hatlarının yerel para teminatıyla çalıştığı için EUREP'i tamamladığını, ancak daha riskli olduğundan yalnızca güçlü notlu ülkelere ve euro bölgesine yayılma riski taşıyan yetki alanlarına verilmesi gerektiğini vurguluyor. Likidite hatlarının euronun uluslararası rolünü güçlendirerek ECB para politikasının aktarımını ve fiyat istikrarı hedefine ulaşma kabiliyetini desteklediğini ekliyor.",
+      "hawkDoveScore": 0,
+      "scoreRationaleTr": "Konuşma uluslararası likidite hatlarının tasarımı ve euronun uluslararası rolü üzerine kurumsal bir değerlendirmedir; faiz patikası, enflasyon görünümü veya politika duruşuna dair ileriye dönük bir ifade içermiyor. Parasal aktarıma yapılan atıflar yapısaldır, bu nedenle para politikası sinyali yoktur.",
+      "hasPolicySignal": false,
+      "summaryEn": "Lane explains that because the ECB deals only with domestic counterparties, international liquidity lines (repo and swap) are needed to prevent euro liquidity shocks abroad from spilling over into money market rates and monetary policy transmission. He notes that the EUREP repo facility, enhanced this year, offers in-principle standing access to all central banks, providing liquidity of up to €50 billion per bank against high-quality euro collateral at the MRO rate plus a spread, available from the fourth quarter of 2026. He stresses that swap lines complement EUREP because they work against local-currency collateral, but as they carry more risk they should be offered only to countries backed by highly rated sovereigns and to jurisdictions where spillovers to the euro area are a risk. He adds that liquidity lines strengthen the euro's international role, thereby supporting ECB monetary policy transmission and its ability to achieve price stability.",
+      "scoreRationaleEn": "The speech is an institutional assessment of the design of international liquidity lines and the euro's international role; it contains no forward-looking statement on the rate path, inflation outlook or policy stance. References to monetary policy transmission are structural, so there is no monetary policy signal.",
+      "titleTr": "Euro likidite hatları ve uluslararası para sistemi",
+      "contextTr": "ECB Yönetim Kurulu Üyesi Philip R Lane'in CF40-Euro50 öğle yemeğinde (\"Doların ötesinde para sistemi\") yaptığı konuşma, Şanghay, 21 Ekim 2026.",
+      "model": "claude-code/opus",
+      "promptVersion": "3",
+      "scoredAt": "2026-10-22T09:48:42.599Z",
+      "scoredVia": "claude-code"
+    },
     {
       "id": "20261020-climate-and-nature-risks-economic-resilience-and-competitiveness",
       "contextEn": "Keynote speech by Mr Frank Elderson, Member of the Executive Board of the European Central Bank and Vice-Chair of the Supervisory Board of the European Central Bank, at the Green Swan 2026 Conference, Manila, 19 October 2026.",
@@ -140,7 +162,19 @@
       "speakerName": "Frank Elderson",
       "title": "Ensuring resilience in the face of uncertainty",
       "speechDate": "2026-10-19",
-      "sourceUrl": "https://www.bis.org/speeches/20261016-ensuring-resilience-face-uncertainty"
+      "sourceUrl": "https://www.bis.org/speeches/20261016-ensuring-resilience-face-uncertainty",
+      "summaryTr": "Elderson, iklim ve doğa krizleri başta olmak üzere jeopolitik parçalanma, demografi, yapay zekâ ve kuantum hesaplama gibi doğrusal olmayan makro eğilimlerin bankalar için riskleri artırdığını anlatıyor. Riskleri \"bilinen bilinenler\", \"bilinen bilinmeyenler\" ve \"bilinmeyen bilinmeyenler\" olarak ayırıyor; ilki için ölçmenin, ikincisi için senaryo analiziyle hazırlanmanın, üçüncüsü için ise sermaye, likidite ve esnek bir tepki fonksiyonuyla dayanıklılık inşa etmenin gerektiğini söylüyor. İklim senaryolarının sınırlılıklarına ve krizlerin beklenenden hızlı ilerlediğine dair kanıtlara dikkat çekerek bankaların bu sınırlılıkları anlamasını ve erken önlem almasını istiyor. Konuşma para politikasına değinmiyor.",
+      "hawkDoveScore": 0,
+      "scoreRationaleTr": "Konuşma iklim riski denetimi ve bankaların risk yönetimi üzerinedir; faiz, enflasyon veya para politikası duruşuna dair hiçbir ifade içermiyor. Bu nedenle para politikası sinyali yoktur.",
+      "hasPolicySignal": false,
+      "summaryEn": "Elderson explains that non-linear macro trends, above all the climate and nature crises but also geopolitical fragmentation, demographics, artificial intelligence and quantum computing, are increasing risks for banks. He distinguishes between \"known knowns\", \"known unknowns\" and \"unknown unknowns\", saying the first require measurement, the second preparation through scenario analysis, and the third building resilience through capital, liquidity and a flexible reaction function. Pointing to the limitations of climate scenarios and evidence that the crises are unfolding faster than expected, he calls on banks to understand these limitations and act early. The speech does not address monetary policy.",
+      "scoreRationaleEn": "The speech is about climate risk supervision and banks' risk management; it contains no statement on interest rates, inflation or the monetary policy stance. There is therefore no monetary policy signal.",
+      "titleTr": "Belirsizlik karşısında dayanıklılığı sağlamak",
+      "contextTr": "ECB Yönetim Kurulu Üyesi ve ECB Denetim Kurulu Başkan Yardımcısı Frank Elderson'ın, ECB-Bank of England'ın \"Doğrusal olmayan bir dünyada iklim riskinin denetimi\" konferansındaki açılış konuşması, Frankfurt am Main, 14 Ekim 2026.",
+      "model": "claude-code/opus",
+      "promptVersion": "3",
+      "scoredAt": "2026-10-22T09:48:42.599Z",
+      "scoredVia": "claude-code"
     },
     {
       "id": "20261016-effective-supervision-through-timely-remediation",
@@ -150,7 +184,19 @@
       "speakerName": "Frank Elderson",
       "title": "Effective supervision through timely remediation",
       "speechDate": "2026-10-19",
-      "sourceUrl": "https://www.bis.org/speeches/20261016-effective-supervision-through-timely-remediation"
+      "sourceUrl": "https://www.bis.org/speeches/20261016-effective-supervision-through-timely-remediation",
+      "summaryTr": "Elderson, sadeleştirme ile etkin denetimin birbirini güçlendirdiğini, denetimin önemli risklere odaklanıp bulguların zamanında ve kalıcı biçimde giderilmesini sağlaması gerektiğini söylüyor. Önemli zaaflar giderilmediğinde sermaye gereksinimlerinden iş kısıtlamalarına ve periyodik para cezalarına uzanan bir yaptırım merdiveninin daha çok kullanıldığını belirtiyor. 2025'te başlayan kademeli yaklaşımla düşük önemdeki bulguların bankalarca doğrudan kapatılabildiğini, açık tedbir stokunun 2025'te 1.200, 2026'da 600 azaldığını aktarıyor. Ekim ortasında başlayacak gözden geçirmeyle en düşük önemdeki F1 bulgularının tedbir yerine gözlem olarak bildirileceğini ve sorunların kök nedenlerinin ele alınmasının esas olduğunu vurguluyor.",
+      "hawkDoveScore": 0,
+      "scoreRationaleTr": "Konuşma tamamen bankacılık denetimi, bulguların giderilmesi ve denetimin sadeleştirilmesi üzerinedir; para politikası duruşuna dair bir ifade içermiyor. Bu nedenle para politikası sinyali yoktur.",
+      "hasPolicySignal": false,
+      "summaryEn": "Elderson says simplification and effective supervision reinforce each other, and that supervision should focus on material risks and ensure findings are remediated in a timely and durable manner. He notes that when material weaknesses are not addressed, greater use is being made of an escalation ladder ranging from capital requirements to business restrictions and periodic penalty payments. He reports that under the tiered approach launched in 2025 banks can close low-severity findings directly, and that the stock of outstanding measures fell by 1,200 in 2025 and by a further 600 in 2026. He stresses that a review starting in mid-October will see the least severe F1 findings communicated as observations rather than measures, and that addressing the root causes of problems is essential.",
+      "scoreRationaleEn": "The speech is entirely about banking supervision, remediation of findings and simplifying supervision; it contains no statement on the monetary policy stance. There is therefore no monetary policy signal.",
+      "titleTr": "Zamanında iyileştirmeyle etkin denetim",
+      "contextTr": "ECB Yönetim Kurulu Üyesi ve ECB Denetim Kurulu Başkan Yardımcısı Frank Elderson'ın, Avusturya Finansal Piyasa Otoritesi'nin ev sahipliğinde düzenlenen 17. FMA Denetim Konferansı'nda (\"Avrupa'nın finansal geleceği: egemenlik ve dayanıklılık\") \"Etkin denetim ve yaptırım\" panel tartışmasına katkısı, Viyana, 6 Ekim 2026.",
+      "model": "claude-code/opus",
+      "promptVersion": "3",
+      "scoredAt": "2026-10-22T09:48:42.598Z",
+      "scoredVia": "claude-code"
     },
     {
       "id": "20261013-signaling-value-summary-economic-projections",
