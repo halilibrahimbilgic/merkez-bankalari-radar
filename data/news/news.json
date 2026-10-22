@@ -1,5 +1,5 @@
 {
-  "fetchedAt": "2026-10-22T13:01:42.522Z",
+  "fetchedAt": "2026-10-22T13:31:33.731Z",
   "items": [
     {
       "id": "476af9c8167d",
@@ -15,6 +15,22 @@
       "summaryEn": "The central bank lowered its policy rate by 100 basis points to 36%, in line with expectations. It said the underlying inflation trend continues to slow.",
       "important": true,
       "processedAt": "2026-10-22T11:31:43.943Z"
+    },
+    {
+      "id": "5cf433f85532",
+      "sourceKey": "tcmb-basin",
+      "sourceName": "TCMB",
+      "kind": "official",
+      "bankCode": "tcmb",
+      "url": "https://www.tcmb.gov.tr/wps/wcm/connect/tr/tcmb+tr/main+menu/duyurular/basin/2026/duy2026-45",
+      "publishedAt": "2026-10-22T11:00:00.000Z",
+      "titleOriginal": "Faiz Oranlarına İlişkin Basın Duyurusu (2026-45)",
+      "titleTr": "TCMB faiz oranlarına ilişkin basın duyurusu yayımladı (2026-45)",
+      "summaryTr": "Türkiye Cumhuriyet Merkez Bankası, faiz oranlarına ilişkin 2026-45 numaralı basın duyurusunu yayımladı.",
+      "titleEn": "CBRT publishes press release on interest rates (2026-45)",
+      "summaryEn": "The Central Bank of the Republic of Türkiye published press release 2026-45 on interest rates.",
+      "important": true,
+      "processedAt": "2026-10-22T13:31:33.731Z"
     },
     {
       "id": "73b202e324ef",
