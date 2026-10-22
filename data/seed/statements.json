@@ -1,5 +1,5 @@
 {
-  "fetchedAt": "2026-10-22T10:31:32.850Z",
+  "fetchedAt": "2026-10-22T11:02:30.422Z",
   "statements": [
     {
       "meetingId": "boe-2025-12-18",
@@ -1537,6 +1537,49 @@
         "model": "claude-code/opus",
         "promptVersion": "2",
         "summarizedAt": "2026-10-14T23:02:49.259Z"
+      }
+    },
+    {
+      "meetingId": "tcmb-2026-10-22",
+      "bankCode": "tcmb",
+      "urls": {
+        "tr": "https://www.tcmb.gov.tr/wps/wcm/connect/TR/TCMB+TR/Main+Menu/Duyurular/Basin/2026/DUY2026-45",
+        "en": "https://www.tcmb.gov.tr/wps/wcm/connect/EN/TCMB+EN/Main+Menu/Announcements/Press+Releases/2026/ANO2026-45"
+      },
+      "langs": [
+        "tr",
+        "en"
+      ],
+      "publishable": true,
+      "fetchedAt": "2026-10-22T11:01:56.091Z",
+      "rate": 36,
+      "previousId": "tcmb-2026-09-10",
+      "summary": {
+        "headlineTr": "TCMB politika faizini yüzde 37'den yüzde 36'ya indirdi ve metinde enflasyonun ana eğilimindeki gerilemenin artık \"teyit edildiğini\" yazdı.",
+        "headlineEn": "The CBRT cut its policy rate from 37 percent to 36 percent and its statement now says recent data \"confirm\" the decline in the underlying inflation trend.",
+        "changesTr": [
+          "Politika faizi yüzde 37'den yüzde 36'ya, gecelik borç verme faizi yüzde 40'tan yüzde 39'a, gecelik borçlanma faizi yüzde 35,5'ten yüzde 34,5'e indirildi.",
+          "Enflasyon değerlendirmesi güçlendi: göstergeler ana eğilimin gerilediğine \"işaret etmekten\" bu gerilemeyi \"teyit etmeye\" geçti.",
+          "İç talepteki zayıf seyrin \"devam ettiği\" belirtildi.",
+          "Enerji fiyatlarından kaynaklanan yukarı yönlü risklerin, \"canlılığını koruyan\" jeopolitik gerilimler nedeniyle \"sürdüğü\" vurgulandı.",
+          "Yönlendirme, kararların nasıl alındığından \"adımların büyüklüğü ve zamanlamasının\" toplantı bazlı ve ihtiyatlı belirleneceğine çevrildi; sıkı duruşun süreceği ve bozulmada sıkılaştırma yapılacağı ifadeleri korundu."
+        ],
+        "changesEn": [
+          "The policy rate was cut from 37 percent to 36 percent, the overnight lending rate from 40 percent to 39 percent and the overnight borrowing rate from 35.5 percent to 34.5 percent.",
+          "The inflation assessment strengthened: indicators moved from \"pointing to\" a decline in the underlying trend to \"confirming\" it.",
+          "The statement says weak domestic demand is \"continuing\".",
+          "Upside risks from energy prices are said to \"persist\" due to geopolitical tensions that \"remain alive\".",
+          "Guidance shifted from how decisions are taken to the \"size and timing of steps\" being set in a meeting-by-meeting, prudent manner, while the commitment to a tight stance and to tightening if the outlook deteriorates was kept."
+        ],
+        "tone": "more-dovish",
+        "toneReasonTr": "Faiz indirimiyle birlikte gerilemenin \"teyit edildiği\", iç talep zayıflığının \"devam ettiği\" ifadeleri ve \"adımların büyüklüğü ve zamanlaması\" vurgusu gevşeme yönündedir; yukarı yönlü risklerin sürdüğü ifadesi bunu kısmen dengeler.",
+        "toneReasonEn": "The cut together with the decline being \"confirmed\", weak demand \"continuing\" and the reference to the \"size and timing of steps\" point toward easing, partly offset by the note that upside risks persist.",
+        "score": 2,
+        "scoreReasonTr": "Faiz indirilse de metin fiyat istikrarı sağlanana kadar sıkı duruşun süreceğini, bozulmada sıkılaştırma yapılacağını ve yukarı yönlü risklere karşı ihtiyatlı duruşu vurgulamaktadır.",
+        "scoreReasonEn": "Despite the cut, the statement stresses that the tight stance will be maintained until price stability is achieved, that policy will be tightened if the outlook deteriorates, and a cautious stance against upside risks.",
+        "model": "claude-code/opus",
+        "promptVersion": "2",
+        "summarizedAt": "2026-10-22T11:02:30.421Z"
       }
     }
   ]

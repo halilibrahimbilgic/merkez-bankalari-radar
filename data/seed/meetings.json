@@ -941,8 +941,10 @@
       "meetingAt": "2026-10-22T11:00:00.000Z",
       "timeTbd": false,
       "type": "rate_decision",
-      "status": "scheduled",
-      "sourceUrl": "https://www.tcmb.gov.tr/wps/wcm/connect/TR/TCMB+TR/Main+Menu/Duyurular/Takvim"
+      "status": "done",
+      "sourceUrl": "https://www.tcmb.gov.tr/wps/wcm/connect/TR/TCMB+TR/Main+Menu/Duyurular/Takvim",
+      "decisionRate": 36,
+      "previousRate": 37
     },
     {
       "id": "fed-2026-10-28",

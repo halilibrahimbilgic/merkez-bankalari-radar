@@ -1,6 +1,21 @@
 {
-  "fetchedAt": "2026-10-22T10:31:32.377Z",
+  "fetchedAt": "2026-10-22T11:01:54.701Z",
   "items": [
+    {
+      "id": "73b202e324ef",
+      "sourceKey": "aa-economy",
+      "sourceName": "Anadolu Agency",
+      "kind": "media",
+      "url": "https://www.aa.com.tr/en/economy/strong-us-dollar-mounting-energy-costs-work-against-trump-s-midterm-outlook/4097052",
+      "publishedAt": "2026-10-22T10:46:56.000Z",
+      "titleOriginal": "Strong US dollar, mounting energy costs work against Trump’s midterm outlook",
+      "titleTr": "Güçlü dolar ve enerji maliyetleri Trump'ın ara seçim görünümünü zorluyor",
+      "summaryTr": "Anadolu Ajansı'na göre yüksek faizler ve güçlenen dolar ABD ihracatına zarar veriyor. Haber, bu tablonun Trump'ın ara seçim beklentileri üzerindeki etkisini ele alıyor.",
+      "titleEn": "Strong US dollar, energy costs weigh on Trump's midterm outlook",
+      "summaryEn": "Anadolu Agency reports that high interest rates and a strengthening dollar are hurting US exports. The piece looks at how this weighs on Trump's midterm prospects.",
+      "important": false,
+      "processedAt": "2026-10-22T11:01:54.701Z"
+    },
     {
       "id": "cd8c2a164924",
       "sourceKey": "aa-ekonomi",
