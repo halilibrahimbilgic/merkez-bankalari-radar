@@ -1,6 +1,21 @@
 {
-  "fetchedAt": "2026-10-22T21:01:55.584Z",
+  "fetchedAt": "2026-10-22T22:01:57.361Z",
   "items": [
+    {
+      "id": "2cd485c15d41",
+      "sourceKey": "marketwatch",
+      "sourceName": "MarketWatch",
+      "kind": "media",
+      "url": "https://www.marketwatch.com/story/treasury-yields-see-extreme-plunge-why-investors-are-ducking-for-cover-60044c66?mod=mw_rss_topstories",
+      "publishedAt": "2026-10-22T21:32:00.000Z",
+      "titleOriginal": "Treasury yields see extreme plunge. Why investors are ducking for cover.",
+      "titleTr": "ABD tahvil faizlerinde sert düşüş, yatırımcılar güvenli limana yöneldi",
+      "summaryTr": "MarketWatch, ABD Hazine tahvil faizlerinde sert bir düşüş yaşandığını bildirdi. PGIM'den Tipp, hareketi 'geri alma işlemi' olarak niteleyip tam bir resesyon korkusu olmadığını söyledi.",
+      "titleEn": "Treasury yields plunge as investors seek cover",
+      "summaryEn": "MarketWatch reports an extreme drop in U.S. Treasury yields. PGIM's Tipp called it a 'take-back trade' rather than an all-out fear of recession.",
+      "important": true,
+      "processedAt": "2026-10-22T22:01:57.361Z"
+    },
     {
       "id": "4f7260afa10c",
       "sourceKey": "marketwatch",
