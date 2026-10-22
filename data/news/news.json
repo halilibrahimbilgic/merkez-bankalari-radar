@@ -1,5 +1,5 @@
 {
-  "fetchedAt": "2026-10-22T20:01:43.402Z",
+  "fetchedAt": "2026-10-22T21:01:55.584Z",
   "items": [
     {
       "id": "4f7260afa10c",
@@ -30,6 +30,21 @@
       "summaryEn": "Gold fell more than 2% per ounce as higher energy costs added to inflation pressure and markets expected the Fed to keep rates high for long. Silver dropped over 4% to $55 an ounce.",
       "important": false,
       "processedAt": "2026-10-22T15:01:52.595Z"
+    },
+    {
+      "id": "f727940e3c5a",
+      "sourceKey": "guardian-business",
+      "sourceName": "The Guardian",
+      "kind": "media",
+      "url": "https://www.theguardian.com/business/2026/oct/22/oil-prices-jump-five-month-high-threats-supply",
+      "publishedAt": "2026-10-22T11:28:11.000Z",
+      "titleOriginal": "Oil prices jump to five-month high as attacks threaten global supply",
+      "titleTr": "Petrol fiyatları beş ayın zirvesinde: Brent 112 doları gördü",
+      "summaryTr": "Suudi Arabistan'daki saldırılar ve Hürmüz Boğazı'nda tankerlerin vurulması arzın aksayabileceği endişesini artırdı. Brent petrol yüzde 3 yükselerek 18 Mayıs'tan bu yana ilk kez varil başına 112 dolara çıktı.",
+      "titleEn": "Oil prices hit five-month high, with Brent at $112",
+      "summaryEn": "Attacks in Saudi Arabia and hits on tankers in the strait of Hormuz raised fears of supply disruption. Brent crude rose 3% to $112 a barrel, its highest since 18 May.",
+      "important": false,
+      "processedAt": "2026-10-22T21:01:55.584Z"
     },
     {
       "id": "476af9c8167d",
@@ -1909,6 +1924,8 @@
     "effe1384bc17": "2026-10-22",
     "8d5f4d4f1732": "2026-10-22",
     "cdd4205397fd": "2026-10-22",
-    "e9e44b8036c9": "2026-10-22"
+    "e9e44b8036c9": "2026-10-22",
+    "80054ae95563": "2026-10-22",
+    "a83d3fc02668": "2026-10-22"
   }
 }
