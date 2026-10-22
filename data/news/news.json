@@ -1,6 +1,21 @@
 {
-  "fetchedAt": "2026-10-22T11:01:54.701Z",
+  "fetchedAt": "2026-10-22T11:31:43.943Z",
   "items": [
+    {
+      "id": "476af9c8167d",
+      "sourceKey": "aa-economy",
+      "sourceName": "Anadolu Agency",
+      "kind": "media",
+      "url": "https://www.aa.com.tr/en/turkiye/turkiyes-central-bank-cuts-policy-rate-to-36-after-5-consecutive-holds/4097100",
+      "publishedAt": "2026-10-22T11:13:32.000Z",
+      "titleOriginal": "Türkiye's Central Bank cuts policy rate to 36% after 5 consecutive holds",
+      "titleTr": "TCMB, politika faizini 5 sabit kararın ardından yüzde 36'ya indirdi",
+      "summaryTr": "Merkez Bankası politika faizini 100 baz puan indirerek yüzde 36'ya çekti; indirim beklentilerle uyumlu oldu. Banka, ana enflasyon eğiliminin yavaşlamayı sürdürdüğünü belirtti.",
+      "titleEn": "Türkiye's Central Bank cuts policy rate to 36% after 5 consecutive holds",
+      "summaryEn": "The central bank lowered its policy rate by 100 basis points to 36%, in line with expectations. It said the underlying inflation trend continues to slow.",
+      "important": true,
+      "processedAt": "2026-10-22T11:31:43.943Z"
+    },
     {
       "id": "73b202e324ef",
       "sourceKey": "aa-economy",
@@ -1842,6 +1857,8 @@
     "8567042c75f6": "2026-10-22",
     "16a30c50b8ca": "2026-10-22",
     "47dbc55717d0": "2026-10-22",
-    "303d5b1aaab4": "2026-10-22"
+    "303d5b1aaab4": "2026-10-22",
+    "c6327462cdca": "2026-10-22",
+    "605c2a2e77f6": "2026-10-22"
   }
 }
