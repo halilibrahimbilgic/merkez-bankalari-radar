@@ -1,6 +1,21 @@
 {
-  "fetchedAt": "2026-10-22T22:01:57.361Z",
+  "fetchedAt": "2026-10-22T22:31:39.309Z",
   "items": [
+    {
+      "id": "ec922f54c501",
+      "sourceKey": "marketwatch",
+      "sourceName": "MarketWatch",
+      "kind": "media",
+      "url": "https://www.marketwatch.com/story/the-u-s-stock-market-is-fracturing-into-two-camps-and-its-leaving-investors-with-a-brutal-case-of-whiplash-e8580a99?mod=mw_rss_topstories",
+      "publishedAt": "2026-10-22T22:17:00.000Z",
+      "titleOriginal": "The U.S. stock market is fracturing into two camps, and it’s leaving investors with a brutal case of whiplash",
+      "titleTr": "ABD 10 yıllık tahvil faizi SVB çöküşünden bu yana en sert günlük düşüşü yaşadı",
+      "summaryTr": "MarketWatch'a göre ABD 10 yıllık Hazine tahvilinin getirisi, Silicon Valley Bank'ın çöküşünden bu yana en büyük günlük düşüşünü kaydetti. Yapay zekâ temalı işlemler baskı altında ve CNN'in \"Fear & Greed\" endeksi korku bölgesinde.",
+      "titleEn": "U.S. 10-year Treasury yield posts biggest daily drop since SVB collapse",
+      "summaryEn": "MarketWatch reports the 10-year Treasury yield had its largest one-day fall since the collapse of Silicon Valley Bank. The AI trade is under pressure and CNN's Fear & Greed index points to fear.",
+      "important": true,
+      "processedAt": "2026-10-22T22:31:39.309Z"
+    },
     {
       "id": "2cd485c15d41",
       "sourceKey": "marketwatch",
