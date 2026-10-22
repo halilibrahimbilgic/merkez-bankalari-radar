@@ -1,6 +1,21 @@
 {
-  "fetchedAt": "2026-10-22T09:01:46.072Z",
+  "fetchedAt": "2026-10-22T10:31:32.377Z",
   "items": [
+    {
+      "id": "cd8c2a164924",
+      "sourceKey": "aa-ekonomi",
+      "sourceName": "Anadolu Ajansı",
+      "kind": "media",
+      "url": "https://www.aa.com.tr/tr/ekonomi/bakan-simsek-turkiyenin-borcluluk-duzeyinin-dusuk-olmasi-ekonomik-soklara-karsi-dayanikliligini-artiriyor/4096849",
+      "publishedAt": "2026-10-22T08:42:36.000Z",
+      "titleOriginal": "Bakan Şimşek: Türkiye'nin borçluluk düzeyinin düşük olması ekonomik şoklara karşı dayanıklılığını artırıyor",
+      "titleTr": "Şimşek: Düşük borçluluk Türkiye'nin şoklara dayanıklılığını artırıyor",
+      "summaryTr": "Hazine ve Maliye Bakanı Şimşek, Türkiye'nin küresel borçluluk açısından avantajlı konumda olduğunu söyledi. Şimşek'e göre toplam borçluluğun düşük olması ekonominin şoklara karşı direncini artırıyor.",
+      "titleEn": "Şimşek: Low debt level boosts Türkiye's resilience to shocks",
+      "summaryEn": "Treasury and Finance Minister Şimşek said Türkiye is in an advantageous position in terms of global indebtedness. He said the country's low total debt level strengthens its resilience to economic shocks.",
+      "important": true,
+      "processedAt": "2026-10-22T10:31:32.377Z"
+    },
     {
       "id": "b0d4df8611b9",
       "sourceKey": "aa-economy",
@@ -1811,6 +1826,7 @@
     "897c2bab79ba": "2026-10-22",
     "8567042c75f6": "2026-10-22",
     "16a30c50b8ca": "2026-10-22",
-    "47dbc55717d0": "2026-10-22"
+    "47dbc55717d0": "2026-10-22",
+    "303d5b1aaab4": "2026-10-22"
   }
 }
