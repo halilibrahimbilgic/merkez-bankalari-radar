@@ -1,6 +1,21 @@
 {
-  "fetchedAt": "2026-10-22T08:31:34.412Z",
+  "fetchedAt": "2026-10-22T09:01:46.072Z",
   "items": [
+    {
+      "id": "b0d4df8611b9",
+      "sourceKey": "aa-economy",
+      "sourceName": "Anadolu Agency",
+      "kind": "media",
+      "url": "https://www.aa.com.tr/en/economy/gold-falls-below-4-100-silver-drops-36-as-higher-oil-prices-fuel-inflation-concerns/4096833",
+      "publishedAt": "2026-10-22T08:34:58.000Z",
+      "titleOriginal": "Gold falls below $4,100, silver drops 3.6% as higher oil prices fuel inflation concerns",
+      "titleTr": "Altın 4.100 doların altına indi, gümüş %3,6 geriledi",
+      "summaryTr": "Anadolu Ajansı'na göre yükselen petrol fiyatları enflasyon endişelerini artırdı. Enerji maliyetlerindeki artış, faizlerin uzun süre yüksek kalacağı beklentisini güçlendirerek değerli metaller üzerinde baskı yarattı.",
+      "titleEn": "Gold falls below $4,100, silver drops 3.6%",
+      "summaryEn": "Anadolu Agency reports that higher oil prices fueled inflation concerns. Rising energy costs strengthened expectations of prolonged high interest rates, weighing on precious metals.",
+      "important": false,
+      "processedAt": "2026-10-22T09:01:46.072Z"
+    },
     {
       "id": "583a145739f5",
       "sourceKey": "aa-economy",
@@ -1795,6 +1810,7 @@
     "7e3743f0a1e1": "2026-10-22",
     "897c2bab79ba": "2026-10-22",
     "8567042c75f6": "2026-10-22",
-    "16a30c50b8ca": "2026-10-22"
+    "16a30c50b8ca": "2026-10-22",
+    "47dbc55717d0": "2026-10-22"
   }
 }
