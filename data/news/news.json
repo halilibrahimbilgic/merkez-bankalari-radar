@@ -1,6 +1,21 @@
 {
-  "fetchedAt": "2026-10-22T01:01:34.160Z",
+  "fetchedAt": "2026-10-22T04:31:33.944Z",
   "items": [
+    {
+      "id": "4c2bffc1cd90",
+      "sourceKey": "ft",
+      "sourceName": "Financial Times",
+      "kind": "media",
+      "url": "https://www.ft.com/content/68b04a9b-714e-4a5a-8dde-d9d7b8a65197?syn-25a6b1a6=1",
+      "publishedAt": "2026-10-22T04:00:11.000Z",
+      "titleOriginal": "AI and inflation: how worried should central bankers be?",
+      "titleTr": "Yapay zekâ ve enflasyon: merkez bankacıları ne kadar endişelenmeli?",
+      "summaryTr": "Financial Times'ın yazısı, göreli fiyat değişimlerinin genel fiyat düzeyini etkileyebileceğini ele alıyor.",
+      "titleEn": "AI and inflation: how worried should central bankers be?",
+      "summaryEn": "A Financial Times piece looks at how relative price shifts can affect the overall price level.",
+      "important": false,
+      "processedAt": "2026-10-22T04:31:33.944Z"
+    },
     {
       "id": "8ce31659c25e",
       "sourceKey": "ft",
