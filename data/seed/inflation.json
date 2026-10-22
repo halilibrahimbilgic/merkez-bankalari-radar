@@ -1,5 +1,5 @@
 {
-  "fetchedAt": "2026-10-22T09:47:26.325Z",
+  "fetchedAt": "2026-10-22T23:31:37.350Z",
   "readings": [
     {
       "bankCode": "fed",
@@ -27,8 +27,8 @@
     },
     {
       "bankCode": "boj",
-      "period": "2026-08",
-      "yoy": 1.9,
+      "period": "2026-09",
+      "yoy": 2.1,
       "sourceUrl": "https://www.stat.go.jp/english/data/cpi/index.html"
     },
     {
