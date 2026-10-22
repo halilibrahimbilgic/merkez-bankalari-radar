@@ -1,6 +1,36 @@
 {
-  "fetchedAt": "2026-10-22T04:31:33.944Z",
+  "fetchedAt": "2026-10-22T06:31:39.534Z",
   "items": [
+    {
+      "id": "583a145739f5",
+      "sourceKey": "aa-economy",
+      "sourceName": "Anadolu Agency",
+      "kind": "media",
+      "url": "https://www.aa.com.tr/en/economy/oil-prices-rise-over-2-after-attack-on-saudi-oil-field-fuels-supply-concerns/4096635",
+      "publishedAt": "2026-10-22T06:16:02.000Z",
+      "titleOriginal": "Oil prices rise over 2% after attack on Saudi oil field fuels supply concerns",
+      "titleTr": "Suudi petrol sahasına saldırı sonrası petrol fiyatları yükseldi",
+      "summaryTr": "Suudi Arabistan'daki bir petrol sahasına yönelik saldırı arz endişelerini artırdı; Brent petrol varil başına 111,4 dolara çıkarken WTI 100 dolara yaklaştı.",
+      "titleEn": "Oil prices rise after attack on Saudi oil field",
+      "summaryEn": "An attack on a Saudi oil field raised supply concerns, lifting Brent to $111.4 a barrel while WTI approached $100.",
+      "important": false,
+      "processedAt": "2026-10-22T06:31:39.534Z"
+    },
+    {
+      "id": "df9d7473f6a0",
+      "sourceKey": "aa-ekonomi",
+      "sourceName": "Anadolu Ajansı",
+      "kind": "media",
+      "url": "https://www.aa.com.tr/tr/ekonomi/yurt-icinde-gozler-tcmbnin-faiz-kararina-cevrildi/4096625",
+      "publishedAt": "2026-10-22T06:02:35.000Z",
+      "titleOriginal": "Yurt içinde gözler TCMB'nin faiz kararına çevrildi",
+      "titleTr": "Yurt içinde gözler TCMB'nin faiz kararında",
+      "summaryTr": "Küresel piyasalar ABD'deki teknoloji bilançoları ve yapay zeka yatırımlarının finansmanına dair endişelerle karışık seyrederken, yurt içinde piyasaların odağında TCMB'nin para politikası kararı var.",
+      "titleEn": "Focus in Turkey turns to the central bank's rate decision",
+      "summaryEn": "Global markets are mixed on US tech earnings and worries over financing of AI investments, while attention at home is on the Turkish central bank's monetary policy decision.",
+      "important": false,
+      "processedAt": "2026-10-22T06:31:39.534Z"
+    },
     {
       "id": "4c2bffc1cd90",
       "sourceKey": "ft",
