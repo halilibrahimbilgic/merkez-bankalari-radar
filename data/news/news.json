@@ -1,6 +1,21 @@
 {
-  "fetchedAt": "2026-10-22T13:31:33.731Z",
+  "fetchedAt": "2026-10-22T15:01:52.595Z",
   "items": [
+    {
+      "id": "e36929479fe7",
+      "sourceKey": "aa-ekonomi",
+      "sourceName": "Anadolu Ajansı",
+      "kind": "media",
+      "url": "https://www.aa.com.tr/tr/ekonomi/altin-ve-gumus-fiyatlari-artan-enerji-maliyetleriyle-dususte/4097424",
+      "publishedAt": "2026-10-22T14:35:19.000Z",
+      "titleOriginal": "Altın ve gümüş fiyatları artan enerji maliyetleriyle düşüşte",
+      "titleTr": "Altın ve gümüş, enerji maliyetleri ve Fed beklentisiyle geriledi",
+      "summaryTr": "Altının ons fiyatı, enerji maliyetlerinin enflasyon baskısını artırması ve Fed'in faizleri uzun süre yüksek tutacağı beklentisiyle yüzde 2'nin üzerinde düştü. Gümüşün ons fiyatı yüzde 4'ten fazla gerileyerek 55 dolara indi.",
+      "titleEn": "Gold and silver fall on energy costs and Fed expectations",
+      "summaryEn": "Gold fell more than 2% per ounce as higher energy costs added to inflation pressure and markets expected the Fed to keep rates high for long. Silver dropped over 4% to $55 an ounce.",
+      "important": false,
+      "processedAt": "2026-10-22T15:01:52.595Z"
+    },
     {
       "id": "476af9c8167d",
       "sourceKey": "aa-economy",
