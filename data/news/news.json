@@ -1,6 +1,21 @@
 {
-  "fetchedAt": "2026-10-22T15:01:52.595Z",
+  "fetchedAt": "2026-10-22T17:01:42.608Z",
   "items": [
+    {
+      "id": "4f7260afa10c",
+      "sourceKey": "marketwatch",
+      "sourceName": "MarketWatch",
+      "kind": "media",
+      "url": "https://www.marketwatch.com/story/ai-is-on-trial-bond-yields-sink-below-5-as-investors-look-for-safety-dbc86ee9?mod=mw_rss_topstories",
+      "publishedAt": "2026-10-22T16:35:00.000Z",
+      "titleOriginal": "‘AI is on trial’: Bond yields sink below 5% as investors look for safety",
+      "titleTr": "ABD tahvil faizleri %5'in altına geriledi, yatırımcılar güvenli limana yöneldi",
+      "summaryTr": "MarketWatch'a göre yatırımcılar, hisse ve kredi piyasalarında yapay zekâ kaynaklı olası yeni sarsıntılara karşı korunmak için ABD Hazine tahvillerine akın ediyor. Bu talep tahvil faizlerini %5'in altına çekti.",
+      "titleEn": "US bond yields sink below 5% as investors seek safety",
+      "summaryEn": "MarketWatch reports investors are rushing back into Treasurys to hedge against the risk of further AI-related fallout in stock and credit markets. The demand pushed bond yields below 5%.",
+      "important": true,
+      "processedAt": "2026-10-22T17:01:42.608Z"
+    },
     {
       "id": "e36929479fe7",
       "sourceKey": "aa-ekonomi",
