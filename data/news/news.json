@@ -1,6 +1,36 @@
 {
-  "fetchedAt": "2026-10-23T11:31:26.954Z",
+  "fetchedAt": "2026-10-23T12:01:52.876Z",
   "items": [
+    {
+      "id": "787ed971fba9",
+      "sourceKey": "aa-economy",
+      "sourceName": "Anadolu Agency",
+      "kind": "media",
+      "url": "https://www.aa.com.tr/en/economy/russian-central-bank-holds-key-rate-steady-at-14-/4098508",
+      "publishedAt": "2026-10-23T11:58:31.000Z",
+      "titleOriginal": "Russian central bank holds key rate steady at 14%",
+      "titleTr": "Rusya Merkez Bankası politika faizini %14'te sabit tuttu",
+      "summaryTr": "Rusya Merkez Bankası, politika faizini %14'te değiştirmedi. Banka, fiyat baskılarının ve enflasyon beklentilerinin yüksek seyrettiğini, ekonominin 2026'nın ikinci yarısında ılımlı büyüdüğünü belirtti.",
+      "titleEn": "Russian central bank holds key rate steady at 14%",
+      "summaryEn": "The Bank of Russia left its key rate unchanged at 14%. It pointed to elevated price pressures and high inflation expectations, while the economy grows moderately in the second half of 2026.",
+      "important": true,
+      "processedAt": "2026-10-23T12:01:52.876Z"
+    },
+    {
+      "id": "b384413896e1",
+      "sourceKey": "bbc-business",
+      "sourceName": "BBC News",
+      "kind": "media",
+      "url": "https://www.bbc.co.uk/news/articles/cmz6581p1ee8o?at_medium=RSS&at_campaign=rss",
+      "publishedAt": "2026-10-23T11:58:19.000Z",
+      "titleOriginal": "Island inflation rate rises to 3%, figures show",
+      "titleTr": "Adada enflasyon oranı %3'e yükseldi",
+      "summaryTr": "Açıklanan rakamlara göre enflasyon oranı %3'e çıktı. Artışta gıda ve alkol fiyatlarındaki yükseliş etkili oldu.",
+      "titleEn": "Island inflation rate rises to 3%, figures show",
+      "summaryEn": "Figures show the inflation rate rose to 3%. Rising food and alcohol costs drove the increase.",
+      "important": false,
+      "processedAt": "2026-10-23T12:01:52.876Z"
+    },
     {
       "id": "4e848aa90f13",
       "sourceKey": "marketwatch",
