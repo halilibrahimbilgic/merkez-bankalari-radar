@@ -1,27 +1,6 @@
 {
-  "fetchedAt": "2026-10-22T09:47:17.639Z",
+  "fetchedAt": "2026-10-23T09:43:02.359Z",
   "events": [
-    {
-      "id": "ecb-2026-10-21-tj09mx",
-      "bankCode": "ecb",
-      "at": "2026-10-21T04:15:00.000Z",
-      "timeTbd": false,
-      "kind": "discussion",
-      "speaker": "Philip R. Lane",
-      "title": "Participation by Mr Lane in panel at CF40-Euro50 Closed-Door Luncheon \"Monetary System Beyond the Dollar\" in Shanghai, China",
-      "url": "https://www.bundsummit.org/en/"
-    },
-    {
-      "id": "ecb-2026-10-21-1i9itzi",
-      "bankCode": "ecb",
-      "at": "2026-10-21T16:30:00.000Z",
-      "timeTbd": false,
-      "kind": "discussion",
-      "speaker": "Christine Lagarde",
-      "role": "President",
-      "title": "Participation by Ms Lagarde in on-stage conversation at Museum Reinhard Ernst in Wiesbaden, Germany",
-      "url": "https://www.ecb.europa.eu/press/calendars/weekly/html/index.en.html"
-    },
     {
       "id": "boj-cpi-2026-10-22",
       "bankCode": "boj",
@@ -34,7 +13,7 @@
     {
       "id": "ecb-2026-10-23-hxcke1",
       "bankCode": "ecb",
-      "at": "2026-10-23T07:55:00.000Z",
+      "at": "2026-10-23T08:00:00.000Z",
       "timeTbd": false,
       "kind": "speech",
       "speaker": "Patrick Montagner",

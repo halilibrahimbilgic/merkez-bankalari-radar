@@ -1,5 +1,5 @@
 {
-  "fetchedAt": "2026-10-22T09:47:03.587Z",
+  "fetchedAt": "2026-10-23T09:42:47.427Z",
   "rates": [
     {
       "bankCode": "fed",
@@ -22,8 +22,8 @@
     },
     {
       "bankCode": "tcmb",
-      "rate": 37,
-      "asOf": "2026-01-22",
+      "rate": 36,
+      "asOf": "2026-10-22",
       "sourceUrl": "https://www.tcmb.gov.tr/wps/wcm/connect/TR/TCMB+TR/Main+Menu/Temel+Faaliyetler/Para+Politikasi/Merkez+Bankasi+Faiz+Oranlari/1+Hafta+Repo"
     },
     {
