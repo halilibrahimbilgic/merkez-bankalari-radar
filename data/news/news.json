@@ -1,5 +1,5 @@
 {
-  "fetchedAt": "2026-10-23T12:01:52.876Z",
+  "fetchedAt": "2026-10-23T13:01:45.950Z",
   "items": [
     {
       "id": "787ed971fba9",
@@ -30,6 +30,21 @@
       "summaryEn": "Figures show the inflation rate rose to 3%. Rising food and alcohol costs drove the increase.",
       "important": false,
       "processedAt": "2026-10-23T12:01:52.876Z"
+    },
+    {
+      "id": "68a69cb53d68",
+      "sourceKey": "guardian-business",
+      "sourceName": "The Guardian",
+      "kind": "media",
+      "url": "https://www.theguardian.com/business/2026/oct/23/oil-five-month-high-fears-us-renews-strikes-iran",
+      "publishedAt": "2026-10-23T11:35:51.000Z",
+      "titleOriginal": "Oil hits five-month high amid fears US will renew strikes on Iran",
+      "titleTr": "Petrol, İran'a yönelik yeni ABD saldırısı korkusuyla beş ayın zirvesinde",
+      "summaryTr": "Brent petrol cuma sabahı yüzde 1 artarak varil başına 114,72 dolara çıktı; bu, mayıs ayından bu yana en yüksek seviye. Tahran'ın Körfez'deki petrol ve teknoloji tesislerine karşılık verme tehdidi Orta Doğu'da yeni bir tırmanma endişesi yarattı.",
+      "titleEn": "Oil hits five-month high amid fears US will renew strikes on Iran",
+      "summaryEn": "Brent crude rose 1% on Friday morning to $114.72 a barrel, its highest level since May. Tehran's threat of retaliatory attacks on Gulf oil and tech facilities has stoked fears of fresh escalation in the Middle East.",
+      "important": false,
+      "processedAt": "2026-10-23T13:01:45.950Z"
     },
     {
       "id": "4e848aa90f13",
