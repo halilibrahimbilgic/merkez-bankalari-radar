@@ -1,6 +1,21 @@
 {
-  "fetchedAt": "2026-10-23T07:02:08.034Z",
+  "fetchedAt": "2026-10-23T07:32:22.451Z",
   "items": [
+    {
+      "id": "5d9198c24e12",
+      "sourceKey": "aa-ekonomi",
+      "sourceName": "Anadolu Ajansı",
+      "kind": "media",
+      "url": "https://www.aa.com.tr/tr/ekonomi/yillik-enflasyon-beklentisi-hanehalki-ve-reel-sektor-icin-geriledi/4098036",
+      "publishedAt": "2026-10-23T07:16:36.000Z",
+      "titleOriginal": "Yıllık enflasyon beklentisi hanehalkı ve reel sektör için geriledi",
+      "titleTr": "Enflasyon beklentisi hanehalkı ve reel sektörde geriledi",
+      "summaryTr": "Ekim ayında yıllık enflasyon beklentileri piyasa katılımcılarında yükselirken, hanehalkı ve reel sektörde geriledi.",
+      "titleEn": "Inflation expectations fall for households and real sector",
+      "summaryEn": "In October, annual inflation expectations rose among market participants but declined among households and the real sector.",
+      "important": true,
+      "processedAt": "2026-10-23T07:32:22.451Z"
+    },
     {
       "id": "ece67b3ef394",
       "sourceKey": "aa-economy",
@@ -1981,6 +1996,7 @@
     "8ccbce5f78bc": "2026-10-22",
     "1c7aa5efd3c8": "2026-10-22",
     "f12d92ef42e4": "2026-10-23",
-    "853f95166354": "2026-10-23"
+    "853f95166354": "2026-10-23",
+    "479d4ddebcae": "2026-10-23"
   }
 }
