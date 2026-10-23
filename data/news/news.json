@@ -1,6 +1,37 @@
 {
-  "fetchedAt": "2026-10-23T07:32:22.451Z",
+  "fetchedAt": "2026-10-23T08:31:23.447Z",
   "items": [
+    {
+      "id": "411b1ca7c595",
+      "sourceKey": "aa-ekonomi",
+      "sourceName": "Anadolu Ajansı",
+      "kind": "media",
+      "url": "https://www.aa.com.tr/tr/ekonomi/tcmb-ekim-ayi-hanehalki-beklenti-anketini-yayimladi/4098200",
+      "publishedAt": "2026-10-23T08:23:36.000Z",
+      "titleOriginal": "TCMB ekim ayı Hanehalkı Beklenti Anketi'ni yayımladı",
+      "titleTr": "Hane halkının 12 ay sonrası enflasyon beklentisi yüzde 43,75'e geriledi",
+      "summaryTr": "TCMB'nin ekim ayı Hanehalkı Beklenti Anketi'ne göre 12 ay sonrası yıllık enflasyon beklentisi bir önceki aya göre 1,85 puan azalarak yüzde 43,75 oldu.",
+      "titleEn": "Turkish households' 12-month-ahead inflation expectation falls to 43.75%",
+      "summaryEn": "According to the Turkish central bank's October Household Expectations Survey, the 12-month-ahead annual inflation expectation fell by 1.85 points from the previous month to 43.75%.",
+      "important": true,
+      "processedAt": "2026-10-23T08:31:23.447Z"
+    },
+    {
+      "id": "7bf9a3c2c104",
+      "sourceKey": "ecb",
+      "sourceName": "ECB",
+      "kind": "official",
+      "bankCode": "ecb",
+      "url": "https://www.ecb.europa.eu//press/pr/date/2026/html/ecb.pr261023~a3d201c97c.en.html",
+      "publishedAt": "2026-10-23T08:00:00.000Z",
+      "titleOriginal": "ECB Consumer Expectations Survey results – September 2026",
+      "titleTr": "ECB Tüketici Beklentileri Anketi'nin eylül sonuçları yayımlandı",
+      "summaryTr": "ECB, Tüketici Beklentileri Anketi'nin eylül 2026 sonuçlarını yayımladı.",
+      "titleEn": "ECB Consumer Expectations Survey results – September 2026",
+      "summaryEn": "The ECB published the results of its Consumer Expectations Survey for September 2026.",
+      "important": false,
+      "processedAt": "2026-10-23T08:31:23.447Z"
+    },
     {
       "id": "5d9198c24e12",
       "sourceKey": "aa-ekonomi",
