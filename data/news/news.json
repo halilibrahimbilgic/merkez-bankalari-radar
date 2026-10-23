@@ -1,6 +1,22 @@
 {
-  "fetchedAt": "2026-10-23T08:31:23.447Z",
+  "fetchedAt": "2026-10-23T09:01:57.865Z",
   "items": [
+    {
+      "id": "90ed09de665c",
+      "sourceKey": "boe-speeches",
+      "sourceName": "Bank of England",
+      "kind": "official",
+      "bankCode": "boe",
+      "url": "https://www.bankofengland.co.uk/speech/2026/october/physical-shocks-and-economic-resilience-speech-by-james-talbot",
+      "publishedAt": "2026-10-23T09:00:00.000Z",
+      "titleOriginal": "Physical shocks and economic resilience: a central bank perspective − speech by James Talbot",
+      "titleTr": "BoE'den Talbot: fiziksel şoklar ve ekonomik dayanıklılık",
+      "summaryTr": "Bank of England'dan James Talbot, 21 Ekim'de Banco de México'nun düzenlediği Sürdürülebilir Finans konferansında fiziksel şoklar ve ekonomik dayanıklılık üzerine bir konuşma yaptı.",
+      "titleEn": "BoE's Talbot speaks on physical shocks and economic resilience",
+      "summaryEn": "The Bank of England's James Talbot gave a speech on physical shocks and economic resilience at the Banco de México's Sustainable Finance conference on 21 October.",
+      "important": false,
+      "processedAt": "2026-10-23T09:01:57.865Z"
+    },
     {
       "id": "411b1ca7c595",
       "sourceKey": "aa-ekonomi",
@@ -2028,6 +2044,7 @@
     "1c7aa5efd3c8": "2026-10-22",
     "f12d92ef42e4": "2026-10-23",
     "853f95166354": "2026-10-23",
-    "479d4ddebcae": "2026-10-23"
+    "479d4ddebcae": "2026-10-23",
+    "dbad8fa9a12d": "2026-10-23"
   }
 }
