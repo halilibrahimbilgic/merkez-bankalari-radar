@@ -1,6 +1,21 @@
 {
-  "fetchedAt": "2026-10-23T19:31:29.110Z",
+  "fetchedAt": "2026-10-23T23:31:25.872Z",
   "items": [
+    {
+      "id": "8505ba174ae1",
+      "sourceKey": "aa-ekonomi",
+      "sourceName": "Anadolu Ajansı",
+      "kind": "media",
+      "url": "https://www.aa.com.tr/tr/ekonomi/turkiye-mali-seffaflik-degerlendirmesinde-ust-siralarda-yer-aldi/4099149",
+      "publishedAt": "2026-10-23T23:18:04.000Z",
+      "titleOriginal": "Türkiye, mali şeffaflık değerlendirmesinde üst sıralarda yer aldı",
+      "titleTr": "IMF: Türkiye mali şeffaflıkta son 10 yılda önemli ilerleme kaydetti",
+      "summaryTr": "IMF, Türkiye'nin mali şeffaflık alanında son 10 yılda önemli gelişme gösterdiğini bildirdi. Türkiye, değerlendirmede üst sıralarda yer aldı.",
+      "titleEn": "IMF: Turkey made significant progress in fiscal transparency over past decade",
+      "summaryEn": "The IMF said Turkey has made significant progress in fiscal transparency over the last 10 years. Turkey ranked near the top in the assessment.",
+      "important": false,
+      "processedAt": "2026-10-23T23:31:25.872Z"
+    },
     {
       "id": "4971a0ca70b3",
       "sourceKey": "aa-economy",
