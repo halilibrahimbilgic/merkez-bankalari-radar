@@ -1,6 +1,21 @@
 {
-  "fetchedAt": "2026-10-23T00:01:46.628Z",
+  "fetchedAt": "2026-10-23T04:31:22.831Z",
   "items": [
+    {
+      "id": "601c5a56db55",
+      "sourceKey": "ft",
+      "sourceName": "Financial Times",
+      "kind": "media",
+      "url": "https://www.ft.com/content/bf959a1a-1cd8-41e2-8767-03aa1ac3ed48?syn-25a6b1a6=1",
+      "publishedAt": "2026-10-23T04:00:28.000Z",
+      "titleOriginal": "Beware Bessent’s tilt towards short-term debt",
+      "titleTr": "FT yazısı: Bessent'in kısa vadeli borca yönelmesi risk taşıyor",
+      "summaryTr": "Financial Times'taki yazı, enflasyon ve borç artıp yapay zekâ iyimserliği zayıflarsa ABD Hazinesi'nin borçlanma vadelerini kısaltmasının tehlikesinin büyüyeceğini savunuyor.",
+      "titleEn": "FT op-ed: Bessent's tilt toward short-term debt carries risk",
+      "summaryEn": "The Financial Times piece argues that if inflation and debt rise and AI optimism fades, the danger of shortening US Treasury maturities grows.",
+      "important": false,
+      "processedAt": "2026-10-23T04:31:22.831Z"
+    },
     {
       "id": "ec922f54c501",
       "sourceKey": "marketwatch",
