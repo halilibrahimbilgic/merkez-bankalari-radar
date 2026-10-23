@@ -1,6 +1,21 @@
 {
-  "fetchedAt": "2026-10-23T14:31:55.662Z",
+  "fetchedAt": "2026-10-23T16:31:35.358Z",
   "items": [
+    {
+      "id": "429186e15fc7",
+      "sourceKey": "ft",
+      "sourceName": "Financial Times",
+      "kind": "media",
+      "url": "https://www.ft.com/content/8948193b-438b-4d71-a0b1-31dff56fc308?syn-25a6b1a6=1",
+      "publishedAt": "2026-10-23T16:06:43.000Z",
+      "titleOriginal": "Oil hits $117 for first time since April on fears of flare-up in Iran hostilities",
+      "titleTr": "Petrol, İran gerginliği endişesiyle Nisan'dan bu yana ilk kez 117 doları gördü",
+      "summaryTr": "Financial Times'a göre İran'daki çatışmaların yeniden alevlenebileceği endişesi petrol fiyatını 117 dolara taşıdı. Enerji fiyatlarındaki artış ABD enflasyon beklentilerini yukarı itti.",
+      "titleEn": "Oil hits $117 for first time since April on fears of Iran flare-up",
+      "summaryEn": "The Financial Times reports oil rose to $117 on fears of renewed hostilities involving Iran. The jump in energy prices pushed US inflation expectations higher.",
+      "important": true,
+      "processedAt": "2026-10-23T16:31:35.358Z"
+    },
     {
       "id": "044c1f805156",
       "sourceKey": "aa-economy",
