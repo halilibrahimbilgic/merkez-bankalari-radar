@@ -1,6 +1,21 @@
 {
-  "fetchedAt": "2026-10-23T13:01:45.950Z",
+  "fetchedAt": "2026-10-23T14:31:55.662Z",
   "items": [
+    {
+      "id": "044c1f805156",
+      "sourceKey": "aa-economy",
+      "sourceName": "Anadolu Agency",
+      "kind": "media",
+      "url": "https://www.aa.com.tr/en/economy/brent-crude-hits-highest-since-june-2022-on-fears-of-renewed-us-strikes-on-iran/4098685",
+      "publishedAt": "2026-10-23T14:05:07.000Z",
+      "titleOriginal": "Brent crude hits highest since June 2022 on fears of renewed US strikes on Iran",
+      "titleTr": "Brent petrol Haziran 2022'den bu yana en yüksek seviyede",
+      "summaryTr": "Brent petrol, ABD'nin İran'a yeni saldırı yapabileceği endişeleriyle yüzde 2,7 artarak varil başına 116,20 dolara çıktı. Bölgedeki gerilimin artması arz kaygılarını besliyor.",
+      "titleEn": "Brent crude hits highest level since June 2022",
+      "summaryEn": "Brent crude rose 2.7% to $116.20 a barrel on fears of renewed US strikes on Iran. Escalating regional tensions are fueling supply concerns.",
+      "important": false,
+      "processedAt": "2026-10-23T14:31:55.662Z"
+    },
     {
       "id": "787ed971fba9",
       "sourceKey": "aa-economy",
