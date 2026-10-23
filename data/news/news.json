@@ -1,6 +1,21 @@
 {
-  "fetchedAt": "2026-10-23T06:01:45.287Z",
+  "fetchedAt": "2026-10-23T07:02:08.034Z",
   "items": [
+    {
+      "id": "ece67b3ef394",
+      "sourceKey": "aa-economy",
+      "sourceName": "Anadolu Agency",
+      "kind": "media",
+      "url": "https://www.aa.com.tr/en/economy/brent-hits-5-month-high-european-gas-highest-since-december-2022-as-supply-risks-mount/4097999",
+      "publishedAt": "2026-10-23T06:46:38.000Z",
+      "titleOriginal": "Brent hits 5-month high, European gas highest since December 2022 as supply risks mount",
+      "titleTr": "Brent petrol 5 ayın zirvesinde, Avrupa'da gaz Aralık 2022'den beri en yüksekte",
+      "summaryTr": "Brent petrol varil başına 114 doları aşarak beş ayın en yüksek seviyesine çıktı. Avrupa'da doğal gaz megavatsaat başına 102,40 doları geçti; Anadolu Ajansı bunu Orta Doğu gerilimi ve sıkı LNG arzına bağladı.",
+      "titleEn": "Brent hits 5-month high, European gas at highest since December 2022",
+      "summaryEn": "Brent crude rose above $114 a barrel, its highest in five months. European gas topped $102.40 per megawatt-hour, which Anadolu Agency attributed to Mideast tensions and tight LNG supplies.",
+      "important": false,
+      "processedAt": "2026-10-23T07:02:08.034Z"
+    },
     {
       "id": "601c5a56db55",
       "sourceKey": "ft",
