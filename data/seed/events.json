@@ -1,15 +1,6 @@
 {
-  "fetchedAt": "2026-10-23T09:43:02.359Z",
+  "fetchedAt": "2026-10-24T09:15:10.556Z",
   "events": [
-    {
-      "id": "boj-cpi-2026-10-22",
-      "bankCode": "boj",
-      "at": "2026-10-22T23:30:00.000Z",
-      "timeTbd": false,
-      "kind": "cpi",
-      "title": "CPI",
-      "url": "https://www.stat.go.jp/english/data/cpi/1582.html"
-    },
     {
       "id": "ecb-2026-10-23-hxcke1",
       "bankCode": "ecb",
@@ -31,6 +22,27 @@
       "url": "https://www.festivalinternazionaledelleconomia.com/en/event/1486/"
     },
     {
+      "id": "ecb-2026-10-26-pa8j0",
+      "bankCode": "ecb",
+      "at": "2026-10-26T06:00:00.000Z",
+      "timeTbd": false,
+      "kind": "speech",
+      "speaker": "Frank Elderson",
+      "title": "Opening keynote speech by Mr Elderson at Finance and Biodiversity Day at 17th meeting of the Conference of the Parties to the CBD (COP17) in Yerevan, Armenia",
+      "url": "https://www.ecb.europa.eu/press/calendars/weekly/html/index.en.html"
+    },
+    {
+      "id": "ecb-2026-10-27-1sxwfcz",
+      "bankCode": "ecb",
+      "at": "2026-10-27T17:00:00.000Z",
+      "timeTbd": false,
+      "kind": "testimony",
+      "speaker": "Christine Lagarde",
+      "role": "President",
+      "title": "Informal dinner and exchange of views of Ms Lagarde and the Governing Council with EU Commissioner European Commissioner for Trade and Economic Security, Maro&scaron; &Scaron;efčovič, in Frankfurt, Germany",
+      "url": "https://www.ecb.europa.eu/press/calendars/weekly/html/index.en.html"
+    },
+    {
       "id": "rba-cpi-2026-10-28",
       "bankCode": "rba",
       "at": "2026-10-28T00:30:00.000Z",
@@ -40,6 +52,16 @@
       "url": "https://www.abs.gov.au/statistics/economy/price-indexes-and-inflation/consumer-price-index-australia/latest-release"
     },
     {
+      "id": "ecb-2026-10-29-1ccpcns",
+      "bankCode": "ecb",
+      "at": "2026-10-29T15:50:00.000Z",
+      "timeTbd": false,
+      "kind": "speech",
+      "speaker": "Piero Cipollone",
+      "title": "Remarks by Mr Cipollone at event titled 'One year to T+1' organised by the EU T+1 Industry Committee in Frankfurt am Main, Germany",
+      "url": "https://www.ecb.europa.eu/press/calendars/weekly/html/index.en.html"
+    },
+    {
       "id": "tcmb-2026-10-30-mpc-summary",
       "bankCode": "tcmb",
       "at": "2026-10-29T21:00:00.000Z",
@@ -47,6 +69,16 @@
       "kind": "mpc-summary",
       "title": "Para Politikası Kurulu Toplantı Özeti",
       "url": "https://www.tcmb.gov.tr/wps/wcm/connect/TR/TCMB+TR/Main+Menu/Duyurular/Takvim"
+    },
+    {
+      "id": "ecb-2026-10-30-8ghlxa",
+      "bankCode": "ecb",
+      "at": "2026-10-30T16:10:00.000Z",
+      "timeTbd": false,
+      "kind": "testimony",
+      "speaker": "Philip R. Lane",
+      "title": "Keynote speech by Mr Lane at Research Symposium on AI and the Economy organised by Federal Reserve Bank of San Francisco in San Francisco, US",
+      "url": "https://www.ecb.europa.eu/press/calendars/weekly/html/index.en.html"
     },
     {
       "id": "tcmb-cpi-2026-11-03",
