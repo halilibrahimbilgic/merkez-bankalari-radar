@@ -1,6 +1,21 @@
 {
-  "fetchedAt": "2026-10-24T08:01:41.601Z",
+  "fetchedAt": "2026-10-24T08:31:28.366Z",
   "items": [
+    {
+      "id": "dd473d4f6478",
+      "sourceKey": "aa-ekonomi",
+      "sourceName": "Anadolu Ajansı",
+      "kind": "media",
+      "url": "https://www.aa.com.tr/tr/ekonomi/kuresel-piyasalar-merkez-bankalarinin-faiz-kararlarina-odaklandi/4099260",
+      "publishedAt": "2026-10-24T08:05:23.000Z",
+      "titleOriginal": "Küresel piyasalar, merkez bankalarının faiz kararlarına odaklandı",
+      "titleTr": "Küresel piyasalar merkez bankalarının faiz kararlarına odaklandı",
+      "summaryTr": "Küresel pay piyasaları, Orta Doğu'daki artan jeopolitik riskler ve yapay zeka yatırımlarının finansmanına ilişkin soru işaretleriyle negatif seyretti. Gözler ABD, Avrupa ve Japonya merkez bankalarının para politikası kararlarında.",
+      "titleEn": "Global markets focus on central bank rate decisions",
+      "summaryEn": "Global equity markets traded lower amid rising geopolitical risks in the Middle East and questions over how AI investments are financed. Attention has turned to the monetary policy decisions of the US, European and Japanese central banks.",
+      "important": false,
+      "processedAt": "2026-10-24T08:31:28.366Z"
+    },
     {
       "id": "146c0ca65410",
       "sourceKey": "aa-ekonomi",
