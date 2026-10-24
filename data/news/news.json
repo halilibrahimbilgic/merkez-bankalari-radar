@@ -1,6 +1,21 @@
 {
-  "fetchedAt": "2026-10-24T08:31:28.366Z",
+  "fetchedAt": "2026-10-24T12:01:36.511Z",
   "items": [
+    {
+      "id": "0d928ab699f7",
+      "sourceKey": "marketwatch",
+      "sourceName": "MarketWatch",
+      "kind": "media",
+      "url": "https://www.marketwatch.com/story/non-answers-arent-working-this-is-what-investors-really-need-from-the-fed-673a9dce?mod=mw_rss_topstories",
+      "publishedAt": "2026-10-24T11:30:00.000Z",
+      "titleOriginal": "‘Non-answers’ aren’t working. This is what investors really need from the Fed.",
+      "titleTr": "Yatırımcılar Fed'den \"cevapsız\" yanıtlar değil net iletişim bekliyor",
+      "summaryTr": "MarketWatch'a göre ekonomistler, yatırımcılar için asıl önemli olanın Fed Başkanı Kevin Warsh'ın merkez bankasının stratejisini başarıyla iletebildiğini göstermesi olduğunu söylüyor.",
+      "titleEn": "Investors want clear Fed communication, not \"non-answers\"",
+      "summaryEn": "MarketWatch reports that economists say what matters most to investors is for Fed Chairman Kevin Warsh to prove he can successfully communicate the central bank's strategy.",
+      "important": false,
+      "processedAt": "2026-10-24T12:01:36.511Z"
+    },
     {
       "id": "dd473d4f6478",
       "sourceKey": "aa-ekonomi",
