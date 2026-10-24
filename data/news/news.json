@@ -1,6 +1,22 @@
 {
-  "fetchedAt": "2026-10-23T23:31:25.872Z",
+  "fetchedAt": "2026-10-24T06:01:41.642Z",
   "items": [
+    {
+      "id": "791082887cb1",
+      "sourceKey": "ecb",
+      "sourceName": "ECB",
+      "kind": "official",
+      "bankCode": "ecb",
+      "url": "https://www.ecb.europa.eu//press/inter/date/2026/html/ecb.in261024~ee2ba73cf3.en.html",
+      "publishedAt": "2026-10-24T06:00:00.000Z",
+      "titleOriginal": "Piero Cipollone: Interview with Milano Finanza",
+      "titleTr": "ECB'den Cipollone, Milano Finanza'ya röportaj verdi",
+      "summaryTr": "ECB, Yönetim Kurulu üyesi Piero Cipollone'nin Milano Finanza'ya verdiği röportajı yayımladı. Kaynakta röportajın içeriğine dair ayrıntı verilmiyor.",
+      "titleEn": "ECB's Cipollone gives interview to Milano Finanza",
+      "summaryEn": "The ECB published an interview given by Executive Board member Piero Cipollone to Milano Finanza. The source gives no details of its content.",
+      "important": false,
+      "processedAt": "2026-10-24T06:01:41.642Z"
+    },
     {
       "id": "8505ba174ae1",
       "sourceKey": "aa-ekonomi",
@@ -2117,19 +2133,6 @@
     }
   ],
   "rejected": {
-    "ed8862b889fa": "2026-10-16",
-    "d35ec191d474": "2026-10-16",
-    "2d2cb100b527": "2026-10-16",
-    "e62ca9d4516f": "2026-10-16",
-    "3df97b179392": "2026-10-16",
-    "46125ac7aadd": "2026-10-16",
-    "037efef7899b": "2026-10-16",
-    "9499a2a213fd": "2026-10-16",
-    "33f93c821603": "2026-10-16",
-    "dcb18a3f0d5a": "2026-10-16",
-    "6d57153def88": "2026-10-16",
-    "4a4e5ea598b4": "2026-10-16",
-    "712252b29b72": "2026-10-16",
     "e8205c143bcd": "2026-10-17",
     "c7b16e39e814": "2026-10-21",
     "c9a0cd7c632e": "2026-10-21",
