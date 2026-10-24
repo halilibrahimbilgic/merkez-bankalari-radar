@@ -1,6 +1,21 @@
 {
-  "fetchedAt": "2026-10-24T06:01:41.642Z",
+  "fetchedAt": "2026-10-24T08:01:41.601Z",
   "items": [
+    {
+      "id": "146c0ca65410",
+      "sourceKey": "aa-ekonomi",
+      "sourceName": "Anadolu Ajansı",
+      "kind": "media",
+      "url": "https://www.aa.com.tr/tr/ekonomi/bakan-simsekten-imfnin-mali-seffaflik-degerlendirmesine-iliskin-aciklama/4099240",
+      "publishedAt": "2026-10-24T07:57:44.000Z",
+      "titleOriginal": "Bakan Şimşek'ten IMF'nin Mali Şeffaflık Değerlendirmesi'ne ilişkin açıklama",
+      "titleTr": "Şimşek'ten IMF Mali Şeffaflık Değerlendirmesi'ne ilişkin açıklama",
+      "summaryTr": "Hazine ve Maliye Bakanı Şimşek, Türkiye'nin mali şeffaflıkta Birleşik Krallık, Finlandiya, İrlanda, Avusturya ve Portekiz'in de bulunduğu yaklaşık 40 ülke arasında en üst sıralarda yer aldığını söyledi.",
+      "titleEn": "Şimşek comments on IMF Fiscal Transparency Evaluation",
+      "summaryEn": "Treasury and Finance Minister Şimşek said Türkiye ranked among the top of about 40 countries in fiscal transparency, a group that includes the UK, Finland, Ireland, Austria and Portugal.",
+      "important": false,
+      "processedAt": "2026-10-24T08:01:41.601Z"
+    },
     {
       "id": "791082887cb1",
       "sourceKey": "ecb",
