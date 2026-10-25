@@ -1,6 +1,21 @@
 {
-  "fetchedAt": "2026-10-25T08:31:29.371Z",
+  "fetchedAt": "2026-10-25T12:01:41.546Z",
   "items": [
+    {
+      "id": "f5e9b558fd82",
+      "sourceKey": "marketwatch",
+      "sourceName": "MarketWatch",
+      "kind": "media",
+      "url": "https://www.marketwatch.com/story/heres-the-real-signal-to-watch-for-the-feds-next-move-9189cb51?mod=mw_rss_topstories",
+      "publishedAt": "2026-10-25T11:30:00.000Z",
+      "titleOriginal": "Here’s the real signal to watch for the Fed’s next move",
+      "titleTr": "Fed'in bir sonraki adımında izlenecek asıl sinyal",
+      "summaryTr": "MarketWatch'taki yazı, yatırımcıların faizin kendisinden çok finansal koşulların nerede olduğuna odaklanması gerektiğini savunuyor.",
+      "titleEn": "The real signal to watch for the Fed's next move",
+      "summaryEn": "A MarketWatch piece argues investors should focus less on the rate itself and more on where financial conditions stand.",
+      "important": false,
+      "processedAt": "2026-10-25T12:01:41.546Z"
+    },
     {
       "id": "0d928ab699f7",
       "sourceKey": "marketwatch",
