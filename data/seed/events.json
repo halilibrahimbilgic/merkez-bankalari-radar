@@ -1,26 +1,6 @@
 {
-  "fetchedAt": "2026-10-24T09:15:10.556Z",
+  "fetchedAt": "2026-10-25T09:32:18.628Z",
   "events": [
-    {
-      "id": "ecb-2026-10-23-hxcke1",
-      "bankCode": "ecb",
-      "at": "2026-10-23T08:00:00.000Z",
-      "timeTbd": false,
-      "kind": "speech",
-      "speaker": "Patrick Montagner",
-      "title": "Keynote speech by Mr Montagner at ESRB Standing Task Force on Scenario Design and Development (STF-SDaD) annual stress test workshop in Kraków, Poland",
-      "url": "https://www.ecb.europa.eu/press/calendars/weekly/html/index.en.html"
-    },
-    {
-      "id": "ecb-2026-10-23-1ha0qhe",
-      "bankCode": "ecb",
-      "at": "2026-10-23T14:00:00.000Z",
-      "timeTbd": false,
-      "kind": "testimony",
-      "speaker": "Piero Cipollone",
-      "title": "Participation by Mr Cipollone in fireside chat at International Festival of Economics in Turin, Italy",
-      "url": "https://www.festivalinternazionaledelleconomia.com/en/event/1486/"
-    },
     {
       "id": "ecb-2026-10-26-pa8j0",
       "bankCode": "ecb",
