@@ -1,6 +1,21 @@
 {
-  "fetchedAt": "2026-10-26T12:36:08.473Z",
+  "fetchedAt": "2026-10-26T14:31:41.153Z",
   "items": [
+    {
+      "id": "36ca81b5a81d",
+      "sourceKey": "aa-economy",
+      "sourceName": "Anadolu Agency",
+      "kind": "media",
+      "url": "https://www.aa.com.tr/en/economy/fed-expected-to-hold-rates-amid-accelerating-inflation-ahead-of-november-us-midterms/4101389",
+      "publishedAt": "2026-10-26T14:08:44.000Z",
+      "titleOriginal": "Fed expected to hold rates amid accelerating inflation ahead of November US midterms",
+      "titleTr": "Fed'in hızlanan enflasyona rağmen faizi sabit tutması bekleniyor",
+      "summaryTr": "Anadolu Ajansı'na göre yükselen enerji fiyatları enflasyonu besliyor ve Fed'in bir sonraki adımını zorlaştırıyor. Başkan Kevin Warsh'ın temkinli açıklamaları bu hafta faiz değişikliği olmayacağı beklentisini güçlendirirken uzmanlar konuda ikiye bölünmüş durumda.",
+      "titleEn": "Fed expected to hold rates despite accelerating inflation",
+      "summaryEn": "Anadolu Agency reports that rising energy prices are fueling inflation and complicating the Fed's next move. Chair Kevin Warsh's cautious remarks reinforce expectations of no rate change this week, though experts remain divided.",
+      "important": true,
+      "processedAt": "2026-10-26T14:31:41.153Z"
+    },
     {
       "id": "2c94028495b8",
       "sourceKey": "guardian-business",
