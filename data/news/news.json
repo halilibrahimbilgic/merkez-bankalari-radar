@@ -1,6 +1,36 @@
 {
-  "fetchedAt": "2026-10-26T08:01:59.805Z",
+  "fetchedAt": "2026-10-26T08:31:41.231Z",
   "items": [
+    {
+      "id": "63f6887c7d7d",
+      "sourceKey": "aa-ekonomi",
+      "sourceName": "Anadolu Ajansı",
+      "kind": "media",
+      "url": "https://www.aa.com.tr/tr/ekonomi/uc-buyuk-merkez-bankasi-enflasyon-riskleri-altinda-faiz-karari-alacak/4100815",
+      "publishedAt": "2026-10-26T08:08:12.000Z",
+      "titleOriginal": "Üç büyük merkez bankası enflasyon riskleri altında faiz kararı alacak",
+      "titleTr": "Fed, ECB ve BoJ bu hafta enflasyon riskleri altında faiz kararı alacak",
+      "summaryTr": "Anadolu Ajansına göre Fed, ECB ve BoJ bu hafta enflasyon risklerinin gölgesinde para politikası kararlarını açıklayacak.",
+      "titleEn": "Fed, ECB and BoJ to make rate decisions this week amid inflation risks",
+      "summaryEn": "Anadolu Agency reports that the Fed, ECB and BoJ will announce monetary policy decisions this week under the shadow of inflation risks.",
+      "important": true,
+      "processedAt": "2026-10-26T08:31:41.231Z"
+    },
+    {
+      "id": "4988f86dd7b5",
+      "sourceKey": "aa-ekonomi",
+      "sourceName": "Anadolu Ajansı",
+      "kind": "media",
+      "url": "https://www.aa.com.tr/tr/ekonomi/abdde-enflasyon-endiseleri-artarken-dikkatler-fedin-bu-haftaki-faiz-kararina-cevrildi/4100814",
+      "publishedAt": "2026-10-26T08:07:47.000Z",
+      "titleOriginal": "ABD'de enflasyon endişeleri artarken dikkatler Fed'in bu haftaki faiz kararına çevrildi",
+      "titleTr": "Fed'in 27-28 Ekim toplantısında faizi sabit bırakması bekleniyor",
+      "summaryTr": "Fed'in toplantısında faizi sabit bırakacağı beklentisi ağırlık kazanıyor. Eylülde hızlanan enflasyon ise faiz artırımı ihtimalini masada tutuyor.",
+      "titleEn": "Fed expected to hold rates at its Oct 27-28 meeting",
+      "summaryEn": "Expectations are growing that the Fed will leave rates unchanged at its meeting. Inflation that picked up in September keeps the possibility of a rate hike on the table.",
+      "important": true,
+      "processedAt": "2026-10-26T08:31:41.231Z"
+    },
     {
       "id": "3e30a10e47c4",
       "sourceKey": "aa-economy",
