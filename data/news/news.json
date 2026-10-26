@@ -1,6 +1,21 @@
 {
-  "fetchedAt": "2026-10-26T11:01:49.105Z",
+  "fetchedAt": "2026-10-26T12:36:08.473Z",
   "items": [
+    {
+      "id": "2c94028495b8",
+      "sourceKey": "guardian-business",
+      "sourceName": "The Guardian",
+      "kind": "media",
+      "url": "https://www.theguardian.com/us-news/2026/oct/26/trump-second-term-economy-charts",
+      "publishedAt": "2026-10-26T11:00:42.000Z",
+      "titleOriginal": "‘We don’t have inflation’? Five charts show the US economic reality of Trump’s second term so far",
+      "titleTr": "Trump'ın ikinci döneminde ABD ekonomisi: enflasyon verileri beş grafikte",
+      "summaryTr": "Guardian, ara seçimler yaklaşırken ABD'de fiyatlar ve enflasyonun gerçek durumunu beş grafikle inceliyor. Yazı, Trump'ın enflasyonu düşürme vaadini verilerle karşılaştırıyor.",
+      "titleEn": "US economy in Trump's second term: inflation data in five charts",
+      "summaryEn": "As the midterm elections approach, the Guardian uses five charts to examine the state of US prices and inflation. The piece sets Trump's pledge to lower inflation against the data.",
+      "important": false,
+      "processedAt": "2026-10-26T12:36:08.473Z"
+    },
     {
       "id": "21492ed69dc5",
       "sourceKey": "aa-economy",
@@ -2327,6 +2342,7 @@
     "697fd42f1dc6": "2026-10-26",
     "7a56222dac4d": "2026-10-26",
     "cf8b42396714": "2026-10-26",
-    "1aa98cb75551": "2026-10-26"
+    "1aa98cb75551": "2026-10-26",
+    "653082310d0e": "2026-10-26"
   }
 }
