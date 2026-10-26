@@ -1,10 +1,10 @@
 {
-  "fetchedAt": "2026-10-25T09:32:18.628Z",
+  "fetchedAt": "2026-10-26T10:42:32.724Z",
   "events": [
     {
       "id": "ecb-2026-10-26-pa8j0",
       "bankCode": "ecb",
-      "at": "2026-10-26T06:00:00.000Z",
+      "at": "2026-10-26T05:00:00.000Z",
       "timeTbd": false,
       "kind": "speech",
       "speaker": "Frank Elderson",
