@@ -1,6 +1,21 @@
 {
-  "fetchedAt": "2026-10-26T07:31:37.071Z",
+  "fetchedAt": "2026-10-26T08:01:59.805Z",
   "items": [
+    {
+      "id": "3e30a10e47c4",
+      "sourceKey": "aa-economy",
+      "sourceName": "Anadolu Agency",
+      "kind": "media",
+      "url": "https://www.aa.com.tr/en/economy/global-markets-open-mixed-amid-ongoing-tech-selloff-middle-east-risks/4100761",
+      "publishedAt": "2026-10-26T07:43:18.000Z",
+      "titleOriginal": "Global markets open mixed amid ongoing tech selloff, Middle East risks",
+      "titleTr": "Küresel piyasalar teknoloji satışı ve Orta Doğu riskleriyle karışık açıldı",
+      "summaryTr": "Yapay zekâ kârlılığına dair endişeler ve ABD-İran gerilimi yatırımcıları baskılıyor. Piyasalar Fed, ECB ve BoJ'un yaklaşan faiz kararlarına odaklandı.",
+      "titleEn": "Global markets open mixed amid tech selloff and Middle East risks",
+      "summaryEn": "AI profitability fears and US-Iran tensions are weighing on investors. Markets are looking ahead to upcoming rate decisions by the Fed, ECB and BoJ.",
+      "important": false,
+      "processedAt": "2026-10-26T08:01:59.805Z"
+    },
     {
       "id": "bf6dc3594c53",
       "sourceKey": "aa-ekonomi",
