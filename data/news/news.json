@@ -1,6 +1,21 @@
 {
-  "fetchedAt": "2026-10-26T09:01:55.047Z",
+  "fetchedAt": "2026-10-26T10:31:52.326Z",
   "items": [
+    {
+      "id": "21492ed69dc5",
+      "sourceKey": "aa-economy",
+      "sourceName": "Anadolu Agency",
+      "kind": "media",
+      "url": "https://www.aa.com.tr/en/economy/fed-ecb-and-boj-to-make-rate-decisions-amid-inflation-risks/4101047",
+      "publishedAt": "2026-10-26T10:04:54.000Z",
+      "titleOriginal": "Fed, ECB and BoJ to make rate decisions amid inflation risks",
+      "titleTr": "Fed, ECB ve BoJ bu hafta enflasyon riskleri altında faiz kararı açıklayacak",
+      "summaryTr": "Anadolu Ajansı'na göre Fed, ECB ve BoJ'un kritik para politikası kararları bu hafta açıklanacak. Kararlar Orta Doğu'daki gerilim ve yükselen enerji maliyetleri gölgesinde geliyor.",
+      "titleEn": "Fed, ECB and BoJ to announce rate decisions this week amid inflation risks",
+      "summaryEn": "Anadolu Agency reports that the Fed, ECB and BoJ will announce critical monetary policy decisions this week. The decisions come amid Middle East tensions and rising energy costs.",
+      "important": true,
+      "processedAt": "2026-10-26T10:31:52.326Z"
+    },
     {
       "id": "63f6887c7d7d",
       "sourceKey": "aa-ekonomi",
