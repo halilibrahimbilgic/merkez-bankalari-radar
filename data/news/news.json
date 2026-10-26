@@ -1,6 +1,36 @@
 {
-  "fetchedAt": "2026-10-26T05:01:39.016Z",
+  "fetchedAt": "2026-10-26T06:31:32.274Z",
   "items": [
+    {
+      "id": "bf6dc3594c53",
+      "sourceKey": "aa-ekonomi",
+      "sourceName": "Anadolu Ajansı",
+      "kind": "media",
+      "url": "https://www.aa.com.tr/tr/ekonomi/tcmbden-ozel-sektor-tahvil-piyasasinda-likiditeyi-destekleyici-adim/4100614",
+      "publishedAt": "2026-10-26T06:06:24.000Z",
+      "titleOriginal": "TCMB'den özel sektör tahvil piyasasında likiditeyi destekleyici adım",
+      "titleTr": "TCMB, özel sektör tahvil piyasasında likiditeyi destekleyen adım attı",
+      "summaryTr": "TCMB, Türk lirası ticari kredi büyüme sınırından istisna tutulan kredilere yönelik bir değişiklik yaptı. Adım, özel sektör tahvil piyasasında likiditeyi destekleme amacıyla duyuruldu.",
+      "titleEn": "Turkish central bank takes step to support liquidity in corporate bond market",
+      "summaryEn": "The Central Bank of Turkey (TCMB) changed the rules on loans exempt from the Turkish lira commercial loan growth cap. The move is described as supporting liquidity in the private sector bond market.",
+      "important": true,
+      "processedAt": "2026-10-26T06:31:32.274Z"
+    },
+    {
+      "id": "8b505638dd29",
+      "sourceKey": "aa-ekonomi",
+      "sourceName": "Anadolu Ajansı",
+      "kind": "media",
+      "url": "https://www.aa.com.tr/tr/ekonomi/kuresel-piyasalar-fed-haftasina-karisik-seyirle-basladi/4100611",
+      "publishedAt": "2026-10-26T06:05:25.000Z",
+      "titleOriginal": "Küresel piyasalar Fed haftasına karışık seyirle başladı",
+      "titleTr": "Küresel piyasalar Fed haftasına karışık seyirle başladı",
+      "summaryTr": "Küresel piyasalar, jeopolitik riskler ve teknoloji hisselerindeki satış baskısıyla haftaya karışık başladı. Gözler bu hafta Fed'in faiz kararına çevrildi.",
+      "titleEn": "Global markets start Fed week on a mixed note",
+      "summaryEn": "Global markets opened the week mixed amid geopolitical risks and continued selling pressure in tech stocks. Attention turns to the Fed's interest rate decision this week.",
+      "important": false,
+      "processedAt": "2026-10-26T06:31:32.274Z"
+    },
     {
       "id": "f5e9b558fd82",
       "sourceKey": "marketwatch",
