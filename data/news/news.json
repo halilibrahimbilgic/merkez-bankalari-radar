@@ -1,6 +1,21 @@
 {
-  "fetchedAt": "2026-10-27T09:01:42.767Z",
+  "fetchedAt": "2026-10-27T09:31:58.057Z",
   "items": [
+    {
+      "id": "3ab4cef49aff",
+      "sourceKey": "aa-ekonomi",
+      "sourceName": "Anadolu Ajansı",
+      "kind": "media",
+      "url": "https://www.aa.com.tr/tr/ekonomi/odeme-guvenligi-icin-siber-guvenlik-tedbiri-alinacak/4102160",
+      "publishedAt": "2026-10-27T08:59:31.000Z",
+      "titleOriginal": "Ödeme güvenliği için siber güvenlik tedbiri alınacak",
+      "titleTr": "Politika faizi adımları dezenflasyon sıkılığına göre belirlenecek",
+      "summaryTr": "Haberde, politika faizine ilişkin adımların enflasyon gerçekleşmeleri, ana eğilim ve beklentiler dikkate alınarak, ara hedeflerle uyumlu biçimde dezenflasyonun gerektirdiği sıkılığı sağlayacak şekilde belirleneceği aktarıldı. Haber başlığı ayrıca ödeme güvenliği için siber güvenlik tedbiri alınacağını belirtiyor.",
+      "titleEn": "Policy rate steps to be set to deliver tightness needed for disinflation",
+      "summaryEn": "The report says policy rate steps will be set based on inflation outcomes, the underlying trend and expectations, in line with interim targets, to provide the tightness disinflation requires. The headline also says a cybersecurity measure will be taken for payment security.",
+      "important": false,
+      "processedAt": "2026-10-27T09:31:58.057Z"
+    },
     {
       "id": "609d3310cbfd",
       "sourceKey": "aa-ekonomi",
