@@ -1,6 +1,21 @@
 {
-  "fetchedAt": "2026-10-27T11:01:43.939Z",
+  "fetchedAt": "2026-10-27T11:31:36.142Z",
   "items": [
+    {
+      "id": "2c4de89bee19",
+      "sourceKey": "cnbc-economy",
+      "sourceName": "CNBC",
+      "kind": "media",
+      "url": "https://www.cnbc.com/2026/10/27/federal-reserve-rate-hike-timing-expectations.html",
+      "publishedAt": "2026-10-27T11:10:01.000Z",
+      "titleOriginal": "Fed rate hikes are coming, but not this week: CNBC survey",
+      "titleTr": "CNBC anketi: Fed artırımı bu hafta değil, ama geliyor",
+      "summaryTr": "CNBC Fed Anketi'ne göre katılımcıların %93'ü Fed'in bu hafta yapılacak toplantısında faizi sabit tutmasını bekliyor. Başlık, faiz artırımlarının ilerleyen dönemde geleceğine işaret ediyor.",
+      "titleEn": "CNBC survey: Fed rate hikes are coming, but not this week",
+      "summaryEn": "The CNBC Fed Survey shows 93% of respondents expect the Fed to hold rates at its meeting this week. The headline points to rate hikes coming later.",
+      "important": true,
+      "processedAt": "2026-10-27T11:31:36.142Z"
+    },
     {
       "id": "4ccfca57ef13",
       "sourceKey": "marketwatch",
