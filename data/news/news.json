@@ -1,6 +1,36 @@
 {
-  "fetchedAt": "2026-10-27T05:31:26.207Z",
+  "fetchedAt": "2026-10-27T08:31:46.264Z",
   "items": [
+    {
+      "id": "609d3310cbfd",
+      "sourceKey": "aa-ekonomi",
+      "sourceName": "Anadolu Ajansı",
+      "kind": "media",
+      "url": "https://www.aa.com.tr/tr/ekonomi/petrol-ve-gida-fiyatlarinda-kuresel-arz-soklari-enflasyonu-yukari-yonlu-baskiliyor/4102091",
+      "publishedAt": "2026-10-27T08:19:48.000Z",
+      "titleOriginal": "Petrol ve gıda fiyatlarında küresel arz şokları enflasyonu yukarı yönlü baskılıyor",
+      "titleTr": "Küresel petrol ve gıda arz şokları enflasyonu yüksek tutuyor",
+      "summaryTr": "Anadolu Ajansı'na göre jeopolitik çatışmalar, lojistik krizler, Orta Doğu'daki savaş ve El Nino kaynaklı kuraklık petrol ve gıda arzında çoklu bir şoka yol açıyor. Bu durum enflasyonu kalıcı biçimde yüksek tutuyor.",
+      "titleEn": "Global oil and food supply shocks keep inflation elevated",
+      "summaryEn": "Anadolu Agency reports that geopolitical conflicts, logistics crises, the war in the Middle East and El Nino-driven drought are combining into a multiple shock to oil and food supply. This is keeping inflation persistently high.",
+      "important": false,
+      "processedAt": "2026-10-27T08:31:46.264Z"
+    },
+    {
+      "id": "f7b35e5f0b17",
+      "sourceKey": "aa-ekonomi",
+      "sourceName": "Anadolu Ajansı",
+      "kind": "media",
+      "url": "https://www.aa.com.tr/tr/ekonomi/ecb-enflasyon-ve-zayif-buyume-ikilemiyle-faiz-kararini-verecek/4102087",
+      "publishedAt": "2026-10-27T08:16:31.000Z",
+      "titleOriginal": "ECB, enflasyon ve zayıf büyüme ikilemiyle faiz kararını verecek",
+      "titleTr": "ECB, enflasyon ve zayıf büyüme ikilemi içinde faiz kararına hazırlanıyor",
+      "summaryTr": "ECB, Orta Doğu'daki gelişmelerin enerji fiyatları ve enflasyona etkisi ile bölge tahvil faizlerindeki yükselişin büyümeye yönelik risklerinin gölgesinde para politikası kararı verecek.",
+      "titleEn": "ECB set to decide on rates amid inflation and weak growth dilemma",
+      "summaryEn": "The ECB is preparing its monetary policy decision as Middle East developments weigh on energy prices and inflation, and rising regional bond yields add risks to economic growth.",
+      "important": true,
+      "processedAt": "2026-10-27T08:31:46.264Z"
+    },
     {
       "id": "36ca81b5a81d",
       "sourceKey": "aa-economy",
