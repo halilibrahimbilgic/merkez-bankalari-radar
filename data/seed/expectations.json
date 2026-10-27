@@ -1,5 +1,5 @@
 {
-  "fetchedAt": "2026-10-26T10:42:15.309Z",
+  "fetchedAt": "2026-10-27T10:09:48.669Z",
   "tcmb": {
     "kind": "survey",
     "period": "2026-10",
@@ -28,7 +28,7 @@
   },
   "boe": {
     "kind": "market",
-    "asOf": "2026-10-22",
+    "asOf": "2026-10-23",
     "sourceUrl": "https://www.bankofengland.co.uk/statistics/yield-curves",
     "currentRate": 3.75,
     "meetings": [
@@ -41,31 +41,31 @@
       {
         "meetingId": "boe-2026-12-17",
         "meetingAt": "2026-12-17T12:00:00.000Z",
-        "impliedRate": 4.11,
-        "changeBp": 14
+        "impliedRate": 4.13,
+        "changeBp": 15
       },
       {
         "meetingId": "boe-2027-02-04",
         "meetingAt": "2027-02-04T12:00:00.000Z",
-        "impliedRate": 4.28,
-        "changeBp": 16
+        "impliedRate": 4.3,
+        "changeBp": 17
       },
       {
         "meetingId": "boe-2027-03-18",
         "meetingAt": "2027-03-18T12:00:00.000Z",
-        "impliedRate": 4.43,
-        "changeBp": 15
+        "impliedRate": 4.46,
+        "changeBp": 16
       },
       {
         "meetingId": "boe-2027-04-29",
         "meetingAt": "2027-04-29T11:00:00.000Z",
-        "impliedRate": 4.57,
-        "changeBp": 14
+        "impliedRate": 4.6,
+        "changeBp": 15
       },
       {
         "meetingId": "boe-2027-06-17",
         "meetingAt": "2027-06-17T11:00:00.000Z",
-        "impliedRate": 4.69,
+        "impliedRate": 4.73,
         "changeBp": 12
       }
     ]
