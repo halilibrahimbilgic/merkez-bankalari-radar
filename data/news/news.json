@@ -1,5 +1,5 @@
 {
-  "fetchedAt": "2026-10-27T09:31:58.057Z",
+  "fetchedAt": "2026-10-27T10:31:46.281Z",
   "items": [
     {
       "id": "3ab4cef49aff",
@@ -45,6 +45,21 @@
       "summaryEn": "The ECB is preparing its monetary policy decision as Middle East developments weigh on energy prices and inflation, and rising regional bond yields add risks to economic growth.",
       "important": true,
       "processedAt": "2026-10-27T08:31:46.264Z"
+    },
+    {
+      "id": "43d97c29df06",
+      "sourceKey": "guardian-business",
+      "sourceName": "The Guardian",
+      "kind": "media",
+      "url": "https://www.theguardian.com/business/2026/oct/27/uk-shop-price-inflation-highest-since-2024-as-retailers-struggle-to-limit-price-rises",
+      "publishedAt": "2026-10-27T00:01:02.000Z",
+      "titleOriginal": "UK shop price inflation ‘highest since 2024’ as retailers struggle to limit price rises",
+      "titleTr": "Birleşik Krallık'ta mağaza fiyat enflasyonu 2024'ten bu yana en yüksek seviyede",
+      "summaryTr": "İngiliz Perakendeciler Birliği'ne (BRC) göre mağaza fiyat enflasyonu Ekim'de yıllık %2,1'e çıktı; Eylül'de %1,4'tü. BRC, perakendecilerin Orta Doğu çatışmasından bu yana artan enerji ve gıda girdi maliyetlerini müşterilere yansıtmaya başladığını söyledi.",
+      "titleEn": "UK shop price inflation highest since 2024",
+      "summaryEn": "The British Retail Consortium says shop price inflation rose to 2.1% year on year in October, from 1.4% in September. It said retailers are starting to pass on higher energy and food ingredient costs seen since the Middle East conflict began.",
+      "important": true,
+      "processedAt": "2026-10-27T10:31:46.281Z"
     },
     {
       "id": "d0c62d843a31",
@@ -2425,6 +2440,9 @@
     "d837a98ac283": "2026-10-26",
     "d713bd4f044a": "2026-10-27",
     "3639974e3e8f": "2026-10-27",
-    "43f52222a56f": "2026-10-27"
+    "43f52222a56f": "2026-10-27",
+    "a54ad15a3a8c": "2026-10-27",
+    "f96908eaf7c9": "2026-10-27",
+    "003ccfc2fe59": "2026-10-27"
   }
 }
