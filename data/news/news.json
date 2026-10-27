@@ -1,6 +1,21 @@
 {
-  "fetchedAt": "2026-10-27T10:31:46.281Z",
+  "fetchedAt": "2026-10-27T11:01:43.939Z",
   "items": [
+    {
+      "id": "4ccfca57ef13",
+      "sourceKey": "marketwatch",
+      "sourceName": "MarketWatch",
+      "kind": "media",
+      "url": "https://www.marketwatch.com/story/ai-debt-trouble-could-help-feds-warsh-get-his-way-with-fewer-rate-hikes-b3dc4525?mod=mw_rss_topstories",
+      "publishedAt": "2026-10-27T11:00:00.000Z",
+      "titleOriginal": "AI debt trouble could help Fed’s Warsh get his way with fewer rate hikes",
+      "titleTr": "Yapay zekâ borçlanma sıkıntısı Warsh'ın faiz artırımlarını azaltabilir",
+      "summaryTr": "MarketWatch'a göre sermaye harcaması patlaması daha sıkı incelenirken yapay zekâ finansmanına ulaşmak zorlaşıyor ve pahalılaşıyor. Haber, bunun Fed'in Warsh'ının daha az faiz artırımıyla hedefine ulaşmasına yardımcı olabileceğini öne sürüyor.",
+      "titleEn": "AI debt trouble could help Fed's Warsh get his way with fewer rate hikes",
+      "summaryEn": "MarketWatch reports that AI financing is getting harder and costlier to obtain as the capital-spending boom faces more scrutiny. The piece suggests this could help the Fed's Warsh reach his goals with fewer rate hikes.",
+      "important": false,
+      "processedAt": "2026-10-27T11:01:43.939Z"
+    },
     {
       "id": "3ab4cef49aff",
       "sourceKey": "aa-ekonomi",
