@@ -1,6 +1,21 @@
 {
-  "fetchedAt": "2026-10-28T18:01:45.119Z",
+  "fetchedAt": "2026-10-28T18:31:34.282Z",
   "items": [
+    {
+      "id": "b2e523dd4611",
+      "sourceKey": "aa-economy",
+      "sourceName": "Anadolu Agency",
+      "kind": "media",
+      "url": "https://www.aa.com.tr/en/americas/fed-holds-benchmark-interest-rate-steady-at-375-4-/4104241",
+      "publishedAt": "2026-10-28T18:06:52.000Z",
+      "titleOriginal": "Fed holds benchmark interest rate steady at 3.75%-4%",
+      "titleTr": "Fed faizi yüzde 3,75-4'te sabit tuttu; iki üye artırım istedi",
+      "summaryTr": "Fed, politika faiz aralığını 10-2 oy çoğunluğuyla korudu. Lisa Cook ve Beth Hammack, 25 baz puanlık artırımdan yana oy kullandı.",
+      "titleEn": "Fed holds rate at 3.75%-4%; two members dissent for a hike",
+      "summaryEn": "The Fed kept its policy rate range unchanged in a 10-2 vote. Lisa Cook and Beth Hammack dissented in favor of a 25-basis-point hike.",
+      "important": true,
+      "processedAt": "2026-10-28T18:31:34.282Z"
+    },
     {
       "id": "fe059a020cd5",
       "sourceKey": "fed-press",
@@ -2695,6 +2710,7 @@
     "1034d804f1bc": "2026-10-28",
     "ab3c0f9f621f": "2026-10-28",
     "68ad9b5e8598": "2026-10-28",
-    "f3a601278980": "2026-10-28"
+    "f3a601278980": "2026-10-28",
+    "316ce5aa3fcb": "2026-10-28"
   }
 }
