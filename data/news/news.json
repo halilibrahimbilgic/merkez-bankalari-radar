@@ -1,6 +1,22 @@
 {
-  "fetchedAt": "2026-10-27T23:31:39.251Z",
+  "fetchedAt": "2026-10-28T00:31:49.261Z",
   "items": [
+    {
+      "id": "c67686920c2d",
+      "sourceKey": "rba-speeches",
+      "sourceName": "Reserve Bank of Australia",
+      "kind": "official",
+      "bankCode": "rba",
+      "url": "https://www.rba.gov.au/speeches/2026/sp-gov-2026-10-28.html",
+      "publishedAt": "2026-10-28T00:15:00.000Z",
+      "titleOriginal": "Opening Statement to the Senate Economics Legislation Committee (Supplementary Budget Estimates)",
+      "titleTr": "RBA Başkanı Bullock Senato komitesinde açılış konuşması yaptı",
+      "summaryTr": "Avustralya Merkez Bankası (RBA) Başkanı Michele Bullock, Senato Ekonomi Mevzuat Komitesi'nin ek bütçe tahminleri oturumunda açılış konuşmasını yaptı.",
+      "titleEn": "RBA Governor Bullock gives opening statement to Senate committee",
+      "summaryEn": "Reserve Bank of Australia Governor Michele Bullock delivered an opening statement to the Senate Economics Legislation Committee at its supplementary budget estimates hearing.",
+      "important": true,
+      "processedAt": "2026-10-28T00:31:49.261Z"
+    },
     {
       "id": "2c4de89bee19",
       "sourceKey": "cnbc-economy",
