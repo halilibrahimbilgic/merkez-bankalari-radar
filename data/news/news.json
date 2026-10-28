@@ -1,6 +1,21 @@
 {
-  "fetchedAt": "2026-10-28T11:32:02.229Z",
+  "fetchedAt": "2026-10-28T13:02:11.963Z",
   "items": [
+    {
+      "id": "1fa9caeae66c",
+      "sourceKey": "aa-ekonomi",
+      "sourceName": "Anadolu Ajansı",
+      "kind": "media",
+      "url": "https://www.aa.com.tr/tr/ekonomi/aa-finansin-ekim-ayi-enflasyon-beklenti-anketi-sonuclandi/4103802",
+      "publishedAt": "2026-10-28T12:30:32.000Z",
+      "titleOriginal": "AA Finans'ın ekim ayı Enflasyon Beklenti Anketi sonuçlandı",
+      "titleTr": "AA Finans anketi: Ekimde TÜFE'nin yüzde 2,20 artması bekleniyor",
+      "summaryTr": "AA Finans'ın ekim ayı Enflasyon Beklenti Anketi'ne katılan ekonomistler, tüketici fiyatlarının ekimde aylık yüzde 2,20 artacağını tahmin ediyor.",
+      "titleEn": "AA Finans survey: Turkish CPI expected to rise 2.20% in October",
+      "summaryEn": "Economists in AA Finans' October Inflation Expectation Survey forecast consumer prices in Türkiye will rise 2.20% in October.",
+      "important": true,
+      "processedAt": "2026-10-28T13:02:11.963Z"
+    },
     {
       "id": "815278e669b5",
       "sourceKey": "marketwatch",
@@ -15,6 +30,21 @@
       "summaryEn": "22V Research's Dennis DeBusschere said companies that used tariff refunds to ease cost pressures will increasingly pass higher costs on to consumers.",
       "important": false,
       "processedAt": "2026-10-28T10:31:35.574Z"
+    },
+    {
+      "id": "14e1326f74b6",
+      "sourceKey": "guardian-business",
+      "sourceName": "The Guardian",
+      "kind": "media",
+      "url": "https://www.theguardian.com/business/2026/oct/28/fed-interest-rates-midterms",
+      "publishedAt": "2026-10-28T10:00:03.000Z",
+      "titleOriginal": "Fed set to hold interest rates steady in last decision before midterms",
+      "titleTr": "Fed'in ara seçimler öncesindeki son toplantıda faizi sabit tutması bekleniyor",
+      "summaryTr": "Guardian'a göre Fed çarşamba günkü toplantıda faizi değiştirmeyecek. Fed geçen ay artan enflasyonu gerekçe göstererek 2023'ten bu yana ilk kez faiz artırmıştı.",
+      "titleEn": "Fed expected to hold rates in last meeting before midterms",
+      "summaryEn": "The Guardian reports the Fed is expected to leave rates unchanged on Wednesday. Last month it raised rates for the first time since 2023, citing rising inflation.",
+      "important": true,
+      "processedAt": "2026-10-28T13:02:11.963Z"
     },
     {
       "id": "d080600e41d0",
@@ -90,6 +120,21 @@
       "summaryEn": "John Healey presents his first budget on Wednesday, with struggling households, new homebuyers and small shops expected to gain while banks and online marketplaces could face higher levies. Official and unofficial sources have already indicated much of its content.",
       "important": true,
       "processedAt": "2026-10-28T07:31:54.361Z"
+    },
+    {
+      "id": "80746868650c",
+      "sourceKey": "guardian-business",
+      "sourceName": "The Guardian",
+      "kind": "media",
+      "url": "https://www.theguardian.com/australia-news/2026/oct/28/inflation-rate-australia-2026-number-data-consumer-price-index-cpi-release",
+      "publishedAt": "2026-10-28T02:17:32.000Z",
+      "titleOriginal": "Australia’s inflation rate rises to 4.3%, fuelling fears of fifth interest rate hike this year",
+      "titleTr": "Avustralya'da enflasyon yüzde 4,3'e yükseldi, RBA'dan yeni artırım beklentisi güçlendi",
+      "summaryTr": "Avustralya'da yıllık manşet enflasyon yüzde 4,3'e çıktı; RBA'nın tercih ettiği temel enflasyon göstergesi eylülde yüzde 3,6 oldu. Veri, gelecek hafta için bir faiz artırımı beklentisini güçlendirdi.",
+      "titleEn": "Australia's inflation rises to 4.3%, raising bets on another RBA hike",
+      "summaryEn": "Australia's annual headline inflation accelerated to 4.3%, while the RBA's preferred underlying measure stood at 3.6% for September. The data sharpened expectations of another rate rise next week.",
+      "important": true,
+      "processedAt": "2026-10-28T13:02:11.963Z"
     },
     {
       "id": "c67686920c2d",
@@ -2586,6 +2631,8 @@
     "7013c3d67575": "2026-10-28",
     "b58f07545067": "2026-10-28",
     "1034d804f1bc": "2026-10-28",
-    "ab3c0f9f621f": "2026-10-28"
+    "ab3c0f9f621f": "2026-10-28",
+    "68ad9b5e8598": "2026-10-28",
+    "f3a601278980": "2026-10-28"
   }
 }
