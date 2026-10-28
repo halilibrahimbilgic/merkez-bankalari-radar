@@ -1,6 +1,21 @@
 {
-  "fetchedAt": "2026-10-28T21:01:52.276Z",
+  "fetchedAt": "2026-10-28T21:53:35.875Z",
   "items": [
+    {
+      "id": "fde4890cbe0b",
+      "sourceKey": "ft",
+      "sourceName": "Financial Times",
+      "kind": "media",
+      "url": "https://www.ft.com/content/f31fccd8-e9b6-4b01-989d-790ca6bb4d29?syn-25a6b1a6=1",
+      "publishedAt": "2026-10-28T21:32:08.000Z",
+      "titleOriginal": "Fed holds fire on interest rates despite intensifying inflation",
+      "titleTr": "Fed, artan enflasyona rağmen faizi sabit tuttu",
+      "summaryTr": "Fed politika faizini değiştirmedi. Financial Times'a göre merkez bankası, on yıllardır süregelen sekiz toplantı düzeninden vazgeçip gelecek yıl para politikası için yedi kez oy kullanacak.",
+      "titleEn": "Fed holds rates steady despite intensifying inflation",
+      "summaryEn": "The Fed left its policy rate unchanged. According to the Financial Times, the central bank will vote on monetary policy seven times next year, moving away from its decades-old schedule of eight meetings.",
+      "important": true,
+      "processedAt": "2026-10-28T21:53:35.875Z"
+    },
     {
       "id": "debccb0453a1",
       "sourceKey": "cnbc-economy",
@@ -2758,6 +2773,7 @@
     "f3a601278980": "2026-10-28",
     "316ce5aa3fcb": "2026-10-28",
     "f1cc2fabed93": "2026-10-28",
-    "5913ba972dca": "2026-10-28"
+    "5913ba972dca": "2026-10-28",
+    "67f999cd84b5": "2026-10-28"
   }
 }
