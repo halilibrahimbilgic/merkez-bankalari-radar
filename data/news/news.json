@@ -1,6 +1,21 @@
 {
-  "fetchedAt": "2026-10-28T08:31:46.563Z",
+  "fetchedAt": "2026-10-28T09:02:05.250Z",
   "items": [
+    {
+      "id": "d080600e41d0",
+      "sourceKey": "aa-ekonomi",
+      "sourceName": "Anadolu Ajansı",
+      "kind": "media",
+      "url": "https://www.aa.com.tr/tr/ekonomi/avrupa-borsalari-negatif-seyrediyor/4103473",
+      "publishedAt": "2026-10-28T08:38:14.000Z",
+      "titleOriginal": "Avrupa borsaları negatif seyrediyor",
+      "titleTr": "Avrupa borsaları ECB kararı öncesi negatif seyrediyor",
+      "summaryTr": "Avrupa borsaları, ECB'nin faiz kararı öncesinde yatırımcıların temkinli davranması ve petrol fiyatlarındaki yükselişle düşüşte.",
+      "titleEn": "European stocks trade lower ahead of ECB rate decision",
+      "summaryEn": "European stock markets are trading lower as investors turn cautious before the ECB's rate decision and oil prices rise.",
+      "important": false,
+      "processedAt": "2026-10-28T09:02:05.250Z"
+    },
     {
       "id": "be7b9729e30f",
       "sourceKey": "aa-ekonomi",
