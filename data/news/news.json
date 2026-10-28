@@ -1,6 +1,22 @@
 {
-  "fetchedAt": "2026-10-28T13:02:11.963Z",
+  "fetchedAt": "2026-10-28T15:31:45.511Z",
   "items": [
+    {
+      "id": "ff34301b16fa",
+      "sourceKey": "boe-news",
+      "sourceName": "Bank of England",
+      "kind": "official",
+      "bankCode": "boe",
+      "url": "https://www.bankofengland.co.uk/letter/2026/mpc-remit-2026",
+      "publishedAt": "2026-10-28T14:16:49.000Z",
+      "titleOriginal": "Remit for the Monetary Policy Committee - October 2026",
+      "titleTr": "Para Politikası Kurulu için Ekim 2026 görev mektubu yayımlandı",
+      "summaryTr": "Bank of England, Maliye Bakanı'nın Merkez Bankası Başkanı'na yazdığı Para Politikası Kurulu (MPC) görev mektubunu yayımladı.",
+      "titleEn": "Remit for the Monetary Policy Committee published - October 2026",
+      "summaryEn": "The Bank of England published the Chancellor's letter to the Governor setting out the remit for the Monetary Policy Committee.",
+      "important": false,
+      "processedAt": "2026-10-28T15:31:45.511Z"
+    },
     {
       "id": "1fa9caeae66c",
       "sourceKey": "aa-ekonomi",
