@@ -1,6 +1,21 @@
 {
-  "fetchedAt": "2026-10-28T15:31:45.511Z",
+  "fetchedAt": "2026-10-28T16:01:56.377Z",
   "items": [
+    {
+      "id": "8103da92ae95",
+      "sourceKey": "aa-economy",
+      "sourceName": "Anadolu Agency",
+      "kind": "media",
+      "url": "https://www.aa.com.tr/en/economy/global-commodity-prices-projected-to-surge-23-in-2026-on-middle-east-conflict-world-bank/4104085",
+      "publishedAt": "2026-10-28T15:48:35.000Z",
+      "titleOriginal": "Global commodity prices projected to surge 23% in 2026 on Middle East conflict: World Bank",
+      "titleTr": "Dünya Bankası: Küresel emtia fiyatları 2026'da yüzde 23 artacak",
+      "summaryTr": "Dünya Bankası, Orta Doğu'daki çatışma nedeniyle küresel emtia fiyatlarının 2026'da yüzde 23 yükseleceğini öngördü. Enerji fiyatlarının bu yıl yüzde 32 artması, Brent petrolün ortalama 91 dolar olması ve 2027'de 79 dolara gerilemesi bekleniyor.",
+      "titleEn": "World Bank: Global commodity prices to surge 23% in 2026",
+      "summaryEn": "The World Bank projects global commodity prices will rise 23% in 2026 on the Middle East conflict. Energy prices are expected to jump 32% this year, with Brent crude averaging $91 per barrel before easing to $79 in 2027.",
+      "important": false,
+      "processedAt": "2026-10-28T16:01:56.377Z"
+    },
     {
       "id": "ff34301b16fa",
       "sourceKey": "boe-news",
