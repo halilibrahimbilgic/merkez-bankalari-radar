@@ -1,6 +1,21 @@
 {
-  "fetchedAt": "2026-10-28T16:01:56.377Z",
+  "fetchedAt": "2026-10-28T17:19:37.772Z",
   "items": [
+    {
+      "id": "ef51f1551bbc",
+      "sourceKey": "ft",
+      "sourceName": "Financial Times",
+      "kind": "media",
+      "url": "https://www.ft.com/content/516063c6-3820-4803-836a-73e24ebee0da?syn-25a6b1a6=1",
+      "publishedAt": "2026-10-28T16:51:06.000Z",
+      "titleOriginal": "Fed to decide on potential rate rise before US midterms",
+      "titleTr": "Fed, ABD ara seçimlerinden önce olası faiz artışına karar verecek",
+      "summaryTr": "Financial Times'a göre Fed yetkilileri, ABD'nin İran'a karşı savaşının şiddetlendirdiği enflasyonu dizginlemek için üst üste ikinci bir faiz artırımı yapıp yapmamayı tartışıyor.",
+      "titleEn": "Fed to decide on potential rate rise before US midterms",
+      "summaryEn": "The Financial Times reports that Fed policymakers are weighing whether to deliver back-to-back rate increases to tame inflation worsened by the US war against Iran.",
+      "important": true,
+      "processedAt": "2026-10-28T17:19:37.772Z"
+    },
     {
       "id": "8103da92ae95",
       "sourceKey": "aa-economy",
