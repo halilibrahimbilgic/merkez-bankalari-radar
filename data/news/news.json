@@ -1,6 +1,21 @@
 {
-  "fetchedAt": "2026-10-28T18:31:34.282Z",
+  "fetchedAt": "2026-10-28T19:31:37.518Z",
   "items": [
+    {
+      "id": "92e091085bcc",
+      "sourceKey": "aa-economy",
+      "sourceName": "Anadolu Agency",
+      "kind": "media",
+      "url": "https://www.aa.com.tr/en/economy/us-fed-chair-warsh-warns-inflation-remains-too-high-as-energy-prices-climb/4104336",
+      "publishedAt": "2026-10-28T19:13:30.000Z",
+      "titleOriginal": "US Fed Chair Warsh warns inflation remains too high as energy prices climb",
+      "titleTr": "Fed Başkanı Warsh: Enerji fiyatları artarken enflasyon hâlâ çok yüksek",
+      "summaryTr": "Fed Başkanı Warsh, enerji fiyatları yükselirken enflasyonun hâlâ çok yüksek olduğu uyarısında bulundu. Habere göre Fed, 2027 sonbaharından itibaren bazı toplantıları faiz oylaması yapmadan yalnızca geniş para politikası stratejisine ayıracak.",
+      "titleEn": "Fed Chair Warsh warns inflation remains too high as energy prices climb",
+      "summaryEn": "Fed Chair Warsh warned that inflation is still too high as energy prices rise. The report adds that from fall 2027 the Fed will dedicate some meetings solely to broad monetary strategy, without rate votes.",
+      "important": true,
+      "processedAt": "2026-10-28T19:31:37.518Z"
+    },
     {
       "id": "b2e523dd4611",
       "sourceKey": "aa-economy",
