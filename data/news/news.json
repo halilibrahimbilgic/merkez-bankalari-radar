@@ -1,6 +1,21 @@
 {
-  "fetchedAt": "2026-10-28T20:02:01.577Z",
+  "fetchedAt": "2026-10-28T20:31:36.286Z",
   "items": [
+    {
+      "id": "debccb0453a1",
+      "sourceKey": "cnbc-economy",
+      "sourceName": "CNBC",
+      "kind": "media",
+      "url": "https://www.cnbc.com/2026/10/28/scott-bessent-interview.html",
+      "publishedAt": "2026-10-28T20:27:53.000Z",
+      "titleOriginal": "Bessent says 'not necessarily' a mistake if the Fed hikes again",
+      "titleTr": "Bessent: Fed'in bir kez daha faiz artırması \"mutlaka hata olmaz\"",
+      "summaryTr": "ABD Hazine Bakanı Scott Bessent, 28 Ekim 2026'da CNBC'ye verdiği röportajda Fed'in yeniden faiz artırmasının zorunlu olarak bir hata sayılmayacağını söyledi.",
+      "titleEn": "Bessent says it's 'not necessarily' a mistake if the Fed hikes again",
+      "summaryEn": "Treasury Secretary Scott Bessent said in a CNBC interview on Oct. 28, 2026 that another Fed rate hike would not necessarily be a mistake.",
+      "important": true,
+      "processedAt": "2026-10-28T20:31:36.286Z"
+    },
     {
       "id": "55e3274f91bc",
       "sourceKey": "marketwatch",
@@ -2741,6 +2756,7 @@
     "ab3c0f9f621f": "2026-10-28",
     "68ad9b5e8598": "2026-10-28",
     "f3a601278980": "2026-10-28",
-    "316ce5aa3fcb": "2026-10-28"
+    "316ce5aa3fcb": "2026-10-28",
+    "f1cc2fabed93": "2026-10-28"
   }
 }
