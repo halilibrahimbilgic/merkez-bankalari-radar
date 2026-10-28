@@ -1,6 +1,21 @@
 {
-  "fetchedAt": "2026-10-28T06:31:35.075Z",
+  "fetchedAt": "2026-10-28T07:31:54.361Z",
   "items": [
+    {
+      "id": "07ced7726b94",
+      "sourceKey": "guardian-business",
+      "sourceName": "The Guardian",
+      "kind": "media",
+      "url": "https://www.theguardian.com/business/live/2026/oct/28/john-healey-budget-standing-charges-gas-city-bonds-pound-latest-news-updates",
+      "publishedAt": "2026-10-28T07:12:23.000Z",
+      "titleOriginal": "Chancellor John Healey to end standing charges on household gas bills, as City expects a quiet budget – business live",
+      "titleTr": "Maliye Bakanı Healey, hane halkı doğalgaz faturalarındaki sabit ücretleri kaldırıyor",
+      "summaryTr": "Birleşik Krallık Maliye Bakanı John Healey, hane halkına nefes aldırmak için doğalgaz faturalarındaki sabit ücretlerin kaldırılacağını duyurdu. Healey, yurt dışındaki çatışmaların enerji fiyatlarını yukarı ittiğini söyledi.",
+      "titleEn": "Chancellor Healey to scrap standing charges on household gas bills",
+      "summaryEn": "UK Chancellor John Healey announced that standing charges on household gas bills will be removed to give households breathing space. He said conflicts abroad are pushing up energy prices.",
+      "important": false,
+      "processedAt": "2026-10-28T07:31:54.361Z"
+    },
     {
       "id": "01e60032e3d2",
       "sourceKey": "aa-ekonomi",
@@ -15,6 +30,21 @@
       "summaryEn": "Global markets are trading positively on gains in tech stocks. Attention has turned to the Fed's interest rate decision due today.",
       "important": true,
       "processedAt": "2026-10-28T06:31:35.075Z"
+    },
+    {
+      "id": "af1334829e4f",
+      "sourceKey": "guardian-business",
+      "sourceName": "The Guardian",
+      "kind": "media",
+      "url": "https://www.theguardian.com/uk-news/2026/oct/28/what-to-expect-from-john-healeys-first-budget-who-wins-who-pays",
+      "publishedAt": "2026-10-28T06:00:02.000Z",
+      "titleOriginal": "What to expect from John Healey’s first budget: who wins, who pays?",
+      "titleTr": "Healey'nin ilk bütçesinde beklenenler: kim kazanıyor, kim ödüyor?",
+      "summaryTr": "John Healey çarşamba günü ilk bütçesini sunacak; geçim sıkıntısı çeken hane halkları, yeni ev alıcıları ve küçük dükkânların kazanması, bankalar ile çevrimiçi pazaryerlerinin ise daha yüksek vergiyle karşılaşması bekleniyor. Bütçenin büyük bölümü resmî ve gayriresmî kaynaklarca önceden belli olmuş durumda.",
+      "titleEn": "What to expect from Healey's first budget: who wins, who pays?",
+      "summaryEn": "John Healey presents his first budget on Wednesday, with struggling households, new homebuyers and small shops expected to gain while banks and online marketplaces could face higher levies. Official and unofficial sources have already indicated much of its content.",
+      "important": true,
+      "processedAt": "2026-10-28T07:31:54.361Z"
     },
     {
       "id": "c67686920c2d",
@@ -2507,6 +2537,9 @@
     "003ccfc2fe59": "2026-10-27",
     "45b43fe35b7f": "2026-10-27",
     "6f00334d2bb5": "2026-10-27",
-    "d9cc2d18be18": "2026-10-27"
+    "d9cc2d18be18": "2026-10-27",
+    "7013c3d67575": "2026-10-28",
+    "b58f07545067": "2026-10-28",
+    "1034d804f1bc": "2026-10-28"
   }
 }
