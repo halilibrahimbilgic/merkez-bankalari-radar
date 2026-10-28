@@ -952,8 +952,11 @@
       "meetingAt": "2026-10-28T18:00:00.000Z",
       "timeTbd": false,
       "type": "rate_decision",
-      "status": "scheduled",
-      "sourceUrl": "https://www.federalreserve.gov/monetarypolicy/fomccalendars.htm"
+      "status": "done",
+      "sourceUrl": "https://www.federalreserve.gov/monetarypolicy/fomccalendars.htm",
+      "decisionRate": 4,
+      "decisionRateLower": 3.75,
+      "previousRate": 4
     },
     {
       "id": "ecb-2026-10-29",

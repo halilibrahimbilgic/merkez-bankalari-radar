@@ -1,5 +1,5 @@
 {
-  "fetchedAt": "2026-10-28T17:19:38.075Z",
+  "fetchedAt": "2026-10-28T18:02:14.221Z",
   "statements": [
     {
       "meetingId": "boe-2025-12-18",
@@ -1011,6 +1011,48 @@
         "model": "claude-code/opus",
         "promptVersion": "2",
         "summarizedAt": "2026-10-14T22:32:48.827Z"
+      }
+    },
+    {
+      "meetingId": "fed-2026-10-28",
+      "bankCode": "fed",
+      "urls": {
+        "en": "https://www.federalreserve.gov/newsevents/pressreleases/monetary20261028a.htm"
+      },
+      "langs": [
+        "en"
+      ],
+      "publishable": true,
+      "fetchedAt": "2026-10-28T18:01:45.611Z",
+      "rate": 4,
+      "rateLower": 3.75,
+      "previousId": "fed-2026-09-16",
+      "summary": {
+        "headlineTr": "Fed, Eylül'deki artırımın ardından politika faizi aralığını %3,75–4,00'te sabit tuttu ve ek adımın gelen verilere göre belirleneceğini söylerken iki üye artırım yönünde karşı oy kullandı.",
+        "headlineEn": "The Fed held the federal funds target range at 3-3/4 to 4 percent after September's hike, saying further information will determine the appropriate stance, while two members dissented in favor of a hike.",
+        "changesTr": [
+          "Komite, Eylül'deki 25 baz puanlık artırımın ardından faiz aralığını %3,75–4,00'te sabit tuttu.",
+          "\"Bugünkü politika adımı enflasyonun daha hızlı dönüşünü destekleyecek\" ifadesinin yerine, daha fazla bilgi birikiminin enflasyonun zamanında hedefe dönmesi için uygun duruşun belirlenmesine yardım edeceği ifadesi geldi.",
+          "Oylama 12–0'dan 10–2'ye döndü; Lisa D. Cook ve Beth M. Hammack bu toplantıda 25 baz puanlık artırımı tercih ederek karşı oy kullandı.",
+          "Ekonomik faaliyetin büyüme hızı \"sağlam\"dan \"güçlü\"ye yükseltildi.",
+          "Enflasyonun yüksek seyrettiği ve Komite'nin fiyat istikrarını sağlayacağı vurgusu korundu."
+        ],
+        "changesEn": [
+          "The Committee held the target range at 3-3/4 to 4 percent after September's 1/4 percentage point hike.",
+          "The phrase \"Today's policy action will support a timelier return\" was replaced by language saying the accumulation of more information will help determine the policy stance appropriate to ensure a timely return of inflation to 2 percent.",
+          "The vote shifted from 12–0 to 10–2, with Lisa D. Cook and Beth M. Hammack dissenting in favor of a 1/4 percentage point hike.",
+          "The description of economic activity was upgraded from a \"solid\" to a \"strong\" pace.",
+          "The statements that inflation remains elevated and that the Committee will deliver price stability were retained."
+        ],
+        "tone": "mixed",
+        "toneReasonTr": "Artırımdan bekle-gör diline geçiş (\"daha fazla bilgi birikimi\") daha güvercin, ancak büyümenin \"güçlü\" diye nitelenmesi ve artırım yönünde iki karşı oy şahin yönde.",
+        "toneReasonEn": "The shift from a hike to wait-and-see language (\"accumulation of more information\") is more dovish, but the upgrade of growth to \"strong\" and two dissents in favor of a hike lean hawkish.",
+        "score": 4,
+        "scoreReasonTr": "Faiz sabit tutulsa da metin enflasyonun yüksek kaldığını, Komite'nin fiyat istikrarını sağlayacağını ve büyümenin güçlü olduğunu vurguluyor, iki üye artırım istiyor ve gevşemeye dair hiçbir işaret yok.",
+        "scoreReasonEn": "Although rates were held, the statement stresses that inflation remains elevated, that the Committee will deliver price stability and that growth is strong, two members wanted a hike, and there is no hint of easing.",
+        "model": "claude-code/opus",
+        "promptVersion": "2",
+        "summarizedAt": "2026-10-28T18:02:14.221Z"
       }
     },
     {

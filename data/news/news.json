@@ -1,6 +1,22 @@
 {
-  "fetchedAt": "2026-10-28T17:19:37.772Z",
+  "fetchedAt": "2026-10-28T18:01:45.119Z",
   "items": [
+    {
+      "id": "fe059a020cd5",
+      "sourceKey": "fed-press",
+      "sourceName": "Federal Reserve",
+      "kind": "official",
+      "bankCode": "fed",
+      "url": "https://www.federalreserve.gov/newsevents/pressreleases/monetary20261028a.htm",
+      "publishedAt": "2026-10-28T18:00:00.000Z",
+      "titleOriginal": "Federal Reserve issues FOMC statement",
+      "titleTr": "Fed, FOMC karar metnini yayımladı",
+      "summaryTr": "Federal Reserve, Federal Açık Piyasa Komitesi'nin (FOMC) para politikası karar metnini yayımladı.",
+      "titleEn": "Federal Reserve issues FOMC statement",
+      "summaryEn": "The Federal Reserve released the Federal Open Market Committee's (FOMC) monetary policy statement.",
+      "important": true,
+      "processedAt": "2026-10-28T18:01:45.119Z"
+    },
     {
       "id": "ef51f1551bbc",
       "sourceKey": "ft",
