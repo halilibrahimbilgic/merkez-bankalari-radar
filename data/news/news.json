@@ -1,6 +1,21 @@
 {
-  "fetchedAt": "2026-10-28T09:02:05.250Z",
+  "fetchedAt": "2026-10-28T10:31:35.574Z",
   "items": [
+    {
+      "id": "815278e669b5",
+      "sourceKey": "marketwatch",
+      "sourceName": "MarketWatch",
+      "kind": "media",
+      "url": "https://www.marketwatch.com/story/four-reasons-to-start-worrying-about-inflation-including-the-end-of-tariff-refunds-978a5cfd?mod=mw_rss_topstories",
+      "publishedAt": "2026-10-28T10:21:00.000Z",
+      "titleOriginal": "Four reasons to start worrying about inflation — including the end of tariff refunds",
+      "titleTr": "Enflasyon endişesi için dört neden: gümrük vergisi iadelerinin sona ermesi de var",
+      "summaryTr": "22V Research'ten Dennis DeBusschere, maliyet baskısını daha önce gümrük vergisi iadeleriyle hafifleten şirketlerin yüksek maliyetleri giderek daha fazla tüketiciye yansıtacağını söyledi.",
+      "titleEn": "Four reasons to worry about inflation, including the end of tariff refunds",
+      "summaryEn": "22V Research's Dennis DeBusschere said companies that used tariff refunds to ease cost pressures will increasingly pass higher costs on to consumers.",
+      "important": false,
+      "processedAt": "2026-10-28T10:31:35.574Z"
+    },
     {
       "id": "d080600e41d0",
       "sourceKey": "aa-ekonomi",
