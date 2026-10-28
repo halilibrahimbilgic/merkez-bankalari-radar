@@ -1,16 +1,6 @@
 {
-  "fetchedAt": "2026-10-27T10:10:02.842Z",
+  "fetchedAt": "2026-10-28T10:56:35.759Z",
   "events": [
-    {
-      "id": "ecb-2026-10-26-pa8j0",
-      "bankCode": "ecb",
-      "at": "2026-10-26T05:00:00.000Z",
-      "timeTbd": false,
-      "kind": "speech",
-      "speaker": "Frank Elderson",
-      "title": "Opening keynote speech by Mr Elderson at Finance and Biodiversity Day at 17th meeting of the Conference of the Parties to the CBD (COP17) in Yerevan, Armenia",
-      "url": "https://www.ecb.europa.eu/press/calendars/weekly/html/index.en.html"
-    },
     {
       "id": "ecb-2026-10-27-1sxwfcz",
       "bankCode": "ecb",
@@ -21,15 +11,6 @@
       "role": "President",
       "title": "Informal dinner and exchange of views of Ms Lagarde and the Governing Council with EU Commissioner European Commissioner for Trade and Economic Security, Maro&scaron; &Scaron;efčovič, in Frankfurt, Germany",
       "url": "https://www.ecb.europa.eu/press/calendars/weekly/html/index.en.html"
-    },
-    {
-      "id": "rba-cpi-2026-10-28",
-      "bankCode": "rba",
-      "at": "2026-10-28T00:30:00.000Z",
-      "timeTbd": false,
-      "kind": "cpi",
-      "title": "CPI",
-      "url": "https://www.abs.gov.au/statistics/economy/price-indexes-and-inflation/consumer-price-index-australia/latest-release"
     },
     {
       "id": "ecb-2026-10-29-1ccpcns",
@@ -58,7 +39,7 @@
       "kind": "testimony",
       "speaker": "Philip R. Lane",
       "title": "Keynote speech by Mr Lane at Research Symposium on AI and the Economy organised by Federal Reserve Bank of San Francisco in San Francisco, US",
-      "url": "https://www.ecb.europa.eu/press/calendars/weekly/html/index.en.html"
+      "url": "https://www.frbsfevents.org/event/EERN2026Oct30/agenda"
     },
     {
       "id": "tcmb-cpi-2026-11-03",
@@ -87,6 +68,24 @@
       "kind": "inflation-report",
       "title": "Enflasyon Raporu",
       "url": "https://www.tcmb.gov.tr/wps/wcm/connect/TR/TCMB+TR/Main+Menu/Duyurular/Takvim"
+    },
+    {
+      "id": "boe-cpi-2026-11-18",
+      "bankCode": "boe",
+      "at": "2026-11-18T07:00:00.000Z",
+      "timeTbd": false,
+      "kind": "cpi",
+      "title": "CPI",
+      "url": "https://www.ons.gov.uk/releasecalendar"
+    },
+    {
+      "id": "fed-2026-11-18-1vp5sqm",
+      "bankCode": "fed",
+      "at": "2026-11-18T19:00:00.000Z",
+      "timeTbd": false,
+      "kind": "minutes",
+      "title": "FOMC Minutes",
+      "url": "https://www.federalreserve.gov/newsevents/calendar.htm"
     }
   ]
 }
