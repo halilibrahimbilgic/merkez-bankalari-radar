@@ -1,6 +1,21 @@
 {
-  "fetchedAt": "2026-10-28T19:31:37.518Z",
+  "fetchedAt": "2026-10-28T20:02:01.577Z",
   "items": [
+    {
+      "id": "55e3274f91bc",
+      "sourceKey": "marketwatch",
+      "sourceName": "MarketWatch",
+      "kind": "media",
+      "url": "https://www.marketwatch.com/story/why-did-the-fed-hold-off-on-raising-interest-rates-warsh-says-its-because-an-information-rich-period-is-coming-098ced8d?mod=mw_rss_topstories",
+      "publishedAt": "2026-10-28T19:56:00.000Z",
+      "titleOriginal": "Why did the Fed hold off on raising interest rates? Warsh says it’s because an ‘information rich’ period is coming.",
+      "titleTr": "Fed Başkanı Warsh: Faiz artırımına ara vermemizin nedeni önümüzdeki veri yoğun dönem",
+      "summaryTr": "Fed Başkanı Kevin Warsh, merkez bankasının çarşamba günü faizi artırmamasının gerekçesini açıkladı. Warsh, karara önümüzdeki dönemin \"bilgi bakımından zengin\" olmasının yol açtığını söyledi.",
+      "titleEn": "Fed's Warsh explains why the Fed held off on a rate hike: an 'information rich' period ahead",
+      "summaryEn": "Fed Chairman Kevin Warsh addressed why the central bank did not raise interest rates on Wednesday. He said the decision reflects an upcoming period that will be 'information rich'.",
+      "important": true,
+      "processedAt": "2026-10-28T20:02:01.577Z"
+    },
     {
       "id": "92e091085bcc",
       "sourceKey": "aa-economy",
