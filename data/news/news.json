@@ -1,6 +1,21 @@
 {
-  "fetchedAt": "2026-10-28T07:31:54.361Z",
+  "fetchedAt": "2026-10-28T08:31:46.563Z",
   "items": [
+    {
+      "id": "be7b9729e30f",
+      "sourceKey": "aa-ekonomi",
+      "sourceName": "Anadolu Ajansı",
+      "kind": "media",
+      "url": "https://www.aa.com.tr/tr/ekonomi/bojun-para-politikasinda-kademeli-sikilasmaya-gitmesi-bekleniyor/4103425",
+      "publishedAt": "2026-10-28T08:07:57.000Z",
+      "titleOriginal": "BoJ'un para politikasında kademeli sıkılaşmaya gitmesi bekleniyor",
+      "titleTr": "BoJ'un bu hafta faizi sabit tutması bekleniyor",
+      "summaryTr": "Japonya Merkez Bankasının bu haftaki toplantıda politika faizini sabit tutması bekleniyor. Beklentiye göre banka, ileriki aylarda para politikasında kademeli sıkılaşmaya gidecek.",
+      "titleEn": "BoJ expected to hold rates this week",
+      "summaryEn": "The Bank of Japan is expected to keep its policy rate unchanged at this week's meeting. It is then expected to tighten monetary policy gradually in the coming months.",
+      "important": true,
+      "processedAt": "2026-10-28T08:31:46.563Z"
+    },
     {
       "id": "07ced7726b94",
       "sourceKey": "guardian-business",
