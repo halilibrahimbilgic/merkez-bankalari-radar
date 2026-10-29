@@ -1,6 +1,21 @@
 {
-  "fetchedAt": "2026-10-29T10:31:49.066Z",
+  "fetchedAt": "2026-10-29T11:31:37.743Z",
   "items": [
+    {
+      "id": "6e37779f6cda",
+      "sourceKey": "marketwatch",
+      "sourceName": "MarketWatch",
+      "kind": "media",
+      "url": "https://www.marketwatch.com/story/the-fed-held-off-on-a-rate-hike-todays-gdp-and-inflation-reports-could-make-waiting-harder-693338e6?mod=mw_rss_topstories",
+      "publishedAt": "2026-10-29T11:11:00.000Z",
+      "titleOriginal": "The Fed held off on a rate hike. Today’s GDP and inflation reports could make waiting harder.",
+      "titleTr": "Fed faiz artırımını erteledi; bugünkü GDP ve enflasyon verileri belirleyici olabilir",
+      "summaryTr": "ABD'de GDP ve enflasyon verileri bugün Doğu Saati ile 08.30'da birlikte açıklanacak. MarketWatch'a göre güçlü büyüme ve kalıcı fiyat baskısı, Aralık'ta faiz artırımı ihtimalini güçlendirebilir.",
+      "titleEn": "Fed held off on a rate hike; today's GDP and inflation data could make waiting harder",
+      "summaryEn": "US GDP and inflation figures are due together at 8:30 a.m. Eastern time. MarketWatch says strong growth and persistent price pressures could strengthen the case for a rate increase in December.",
+      "important": true,
+      "processedAt": "2026-10-29T11:31:37.743Z"
+    },
     {
       "id": "c5a5cca2cd78",
       "sourceKey": "ft",
