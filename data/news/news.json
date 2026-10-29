@@ -1,5 +1,5 @@
 {
-  "fetchedAt": "2026-10-29T18:31:41.079Z",
+  "fetchedAt": "2026-10-29T19:31:45.592Z",
   "items": [
     {
       "id": "6d8bca8dde41",
@@ -15,6 +15,21 @@
       "summaryEn": "MarketWatch reports that as attention turns to the Treasury's funding plans, some expect longer-term debt supply could be cut to lift demand and lower yields.",
       "important": false,
       "processedAt": "2026-10-29T18:31:41.079Z"
+    },
+    {
+      "id": "0e87948ca961",
+      "sourceKey": "bbc-business",
+      "sourceName": "BBC News",
+      "kind": "media",
+      "url": "https://www.bbc.co.uk/news/articles/cr15jxzv4w24o?at_medium=RSS&at_campaign=rss",
+      "publishedAt": "2026-10-29T17:15:05.000Z",
+      "titleOriginal": "US interest rates held steady and economy grows - what it means for you",
+      "titleTr": "ABD'de faizler sabit tutuldu, ekonomi büyüyor: BBC'ye göre bunun anlamı",
+      "summaryTr": "BBC, Fed'in faizi sabit bıraktığını ve ABD ekonomisinin büyüdüğünü aktarıyor. Haber, Fed'in faiz kararlarının konut ve taşıt kredilerinden başlayarak birçok alanı etkilediğini belirtiyor.",
+      "titleEn": "US interest rates held steady and economy grows - what it means for you",
+      "summaryEn": "BBC reports that the Federal Reserve held interest rates steady while the US economy grew. The piece notes that Fed rate decisions affect everything from mortgages to car loans.",
+      "important": true,
+      "processedAt": "2026-10-29T19:31:45.592Z"
     },
     {
       "id": "093325a70ce6",
