@@ -1,17 +1,6 @@
 {
-  "fetchedAt": "2026-10-28T10:56:35.759Z",
+  "fetchedAt": "2026-10-29T11:14:09.008Z",
   "events": [
-    {
-      "id": "ecb-2026-10-27-1sxwfcz",
-      "bankCode": "ecb",
-      "at": "2026-10-27T17:00:00.000Z",
-      "timeTbd": false,
-      "kind": "testimony",
-      "speaker": "Christine Lagarde",
-      "role": "President",
-      "title": "Informal dinner and exchange of views of Ms Lagarde and the Governing Council with EU Commissioner European Commissioner for Trade and Economic Security, Maro&scaron; &Scaron;efčovič, in Frankfurt, Germany",
-      "url": "https://www.ecb.europa.eu/press/calendars/weekly/html/index.en.html"
-    },
     {
       "id": "ecb-2026-10-29-1ccpcns",
       "bankCode": "ecb",
@@ -39,7 +28,7 @@
       "kind": "testimony",
       "speaker": "Philip R. Lane",
       "title": "Keynote speech by Mr Lane at Research Symposium on AI and the Economy organised by Federal Reserve Bank of San Francisco in San Francisco, US",
-      "url": "https://www.frbsfevents.org/event/EERN2026Oct30/agenda"
+      "url": "https://www.frbsf.org/news-and-media/events/2026/10/remarks-from-philip-lane-2026-economic-research-symposium/"
     },
     {
       "id": "tcmb-cpi-2026-11-03",
