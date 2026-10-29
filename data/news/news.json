@@ -1,5 +1,5 @@
 {
-  "fetchedAt": "2026-10-29T13:31:47.473Z",
+  "fetchedAt": "2026-10-29T14:02:02.746Z",
   "items": [
     {
       "id": "4124d9afe9ec",
@@ -15,6 +15,21 @@
       "summaryEn": "The European Central Bank left its key interest rate unchanged at 2.5%.",
       "important": true,
       "processedAt": "2026-10-29T13:31:47.473Z"
+    },
+    {
+      "id": "0154c8899c80",
+      "sourceKey": "aa-ekonomi",
+      "sourceName": "Anadolu Ajansı",
+      "kind": "media",
+      "url": "https://www.aa.com.tr/tr/ekonomi/ecb-yuksek-enflasyona-ragmen-faizleri-sabit-tuttu/4105014",
+      "publishedAt": "2026-10-29T13:19:00.000Z",
+      "titleOriginal": "ECB yüksek enflasyona rağmen faizleri sabit tuttu",
+      "titleTr": "ECB yüksek enflasyona rağmen faizleri sabit tuttu",
+      "summaryTr": "Avrupa Merkez Bankası, Orta Doğu'daki gerilimin tetiklediği enerji krizi ve yükselen fiyat baskılarına rağmen üç temel politika faizini beklentiler doğrultusunda değiştirmedi.",
+      "titleEn": "ECB holds rates steady despite high inflation",
+      "summaryEn": "The European Central Bank left its three key policy rates unchanged, in line with expectations, despite the energy crisis triggered by Middle East tensions and rising price pressures.",
+      "important": true,
+      "processedAt": "2026-10-29T14:02:02.746Z"
     },
     {
       "id": "4f6559f48b15",
@@ -2920,6 +2935,8 @@
     "028aac8a6f8f": "2026-10-29",
     "f40b676e3157": "2026-10-29",
     "8ecb4b43d0a6": "2026-10-29",
-    "568d09092a68": "2026-10-29"
+    "568d09092a68": "2026-10-29",
+    "ddda19aa967b": "2026-10-29",
+    "d1507a814b41": "2026-10-29"
   }
 }
