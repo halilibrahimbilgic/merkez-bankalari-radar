@@ -1,6 +1,21 @@
 {
-  "fetchedAt": "2026-10-29T16:01:49.532Z",
+  "fetchedAt": "2026-10-29T16:31:50.487Z",
   "items": [
+    {
+      "id": "093325a70ce6",
+      "sourceKey": "aa-ekonomi",
+      "sourceName": "Anadolu Ajansı",
+      "kind": "media",
+      "url": "https://www.aa.com.tr/tr/ekonomi/ecb-baskani-christine-lagarde-aralikta-yeni-bir-faiz-artisina-isaret-etti/4105208",
+      "publishedAt": "2026-10-29T15:58:38.000Z",
+      "titleOriginal": "ECB Başkanı Christine Lagarde aralıkta yeni bir faiz artışına işaret etti",
+      "titleTr": "Lagarde aralıkta yeni bir faiz artışına işaret etti",
+      "summaryTr": "ECB Başkanı Christine Lagarde, Avro Bölgesi'ndeki artan enflasyon risklerine dikkat çekti. Lagarde'ın açıklamaları aralık ayında yeni bir faiz artışının masada olduğu sinyali verdi.",
+      "titleEn": "Lagarde signals another rate hike possible in December",
+      "summaryEn": "ECB President Christine Lagarde pointed to rising inflation risks in the euro area. Her remarks signaled that a further rate increase in December is on the table.",
+      "important": true,
+      "processedAt": "2026-10-29T16:31:50.487Z"
+    },
     {
       "id": "5dbd9fe5b90e",
       "sourceKey": "aa-economy",
