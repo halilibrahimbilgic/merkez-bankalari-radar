@@ -964,8 +964,10 @@
       "meetingAt": "2026-10-29T13:15:00.000Z",
       "timeTbd": false,
       "type": "rate_decision",
-      "status": "scheduled",
-      "sourceUrl": "https://www.ecb.europa.eu/press/calendars/mgcgc/html/index.en.html"
+      "status": "done",
+      "sourceUrl": "https://www.ecb.europa.eu/press/calendars/mgcgc/html/index.en.html",
+      "decisionRate": 2.5,
+      "previousRate": 2.5
     },
     {
       "id": "boj-2026-10-30",

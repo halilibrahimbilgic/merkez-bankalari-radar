@@ -1,6 +1,36 @@
 {
-  "fetchedAt": "2026-10-29T13:02:02.365Z",
+  "fetchedAt": "2026-10-29T13:31:47.473Z",
   "items": [
+    {
+      "id": "4124d9afe9ec",
+      "sourceKey": "cnbc-economy",
+      "sourceName": "CNBC",
+      "kind": "media",
+      "url": "https://www.cnbc.com/2026/10/29/european-central-bank-interest-rates.html",
+      "publishedAt": "2026-10-29T13:30:06.000Z",
+      "titleOriginal": "European Central Bank keeps key interest rate on hold at 2.5%",
+      "titleTr": "ECB politika faizini %2,5'te sabit tuttu",
+      "summaryTr": "Avrupa Merkez Bankası, temel politika faizini yüzde 2,5 seviyesinde değiştirmedi.",
+      "titleEn": "ECB keeps key interest rate on hold at 2.5%",
+      "summaryEn": "The European Central Bank left its key interest rate unchanged at 2.5%.",
+      "important": true,
+      "processedAt": "2026-10-29T13:31:47.473Z"
+    },
+    {
+      "id": "4f6559f48b15",
+      "sourceKey": "marketwatch",
+      "sourceName": "MarketWatch",
+      "kind": "media",
+      "url": "https://www.marketwatch.com/story/consumer-spending-flattens-out-after-inflation-surge-e7761d25?mod=mw_rss_topstories",
+      "publishedAt": "2026-10-29T13:01:00.000Z",
+      "titleOriginal": "Consumer spending flattens out after inflation surge",
+      "titleTr": "ABD'de tüketici harcamaları enflasyon artışının ardından yatay seyretti",
+      "summaryTr": "Eylülde tüketici harcamaları sert yükseldi; artışın büyük bölümü enerji maliyetlerinin artmasıyla hanelerin akaryakıt ve ulaşıma daha fazla harcamasından kaynaklandı.",
+      "titleEn": "US consumer spending flattens out after inflation surge",
+      "summaryEn": "Consumer spending rose sharply in September, but the gain largely reflected households spending more on gas and transportation after higher energy costs.",
+      "important": true,
+      "processedAt": "2026-10-29T13:31:47.473Z"
+    },
     {
       "id": "b6a07b195ed7",
       "sourceKey": "cnbc-economy",
@@ -2887,6 +2917,9 @@
     "15409bd831f4": "2026-10-29",
     "49618bf1d7a1": "2026-10-29",
     "d72430ed6b20": "2026-10-29",
-    "028aac8a6f8f": "2026-10-29"
+    "028aac8a6f8f": "2026-10-29",
+    "f40b676e3157": "2026-10-29",
+    "8ecb4b43d0a6": "2026-10-29",
+    "568d09092a68": "2026-10-29"
   }
 }

@@ -1,5 +1,5 @@
 {
-  "fetchedAt": "2026-10-29T13:02:02.831Z",
+  "fetchedAt": "2026-10-29T13:32:20.880Z",
   "statements": [
     {
       "meetingId": "boe-2025-12-18",
@@ -758,6 +758,47 @@
         "model": "claude-code/opus",
         "promptVersion": "2",
         "summarizedAt": "2026-10-14T23:02:49.258Z"
+      }
+    },
+    {
+      "meetingId": "ecb-2026-10-29",
+      "bankCode": "ecb",
+      "urls": {
+        "en": "https://www.ecb.europa.eu/press/pr/date/2026/html/ecb.mp261029~9a493adf17.en.html"
+      },
+      "langs": [
+        "en"
+      ],
+      "publishable": true,
+      "fetchedAt": "2026-10-29T13:31:48.693Z",
+      "rate": 2.5,
+      "previousId": "ecb-2026-09-10",
+      "summary": {
+        "headlineTr": "ECB, Eylül'deki 25 baz puanlık artırımın ardından üç politika faizini sabit tuttu (mevduat %2,50) ve enerji şokunun büyüdüğünü söylerken temel enflasyonun şimdilik büyük ölçüde istikrarlı kaldığını ve finansman koşullarının sıkılaştığını ekledi.",
+        "headlineEn": "The ECB kept its three key interest rates unchanged (deposit facility at 2.50%) after September's 25 basis point hike, saying the energy shock has grown while adding that underlying inflation has so far remained broadly stable and financing conditions have tightened.",
+        "changesTr": [
+          "Karar 25 baz puanlık artırımdan sabit tutmaya döndü; mevduat, ana refinansman ve marjinal borç verme faizleri %2,50, %2,65 ve %2,90'da kaldı.",
+          "Enflasyonun 'uzun süre hedefin belirgin biçimde üzerinde kalacağı' ifadesi çıkarıldı; yerine temel enflasyonun şimdiye kadar büyük ölçüde istikrarlı kaldığı ve ücretlerin bu aşamada belirgin bir tepki göstermediği yazıldı.",
+          "Enerji fiyatlarının yükselmeye devam ettiği ve enerji şokunun artan büyüklüğü ve süresinin enflasyonu yükseltip büyümeyi düşürmesinin muhtemel olduğu eklendi; enflasyonda yukarı, büyümede aşağı yönlü risk vurgusu sürdü.",
+          "Son toplantıdan bu yana finansman koşullarının sıkılaştığı ve bunun enflasyon ile büyüme üzerinde baskı yaratmasının muhtemel olduğu yeni bir tespit olarak eklendi.",
+          "Eylül metnindeki personel projeksiyonları (2026 için %3,0 enflasyon, %0,9 büyüme) ve senaryo değerlendirmesi bu metinde yer almıyor; veriye bağlı, toplantı bazlı ve önceden taahhüt vermeyen yaklaşım aynen korundu."
+        ],
+        "changesEn": [
+          "The decision shifted from a 25 basis point hike to a hold, with the deposit facility, main refinancing operations and marginal lending facility rates remaining at 2.50%, 2.65% and 2.90%.",
+          "The statement that inflation 'is set to remain well above target for an extended period' was dropped and replaced by the observation that underlying inflation has so far remained broadly stable and wages show no material response at this stage.",
+          "It added that energy prices have continued to rise and that the increased magnitude and duration of the energy shock are likely to drive up inflation and lower growth, keeping upside risks to inflation and downside risks to growth.",
+          "A new assessment says financing conditions have tightened since the last meeting and are likely to weigh on inflation and growth.",
+          "September's staff projections (3.0% inflation and 0.9% growth for 2026) and the scenario discussion are absent from this statement, while the data-dependent, meeting-by-meeting approach with no pre-commitment is unchanged."
+        ],
+        "tone": "mixed",
+        "toneReasonTr": "'Uzun süre hedefin belirgin üzerinde' ifadesinin çıkarılması, temel enflasyonun istikrarlı olduğu ve finansman koşullarının sıkılaştığı vurgusu güvercin yönde; enerji fiyatlarının yükselmeye devam ettiği ve şokun büyüklüğü ile süresinin arttığı ifadeleri ise şahin yönde.",
+        "toneReasonEn": "Dropping 'well above target for an extended period' and stressing stable underlying inflation and tighter financing conditions point dovish, while noting that energy prices keep rising and the shock's magnitude and duration have increased points hawkish.",
+        "score": 2,
+        "scoreReasonTr": "Sabit tutma ve veriye bağlı, taahhütsüz yönlendirme dengeli bir duruş gösterse de metin enflasyonda yukarı yönlü riskleri ve enerji şokunun enflasyonu yükseltme ihtimalini öne çıkarıyor; temel enflasyonun istikrarı ve sıkılaşan finansman koşulları bu vurguyu hafifletiyor.",
+        "scoreReasonEn": "The hold and the data-dependent, non-committal guidance suggest a balanced stance, but the statement emphasises upside risks to inflation and the energy shock's likely inflationary effect, tempered by stable underlying inflation and tighter financing conditions.",
+        "model": "claude-code/opus",
+        "promptVersion": "2",
+        "summarizedAt": "2026-10-29T13:32:20.879Z"
       }
     },
     {
