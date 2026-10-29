@@ -1,6 +1,21 @@
 {
-  "fetchedAt": "2026-10-29T14:31:40.891Z",
+  "fetchedAt": "2026-10-29T15:01:52.937Z",
   "items": [
+    {
+      "id": "5dbd9fe5b90e",
+      "sourceKey": "aa-economy",
+      "sourceName": "Anadolu Agency",
+      "kind": "media",
+      "url": "https://www.aa.com.tr/en/economy/ecb-warns-prolonged-energy-shock-to-drive-up-inflation-lower-growth/4105139",
+      "publishedAt": "2026-10-29T14:46:16.000Z",
+      "titleOriginal": "ECB warns prolonged energy shock to drive up inflation, lower growth",
+      "titleTr": "ECB: Uzayan enerji şoku enflasyonu artırıp büyümeyi düşürecek",
+      "summaryTr": "ECB Başkanı Lagarde, uzun süren bir enerji şokunun enflasyonu yükseltip büyümeyi azaltacağı uyarısında bulundu. Euro Bölgesi enflasyonu, enerji fiyatlarındaki %18,9'luk artışla eylülde %3,8'e çıktı.",
+      "titleEn": "ECB warns prolonged energy shock will lift inflation, cut growth",
+      "summaryEn": "ECB President Lagarde warned that a prolonged energy shock would push up inflation and weigh on growth. Eurozone inflation rose to 3.8% in September as energy prices surged 18.9%.",
+      "important": true,
+      "processedAt": "2026-10-29T15:01:52.937Z"
+    },
     {
       "id": "c743b3d5d777",
       "sourceKey": "aa-economy",
@@ -2953,6 +2968,7 @@
     "568d09092a68": "2026-10-29",
     "ddda19aa967b": "2026-10-29",
     "d1507a814b41": "2026-10-29",
-    "e06aa982c087": "2026-10-29"
+    "e06aa982c087": "2026-10-29",
+    "7685e919def3": "2026-10-29"
   }
 }
