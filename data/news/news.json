@@ -1,6 +1,22 @@
 {
-  "fetchedAt": "2026-10-29T09:31:49.534Z",
+  "fetchedAt": "2026-10-29T10:01:49.220Z",
   "items": [
+    {
+      "id": "d79f1dd73dcd",
+      "sourceKey": "ecb",
+      "sourceName": "ECB",
+      "kind": "official",
+      "bankCode": "ecb",
+      "url": "https://www.ecb.europa.eu//press/pr/date/2026/html/ecb.pr261029~abbb6dc64b.en.html",
+      "publishedAt": "2026-10-29T10:00:00.000Z",
+      "titleOriginal": "ECB President Lagarde to step down on 7 February 2027",
+      "titleTr": "ECB Başkanı Lagarde 7 Şubat 2027'de görevinden ayrılacak",
+      "summaryTr": "ECB, Başkan Christine Lagarde'ın 7 Şubat 2027'de görevinden ayrılacağını duyurdu.",
+      "titleEn": "ECB President Lagarde to step down on 7 February 2027",
+      "summaryEn": "The ECB announced that President Christine Lagarde will step down on 7 February 2027.",
+      "important": true,
+      "processedAt": "2026-10-29T10:01:49.220Z"
+    },
     {
       "id": "3bb58d3f0d3b",
       "sourceKey": "cnbc-economy",
@@ -2793,6 +2809,7 @@
     "f1cc2fabed93": "2026-10-28",
     "5913ba972dca": "2026-10-28",
     "67f999cd84b5": "2026-10-28",
-    "15409bd831f4": "2026-10-29"
+    "15409bd831f4": "2026-10-29",
+    "49618bf1d7a1": "2026-10-29"
   }
 }
