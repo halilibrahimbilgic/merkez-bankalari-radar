@@ -1,5 +1,5 @@
 {
-  "fetchedAt": "2026-10-29T15:01:52.937Z",
+  "fetchedAt": "2026-10-29T15:29:44.245Z",
   "items": [
     {
       "id": "5dbd9fe5b90e",
@@ -60,6 +60,21 @@
       "summaryEn": "The European Central Bank left its three key policy rates unchanged, in line with expectations, despite the energy crisis triggered by Middle East tensions and rising price pressures.",
       "important": true,
       "processedAt": "2026-10-29T14:02:02.746Z"
+    },
+    {
+      "id": "ea2ddd2afac4",
+      "sourceKey": "guardian-business",
+      "sourceName": "The Guardian",
+      "kind": "media",
+      "url": "https://www.theguardian.com/business/2026/oct/29/economy-growth-third-quarter",
+      "publishedAt": "2026-10-29T13:09:00.000Z",
+      "titleOriginal": "US economy grows faster than expected but inflation rises to 3.7%",
+      "titleTr": "ABD ekonomisi beklentiden hızlı büyüdü, enflasyon %3,7'ye yükseldi",
+      "summaryTr": "ABD Ticaret Bakanlığı'nın ön tahminine göre ekonomi üçüncü çeyrekte yıllık %3,4 büyüdü; Reuters anketindeki beklenti %3,2'ydi. Eylül ayında enflasyon ise hızlandı.",
+      "titleEn": "US economy grows faster than expected as inflation rises to 3.7%",
+      "summaryEn": "The US Commerce Department's advance estimate shows GDP grew at a 3.4% annualized rate in the third quarter, versus the 3.2% Reuters poll forecast. Inflation also accelerated in September.",
+      "important": true,
+      "processedAt": "2026-10-29T15:29:44.245Z"
     },
     {
       "id": "4f6559f48b15",
