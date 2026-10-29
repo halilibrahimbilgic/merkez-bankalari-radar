@@ -1,6 +1,21 @@
 {
-  "fetchedAt": "2026-10-29T07:01:41.500Z",
+  "fetchedAt": "2026-10-29T08:01:38.307Z",
   "items": [
+    {
+      "id": "223f2ddd8f9c",
+      "sourceKey": "ft",
+      "sourceName": "Financial Times",
+      "kind": "media",
+      "url": "https://www.ft.com/content/65d84258-7b04-4064-ab76-6610bd522d65?syn-25a6b1a6=1",
+      "publishedAt": "2026-10-29T06:30:00.000Z",
+      "titleOriginal": "The Fed plays for time (but doesn’t have much)",
+      "titleTr": "FT: Fed zaman kazanmaya çalışıyor ama fazla zamanı yok",
+      "summaryTr": "Financial Times'ın bülteni Fed'in zaman kazanma çabasını ele alıyor. Bültende ayrıca teknoloji şirketlerinin sonuçları ve Birleşik Krallık banka vergileri yer alıyor.",
+      "titleEn": "FT: The Fed plays for time but doesn't have much",
+      "summaryEn": "A Financial Times newsletter looks at the Fed's attempt to buy time. It also covers tech earnings and UK bank taxes.",
+      "important": false,
+      "processedAt": "2026-10-29T08:01:38.307Z"
+    },
     {
       "id": "fde4890cbe0b",
       "sourceKey": "ft",
