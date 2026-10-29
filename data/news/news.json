@@ -1,6 +1,21 @@
 {
-  "fetchedAt": "2026-10-29T14:02:02.746Z",
+  "fetchedAt": "2026-10-29T14:31:40.891Z",
   "items": [
+    {
+      "id": "c743b3d5d777",
+      "sourceKey": "aa-economy",
+      "sourceName": "Anadolu Agency",
+      "kind": "media",
+      "url": "https://www.aa.com.tr/en/economy/ecb-holds-interest-rates-steady-as-rising-energy-prices-cloud-outlook/4105064",
+      "publishedAt": "2026-10-29T14:05:29.000Z",
+      "titleOriginal": "ECB holds interest rates steady as rising energy prices cloud outlook",
+      "titleTr": "ECB faizleri sabit tuttu, enerji fiyatları görünümü belirsizleştiriyor",
+      "summaryTr": "ECB politika faizlerinde değişikliğe gitmedi: mevduat faizi %2,5, ana refinansman faizi %2,65, marjinal borç verme faizi %2,9 seviyesinde kaldı. Haberde, yükselen enerji fiyatlarının görünümü belirsizleştirdiği belirtildi.",
+      "titleEn": "ECB holds rates steady as rising energy prices cloud outlook",
+      "summaryEn": "The ECB left its policy rates unchanged, with the deposit facility rate at 2.5%, the main refinancing rate at 2.65% and the marginal lending rate at 2.9%. The report says rising energy prices are clouding the outlook.",
+      "important": true,
+      "processedAt": "2026-10-29T14:31:40.891Z"
+    },
     {
       "id": "4124d9afe9ec",
       "sourceKey": "cnbc-economy",
@@ -2937,6 +2952,7 @@
     "8ecb4b43d0a6": "2026-10-29",
     "568d09092a68": "2026-10-29",
     "ddda19aa967b": "2026-10-29",
-    "d1507a814b41": "2026-10-29"
+    "d1507a814b41": "2026-10-29",
+    "e06aa982c087": "2026-10-29"
   }
 }
