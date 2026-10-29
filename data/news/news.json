@@ -1,6 +1,21 @@
 {
-  "fetchedAt": "2026-10-29T10:01:49.220Z",
+  "fetchedAt": "2026-10-29T10:31:49.066Z",
   "items": [
+    {
+      "id": "c5a5cca2cd78",
+      "sourceKey": "ft",
+      "sourceName": "Financial Times",
+      "kind": "media",
+      "url": "https://www.ft.com/content/b9294b91-0eee-413b-bdde-0569f48539b9?syn-25a6b1a6=1",
+      "publishedAt": "2026-10-29T10:04:40.000Z",
+      "titleOriginal": "Christine Lagarde to step down as ECB president in February",
+      "titleTr": "Lagarde, Şubat'ta ECB başkanlığından ayrılacak",
+      "summaryTr": "Financial Times'a göre Christine Lagarde Şubat'ta ECB başkanlığından ayrılacak. Sekiz yıllık görev süresinin Ekim 2027'de dolması gerekiyordu.",
+      "titleEn": "Lagarde to step down as ECB president in February",
+      "summaryEn": "The Financial Times reports that Christine Lagarde will leave the ECB presidency in February. Her eight-year term was due to end in October 2027.",
+      "important": true,
+      "processedAt": "2026-10-29T10:31:49.066Z"
+    },
     {
       "id": "d79f1dd73dcd",
       "sourceKey": "ecb",
@@ -2810,6 +2825,7 @@
     "5913ba972dca": "2026-10-28",
     "67f999cd84b5": "2026-10-28",
     "15409bd831f4": "2026-10-29",
-    "49618bf1d7a1": "2026-10-29"
+    "49618bf1d7a1": "2026-10-29",
+    "d72430ed6b20": "2026-10-29"
   }
 }
