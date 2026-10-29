@@ -1,6 +1,21 @@
 {
-  "fetchedAt": "2026-10-29T12:31:44.598Z",
+  "fetchedAt": "2026-10-29T13:02:02.365Z",
   "items": [
+    {
+      "id": "b6a07b195ed7",
+      "sourceKey": "cnbc-economy",
+      "sourceName": "CNBC",
+      "kind": "media",
+      "url": "https://www.cnbc.com/2026/10/29/pce-inflation-report-september-2026-.html",
+      "publishedAt": "2026-10-29T12:55:04.000Z",
+      "titleOriginal": "Third-quarter U.S. GDP increases a better-than-expected 3.4% as September inflation accelerates",
+      "titleTr": "ABD'de üçüncü çeyrek büyümesi beklentiyi aştı: %3,4; eylül enflasyonu hızlandı",
+      "summaryTr": "ABD ekonomisi üçüncü çeyrekte beklentilerin üzerinde %3,4 büyüdü. Dow Jones konsensüsü, kişisel tüketim harcamaları fiyat endeksinin eylülde aylık %0,5, yıllık %3,7 artmasını bekliyordu.",
+      "titleEn": "U.S. Q3 GDP grows a better-than-expected 3.4% as September inflation accelerates",
+      "summaryEn": "The U.S. economy grew 3.4% in the third quarter, above expectations. The Dow Jones consensus had projected the PCE price index to rise 0.5% in September, or 3.7% annually.",
+      "important": true,
+      "processedAt": "2026-10-29T13:02:02.365Z"
+    },
     {
       "id": "643fe8957b1e",
       "sourceKey": "aa-ekonomi",
@@ -30,6 +45,21 @@
       "summaryEn": "US GDP and inflation figures are due together at 8:30 a.m. Eastern time. MarketWatch says strong growth and persistent price pressures could strengthen the case for a rate increase in December.",
       "important": true,
       "processedAt": "2026-10-29T11:31:37.743Z"
+    },
+    {
+      "id": "7a19becced8c",
+      "sourceKey": "guardian-business",
+      "sourceName": "The Guardian",
+      "kind": "media",
+      "url": "https://www.theguardian.com/world/2026/oct/29/european-central-bank-chief-christine-lagarde-to-step-down-nine-months-early",
+      "publishedAt": "2026-10-29T10:56:12.000Z",
+      "titleOriginal": "Europe’s central bank chief Christine Lagarde to step down nine months early",
+      "titleTr": "ECB Başkanı Lagarde görevden dokuz ay erken ayrılıyor",
+      "summaryTr": "ECB, Başkan Christine Lagarde'ın 7 Şubat 2027'de görevi bırakacağını duyurdu. Lagarde'ın görev süresi gelecek yılın ekim ayında dolacaktı; ayrılık, avro bölgesinin zayıf büyüme ve enflasyonla uğraştığı bir döneme denk geliyor.",
+      "titleEn": "ECB President Lagarde to step down nine months early",
+      "summaryEn": "The ECB announced that President Christine Lagarde will leave her post on 7 February 2027. Her term was due to run until the end of October next year, and her exit comes as the eurozone struggles with weak growth and inflation.",
+      "important": true,
+      "processedAt": "2026-10-29T13:02:02.365Z"
     },
     {
       "id": "c5a5cca2cd78",
@@ -2856,6 +2886,7 @@
     "67f999cd84b5": "2026-10-28",
     "15409bd831f4": "2026-10-29",
     "49618bf1d7a1": "2026-10-29",
-    "d72430ed6b20": "2026-10-29"
+    "d72430ed6b20": "2026-10-29",
+    "028aac8a6f8f": "2026-10-29"
   }
 }
