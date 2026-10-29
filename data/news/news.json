@@ -1,6 +1,21 @@
 {
-  "fetchedAt": "2026-10-29T11:31:37.743Z",
+  "fetchedAt": "2026-10-29T12:31:44.598Z",
   "items": [
+    {
+      "id": "643fe8957b1e",
+      "sourceKey": "aa-ekonomi",
+      "sourceName": "Anadolu Ajansı",
+      "kind": "media",
+      "url": "https://www.aa.com.tr/tr/ekonomi/avrupa-merkez-bankasi-baskani-lagarde-7-subat-2027de-gorevinden-ayrilacak/4104885",
+      "publishedAt": "2026-10-29T11:41:05.000Z",
+      "titleOriginal": "Avrupa Merkez Bankası Başkanı Lagarde, 7 Şubat 2027'de görevinden ayrılacak",
+      "titleTr": "Lagarde, 7 Şubat 2027'de ECB Başkanlığından ayrılacak",
+      "summaryTr": "AB Konseyi Başkanı Antonio Costa, ECB Başkanı Christine Lagarde'ın görevinden 7 Şubat 2027'de ayrılma niyetini kendisine bildirdiğini açıkladı.",
+      "titleEn": "Lagarde to leave ECB presidency on 7 February 2027",
+      "summaryEn": "European Council President Antonio Costa said ECB President Christine Lagarde has informed him of her intention to step down on 7 February 2027.",
+      "important": false,
+      "processedAt": "2026-10-29T12:31:44.598Z"
+    },
     {
       "id": "6e37779f6cda",
       "sourceKey": "marketwatch",
