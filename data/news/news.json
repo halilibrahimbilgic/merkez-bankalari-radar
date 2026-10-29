@@ -1,6 +1,21 @@
 {
-  "fetchedAt": "2026-10-29T08:01:38.307Z",
+  "fetchedAt": "2026-10-29T09:31:49.534Z",
   "items": [
+    {
+      "id": "3bb58d3f0d3b",
+      "sourceKey": "cnbc-economy",
+      "sourceName": "CNBC",
+      "kind": "media",
+      "url": "https://www.cnbc.com/2026/10/29/kevin-warsh-fed-october-rate-decision-december-hike.html",
+      "publishedAt": "2026-10-29T09:00:01.000Z",
+      "titleOriginal": "Analysis: Warsh is learning to wield the Fed's power without showing his hand",
+      "titleTr": "Warsh'ın Fed'de yüksek faize yatkın ama seçeneklerini açık tuttuğu belirtiliyor",
+      "summaryTr": "CNBC analizine göre Fed'in yeni başkanı Warsh, yüksek faiz yönünde eğilimli olduğunu açıkça ortaya koydu. Verilerin seyrine göre hareket edebilmek için kendine alan bıraktığı aktarılıyor.",
+      "titleEn": "Warsh leans toward higher rates at the Fed but keeps options open, analysis says",
+      "summaryEn": "A CNBC analysis says new Fed Chairman Warsh made clear he leans toward higher interest rates. He reportedly left himself room to adjust depending on incoming data.",
+      "important": true,
+      "processedAt": "2026-10-29T09:31:49.534Z"
+    },
     {
       "id": "223f2ddd8f9c",
       "sourceKey": "ft",
