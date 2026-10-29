@@ -1,6 +1,21 @@
 {
-  "fetchedAt": "2026-10-29T17:01:48.710Z",
+  "fetchedAt": "2026-10-29T18:31:41.079Z",
   "items": [
+    {
+      "id": "6d8bca8dde41",
+      "sourceKey": "marketwatch",
+      "sourceName": "MarketWatch",
+      "kind": "media",
+      "url": "https://www.marketwatch.com/story/did-the-fed-make-a-mistake-with-its-october-rate-pause-the-treasury-could-help-save-the-day-77d84993?mod=mw_rss_topstories",
+      "publishedAt": "2026-10-29T17:59:00.000Z",
+      "titleOriginal": "Did the Fed make a mistake with its October rate pause? The Treasury could help save the day.",
+      "titleTr": "Fed'in Ekim'deki faiz duraklaması hata mıydı? Hazine devreye girebilir",
+      "summaryTr": "MarketWatch'a göre dikkatler Hazine'nin borçlanma planlarına kayarken, talebi artırıp getirileri düşürmek için uzun vadeli tahvil arzının azaltılabileceği yönünde bir beklenti var.",
+      "titleEn": "Did the Fed err with its October rate pause? The Treasury could help",
+      "summaryEn": "MarketWatch reports that as attention turns to the Treasury's funding plans, some expect longer-term debt supply could be cut to lift demand and lower yields.",
+      "important": false,
+      "processedAt": "2026-10-29T18:31:41.079Z"
+    },
     {
       "id": "093325a70ce6",
       "sourceKey": "aa-ekonomi",
