@@ -1,6 +1,21 @@
 {
-  "fetchedAt": "2026-10-30T18:01:56.674Z",
+  "fetchedAt": "2026-10-30T20:01:55.815Z",
   "items": [
+    {
+      "id": "57bc2d8c6128",
+      "sourceKey": "marketwatch",
+      "sourceName": "MarketWatch",
+      "kind": "media",
+      "url": "https://www.marketwatch.com/story/the-fed-held-interest-rates-steady-but-these-officials-see-more-hikes-coming-soon-2098bbd8?mod=mw_rss_topstories",
+      "publishedAt": "2026-10-30T19:44:00.000Z",
+      "titleOriginal": "The Fed held interest rates steady, but these officials see more hikes coming soon",
+      "titleTr": "Fed faizi sabit tuttu; bazı yetkililer yeni artırımlar öngörüyor",
+      "summaryTr": "Fed faiz oranlarını değiştirmedi. Dallas Fed Başkanı Lorie Logan, ek olarak \"en az\" 50 baz puanlık artırım görüyor.",
+      "titleEn": "Fed holds rates steady, but some officials see more hikes ahead",
+      "summaryEn": "The Fed left interest rates unchanged. Dallas Fed's Lorie Logan sees \"at least\" 50 basis points of additional hikes.",
+      "important": true,
+      "processedAt": "2026-10-30T20:01:55.815Z"
+    },
     {
       "id": "828cc8d4890a",
       "sourceKey": "marketwatch",
