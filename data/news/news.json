@@ -1,6 +1,21 @@
 {
-  "fetchedAt": "2026-10-30T09:31:31.573Z",
+  "fetchedAt": "2026-10-30T10:01:54.077Z",
   "items": [
+    {
+      "id": "99fc870303a5",
+      "sourceKey": "aa-economy",
+      "sourceName": "Anadolu Agency",
+      "kind": "media",
+      "url": "https://www.aa.com.tr/en/economy/spains-economy-expands-06-in-q3-as-annual-inflation-holds-at-49-/4106067",
+      "publishedAt": "2026-10-30T09:33:06.000Z",
+      "titleOriginal": "Spain's economy expands 0.6% in Q3 as annual inflation holds at 4.9%",
+      "titleTr": "İspanya ekonomisi üçüncü çeyrekte %0,6 büyüdü, yıllık enflasyon %4,9",
+      "summaryTr": "İspanya ekonomisi üçüncü çeyrekte çeyreklik bazda %0,6 büyüdü; önceki çeyrekteki %0,7'lik büyümeye göre hafif yavaşladı. Yıllık büyüme %2,7 oldu, yıllık enflasyon %4,9'da sabit kaldı.",
+      "titleEn": "Spain's economy grows 0.6% in Q3 as annual inflation holds at 4.9%",
+      "summaryEn": "Spain's economy expanded 0.6% quarter-on-quarter in the third quarter, a slight slowdown from 0.7% previously. Annual GDP growth was 2.7%, while annual inflation held at 4.9%.",
+      "important": true,
+      "processedAt": "2026-10-30T10:01:54.077Z"
+    },
     {
       "id": "9dd083be2501",
       "sourceKey": "ecb",
