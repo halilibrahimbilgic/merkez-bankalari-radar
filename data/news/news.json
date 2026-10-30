@@ -1,6 +1,21 @@
 {
-  "fetchedAt": "2026-10-30T16:31:47.953Z",
+  "fetchedAt": "2026-10-30T18:01:56.674Z",
   "items": [
+    {
+      "id": "828cc8d4890a",
+      "sourceKey": "marketwatch",
+      "sourceName": "MarketWatch",
+      "kind": "media",
+      "url": "https://www.marketwatch.com/story/american-workers-are-finding-their-take-home-pay-isnt-keeping-up-with-inflation-with-their-wallets-stretching-thinner-and-thinner-6a1af690?mod=mw_rss_topstories",
+      "publishedAt": "2026-10-30T17:44:00.000Z",
+      "titleOriginal": "American workers are finding their take-home pay isn’t keeping up with inflation, with their wallets ‘stretched thinner and thinner’",
+      "titleTr": "ABD'de işçi ücretleri üst üste ikinci çeyrek enflasyonun gerisinde kaldı",
+      "summaryTr": "MarketWatch'a göre ABD'de çalışanların ücret ve yan ödemeleri üst üste ikinci çeyrektir enflasyondan daha yavaş artıyor. Haberde, çalışanların eve götürdüğü gelirin fiyat artışlarına yetişmediği belirtiliyor.",
+      "titleEn": "US worker pay lags inflation for a second straight quarter",
+      "summaryEn": "MarketWatch reports that US worker compensation grew more slowly than inflation for the second consecutive quarter. Take-home pay is described as not keeping up with rising prices.",
+      "important": true,
+      "processedAt": "2026-10-30T18:01:56.674Z"
+    },
     {
       "id": "eb75b834e14a",
       "sourceKey": "aa-economy",
