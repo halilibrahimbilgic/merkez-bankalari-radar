@@ -1,6 +1,21 @@
 {
-  "fetchedAt": "2026-10-30T03:31:40.886Z",
+  "fetchedAt": "2026-10-30T06:20:53.906Z",
   "items": [
+    {
+      "id": "da7d33594c42",
+      "sourceKey": "aa-ekonomi",
+      "sourceName": "Anadolu Ajansı",
+      "kind": "media",
+      "url": "https://www.aa.com.tr/tr/ekonomi/kuresel-piyasalarda-teknoloji-hisselerine-dair-endiselerle-satis-baskisi-artti/4105604",
+      "publishedAt": "2026-10-30T06:09:45.000Z",
+      "titleOriginal": "Küresel piyasalarda teknoloji hisselerine dair endişelerle satış baskısı arttı",
+      "titleTr": "Küresel piyasalarda teknoloji hisselerinde satış baskısı arttı",
+      "summaryTr": "Anadolu Ajansı'na göre teknoloji şirketlerinin bilançolarından gelen karışık sinyaller yapay zeka yatırımlarının karlılığına dair soru işaretlerini artırdı. ABD verilerinin Fed'in faiz artırma beklentisini güçlendirmesi de satış baskısını artırdı.",
+      "titleEn": "Selling pressure builds in global markets on tech stock worries",
+      "summaryEn": "Anadolu Agency reports that mixed signals from tech earnings raised questions about the profitability of AI investments. US data strengthening expectations of a Fed rate hike added to the selling pressure.",
+      "important": false,
+      "processedAt": "2026-10-30T06:20:53.906Z"
+    },
     {
       "id": "31f68d426af2",
       "sourceKey": "boj",
