@@ -1,7 +1,7 @@
 {
-  "fetchedAt": "2026-10-30T11:09:14.093Z",
-  "sourceModified": "Thu, 29 Oct 2026 15:14:56 GMT",
-  "asOf": "2026-10-28",
+  "fetchedAt": "2026-10-30T16:01:28.928Z",
+  "sourceModified": "Fri, 30 Oct 2026 14:36:19 GMT",
+  "asOf": "2026-10-29",
   "targetRange": {
     "lowerBps": 375,
     "upperBps": 400
@@ -13,30 +13,30 @@
         {
           "lowerBps": 350,
           "upperBps": 375,
-          "probabilityPct": 1.48
+          "probabilityPct": 1.58
         },
         {
           "lowerBps": 375,
           "upperBps": 400,
-          "probabilityPct": 5.53
+          "probabilityPct": 8.32
         },
         {
           "lowerBps": 400,
           "upperBps": 425,
-          "probabilityPct": 57.95
+          "probabilityPct": 60.76
         },
         {
           "lowerBps": 425,
           "upperBps": 450,
-          "probabilityPct": 31.62
+          "probabilityPct": 26.03
         }
       ],
-      "p25Bps": 415.63,
-      "meanBps": 418.99,
-      "modeBps": 422.46,
-      "p75Bps": 426.94,
-      "probCutPct": 3.06,
-      "probHikePct": 91.41
+      "p25Bps": 412.66,
+      "meanBps": 416.44,
+      "modeBps": 421,
+      "p75Bps": 425.75,
+      "probCutPct": 3.14,
+      "probHikePct": 88.53
     },
     {
       "startDate": "2027-03-17",
@@ -44,128 +44,249 @@
         {
           "lowerBps": 300,
           "upperBps": 325,
-          "probabilityPct": 0.83
+          "probabilityPct": 0.88
         },
         {
           "lowerBps": 325,
           "upperBps": 350,
-          "probabilityPct": 1.49
+          "probabilityPct": 1.82
         },
         {
           "lowerBps": 350,
           "upperBps": 375,
-          "probabilityPct": 2.48
+          "probabilityPct": 3.36
         },
         {
           "lowerBps": 375,
           "upperBps": 400,
-          "probabilityPct": 5.02
+          "probabilityPct": 6.62
         },
         {
           "lowerBps": 400,
           "upperBps": 425,
-          "probabilityPct": 14.34
+          "probabilityPct": 16.87
         },
         {
           "lowerBps": 425,
           "upperBps": 450,
-          "probabilityPct": 27.8
+          "probabilityPct": 27.25
         },
         {
           "lowerBps": 450,
           "upperBps": 475,
-          "probabilityPct": 24.62
+          "probabilityPct": 21.43
         },
         {
           "lowerBps": 475,
           "upperBps": 500,
-          "probabilityPct": 12.24
+          "probabilityPct": 10.66
         },
         {
           "lowerBps": 500,
           "upperBps": 525,
-          "probabilityPct": 5.18
+          "probabilityPct": 4.69
         },
         {
           "lowerBps": 525,
           "upperBps": 550,
-          "probabilityPct": 2.15
+          "probabilityPct": 2.08
         }
       ],
-      "p25Bps": 423.93,
-      "meanBps": 444.5,
-      "modeBps": 445.65,
-      "p75Bps": 470.63,
-      "probCutPct": 6.58,
-      "probHikePct": 88.4
+      "p25Bps": 417.2,
+      "meanBps": 439.01,
+      "modeBps": 440.84,
+      "p75Bps": 467.06,
+      "probCutPct": 8.31,
+      "probHikePct": 85.06
     },
     {
       "startDate": "2027-06-16",
       "buckets": [
         {
+          "lowerBps": 200,
+          "upperBps": 225,
+          "probabilityPct": 0.41
+        },
+        {
           "lowerBps": 225,
           "upperBps": 250,
-          "probabilityPct": 0.31
+          "probabilityPct": 0.4
         },
         {
           "lowerBps": 250,
           "upperBps": 275,
-          "probabilityPct": 0.53
+          "probabilityPct": 0.52
         },
         {
           "lowerBps": 275,
           "upperBps": 300,
-          "probabilityPct": 0.98
+          "probabilityPct": 0.94
         },
         {
           "lowerBps": 300,
           "upperBps": 325,
-          "probabilityPct": 1.6
+          "probabilityPct": 1.77
         },
         {
           "lowerBps": 325,
           "upperBps": 350,
-          "probabilityPct": 2.14
+          "probabilityPct": 2.85
         },
         {
           "lowerBps": 350,
           "upperBps": 375,
-          "probabilityPct": 2.76
+          "probabilityPct": 4.09
         },
         {
           "lowerBps": 375,
           "upperBps": 400,
-          "probabilityPct": 4.71
+          "probabilityPct": 6.31
         },
         {
           "lowerBps": 400,
           "upperBps": 425,
-          "probabilityPct": 9.33
+          "probabilityPct": 10.51
         },
         {
           "lowerBps": 425,
           "upperBps": 450,
-          "probabilityPct": 15.03
+          "probabilityPct": 15.14
         },
         {
           "lowerBps": 450,
           "upperBps": 475,
-          "probabilityPct": 17.32
+          "probabilityPct": 16.49
         },
         {
           "lowerBps": 475,
           "upperBps": 500,
-          "probabilityPct": 14.63
+          "probabilityPct": 13.52
         },
         {
           "lowerBps": 500,
           "upperBps": 525,
-          "probabilityPct": 10.2
+          "probabilityPct": 9.06
         },
         {
           "lowerBps": 525,
           "upperBps": 550,
-          "probabilityPct": 6.74
+          "probabilityPct": 5.59
+        },
+        {
+          "lowerBps": 550,
+          "upperBps": 575,
+          "probabilityPct": 3.42
+        },
+        {
+          "lowerBps": 575,
+          "upperBps": 600,
+          "probabilityPct": 2.15
+        },
+        {
+          "lowerBps": 600,
+          "upperBps": 625,
+          "probabilityPct": 1.44
+        },
+        {
+          "lowerBps": 625,
+          "upperBps": 650,
+          "probabilityPct": 1
+        }
+      ],
+      "p25Bps": 414.38,
+      "meanBps": 452.99,
+      "modeBps": 456.98,
+      "p75Bps": 499.48,
+      "probCutPct": 13.26,
+      "probHikePct": 80.43
+    },
+    {
+      "startDate": "2027-09-15",
+      "buckets": [
+        {
+          "lowerBps": 125,
+          "upperBps": 150,
+          "probabilityPct": 0.38
+        },
+        {
+          "lowerBps": 150,
+          "upperBps": 175,
+          "probabilityPct": 0.36
+        },
+        {
+          "lowerBps": 175,
+          "upperBps": 200,
+          "probabilityPct": 0.35
+        },
+        {
+          "lowerBps": 200,
+          "upperBps": 225,
+          "probabilityPct": 0.39
+        },
+        {
+          "lowerBps": 225,
+          "upperBps": 250,
+          "probabilityPct": 0.57
+        },
+        {
+          "lowerBps": 250,
+          "upperBps": 275,
+          "probabilityPct": 0.97
+        },
+        {
+          "lowerBps": 275,
+          "upperBps": 300,
+          "probabilityPct": 1.61
+        },
+        {
+          "lowerBps": 300,
+          "upperBps": 325,
+          "probabilityPct": 2.42
+        },
+        {
+          "lowerBps": 325,
+          "upperBps": 350,
+          "probabilityPct": 3.29
+        },
+        {
+          "lowerBps": 350,
+          "upperBps": 375,
+          "probabilityPct": 4.37
+        },
+        {
+          "lowerBps": 375,
+          "upperBps": 400,
+          "probabilityPct": 6.1
+        },
+        {
+          "lowerBps": 400,
+          "upperBps": 425,
+          "probabilityPct": 8.73
+        },
+        {
+          "lowerBps": 425,
+          "upperBps": 450,
+          "probabilityPct": 11.52
+        },
+        {
+          "lowerBps": 450,
+          "upperBps": 475,
+          "probabilityPct": 12.93
+        },
+        {
+          "lowerBps": 475,
+          "upperBps": 500,
+          "probabilityPct": 11.98
+        },
+        {
+          "lowerBps": 500,
+          "upperBps": 525,
+          "probabilityPct": 9.32
+        },
+        {
+          "lowerBps": 525,
+          "upperBps": 550,
+          "probabilityPct": 6.43
         },
         {
           "lowerBps": 550,
@@ -175,156 +296,40 @@
         {
           "lowerBps": 575,
           "upperBps": 600,
-          "probabilityPct": 2.56
+          "probabilityPct": 3.01
         },
         {
           "lowerBps": 600,
           "upperBps": 625,
-          "probabilityPct": 1.47
+          "probabilityPct": 2.19
         },
         {
           "lowerBps": 625,
           "upperBps": 650,
-          "probabilityPct": 0.9
-        }
-      ],
-      "p25Bps": 425.56,
-      "meanBps": 461.49,
-      "modeBps": 460.23,
-      "p75Bps": 507.03,
-      "probCutPct": 10.69,
-      "probHikePct": 84.6
-    },
-    {
-      "startDate": "2027-09-15",
-      "buckets": [
-        {
-          "lowerBps": 125,
-          "upperBps": 150,
-          "probabilityPct": 0.41
-        },
-        {
-          "lowerBps": 150,
-          "upperBps": 175,
-          "probabilityPct": 0.41
-        },
-        {
-          "lowerBps": 175,
-          "upperBps": 200,
-          "probabilityPct": 0.41
-        },
-        {
-          "lowerBps": 200,
-          "upperBps": 225,
-          "probabilityPct": 0.44
-        },
-        {
-          "lowerBps": 225,
-          "upperBps": 250,
-          "probabilityPct": 0.56
-        },
-        {
-          "lowerBps": 250,
-          "upperBps": 275,
-          "probabilityPct": 0.81
-        },
-        {
-          "lowerBps": 275,
-          "upperBps": 300,
-          "probabilityPct": 1.24
-        },
-        {
-          "lowerBps": 300,
-          "upperBps": 325,
-          "probabilityPct": 1.83
-        },
-        {
-          "lowerBps": 325,
-          "upperBps": 350,
-          "probabilityPct": 2.58
-        },
-        {
-          "lowerBps": 350,
-          "upperBps": 375,
-          "probabilityPct": 3.59
-        },
-        {
-          "lowerBps": 375,
-          "upperBps": 400,
-          "probabilityPct": 5.21
-        },
-        {
-          "lowerBps": 400,
-          "upperBps": 425,
-          "probabilityPct": 7.72
-        },
-        {
-          "lowerBps": 425,
-          "upperBps": 450,
-          "probabilityPct": 10.75
-        },
-        {
-          "lowerBps": 450,
-          "upperBps": 475,
-          "probabilityPct": 12.96
-        },
-        {
-          "lowerBps": 475,
-          "upperBps": 500,
-          "probabilityPct": 12.98
-        },
-        {
-          "lowerBps": 500,
-          "upperBps": 525,
-          "probabilityPct": 10.74
-        },
-        {
-          "lowerBps": 525,
-          "upperBps": 550,
-          "probabilityPct": 7.58
-        },
-        {
-          "lowerBps": 550,
-          "upperBps": 575,
-          "probabilityPct": 4.92
-        },
-        {
-          "lowerBps": 575,
-          "upperBps": 600,
-          "probabilityPct": 3.27
-        },
-        {
-          "lowerBps": 600,
-          "upperBps": 625,
-          "probabilityPct": 2.36
-        },
-        {
-          "lowerBps": 625,
-          "upperBps": 650,
-          "probabilityPct": 1.78
+          "probabilityPct": 1.61
         },
         {
           "lowerBps": 650,
           "upperBps": 675,
-          "probabilityPct": 1.34
+          "probabilityPct": 1.18
         },
         {
           "lowerBps": 675,
           "upperBps": 700,
-          "probabilityPct": 1
+          "probabilityPct": 0.88
         },
         {
           "lowerBps": 700,
           "upperBps": 725,
-          "probabilityPct": 0.73
+          "probabilityPct": 0.67
         }
       ],
-      "p25Bps": 418.25,
-      "meanBps": 467.9,
-      "modeBps": 475.17,
-      "p75Bps": 525.5,
-      "probCutPct": 14.45,
-      "probHikePct": 80.34
+      "p25Bps": 405.95,
+      "meanBps": 457.95,
+      "modeBps": 465.17,
+      "p75Bps": 516.97,
+      "probCutPct": 17.09,
+      "probHikePct": 76.81
     },
     {
       "startDate": "2027-12-15",
@@ -332,7 +337,7 @@
         {
           "lowerBps": 75,
           "upperBps": 100,
-          "probabilityPct": 0.46
+          "probabilityPct": 0.45
         },
         {
           "lowerBps": 100,
@@ -342,102 +347,258 @@
         {
           "lowerBps": 125,
           "upperBps": 150,
-          "probabilityPct": 0.37
+          "probabilityPct": 0.39
         },
         {
           "lowerBps": 150,
           "upperBps": 175,
-          "probabilityPct": 0.33
+          "probabilityPct": 0.38
         },
         {
           "lowerBps": 175,
           "upperBps": 200,
-          "probabilityPct": 0.34
+          "probabilityPct": 0.43
         },
         {
           "lowerBps": 200,
           "upperBps": 225,
-          "probabilityPct": 0.44
+          "probabilityPct": 0.58
         },
         {
           "lowerBps": 225,
           "upperBps": 250,
-          "probabilityPct": 0.68
+          "probabilityPct": 0.86
         },
         {
           "lowerBps": 250,
           "upperBps": 275,
-          "probabilityPct": 1.09
+          "probabilityPct": 1.28
         },
         {
           "lowerBps": 275,
           "upperBps": 300,
-          "probabilityPct": 1.66
+          "probabilityPct": 1.82
         },
         {
           "lowerBps": 300,
           "upperBps": 325,
-          "probabilityPct": 2.35
+          "probabilityPct": 2.52
         },
         {
           "lowerBps": 325,
           "upperBps": 350,
-          "probabilityPct": 3.15
+          "probabilityPct": 3.46
         },
         {
           "lowerBps": 350,
           "upperBps": 375,
-          "probabilityPct": 4.16
+          "probabilityPct": 4.81
         },
         {
           "lowerBps": 375,
           "upperBps": 400,
-          "probabilityPct": 5.57
+          "probabilityPct": 6.62
         },
         {
           "lowerBps": 400,
           "upperBps": 425,
-          "probabilityPct": 7.44
+          "probabilityPct": 8.63
         },
         {
           "lowerBps": 425,
           "upperBps": 450,
-          "probabilityPct": 9.42
+          "probabilityPct": 10.24
         },
         {
           "lowerBps": 450,
           "upperBps": 475,
-          "probabilityPct": 10.8
+          "probabilityPct": 10.82
         },
         {
           "lowerBps": 475,
           "upperBps": 500,
-          "probabilityPct": 10.91
+          "probabilityPct": 10.14
         },
         {
           "lowerBps": 500,
           "upperBps": 525,
-          "probabilityPct": 9.67
+          "probabilityPct": 8.52
         },
         {
           "lowerBps": 525,
           "upperBps": 550,
-          "probabilityPct": 7.61
+          "probabilityPct": 6.55
         },
         {
           "lowerBps": 550,
           "upperBps": 575,
-          "probabilityPct": 5.47
+          "probabilityPct": 4.75
         },
         {
           "lowerBps": 575,
           "upperBps": 600,
-          "probabilityPct": 3.77
+          "probabilityPct": 3.35
         },
         {
           "lowerBps": 600,
           "upperBps": 625,
-          "probabilityPct": 2.62
+          "probabilityPct": 2.35
+        },
+        {
+          "lowerBps": 625,
+          "upperBps": 650,
+          "probabilityPct": 1.66
+        },
+        {
+          "lowerBps": 650,
+          "upperBps": 675,
+          "probabilityPct": 1.21
+        },
+        {
+          "lowerBps": 675,
+          "upperBps": 700,
+          "probabilityPct": 0.93
+        },
+        {
+          "lowerBps": 700,
+          "upperBps": 725,
+          "probabilityPct": 0.76
+        },
+        {
+          "lowerBps": 725,
+          "upperBps": 750,
+          "probabilityPct": 0.65
+        },
+        {
+          "lowerBps": 750,
+          "upperBps": 775,
+          "probabilityPct": 0.56
+        }
+      ],
+      "p25Bps": 395.05,
+      "meanBps": 457.02,
+      "modeBps": 461.35,
+      "p75Bps": 525.57,
+      "probCutPct": 19.85,
+      "probHikePct": 73.53
+    },
+    {
+      "startDate": "2028-03-15",
+      "buckets": [
+        {
+          "lowerBps": 50,
+          "upperBps": 75,
+          "probabilityPct": 0.47
+        },
+        {
+          "lowerBps": 75,
+          "upperBps": 100,
+          "probabilityPct": 0.51
+        },
+        {
+          "lowerBps": 100,
+          "upperBps": 125,
+          "probabilityPct": 0.54
+        },
+        {
+          "lowerBps": 125,
+          "upperBps": 150,
+          "probabilityPct": 0.58
+        },
+        {
+          "lowerBps": 150,
+          "upperBps": 175,
+          "probabilityPct": 0.65
+        },
+        {
+          "lowerBps": 175,
+          "upperBps": 200,
+          "probabilityPct": 0.76
+        },
+        {
+          "lowerBps": 200,
+          "upperBps": 225,
+          "probabilityPct": 0.93
+        },
+        {
+          "lowerBps": 225,
+          "upperBps": 250,
+          "probabilityPct": 1.17
+        },
+        {
+          "lowerBps": 250,
+          "upperBps": 275,
+          "probabilityPct": 1.49
+        },
+        {
+          "lowerBps": 275,
+          "upperBps": 300,
+          "probabilityPct": 1.94
+        },
+        {
+          "lowerBps": 300,
+          "upperBps": 325,
+          "probabilityPct": 2.6
+        },
+        {
+          "lowerBps": 325,
+          "upperBps": 350,
+          "probabilityPct": 3.6
+        },
+        {
+          "lowerBps": 350,
+          "upperBps": 375,
+          "probabilityPct": 5.02
+        },
+        {
+          "lowerBps": 375,
+          "upperBps": 400,
+          "probabilityPct": 6.74
+        },
+        {
+          "lowerBps": 400,
+          "upperBps": 425,
+          "probabilityPct": 8.41
+        },
+        {
+          "lowerBps": 425,
+          "upperBps": 450,
+          "probabilityPct": 9.55
+        },
+        {
+          "lowerBps": 450,
+          "upperBps": 475,
+          "probabilityPct": 9.77
+        },
+        {
+          "lowerBps": 475,
+          "upperBps": 500,
+          "probabilityPct": 9.02
+        },
+        {
+          "lowerBps": 500,
+          "upperBps": 525,
+          "probabilityPct": 7.62
+        },
+        {
+          "lowerBps": 525,
+          "upperBps": 550,
+          "probabilityPct": 6.01
+        },
+        {
+          "lowerBps": 550,
+          "upperBps": 575,
+          "probabilityPct": 4.55
+        },
+        {
+          "lowerBps": 575,
+          "upperBps": 600,
+          "probabilityPct": 3.39
+        },
+        {
+          "lowerBps": 600,
+          "upperBps": 625,
+          "probabilityPct": 2.52
         },
         {
           "lowerBps": 625,
@@ -452,191 +613,40 @@
         {
           "lowerBps": 675,
           "upperBps": 700,
-          "probabilityPct": 1.1
+          "probabilityPct": 1.09
         },
         {
           "lowerBps": 700,
           "upperBps": 725,
-          "probabilityPct": 0.87
+          "probabilityPct": 0.86
         },
         {
           "lowerBps": 725,
           "upperBps": 750,
-          "probabilityPct": 0.69
-        },
-        {
-          "lowerBps": 750,
-          "upperBps": 775,
-          "probabilityPct": 0.56
-        }
-      ],
-      "p25Bps": 406.15,
-      "meanBps": 467.53,
-      "modeBps": 477.06,
-      "p75Bps": 535.27,
-      "probCutPct": 17.79,
-      "probHikePct": 76.64
-    },
-    {
-      "startDate": "2028-03-15",
-      "buckets": [
-        {
-          "lowerBps": 75,
-          "upperBps": 100,
-          "probabilityPct": 0.48
-        },
-        {
-          "lowerBps": 100,
-          "upperBps": 125,
-          "probabilityPct": 0.56
-        },
-        {
-          "lowerBps": 125,
-          "upperBps": 150,
-          "probabilityPct": 0.66
-        },
-        {
-          "lowerBps": 150,
-          "upperBps": 175,
-          "probabilityPct": 0.78
-        },
-        {
-          "lowerBps": 175,
-          "upperBps": 200,
-          "probabilityPct": 0.9
-        },
-        {
-          "lowerBps": 200,
-          "upperBps": 225,
-          "probabilityPct": 1.03
-        },
-        {
-          "lowerBps": 225,
-          "upperBps": 250,
-          "probabilityPct": 1.15
-        },
-        {
-          "lowerBps": 250,
-          "upperBps": 275,
-          "probabilityPct": 1.3
-        },
-        {
-          "lowerBps": 275,
-          "upperBps": 300,
-          "probabilityPct": 1.55
-        },
-        {
-          "lowerBps": 300,
-          "upperBps": 325,
-          "probabilityPct": 2.01
-        },
-        {
-          "lowerBps": 325,
-          "upperBps": 350,
-          "probabilityPct": 2.84
-        },
-        {
-          "lowerBps": 350,
-          "upperBps": 375,
-          "probabilityPct": 4.14
-        },
-        {
-          "lowerBps": 375,
-          "upperBps": 400,
-          "probabilityPct": 5.88
-        },
-        {
-          "lowerBps": 400,
-          "upperBps": 425,
-          "probabilityPct": 7.76
-        },
-        {
-          "lowerBps": 425,
-          "upperBps": 450,
-          "probabilityPct": 9.31
-        },
-        {
-          "lowerBps": 450,
-          "upperBps": 475,
-          "probabilityPct": 10.02
-        },
-        {
-          "lowerBps": 475,
-          "upperBps": 500,
-          "probabilityPct": 9.7
-        },
-        {
-          "lowerBps": 500,
-          "upperBps": 525,
-          "probabilityPct": 8.49
-        },
-        {
-          "lowerBps": 525,
-          "upperBps": 550,
-          "probabilityPct": 6.83
-        },
-        {
-          "lowerBps": 550,
-          "upperBps": 575,
-          "probabilityPct": 5.15
-        },
-        {
-          "lowerBps": 575,
-          "upperBps": 600,
-          "probabilityPct": 3.75
-        },
-        {
-          "lowerBps": 600,
-          "upperBps": 625,
-          "probabilityPct": 2.7
-        },
-        {
-          "lowerBps": 625,
-          "upperBps": 650,
-          "probabilityPct": 1.98
-        },
-        {
-          "lowerBps": 650,
-          "upperBps": 675,
-          "probabilityPct": 1.5
-        },
-        {
-          "lowerBps": 675,
-          "upperBps": 700,
-          "probabilityPct": 1.19
-        },
-        {
-          "lowerBps": 700,
-          "upperBps": 725,
-          "probabilityPct": 0.98
-        },
-        {
-          "lowerBps": 725,
-          "upperBps": 750,
-          "probabilityPct": 0.83
-        },
-        {
-          "lowerBps": 750,
-          "upperBps": 775,
           "probabilityPct": 0.71
+        },
+        {
+          "lowerBps": 750,
+          "upperBps": 775,
+          "probabilityPct": 0.6
         },
         {
           "lowerBps": 775,
           "upperBps": 800,
-          "probabilityPct": 0.61
+          "probabilityPct": 0.53
         },
         {
           "lowerBps": 800,
           "upperBps": 825,
-          "probabilityPct": 0.51
+          "probabilityPct": 0.47
         }
       ],
-      "p25Bps": 397.7,
-      "meanBps": 465.41,
-      "modeBps": 467.07,
-      "p75Bps": 539.21,
-      "probCutPct": 19.74,
-      "probHikePct": 74.38
+      "p25Bps": 384.92,
+      "meanBps": 454.96,
+      "modeBps": 455.27,
+      "p75Bps": 530.1,
+      "probCutPct": 22.54,
+      "probHikePct": 70.72
     },
     {
       "startDate": "2028-06-21",
@@ -644,751 +654,22 @@
         {
           "lowerBps": 50,
           "upperBps": 75,
-          "probabilityPct": 0.49
+          "probabilityPct": 0.51
         },
         {
           "lowerBps": 75,
           "upperBps": 100,
-          "probabilityPct": 0.6
-        },
-        {
-          "lowerBps": 100,
-          "upperBps": 125,
-          "probabilityPct": 0.73
-        },
-        {
-          "lowerBps": 125,
-          "upperBps": 150,
-          "probabilityPct": 0.88
-        },
-        {
-          "lowerBps": 150,
-          "upperBps": 175,
-          "probabilityPct": 1.02
-        },
-        {
-          "lowerBps": 175,
-          "upperBps": 200,
-          "probabilityPct": 1.13
-        },
-        {
-          "lowerBps": 200,
-          "upperBps": 225,
-          "probabilityPct": 1.18
-        },
-        {
-          "lowerBps": 225,
-          "upperBps": 250,
-          "probabilityPct": 1.19
-        },
-        {
-          "lowerBps": 250,
-          "upperBps": 275,
-          "probabilityPct": 1.23
-        },
-        {
-          "lowerBps": 275,
-          "upperBps": 300,
-          "probabilityPct": 1.44
-        },
-        {
-          "lowerBps": 300,
-          "upperBps": 325,
-          "probabilityPct": 1.98
-        },
-        {
-          "lowerBps": 325,
-          "upperBps": 350,
-          "probabilityPct": 2.99
-        },
-        {
-          "lowerBps": 350,
-          "upperBps": 375,
-          "probabilityPct": 4.48
-        },
-        {
-          "lowerBps": 375,
-          "upperBps": 400,
-          "probabilityPct": 6.26
-        },
-        {
-          "lowerBps": 400,
-          "upperBps": 425,
-          "probabilityPct": 7.9
-        },
-        {
-          "lowerBps": 425,
-          "upperBps": 450,
-          "probabilityPct": 8.96
-        },
-        {
-          "lowerBps": 450,
-          "upperBps": 475,
-          "probabilityPct": 9.17
-        },
-        {
-          "lowerBps": 475,
-          "upperBps": 500,
-          "probabilityPct": 8.57
-        },
-        {
-          "lowerBps": 500,
-          "upperBps": 525,
-          "probabilityPct": 7.47
-        },
-        {
-          "lowerBps": 525,
-          "upperBps": 550,
-          "probabilityPct": 6.21
-        },
-        {
-          "lowerBps": 550,
-          "upperBps": 575,
-          "probabilityPct": 5.03
-        },
-        {
-          "lowerBps": 575,
-          "upperBps": 600,
-          "probabilityPct": 4
-        },
-        {
-          "lowerBps": 600,
-          "upperBps": 625,
-          "probabilityPct": 3.09
-        },
-        {
-          "lowerBps": 625,
-          "upperBps": 650,
-          "probabilityPct": 2.29
-        },
-        {
-          "lowerBps": 650,
-          "upperBps": 675,
-          "probabilityPct": 1.64
-        },
-        {
-          "lowerBps": 675,
-          "upperBps": 700,
-          "probabilityPct": 1.15
-        },
-        {
-          "lowerBps": 700,
-          "upperBps": 725,
-          "probabilityPct": 0.84
-        },
-        {
-          "lowerBps": 725,
-          "upperBps": 750,
-          "probabilityPct": 0.68
-        },
-        {
-          "lowerBps": 750,
-          "upperBps": 775,
           "probabilityPct": 0.62
         },
         {
-          "lowerBps": 775,
-          "upperBps": 800,
-          "probabilityPct": 0.6
-        },
-        {
-          "lowerBps": 800,
-          "upperBps": 825,
-          "probabilityPct": 0.59
-        },
-        {
-          "lowerBps": 825,
-          "upperBps": 850,
-          "probabilityPct": 0.57
-        },
-        {
-          "lowerBps": 850,
-          "upperBps": 875,
-          "probabilityPct": 0.52
-        }
-      ],
-      "p25Bps": 389.58,
-      "meanBps": 464,
-      "modeBps": 455.58,
-      "p75Bps": 545.17,
-      "probCutPct": 21.57,
-      "probHikePct": 72.17
-    },
-    {
-      "startDate": "2028-09-20",
-      "buckets": [
-        {
-          "lowerBps": 25,
-          "upperBps": 50,
-          "probabilityPct": 0.46
-        },
-        {
-          "lowerBps": 50,
-          "upperBps": 75,
-          "probabilityPct": 0.56
-        },
-        {
-          "lowerBps": 75,
-          "upperBps": 100,
-          "probabilityPct": 0.69
-        },
-        {
           "lowerBps": 100,
           "upperBps": 125,
-          "probabilityPct": 0.85
+          "probabilityPct": 0.76
         },
         {
           "lowerBps": 125,
           "upperBps": 150,
-          "probabilityPct": 1.02
-        },
-        {
-          "lowerBps": 150,
-          "upperBps": 175,
-          "probabilityPct": 1.17
-        },
-        {
-          "lowerBps": 175,
-          "upperBps": 200,
-          "probabilityPct": 1.28
-        },
-        {
-          "lowerBps": 200,
-          "upperBps": 225,
-          "probabilityPct": 1.33
-        },
-        {
-          "lowerBps": 225,
-          "upperBps": 250,
-          "probabilityPct": 1.35
-        },
-        {
-          "lowerBps": 250,
-          "upperBps": 275,
-          "probabilityPct": 1.4
-        },
-        {
-          "lowerBps": 275,
-          "upperBps": 300,
-          "probabilityPct": 1.62
-        },
-        {
-          "lowerBps": 300,
-          "upperBps": 325,
-          "probabilityPct": 2.14
-        },
-        {
-          "lowerBps": 325,
-          "upperBps": 350,
-          "probabilityPct": 3.06
-        },
-        {
-          "lowerBps": 350,
-          "upperBps": 375,
-          "probabilityPct": 4.39
-        },
-        {
-          "lowerBps": 375,
-          "upperBps": 400,
-          "probabilityPct": 5.93
-        },
-        {
-          "lowerBps": 400,
-          "upperBps": 425,
-          "probabilityPct": 7.39
-        },
-        {
-          "lowerBps": 425,
-          "upperBps": 450,
-          "probabilityPct": 8.38
-        },
-        {
-          "lowerBps": 450,
-          "upperBps": 475,
-          "probabilityPct": 8.67
-        },
-        {
-          "lowerBps": 475,
-          "upperBps": 500,
-          "probabilityPct": 8.23
-        },
-        {
-          "lowerBps": 500,
-          "upperBps": 525,
-          "probabilityPct": 7.26
-        },
-        {
-          "lowerBps": 525,
-          "upperBps": 550,
-          "probabilityPct": 6.07
-        },
-        {
-          "lowerBps": 550,
-          "upperBps": 575,
-          "probabilityPct": 4.92
-        },
-        {
-          "lowerBps": 575,
-          "upperBps": 600,
-          "probabilityPct": 3.92
-        },
-        {
-          "lowerBps": 600,
-          "upperBps": 625,
-          "probabilityPct": 3.09
-        },
-        {
-          "lowerBps": 625,
-          "upperBps": 650,
-          "probabilityPct": 2.39
-        },
-        {
-          "lowerBps": 650,
-          "upperBps": 675,
-          "probabilityPct": 1.82
-        },
-        {
-          "lowerBps": 675,
-          "upperBps": 700,
-          "probabilityPct": 1.35
-        },
-        {
-          "lowerBps": 700,
-          "upperBps": 725,
-          "probabilityPct": 1.01
-        },
-        {
-          "lowerBps": 725,
-          "upperBps": 750,
-          "probabilityPct": 0.78
-        },
-        {
-          "lowerBps": 750,
-          "upperBps": 775,
-          "probabilityPct": 0.65
-        },
-        {
-          "lowerBps": 775,
-          "upperBps": 800,
-          "probabilityPct": 0.59
-        },
-        {
-          "lowerBps": 800,
-          "upperBps": 825,
-          "probabilityPct": 0.56
-        },
-        {
-          "lowerBps": 825,
-          "upperBps": 850,
-          "probabilityPct": 0.53
-        },
-        {
-          "lowerBps": 850,
-          "upperBps": 875,
-          "probabilityPct": 0.49
-        },
-        {
-          "lowerBps": 875,
-          "upperBps": 900,
-          "probabilityPct": 0.43
-        }
-      ],
-      "p25Bps": 382.53,
-      "meanBps": 462.46,
-      "modeBps": 459.2,
-      "p75Bps": 548.58,
-      "probCutPct": 23.38,
-      "probHikePct": 70.69
-    },
-    {
-      "startDate": "2028-12-20",
-      "buckets": [
-        {
-          "lowerBps": 25,
-          "upperBps": 50,
-          "probabilityPct": 0.49
-        },
-        {
-          "lowerBps": 50,
-          "upperBps": 75,
-          "probabilityPct": 0.63
-        },
-        {
-          "lowerBps": 75,
-          "upperBps": 100,
-          "probabilityPct": 0.8
-        },
-        {
-          "lowerBps": 100,
-          "upperBps": 125,
-          "probabilityPct": 0.97
-        },
-        {
-          "lowerBps": 125,
-          "upperBps": 150,
-          "probabilityPct": 1.14
-        },
-        {
-          "lowerBps": 150,
-          "upperBps": 175,
-          "probabilityPct": 1.26
-        },
-        {
-          "lowerBps": 175,
-          "upperBps": 200,
-          "probabilityPct": 1.33
-        },
-        {
-          "lowerBps": 200,
-          "upperBps": 225,
-          "probabilityPct": 1.35
-        },
-        {
-          "lowerBps": 225,
-          "upperBps": 250,
-          "probabilityPct": 1.38
-        },
-        {
-          "lowerBps": 250,
-          "upperBps": 275,
-          "probabilityPct": 1.48
-        },
-        {
-          "lowerBps": 275,
-          "upperBps": 300,
-          "probabilityPct": 1.78
-        },
-        {
-          "lowerBps": 300,
-          "upperBps": 325,
-          "probabilityPct": 2.37
-        },
-        {
-          "lowerBps": 325,
-          "upperBps": 350,
-          "probabilityPct": 3.33
-        },
-        {
-          "lowerBps": 350,
-          "upperBps": 375,
-          "probabilityPct": 4.61
-        },
-        {
-          "lowerBps": 375,
-          "upperBps": 400,
-          "probabilityPct": 6.02
-        },
-        {
-          "lowerBps": 400,
-          "upperBps": 425,
-          "probabilityPct": 7.28
-        },
-        {
-          "lowerBps": 425,
-          "upperBps": 450,
-          "probabilityPct": 8.1
-        },
-        {
-          "lowerBps": 450,
-          "upperBps": 475,
-          "probabilityPct": 8.28
-        },
-        {
-          "lowerBps": 475,
-          "upperBps": 500,
-          "probabilityPct": 7.81
-        },
-        {
-          "lowerBps": 500,
-          "upperBps": 525,
-          "probabilityPct": 6.86
-        },
-        {
-          "lowerBps": 525,
-          "upperBps": 550,
-          "probabilityPct": 5.69
-        },
-        {
-          "lowerBps": 550,
-          "upperBps": 575,
-          "probabilityPct": 4.55
-        },
-        {
-          "lowerBps": 575,
-          "upperBps": 600,
-          "probabilityPct": 3.58
-        },
-        {
-          "lowerBps": 600,
-          "upperBps": 625,
-          "probabilityPct": 2.83
-        },
-        {
-          "lowerBps": 625,
-          "upperBps": 650,
-          "probabilityPct": 2.27
-        },
-        {
-          "lowerBps": 650,
-          "upperBps": 675,
-          "probabilityPct": 1.84
-        },
-        {
-          "lowerBps": 675,
-          "upperBps": 700,
-          "probabilityPct": 1.5
-        },
-        {
-          "lowerBps": 700,
-          "upperBps": 725,
-          "probabilityPct": 1.24
-        },
-        {
-          "lowerBps": 725,
-          "upperBps": 750,
-          "probabilityPct": 1.04
-        },
-        {
-          "lowerBps": 750,
-          "upperBps": 775,
-          "probabilityPct": 0.9
-        },
-        {
-          "lowerBps": 775,
-          "upperBps": 800,
-          "probabilityPct": 0.78
-        },
-        {
-          "lowerBps": 800,
-          "upperBps": 825,
-          "probabilityPct": 0.69
-        },
-        {
-          "lowerBps": 825,
-          "upperBps": 850,
-          "probabilityPct": 0.6
-        },
-        {
-          "lowerBps": 850,
-          "upperBps": 875,
-          "probabilityPct": 0.52
-        },
-        {
-          "lowerBps": 875,
-          "upperBps": 900,
-          "probabilityPct": 0.43
-        }
-      ],
-      "p25Bps": 374.63,
-      "meanBps": 460.46,
-      "modeBps": 456.44,
-      "p75Bps": 549.39,
-      "probCutPct": 25.08,
-      "probHikePct": 68.9
-    },
-    {
-      "startDate": "2029-03-21",
-      "buckets": [
-        {
-          "lowerBps": 75,
-          "upperBps": 100,
-          "probabilityPct": 0.46
-        },
-        {
-          "lowerBps": 100,
-          "upperBps": 125,
-          "probabilityPct": 0.62
-        },
-        {
-          "lowerBps": 125,
-          "upperBps": 150,
-          "probabilityPct": 0.81
-        },
-        {
-          "lowerBps": 150,
-          "upperBps": 175,
-          "probabilityPct": 1.05
-        },
-        {
-          "lowerBps": 175,
-          "upperBps": 200,
-          "probabilityPct": 1.3
-        },
-        {
-          "lowerBps": 200,
-          "upperBps": 225,
-          "probabilityPct": 1.57
-        },
-        {
-          "lowerBps": 225,
-          "upperBps": 250,
-          "probabilityPct": 1.86
-        },
-        {
-          "lowerBps": 250,
-          "upperBps": 275,
-          "probabilityPct": 2.24
-        },
-        {
-          "lowerBps": 275,
-          "upperBps": 300,
-          "probabilityPct": 2.78
-        },
-        {
-          "lowerBps": 300,
-          "upperBps": 325,
-          "probabilityPct": 3.6
-        },
-        {
-          "lowerBps": 325,
-          "upperBps": 350,
-          "probabilityPct": 4.72
-        },
-        {
-          "lowerBps": 350,
-          "upperBps": 375,
-          "probabilityPct": 6.05
-        },
-        {
-          "lowerBps": 375,
-          "upperBps": 400,
-          "probabilityPct": 7.32
-        },
-        {
-          "lowerBps": 400,
-          "upperBps": 425,
-          "probabilityPct": 8.2
-        },
-        {
-          "lowerBps": 425,
-          "upperBps": 450,
-          "probabilityPct": 8.4
-        },
-        {
-          "lowerBps": 450,
-          "upperBps": 475,
-          "probabilityPct": 7.83
-        },
-        {
-          "lowerBps": 475,
-          "upperBps": 500,
-          "probabilityPct": 6.66
-        },
-        {
-          "lowerBps": 500,
-          "upperBps": 525,
-          "probabilityPct": 5.22
-        },
-        {
-          "lowerBps": 525,
-          "upperBps": 550,
-          "probabilityPct": 3.88
-        },
-        {
-          "lowerBps": 550,
-          "upperBps": 575,
-          "probabilityPct": 2.88
-        },
-        {
-          "lowerBps": 575,
-          "upperBps": 600,
-          "probabilityPct": 2.28
-        },
-        {
-          "lowerBps": 600,
-          "upperBps": 625,
-          "probabilityPct": 2.03
-        },
-        {
-          "lowerBps": 625,
-          "upperBps": 650,
-          "probabilityPct": 1.98
-        },
-        {
-          "lowerBps": 650,
-          "upperBps": 675,
-          "probabilityPct": 1.98
-        },
-        {
-          "lowerBps": 675,
-          "upperBps": 700,
-          "probabilityPct": 1.94
-        },
-        {
-          "lowerBps": 700,
-          "upperBps": 725,
-          "probabilityPct": 1.81
-        },
-        {
-          "lowerBps": 725,
-          "upperBps": 750,
-          "probabilityPct": 1.59
-        },
-        {
-          "lowerBps": 750,
-          "upperBps": 775,
-          "probabilityPct": 1.32
-        },
-        {
-          "lowerBps": 775,
-          "upperBps": 800,
-          "probabilityPct": 1.03
-        },
-        {
-          "lowerBps": 800,
-          "upperBps": 825,
-          "probabilityPct": 0.78
-        },
-        {
-          "lowerBps": 825,
-          "upperBps": 850,
-          "probabilityPct": 0.58
-        },
-        {
-          "lowerBps": 850,
-          "upperBps": 875,
-          "probabilityPct": 0.43
-        },
-        {
-          "lowerBps": 875,
-          "upperBps": 900,
-          "probabilityPct": 0.33
-        }
-      ],
-      "p25Bps": 358.43,
-      "meanBps": 458.28,
-      "modeBps": 431.4,
-      "p75Bps": 538.34,
-      "probCutPct": 29.16,
-      "probHikePct": 63.52
-    },
-    {
-      "startDate": "2029-06-20",
-      "buckets": [
-        {
-          "lowerBps": 25,
-          "upperBps": 50,
-          "probabilityPct": 0.47
-        },
-        {
-          "lowerBps": 50,
-          "upperBps": 75,
-          "probabilityPct": 0.58
-        },
-        {
-          "lowerBps": 75,
-          "upperBps": 100,
-          "probabilityPct": 0.7
-        },
-        {
-          "lowerBps": 100,
-          "upperBps": 125,
-          "probabilityPct": 0.83
-        },
-        {
-          "lowerBps": 125,
-          "upperBps": 150,
-          "probabilityPct": 0.95
+          "probabilityPct": 0.91
         },
         {
           "lowerBps": 150,
@@ -1398,72 +679,786 @@
         {
           "lowerBps": 175,
           "upperBps": 200,
-          "probabilityPct": 1.17
+          "probabilityPct": 1.19
         },
         {
           "lowerBps": 200,
           "upperBps": 225,
-          "probabilityPct": 1.32
+          "probabilityPct": 1.26
         },
         {
           "lowerBps": 225,
           "upperBps": 250,
-          "probabilityPct": 1.55
+          "probabilityPct": 1.31
         },
         {
           "lowerBps": 250,
           "upperBps": 275,
-          "probabilityPct": 1.97
+          "probabilityPct": 1.4
         },
         {
           "lowerBps": 275,
           "upperBps": 300,
-          "probabilityPct": 2.65
+          "probabilityPct": 1.68
         },
         {
           "lowerBps": 300,
           "upperBps": 325,
-          "probabilityPct": 3.63
+          "probabilityPct": 2.33
         },
         {
           "lowerBps": 325,
           "upperBps": 350,
-          "probabilityPct": 4.85
+          "probabilityPct": 3.48
         },
         {
           "lowerBps": 350,
           "upperBps": 375,
-          "probabilityPct": 6.15
+          "probabilityPct": 5.11
         },
         {
           "lowerBps": 375,
           "upperBps": 400,
-          "probabilityPct": 7.25
+          "probabilityPct": 6.93
         },
         {
           "lowerBps": 400,
           "upperBps": 425,
-          "probabilityPct": 7.92
+          "probabilityPct": 8.48
         },
         {
           "lowerBps": 425,
           "upperBps": 450,
-          "probabilityPct": 7.96
+          "probabilityPct": 9.29
         },
         {
           "lowerBps": 450,
           "upperBps": 475,
-          "probabilityPct": 7.38
+          "probabilityPct": 9.15
         },
         {
           "lowerBps": 475,
           "upperBps": 500,
-          "probabilityPct": 6.34
+          "probabilityPct": 8.19
         },
         {
           "lowerBps": 500,
           "upperBps": 525,
-          "probabilityPct": 5.1
+          "probabilityPct": 6.82
+        },
+        {
+          "lowerBps": 525,
+          "upperBps": 550,
+          "probabilityPct": 5.45
+        },
+        {
+          "lowerBps": 550,
+          "upperBps": 575,
+          "probabilityPct": 4.3
+        },
+        {
+          "lowerBps": 575,
+          "upperBps": 600,
+          "probabilityPct": 3.42
+        },
+        {
+          "lowerBps": 600,
+          "upperBps": 625,
+          "probabilityPct": 2.71
+        },
+        {
+          "lowerBps": 625,
+          "upperBps": 650,
+          "probabilityPct": 2.12
+        },
+        {
+          "lowerBps": 650,
+          "upperBps": 675,
+          "probabilityPct": 1.6
+        },
+        {
+          "lowerBps": 675,
+          "upperBps": 700,
+          "probabilityPct": 1.2
+        },
+        {
+          "lowerBps": 700,
+          "upperBps": 725,
+          "probabilityPct": 0.92
+        },
+        {
+          "lowerBps": 725,
+          "upperBps": 750,
+          "probabilityPct": 0.75
+        },
+        {
+          "lowerBps": 750,
+          "upperBps": 775,
+          "probabilityPct": 0.65
+        },
+        {
+          "lowerBps": 775,
+          "upperBps": 800,
+          "probabilityPct": 0.6
+        },
+        {
+          "lowerBps": 800,
+          "upperBps": 825,
+          "probabilityPct": 0.55
+        },
+        {
+          "lowerBps": 825,
+          "upperBps": 850,
+          "probabilityPct": 0.5
+        }
+      ],
+      "p25Bps": 379.25,
+      "meanBps": 453.93,
+      "modeBps": 446.1,
+      "p75Bps": 534.36,
+      "probCutPct": 23.95,
+      "probHikePct": 69.12
+    },
+    {
+      "startDate": "2028-09-20",
+      "buckets": [
+        {
+          "lowerBps": 25,
+          "upperBps": 50,
+          "probabilityPct": 0.52
+        },
+        {
+          "lowerBps": 50,
+          "upperBps": 75,
+          "probabilityPct": 0.63
+        },
+        {
+          "lowerBps": 75,
+          "upperBps": 100,
+          "probabilityPct": 0.76
+        },
+        {
+          "lowerBps": 100,
+          "upperBps": 125,
+          "probabilityPct": 0.9
+        },
+        {
+          "lowerBps": 125,
+          "upperBps": 150,
+          "probabilityPct": 1.04
+        },
+        {
+          "lowerBps": 150,
+          "upperBps": 175,
+          "probabilityPct": 1.14
+        },
+        {
+          "lowerBps": 175,
+          "upperBps": 200,
+          "probabilityPct": 1.2
+        },
+        {
+          "lowerBps": 200,
+          "upperBps": 225,
+          "probabilityPct": 1.22
+        },
+        {
+          "lowerBps": 225,
+          "upperBps": 250,
+          "probabilityPct": 1.26
+        },
+        {
+          "lowerBps": 250,
+          "upperBps": 275,
+          "probabilityPct": 1.4
+        },
+        {
+          "lowerBps": 275,
+          "upperBps": 300,
+          "probabilityPct": 1.79
+        },
+        {
+          "lowerBps": 300,
+          "upperBps": 325,
+          "probabilityPct": 2.56
+        },
+        {
+          "lowerBps": 325,
+          "upperBps": 350,
+          "probabilityPct": 3.76
+        },
+        {
+          "lowerBps": 350,
+          "upperBps": 375,
+          "probabilityPct": 5.31
+        },
+        {
+          "lowerBps": 375,
+          "upperBps": 400,
+          "probabilityPct": 6.91
+        },
+        {
+          "lowerBps": 400,
+          "upperBps": 425,
+          "probabilityPct": 8.16
+        },
+        {
+          "lowerBps": 425,
+          "upperBps": 450,
+          "probabilityPct": 8.73
+        },
+        {
+          "lowerBps": 450,
+          "upperBps": 475,
+          "probabilityPct": 8.47
+        },
+        {
+          "lowerBps": 475,
+          "upperBps": 500,
+          "probabilityPct": 7.54
+        },
+        {
+          "lowerBps": 500,
+          "upperBps": 525,
+          "probabilityPct": 6.28
+        },
+        {
+          "lowerBps": 525,
+          "upperBps": 550,
+          "probabilityPct": 5.05
+        },
+        {
+          "lowerBps": 550,
+          "upperBps": 575,
+          "probabilityPct": 4.08
+        },
+        {
+          "lowerBps": 575,
+          "upperBps": 600,
+          "probabilityPct": 3.38
+        },
+        {
+          "lowerBps": 600,
+          "upperBps": 625,
+          "probabilityPct": 2.87
+        },
+        {
+          "lowerBps": 625,
+          "upperBps": 650,
+          "probabilityPct": 2.43
+        },
+        {
+          "lowerBps": 650,
+          "upperBps": 675,
+          "probabilityPct": 2
+        },
+        {
+          "lowerBps": 675,
+          "upperBps": 700,
+          "probabilityPct": 1.57
+        },
+        {
+          "lowerBps": 700,
+          "upperBps": 725,
+          "probabilityPct": 1.19
+        },
+        {
+          "lowerBps": 725,
+          "upperBps": 750,
+          "probabilityPct": 0.88
+        },
+        {
+          "lowerBps": 750,
+          "upperBps": 775,
+          "probabilityPct": 0.66
+        },
+        {
+          "lowerBps": 775,
+          "upperBps": 800,
+          "probabilityPct": 0.52
+        },
+        {
+          "lowerBps": 800,
+          "upperBps": 825,
+          "probabilityPct": 0.43
+        },
+        {
+          "lowerBps": 825,
+          "upperBps": 850,
+          "probabilityPct": 0.38
+        },
+        {
+          "lowerBps": 850,
+          "upperBps": 875,
+          "probabilityPct": 0.35
+        }
+      ],
+      "p25Bps": 372.26,
+      "meanBps": 453.5,
+      "modeBps": 441.87,
+      "p75Bps": 540.45,
+      "probCutPct": 25.66,
+      "probHikePct": 67.43
+    },
+    {
+      "startDate": "2028-12-20",
+      "buckets": [
+        {
+          "lowerBps": 25,
+          "upperBps": 50,
+          "probabilityPct": 0.55
+        },
+        {
+          "lowerBps": 50,
+          "upperBps": 75,
+          "probabilityPct": 0.72
+        },
+        {
+          "lowerBps": 75,
+          "upperBps": 100,
+          "probabilityPct": 0.9
+        },
+        {
+          "lowerBps": 100,
+          "upperBps": 125,
+          "probabilityPct": 1.06
+        },
+        {
+          "lowerBps": 125,
+          "upperBps": 150,
+          "probabilityPct": 1.18
+        },
+        {
+          "lowerBps": 150,
+          "upperBps": 175,
+          "probabilityPct": 1.24
+        },
+        {
+          "lowerBps": 175,
+          "upperBps": 200,
+          "probabilityPct": 1.23
+        },
+        {
+          "lowerBps": 200,
+          "upperBps": 225,
+          "probabilityPct": 1.21
+        },
+        {
+          "lowerBps": 225,
+          "upperBps": 250,
+          "probabilityPct": 1.23
+        },
+        {
+          "lowerBps": 250,
+          "upperBps": 275,
+          "probabilityPct": 1.43
+        },
+        {
+          "lowerBps": 275,
+          "upperBps": 300,
+          "probabilityPct": 1.92
+        },
+        {
+          "lowerBps": 300,
+          "upperBps": 325,
+          "probabilityPct": 2.79
+        },
+        {
+          "lowerBps": 325,
+          "upperBps": 350,
+          "probabilityPct": 4.03
+        },
+        {
+          "lowerBps": 350,
+          "upperBps": 375,
+          "probabilityPct": 5.48
+        },
+        {
+          "lowerBps": 375,
+          "upperBps": 400,
+          "probabilityPct": 6.88
+        },
+        {
+          "lowerBps": 400,
+          "upperBps": 425,
+          "probabilityPct": 7.91
+        },
+        {
+          "lowerBps": 425,
+          "upperBps": 450,
+          "probabilityPct": 8.31
+        },
+        {
+          "lowerBps": 450,
+          "upperBps": 475,
+          "probabilityPct": 8.03
+        },
+        {
+          "lowerBps": 475,
+          "upperBps": 500,
+          "probabilityPct": 7.21
+        },
+        {
+          "lowerBps": 500,
+          "upperBps": 525,
+          "probabilityPct": 6.12
+        },
+        {
+          "lowerBps": 525,
+          "upperBps": 550,
+          "probabilityPct": 5
+        },
+        {
+          "lowerBps": 550,
+          "upperBps": 575,
+          "probabilityPct": 4.04
+        },
+        {
+          "lowerBps": 575,
+          "upperBps": 600,
+          "probabilityPct": 3.27
+        },
+        {
+          "lowerBps": 600,
+          "upperBps": 625,
+          "probabilityPct": 2.66
+        },
+        {
+          "lowerBps": 625,
+          "upperBps": 650,
+          "probabilityPct": 2.18
+        },
+        {
+          "lowerBps": 650,
+          "upperBps": 675,
+          "probabilityPct": 1.77
+        },
+        {
+          "lowerBps": 675,
+          "upperBps": 700,
+          "probabilityPct": 1.44
+        },
+        {
+          "lowerBps": 700,
+          "upperBps": 725,
+          "probabilityPct": 1.19
+        },
+        {
+          "lowerBps": 725,
+          "upperBps": 750,
+          "probabilityPct": 1
+        },
+        {
+          "lowerBps": 750,
+          "upperBps": 775,
+          "probabilityPct": 0.86
+        },
+        {
+          "lowerBps": 775,
+          "upperBps": 800,
+          "probabilityPct": 0.76
+        },
+        {
+          "lowerBps": 800,
+          "upperBps": 825,
+          "probabilityPct": 0.68
+        },
+        {
+          "lowerBps": 825,
+          "upperBps": 850,
+          "probabilityPct": 0.6
+        },
+        {
+          "lowerBps": 850,
+          "upperBps": 875,
+          "probabilityPct": 0.51
+        }
+      ],
+      "p25Bps": 366.01,
+      "meanBps": 452.45,
+      "modeBps": 439.4,
+      "p75Bps": 541.35,
+      "probCutPct": 27.14,
+      "probHikePct": 65.97
+    },
+    {
+      "startDate": "2029-03-21",
+      "buckets": [
+        {
+          "lowerBps": 75,
+          "upperBps": 100,
+          "probabilityPct": 0.53
+        },
+        {
+          "lowerBps": 100,
+          "upperBps": 125,
+          "probabilityPct": 0.68
+        },
+        {
+          "lowerBps": 125,
+          "upperBps": 150,
+          "probabilityPct": 0.86
+        },
+        {
+          "lowerBps": 150,
+          "upperBps": 175,
+          "probabilityPct": 1.08
+        },
+        {
+          "lowerBps": 175,
+          "upperBps": 200,
+          "probabilityPct": 1.33
+        },
+        {
+          "lowerBps": 200,
+          "upperBps": 225,
+          "probabilityPct": 1.61
+        },
+        {
+          "lowerBps": 225,
+          "upperBps": 250,
+          "probabilityPct": 1.96
+        },
+        {
+          "lowerBps": 250,
+          "upperBps": 275,
+          "probabilityPct": 2.42
+        },
+        {
+          "lowerBps": 275,
+          "upperBps": 300,
+          "probabilityPct": 3.06
+        },
+        {
+          "lowerBps": 300,
+          "upperBps": 325,
+          "probabilityPct": 3.95
+        },
+        {
+          "lowerBps": 325,
+          "upperBps": 350,
+          "probabilityPct": 5.06
+        },
+        {
+          "lowerBps": 350,
+          "upperBps": 375,
+          "probabilityPct": 6.29
+        },
+        {
+          "lowerBps": 375,
+          "upperBps": 400,
+          "probabilityPct": 7.39
+        },
+        {
+          "lowerBps": 400,
+          "upperBps": 425,
+          "probabilityPct": 8.08
+        },
+        {
+          "lowerBps": 425,
+          "upperBps": 450,
+          "probabilityPct": 8.14
+        },
+        {
+          "lowerBps": 450,
+          "upperBps": 475,
+          "probabilityPct": 7.53
+        },
+        {
+          "lowerBps": 475,
+          "upperBps": 500,
+          "probabilityPct": 6.41
+        },
+        {
+          "lowerBps": 500,
+          "upperBps": 525,
+          "probabilityPct": 5.09
+        },
+        {
+          "lowerBps": 525,
+          "upperBps": 550,
+          "probabilityPct": 3.85
+        },
+        {
+          "lowerBps": 550,
+          "upperBps": 575,
+          "probabilityPct": 2.91
+        },
+        {
+          "lowerBps": 575,
+          "upperBps": 600,
+          "probabilityPct": 2.33
+        },
+        {
+          "lowerBps": 600,
+          "upperBps": 625,
+          "probabilityPct": 2.04
+        },
+        {
+          "lowerBps": 625,
+          "upperBps": 650,
+          "probabilityPct": 1.93
+        },
+        {
+          "lowerBps": 650,
+          "upperBps": 675,
+          "probabilityPct": 1.88
+        },
+        {
+          "lowerBps": 675,
+          "upperBps": 700,
+          "probabilityPct": 1.8
+        },
+        {
+          "lowerBps": 700,
+          "upperBps": 725,
+          "probabilityPct": 1.66
+        },
+        {
+          "lowerBps": 725,
+          "upperBps": 750,
+          "probabilityPct": 1.44
+        },
+        {
+          "lowerBps": 750,
+          "upperBps": 775,
+          "probabilityPct": 1.19
+        },
+        {
+          "lowerBps": 775,
+          "upperBps": 800,
+          "probabilityPct": 0.93
+        },
+        {
+          "lowerBps": 800,
+          "upperBps": 825,
+          "probabilityPct": 0.71
+        },
+        {
+          "lowerBps": 825,
+          "upperBps": 850,
+          "probabilityPct": 0.53
+        },
+        {
+          "lowerBps": 850,
+          "upperBps": 875,
+          "probabilityPct": 0.4
+        },
+        {
+          "lowerBps": 875,
+          "upperBps": 900,
+          "probabilityPct": 0.31
+        }
+      ],
+      "p25Bps": 350.73,
+      "meanBps": 450.93,
+      "modeBps": 427.23,
+      "p75Bps": 532.38,
+      "probCutPct": 31.12,
+      "probHikePct": 61.49
+    },
+    {
+      "startDate": "2029-06-20",
+      "buckets": [
+        {
+          "lowerBps": 25,
+          "upperBps": 50,
+          "probabilityPct": 0.5
+        },
+        {
+          "lowerBps": 50,
+          "upperBps": 75,
+          "probabilityPct": 0.62
+        },
+        {
+          "lowerBps": 75,
+          "upperBps": 100,
+          "probabilityPct": 0.76
+        },
+        {
+          "lowerBps": 100,
+          "upperBps": 125,
+          "probabilityPct": 0.9
+        },
+        {
+          "lowerBps": 125,
+          "upperBps": 150,
+          "probabilityPct": 1.04
+        },
+        {
+          "lowerBps": 150,
+          "upperBps": 175,
+          "probabilityPct": 1.15
+        },
+        {
+          "lowerBps": 175,
+          "upperBps": 200,
+          "probabilityPct": 1.27
+        },
+        {
+          "lowerBps": 200,
+          "upperBps": 225,
+          "probabilityPct": 1.42
+        },
+        {
+          "lowerBps": 225,
+          "upperBps": 250,
+          "probabilityPct": 1.67
+        },
+        {
+          "lowerBps": 250,
+          "upperBps": 275,
+          "probabilityPct": 2.12
+        },
+        {
+          "lowerBps": 275,
+          "upperBps": 300,
+          "probabilityPct": 2.83
+        },
+        {
+          "lowerBps": 300,
+          "upperBps": 325,
+          "probabilityPct": 3.83
+        },
+        {
+          "lowerBps": 325,
+          "upperBps": 350,
+          "probabilityPct": 5.04
+        },
+        {
+          "lowerBps": 350,
+          "upperBps": 375,
+          "probabilityPct": 6.29
+        },
+        {
+          "lowerBps": 375,
+          "upperBps": 400,
+          "probabilityPct": 7.31
+        },
+        {
+          "lowerBps": 400,
+          "upperBps": 425,
+          "probabilityPct": 7.86
+        },
+        {
+          "lowerBps": 425,
+          "upperBps": 450,
+          "probabilityPct": 7.81
+        },
+        {
+          "lowerBps": 450,
+          "upperBps": 475,
+          "probabilityPct": 7.19
+        },
+        {
+          "lowerBps": 475,
+          "upperBps": 500,
+          "probabilityPct": 6.17
+        },
+        {
+          "lowerBps": 500,
+          "upperBps": 525,
+          "probabilityPct": 5.01
         },
         {
           "lowerBps": 525,
@@ -1473,409 +1468,22 @@
         {
           "lowerBps": 550,
           "upperBps": 575,
-          "probabilityPct": 3
-        },
-        {
-          "lowerBps": 575,
-          "upperBps": 600,
-          "probabilityPct": 2.38
-        },
-        {
-          "lowerBps": 600,
-          "upperBps": 625,
-          "probabilityPct": 2.03
-        },
-        {
-          "lowerBps": 625,
-          "upperBps": 650,
-          "probabilityPct": 1.88
-        },
-        {
-          "lowerBps": 650,
-          "upperBps": 675,
-          "probabilityPct": 1.82
-        },
-        {
-          "lowerBps": 675,
-          "upperBps": 700,
-          "probabilityPct": 1.77
-        },
-        {
-          "lowerBps": 700,
-          "upperBps": 725,
-          "probabilityPct": 1.7
-        },
-        {
-          "lowerBps": 725,
-          "upperBps": 750,
-          "probabilityPct": 1.57
-        },
-        {
-          "lowerBps": 750,
-          "upperBps": 775,
-          "probabilityPct": 1.39
-        },
-        {
-          "lowerBps": 775,
-          "upperBps": 800,
-          "probabilityPct": 1.19
-        },
-        {
-          "lowerBps": 800,
-          "upperBps": 825,
-          "probabilityPct": 0.98
-        },
-        {
-          "lowerBps": 825,
-          "upperBps": 850,
-          "probabilityPct": 0.79
-        },
-        {
-          "lowerBps": 850,
-          "upperBps": 875,
-          "probabilityPct": 0.61
-        },
-        {
-          "lowerBps": 875,
-          "upperBps": 900,
-          "probabilityPct": 0.47
-        }
-      ],
-      "p25Bps": 354.6,
-      "meanBps": 457.17,
-      "modeBps": 426.67,
-      "p75Bps": 543.01,
-      "probCutPct": 30.11,
-      "probHikePct": 62.64
-    },
-    {
-      "startDate": "2029-09-19",
-      "buckets": [
-        {
-          "lowerBps": 25,
-          "upperBps": 50,
-          "probabilityPct": 0.42
-        },
-        {
-          "lowerBps": 50,
-          "upperBps": 75,
-          "probabilityPct": 0.5
-        },
-        {
-          "lowerBps": 75,
-          "upperBps": 100,
-          "probabilityPct": 0.59
-        },
-        {
-          "lowerBps": 100,
-          "upperBps": 125,
-          "probabilityPct": 0.71
-        },
-        {
-          "lowerBps": 125,
-          "upperBps": 150,
-          "probabilityPct": 0.85
-        },
-        {
-          "lowerBps": 150,
-          "upperBps": 175,
-          "probabilityPct": 1.03
-        },
-        {
-          "lowerBps": 175,
-          "upperBps": 200,
-          "probabilityPct": 1.28
-        },
-        {
-          "lowerBps": 200,
-          "upperBps": 225,
-          "probabilityPct": 1.62
-        },
-        {
-          "lowerBps": 225,
-          "upperBps": 250,
-          "probabilityPct": 2.09
-        },
-        {
-          "lowerBps": 250,
-          "upperBps": 275,
-          "probabilityPct": 2.71
-        },
-        {
-          "lowerBps": 275,
-          "upperBps": 300,
-          "probabilityPct": 3.47
-        },
-        {
-          "lowerBps": 300,
-          "upperBps": 325,
-          "probabilityPct": 4.35
-        },
-        {
-          "lowerBps": 325,
-          "upperBps": 350,
-          "probabilityPct": 5.25
-        },
-        {
-          "lowerBps": 350,
-          "upperBps": 375,
-          "probabilityPct": 6.06
-        },
-        {
-          "lowerBps": 375,
-          "upperBps": 400,
-          "probabilityPct": 6.66
-        },
-        {
-          "lowerBps": 400,
-          "upperBps": 425,
-          "probabilityPct": 6.94
-        },
-        {
-          "lowerBps": 425,
-          "upperBps": 450,
-          "probabilityPct": 6.85
-        },
-        {
-          "lowerBps": 450,
-          "upperBps": 475,
-          "probabilityPct": 6.42
-        },
-        {
-          "lowerBps": 475,
-          "upperBps": 500,
-          "probabilityPct": 5.75
-        },
-        {
-          "lowerBps": 500,
-          "upperBps": 525,
-          "probabilityPct": 4.94
-        },
-        {
-          "lowerBps": 525,
-          "upperBps": 550,
-          "probabilityPct": 4.13
-        },
-        {
-          "lowerBps": 550,
-          "upperBps": 575,
-          "probabilityPct": 3.39
-        },
-        {
-          "lowerBps": 575,
-          "upperBps": 600,
-          "probabilityPct": 2.78
-        },
-        {
-          "lowerBps": 600,
-          "upperBps": 625,
-          "probabilityPct": 2.32
-        },
-        {
-          "lowerBps": 625,
-          "upperBps": 650,
-          "probabilityPct": 1.98
-        },
-        {
-          "lowerBps": 650,
-          "upperBps": 675,
-          "probabilityPct": 1.73
-        },
-        {
-          "lowerBps": 675,
-          "upperBps": 700,
-          "probabilityPct": 1.54
-        },
-        {
-          "lowerBps": 700,
-          "upperBps": 725,
-          "probabilityPct": 1.4
-        },
-        {
-          "lowerBps": 725,
-          "upperBps": 750,
-          "probabilityPct": 1.27
-        },
-        {
-          "lowerBps": 750,
-          "upperBps": 775,
-          "probabilityPct": 1.16
-        },
-        {
-          "lowerBps": 775,
-          "upperBps": 800,
-          "probabilityPct": 1.04
-        },
-        {
-          "lowerBps": 800,
-          "upperBps": 825,
-          "probabilityPct": 0.93
-        },
-        {
-          "lowerBps": 825,
-          "upperBps": 850,
-          "probabilityPct": 0.81
-        },
-        {
-          "lowerBps": 850,
-          "upperBps": 875,
-          "probabilityPct": 0.7
-        },
-        {
-          "lowerBps": 875,
-          "upperBps": 900,
-          "probabilityPct": 0.59
-        },
-        {
-          "lowerBps": 900,
-          "upperBps": 925,
-          "probabilityPct": 0.49
-        },
-        {
-          "lowerBps": 925,
-          "upperBps": 950,
-          "probabilityPct": 0.4
-        }
-      ],
-      "p25Bps": 339.78,
-      "meanBps": 456,
-      "modeBps": 418.99,
-      "p75Bps": 550.03,
-      "probCutPct": 33.32,
-      "probHikePct": 60.02
-    },
-    {
-      "startDate": "2029-12-19",
-      "buckets": [
-        {
-          "lowerBps": 0,
-          "upperBps": 25,
-          "probabilityPct": 0.37
-        },
-        {
-          "lowerBps": 25,
-          "upperBps": 50,
-          "probabilityPct": 0.5
-        },
-        {
-          "lowerBps": 50,
-          "upperBps": 75,
-          "probabilityPct": 0.69
-        },
-        {
-          "lowerBps": 75,
-          "upperBps": 100,
-          "probabilityPct": 0.98
-        },
-        {
-          "lowerBps": 100,
-          "upperBps": 125,
-          "probabilityPct": 1.36
-        },
-        {
-          "lowerBps": 125,
-          "upperBps": 150,
-          "probabilityPct": 1.87
-        },
-        {
-          "lowerBps": 150,
-          "upperBps": 175,
-          "probabilityPct": 2.48
-        },
-        {
-          "lowerBps": 175,
-          "upperBps": 200,
-          "probabilityPct": 3.16
-        },
-        {
-          "lowerBps": 200,
-          "upperBps": 225,
-          "probabilityPct": 3.86
-        },
-        {
-          "lowerBps": 225,
-          "upperBps": 250,
-          "probabilityPct": 4.51
-        },
-        {
-          "lowerBps": 250,
-          "upperBps": 275,
-          "probabilityPct": 5.04
-        },
-        {
-          "lowerBps": 275,
-          "upperBps": 300,
-          "probabilityPct": 5.37
-        },
-        {
-          "lowerBps": 300,
-          "upperBps": 325,
-          "probabilityPct": 5.47
-        },
-        {
-          "lowerBps": 325,
-          "upperBps": 350,
-          "probabilityPct": 5.34
-        },
-        {
-          "lowerBps": 350,
-          "upperBps": 375,
-          "probabilityPct": 5.02
-        },
-        {
-          "lowerBps": 375,
-          "upperBps": 400,
-          "probabilityPct": 4.57
-        },
-        {
-          "lowerBps": 400,
-          "upperBps": 425,
-          "probabilityPct": 4.05
-        },
-        {
-          "lowerBps": 425,
-          "upperBps": 450,
-          "probabilityPct": 3.53
-        },
-        {
-          "lowerBps": 450,
-          "upperBps": 475,
           "probabilityPct": 3.06
         },
         {
-          "lowerBps": 475,
-          "upperBps": 500,
-          "probabilityPct": 2.67
-        },
-        {
-          "lowerBps": 500,
-          "upperBps": 525,
-          "probabilityPct": 2.37
-        },
-        {
-          "lowerBps": 525,
-          "upperBps": 550,
-          "probabilityPct": 2.14
-        },
-        {
-          "lowerBps": 550,
-          "upperBps": 575,
-          "probabilityPct": 1.98
-        },
-        {
           "lowerBps": 575,
           "upperBps": 600,
-          "probabilityPct": 1.86
+          "probabilityPct": 2.45
         },
         {
           "lowerBps": 600,
           "upperBps": 625,
-          "probabilityPct": 1.78
+          "probabilityPct": 2.05
         },
         {
           "lowerBps": 625,
           "upperBps": 650,
-          "probabilityPct": 1.72
+          "probabilityPct": 1.81
         },
         {
           "lowerBps": 650,
@@ -1885,120 +1493,497 @@
         {
           "lowerBps": 675,
           "upperBps": 700,
-          "probabilityPct": 1.61
+          "probabilityPct": 1.55
         },
         {
           "lowerBps": 700,
           "upperBps": 725,
-          "probabilityPct": 1.55
+          "probabilityPct": 1.45
         },
         {
           "lowerBps": 725,
           "upperBps": 750,
-          "probabilityPct": 1.48
+          "probabilityPct": 1.35
         },
         {
           "lowerBps": 750,
           "upperBps": 775,
-          "probabilityPct": 1.4
+          "probabilityPct": 1.24
         },
         {
           "lowerBps": 775,
           "upperBps": 800,
-          "probabilityPct": 1.3
+          "probabilityPct": 1.11
         },
         {
           "lowerBps": 800,
           "upperBps": 825,
-          "probabilityPct": 1.19
+          "probabilityPct": 0.96
         },
         {
           "lowerBps": 825,
           "upperBps": 850,
-          "probabilityPct": 1.08
+          "probabilityPct": 0.81
         },
         {
           "lowerBps": 850,
           "upperBps": 875,
-          "probabilityPct": 0.97
+          "probabilityPct": 0.66
         },
         {
           "lowerBps": 875,
           "upperBps": 900,
-          "probabilityPct": 0.86
+          "probabilityPct": 0.52
+        }
+      ],
+      "p25Bps": 348.14,
+      "meanBps": 450.04,
+      "modeBps": 422.89,
+      "p75Bps": 536.55,
+      "probCutPct": 31.71,
+      "probHikePct": 60.98
+    },
+    {
+      "startDate": "2029-09-19",
+      "buckets": [
+        {
+          "lowerBps": 0,
+          "upperBps": 25,
+          "probabilityPct": 0.39
+        },
+        {
+          "lowerBps": 25,
+          "upperBps": 50,
+          "probabilityPct": 0.46
+        },
+        {
+          "lowerBps": 50,
+          "upperBps": 75,
+          "probabilityPct": 0.54
+        },
+        {
+          "lowerBps": 75,
+          "upperBps": 100,
+          "probabilityPct": 0.64
+        },
+        {
+          "lowerBps": 100,
+          "upperBps": 125,
+          "probabilityPct": 0.76
+        },
+        {
+          "lowerBps": 125,
+          "upperBps": 150,
+          "probabilityPct": 0.9
+        },
+        {
+          "lowerBps": 150,
+          "upperBps": 175,
+          "probabilityPct": 1.1
+        },
+        {
+          "lowerBps": 175,
+          "upperBps": 200,
+          "probabilityPct": 1.36
+        },
+        {
+          "lowerBps": 200,
+          "upperBps": 225,
+          "probabilityPct": 1.73
+        },
+        {
+          "lowerBps": 225,
+          "upperBps": 250,
+          "probabilityPct": 2.24
+        },
+        {
+          "lowerBps": 250,
+          "upperBps": 275,
+          "probabilityPct": 2.89
+        },
+        {
+          "lowerBps": 275,
+          "upperBps": 300,
+          "probabilityPct": 3.69
+        },
+        {
+          "lowerBps": 300,
+          "upperBps": 325,
+          "probabilityPct": 4.59
+        },
+        {
+          "lowerBps": 325,
+          "upperBps": 350,
+          "probabilityPct": 5.48
+        },
+        {
+          "lowerBps": 350,
+          "upperBps": 375,
+          "probabilityPct": 6.25
+        },
+        {
+          "lowerBps": 375,
+          "upperBps": 400,
+          "probabilityPct": 6.76
+        },
+        {
+          "lowerBps": 400,
+          "upperBps": 425,
+          "probabilityPct": 6.93
+        },
+        {
+          "lowerBps": 425,
+          "upperBps": 450,
+          "probabilityPct": 6.73
+        },
+        {
+          "lowerBps": 450,
+          "upperBps": 475,
+          "probabilityPct": 6.2
+        },
+        {
+          "lowerBps": 475,
+          "upperBps": 500,
+          "probabilityPct": 5.45
+        },
+        {
+          "lowerBps": 500,
+          "upperBps": 525,
+          "probabilityPct": 4.61
+        },
+        {
+          "lowerBps": 525,
+          "upperBps": 550,
+          "probabilityPct": 3.8
+        },
+        {
+          "lowerBps": 550,
+          "upperBps": 575,
+          "probabilityPct": 3.09
+        },
+        {
+          "lowerBps": 575,
+          "upperBps": 600,
+          "probabilityPct": 2.54
+        },
+        {
+          "lowerBps": 600,
+          "upperBps": 625,
+          "probabilityPct": 2.13
+        },
+        {
+          "lowerBps": 625,
+          "upperBps": 650,
+          "probabilityPct": 1.84
+        },
+        {
+          "lowerBps": 650,
+          "upperBps": 675,
+          "probabilityPct": 1.65
+        },
+        {
+          "lowerBps": 675,
+          "upperBps": 700,
+          "probabilityPct": 1.52
+        },
+        {
+          "lowerBps": 700,
+          "upperBps": 725,
+          "probabilityPct": 1.41
+        },
+        {
+          "lowerBps": 725,
+          "upperBps": 750,
+          "probabilityPct": 1.32
+        },
+        {
+          "lowerBps": 750,
+          "upperBps": 775,
+          "probabilityPct": 1.22
+        },
+        {
+          "lowerBps": 775,
+          "upperBps": 800,
+          "probabilityPct": 1.12
+        },
+        {
+          "lowerBps": 800,
+          "upperBps": 825,
+          "probabilityPct": 1
+        },
+        {
+          "lowerBps": 825,
+          "upperBps": 850,
+          "probabilityPct": 0.88
+        },
+        {
+          "lowerBps": 850,
+          "upperBps": 875,
+          "probabilityPct": 0.75
+        },
+        {
+          "lowerBps": 875,
+          "upperBps": 900,
+          "probabilityPct": 0.62
         },
         {
           "lowerBps": 900,
           "upperBps": 925,
-          "probabilityPct": 0.76
+          "probabilityPct": 0.5
         },
         {
           "lowerBps": 925,
           "upperBps": 950,
-          "probabilityPct": 0.67
+          "probabilityPct": 0.4
+        }
+      ],
+      "p25Bps": 332,
+      "meanBps": 449.5,
+      "modeBps": 411.29,
+      "p75Bps": 544.65,
+      "probCutPct": 35.28,
+      "probHikePct": 57.96
+    },
+    {
+      "startDate": "2029-12-19",
+      "buckets": [
+        {
+          "lowerBps": 0,
+          "upperBps": 25,
+          "probabilityPct": 0.4
+        },
+        {
+          "lowerBps": 25,
+          "upperBps": 50,
+          "probabilityPct": 0.54
+        },
+        {
+          "lowerBps": 50,
+          "upperBps": 75,
+          "probabilityPct": 0.75
+        },
+        {
+          "lowerBps": 75,
+          "upperBps": 100,
+          "probabilityPct": 1.04
+        },
+        {
+          "lowerBps": 100,
+          "upperBps": 125,
+          "probabilityPct": 1.43
+        },
+        {
+          "lowerBps": 125,
+          "upperBps": 150,
+          "probabilityPct": 1.93
+        },
+        {
+          "lowerBps": 150,
+          "upperBps": 175,
+          "probabilityPct": 2.51
+        },
+        {
+          "lowerBps": 175,
+          "upperBps": 200,
+          "probabilityPct": 3.15
+        },
+        {
+          "lowerBps": 200,
+          "upperBps": 225,
+          "probabilityPct": 3.79
+        },
+        {
+          "lowerBps": 225,
+          "upperBps": 250,
+          "probabilityPct": 4.36
+        },
+        {
+          "lowerBps": 250,
+          "upperBps": 275,
+          "probabilityPct": 4.79
+        },
+        {
+          "lowerBps": 275,
+          "upperBps": 300,
+          "probabilityPct": 5.03
+        },
+        {
+          "lowerBps": 300,
+          "upperBps": 325,
+          "probabilityPct": 5.06
+        },
+        {
+          "lowerBps": 325,
+          "upperBps": 350,
+          "probabilityPct": 4.89
+        },
+        {
+          "lowerBps": 350,
+          "upperBps": 375,
+          "probabilityPct": 4.57
+        },
+        {
+          "lowerBps": 375,
+          "upperBps": 400,
+          "probabilityPct": 4.15
+        },
+        {
+          "lowerBps": 400,
+          "upperBps": 425,
+          "probabilityPct": 3.69
+        },
+        {
+          "lowerBps": 425,
+          "upperBps": 450,
+          "probabilityPct": 3.26
+        },
+        {
+          "lowerBps": 450,
+          "upperBps": 475,
+          "probabilityPct": 2.88
+        },
+        {
+          "lowerBps": 475,
+          "upperBps": 500,
+          "probabilityPct": 2.57
+        },
+        {
+          "lowerBps": 500,
+          "upperBps": 525,
+          "probabilityPct": 2.34
+        },
+        {
+          "lowerBps": 525,
+          "upperBps": 550,
+          "probabilityPct": 2.18
+        },
+        {
+          "lowerBps": 550,
+          "upperBps": 575,
+          "probabilityPct": 2.06
+        },
+        {
+          "lowerBps": 575,
+          "upperBps": 600,
+          "probabilityPct": 1.97
+        },
+        {
+          "lowerBps": 600,
+          "upperBps": 625,
+          "probabilityPct": 1.91
+        },
+        {
+          "lowerBps": 625,
+          "upperBps": 650,
+          "probabilityPct": 1.86
+        },
+        {
+          "lowerBps": 650,
+          "upperBps": 675,
+          "probabilityPct": 1.81
+        },
+        {
+          "lowerBps": 675,
+          "upperBps": 700,
+          "probabilityPct": 1.77
+        },
+        {
+          "lowerBps": 700,
+          "upperBps": 725,
+          "probabilityPct": 1.73
+        },
+        {
+          "lowerBps": 725,
+          "upperBps": 750,
+          "probabilityPct": 1.68
+        },
+        {
+          "lowerBps": 750,
+          "upperBps": 775,
+          "probabilityPct": 1.63
+        },
+        {
+          "lowerBps": 775,
+          "upperBps": 800,
+          "probabilityPct": 1.57
+        },
+        {
+          "lowerBps": 800,
+          "upperBps": 825,
+          "probabilityPct": 1.5
+        },
+        {
+          "lowerBps": 825,
+          "upperBps": 850,
+          "probabilityPct": 1.41
+        },
+        {
+          "lowerBps": 850,
+          "upperBps": 875,
+          "probabilityPct": 1.31
+        },
+        {
+          "lowerBps": 875,
+          "upperBps": 900,
+          "probabilityPct": 1.2
+        },
+        {
+          "lowerBps": 900,
+          "upperBps": 925,
+          "probabilityPct": 1.07
+        },
+        {
+          "lowerBps": 925,
+          "upperBps": 950,
+          "probabilityPct": 0.95
         },
         {
           "lowerBps": 950,
           "upperBps": 975,
-          "probabilityPct": 0.59
+          "probabilityPct": 0.82
         },
         {
           "lowerBps": 975,
           "upperBps": 1000,
-          "probabilityPct": 0.52
+          "probabilityPct": 0.7
         },
         {
           "lowerBps": 1000,
           "upperBps": 1025,
-          "probabilityPct": 0.47
+          "probabilityPct": 0.59
         },
         {
           "lowerBps": 1025,
           "upperBps": 1050,
-          "probabilityPct": 0.42
+          "probabilityPct": 0.49
         },
         {
           "lowerBps": 1050,
           "upperBps": 1075,
-          "probabilityPct": 0.39
+          "probabilityPct": 0.4
         },
         {
           "lowerBps": 1075,
           "upperBps": 1100,
-          "probabilityPct": 0.36
+          "probabilityPct": 0.33
         },
         {
           "lowerBps": 1100,
           "upperBps": 1125,
-          "probabilityPct": 0.33
+          "probabilityPct": 0.27
         },
         {
           "lowerBps": 1125,
           "upperBps": 1150,
-          "probabilityPct": 0.31
-        },
-        {
-          "lowerBps": 1150,
-          "upperBps": 1175,
-          "probabilityPct": 0.29
-        },
-        {
-          "lowerBps": 1175,
-          "upperBps": 1200,
-          "probabilityPct": 0.27
-        },
-        {
-          "lowerBps": 1200,
-          "upperBps": 1225,
-          "probabilityPct": 0.25
+          "probabilityPct": 0.22
         }
       ],
-      "p25Bps": 261.01,
-      "meanBps": 455,
-      "modeBps": 310.88,
-      "p75Bps": 595.89,
-      "probCutPct": 49.08,
-      "probHikePct": 46.36
+      "p25Bps": 260.54,
+      "meanBps": 449,
+      "modeBps": 303.37,
+      "p75Bps": 633.32,
+      "probCutPct": 47.38,
+      "probHikePct": 48.48
     }
   ]
 }
