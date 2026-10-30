@@ -1,5 +1,5 @@
 {
-  "fetchedAt": "2026-10-15T10:32:28.689Z",
+  "fetchedAt": "2026-10-30T11:02:13.602Z",
   "minutes": [
     {
       "meetingId": "boe-2026-02-05",
@@ -1157,6 +1157,39 @@
         "model": "claude-code/opus",
         "promptVersion": "1",
         "summarizedAt": "2026-10-15T02:33:46.012Z"
+      }
+    },
+    {
+      "meetingId": "tcmb-2026-10-22",
+      "bankCode": "tcmb",
+      "urls": {
+        "tr": "https://www.tcmb.gov.tr/wps/wcm/connect/TR/TCMB+TR/Main+Menu/Duyurular/Basin/2026/DUY2026-47",
+        "en": "https://www.tcmb.gov.tr/wps/wcm/connect/EN/TCMB+EN/Main+Menu/Announcements/Press+Releases/2026/ANO2026-47"
+      },
+      "fetchedAt": "2026-10-30T11:01:30.838Z",
+      "summary": {
+        "headlineTr": "Kurul, iç talepteki zayıflığın enflasyonun ana eğilimini sınırladığını ve ana eğilimdeki gerilemenin teyit edildiğini değerlendirirken, enerji ve gıda kaynaklı yukarı yönlü risklere karşı ihtiyatlı duruşunu ve gerekirse sıkılaştırma taahhüdünü korudu.",
+        "headlineEn": "The Committee judged that weak domestic demand is containing underlying inflation and that the decline in the underlying trend has been confirmed, while keeping its cautious stance against energy- and food-driven upside risks and its commitment to tighten if needed.",
+        "pointsTr": [
+          "Enflasyonun ana eğilimi ikinci çeyrekteki yüzde 2,2'den üçüncü çeyrekte yüzde 1,8'e geriledi; ancak eylüldeki düşüşte vakıf üniversitesi ücret artışlarının ağustos ve eylüle yayılmasının mekanik etkisi de rol oynadı.",
+          "Ekimde gıda ve enerji fiyatları nedeniyle aylık tüketici enflasyonunun yükselmesi, B ve C enflasyonunun ise daha ılımlı seyretmesi bekleniyor; Brent petrolün ekimin ilk yirmi gününde ortalama 127 ABD doları seviyesine yaklaşması yukarı yönlü risk olarak öne çıkarıldı.",
+          "Yakın dönem veriler iç talepteki zayıf seyrin sürdüğünü, sanayi üretiminin ana eğiliminin zayıfladığını ve firmaların istihdam beklentilerinin tarihsel ortalamanın altında kaldığını gösteriyor.",
+          "Enflasyon beklentileri ve fiyatlama davranışları risk unsuru olmaya devam ediyor: 2027 yıl sonu beklentisi 0,6 puan artışla yüzde 23,3'e, hane halkının 12 ay sonrası beklentisi ise yüzde 45,6'da kaldı.",
+          "TCMB brüt rezervleri 11 Eylül'den bu yana 9,6 milyar ABD doları azalarak 169,1 milyar ABD dolarına geriledi ve 0,5 milyar ABD doları net portföy çıkışı oldu; kredi büyümesine dayalı zorunlu karşılık uygulamasında KOBİ kredilerinin sekiz haftalık büyüme sınırı yüzde 4,5'ten yüzde 5'e yükseltildi."
+        ],
+        "pointsEn": [
+          "The underlying inflation trend fell from 2.2 percent in the second quarter to 1.8 percent in the third, though September's decline was partly a mechanical effect of foundation university fee increases being spread over August and September.",
+          "Monthly consumer inflation is expected to rise in October on food and energy prices while B and C inflation remain more moderate, with Brent crude averaging close to 127 US dollars in the first twenty days of October flagged as an upside risk.",
+          "Recent data show that weak domestic demand persists, the underlying trend in industrial production has weakened, and manufacturers' employment expectations remain below their historical average.",
+          "Inflation expectations and pricing behaviour remain a risk: the end-2027 expectation rose 0.6 points to 23.3 percent, and households' 12-month-ahead expectation stayed at 45.6 percent.",
+          "The CBRT's gross reserves fell by 9.6 billion US dollars since 11 September to 169.1 billion US dollars amid a 0.5 billion US dollar net portfolio outflow, and the eight-week growth cap for SME loans under the credit-growth-based reserve requirement was raised from 4.5 percent to 5 percent."
+        ],
+        "score": 3,
+        "scoreReasonTr": "Faiz indirilmesine karşın tutanak, fiyat istikrarı sağlanana kadar sıkı duruşun sürdürüleceğini, enflasyon görünümünde belirgin ve kalıcı bir bozulmada sıkılaştırma yapılacağını ve yukarı yönlü risklere karşı ihtiyatlı duruşu vurguluyor; zayıf talep ve ana eğilimdeki gerileme ise gevşemeye alan tanıyor.",
+        "scoreReasonEn": "Despite the rate cut, the summary stresses that the tight stance will be maintained until price stability is achieved, that policy will be tightened in case of a significant and persistent deterioration in the inflation outlook, and a cautious stance against upside risks, while weak demand and the falling underlying trend leave room for easing.",
+        "model": "claude-code/opus",
+        "promptVersion": "1",
+        "summarizedAt": "2026-10-30T11:02:13.601Z"
       }
     }
   ]
