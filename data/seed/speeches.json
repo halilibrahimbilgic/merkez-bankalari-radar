@@ -1,6 +1,28 @@
 {
-  "fetchedAt": "2026-10-27T10:10:17.633Z",
+  "fetchedAt": "2026-10-30T11:09:17.224Z",
   "speeches": [
+    {
+      "id": "20261029-opening-statement-senate-economics-legislation-committee-supplementary-budget-estimates",
+      "contextEn": "Opening statement via videoconference by Ms Michele Bullock, Governor of the Reserve Bank of Australia, to the Senate Economics Legislation Committee (Supplementary Budget Estimates), Sydney, 28 October 2026.",
+      "textLicense": "cc-by-4.0",
+      "bankCode": "rba",
+      "speakerName": "Michele Bullock",
+      "title": "Opening Statement to the Senate Economics Legislation Committee (Supplementary Budget Estimates)",
+      "speechDate": "2026-10-29",
+      "sourceUrl": "https://www.bis.org/speeches/20261029-opening-statement-senate-economics-legislation-committee-supplementary-budget-estimates",
+      "summaryTr": "Bullock, Para Politikası Kurulu'nun haziran ayından bu yana politika faizini 25 baz puan daha artırdığını ve yılın toplam artışının 100 baz puana ulaştığını hatırlattı. Orta Doğu'daki çatışmanın yeniden tırmanmasıyla enerji fiyatlarının ağustos tahminlerindeki varsayımın çok üzerine çıktığını, enflasyona yönelik yukarı yönlü risklerin gerçekleştiğini ve enflasyonun ağustostaki temel senaryodan yüksek olacağını söyledi. Enflasyonun yalnızca küresel baskılardan değil, beklenenden biraz daha sıkı görünen işgücü piyasası ve zayıf verimlilik nedeniyle yurt içi kapasite baskılarından da kaynaklandığını, kapasite baskılarını azaltmak için toplam talepte bir süre daha zayıf büyüme gerektiğini vurguladı. Gelecek haftaki toplantıda temel sorunun bugüne kadarki sıkılaşmanın enflasyonu makul sürede hedefe döndürmeye yetip yetmeyeceği olacağını belirterek yüksek enflasyonun kalıcılaşmasına izin verilemeyeceğini söyledi. Konuşmanın geri kalanı ödeme sistemi reformları ve nakit dağıtım çerçevesine ayrıldı.",
+      "hawkDoveScore": 6,
+      "scoreRationaleTr": "Bullock enflasyonun ağustos temel senaryosundan yüksek olacağını, yukarı yönlü risklerin gerçekleştiğini ve mevcut sıkılaşmanın yeterli olup olmadığının gelecek toplantının temel sorusu olduğunu söyleyerek ek artırım kapısını açık bıraktı; \"yüksek enflasyonun kalıcılaşmasına izin veremeyiz\" ifadesi gevşemeye net bir direnç gösteriyor. Ancak açık bir artırım taahhüdü vermediği için çok şahin aralığa çıkılmadı.",
+      "hasPolicySignal": true,
+      "summaryEn": "Bullock noted that the Monetary Policy Board has raised the cash rate target by a further 25 basis points since June, bringing this year's cumulative increase to 100 basis points. She said that with the re-escalation of the conflict in the Middle East, energy prices are now well above what was assumed in the August forecasts, upside risks to inflation have materialised, and inflation will likely be higher than the August base case. She stressed that inflation stems not only from global pressures but also from domestic capacity pressures, owing to a labour market that looks a little tighter than previously judged and weak productivity, and that a further period of subdued growth in aggregate demand is needed to reduce those pressures. She said the key question at next week's meeting will be whether the tightening to date is sufficient to return inflation to target in a reasonable time, adding that high inflation cannot be allowed to persist. The rest of the statement covered payments system reforms and the cash distribution framework.",
+      "scoreRationaleEn": "Bullock left the door open to further hikes by saying inflation will be higher than the August base case, upside risks have materialised, and whether the tightening so far is sufficient is the key question for the next meeting; the line \"we can't allow high inflation to persist\" signals clear resistance to easing. She stopped short of an explicit commitment to hike, so the score stays below the very hawkish range.",
+      "titleTr": "Senato Ekonomi Mevzuatı Komitesine (Ek Bütçe Tahminleri) açılış konuşması",
+      "contextTr": "Avustralya Merkez Bankası (RBA) Başkanı Michele Bullock'un Senato Ekonomi Mevzuatı Komitesine (Ek Bütçe Tahminleri) video konferans yoluyla yaptığı açılış konuşması, Sidney, 28 Ekim 2026.",
+      "model": "claude-code/opus",
+      "promptVersion": "3",
+      "scoredAt": "2026-10-30T11:10:06.079Z",
+      "scoredVia": "claude-code"
+    },
     {
       "id": "20261027-taking-action-nature-investing-economic-resilience-and-prosperity",
       "contextEn": "Keynote speech by Mr Frank Elderson, Member of the Executive Board of the European Central Bank and Vice-Chair of the Supervisory Board of the European Central Bank, at the COP17 Finance and Biodiversity Day, Yerewan, 26 October 2026.",

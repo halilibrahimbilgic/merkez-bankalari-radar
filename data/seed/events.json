@@ -1,16 +1,6 @@
 {
-  "fetchedAt": "2026-10-29T11:14:09.008Z",
+  "fetchedAt": "2026-10-30T11:08:57.261Z",
   "events": [
-    {
-      "id": "ecb-2026-10-29-1ccpcns",
-      "bankCode": "ecb",
-      "at": "2026-10-29T15:50:00.000Z",
-      "timeTbd": false,
-      "kind": "speech",
-      "speaker": "Piero Cipollone",
-      "title": "Remarks by Mr Cipollone at event titled 'One year to T+1' organised by the EU T+1 Industry Committee in Frankfurt am Main, Germany",
-      "url": "https://www.ecb.europa.eu/press/calendars/weekly/html/index.en.html"
-    },
     {
       "id": "tcmb-2026-10-30-mpc-summary",
       "bankCode": "tcmb",
@@ -31,6 +21,26 @@
       "url": "https://www.frbsf.org/news-and-media/events/2026/10/remarks-from-philip-lane-2026-economic-research-symposium/"
     },
     {
+      "id": "ecb-2026-11-02-7a7xq7",
+      "bankCode": "ecb",
+      "at": "2026-11-02T09:45:00.000Z",
+      "timeTbd": false,
+      "kind": "speech",
+      "speaker": "Boris Vujčić",
+      "title": "Speech by Mr Vujčić at Central Bank of Ireland Financial System Conference 2026 \"At the heart of Europe\" in Dublin, Ireland",
+      "url": "https://registration.socio.events/e/financialsystemconference2026"
+    },
+    {
+      "id": "ecb-2026-11-02-tciiie",
+      "bankCode": "ecb",
+      "at": "2026-11-02T10:00:00.000Z",
+      "timeTbd": false,
+      "kind": "discussion",
+      "speaker": "Boris Vujčić",
+      "title": "Fireside chat by Mr Vujčić at Central Bank of Ireland Financial System Conference 2026 \"At the heart of Europe\" in Dublin, Ireland",
+      "url": "https://registration.socio.events/e/financialsystemconference2026"
+    },
+    {
       "id": "tcmb-cpi-2026-11-03",
       "bankCode": "tcmb",
       "at": "2026-11-03T07:00:00.000Z",
@@ -39,6 +49,128 @@
       "title": "CPI Ekim 2026",
       "period": "Ekim 2026",
       "url": "https://www.tuik.gov.tr/Kurumsal/Veri_Takvimi"
+    },
+    {
+      "id": "ecb-2026-11-03-1gciogp",
+      "bankCode": "ecb",
+      "at": "2026-11-03T08:45:00.000Z",
+      "timeTbd": false,
+      "kind": "speech",
+      "speaker": "Pedro Machado",
+      "title": "Keynote speech by Mr Machado at 12th Banking Union Conference \"The Simplification of Banking Regulation and Supervision\" organised by Freshfields, Center for Financial Studies and Institute for Law and Finance in Frankfurt, Germany",
+      "url": "https://freshfields.eventogy.com/c/12thconferenceonthebankingunion/registration"
+    },
+    {
+      "id": "ecb-2026-11-03-qy1xvh",
+      "bankCode": "ecb",
+      "at": "2026-11-03T09:15:00.000Z",
+      "timeTbd": false,
+      "kind": "discussion",
+      "speaker": "Pedro Machado",
+      "title": "Participation by Mr Machado in fireside chat at 12th Banking Union Conference \"The Simplification of Banking Regulation and Supervision\" organised by Freshfields, Center for Financial Studies and Institute for Law and Finance in Frankfurt, Germany",
+      "url": "https://freshfields.eventogy.com/c/12thconferenceonthebankingunion/registration"
+    },
+    {
+      "id": "ecb-2026-11-03-fg5rkj",
+      "bankCode": "ecb",
+      "at": "2026-11-03T14:00:00.000Z",
+      "timeTbd": false,
+      "kind": "discussion",
+      "speaker": "Sharon Donnery",
+      "title": "Participation by Ms Donnery in Panel: \"Balancing Stability and Innovation\" at 2026 Santander International Banking Conference \"Powering Growth, Building resilience\" in Madrid, Spain",
+      "url": "https://www.santander.com/en/press-room/santander-international-banking-conference/2026"
+    },
+    {
+      "id": "ecb-2026-11-04-1lcuz17",
+      "bankCode": "ecb",
+      "at": "2026-11-04T13:20:00.000Z",
+      "timeTbd": false,
+      "kind": "testimony",
+      "speaker": "Philip R. Lane",
+      "title": "Laudation by Mr Lane on the occasion of the conferral of Bernhard Harms Prize to Pierre-Olivier Gourinchas at 5th Kiel-CEPR Geoeconomics Conference in Berlin, Germany",
+      "url": "https://www.kielinstitut.de/institute/events/conferences/geoeconomics-conferences/5th-kiel-cepr-conference-on-geoeconomics/"
+    },
+    {
+      "id": "ecb-2026-11-05-hrouo1",
+      "bankCode": "ecb",
+      "at": "2026-11-05T07:30:00.000Z",
+      "timeTbd": false,
+      "kind": "speech",
+      "speaker": "Piero Cipollone",
+      "title": "Keynote speech by Mr Cipollone at 8th International Conference of Regional Card Schemes and Retail Financial Infrastructure in Tirana, Albania",
+      "url": "https://www.ecb.europa.eu/press/calendars/weekly/html/index.en.html"
+    },
+    {
+      "id": "ecb-2026-11-05-1lb2iwr",
+      "bankCode": "ecb",
+      "at": "2026-11-05T08:05:00.000Z",
+      "timeTbd": false,
+      "kind": "speech",
+      "speaker": "Isabel Schnabel",
+      "title": "Opening remarks by Ms Schnabel at European Central Bank Money Markets Conference 2026 in Frankfurt, Germany",
+      "url": "https://www.ecb.europa.eu/press/conferences/html/20261105-money-markets.en.html"
+    },
+    {
+      "id": "ecb-2026-11-05-1ml9b6n",
+      "bankCode": "ecb",
+      "at": "2026-11-05T08:25:00.000Z",
+      "timeTbd": false,
+      "kind": "speech",
+      "speaker": "Anneli Tuominen",
+      "title": "Keynote speech by Ms Tuominen on \"Rahanpesun estäminen -miten valvonta vastaa tämän päivän haasteisiin\" at AMLR Readiness 2027 event in Helsinki, Finland",
+      "url": "https://www.ecb.europa.eu/press/calendars/weekly/html/index.en.html"
+    },
+    {
+      "id": "ecb-2026-11-05-d4h77m",
+      "bankCode": "ecb",
+      "at": "2026-11-05T15:40:00.000Z",
+      "timeTbd": false,
+      "kind": "discussion",
+      "speaker": "Philip R. Lane",
+      "title": "Participation by Mr. Lane in panel \"Should the SNB and other central banks rethink how they interact with the public and the government?\" at 2026 SNB and Its Watchers Conference in Zurich, Switzerland",
+      "url": "https://www.ecb.europa.eu/press/calendars/weekly/html/index.en.html"
+    },
+    {
+      "id": "ecb-2026-11-05-kxzmlq",
+      "bankCode": "ecb",
+      "at": "2026-11-05T16:00:00.000Z",
+      "timeTbd": false,
+      "kind": "discussion",
+      "speaker": "Christine Lagarde",
+      "role": "President",
+      "title": "Participation by Ms Lagarde in \"New Dialogues for the Future\" organised by Osservatorio for independent thinking in Milan, Italy.",
+      "url": "https://www.ecb.europa.eu/press/calendars/weekly/html/index.en.html"
+    },
+    {
+      "id": "ecb-2026-11-06-igmlmv",
+      "bankCode": "ecb",
+      "at": "2026-11-06T09:10:00.000Z",
+      "timeTbd": false,
+      "kind": "speech",
+      "speaker": "Sharon Donnery",
+      "title": "Keynote address by Ms Donnery at 13th Annual IIF Colloquium on European Banking Regulation & Supervision in Frankfurt, Germany",
+      "url": "https://www.ecb.europa.eu/press/calendars/weekly/html/index.en.html"
+    },
+    {
+      "id": "ecb-2026-11-06-1mniob4",
+      "bankCode": "ecb",
+      "at": "2026-11-06T09:30:00.000Z",
+      "timeTbd": false,
+      "kind": "discussion",
+      "speaker": "Philip R. Lane",
+      "title": "Participation in fireside chat by Mr Lane at European Central Bank Money Markets Conference 2026 in Frankfurt, Germany",
+      "url": "https://www.ecb.europa.eu/press/conferences/html/20261105-money-markets.en.html"
+    },
+    {
+      "id": "fed-2026-11-06-1asem21",
+      "bankCode": "fed",
+      "at": "2026-11-06T17:15:00.000Z",
+      "timeTbd": false,
+      "kind": "discussion",
+      "speaker": "Michelle W. Bowman",
+      "role": "Vice Chair for Supervision",
+      "title": "At the University of Mississippi Banking and Finance Symposium, Oxford, Miss.",
+      "url": "https://www.federalreserve.gov/newsevents/calendar.htm"
     },
     {
       "id": "fed-cpi-2026-11-10",
@@ -75,6 +207,15 @@
       "kind": "minutes",
       "title": "FOMC Minutes",
       "url": "https://www.federalreserve.gov/newsevents/calendar.htm"
+    },
+    {
+      "id": "boj-cpi-2026-11-19",
+      "bankCode": "boj",
+      "at": "2026-11-19T23:30:00.000Z",
+      "timeTbd": false,
+      "kind": "cpi",
+      "title": "CPI",
+      "url": "https://www.stat.go.jp/english/data/cpi/1582.html"
     }
   ]
 }

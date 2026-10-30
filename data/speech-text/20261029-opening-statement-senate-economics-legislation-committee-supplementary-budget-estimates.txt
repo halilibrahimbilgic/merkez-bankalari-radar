@@ -1,0 +1,67 @@
+Good morning, Chair and members of the Committee.
+
+ My colleagues and I are here today to answer your questions.
+
+ As you know, our purpose is to promote the economic prosperity and welfare of the Australian people, now and into the future. One way we do this is by setting monetary policy to achieve low and stable inflation and full employment, and by supporting the stability of the financial system. But we also promote the prosperity and welfare of Australians across the full range of our responsibilities, which include supporting a reliable, efficient and competitive payments system, delivering efficient and effective banking services to Australian government agencies, and providing secure and reliable banknotes to Australians.
+
+ Since the Committee’s previous hearing with the RBA in June, the Monetary Policy Board has increased the cash rate target by 25&nbsp;basis points. It did this with the goal of returning inflation to target. This has taken the cumulative increase in the cash rate target this year to 100&nbsp;basis points. I will start with some background to these decisions and the outlook for the Australian economy. I’ll then provide an update on the payments system and cash distribution.
+
+ Recent monetary policy decisions and the economic outlook
+
+ As you know, the Monetary Policy Board sets monetary policy such that inflation is expected to return to the midpoint of the 2–3 per cent target range. There is some flexibility around the timeframe over which we meet our inflation objective, to balance this with meeting our full employment objective. But it is important for the economy that inflation does not diverge from target for too long, since that risks it becoming embedded in inflation expectations, which feeds through to price and wage-setting decisions.
+
+ Inflation fell significantly from its peak of 7.9&nbsp;per&nbsp;cent at the end of 2022 to be within the 2–3 per cent target range for a period in 2024 and 2025. This followed a significant tightening of monetary policy over 2022 and 2023. But inflation picked up over the second half of 2025 and has remained above target since then. Recently, inflation has been around 3½&nbsp;to 4&nbsp;per&nbsp;cent in year-ended terms. The increase in inflation reflects both persistent capacity pressures in the Australian economy and global cost pressures associated with the conflict in the Middle East. Because of both these factors, inflation is likely to remain elevated for some time.
+
+ Our most recent published forecasts – in the August Statement on Monetary Policy – suggested that inflation would not return to around the midpoint of the target range until late 2027. At the time of the August Board meeting, we assessed that the risks to that outlook were skewed to the upside.
+
+ Developments since then suggest that although growth in the Australian economy is slowing as expected, some of the international and domestic upside risks to inflation have materialised or are materialising. Inflation will therefore likely be higher than was our base case in August.
+
+ The conflict in the Middle East has re-escalated and global energy prices are now much higher than had been assumed in the August forecasts. Oil and related prices have increased sharply again and will add materially to inflation, both directly and indirectly as businesses facing increasing pressures from higher transport and related costs attempt to pass them on. At the same time, short-term inflation expectations are elevated.
+
+ Other global cost pressures have increased. In addition to the energy price shock, the AI boom and extreme weather events are contributing to upward pressure on a range of agricultural and technology-related prices. The global AI boom is also driving stronger growth in economies that are key parts of the AI supply chain. In turn, that is driving higher global prices for some AI-related technologies that are supply constrained.
+
+ Importantly though, it is not just these global pressures that are driving inflation in Australia. While they are certainly compounding the inflation problem, we still see inflation arising from domestic capacity pressures. Despite the unemployment rate recently rising a little more than we had expected, the labour market seems a little tighter than we had previously judged. The evidence for this is elevated underlying inflationary pressures. That is, when we exclude some of the large volatile price movements such as fuel we see inflationary pressure in areas that reflect domestic demand for goods and services. And continued weak productivity growth means that the economy cannot grow strongly without putting pressure on inflation. This is a fundamental challenge for the Australian economy and for everyone’s real spending power over the next few years.
+
+ Against this backdrop, and despite growth in domestic demand slowing, a further period of subdued growth of aggregate demand is needed to reduce capacity pressures and bring inflation down sustainably.
+
+ We are not alone in being concerned about inflation – central banks in many other advanced economies are responding by increasing their policy rates or signalling they will do so if needed.
+
+ Because monetary policy works with a lag, the full effects of recent rate increases are yet to be felt on domestic activity. The impact of the conflict in the Middle East on economic activity has been relatively modest so far. Household spending growth has been moderating only gradually. And business investment growth has picked up strongly, driven mostly by spending on data centres and renewable energy projects.
+
+ The share of the population with a job remains high. This is a welcome outcome for those individuals, their families and the wider Australian economy.
+
+ Conditions in the housing market have softened, reflecting the usual transmission of monetary policy, but also tax policy changes and the broader economic environment. Housing prices have fallen in most capital cities and new housing loans have declined. This follows a long period of strong growth, however, underpinned by a structural undersupply of housing. And housing prices are around 50&nbsp;per&nbsp;cent higher than they were in early 2020. Financial stability risks from household borrowing remain contained: while many are facing budget pressures, only a small share of borrowers are in negative equity or facing severe repayment difficulty. I recognise how challenging it is for those experiencing these issues.
+
+ I want to emphasise that, while we expect housing prices to be affected when interest rates rise, monetary policy does not target housing prices. Rather, what matters is how changes in housing prices affect economic activity, the labour market and, ultimately, inflation.
+
+ The Monetary Policy Board will meet next week. We’ll discuss our assessment of the flow of data and how the risks are unfolding. A key question is whether the tightening in monetary policy to date will be sufficient to bring inflation back to target in a reasonable time. We are committed to our mandate to deliver price stability and full employment.
+
+ I recognise that higher interest rates can be difficult, particularly for households with mortgages who are also facing cost-of-living pressures. But we can’t allow high inflation to persist. High inflation hurts everyone. It means higher grocery costs, higher rent, and higher electricity bills. It makes everyone’s pay packets and savings worth less – and it particularly hurts people with lower incomes and little savings.
+
+ Monetary policy affects all parts of the economy, not just households with mortgages – it influences the spending, saving and borrowing decisions of all households and businesses. I am happy to expand on this in the Q&A.
+
+ Payments system
+
+ Another key responsibility for the RBA is the regulation and oversight of the payments system.
+
+ We have completed our review of surcharging and merchant card payment costs. Following extensive consultation, the Payments System Board concluded that a package of reforms to remove card surcharging, reduce interchange fee caps and improve transparency of payment costs would be in the public interest. Card surcharging was removed from 1&nbsp;October and we have been monitoring the payments industry’s implementation and working with industry stakeholders to support merchant awareness of the changes. So far, several large providers have reduced their card processing fees for small businesses. We are also seeing signs of increased competition, with businesses shopping around and providers responding by offering more competitive pricing. These developments are welcome.
+
+ Following amendments to the Payment Systems (Regulation) Act 1998 , which expanded our regulatory remit, we started a broader Review of Payments System Regulation with the publication of an Issues Paper in June. This Review is considering how regulation should respond to rapid innovation and change in the payments landscape, including opportunities to improve competition, efficiency and safety. In the submissions, stakeholders frequently raised issues relating to mobile wallets, three-party card schemes, account-to-account payments and agentic commerce. We recently published the stakeholder submissions and a summary of them. We intend to release regulatory priorities by the end of 2026 and start further consultation on prioritised issues by mid-2027.
+
+ In May, we published the Project Acacia Final Report, which found that the tokenisation of assets and money, alongside upgrades to market infrastructure, has the potential to enhance the efficiency and resilience of Australia’s wholesale financial markets. Coordination challenges across the financial system have meant that these innovations have yet to scale. However, momentum around tokenised finance is now building in Australia along various lines – as it is internationally – and following the post-Acacia roadmap, we have continued to progress various initiatives to support responsible innovation. For example, we are currently consulting on how the RBA’s own settlement services could support the development and growth of tokenised asset markets and tokenised private money in Australia. Together, with the Government’s Financial Innovation Strategy, this work is drawing together the public and private sector, including the Digital Cooperative Research Centre, to ensure that Australia is well placed to harness the benefits of financial innovation in a manner consistent with monetary and financial stability.
+
+ Cash distribution
+
+ I would also like to update the Committee on recent developments in the cash distribution system. Cash remains a critical part of an inclusive and resilient payments system. The RBA remains committed to supporting the Australian Government’s objective that cash remains available for as long as Australians want or need to use it.
+
+ The cash distribution system has faced significant challenges and needs to continue to evolve to support ongoing access to cash across Australia. Industry participants have been working on a range of initiatives to promote a more sustainable and efficient system. These will require approval by the ACCC.
+
+ As the issuer of Australian banknotes, the RBA also plays a key role in wholesale cash distribution. We provide banknotes to the major banks, which distribute these to the broader community. We are continuing to work with industry so that our distribution arrangements, programs and incentives support efficient distribution and availability of cash across the country.
+
+ The RBA welcomed the recent passage of the Cash Distribution Framework Act 2026 , which provides the RBA with crisis-readiness and resolution powers to support continuity of critical cash distribution services. The ACCC will oversee pricing, access arrangements and service-level standards.
+
+ The RBA recently designated Linfox Armaguard Pty Ltd under the new legislation. This reflects its significant role in Australia’s cash distribution system and makes it subject to the framework’s obligations and requirements. Designation does not mean that the RBA will exercise crisis-readiness or resolution powers in relation to Linfox Armaguard – it just means that we have the ability to act if we need to.
+
+ The work to operationalise these new powers and responsibilities is being undertaken in close coordination with the ACCC.
+
+ Thank you for listening. My colleagues and I look forward to answering your questions.

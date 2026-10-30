@@ -1,5 +1,5 @@
 {
-  "fetchedAt": "2026-10-29T11:13:43.792Z",
+  "fetchedAt": "2026-10-30T11:08:23.803Z",
   "meetings": [
     {
       "id": "fed-2021-01-27",
@@ -975,8 +975,10 @@
       "meetingAt": "2026-10-30T03:00:00.000Z",
       "timeTbd": true,
       "type": "rate_decision",
-      "status": "scheduled",
-      "sourceUrl": "https://www.boj.or.jp/en/mopo/mpmsche_minu/index.htm"
+      "status": "done",
+      "sourceUrl": "https://www.boj.or.jp/en/mopo/mpmsche_minu/index.htm",
+      "decisionRate": 1.25,
+      "previousRate": 1.25
     },
     {
       "id": "rba-2026-11-03",
