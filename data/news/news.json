@@ -1,6 +1,21 @@
 {
-  "fetchedAt": "2026-10-30T12:01:52.022Z",
+  "fetchedAt": "2026-10-30T13:26:53.983Z",
   "items": [
+    {
+      "id": "eb75b834e14a",
+      "sourceKey": "aa-economy",
+      "sourceName": "Anadolu Agency",
+      "kind": "media",
+      "url": "https://www.aa.com.tr/en/economy/us-economy-soaring-living-costs-dominate-voter-concerns-ahead-of-november-midterms/4106524",
+      "publishedAt": "2026-10-30T13:07:31.000Z",
+      "titleOriginal": "US economy, soaring living costs dominate voter concerns ahead of November midterms",
+      "titleTr": "ABD'de yaşam maliyeti ve ekonomi, ara seçim öncesi seçmenin ana kaygısı",
+      "summaryTr": "Anadolu Ajansı'na göre üçüncü çeyrekteki güçlü büyümeye rağmen enflasyon hızlanıyor, istihdam artışı yavaşlıyor ve Orta Doğu gerilimiyle enerji maliyetleri yükseliyor. Tüketici güveni sert düştü.",
+      "titleEn": "US economy and living costs dominate voter concerns ahead of midterms",
+      "summaryEn": "Anadolu Agency reports that despite strong Q3 growth, inflation is accelerating, job growth is cooling and energy costs are rising amid Middle East tensions. Consumer confidence has fallen sharply.",
+      "important": false,
+      "processedAt": "2026-10-30T13:26:53.983Z"
+    },
     {
       "id": "47141655f1b6",
       "sourceKey": "aa-ekonomi",
@@ -15,6 +30,22 @@
       "summaryEn": "The summary of the Central Bank of Türkiye's Monetary Policy Committee meeting said energy prices continue to be high and volatile amid ongoing geopolitical uncertainty.",
       "important": true,
       "processedAt": "2026-10-30T12:01:52.022Z"
+    },
+    {
+      "id": "484044133602",
+      "sourceKey": "tcmb-basin",
+      "sourceName": "TCMB",
+      "kind": "official",
+      "bankCode": "tcmb",
+      "url": "https://www.tcmb.gov.tr/wps/wcm/connect/tr/tcmb+tr/main+menu/duyurular/basin/2026/duy2026-47",
+      "publishedAt": "2026-10-30T11:00:00.000Z",
+      "titleOriginal": "Para Politikası Kurulu Toplantı Özeti (2026-47)",
+      "titleTr": "TCMB, Para Politikası Kurulu Toplantı Özeti'ni yayımladı (2026-47)",
+      "summaryTr": "Merkez Bankası, 2026-47 sayılı Para Politikası Kurulu toplantısının özetini yayımladı.",
+      "titleEn": "CBRT publishes Monetary Policy Committee meeting summary (2026-47)",
+      "summaryEn": "The Central Bank of Turkey has published the summary of its Monetary Policy Committee meeting no. 2026-47.",
+      "important": true,
+      "processedAt": "2026-10-30T13:26:53.983Z"
     },
     {
       "id": "99fc870303a5",
