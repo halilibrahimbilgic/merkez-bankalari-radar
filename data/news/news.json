@@ -1,6 +1,21 @@
 {
-  "fetchedAt": "2026-10-30T08:01:37.964Z",
+  "fetchedAt": "2026-10-30T08:31:42.504Z",
   "items": [
+    {
+      "id": "61b8b0185610",
+      "sourceKey": "aa-ekonomi",
+      "sourceName": "Anadolu Ajansı",
+      "kind": "media",
+      "url": "https://www.aa.com.tr/tr/ekonomi/piyasalar-kasimda-butce-gorusmelerine-ve-merkez-bankasinin-mesajlarina-odaklanacak/4105918",
+      "publishedAt": "2026-10-30T08:15:24.000Z",
+      "titleOriginal": "Piyasalar kasımda bütçe görüşmelerine ve Merkez Bankasının mesajlarına odaklanacak",
+      "titleTr": "Piyasalar kasımda bütçe görüşmelerine ve Merkez Bankası mesajlarına odaklanacak",
+      "summaryTr": "Anadolu Ajansı'na göre Türkiye'nin ekonomi gündemi kasımda da hareketli kalacak. TBMM'deki 2027 bütçe görüşmeleri ile Merkez Bankasının yayımlayacağı raporlar yakından izlenecek.",
+      "titleEn": "Markets to focus on budget talks and central bank messages in November",
+      "summaryEn": "Anadolu Agency reports that Turkey's economic agenda will stay busy in November. Parliament's 2027 budget debates and the reports the central bank will publish will be closely watched.",
+      "important": false,
+      "processedAt": "2026-10-30T08:31:42.504Z"
+    },
     {
       "id": "da7d33594c42",
       "sourceKey": "aa-ekonomi",
