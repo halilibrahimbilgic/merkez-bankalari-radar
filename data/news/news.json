@@ -1,6 +1,54 @@
 {
-  "fetchedAt": "2026-10-30T02:01:41.675Z",
+  "fetchedAt": "2026-10-30T03:31:40.886Z",
   "items": [
+    {
+      "id": "31f68d426af2",
+      "sourceKey": "boj",
+      "sourceName": "Bank of Japan",
+      "kind": "official",
+      "bankCode": "boj",
+      "url": "https://www.boj.or.jp/en/mopo/mpmdeci/mpr_2026/k261030c.pdf",
+      "publishedAt": "2026-10-30T03:02:00.000Z",
+      "titleOriginal": "(Reference) Decisions regarding a Change in the Pace of Sales of ETFs (October 2026)",
+      "titleTr": "BoJ, ETF satış hızındaki değişikliğe ilişkin kararları açıkladı (Ekim 2026)",
+      "summaryTr": "Japonya Merkez Bankası, elindeki ETF'lerin satış hızında yapılacak değişikliğe dair kararlarını içeren referans belgeyi yayımladı.",
+      "titleEn": "BoJ publishes decisions on change in pace of ETF sales (October 2026)",
+      "summaryEn": "The Bank of Japan released a reference document on its decisions regarding a change in the pace of its ETF sales.",
+      "important": true,
+      "processedAt": "2026-10-30T03:31:40.886Z"
+    },
+    {
+      "id": "54f887cdd67f",
+      "sourceKey": "boj",
+      "sourceName": "Bank of Japan",
+      "kind": "official",
+      "bankCode": "boj",
+      "url": "https://www.boj.or.jp/en/mopo/outlook/gor2610a.pdf",
+      "publishedAt": "2026-10-30T03:02:00.000Z",
+      "titleOriginal": "Outlook for Economic Activity and Prices (October 2026, The Bank's View)",
+      "titleTr": "BoJ'un Ekim 2026 Ekonomik Faaliyet ve Fiyatlar Görünümü raporu yayımlandı",
+      "summaryTr": "Japonya Merkez Bankası, Ekim 2026 toplantısına ilişkin ekonomik faaliyet ve fiyatlar görünümü raporunu (bankanın görüşü) yayımladı.",
+      "titleEn": "BoJ releases October 2026 Outlook for Economic Activity and Prices",
+      "summaryEn": "The Bank of Japan published its Outlook for Economic Activity and Prices for October 2026, setting out the Bank's view.",
+      "important": true,
+      "processedAt": "2026-10-30T03:31:40.886Z"
+    },
+    {
+      "id": "677a93685ab8",
+      "sourceKey": "boj",
+      "sourceName": "Bank of Japan",
+      "kind": "official",
+      "bankCode": "boj",
+      "url": "https://www.boj.or.jp/en/mopo/mpmdeci/mpr_2026/k261030a.pdf",
+      "publishedAt": "2026-10-30T03:02:00.000Z",
+      "titleOriginal": "Statement on Monetary Policy",
+      "titleTr": "BoJ para politikası açıklamasını yayımladı",
+      "summaryTr": "Japonya Merkez Bankası, Ekim 2026 toplantısının ardından para politikası kararını içeren açıklamasını yayımladı.",
+      "titleEn": "BoJ releases Statement on Monetary Policy",
+      "summaryEn": "The Bank of Japan published its Statement on Monetary Policy following its October 2026 meeting.",
+      "important": true,
+      "processedAt": "2026-10-30T03:31:40.886Z"
+    },
     {
       "id": "6d8bca8dde41",
       "sourceKey": "marketwatch",
@@ -3014,6 +3062,8 @@
     "d20e603f16f4": "2026-10-29",
     "f0e8bae022db": "2026-10-29",
     "38603f0428c8": "2026-10-29",
-    "3b5bafed54d6": "2026-10-30"
+    "3b5bafed54d6": "2026-10-30",
+    "190ec63ac073": "2026-10-30",
+    "468e35470e2d": "2026-10-30"
   }
 }
