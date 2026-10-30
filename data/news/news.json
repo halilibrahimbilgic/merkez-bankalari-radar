@@ -1,6 +1,21 @@
 {
-  "fetchedAt": "2026-10-30T10:01:54.077Z",
+  "fetchedAt": "2026-10-30T12:01:52.022Z",
   "items": [
+    {
+      "id": "47141655f1b6",
+      "sourceKey": "aa-ekonomi",
+      "sourceName": "Anadolu Ajansı",
+      "kind": "media",
+      "url": "https://www.aa.com.tr/tr/ekonomi/merkez-bankasi-para-politikasi-kurulu-toplanti-ozeti-yayimlandi/4106218",
+      "publishedAt": "2026-10-30T11:36:00.000Z",
+      "titleOriginal": "TCMB: Devam eden jeopolitik belirsizliklere bağlı olarak enerji fiyatlarındaki yüksek ve dalgalı seyir sürmektedir",
+      "titleTr": "TCMB: Enerji fiyatlarındaki yüksek ve dalgalı seyir sürüyor",
+      "summaryTr": "TCMB'nin Para Politikası Kurulu toplantı özetinde, devam eden jeopolitik belirsizlikler nedeniyle enerji fiyatlarındaki yüksek ve dalgalı seyrin sürdüğü belirtildi.",
+      "titleEn": "CBRT: High and volatile energy prices persist",
+      "summaryEn": "The summary of the Central Bank of Türkiye's Monetary Policy Committee meeting said energy prices continue to be high and volatile amid ongoing geopolitical uncertainty.",
+      "important": true,
+      "processedAt": "2026-10-30T12:01:52.022Z"
+    },
     {
       "id": "99fc870303a5",
       "sourceKey": "aa-economy",
