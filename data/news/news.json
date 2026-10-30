@@ -1,6 +1,22 @@
 {
-  "fetchedAt": "2026-10-30T09:01:46.781Z",
+  "fetchedAt": "2026-10-30T09:31:31.573Z",
   "items": [
+    {
+      "id": "9dd083be2501",
+      "sourceKey": "ecb",
+      "sourceName": "ECB",
+      "kind": "official",
+      "bankCode": "ecb",
+      "url": "https://www.ecb.europa.eu//press/pr/date/2026/html/ecb.pr261030~e92c3c838c.en.html",
+      "publishedAt": "2026-10-30T09:00:00.000Z",
+      "titleOriginal": "Results of the ECB Survey of Professional Forecasters for the fourth quarter of 2026",
+      "titleTr": "ECB, 2026 dördüncü çeyrek Profesyonel Tahminciler Anketi sonuçlarını yayımladı",
+      "summaryTr": "ECB, 2026'nın dördüncü çeyreğine ait Profesyonel Tahminciler Anketi'nin sonuçlarını duyurdu.",
+      "titleEn": "ECB publishes Survey of Professional Forecasters results for Q4 2026",
+      "summaryEn": "The ECB announced the results of its Survey of Professional Forecasters for the fourth quarter of 2026.",
+      "important": false,
+      "processedAt": "2026-10-30T09:31:31.573Z"
+    },
     {
       "id": "61b8b0185610",
       "sourceKey": "aa-ekonomi",
