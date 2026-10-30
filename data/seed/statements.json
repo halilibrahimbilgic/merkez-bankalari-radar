@@ -1,5 +1,5 @@
 {
-  "fetchedAt": "2026-10-30T02:01:41.957Z",
+  "fetchedAt": "2026-10-30T03:02:21.420Z",
   "statements": [
     {
       "meetingId": "boe-2025-12-18",
@@ -504,6 +504,20 @@
         "promptVersion": "2",
         "summarizedAt": "2026-10-14T22:32:48.826Z"
       }
+    },
+    {
+      "meetingId": "boj-2026-10-30",
+      "bankCode": "boj",
+      "urls": {
+        "en": "https://www.boj.or.jp/en/mopo/mpmdeci/mpr_2026/k261030a.pdf"
+      },
+      "langs": [
+        "en"
+      ],
+      "publishable": false,
+      "fetchedAt": "2026-10-30T03:02:21.419Z",
+      "previousId": "boj-2026-09-18",
+      "parseError": "hedef faiz cümlesi okunamadı"
     },
     {
       "meetingId": "ecb-2025-12-18",
