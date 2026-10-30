@@ -1,5 +1,5 @@
 {
-  "fetchedAt": "2026-10-30T11:01:26.447Z",
+  "fetchedAt": "2026-10-30T11:32:24.879Z",
   "statements": [
     {
       "meetingId": "boe-2025-12-18",
@@ -517,7 +517,32 @@
       "publishable": false,
       "fetchedAt": "2026-10-30T03:02:21.419Z",
       "previousId": "boj-2026-09-18",
-      "parseError": "hedef faiz cümlesi okunamadı"
+      "parseError": "hedef faiz cümlesi okunamadı",
+      "summary": {
+        "headlineTr": "BoJ politika faizini 8-1 oyla yüzde 1,25'te sabit tuttu; ETF satış hızını yıllık yaklaşık 330 milyar yenden yaklaşık 860 milyar yene çıkardı ve tek muhalif üye faizin yüzde 1,5'e artırılmasını önerdi.",
+        "headlineEn": "The BoJ held its policy rate at 1.25 percent by an 8-1 vote, raised the pace of its ETF sales from about 330 billion yen to about 860 billion yen per year, and the lone dissenter proposed a hike to 1.5 percent.",
+        "changesTr": [
+          "Eylül'deki artırım kararının aksine teminatsız gecelik çağrı faizi yaklaşık yüzde 1,25'te bırakıldı; metin, önceki metindeki ekonomik değerlendirmeyi ve politika faizini artırmayı sürdürme yönündeki ileriye dönük yönlendirmeyi içermiyor.",
+          "Oy dağılımı 7-2'den 8-1'e döndü ve muhalefetin yönü değişti: Eylül'de iki üye artırıma karşı çıkmışken bu kez Takata Hajime, ana enflasyonun fiyat istikrarı hedefine ulaştığını savunarak faizin yüzde 1,5'e çıkarılmasını önerdi ve öneri reddedildi.",
+          "Banka oybirliğiyle ETF satışlarını piyasa işlem hacminin yaklaşık yüzde 0,05'inden yaklaşık yüzde 0,1'ine, yıllık yaklaşık 330 milyar yenden yaklaşık 860 milyar yene (defter değeri) çıkarmaya karar verdi; değişiklik Ocak 2027'de uygulanacak.",
+          "J-REIT satış hızı yıllık yaklaşık 5 milyar yende bırakıldı; piyasa koşullarına göre satışların geçici olarak ayarlanabileceği ya da durdurulabileceği hükmü korundu."
+        ],
+        "changesEn": [
+          "Unlike September's hike, the uncollateralized overnight call rate was left at around 1.25 percent; the statement does not contain the previous text's economic assessment or its forward guidance that the Bank will continue to raise the policy rate.",
+          "The vote shifted from 7-2 to 8-1 and the direction of dissent reversed: in September two members opposed the hike, while this time Takata Hajime, arguing that underlying CPI inflation had reached the price stability target, proposed raising the rate to 1.5 percent, and the proposal was defeated.",
+          "The Bank unanimously decided to increase ETF sales from about 0.05 percent to about 0.1 percent of market trading value, from about 330 billion yen to about 860 billion yen per year (book value), to be implemented in January 2027.",
+          "The pace of J-REIT sales remains at about 5 billion yen per year, and the provision allowing temporary adjustment or suspension of sales in response to market conditions is retained."
+        ],
+        "tone": "mixed",
+        "toneReasonTr": "Metinden \"politika faizini artırmayı sürdürecek\" yönlendirmesi düşerken muhalefet artırıma karşı çıkmaktan yüzde 1,5'e artırım önerisine döndü ve ETF satış hızı iki katından fazla artırıldı.",
+        "toneReasonEn": "The guidance that the Bank \"will continue to raise the policy interest rate\" dropped out of the text, while dissent flipped from opposing a hike to proposing 1.5 percent and the ETF sales pace was more than doubled.",
+        "score": 2,
+        "scoreReasonTr": "Faiz yüzde 1,25'te sabit tutuldu ve metinde ileriye dönük faiz yönlendirmesi yok, ancak tek muhalefetin artırım yönünde olması ve ETF satışlarının hızlandırılması duruşu hafif şahin kılıyor.",
+        "scoreReasonEn": "The rate was held at 1.25 percent with no forward rate guidance in the text, but the sole dissent favoring a hike and the faster ETF sales make the stance mildly hawkish.",
+        "model": "claude-code/opus",
+        "promptVersion": "2",
+        "summarizedAt": "2026-10-30T11:32:24.879Z"
+      }
     },
     {
       "meetingId": "ecb-2025-12-18",
