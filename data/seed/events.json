@@ -1,15 +1,6 @@
 {
-  "fetchedAt": "2026-10-30T11:08:57.261Z",
+  "fetchedAt": "2026-10-31T10:42:57.072Z",
   "events": [
-    {
-      "id": "tcmb-2026-10-30-mpc-summary",
-      "bankCode": "tcmb",
-      "at": "2026-10-29T21:00:00.000Z",
-      "timeTbd": true,
-      "kind": "mpc-summary",
-      "title": "Para Politikası Kurulu Toplantı Özeti",
-      "url": "https://www.tcmb.gov.tr/wps/wcm/connect/TR/TCMB+TR/Main+Menu/Duyurular/Takvim"
-    },
     {
       "id": "ecb-2026-10-30-8ghlxa",
       "bankCode": "ecb",
