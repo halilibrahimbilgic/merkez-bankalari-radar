@@ -1,6 +1,21 @@
 {
-  "fetchedAt": "2026-10-30T20:01:55.815Z",
+  "fetchedAt": "2026-10-31T08:31:57.516Z",
   "items": [
+    {
+      "id": "316fc1ce2142",
+      "sourceKey": "aa-ekonomi",
+      "sourceName": "Anadolu Ajansı",
+      "kind": "media",
+      "url": "https://www.aa.com.tr/tr/ekonomi/ecbde-lagarde-donemi-sona-yaklasirken-halefini-faiz-degil-fransa-krizi-bekliyor/4107098",
+      "publishedAt": "2026-10-31T08:03:32.000Z",
+      "titleOriginal": "ECB'de Lagarde dönemi sona yaklaşırken, halefini faiz değil \"Fransa krizi\" bekliyor",
+      "titleTr": "Lagarde'ın erken ayrılığı piyasalarda ve Avrupa siyasetinde yankı uyandırdı",
+      "summaryTr": "ECB Başkanı Christine Lagarde'ın görev süresi dolmadan yaklaşık 9 ay önce ayrılacağını açıklaması küresel piyasalarda ve Avrupa siyasetinde derin yankı yarattı. Anadolu Ajansı'na göre halefini faizden çok \"Fransa krizi\" bekliyor.",
+      "titleEn": "Lagarde's early exit from ECB stirs markets and European politics",
+      "summaryEn": "ECB President Christine Lagarde's announcement that she will leave about nine months before her term ends drew strong reactions in global markets and European politics. Anadolu Agency says her successor faces a \"France crisis\" rather than a rates question.",
+      "important": false,
+      "processedAt": "2026-10-31T08:31:57.516Z"
+    },
     {
       "id": "57bc2d8c6128",
       "sourceKey": "marketwatch",
@@ -3148,12 +3163,6 @@
     }
   ],
   "rejected": {
-    "f12d92ef42e4": "2026-10-23",
-    "853f95166354": "2026-10-23",
-    "479d4ddebcae": "2026-10-23",
-    "dbad8fa9a12d": "2026-10-23",
-    "d74d5bfc72b4": "2026-10-23",
-    "57169c18c004": "2026-10-23",
     "150a3be9adef": "2026-10-24",
     "b096c7b1f321": "2026-10-24",
     "0ed2d57ec7bc": "2026-10-25",
