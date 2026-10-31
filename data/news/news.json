@@ -1,5 +1,5 @@
 {
-  "fetchedAt": "2026-10-31T08:31:57.516Z",
+  "fetchedAt": "2026-10-31T19:02:26.277Z",
   "items": [
     {
       "id": "316fc1ce2142",
@@ -15,6 +15,21 @@
       "summaryEn": "ECB President Christine Lagarde's announcement that she will leave about nine months before her term ends drew strong reactions in global markets and European politics. Anadolu Agency says her successor faces a \"France crisis\" rather than a rates question.",
       "important": false,
       "processedAt": "2026-10-31T08:31:57.516Z"
+    },
+    {
+      "id": "90afe852f72d",
+      "sourceKey": "guardian-business",
+      "sourceName": "The Guardian",
+      "kind": "media",
+      "url": "https://www.theguardian.com/money/2026/oct/31/budget-2026-how-to-beat-the-new-savings-tax-rates",
+      "publishedAt": "2026-10-31T07:00:36.000Z",
+      "titleOriginal": "Budget 2026: how to beat the new savings tax rates",
+      "titleTr": "Birleşik Krallık bütçesi: tasarruf gelirlerine yönelik vergi oranları arttı",
+      "summaryTr": "Maliye Bakanı John Healey'nin bütçesi, tasarruf ve gayrimenkul gelirlerine ek vergi getirdi; Reeves'in duyurduğu oranlara iki puan daha ekledi. Nakit Isa limitinin düşürülmesi planından ise vazgeçildi.",
+      "titleEn": "UK Budget: higher tax rates on savings income",
+      "summaryEn": "Chancellor John Healey's budget added an extra tax charge on savings and property income, putting two percentage points on top of the rates Reeves had announced. The plan to cut the cash Isa limit for under-65s was dropped.",
+      "important": false,
+      "processedAt": "2026-10-31T19:02:26.277Z"
     },
     {
       "id": "57bc2d8c6128",
@@ -3218,6 +3233,11 @@
     "60c8ab0a4a7e": "2026-10-30",
     "2d97c95b5dac": "2026-10-30",
     "8e3acff626e8": "2026-10-30",
-    "4b5367877a60": "2026-10-30"
+    "4b5367877a60": "2026-10-30",
+    "19f551bd77dd": "2026-10-31",
+    "a87237e8df9a": "2026-10-31",
+    "fe08c5bdc8cf": "2026-10-31",
+    "c83bbef6c74b": "2026-10-31",
+    "72cc9dca94df": "2026-10-31"
   }
 }
