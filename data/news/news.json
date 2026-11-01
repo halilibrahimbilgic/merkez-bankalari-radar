@@ -1,6 +1,21 @@
 {
-  "fetchedAt": "2026-10-31T19:02:26.277Z",
+  "fetchedAt": "2026-11-01T09:02:24.475Z",
   "items": [
+    {
+      "id": "cd9b654340c9",
+      "sourceKey": "aa-ekonomi",
+      "sourceName": "Anadolu Ajansı",
+      "kind": "media",
+      "url": "https://www.aa.com.tr/tr/ekonomi/emtia-piyasalarinda-faiz-beklentileri-degerli-metalleri-baskiladi/4107786",
+      "publishedAt": "2026-11-01T08:04:03.000Z",
+      "titleOriginal": "Emtia piyasalarında faiz beklentileri değerli metalleri baskıladı",
+      "titleTr": "Fed faiz beklentileri emtia piyasasında değerli metalleri baskıladı",
+      "summaryTr": "Anadolu Ajansı'na göre Fed'in faiz artırımına devam edebileceği beklentisi ve teknoloji hisselerindeki satış baskısı değerli metalleri aşağı çekti. Arz gelişmeleri ve jeopolitik riskler de diğer emtialarda etkili oldu.",
+      "titleEn": "Fed rate expectations weigh on precious metals in commodity markets",
+      "summaryEn": "Anadolu Agency reports that expectations the Fed may keep raising rates, along with selling pressure spreading from tech stocks, pushed precious metals lower. Supply developments and geopolitical risks also affected other commodities.",
+      "important": false,
+      "processedAt": "2026-11-01T09:02:24.475Z"
+    },
     {
       "id": "316fc1ce2142",
       "sourceKey": "aa-ekonomi",
@@ -3178,8 +3193,6 @@
     }
   ],
   "rejected": {
-    "150a3be9adef": "2026-10-24",
-    "b096c7b1f321": "2026-10-24",
     "0ed2d57ec7bc": "2026-10-25",
     "f345ba85d0fb": "2026-10-26",
     "697fd42f1dc6": "2026-10-26",
