@@ -1,16 +1,6 @@
 {
-  "fetchedAt": "2026-10-31T10:42:57.072Z",
+  "fetchedAt": "2026-11-01T11:37:44.206Z",
   "events": [
-    {
-      "id": "ecb-2026-10-30-8ghlxa",
-      "bankCode": "ecb",
-      "at": "2026-10-30T16:10:00.000Z",
-      "timeTbd": false,
-      "kind": "testimony",
-      "speaker": "Philip R. Lane",
-      "title": "Keynote speech by Mr Lane at Research Symposium on AI and the Economy organised by Federal Reserve Bank of San Francisco in San Francisco, US",
-      "url": "https://www.frbsf.org/news-and-media/events/2026/10/remarks-from-philip-lane-2026-economic-research-symposium/"
-    },
     {
       "id": "ecb-2026-11-02-7a7xq7",
       "bankCode": "ecb",
