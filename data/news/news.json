@@ -1,6 +1,21 @@
 {
-  "fetchedAt": "2026-11-02T11:32:26.426Z",
+  "fetchedAt": "2026-11-02T12:02:30.336Z",
   "items": [
+    {
+      "id": "c52bb6467de3",
+      "sourceKey": "aa-economy",
+      "sourceName": "Anadolu Agency",
+      "kind": "media",
+      "url": "https://www.aa.com.tr/en/economy/precious-metals-continue-to-plunge-for-2nd-consecutive-month/4108726",
+      "publishedAt": "2026-11-02T11:39:40.000Z",
+      "titleOriginal": "Precious metals continue to plunge for 2nd consecutive month",
+      "titleTr": "Değerli metaller üst üste ikinci ay düşüşte",
+      "summaryTr": "Altın ve gümüş fiyatları, yüksek faiz beklentileriyle yatırımcıların risksiz nakit getirisine yönelmesi nedeniyle geriledi. Bir uzman, sanayi tipi değerli metallerdeki düşüşün küresel büyümenin yavaşlayacağı endişeleriyle daha sert olduğunu söyledi.",
+      "titleEn": "Precious metals fall for a second consecutive month",
+      "summaryEn": "Gold and silver prices declined as expectations of high interest rates pushed investors toward risk-free cash returns. An expert said industrial precious metals fell more sharply on fears of a global growth slowdown.",
+      "important": false,
+      "processedAt": "2026-11-02T12:02:30.336Z"
+    },
     {
       "id": "777fb8b2dbbf",
       "sourceKey": "aa-ekonomi",
