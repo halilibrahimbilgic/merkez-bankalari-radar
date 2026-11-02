@@ -1,6 +1,37 @@
 {
-  "fetchedAt": "2026-11-02T08:32:14.615Z",
+  "fetchedAt": "2026-11-02T09:02:37.014Z",
   "items": [
+    {
+      "id": "dc6b97f96a54",
+      "sourceKey": "ecb",
+      "sourceName": "ECB",
+      "kind": "official",
+      "bankCode": "ecb",
+      "url": "https://www.ecb.europa.eu//press/key/date/2026/html/ecb.sp.261102~70003226e9.en.html",
+      "publishedAt": "2026-11-02T09:30:00.000Z",
+      "titleOriginal": "Boris Vujčić: Integrated, open and resilient: Europe’s strengths in a fragmenting world",
+      "titleTr": "Vujčić: Parçalanan dünyada Avrupa'nın gücü bütünleşme, açıklık ve dayanıklılık",
+      "summaryTr": "ECB Yönetim Konseyi üyesi Boris Vujčić, parçalanan dünyada Avrupa'nın güçlü yanlarını ele alan bir konuşma yaptı. Açıklamada konuşmanın içeriğine dair ayrıntı yer almıyor.",
+      "titleEn": "Vujčić: Europe's strengths in a fragmenting world are integration, openness and resilience",
+      "summaryEn": "ECB Governing Council member Boris Vujčić gave a speech on Europe's strengths in a fragmenting world. No details of the speech's content are provided.",
+      "important": false,
+      "processedAt": "2026-11-02T09:02:37.014Z"
+    },
+    {
+      "id": "9eab45551b4a",
+      "sourceKey": "aa-economy",
+      "sourceName": "Anadolu Agency",
+      "kind": "media",
+      "url": "https://www.aa.com.tr/en/economy/global-investors-start-new-week-cautiously-ahead-of-us-midterms/4108455",
+      "publishedAt": "2026-11-02T08:34:43.000Z",
+      "titleOriginal": "Global investors start new week cautiously ahead of US midterms",
+      "titleTr": "Küresel yatırımcılar ABD ara seçimleri öncesinde yeni haftaya temkinli başladı",
+      "summaryTr": "Anadolu Ajansı'na göre piyasalar jeopolitik görünümü tartıyor; olası bir ABD-İran anlaşması beklentisiyle Brent petrol yüzde 3,2 geriledi. Kalıcı enflasyon riskleri ve güçlü ekonomik aktivite ise Fed'in faiz artırımı beklentilerini besliyor.",
+      "titleEn": "Global investors start the new week cautiously ahead of US midterms",
+      "summaryEn": "Anadolu Agency reports markets are weighing the geopolitical outlook, with optimism over a possible US-Iran deal pushing Brent crude down 3.2%. Persistent inflation risks and strong economic activity are fueling expectations of a Fed rate hike.",
+      "important": true,
+      "processedAt": "2026-11-02T09:02:37.014Z"
+    },
     {
       "id": "ae32969db11a",
       "sourceKey": "aa-ekonomi",
