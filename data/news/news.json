@@ -1,6 +1,21 @@
 {
-  "fetchedAt": "2026-11-02T07:32:31.921Z",
+  "fetchedAt": "2026-11-02T08:32:14.615Z",
   "items": [
+    {
+      "id": "ae32969db11a",
+      "sourceKey": "aa-ekonomi",
+      "sourceName": "Anadolu Ajansı",
+      "kind": "media",
+      "url": "https://www.aa.com.tr/tr/ekonomi/degerli-metaller-iki-aydir-yatirimcisina-kaybettiriyor/4108445",
+      "publishedAt": "2026-11-02T08:23:03.000Z",
+      "titleOriginal": "Değerli metaller iki aydır yatırımcısına kaybettiriyor",
+      "titleTr": "Değerli metaller iki aydır değer kaybediyor",
+      "summaryTr": "Anadolu Ajansı'na göre değerli metaller, yükselen petrol fiyatları, dolara artan talep, faizlerin uzun süre yüksek kalacağı beklentisi ve küresel büyüme endişeleriyle iki aydır yatırımcısına kaybettiriyor.",
+      "titleEn": "Precious metals have lost value for two months",
+      "summaryEn": "According to Anadolu Agency, precious metals have been losing value for two months amid rising oil prices, stronger demand for the dollar, expectations that interest rates will stay high for long, and global growth concerns.",
+      "important": false,
+      "processedAt": "2026-11-02T08:32:14.615Z"
+    },
     {
       "id": "99367b74cc5e",
       "sourceKey": "aa-economy",
