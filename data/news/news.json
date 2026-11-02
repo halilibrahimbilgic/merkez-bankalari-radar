@@ -1,6 +1,22 @@
 {
-  "fetchedAt": "2026-11-02T04:32:18.533Z",
+  "fetchedAt": "2026-11-02T05:02:37.734Z",
   "items": [
+    {
+      "id": "e297c858babb",
+      "sourceKey": "boj",
+      "sourceName": "Bank of Japan",
+      "kind": "official",
+      "bankCode": "boj",
+      "url": "https://www.boj.or.jp/en/mopo/outlook/gor2610b.pdf",
+      "publishedAt": "2026-11-02T05:00:00.000Z",
+      "titleOriginal": "Outlook for Economic Activity and Prices (October 2026, full text)",
+      "titleTr": "BoJ, Ekim 2026 Ekonomik Faaliyet ve Fiyatlar Görünümü raporunu yayımladı",
+      "summaryTr": "Japonya Merkez Bankası (BoJ), Ekonomik Faaliyet ve Fiyatlar Görünümü raporunun Ekim 2026 tam metnini yayımladı.",
+      "titleEn": "BoJ publishes October 2026 Outlook for Economic Activity and Prices",
+      "summaryEn": "The Bank of Japan released the full text of its Outlook for Economic Activity and Prices report for October 2026.",
+      "important": true,
+      "processedAt": "2026-11-02T05:02:37.734Z"
+    },
     {
       "id": "cd9b654340c9",
       "sourceKey": "aa-ekonomi",
