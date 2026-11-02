@@ -1,5 +1,5 @@
 {
-  "fetchedAt": "2026-11-02T19:32:29.844Z",
+  "fetchedAt": "2026-11-02T20:32:24.963Z",
   "items": [
     {
       "id": "ba98aa958010",
@@ -257,6 +257,21 @@
       "summaryEn": "Chancellor John Healey's budget added an extra tax charge on savings and property income, putting two percentage points on top of the rates Reeves had announced. The plan to cut the cash Isa limit for under-65s was dropped.",
       "important": false,
       "processedAt": "2026-10-31T19:02:26.277Z"
+    },
+    {
+      "id": "b98a69b75ebd",
+      "sourceKey": "cnbc-finance",
+      "sourceName": "CNBC",
+      "kind": "media",
+      "url": "https://www.cnbc.com/2026/10/30/musalem-fed-monetary-policy-tightening.html",
+      "publishedAt": "2026-10-30T21:53:10.000Z",
+      "titleOriginal": "Fed officials are already saying they’ll need to get back to hiking rates",
+      "titleTr": "Fed yetkilileri faiz artırımına dönülmesi gerekebileceğini söylüyor",
+      "summaryTr": "Fed bölge başkanları Alberto Musalem ve Lorie Logan'ın açıklamaları, Fed liderlerinin bundan sonra neyin yaşanacağını nasıl gördüğüne dair ilk ipuçlarını veriyor. Haberde, yetkililerin yeniden faiz artırımına dönmek gerekeceğini dile getirdiği belirtiliyor.",
+      "titleEn": "Fed officials say they may need to return to rate hikes",
+      "summaryEn": "Comments from Fed Presidents Alberto Musalem and Lorie Logan offer the first insight into what Fed leaders see happening next. The report says officials are already saying a return to rate hikes will be needed.",
+      "important": true,
+      "processedAt": "2026-11-02T20:32:24.963Z"
     },
     {
       "id": "57bc2d8c6128",
