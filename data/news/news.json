@@ -1,6 +1,21 @@
 {
-  "fetchedAt": "2026-11-02T14:32:56.875Z",
+  "fetchedAt": "2026-11-02T15:32:05.075Z",
   "items": [
+    {
+      "id": "eb9e8db968f8",
+      "sourceKey": "aa-economy",
+      "sourceName": "Anadolu Agency",
+      "kind": "media",
+      "url": "https://www.aa.com.tr/en/economy/china-to-cut-share-buyback-funding-rate-to-support-stock-market/4108956",
+      "publishedAt": "2026-11-02T15:08:55.000Z",
+      "titleOriginal": "China to cut share buyback funding rate to support stock market",
+      "titleTr": "Çin, hisse geri alım fonlama oranını düşürecek",
+      "summaryTr": "Anadolu Ajansı'na göre Çin merkez bankası, geri alım kredi programını kalıcı hale getiriyor ve takas imkânına erişimi genişletiyor. Yeni turda 31 finans kuruluşu onay aldı.",
+      "titleEn": "China to cut share buyback funding rate",
+      "summaryEn": "Anadolu Agency reports China's central bank is making its buyback lending program permanent and widening access to the swap facility. 31 financial firms have received approval for the new round.",
+      "important": false,
+      "processedAt": "2026-11-02T15:32:05.075Z"
+    },
     {
       "id": "c52bb6467de3",
       "sourceKey": "aa-economy",
