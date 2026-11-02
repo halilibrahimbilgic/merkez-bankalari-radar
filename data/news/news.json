@@ -1,5 +1,5 @@
 {
-  "fetchedAt": "2026-11-02T18:32:37.632Z",
+  "fetchedAt": "2026-11-02T19:02:48.925Z",
   "items": [
     {
       "id": "ba98aa958010",
@@ -30,6 +30,21 @@
       "summaryEn": "Anadolu Agency reports Brent fell to $104.43 a barrel, while US crude dropped 7.3% to $96.50. The decline came amid diplomatic efforts to end the conflict.",
       "important": false,
       "processedAt": "2026-11-02T18:02:39.976Z"
+    },
+    {
+      "id": "7f682c5f32d8",
+      "sourceKey": "guardian-business",
+      "sourceName": "The Guardian",
+      "kind": "media",
+      "url": "https://www.theguardian.com/business/2026/nov/02/oil-price-falls-amid-hope-of-a-breakthrough-to-end-iran-war",
+      "publishedAt": "2026-11-02T17:14:23.000Z",
+      "titleOriginal": "Oil price falls amid hope of a breakthrough to end Iran war",
+      "titleTr": "Petrol fiyatı İran savaşında çözüm umuduyla düştü",
+      "summaryTr": "Guardian'a göre Brent petrol, 16 Ekim'den bu yana en düşük seviye olan 105,55 dolara kadar geriledi. Düşüş havayolu hisselerini yükseltti ve devlet borçlanma maliyetlerini aşağı çekti.",
+      "titleEn": "Oil price falls on hopes of a breakthrough to end Iran war",
+      "summaryEn": "The Guardian reports Brent crude fell more than 6% to as low as $105.55 a barrel, its lowest since 16 October. The drop lifted airline shares and pushed down government borrowing costs.",
+      "important": false,
+      "processedAt": "2026-11-02T19:02:48.925Z"
     },
     {
       "id": "78778f53df2b",
@@ -3455,6 +3470,7 @@
     "4b011b4817ef": "2026-11-02",
     "c49d3e419d06": "2026-11-02",
     "49d3781c5e1f": "2026-11-02",
-    "d761edc534f8": "2026-11-02"
+    "d761edc534f8": "2026-11-02",
+    "6186aa95c74a": "2026-11-02"
   }
 }
