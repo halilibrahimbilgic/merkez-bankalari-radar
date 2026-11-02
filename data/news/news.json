@@ -1,6 +1,21 @@
 {
-  "fetchedAt": "2026-11-02T16:02:37.744Z",
+  "fetchedAt": "2026-11-02T18:02:39.976Z",
   "items": [
+    {
+      "id": "8240fbc08729",
+      "sourceKey": "aa-economy",
+      "sourceName": "Anadolu Agency",
+      "kind": "media",
+      "url": "https://www.aa.com.tr/en/economy/brent-crude-falls-nearly-8-below-105-as-us-iran-diplomacy-eases-supply-fears/4109065",
+      "publishedAt": "2026-11-02T17:35:43.000Z",
+      "titleOriginal": "Brent crude falls nearly 8% below $105 as US-Iran diplomacy eases supply fears",
+      "titleTr": "Brent petrol ABD-İran diplomasisiyle yaklaşık %8 düşüp 105 doların altına indi",
+      "summaryTr": "Anadolu Ajansı'na göre Brent petrol varil başına 104,43 dolara geriledi, ABD ham petrolü ise %7,3 düşüşle 96,50 dolar oldu. Düşüşte çatışmayı sona erdirmeye yönelik diplomatik çabalar etkili oldu.",
+      "titleEn": "Brent crude falls nearly 8% below $105 on US-Iran diplomacy",
+      "summaryEn": "Anadolu Agency reports Brent fell to $104.43 a barrel, while US crude dropped 7.3% to $96.50. The decline came amid diplomatic efforts to end the conflict.",
+      "important": false,
+      "processedAt": "2026-11-02T18:02:39.976Z"
+    },
     {
       "id": "78778f53df2b",
       "sourceKey": "marketwatch",
