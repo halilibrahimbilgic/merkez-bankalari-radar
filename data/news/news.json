@@ -1,5 +1,5 @@
 {
-  "fetchedAt": "2026-11-02T09:02:37.014Z",
+  "fetchedAt": "2026-11-02T10:32:25.436Z",
   "items": [
     {
       "id": "dc6b97f96a54",
@@ -61,6 +61,21 @@
       "summaryEn": "Output and new orders growth in Japan slowed to its weakest pace since March. Input cost inflation accelerated for the first time in five months on rising oil and component costs.",
       "important": true,
       "processedAt": "2026-11-02T07:32:31.921Z"
+    },
+    {
+      "id": "5c1547ea86bb",
+      "sourceKey": "guardian-business",
+      "sourceName": "The Guardian",
+      "kind": "media",
+      "url": "https://www.theguardian.com/money/2026/nov/02/mortgage-payments-rise-2027-interest-rates",
+      "publishedAt": "2026-11-02T06:00:34.000Z",
+      "titleOriginal": "Millions in UK brace to remortgage on worse deals as rate rise looms",
+      "titleTr": "BoE'nin bu hafta faiz artırması bekleniyor; 2,3 milyon hane yüksek ipotek ödemesiyle karşı karşıya",
+      "summaryTr": "Guardian'a göre Eylül'de yıllık enflasyon %3,5'e yükseldi ve BoE'nin PPK'sının 5 Kasım'da politika faizini %3,75'ten %4'e çıkarması geniş çevrelerce bekleniyor. Sabit faizli kredilerin 2027'de bitmesiyle 2,3 milyondan fazla hanenin ipotek ödemesinin artacağı belirtildi.",
+      "titleEn": "BoE expected to raise rates this week; 2.3m UK households face higher mortgage payments",
+      "summaryEn": "The Guardian reports that UK inflation rose to 3.5% in September and the BoE's MPC is widely expected to lift the base rate from 3.75% to 4% on 5 November. More than 2.3m households coming off fixed-rate deals in 2027 face higher mortgage payments.",
+      "important": true,
+      "processedAt": "2026-11-02T10:32:25.436Z"
     },
     {
       "id": "e297c858babb",
