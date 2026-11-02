@@ -1,6 +1,21 @@
 {
-  "fetchedAt": "2026-11-02T20:32:24.963Z",
+  "fetchedAt": "2026-11-02T21:02:30.754Z",
   "items": [
+    {
+      "id": "ef9fb10fe498",
+      "sourceKey": "aa-economy",
+      "sourceName": "Anadolu Agency",
+      "kind": "media",
+      "url": "https://www.aa.com.tr/en/economy/gold-rebounds-from-1-year-low-silver-tops-50-as-oil-prices-fall/4109185",
+      "publishedAt": "2026-11-02T20:47:02.000Z",
+      "titleOriginal": "Gold rebounds from 1-year low, silver tops $50 as oil prices fall",
+      "titleTr": "Altın 1 yılın dibinden döndü, gümüş 50 doları aştı",
+      "summaryTr": "Anadolu Ajansı'na göre ons altın yüzde 1,7 artışla 3.941,95 dolara çıktı, gümüş yüzde 3,45 yükseldi. Ham petrol fiyatlarındaki düşüş, ABD ara seçimleri öncesinde enflasyon endişelerini hafifletti.",
+      "titleEn": "Gold rebounds from 1-year low, silver tops $50 as oil falls",
+      "summaryEn": "Per Anadolu Agency, gold rose 1.7% to $3,941.95 an ounce and silver gained 3.45%. Falling crude prices eased inflation concerns ahead of the US midterm elections.",
+      "important": false,
+      "processedAt": "2026-11-02T21:02:30.754Z"
+    },
     {
       "id": "ba98aa958010",
       "sourceKey": "marketwatch",
