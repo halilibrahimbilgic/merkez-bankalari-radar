@@ -1,6 +1,21 @@
 {
-  "fetchedAt": "2026-11-02T15:32:05.075Z",
+  "fetchedAt": "2026-11-02T16:02:37.744Z",
   "items": [
+    {
+      "id": "78778f53df2b",
+      "sourceKey": "marketwatch",
+      "sourceName": "MarketWatch",
+      "kind": "media",
+      "url": "https://www.marketwatch.com/story/booming-u-s-manufacturers-cant-keep-up-with-demand-and-high-inflation-isnt-helping-128a3902?mod=mw_rss_topstories",
+      "publishedAt": "2026-11-02T15:59:00.000Z",
+      "titleOriginal": "Booming U.S. manufacturers can’t keep up with demand — and high inflation isn’t helping",
+      "titleTr": "ABD'de imalat Ekim'de son beş yılın en yüksek üretimine ulaştı",
+      "summaryTr": "MarketWatch'a göre ABD'li imalatçılar Ekim'de plastik, bilgisayar ve elektrikli ekipman gibi ürünlerde beş yılın en yüksek üretimini yaptı. Büyüyen ekonomi ve yapay zekâ kaynaklı talep üretimi destekledi; yüksek enflasyon ise süreci olumlu etkilemedi.",
+      "titleEn": "U.S. manufacturing output hits five-year high in October",
+      "summaryEn": "MarketWatch reports U.S. manufacturers produced the most goods in five years in October, including plastics, computers and electrical equipment. A growing economy and AI-driven demand fueled output, while high inflation has not helped.",
+      "important": true,
+      "processedAt": "2026-11-02T16:02:37.744Z"
+    },
     {
       "id": "eb9e8db968f8",
       "sourceKey": "aa-economy",
