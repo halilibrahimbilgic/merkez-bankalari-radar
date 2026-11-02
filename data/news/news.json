@@ -1,6 +1,21 @@
 {
-  "fetchedAt": "2026-11-02T10:32:25.436Z",
+  "fetchedAt": "2026-11-02T11:02:40.956Z",
   "items": [
+    {
+      "id": "4fbd740bbbb1",
+      "sourceKey": "aa-economy",
+      "sourceName": "Anadolu Agency",
+      "kind": "media",
+      "url": "https://www.aa.com.tr/en/economy/eurozone-manufacturing-growth-remains-solid-in-october-despite-supply-pressures/4108631",
+      "publishedAt": "2026-11-02T10:30:31.000Z",
+      "titleOriginal": "Eurozone manufacturing growth remains solid in October despite supply pressures",
+      "titleTr": "Euro Bölgesi imalatı Ekim'de arz baskılarına rağmen sağlam büyüdü",
+      "summaryTr": "Bir ankete göre Euro Bölgesi'nde imalat büyümesi Ekim'de güçlü kaldı. Girdi maliyeti enflasyonu, tedarik zinciri aksamaları ve yükselen enerji fiyatları nedeniyle beş ayın en yüksek seviyesine çıktı.",
+      "titleEn": "Eurozone manufacturing growth stays solid in October despite supply pressures",
+      "summaryEn": "A survey shows eurozone manufacturing growth remained strong in October. Input cost inflation rose to a five-month high amid supply chain disruptions and surging energy prices.",
+      "important": true,
+      "processedAt": "2026-11-02T11:02:40.956Z"
+    },
     {
       "id": "dc6b97f96a54",
       "sourceKey": "ecb",
