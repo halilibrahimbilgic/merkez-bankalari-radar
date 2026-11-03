@@ -1,6 +1,21 @@
 {
-  "fetchedAt": "2026-11-03T03:31:58.902Z",
+  "fetchedAt": "2026-11-03T04:02:26.975Z",
   "items": [
+    {
+      "id": "a7fcecb740dc",
+      "sourceKey": "cnbc-economy",
+      "sourceName": "CNBC",
+      "kind": "media",
+      "url": "https://www.cnbc.com/2026/11/03/australia-hikes-rates-18-year-high-finflation.html",
+      "publishedAt": "2026-11-03T03:46:20.000Z",
+      "titleOriginal": "Australia hikes rates to 18-year high to fight inflation",
+      "titleTr": "Avustralya Merkez Bankası faizi 18 yılın zirvesine çıkardı",
+      "summaryTr": "RBA, enflasyonla mücadele için faizi artırdı; karar Reuters anketindeki ekonomistlerin beklentisiyle uyumlu çıktı. Banka bu yıl beşinci kez faiz artırdı.",
+      "titleEn": "Australia's central bank hikes rates to 18-year high",
+      "summaryEn": "The RBA raised rates to fight inflation, in line with the expectations of economists polled by Reuters. It was the bank's fifth rate increase this year.",
+      "important": true,
+      "processedAt": "2026-11-03T04:02:26.975Z"
+    },
     {
       "id": "1736f3d17b31",
       "sourceKey": "rba-media",
