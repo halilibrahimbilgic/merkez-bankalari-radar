@@ -1,6 +1,21 @@
 {
-  "fetchedAt": "2026-11-03T04:02:26.975Z",
+  "fetchedAt": "2026-11-03T07:02:24.657Z",
   "items": [
+    {
+      "id": "ae3a75a336d1",
+      "sourceKey": "aa-economy",
+      "sourceName": "Anadolu Agency",
+      "kind": "media",
+      "url": "https://www.aa.com.tr/en/economy/australia-hikes-interest-rate-to-18-year-high/4109324",
+      "publishedAt": "2026-11-03T06:33:51.000Z",
+      "titleOriginal": "Australia hikes interest rate to 18-year high",
+      "titleTr": "Avustralya Merkez Bankası faizi 18 yılın zirvesine çıkardı",
+      "summaryTr": "Avustralya Merkez Bankası (RBA), enflasyon baskılarının sürmesi nedeniyle nakit faiz hedefini oy çokluğuyla 25 baz puan artırdı. Faiz, 18 yılın en yüksek seviyesine ulaştı.",
+      "titleEn": "Australia hikes interest rate to 18-year high",
+      "summaryEn": "The Reserve Bank of Australia raised its cash rate target by 25 basis points in a majority vote, citing persistent inflation pressures. The rate is now at its highest in 18 years.",
+      "important": true,
+      "processedAt": "2026-11-03T07:02:24.657Z"
+    },
     {
       "id": "a7fcecb740dc",
       "sourceKey": "cnbc-economy",
