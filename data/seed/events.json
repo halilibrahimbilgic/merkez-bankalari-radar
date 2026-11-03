@@ -1,5 +1,5 @@
 {
-  "fetchedAt": "2026-11-02T13:00:59.757Z",
+  "fetchedAt": "2026-11-03T12:36:15.653Z",
   "events": [
     {
       "id": "ecb-2026-11-02-7a7xq7",
@@ -20,16 +20,6 @@
       "speaker": "Boris Vujčić",
       "title": "Fireside chat by Mr Vujčić at Central Bank of Ireland Financial System Conference 2026 \"At the heart of Europe\" in Dublin, Ireland",
       "url": "https://registration.socio.events/e/financialsystemconference2026"
-    },
-    {
-      "id": "tcmb-cpi-2026-11-03",
-      "bankCode": "tcmb",
-      "at": "2026-11-03T07:00:00.000Z",
-      "timeTbd": false,
-      "kind": "cpi",
-      "title": "CPI Ekim 2026",
-      "period": "Ekim 2026",
-      "url": "https://www.tuik.gov.tr/Kurumsal/Veri_Takvimi"
     },
     {
       "id": "ecb-2026-11-03-1gciogp",
