@@ -1,6 +1,21 @@
 {
-  "fetchedAt": "2026-11-03T07:32:15.335Z",
+  "fetchedAt": "2026-11-03T08:02:32.447Z",
   "items": [
+    {
+      "id": "ef4698a63e53",
+      "sourceKey": "aa-economy",
+      "sourceName": "Anadolu Agency",
+      "kind": "media",
+      "url": "https://www.aa.com.tr/en/economy/global-markets-trade-mixed-amid-us-midterms-ai-profitability-concerns/4109438",
+      "publishedAt": "2026-11-03T07:47:07.000Z",
+      "titleOriginal": "Global markets trade mixed amid US midterms, AI profitability concerns",
+      "titleTr": "Küresel piyasalar ABD ara seçimleri ve yapay zekâ kaygılarıyla karışık seyretti",
+      "summaryTr": "Teknoloji hisselerinde finansman endişeleriyle sert satış görüldü. Güçlü imalat verisinin ardından Fed'in şahin duruşuna dair beklentiler sürerken, Orta Doğu'da barış umudu ve Abu Dabi'deki Rusya-Ukrayna görüşmeleri petrol piyasasını dengeledi.",
+      "titleEn": "Global markets trade mixed amid US midterms, AI profitability concerns",
+      "summaryEn": "Tech stocks saw a sharp selloff on funding fears, while hawkish Fed expectations persisted after strong manufacturing data. Hopes for Middle East peace and upcoming Russia-Ukraine talks in Abu Dhabi steadied oil markets.",
+      "important": false,
+      "processedAt": "2026-11-03T08:02:32.447Z"
+    },
     {
       "id": "3471bc93ae3f",
       "sourceKey": "aa-ekonomi",
@@ -3556,6 +3571,7 @@
     "6186aa95c74a": "2026-11-02",
     "53d3c3a43032": "2026-11-02",
     "877936d7ddbb": "2026-11-02",
-    "c75004a9e657": "2026-11-03"
+    "c75004a9e657": "2026-11-03",
+    "df9eb04ce446": "2026-11-03"
   }
 }
