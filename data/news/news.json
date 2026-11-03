@@ -1,6 +1,21 @@
 {
-  "fetchedAt": "2026-11-03T14:32:16.669Z",
+  "fetchedAt": "2026-11-03T16:02:24.493Z",
   "items": [
+    {
+      "id": "95fd3c67e1d7",
+      "sourceKey": "bbc-business",
+      "sourceName": "BBC News",
+      "kind": "media",
+      "url": "https://www.bbc.co.uk/news/articles/c3dky111m40o?at_medium=RSS&at_campaign=rss",
+      "publishedAt": "2026-11-03T15:51:23.000Z",
+      "titleOriginal": "What's happening to UK interest rates and what does it mean for mortgages?",
+      "titleTr": "Birleşik Krallık faiz oranlarında neler oluyor, konut kredilerine etkisi ne?",
+      "summaryTr": "BBC, İngiltere Merkez Bankası'nın belirlediği faizin milyonlarca kişinin konut kredisi, kredi ve mevduat oranlarını etkilediğini anlatıyor.",
+      "titleEn": "What's happening to UK interest rates and what it means for mortgages",
+      "summaryEn": "BBC explains that the Bank of England's interest rate affects mortgage, loan and savings rates for millions of people.",
+      "important": false,
+      "processedAt": "2026-11-03T16:02:24.493Z"
+    },
     {
       "id": "655a389c6998",
       "sourceKey": "aa-ekonomi",
@@ -3636,6 +3651,7 @@
     "1c211dd6eb41": "2026-11-03",
     "2713f5c25e4f": "2026-11-03",
     "8b674d665eb8": "2026-11-03",
-    "39bfb427729b": "2026-11-03"
+    "39bfb427729b": "2026-11-03",
+    "259f172c0844": "2026-11-03"
   }
 }
