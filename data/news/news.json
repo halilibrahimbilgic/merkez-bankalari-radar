@@ -1,6 +1,21 @@
 {
-  "fetchedAt": "2026-11-03T09:02:33.627Z",
+  "fetchedAt": "2026-11-03T09:32:14.766Z",
   "items": [
+    {
+      "id": "ff2b3127fee8",
+      "sourceKey": "aa-ekonomi",
+      "sourceName": "Anadolu Ajansı",
+      "kind": "media",
+      "url": "https://www.aa.com.tr/tr/ekonomi/cumhurbaskani-yardimcisi-yilmaz-ekim-ayi-enflasyon-verilerini-degerlendirdi/4109572",
+      "publishedAt": "2026-11-03T08:55:11.000Z",
+      "titleOriginal": "Cumhurbaşkanı Yardımcısı Yılmaz, ekim ayı enflasyon verilerini değerlendirdi",
+      "titleTr": "Yılmaz, ekim ayı enflasyon verilerini değerlendirdi",
+      "summaryTr": "Cumhurbaşkanı Yardımcısı Cevdet Yılmaz, enflasyonu yeniden tek haneli seviyelere düşürme hedefleri doğrultunda sağlanacak kazanımların vatandaşların alım gücüne kalıcı biçimde yansıtılmasını amaçladıklarını söyledi.",
+      "titleEn": "Turkish VP Yilmaz comments on October inflation data",
+      "summaryEn": "Turkey's Vice President Yilmaz said the government aims to bring inflation back to single digits and to make the resulting gains lasting for citizens' purchasing power and living standards.",
+      "important": true,
+      "processedAt": "2026-11-03T09:32:14.766Z"
+    },
     {
       "id": "8ddc7e794c18",
       "sourceKey": "aa-ekonomi",
