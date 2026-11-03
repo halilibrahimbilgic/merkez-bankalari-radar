@@ -1,5 +1,5 @@
 {
-  "fetchedAt": "2026-11-03T00:02:12.202Z",
+  "fetchedAt": "2026-11-03T03:32:44.978Z",
   "statements": [
     {
       "meetingId": "boe-2025-12-18",
@@ -1392,6 +1392,47 @@
         "model": "claude-code/opus",
         "promptVersion": "2",
         "summarizedAt": "2026-10-14T22:32:48.828Z"
+      }
+    },
+    {
+      "meetingId": "rba-2026-11-03",
+      "bankCode": "rba",
+      "urls": {
+        "en": "https://www.rba.gov.au/media-releases/2026/mr-26-30.html"
+      },
+      "langs": [
+        "en"
+      ],
+      "publishable": true,
+      "fetchedAt": "2026-11-03T03:32:00.140Z",
+      "rate": 4.85,
+      "previousId": "rba-2026-09-29",
+      "summary": {
+        "headlineTr": "RBA politika faizini 25 baz puan artırarak yüzde 4,85'e çıkardı; enflasyon tahminini belirgin biçimde yükseltirken karar oy çokluğuyla alındı ve ek artırım yapılabileceği ifadesi metinden çıkarıldı.",
+        "headlineEn": "The RBA raised the cash rate target by 25 basis points to 4.85 per cent; it revised its inflation outlook materially higher, while the decision was by majority and the reference to further increases if needed was dropped.",
+        "changesTr": [
+          "Enflasyonun 2027'nin büyük bölümünde yüksek kalacağı ve 2–3'lük hedef aralığının üst sınırına ancak 2027 sonunda, öncekinden yaklaşık üç çeyrek geç ulaşacağı öngörülüyor; enflasyon beklentilerinin yerleşme riskinin arttığı ve bazı göstergelerin yükseldiği belirtiliyor.",
+          "Enflasyonun geniş tabanlı olduğu ve yurt içi kapasite baskılarının daha önce düşünülenden biraz daha sıkı olduğu değerlendiriliyor.",
+          "Büyüme değerlendirmesi zayıfladı: ekonomi yavaşlıyor, konut fiyatları belirgin düştü, işsizlik oranı yükseldi ve Ağustos tahminlerinden daha fazla artması bekleniyor.",
+          "Karar oybirliği yerine oy çokluğuyla alındı: altı üye artırım, üç üye faizin yüzde 4,60'ta sabit tutulması yönünde oy kullandı.",
+          "İleriye dönük yönlendirmeden \"gerekirse faizi daha da artırmak dahil\" ifadesi çıkarıldı; Kurul verilere ve görünüme bakarak karar vereceğini yinelemekle yetindi."
+        ],
+        "changesEn": [
+          "Inflation is now forecast to remain elevated through much of 2027 and not to reach the top of the 2–3 per cent target range until late 2027, around three quarters later than previously forecast, with an increasing risk that higher inflation expectations become embedded and some measures having risen.",
+          "Inflation is described as broadly based and domestic capacity pressures are judged a little tighter than earlier thought.",
+          "The growth assessment weakened: the economy is slowing, housing prices have fallen significantly, and the unemployment rate has risen and is projected to rise by more than in the August forecasts.",
+          "The decision was by majority rather than unanimous: six members voted for the increase and three voted to hold the cash rate at 4.60 per cent.",
+          "The forward guidance dropped the phrase \"including increasing the cash rate target further if needed\", leaving only the commitment to be guided by the data and the outlook."
+        ],
+        "tone": "mixed",
+        "toneReasonTr": "Enflasyon tahmininin belirgin biçimde yükseltilmesi ve beklentilerin yerleşme riskine vurgu şahin yönde, ancak ek artırım ifadesinin çıkarılması, üç üyenin sabit tutma yönünde oy kullanması ve işsizlikteki artış güvercin yönde.",
+        "toneReasonEn": "The materially higher inflation outlook and the emphasis on the risk of embedded expectations are hawkish, but dropping the reference to further increases, three members voting to hold and the rising unemployment rate point in a dovish direction.",
+        "score": 5,
+        "scoreReasonTr": "Kurul faizi artırdı ve revize edilen enflasyon görünümü ile süren yukarı yönlü riskler nedeniyle finansal koşulların daha da sıkılaştırılmasının gerektiğini söyledi; ancak ek artırım sinyalinin kaldırılması ve bölünmüş oy duruşu en uç şahin düzeyin altında tutuyor.",
+        "scoreReasonEn": "The Board raised the rate and said further tightening in financial conditions is warranted given the revised inflation outlook and continuing upside risks, but the removal of the explicit signal of further increases and the split vote keep the stance below the most hawkish level.",
+        "model": "claude-code/opus",
+        "promptVersion": "2",
+        "summarizedAt": "2026-11-03T03:32:44.977Z"
       }
     },
     {

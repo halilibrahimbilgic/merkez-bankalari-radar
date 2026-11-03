@@ -1,6 +1,22 @@
 {
-  "fetchedAt": "2026-11-03T00:02:11.891Z",
+  "fetchedAt": "2026-11-03T03:31:58.902Z",
   "items": [
+    {
+      "id": "1736f3d17b31",
+      "sourceKey": "rba-media",
+      "sourceName": "Reserve Bank of Australia",
+      "kind": "official",
+      "bankCode": "rba",
+      "url": "https://www.rba.gov.au/media-releases/2026/mr-26-30.html",
+      "publishedAt": "2026-11-03T03:30:00.000Z",
+      "titleOriginal": "Statement by the Monetary Policy Board: Monetary Policy Decision",
+      "titleTr": "RBA nakit faiz hedefini 25 baz puan artırarak %4,85'e yükseltti",
+      "summaryTr": "Avustralya Merkez Bankası (RBA) Para Politikası Kurulu, bugünkü toplantısında nakit faiz hedefini 25 baz puan artırma kararı aldı. Böylece hedef faiz yüzde 4,85 oldu.",
+      "titleEn": "RBA raises cash rate target by 25 basis points to 4.85%",
+      "summaryEn": "The Reserve Bank of Australia's Monetary Policy Board decided at today's meeting to raise the cash rate target by 25 basis points. The target now stands at 4.85 per cent.",
+      "important": true,
+      "processedAt": "2026-11-03T03:31:58.902Z"
+    },
     {
       "id": "ef9fb10fe498",
       "sourceKey": "aa-economy",

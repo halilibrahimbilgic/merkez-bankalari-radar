@@ -986,8 +986,10 @@
       "meetingAt": "2026-11-03T03:30:00.000Z",
       "timeTbd": false,
       "type": "rate_decision",
-      "status": "scheduled",
-      "sourceUrl": "https://www.rba.gov.au/schedules-events/board-meeting-schedules.html"
+      "status": "done",
+      "sourceUrl": "https://www.rba.gov.au/schedules-events/board-meeting-schedules.html",
+      "decisionRate": 4.85,
+      "previousRate": 4.6
     },
     {
       "id": "boe-2026-11-05",
