@@ -1,6 +1,21 @@
 {
-  "fetchedAt": "2026-11-03T13:02:21.528Z",
+  "fetchedAt": "2026-11-03T14:02:32.599Z",
   "items": [
+    {
+      "id": "655a389c6998",
+      "sourceKey": "aa-ekonomi",
+      "sourceName": "Anadolu Ajansı",
+      "kind": "media",
+      "url": "https://www.aa.com.tr/tr/ekonomi/bakan-simsek-enerji-ve-emtia-fiyatlarinda-ongorulen-gerileme-enflasyondaki-dususu-destekleyecek/4110121",
+      "publishedAt": "2026-11-03T13:45:54.000Z",
+      "titleOriginal": "Bakan Şimşek: Enerji ve emtia fiyatlarında öngörülen gerileme, enflasyondaki düşüşü destekleyecek",
+      "titleTr": "Şimşek: Enerji ve emtia fiyatlarındaki gerileme enflasyondaki düşüşü destekleyecek",
+      "summaryTr": "Hazine ve Maliye Bakanı Şimşek, ekonomik aktivitenin dengeli seyrinin, enerji ve emtia fiyatlarında öngörülen gerilemenin, beklentilerdeki iyileşmenin ve hizmet enflasyonundaki ataletin azalmasının enflasyondaki düşüşe destek vereceğini söyledi.",
+      "titleEn": "Şimşek: Expected easing in energy and commodity prices to support disinflation",
+      "summaryEn": "Turkish Treasury and Finance Minister Şimşek said balanced economic activity, an expected decline in energy and commodity prices, improving expectations and reduced inertia in services inflation will support the fall in inflation.",
+      "important": true,
+      "processedAt": "2026-11-03T14:02:32.599Z"
+    },
     {
       "id": "a39e4b460a11",
       "sourceKey": "aa-economy",
