@@ -1,5 +1,5 @@
 {
-  "fetchedAt": "2026-11-03T07:02:29.841Z",
+  "fetchedAt": "2026-11-03T07:32:20.436Z",
   "readings": [
     {
       "bankCode": "fed",
@@ -15,8 +15,8 @@
     },
     {
       "bankCode": "tcmb",
-      "period": "2026-09",
-      "yoy": 29.73,
+      "period": "2026-10",
+      "yoy": 29.77,
       "sourceUrl": "https://www.tcmb.gov.tr/wps/wcm/connect/TR/TCMB+TR/Main+Menu/Istatistikler/Enflasyon+Verileri/Tuketici+Fiyatlari"
     },
     {

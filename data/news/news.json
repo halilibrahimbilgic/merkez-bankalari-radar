@@ -1,6 +1,21 @@
 {
-  "fetchedAt": "2026-11-03T07:02:24.657Z",
+  "fetchedAt": "2026-11-03T07:32:15.335Z",
   "items": [
+    {
+      "id": "3471bc93ae3f",
+      "sourceKey": "aa-ekonomi",
+      "sourceName": "Anadolu Ajansı",
+      "kind": "media",
+      "url": "https://www.aa.com.tr/tr/ekonomi/enflasyon-rakamlari-aciklandi/4109355",
+      "publishedAt": "2026-11-03T07:02:11.000Z",
+      "titleOriginal": "Enflasyon rakamları açıklandı",
+      "titleTr": "Türkiye'de ekim enflasyonu: aylık %2,58, yıllık %29,77",
+      "summaryTr": "TÜFE ekimde aylık bazda yüzde 2,58 arttı; yıllık enflasyon yüzde 29,77 oldu. Yİ-ÜFE ise aylık yüzde 1,65, yıllık yüzde 27,41 yükseldi.",
+      "titleEn": "Turkey's October inflation: 2.58% monthly, 29.77% annual",
+      "summaryEn": "Consumer prices rose 2.58% month-on-month in October, taking annual CPI inflation to 29.77%. Domestic producer prices rose 1.65% on the month and 27.41% from a year earlier.",
+      "important": true,
+      "processedAt": "2026-11-03T07:32:15.335Z"
+    },
     {
       "id": "ae3a75a336d1",
       "sourceKey": "aa-economy",
