@@ -1,6 +1,21 @@
 {
-  "fetchedAt": "2026-11-03T08:32:15.741Z",
+  "fetchedAt": "2026-11-03T09:02:33.627Z",
   "items": [
+    {
+      "id": "8ddc7e794c18",
+      "sourceKey": "aa-ekonomi",
+      "sourceName": "Anadolu Ajansı",
+      "kind": "media",
+      "url": "https://www.aa.com.tr/tr/ekonomi/fiyatlamalar-kuresel-merkez-bankalarinin-yili-sahin-adimlarla-tamamlayacagina-isaret-ediyor/4109504",
+      "publishedAt": "2026-11-03T08:26:39.000Z",
+      "titleOriginal": "Fiyatlamalar küresel merkez bankalarının yılı \"şahin\" adımlarla tamamlayacağına işaret ediyor",
+      "titleTr": "Fiyatlamalar, küresel merkez bankalarının yılı sıkılaştırmayla kapatacağını gösteriyor",
+      "summaryTr": "Geçen ay politika faizlerini sabit tutan ABD, Avrupa ve Japonya merkez bankalarının, artan enflasyon baskıları nedeniyle aralıkta para politikasını sıkılaştırması bekleniyor.",
+      "titleEn": "Pricing points to global central banks ending the year with hawkish moves",
+      "summaryEn": "The US, European and Japanese central banks, which held rates in a wait-and-see stance last month, are expected to tighten policy in December amid rising inflationary pressures.",
+      "important": true,
+      "processedAt": "2026-11-03T09:02:33.627Z"
+    },
     {
       "id": "ef4698a63e53",
       "sourceKey": "aa-economy",
