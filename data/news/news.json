@@ -1,5 +1,5 @@
 {
-  "fetchedAt": "2026-11-04T18:32:07.712Z",
+  "fetchedAt": "2026-11-04T19:32:12.857Z",
   "items": [
     {
       "id": "7a684ee490b2",
@@ -60,6 +60,21 @@
       "summaryEn": "The global oil benchmark Brent extended losses for a third straight session. Traders are assessing US midterm election results and diplomatic efforts to end the war with Iran.",
       "important": false,
       "processedAt": "2026-11-04T15:02:33.712Z"
+    },
+    {
+      "id": "d2c159a7eca0",
+      "sourceKey": "aa-economy",
+      "sourceName": "Anadolu Agency",
+      "kind": "media",
+      "url": "https://www.aa.com.tr/en/economy/brent-crude-falls-more-than-8-to-near-95-as-european-gas-prices-slide/4111699",
+      "publishedAt": "2026-11-04T14:44:42.000Z",
+      "titleOriginal": "Brent crude falls more than 8% to near $95 as European gas prices slide",
+      "titleTr": "Brent petrol %8'den fazla düşüşle 95 dolar civarına geriledi",
+      "summaryTr": "Anadolu Ajansı'na göre Brent petrol varil fiyatı %8'den fazla düşerek 95 dolara yaklaştı, ABD ham petrolü 89 doların altına indi. Avrupa gaz vadelileri de %6,58 geriledi.",
+      "titleEn": "Brent crude falls more than 8% to near $95",
+      "summaryEn": "Anadolu Agency reports Brent crude fell more than 8% to near $95 a barrel, while US crude dropped below $89. European gas futures also slid 6.58%.",
+      "important": false,
+      "processedAt": "2026-11-04T19:32:12.857Z"
     },
     {
       "id": "ef036751fa65",
