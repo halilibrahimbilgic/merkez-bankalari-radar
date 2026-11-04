@@ -1,6 +1,36 @@
 {
-  "fetchedAt": "2026-11-04T03:32:21.577Z",
+  "fetchedAt": "2026-11-04T07:27:30.920Z",
   "items": [
+    {
+      "id": "3a6e185275e7",
+      "sourceKey": "aa-economy",
+      "sourceName": "Anadolu Agency",
+      "kind": "media",
+      "url": "https://www.aa.com.tr/en/economy/global-markets-trade-lower-as-early-us-midterm-results-signal-democratic-sweep/4111034",
+      "publishedAt": "2026-11-04T07:13:31.000Z",
+      "titleOriginal": "Global markets trade lower as early US midterm results signal Democratic sweep",
+      "titleTr": "Küresel piyasalar ABD ara seçim sonuçlarıyla geriledi; Aralık'ta Fed artırımı ihtimali yükseldi",
+      "summaryTr": "Anadolu Ajansı'na göre ABD ara seçimlerinin ilk sonuçlarının Demokratların lehine işaret etmesiyle küresel piyasalar düşüşte. Piyasa oynaklığı ve beklentinin üzerinde gelen iş ilanı verisi Aralık'ta Fed faiz artırımı ihtimalini yükseltirken, güvenli liman talebiyle altın yükseldi; Avrupa ve Asya borsaları geriledi.",
+      "titleEn": "Global markets fall on early US midterm results; Fed December hike odds rise",
+      "summaryEn": "Anadolu Agency reports global markets are lower as early US midterm results point to a Democratic sweep. Volatility and stronger-than-expected job openings raise the odds of a Fed rate hike in December, while gold gains on safe-haven demand and European and Asian stocks fall.",
+      "important": true,
+      "processedAt": "2026-11-04T07:27:30.920Z"
+    },
+    {
+      "id": "22145536803b",
+      "sourceKey": "aa-ekonomi",
+      "sourceName": "Anadolu Ajansı",
+      "kind": "media",
+      "url": "https://www.aa.com.tr/tr/ekonomi/tcmbden-fon-tasfiyeleri-ve-reel-sektor-firma-verileri-ne-soyluyor-analizi/4111010",
+      "publishedAt": "2026-11-04T07:04:40.000Z",
+      "titleOriginal": "TCMB'den Fon Tasfiyeleri ve Reel Sektör: Firma Verileri Ne Söylüyor? analizi",
+      "titleTr": "TCMB blog analizi: Fon tasfiyeleri reel sektörü etkileyebilir",
+      "summaryTr": "TCMB'nin Merkezin Güncesi blogundaki analizde, fon piyasasındaki gelişmelerin reel sektörü farklı kanallar üzerinden etkileyebileceği belirtildi.",
+      "titleEn": "CBRT blog analysis: fund liquidations and the real sector",
+      "summaryEn": "An analysis on the CBRT's Merkezin Güncesi blog says developments in the fund market may affect the real sector through different channels.",
+      "important": false,
+      "processedAt": "2026-11-04T07:27:30.920Z"
+    },
     {
       "id": "14cb62126390",
       "sourceKey": "cnbc-finance",
