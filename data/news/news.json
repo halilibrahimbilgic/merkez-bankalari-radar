@@ -1,6 +1,21 @@
 {
-  "fetchedAt": "2026-11-04T07:27:30.920Z",
+  "fetchedAt": "2026-11-04T08:02:34.767Z",
   "items": [
+    {
+      "id": "4ca38532ec84",
+      "sourceKey": "aa-economy",
+      "sourceName": "Anadolu Agency",
+      "kind": "media",
+      "url": "https://www.aa.com.tr/en/economy/gold-silver-prices-surge-as-us-dollar-drops-after-midterm-elections/4111106",
+      "publishedAt": "2026-11-04T07:56:37.000Z",
+      "titleOriginal": "Gold, silver prices surge as US dollar drops after midterm elections",
+      "titleTr": "ABD ara seçimlerinin ardından dolar zayıfladı, altın 4.000 doları aştı",
+      "summaryTr": "Anadolu Ajansı'na göre ABD'de ara seçimlerin ardından dolar değer kaybetti ve Hazine tahvil faizleri geriledi. Altın ons başına 4.000 doları yeniden aşarken gümüş 52 dolara yaklaştı.",
+      "titleEn": "Gold tops $4,000 as US dollar slips after midterm elections",
+      "summaryEn": "Anadolu Agency reports the US dollar weakened and Treasury yields fell after the midterm elections. Gold reclaimed $4,000 per ounce and silver climbed toward $52.",
+      "important": true,
+      "processedAt": "2026-11-04T08:02:34.767Z"
+    },
     {
       "id": "3a6e185275e7",
       "sourceKey": "aa-economy",
@@ -3693,6 +3708,8 @@
     "86ed82a85d7a": "2026-11-03",
     "80f39d768c24": "2026-11-03",
     "ee0d103cc359": "2026-11-04",
-    "6cf2f09618a0": "2026-11-04"
+    "6cf2f09618a0": "2026-11-04",
+    "681e41f7d089": "2026-11-04",
+    "0c08a671b8d8": "2026-11-04"
   }
 }
