@@ -1,6 +1,21 @@
 {
-  "fetchedAt": "2026-11-04T01:02:07.521Z",
+  "fetchedAt": "2026-11-04T03:32:21.577Z",
   "items": [
+    {
+      "id": "14cb62126390",
+      "sourceKey": "cnbc-finance",
+      "sourceName": "CNBC",
+      "kind": "media",
+      "url": "https://www.cnbc.com/2026/11/03/treasury-yields-fall-as-democrats-win-big-in-us-midterm-elections.html",
+      "publishedAt": "2026-11-04T03:24:03.000Z",
+      "titleOriginal": "Treasury yields fall as investors crowd into bonds for safety amid election stock sell-off",
+      "titleTr": "ABD tahvil faizleri, seçim kaynaklı hisse satışıyla düştü",
+      "summaryTr": "CNBC'ye göre ABD Hazine tahvil faizleri salı gecesi geriledi; yatırımcılar, Demokratların ara seçimlerdeki büyük zaferlerinin tetiklediği hisse vadelilerindeki satıştan tahvillere sığındı.",
+      "titleEn": "US Treasury yields fall as election sell-off sends investors to bonds",
+      "summaryEn": "According to CNBC, Treasury yields fell Tuesday night as investors sought safety in bonds amid an equity futures sell-off sparked by big Democratic wins in the U.S. midterm elections.",
+      "important": true,
+      "processedAt": "2026-11-04T03:32:21.577Z"
+    },
     {
       "id": "95fd3c67e1d7",
       "sourceKey": "bbc-business",
