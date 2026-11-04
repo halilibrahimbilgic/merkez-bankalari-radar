@@ -1,26 +1,6 @@
 {
-  "fetchedAt": "2026-11-03T12:36:15.653Z",
+  "fetchedAt": "2026-11-04T12:44:10.206Z",
   "events": [
-    {
-      "id": "ecb-2026-11-02-7a7xq7",
-      "bankCode": "ecb",
-      "at": "2026-11-02T09:30:00.000Z",
-      "timeTbd": false,
-      "kind": "speech",
-      "speaker": "Boris Vujčić",
-      "title": "Speech by Mr Vujčić at Central Bank of Ireland Financial System Conference 2026 \"At the heart of Europe\" in Dublin, Ireland",
-      "url": "https://registration.socio.events/e/financialsystemconference2026"
-    },
-    {
-      "id": "ecb-2026-11-02-tciiie",
-      "bankCode": "ecb",
-      "at": "2026-11-02T10:00:00.000Z",
-      "timeTbd": false,
-      "kind": "discussion",
-      "speaker": "Boris Vujčić",
-      "title": "Fireside chat by Mr Vujčić at Central Bank of Ireland Financial System Conference 2026 \"At the heart of Europe\" in Dublin, Ireland",
-      "url": "https://registration.socio.events/e/financialsystemconference2026"
-    },
     {
       "id": "ecb-2026-11-03-1gciogp",
       "bankCode": "ecb",
@@ -62,19 +42,19 @@
       "url": "https://www.kielinstitut.de/institute/events/conferences/geoeconomics-conferences/5th-kiel-cepr-conference-on-geoeconomics/"
     },
     {
-      "id": "ecb-2026-11-05-hrouo1",
+      "id": "ecb-2026-11-05-8tukuw",
       "bankCode": "ecb",
       "at": "2026-11-05T07:30:00.000Z",
       "timeTbd": false,
       "kind": "speech",
       "speaker": "Piero Cipollone",
-      "title": "Keynote speech by Mr Cipollone at 8th International Conference of Regional Card Schemes and Retail Financial Infrastructure in Tirana, Albania",
+      "title": "Keynote speech by Mr Cipollone at 8th International Conference of Regional Card Schemes and Retail Financial Market Infrastructures in Tirana, Albania",
       "url": "https://www.ecb.europa.eu/press/calendars/weekly/html/index.en.html"
     },
     {
       "id": "ecb-2026-11-05-1lb2iwr",
       "bankCode": "ecb",
-      "at": "2026-11-05T08:05:00.000Z",
+      "at": "2026-11-05T08:00:00.000Z",
       "timeTbd": false,
       "kind": "speech",
       "speaker": "Isabel Schnabel",
@@ -187,6 +167,24 @@
       "kind": "cpi",
       "title": "CPI",
       "url": "https://www.stat.go.jp/english/data/cpi/1582.html"
+    },
+    {
+      "id": "rba-cpi-2026-11-25",
+      "bankCode": "rba",
+      "at": "2026-11-25T00:30:00.000Z",
+      "timeTbd": false,
+      "kind": "cpi",
+      "title": "CPI",
+      "url": "https://www.abs.gov.au/statistics/economy/price-indexes-and-inflation/consumer-price-index-australia/latest-release"
+    },
+    {
+      "id": "fed-2026-11-25-3dfpwl",
+      "bankCode": "fed",
+      "at": "2026-11-25T19:00:00.000Z",
+      "timeTbd": false,
+      "kind": "beige-book",
+      "title": "Beige Book",
+      "url": "https://www.federalreserve.gov/newsevents/calendar.htm"
     }
   ]
 }

@@ -1,5 +1,5 @@
 {
-  "fetchedAt": "2026-11-03T12:36:32.844Z",
+  "fetchedAt": "2026-11-04T12:44:17.739Z",
   "readings": [
     {
       "bankCode": "fed",
@@ -9,8 +9,9 @@
     },
     {
       "bankCode": "ecb",
-      "period": "2026-09",
-      "yoy": 3.8,
+      "period": "2026-10",
+      "yoy": 4,
+      "flash": true,
       "sourceUrl": "https://data.ecb.europa.eu/data/datasets/HICP"
     },
     {
