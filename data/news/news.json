@@ -1,6 +1,21 @@
 {
-  "fetchedAt": "2026-11-04T13:02:42.972Z",
+  "fetchedAt": "2026-11-04T13:32:34.424Z",
   "items": [
+    {
+      "id": "ee7416928edb",
+      "sourceKey": "aa-economy",
+      "sourceName": "Anadolu Agency",
+      "kind": "media",
+      "url": "https://www.aa.com.tr/en/europe/eurozone-negotiated-wage-growth-to-accelerate-slightly-in-early-2027-ecb/4111573",
+      "publishedAt": "2026-11-04T13:17:38.000Z",
+      "titleOriginal": "Eurozone negotiated wage growth to accelerate slightly in early 2027: ECB",
+      "titleTr": "ECB: Euro Bölgesi'nde anlaşmalı ücret artışı 2027 başında hafif hızlanacak",
+      "summaryTr": "ECB verilerine göre tek seferlik ödemeler hariç yapısal ücret artışı 2026'da yüzde 2,6 iken 2027'nin ilk dokuz ayında yüzde 2,8'e yükseliyor.",
+      "titleEn": "ECB: Eurozone negotiated wage growth to pick up slightly in early 2027",
+      "summaryEn": "According to the ECB, structural wage growth excluding one-off payments rises from 2.6% in 2026 to 2.8% over the first nine months of 2027.",
+      "important": true,
+      "processedAt": "2026-11-04T13:32:34.424Z"
+    },
     {
       "id": "50d9a0d4bdd8",
       "sourceKey": "marketwatch",
