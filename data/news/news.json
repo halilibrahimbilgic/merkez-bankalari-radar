@@ -1,6 +1,21 @@
 {
-  "fetchedAt": "2026-11-04T12:02:32.952Z",
+  "fetchedAt": "2026-11-04T13:02:42.972Z",
   "items": [
+    {
+      "id": "50d9a0d4bdd8",
+      "sourceKey": "marketwatch",
+      "sourceName": "MarketWatch",
+      "kind": "media",
+      "url": "https://www.marketwatch.com/story/think-the-fed-will-be-done-after-two-more-rate-hikes-how-fridays-jobs-report-may-trigger-a-major-market-repricing-6aca874c?mod=mw_rss_topstories",
+      "publishedAt": "2026-11-04T13:00:00.000Z",
+      "titleOriginal": "Think the Fed will be done after two more rate hikes? How Friday’s jobs report may trigger a major market repricing.",
+      "titleTr": "Cuma günkü istihdam raporu Fed faiz artırımı beklentilerini değiştirebilir",
+      "summaryTr": "MarketWatch, beklenmedik ölçüde güçlü istihdam verisinin Fed'in gelecekteki faiz artırımlarının sayısını ve zamanlamasını etkileyebileceğini yazdı. Haber, piyasanın Fed'in iki artırımdan sonra duracağı yönündeki beklentisinin yeniden fiyatlanabileceğini söylüyor.",
+      "titleEn": "Friday's jobs report could trigger repricing of Fed rate hike expectations",
+      "summaryEn": "MarketWatch says unexpectedly hot jobs data could affect the number and timing of future Fed rate hikes. It suggests the market view that the Fed will stop after two more hikes may be repriced.",
+      "important": false,
+      "processedAt": "2026-11-04T13:02:42.972Z"
+    },
     {
       "id": "b320a41b0b0c",
       "sourceKey": "aa-ekonomi",
