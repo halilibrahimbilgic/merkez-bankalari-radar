@@ -1,6 +1,21 @@
 {
-  "fetchedAt": "2026-11-04T09:02:24.446Z",
+  "fetchedAt": "2026-11-04T11:32:04.120Z",
   "items": [
+    {
+      "id": "a004e1438244",
+      "sourceKey": "cnbc-economy",
+      "sourceName": "CNBC",
+      "kind": "media",
+      "url": "https://www.cnbc.com/2026/11/04/euro-zone-cpi-inflation-october-ecb-rate-hike.html",
+      "publishedAt": "2026-11-04T10:47:30.000Z",
+      "titleOriginal": "Euro zone inflation hits 4% for first time in three years as interest rate hike looms",
+      "titleTr": "Euro Bölgesi enflasyonu üç yıl sonra ilk kez %4'e ulaştı",
+      "summaryTr": "CNBC'ye göre Euro Bölgesi'nde enflasyon üç yıl sonra ilk kez yüzde 4'e çıktı ve faiz artırımı yaklaşıyor. Artışta Ekim'de yüzde 20'nin üzerine fırlayan enerji enflasyonu etkili oldu.",
+      "titleEn": "Euro zone inflation hits 4% for the first time in three years",
+      "summaryEn": "Per CNBC, euro zone inflation reached 4% for the first time in three years, with an interest rate hike looming. The rise was driven by energy inflation, which surged above 20% in October.",
+      "important": true,
+      "processedAt": "2026-11-04T11:32:04.120Z"
+    },
     {
       "id": "4ca38532ec84",
       "sourceKey": "aa-economy",
