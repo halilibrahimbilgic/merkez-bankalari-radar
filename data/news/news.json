@@ -1,6 +1,21 @@
 {
-  "fetchedAt": "2026-11-04T14:02:38.936Z",
+  "fetchedAt": "2026-11-04T15:02:33.712Z",
   "items": [
+    {
+      "id": "80334eb29aa5",
+      "sourceKey": "aa-economy",
+      "sourceName": "Anadolu Agency",
+      "kind": "media",
+      "url": "https://www.aa.com.tr/en/economy/brent-crude-falls-more-than-3-toward-100-a-barrel/4111699",
+      "publishedAt": "2026-11-04T14:44:42.000Z",
+      "titleOriginal": "Brent crude falls more than 3% toward $100 a barrel",
+      "titleTr": "Brent petrol yüzde 3'ten fazla düşüşle 100 dolara yaklaştı",
+      "summaryTr": "Küresel petrol referansı Brent üst üste üçüncü seansta geriledi. Yatırımcılar ABD ara seçim sonuçlarını ve İran'la savaşı sona erdirmeye yönelik diplomatik çabaları değerlendiriyor.",
+      "titleEn": "Brent crude falls more than 3% toward $100 a barrel",
+      "summaryEn": "The global oil benchmark Brent extended losses for a third straight session. Traders are assessing US midterm election results and diplomatic efforts to end the war with Iran.",
+      "important": false,
+      "processedAt": "2026-11-04T15:02:33.712Z"
+    },
     {
       "id": "ef036751fa65",
       "sourceKey": "marketwatch",
