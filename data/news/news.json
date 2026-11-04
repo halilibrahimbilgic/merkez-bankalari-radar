@@ -1,5 +1,5 @@
 {
-  "fetchedAt": "2026-11-04T08:02:34.767Z",
+  "fetchedAt": "2026-11-04T09:02:24.446Z",
   "items": [
     {
       "id": "4ca38532ec84",
@@ -60,6 +60,22 @@
       "summaryEn": "According to CNBC, Treasury yields fell Tuesday night as investors sought safety in bonds amid an equity futures sell-off sparked by big Democratic wins in the U.S. midterm elections.",
       "important": true,
       "processedAt": "2026-11-04T03:32:21.577Z"
+    },
+    {
+      "id": "d59b325f7d05",
+      "sourceKey": "ecb",
+      "sourceName": "ECB",
+      "kind": "official",
+      "bankCode": "ecb",
+      "url": "https://www.ecb.europa.eu//press/pr/date/2026/html/ecb.pr261104~caf181d7ac.en.html",
+      "publishedAt": "2026-11-04T00:00:00.000Z",
+      "titleOriginal": "ECB wage tracker suggests slightly higher wage growth in first three quarters of 2027 compared with the full year of 2026",
+      "titleTr": "ECB ücret takipçisi: 2027'nin ilk üç çeyreğinde ücret artışı 2026'nın biraz üzerinde",
+      "summaryTr": "ECB'nin ücret takipçisi, 2027'nin ilk üç çeyreğinde ücret artışının 2026'nın tamamına kıyasla biraz daha yüksek olacağına işaret ediyor.",
+      "titleEn": "ECB wage tracker points to slightly higher wage growth in first three quarters of 2027",
+      "summaryEn": "The ECB's wage tracker suggests wage growth in the first three quarters of 2027 will be slightly higher than in the full year of 2026.",
+      "important": true,
+      "processedAt": "2026-11-04T09:02:24.446Z"
     },
     {
       "id": "95fd3c67e1d7",
