@@ -1,6 +1,21 @@
 {
-  "fetchedAt": "2026-11-04T19:32:12.857Z",
+  "fetchedAt": "2026-11-04T20:32:03.165Z",
   "items": [
+    {
+      "id": "9fce74606f58",
+      "sourceKey": "guardian-business",
+      "sourceName": "The Guardian",
+      "kind": "media",
+      "url": "https://www.theguardian.com/business/2026/nov/04/us-dollar-slides-democrats-midterm-election-win-growth-fears",
+      "publishedAt": "2026-11-04T16:38:28.000Z",
+      "titleOriginal": "US stocks rise, dollar slides as investors digest Democrats’ midterm victories",
+      "titleTr": "ABD borsaları yükseldi, dolar geriledi: yatırımcılar ara seçim sonuçlarını değerlendiriyor",
+      "summaryTr": "Guardian'a göre Demokratların ara seçim zaferinin ardından ABD hisseleri yükselirken dolar değer kaybetti ve devlet tahvili faizleri geriledi. New York'ta öğlene doğru Dow Jones yaklaşık %3, Nasdaq ve S&P 500 ise yaklaşık %2 arttı.",
+      "titleEn": "US stocks rise, dollar slides as investors digest midterm election results",
+      "summaryEn": "The Guardian reports that US stocks rallied, the dollar weakened and government bond yields fell after the Democrats' midterm victories. By midday in New York the Dow gained close to 3%, while the Nasdaq and S&P 500 rose close to 2% each.",
+      "important": true,
+      "processedAt": "2026-11-04T20:32:03.165Z"
+    },
     {
       "id": "7a684ee490b2",
       "sourceKey": "aa-economy",
