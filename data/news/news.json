@@ -1,6 +1,21 @@
 {
-  "fetchedAt": "2026-11-04T11:32:04.120Z",
+  "fetchedAt": "2026-11-04T12:02:32.952Z",
   "items": [
+    {
+      "id": "b320a41b0b0c",
+      "sourceKey": "aa-ekonomi",
+      "sourceName": "Anadolu Ajansı",
+      "kind": "media",
+      "url": "https://www.aa.com.tr/tr/ekonomi/ecb-baskani-lagarde-antalyadaki-cop31-zirvesi-hedefleri-eyleme-donusturmek-icin-buyuk-bir-firsat/4111470",
+      "publishedAt": "2026-11-04T11:50:59.000Z",
+      "titleOriginal": "ECB Başkanı Lagarde: Antalya'daki COP31 zirvesi hedefleri eyleme dönüştürmek için büyük bir fırsat",
+      "titleTr": "Lagarde: Antalya'daki COP31 hedefleri eyleme dönüştürmek için büyük fırsat",
+      "summaryTr": "ECB Başkanı Christine Lagarde, Türkiye'nin ev sahipliğinde Antalya'da yapılacak BM İklim Değişikliği Konferansı'nın (COP31) küresel hedefleri eyleme dönüştürmek için kritik bir fırsat sunduğunu söyledi.",
+      "titleEn": "Lagarde: COP31 in Antalya a major chance to turn goals into action",
+      "summaryEn": "ECB President Christine Lagarde said the UN Climate Change Conference (COP31), to be hosted by Turkey in Antalya, offers a critical opportunity to turn global goals into action.",
+      "important": false,
+      "processedAt": "2026-11-04T12:02:32.952Z"
+    },
     {
       "id": "a004e1438244",
       "sourceKey": "cnbc-economy",
@@ -15,6 +30,21 @@
       "summaryEn": "Per CNBC, euro zone inflation reached 4% for the first time in three years, with an interest rate hike looming. The rise was driven by energy inflation, which surged above 20% in October.",
       "important": true,
       "processedAt": "2026-11-04T11:32:04.120Z"
+    },
+    {
+      "id": "1acd43f364fc",
+      "sourceKey": "guardian-business",
+      "sourceName": "The Guardian",
+      "kind": "media",
+      "url": "https://www.theguardian.com/business/live/2026/nov/04/dollar-falls-while-gold-us-treasury-bonds-rally-markets-react-democrats-midterm-election-victory-marks-spencer-latest-live-updates",
+      "publishedAt": "2026-11-04T10:41:55.000Z",
+      "titleOriginal": "Dollar falls while gold and US Treasury bonds rally as markets react to Democrats’ midterm election victory – business live",
+      "titleTr": "Demokratların ara seçim zaferi sonrası dolar düştü, altın ve ABD tahvilleri yükseldi",
+      "summaryTr": "Demokratların Kongre'yi kazanmasının ardından dolar gerilerken altın ve ABD Hazine tahvilleri yükseldi. ING'den Chris Turner, yatırımcıların sonucun yapay zekâ sektörü düzenlemeleri açısından anlamını tarttığını belirtti; ABD vadeli hisse senetleri pozitife döndü.",
+      "titleEn": "Dollar falls, gold and US Treasuries rally after Democrats' midterm win",
+      "summaryEn": "The dollar fell while gold and US Treasury bonds rallied after Democrats captured Congress. ING's Chris Turner said investors are weighing what the result means for AI-sector regulation, and US stock futures turned positive.",
+      "important": true,
+      "processedAt": "2026-11-04T12:02:32.952Z"
     },
     {
       "id": "4ca38532ec84",
@@ -3741,6 +3771,8 @@
     "ee0d103cc359": "2026-11-04",
     "6cf2f09618a0": "2026-11-04",
     "681e41f7d089": "2026-11-04",
-    "0c08a671b8d8": "2026-11-04"
+    "0c08a671b8d8": "2026-11-04",
+    "5a21a25f56a7": "2026-11-04",
+    "845ca8eb0b69": "2026-11-04"
   }
 }
