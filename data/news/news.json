@@ -1,6 +1,21 @@
 {
-  "fetchedAt": "2026-11-04T13:32:34.424Z",
+  "fetchedAt": "2026-11-04T14:02:38.936Z",
   "items": [
+    {
+      "id": "ef036751fa65",
+      "sourceKey": "marketwatch",
+      "sourceName": "MarketWatch",
+      "kind": "media",
+      "url": "https://www.marketwatch.com/story/treasury-opens-the-door-to-changes-in-how-it-finances-the-growing-u-s-debt-heres-what-you-need-to-know-6001f7e1?mod=mw_rss_topstories",
+      "publishedAt": "2026-11-04T13:32:00.000Z",
+      "titleOriginal": "Treasury opens the door to changes in how it finances the growing U.S. debt. Here’s what you need to know.",
+      "titleTr": "ABD Hazinesi, artan borcun finansman yöntemlerinde değişikliğe kapıyı açtı",
+      "summaryTr": "MarketWatch'a göre ABD Hazinesi, büyüyen devlet borcunu finanse etme biçiminde değişiklik yapılabileceği sinyalini verdi. Olası değişikliklerin önümüzdeki birkaç çeyrek içinde gündeme gelebileceği belirtildi.",
+      "titleEn": "U.S. Treasury opens the door to changes in how it finances growing debt",
+      "summaryEn": "According to MarketWatch, the U.S. Treasury has signaled it may change how it finances the growing national debt. Some potential changes could take place over the next several quarters.",
+      "important": false,
+      "processedAt": "2026-11-04T14:02:38.936Z"
+    },
     {
       "id": "ee7416928edb",
       "sourceKey": "aa-economy",
