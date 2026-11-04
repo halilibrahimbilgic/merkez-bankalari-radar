@@ -1,6 +1,36 @@
 {
-  "fetchedAt": "2026-11-04T15:02:33.712Z",
+  "fetchedAt": "2026-11-04T16:32:24.769Z",
   "items": [
+    {
+      "id": "7a684ee490b2",
+      "sourceKey": "aa-economy",
+      "sourceName": "Anadolu Agency",
+      "kind": "media",
+      "url": "https://www.aa.com.tr/en/economy/brent-crude-falls-below-100-a-barrel-for-first-time-in-month-as-european-gas-prices-drop/4111817",
+      "publishedAt": "2026-11-04T16:28:11.000Z",
+      "titleOriginal": "Brent crude falls below $100 a barrel for first time in month as European gas prices drop",
+      "titleTr": "Brent petrol bir ay sonra ilk kez varil başına 100 doların altına indi",
+      "summaryTr": "ABD ham petrolü yüzde 4,43 düşüşle varil başına 91,85 dolara geriledi. Avrupa doğal gaz vadelileri de ABD-İran gerilimini azaltmaya yönelik diplomatik çabalar sürerken yüzde 4,59 düştü.",
+      "titleEn": "Brent crude falls below $100 a barrel for the first time in a month",
+      "summaryEn": "US crude fell 4.43% to $91.85 a barrel. European benchmark natural gas futures dropped 4.59% amid diplomatic efforts to ease US-Iran tensions.",
+      "important": false,
+      "processedAt": "2026-11-04T16:32:24.769Z"
+    },
+    {
+      "id": "8e5d9d1318ce",
+      "sourceKey": "marketwatch",
+      "sourceName": "MarketWatch",
+      "kind": "media",
+      "url": "https://www.marketwatch.com/story/the-u-s-economy-is-barreling-ahead-but-theres-one-big-problem-6d62e3b3?mod=mw_rss_topstories",
+      "publishedAt": "2026-11-04T16:05:00.000Z",
+      "titleOriginal": "The U.S. economy is barreling ahead — but there’s one big problem",
+      "titleTr": "ABD ekonomisi hızlı büyüyor ancak inatçı enflasyon iş dünyasını tedirgin ediyor",
+      "summaryTr": "ABD ekonomisinin en büyük kısmı yılbaşı alışveriş sezonu öncesinde hızlı büyüdü. Ancak MarketWatch'a göre inatçı enflasyon nedeniyle iş dünyası liderlerinin keyfi yerinde değil.",
+      "titleEn": "US economy is growing fast, but stubborn inflation worries business leaders",
+      "summaryEn": "The largest part of the US economy grew at a rapid pace just ahead of the holiday shopping season. According to MarketWatch, business leaders are not in a festive mood because of stubborn inflation.",
+      "important": false,
+      "processedAt": "2026-11-04T16:32:24.769Z"
+    },
     {
       "id": "80334eb29aa5",
       "sourceKey": "aa-economy",
@@ -3833,6 +3863,7 @@
     "681e41f7d089": "2026-11-04",
     "0c08a671b8d8": "2026-11-04",
     "5a21a25f56a7": "2026-11-04",
-    "845ca8eb0b69": "2026-11-04"
+    "845ca8eb0b69": "2026-11-04",
+    "4ce1f8431a38": "2026-11-04"
   }
 }

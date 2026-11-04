@@ -1,5 +1,5 @@
 {
- "fetchedAt": "2026-11-04T12:44:22.481Z",
+ "fetchedAt": "2026-11-04T16:32:30.630Z",
  "banks": {
   "tcmb": {
    "source": "tcmb-pka",
@@ -12028,6 +12028,12 @@
     "meanBps": 412.94,
     "probCutPct": 4.32,
     "probHikePct": 82.87
+   },
+   {
+    "date": "2026-11-02",
+    "meanBps": 413.97,
+    "probCutPct": 3.84,
+    "probHikePct": 85.22
    }
   ],
   "2027-03-17": [
@@ -13674,6 +13680,12 @@
     "meanBps": 432.5,
     "probCutPct": 10.74,
     "probHikePct": 81.71
+   },
+   {
+    "date": "2026-11-02",
+    "meanBps": 434.52,
+    "probCutPct": 8.86,
+    "probHikePct": 83.49
    }
   ],
   "2027-06-16": [
@@ -15008,6 +15020,12 @@
     "meanBps": 445.02,
     "probCutPct": 15.61,
     "probHikePct": 77.39
+   },
+   {
+    "date": "2026-11-02",
+    "meanBps": 447.02,
+    "probCutPct": 14.71,
+    "probHikePct": 78.1
    }
   ],
   "2027-09-15": [
@@ -15976,6 +15994,12 @@
     "meanBps": 449.53,
     "probCutPct": 19.62,
     "probHikePct": 73.97
+   },
+   {
+    "date": "2026-11-02",
+    "meanBps": 450.54,
+    "probCutPct": 19,
+    "probHikePct": 73.89
    }
   ],
   "2027-12-15": [
@@ -16566,6 +16590,12 @@
     "meanBps": 448,
     "probCutPct": 22.76,
     "probHikePct": 70.42
+   },
+   {
+    "date": "2026-11-02",
+    "meanBps": 447.47,
+    "probCutPct": 22.46,
+    "probHikePct": 70.34
    }
   ],
   "2028-03-15": [
@@ -16784,6 +16814,12 @@
     "meanBps": 445.5,
     "probCutPct": 25.09,
     "probHikePct": 68.08
+   },
+   {
+    "date": "2026-11-02",
+    "meanBps": 444.48,
+    "probCutPct": 25.72,
+    "probHikePct": 67.36
    }
   ]
  }
