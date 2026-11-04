@@ -1,5 +1,5 @@
 {
-  "fetchedAt": "2026-11-04T16:32:24.769Z",
+  "fetchedAt": "2026-11-04T17:02:36.067Z",
   "items": [
     {
       "id": "7a684ee490b2",
@@ -15,6 +15,21 @@
       "summaryEn": "US crude fell 4.43% to $91.85 a barrel. European benchmark natural gas futures dropped 4.59% amid diplomatic efforts to ease US-Iran tensions.",
       "important": false,
       "processedAt": "2026-11-04T16:32:24.769Z"
+    },
+    {
+      "id": "95a2ea972332",
+      "sourceKey": "aa-ekonomi",
+      "sourceName": "Anadolu Ajansı",
+      "kind": "media",
+      "url": "https://www.aa.com.tr/tr/ekonomi/tcmb-ekim-ayi-fiyat-gelismeleri-raporunu-yayimladi/4111816",
+      "publishedAt": "2026-11-04T16:26:05.000Z",
+      "titleOriginal": "TCMB, Ekim Ayı Fiyat Gelişmeleri Raporu'nu yayımladı",
+      "titleTr": "TCMB: Ekimde enflasyonun ana eğilimi yataya yakın seyretti",
+      "summaryTr": "TCMB, Ekim Ayı Fiyat Gelişmeleri Raporu'nda tüketici enflasyonunun ana eğiliminin ekimde aylık ve üç aylık ortalamalarda yataya yakın seyrettiğini bildirdi. Banka, bu görünümün son dönemdeki ana eğilim gerilemesini teyit ettiğini belirtti.",
+      "titleEn": "CBRT: Underlying inflation trend broadly flat in October",
+      "summaryEn": "In its October Price Developments Report, the CBRT said the underlying trend of consumer inflation was close to flat on monthly and three-month average bases. It said this confirms the recent decline in the underlying trend.",
+      "important": true,
+      "processedAt": "2026-11-04T17:02:36.067Z"
     },
     {
       "id": "8e5d9d1318ce",
