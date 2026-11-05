@@ -1,5 +1,5 @@
 {
-  "fetchedAt": "2026-10-30T11:02:13.602Z",
+  "fetchedAt": "2026-11-05T12:03:49.277Z",
   "minutes": [
     {
       "meetingId": "boe-2026-02-05",
@@ -191,6 +191,38 @@
         "model": "claude-code/opus",
         "promptVersion": "1",
         "summarizedAt": "2026-10-14T23:26:32.526Z"
+      }
+    },
+    {
+      "meetingId": "boe-2026-11-05",
+      "bankCode": "boe",
+      "urls": {
+        "en": "https://www.bankofengland.co.uk/monetary-policy-summary-and-minutes/2026/november-2026"
+      },
+      "fetchedAt": "2026-11-05T12:03:12.152Z",
+      "summary": {
+        "headlineTr": "Kurul, enerji şokunun kalıcı enflasyona dönüşme riskinin Eylül'den bu yana daha da arttığını değerlendirdi; birkaç üye yakın vadede ek artırım gerekebileceğini söylerken Taylor artırımın bir sıkılaşma döngüsünün başlangıcı olmadığını vurguladı.",
+        "headlineEn": "The Committee judged that the risk of the energy shock turning into persistent inflation had risen further since September; several members said a further hike may be needed in the near term, while Taylor stressed the hike was not the start of a tightening cycle.",
+        "pointsTr": [
+          "Personel tahminine göre TÜFE enflasyonu 2027'nin ilk çeyreğinde yaklaşık %4½'ye, ikinci çeyreğinde yaklaşık %5'e çıkacak; Eylül'deki %3,5'lik enflasyonun yaklaşık 1 puanı doğrudan enerji etkisinden geldi.",
+          "İkinci tur etkilerine dair kanıt hâlâ sınırlı olsa da Kurul, manşet enflasyon görünümü belirgin biçimde yükseldiği için kayda değer ikinci tur etkileri riskinin arttığını ve bir süre risk olarak kalabileceğini değerlendirdi.",
+          "Bailey, Lombardelli, Pill ve Greene enflasyon baskılarını yumuşatan veri gelmezse ek artırım gerekebileceğini söyledi; Taylor ise bunu önceden belirlenmiş bir patika olmayan 'şimdilik tek' sigorta artırımı olarak nitelendirdi ve sonraki adımın yukarı, aşağı ya da yatay olabileceğini belirtti.",
+          "Mann 50 baz puanlık artırımı tercih etti; ekonominin doğrusal olmayan fiyat ve ücret tepkilerinin ortaya çıkabileceği eşikleri aştığını ve güvenilirlik açısından daha etkin bir yaklaşım gerektiğini savundu.",
+          "Üyelerin çoğu para politikasının hâlâ sıkı olduğunu ve ekonomide atıl kapasite bulunduğunu düşünse de bunun enflasyonu zamanında hedefe indirmeye yetip yetmeyeceği daha az netleşti; bazı üyeler yurt içi faaliyet ve temel enflasyon verisini politikanın sanıldığı kadar sıkı olmadığı şeklinde yorumladı."
+        ],
+        "pointsEn": [
+          "Staff projected CPI inflation to reach around 4½% in 2027 Q1 and around 5% in 2027 Q2; direct energy effects contributed around 1 percentage point to September's 3.5% inflation.",
+          "Although evidence of second-round effects remained limited, the Committee judged that the risk of material second-round effects had risen because the headline inflation outlook had risen materially, and could remain a risk for some time.",
+          "Bailey, Lombardelli, Pill and Greene said a further increase could be needed absent news softening inflationary pressures, while Taylor called it a 'one-for-now' insurance hike with no pre-set path, saying the next move could be up, down or sideways.",
+          "Mann preferred a 50 basis point hike, arguing the economy had crossed thresholds where non-linear price and wage responses could emerge and that an activist approach was needed for credibility.",
+          "Most members still saw policy as restrictive and some slack in the economy, but it was less clear this would bring inflation back to target in a timely manner; some members read domestic activity and underlying inflation data as a sign policy had been less restrictive than judged."
+        ],
+        "score": 7,
+        "scoreReasonTr": "Kurulun artırım kararı, ikinci tur etkileri riskinin arttığı ve risklerin yukarı yönlü olduğu değerlendirmesi, bir üyenin 50 baz puan istemesi ve birkaç üyenin yakın vadede ek artırım sinyali vermesi tutanağı çok şahin kılıyor; Taylor ve Dhingra'nın koşullu tutumu puanı uçtan uzak tutuyor.",
+        "scoreReasonEn": "The hike, the judgement that second-round risks had increased and risks were to the upside, one member seeking 50 basis points and several signalling a further near-term hike make the minutes very hawkish, while Taylor's and Dhingra's conditional stance keeps the score off the extreme.",
+        "model": "claude-code/opus",
+        "promptVersion": "1",
+        "summarizedAt": "2026-11-05T12:03:49.276Z"
       }
     },
     {

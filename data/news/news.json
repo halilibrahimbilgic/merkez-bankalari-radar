@@ -1,6 +1,37 @@
 {
-  "fetchedAt": "2026-11-05T10:02:13.156Z",
+  "fetchedAt": "2026-11-05T12:02:30.641Z",
   "items": [
+    {
+      "id": "128e0f6daafe",
+      "sourceKey": "boe-news",
+      "sourceName": "Bank of England",
+      "kind": "official",
+      "bankCode": "boe",
+      "url": "https://www.bankofengland.co.uk/monetary-policy-summary-and-minutes/2026/november-2026",
+      "publishedAt": "2026-11-05T12:00:00.000Z",
+      "titleOriginal": "Bank rate increased to 4% - November 2026 Monetary Policy Summary and Minutes",
+      "titleTr": "BoE politika faizini yüzde 4'e yükseltti",
+      "summaryTr": "Bank of England Para Politikası Komitesi, Kasım 2026 toplantısında politika faizini (Bank Rate) yüzde 4'e çıkardı. Karar, toplantının özeti ve tutanağıyla birlikte yayımlandı.",
+      "titleEn": "Bank of England raises Bank Rate to 4%",
+      "summaryEn": "The Bank of England's Monetary Policy Committee raised Bank Rate to 4% at its November 2026 meeting. The decision was published with the policy summary and minutes.",
+      "important": true,
+      "processedAt": "2026-11-05T12:02:30.641Z"
+    },
+    {
+      "id": "edda2288d5d6",
+      "sourceKey": "aa-economy",
+      "sourceName": "Anadolu Agency",
+      "kind": "media",
+      "url": "https://www.aa.com.tr/en/economy/turkiye-repays-26b-to-over-420-000-investors-as-fund-liquidations-proceed/4112923",
+      "publishedAt": "2026-11-05T11:57:05.000Z",
+      "titleOriginal": "Türkiye repays $2.6B to over 420,000 investors as fund liquidations proceed",
+      "titleTr": "Şimşek: Fon tasfiyelerinde 420 binden fazla yatırımcıya 2,6 milyar dolar ödendi",
+      "summaryTr": "Hazine ve Maliye Bakanı Mehmet Şimşek, fon tasfiyeleri kapsamında 420 binden fazla yatırımcıya 2,6 milyar dolar ödeme yapıldığını açıkladı. Yaklaşık 180 bin yatırımcı net yatırımının tamamını geri aldı.",
+      "titleEn": "Türkiye repays $2.6B to over 420,000 investors in fund liquidations",
+      "summaryEn": "Treasury and Finance Minister Mehmet Simsek said over 420,000 investors have been repaid $2.6 billion as fund liquidations proceed. Nearly 180,000 investors recovered their full net investments.",
+      "important": false,
+      "processedAt": "2026-11-05T12:02:30.641Z"
+    },
     {
       "id": "7ebbefde887c",
       "sourceKey": "aa-economy",
@@ -4061,6 +4092,8 @@
     "27e0dc08311c": "2026-11-05",
     "ed164071e3ae": "2026-11-05",
     "8d5c44b28122": "2026-11-05",
-    "245cd76b5528": "2026-11-05"
+    "245cd76b5528": "2026-11-05",
+    "ae8460b9d5dc": "2026-11-05",
+    "ce8dbcfb73e1": "2026-11-05"
   }
 }

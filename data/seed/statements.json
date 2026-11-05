@@ -1,5 +1,5 @@
 {
-  "fetchedAt": "2026-11-05T10:02:13.456Z",
+  "fetchedAt": "2026-11-05T12:03:11.030Z",
   "statements": [
     {
       "meetingId": "boe-2025-12-18",
@@ -256,6 +256,47 @@
         "model": "claude-code/opus",
         "promptVersion": "2",
         "summarizedAt": "2026-10-14T22:32:48.824Z"
+      }
+    },
+    {
+      "meetingId": "boe-2026-11-05",
+      "bankCode": "boe",
+      "urls": {
+        "en": "https://www.bankofengland.co.uk/monetary-policy-summary-and-minutes/2026/november-2026"
+      },
+      "langs": [
+        "en"
+      ],
+      "publishable": false,
+      "fetchedAt": "2026-11-05T12:02:31.416Z",
+      "rate": 4,
+      "previousId": "boe-2026-09-17",
+      "summary": {
+        "headlineTr": "BoE politika faizini 25 baz puan artırarak %4'e yükseltti; metin, enflasyonun gelecek yılın ortasında yaklaşık %5'e çıkmasının beklendiğini ve yoldaki enflasyon baskısının artırımı gerektirecek düzeye ulaştığını söylüyor.",
+        "headlineEn": "The BoE raised Bank Rate by 25 basis points to 4%, with the statement saying inflation is expected to rise to around 5% by the middle of next year and that inflationary pressure in the pipeline is now sufficient to warrant a hike.",
+        "changesTr": [
+          "Komite faizi sabit tutmaktan %3,75'ten %4'e artırmaya geçti; oy dağılımı 6–3'ten 8–1'e döndü ve tek muhalif üye 0,5 puanlık artırımla %4,25'i savundu.",
+          "TÜFE enflasyonunun Ağustos'taki %3,1'den Eylül'de %3,5'e yükseldiği ve gelecek yılın ortasında yaklaşık %5'e çıkmasının beklendiği, ardından enerji etkisi sönümlendikçe düşeceği yazıldı.",
+          "İkincil etkilere dair kanıtın hâlâ sınırlı olduğu belirtilse de 'yoldaki enflasyon baskısının' artırımı gerektirecek düzeye ulaştığı ve beklenenden güçlü aktivite verisinin 'ılımlı biçimde daha sıkı' politikayı desteklediği eklendi.",
+          "İleriye dönük yönlendirme 'gerektiği gibi harekete geçmeye hazır' ifadesinden, politikanın önceden belirlenmiş bir patikada olmadığı ve her toplantıda ücret, fiyatlama davranışı ve atıl kapasitenin izleneceği vurgusuna geçti.",
+          "Önceki metindeki tahvil stokunun azaltılmasına ilişkin karar ve gevşek işgücü piyasasının enflasyonu düşüreceği ifadesi yeni metinde yer almıyor."
+        ],
+        "changesEn": [
+          "The Committee moved from holding Bank Rate at 3.75% to raising it to 4%; the vote shifted from 6–3 to 8–1, with the sole dissenter favouring a 0.5 percentage point hike to 4.25%.",
+          "The statement notes CPI inflation rose from 3.1% in August to 3.5% in September and is expected to reach around 5% by the middle of next year, before falling as the energy effect fades.",
+          "While evidence of knock-on effects is still described as limited, it now says inflationary pressure in the pipeline is sufficient to warrant a hike and that stronger-than-expected activity data add to the case for modestly tighter policy.",
+          "Forward guidance shifted from 'stands ready to act as necessary' to stressing that policy is not on a pre-set path, with underlying pay, pricing behaviour and slack monitored at each meeting.",
+          "The previous statement's gilt stock reduction decision and its reference to soft labour market conditions bearing down on inflation no longer appear."
+        ],
+        "tone": "more-hawkish",
+        "toneReasonTr": "Metin sabit tutmadan artırıma geçerek 'yoldaki enflasyon baskısının artırımı gerektirdiğini', enflasyonun yaklaşık %5'e çıkacağını ve güçlü aktivitenin 'daha sıkı politikayı' desteklediğini söylüyor; gevşek işgücü piyasasına yapılan dezenflasyonist atıf ise çıkarıldı.",
+        "toneReasonEn": "The statement moves from a hold to a hike, saying pipeline inflationary pressure warrants an increase, inflation is expected to reach around 5% and stronger activity supports tighter policy, while the disinflationary reference to a soft labour market was dropped.",
+        "score": 6,
+        "scoreReasonTr": "8–1 oyla 25 baz puanlık artırım, bir üyenin 50 baz puan istemesi ve enflasyonun yaklaşık %5'e yükselmesinin beklenmesi şahin bir duruş gösteriyor; ancak 'ılımlı biçimde daha sıkı' ifadesi ve politikanın önceden belirlenmiş bir patikada olmadığı vurgusu ek artırım taahhüdü vermiyor.",
+        "scoreReasonEn": "A 25 basis point hike on an 8–1 vote, one member seeking 50 basis points and inflation expected to rise to around 5% signal a hawkish stance, though 'modestly tighter' wording and the 'not on a pre-set path' guidance stop short of committing to further hikes.",
+        "model": "claude-code/opus",
+        "promptVersion": "2",
+        "summarizedAt": "2026-11-05T12:03:11.030Z"
       }
     },
     {
