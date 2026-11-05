@@ -1,6 +1,36 @@
 {
-  "fetchedAt": "2026-11-05T12:32:40.502Z",
+  "fetchedAt": "2026-11-05T13:02:34.333Z",
   "items": [
+    {
+      "id": "f133d9aa1de6",
+      "sourceKey": "bbc-business",
+      "sourceName": "BBC News",
+      "kind": "media",
+      "url": "https://www.bbc.co.uk/news/articles/ckr5y0y37gv3o?at_medium=RSS&at_campaign=rss",
+      "publishedAt": "2026-11-05T12:53:57.000Z",
+      "titleOriginal": "Faisal Islam: How high will interest rates go?",
+      "titleTr": "Faisal Islam: Faizler ne kadar yükselecek?",
+      "summaryTr": "BBC'nin ekonomi editörü Faisal Islam, bir faiz artırımının daha olası göründüğünü ancak bunun son artırım olacağını düşündüğünü belirtiyor.",
+      "titleEn": "Faisal Islam: How high will interest rates go?",
+      "summaryEn": "BBC economics editor Faisal Islam sees one more rate rise as likely, but thinks it will be the last.",
+      "important": false,
+      "processedAt": "2026-11-05T13:02:34.333Z"
+    },
+    {
+      "id": "30b9a7aabe62",
+      "sourceKey": "marketwatch",
+      "sourceName": "MarketWatch",
+      "kind": "media",
+      "url": "https://www.marketwatch.com/story/interest-rates-could-go-significantly-higher-if-oil-prices-keep-climbing-even-if-the-iran-war-ends-soon-e3493498?mod=mw_rss_topstories",
+      "publishedAt": "2026-11-05T12:33:00.000Z",
+      "titleOriginal": "Interest rates could go ‘significantly higher’ if oil prices keep climbing — even if the Iran war ends soon",
+      "titleTr": "BofA: Petrol yükselmeye devam ederse faizler belirgin biçimde artabilir",
+      "summaryTr": "Bank of America stratejistleri, ABD, Birleşik Krallık ve Almanya'da faizler ile petrol fiyatları arasında güçlü bir ilişki buldu. Stratejistlere göre petrol yükselmeye devam ederse faizler, İran savaşı yakında bitse bile belirgin biçimde artabilir.",
+      "titleEn": "BofA: Rates could climb significantly if oil keeps rising",
+      "summaryEn": "Bank of America strategists found a strong correlation between interest rates and oil prices in the US, UK and Germany. They say rates could rise significantly if oil keeps climbing, even if the Iran war ends soon.",
+      "important": false,
+      "processedAt": "2026-11-05T13:02:34.333Z"
+    },
     {
       "id": "c8af7f7812e7",
       "sourceKey": "aa-economy",
@@ -15,6 +45,21 @@
       "summaryEn": "The Bank of England raised its policy rate to 4% and expects inflation to reach 5% in 2027. It said the Middle East conflict has pushed global energy prices higher, raising the risk of persistent inflation.",
       "important": true,
       "processedAt": "2026-11-05T12:32:40.502Z"
+    },
+    {
+      "id": "65c31f611e43",
+      "sourceKey": "aa-ekonomi",
+      "sourceName": "Anadolu Ajansı",
+      "kind": "media",
+      "url": "https://www.aa.com.tr/tr/ekonomi/ingiltere-merkez-bankasi-politika-faizini-yuzde-4e-yukseltti-/4112936",
+      "publishedAt": "2026-11-05T12:03:30.000Z",
+      "titleOriginal": "İngiltere Merkez Bankası, politika faizini yüzde 4'e yükseltti",
+      "titleTr": "İngiltere Merkez Bankası politika faizini yüzde 4'e yükseltti",
+      "summaryTr": "İngiltere Merkez Bankası (BoE), politika faizini 25 baz puan artırarak yüzde 4'e çıkardı. Karar piyasa beklentileriyle uyumlu oldu.",
+      "titleEn": "Bank of England raises policy rate to 4%",
+      "summaryEn": "The Bank of England raised its policy rate by 25 basis points to 4%. The move was in line with market expectations.",
+      "important": true,
+      "processedAt": "2026-11-05T13:02:34.333Z"
     },
     {
       "id": "128e0f6daafe",
