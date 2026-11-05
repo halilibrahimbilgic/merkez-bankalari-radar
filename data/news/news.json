@@ -1,6 +1,21 @@
 {
-  "fetchedAt": "2026-11-05T12:02:30.641Z",
+  "fetchedAt": "2026-11-05T12:32:40.502Z",
   "items": [
+    {
+      "id": "c8af7f7812e7",
+      "sourceKey": "aa-economy",
+      "sourceName": "Anadolu Agency",
+      "kind": "media",
+      "url": "https://www.aa.com.tr/en/economy/bank-of-england-raises-interest-rate-to-4-sees-inflation-reaching-5-in-2027/4112960",
+      "publishedAt": "2026-11-05T12:25:39.000Z",
+      "titleOriginal": "Bank of England raises interest rate to 4%, sees inflation reaching 5% in 2027",
+      "titleTr": "BoE faizi yüzde 4'e çıkardı, 2027'de enflasyon yüzde 5'i görebilir",
+      "summaryTr": "İngiltere Merkez Bankası politika faizini yüzde 4'e yükseltti ve enflasyonun 2027'de yüzde 5'e ulaşmasını bekliyor. Banka, Orta Doğu'daki çatışmanın küresel enerji fiyatlarını artırdığını ve kalıcı enflasyon riskini yükselttiğini belirtti.",
+      "titleEn": "Bank of England raises rate to 4%, sees inflation reaching 5% in 2027",
+      "summaryEn": "The Bank of England raised its policy rate to 4% and expects inflation to reach 5% in 2027. It said the Middle East conflict has pushed global energy prices higher, raising the risk of persistent inflation.",
+      "important": true,
+      "processedAt": "2026-11-05T12:32:40.502Z"
+    },
     {
       "id": "128e0f6daafe",
       "sourceKey": "boe-news",
@@ -31,6 +46,21 @@
       "summaryEn": "Treasury and Finance Minister Mehmet Simsek said over 420,000 investors have been repaid $2.6 billion as fund liquidations proceed. Nearly 180,000 investors recovered their full net investments.",
       "important": false,
       "processedAt": "2026-11-05T12:02:30.641Z"
+    },
+    {
+      "id": "4c54857805d4",
+      "sourceKey": "aa-ekonomi",
+      "sourceName": "Anadolu Ajansı",
+      "kind": "media",
+      "url": "https://www.aa.com.tr/tr/ekonomi/merkez-bankasi-rezervleri-158-1-milyar-dolar-oldu/4112916",
+      "publishedAt": "2026-11-05T11:53:53.000Z",
+      "titleOriginal": "Merkez Bankası rezervleri 158,1 milyar dolar oldu",
+      "titleTr": "TCMB rezervleri 158,1 milyar dolar oldu",
+      "summaryTr": "TCMB'nin toplam rezervleri 30 Ekim haftasında bir önceki haftaya göre 4 milyar 84 milyon dolar azalarak 158 milyar 107 milyon dolara geriledi.",
+      "titleEn": "Turkish central bank reserves at $158.1 billion",
+      "summaryEn": "The central bank's total reserves fell by $4.084 billion from the previous week to $158.107 billion in the week of October 30.",
+      "important": false,
+      "processedAt": "2026-11-05T12:32:40.502Z"
     },
     {
       "id": "7ebbefde887c",
@@ -4094,6 +4124,9 @@
     "8d5c44b28122": "2026-11-05",
     "245cd76b5528": "2026-11-05",
     "ae8460b9d5dc": "2026-11-05",
-    "ce8dbcfb73e1": "2026-11-05"
+    "ce8dbcfb73e1": "2026-11-05",
+    "be6a8ee585be": "2026-11-05",
+    "9b48d2ce5031": "2026-11-05",
+    "a3993e136341": "2026-11-05"
   }
 }
