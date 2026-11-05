@@ -1,36 +1,6 @@
 {
-  "fetchedAt": "2026-11-04T12:44:10.206Z",
+  "fetchedAt": "2026-11-05T12:54:24.330Z",
   "events": [
-    {
-      "id": "ecb-2026-11-03-1gciogp",
-      "bankCode": "ecb",
-      "at": "2026-11-03T08:45:00.000Z",
-      "timeTbd": false,
-      "kind": "speech",
-      "speaker": "Pedro Machado",
-      "title": "Keynote speech by Mr Machado at 12th Banking Union Conference \"The Simplification of Banking Regulation and Supervision\" organised by Freshfields, Center for Financial Studies and Institute for Law and Finance in Frankfurt, Germany",
-      "url": "https://freshfields.eventogy.com/c/12thconferenceonthebankingunion/registration"
-    },
-    {
-      "id": "ecb-2026-11-03-qy1xvh",
-      "bankCode": "ecb",
-      "at": "2026-11-03T09:15:00.000Z",
-      "timeTbd": false,
-      "kind": "discussion",
-      "speaker": "Pedro Machado",
-      "title": "Participation by Mr Machado in fireside chat at 12th Banking Union Conference \"The Simplification of Banking Regulation and Supervision\" organised by Freshfields, Center for Financial Studies and Institute for Law and Finance in Frankfurt, Germany",
-      "url": "https://freshfields.eventogy.com/c/12thconferenceonthebankingunion/registration"
-    },
-    {
-      "id": "ecb-2026-11-03-fg5rkj",
-      "bankCode": "ecb",
-      "at": "2026-11-03T14:00:00.000Z",
-      "timeTbd": false,
-      "kind": "discussion",
-      "speaker": "Sharon Donnery",
-      "title": "Participation by Ms Donnery in Panel: \"Balancing Stability and Innovation\" at 2026 Santander International Banking Conference \"Powering Growth, Building resilience\" in Madrid, Spain",
-      "url": "https://www.santander.com/en/press-room/santander-international-banking-conference/2026"
-    },
     {
       "id": "ecb-2026-11-04-1lcuz17",
       "bankCode": "ecb",
@@ -185,6 +155,15 @@
       "kind": "beige-book",
       "title": "Beige Book",
       "url": "https://www.federalreserve.gov/newsevents/calendar.htm"
+    },
+    {
+      "id": "tcmb-2026-11-27-fsr",
+      "bankCode": "tcmb",
+      "at": "2026-11-26T21:00:00.000Z",
+      "timeTbd": true,
+      "kind": "fsr",
+      "title": "Finansal İstikrar Raporu",
+      "url": "https://www.tcmb.gov.tr/wps/wcm/connect/TR/TCMB+TR/Main+Menu/Duyurular/Takvim"
     }
   ]
 }
