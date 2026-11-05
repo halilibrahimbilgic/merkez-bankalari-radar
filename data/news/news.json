@@ -1,6 +1,21 @@
 {
-  "fetchedAt": "2026-11-05T20:32:19.743Z",
+  "fetchedAt": "2026-11-05T21:34:14.481Z",
   "items": [
+    {
+      "id": "d68e26200525",
+      "sourceKey": "marketwatch",
+      "sourceName": "MarketWatch",
+      "kind": "media",
+      "url": "https://www.marketwatch.com/story/traders-flock-to-treasury-market-for-safety-as-tech-led-stock-selloff-deepens-cf548c8b?mod=mw_rss_topstories",
+      "publishedAt": "2026-11-05T21:19:00.000Z",
+      "titleOriginal": "Traders flock to Treasury market for safety as tech-led stock selloff deepens",
+      "titleTr": "Teknoloji hisselerindeki satış derinleşirken yatırımcılar Hazine tahvillerine yöneldi",
+      "summaryTr": "MarketWatch'a göre teknoloji öncülüğündeki hisse satışı derinleşirken yatırımcılar güvenli liman olarak ABD Hazine tahvili piyasasına koşuyor. Yatırım Şirketleri Enstitüsü (ICI) verilerine göre ABD para piyasası fonlarında rekor 8 trilyon dolarlık nakit de bekliyor.",
+      "titleEn": "Traders pile into Treasuries as tech-led stock selloff deepens",
+      "summaryEn": "MarketWatch reports that investors are moving into the U.S. Treasury market for safety as the tech-led stock selloff deepens. According to the Investment Company Institute, a record $8 trillion in cash is also sitting in U.S. money-market funds.",
+      "important": false,
+      "processedAt": "2026-11-05T21:34:14.481Z"
+    },
     {
       "id": "22bb0d47d6ba",
       "sourceKey": "cnbc-finance",
