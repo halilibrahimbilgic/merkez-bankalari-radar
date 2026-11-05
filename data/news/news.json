@@ -1,6 +1,21 @@
 {
-  "fetchedAt": "2026-11-05T08:02:22.112Z",
+  "fetchedAt": "2026-11-05T08:32:17.672Z",
   "items": [
+    {
+      "id": "bfdd4c9bff00",
+      "sourceKey": "aa-ekonomi",
+      "sourceName": "Anadolu Ajansı",
+      "kind": "media",
+      "url": "https://www.aa.com.tr/tr/ekonomi/abddeki-ara-secim-sonuclariyla-fede-iliskin-faiz-artirim-beklentilerinin-azalmasi-bekleniyor/4112312",
+      "publishedAt": "2026-11-05T08:06:37.000Z",
+      "titleOriginal": "ABD'deki ara seçim sonuçlarıyla Fed'e ilişkin faiz artırım beklentilerinin azalması bekleniyor",
+      "titleTr": "ABD ara seçim sonuçlarının Fed faiz artırım beklentilerini etkilemesi bekleniyor",
+      "summaryTr": "Demokratların Senato ve Temsilciler Meclisi'nde çoğunluğu almasının yapay zeka veri merkezi harcamalarını azaltıp enflasyon baskısını hafifletebileceği öngörülüyor. Bunun Fed'in faiz artırım beklentilerini etkileyebileceği belirtiliyor.",
+      "titleEn": "US midterm results expected to affect Fed rate hike expectations",
+      "summaryEn": "Democrats winning a majority in both the Senate and the House could reduce AI data center spending and ease inflation pressure, according to the report. That may in turn affect expectations of Fed rate hikes.",
+      "important": false,
+      "processedAt": "2026-11-05T08:32:17.672Z"
+    },
     {
       "id": "4043233a672c",
       "sourceKey": "ecb",
