@@ -1,6 +1,21 @@
 {
-  "fetchedAt": "2026-11-05T09:32:30.527Z",
+  "fetchedAt": "2026-11-05T09:49:04.365Z",
   "items": [
+    {
+      "id": "c41be544a3d3",
+      "sourceKey": "guardian-business",
+      "sourceName": "The Guardian",
+      "kind": "media",
+      "url": "https://www.theguardian.com/business/live/2026/nov/05/bank-of-england-interest-rate-decision-pound-inflation-oil-iran-stock-markets-latest-news-updates",
+      "publishedAt": "2026-11-05T09:22:25.000Z",
+      "titleOriginal": "Bank of England expected to raise interest rates today; FTSE 100 hits three-month high – business live",
+      "titleTr": "BoE'nin bugün faiz artırması bekleniyor; gösterge tahvil faizi geriledi",
+      "summaryTr": "Birleşik Krallık, üç yılı aşkın sürenin ilk faiz artırımına hazırlanıyor. 10 yıllık gilt faizi 4 baz puan düşerek 28 Ağustos'tan bu yana en düşük seviyeye, yüzde 5,1'in altına indi; FTSE 100 üç ayın zirvesinde.",
+      "titleEn": "Bank of England expected to raise rates today; gilt yields fall",
+      "summaryEn": "The UK is bracing for its first interest rate rise in over three years. The 10-year gilt yield fell 4 basis points to below 5.1%, the lowest since August 28, while the FTSE 100 hit a three-month high.",
+      "important": true,
+      "processedAt": "2026-11-05T09:49:04.365Z"
+    },
     {
       "id": "bfdd4c9bff00",
       "sourceKey": "aa-ekonomi",
@@ -140,6 +155,21 @@
       "processedAt": "2026-11-04T16:32:24.769Z"
     },
     {
+      "id": "33587d3c3f1c",
+      "sourceKey": "guardian-business",
+      "sourceName": "The Guardian",
+      "kind": "media",
+      "url": "https://www.theguardian.com/us-news/2026/nov/04/explainer-midterms-trump-us-global-economy-markets",
+      "publishedAt": "2026-11-04T15:56:30.000Z",
+      "titleOriginal": "After the US midterms, what will a lame duck Trump mean for the global economy?",
+      "titleTr": "ABD ara seçimleri sonrası topal ördek Trump'ın küresel ekonomiye etkisi",
+      "summaryTr": "Demokratların ara seçimlerde Temsilciler Meclisi ve Senato'da çoğunluğu alması sonrası analistler, bunun piyasalar, büyüme, enflasyon ve borçlanma maliyetleri üzerinde etkili olabileceğini söylüyor.",
+      "titleEn": "What a lame-duck Trump after the US midterms means for the global economy",
+      "summaryEn": "After Democrats won both the House and Senate in the midterms, analysts say the shift could affect financial markets, growth, inflation and government borrowing costs.",
+      "important": false,
+      "processedAt": "2026-11-05T09:49:04.365Z"
+    },
+    {
       "id": "80334eb29aa5",
       "sourceKey": "aa-economy",
       "sourceName": "Anadolu Agency",
@@ -168,6 +198,21 @@
       "summaryEn": "Anadolu Agency reports Brent crude fell more than 8% to near $95 a barrel, while US crude dropped below $89. European gas futures also slid 6.58%.",
       "important": false,
       "processedAt": "2026-11-04T19:32:12.857Z"
+    },
+    {
+      "id": "2f42d2735844",
+      "sourceKey": "guardian-business",
+      "sourceName": "The Guardian",
+      "kind": "media",
+      "url": "https://www.theguardian.com/business/2026/nov/04/uk-interest-rates-increase-expected-service-sector-activity-accelerates-pmi",
+      "publishedAt": "2026-11-04T13:53:38.000Z",
+      "titleOriginal": "UK interest rates increase expected after services sector activity accelerates",
+      "titleTr": "Birleşik Krallık hizmet PMI'ı sekiz ayın zirvesinde; BoE'den faiz artırımı bekleniyor",
+      "summaryTr": "S&P Global'in Ekim anketine göre Birleşik Krallık hizmet sektörü büyümesi sekiz ayın en yüksek seviyesine çıktı, girdi fiyat enflasyonu ise beş ayın zirvesine yükseldi. Bu verilerin ardından BoE'nin perşembe günü faiz artırması bekleniyor.",
+      "titleEn": "UK services PMI at eight-month high; BoE rate rise expected",
+      "summaryEn": "S&P Global's October survey showed UK services growth at an eight-month high, with input price inflation accelerating to a five-month high. The Bank of England is expected to raise rates on Thursday.",
+      "important": true,
+      "processedAt": "2026-11-05T09:49:04.365Z"
     },
     {
       "id": "ef036751fa65",
@@ -3984,6 +4029,8 @@
     "e8f1441a57dc": "2026-11-05",
     "c52f7e2d22be": "2026-11-05",
     "27e0dc08311c": "2026-11-05",
-    "ed164071e3ae": "2026-11-05"
+    "ed164071e3ae": "2026-11-05",
+    "8d5c44b28122": "2026-11-05",
+    "245cd76b5528": "2026-11-05"
   }
 }
