@@ -1,6 +1,37 @@
 {
-  "fetchedAt": "2026-11-04T21:49:56.593Z",
+  "fetchedAt": "2026-11-05T00:02:13.339Z",
   "items": [
+    {
+      "id": "6e2a9fe7b4a5",
+      "sourceKey": "bbc-business",
+      "sourceName": "BBC News",
+      "kind": "media",
+      "url": "https://www.bbc.co.uk/news/articles/ck5ynw45jrgqo?at_medium=RSS&at_campaign=rss",
+      "publishedAt": "2026-11-05T00:00:09.000Z",
+      "titleOriginal": "Interest rates expected to rise for first time in over three years",
+      "titleTr": "Birleşik Krallık'ta üç yılı aşkın sürenin ilk faiz artırımı bekleniyor",
+      "summaryTr": "BBC'ye göre analistlerin çoğu faizin %3,75'ten %4'e yükseltilmesini bekliyor. Bu, üç yıldan uzun süredir ilk artırım olacak.",
+      "titleEn": "UK interest rates expected to rise for first time in over three years",
+      "summaryEn": "According to the BBC, most analysts expect rates to go up from 3.75% to 4%. It would be the first increase in more than three years.",
+      "important": true,
+      "processedAt": "2026-11-05T00:02:13.339Z"
+    },
+    {
+      "id": "493d273715f8",
+      "sourceKey": "boj",
+      "sourceName": "Bank of Japan",
+      "kind": "official",
+      "bankCode": "boj",
+      "url": "https://www.boj.or.jp/en/mopo/mpmsche_minu/minu_2026/g260918.pdf",
+      "publishedAt": "2026-11-04T23:50:00.000Z",
+      "titleOriginal": "Minutes of the Monetary Policy Meeting on September 17 and 18, 2026",
+      "titleTr": "BoJ, 17-18 Eylül 2026 para politikası toplantısının tutanağını yayımladı",
+      "summaryTr": "Japonya Merkez Bankası, 17-18 Eylül 2026 tarihli Para Politikası Toplantısı'nın tutanaklarını yayımladı.",
+      "titleEn": "BoJ releases minutes of September 17-18, 2026 policy meeting",
+      "summaryEn": "The Bank of Japan published the minutes of its Monetary Policy Meeting held on September 17 and 18, 2026.",
+      "important": true,
+      "processedAt": "2026-11-05T00:02:13.339Z"
+    },
     {
       "id": "9fce74606f58",
       "sourceKey": "guardian-business",
@@ -3842,16 +3873,6 @@
     }
   ],
   "rejected": {
-    "7013c3d67575": "2026-10-28",
-    "b58f07545067": "2026-10-28",
-    "1034d804f1bc": "2026-10-28",
-    "ab3c0f9f621f": "2026-10-28",
-    "68ad9b5e8598": "2026-10-28",
-    "f3a601278980": "2026-10-28",
-    "316ce5aa3fcb": "2026-10-28",
-    "f1cc2fabed93": "2026-10-28",
-    "5913ba972dca": "2026-10-28",
-    "67f999cd84b5": "2026-10-28",
     "15409bd831f4": "2026-10-29",
     "49618bf1d7a1": "2026-10-29",
     "d72430ed6b20": "2026-10-29",
@@ -3912,6 +3933,7 @@
     "4ce1f8431a38": "2026-11-04",
     "dd9a9a276e68": "2026-11-04",
     "87e5b7795c1b": "2026-11-04",
-    "dc93cea2c01f": "2026-11-04"
+    "dc93cea2c01f": "2026-11-04",
+    "e8f1441a57dc": "2026-11-05"
   }
 }
