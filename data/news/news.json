@@ -1,6 +1,22 @@
 {
-  "fetchedAt": "2026-11-05T00:02:13.339Z",
+  "fetchedAt": "2026-11-05T07:02:26.856Z",
   "items": [
+    {
+      "id": "37a3ef0745fc",
+      "sourceKey": "rba-speeches",
+      "sourceName": "Reserve Bank of Australia",
+      "kind": "official",
+      "bankCode": "rba",
+      "url": "https://www.rba.gov.au/speeches/2026/sp-dg-2026-11-05.html",
+      "publishedAt": "2026-11-05T06:45:00.000Z",
+      "titleOriginal": "Trust, Expectations and Monetary Policy",
+      "titleTr": "RBA'dan Hauser: Güven, beklentiler ve para politikası",
+      "summaryTr": "RBA Başkan Yardımcısı Andrew Hauser, Avustralya Ulusal Üniversitesi'nde Sir Leslie Melville Konferansı'nda \"Güven, Beklentiler ve Para Politikası\" başlıklı bir konuşma yaptı.",
+      "titleEn": "RBA's Hauser on trust, expectations and monetary policy",
+      "summaryEn": "RBA Deputy Governor Andrew Hauser delivered a speech titled \"Trust, Expectations and Monetary Policy\" at the Sir Leslie Melville Lecture at the Australian National University.",
+      "important": true,
+      "processedAt": "2026-11-05T07:02:26.856Z"
+    },
     {
       "id": "6e2a9fe7b4a5",
       "sourceKey": "bbc-business",
@@ -3934,6 +3950,7 @@
     "dd9a9a276e68": "2026-11-04",
     "87e5b7795c1b": "2026-11-04",
     "dc93cea2c01f": "2026-11-04",
-    "e8f1441a57dc": "2026-11-05"
+    "e8f1441a57dc": "2026-11-05",
+    "c52f7e2d22be": "2026-11-05"
   }
 }
