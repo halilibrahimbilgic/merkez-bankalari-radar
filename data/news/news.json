@@ -1,6 +1,22 @@
 {
-  "fetchedAt": "2026-11-05T07:32:22.986Z",
+  "fetchedAt": "2026-11-05T08:02:22.112Z",
   "items": [
+    {
+      "id": "4043233a672c",
+      "sourceKey": "ecb",
+      "sourceName": "ECB",
+      "kind": "official",
+      "bankCode": "ecb",
+      "url": "https://www.ecb.europa.eu//press/key/date/2026/html/ecb.sp261105_1~5e97d9d5a0.en.html",
+      "publishedAt": "2026-11-05T08:00:00.000Z",
+      "titleOriginal": "Isabel Schnabel: Navigating stormy waters: reflections on monetary policy",
+      "titleTr": "Schnabel: Çalkantılı sularda gezinmek, para politikası üzerine düşünceler",
+      "summaryTr": "ECB Yönetim Kurulu üyesi Isabel Schnabel, para politikası üzerine değerlendirmelerini içeren \"Navigating stormy waters\" başlıklı bir konuşma yaptı.",
+      "titleEn": "Schnabel: Navigating stormy waters, reflections on monetary policy",
+      "summaryEn": "ECB Executive Board member Isabel Schnabel gave a speech titled \"Navigating stormy waters\", sharing her reflections on monetary policy.",
+      "important": true,
+      "processedAt": "2026-11-05T08:02:22.112Z"
+    },
     {
       "id": "37a3ef0745fc",
       "sourceKey": "rba-speeches",
