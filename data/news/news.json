@@ -1,6 +1,51 @@
 {
-  "fetchedAt": "2026-11-05T13:02:34.333Z",
+  "fetchedAt": "2026-11-05T14:32:41.582Z",
   "items": [
+    {
+      "id": "22bb0d47d6ba",
+      "sourceKey": "cnbc-finance",
+      "sourceName": "CNBC",
+      "kind": "media",
+      "url": "https://www.cnbc.com/2026/11/05/barkin-sees-interest-rate-hikes-ahead-but-at-a-gradual-pace.html",
+      "publishedAt": "2026-11-05T14:29:28.000Z",
+      "titleOriginal": "Barkin sees interest rate hikes ahead, but at a gradual pace",
+      "titleTr": "Barkin: Faiz artışları gelebilir, ancak kademeli olacak",
+      "summaryTr": "Richmond Fed'den Barkin, CNBC'ye verdiği röportajda enflasyondan endişe duyduğunu ve para politikasının ayarlanması gerekeceğini söyledi. Faiz artışlarının kademeli bir hızda geleceğini belirtti.",
+      "titleEn": "Barkin sees rate hikes ahead, but at a gradual pace",
+      "summaryEn": "In a CNBC interview, Fed policymaker Barkin said he is concerned about inflation and that monetary policy will need to adjust. He expects rate hikes to come at a gradual pace.",
+      "important": true,
+      "processedAt": "2026-11-05T14:32:41.582Z"
+    },
+    {
+      "id": "c166a55c2e69",
+      "sourceKey": "bbc-business",
+      "sourceName": "BBC News",
+      "kind": "media",
+      "url": "https://www.bbc.co.uk/news/videos/c9kgjvmn4vlno?at_medium=RSS&at_campaign=rss",
+      "publishedAt": "2026-11-05T14:02:24.000Z",
+      "titleOriginal": "What does the raise in interest rates mean?",
+      "titleTr": "BBC: Faiz artışı ne anlama geliyor?",
+      "summaryTr": "BBC'nin yaşam maliyeti muhabiri Kevin Peachey, faizdeki artışın tatil için birikim yapanlar ve ev almayı planlayanlar için ne anlama gelebileceğini anlatıyor.",
+      "titleEn": "BBC: What does the interest rate rise mean?",
+      "summaryEn": "The BBC's cost of living correspondent Kevin Peachey explains what the rate change could mean for people saving for a holiday or buying a house.",
+      "important": false,
+      "processedAt": "2026-11-05T14:32:41.582Z"
+    },
+    {
+      "id": "c7ccd4d9d53b",
+      "sourceKey": "aa-ekonomi",
+      "sourceName": "Anadolu Ajansı",
+      "kind": "media",
+      "url": "https://www.aa.com.tr/tr/ekonomi/boe-baskani-bailey-faiz-patikasina-iliskin-orta-dogudaki-gelismelere-isaret-etti/4113085",
+      "publishedAt": "2026-11-05T13:54:28.000Z",
+      "titleOriginal": "BoE Başkanı Bailey, faiz patikasına ilişkin Orta Doğu'daki gelişmelere işaret etti",
+      "titleTr": "BoE Başkanı Bailey: Orta Doğu'da barış olmazsa faiz artışı sürebilir",
+      "summaryTr": "BoE Başkanı Andrew Bailey, Orta Doğu'daki savaşın ardından yükselen enerji fiyatlarının enflasyonist baskı yarattığını söyledi. Bailey, bölgede barış sağlanmadığı sürece faiz artışlarının devam edebileceği sinyalini verdi.",
+      "titleEn": "BoE's Bailey: Rate hikes may continue unless peace returns in Middle East",
+      "summaryEn": "BoE Governor Andrew Bailey said energy prices that rose after the Middle East war are creating inflationary pressure. He signaled rate hikes could continue unless peace is achieved in the region.",
+      "important": true,
+      "processedAt": "2026-11-05T14:32:41.582Z"
+    },
     {
       "id": "f133d9aa1de6",
       "sourceKey": "bbc-business",
