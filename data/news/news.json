@@ -1,6 +1,36 @@
 {
-  "fetchedAt": "2026-11-05T09:49:04.365Z",
+  "fetchedAt": "2026-11-05T10:02:13.156Z",
   "items": [
+    {
+      "id": "7ebbefde887c",
+      "sourceKey": "aa-economy",
+      "sourceName": "Anadolu Agency",
+      "kind": "media",
+      "url": "https://www.aa.com.tr/en/economy/norway-holds-policy-rate-at-45-keeps-door-open-to-further-hikes/4112724",
+      "publishedAt": "2026-11-05T09:57:23.000Z",
+      "titleOriginal": "Norway holds policy rate at 4.5%, keeps door open to further hikes",
+      "titleTr": "Norveç Merkez Bankası politika faizini %4,5'te sabit tuttu",
+      "summaryTr": "Norveç Merkez Bankası politika faizini %4,5'te bıraktı ve yeni artırımlara kapıyı açık tuttu. Banka başkanı, enflasyon %2 hedefinin üzerinde seyrettiği için borçlanma maliyetlerinin yüksek kalmasının muhtemel olduğunu söyledi.",
+      "titleEn": "Norway holds policy rate at 4.5%, leaves door open to more hikes",
+      "summaryEn": "Norway's central bank kept its policy rate at 4.5% and left open the possibility of further hikes. The governor said borrowing costs will likely stay high as inflation remains above the 2% target.",
+      "important": true,
+      "processedAt": "2026-11-05T10:02:13.156Z"
+    },
+    {
+      "id": "449276b4c5f8",
+      "sourceKey": "aa-economy",
+      "sourceName": "Anadolu Agency",
+      "kind": "media",
+      "url": "https://www.aa.com.tr/en/economy/hawkish-fed-expectations-ease-as-us-democrats-sweep-midterms/4112716",
+      "publishedAt": "2026-11-05T09:55:00.000Z",
+      "titleOriginal": "Hawkish Fed expectations ease as US Democrats sweep midterms",
+      "titleTr": "ABD ara seçimlerinin ardından Fed'e dair şahin beklentiler yumşadı",
+      "summaryTr": "Anadolu Ajansı'na göre Demokratların ara seçimlerde üstünlük sağlamasıyla Fed'in sıkı duruşuna dair beklentiler hafifledi. Analistler, Demokrat Kongre'nin Trump'ın genişletici maliye politikalarını engelleyeceğini ve enflasyondaki yukarı yönlü riskleri azaltacağını öngörüyor.",
+      "titleEn": "Hawkish Fed expectations ease after US Democrats win midterms",
+      "summaryEn": "Anadolu reports that hawkish expectations for the Fed have eased after Democrats' midterm win. Analysts expect a Democratic Congress to block Trump's expansionary fiscal policies and reduce upside risks to inflation.",
+      "important": false,
+      "processedAt": "2026-11-05T10:02:13.156Z"
+    },
     {
       "id": "c41be544a3d3",
       "sourceKey": "guardian-business",
