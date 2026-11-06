@@ -1,6 +1,36 @@
 {
-  "fetchedAt": "2026-11-06T18:02:10.271Z",
+  "fetchedAt": "2026-11-06T19:02:39.717Z",
   "items": [
+    {
+      "id": "81dfed6e1dc0",
+      "sourceKey": "ft",
+      "sourceName": "Financial Times",
+      "kind": "media",
+      "url": "https://www.ft.com/content/f84c722c-99a9-4628-84dc-c42a192cb35c?syn-25a6b1a6=1",
+      "publishedAt": "2026-11-06T18:45:36.000Z",
+      "titleOriginal": "US economy outstrips forecasts to add 165,000 jobs in October",
+      "titleTr": "ABD ekonomisi Ekim'de beklentileri aşarak 165 bin istihdam ekledi",
+      "summaryTr": "Financial Times'a göre ABD'de Ekim ayında 165 bin kişi istihdam edildi ve rakam tahminlerin üzerinde kaldı. İşe alımlardaki toparlanma, Fed'in faiz artıracağı beklentisini güçlendiriyor.",
+      "titleEn": "US economy beats forecasts, adding 165,000 jobs in October",
+      "summaryEn": "The Financial Times reports the US added 165,000 jobs in October, above forecasts. The hiring rebound reinforces expectations that the Federal Reserve will raise interest rates.",
+      "important": true,
+      "processedAt": "2026-11-06T19:02:39.717Z"
+    },
+    {
+      "id": "5fa9a295c991",
+      "sourceKey": "cnbc-finance",
+      "sourceName": "CNBC",
+      "kind": "media",
+      "url": "https://www.cnbc.com/2026/11/06/fed-daly-interest-rates-inflation.html",
+      "publishedAt": "2026-11-06T18:42:45.000Z",
+      "titleOriginal": "San Francisco Fed President Daly says higher rates 'are likely to be needed' in inflation fight",
+      "titleTr": "SF Fed Başkanı Daly: Enflasyonla mücadelede yüksek faiz gerekebilir",
+      "summaryTr": "San Francisco Fed Başkanı Daly, enflasyonla mücadelede daha yüksek faizlerin gerekli olmasının muhtemel olduğunu söyledi. Daly, cuma günü açıklanan istihdam raporunu Amerikalı çalışanlar için iyi haber olarak niteledi, ancak enflasyonun hane halkı bütçeleri üzerindeki baskısına dikkat çekti.",
+      "titleEn": "SF Fed's Daly says higher rates likely needed in inflation fight",
+      "summaryEn": "San Francisco Fed President Daly said higher interest rates are likely to be needed in the fight against inflation. Daly called Friday's jobs report good news for American workers but noted the pressure inflation is putting on household finances.",
+      "important": true,
+      "processedAt": "2026-11-06T19:02:39.717Z"
+    },
     {
       "id": "e834ee65f0a0",
       "sourceKey": "aa-ekonomi",
