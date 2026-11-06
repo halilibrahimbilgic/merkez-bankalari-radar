@@ -1,67 +1,6 @@
 {
-  "fetchedAt": "2026-11-05T12:54:24.330Z",
+  "fetchedAt": "2026-11-06T12:41:50.651Z",
   "events": [
-    {
-      "id": "ecb-2026-11-04-1lcuz17",
-      "bankCode": "ecb",
-      "at": "2026-11-04T13:20:00.000Z",
-      "timeTbd": false,
-      "kind": "testimony",
-      "speaker": "Philip R. Lane",
-      "title": "Laudation by Mr Lane on the occasion of the conferral of Bernhard Harms Prize to Pierre-Olivier Gourinchas at 5th Kiel-CEPR Geoeconomics Conference in Berlin, Germany",
-      "url": "https://www.kielinstitut.de/institute/events/conferences/geoeconomics-conferences/5th-kiel-cepr-conference-on-geoeconomics/"
-    },
-    {
-      "id": "ecb-2026-11-05-8tukuw",
-      "bankCode": "ecb",
-      "at": "2026-11-05T07:30:00.000Z",
-      "timeTbd": false,
-      "kind": "speech",
-      "speaker": "Piero Cipollone",
-      "title": "Keynote speech by Mr Cipollone at 8th International Conference of Regional Card Schemes and Retail Financial Market Infrastructures in Tirana, Albania",
-      "url": "https://www.ecb.europa.eu/press/calendars/weekly/html/index.en.html"
-    },
-    {
-      "id": "ecb-2026-11-05-1lb2iwr",
-      "bankCode": "ecb",
-      "at": "2026-11-05T08:00:00.000Z",
-      "timeTbd": false,
-      "kind": "speech",
-      "speaker": "Isabel Schnabel",
-      "title": "Opening remarks by Ms Schnabel at European Central Bank Money Markets Conference 2026 in Frankfurt, Germany",
-      "url": "https://www.ecb.europa.eu/press/conferences/html/20261105-money-markets.en.html"
-    },
-    {
-      "id": "ecb-2026-11-05-1ml9b6n",
-      "bankCode": "ecb",
-      "at": "2026-11-05T08:25:00.000Z",
-      "timeTbd": false,
-      "kind": "speech",
-      "speaker": "Anneli Tuominen",
-      "title": "Keynote speech by Ms Tuominen on \"Rahanpesun estäminen -miten valvonta vastaa tämän päivän haasteisiin\" at AMLR Readiness 2027 event in Helsinki, Finland",
-      "url": "https://www.ecb.europa.eu/press/calendars/weekly/html/index.en.html"
-    },
-    {
-      "id": "ecb-2026-11-05-d4h77m",
-      "bankCode": "ecb",
-      "at": "2026-11-05T15:40:00.000Z",
-      "timeTbd": false,
-      "kind": "discussion",
-      "speaker": "Philip R. Lane",
-      "title": "Participation by Mr. Lane in panel \"Should the SNB and other central banks rethink how they interact with the public and the government?\" at 2026 SNB and Its Watchers Conference in Zurich, Switzerland",
-      "url": "https://www.ecb.europa.eu/press/calendars/weekly/html/index.en.html"
-    },
-    {
-      "id": "ecb-2026-11-05-kxzmlq",
-      "bankCode": "ecb",
-      "at": "2026-11-05T16:00:00.000Z",
-      "timeTbd": false,
-      "kind": "discussion",
-      "speaker": "Christine Lagarde",
-      "role": "President",
-      "title": "Participation by Ms Lagarde in \"New Dialogues for the Future\" organised by Osservatorio for independent thinking in Milan, Italy.",
-      "url": "https://www.ecb.europa.eu/press/calendars/weekly/html/index.en.html"
-    },
     {
       "id": "ecb-2026-11-06-igmlmv",
       "bankCode": "ecb",
@@ -94,6 +33,28 @@
       "url": "https://www.federalreserve.gov/newsevents/calendar.htm"
     },
     {
+      "id": "fed-2026-11-09-1asem21",
+      "bankCode": "fed",
+      "at": "2026-11-09T13:40:00.000Z",
+      "timeTbd": false,
+      "kind": "discussion",
+      "speaker": "Michelle W. Bowman",
+      "role": "Vice Chair for Supervision",
+      "title": "At the Mutual Board Summit Conference, Boston, Mass.",
+      "url": "https://www.federalreserve.gov/newsevents/calendar.htm"
+    },
+    {
+      "id": "fed-2026-11-10-3xjxf5",
+      "bankCode": "fed",
+      "at": "2026-11-10T09:00:00.000Z",
+      "timeTbd": false,
+      "kind": "speech",
+      "speaker": "Christopher J. Waller",
+      "role": "Governor",
+      "title": "At The Bank of England and its Watchers Conference 2026, London, United Kingdom",
+      "url": "https://www.federalreserve.gov/newsevents/calendar.htm"
+    },
+    {
       "id": "fed-cpi-2026-11-10",
       "bankCode": "fed",
       "at": "2026-11-10T13:30:00.000Z",
@@ -103,6 +64,69 @@
       "url": "https://www.bls.gov/schedule/news_release/cpi.htm"
     },
     {
+      "id": "ecb-2026-11-10-1il9bw4",
+      "bankCode": "ecb",
+      "at": "2026-11-10T14:00:00.000Z",
+      "timeTbd": false,
+      "kind": "testimony",
+      "speaker": "Piero Cipollone",
+      "title": "Introductory statement by Mr Cipollone at Hearing on the digital euro before the Committee on Economic and Monetary Affairs (ECON) of the European Parliament in Brussels, Belgium",
+      "url": "https://www.ecb.europa.eu/press/calendars/weekly/html/index.en.html"
+    },
+    {
+      "id": "ecb-2026-11-10-19b87ec",
+      "bankCode": "ecb",
+      "at": "2026-11-10T16:45:00.000Z",
+      "timeTbd": false,
+      "kind": "speech",
+      "speaker": "Philip R. Lane",
+      "title": "Keynote speech by Mr Lane at The Bank of England and Its Watchers Conference in London, United Kingdom",
+      "url": "https://www.kcl.ac.uk/events/the-bank-of-england-and-its-watchers"
+    },
+    {
+      "id": "fed-2026-11-10-k30rtv",
+      "bankCode": "fed",
+      "at": "2026-11-10T20:30:00.000Z",
+      "timeTbd": false,
+      "kind": "speech",
+      "speaker": "Michelle W. Bowman",
+      "role": "Vice Chair for Supervision",
+      "title": "At the C. Peter McColough Series on International Economics with Michelle Bowman, Washington, D.C.",
+      "url": "https://www.federalreserve.gov/newsevents/calendar.htm"
+    },
+    {
+      "id": "fed-2026-11-10-k30rtv",
+      "bankCode": "fed",
+      "at": "2026-11-10T23:30:00.000Z",
+      "timeTbd": false,
+      "kind": "speech",
+      "speaker": "Michelle W. Bowman",
+      "role": "Vice Chair for Supervision",
+      "title": "At A View from the Federal Reserve Board (virtual)",
+      "url": "https://www.federalreserve.gov/newsevents/calendar.htm"
+    },
+    {
+      "id": "ecb-2026-11-11-yx1ouo",
+      "bankCode": "ecb",
+      "at": "2026-11-11T07:50:00.000Z",
+      "timeTbd": false,
+      "kind": "testimony",
+      "speaker": "Piero Cipollone",
+      "title": "Virtual participation by Mr Cipollone in a digital euro roundtable as part of a policy breakfast organised by the Institute for Competitiveness at the European Parliament",
+      "url": "https://www.ecb.europa.eu/press/calendars/weekly/html/index.en.html"
+    },
+    {
+      "id": "ecb-2026-11-11-esvju",
+      "bankCode": "ecb",
+      "at": "2026-11-11T09:45:00.000Z",
+      "timeTbd": false,
+      "kind": "discussion",
+      "speaker": "Christine Lagarde",
+      "role": "President",
+      "title": "Participation by Ms Lagarde in panel at 9th Paris Peace Forum in Paris, France",
+      "url": "https://www.ecb.europa.eu/press/calendars/weekly/html/index.en.html"
+    },
+    {
       "id": "tcmb-2026-11-12-inflation-report",
       "bankCode": "tcmb",
       "at": "2026-11-11T21:00:00.000Z",
@@ -110,6 +134,80 @@
       "kind": "inflation-report",
       "title": "Enflasyon Raporu",
       "url": "https://www.tcmb.gov.tr/wps/wcm/connect/TR/TCMB+TR/Main+Menu/Duyurular/Takvim"
+    },
+    {
+      "id": "fed-2026-11-12-w6um9e",
+      "bankCode": "fed",
+      "at": "2026-11-12T15:00:00.000Z",
+      "timeTbd": false,
+      "kind": "speech",
+      "speaker": "Michael S. Barr",
+      "role": "Governor",
+      "title": "At A Conversation with Michael S. Barr (virtual)",
+      "url": "https://www.federalreserve.gov/newsevents/calendar.htm"
+    },
+    {
+      "id": "ecb-2026-11-12-5qg9l7",
+      "bankCode": "ecb",
+      "at": "2026-11-12T15:30:00.000Z",
+      "timeTbd": false,
+      "kind": "testimony",
+      "speaker": "Boris Vujčić",
+      "title": "Participation by Mr Vujčić in panel at launch event on IMF Regional Economic Outlook for Europe \"Choosing Growth\" organised by IMF and ECB in Brussels, Belgium",
+      "url": "https://www.ecb.europa.eu/press/calendars/weekly/html/index.en.html"
+    },
+    {
+      "id": "ecb-2026-11-12-hwyei4",
+      "bankCode": "ecb",
+      "at": "2026-11-12T19:30:00.000Z",
+      "timeTbd": false,
+      "kind": "discussion",
+      "speaker": "Christine Lagarde",
+      "role": "President",
+      "title": "On-stage conversation between Ms Lagarde and Timothy Geithner at 50th anniversary gala of the French-American Foundation in Paris, France",
+      "url": "https://www.ecb.europa.eu/press/calendars/weekly/html/index.en.html"
+    },
+    {
+      "id": "ecb-2026-11-13-445uzf",
+      "bankCode": "ecb",
+      "at": "2026-11-13T06:50:00.000Z",
+      "timeTbd": false,
+      "kind": "discussion",
+      "speaker": "Frank Elderson",
+      "title": "Participation by Mr Elderson in panel discussion at Central Bank of Türkiye Conference during COP31 in Antalya, Turkey",
+      "url": "https://www.ecb.europa.eu/press/calendars/weekly/html/index.en.html"
+    },
+    {
+      "id": "ecb-2026-11-13-1eye15x",
+      "bankCode": "ecb",
+      "at": "2026-11-13T07:10:00.000Z",
+      "timeTbd": false,
+      "kind": "testimony",
+      "speaker": "Isabel Schnabel",
+      "title": "Keynote speech and participation in a panel discussion by Ms Schnabel at Lietuvos bankas Annual Economics Conference in Vilnius, Lithuania",
+      "url": "https://www.lb.lt/en/forms/registration-to-the-economics-conference"
+    },
+    {
+      "id": "fed-2026-11-13-1asem21",
+      "bankCode": "fed",
+      "at": "2026-11-13T15:50:00.000Z",
+      "timeTbd": false,
+      "kind": "discussion",
+      "speaker": "Michelle W. Bowman",
+      "role": "Vice Chair for Supervision",
+      "title": "At the Connecticut Bankers Association Annual Meeting and Conference 2026 (virtual)",
+      "url": "https://www.federalreserve.gov/newsevents/calendar.htm"
+    },
+    {
+      "id": "fed-2026-11-13-o12rtf",
+      "bankCode": "fed",
+      "at": "2026-11-14T00:00:00.000Z",
+      "timeTbd": false,
+      "kind": "speech",
+      "speaker": "Philip N. Jefferson",
+      "role": "Vice Chair",
+      "title": "At the University of California San Diego Economics Roundtable, La Jolla, Calif.",
+      "url": "https://www.federalreserve.gov/newsevents/calendar.htm"
     },
     {
       "id": "boe-cpi-2026-11-18",
