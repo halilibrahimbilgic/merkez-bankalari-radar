@@ -30,6 +30,11 @@ import { formatMeeting, trtDayKey } from "../src/lib/time";
 import type { BankCode, Meeting } from "../src/lib/types";
 import { loadNewsStore } from "./news-store";
 
+// Kanaldan gelen okur Vercel'de görünsün: Telegram'ın uygulama içi tarayıcısı
+// kaynak (referrer) göndermiyor, ziyaret "doğrudan" sayılıyordu. Kanonik
+// adres etiketsiz olduğu için arama motoru için ayrı sayfa doğmaz.
+const siteLink = (path: string) => `${SITE_URL}${path}?utm_source=telegram`;
+
 config({ path: ".env.local", quiet: true });
 
 const MEETINGS = path.join(process.cwd(), "data", "seed", "meetings.json");
@@ -127,7 +132,7 @@ function newsPosts(store: NewsStore, state: State, now: Date): Post[] {
         `<b>${esc(i.titleTr)}</b>`,
         esc(i.summaryTr),
         "",
-        `${esc(i.sourceName)} · <a href="${esc(i.url)}">kaynak</a> · <a href="${SITE_URL}/haberler">Faiz Radar</a>`,
+        `${esc(i.sourceName)} · <a href="${esc(i.url)}">kaynak</a> · <a href="${siteLink("/haberler")}">Faiz Radar</a>`,
       ].join("\n"),
     }));
 }
@@ -141,7 +146,7 @@ function duePosts(meetings: Meeting[], rates: CurrentRate[], state: State, now: 
     if (m.status === "cancelled") continue;
     const at = Date.parse(m.meetingAt);
     const bank = BANKS[m.bankCode];
-    const link = `${SITE_URL}/banka/${m.bankCode}`;
+    const link = siteLink(`/banka/${m.bankCode}`);
     const day = trtDayKey(m.meetingAt);
 
     // Bir gün önce; o gün kaçtıysa (cron çalışmadıysa) karar henüz
@@ -190,7 +195,7 @@ function welcomePost(meetings: Meeting[], now: Date): Post {
     .filter((m) => m.status !== "cancelled" && Date.parse(m.meetingAt) > now.getTime())
     .sort((a, b) => a.meetingAt.localeCompare(b.meetingAt))
     .slice(0, 5);
-  const link = `${SITE_URL}/takvim`;
+  const link = siteLink("/takvim");
   const lines = [
     "<b>Faiz Radar</b>",
     "Fed, ECB, TCMB, BoE, BoJ ve RBA faiz kararları, Türkiye saatiyle. " +

@@ -276,6 +276,15 @@ BoJ kararları o saatten önce açıklanır. Metin RSS ile ortaktır
 (`src/lib/announce.ts`). Token secret'ta (`TELEGRAM_BOT_TOKEN`), kanal
 repo değişkeninde (`TELEGRAM_CHAT_ID`); biri yoksa adım atlanır.
 
+**Ölçüm: sahibin ziyareti sayılmaz, kanal etiketlenir.** Vercel Web
+Analytics'te bir tarayıcı `?olcum=kapat` ile bir kez açılınca o tarayıcının
+ziyaretleri gönderilmez (`?olcum=ac` geri alır; `SiteAnalytics.tsx`). Telegram
+mesajlarındaki site bağlantıları `?utm_source=telegram` taşır: uygulama içi
+tarayıcı kaynak göndermediği için kanal trafiği "doğrudan" görünüyordu.
+Search Console'da ABD gösterimlerinin çoğu otomatik sorgulardan
+(`-site:` operatörlü, yapay zekâ ajanları) gelir, tıklanmaz (Kasım 2026);
+tıklanma oranı Türkiye satırından okunmalı.
+
 **Site iki dillidir; Türkçe adresler değişmez.** Türkçe kökte (`app/(tr)/`),
 İngilizce `/en` altında (`app/en/`); yol adları iki dilde aynı (`/en/takvim`),
 dil değiştirici yalnızca öneki ekler/kaldırır. İki ayrı kök düzen var çünkü

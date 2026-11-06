@@ -1,7 +1,7 @@
 import type { Metadata } from "next";
 import Link from "next/link";
 import { Geist, Geist_Mono } from "next/font/google";
-import { Analytics } from "@vercel/analytics/next";
+import { SiteAnalytics } from "@/components/SiteAnalytics";
 import { DataFreshness } from "@/components/DataFreshness";
 import { LangSwitch } from "@/components/LangSwitch";
 import { MobileMenu } from "@/components/MobileMenu";
@@ -196,7 +196,7 @@ export function SiteShell({ lang, children }: { lang: Lang; children: React.Reac
             </nav>
           </div>
         </footer>
-        <Analytics />
+        <SiteAnalytics />
       </body>
     </html>
   );

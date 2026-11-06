@@ -45,6 +45,15 @@ import {
 import { isPendingDecision, pendingNote } from "@/lib/decision-format";
 import { getBankExpectations } from "./bank-expectations";
 
+/** Başlıkta kısaltmanın yanına: insanların aradığı ülke adı. */
+const SEARCH_COUNTRY_TR: Partial<Record<BankCode, string>> = {
+  fed: "ABD",
+  ecb: "Avrupa",
+  boe: "İngiltere",
+  boj: "Japonya",
+  rba: "Avustralya",
+};
+
 export async function bankMetadata(lang: Lang, code: string): Promise<Metadata> {
   const bank = getBank(code);
   if (!bank) return {};
@@ -59,23 +68,29 @@ export async function bankMetadata(lang: Lang, code: string): Promise<Metadata> 
   const date = next && formatDate(next.meetingAt, lang);
   const time = next && !next.timeTbd ? formatTimeTrt(next.meetingAt) : undefined;
 
+  // Türkçe aramalar kısaltmayla olduğu kadar ülkeyle de yapılıyor ("japonya
+  // faiz kararı ne zaman", Search Console, Kasım 2026): başlıkta ikisi birden.
+  // Kısa tutuldu, Google uzun başlığı kesiyor; TCMB'ye ek gerekmez.
+  const tr = SEARCH_COUNTRY_TR[bank.code] ? `${name} (${SEARCH_COUNTRY_TR[bank.code]})` : name;
+  const year = (next?.meetingAt ?? new Date().toISOString()).slice(0, 4);
+
   return {
     title: !next
-      ? t(`${name} faiz kararları`, `${name} rate decisions`)
+      ? t(`${tr} faiz kararları`, `${name} rate decisions`)
       : time
         ? t(
-            `${name} faiz kararı ne zaman, saat kaçta? ${date}, ${time}`,
+            `${tr} faiz kararı ne zaman, saat kaçta? ${date}, ${time}`,
             `When is the next ${name} rate decision? ${date}, ${time} Turkey time`,
           )
-        : t(`${name} faiz kararı ne zaman? ${date}`, `When is the next ${name} rate decision? ${date}`),
+        : t(`${tr} faiz kararı ne zaman? ${date}`, `When is the next ${name} rate decision? ${date}`),
     // Önce cevap; faiz adı ayraçla — "Fed Fed Funds", "BoJ Kısa vadeli…" gibi
     // ad tekrarı ve cümle ortasında büyük harf olmasın.
     description: [
       next &&
         (time
-          ? t(`Sıradaki karar ${date}, Türkiye saatiyle ${time}.`, `Next decision: ${date}, ${time} Turkey time.`)
+          ? t(`${bank.fullTr} (${name}): sıradaki karar ${date}, Türkiye saatiyle ${time}.`, `Next decision: ${date}, ${time} Turkey time.`)
           : t(
-              `Sıradaki karar ${date}; açıklama saati önceden duyurulmuyor.`,
+              `${bank.fullTr} (${name}): sıradaki karar ${date}; açıklama saati önceden duyurulmuyor.`,
               `Next decision: ${date}; the announcement time is not published in advance.`,
             )),
       rate &&
@@ -84,7 +99,8 @@ export async function bankMetadata(lang: Lang, code: string): Promise<Metadata> 
           `Current rate: ${formatCurrentRate(rate, lang)} · ${bank.rateNameEn} · since ${formatDate(rate.asOf, lang)}.`,
         ),
       t(
-        "Geçmiş kararlar ve Türkiye saatiyle toplantı takvimi.",
+        // Saat zaten ilk cümlede "Türkiye saatiyle" geçiyorsa tekrar etme.
+        time ? `${year} toplantı tarihleri ve geçmiş kararlar.` : `Türkiye saatiyle ${year} toplantı tarihleri ve geçmiş kararlar.`,
         "Past decisions and the meeting calendar in Turkey time.",
       ),
     ]
