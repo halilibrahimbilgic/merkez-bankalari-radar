@@ -1,6 +1,21 @@
 {
-  "fetchedAt": "2026-11-06T13:02:07.296Z",
+  "fetchedAt": "2026-11-06T14:02:39.907Z",
   "items": [
+    {
+      "id": "cd8a2ff7fb1e",
+      "sourceKey": "guardian-business",
+      "sourceName": "The Guardian",
+      "kind": "media",
+      "url": "https://www.theguardian.com/business/2026/nov/06/us-job-growth-october",
+      "publishedAt": "2026-11-06T13:42:26.000Z",
+      "titleOriginal": "US job growth exceeds expectations in October despite economic uncertainty",
+      "titleTr": "ABD'de ekimde 165 bin yeni istihdam, işsizlik %4,1'e geriledi",
+      "summaryTr": "BLS verilerine göre ABD ekonomisi ekimde 165 bin kişilik istihdam ekledi ve beklentileri aştı; işsizlik oranı hafifçe düşerek %4,1 oldu. Haberde, Aralık'ta bir faiz artırımı beklendiği belirtiliyor.",
+      "titleEn": "US adds 165,000 jobs in October, unemployment dips to 4.1%",
+      "summaryEn": "According to BLS data, the US economy added 165,000 jobs in October, beating expectations, while unemployment edged down to 4.1%. The report notes that an interest rate hike is expected in December.",
+      "important": true,
+      "processedAt": "2026-11-06T14:02:39.907Z"
+    },
     {
       "id": "1073ab610b3e",
       "sourceKey": "aa-ekonomi",
@@ -4243,6 +4258,7 @@
     "a7e53808a381": "2026-11-06",
     "d397be2b8c4b": "2026-11-06",
     "f46624d8424a": "2026-11-06",
-    "39e0e36852d8": "2026-11-06"
+    "39e0e36852d8": "2026-11-06",
+    "31d52a0e90f0": "2026-11-06"
   }
 }
