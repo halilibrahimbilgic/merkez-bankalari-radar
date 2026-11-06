@@ -1,6 +1,21 @@
 {
-  "fetchedAt": "2026-11-06T16:02:36.282Z",
+  "fetchedAt": "2026-11-06T17:02:38.418Z",
   "items": [
+    {
+      "id": "e834ee65f0a0",
+      "sourceKey": "aa-ekonomi",
+      "sourceName": "Anadolu Ajansı",
+      "kind": "media",
+      "url": "https://www.aa.com.tr/tr/ekonomi/tcmb-baskani-karahan-fon-piyasasindaki-gelismelerin-bankacilik-sistemi-ve-diger-piyasalarla-etkilesimini-takip-ediyoruz/4114582",
+      "publishedAt": "2026-11-06T16:12:58.000Z",
+      "titleOriginal": "TCMB Başkanı Karahan: Fon piyasasındaki gelişmelerin bankacılık sistemi ve diğer piyasalarla etkileşimini takip ediyoruz",
+      "titleTr": "Karahan: Fon piyasasındaki gelişmeleri takip ediyoruz, gerekirse ek tedbir alırız",
+      "summaryTr": "TCMB Başkanı Karahan, fon piyasasındaki gelişmelerin bankacılık sistemi ve diğer finansal piyasalarla etkileşimini yakından izlediklerini söyledi. Karahan, gerek görülürse her türlü ek tedbirin proaktif biçimde alınacağını belirtti.",
+      "titleEn": "Karahan: Monitoring funding market developments, ready to take extra measures if needed",
+      "summaryEn": "Central Bank of Turkey Governor Karahan said the bank is closely watching how funding market developments interact with the banking system and other financial markets. He added that any additional measures deemed necessary will be taken proactively.",
+      "important": true,
+      "processedAt": "2026-11-06T17:02:38.418Z"
+    },
     {
       "id": "11d99274545c",
       "sourceKey": "boj",
