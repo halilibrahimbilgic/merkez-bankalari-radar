@@ -1,5 +1,5 @@
 {
-  "fetchedAt": "2026-11-06T14:02:39.907Z",
+  "fetchedAt": "2026-11-06T15:02:29.451Z",
   "items": [
     {
       "id": "cd8a2ff7fb1e",
@@ -15,6 +15,22 @@
       "summaryEn": "According to BLS data, the US economy added 165,000 jobs in October, beating expectations, while unemployment edged down to 4.1%. The report notes that an interest rate hike is expected in December.",
       "important": true,
       "processedAt": "2026-11-06T14:02:39.907Z"
+    },
+    {
+      "id": "86f2367797a8",
+      "sourceKey": "tcmb-baskan",
+      "sourceName": "TCMB",
+      "kind": "official",
+      "bankCode": "tcmb",
+      "url": "https://www.tcmb.gov.tr/wps/wcm/connect/2cb46c58-c810-40ef-822d-1a79eddc5a4f/SunumB06_11_2026.pdf?MOD=AJPERES",
+      "publishedAt": "2026-11-06T12:30:00.000Z",
+      "titleOriginal": "Başkan Fatih Karahan'ın \"Enflasyon ve Para Politikası\" Başlıklı Sunumu (Ankara)",
+      "titleTr": "Karahan'ın \"Enflasyon ve Para Politikası\" sunumu yayımlandı",
+      "summaryTr": "TCMB Başkanı Fatih Karahan, Ankara'da \"Enflasyon ve Para Politikası\" başlıklı bir sunum yaptı. Sunumun içeriği verilen bilgide yer almıyor.",
+      "titleEn": "Governor Karahan's \"Inflation and Monetary Policy\" presentation published",
+      "summaryEn": "Central Bank of Turkey Governor Fatih Karahan gave a presentation titled \"Inflation and Monetary Policy\" in Ankara. The details of the presentation were not included in the provided information.",
+      "important": true,
+      "processedAt": "2026-11-06T15:02:29.451Z"
     },
     {
       "id": "1073ab610b3e",
