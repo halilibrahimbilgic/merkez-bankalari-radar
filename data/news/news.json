@@ -1,6 +1,21 @@
 {
-  "fetchedAt": "2026-11-06T19:02:39.717Z",
+  "fetchedAt": "2026-11-06T20:02:21.511Z",
   "items": [
+    {
+      "id": "04646dbc7d3f",
+      "sourceKey": "aa-economy",
+      "sourceName": "Anadolu Agency",
+      "kind": "media",
+      "url": "https://www.aa.com.tr/en/asia-pacific/moderate-inflation-revives-japans-corporate-risk-appetite-boj-governor-says/4114719",
+      "publishedAt": "2026-11-06T19:47:30.000Z",
+      "titleOriginal": "Moderate inflation revives Japan's corporate risk appetite, BoJ governor says",
+      "titleTr": "BoJ Başkanı Ueda: Ilımlı enflasyon şirketlerin risk iştahını canlandırdı",
+      "summaryTr": "BoJ Başkanı Ueda, sabit sermaye yatırımlarının 1990'ların başındaki zirveyi aştığını ve banka kredilerinin yüzde 5'in üzerinde büyüdüğünü söyledi.",
+      "titleEn": "BoJ's Ueda: Moderate inflation revives corporate risk appetite",
+      "summaryEn": "BoJ Governor Ueda said business fixed investment has surpassed its early-1990s peak and that bank lending is expanding by more than 5%.",
+      "important": true,
+      "processedAt": "2026-11-06T20:02:21.511Z"
+    },
     {
       "id": "81dfed6e1dc0",
       "sourceKey": "ft",
@@ -4338,6 +4353,7 @@
     "39e0e36852d8": "2026-11-06",
     "31d52a0e90f0": "2026-11-06",
     "2b0ca05ac5cf": "2026-11-06",
-    "7e7bd6685d0b": "2026-11-06"
+    "7e7bd6685d0b": "2026-11-06",
+    "a0df9dc927f5": "2026-11-06"
   }
 }
