@@ -285,6 +285,15 @@ Search Console'da ABD gösterimlerinin çoğu otomatik sorgulardan
 (`-site:` operatörlü, yapay zekâ ajanları) gelir, tıklanmaz (Kasım 2026);
 tıklanma oranı Türkiye satırından okunmalı.
 
+**Haftalık paylaşım kartı yalnızca Türkçedir** (`/bu-hafta`, görsel
+`/bu-hafta/gorsel.png`, `src/lib/week-card.ts`). Site sahibinin LinkedIn ve
+Telegram için aracı: menüde yok, `noindex`; `/en/bu-hafta` Türkçeye yönlenir.
+Takvim haftasını (pazartesi–pazar, TRT) anlatır, cumartesiden itibaren
+sıradaki haftayı; `?hafta=YYYY-MM-DD` başka bir haftayı verir. Kararların
+hepsi girer, yayınlardan yalnızca Enflasyon Raporu, tutanaklar ve TÜFE
+(ECB takvimi panelleri de "testimony" diye veriyor); sakin haftada sıradaki
+kararlar eklenir. LinkedIn metnindeki bağlantı `utm_source=linkedin` taşır.
+
 **Site iki dillidir; Türkçe adresler değişmez.** Türkçe kökte (`app/(tr)/`),
 İngilizce `/en` altında (`app/en/`); yol adları iki dilde aynı (`/en/takvim`),
 dil değiştirici yalnızca öneki ekler/kaldırır. İki ayrı kök düzen var çünkü

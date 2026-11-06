@@ -134,3 +134,21 @@ export function isBankCode(code: string): code is BankCode {
 export function bankColorVar(code: BankCode): string {
   return `var(--bank-${code})`;
 }
+
+/**
+ * Türkçe aramada insanların kullandığı ülke adıyla: "BoJ (Japonya)",
+ * "BoE (İngiltere)" — Search Console'da sorgular kısaltmayla olduğu kadar
+ * ülkeyle de yapılıyor (Kasım 2026). TCMB'ye ek gerekmez.
+ */
+const SEARCH_COUNTRY_TR: Partial<Record<BankCode, string>> = {
+  fed: "ABD",
+  ecb: "Avrupa",
+  boe: "İngiltere",
+  boj: "Japonya",
+  rba: "Avustralya",
+};
+
+export function bankWithCountryTr(code: BankCode): string {
+  const country = SEARCH_COUNTRY_TR[code];
+  return country ? `${BANKS[code].nameTr} (${country})` : BANKS[code].nameTr;
+}

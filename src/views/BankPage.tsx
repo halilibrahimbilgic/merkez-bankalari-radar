@@ -19,6 +19,7 @@ import {
   bankFullName,
   bankName,
   bankRateName,
+  bankWithCountryTr,
   getBank,
 } from "@/lib/banks";
 import { getPastMeetings, getUpcomingMeetings } from "@/lib/data/meetings";
@@ -45,15 +46,6 @@ import {
 import { isPendingDecision, pendingNote } from "@/lib/decision-format";
 import { getBankExpectations } from "./bank-expectations";
 
-/** Başlıkta kısaltmanın yanına: insanların aradığı ülke adı. */
-const SEARCH_COUNTRY_TR: Partial<Record<BankCode, string>> = {
-  fed: "ABD",
-  ecb: "Avrupa",
-  boe: "İngiltere",
-  boj: "Japonya",
-  rba: "Avustralya",
-};
-
 export async function bankMetadata(lang: Lang, code: string): Promise<Metadata> {
   const bank = getBank(code);
   if (!bank) return {};
@@ -71,7 +63,7 @@ export async function bankMetadata(lang: Lang, code: string): Promise<Metadata> 
   // Türkçe aramalar kısaltmayla olduğu kadar ülkeyle de yapılıyor ("japonya
   // faiz kararı ne zaman", Search Console, Kasım 2026): başlıkta ikisi birden.
   // Kısa tutuldu, Google uzun başlığı kesiyor; TCMB'ye ek gerekmez.
-  const tr = SEARCH_COUNTRY_TR[bank.code] ? `${name} (${SEARCH_COUNTRY_TR[bank.code]})` : name;
+  const tr = bankWithCountryTr(bank.code);
   const year = (next?.meetingAt ?? new Date().toISOString()).slice(0, 4);
 
   return {

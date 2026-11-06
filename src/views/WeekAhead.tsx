@@ -270,10 +270,36 @@ async function DecisionItem({
 /** Karardan önceki beklentinin tek satırlık özeti — kaynak türünü söyleyerek. */
 function expectationLine(m: Meeting, e: Expectations, currentRate: number | undefined, lang: Lang): React.ReactNode {
   const t = L(lang);
+  if (m.bankCode === "fed") {
+    return (
+      <Link href={`${localePath(lang, "/faiz-olasiligi")}#fed`} className="text-accent hover:underline">
+        {t("Piyasa olasılıkları (üç aylık dönemler) →", "Market probabilities (three-month periods) →")}
+      </Link>
+    );
+  }
+  const text = expectationText(m, e, currentRate, lang);
+  if (text) return text;
+  return m.bankCode === "boj" || m.bankCode === "rba"
+    ? t("Bu banka için yayımlanabilir bir beklenti kaynağı yok.", "No republishable expectation source for this bank.")
+    : t("Bu toplantı için beklenti henüz yok.", "No expectation for this meeting yet.");
+}
+
+/**
+ * Toplantı bazında beklenti cümlesi (BoE, ECB, TCMB); kaynağı olmayan bankada
+ * ya da beklenti henüz yoksa undefined. Haftalık paylaşım kartı da kullanır.
+ * Fed'in olasılıkları üç aylık dönem bazında, tek toplantıya yazılamaz.
+ */
+export function expectationText(
+  m: Meeting,
+  e: Expectations,
+  currentRate: number | undefined,
+  lang: Lang,
+): string | undefined {
+  const t = L(lang);
   switch (m.bankCode) {
     case "boe": {
       const x = e.boe?.meetings.find((y) => y.meetingId === m.id);
-      if (!x) break;
+      if (!x) return undefined;
       const o = moveOdds(x.changeBp);
       return o.direction === "hold"
         ? t("Piyasa fiyatlaması: değişiklik beklenmiyor.", "Market pricing: no change expected.")
@@ -284,7 +310,7 @@ function expectationLine(m: Meeting, e: Expectations, currentRate: number | unde
     }
     case "ecb": {
       const x = e.ecb?.meetings.find((y) => y.meetingId === m.id);
-      if (!x) break;
+      if (!x) return undefined;
       if (x.odds) {
         const [label, pct] = (
           [
@@ -302,26 +328,19 @@ function expectationLine(m: Meeting, e: Expectations, currentRate: number | unde
     }
     case "tcmb": {
       const x = e.tcmb?.meetings.find((y) => y.meetingId === m.id);
-      if (!x) break;
+      if (!x) return undefined;
       const diff = currentRate === undefined ? undefined : Math.round((x.expectedRate - currentRate) * 100);
       return t(
         `Ekonomist anketi ortalaması ${fmtPercent(x.expectedRate, lang)}${diff === undefined ? "" : ` (bugüne göre ${fmtBp(diff)})`}.`,
         `Economist survey average ${fmtPercent(x.expectedRate, lang)}${diff === undefined ? "" : ` (${fmtBp(diff)} vs today)`}.`,
       );
     }
-    case "fed":
-      return (
-        <Link href={`${localePath(lang, "/faiz-olasiligi")}#fed`} className="text-accent hover:underline">
-          {t("Piyasa olasılıkları (üç aylık dönemler) →", "Market probabilities (three-month periods) →")}
-        </Link>
-      );
     default:
-      return t("Bu banka için yayımlanabilir bir beklenti kaynağı yok.", "No republishable expectation source for this bank.");
+      return undefined;
   }
-  return t("Bu toplantı için beklenti henüz yok.", "No expectation for this meeting yet.");
 }
 
-const KIND: Record<EventKind, [string, string]> = {
+export const KIND: Record<EventKind, [string, string]> = {
   speech: ["konuşma", "speech"],
   discussion: ["söyleşi / panel", "discussion / panel"],
   testimony: ["parlamento sunumu", "testimony"],
