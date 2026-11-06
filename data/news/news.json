@@ -1,6 +1,21 @@
 {
-  "fetchedAt": "2026-11-05T21:34:14.481Z",
+  "fetchedAt": "2026-11-06T00:02:13.352Z",
   "items": [
+    {
+      "id": "1073ab610b3e",
+      "sourceKey": "aa-ekonomi",
+      "sourceName": "Anadolu Ajansı",
+      "kind": "media",
+      "url": "https://www.aa.com.tr/tr/ekonomi/hazine-ve-maliye-bakani-simsek-duzenleme-tum-emeklilerimizi-kapsayacak/4113546",
+      "publishedAt": "2026-11-05T23:13:08.000Z",
+      "titleOriginal": "Hazine ve Maliye Bakanı Şimşek: Düzenleme tüm emeklilerimizi kapsayacak",
+      "titleTr": "Şimşek: Emekli artışı düzenlemesi tüm emeklileri kapsayacak",
+      "summaryTr": "Hazine ve Maliye Bakanı Mehmet Şimşek, yapılacak artışın emeklilerin yaşına ve prim ödeme gün sayısına göre farklılaşmasının daha adil olacağını söyledi. Şimşek, artış seyyanen olsa bile bu hususun gözetileceğini belirtti.",
+      "titleEn": "Şimşek: Pension increase will cover all retirees",
+      "summaryEn": "Treasury and Finance Minister Mehmet Şimşek said it would be fairer for the planned increase to vary by retirees' age and number of premium days paid. He added that this will be taken into account even if the raise is applied across the board.",
+      "important": true,
+      "processedAt": "2026-11-06T00:02:13.352Z"
+    },
     {
       "id": "d68e26200525",
       "sourceKey": "marketwatch",
@@ -4161,20 +4176,6 @@
     }
   ],
   "rejected": {
-    "15409bd831f4": "2026-10-29",
-    "49618bf1d7a1": "2026-10-29",
-    "d72430ed6b20": "2026-10-29",
-    "028aac8a6f8f": "2026-10-29",
-    "f40b676e3157": "2026-10-29",
-    "8ecb4b43d0a6": "2026-10-29",
-    "568d09092a68": "2026-10-29",
-    "ddda19aa967b": "2026-10-29",
-    "d1507a814b41": "2026-10-29",
-    "e06aa982c087": "2026-10-29",
-    "7685e919def3": "2026-10-29",
-    "d20e603f16f4": "2026-10-29",
-    "f0e8bae022db": "2026-10-29",
-    "38603f0428c8": "2026-10-29",
     "3b5bafed54d6": "2026-10-30",
     "190ec63ac073": "2026-10-30",
     "468e35470e2d": "2026-10-30",
@@ -4235,6 +4236,7 @@
     "a3993e136341": "2026-11-05",
     "9529eb2cf4e2": "2026-11-05",
     "e5325e52ad5d": "2026-11-05",
-    "d4419674de1c": "2026-11-05"
+    "d4419674de1c": "2026-11-05",
+    "d20d734fd1cd": "2026-11-06"
   }
 }
