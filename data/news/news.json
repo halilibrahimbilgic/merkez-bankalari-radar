@@ -1,6 +1,21 @@
 {
-  "fetchedAt": "2026-11-06T20:02:21.511Z",
+  "fetchedAt": "2026-11-07T02:02:15.126Z",
   "items": [
+    {
+      "id": "2ac7e3f07ebd",
+      "sourceKey": "bbc-business",
+      "sourceName": "BBC News",
+      "kind": "media",
+      "url": "https://www.bbc.co.uk/news/articles/c617kjqjvk12o?at_medium=RSS&at_campaign=rss",
+      "publishedAt": "2026-11-07T01:41:36.000Z",
+      "titleOriginal": "'My mortgage is going up £200': How rising interest rates are hitting people's pockets",
+      "titleTr": "BBC: Faiz artışı beklentisi Birleşik Krallık'ta kredi maliyetlerini yükseltiyor",
+      "summaryTr": "BBC'ye göre Birleşik Krallık'ta faizlerin yükselmesi bekleniyor. Bu durumda konut kredileri, kredi kartları ve kişisel kredilerin milyonlarca kişi için daha pahalı hale gelebileceği belirtiliyor.",
+      "titleEn": "BBC: Expected UK rate rise set to raise borrowing costs",
+      "summaryEn": "The BBC reports that UK interest rates are set to rise. Mortgages, credit cards and loans could become more expensive for millions of people.",
+      "important": false,
+      "processedAt": "2026-11-07T02:02:15.126Z"
+    },
     {
       "id": "04646dbc7d3f",
       "sourceKey": "aa-economy",
@@ -4283,17 +4298,6 @@
     }
   ],
   "rejected": {
-    "3b5bafed54d6": "2026-10-30",
-    "190ec63ac073": "2026-10-30",
-    "468e35470e2d": "2026-10-30",
-    "498235a1fbe2": "2026-10-30",
-    "41ce1d701aa6": "2026-10-30",
-    "7d706012c331": "2026-10-30",
-    "303c4ffbd22c": "2026-10-30",
-    "60c8ab0a4a7e": "2026-10-30",
-    "2d97c95b5dac": "2026-10-30",
-    "8e3acff626e8": "2026-10-30",
-    "4b5367877a60": "2026-10-30",
     "19f551bd77dd": "2026-10-31",
     "a87237e8df9a": "2026-10-31",
     "fe08c5bdc8cf": "2026-10-31",
