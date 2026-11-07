@@ -238,7 +238,9 @@ async function DecisionItem({
     <li className="rounded-lg bg-surface-sunken p-3">
       <div className="flex flex-wrap items-center gap-x-2 gap-y-1">
         <BankTag code={meeting.bankCode} lang={lang} />
-        <span className="font-medium">{t("faiz kararı", "rate decision")}</span>
+        <Link href={localePath(lang, `/karar/${meeting.id}`)} className="font-medium hover:text-accent">
+          {t("faiz kararı", "rate decision")}
+        </Link>
         <span className="tabular text-sm text-muted">
           {meeting.timeTbd ? t("saat açıklanmadı", "time not announced") : `${formatTimeTrt(meeting.meetingAt)} TRT`}
         </span>

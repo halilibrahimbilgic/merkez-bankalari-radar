@@ -6,7 +6,7 @@ import {
   type HistorySource,
   type SurpriseLabel,
 } from "../expectation-history";
-import { DECISIONS_FROM } from "../decision-format";
+import { DECISIONS_FROM, hasUpcomingPage } from "../decision-format";
 import { moveOdds } from "../implied-path";
 import type { StatementRecord } from "../statements";
 import type { BankCode, Meeting } from "../types";
@@ -134,6 +134,34 @@ export async function getDecisionView(id: string): Promise<DecisionView | undefi
 
 export async function getDecisionIds(): Promise<string[]> {
   return (await getDecisionViews()).map((v) => v.meeting.id);
+}
+
+export interface UpcomingDecision {
+  meeting: Meeting;
+  /** Bankanın bu toplantıdan önceki son sonuçlanmış kararı. */
+  previous?: DecisionView;
+  /** Bankanın sonucu gelmemiş ilk toplantısı mı (beklenti kaynakları ona göre). */
+  isNext: boolean;
+}
+
+/** Yaklaşan karar sayfasının verisi (hasUpcomingPage); sonuçlanmış kararda undefined. */
+export async function getUpcomingDecision(id: string, now = new Date()): Promise<UpcomingDecision | undefined> {
+  const meetings = (await getAllMeetings()).filter((m) => m.bankCode === id.split("-")[0] && isDecision(m));
+  const meeting = meetings.find((m) => m.id === id);
+  if (!meeting || !hasUpcomingPage(meeting, now)) return undefined;
+  const views = await getDecisionViews({ bankCode: meeting.bankCode, now });
+  const first = meetings
+    .filter((m) => hasUpcomingPage(m, now))
+    .sort((a, b) => a.meetingAt.localeCompare(b.meetingAt))[0];
+  return {
+    meeting,
+    previous: views.find((v) => v.meeting.meetingAt < meeting.meetingAt),
+    isNext: first?.id === meeting.id,
+  };
+}
+
+export async function getUpcomingDecisionIds(now = new Date()): Promise<string[]> {
+  return (await getAllMeetings()).filter((m) => hasUpcomingPage(m, now)).map((m) => m.id);
 }
 
 /** Piyasa fiyatlamasından 25 bp adım varsayımıyla yön olasılıkları (BoE). */

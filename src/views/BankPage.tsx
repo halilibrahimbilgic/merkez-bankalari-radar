@@ -245,6 +245,12 @@ export async function BankPage({ lang, code }: { lang: Lang; code: string }) {
             {formatMeeting(next.meetingAt, next.timeTbd, lang)}
           </div>
           {!pending && <AddToCalendar meeting={next} lang={lang} className="mt-1" />}
+          <Link
+            href={p(`/karar/${next.id}`)}
+            className="mt-1 inline-flex min-h-9 items-center text-sm text-accent hover:underline"
+          >
+            {t("Bu toplantının sayfası →", "This meeting's page →")}
+          </Link>
           {/* "Ne bekleniyor?" banka sayfasının asıl sorusu; önceden yalnızca ana sayfada vardı.
               Bekleyen kararda beklenti bir sonraki toplantıya ait olurdu: yerine not. */}
           {pending ? (

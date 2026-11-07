@@ -48,6 +48,32 @@ export function hasDecisionPage(m: Meeting, now: Date): boolean {
   return m.meetingAt >= DECISIONS_FROM && m.decisionRate !== undefined && new Date(m.meetingAt) <= now;
 }
 
+/**
+ * Yaklaşan karar sayfası: önümüzdeki dört ay içindeki, sonucu henüz gelmemiş
+ * karar (bekleyen dahil). İnsanlar "tcmb aralık faiz kararı" diye önceden
+ * arıyor; sayfa karar gününden haftalar önce dizinde olmalı. Dört ay her
+ * bankanın sıradaki iki toplantısını kapsar; daha uzağı içeriksiz kalırdı.
+ * Sonuç gelince aynı adres karar sayfasına döner.
+ */
+export const UPCOMING_PAGE_DAYS = 120;
+
+export function hasUpcomingPage(m: Meeting, now: Date): boolean {
+  const at = Date.parse(m.meetingAt);
+  return (
+    m.status !== "cancelled" &&
+    (m.type === "rate_decision" || m.type === "projections") &&
+    m.meetingAt >= DECISIONS_FROM &&
+    m.decisionRate === undefined &&
+    at <= now.getTime() + UPCOMING_PAGE_DAYS * 86_400_000 &&
+    (at > now.getTime() || isPendingDecision(m, now))
+  );
+}
+
+/** Kararın sayfası (sonuçlanmış ya da yaklaşan) varsa yolu. */
+export function decisionPath(m: Meeting, now: Date): string | undefined {
+  return hasDecisionPage(m, now) || hasUpcomingPage(m, now) ? `/karar/${m.id}` : undefined;
+}
+
 /** Fed aralıkları 25 bp genişliğinde: üst sınır → "%3,50–3,75". */
 export function fedRange(upper: number, lang: Lang): string {
   return fmtPercentRange(upper - 0.25, upper, lang);

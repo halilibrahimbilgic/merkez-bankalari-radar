@@ -1,6 +1,6 @@
 import Link from "next/link";
 import { BANKS, bankColorVar, bankName } from "@/lib/banks";
-import { formatDecisionRate, hasDecisionPage, isPendingDecision, pendingNote } from "@/lib/decision-format";
+import { formatDecisionRate, hasDecisionPage, hasUpcomingPage, isPendingDecision, pendingNote } from "@/lib/decision-format";
 import { L, localePath, type Lang } from "@/lib/i18n";
 import type { Meeting } from "@/lib/types";
 import {
@@ -31,7 +31,14 @@ export function MeetingRow({ meeting, now, lang }: { meeting: Meeting; now: Date
 
       <div className="min-w-56 flex-1">
         <div className="tabular">
-          {formatDate(meeting.meetingAt, lang)}
+          {/* Yaklaşan kararın sayfası: beklenti ve önceki karar (UpcomingDecisionPage). */}
+          {hasUpcomingPage(meeting, now) ? (
+            <Link href={localePath(lang, `/karar/${meeting.id}`)} className="text-accent hover:underline">
+              {formatDate(meeting.meetingAt, lang)}
+            </Link>
+          ) : (
+            formatDate(meeting.meetingAt, lang)
+          )}
           <span className="text-muted"> · {formatWeekday(meeting.meetingAt, lang)}</span>
         </div>
         <div className="text-sm text-muted tabular">

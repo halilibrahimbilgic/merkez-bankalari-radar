@@ -4,13 +4,13 @@ import { BANKS, bankCountry, bankFullName, bankName, bankRateName, getBank } fro
 import { getUpcomingMeetings } from "@/lib/data/meetings";
 import { formatCurrentRate, getCurrentRate } from "@/lib/data/rates";
 import { getBankScoreSummaries, getSpeech } from "@/lib/data/speeches";
-import { getDecisionView } from "@/lib/data/decisions";
+import { getDecisionView, getUpcomingDecision } from "@/lib/data/decisions";
 import { decisionSentence, formatExpectedRate } from "@/lib/decision-format";
 import { surpriseText } from "@/components/SurpriseBadge";
 import { L, type Lang } from "@/lib/i18n";
 import { BANK_HEX, renderOgCard, scoreHex, type OgRow } from "@/lib/og";
 import { speechTitle } from "@/lib/speech-i18n";
-import { formatDate, formatTimeTrt } from "@/lib/time";
+import { formatDate, formatTimeTrt, monthLabel } from "@/lib/time";
 
 /**
  * Paylaşım görselleri — iki dilin opengraph-image.tsx dosyaları bunları
@@ -107,7 +107,7 @@ export async function speechOgImage(lang: Lang, id: string) {
 
 export async function decisionOgImage(lang: Lang, id: string) {
   const view = await getDecisionView(id);
-  if (!view) notFound();
+  if (!view) return upcomingDecisionOgImage(lang, id);
   const t = L(lang);
   const m = view.meeting;
   const e = view.expectation;
@@ -142,5 +142,32 @@ export async function decisionOgImage(lang: Lang, id: string) {
     title: decisionSentence(m, lang),
     rows,
     footer: t("Beklenti ve sonuç · faizradar.com", "Expectation vs outcome · faizradar.com"),
+  });
+}
+
+/** Sonucu gelmemiş karar: ne zaman ve şu anki faiz. */
+async function upcomingDecisionOgImage(lang: Lang, id: string) {
+  const u = await getUpcomingDecision(id);
+  if (!u) notFound();
+  const t = L(lang);
+  const m = u.meeting;
+  const bank = BANKS[m.bankCode];
+  const rate = await getCurrentRate(m.bankCode);
+  const rows: OgRow[] = [
+    {
+      label: t("Karar", "Decision"),
+      value: m.timeTbd ? formatDate(m.meetingAt, lang) : `${formatDate(m.meetingAt, lang)} · ${formatTimeTrt(m.meetingAt)} TRT`,
+    },
+  ];
+  if (rate) rows.push({ label: bankRateName(bank, lang), value: formatCurrentRate(rate, lang) });
+  return renderOgCard({
+    eyebrow: `${bankFullName(bank, lang)} · ${t("yaklaşan karar", "upcoming decision")}`,
+    eyebrowColor: BANK_HEX[m.bankCode],
+    title: t(
+      `${bankName(bank, lang)} ${monthLabel(m.meetingAt, lang)} faiz kararı`,
+      `${bankName(bank, lang)} ${monthLabel(m.meetingAt, lang)} rate decision`,
+    ),
+    rows,
+    footer: t("faizradar.com · Türkiye saatiyle", "faizradar.com · Turkey time"),
   });
 }

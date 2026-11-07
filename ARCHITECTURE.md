@@ -431,6 +431,16 @@ Konsensüs beklentisi lisanslı veri; gösterilmez. TCMB'nin PPK toplantı
 sütunlarından okunur; takvim saat vermediği için gün düzeyindedir
 (`timeTbd`, saat yerine "—").
 
+**Yaklaşan kararın da sayfası vardır, adresi sonuçla aynıdır**
+(`/karar/<id>`, `UpcomingDecisionPage`, `hasUpcomingPage`). İnsanlar karardan
+haftalar önce ay adıyla arıyor ("tcmb aralık faiz kararı"); haber siteleri
+her toplantıya ayrı haber yazıyor, bizde yalnızca genel banka sayfası vardı.
+Önümüzdeki 120 gün içindeki, sonucu gelmemiş kararlar (bekleyen dahil)
+sayfa alır: tarih ve saat, şu anki faiz, beklenti, önceki karar ve metninin
+tonu. Sonuç gelince aynı adres karar sayfasına döner; dizindeki yeri ve
+gelen bağlantılar korunur. Takvim satırı, banka sayfası ve "Bu hafta" bu
+sayfalara bağlanır; site haritasında günlük.
+
 **Faiz döngüsü seviye değil değişim gösterir** (`src/lib/rate-cycle.ts`,
 `/kararlar` başı). TCMB'nin %37'si seviye grafiğinde diğer beş bankayı düz
 çizgiye çevirirdi. Pencere son 12 ay (ay başından) ama arşivin başından

@@ -1,7 +1,7 @@
 import type { MetadataRoute } from "next";
 import { ALL_BANKS } from "@/lib/banks";
 import { getSpeakers, getSpeeches } from "@/lib/data/speeches";
-import { getDecisionViews } from "@/lib/data/decisions";
+import { getDecisionViews, getUpcomingDecisionIds } from "@/lib/data/decisions";
 import { GUIDES } from "@/lib/guides/index";
 import { LANGS, localePath } from "@/lib/i18n";
 import { SITE_URL } from "@/lib/site";
@@ -19,7 +19,12 @@ export const revalidate = 3600;
  */
 export default async function sitemap(): Promise<MetadataRoute.Sitemap> {
   const now = new Date();
-  const [decisions, speeches, speakers] = await Promise.all([getDecisionViews(), getSpeeches(), getSpeakers()]);
+  const [decisions, upcoming, speeches, speakers] = await Promise.all([
+    getDecisionViews(),
+    getUpcomingDecisionIds(now),
+    getSpeeches(),
+    getSpeakers(),
+  ]);
   const guidesUpdated = GUIDES.map((g) => g.updatedOn).sort().at(-1);
 
   const pages: {
@@ -58,6 +63,13 @@ export default async function sitemap(): Promise<MetadataRoute.Sitemap> {
       priority: 0.6,
       changeFrequency: "monthly" as const,
       lastModified: v.statement?.summary?.summarizedAt ?? v.statement?.fetchedAt ?? v.meeting.meetingAt,
+    })),
+    // Yaklaşan karar: beklenti her gün değişebilir; karar günü aynı adres sonuçla dolar.
+    ...upcoming.map((id) => ({
+      path: `/karar/${id}`,
+      priority: 0.8,
+      changeFrequency: "daily" as const,
+      lastModified: now,
     })),
     ...speeches.map((s) => ({
       path: `/konusma/${s.id}`,

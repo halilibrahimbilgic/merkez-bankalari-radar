@@ -1,4 +1,4 @@
-import { getDecisionIds } from "@/lib/data/decisions";
+import { getDecisionIds, getUpcomingDecisionIds } from "@/lib/data/decisions";
 import { OG_SIZE } from "@/lib/og";
 import { decisionOgImage } from "@/views/og-images";
 
@@ -8,7 +8,7 @@ export const contentType = "image/png";
 export const alt = "Central bank rate decision, expectation and surprise";
 
 export async function generateStaticParams() {
-  return (await getDecisionIds()).map((id) => ({ id }));
+  return [...(await getDecisionIds()), ...(await getUpcomingDecisionIds())].map((id) => ({ id }));
 }
 
 export default async function Image({ params }: { params: Promise<{ id: string }> }) {

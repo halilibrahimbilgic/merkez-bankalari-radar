@@ -9,7 +9,8 @@ import { Term } from "@/components/Term";
 import { TimeSeriesChart } from "@/components/TimeSeriesChart";
 import { Card, SectionHeader, Stat } from "@/components/ui";
 import { BANKS, bankName, bankRateName } from "@/lib/banks";
-import { getDecisionView, type DecisionView } from "@/lib/data/decisions";
+import { getDecisionView, getUpcomingDecision, type DecisionView } from "@/lib/data/decisions";
+import { UpcomingDecisionPage, upcomingDecisionMetadata } from "./UpcomingDecisionPage";
 import { getMinutes } from "@/lib/data/minutes";
 import { getStatement, getStatementText } from "@/lib/data/statements";
 import { MINUTES_DELAY, MINUTES_NAME } from "@/lib/minutes";
@@ -17,7 +18,7 @@ import {
   decisionParts,
   decisionSentence,
   formatDecisionRate,
-  hasDecisionPage,
+  decisionPath,
   formatExpectedRate,
   formatPreviousRate,
 } from "@/lib/decision-format";
@@ -31,7 +32,7 @@ import { divergencePeriods, DIVERGENCE_PP, periodSentence, periodsBetween, value
 
 export async function decisionMetadata(lang: Lang, id: string): Promise<Metadata> {
   const view = await getDecisionView(id);
-  if (!view) return {};
+  if (!view) return upcomingDecisionMetadata(lang, id);
   const t = L(lang);
   const m = view.meeting;
   const name = bankName(BANKS[m.bankCode], lang);
@@ -55,7 +56,12 @@ export async function decisionMetadata(lang: Lang, id: string): Promise<Metadata
 
 export async function DecisionPage({ lang, id }: { lang: Lang; id: string }) {
   const view = await getDecisionView(id);
-  if (!view) notFound();
+  if (!view) {
+    // Sonucu gelmemiş karar: aynı adreste yaklaşan karar sayfası.
+    const upcoming = await getUpcomingDecision(id);
+    if (!upcoming) notFound();
+    return <UpcomingDecisionPage lang={lang} upcoming={upcoming} />;
+  }
   const t = L(lang);
   const p = (path: string) => localePath(lang, path);
   const now = new Date();
@@ -111,14 +117,14 @@ export async function DecisionPage({ lang, id }: { lang: Lang; id: string }) {
       <MinutesSection view={view} lang={lang} />
 
       <nav aria-label={t("Bu bankanın diğer kararları", "Other decisions by this bank")} className="flex flex-wrap justify-between gap-3 text-sm">
-        {view.previous && hasDecisionPage(view.previous, now) ? (
+        {view.previous && decisionPath(view.previous, now) ? (
           <Link href={p(`/karar/${view.previous.id}`)} className="inline-flex min-h-9 items-center text-accent hover:underline">
             ← {t("Önceki karar", "Previous decision")} ({formatDate(view.previous.meetingAt, lang)})
           </Link>
         ) : (
           <span />
         )}
-        {view.next && hasDecisionPage(view.next, now) && (
+        {view.next && decisionPath(view.next, now) && (
           <Link href={p(`/karar/${view.next.id}`)} className="inline-flex min-h-9 items-center text-accent hover:underline">
             {t("Sonraki karar", "Next decision")} ({formatDate(view.next.meetingAt, lang)}) →
           </Link>

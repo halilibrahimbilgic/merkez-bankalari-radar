@@ -2,6 +2,8 @@ import { test } from "node:test";
 import assert from "node:assert/strict";
 import { mergePoints, preDecisionPoint, surprise } from "../src/lib/expectation-history";
 import { parseStatementOutput } from "../src/lib/statements";
+import { decisionPath, hasUpcomingPage } from "../src/lib/decision-format";
+import type { Meeting } from "../src/lib/types";
 
 test("karardan önceki beklenti: karar günü tarihli nokta dışarıda kalır", () => {
   const points = [
@@ -155,4 +157,22 @@ test("bekleyen karar: saati geçmiş, sonucu yok, 12 saatten taze", async () => 
   // Saati açıklanmayan kararda "açıklandı" denmez.
   assert.equal(pendingNote({ ...m, timeTbd: true }, "tr", true), "sonuç bekleniyor");
   assert.equal(pendingNote(m, "tr", true), "karar açıklandı");
+});
+
+test("yaklaşan karar sayfası: dört ay içinde, sonucu gelmemiş, bekleyen dahil", () => {
+  const now = new Date("2026-11-07T12:00:00Z");
+  const m = (meetingAt: string, extra: Partial<Meeting> = {}) =>
+    ({ id: "tcmb-x", bankCode: "tcmb", meetingAt, type: "rate_decision", status: "scheduled", timeTbd: false, ...extra }) as Meeting;
+  assert.equal(hasUpcomingPage(m("2026-12-10T11:00:00Z"), now), true);
+  assert.equal(hasUpcomingPage(m("2027-04-01T11:00:00Z"), now), false, "dört aydan uzak");
+  assert.equal(hasUpcomingPage(m("2026-12-10T11:00:00Z", { status: "cancelled" }), now), false);
+  // Saati 2 saat önce geçmiş, sonuç yok: bekleyen karar, sayfa açık kalır.
+  assert.equal(hasUpcomingPage(m("2026-11-07T10:00:00Z"), now), true);
+  // Bir hafta önce geçmiş ve sonucu yok: veri boşluğu, yaklaşan sayfa değil.
+  assert.equal(hasUpcomingPage(m("2026-10-31T10:00:00Z"), now), false);
+  // Sonuçlanmış karar kendi karar sayfasında.
+  const decided = m("2026-10-22T11:00:00Z", { decisionRate: 36, previousRate: 37 });
+  assert.equal(hasUpcomingPage(decided, now), false);
+  assert.equal(decisionPath(decided, now), "/karar/tcmb-x");
+  assert.equal(decisionPath(m("2027-04-01T11:00:00Z"), now), undefined);
 });
