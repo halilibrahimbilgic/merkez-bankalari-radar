@@ -1,6 +1,21 @@
 {
-  "fetchedAt": "2026-11-07T02:02:15.126Z",
+  "fetchedAt": "2026-11-07T08:32:25.565Z",
   "items": [
+    {
+      "id": "e19dffd7521c",
+      "sourceKey": "aa-ekonomi",
+      "sourceName": "Anadolu Ajansı",
+      "kind": "media",
+      "url": "https://www.aa.com.tr/tr/ekonomi/kuresel-piyasalarda-gozler-abdde-aciklanacak-enflasyon-verilerinde/4114980",
+      "publishedAt": "2026-11-07T08:23:36.000Z",
+      "titleOriginal": "Küresel piyasalarda gözler ABD'de açıklanacak enflasyon verilerinde",
+      "titleTr": "Küresel piyasalarda gözler ABD enflasyon verilerinde",
+      "summaryTr": "Küresel pay piyasaları, ABD'deki Kongre ara seçimleri ve Orta Doğu gelişmelerinin izlendiği haftayı karışık seyirle tamamladı. Yatırımcıların gözü gelecek hafta ABD'de açıklanacak enflasyon verilerine çevrildi.",
+      "titleEn": "Global markets turn to upcoming US inflation data",
+      "summaryEn": "Global equity markets ended a week dominated by the US midterm elections and Middle East developments with a mixed performance. Attention now shifts to US inflation data due next week.",
+      "important": false,
+      "processedAt": "2026-11-07T08:32:25.565Z"
+    },
     {
       "id": "2ac7e3f07ebd",
       "sourceKey": "bbc-business",
