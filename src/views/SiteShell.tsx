@@ -64,13 +64,14 @@ export function rootMetadata(lang: Lang): Metadata {
 export function SiteShell({ lang, children }: { lang: Lang; children: React.ReactNode }) {
   const t = L(lang);
   const p = (path: string) => localePath(lang, path);
-  // Metodoloji altbilgide: üst menü sekiz bağlantıyla geniş ekranda tek
-  // satıra ancak sığıyor.
+  // Metodoloji altbilgide: üst menü dokuz bağlantıyla geniş ekranda tek
+  // satıra ancak sığıyor (1024 px'te bakıldı, Kasım 2026).
   const nav = [
     { href: p("/takvim"), label: t("Takvim", "Calendar") },
     { href: p("/kararlar"), label: t("Kararlar", "Decisions") },
     { href: p("/faiz-olasiligi"), label: t("Faiz olasılığı", "Rate odds") },
     { href: p("/reel-faiz"), label: t("Reel faiz", "Real rates") },
+    { href: p("/enflasyon"), label: t("Enflasyon", "Inflation") },
     { href: p("/haberler"), label: t("Haberler", "News") },
     { href: p("/konusmalar"), label: t("Konuşmalar", "Speeches") },
     { href: p("/skor"), label: t("Şahin/Güvercin", "Hawk/Dove") },

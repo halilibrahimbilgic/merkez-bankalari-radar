@@ -37,6 +37,7 @@ export default async function sitemap(): Promise<MetadataRoute.Sitemap> {
     { path: "/takvim", priority: 0.9, changeFrequency: "daily", lastModified: now },
     { path: "/kararlar", priority: 0.8, changeFrequency: "daily", lastModified: now },
     { path: "/reel-faiz", priority: 0.7, changeFrequency: "daily", lastModified: now },
+    { path: "/enflasyon", priority: 0.9, changeFrequency: "daily", lastModified: now },
     { path: "/rehber", priority: 0.5, changeFrequency: "monthly", lastModified: guidesUpdated },
     ...GUIDES.map((g) => ({
       path: `/rehber/${g.slug}`,

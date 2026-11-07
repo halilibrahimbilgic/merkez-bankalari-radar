@@ -292,7 +292,14 @@ export async function BankPage({ lang, code }: { lang: Lang; code: string }) {
       {funding && fundingState && (
         <FundingSection funding={funding} state={fundingState} today={today} now={now} lang={lang} />
       )}
-      {bank.code === "tcmb" && <TcmbInflationOutlook lang={lang} />}
+      {bank.code === "tcmb" && (
+        <div className="space-y-2">
+          <TcmbInflationOutlook lang={lang} />
+          <Link href={p("/enflasyon")} className="inline-flex min-h-9 items-center text-sm text-accent hover:underline">
+            {t("Türkiye enflasyonu: açıklama takvimi ve aylık seyir →", "Turkey inflation: release calendar and monthly path →")}
+          </Link>
+        </div>
+      )}
 
       {later.length > 0 && (
         <section>
@@ -575,7 +582,7 @@ async function CommitteeTone({ bankCode, now, lang }: { bankCode: BankCode; now:
  * katılımcılarının yıl sonu beklentisi ve son gerçekleşen — Türk okurun
  * "TCMB'ye inanılıyor mu?" sorusu.
  */
-async function TcmbInflationOutlook({ lang }: { lang: Lang }) {
+export async function TcmbInflationOutlook({ lang }: { lang: Lang }) {
   const t = L(lang);
   const [{ tcmb: er }, expectations, inflation] = await Promise.all([
     getProjections(),

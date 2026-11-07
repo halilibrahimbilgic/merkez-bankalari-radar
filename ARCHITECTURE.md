@@ -441,6 +441,18 @@ tonu. Sonuç gelince aynı adres karar sayfasına döner; dizindeki yeri ve
 gelen bağlantılar korunur. Takvim satırı, banka sayfası ve "Bu hafta" bu
 sayfalara bağlanır; site haritasında günlük.
 
+**Türkiye enflasyonu sayfası `/enflasyon`'dur** (`src/lib/tr-inflation.ts`,
+`src/lib/sources/tr-inflation.ts`). Her ayın 3'ündeki "enflasyon ne zaman
+açıklanacak, kaç oldu" aramaları faiz kararıyla aynı kalıpta; cevap
+elimizdeki veride. `fetch:inflation` Türkiye'yi okuduğunda
+`tr-inflation.json`'u da yazar: Ocak 2024'ten aylık ve yıllık TÜFE (EVDS
+2025=100, TÜİK'in zincirlediği geçmiş), TÜİK'in yayımlanmamış bültenler
+takvimi ve anketin TÜFE beklentileri (S01.A–E). Bir ayın beklentisi o ayın
+anketindeki "cari ay"dır; tur yoksa önceki turun "1 ay sonrası"
+(`monthlyExpectation`) — anket ayın ortasında, veri ertesi ayın 3'ünde.
+Açıklama günü haber işi `--if-due` ile aynı dosyayı tazeler. TÜİK takvimi
+ertesi yılı Aralık'ta yayımlar; o zamana kadar yalnızca yılın kalanı görünür.
+
 **Faiz döngüsü seviye değil değişim gösterir** (`src/lib/rate-cycle.ts`,
 `/kararlar` başı). TCMB'nin %37'si seviye grafiğinde diğer beş bankayı düz
 çizgiye çevirirdi. Pencere son 12 ay (ay başından) ama arşivin başından
