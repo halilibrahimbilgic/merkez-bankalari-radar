@@ -1,5 +1,5 @@
 {
-  "fetchedAt": "2026-11-07T16:31:54.242Z",
+  "fetchedAt": "2026-11-07T16:50:06.958Z",
   "items": [
     {
       "id": "bfc02a32fcb8",
@@ -15,6 +15,21 @@
       "summaryEn": "Finance Minister Şimşek said the war in the Gulf will fundamentally change the region and that Türkiye stands to gain significantly from these developments. He said wars are not in Türkiye's interest.",
       "important": false,
       "processedAt": "2026-11-07T16:31:54.242Z"
+    },
+    {
+      "id": "634483269ffe",
+      "sourceKey": "aa-ekonomi",
+      "sourceName": "Anadolu Ajansı",
+      "kind": "media",
+      "url": "https://www.aa.com.tr/tr/ekonomi/bakan-simsek-korfezdeki-savasin-bolgeyi-temelden-degistirecegini-dusunuyorum/4115344",
+      "publishedAt": "2026-11-07T16:05:45.000Z",
+      "titleOriginal": "Bakan Şimşek: Körfez'deki savaşın bölgeyi temelden değiştireceğini düşünüyorum",
+      "titleTr": "Şimşek: Körfez'deki savaş bölgeyi temelden değiştirecek",
+      "summaryTr": "Hazine ve Maliye Bakanı Şimşek, Körfez'deki savaşın bölgeyi temelden değiştireceğini, bölgesel aktörler arasında rekabetin azalıp işbirliğinin artacağını söyledi. Şimşek, Türkiye'nin bu gelişmelerden önemli ölçüde fayda sağlamasının oldukça muhtemel olduğunu belirtti.",
+      "titleEn": "Şimşek: Gulf war will fundamentally change the region",
+      "summaryEn": "Turkish Finance Minister Şimşek said the war in the Gulf will fundamentally change the region, with rivalry among regional actors easing and cooperation growing. He added that it is quite likely Türkiye will benefit significantly from these developments.",
+      "important": false,
+      "processedAt": "2026-11-07T16:50:06.958Z"
     },
     {
       "id": "dc5bbc83fc84",
