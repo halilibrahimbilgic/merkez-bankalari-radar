@@ -177,7 +177,7 @@ jobs:
         run: |
           # Karar metinleri her koşuda statements.json'un fetchedAt'ini yeniler;
           # yalnızca damga değiştiyse commit yok.
-          PATHS="data/news data/telegram data/statements data/seed/statements.json data/seed/minutes.json data/seed/meetings.json data/seed/probabilities.json data/history/expectations.json data/seed/inflation.json"
+          PATHS="data/news data/telegram data/statements data/seed/statements.json data/seed/minutes.json data/seed/meetings.json data/seed/probabilities.json data/history/expectations.json data/seed/inflation.json data/seed/tr-inflation.json"
           if git diff --quiet -I '"fetchedAt"' -- $PATHS \
              && [[ -z "$(git ls-files --others --exclude-standard $PATHS)" ]]; then
             echo "Yeni haber ya da karar yok."
