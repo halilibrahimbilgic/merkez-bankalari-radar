@@ -5,6 +5,7 @@
  *   npm run telegram:post -- --dry-run # yalnızca ekrana yazar
  *   npm run telegram:post -- --welcome # yaklaşan kararların listesini gönderir
  *   npm run telegram:post -- --news    # önemli haberler (news.yml, 30 dk'da bir)
+ *   npm run telegram:post -- --dry-run --now=2026-12-07T05:00:00Z  # pazartesi: haftalık kart
  *   npm run telegram:post -- --dry-run --now=2026-10-21T05:00:00Z  # başka bir sabahı dene
  *
  * TELEGRAM_BOT_TOKEN (secret) ve TELEGRAM_CHAT_ID (ör. "@faizradar") gerekir;
@@ -14,6 +15,10 @@
  * açıklandığı için "bugün" hatırlatması geç kalırdı; bu yüzden hatırlatma
  * karardan bir gün önce atılır. Sonuç, karar oranı fetch:rates ile arşive
  * düşünce (genellikle ertesi sabah) atılır.
+ *
+ * Pazartesi sabahı haftanın programı kanala görsel olarak gider: görseli
+ * Telegram sitenin /bu-hafta/gorsel.png adresinden kendisi indirir, altyazı
+ * kararların listesi. Sakin haftada da gider ("faiz kararı yok" + sıradaki).
  *
  * Gönderilenler data/telegram/posted.json'da tutulur ve cron tarafından
  * commit'lenir — kanal aynı mesajı iki kez görmez. Durum her başarılı
@@ -26,8 +31,11 @@ import { BANKS } from "../src/lib/banks";
 import { num, resultTitle, whenTr } from "../src/lib/announce";
 import type { NewsStore } from "../src/lib/news";
 import { SITE_URL } from "../src/lib/site";
-import { formatMeeting, trtDayKey } from "../src/lib/time";
+import { formatMeeting, formatTimeTrt, trtDayKey } from "../src/lib/time";
 import type { BankCode, Meeting } from "../src/lib/types";
+import type { CalendarEvent } from "../src/lib/sources/speaking-calendars";
+import { bankWithCountryTr } from "../src/lib/banks";
+import { trtWeek, weekCardItems, weekDayLabel, weekHeadline, weekRangeLabel } from "../src/lib/week-card";
 import { loadNewsStore } from "./news-store";
 
 // Kanaldan gelen okur Vercel'de görünsün: Telegram'ın uygulama içi tarayıcısı
@@ -39,6 +47,7 @@ config({ path: ".env.local", quiet: true });
 
 const MEETINGS = path.join(process.cwd(), "data", "seed", "meetings.json");
 const RATES = path.join(process.cwd(), "data", "seed", "current-rates.json");
+const EVENTS = path.join(process.cwd(), "data", "seed", "events.json");
 const STATE = path.join(process.cwd(), "data", "telegram", "posted.json");
 
 /** Bundan eski kararların sonucu gönderilmez — kanal eski haberle dolmasın. */
@@ -60,6 +69,8 @@ interface Post {
   key: string;
   text: string;
   link: string;
+  /** Varsa mesaj görsel olarak gider, metin altyazı olur (en çok 1024 karakter). */
+  photo?: string;
 }
 
 async function main() {
@@ -93,7 +104,8 @@ async function main() {
     ? [welcomePost(meetings, now)]
     : news
       ? newsPosts(await loadNewsStore(), state, now)
-      : duePosts(meetings, rates, state, now);
+      : // Hatırlatmalar önce: görsel gönderimi takılırsa onlar gitmiş olsun.
+        [...duePosts(meetings, rates, state, now), ...weeklyPost(meetings, await readEvents(), state, now)];
   if (posts.length === 0) {
     console.log("Gönderilecek mesaj yok.");
     return;
@@ -101,10 +113,17 @@ async function main() {
 
   for (const post of posts) {
     if (dryRun) {
-      console.log(`--- ${post.key}\n${post.text}\n`);
+      console.log(`--- ${post.key}${post.photo ? ` [görsel: ${post.photo}]` : ""}\n${post.text}\n`);
       continue;
     }
-    await send(token!, chatId!, post);
+    try {
+      await send(token!, chatId!, post);
+    } catch (err) {
+      // Telegram görseli siteden indiremezse program yine gitsin: düz metin.
+      if (!post.photo) throw err;
+      console.error(`Görsel gönderilemedi (${(err as Error).message}); metin olarak gönderiliyor.`);
+      await send(token!, chatId!, { ...post, photo: undefined });
+    }
     state.posted[post.key] = now.toISOString();
     await writeState(state);
     console.log(`Gönderildi: ${post.key}`);
@@ -189,6 +208,48 @@ function duePosts(meetings: Meeting[], rates: CurrentRate[], state: State, now: 
   return posts;
 }
 
+/**
+ * Pazartesi (TRT) haftanın programı: /bu-hafta kartının görseli ve altyazıda
+ * kararlar. Yalnızca pazartesi — salı atılan "bu hafta" mesajı geç kalmış olur.
+ */
+function weeklyPost(meetings: Meeting[], events: CalendarEvent[], state: State, now: Date): Post[] {
+  const today = trtDayKey(now.toISOString());
+  const week = trtWeek(now);
+  const key = `hafta-${week.start}`;
+  if (today !== week.start || state.posted[key]) return [];
+
+  const { items } = weekCardItems(meetings, events, now);
+  const decisions = items.flatMap((it) => ("meeting" in it ? [it.meeting] : []));
+  const when = (m: Meeting) => `${weekDayLabel(m.meetingAt)}${m.timeTbd ? "" : ` ${formatTimeTrt(m.meetingAt)}`}`;
+  const later =
+    decisions.length > 0
+      ? []
+      : meetings
+          .filter((m) => m.status !== "cancelled" && m.type !== "minutes" && trtDayKey(m.meetingAt) >= week.end)
+          .sort((a, b) => a.meetingAt.localeCompare(b.meetingAt))
+          .slice(0, 3);
+  const link = siteLink("/");
+  const lines = [
+    `<b>${esc(weekHeadline(decisions.length))}</b> · ${esc(weekRangeLabel(week))}, Türkiye saatiyle`,
+    "",
+    ...decisions.map((m) => `• ${esc(when(m))} — ${esc(bankWithCountryTr(m.bankCode))}`),
+    ...(later.length > 0 ? ["Sıradaki kararlar:", ...later.map((m) => `• ${esc(when(m))} — ${esc(bankWithCountryTr(m.bankCode))}`)] : []),
+    "",
+    `Beklentiler ve haftanın programı: <a href="${link}">faizradar.com</a> · Yatırım tavsiyesi değildir.`,
+  ];
+  // Adreste hafta: Telegram görseli adrese göre önbelleğe alıyor.
+  const photo = `${SITE_URL}/bu-hafta/gorsel.png?hafta=${week.start}`;
+  return [{ key, text: lines.join("\n"), link, photo }];
+}
+
+async function readEvents(): Promise<CalendarEvent[]> {
+  try {
+    return (JSON.parse(await readFile(EVENTS, "utf8")) as { events: CalendarEvent[] }).events;
+  } catch {
+    return [];
+  }
+}
+
 /** Kanalın ilk mesajı ve bağlantı denemesi: yaklaşan beş karar. */
 function welcomePost(meetings: Meeting[], now: Date): Post {
   const upcoming = meetings
@@ -210,16 +271,20 @@ function welcomePost(meetings: Meeting[], now: Date): Post {
 }
 
 async function send(token: string, chatId: string, post: Post) {
-  const res = await fetch(`https://api.telegram.org/bot${token}/sendMessage`, {
+  const res = await fetch(`https://api.telegram.org/bot${token}/${post.photo ? "sendPhoto" : "sendMessage"}`, {
     method: "POST",
     headers: { "content-type": "application/json" },
-    body: JSON.stringify({
-      chat_id: chatId,
-      text: post.text,
-      parse_mode: "HTML",
-      // Önizleme sitenin paylaşım kartını (opengraph-image) gösterir.
-      link_preview_options: { url: post.link, prefer_large_media: true },
-    }),
+    body: JSON.stringify(
+      post.photo
+        ? { chat_id: chatId, photo: post.photo, caption: post.text, parse_mode: "HTML" }
+        : {
+            chat_id: chatId,
+            text: post.text,
+            parse_mode: "HTML",
+            // Önizleme sitenin paylaşım kartını (opengraph-image) gösterir.
+            link_preview_options: { url: post.link, prefer_large_media: true },
+          },
+    ),
     signal: AbortSignal.timeout(30_000),
   });
   const body = (await res.json().catch(() => ({}))) as { ok?: boolean; description?: string };

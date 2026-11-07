@@ -66,3 +66,28 @@ export function weekCardItems(
   const items = [...decisions, ...shown].sort((a, b) => a.at.localeCompare(b.at));
   return { week, items, hidden: candidates.length - shown.length };
 }
+
+const TZ = "Europe/Istanbul";
+const dayFmt = new Intl.DateTimeFormat("tr-TR", { timeZone: TZ, day: "numeric", month: "short" });
+const weekdayFmt = new Intl.DateTimeFormat("tr-TR", { timeZone: TZ, weekday: "short" });
+const rangeDayFmt = new Intl.DateTimeFormat("tr-TR", { timeZone: TZ, day: "numeric" });
+const rangeFullFmt = new Intl.DateTimeFormat("tr-TR", { timeZone: TZ, day: "numeric", month: "long", year: "numeric" });
+
+/** "Çar 10 Ara" */
+export function weekDayLabel(iso: string): string {
+  return `${weekdayFmt.format(new Date(iso))} ${dayFmt.format(new Date(iso))}`;
+}
+
+/** "7–13 Aralık 2026" ya da "30 Kas – 6 Aralık 2026" */
+export function weekRangeLabel(week: { start: string; end: string }): string {
+  const start = new Date(`${week.start}T12:00:00Z`);
+  const last = new Date(Date.parse(`${week.end}T12:00:00Z`) - DAY_MS);
+  return start.getUTCMonth() === last.getUTCMonth()
+    ? `${rangeDayFmt.format(start)}–${rangeFullFmt.format(last)}`
+    : `${dayFmt.format(start)} – ${rangeFullFmt.format(last)}`;
+}
+
+export function weekHeadline(decisions: number): string {
+  if (decisions === 0) return "Bu hafta faiz kararı yok";
+  return decisions === 1 ? "Bu hafta bir faiz kararı" : `Bu hafta ${decisions} faiz kararı`;
+}

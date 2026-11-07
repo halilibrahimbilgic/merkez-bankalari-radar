@@ -292,7 +292,10 @@ Takvim haftasını (pazartesi–pazar, TRT) anlatır, cumartesiden itibaren
 sıradaki haftayı; `?hafta=YYYY-MM-DD` başka bir haftayı verir. Kararların
 hepsi girer, yayınlardan yalnızca Enflasyon Raporu, tutanaklar ve TÜFE
 (ECB takvimi panelleri de "testimony" diye veriyor); sakin haftada sıradaki
-kararlar eklenir. LinkedIn metnindeki bağlantı `utm_source=linkedin` taşır.
+kararlar eklenir. LinkedIn metnindeki bağlantı `utm_source=linkedin` taşır. Pazartesi
+(TRT) günlük işin Telegram adımı kartı kanala görsel olarak atar
+(`hafta-<pazartesi>` anahtarı; Telegram görseli siteden kendisi indirir,
+indiremezse aynı içerik düz metin gider).
 
 **Site iki dillidir; Türkçe adresler değişmez.** Türkçe kökte (`app/(tr)/`),
 İngilizce `/en` altında (`app/en/`); yol adları iki dilde aynı (`/en/takvim`),

@@ -12,7 +12,7 @@ import { fmtPercent } from "@/lib/i18n";
 import { BANK_HEX } from "@/lib/og";
 import { SITE_URL } from "@/lib/site";
 import { formatTimeTrt, monthLabel, trtDayKey } from "@/lib/time";
-import { weekCardItems, type WeekItem } from "@/lib/week-card";
+import { weekCardItems, weekDayLabel, weekHeadline, weekRangeLabel, type WeekItem } from "@/lib/week-card";
 import { expectationText, KIND } from "./WeekAhead";
 
 /**
@@ -31,12 +31,6 @@ const C = {
   muted: "#9aa4b5",
   accent: "#7ea2ff",
 };
-
-const TZ = "Europe/Istanbul";
-const dayFmt = new Intl.DateTimeFormat("tr-TR", { timeZone: TZ, day: "numeric", month: "short" });
-const weekdayFmt = new Intl.DateTimeFormat("tr-TR", { timeZone: TZ, weekday: "short" });
-const rangeDayFmt = new Intl.DateTimeFormat("tr-TR", { timeZone: TZ, day: "numeric" });
-const rangeFullFmt = new Intl.DateTimeFormat("tr-TR", { timeZone: TZ, day: "numeric", month: "long", year: "numeric" });
 
 export interface WeekRow {
   /** "Çar 10 Ara" */
@@ -80,7 +74,7 @@ export async function getWeekCard(now: Date): Promise<WeekCard> {
   const { week, items, hidden } = weekCardItems(meetings, events, now);
 
   const row = (it: WeekItem): WeekRow => {
-    const day = `${weekdayFmt.format(new Date(it.at))} ${dayFmt.format(new Date(it.at))}`;
+    const day = weekDayLabel(it.at);
     if ("meeting" in it) {
       const m = it.meeting;
       const decided = m.decisionRate !== undefined && new Date(m.meetingAt) <= now;
@@ -110,19 +104,14 @@ export async function getWeekCard(now: Date): Promise<WeekCard> {
     return { ...base, title: `${bank.nameTr} · ${kind}`, detail: e.kind === "testimony" ? e.speaker : undefined };
   };
 
-  const start = new Date(`${week.start}T12:00:00Z`);
-  const last = new Date(Date.parse(`${week.end}T12:00:00Z`) - 86_400_000);
-  const range =
-    start.getUTCMonth() === last.getUTCMonth()
-      ? `${rangeDayFmt.format(start)}–${rangeFullFmt.format(last)}`
-      : `${dayFmt.format(start)} – ${rangeFullFmt.format(last)}`;
+  const range = weekRangeLabel(week);
 
   const later = meetings
     .filter((m) => m.status !== "cancelled" && m.type !== "minutes" && trtDayKey(m.meetingAt) >= week.end)
     .sort((a, b) => a.meetingAt.localeCompare(b.meetingAt))
     .slice(0, Math.min(3, Math.max(0, LATER_BELOW - items.length)))
     .map((m) => ({
-      day: `${weekdayFmt.format(new Date(m.meetingAt))} ${dayFmt.format(new Date(m.meetingAt))}`,
+      day: weekDayLabel(m.meetingAt),
       time: m.timeTbd ? "—" : formatTimeTrt(m.meetingAt),
       title: `${bankWithCountryTr(m.bankCode)} faiz kararı`,
       dot: BANK_HEX[m.bankCode],
@@ -131,10 +120,7 @@ export async function getWeekCard(now: Date): Promise<WeekCard> {
   return { range, decisions: items.filter((it) => "meeting" in it).length, rows: items.map(row), hidden, later };
 }
 
-function headline(card: WeekCard): string {
-  if (card.decisions === 0) return "Bu hafta faiz kararı yok";
-  return card.decisions === 1 ? "Bu hafta bir faiz kararı" : `Bu hafta ${card.decisions} faiz kararı`;
-}
+const headline = (card: WeekCard) => weekHeadline(card.decisions);
 
 export function renderWeekCard(card: WeekCard): ImageResponse {
   const titleSize = 64;
