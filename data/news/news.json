@@ -1,6 +1,22 @@
 {
-  "fetchedAt": "2026-11-07T08:32:25.565Z",
+  "fetchedAt": "2026-11-07T14:02:28.012Z",
   "items": [
+    {
+      "id": "dc5bbc83fc84",
+      "sourceKey": "ecb",
+      "sourceName": "ECB",
+      "kind": "official",
+      "bankCode": "ecb",
+      "url": "https://www.ecb.europa.eu//press/inter/date/2026/html/ecb.in261107~e7b86fc4ce.en.html",
+      "publishedAt": "2026-11-07T14:00:00.000Z",
+      "titleOriginal": "Christine Lagarde: Interview with Yomiuri Shimbun",
+      "titleTr": "Lagarde, Yomiuri Shimbun'a röportaj verdi",
+      "summaryTr": "ECB Başkanı Christine Lagarde'ın Japon gazetesi Yomiuri Shimbun'a verdiği röportaj ECB tarafından yayımlandı. Röportajın içeriği haber açıklamasında yer almıyor.",
+      "titleEn": "Lagarde gives interview to Yomiuri Shimbun",
+      "summaryEn": "The ECB published an interview that President Christine Lagarde gave to the Japanese newspaper Yomiuri Shimbun. The item's description does not include the content of the interview.",
+      "important": false,
+      "processedAt": "2026-11-07T14:02:28.012Z"
+    },
     {
       "id": "e19dffd7521c",
       "sourceKey": "aa-ekonomi",
