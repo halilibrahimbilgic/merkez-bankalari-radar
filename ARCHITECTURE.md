@@ -453,6 +453,17 @@ anketindeki "cari ay"dır; tur yoksa önceki turun "1 ay sonrası"
 Açıklama günü haber işi `--if-due` ile aynı dosyayı tazeler. TÜİK takvimi
 ertesi yılı Aralık'ta yayımlar; o zamana kadar yalnızca yılın kalanı görünür.
 
+**Açık API anahtarsızdır ve yalnızca yeniden dağıtılabilir veriyi verir**
+(`/api/v1`, `src/lib/api-v1.ts`, belgesi `/gelistiriciler`). Takvim,
+kararlar, karar metni ve tutanak özet ve puanları, Türkiye TÜFE ve anket.
+Fed olasılıkları (Atlanta Fed), BoE OIS beklentisi ve karar metinlerinin
+tam metni yok: API'yi kullanan onu ticari kullanabilir (§6). Yanıtlar
+önbellekten (s-maxage 1 saat); anahtar ve IP sınırı yerine yükü CDN taşır.
+Biçim v1 içinde değişmez, gerekirse /api/v2. Anahtar, kayıt (KVKK) ve
+ücretli katman ancak kullanım görülünce — sıra: v0 anahtarsız → v1
+ücretsiz anahtar → v2 ücretli (lisans denetimi, Vercel Pro, ödeme).
+`/api/` robots.txt'de kapalı.
+
 **Faiz döngüsü seviye değil değişim gösterir** (`src/lib/rate-cycle.ts`,
 `/kararlar` başı). TCMB'nin %37'si seviye grafiğinde diğer beş bankayı düz
 çizgiye çevirirdi. Pencere son 12 ay (ay başından) ama arşivin başından

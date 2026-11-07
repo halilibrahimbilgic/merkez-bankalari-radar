@@ -188,6 +188,9 @@ export function SiteShell({ lang, children }: { lang: Lang; children: React.Reac
               <Link href={p("/iletisim")} className="inline-flex min-h-8 items-center text-accent hover:underline">
                 {t("İletişim", "Contact")}
               </Link>
+              <Link href={p("/gelistiriciler")} className="inline-flex min-h-8 items-center text-accent hover:underline">
+                {t("API", "API")}
+              </Link>
               <a href="/rss.xml" className="inline-flex min-h-8 items-center text-accent hover:underline">
                 {t("RSS", "RSS (Turkish)")}
               </a>

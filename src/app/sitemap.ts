@@ -51,6 +51,7 @@ export default async function sitemap(): Promise<MetadataRoute.Sitemap> {
     { path: "/skor", priority: 0.7, changeFrequency: "daily", lastModified: now },
     { path: "/hakkinda", priority: 0.5, changeFrequency: "daily" },
     { path: "/iletisim", priority: 0.3, changeFrequency: "daily" },
+    { path: "/gelistiriciler", priority: 0.4, changeFrequency: "daily", lastModified: now },
     { path: "/gizlilik", priority: 0.2, changeFrequency: "daily" },
     ...ALL_BANKS.map((b) => ({
       path: `/banka/${b.code}`,
