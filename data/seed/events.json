@@ -1,37 +1,6 @@
 {
-  "fetchedAt": "2026-11-07T05:01:47.909Z",
+  "fetchedAt": "2026-11-08T05:02:04.762Z",
   "events": [
-    {
-      "id": "ecb-2026-11-06-igmlmv",
-      "bankCode": "ecb",
-      "at": "2026-11-06T09:10:00.000Z",
-      "timeTbd": false,
-      "kind": "speech",
-      "speaker": "Sharon Donnery",
-      "title": "Keynote address by Ms Donnery at 13th Annual IIF Colloquium on European Banking Regulation & Supervision in Frankfurt, Germany",
-      "url": "https://www.ecb.europa.eu/press/calendars/weekly/html/index.en.html"
-    },
-    {
-      "id": "ecb-2026-11-06-1mniob4",
-      "bankCode": "ecb",
-      "at": "2026-11-06T09:30:00.000Z",
-      "timeTbd": false,
-      "kind": "discussion",
-      "speaker": "Philip R. Lane",
-      "title": "Participation in fireside chat by Mr Lane at European Central Bank Money Markets Conference 2026 in Frankfurt, Germany",
-      "url": "https://www.ecb.europa.eu/press/conferences/html/20261105-money-markets.en.html"
-    },
-    {
-      "id": "fed-2026-11-06-1asem21",
-      "bankCode": "fed",
-      "at": "2026-11-06T17:15:00.000Z",
-      "timeTbd": false,
-      "kind": "discussion",
-      "speaker": "Michelle W. Bowman",
-      "role": "Vice Chair for Supervision",
-      "title": "At the University of Mississippi Banking and Finance Symposium, Oxford, Miss.",
-      "url": "https://www.federalreserve.gov/newsevents/calendar.htm"
-    },
     {
       "id": "fed-2026-11-09-1asem21",
       "bankCode": "fed",
