@@ -1,6 +1,22 @@
 {
-  "fetchedAt": "2026-11-07T21:02:44.936Z",
+  "fetchedAt": "2026-11-08T22:32:16.080Z",
   "items": [
+    {
+      "id": "22ccd0383d48",
+      "sourceKey": "rba-speeches",
+      "sourceName": "Reserve Bank of Australia",
+      "kind": "official",
+      "bankCode": "rba",
+      "url": "https://www.rba.gov.au/speeches/2026/sp-sp-ag-2026-11-09.html",
+      "publishedAt": "2026-11-08T22:30:00.000Z",
+      "titleOriginal": "What Happens to the Economy as ‘Intelligence’ Gets Cheaper?",
+      "titleTr": "RBA'dan Hunter: 'Zekâ' ucuzladıkça ekonomiye ne olur?",
+      "summaryTr": "RBA Başkan Yardımcısı (Ekonomi) Sarah Hunter, Sidney'deki UBS Avustralasya Konferansı'nda 'zekânın' ucuzlamasının ekonomiye etkisini ele alan bir konuşma yaptı.",
+      "titleEn": "RBA's Hunter: What happens to the economy as 'intelligence' gets cheaper?",
+      "summaryEn": "RBA Assistant Governor (Economic) Sarah Hunter gave a speech at the UBS Australasia Conference in Sydney on how the economy is affected as 'intelligence' becomes cheaper.",
+      "important": false,
+      "processedAt": "2026-11-08T22:32:16.080Z"
+    },
     {
       "id": "bfc02a32fcb8",
       "sourceKey": "aa-ekonomi",
@@ -4374,11 +4390,6 @@
     }
   ],
   "rejected": {
-    "19f551bd77dd": "2026-10-31",
-    "a87237e8df9a": "2026-10-31",
-    "fe08c5bdc8cf": "2026-10-31",
-    "c83bbef6c74b": "2026-10-31",
-    "72cc9dca94df": "2026-10-31",
     "84f18c5fcab1": "2026-11-01",
     "652490a6885d": "2026-11-02",
     "be30d3344486": "2026-11-02",
