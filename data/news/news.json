@@ -1,6 +1,21 @@
 {
-  "fetchedAt": "2026-11-09T02:02:10.972Z",
+  "fetchedAt": "2026-11-09T02:32:07.189Z",
   "items": [
+    {
+      "id": "9e4ed4454f7a",
+      "sourceKey": "ft",
+      "sourceName": "Financial Times",
+      "kind": "media",
+      "url": "https://www.ft.com/content/085c4610-143a-47ad-b546-0587695294b5?syn-25a6b1a6=1",
+      "publishedAt": "2026-11-09T02:01:28.000Z",
+      "titleOriginal": "China’s inflation edges lower in October",
+      "titleTr": "Çin'de enflasyon Ekim'de geriledi",
+      "summaryTr": "Financial Times'a göre Çin'de enflasyon Ekim ayında bir miktar düştü. Zayıf iç talep fiyatlar üzerinde baskı yaparken, yüksek enerji fiyatları üreticilerin maliyetlerini artırdı.",
+      "titleEn": "China's inflation edges lower in October",
+      "summaryEn": "According to the Financial Times, China's inflation eased slightly in October. Weak domestic demand weighed on prices, while higher energy prices pushed up costs for producers.",
+      "important": false,
+      "processedAt": "2026-11-09T02:32:07.189Z"
+    },
     {
       "id": "74d30bb882f1",
       "sourceKey": "cnbc-economy",
