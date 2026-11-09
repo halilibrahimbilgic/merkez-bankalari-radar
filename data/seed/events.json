@@ -1,5 +1,5 @@
 {
-  "fetchedAt": "2026-11-09T05:02:12.549Z",
+  "fetchedAt": "2026-11-09T13:34:15.506Z",
   "events": [
     {
       "id": "fed-2026-11-09-1asem21",
@@ -85,14 +85,14 @@
       "url": "https://www.ecb.europa.eu/press/calendars/weekly/html/index.en.html"
     },
     {
-      "id": "ecb-2026-11-11-esvju",
+      "id": "ecb-2026-11-11-1lsqwhk",
       "bankCode": "ecb",
       "at": "2026-11-11T09:45:00.000Z",
       "timeTbd": false,
       "kind": "discussion",
       "speaker": "Christine Lagarde",
       "role": "President",
-      "title": "Participation by Ms Lagarde in panel at 9th Paris Peace Forum in Paris, France",
+      "title": "Participation by Ms Lagarde in panel discussion at 9th Paris Peace Forum in Paris, France",
       "url": "https://www.ecb.europa.eu/press/calendars/weekly/html/index.en.html"
     },
     {

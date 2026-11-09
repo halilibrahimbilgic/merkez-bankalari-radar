@@ -1,0 +1,169 @@
+Thank you to the Central Bank of Ireland for organising this conference and inviting me to speak. It is a great pleasure to be here in Dublin. Ireland illustrates why the topics of today’s event – from geopolitics to financial resilience – are timely.
+
+ Ireland has one of the most open economies in the world and it is deeply integrated into European and global markets. It is a Single Market success story, and a reminder that openness remains one of Europe’s greatest strengths.
+
+ But openness works both ways. A shift in US trade policy or a turn in global capital flows can spill over to the Irish economy particularly quickly.
+
+ What is true for Ireland is also true on a larger scale for the EU, the world’s largest trading bloc. 1 &nbsp;So, the question I would like to discuss today is simple to ask but harder to answer: how do we retain the benefits of an open economy in a more uncertain world increasingly shaped by geopolitics?
+
+ My answer in a single sentence is: not by retreating from openness, but by building the resilience that allows this openness to endure.
+
+ Geopolitics is becoming economics
+
+ Let me start with the environment we are facing. Geopolitical shocks are becoming more frequent. They affect growth and inflation directly, and they can threaten financial stability.
+
+ We have seen this repeatedly in recent years. Russia’s unjustified war against Ukraine and the conflict in the Middle East have triggered severe disruptions in energy markets. Tariffs have renewed uncertainty and redirected global trade flows, while restrictions on exports of critical technologies and raw materials have reinforced the value of strategic autonomy (Slide 2, left-hand side). Alongside these developments, we have seen sanctions regimes, cyber threats and a step change in security and defence spending.
+
+ The result is a different macroeconomic environment. Inflation, for example, is now driven more often by supply shocks – in the past six years supply factors have played a role in three major shocks: in 2020, 2022 and 2026. And we are faced with more volatile energy prices as well as greater uncertainty about the outlook (Slide 2, right-hand side).
+
+ These shocks can also be transmitted through financial channels. Bond and equity prices may come under pressure, while investment funds could face outflows that amplify market movements. 2 &nbsp;Banks exposed to affected countries, sectors or markets may experience losses that weigh on capital or raise funding costs, potentially leading them to tighten lending. 3 
+
+ So far, the financial system has absorbed each of these shocks remarkably well. But financial effects can be highly non-linear and typically emerge abruptly: past resilience is no reason for complacency.
+
+ Common in origin, uneven in impact
+
+ We cannot prevent geopolitical shocks. And pulling back from the world would not shield us from such shocks: while a fragmenting world means fewer links, it also means that those links are more concentrated. The result is less diversification and higher risk.
+
+ Energy is the clearest, and unfortunately a recurring, example.
+
+ The EU imports 57% of its energy, and almost all of its oil and gas. Before 2022, much of that came from Russia. That is why Russia’s invasion of Ukraine caused the EU’s largest energy shock since the 1970s.
+
+ Europe responded. We diversified our energy supplies by increasing liquefied natural gas (LNG) import capacity and reduced our dependence on Russia. This is an important achievement. But diversification alone could not shield us when tensions erupted in the Middle East earlier this year.
+
+ This showed us that exposure is only half the story. The other half is about resilience – in other words, how well we absorb the shocks.
+
+ For the financial sector, resilience means strong capital and liquidity buffers, diversified funding, and payment and settlement systems that can withstand operational and cyber threats.
+
+ But there is also a broader, economy-wide dimension to resilience – one that is becoming increasingly important for Europe. In a more competitive and uncertain global environment, resilience requires stronger mechanisms for sharing risks and diversifying supply chains across countries and markets.
+
+ Coming back to the example of the energy shocks, they hit every Member State differently. How hard they land depends on a country’s energy mix, its trade links and the structure of its financial system. Take 2022: electricity prices for firms rose far more, and stayed high far longer, in Italy than in Spain – and part of the difference is that Spain generates much more of its power from renewables (Slide 3).
+
+ Two encouraging points follow from this. First, our energy supply is already more resilient than in 2022. As the energy mix shifts towards low-carbon sources, wholesale electricity prices have become less sensitive to gas prices, including since the start of the war in the Middle East. 4 &nbsp;Second, shocks that are common in origin but uneven in impact have already shown how European risk sharing can cushion country-specific effects and strengthen resilience across the EU.
+
+ This shows that the lessons about how Europe can enhance its resilience are not the same as those for other large economies such as the United States and China, which automatically benefit from scale. Europe needs to find its strength in the depth of its integration – rising above the Member State perspective towards a truly European perspective.
+
+ Europe’s untapped strength: a truly single market
+
+ Today, fragmentation prevents us from realising our European potential. Too often, national rules, standards and procedures diverge, forcing companies to navigate multiple legal and regulatory regimes when they operate across borders. These differences act like internal tariffs: according to ECB estimates, they are equivalent to a tariff of around 67% for goods and 95% for services. 5 &nbsp;While this is the upper bound of estimates, the message is clear: doing business across borders within the Single Market is expensive.
+
+ One consequence is a persistent home bias, with capital staying within national borders, alongside a growing allocation of European savings to markets outside the EU.
+
+ Consider equity markets. Since 2014, estimated tariff-equivalent frictions affecting cross-border equity holdings within the euro area have fallen by around 12 percentage points. Between the euro area and the United States, the decline has been around 25 percentage points, roughly twice as much (Slide 4, left-hand side). 6 &nbsp;Strikingly, we are integrating faster with the United States than with each other. 7 
+
+ As a result, European savings increasingly fund US companies. There are, of course, good reasons to diversify. But in a fragmenting world, this also means greater dependence on a single external partner and leaves our own markets underdeveloped. Venture capital tells a similar story: US funds invest around six times as much as EU-based funds (Slide 4, right-hand side). 8 &nbsp;Foreign venture capital funds partly fill the gap, but this makes it more likely that successful European start-ups move their headquarters or intellectual property abroad, or choose to list outside the EU.
+
+ Beyond missing out on growth, a lack of integration weakens risk sharing and therefore resilience.
+
+ Let me explain why.
+
+ When a shock hits one country harder than others, integrated systems help share the burden. This holds true for energy and electricity markets, where physical interconnections and common trading hubs foster price convergence. 9 &nbsp;It is also true for financial markets, where investors operate across borders and regions. Cross-border investors spread gains and losses. Banks operating across borders can help sustain lending where domestic conditions are weak.
+
+ The numbers are stark. ECB research finds that around 70% of state-level output shocks in the United States are absorbed through markets and fiscal transfers, with capital markets doing most of the work. In the euro area, the overall share is far lower, at around 30%, and capital markets absorb only 5 to 10%. 10 
+
+ Two results show what that gap means in practice. European firms cut investment in response to higher oil prices. For US firms, we see no such reduction (Slide 5, left-hand side). 11 &nbsp;And among European firms most exposed to the COVID-19 shock, those with mostly domestic shareholders cut investment 20% more than their peers with an international shareholder base (Slide 5, right-hand side). 12 
+
+ In a fragmented Europe, investment becomes the margin of adjustment whenever a shock hits. That is a resilience problem before it is a growth problem.
+
+ Integration: our best response and the lever we control
+
+ We cannot set the trade policy of others. But the openness across borders within our Single Market is entirely within our control. Our broader aim should be to reduce barriers to trade in goods and services and complete the Single Market.
+
+ And the numbers are on our side. Reducing internal barriers to goods and services by just 2% could, in the long run, offset the projected impact of higher US tariffs on euro area GDP, estimated at around 0.7 percentage points between 2025 and 2027 (Slide 6). &nbsp; 
+
+ This shows that integration can strengthen resilience and enhance competitiveness at the same time. And again, in light of the two consecutive energy shocks we have faced, energy provides a particularly relevant example. A more interconnected and genuinely integrated energy market, built primarily on renewables, would reduce reliance on imported fossil fuels and limit their impact on electricity prices.
+
+ From a central banking perspective, one of the most important building blocks of the Single Market is the savings and investments union, which targets the financial sector. I am particularly pleased that Commissioner Albuquerque is with us today, as this is a key priority on her agenda and one on which we are closely aligned. I look forward to hearing her reflections on how we can move it forward.
+
+ Importantly, the savings and investments union encompasses both the banking union and the capital markets union. Cross-border banking groups should be able to operate across the euro area as though it were a single jurisdiction, with capital and liquidity moving freely within the group. That requires completing the missing pillar of the banking union – a European deposit insurance scheme – complemented by a sound crisis management framework. Deposit protection should be equally robust across the euro area, and bank failures should be managed consistently throughout the banking union, supported by more harmonised creditor hierarchies and insolvency rules.
+
+ We also need a truly integrated European capital market that mobilises savings for productive investment and allows capital to flow freely across the EU. Harmonising withholding taxes is an important part of that effort.
+
+ And finally, the Single Market cannot function without resilient payment systems. This is why Europe needs its own resilient payments infrastructure: one that keeps working under stress and is European. The digital euro is part of the answer, reducing reliance on non-European retail payment providers. Another part is a European infrastructure for wholesale digital payments. In this regard, the launch of Pontes in September marked an important milestone.
+
+ Each of these initiatives lowers barriers and makes Europe more integrated and resilient. Together, they help ensure that Europe stays open to the world.
+
+ Conclusion
+
+ Let me conclude.
+
+ The geopolitical environment is unlikely to become any easier. But how well we absorb the shocks we face depends very much on the choices we make.
+
+ Openness, integration and resilience are not competing goals. They reinforce one another. Integration makes us more resilient. Resilience allows us to remain open. And openness, as Ireland’s experience shows, is one of Europe’s greatest sources of prosperity.
+
+ Thank you for your attention.
+
+ 
+ 
+ 12 Footnotes
+ 
+ 
+ 
+
+ 
+ 
+ 
+ 
+
+ 
+ 
+ 
+ 
+ 
+ 
+ 1 
+ Trade openness, measured as the sum of gross exports and imports over output, is significantly higher in the euro area than in the United States. See, for example, Andersson, M., Checherita-Westphal, C., Dias Da Silva, A. and Soudan, M. (2024), “ The post-pandemic recovery – why is the euro area growing more slowly than the United States? ”, Economic Bulletin, Issue 4, ECB.
+ 
+ 
+ 
+ 2 
+ ECB (2026), Financial Stability Review , May; Dieckelmann, D., Kaufmann, C., Larkou, C., McQuade, P., Negri, C., Pancaro, C. and Rößler, D. (2024), “ Turbulent times: geopolitical risk and its impact on euro area financial stability ”, Financial Stability Review, ECB, May.
+ 
+ 
+ 
+ 3 
+ Fecht, F., Greppmair, S. and Imbierowicz, B. (2026), “A Geopolitical Shock to Bank Assets and Monetary Policy Transmission”, working paper; Avril, P., McQuade, P., Pancaro, C. and Reghezza, A. (2025), “ Geopolitical risk, bank lending and real effects on firms: evidence from the Russian invasion of Ukraine ”, Working Paper Series, No 3143, ECB.
+ 
+ 
+ 
+ 4 
+ Arce, Ó., Battistini, N., Bouabdallah, O., Lis, E. and Mohr, M. (2026), “ A tale of two energy crises – initial conditions matter ”, The ECB Blog, ECB, 3 June.
+ 
+ 
+ 
+ 5 
+ Bernasconi, R., Cordemans, N., Gunnella, V., Pongetti, G. and Quaglietti, L. (2025), “ What is the untapped potential of the EU Single Market? ”, Economic Bulletin, Issue 8, ECB.
+ 
+ 
+ 
+ 6 
+ Anaya Longaric, P., Bellinghausen, L., Parisi, L., Quaglietti, L. and van Overbeek, F. (2026), “ Assessing cross-border integration of equity markets in the euro area: evidence from a gravity model ”, Economic Bulletin, Issue 3, ECB.
+ 
+ 
+ 
+ 7 
+ Likewise, in retail bank lending markets, the share of cross-border loans to countries outside the euro area remains higher than the share of cross-border loans within the euro area; see ECB (2026), Financial integration and structure in the euro area , ECB, May.
+ 
+ 
+ 
+ 8 
+ Baumann, A., Gati, Z., Vinci, F. and Wolf, G. (2026), “ Europe’s venture capital gap and the financing of high-growth firms ”, Economic Bulletin, Issue 5, ECB; Böninghausen, B., Evrard, J., Gati, Z., Gori, S., Lambert, C., Legran, D., Schuster, W.E and van Overbeek, F. (2025), “ Should we mind the gap? An assessment of the benefits of equity markets and policy implications for Europe’s capital markets union ”, Occasional Paper Series, No 373, ECB.
+ 
+ 
+ 
+ 9 
+ Grynberg, C., Vinci, F. and De Sanctis, A. (2026), “ Energy security and industrial competitiveness: the case for a European Energy Union ”, Occasional Paper Series, No 388, ECB.
+ 
+ 
+ 
+ 10 
+ Cimadomo, J., Giuliodori, M., Lengyel, A. and Mumtaz, H. (2023), “ Changing patterns of risk-sharing channels in the United States and the euro area ”, Working Paper Series, No 2849, ECB; Fuentes, N.M., Born, A., Bremus, F., Kastelein, W. and Lambert, C. (2023), “ A deep dive into the capital channel of risk sharing in the euro area ”, Working Paper Series, No 2864, ECB.
+ 
+ 
+ 
+ 11 
+ Anaya Longaric, P., Kostakis, V., Parisi, L. and Vinci, F. (2025), “ Oil shocks and firm investment on the two sides of the Atlantic ”, Working Paper Series, No 3116, ECB.
+ 
+ 
+ 
+ 12 
+ Banu, E., Best, L. and Vinci, F. (2026), “ Does shareholder diversification enhance firm investment resilience? Evidence from the euro area ”, Working Paper Series, No 3296, ECB.

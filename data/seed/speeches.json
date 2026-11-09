@@ -1,6 +1,28 @@
 {
-  "fetchedAt": "2026-11-03T12:36:45.053Z",
+  "fetchedAt": "2026-11-09T13:34:39.295Z",
   "speeches": [
+    {
+      "id": "20261109-integrated-open-and-resilient-europes-strengths-fragmenting-world",
+      "contextEn": "Speech by Mr Boris Vujčić, Vice-President of the European Central Bank, at the 5th Financial System Conference, organised by the Central Bank of Ireland, Dublin, 2 November 2026.",
+      "textLicense": "ecb",
+      "bankCode": "ecb",
+      "speakerName": "Boris Vujčić",
+      "title": "Integrated, open and resilient - Europe’s strengths in a fragmenting world",
+      "speechDate": "2026-11-09",
+      "sourceUrl": "https://www.bis.org/speeches/20261109-integrated-open-and-resilient-europes-strengths-fragmenting-world",
+      "summaryTr": "ECB Başkan Yardımcısı Vujčić, jeopolitik şokların daha sık yaşandığını, büyüme ve enflasyonu doğrudan etkilediğini ve finansal istikrarı tehdit edebileceğini söyledi; enflasyonun artık daha çok arz şoklarıyla (2020, 2022 ve 2026) şekillendiğini vurguladı. Avrupa'nın bu şoklara karşı direncini artırmanın yolunun dışa kapanmak değil, Tek Pazar'ı tamamlayarak entegrasyonu derinleştirmek olduğunu savundu. Ülkeler arası düzenleme farklılıklarının mallarda yaklaşık %67, hizmetlerde %95'lik gümrük vergisine eşdeğer olduğunu ve avro bölgesinde şokların ABD'ye kıyasla çok daha az paylaşıldığını belirtti. Bankacılık birliğinin eksik ayağı olan Avrupa mevduat sigortası, sermaye piyasaları birliği, dijital avro ve Avrupa'ya ait ödeme altyapısı çağrısında bulundu. Konuşmada faiz patikasına ya da para politikası duruşuna dair ileriye dönük bir ifade yer almadı.",
+      "hawkDoveScore": 0,
+      "scoreRationaleTr": "Konuşma jeopolitik riskler, finansal dayanıklılık ve Avrupa entegrasyonu (Tek Pazar, tasarruf ve yatırım birliği, ödeme sistemleri) üzerine; arz şoklarının enflasyona etkisinden genel olarak söz edilse de faiz kararlarına ya da politika duruşuna dair bir sinyal verilmedi.",
+      "hasPolicySignal": false,
+      "summaryEn": "ECB Vice-President Vujčić said geopolitical shocks are becoming more frequent, directly affect growth and inflation and can threaten financial stability; he stressed that inflation is now driven more often by supply shocks (2020, 2022 and 2026). He argued that the way to strengthen Europe's resilience to such shocks is not to retreat from openness but to deepen integration by completing the Single Market. He noted that regulatory differences between countries are equivalent to tariffs of around 67% for goods and 95% for services, and that shocks are shared far less in the euro area than in the United States. He called for a European deposit insurance scheme as the missing pillar of the banking union, a capital markets union, the digital euro and a European payments infrastructure. The speech contained no forward-looking statement on the rate path or the monetary policy stance.",
+      "scoreRationaleEn": "The speech focuses on geopolitical risks, financial resilience and European integration (Single Market, savings and investments union, payment systems); although it mentions the impact of supply shocks on inflation in general terms, it gives no signal on rate decisions or the policy stance.",
+      "titleTr": "Entegre, açık ve dayanıklı: Parçalanan bir dünyada Avrupa'nın güçlü yanları",
+      "contextTr": "Avrupa Merkez Bankası Başkan Yardımcısı Boris Vujčić'in, İrlanda Merkez Bankası'nın düzenlediği 5. Finansal Sistem Konferansı'nda yaptığı konuşma, Dublin, 2 Kasım 2026.",
+      "model": "claude-code/opus",
+      "promptVersion": "3",
+      "scoredAt": "2026-11-09T13:35:18.838Z",
+      "scoredVia": "claude-code"
+    },
     {
       "id": "20261102-next-day-securities-settlement-tokenisation-and-transformation-europes-financial-infrastructure",
       "contextEn": "Keynote address by Mr Piero Cipollone, Member of the Executive Board of the European Central Bank, at an EU T+1 Industry Committee event on “One year to T+1”, Frankfurt am Main, 29 October 2026.",
