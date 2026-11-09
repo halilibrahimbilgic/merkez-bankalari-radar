@@ -1,6 +1,21 @@
 {
-  "fetchedAt": "2026-11-09T17:32:08.680Z",
+  "fetchedAt": "2026-11-09T18:32:50.688Z",
   "items": [
+    {
+      "id": "570589800c6d",
+      "sourceKey": "marketwatch",
+      "sourceName": "MarketWatch",
+      "kind": "media",
+      "url": "https://www.marketwatch.com/story/hot-u-s-inflation-hasnt-cooled-off-rising-consumer-prices-to-keep-fed-rate-hike-on-track-926c44b0?mod=mw_rss_topstories",
+      "publishedAt": "2026-11-09T18:16:00.000Z",
+      "titleOriginal": "Hot U.S. inflation hasn’t cooled off. Rising consumer prices to keep Fed rate hike on track.",
+      "titleTr": "ABD'de yüksek enflasyon soğumadı, Fed faiz artırımı gündemde kalıyor",
+      "summaryTr": "MarketWatch'a göre yükselen fiyatlar, Fed'in Noel'den önce borçlanma maliyetlerini artırmasına işaret ediyor.",
+      "titleEn": "Hot U.S. inflation hasn't cooled, keeping Fed rate hike on track",
+      "summaryEn": "According to MarketWatch, rising prices point to the Fed raising borrowing costs before Christmas.",
+      "important": false,
+      "processedAt": "2026-11-09T18:32:50.688Z"
+    },
     {
       "id": "d8746be4a442",
       "sourceKey": "boe-speeches",
