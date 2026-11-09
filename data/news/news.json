@@ -1,6 +1,21 @@
 {
-  "fetchedAt": "2026-11-09T19:02:07.217Z",
+  "fetchedAt": "2026-11-09T20:02:24.685Z",
   "items": [
+    {
+      "id": "5d5212a8467e",
+      "sourceKey": "aa-economy",
+      "sourceName": "Anadolu Agency",
+      "kind": "media",
+      "url": "https://www.aa.com.tr/en/economy/us-consumer-inflation-expectations-unchanged-in-october/4117951",
+      "publishedAt": "2026-11-09T19:52:50.000Z",
+      "titleOriginal": "US consumer inflation expectations unchanged in October",
+      "titleTr": "ABD'de tüketicilerin enflasyon beklentisi Ekim'de değişmedi",
+      "summaryTr": "Bir yıl sonrasına ilişkin enflasyon beklentisi %3,9 seviyesinde sabit kaldı. İşsizliğin artacağına dair beklenti ise Nisan 2020'den bu yana en yüksek düzeye çıktı.",
+      "titleEn": "US consumer inflation expectations unchanged in October",
+      "summaryEn": "The year-ahead inflation outlook held at 3.9%. Expectations of rising unemployment reached their highest level since April 2020.",
+      "important": true,
+      "processedAt": "2026-11-09T20:02:24.685Z"
+    },
     {
       "id": "570589800c6d",
       "sourceKey": "marketwatch",
@@ -4534,6 +4549,9 @@
     "a2aacdba87b5": "2026-11-09",
     "457e680b9c25": "2026-11-09",
     "a4a63689e4db": "2026-11-09",
-    "119022a5583e": "2026-11-09"
+    "119022a5583e": "2026-11-09",
+    "76ef15e6815a": "2026-11-09",
+    "e199e3afed6e": "2026-11-09",
+    "ae6e6eb0a777": "2026-11-09"
   }
 }
