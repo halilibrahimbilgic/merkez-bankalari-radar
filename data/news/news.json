@@ -1,6 +1,21 @@
 {
-  "fetchedAt": "2026-11-09T21:01:31.464Z",
+  "fetchedAt": "2026-11-09T21:32:12.149Z",
   "items": [
+    {
+      "id": "db712409431f",
+      "sourceKey": "cnbc-economy",
+      "sourceName": "CNBC",
+      "kind": "media",
+      "url": "https://www.cnbc.com/2026/11/09/october-cpi-report-2026-inflation.html",
+      "publishedAt": "2026-11-09T21:03:55.000Z",
+      "titleOriginal": "A key report for where inflation stood in October comes out Tuesday. Here's what to expect",
+      "titleTr": "ABD Ekim enflasyon verisi salı günü açıklanıyor: beklentiler",
+      "summaryTr": "CNBC'ye göre Ekim ayı TÜFE verisi salı günü yayımlanacak. Manşet TÜFE'nin %0,3, çekirdek TÜFE'nin %0,2 artması bekleniyor.",
+      "titleEn": "US October CPI due Tuesday: what to expect",
+      "summaryEn": "CNBC reports the October CPI report is due Tuesday. Headline CPI is expected to rise 0.3% and core CPI 0.2%.",
+      "important": false,
+      "processedAt": "2026-11-09T21:32:12.149Z"
+    },
     {
       "id": "f9fa142d448d",
       "sourceKey": "marketwatch",
