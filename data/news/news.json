@@ -1,6 +1,22 @@
 {
-  "fetchedAt": "2026-11-09T14:02:10.541Z",
+  "fetchedAt": "2026-11-09T17:32:08.680Z",
   "items": [
+    {
+      "id": "d8746be4a442",
+      "sourceKey": "boe-speeches",
+      "sourceName": "Bank of England",
+      "kind": "official",
+      "bankCode": "boe",
+      "url": "https://www.bankofengland.co.uk/speech/2026/november/andrew-bailey-speech-at-swiss-institute-international-studies-lecture-series",
+      "publishedAt": "2026-11-09T17:25:00.000Z",
+      "titleOriginal": "Central Bank independence in today’s world - Speech by Andrew Bailey",
+      "titleTr": "BoE Başkanı Bailey'den Zürih'te merkez bankası bağımsızlığı konuşması",
+      "summaryTr": "Bank of England Başkanı Andrew Bailey, Zürih Üniversitesi'ndeki SIAF Konferans Serisi'nde \"Günümüz dünyasında merkez bankası bağımsızlığı\" başlıklı bir konuşma yaptı.",
+      "titleEn": "BoE's Bailey speaks on central bank independence in Zurich",
+      "summaryEn": "Bank of England Governor Andrew Bailey gave a speech titled \"Central Bank independence in today's world\" at the SIAF Lecture Series at Zurich University.",
+      "important": false,
+      "processedAt": "2026-11-09T17:32:08.680Z"
+    },
     {
       "id": "039aaed463c7",
       "sourceKey": "ft",
