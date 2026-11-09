@@ -1,6 +1,21 @@
 {
-  "fetchedAt": "2026-11-09T05:04:24.720Z",
+  "fetchedAt": "2026-11-09T06:02:25.279Z",
   "items": [
+    {
+      "id": "039aaed463c7",
+      "sourceKey": "ft",
+      "sourceName": "Financial Times",
+      "kind": "media",
+      "url": "https://www.ft.com/content/4dfbc7b0-1add-4bc3-ab5e-78c18b2ca87a?syn-25a6b1a6=1",
+      "publishedAt": "2026-11-09T05:00:34.000Z",
+      "titleOriginal": "ECB contender Klaas Knot ‘won’t hesitate’ to act in a debt crisis",
+      "titleTr": "ECB başkanlığı adayı Knot: Borç krizinde harekete geçmekte tereddüt etmem",
+      "summaryTr": "Financial Times'a göre ECB başkanlığı adayı Klaas Knot, borç krizi yaşanırsa gerekirse yeni kriz araçları geliştirmeye hazır olduğunu söyledi.",
+      "titleEn": "ECB contender Knot says he won't hesitate to act in a debt crisis",
+      "summaryEn": "According to the Financial Times, ECB presidency candidate Klaas Knot said he would be ready to devise new crisis-fighting tools if a debt crisis required it.",
+      "important": false,
+      "processedAt": "2026-11-09T06:02:25.279Z"
+    },
     {
       "id": "9e4ed4454f7a",
       "sourceKey": "ft",
@@ -4481,6 +4496,7 @@
     "a149bff98c42": "2026-11-09",
     "05160c960a97": "2026-11-09",
     "c1f489aa4fc1": "2026-11-09",
-    "99b48bc5e254": "2026-11-09"
+    "99b48bc5e254": "2026-11-09",
+    "5d2c7acac6cc": "2026-11-09"
   }
 }
