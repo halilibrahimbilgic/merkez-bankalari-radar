@@ -1,6 +1,21 @@
 {
-  "fetchedAt": "2026-11-09T00:02:19.848Z",
+  "fetchedAt": "2026-11-09T02:02:10.972Z",
   "items": [
+    {
+      "id": "74d30bb882f1",
+      "sourceKey": "cnbc-economy",
+      "sourceName": "CNBC",
+      "kind": "media",
+      "url": "https://www.cnbc.com/2026/11/09/china-wholesale-inflation-rises-consumer.html",
+      "publishedAt": "2026-11-09T01:40:11.000Z",
+      "titleOriginal": "China wholesale inflation hits over four-year high as consumer measure slows",
+      "titleTr": "Çin'de üretici enflasyonu dört yılı aşkın sürenin zirvesinde",
+      "summaryTr": "Çin'de ekim ayı üretici fiyat endeksi (ÜFE) yüzde 5,7 oldu; Reuters anketindeki ekonomistler yüzde 5,3 bekliyordu. Başlığa göre tüketici enflasyonu ise yavaşladı.",
+      "titleEn": "China wholesale inflation hits over four-year high",
+      "summaryEn": "China's October producer price index came in at 5.7%, above the 5.3% economists polled by Reuters expected. The headline says the consumer measure slowed.",
+      "important": false,
+      "processedAt": "2026-11-09T02:02:10.972Z"
+    },
     {
       "id": "22ccd0383d48",
       "sourceKey": "rba-speeches",
