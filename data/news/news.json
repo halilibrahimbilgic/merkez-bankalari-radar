@@ -1,6 +1,21 @@
 {
-  "fetchedAt": "2026-11-10T12:32:06.019Z",
+  "fetchedAt": "2026-11-10T13:02:05.371Z",
   "items": [
+    {
+      "id": "e908c547ede3",
+      "sourceKey": "marketwatch",
+      "sourceName": "MarketWatch",
+      "kind": "media",
+      "url": "https://www.marketwatch.com/story/nvidia-couldnt-derail-the-stock-markets-rally-hot-inflation-might-8a572024?mod=mw_rss_topstories",
+      "publishedAt": "2026-11-10T12:33:00.000Z",
+      "titleOriginal": "Nvidia couldn’t derail the stock market’s rally. Hot inflation might.",
+      "titleTr": "Fed yetkilisi yarım puanlık faiz artırımı ihtimalini gündeme getirdi",
+      "summaryTr": "MarketWatch'a göre bir Fed yetkilisi 0,5 puanlık faiz artırımı ihtimalini dile getirdi. Haberde, yüksek enflasyon verisinin borsadaki yükselişi bozabileceği belirtiliyor.",
+      "titleEn": "Fed official raises prospect of a half-point rate hike",
+      "summaryEn": "According to MarketWatch, a Fed official raised the possibility of a half-percentage-point rate hike. The piece says hot inflation data could derail the stock market's rally.",
+      "important": true,
+      "processedAt": "2026-11-10T13:02:05.371Z"
+    },
     {
       "id": "26c0a9f116ff",
       "sourceKey": "boe-speeches",
