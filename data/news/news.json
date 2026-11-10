@@ -1,6 +1,51 @@
 {
-  "fetchedAt": "2026-11-10T14:32:06.383Z",
+  "fetchedAt": "2026-11-10T15:02:14.954Z",
   "items": [
+    {
+      "id": "9e0ab35f9ab2",
+      "sourceKey": "aa-economy",
+      "sourceName": "Anadolu Agency",
+      "kind": "media",
+      "url": "https://www.aa.com.tr/en/economy/us-stocks-open-lower-as-inflation-fuels-rate-hike-concerns/4119146",
+      "publishedAt": "2026-11-10T14:56:53.000Z",
+      "titleOriginal": "US stocks open lower as inflation fuels rate hike concerns",
+      "titleTr": "ABD borsaları enflasyon kaynaklı faiz artırımı endişesiyle düşüşle açıldı",
+      "summaryTr": "Enflasyonun faiz artırımı endişesini beslemesiyle ABD borsaları düşüşle başladı; Nasdaq teknoloji hisselerindeki gerilemeyle %0,83 değer kaybetti. ABD 10 yıllık tahvil faizi %4,973'e yükseldi.",
+      "titleEn": "US stocks open lower as inflation fuels rate hike concerns",
+      "summaryEn": "US stocks opened lower on inflation-driven rate hike worries, with the Nasdaq down 0.83% as tech shares retreated. The 10-year Treasury yield rose to 4.973%.",
+      "important": false,
+      "processedAt": "2026-11-10T15:02:14.954Z"
+    },
+    {
+      "id": "12e1298250b9",
+      "sourceKey": "aa-ekonomi",
+      "sourceName": "Anadolu Ajansı",
+      "kind": "media",
+      "url": "https://www.aa.com.tr/tr/ekonomi/abd-enflasyonu-ve-fed-uyesi-wallerin-sahin-mesaji-altin-ve-kripto-piyasasinda-dususe-neden-oldu/4119129",
+      "publishedAt": "2026-11-10T14:47:56.000Z",
+      "titleOriginal": "ABD enflasyonu ve Fed üyesi Waller'ın şahin mesajı altın ve kripto piyasasında düşüşe neden oldu",
+      "titleTr": "ABD enflasyonu ve Waller'ın şahin mesajı altın ve kriptoyu düşürdü",
+      "summaryTr": "Beklentilerin üzerinde gelen ABD enflasyon verisi ve Fed yetkililerinin şahin açıklamaları sonrası altın ve kripto paralar düşüş kaydetti. Haberde Fed üyesi Waller'ın şahin mesajı öne çıkarıldı.",
+      "titleEn": "US inflation and Fed's Waller's hawkish message push gold and crypto lower",
+      "summaryEn": "Gold and cryptocurrencies fell after US inflation data came in above expectations and Fed officials made hawkish remarks. The report highlights Fed member Waller's hawkish message.",
+      "important": true,
+      "processedAt": "2026-11-10T15:02:14.954Z"
+    },
+    {
+      "id": "5645c7549d61",
+      "sourceKey": "aa-economy",
+      "sourceName": "Anadolu Agency",
+      "kind": "media",
+      "url": "https://www.aa.com.tr/en/economy/us-treasury-yields-jump-after-stronger-than-expected-inflation-fed-rate-hike-signals/4119120",
+      "publishedAt": "2026-11-10T14:44:37.000Z",
+      "titleOriginal": "US Treasury yields jump after stronger-than-expected inflation, Fed rate hike signals",
+      "titleTr": "ABD tahvil faizleri, güçlü enflasyon ve Fed'in faiz artırımı sinyalleriyle sıçradı",
+      "summaryTr": "Beklentilerin üzerindeki enflasyon ve Fed'den gelen faiz artırımı sinyalleri sonrası 10 yıllık tahvil faizi %4,954'e çıktı, 2 yıllık faiz 13 baz puan yükseldi. Yatırımcılar daha fazla parasal sıkılaşma ihtimalini tartıyor.",
+      "titleEn": "US Treasury yields jump after stronger-than-expected inflation, Fed rate hike signals",
+      "summaryEn": "The 10-year yield climbed to 4.954% and the 2-year yield rose 13 basis points after hotter inflation and Fed rate hike signals. Investors are weighing the prospect of further monetary tightening.",
+      "important": true,
+      "processedAt": "2026-11-10T15:02:14.954Z"
+    },
     {
       "id": "7491e13dd054",
       "sourceKey": "bbc-business",
