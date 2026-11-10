@@ -1,6 +1,21 @@
 {
-  "fetchedAt": "2026-11-10T15:32:11.124Z",
+  "fetchedAt": "2026-11-10T16:02:26.166Z",
   "items": [
+    {
+      "id": "5b1badbb25a2",
+      "sourceKey": "marketwatch",
+      "sourceName": "MarketWatch",
+      "kind": "media",
+      "url": "https://www.marketwatch.com/story/why-stocks-are-falling-and-10-year-yields-are-climbing-back-near-5-after-tuesdays-inflation-report-389b8392?mod=mw_rss_topstories",
+      "publishedAt": "2026-11-10T15:47:00.000Z",
+      "titleOriginal": "Why stocks are falling and 10-year yields are climbing back near 5% after Tuesday’s inflation report",
+      "titleTr": "Enflasyon raporu sonrası hisseler düşüyor, 10 yıllık tahvil faizi %5'e yaklaştı",
+      "summaryTr": "MarketWatch'a göre Salı günü açıklanan enflasyon raporunun ardından hisseler geriliyor, 10 yıllık tahvil faizleri yeniden %5 civarına çıkıyor. Bir portföy yöneticisi, Fed'in faizi 25 baz puan daha artırmaması gerektiğini söyledi.",
+      "titleEn": "Stocks fall as 10-year yields climb back near 5% after inflation report",
+      "summaryEn": "MarketWatch reports stocks are falling and 10-year yields are rising back near 5% after Tuesday's inflation report. One portfolio manager said the Fed should not raise rates another 25 basis points.",
+      "important": true,
+      "processedAt": "2026-11-10T16:02:26.166Z"
+    },
     {
       "id": "9e0ab35f9ab2",
       "sourceKey": "aa-economy",
