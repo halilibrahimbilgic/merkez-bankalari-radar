@@ -1,6 +1,22 @@
 {
-  "fetchedAt": "2026-11-09T21:32:12.149Z",
+  "fetchedAt": "2026-11-10T00:02:25.312Z",
   "items": [
+    {
+      "id": "25c93de35d30",
+      "sourceKey": "boj",
+      "sourceName": "Bank of Japan",
+      "kind": "official",
+      "bankCode": "boj",
+      "url": "https://www.boj.or.jp/en/mopo/mpmsche_minu/opinion_2026/opi261030.pdf",
+      "publishedAt": "2026-11-09T23:50:00.000Z",
+      "titleOriginal": "Summary of Opinions at the Monetary Policy Meeting on October 29 and 30, 2026",
+      "titleTr": "BoJ, 29-30 Ekim para politikası toplantısının görüş özetini yayımladı",
+      "summaryTr": "Japonya Merkez Bankası (BoJ), 29-30 Ekim 2026 tarihli Para Politikası Toplantısı'nda dile getirilen görüşlerin özetini yayımladı.",
+      "titleEn": "BoJ publishes summary of opinions from its October 29-30 policy meeting",
+      "summaryEn": "The Bank of Japan released the summary of opinions expressed at its Monetary Policy Meeting held on October 29 and 30, 2026.",
+      "important": true,
+      "processedAt": "2026-11-10T00:02:25.312Z"
+    },
     {
       "id": "db712409431f",
       "sourceKey": "cnbc-economy",
@@ -4511,16 +4527,6 @@
     }
   ],
   "rejected": {
-    "652490a6885d": "2026-11-02",
-    "be30d3344486": "2026-11-02",
-    "30e505046e0e": "2026-11-02",
-    "4b011b4817ef": "2026-11-02",
-    "c49d3e419d06": "2026-11-02",
-    "49d3781c5e1f": "2026-11-02",
-    "d761edc534f8": "2026-11-02",
-    "6186aa95c74a": "2026-11-02",
-    "53d3c3a43032": "2026-11-02",
-    "877936d7ddbb": "2026-11-02",
     "c75004a9e657": "2026-11-03",
     "df9eb04ce446": "2026-11-03",
     "1c211dd6eb41": "2026-11-03",
@@ -4583,6 +4589,7 @@
     "76ef15e6815a": "2026-11-09",
     "e199e3afed6e": "2026-11-09",
     "ae6e6eb0a777": "2026-11-09",
-    "42d475a17258": "2026-11-09"
+    "42d475a17258": "2026-11-09",
+    "e2acedf23ba2": "2026-11-10"
   }
 }

@@ -1,5 +1,5 @@
 {
-  "fetchedAt": "2026-11-05T12:03:49.277Z",
+  "fetchedAt": "2026-11-10T00:03:08.962Z",
   "minutes": [
     {
       "meetingId": "boe-2026-02-05",
@@ -415,6 +415,38 @@
         "model": "claude-code/opus",
         "promptVersion": "1",
         "summarizedAt": "2026-10-14T23:03:47.514Z"
+      }
+    },
+    {
+      "meetingId": "boj-2026-10-30",
+      "bankCode": "boj",
+      "urls": {
+        "en": "https://www.boj.or.jp/en/mopo/mpmsche_minu/opinion_2026/opi261030.pdf"
+      },
+      "fetchedAt": "2026-11-10T00:02:26.899Z",
+      "summary": {
+        "headlineTr": "BoJ üyelerinin çoğu faiz artırımlarının süreceğini düşünüyor; bazıları politika faizinin nötr düzeye hızla taşınması gerektiğini savunurken, diğerleri geçmiş artırımların etkisini görmek için beklemeyi uygun buldu.",
+        "headlineEn": "Most BoJ members see rate hikes continuing; some argued for bringing the policy rate to neutral quickly, while others preferred to wait and assess the effects of past hikes.",
+        "pointsTr": [
+          "Üyeler, temel TÜFE enflasyonunun %2 fiyat istikrarı hedefiyle genel olarak uyumlu olduğunu ve TÜFE'nin (taze gıda hariç) mali yıl sonuna doğru %3'ü aşmasının beklendiğini değerlendirdi; asıl meselenin enflasyonu %2'de çıpalamak olduğu vurgulandı.",
+          "Bazı üyeler finansal koşulların gevşek kaldığını ve politika faizinin nötr düzeye 'erken bir aşamada' ya da 'yakında' getirilmesi gerektiğini, bir sonraki artırımın aşırı temkinli olunmadan kararlaştırılmasını savundu.",
+          "Faizi sabit tutmayı destekleyen görüşler, ekonomideki kısmi zayıflığa, Orta Doğu'daki gelişmelerin etkisine ve geçmiş artırımların birikimli etkilerini değerlendirme ihtiyacına dayandı; bir üye politika faizinin tahmini nötr faiz aralığına girdiğini ve yeni artırımın ekonomiye yük olma riskini hatırlattı.",
+          "Ücretler konusunda görüşler ayrıştı: bir görüş firmaların gelecek yıl da benzer ücret artışı yapacağını, diğeri ücret artışının belirgin hızlanmasının ve ikincil etkilerin olası olmadığını belirtti; gelecek yılın bahar ücret pazarlıkları yakından izlenecek.",
+          "Üyeler, Ocak'tan bu yana sorunsuz süren ETF satışlarının hızının değiştirilmesinin uygun olduğunu dile getirdi; özel tüketimin ise ekonomiyi sürükleyecek ivmeden yoksun olduğu not edildi."
+        ],
+        "pointsEn": [
+          "Members judged underlying CPI inflation to be generally consistent with the 2 percent price stability target and projected CPI (all items less fresh food) to exceed 3 percent toward the end of the fiscal year, stressing that anchoring inflation at 2 percent is now the key issue.",
+          "Some members said financial conditions remain accommodative and that the policy rate should be brought to the neutral level 'at an early stage' or 'soon', with the next hike decided without becoming overly cautious.",
+          "Views supporting the hold cited partial weakness in the economy, the impact of the Middle East situation and the need to assess the cumulative effects of past hikes; one member noted the policy rate has entered the estimated range of the neutral rate and warned a further hike could weigh on the economy.",
+          "Views on wages diverged: one said firms plan similar raises next year, another that a significant acceleration in wage growth and second-round effects are unlikely; next year's spring wage negotiations will be closely watched.",
+          "Members said it is appropriate to change the pace of ETF sales, which have proceeded smoothly since January, while private consumption was described as lacking the momentum to lead the economy."
+        ],
+        "score": 4,
+        "scoreReasonTr": "Üyelerin çoğu faiz artırımlarının sürmesi, politika faizinin nötr düzeye 'yakında' getirilmesi ve bir sonraki artırımda 'aşırı temkinli olunmaması' gerektiğini söylerken, sabit tutma gerekçesi yalnızca kısa bir ek değerlendirme ihtiyacıyla sınırlı kaldı.",
+        "scoreReasonEn": "Most members said rate hikes should continue, the policy rate should be brought to neutral 'soon' and the next hike decided 'without becoming overly cautious', while the case for holding rested only on the need for a little more examination.",
+        "model": "claude-code/opus",
+        "promptVersion": "1",
+        "summarizedAt": "2026-11-10T00:03:08.962Z"
       }
     },
     {
