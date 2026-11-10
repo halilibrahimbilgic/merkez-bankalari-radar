@@ -1,6 +1,21 @@
 {
-  "fetchedAt": "2026-11-10T09:32:06.448Z",
+  "fetchedAt": "2026-11-10T10:02:18.878Z",
   "items": [
+    {
+      "id": "214bfbf64d6f",
+      "sourceKey": "marketwatch",
+      "sourceName": "MarketWatch",
+      "kind": "media",
+      "url": "https://www.marketwatch.com/story/feds-waller-puts-half-point-rate-hike-into-the-mix-for-december-1bebdffc?mod=mw_rss_topstories",
+      "publishedAt": "2026-11-10T09:45:00.000Z",
+      "titleOriginal": "Fed’s Waller puts half-point rate hike into the mix for December",
+      "titleTr": "Fed'den Waller: Aralık'ta yarım puanlık faiz artırımı ihtimali masada",
+      "summaryTr": "Fed Guvernörü Chris Waller, Ekim ayı tüketici fiyatları verisinin ne kadar yüksek geldiğine bağlı olarak Aralık'ta yarım puanlık bir faiz artırımının da gündeme gelebileceğini söyledi.",
+      "titleEn": "Fed's Waller puts half-point rate hike on the table for December",
+      "summaryEn": "Fed Governor Chris Waller said a half-point rate hike could come into consideration in December, depending on how hot the October consumer price data turns out to be.",
+      "important": true,
+      "processedAt": "2026-11-10T10:02:18.878Z"
+    },
     {
       "id": "5badfa429f73",
       "sourceKey": "cnbc-finance",
