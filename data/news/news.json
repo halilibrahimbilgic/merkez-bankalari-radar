@@ -1,6 +1,37 @@
 {
-  "fetchedAt": "2026-11-10T16:02:26.166Z",
+  "fetchedAt": "2026-11-10T17:02:24.774Z",
   "items": [
+    {
+      "id": "caab8c0ec670",
+      "sourceKey": "ecb",
+      "sourceName": "ECB",
+      "kind": "official",
+      "bankCode": "ecb",
+      "url": "https://www.ecb.europa.eu//press/key/date/2026/html/ecb.sp261110_1~9725b7aa07.en.html",
+      "publishedAt": "2026-11-10T16:45:00.000Z",
+      "titleOriginal": "Philip R. Lane: The science and practice of monetary policy communication: the ECB experience",
+      "titleTr": "Lane: Para politikası iletişiminin bilimi ve uygulaması, ECB deneyimi",
+      "summaryTr": "ECB Yönetim Kurulu üyesi Philip Lane, para politikası iletişimini ve ECB'nin bu alandaki deneyimini ele alan bir konuşma yaptı.",
+      "titleEn": "Lane: The science and practice of monetary policy communication, the ECB experience",
+      "summaryEn": "ECB Executive Board member Philip Lane gave a speech on monetary policy communication and the ECB's experience in this area.",
+      "important": false,
+      "processedAt": "2026-11-10T17:02:24.774Z"
+    },
+    {
+      "id": "4e36f93f2a7e",
+      "sourceKey": "aa-economy",
+      "sourceName": "Anadolu Agency",
+      "kind": "media",
+      "url": "https://www.aa.com.tr/en/economy/fed-needs-at-least-2-more-quarter-point-rate-hikes-dallas-fed-chief/4119303",
+      "publishedAt": "2026-11-10T16:41:12.000Z",
+      "titleOriginal": "Fed needs at least 2 more quarter-point rate hikes: Dallas Fed chief",
+      "titleTr": "Dallas Fed Başkanı Logan: Fed'in en az 2 çeyrek puanlık artırım daha yapması gerek",
+      "summaryTr": "Dallas Fed Başkanı Lorie Logan, bu kış sıkılaştırmanın hızlanabileceğini, ardından ek adımları değerlendirmek için bir ara verilebileceğini belirtti.",
+      "titleEn": "Dallas Fed's Logan: Fed needs at least 2 more quarter-point rate hikes",
+      "summaryEn": "Dallas Fed President Lorie Logan signaled faster tightening this winter, followed by a pause to assess whether further action is needed.",
+      "important": true,
+      "processedAt": "2026-11-10T17:02:24.774Z"
+    },
     {
       "id": "5b1badbb25a2",
       "sourceKey": "marketwatch",
