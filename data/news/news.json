@@ -1,6 +1,36 @@
 {
-  "fetchedAt": "2026-11-10T13:02:05.371Z",
+  "fetchedAt": "2026-11-10T14:02:25.967Z",
   "items": [
+    {
+      "id": "fd9f7180cff0",
+      "sourceKey": "aa-economy",
+      "sourceName": "Anadolu Agency",
+      "kind": "media",
+      "url": "https://www.aa.com.tr/en/economy/gold-plunges-over-2-as-us-inflation-exceeds-expectations/4119007",
+      "publishedAt": "2026-11-10T13:52:17.000Z",
+      "titleOriginal": "Gold plunges over 2% as US inflation exceeds expectations",
+      "titleTr": "Altın ABD enflasyonu sonrası %2'den fazla düştü",
+      "summaryTr": "Altın ons başına 4.052 dolara geriledi, gümüş %2,8 değer kaybetti. Beklentilerin üzerinde gelen enflasyon, Fed'in faiz artırımı endişesini artırdı.",
+      "titleEn": "Gold plunges over 2% as US inflation tops expectations",
+      "summaryEn": "Gold fell to $4,052 an ounce and silver dropped 2.8%. Stronger-than-expected inflation raised concerns over Federal Reserve rate hikes.",
+      "important": true,
+      "processedAt": "2026-11-10T14:02:25.967Z"
+    },
+    {
+      "id": "c82a753e6baf",
+      "sourceKey": "aa-economy",
+      "sourceName": "Anadolu Agency",
+      "kind": "media",
+      "url": "https://www.aa.com.tr/en/economy/us-consumer-prices-rise-04-in-october-exceeding-forecasts/4119005",
+      "publishedAt": "2026-11-10T13:52:00.000Z",
+      "titleOriginal": "US consumer prices rise 0.4% in October, exceeding forecasts",
+      "titleTr": "ABD'de tüketici fiyatları ekimde aylık %0,4 arttı, beklentiler aşıldı",
+      "summaryTr": "Enerji, gıda ve barınma maliyetleri aylık artışı yönlendirdi. 2025'teki hükümet kapanması nedeniyle yıllık enflasyon rakamı açıklanamadı.",
+      "titleEn": "US consumer prices rise 0.4% in October, exceeding forecasts",
+      "summaryEn": "Energy, food and shelter costs drove the monthly increase. The annual inflation figure is unavailable because of the 2025 government shutdown.",
+      "important": true,
+      "processedAt": "2026-11-10T14:02:25.967Z"
+    },
     {
       "id": "e908c547ede3",
       "sourceKey": "marketwatch",
@@ -4716,6 +4746,11 @@
     "e2acedf23ba2": "2026-11-10",
     "8457dcc07959": "2026-11-10",
     "8e75d6c53302": "2026-11-10",
-    "f5b941cb6a6b": "2026-11-10"
+    "f5b941cb6a6b": "2026-11-10",
+    "d4adc1d42e45": "2026-11-10",
+    "224a3c805e9e": "2026-11-10",
+    "843004bf0669": "2026-11-10",
+    "223c487c11c0": "2026-11-10",
+    "ef8b58697dad": "2026-11-10"
   }
 }
