@@ -1,6 +1,21 @@
 {
-  "fetchedAt": "2026-11-10T09:02:24.715Z",
+  "fetchedAt": "2026-11-10T09:32:06.448Z",
   "items": [
+    {
+      "id": "5badfa429f73",
+      "sourceKey": "cnbc-finance",
+      "sourceName": "CNBC",
+      "kind": "media",
+      "url": "https://www.cnbc.com/2026/11/10/fed-governor-waller-sees-december-hike-likely.html",
+      "publishedAt": "2026-11-10T09:00:01.000Z",
+      "titleOriginal": "Fed Governor Waller sees December hike likely, opens door to possible half-point increase",
+      "titleTr": "Fed'den Waller: Aralık'ta artırım olası, yarım puanlık adım gündemde",
+      "summaryTr": "Fed Guvernörü Waller, Aralık'ta faiz artırımına yöneldiğini söyledi. Enflasyon verilerine bağlı olarak yarım puanlık bir artırımı da destekleyebileceğini belirtti.",
+      "titleEn": "Fed's Waller sees December hike likely, half-point move on the table",
+      "summaryEn": "Fed Governor Waller said he is leaning toward a rate increase in December. He added that he could back a half-point hike depending on inflation data.",
+      "important": true,
+      "processedAt": "2026-11-10T09:32:06.448Z"
+    },
     {
       "id": "0f1f1663cad0",
       "sourceKey": "fed-speeches",
@@ -4637,6 +4652,8 @@
     "ae6e6eb0a777": "2026-11-09",
     "42d475a17258": "2026-11-09",
     "e2acedf23ba2": "2026-11-10",
-    "8457dcc07959": "2026-11-10"
+    "8457dcc07959": "2026-11-10",
+    "8e75d6c53302": "2026-11-10",
+    "f5b941cb6a6b": "2026-11-10"
   }
 }
