@@ -1,6 +1,21 @@
 {
-  "fetchedAt": "2026-11-10T06:02:38.066Z",
+  "fetchedAt": "2026-11-10T07:32:13.895Z",
   "items": [
+    {
+      "id": "13323758bb66",
+      "sourceKey": "aa-economy",
+      "sourceName": "Anadolu Agency",
+      "kind": "media",
+      "url": "https://www.aa.com.tr/en/economy/global-markets-soar-amid-tech-rebound-cooling-oil-as-all-eyes-turn-to-us-inflation/4118238",
+      "publishedAt": "2026-11-10T07:26:18.000Z",
+      "titleOriginal": "Global markets soar amid tech rebound, cooling oil as all eyes turn to US inflation",
+      "titleTr": "Küresel piyasalar teknoloji toparlanmasıyla yükseldi, gözler ABD enflasyonunda",
+      "summaryTr": "Anadolu Ajansı'na göre büyük teknoloji ve çip şirketleri Nvidia dışında toparlandı; ABD-İran gerginliğinin azalma ihtimali enerji fiyatlarını geriletti. Piyasalar ABD'nin ekim ayı enflasyon raporuna odaklandı.",
+      "titleEn": "Global markets rise on tech rebound as focus turns to US inflation",
+      "summaryEn": "Anadolu Agency reports that major tech and chip stocks recovered, except Nvidia, while a lower chance of further US-Iran military tensions pushed energy prices down. Markets are now watching the US October inflation report.",
+      "important": false,
+      "processedAt": "2026-11-10T07:32:13.895Z"
+    },
     {
       "id": "4d4d2fcca84e",
       "sourceKey": "aa-ekonomi",
