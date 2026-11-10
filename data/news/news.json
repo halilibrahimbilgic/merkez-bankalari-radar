@@ -1,6 +1,22 @@
 {
-  "fetchedAt": "2026-11-10T20:02:18.048Z",
+  "fetchedAt": "2026-11-10T20:32:11.563Z",
   "items": [
+    {
+      "id": "c8efd21414b5",
+      "sourceKey": "fed-speeches",
+      "sourceName": "Federal Reserve",
+      "kind": "official",
+      "bankCode": "fed",
+      "url": "https://www.federalreserve.gov/newsevents/speech/bowman20261110a.htm",
+      "publishedAt": "2026-11-10T20:30:00.000Z",
+      "titleOriginal": "Bowman, The U.S. Economy and Considerations for Monetary Policy",
+      "titleTr": "Fed'den Bowman: ABD ekonomisi ve para politikası değerlendirmeleri",
+      "summaryTr": "Fed Yönetim Kurulu üyesi Bowman, Washington'da Dış İlişkiler Konseyi'nin düzenlediği C. Peter McColough serisinde ABD ekonomisi ve para politikası üzerine bir konuşma yaptı.",
+      "titleEn": "Fed's Bowman on the U.S. economy and monetary policy considerations",
+      "summaryEn": "Fed Governor Bowman gave a speech on the U.S. economy and considerations for monetary policy at the Council on Foreign Relations' C. Peter McColough Series in Washington, D.C.",
+      "important": true,
+      "processedAt": "2026-11-10T20:32:11.563Z"
+    },
     {
       "id": "d97a7b6cfcc9",
       "sourceKey": "marketwatch",
@@ -4877,6 +4893,7 @@
     "36fc4094ad9d": "2026-11-10",
     "9ff7329f94e7": "2026-11-10",
     "4870cb2a2153": "2026-11-10",
-    "3ccade89ad04": "2026-11-10"
+    "3ccade89ad04": "2026-11-10",
+    "5b49f8abd81e": "2026-11-10"
   }
 }
