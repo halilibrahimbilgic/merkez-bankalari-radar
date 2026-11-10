@@ -1,6 +1,22 @@
 {
-  "fetchedAt": "2026-11-10T12:02:25.065Z",
+  "fetchedAt": "2026-11-10T12:32:06.019Z",
   "items": [
+    {
+      "id": "26c0a9f116ff",
+      "sourceKey": "boe-speeches",
+      "sourceName": "Bank of England",
+      "kind": "official",
+      "bankCode": "boe",
+      "url": "https://www.bankofengland.co.uk/speech/2026/november/clare-lombardelli-speech-at-the-bank-watchers-conference",
+      "publishedAt": "2026-11-10T12:30:00.000Z",
+      "titleOriginal": "The low-gear labour market − speech by Clare Lombardelli",
+      "titleTr": "BoE'den Lombardelli: \"Düşük viteste işgücü piyasası\" konuşması",
+      "summaryTr": "İngiltere Merkez Bankası Başkan Yardımcısı Clare Lombardelli, Bank of England Watchers Conference'ta işgücü piyasasına dair bir konuşma yaptı. Kaynakta konuşmanın içeriğine dair ayrıntı verilmedi.",
+      "titleEn": "BoE's Lombardelli speaks on the \"low-gear labour market\"",
+      "summaryEn": "Bank of England official Clare Lombardelli gave a speech on the labour market at the Bank of England Watchers Conference. The source gives no details of the speech's content.",
+      "important": true,
+      "processedAt": "2026-11-10T12:32:06.019Z"
+    },
     {
       "id": "4df2cedfb5a5",
       "sourceKey": "boe-news",
