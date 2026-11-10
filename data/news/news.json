@@ -1,6 +1,22 @@
 {
-  "fetchedAt": "2026-11-10T10:02:18.878Z",
+  "fetchedAt": "2026-11-10T12:02:25.065Z",
   "items": [
+    {
+      "id": "4df2cedfb5a5",
+      "sourceKey": "boe-news",
+      "sourceName": "Bank of England",
+      "kind": "official",
+      "bankCode": "boe",
+      "url": "https://www.bankofengland.co.uk/letter/2026/asset-purchase-facility-november-2026",
+      "publishedAt": "2026-11-10T12:00:00.000Z",
+      "titleOriginal": "Exchange of letters between the Governor and the Chancellor on the Asset Purchase Facility - November 2026",
+      "titleTr": "BoE Başkanı ile Maliye Bakanı arasında Varlık Alım Programı yazışması",
+      "summaryTr": "Bank of England, Başkan ile Maliye Bakanı arasındaki Varlık Alım Programı'na (APF) ilişkin Kasım 2026 tarihli yazışmayı yayımladı.",
+      "titleEn": "BoE Governor and Chancellor exchange letters on Asset Purchase Facility",
+      "summaryEn": "The Bank of England published the November 2026 exchange of letters between the Governor and the Chancellor on the Asset Purchase Facility.",
+      "important": false,
+      "processedAt": "2026-11-10T12:02:25.065Z"
+    },
     {
       "id": "214bfbf64d6f",
       "sourceKey": "marketwatch",
