@@ -1,6 +1,22 @@
 {
-  "fetchedAt": "2026-11-10T07:32:13.895Z",
+  "fetchedAt": "2026-11-10T09:02:24.715Z",
   "items": [
+    {
+      "id": "0f1f1663cad0",
+      "sourceKey": "fed-speeches",
+      "sourceName": "Federal Reserve",
+      "kind": "official",
+      "bankCode": "fed",
+      "url": "https://www.federalreserve.gov/newsevents/speech/waller20261110a.htm",
+      "publishedAt": "2026-11-10T09:00:00.000Z",
+      "titleOriginal": "Waller, The Economic Outlook and Some Thoughts on Labor Market Dynamism",
+      "titleTr": "Fed'den Waller: Ekonomik görünüm ve işgücü piyasasındaki dinamizm",
+      "summaryTr": "Fed Yönetim Kurulu üyesi Waller, Londra'daki Bank of England Watchers Conference'ta ekonomik görünüm ve işgücü piyasası dinamizmi üzerine bir konuşma yaptı.",
+      "titleEn": "Fed's Waller on the economic outlook and labor market dynamism",
+      "summaryEn": "Fed Governor Waller gave a speech on the economic outlook and labor market dynamism at the Bank of England Watchers Conference in London.",
+      "important": true,
+      "processedAt": "2026-11-10T09:02:24.715Z"
+    },
     {
       "id": "13323758bb66",
       "sourceKey": "aa-economy",
@@ -4620,6 +4636,7 @@
     "e199e3afed6e": "2026-11-09",
     "ae6e6eb0a777": "2026-11-09",
     "42d475a17258": "2026-11-09",
-    "e2acedf23ba2": "2026-11-10"
+    "e2acedf23ba2": "2026-11-10",
+    "8457dcc07959": "2026-11-10"
   }
 }
