@@ -1,6 +1,21 @@
 {
-  "fetchedAt": "2026-11-10T14:02:25.967Z",
+  "fetchedAt": "2026-11-10T14:32:06.383Z",
   "items": [
+    {
+      "id": "7491e13dd054",
+      "sourceKey": "bbc-business",
+      "sourceName": "BBC News",
+      "kind": "media",
+      "url": "https://www.bbc.co.uk/news/articles/cwy8lx3pg4k2o?at_medium=RSS&at_campaign=rss",
+      "publishedAt": "2026-11-10T14:03:00.000Z",
+      "titleOriginal": "US inflation higher than expected in October - here's what is happening with prices",
+      "titleTr": "ABD'de enflasyon Ekim'de beklentilerin üzerinde geldi",
+      "summaryTr": "ABD'de fiyatlar Ekim ayında yüzde 0,4 arttı. Artışta barınma, gıda ve enerji maliyetlerindeki yükseliş etkili oldu.",
+      "titleEn": "US inflation higher than expected in October",
+      "summaryEn": "US prices rose 0.4% over the month in October. The increase was driven by higher shelter, food and energy costs.",
+      "important": true,
+      "processedAt": "2026-11-10T14:32:06.383Z"
+    },
     {
       "id": "fd9f7180cff0",
       "sourceKey": "aa-economy",
