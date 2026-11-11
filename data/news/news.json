@@ -1,6 +1,21 @@
 {
-  "fetchedAt": "2026-11-11T12:31:36.397Z",
+  "fetchedAt": "2026-11-11T13:01:48.762Z",
   "items": [
+    {
+      "id": "1d9227690aaf",
+      "sourceKey": "aa-economy",
+      "sourceName": "Anadolu Agency",
+      "kind": "media",
+      "url": "https://www.aa.com.tr/en/economy/global-markets-mixed-as-hotter-than-expected-us-inflation-fuels-hawkish-expectations/4120701",
+      "publishedAt": "2026-11-11T12:56:04.000Z",
+      "titleOriginal": "Global markets mixed as hotter-than-expected US inflation fuels hawkish expectations",
+      "titleTr": "ABD'de beklentiden yüksek enflasyon küresel piyasalarda karışık seyir yarattı",
+      "summaryTr": "ABD'de ekim ayı enflasyonundaki aylık artış, Fed'in faiz artırımına yönelik beklentileri 50 baz puana kadar yükseltti. Petrol fiyatlarındaki düşüşün enflasyonu hafifletebileceği umudu kısa sürdü.",
+      "titleEn": "Hotter-than-expected US inflation leaves global markets mixed",
+      "summaryEn": "The monthly rise in US October inflation lifted expectations for Fed rate hikes to as much as 50 basis points. Brief hopes that falling oil prices would ease inflation did not last.",
+      "important": true,
+      "processedAt": "2026-11-11T13:01:48.762Z"
+    },
     {
       "id": "0d29c975226b",
       "sourceKey": "boe-speeches",
