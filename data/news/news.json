@@ -1,6 +1,22 @@
 {
-  "fetchedAt": "2026-11-11T11:02:23.694Z",
+  "fetchedAt": "2026-11-11T11:32:07.889Z",
   "items": [
+    {
+      "id": "0d29c975226b",
+      "sourceKey": "boe-speeches",
+      "sourceName": "Bank of England",
+      "kind": "official",
+      "bankCode": "boe",
+      "url": "https://www.bankofengland.co.uk/speech/2026/november/jon-hall-speech-at-cf-imperial-workshop",
+      "publishedAt": "2026-11-11T11:30:00.000Z",
+      "titleOriginal": "Principals and Agents – speech by Jonathan Hall",
+      "titleTr": "BoE'den Jonathan Hall'ın \"Principals and Agents\" konuşması",
+      "summaryTr": "Bank of England yetkilisi Jonathan Hall, Deutsche Bank'ın ev sahipliğindeki CFM-Imperial Nicel Finans Çalıştayı'nda \"Principals and Agents\" başlıklı bir konuşma yaptı. Verilen bilgide konuşmanın içeriğine dair ayrıntı yer almıyor.",
+      "titleEn": "BoE's Jonathan Hall gives speech \"Principals and Agents\"",
+      "summaryEn": "Bank of England's Jonathan Hall delivered a speech titled \"Principals and Agents\" at the CFM-Imperial Workshop on Quantitative Finance, hosted by Deutsche Bank. The provided information does not describe the speech's content.",
+      "important": false,
+      "processedAt": "2026-11-11T11:32:07.889Z"
+    },
     {
       "id": "77706282dff2",
       "sourceKey": "marketwatch",
