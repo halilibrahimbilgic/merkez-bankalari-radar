@@ -1,6 +1,22 @@
 {
-  "fetchedAt": "2026-11-11T15:01:49.296Z",
+  "fetchedAt": "2026-11-11T20:02:11.965Z",
   "items": [
+    {
+      "id": "c4ca057111f7",
+      "sourceKey": "tcmb-basin",
+      "sourceName": "TCMB",
+      "kind": "official",
+      "bankCode": "tcmb",
+      "url": "https://www.tcmb.gov.tr/wps/wcm/connect/tr/tcmb+tr/main+menu/duyurular/basin/2026/duy2026-49",
+      "publishedAt": "2026-11-11T15:15:00.000Z",
+      "titleOriginal": "Makroihtiyati Çerçeveye İlişkin Basın Duyurusu (2026-49)",
+      "titleTr": "TCMB'den makroihtiyati çerçeveye ilişkin basın duyurusu",
+      "summaryTr": "TCMB, makroihtiyati çerçeveye ilişkin 2026-49 sayılı basın duyurusunu yayımladı. Duyurunun ayrıntıları verilen bilgide yer almıyor.",
+      "titleEn": "CBRT issues press release on the macroprudential framework",
+      "summaryEn": "The Central Bank of Turkey (CBRT) published press release 2026-49 on the macroprudential framework. Details of the announcement are not included in the information provided.",
+      "important": true,
+      "processedAt": "2026-11-11T20:02:11.965Z"
+    },
     {
       "id": "ca9231bcf2a4",
       "sourceKey": "aa-economy",
@@ -4845,51 +4861,6 @@
       "summaryEn": "The Bank of Japan released the Corporate Goods Price Index data for September.",
       "important": false,
       "processedAt": "2026-10-13T02:32:27.315Z"
-    },
-    {
-      "id": "36889a6aea34",
-      "sourceKey": "cnbc-finance",
-      "sourceName": "CNBC",
-      "kind": "media",
-      "url": "https://www.cnbc.com/2026/10/12/beth-hammack-fed-inflation-policy.html",
-      "publishedAt": "2026-10-12T17:15:21.000Z",
-      "titleOriginal": "Higher rates could be needed to avoid 'inflationary mindset' taking hold, says Fed's Hammack",
-      "titleTr": "Fed'den Hammack: 'Enflasyonist zihniyet' yerleşmesin diye faiz artışı gerekebilir",
-      "summaryTr": "Cleveland Fed Başkanı Beth Hammack, enflasyonu düşürmek için daha sıkı bir para politikasına ihtiyaç duyulabileceğini söyledi.",
-      "titleEn": "Fed's Hammack: higher rates may be needed to keep an 'inflationary mindset' from taking hold",
-      "summaryEn": "Cleveland Fed President Beth Hammack said tighter monetary policy may be needed to bring inflation down.",
-      "important": true,
-      "processedAt": "2026-10-12T20:40:18.135Z"
-    },
-    {
-      "id": "61de6cf81026",
-      "sourceKey": "aa-economy",
-      "sourceName": "Anadolu Agency",
-      "kind": "media",
-      "url": "https://www.aa.com.tr/en/economy/imf-world-bank-annual-meetings-open-in-bangkok-amid-widening-mideast-conflict-/4086502",
-      "publishedAt": "2026-10-12T17:00:10.000Z",
-      "titleOriginal": "IMF-World Bank Annual Meetings open in Bangkok amid widening Mideast conflict",
-      "titleTr": "IMF-Dünya Bankası Yıllık Toplantıları Bangkok'ta başladı",
-      "summaryTr": "18 Ekim'e kadar sürecek toplantılarda, Orta Doğu'daki çatışmanın genişlediği bir dönemde küresel ekonominin durumu ele alınacak.",
-      "titleEn": "IMF-World Bank Annual Meetings open in Bangkok",
-      "summaryEn": "The meetings, running until 18 October, will discuss the state of the global economy as the Middle East conflict widens.",
-      "important": false,
-      "processedAt": "2026-10-12T20:40:18.135Z"
-    },
-    {
-      "id": "a9a472887268",
-      "sourceKey": "cnbc-finance",
-      "sourceName": "CNBC",
-      "kind": "media",
-      "url": "https://www.cnbc.com/2026/10/12/inflation-will-remain-sticky-in-2026-according-to-prediction-markets.html",
-      "publishedAt": "2026-10-12T15:37:26.000Z",
-      "titleOriginal": "Inflation likely peaked for 2026 but will remain sticky, according to prediction markets",
-      "titleTr": "Tahmin piyasaları: ABD'de enflasyon 2026 zirvesini görmüş olabilir ama inatçı kalacak",
-      "summaryTr": "Tahmin piyasalarındaki işlemciler, gıda ve enerji hariç çekirdek enflasyonun bu yıl %2,2'ye inme ihtimalini düşük görüyor.",
-      "titleEn": "Prediction markets: US inflation may have peaked for 2026 but will stay sticky",
-      "summaryEn": "Traders on prediction markets see little chance that core inflation, excluding food and energy, falls to 2.2% this year.",
-      "important": false,
-      "processedAt": "2026-10-12T20:40:18.135Z"
     }
   ],
   "rejected": {
