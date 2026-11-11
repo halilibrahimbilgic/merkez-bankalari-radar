@@ -279,8 +279,8 @@ export async function AboutPage({ lang }: { lang: Lang }) {
         <h2 className="mb-3 text-lg font-semibold">{t("Saat dilimi", "Time zone")}</h2>
         <p className="prose-width text-muted">
           {t(
-            "Toplantı anları kaynağın yerel saatinden okunur ve UTC olarak saklanır; sitede Türkiye saatine (TRT, UTC+3) çevrilerek gösterilir. Yaz saati uygulaması olan ülkelerde (ABD, Euro Bölgesi, Birleşik Krallık) TRT karşılığı yıl içinde bir saat kayabilir — bu yüzden sabit fark varsaymıyor, her toplantıyı ayrı ayrı çeviriyoruz.",
-            "Meeting times are read in the source's local time and stored in UTC; the site shows them converted to Turkey time (TRT, UTC+3). In places with daylight saving time (the US, the euro area, the UK) the TRT equivalent can shift by an hour during the year — so we do not assume a fixed offset but convert each meeting individually.",
+            "Toplantı anları kaynağın yerel saatinden okunur ve UTC olarak saklanır; sitede Türkiye saatine (TRT, UTC+3) çevrilerek gösterilir. Yaz saati uygulaması olan ülkelerde (ABD, Euro Bölgesi, Birleşik Krallık) TRT karşılığı yıl içinde bir saat kayabilir — bu yüzden sabit fark varsaymıyor, her toplantıyı ayrı ayrı çeviriyoruz. Gösterilen açıklama saati, bankanın olağan saatidir; banka saati değiştirir ya da olağandışı bir toplantı yaparsa sitedeki saat bir süre yanlış kalabilir — kesin saat için bankanın duyurusuna bakın.",
+            "Meeting times are read in the source's local time and stored in UTC; the site shows them converted to Turkey time (TRT, UTC+3). In places with daylight saving time (the US, the euro area, the UK) the TRT equivalent can shift by an hour during the year — so we do not assume a fixed offset but convert each meeting individually. The announcement time shown is the bank's usual time; if a bank changes it or holds an extraordinary meeting, the time on the site may be wrong for a while — check the bank's own announcement for the exact time.",
           )}
         </p>
       </section>

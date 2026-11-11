@@ -90,7 +90,9 @@ src/lib/data/      Okuma katmanı. Postgres ya da JSON'dan okur, türetilmiş
 src/lib/           Saf yardımcılar: tz, time, banks, score, theme, types.
 src/components/    Arayüz. ui.tsx düzen ilkellerini barındırır.
 src/views/         Sayfaların gövdesi, dil parametresiyle (lang). Her sayfa
-                   bir kez yazılır, iki dilin rotası onu çağırır.
+                   bir kez yazılır, iki dilin rotası onu çağırır. Büyük
+                   sayfaların bölümleri alt klasörlerde (bank/, decision/,
+                   probability/): sayfa dosyası veri çeker ve bölümleri dizer.
 src/app/           Rotalar: (tr)/ kökte Türkçe, en/ altında İngilizce — ince
                    sarmalayıcılar. Hepsi sunucu bileşeni; istemci olanlar
                    ayrı dosyada ve "use client" ile işaretli.
@@ -119,6 +121,12 @@ bağlantıları kırılmıyor.
 
 Bunların her biri gerçek bir hatadan öğrenildi. Değiştirmeden önce neden
 böyle olduğunu okuyun.
+
+**Açıklama saatleri koda sabittir; yılda bir doğrulanır.** Kaynak
+ayrıştırıcıları bankanın olağan saatini varsayar (`fomc.ts` 14:00 New York,
+`tcmb.ts` 14:00; BoJ zaten `timeTbd`). Banka saati değiştirirse site yanlış
+saati güvenle gösterir; her Ocak ayında altı bankanın saati resmî takvimle
+karşılaştırılmalı. `/hakkinda` okura bu varsayımı söyler.
 
 **Zamanlar UTC saklanır, sunumda TRT'ye çevrilir.** Sabit ofset varsayımı
 yasak. `src/lib/tz.ts` `Intl` üzerinden ofsetı iki kez uygulayarak yaz saati
@@ -342,7 +350,9 @@ durur, repoda değil.
 > düzensiz GitHub cron'uyla gelir — kimse fark etmeyebilir. Bitmeden: GitHub → Settings →
 > Developer settings → Fine-grained tokens → `faizradar-cron` →
 > *Regenerate token*, yeni değeri cron-job.org'daki `Authorization: Bearer …`
-> başlığına yapıştırın (iki işte de); *Test run* 204 dönmeli. Haber işlerinin `event`'i
+> başlığına yapıştırın (iki işte de); *Test run* 204 dönmeli. Nabız: `.github/workflows/heartbeat.yml` saatte bir son başarılı haber koşusuna
+> (4 saat) ve günlük koşuya (30 saat) bakar; bayatsa kırmızı biter ve GitHub size
+> e-posta atar (kanala yazmaz). Haber işlerinin `event`'i
 > Actions geçmişinde `workflow_dispatch` olarak görünüyorsa dış tetikleme
 > çalışıyordur, yalnızca `schedule` görünüyorsa durmuştur.
 
@@ -373,6 +383,38 @@ denetim, ödeme sistemleri) 0 alır ama banka ortalamasına **katılmaz** ve
 listede "0,0 (nötr)" değil "politika sinyali yok" diye görünür (öyle
 göründüğünde skorlanmamış sanılıyordu). Bu ayrım
 eklenmeden önce Fed ortalaması 1,78 görünüyordu; doğrusu 4,0.
+
+**Veri dosyası okunamazsa üretim hata verir, boş sayfa göstermez**
+(`src/lib/data/read-store.ts`). Önceden okuyucular `catch → boş kayıt`
+dönüyordu: yeni bir seed dosyası `next.config.ts`'teki `DATA_FILES`'a
+eklenmeyi unutulursa ISR yeniden üretimi "veri henüz yüklenmedi" sayfasını
+bir saat boyunca 200 ile önbelleğe alırdı. Artık `NODE_ENV=production`'da
+dosya yoksa/bozuksa fırlatılır (Next önceki sayfayı korur, `next build`
+kırılır); yalnızca geliştirmede boş döner. `tests/seed.test.ts` aynı
+bozukluğu CI'da yakalar.
+
+**Cron adımlarında geçici ağ hatası ile gerçek kırılma ayrılır**
+(`scripts/ci-step.ts`, `src/lib/transient-error.ts`). Günlük işteki veri
+adımları `npm run ci:step -- <betik>` ile koşar: yalnızca HTTP 5xx/429 ve
+zaman aşımı gibi geçici hata varsa `::warning::` ile yeşil biter (veri
+zaten korunur), başka her hata kırmızı kalır. Betiklerin `✗  <kaynak>: <ileti>`
+satır biçimi bu sınıflamanın girdisidir; değiştirirseniz testi güncelleyin.
+`score:import` eksik skoru `::warning::` + iş özetiyle duyurur (adım
+`continue-on-error`, yoksa yeşil görünürdü). Bilerek yapılmayan: "3 gün
+üst üste başarısız → kırmızı" (seed'e her gün değişen alan yazmak boş
+commit üretirdi); onun yerine `heartbeat.yml` son başarılı koşunun yaşına bakar.
+
+**Banka/tür/pencere filtresi sorguda değil yoldadır** (`/takvim/tcmb`,
+`/haberler/resmi`, `/faiz-olasiligi/<tarih>`). `searchParams` okumak sayfayı
+dinamik render'a düşürür ve `revalidate`'i etkisiz kılar; yoldaki parametre
+`generateStaticParams` ile statik+ISR olur ve banka başına indekslenebilir
+sayfa verir. Eski `?banka=` adresleri `src/proxy.ts` ile 308'lenir
+(`next.config.ts redirects()` sorguyu hedefe geri ekliyor; matcher yalnızca
+eski sorguyu taşıyan istekleri yakalar, sorgusuz sayfalar CDN'den döner).
+Matcher statik olmak zorunda, bu yüzden yollar `proxy.ts` ile
+`src/lib/filter-paths.ts`'te çift yazılı. `tests/route-parity.test.ts` iki
+dilin rota ağacının ve `export const`/`generateStaticParams` ayarlarının
+aynı kaldığını denetler.
 
 **Dış kaynaklar habersiz değişir; kırılma sessiz olmamalı.** 3 Ekim 2026'da
 iki kaynak aynı anda kırıldı: Atlanta Fed xlsx'i taşıdı (eski adres 200 +
@@ -688,6 +730,19 @@ tahmini ve ara hedefleri anketle yan yana.
   kırılmaların çoğu sessiz biçim değişikliğiydi.
   Veritabanı yolunu da değiştirdiyseniz `DATABASE_URL=... npx next build`
   ile iki modu da derleyin.
+- Erişilebilirlik: `npm run a11y` (axe + Playwright, 390 ve 1280 px,
+  ciddi/kritik ihlal yok) CI'da `ci.yml`'de koşar; yerelde önce
+  `npx playwright install chromium`. Yeni bir sayfa/bileşen eklerken
+  metin içi bağlantıların altı çizili olmalı (`globals.css`), kaydırılabilir
+  kaplar klavyeyle odaklanabilmeli (`TableFrame`), solukluk (`opacity-*`)
+  kontrastı 4,5:1'in altına düşürmemeli.
+- Grafikler `LazyCharts` ile tembel yüklenir ve `ChartFigures` ile aynı
+  verinin tablosunu taşır (JS'siz ve ekran okuyucu için). Recharts'ı
+  doğrudan içe aktarmayın.
+- Yapılandırılmış veri (`src/lib/json-ld.ts`, `JsonLd`) sayfada görünen
+  veriyi işaretler; görünmeyen şey işaretlenmez. CSP şimdilik yalnızca
+  rapor modunda (`next.config.ts`): zorlamaya geçmeden önce gerçek
+  tarayıcıda (Vercel Analytics dahil) ihlal çıkmadığı görülmeli.
 - Dev sunucusunu elle `npm run dev &` ile başlatmayın — port çakışması
   üretiyor. Araç varsa preview/launch mekanizmasını kullanın.
 - Yorumlar Türkçe ve "neden"i anlatır, "ne"yi değil.

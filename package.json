@@ -28,7 +28,9 @@
     "minutes:fetch": "tsx scripts/fetch-minutes.ts",
     "minutes:import": "tsx scripts/minutes-import.ts",
     "fetch:events": "tsx scripts/fetch-events.ts",
-    "fetch:projections": "tsx scripts/fetch-projections.ts"
+    "fetch:projections": "tsx scripts/fetch-projections.ts",
+    "ci:step": "tsx scripts/ci-step.ts",
+    "a11y": "tsx scripts/a11y-check.ts"
   },
   "dependencies": {
     "@anthropic-ai/sdk": "^0.116.0",
@@ -43,6 +45,7 @@
     "unpdf": "^1.8.1"
   },
   "devDependencies": {
+    "@axe-core/playwright": "4.14.0",
     "@tailwindcss/postcss": "^4",
     "@types/node": "^20",
     "@types/pg": "^8.21.0",
@@ -51,6 +54,7 @@
     "dotenv": "^17.4.2",
     "eslint": "^9",
     "eslint-config-next": "16.4.6",
+    "playwright": "1.65.0",
     "tailwindcss": "^4",
     "tsx": "^4.23.12",
     "typescript": "^5"

@@ -1,8 +1,7 @@
 # Faiz Radar
 
 Fed, ECB, TCMB, BoE, BoJ ve RBA faiz toplantılarını Türkiye saatiyle tek yerde toplayan Türkçe
-merkez bankası takip platformu. Yol haritası ve gerekçe için
-`merkez_bankalari_radar_mvp_plani.docx` belgesine bakın.
+merkez bankası takip platformu.
 
 **Canlı:** https://www.faizradar.com
 

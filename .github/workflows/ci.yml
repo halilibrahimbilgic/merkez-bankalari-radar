@@ -24,3 +24,13 @@ jobs:
       - run: npx tsc --noEmit
       - run: npm run lint
       - run: npm test
+      # Erişilebilirlik: siteyi derleyip gerçek tarayıcıda axe ile tara
+      # (390 ve 1280 px; ciddi/kritik ihlal varsa kırmızı). Bkz. scripts/a11y-check.ts.
+      - run: npx playwright install --with-deps chromium
+      - run: npx next build
+      - name: Erişilebilirlik denetimi
+        run: |
+          npx next start -p 3000 &
+          for i in $(seq 1 60); do curl -sf -o /dev/null http://localhost:3000/rss.xml && break; sleep 1; done
+          curl -sf -o /dev/null http://localhost:3000/rss.xml
+          npm run a11y

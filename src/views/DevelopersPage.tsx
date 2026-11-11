@@ -124,8 +124,8 @@ export async function DevelopersPage({ lang }: { lang: Lang }) {
           </li>
           <li>
             {t(
-              "Yanıtlar önbellekten verilir ve en geç bir saatte tazelenir; karar anını saniyesinde izlemek için uygun değildir. Anahtar ya da istek sınırı yok, makul kullanın.",
-              "Responses are served from cache and refreshed within an hour; not suitable for second-by-second tracking of a decision. There is no key or rate limit — please be reasonable.",
+              "Yanıtlar önbellekten verilir ve en geç bir saatte tazelenir; karar anını saniyesinde izlemek için uygun değildir. meta.generatedAt yanıtın üretildiği (önbelleğe alındığı) andır, isteğin yapıldığı an değil; verinin tazeliği için sourceUpdatedAt'a bakın. Anahtar ya da istek sınırı yok, makul kullanın.",
+              "Responses are served from cache and refreshed within an hour; not suitable for second-by-second tracking of a decision. meta.generatedAt is when the response was produced (cached), not when you made the request; for data freshness use sourceUpdatedAt. There is no key or rate limit — please be reasonable.",
             )}
           </li>
           <li>
