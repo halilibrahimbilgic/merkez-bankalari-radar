@@ -1,6 +1,21 @@
 {
-  "fetchedAt": "2026-11-11T07:01:34.523Z",
+  "fetchedAt": "2026-11-11T09:31:58.442Z",
   "items": [
+    {
+      "id": "ff790e9947c5",
+      "sourceKey": "aa-ekonomi",
+      "sourceName": "Anadolu Ajansı",
+      "kind": "media",
+      "url": "https://www.aa.com.tr/tr/ekonomi/bakan-simsek-turkiyenin-mali-durusu-oldukca-guclu-/4119888",
+      "publishedAt": "2026-11-11T08:41:50.000Z",
+      "titleOriginal": "Bakan Şimşek: Türkiye'nin mali duruşu oldukça güçlü",
+      "titleTr": "Şimşek: Türkiye'nin mali duruşu oldukça güçlü",
+      "summaryTr": "Hazine ve Maliye Bakanı Mehmet Şimşek, deprem sonrası altyapının yeniden inşası için 100 milyar doları aşan harcamaya rağmen bütçe açığının GSYH'ye oranının yaklaşık yüzde 3 düzeyinde kaldığını söyledi.",
+      "titleEn": "Şimşek: Turkey's fiscal position is quite strong",
+      "summaryEn": "Treasury and Finance Minister Mehmet Şimşek said the budget deficit remains around 3% of GDP despite more than $100 billion spent on rebuilding infrastructure after the earthquake.",
+      "important": true,
+      "processedAt": "2026-11-11T09:31:58.442Z"
+    },
     {
       "id": "c003d56e9e5b",
       "sourceKey": "aa-ekonomi",
@@ -4812,21 +4827,6 @@
       "summaryTr": "ABD'li ekonomistler Robert E. Hall ve Michael Woodford, merkez bankaları ve hükümetlerin ekonomiyi istikrara kavuşturmak için kullandığı modellerin temelini oluşturan çalışmalarıyla ödüllendirildi.",
       "titleEn": "Economics Nobel goes to Hall and Woodford for work behind central bank models",
       "summaryEn": "US economists Robert E. Hall and Michael Woodford were honoured for work underpinning the models central banks and governments use to stabilise the economy.",
-      "important": false,
-      "processedAt": "2026-10-12T20:40:18.135Z"
-    },
-    {
-      "id": "f3006f286281",
-      "sourceKey": "cnbc-economy",
-      "sourceName": "CNBC",
-      "kind": "media",
-      "url": "https://www.cnbc.com/2026/10/12/imf-world-bank-ai-jobs-inflation-.html",
-      "publishedAt": "2026-10-12T08:58:54.000Z",
-      "titleOriginal": "World Bank jobs council urges 'crisis-era' employment support measures as IMF warns of AI ‘tsunami’",
-      "titleTr": "IMF Başkanı Georgieva: Yapay zekâ işgücü piyasasına 'yavaş ilerleyen bir tsunami' gibi çarpıyor",
-      "summaryTr": "Georgieva, yapay zekânın küresel işgücü piyasasını etkilediğini ve en çok yeni işe başlayan gençlerin risk altında olduğunu söyledi; Dünya Bankası'nın istihdam konseyi de kriz dönemi destek önlemleri çağrısı yaptı.",
-      "titleEn": "IMF chief Georgieva: AI is hitting the labour market like a 'slow-moving tsunami'",
-      "summaryEn": "Georgieva said AI is affecting the global labour market, with young workers entering it the most exposed; a World Bank jobs council called for crisis-era support measures.",
       "important": false,
       "processedAt": "2026-10-12T20:40:18.135Z"
     }
