@@ -1,6 +1,45 @@
 {
-  "fetchedAt": "2026-11-09T13:34:39.295Z",
+  "fetchedAt": "2026-11-11T05:02:45.135Z",
   "speeches": [
+    {
+      "id": "20261110-welcome-address-fourth-women-central-banking-workshop",
+      "contextEn": "Welcome address by Ms Victoria Rodríguez Ceja, Governor of Bank of Mexico, at the Fourth Women in Central Banking Workshop, organised by Bank of Mexico, the Federal Reserve Bank of Dallas, Norges Bank (Central Bank of Norway) and Bank of Italy, Mexico City, 6 November 2026.",
+      "bankCode": "fed",
+      "speakerName": "Victoria Rodríguez Ceja",
+      "title": "Welcome address - Fourth Women in Central Banking Workshop",
+      "speechDate": "2026-11-10",
+      "sourceUrl": "https://www.bis.org/speeches/20261110-welcome-address-fourth-women-central-banking-workshop"
+    },
+    {
+      "id": "20261110-what-happens-economy-as-intelligence-gets-cheaper",
+      "contextEn": "Speech by Ms Sarah Hunter, Assistant Governor (Economic) of the Reserve Bank of Australia, at the UBS Australasia Conference, Sydney, 9 November 2026.",
+      "textLicense": "cc-by-4.0",
+      "bankCode": "rba",
+      "speakerName": "Sarah Hunter",
+      "title": "What happens to the economy as “intelligence” gets cheaper?",
+      "speechDate": "2026-11-10",
+      "sourceUrl": "https://www.bis.org/speeches/20261110-what-happens-economy-as-intelligence-gets-cheaper"
+    },
+    {
+      "id": "20261110-trust-expectations-and-monetary-policy",
+      "contextEn": "Text of the Sir Leslie Melville Lecture by Mr Andrew Hauser, Deputy Governor of the Reserve Bank of Australia, to the Australian National University, Canberra, 5 November 2026.",
+      "textLicense": "cc-by-4.0",
+      "bankCode": "rba",
+      "speakerName": "Andrew Hauser",
+      "title": "Trust, expectations and monetary policy",
+      "speechDate": "2026-11-10",
+      "sourceUrl": "https://www.bis.org/speeches/20261110-trust-expectations-and-monetary-policy"
+    },
+    {
+      "id": "20261110-navigating-stormy-waters-reflections-monetary-policy",
+      "contextEn": "Speech by Ms Isabel Schnabel, Member of the Executive Board of the European Central Bank, at the ECB Conference on Money Markets 2026, Frankfurt am Main, 5 November 2026.",
+      "textLicense": "ecb",
+      "bankCode": "ecb",
+      "speakerName": "Isabel Schnabel",
+      "title": "Navigating stormy waters - reflections on monetary policy",
+      "speechDate": "2026-11-10",
+      "sourceUrl": "https://www.bis.org/speeches/20261110-navigating-stormy-waters-reflections-monetary-policy"
+    },
     {
       "id": "20261109-integrated-open-and-resilient-europes-strengths-fragmenting-world",
       "contextEn": "Speech by Mr Boris Vujčić, Vice-President of the European Central Bank, at the 5th Financial System Conference, organised by the Central Bank of Ireland, Dublin, 2 November 2026.",

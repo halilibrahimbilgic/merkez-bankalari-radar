@@ -1,17 +1,6 @@
 {
-  "fetchedAt": "2026-11-10T13:12:18.263Z",
+  "fetchedAt": "2026-11-11T05:01:48.027Z",
   "events": [
-    {
-      "id": "fed-2026-11-09-1asem21",
-      "bankCode": "fed",
-      "at": "2026-11-09T13:40:00.000Z",
-      "timeTbd": false,
-      "kind": "discussion",
-      "speaker": "Michelle W. Bowman",
-      "role": "Vice Chair for Supervision",
-      "title": "At the Mutual Board Summit Conference, Boston, Mass.",
-      "url": "https://www.federalreserve.gov/newsevents/calendar.htm"
-    },
     {
       "id": "fed-2026-11-10-3xjxf5",
       "bankCode": "fed",

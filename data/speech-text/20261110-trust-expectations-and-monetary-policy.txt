@@ -1,0 +1,1039 @@
+Speech
+Trust, Expectations and Monetary Policy
+Andrew Hauser
+Deputy Governor
+Sir Leslie Melville Lecture, Australian National University
+5 November 2026 – Canberra
+Introduction
+It’s an honour to give the 24th Sir Leslie Melville Lecture.
+My theme today is trust. Trust is central to all of our lives. We trust our families and friends. We
+trust the food we eat. We trust companies with our personal data. We trust governments to keep
+us safe.
+*[]
+1:01:31
+1[]
+2[]
+But few rely on trust as profoundly as central banks. And that’s because money itself is based entirely
+on a social contract. Banknotes in our wallets or deposits in our bank accounts have no intrinsic value
+beyond the monetary realm. Their value rests on trust that others will accept them tomorrow at
+much the same worth. And that trust, in turn, relies on confidence that central banks will keep
+prices stable. So trust isn’t just a source of legitimacy – it’s integral to how monetary policy
+actually works.
+That trust must be earned. And the decades following the 1980s were good times for central banks
+around the globe, as flexible inflation targeting delivered consistently low and stable inflation
+alongside rising real incomes. But more recently, and particularly since COVID, things have been
+rockier: persistent above-target inflation has marred that hard-won track record. The broader climate
+of trust towards public bodies has deteriorated. And we’ve entered a ‘VUCA’ (Volatile, Uncertain,
+Complex and Ambiguous) world, amid a fusillade of shocks from tariffs, wars, geopolitical tensions,
+pandemics, and technological and environmental change. That means inflation is more likely to be
+pushed off target; economic forecasts are more likely to be wrong; and policy trade-offs get uglier.
+Just as we need it most, trust is under strain.
+These challenges are not unique to Australia. And, whatever the commentary may say, they’re far
+from unprecedented. Leslie Melville definitely had it worse. He joined the Commonwealth Bank – the
+RBA’s predecessor – as its first (and initially only) economist in 1931, a year in which Australian GDP
+fell by nearly 7 per cent, amid the depths of the Great Depression. The following year, unemployment
+reached nearly 30 per cent – an unbelievable figure to modern eyes. The financial instability,
+world war, fierce economic and political conflict and institutional upheaval that followed frankly puts
+today’s challenges into humbling perspective.
+Coming from the United Kingdom, 10,000 miles away, I wouldn’t have expected any personal
+connection to Melville. But it turns out I have two. The Bank of England, my previous employer,
+recommended him for the job. More than 90 years later, as another newcomer to Australian
+policymaking, I have the joy of working with the RBA’s world-class economics team: a far cry from
+Melville’s empty office! And while writing this speech, I discovered that the headmaster of my old
+high school in the United Kingdom in the 1980s – known to us all simply as ‘Mr Melville’ – was in fact
+Leslie’s son. Tony Melville was born in Adelaide, grew up in Sydney when Leslie joined the Bank,
+and travelled the opposite way to me: studying first at King’s College in Cambridge before taking up a
+career in British education. Few, if any, of his pupils knew his extraordinary history.
+3[]
+4[]
+5[]
+6[]
+7[]
+8[]
+9[]
+10[]
+In my speech today I want to develop the theme of trust – discussing, first, what trust means in
+everyday life; second, why monetary policy needs it so badly; and third, how that trust is being
+challenged today around the world. I will finish by setting out how the RBA is responding here
+in Australia.
+How we talk about ‘trust’ in our everyday lives
+When we say we trust someone, we usually mean one of two things.
+Model 1 is the trust we give to family and close friends. It’s instinctive, heart-felt. Family ties, shared
+history and values mean we know they will be on our side: honest, open and straight. Not perfect, of
+course. A trusted friend may get things wrong, be stubborn, even drive us up the wall! But deep
+down we know they are loyal, and it takes a lot to dislodge that. This is trust rooted in character
+and relationship. We don’t need a fresh demonstration of it every time we meet: we lean on what
+we know.
+Model 2 describes the trust we place in experts: doctors, lawyers, aircraft pilots. Honesty and
+integrity still matter. But the key test is competence: do they have the qualifications, skills and tools
+to do complex, sometimes life- (or livelihood-) threatening, things on our behalf? What if they’re
+useless, crooked – or both?
+Answering this question involves a Catch-22 – because the very thing that creates the need for an
+expert in the first place (our inability to do the task) makes it impossible to audit them ourselves. And
+that creates an incentive problem. At one extreme, if experts know we have blind faith in them,
+there’s no incentive for competence. But, at the other extreme, if we’re perpetually sceptical, nothing
+ever gets done. To address this problem, we demand transparency: show us your credentials,
+your track record, your reasoning. But sometimes it takes an expert to understand an expert. So we
+also need accountability – independent expert scrutiny beforehand; assessment of outcomes
+afterwards. ‘Trust, but verify’ – as Ronald Reagan used to say.
+For a public institution, like a central bank, all of these concepts matter (Figure 1):
+We want an institution that’s on our side, like a friend – honest, consistent and reliable, serving
+our long-term interests not selfish or sectional ones.
+We want an institution that’s up to the job, like a trusted professional – with the right skills, tools
+and judgment; and a track record of delivering strong outcomes.
+11[]
+12[]
+We want an institution that can explain itself clearly and consistently – its objectives, its
+decisions, the costs and uncertainties, and its mistakes, when they happen.
+And we want an institution that’s accountable for its actions, both ahead of time, and after
+the event.
+These qualities reinforce one another. Competence without integrity or public purpose won’t sustain
+trust. But neither will good intentions without capability. We need confidence that an institution can
+explain its actions, and bear the consequences. Transparency and accountability help us judge that.
+Why earning public trust is particularly important for
+monetary policy
+This setup applies to many public institutions. So what’s distinctive about monetary policy?
+First, it works with a lag: and pain often precedes gain. William McChesney Martin vividly described
+the central bank as a ‘chaperone who has ordered the punch bowl removed just when the party was
+really warming up’. When excessive inflationary pressures build, monetary policy has to be
+Figure 1: The Building Blocks of Trust in a Public Institution
+13[]
+tightened, restraining demand. Over time, weaker demand helps reduce inflation, returning the
+economy to balance. But while those lags are working through, and people are having to make
+difficult and costly adjustments, they need assurance that we’re acting competently. Has the central
+bank demonstrated that it’s acting in the public’s long-term interests? Has it been clear about its
+reasons for acting – and costs of not acting? And has it held itself open to challenge and scrutiny?
+That matters even more when the inflationary pressure is associated with adverse supply
+developments, which brings additional and unavoidable pain. Taking away the punch bowl is rarely a
+way to win instant popularity. The question is whether people can see why the difficult decision is
+necessary, even when its immediate effects are unwelcome.
+These things aren’t unique to monetary policy: public health measures (e.g. vaccinations),
+environmental policy or macroprudential adjustment share similar features. But what is distinctive is
+trust directly affects how well monetary policy works. And that’s because the impact of today’s policy
+decision depends on whether people trust us to do what’s needed tomorrow too. In simple terms: do
+they expect us to return the economy to balance, with on-target inflation and full employment, in the
+long run? In more technical terms: do they understand and trust our ‘reaction function’ (i.e. how we
+adjust interest rates as the economy evolves in order to achieve those goals)?
+To illustrate how beliefs about the future can affect policy effectiveness today, consider a thought
+experiment using one of the RBA’s models, in which the central bank lifts rates for a few quarters to
+return inflation to target (Graph 1). The red lines describe a scenario in which people don’t
+expect the tightening to be persistent – so each period, tighter policy surprises them. Spending (and
+hence inflation) fall only a little, as people fail to account for future policy. By contrast, the orange
+lines show a scenario in which people fully understand and believe the central bank’s strategy from
+the start. They adjust spending today not just in response to today’s policy settings, but in
+anticipation of future settings too. Although the realised path for interest rates is identical in both
+cases, output and inflation respond sooner, and by more, when the policy response is trusted.
+14[]
+This is a powerful result – because it means that if the public understands and trusts the central
+bank’s strategy, the policy response required to deliver a given disinflation can be smaller and less
+costly in terms of lost output.
+To illustrate this with a topical example, Graph 2 uses the same model to trace the effects of a
+temporary increase in overseas costs, such as oil prices, under different assumptions of trust in the
+policy response. Both situations show the same path for inflation. What differs is the demand
+adjustment needed to bring it back to target.
+The pink lines show what happens when people do not trust the central bank to return inflation to
+target in a timely way. Businesses are inclined to pass on more of the cost increases, expecting
+that a slow policy response will allow cost pressures to persist and demand to keep expanding. And
+employees are minded to seek higher wages. The temporary cost shock risks becoming embedded in
+prices and wages. To bring inflation back promptly, the central bank must raise rates quite
+aggressively, contracting demand sharply.
+Graph 1
+Anticipated policy
+Unanticipated policy
+ppt
+0.4
+0.8
+0.0
+ppt
+0.4
+0.8
+0.0
+Cash rate paths
+%
+-0.4
+0.0
+-0.8
+%
+-0.4
+0.0
+-0.8
+GDP level
+ppt
+-0.6
+-0.2
+0.0
+-0.4
+ppt
+-0.6
+-0.2
+0.0
+-0.4
+400 16 24 328
+Quarters
+Trimmed mean inflation (year-ended)
+Source: RBA.
+Deviation from baseline
+How Trust Shapes
+Monetary Policy Transmission
+15[]
+The blue lines show an alternative case where people do trust the central bank to hit the target
+promptly. Businesses anticipate policy reducing future cost pressure and demand, so are less inclined
+to raise prices today. This lower price pressure in turn reduces upward pressure on nominal wages.
+With the private sector doing some of the work to hold inflationary pressures down, interest rates
+don’t need to rise so far, and the output cost of achieving the same disinflation is lower.
+This isn’t just theoretical. Data from the Macquarie University Business Outlook Scenario Survey
+(BOSS) earlier in the year showed that firms expecting the RBA to return inflation to target in a more
+timely way planned to pass on less of their Middle East conflict-related costs. Australian
+households expressing greater trust in the RBA also tend to expect lower near-term inflation
+(Graph 3). The European Central Bank (ECB) has found the same for the euro area.
+16[]
+Graph 2
+Trusted reaction function
+Unanticipated policy
+ppt
+0.2
+0.4
+0.0
+ppt
+0.2
+0.4
+0.0
+Cash rate paths
+%
+-0.1
+0.0
+-0.2
+%
+-0.1
+0.0
+-0.2
+GDP level
+ppt
+-0.1
+0.1
+0.2
+0.0
+ppt
+-0.1
+0.1
+0.2
+0.0
+400 16 24 328
+Quarters
+Trimmed mean inflation (year-ended)
+* Foreign inflation rises by 1 percentage point for one quarter.
+Source: RBA.
+Deviation from baseline
+How Trust Reduces Pass-through
+of Inflationary Shocks*
+17[]
+18[]
+Central banks also face distinctive accountability mechanisms. Most public policies are judged
+ultimately at the ballot box. But nine in 10 countries delegate monetary policy to central banks that
+are operationally independent of government – and are instead held accountable by other
+means. The near-universal adoption of this model reflects the strong evidence, across countries
+Graph 3
+30 per cent trimmed mean
+Full sample average
+Higher trust
+Higher
+expectations
+%
+10
+15
+5
+%
+10
+15
+5
+Inflation expectations*
+%
+0
+10
+15
+5
+%
+0
+10
+15
+5
+0 1 2 3 4 5 6 7 8 9 10
+Trust in the RBA
+Distribution of RBA trust scores**
+*
+**
+Each dot represents the trimmed mean of inflation expectations for
+respondents in each trust score bucket. The dashed line represents
+the trimmed mean of inflation expectations across all respondents and
+is more comparable to standard inflation expectations surveys.
+The bars show the share of respondents that recorded each of the 0
+to 10 trust scores.
+Sources: JWS Research; RBA.
+Inflation Expectations and Trust
+19[]
+and time, that greater independence delivers: more stable economic activity; lower and less volatile
+inflation; and better-anchored inflation expectations, preventing 1970s- and 1980s-style inflationary
+spirals. The strength of this finding is shown by the fact that, despite central banks rightly
+coming under heightened scrutiny since COVID, almost none have lost independence: 83 per cent
+are as independent as they were before, and 15 per cent are more independent.
+Measuring public trust in central banks
+So trust matters. But economic developments are putting it to the test.
+Not all the news is bad. GDP growth and employment, explicit or implicit goals for all central banks,
+have proved resilient in many countries. Despite the sharp tightening in policy since the end of
+COVID, unemployment is much lower than might have been expected (Graph 4).
+But inflation is another story. It’s been above central bank targets for years (Graph 5). And around
+the world, that’s causing increasing anger. Consumer confidence is exceptionally weak. And
+households rank inflation as their number one economic concern.
+20[]
+21[]
+Graph 4
+Euro area
+Australia
+United Kingdom
+United States*
+Canada
+New Zealand
+%
+0
+6
+9
+12
+3
+%
+0
+6
+9
+12
+3
+2026202220182014201020062002
+Unemployment Rates
+* Data not available for October 2025.
+Sources: LSEG; RBA.
+22[]
+Standard economic yardsticks struggle to explain that angst. Bringing inflation down from its post-
+COVID peaks has involved some of the smallest ‘sacrifice ratios’ (the reduction in output associated
+with a unit of disinflation) in history. And the so-called ‘misery index’ (inflation plus
+unemployment) is only a little above its 15-year pre-COVID average (Graph 6).
+Graph 5
+Australia
+Canada
+Euro area
+New Zealand
+United Kingdom
+United States**
+ppt
+-4
+2
+6
+8
+4
+-2
+0
+ppt
+-4
+2
+6
+8
+4
+-2
+0
+202620242022202020182016
+Year-ended
+Headline Inflation
+Deviation From Target*
+*
+**
+Deviation from central bank inflation target or midpoint of central bank
+target range.
+PCE inflation.
+Sources: ABS; LSEG; RBA.
+23[]
+But these measures miss something crucial: the cumulative increase in prices since COVID has far
+exceeded that in any other tightening period since inflation targeting began. Graph 7 shows this for
+Australia; similar pictures can be drawn for the United States and other developed countries. A
+lower inflation rate doesn’t undo that accumulated increase. And it’s that increase, not just the latest
+rate of change, that seems to be part of what’s driving public anger.
+Graph 6
+index
+150
+200
+100
+index
+150
+200
+100
+‘Misery index’*
+index
+60
+100
+120
+80
+index
+60
+100
+120
+80
+2026202020142008200219961990
+Consumer sentiment**
+*
+**
+Sum of year-ended headline inflation and the unemployment rate; inflation
+data excludes interest charges prior to the September quarter of 1998 and
+is adjusted for the tax changes of 1999–2000.
+Mean of Westpac–Melbourne Institute and ANZ–Roy Morgan surveys.
+Sources: ABS; ANZ–Roy Morgan; RBA; Westpac–Melbourne Institute.
+2005–2019 average = 100, quarterly
+Inflation, Unemployment and
+Consumer Sentiment
+24[]
+What impact has this had on public trust in central banks?
+To help answer this question for Australia, we can turn to our new Community Research Survey,
+which began in February last year. Four separate waves have drawn on feedback from 12,000
+Australians, across all parts of the country and sections of society. The latest was in September.
+The survey shows that around 55 per cent of respondents have ‘high’ or ‘moderately high’ trust in the
+RBA. That puts us in the upper part of the distribution of Australian public institutions (Graph 8).
+Graph 7
+25[]
+26[]
+Other central banks using comparable methodologies have similar scores (Graph 9).
+Graph 8
+Higher
+trust
+%
+20
+40
+60
+%
+20
+40
+60
+Political Parties
+International Organisations
+News Media
+National Legislature
+National Government
+Regional Government
+Local Government
+RBA
+Courts and Judicial System
+Regional Civil Service
+National Civil Service
+Police
+Armed Forces
+Share reporting high or moderately high trust**
+Trust in Australian Institutions*
+*
+**
+RBA survey was conducted in four waves from February 2025 to
+September 2026. The blue diamond shows the September 2026 score
+and the blue bar shows the range across the four survey waves.
+Black dots show the 2025 trust scores for the other Australian
+institutions, collected by the OECD.
+‘High or moderately high’ corresponds to the aggregation of response
+options 6-10 to the question “On a scale of 0 to 10, where 0 is not at
+all and 10 is completely, how much do you trust each of the following
+institutions?”.
+Source: JWS Research; OECD (2026); RBA.
+Strikingly, our overall trust measure has been broadly stable, or even slightly up, over the past
+18 months. That’s a welcome, but frankly quite surprising, result over a period in which interest rates
+rose, and inflation rose well above the target range. Can this really be right? To answer that
+question we need to look at how the more detailed survey responses have evolved – summarised
+in Graph 10.
+Unsurprisingly, trust in our near-term ability to achieve our objectives, looking one year back and one
+year forward, has fallen materially (bottom blue bars). Regression analysis finds these outcome
+measures play a statistically significant role in explaining respondents’ overall trust. Australians
+understand our inflation mandate and hold us accountable when we fail to meet it. Trust does not
+mean unconditional approval.
+Graph 9
+ppt
+0
+14
+21
+28
+7
+RBA Bank of
+Canada
+(Sep 2024)
+Net balance**
+(LHS)
+Higher
+trust
+score
+0
+4
+6
+8
+2
+RBA European
+Central Bank
+(Dec 2023)
+Average score
+(RHS)
+*
+**
+RBA trust scores are from the four waves of the RBA survey from
+February 2025 to September 2026. Bank of Canada and European
+Central Bank scores are from their own respective surveys
+conducted in 2024 and 2023. We show two measures to ensure
+comparability with both the Bank of Canada and European Central
+Bank.
+Net balance for RBA is calculated as per cent of scores in 7-10 less
+per cent of scores in 0-3.
+Sources: Bank of Canada; Dreher (2024); JWS Research; RBA.
+Trust in Comparable Central Banks*
+27[]
+28[]
+But outcomes aren’t the only drivers of trust, as I discussed earlier – and some other drivers have
+moved the opposite way:
+First, process competence: are our decisions felt to be based on rules, evidence and facts; and
+do we act promptly when needed? These scores are well into positive territory and have risen a
+little since February 2025 (upper two blue bars).
+Second, transparency: are we seen as open and honest, and committed to keeping people
+informed about our decisions and actions; do we provide sufficient information; and do we explain
+decisions in readily understandable terms? Some of these measures (purple bars) are stronger than
+others, but all have increased recently – which may have helped offset some of the impact of
+weaker economic outcomes on overall trust.
+Third, values: are we seen as acting with integrity; do we understand and care about the impact
+of our decisions; support wellbeing; and maintain appropriate distance from political influence?
+These measures (green bars) have been more stable, albeit for the most part at a relatively high
+Graph 10
+ppt-20 10 30 4020-10 0
+Has achieved monetary policy
+objectives in the last year
+Will achieve monetary policy
+objectives in the next year
+Free from political influence
+Explains its decisions and
+actions in terms I understand
+Provides sufficient information
+Acts out of concern for
+Australians' well-being
+Prompt to act
+Understands impact on
+everyday Australians
+Open and honest in communications
+Makes people aware of
+its decisions and actions
+Leaders act with integrity
+Makes decisions based on rules,
+scientific evidence and facts
+ppt-20 10 30 4020-10 0
+Transparency factors Competence factors Values factors
+Net agreement**
+Drivers of Trust*
+*
+**
+Bars show the range across all survey waves. Dots show Sep 2026.
+Factor categories are based on OECD (2017) and Eickmeier and
+Petersen (2024). We separate out transparency factors from the
+OECD values factors.
+Sources: JWS Research; RBA.
+level. Statistically, these values measures play a particularly strong role in explaining overall trust
+scores (a result also found for the ECB ). Returning to the concepts in Figure 1, ‘are you on my
+side?’ matters as much as ‘are you up to the job?’.
+These results are encouraging – but they are no grounds for complacency. Our survey has only a
+short history; confidence in our ability to deliver has declined; and the context in which we operate is
+becoming more challenging.
+Longer-running surveys give some weight to the possibility that trust in central banks has waned over
+time (Graph 11).
+29[]
+Graph 11
+Federal Reserve*
+Bank of Canada**
+European Central Bank***
+Bank of England****
+%
+-40
+20
+40
+60
+-20
+0
+%
+-40
+20
+40
+60
+-20
+0
+1999 2005 2010 2015 2020 2026
+Share of respondents
+Trust Measures Across Central Banks
+*
+**
+***
+****
+Share reporting ‘a great deal’ or ‘a fair amount’ of confidence in
+the Federal Reserve Chair to do or recommend the right thing for the
+economy.
+Annual average net trust in the Bank of Canada, calculated as the
+share reporting ‘trust’ less the share reporting ‘don’t trust’.
+Annual average net trust in the European Central Bank, calculated as
+the share of trust scores in 7–10 less the share in 0–3.
+Annual average net satisfaction with the Bank of England’s job of
+setting interest rates to control inflation.
+Source: Bank of Canada; Bank of England; European Central Bank;
+Gallup.
+But some of this variation reflects country-specific factors. And the frequently claimed long-run
+decline in trust in public institutions seems far from universal, at least in Australia. While trust in
+some institutions has declined over time, others (including the civil service, the police and armed
+forces) have held up (Graph 12). Without a long-term RBA measure, we can’t be sure which group
+we’re closest to.
+Inflation expectations – an alternative, and more longstanding trust measure – also paint a more
+mixed picture. Longer-term expectations measures derived from financial markets and economists’
+forecasts remain well anchored on the 2–3 per cent inflation target here in Australia (Graph 13, lower
+panel). Other developed countries show broadly the same. But levels aren’t everything. Overseas
+research suggests that a loss of trust may also be signalled by a tendency for these expectations to
+respond to changes in monetary policy. If markets doubt our determination to bring inflation
+back to target in a timely way, they may learn about our reaction function from our actions.
+Reassuringly, Australia’s long-run market expectations have, on average, been quite unresponsive to
+policy, as in other advanced economies.
+30[]
+31[]
+Graph 12
+Armed forces
+Police
+Justice system (courts)
+Civil services
+Government
+Parliament
+Political parties
+%
+20
+60
+80
+40
+%
+20
+60
+80
+40
+1980 1990 2000 2010 2020
+Share of respondents
+Trust in Australian Institutions*
+* Trust corresponds to responses 'trust completely' or 'trust somewhat'.
+Source: Integrated Values Surveys (2024).
+32[]
+33[]
+But domestic prices and wages are set by companies and households, not financial markets – and
+here the evidence is less reassuring. While we only have a short sample, companies responding to
+the BOSS survey have become less sure that the inflation target will be achieved over the next 5–10
+years (Graph 14). Some contacts in the RBA’s liaison program say similar things. Australia currently
+has no reliable measure of households’ longer-term expectations, but their deep concern about
+inflation suggests they might feel somewhat similarly.
+Graph 13
+Households*
+Firms**
+Market economists**
+%
+6
+4
+2
+%
+6
+4
+2
+Short-term, over the next year
+Consensus Economics***
+Inflation-linked bonds****
+Inflation target
+%
+6
+4
+2
+0
+%
+6
+4
+2
+0
+20262025202420232022202120202019
+Long-term
+*
+**
+***
+****
+30 per cent trimmed mean of responses to question on ‘prices of things
+you buy’.
+Long-term expectations are the average expected annual rate of
+inflation over the next 5–10 years.
+Long-term expectations are the average expected annual rate of
+inflation over the 5 years starting from 5 years ahead.
+Long-term expectations are the average expected annual rate of
+inflation over the next 10 years.
+Sources: Bloomberg; Consensus Economics; Macquarie University;
+Melbourne Institute; RBA.
+Inflation Expectations
+34[]
+The third reason for not taking too much comfort is the VUCA world is asking more of us. Volatility
+means more inflation misses. Uncertainty means bigger expected forecast errors. Complexity
+means more structural and cyclical drivers of inflation and employment to understand. Ambiguity
+means genuinely unpredictable geopolitical policy actions. And weaker and more volatile supply
+makes everything harder still – driving inflation up while activity and employment growth fall.
+A final caution is that trust may be hard won but easily lost. It’s possible that our survey result
+reflects reserves built up in earlier periods. Those reserves may protect trust against poor economic
+outcomes for a time. But that may run out: there may be a breaking point we can’t see until we
+reach it. Our survey can’t identify that threshold – but it isn’t one we want to test. A reserve of trust
+is not a licence to disappoint. It makes the continuing work of earning trust more pressing, not less.
+What is the RBA doing to keep strengthening public trust?
+So how are we responding?
+Graph 14
+35[]
+Start with values: ‘are they on my side?’ This was a point dear to the heart of Leslie Melville, who
+helped shape the intellectual foundations for clause 8 of the
+Commonwealth Bank Act 1945, which
+charged the Bank with promoting ‘the economic prosperity and welfare of the people of Australia’,
+and set out the dual mandate of price (originally currency) stability and full employment. That
+mission remains fundamentally unchanged: it shapes everything we do.
+But delivering on it is never easy. Gains tomorrow may require pain today – but those gains can be
+hard to quantify, even after the event. And there can be winners and losers in the short run, even if
+everyone is better off in the long run. Against that backdrop, the resilience in the trust scores
+shown in Graph 10 is cautiously encouraging. But values-based trust is slow to build and quick to fall.
+So we must continue to listen, through liaison, public engagement and the Community Research
+Survey itself; learn how our decisions affect different people, especially the vulnerable; and level with
+people: being open, honest, direct and evidence-based.
+But good values aren’t enough: public trust also requires competence – and the persistence of
+above-target inflation, and the growing threats from a VUCA world, mean central banks have work to
+do to demonstrate we’re serious about achieving our policy goals. That’s why we’re investing heavily
+in the skills and tools to navigate uncertainty. Four areas stand out:
+First, understanding future economic challenges: our published research priorities
+describe our key areas of enquiry (including AI, which our chief economist will speak about in
+coming days). To keep our analysis rigorous and at the frontier, we’re launching a new external
+engagement program with the research community, publishing more staff work via Insight
+Notes, and establishing a financial markets research and modelling hub.
+Second, investing in our models and frameworks: we’re extending our modelling suite to
+explore and communicate alternative economic scenarios and their policy implications. The suite
+includes: MARTIN, our core macroeconometric model; DINGO, a dynamic stochastic general
+equilibrium model; HALLIE, a next-generation Heterogeneous Agent New Keynesian model; and
+non-linear structural labour market models. In financial markets, we have been rolling out a
+new monetary implementation framework; and our recently published
+Framework for Additional
+Monetary Policy Tools explains how we would use our balance sheet if rates again reached the
+effective lower bound.
+Third, better data and intelligence – including WHAM, a new Wealth and Housing Assets
+Module developed with other government agencies and the Australian Bureau of Statistics;
+partnerships with SEEK on labour market data, Macquarie University on BOSS and the Melbourne
+36[]
+37[]
+38[]
+39[]
+40[]
+41[]
+42[]
+Institute on household inflation expectations. Our liaison network holds around 900 meetings
+annually with organisations across Australia: its enormous qualitative and quantitative database
+can be analysed with increasingly sophisticated AI tools. And our Community Research Survey
+allows us to explore key economic issues for Australian households.
+Fourth, better decisions under uncertainty: we increasingly test alternative scenarios
+alongside the central forecast. How could the outlook differ – and how should policy respond?
+We also regularly review our past forecasts and judgements to learn from them. The question
+isn’t simply ‘what do we think will happen?’; it’s also ‘what if things turn out differently?’
+But even with better analysis and policy, a VUCA world brings more unexpected inflation misses and
+uglier trade-offs. And that risks eroding trust in our capacity and commitment, unless we continue to
+improve our ability to explain ourselves clearly, specifically:
+Why inflation is away from target: unexpected shocks, deliberate tradeoffs, limits in our
+forecasts and analysis, or the timing and calibration of policy? People need that account to judge
+whether we’re acting in the public interest, with integrity and competence.
+How we expect the economy to evolve: including the risks and uncertainties, drawing on our
+analysis of the underlying shocks and the economic mechanisms involved.
+Our strategy for returning inflation to target: how we balance full employment against the
+speed of disinflation; and how we might respond to material risks that have not yet crystallised.
+Not a promised rate path – ‘forward guidance’ – but a reaction function that gives people
+confidence we’ll achieve our goals. That’s an important distinction: explaining how we would
+respond as circumstances change is different from promising what interest rates will be. We need
+people to understand the strategy, not mistake it for a guarantee.
+Research into how our communications affect different people’s expectations helps guide this work:
+Financial market expectations are important for influencing short-term interest rates and other
+financial prices, transmitting policy to the economy. Recent research has found that talking about
+issues like housing risks and wages can shape the weight markets think we’ll place on bringing
+inflation back to target in a timely way. But sometimes actions speak louder than words.
+Communicating with the public requires different tools. Households interpret economic news
+and its interest rate implications very differently from markets (Graph 15). Our survey finds
+that people pay attention to our actions and communications, and want to know more. But that
+43[]
+44[]
+45[]
+46[]
+47[]
+understanding has important gaps, including on how higher interest rates affect inflation – perhaps
+monetary policy’s most important single relationship.
+So we’re investing in new more targeted communications for households and businesses. The
+Governor’s media conference is focused on explaining the Board’s decisions, their drivers and what it
+could mean for people. A more layered approach combines detailed publications like the
+Statement
+on Monetary Policy with shorter summaries, website explainers and digital content for different levels
+of interest and economic knowledge. Recent research finds that even simple explainers can
+significantly improve accessibility and understanding of key economic relationships, and increase
+trust. Experience so far is positive, including better survey scores for openness, honesty and
+comprehensible explanations. But we must continue to refine our approach: the aim is not to make
+everyone read the longest publication, it’s to help people find an explanation they can use, without
+losing the substance of what we’re trying to say.
+Graph 15
+48[]
+Accountability brings these elements together. We answer ultimately to the public, including through
+parliamentary appearances and other public engagement. New five-year reviews of the RBA will
+strengthen that accountability further, providing periodic assessments of performance and
+opportunities for improvements. Being independent must never mean being beyond challenge.
+These elements must all work together. Clear communication means little unless the actions being
+taken are pushing us towards good outcomes. Competent action isn’t enough if people don’t
+understand the need for difficult economic outcomes or trust that we’re trying to do what’s best for
+the economy. And blind faith in our values cannot by itself sustain trust in a technocratic institution.
+None of these is a substitute for the others. We need the values, the competence, the explanation
+and the scrutiny. That’s what makes earning trust a continuing task.
+Conclusion
+Let me conclude. For a central bank, trust is not a nice-to-have. It’s integral to how monetary policy
+works. When people trust us to deliver the goals we’ve been asked to pursue, policy is more effective
+and less costly.
+To earn that trust, people must have confidence that we’re on their side, up to the job, and capable
+of explaining ourselves. Trust in the RBA seems to have held up through a difficult period. But the
+warnings are clear: some people’s confidence in delivery, particularly on inflation, has fallen. And a
+VUCA world will keep testing us.
+Let me end where I began, with Leslie Melville. In 1931, the Great Depression drove deep fissures
+into public confidence, and demanded brave and innovative thinking. In response, Melville built what
+has become the RBA’s Economic Group: establishing the data, analytical frameworks and judgement
+needed to contribute to the major debates of post-war reconstruction. That combination of public
+purpose, expertise and evidence helped the Bank earn trust in those difficult years.
+There is an irony in the fact that the Bank of England that recommended Melville was led by
+Montague Norman, whose maxim was ‘never explain, never excuse’. Thankfully, those days are long
+behind us. Trust is no birthright. We never stop earning it – by continuing to listen, learn and level
+with the people we serve. To invest in the skills and tools to deliver. Explain our decisions. And
+welcome scrutiny, including when outcomes fall short.
+Melville would have expected nothing less.
+Endnotes
+I am extremely grateful to Jonathan Hambur and Peter Rickards, who co-authored this speech with me; and to Sue
+Black, Anthony Brassil, Michele Bullock, Adam Cagliarini, Anthony Dickman, Samuel Evangelinos, Sarah Hunter,
+David Jacobs, Brad Jones, Chris Kent, Kevin Lane and Michelle Wright for their comments and suggestions on earlier
+drafts; and Jack Harden for his help with the survey data and charts.
+*[]
+For past lectures, see ANU Research School of Economics, ‘Sir Leslie Melville Lectures’, available at
+<https://rse.anu.edu.au/seminars-events/sir-leslie-melville-lectures>.
+1[]
+For a general discussion of the role of trust in modern life, see O’Neill O (2026),
+The Reith Lectures – A Question of
+Trust, BBC Radio 4; for applications to Australian economic policy, see Lowe P (2018), ‘Trust and Prosperity’, Address
+to CEDA Annual Dinner, Melbourne, 20 November; and Wood D (2026), ‘Growing Trust and Trusting Growth: The
+Economic Case for Integrity’, Centre for Public Integrity Oration, Sydney, 23 September.
+2[]
+See, for example, Carstens A (2023), ‘Trust and Public Policies’, Speech at the High-level Seminar on Central
+Banking, São Paulo, 19 May. It is sometimes argued that trust plays a similar role in enhancing the efficacy of
+government policy too (see, for instance, Hetherington MJ (1998), ‘The Political Relevance of Political Trust’,
+The
+American Political Science Review, 92(4), pp 791–808), but that is outside the scope of these remarks.
+3[]
+As Philip Lowe discussed in his 2019 Melville Lecture: Lowe P (2019), ‘Some Echoes of Melville’, Sir Leslie Melville
+Lecture, Canberra, 29 October.
+4[]
+Hauser A (2025), ‘Monetary Policy in a VUCA World’, Speech at the Australian Financial Review Business Summit,
+Sydney 5 March; and Bullock M (2026), ‘Monetary Policy in an Era of Shocks’, Speech at the Anika Foundation
+Fundraising Lunch, Sydney, 28 July.
+5[]
+As Loretta Mester discussed in last year’s Melville Lecture, with a focus on the United States: Mester L (2025), ‘The
+Benefits of Independent Monetary Policymaking in an Uncertain World’, Sir Leslie Melville Lecture, Canberra, 10 July.
+6[]
+Bolt J and JL van Zanden (2024), ‘Maddison-style Estimates of the Evolution of the World Economy: A New 2023
+Update’,
+Journal of Economic Surveys, 39(2), pp 631–671; and Keating M (1973),
+The Labour Force, Employment
+and Unemployment in Australia, 1911–1966, Australian National University, Canberra.
+7[]
+For more on Melville’s influence, see Cornish S (2021), ‘The Central Bank’s First Economist’, RBA
+Bulletin, December;
+McFarlane IJ (2022), ‘Sir Leslie Melville: His Contribution to Central Banking in Australia’, Inaugural Sir Leslie Melville
+Lecture, Canberra, 22 March; and RBA Unreserved, ‘Research Guide: Sir Leslie Melville KBE’.
+8[]
+The recommendation to create an economist position, and to appoint Melville to that post, was made by the Bank of
+England’s Sir Otto Niemeyer and Professor TE Gregory during their 1930 trip to Australia. Sir Ernest Riddle, Governor
+of the Commonwealth Bank, wrote to Sir Montague Norman, Bank of England Governor, on 25 August 1931:
+‘Following on conversations with Sir Otto Niemeyer during his stay in Australia, a recommendation was made by me
+to my Board of Directors that an economist should be attached to the Bank’s staff, and that the position be offered
+to Professor Melville of the Adelaide University, of whom Sir Otto and Professor Gregory spoke in very favourable
+terms. My recommendation was approved by the Board, and the offer of a position on the Staff was accepted by
+9[]
+Professor Melville. We have already obtained considerable advantage from his services, and have arranged that he
+be appointed one of the Committee of Experts to police the carrying out of the Premiers’ Plan by the various
+Governments.’ See RBA Unreserved, ‘Research Department – General Economic Conditions – Letters to the Reserve
+Banks – Bank of England Letters – July 1927 – December 1932’.
+I am grateful to Alex Millmow and Selwyn Cornish for helping me confirm this link to a short obituary of Tony
+Melville by Donald Smith, available at <https://thehaileyburysociety.org/2024/07/01/anthony-edwin-melville-colvin-
+house-master/>.
+10[]
+In the sociological literature, the first meaning is sometimes called ‘granted trust’ and the second ‘earned trust’.11[]
+As Onora O’Neill points out in her Reith lectures, transparency and accountability can never fully close the expertise
+gap, because no matter how many layers of audit and independent assessment are wrapped around an expert
+endeavour, the non-expert must always rely on some expert’s judgement – whether it be the original actor, or
+additional experts brought in to assess their reasoning and work. At some point in this potential infinite regress,
+there must be an act of faith. O’Neill argues that where people choose to draw this line can be better assessed by
+observing what they do rather than what they say. She notes that people frequently place journalists towards the
+lower end of trust rankings – yet they devour even poorly sourced press critiques, or gossip, relating to high-profile
+public figures. Another common tension lies in the contrast between statements that people have little trust in
+institutions and companies and the trust given to technology providers to protect the types of private data that
+previous generations would never have dreamed of disclosing. Whether actions or words end up predominating, the
+bottom line is that a trust-less life is impossible – and technology, far from obviating the need for trust, frequently
+demands it more than ever.
+12[]
+McChesney Martin was chair of the Federal Reserve from 1951–1970; the full speech from which this quotation is
+taken is McChesney Martin Jr, W (1955), ‘Address before the New York Group of the Investment Bankers Association
+of America’, New York City, 19 October. As others have pointed out, the metaphor should really be more two-sided:
+the central bank’s true goal is a sustainable party, not a prematurely short one! If the room is in danger of emptying
+out too soon, the punch bowl may sometimes actually need topping up, as central banks were required to do in the
+initial aftermath of the global financial crisis and the onset of COVID. McChesney Martin himself recognised this
+point when giving testimony to the Senate in 1956: ‘our purpose is to lean against the winds of deflation or inflation,
+whichever way they are blowing’ (Committee on Banking and Currency (1956), ‘Nomination of William McChesney
+Martin, Jr.’, Hearings Before the Committee on Banking and Currency, United States Senate, Eighty-Fourth Congress,
+Second Session, 20 and 27 January). But the original line has endured because it captures an uncomfortable feature
+of the job.
+13[]
+This exercise uses the RBA’s DSGE model DINGO, an updated version of the model laid out in Gibbs C, J Hambur
+and G Nodari (2018), ‘DSGE Reno: Adding a Housing Block to a Small Open Economy Model’, RBA Research
+Discussion Paper No 2018-04; and Rees D, P Smith and J Hall (2016), ‘A Multi-Sector Model of the Australian
+Economy’,
+Economic Record, 92(298), pp 374–408.
+14[]
+Formally, this exercise compares the response to the overseas cost shock in the case where the reaction function
+has a lower weight on inflation (pink line), and a higher weight (blue line). In the former case, the exercise
+15[]
+considers what additional unanticipated policy tightening is required to match the inflation outcomes from the higher
+weight case.
+The point here is not to argue that placing a higher weight on inflation is necessarily preferable, as there will be
+trade-offs with activity. But it highlights that, in trying to achieve a given inflation outcome, it will be less costly if
+people trust that the central bank is going to achieve that path.
+16[]
+These findings are from a special module included in the BOSS as part of a collaboration with the RBA. For more
+information on the survey, see Macquarie University, ‘Business Outlook Scenarios Survey (BOSS)’.
+17[]
+Graph 3 uses results from the RBA’s Community Research Survey, described in more detail below. The ECB results
+are shown in Figure 6 in Christelis D, D Georgarakos, T Jappelli and M van Rooij (2020), ‘Trust in the Central Bank
+and Inflation Expectations’, International Journal of Central Banking, 16(6), pp 1–37; and Chart 6 in Dreher F
+(2024), ‘Trust in the ECB – Insights from the Consumer Expectations Survey’, ECB
+Economic Bulletin, Issue 3.
+18[]
+Haldane A (2020), ‘What Has Central Bank Independence Ever Done for Us?’, Speech to the UCL Economists’ Society
+Economics Conference, London, 28 November.
+19[]
+See, for instance, Alesina A and LH Summers, (1993), ‘Central Bank Independence and Macroeconomic
+Performance: Some Comparative Evidence’,
+Journal of Money Credit and Banking, 25(2), pp 151–162; Klomp J and J
+De Hann (2010), ‘Inflation and Central Bank Independence: A Meta-analysis’,
+Journal of Economic Surveys, 24(4),
+pp 593–621; and Haldane, n 19.
+20[]
+Based on the CBIE (Central Bank Independence – Extended index) scores of 156 central banks in CBI Data. Relative
+to pre-COVID, only three central banks have a lower score (Indonesia, Liberia and Iceland); 129 are unchanged;
+and 24 have a higher score. For further discussion of these measures, see Romelli D (2024), ‘Recent Trends in
+Central Bank Independence’, CEPR VoxEU.
+21[]
+See, for instance, Ipsos (2026), ‘What Worries the World’, June; European Union (2026), ‘Standard Eurobarometer
+105 – Spring 2026’, May; Saad L (2026), ‘Affordability Still Dominates Americans’ Financial Worries’, Gallup News,
+28 April; and, for Australia, Graph 2 in Harden J, P Rickards and M Wright (2026), ‘Listening to Australians: A New
+RBA Survey of the Community’, RBA
+Bulletin, July.
+22[]
+See for example Forbes K, J Ha and M Ayhan Kose (2026), ‘Tradeoffs Over Rate Cycles: Activity, Inflation and the
+Price Level’,
+NBER Macroeconomics Annual, 40, pp 191–277; Bullock (2025), ‘The RBA’s Dual Mandate – Inflation
+and Employment’, Speech at the Anika Foundation Fundraising Lunch, Sydney, 24 July.
+23[]
+Data for Australia and other countries come with thanks from Kristin Forbes, based on Forbes K (2026), ‘Muted or
+Mismeasured? Monetary Policy Trade-offs over 50 Years of Rate Cycles’, Proceedings of RBA Annual Conference,
+Sydney, 8–9 October, using updated data and estimates from Forbes K, J Ha and M Ayhan Kose (2026), ‘Tradeoffs
+Over Rate Cycles: Activity, Inflation and the Price Level’,
+NBER Macroeconomics Annual, 40, pp 191–277.
+24[]
+The RBA survey is discussed in more detail in Harden, Rickards and Wright, n 22; and the Governor spoke to some
+of the early findings in her March 2026 speech: Bullock M (2026), ‘Listening to Australians, Interpreting the Data and
+Setting Monetary Policy’, Speech at the Australian Financial Review Business Summit, 3 March.
+25[]
+OECD results taken from OECD (2025),
+Drivers of Trust in Public Institutions in Australia, OECD Publishing. The
+OECD trust measurement framework, which the RBA also uses, is set out in Brezzi M, S Gonzalez, D Nguyen and M
+Prats (2021), ‘An Updated OECD Framework on Drivers of Trust in Public Institutions to Meet Current and Future
+Challenges’, OECD Working Paper on Public Governance No 48.
+26[]
+DemosAU (2026), ‘TrustWatch: Trust in Australia’s National Institutions’, April finds a similar result, suggesting that
+while trust in most Australian institutions fell between January 2025 and April 2026, trust in the RBA showed a
+slight rise.
+27[]
+Similar results have been found for the ECB: Eickmeier and Petersen show that achieving policy objectives is highly
+important to an individual’s level of trust in the ECB. See Eickmeier S and L Petersen (2024), ‘Beyond Technocracy:
+Toward a Holistic Approach to Central Bank Trust’, NBER Working Paper No 32716.
+28[]
+Eickmeier S and L Petersen (2024), ‘Beyond Technocracy: Toward a Holistic Approach to Central Bank Trust’, NBER
+Working Paper No 32716.
+29[]
+Trust measures vary somewhat in definition across countries: the Bank of England’s is more focused on inflation
+outcomes; the Federal Reserve’s on leadership; while the Bank of Canada and European Central Bank measures are
+more broadly defined.
+30[]
+The World Values Survey also suggests that the share of Australians who agree with the statement ‘most people can
+be trusted’ has risen over the past quarter century, from 39 per cent in 1998 to 49 per cent in 2022 (see World
+Values Survey Database and Ortiz-Ospina E, M Roser and P Arriagada (2024), ‘Trust’, Our World in Data, April).
+31[]
+See, for example, Boccola L, A Dovis, K Jorgensen and R Kirpalani (2025), ‘Monetary Policy without an Anchor’,
+NBER Working Paper No 34436; and Carvalho C, S Eusepi, E Moench and B Preston (2026), ‘Anchored Inflation
+Expectations’,
+American Economic Journal: Macroeconomics, 15(1), pp 1–47.
+32[]
+Ryan C (2026), ‘Discussion of Monetary Policy without an Anchor PDF ’, Proceedings of RBA Annual Conference,
+Sydney, 8–9 October.
+33[]
+Since February 2026 questions on longer-term inflation expectations have been included in the Community Research
+Survey. The RBA is also working with the Melbourne Institute to introduce an extension to its current survey to
+capture longer-run inflation expectations.
+34[]
+See also Bullock, n 5; and Hunter S (2026), ‘Understanding Supply Shocks and Their Implication for Monetary
+Policy’, Address to the Australian Conference of Economists, Canberra, 8 July.
+35[]
+The 1945 text and the current text are available from the Federal Register of Legislation.36[]
+The trust scores in the survey bring this perception out clearly. For example, Australians with a mortgage currently
+have considerably lower trust in the RBA than those without a mortgage, even after accounting for other factors. In
+periods where interest rates are declining, it is possible this pattern would reverse. These and other distributional
+issues were covered in detail at the recent 2026 RBA Annual Conference on Monetary Policy Trade-offs. We have re-
+doubled our efforts in recent times to communicate the different transmission channels for monetary policy: see, for
+instance, RBA (2026), ‘How Do Higher Interest Rates Lower Inflation?’.
+37[]
+The materials on this webpage are subject to copyright and their use is subject to the terms and conditions set out in the
+Copyright and Disclaimer Notice.
+© Reserve Bank of Australia, 2001–2026. All rights reserved.
+RBA, ‘Our Research Agenda’.38[]
+RBA, ‘Insights: An RBA Staff Series’.39[]
+See Iao T and E Shabalina (2026), ‘Monetary Policy Trade-offs Under Imperfect Central Bank Information PDF ’,
+Proceedings of RBA Annual Conference, Sydney, 8–9 October; and Brassil A and C Ryan (2025); ‘A New Keynesian
+‘Plucking’ Model of Unemployment and Inflation PDF ’, Proceedings of RBA Quantitative Macro Workshop, Sydney,
+11–12 December.
+40[]
+See Jacobs D (2026), ‘The Road to Ample – Towards a Demand-driven Liquidity Regime’, Speech at the RBA,
+Sydney, 25 August; Kent C (2026), ‘Additional Monetary Policy Tools: Reflections and a New Framework’, Speech
+at the RBA, Sydney, 29 June; and RBA (2026), ‘Framework for Additional Monetary Policy Tools at Low Interest
+Rates’, June.
+41[]
+Bradshaw N, J Hambur, M McCarthy and S Nash (2025), ‘Overview and Early Analysis of the New Wealth and
+Housing Asset Module (WHAM) PDF ’, Proceedings of the ABS and RBA Conference, Sydney, 23–24 June. This is a
+partnership with the Treasury, Department of Social Services, Department of Industry Science and Resources, the
+Australian Tax Office and the Australian Bureau of Statistics.
+42[]
+Gray N, F Lattimore, K McLoughlin and C Windsor (2025), ‘An AI-powered Tool for Central Bank Business Liaisons:
+Quantitative Indicators and On-demand Insights from Firms’, RBA Research Discussion Paper No 2025-06.
+43[]
+For further details, see Hauser, n 5; and Hunter S (2025), ‘Monetary Policy: Forward Looking and Data Dependent in
+the Face of Uncertainty’, Speech at the Australian Financial Review Banking Summit, Sydney, 18 March. See
+Chapter 3: Outlook in RBA (2026),
+Statement on Monetary Policy, May for a public example where two adverse
+scenarios about the Middle East conflict and oil prices were presented. Chapter 4: Outlook in RBA (2025),
+Statement
+on Monetary Policy, May included alternative scenarios of a ‘trade war’.
+44[]
+See, for instance, RBA (2025), ‘Box B: Annual Forecast Review’,
+Statement on Monetary Policy, November.45[]
+Hambur J and Q Haque (2026), ‘Perceived Monetary Policy Rules: Evidence from Professional Forecasters in
+Australia’, RBA Research Discussion Paper No 2026-06.
+46[]
+Hambur J, M McCarthy, S Munn and E Shaw (2026), ‘Rate and See: Household Interest Rate Expectation Formation
+in Australia’, CAMA Working Paper No 76/2026.
+47[]
+McMahon M, R Rickards and R Rholes (2024), ‘Teach Don’t Give: Coordinating Mental Models With Communication’,
+Working Paper, mimeo.
+48[]
+The Reserve Bank of Australia acknowledges the Aboriginal and Torres Strait Islander Peoples of Australia as the Traditional
+Custodians of this land, and recognises their continuing connection to country. We pay our respects to their Elders, past and
+present. Aboriginal and Torres Strait Islander peoples should be aware that this website may contain the names, images and
+voices of people who are now deceased.

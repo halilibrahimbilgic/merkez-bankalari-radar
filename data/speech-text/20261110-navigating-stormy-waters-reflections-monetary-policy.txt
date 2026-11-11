@@ -1,0 +1,508 @@
+SPEECH
+Navigating stormy waters: reflections on
+monetary policy
+Speech by Isabel Schnabel, Member of the Executive Board of the
+ECB, at the ECB Conference on Money Markets 2026
+Frankfurt am Main, 5 November 2026
+The past seven years have been an extraordinary journey.[ ]
+We have moved from a world in which inflation was persistently too low to one marked by recurrent
+inflationary shocks; from a historically accommodative monetary policy stance to the fastest tightening
+cycle in the history of the ECB; and from a deeply integrated global economy to one increasingly
+shaped by fragmentation and geopolitical tensions.
+As I reach the end of my journey here at the ECB, I would like to reflect on the lessons these
+experiences have taught me about the conduct of monetary policy in a world that has become less
+predictable.
+My remarks today are personal reflections on how the experience of recent years has shaped my
+thinking about monetary policy and what it may teach us about navigating the challenges ahead.
+There are four key takeaways.
+Takeaway one: preserve room for manoeuvre by avoiding
+commitments
+The first takeaway is that central banks should prioritise instruments that allow them to adjust
+monetary policy quickly as conditions change.
+We entered the pandemic after a long period in which inflation had been below our target (Slide 2, left-
+hand side). Globalisation, and the integration of China in particular, had structurally lowered the global
+cost of producing goods, putting downward pressure on inflation.
+At the same time, the global financial crisis and the sovereign debt crisis had weakened public and
+private balance sheets and left lasting scars on demand, weighing on economic activity and inflation.
+Over time, this experience gradually fostered the belief that these forces were permanent, leaving
+monetary policy primarily focused on bringing inflation back up to target.
+As a result, after chronically overpredicting inflation before the pandemic, we were slow to recognise
+that we had entered a new regime in which we would repeatedly underpredict it (Slide 2, right-hand
+side).
+Indeed, even as evidence of a more substantial and persistent rise in inflation was mounting, the initial
+reaction was one of relief: the economy finally seemed to be escaping the low-inflation environment.[ ]
+1
+2
+But the rapid increase in the share of goods and services experiencing inflation above 2% signalled
+that price pressures were becoming increasingly broad-based (Slide 3).
+This exposed two key features of the inflation process that our analytical frameworks had not
+sufficiently accounted for.
+One was the steepening of the Phillips curve, which was in part a result of more frequent price
+changes as firms sought to protect their profit margins in the face of sharp cost increases (Slide 4).
+The other, related feature was the role of firms’ profits in inflation. Unlike the high-inflation period of the
+1970s, when inflation was almost entirely driven by growth in unit labour costs, the post-pandemic
+inflation surge was to a significant extent driven by rising unit profits (Slide 5).[ ]
+So, the pandemic was a structural break in many of the trends we had witnessed before.
+This included a shift in the global balance between savings and investment.
+Rising investment needs related to the green and digital transitions, alongside a changing geopolitical
+environment, have turned the savings glut of the past into a bond glut, as both private and public
+issuance have increased sharply.[ ]
+This shift puts upward pressure not only on inflation but also on the natural rate of interest, r* (Slide 6,
+left-hand side).[ ]
+None of these shocks or their consequences could have been predicted easily. The lesson is therefore
+that we should expect the unexpected – and avoid becoming too attached to a particular view of the
+world or a particular class of models.
+This has implications for the design and conduct of monetary policy.[ ]
+We should be wary of commitments that depend too heavily on a particular economic environment or
+class of models, leaving little room to adjust when conditions change.
+Charles Goodhart – a distinguished scholar of monetary history who has seen the world change more
+than once – put it this way: “The world changes, and if the world changes you need sufficient flexibility
+to change the way that you operate within that.”[ ]
+In retrospect, forward guidance during the pandemic was too Odyssean. It tied our hands too closely
+to a world of persistently low inflation.
+The same applies to the choice of other policy instruments.
+Some instruments are inherently more agile than others. Policy rates can be adjusted swiftly at each
+meeting, whereas large-scale asset purchases continue to provide monetary accommodation long
+after the purchases themselves have ended (Slide 6, right-hand side).
+An instrument that is difficult to reverse is itself a form of commitment.
+That is also why we emphasise in our monetary policy strategy that our primary monetary policy
+instrument is the set of key policy rates.[ ] This does not mean that asset purchases are never useful.
+[ ] They are highly effective in stabilising financial markets that suddenly turn illiquid. And they remain a
+tool to counter deflationary pressures at the effective lower bound.
+3
+4
+5
+6
+7
+8
+9
+One way to preserve flexibility is to separate instruments used to stabilise markets from those used to
+calibrate the monetary policy stance.[ ] This can limit the scale of asset purchases and make them
+easier to unwind.
+The Transmission Protection Instrument (TPI) embodies this principle. It provides a dedicated tool to
+address unwarranted, disorderly market dynamics that threaten the transmission of monetary policy,
+subject to clearly defined criteria.
+Takeaway two: what matters is how shocks affect the inflation
+outlook
+The second takeaway is that the appropriate monetary policy response to a shock primarily depends
+not on its nature, but on its implications for the projected inflation path.[ ]
+Traditionally, the nature of the shock guided our thinking about how monetary policy should respond to
+price pressures. The standard prescription was that demand shocks called for an immediate response,
+while supply shocks could often be looked through, as the shock would either fade on its own or
+weaker growth would dampen emerging price pressures, reducing the need for monetary tightening.
+This distinction can be misleading, for two reasons.
+First, central banks rarely face one shock at a time. During the pandemic, supply chain disruptions,
+pent-up demand and unprecedented fiscal and monetary policy support interacted in ways that were
+difficult to disentangle (Slide 7, left-hand side).[ ]
+Russia’s unjustified invasion of Ukraine added a major energy and food price shock to an already
+challenging environment. Such overlapping shocks can prolong the period of elevated inflation and
+make the “last mile” of disinflation particularly challenging.[ ]
+Services inflation was still running above 3% before the start of the conflict in the Middle East,
+reflecting the drawn-out adjustment to the earlier inflation surge, including through staggered wage
+negotiations (Slide 7, right-hand side).
+Today, we again face overlapping shocks, from geopolitical tensions and rising energy prices to the
+rapid expansion of AI-related investment and large fiscal spending needs, including for defence. These
+developments affect demand, productive capacity, prices and financial conditions through different
+channels and over different horizons.
+Second, a sufficiently large and persistent adverse supply shock can push projected inflation above
+target, requiring a timely monetary policy response. What begins as a relative price adjustment can
+turn into a broader inflation problem through indirect price effects, wage dynamics and changes in
+inflation expectations.
+This is why we are closely monitoring these developments. In response to the latest energy shock,
+consumer inflation expectations over the medium to longer term have increased and gradually moved
+away from our 2% target (Slide 8).
+The lesson is therefore that monetary policy cannot be calibrated on the basis of simple classifications
+of shocks. What matters is how shocks affect the inflation outlook.
+10
+11
+12
+13
+This matters even more in a world in which adverse supply-side shocks are likely to become more
+frequent and persistent owing to geopolitical fragmentation and climate change.[ ]
+The role of climate change for monetary policy has long been a source of contention. But the evidence
+is increasingly clear. More frequent floods, heatwaves and droughts lower agricultural yields, disrupt
+supply and damage infrastructure, all of which feed into price dynamics (Slide 9).[ ]
+And “climateflation” is just one way in which climate change is becoming a challenge for price stability,
+bringing it squarely within our primary mandate.[ ]
+So, for each shock, we need to assess its size and persistence, the state of the economy and the risk
+of inflation becoming entrenched in expectations and in price and wage-setting.
+The ECB’s response to the conflict in the Middle East reflects these lessons.
+ECB staff rapidly developed projection scenarios with varying assumptions about the indirect and
+second-round effects of the energy shock. Monetary policy, in turn, responded to the expected
+persistence of these inflationary pressures in a timely and forward-looking manner.
+As a result, we are now well positioned to address the current inflation challenge.
+Takeaway three: protect monetary dominance
+The third takeaway is that the ECB’s ability to fulfil its primary mandate relies on robust fiscal and
+regulatory frameworks that ensure monetary dominance.
+During the post-pandemic inflation surge, the ECB demonstrated its ability to tighten monetary policy
+forcefully, even though higher interest rates could have pushed the economy into recession or posed
+risks to fiscal and financial stability.
+The resilience of the banking sector was an essential condition for monetary policy to act as needed to
+restore price stability. This was largely thanks to the financial reforms introduced in the wake of the
+global financial crisis. Strong capital positions and healthy profitability allowed banks to absorb the rise
+in interest rates without coming under financial strain (Slide 10).
+Structural changes threaten monetary dominance
+Two developments, if left unchecked, could threaten monetary dominance in the future: first, structural
+changes in the financial sector, including the rise of non-bank finance; and second, the increase in
+public debt.[ ]
+Over the past two decades, partly in response to tighter bank regulation, there has been a massive
+shift in the provision of financial services away from banks to non-bank financial intermediaries. Non-
+banks now hold financial assets on a par with those held by banks (Slide 11, left-hand side).[ ]
+At the same time, euro area public debt as a share of GDP has increased by nearly 20 percentage
+points since the early 2000s, with large heterogeneity across member countries (Slide 11, right-hand
+side). This rise in part reflects the successive crises we have faced.
+Rising public debt is a global trend across advanced economies. The IMF projects government debt in
+the United States to rise to 145% of GDP in 2031, up from 124% last year. For China, it projects an
+14
+15
+16
+17
+18
+increase to 122% over the same period, up from 99%.
+These two shifts interact in important ways.
+As central banks reduce the asset portfolios accumulated during years of monetary accommodation, a
+greater share of government debt must be absorbed by price-sensitive private investors.
+Hedge funds in particular are holding an increasing share of sovereign debt, often financed through
+repos, and they now play a key role in intermediating sovereign bond markets (Slide 12, left-hand
+side).
+As a result, monetary policy is transmitted more rapidly.[ ] When policy tightens, higher interest rates
+will feed quickly into government financing costs through the higher funding costs of non-bank lenders.
+This dynamic is reinforced by governments shifting towards shorter debt maturities (Slide 12, right-
+hand side).
+At higher levels of public debt, however, non-linear effects are more likely to emerge.
+When volatility rises, falling collateral values, higher margin requirements or reduced access to funding
+can force leveraged investors to unwind their positions. The “dash for cash” episode in 2020 and the
+liability-driven investment (LDI) crisis in the United Kingdom in 2022 illustrated how such dynamics can
+destabilise sovereign bond markets, the bedrock of our financial system.
+To restore transmission, central banks may then be forced to stabilise markets to prevent a liquidity
+crisis from turning into a full-blown credit crisis, which would likely also spill over to the banking sector.
+[ ]
+Such interventions can interfere with the central bank’s mandate and threaten monetary dominance.
+There are two lessons to be learned from this.
+Proper regulation reduces the risk of financial dominance
+First, a sound financial system reduces the risk of financial dominance.
+For this reason, governments should resist the current push towards deregulating the banking sector.
+[ ] Many of the arguments put forward in favour of deregulation are flawed. Its benefits are doubtful
+and its potential costs are significant.
+Thanks to the reforms implemented following the global financial crisis, the banking system was an
+anchor of stability during recent shocks.
+Yet the shift of financial activity towards the less regulated non-bank sector has made the financial
+system more fragile. It also creates risks for banking sector stability: banks are closely interconnected
+with non-banks and increasingly rely on them as a source of funding, creating channels through which
+stress can spread across the financial system (Slide 13).
+Leverage, reliance on short-term funding and interconnectedness in core markets therefore require
+stronger oversight and a more effective macroprudential framework. Stronger regulation of non-banks
+would also bolster the case for considering their access to central bank facilities, which could further
+support systemic stability.
+19
+20
+21
+Consolidation and growth reduce the risk of fiscal dominance
+Second, prudent fiscal policy reduces the risk of fiscal dominance.
+In the changed interest rate environment, it has become more difficult to put public finances back on a
+sustainable path. This challenge is well illustrated by the evolution of the differential between the
+effective interest rate paid on debt, r, and the economy’s growth rate, g.
+For years, r-g was negative (Slide 14, left-hand side). Such an environment allows governments to
+bring debt ratios down, even when running primary deficits. But the differential has now turned positive
+in many countries and is likely to rise further as governments refinance maturing debt at today’s higher
+interest rates.
+At the same time, potential growth in the euro area has been on a declining trend and is expected to
+weaken further (Slide 14, right-hand side). Population ageing is weighing on labour supply, while
+investment and productivity growth are unlikely to be strong enough to offset the resulting drag on
+potential growth.
+Efforts are therefore needed on both sides of the r-g differential.
+On the r side, a credible fiscal path helps contain both risk premia and interest rate expenditure. The
+best contribution the ECB can make is to keep the inflation risk premium low by ensuring that inflation
+expectations remain firmly anchored (Slide 15, left-hand side).
+On the g side, the euro area needs to regain competitiveness.[ ] For a long time, productivity growth
+in the euro area has been weaker than in the United States (Slide 15, right-hand side).
+Achieving a lasting improvement requires progress on two fronts: strengthening Europe’s capacity to
+innovate and enabling the diffusion of new technologies across the economy.
+Both depend on scale.
+Boosting innovation requires an environment that allows promising ideas to grow into successful
+businesses on a European scale.
+Yet fragmented capital markets make it harder for firms to secure financing as they grow, while
+fragmented product markets limit the potential returns for investors. These obstacles reinforce each
+other: investors hesitate to finance companies that cannot scale up, while companies struggle to scale
+up without access to sufficient capital.
+The Single Market is critical to breaking this cycle. A product that can be sold across a market of more
+than 450 million Europeans offers a much greater growth opportunity than one that can be sold only in
+one country.
+Yet, despite decades of integration, barriers within the Single Market remain substantial. ECB
+estimates suggest that internal barriers are equivalent to tariffs of 96% for services and 67% for goods
+(Slide 16).
+A powerful step towards overcoming this fragmentation is a 28th regime: a unified European corporate
+framework that lowers barriers to cross-border activity, makes it easier to raise capital and attract
+talent, and allows innovative companies to scale up more quickly across the European Union.[ ]
+22
+23
+The proposal currently under discussion could be an important step in that direction. A watered-down
+version, by contrast, would risk becoming another lost opportunity.
+But innovation alone is not enough.
+Productivity also depends on how effectively existing and new technologies are adopted throughout
+the economy. Here, too, scale matters. Smaller firms tend to be less productive, partly because they
+lack the resources to cover the fixed costs of adopting new technologies (Slide 17, left-hand side).
+This is particularly urgent as AI opens up new possibilities to transform production and raise
+productivity (Slide 17, right-hand side). Europe cannot afford to repeat the experience of the digital
+revolution of the 1990s and 2000s, when it was slow to adopt and exploit new technologies at scale.
+[ ]
+The ECB is playing its part by introducing the digital euro and by harnessing distributed ledger
+technology (DLT) and tokenisation to future-proof Europe’s wholesale financial markets, reduce
+fragmentation and modernise the implementation of monetary policy.[ ]
+These efforts will support strategic autonomy and help safeguard Europe against excessive reliance
+on foreign currency-denominated stablecoins, which could undermine monetary sovereignty and
+create risks for financial stability.[ ]
+Takeaway four: implement monetary policy efficiently
+The fourth takeaway is that monetary policy should be implemented efficiently with a balance sheet
+that is no larger than necessary.
+In the wake of the global financial crisis, many central banks moved towards operating with abundant
+reserves. They did so not because this was necessarily their preferred way of implementing monetary
+policy, but as a consequence of large-scale asset purchases.
+By buying assets on a massive scale, central banks injected far more reserves into the system than
+banks needed to satisfy their liquidity demands.
+This came at a cost. Private market activity was displaced, asset prices were distorted and central
+banks, and thus ultimately taxpayers, were exposed to financial risks.[ ]
+At one point, the scarcity of safe assets in the euro area was so acute that rates on some specialised
+repo transactions traded at a premium of more than 50 basis points above the ECB’s deposit facility
+rate (Slide 18, left-hand side).
+Abundant reserves also changed the liability structure of bank balance sheets.
+As reserves were injected into the system, banks issued more short-term, uninsured deposits. But
+these claims on liquidity did not decline in step with reserves when central banks subsequently
+reduced their balance sheets (Slide 18, right-hand side).[ ]
+This created a ratchet effect. Banks became more dependent on central bank liquidity, potentially
+making the system more vulnerable in periods of stress. This experience highlights the limits of the
+Friedman rule in practice: supplying reserves abundantly is not without costs.
+There are two lessons from this.
+24
+25
+26
+27
+28
+The first is that, as part of quantitative normalisation, we are winding down the portfolios accumulated
+under the asset purchase programme (APP) and the pandemic emergency purchase programme
+(PEPP). The monetary policy motivation for these portfolios no longer exists.
+In principle, we can reduce them all the way to zero, unless we were to return to the effective lower
+bound, in which case renewed purchases might become necessary to protect price stability.
+The second lesson is that banks are best placed to assess their own liquidity needs. The central bank
+should ensure that these needs can be met on appropriate terms, while encouraging banks to tap
+private funding markets before accessing central bank facilities.
+The ECB’s new operational framework reflects this insight.[ ]
+Every week banks can request as much liquidity as they need through our standard refinancing
+operations at a fixed rate and against a broad set of collateral.
+As excess liquidity continues to decline, we expect banks to make increasing use of these operations.
+Accessing central bank refinancing operations will again become a normal part of banks’ liquidity
+management, without any stigma attached to it.[ ]
+The recent standard refinancing operations covering the month and year-end were encouraging. They
+attracted significant demand from a broad set of banks.
+Over time, the take-up of our standard refinancing operations will give us valuable information about
+banks’ demand for reserves.
+In particular, if the amounts requested continue to rise and remain elevated, this will indicate that an
+increasing share of banks’ borrowing reflects persistent liquidity needs rather than temporary
+fluctuations.
+At that point, it would make sense to meet the more stable part of this demand through structural
+operations rather than requiring banks to roll over large amounts every week.
+Complementing our regular operations with structural liquidity-providing instruments, including longer-
+term refinancing operations and a structural securities portfolio, will provide banks with a more stable
+source of liquidity.
+In my reading, the current structure of the ECB’s balance sheet implies the following sequence in this
+transition.[ ]
+As the sizeable legacy APP and PEPP portfolios will continue to provide liquidity for a long time, it is
+natural to begin by introducing structural longer-term refinancing operations. In addition, the
+Eurosystem holds assets for non-monetary policy purposes, which also contribute to the supply of
+reserves.
+Once the legacy portfolios have run off sufficiently, a structural securities portfolio will gradually be
+built.
+So, liquidity demand will ultimately be satisfied through a mix of instruments, also reflecting that part of
+bank’s liquidity needs is driven by autonomous factors beyond their control. But the fundamental
+principle will remain unchanged: the marginal unit of liquidity will be supplied through our standard
+29
+30
+31
+refinancing operations in response to banks’ demand, rather than being injected at the central bank’s
+initiative.
+The advantage is that we do not need to estimate banks’ liquidity needs in advance or maintain an
+additional buffer in the face of uncertainty about the amount of liquidity the system requires.
+If calibrated appropriately, such a framework can achieve the best of both worlds: efficiently
+implementing monetary policy with fewer side effects, while ensuring that banks have the liquidity they
+need.
+Conclusion
+Let me conclude by bringing together the four takeaways from these reflections.
+First, preserving room for manoeuvre allows monetary policy to respond quickly when circumstances
+change in unexpected ways.
+Second, monetary policy should respond to the implications of shocks for the inflation outlook, not to
+their nature.
+Third, safeguarding monetary dominance allows central banks to act decisively when price stability is
+at risk.
+And finally, implementing monetary policy efficiently with a balance sheet that is no larger than
+necessary reduces side effects, preserves future policy space and fosters market activity.
+These four takeaways reflect what the past seven years have taught me about conducting monetary
+policy in a volatile world.
+The economic environment will keep changing. But the experience built over recent years leaves the
+ECB well equipped to navigate any stormy waters ahead, while remaining firmly focused on what
+ultimately matters: price stability.
+Thank you very much.
+Annexes
+5 November 2026
+Slides
+1.
+I would like to warmly thank my Counsellors, Tobias Blattner and Johannes Gräb, for their
+extraordinary support and commitment. Without them, the many speeches I have delivered over the
+years, including those quoted here, would not have been possible.
+2.
+Schnabel, I. (2021), “ ”, speech at the Petersberger Sommerdialog, Frankfurt
+am Main, 3 July; and Schnabel, I. (2021), “
+Escaping low inflation?
+New narratives on monetary policy – the spectre of
+”, speech at the 148th Baden-Baden Entrepreneurs’ Talk, Frankfurt am Main, 13 September.
+3.
+Hahn, E. (2023), “
+”, Economic Bulletin, Issue 4, ECB.
+4.
+Schnabel, I. (2025), “ , keynote speech at the
+Bank of England’s 2025 BEAR Conference, London, 25 February.
+5.
+Schnabel, I. (2024), “ ”, speech at The ECB and its Watchers XXIV Conference session
+on: Geopolitics and Structural Change: Implications for Real Activity, Inflation and Monetary Policy,
+Frankfurt, 20 March.
+6.
+Schnabel, I. (2024), “ ”,
+speech at the 25th Jacques Polak Annual Research Conference, Washington D.C., 14 November.
+7.
+Goodhart, C. (2016), Interview on economic policy, 19 July.
+8.
+See ECB (2025), , 30 June.
+9.
+Schnabel, I. (2024), “ ”, speech at the 2024 BOJ-IMES
+Conference on “Price Dynamics and Monetary Policy Challenges: Lessons Learned and Going
+Forward”, Tokyo, 28 May; and Schnabel, I. (2020), “
+”, speech at the Juristische Studiengesellschaft, Karlsruhe, 11 February.
+10.
+Schnabel, I. (2023), “ ”, speech at the
+Conference on Financial Stability and Monetary Policy in the honour of Charles Goodhart, London, 19
+May.
+11.
+Schnabel, I. (2026), “ ”, speech at the 8th Annual EC-
+EIB-ESM Capital Markets Seminar, Luxembourg, 30 September.
+12.
+It is now broadly agreed that demand-side factors played an important role in the post-pandemic
+inflation surge. This was intensely debated in earlier years. See, for example, Giannone, D. and
+inflation
+How have unit profits contributed to the recent strengthening of euro area domestic
+price pressures?
+No longer convenient? Safe asset abundance and r*
+R(ising) star?
+Reassessing monetary policy tools in a volatile macroeconomic environment
+The ECB’s monetary policy strategy statement
+The benefits and costs of asset purchases
+Narratives about the ECB’s monetary policy –
+reality or fiction?
+Monetary and financial stability – can they be separated?
+Monetary policy in a world of overlapping shocks
+Primiceri, G.E. (2024), “ ”, paper presented at the ECB Forum on
+Central Banking, Sintra.
+13.
+Schnabel, I. (2023), “ ”, keynote speech at the annual Homer Jones Memorial Lecture, St.
+Louis, 2 November.
+14.
+Schnabel, I. (2022), “ ”, speech at the Jackson Hole Economic
+Policy Symposium organised by the Federal Reserve Bank of Kansas City, Jackson Hole, Wyoming,
+27 August.
+15.
+Lagarde, C. (2026), “ ”, The ECB Blog, ECB, 4 November.
+16.
+Schnabel, I. (2022), “ ”,
+speech at a panel on “Monetary Policy and Climate Change” at The ECB and its Watchers XXII
+Conference, Frankfurt am Main, 17 March.
+17.
+Schnabel, I. (2026), “ ”, speech at the Fifth Annual
+Charles Goodhart Lecture, London, 7 May; Schnabel, I. (2024), “
+”, speech at a conference organised by Stiftung Geld und Währung on 25 years of the
+euro – Perspectives for monetary and fiscal policy in an unstable world, at a panel on “Inflation and
+public budget. Is monetary policy dominated by fiscal policy?”, Frankfurt, 7 June; and Schnabel, I.
+(2020), “ ”, speech at
+the Centre for European Reform and the Eurofi Financial Forum on “Is the current ECB monetary
+policy doing more harm than good and what are the alternatives?”, Berlin, 11 September.
+18.
+Pelizzon, L., Mattiello, R. and Schlegel, J. (2025), “
+”, paper prepared for the ECB Forum on Central Banking, Sintra.
+19.
+Schnabel, I. (2021), “
+”, speech at the Annual Congress of the European Economic Association (EEA), Frankfurt
+am Main, 24 August.
+20.
+Schnabel, I. (2022), “ ”,
+commencement speech to the graduates of the Master Program in Money, Banking, Finance and
+The drivers of post-pandemic inflation
+The last mile
+Monetary policy and the Great Volatility
+A warning from Europe's hot summer
+A new age of energy inflation: climateflation, fossilflation and greenflation
+The quiet erosion of central bank independence
+Is monetary policy dominated by
+fiscal policy?
+The shadow of fiscal dominance: Misconceptions, perceptions and perspectives
+Growth of non-bank financial intermediaries,
+financial stability, and monetary policy
+The rise of non-bank finance and its implications for monetary policy
+transmission
+United in diversity – Challenges for monetary policy in a currency union
+Insurance of the Panthéon-Sorbonne University, Paris, 14 June.
+21.
+Schnabel, I. (2025), “
+”, speech at the farewell symposium in honour of Klaas Knot, Amsterdam, 3 October.
+22.
+Schnabel, I. (2024), “ ”, speech at a lecture in
+memory of Walter Eucken, Freiburg, 2 October.
+23.
+Schnabel, I. (2026), “ ”, speech at a lecture in memory of Eugen Böhm von Bawerk,
+Österreichische Akademie der Wissenschaften, Vienna, 11 February.
+24.
+Schnabel, I. (2024), “ ”, inaugural
+lecture of the EMU Lab at the European University Institute, Florence, 16 February.
+25.
+Schnabel, I. (2026), “ ”, speech at the Jackson Hole Economic Policy
+Symposium on “Financial Innovation: Implications for Payments and Policy”, Jackson Hole, 28 August.
+26.
+Schnabel, I. (2026), “ ”, speech at
+the 2026 Bank of Korea International Conference on Central Banks and the Future of Money, Seoul, 1
+June.
+27.
+Schnabel, I. (2023), “ ”, speech at an event
+organised by Columbia University and SGH Macro Advisors, New York, 27 March.
+28.
+Acharya, V. et al. (2023), “Liquidity Dependence and the Waxing and Waning of Central Bank Balance
+Sheets”, Working Paper, No 31050, National Bureau of Economic Research, March (revised
+December 2024).
+29.
+Schnabel, I. (2024), “ ”, speech at the Money Market Contact
+Group meeting, Frankfurt am Main, 14 March.
+30.
+Buch, C. and Schnabel, I. (2025), “ ”, The ECB Blog,
+ECB, 18 March.
+Resisting deregulation: safeguarding bank resilience in an evolving financial
+landscape
+Escaping stagnation: towards a stronger euro area
+Made in Europe
+From laggard to leader? Closing the euro area’s technology gap
+Central banks on-chain
+From money market funds to stablecoins: lessons for central banks
+Back to normal? Balance sheet size and interest rate control
+The Eurosystem’s operational framework
+Managing liquidity in a changing environment
+31.
+Schnabel, I. (2025), “ ”, speech at the ECB Conference on
+Money Markets 2025, Frankfurt am Main, 6 November.
+Towards a new Eurosystem balance sheet
+CONTACT
+European Central Bank
+Directorate General Communications
+Reproduction is permitted provided that the source is acknowledged.
+Sonnemannstrasse 20
+
+60314 Frankfurt am Main, Germany
+
+ +49 69 1344 7455
+ media@ecb.europa.eu
+Media contacts
+Copyright 2026,
+European Central Bank
