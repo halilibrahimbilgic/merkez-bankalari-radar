@@ -1,6 +1,21 @@
 {
-  "fetchedAt": "2026-11-11T06:02:27.138Z",
+  "fetchedAt": "2026-11-11T06:31:50.947Z",
   "items": [
+    {
+      "id": "c003d56e9e5b",
+      "sourceKey": "aa-ekonomi",
+      "sourceName": "Anadolu Ajansı",
+      "kind": "media",
+      "url": "https://www.aa.com.tr/tr/ekonomi/kuresel-piyasalar-abdde-aciklanan-enflasyon-verisi-sonrasi-karisik-seyrediyor/4119645",
+      "publishedAt": "2026-11-11T06:11:48.000Z",
+      "titleOriginal": "Küresel piyasalar ABD'de açıklanan enflasyon verisi sonrası karışık seyrediyor",
+      "titleTr": "Küresel piyasalar ABD enflasyon verisi sonrası karışık seyrediyor",
+      "summaryTr": "ABD'de beklentilerin üzerinde gelen enflasyon verisi, Fed'in gelecek ay faiz artıracağı yönündeki beklentileri güçlendirdi. Teknoloji şirketlerine ilişkin iyimserlik ise piyasalarda karışık seyre yol açtı.",
+      "titleEn": "Global markets mixed after US inflation data",
+      "summaryEn": "US inflation data came in above expectations, strengthening bets that the Fed will raise rates next month. Optimism about tech companies kept global markets trading mixed.",
+      "important": true,
+      "processedAt": "2026-11-11T06:31:50.947Z"
+    },
     {
       "id": "6c534cac7553",
       "sourceKey": "aa-economy",
