@@ -1,6 +1,21 @@
 {
-  "fetchedAt": "2026-11-11T20:02:11.965Z",
+  "fetchedAt": "2026-11-11T21:02:28.165Z",
   "items": [
+    {
+      "id": "2d5fbf06e091",
+      "sourceKey": "aa-ekonomi",
+      "sourceName": "Anadolu Ajansı",
+      "kind": "media",
+      "url": "https://www.aa.com.tr/tr/ekonomi/tcmb-kredi-buyume-sinirlarini-yukseltti/4121423",
+      "publishedAt": "2026-11-11T20:09:09.000Z",
+      "titleOriginal": "TCMB kredi büyüme sınırlarını yükseltti",
+      "titleTr": "TCMB kredi büyüme sınırlarını yükseltti",
+      "summaryTr": "TCMB, bankaların ve finansman şirketlerinin 1 yıldan uzun vadeli, mevduat dışı Türk lirası ve yabancı para yükümlülükleri için tesis edilen zorunlu karşılıklara Türk lirası faiz-telafi ödemesi yapılmasına karar verdiğini duyurdu.",
+      "titleEn": "Turkish central bank raises credit growth limits",
+      "summaryEn": "The CBRT announced it decided to pay Turkish lira interest compensation on reserve requirements held against banks' and financing companies' non-deposit liabilities with maturities over one year, in both lira and foreign currency.",
+      "important": true,
+      "processedAt": "2026-11-11T21:02:28.165Z"
+    },
     {
       "id": "c4ca057111f7",
       "sourceKey": "tcmb-basin",
