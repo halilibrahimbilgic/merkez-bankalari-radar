@@ -1,6 +1,21 @@
 {
-  "fetchedAt": "2026-11-11T10:02:14.389Z",
+  "fetchedAt": "2026-11-11T11:02:23.694Z",
   "items": [
+    {
+      "id": "77706282dff2",
+      "sourceKey": "marketwatch",
+      "sourceName": "MarketWatch",
+      "kind": "media",
+      "url": "https://www.marketwatch.com/story/why-goldman-sachs-is-now-changing-its-federal-reserve-interest-rate-forecast-3753f968?mod=mw_rss_topstories",
+      "publishedAt": "2026-11-11T10:37:00.000Z",
+      "titleOriginal": "Why Goldman Sachs is now changing its Federal Reserve interest-rate forecast",
+      "titleTr": "Goldman Sachs, Fed faiz tahminini değiştirdi",
+      "summaryTr": "MarketWatch'a göre Goldman Sachs, salı günü açıklanan beklentilerin üzerindeki TÜFE verisinin ardından Fed'den ilave sıkılaştırma bekliyor.",
+      "titleEn": "Goldman Sachs changes its Fed interest-rate forecast",
+      "summaryEn": "According to MarketWatch, Goldman Sachs now expects additional Fed tightening following Tuesday's hot CPI data.",
+      "important": true,
+      "processedAt": "2026-11-11T11:02:23.694Z"
+    },
     {
       "id": "ff790e9947c5",
       "sourceKey": "aa-ekonomi",
