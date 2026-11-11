@@ -1,5 +1,5 @@
 {
-  "fetchedAt": "2026-11-11T00:02:12.412Z",
+  "fetchedAt": "2026-11-11T06:02:27.138Z",
   "items": [
     {
       "id": "6c534cac7553",
@@ -4814,21 +4814,6 @@
       "summaryEn": "Georgieva said AI is affecting the global labour market, with young workers entering it the most exposed; a World Bank jobs council called for crisis-era support measures.",
       "important": false,
       "processedAt": "2026-10-12T20:40:18.135Z"
-    },
-    {
-      "id": "30cb1992b3b4",
-      "sourceKey": "guardian-business",
-      "sourceName": "The Guardian",
-      "kind": "media",
-      "url": "https://www.theguardian.com/business/2026/oct/12/ifs-budget-report-spending-pressures-tax-inflation-john-healey",
-      "publishedAt": "2026-10-12T05:49:11.000Z",
-      "titleOriginal": "IFS: budget will be ‘work of fiction’ without clear plan to cover UK’s £35bn spending pressures",
-      "titleTr": "IFS: İngiltere bütçesi 35 milyar sterlinlik harcama baskısı için net plan sunmazsa 'kurgu' olur",
-      "summaryTr": "İngiltere'nin önde gelen maliye düşünce kuruluşu IFS, bütçe öncesi raporunda kritik kararların ertelenmeden şimdi alınması çağrısında bulundu.",
-      "titleEn": "IFS: UK budget will be 'a work of fiction' without a plan for £35bn of spending pressures",
-      "summaryEn": "The Institute for Fiscal Studies' pre-budget report urged key decisions to be taken now rather than put off until next year.",
-      "important": false,
-      "processedAt": "2026-10-12T20:40:18.135Z"
     }
   ],
   "rejected": {
@@ -4900,6 +4885,8 @@
     "4870cb2a2153": "2026-11-10",
     "3ccade89ad04": "2026-11-10",
     "5b49f8abd81e": "2026-11-10",
-    "0a16c93fcdfd": "2026-11-11"
+    "0a16c93fcdfd": "2026-11-11",
+    "f395fee822c5": "2026-11-11",
+    "56da02fa24dd": "2026-11-11"
   }
 }
