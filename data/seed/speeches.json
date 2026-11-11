@@ -8,7 +8,19 @@
       "speakerName": "Victoria Rodríguez Ceja",
       "title": "Welcome address - Fourth Women in Central Banking Workshop",
       "speechDate": "2026-11-10",
-      "sourceUrl": "https://www.bis.org/speeches/20261110-welcome-address-fourth-women-central-banking-workshop"
+      "sourceUrl": "https://www.bis.org/speeches/20261110-welcome-address-fourth-women-central-banking-workshop",
+      "summaryTr": "Meksika Merkez Bankası Başkanı Victoria Rodríguez Ceja, Banco de México'nun ev sahipliğinde düzenlenen dördüncü Merkez Bankacılığında Kadınlar Çalıştayı'nın açılışında katılımcıları selamladı. Kadınların ekonomi, akademi ve finanstaki katılımında ilerleme kaydedildiğini, ancak özellikle araştırma ve liderlik pozisyonlarında kapatılması gereken önemli açıklar bulunduğunu vurguladı. Belirsizlik döneminde titiz araştırmanın ve farklı bakış açılarının merkez bankacılığı için her zamankinden daha gerekli olduğunu söyledi. Çalıştay programında para politikası ve likidite, işgücü piyasaları, kredi piyasası sürtünmeleri ve finansal aracılık konularındaki çalışmaları tanıttı.",
+      "hawkDoveScore": 0,
+      "scoreRationaleTr": "Konuşma bir çalıştay açılış konuşmasıdır ve kadınların ekonomideki rolü ile araştırmanın önemine odaklanır; para politikası duruşuna dair hiçbir sinyal içermez.",
+      "hasPolicySignal": false,
+      "summaryEn": "Bank of Mexico Governor Victoria Rodríguez Ceja welcomed participants at the opening of the fourth Women in Central Banking Workshop hosted by Banco de México. She stressed that women's participation in the economy, academia and finance has progressed, but significant gaps remain to be closed, particularly in research and leadership positions. She said rigorous research and diverse perspectives are more necessary than ever for central banking in a period of uncertainty. She introduced the workshop programme, covering papers on monetary policy and liquidity, labour markets, credit market frictions and financial intermediation.",
+      "scoreRationaleEn": "The speech is a workshop welcome address focused on women's role in economics and the importance of research; it contains no signal on the monetary policy stance.",
+      "titleTr": "Açılış konuşması - Dördüncü Merkez Bankacılığında Kadınlar Çalıştayı",
+      "contextTr": "Meksika Merkez Bankası Başkanı Victoria Rodríguez Ceja'nın, Meksika Merkez Bankası, Dallas Federal Rezerv Bankası, Norges Bank (Norveç Merkez Bankası) ve İtalya Merkez Bankası tarafından düzenlenen Dördüncü Merkez Bankacılığında Kadınlar Çalıştayı'ndaki açılış konuşması, Mexico City, 6 Kasım 2026.",
+      "model": "claude-code/opus",
+      "promptVersion": "3",
+      "scoredAt": "2026-11-11T12:23:09.394Z",
+      "scoredVia": "claude-code"
     },
     {
       "id": "20261110-what-happens-economy-as-intelligence-gets-cheaper",
@@ -18,7 +30,19 @@
       "speakerName": "Sarah Hunter",
       "title": "What happens to the economy as “intelligence” gets cheaper?",
       "speechDate": "2026-11-10",
-      "sourceUrl": "https://www.bis.org/speeches/20261110-what-happens-economy-as-intelligence-gets-cheaper"
+      "sourceUrl": "https://www.bis.org/speeches/20261110-what-happens-economy-as-intelligence-gets-cheaper",
+      "summaryTr": "RBA Ekonomiden Sorumlu Başkan Yardımcısı Sarah Hunter, yapay zekânın küresel ölçekte ve Avustralya'da büyük ilgi ve yatırım çektiğini belirtti. Teknolojinin güvenlik, gizlilik, yönetişim ve güven konularında önemli sorular doğurduğunu; fırsatların netleştiğini ancak risklerin ve belirsizliklerin de belirginleştiğini söyledi. Avustralya'daki firmaların ve bireylerin teknolojiyi denediğini ve hızla benimsediğini ifade etti. Elimizdeki metin yalnızca giriş bölümünü içerdiğinden para politikasına ilişkin bir değerlendirme yer almıyor.",
+      "hawkDoveScore": 0,
+      "scoreRationaleTr": "Mevcut metin yalnızca yapay zekânın yayılımına dair giriş bölümünden oluşuyor; faiz, enflasyon veya politika duruşuna ilişkin herhangi bir ifade içermiyor.",
+      "hasPolicySignal": false,
+      "summaryEn": "RBA Assistant Governor (Economic) Sarah Hunter noted that artificial intelligence is attracting enormous interest and investment globally and in Australia. She said the technology raises important questions about security, privacy, governance and trust, and that while the opportunities are becoming clearer, so are the risks and uncertainties. She observed that Australian firms and individuals are experimenting with and rapidly adopting the technology. The available text covers only the introduction, so it contains no assessment of monetary policy.",
+      "scoreRationaleEn": "The available text consists only of an introduction on the diffusion of AI; it contains no statements on interest rates, inflation or the policy stance.",
+      "titleTr": "\"Zekâ\" ucuzladıkça ekonomiye ne olur?",
+      "contextTr": "Avustralya Merkez Bankası Ekonomiden Sorumlu Başkan Yardımcısı Sarah Hunter'ın UBS Australasia Konferansı'ndaki konuşması, Sidney, 9 Kasım 2026.",
+      "model": "claude-code/opus",
+      "promptVersion": "3",
+      "scoredAt": "2026-11-11T12:23:09.395Z",
+      "scoredVia": "claude-code"
     },
     {
       "id": "20261110-trust-expectations-and-monetary-policy",
@@ -28,7 +52,19 @@
       "speakerName": "Andrew Hauser",
       "title": "Trust, expectations and monetary policy",
       "speechDate": "2026-11-10",
-      "sourceUrl": "https://www.bis.org/speeches/20261110-trust-expectations-and-monetary-policy"
+      "sourceUrl": "https://www.bis.org/speeches/20261110-trust-expectations-and-monetary-policy",
+      "summaryTr": "RBA Başkan Yardımcısı Andrew Hauser, güvenin para politikasının işleyişinin ayrılmaz bir parçası olduğunu; halk merkez bankasının tepki fonksiyonuna güvendiğinde enflasyonu düşürmenin daha az faiz artışı ve daha düşük üretim kaybıyla mümkün olduğunu anlattı. RBA anketine göre genel güvenin faizlerin yükseldiği ve enflasyonun hedef aralığın belirgin şekilde üzerine çıktığı dönemde bile kabaca sabit kaldığını, ancak RBA'nın hedeflere ulaşma kapasitesine duyulan güvenin belirgin biçimde azaldığını söyledi. Uzun vadeli piyasa beklentileri %2–3 hedefine çapalı kalsa da firmaların önümüzdeki 5–10 yılda hedefe ulaşılacağından daha az emin olduğunu ve bunun rehavete yer bırakmadığını vurguladı. Hedefin üzerindeki kalıcı enflasyon nedeniyle merkez bankalarının politika hedeflerine ulaşma konusunda ciddi olduklarını göstermeleri gerektiğini belirterek, faiz patikası vaadi yerine tepki fonksiyonunu açıklamaya odaklanan iletişim çalışmalarını aktardı.",
+      "hawkDoveScore": 2,
+      "scoreRationaleTr": "Hauser, hedefin üzerindeki kalıcı enflasyonu, firmaların uzun vadeli beklentilerindeki zayıflamayı ve \"güven rezervinin hayal kırıklığı yaratma izni olmadığını\" vurgulayarak enflasyonla mücadelede kararlılık mesajı veriyor; ancak konuşma doğrudan faiz yönlendirmesi içermediği için hafif şahin.",
+      "hasPolicySignal": true,
+      "summaryEn": "RBA Deputy Governor Andrew Hauser argued that trust is integral to how monetary policy works: when the public trusts the central bank's reaction function, disinflation can be achieved with smaller rate rises and lower output costs. He said the RBA's survey shows overall trust has been broadly stable even as interest rates rose and inflation moved well above the target range, but confidence in the RBA's ability to achieve its objectives has fallen materially. While long-term market expectations remain anchored on the 2–3 per cent target, firms have become less sure the target will be achieved over the next 5–10 years, which he said leaves no grounds for complacency. Noting that persistent above-target inflation means central banks must demonstrate they are serious about achieving their goals, he outlined communication efforts focused on explaining the reaction function rather than promising a rate path.",
+      "scoreRationaleEn": "Hauser signals resolve on inflation by highlighting persistent above-target inflation, weakening long-term expectations among firms and that \"a reserve of trust is not a licence to disappoint\"; with no direct rate guidance, the stance is mildly hawkish.",
+      "titleTr": "Güven, beklentiler ve para politikası",
+      "contextTr": "Avustralya Merkez Bankası Başkan Yardımcısı Andrew Hauser'ın Avustralya Ulusal Üniversitesi'nde verdiği Sir Leslie Melville Konferansı'nın metni, Canberra, 5 Kasım 2026.",
+      "model": "claude-code/opus",
+      "promptVersion": "3",
+      "scoredAt": "2026-11-11T12:23:09.394Z",
+      "scoredVia": "claude-code"
     },
     {
       "id": "20261110-navigating-stormy-waters-reflections-monetary-policy",
@@ -38,7 +74,19 @@
       "speakerName": "Isabel Schnabel",
       "title": "Navigating stormy waters - reflections on monetary policy",
       "speechDate": "2026-11-10",
-      "sourceUrl": "https://www.bis.org/speeches/20261110-navigating-stormy-waters-reflections-monetary-policy"
+      "sourceUrl": "https://www.bis.org/speeches/20261110-navigating-stormy-waters-reflections-monetary-policy",
+      "summaryTr": "ECB Yönetim Kurulu Üyesi Isabel Schnabel, görev süresinin sonunda son yedi yılın para politikası derslerini dört başlıkta topladı: hızla ayarlanabilen araçlara öncelik verip bağlayıcı taahhütlerden kaçınmak, şokların türüne değil enflasyon görünümüne etkisine göre tepki vermek, maliye ve finansal düzenlemeyle parasal baskınlığı korumak ve bilançoyu gerekenden büyük tutmamak. Yeterince büyük ve kalıcı bir arz şokunun öngörülen enflasyonu hedefin üzerine itip zamanında politika tepkisi gerektirebileceğini, son enerji şokunun ardından tüketicilerin orta-uzun vadeli enflasyon beklentilerinin yükselip %2 hedefinden uzaklaştığını söyledi. ECB'nin Orta Doğu'daki çatışmaya enflasyon baskılarının beklenen kalıcılığına göre zamanında ve ileriye dönük biçimde tepki verdiğini ve mevcut enflasyon sorununa karşı iyi konumlandığını belirtti. APP ve PEPP portföylerinin küçültülmeye devam edeceğini, bunların sıfıra kadar indirilebileceğini; ayrıca hükümetlerin bankacılık deregülasyonuna direnmesi gerektiğini vurguladı.",
+      "hawkDoveScore": 4,
+      "scoreRationaleTr": "Schnabel, tüketici enflasyon beklentilerinin %2 hedefinden uzaklaştığını, kalıcı arz şoklarının zamanında politika tepkisi gerektirdiğini ve bilançonun küçültülmeye devam edeceğini vurgulayarak enflasyon endişesini öne çıkarıyor; ancak yeni bir faiz adımı ima etmediği için puan şahin bölgenin ortasında.",
+      "hasPolicySignal": true,
+      "summaryEn": "At the end of her term, ECB Executive Board member Isabel Schnabel distilled the monetary policy lessons of the past seven years into four takeaways: prioritise agile instruments and avoid binding commitments, respond to shocks according to their effect on the inflation outlook rather than their nature, protect monetary dominance through sound fiscal and regulatory frameworks, and keep the balance sheet no larger than necessary. She said a sufficiently large and persistent supply shock can push projected inflation above target and require a timely policy response, and that consumer inflation expectations over the medium to longer term have risen and moved away from the 2% target after the latest energy shock. She stated that the ECB responded to the Middle East conflict in a timely, forward-looking manner based on the expected persistence of inflationary pressures and is now well positioned to address the current inflation challenge. She stressed that the APP and PEPP portfolios will keep being wound down and could in principle be reduced to zero, and that governments should resist bank deregulation.",
+      "scoreRationaleEn": "Schnabel foregrounds inflation concerns by noting that consumer inflation expectations have moved away from the 2% target, that persistent supply shocks require a timely policy response and that balance sheet reduction will continue; as she does not signal a new rate move, the score sits in the middle of the hawkish range.",
+      "titleTr": "Fırtınalı sularda yol almak - para politikası üzerine düşünceler",
+      "contextTr": "Avrupa Merkez Bankası Yönetim Kurulu Üyesi Isabel Schnabel'in ECB Para Piyasaları Konferansı 2026'daki konuşması, Frankfurt am Main, 5 Kasım 2026.",
+      "model": "claude-code/opus",
+      "promptVersion": "3",
+      "scoredAt": "2026-11-11T12:23:09.393Z",
+      "scoredVia": "claude-code"
     },
     {
       "id": "20261109-integrated-open-and-resilient-europes-strengths-fragmenting-world",
