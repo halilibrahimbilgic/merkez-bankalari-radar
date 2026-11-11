@@ -1,7 +1,7 @@
 import type { Metadata } from "next";
 import { BankFilter } from "@/components/BankFilter";
 import { MeetingRow } from "@/components/MeetingRow";
-import { isBankCode } from "@/lib/banks";
+import { BANKS } from "@/lib/banks";
 import {
   getBankCodesWithMeetings,
   getPastMeetings,
@@ -10,11 +10,42 @@ import {
 import { L, languageAlternates, localePath, type Lang } from "@/lib/i18n";
 import { subscribeHref } from "@/lib/calendar-links";
 import { TELEGRAM_URL } from "@/lib/site";
-import { monthLabel } from "@/lib/time";
+import { bankFilterPath } from "@/lib/filter-paths";
+import { monthLabel, trtDayKey } from "@/lib/time";
 import type { BankCode, Meeting } from "@/lib/types";
 
-export function calendarMetadata(lang: Lang): Metadata {
+// Aranan ad: "TCMB PPK toplantı takvimi", "FOMC meeting calendar".
+const COMMITTEE: Record<BankCode, { tr: string; en: string }> = {
+  fed: { tr: "Fed", en: "Fed (FOMC)" },
+  ecb: { tr: "ECB", en: "ECB" },
+  tcmb: { tr: "TCMB PPK", en: "CBRT MPC" },
+  boe: { tr: "BoE", en: "BoE (MPC)" },
+  boj: { tr: "BoJ", en: "BoJ" },
+  rba: { tr: "RBA", en: "RBA" },
+};
+
+export function calendarMetadata(lang: Lang, bankCode?: BankCode): Metadata {
   const t = L(lang);
+  if (bankCode) {
+    const c = COMMITTEE[bankCode];
+    const bank = BANKS[bankCode];
+    // Yıl derleme/ISR anından türer; Ocak'ta kendiliğinden ilerler.
+    const year = trtDayKey(new Date().toISOString()).slice(0, 4);
+    return {
+      // Şablon eki (" · Faiz Radar") başlığı ~60 karakterin üstüne taşırdı.
+      title: {
+        absolute: t(
+          `${c.tr} toplantı takvimi ${year} — tarihler ve saatler (Türkiye saati)`,
+          `${c.en} meeting calendar ${year} — dates and times (Turkey time)`,
+        ),
+      },
+      description: t(
+        `${bank.fullTr} (${bank.nameTr}) faiz toplantılarının ${year} takvimi — Türkiye saatiyle, geri sayımlı, son kararlarla birlikte; takvime eklenebilir.`,
+        `The ${year} calendar of ${bank.nameEn} (${bank.shortEn}) rate meetings — in Turkey time, with countdowns and recent decisions; subscribable.`,
+      ),
+      alternates: languageAlternates(lang, bankFilterPath("/takvim", bankCode)),
+    };
+  }
   return {
     title: t("Toplantı takvimi", "Meeting calendar"),
     description: t(
@@ -27,14 +58,12 @@ export function calendarMetadata(lang: Lang): Metadata {
 
 export async function CalendarPage({
   lang,
-  searchParams,
+  bankCode,
 }: {
   lang: Lang;
-  searchParams: Record<string, string | string[] | undefined>;
+  bankCode?: BankCode;
 }) {
   const t = L(lang);
-  const raw = typeof searchParams.banka === "string" ? searchParams.banka : undefined;
-  const bankCode: BankCode | undefined = raw && isBankCode(raw) ? raw : undefined;
 
   const now = new Date();
   const upcoming = await getUpcomingMeetings({ bankCode, now });
@@ -108,7 +137,7 @@ export async function CalendarPage({
       {past.length > 0 && (
         <section>
           <h2 className="mb-3 text-lg font-semibold">{t("Son toplantılar", "Recent meetings")}</h2>
-          <ul className="overflow-hidden card opacity-80">
+          <ul className="overflow-hidden card">
             {past.map((m) => (
               <MeetingRow key={m.id} meeting={m} now={now} lang={lang} />
             ))}

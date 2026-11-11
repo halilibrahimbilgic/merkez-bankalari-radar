@@ -8,7 +8,7 @@ import { localePath, splitLangPath, type Lang } from "@/lib/i18n";
  *
  * Aynı sayfanın diğer dildeki karşılığına gider: yol adları iki dilde aynı
  * olduğu için yalnızca /en öneki eklenir ya da kaldırılır, sorgu (ör.
- * ?banka=fed) korunur. Seçim bir yerde saklanmaz ve kimse dil tahminiyle
+ * ?hafta=2026-11-09) korunur. Seçim bir yerde saklanmaz ve kimse dil tahminiyle
  * yönlendirilmez — adres hangi dildeyse sayfa o dildedir; paylaşılan
  * bağlantı herkeste aynı görünür.
  *
@@ -49,7 +49,8 @@ function Option({
       href={localePath(target, path)}
       hrefLang={target}
       lang={target}
-      aria-label={name}
+      // Erişilebilir ad görünen metni ("TR") içermeli (WCAG 2.5.3).
+      aria-label={`${label} (${name})`}
       aria-current={active ? "true" : undefined}
       onClick={(e) => {
         // Sorgu dizesi sunucuda bilinmediği için tıklama anında eklenir;

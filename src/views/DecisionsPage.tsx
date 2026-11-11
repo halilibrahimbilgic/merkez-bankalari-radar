@@ -1,14 +1,15 @@
 import type { Metadata } from "next";
 import Link from "next/link";
 import { BankFilter } from "@/components/BankFilter";
-import { CycleChart } from "@/components/CycleChart";
+import { CycleFigure } from "@/components/ChartFigures";
 import { BankTag, formatScore, scoreToneClass } from "@/components/ScoreBadge";
 import { SurpriseBadge } from "@/components/SurpriseBadge";
 import { Card, EmptyState, Row, Rows, SectionHeader, TableFrame, Th } from "@/components/ui";
-import { BANKS, bankColorVar, bankName, CALENDAR_BANK_CODES, isBankCode } from "@/lib/banks";
+import { BANKS, bankColorVar, bankName, CALENDAR_BANK_CODES } from "@/lib/banks";
 import { getDecisionViews, type DecisionView } from "@/lib/data/decisions";
 import { getAllMeetings } from "@/lib/data/meetings";
 import { DECISIONS_FROM, fedRange, formatDecisionRate, hasDecisionPage } from "@/lib/decision-format";
+import { bankFilterPath } from "@/lib/filter-paths";
 import { fmtBp, fmtPercent, L, languageAlternates, localePath, type Lang } from "@/lib/i18n";
 import { cycleSeries, rateCycle } from "@/lib/rate-cycle";
 import { formatDate, formatDateShort, monthLabel, trtDayKey } from "@/lib/time";
@@ -16,8 +17,19 @@ import { getTcmbFunding } from "@/lib/data/tcmb-funding";
 import { divergencePeriods, periodSentence } from "@/lib/tcmb-funding";
 import type { BankCode } from "@/lib/types";
 
-export function decisionsMetadata(lang: Lang): Metadata {
+export function decisionsMetadata(lang: Lang, bankCode?: BankCode): Metadata {
   const t = L(lang);
+  if (bankCode) {
+    const bank = BANKS[bankCode];
+    return {
+      title: t(`${bank.nameTr} faiz kararları: beklenti ve sonuç`, `${bank.shortEn} rate decisions: expectations and outcomes`),
+      description: t(
+        `${bank.fullTr} kararları: her kararın karardan önceki beklentiyle farkı (sürpriz) ve karar metninde neyin değiştiği.`,
+        `${bank.nameEn} decisions: how each compared with the expectation before it, and what changed in the statement.`,
+      ),
+      alternates: languageAlternates(lang, bankFilterPath("/kararlar", bankCode)),
+    };
+  }
   return {
     title: t("Faiz kararları: beklenti ve sonuç", "Rate decisions: expectations and outcomes"),
     description: t(
@@ -30,14 +42,12 @@ export function decisionsMetadata(lang: Lang): Metadata {
 
 export async function DecisionsPage({
   lang,
-  searchParams,
+  bankCode,
 }: {
   lang: Lang;
-  searchParams: Record<string, string | string[] | undefined>;
+  bankCode?: BankCode;
 }) {
   const t = L(lang);
-  const raw = typeof searchParams.banka === "string" ? searchParams.banka : undefined;
-  const bankCode: BankCode | undefined = raw && isBankCode(raw) ? raw : undefined;
   const all = await getDecisionViews();
   const views = bankCode ? all.filter((v) => v.meeting.bankCode === bankCode) : all;
 
@@ -181,7 +191,8 @@ async function CycleSection({ lang }: { lang: Lang }) {
             "Who is hiking and who is cutting: the cumulative change in each policy rate over the period, in basis points. Changes rather than levels, because the rates themselves differ so much.",
           )}
         />
-        <CycleChart
+        <CycleFigure
+          label={t("Bankaların politika faizindeki birikimli değişim, baz puan", "Cumulative change in each bank's policy rate, basis points")}
           data={data}
           lang={lang}
           banks={CALENDAR_BANK_CODES.map((code) => ({

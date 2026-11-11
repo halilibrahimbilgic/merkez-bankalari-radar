@@ -86,7 +86,7 @@ test("Dönem cümlesi iki dilde", () => {
   );
   assert.equal(
     periodSentence(p2026, "en"),
-    "From 03 March 2026 to 24 August 2026, the effective funding rate averaged 3.0 points above the policy rate.",
+    "From 3 March 2026 to 24 August 2026, the effective funding rate averaged 3.0 points above the policy rate.",
   );
   const july = fundingNow(asOf(REAL, "2026-07-01"), "2026-07-01")!;
   assert.equal(

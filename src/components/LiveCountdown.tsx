@@ -41,7 +41,7 @@ export function LiveCountdown({
   }
 
   return (
-    <div className="flex gap-2" aria-label={en ? "Time until the meeting" : "Toplantıya kalan süre"}>
+    <div className="flex gap-2" role="group" aria-label={en ? "Time until the meeting" : "Toplantıya kalan süre"}>
       <Segment value={parts.days} label={en ? "days" : "gün"} />
       <Segment value={parts.hours} label={en ? "hrs" : "saat"} />
       <Segment value={parts.minutes} label={en ? "min" : "dk"} />

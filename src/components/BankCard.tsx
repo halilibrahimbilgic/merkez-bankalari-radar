@@ -1,4 +1,5 @@
 import Link from "next/link";
+import { DateTime } from "@/components/DateTime";
 import { BANKS, bankColorVar, bankCountry, bankName } from "@/lib/banks";
 import { isPendingDecision, pendingNote } from "@/lib/decision-format";
 import { fmtPercent, fmtSignedPercent, L, localePath, type Lang } from "@/lib/i18n";
@@ -78,7 +79,9 @@ export function BankCard({
             {pending ? t("Karar günü", "Decision day") : t("Sıradaki karar", "Next decision")}
           </div>
           <div className="tabular mt-0.5 font-medium">
-            {formatDate(nextMeeting.meetingAt, lang)}
+            <DateTime iso={nextMeeting.meetingAt} timeTbd={nextMeeting.timeTbd}>
+              {formatDate(nextMeeting.meetingAt, lang)}
+            </DateTime>
             {!nextMeeting.timeTbd && ` · ${formatTimeTrt(nextMeeting.meetingAt)} TRT`}
           </div>
           <div className="mt-2">

@@ -1,8 +1,10 @@
 import type { Metadata } from "next";
 import Link from "next/link";
 import { notFound } from "next/navigation";
+import { JsonLd } from "@/components/JsonLd";
 import { BankTag, ScoreBadge } from "@/components/ScoreBadge";
 import { BANKS, bankCountry, bankFullName, bankName } from "@/lib/banks";
+import { breadcrumbLd, homeCrumb } from "@/lib/json-ld";
 import { getSpeech, getSpeechParagraphs } from "@/lib/data/speeches";
 import { L, languageAlternates, localePath, type Lang } from "@/lib/i18n";
 import { speakerSlug } from "@/lib/speakers";
@@ -43,6 +45,13 @@ export async function SpeechPage({ lang, id }: { lang: Lang; id: string }) {
 
   return (
     <article className="space-y-6">
+      <JsonLd
+        data={breadcrumbLd(lang, [
+          homeCrumb(lang),
+          { name: t("Konuşmalar", "Speeches"), path: "/konusmalar" },
+          { name: speechTitle(speech, lang), path: `/konusma/${speech.id}` },
+        ])}
+      />
       <header>
         <div className="flex flex-wrap items-center gap-2 text-sm text-muted">
           <BankTag code={speech.bankCode} lang={lang} />

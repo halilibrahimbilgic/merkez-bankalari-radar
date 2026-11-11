@@ -2,7 +2,7 @@ import type { Metadata } from "next";
 import Link from "next/link";
 import { Countdown } from "@/components/Countdown";
 import { BankTag } from "@/components/ScoreBadge";
-import { TimeSeriesChart } from "@/components/TimeSeriesChart";
+import { TimeSeriesFigure } from "@/components/ChartFigures";
 import { Card, Stat, TableFrame, Th } from "@/components/ui";
 import { BANKS, bankCountry } from "@/lib/banks";
 import { getEvents } from "@/lib/data/events";
@@ -14,7 +14,7 @@ import { INFLATION_SOURCES } from "@/lib/sources/inflation";
 import { countdownLabel, formatDate, formatTimeTrt, formatWeekday, monthLabel, monthShortLabel } from "@/lib/time";
 import { monthlyExpectation, nextRelease, type TrInflation } from "@/lib/tr-inflation";
 import type { BankCode } from "@/lib/types";
-import { TcmbInflationOutlook } from "./BankPage";
+import { TcmbInflationOutlook } from "./bank/TcmbInflationOutlook";
 
 /**
  * Türkiye enflasyonu (/enflasyon): sıradaki açıklama günü ve saati, son
@@ -42,12 +42,15 @@ export async function inflationMetadata(lang: Lang): Promise<Metadata> {
   const expected = data && next && monthlyExpectation(data.survey, next.period);
   const nextWhen = next && `${dayMonth[lang].format(new Date(next.at))}, ${formatTimeTrt(next.at)}`;
   return {
+    // `absolute`: site eki başlığı 60 karakterin üstüne taşırdı.
     title:
       next && nextWhen
-        ? t(
-            `Enflasyon ne zaman açıklanacak? ${month(next.period, "tr")} verisi ${nextWhen}`,
-            `When is Turkey's inflation released? ${month(next.period, "en")} data on ${nextWhen} Turkey time`,
-          )
+        ? {
+            absolute: t(
+              `Enflasyon ne zaman açıklanacak? ${month(next.period, "tr")} verisi ${nextWhen}`,
+              `Turkey inflation: ${month(next.period, "en")} data due ${nextWhen}`,
+            ),
+          }
         : t("Türkiye enflasyonu", "Turkey inflation"),
     description: [
       last &&
@@ -193,7 +196,8 @@ function HistorySection({ data, lang }: { data: TrInflation; lang: Lang }) {
         </h2>
       </div>
       <Card>
-        <TimeSeriesChart
+        <TimeSeriesFigure
+          label={t("Türkiye yıllık enflasyonu (TÜFE), aylık seyir", "Turkey annual CPI inflation, monthly")}
           data={chart}
           series={[{ key: "yoy", name: t("Yıllık TÜFE", "Annual CPI"), color: "var(--series-1)" }]}
           unit="rate"

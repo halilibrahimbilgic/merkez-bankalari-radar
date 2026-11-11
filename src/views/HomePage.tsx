@@ -2,6 +2,9 @@ import type { Metadata } from "next";
 import Link from "next/link";
 import { BankCard } from "@/components/BankCard";
 import { BankSummaryList } from "@/components/BankSummaryList";
+import { Countdown } from "@/components/Countdown";
+import { JsonLd } from "@/components/JsonLd";
+import { organizationLd, websiteLd } from "@/lib/json-ld";
 import { BankTag, ScoreBadge } from "@/components/ScoreBadge";
 import { EmptyState, Row, Rows, SectionHeader } from "@/components/ui";
 import { CALENDAR_BANK_CODES } from "@/lib/banks";
@@ -68,11 +71,12 @@ export async function HomePage({ lang }: { lang: Lang }) {
 
   return (
     <div className="space-y-10">
+      <JsonLd data={[websiteLd(lang), organizationLd()]} />
       <section>
         <h1 className="text-2xl font-semibold tracking-tight sm:text-3xl">
           {t(
-            "Merkez bankası faiz kararlarını Türkçe takip et",
-            "Follow central bank rate decisions in Turkey time",
+            "Faiz kararları ne zaman? Fed, ECB, TCMB, BoE, BoJ ve RBA, Türkiye saatiyle",
+            "When are the rate decisions? Fed, ECB, CBRT, BoE, BoJ and RBA, in Turkey time",
           )}
         </h1>
         <p className="prose-width mt-2 text-muted">
@@ -186,7 +190,14 @@ export async function HomePage({ lang }: { lang: Lang }) {
                   <BankTag code={m.bankCode} lang={lang} />
                 </span>
                 <span className="tabular flex-1">{formatDate(m.meetingAt, lang)}</span>
-                <span className="text-sm text-muted">{countdownLabel(m.meetingAt, now, lang)}</span>
+                <span className="text-sm text-muted">
+                  {/* Sayfa ISR ile saatte bir üretilir: "Yarın/Bugün" istemcide tazelenmezse bir saate kadar bayat kalırdı (MeetingRow ile aynı kural). */}
+                  {m.timeTbd ? (
+                    countdownLabel(m.meetingAt, now, lang)
+                  ) : (
+                    <Countdown meetingAt={m.meetingAt} initialLabel={countdownLabel(m.meetingAt, now, lang)} lang={lang} />
+                  )}
+                </span>
               </Row>
             ))}
           </Rows>

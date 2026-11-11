@@ -88,7 +88,8 @@ export function TableFrame({
   minWidth?: string;
 }) {
   return (
-    <div className="card overflow-x-auto">
+    // tabIndex: kaydırılabilir alan klavyeyle erişilebilir olmalı (axe: scrollable-region-focusable).
+    <div className="card scroll-shadow overflow-x-auto" tabIndex={0}>
       <table
         className="w-full text-sm max-sm:[&_td]:px-2.5 max-sm:[&_th]:px-2.5 sm:[min-width:var(--table-min)]"
         style={{ "--table-min": minWidth } as CSSProperties}

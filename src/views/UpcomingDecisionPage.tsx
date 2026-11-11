@@ -2,6 +2,7 @@ import type { Metadata } from "next";
 import Link from "next/link";
 import { AddToCalendar } from "@/components/AddToCalendar";
 import { ExpectationDetails } from "@/components/BankCard";
+import { JsonLd } from "@/components/JsonLd";
 import { Countdown } from "@/components/Countdown";
 import { BankTag, formatScore, scoreLabel, scoreToneClass } from "@/components/ScoreBadge";
 import { Card, Stat } from "@/components/ui";
@@ -12,6 +13,7 @@ import { formatCurrentRate, getCurrentRate } from "@/lib/data/rates";
 import { decisionSentence, isPendingDecision, pendingNote } from "@/lib/decision-format";
 import { L, languageAlternates, localePath, type Lang } from "@/lib/i18n";
 import { countdownLabel, formatDate, formatTimeTrt, formatWeekday, monthLabel } from "@/lib/time";
+import { breadcrumbLd, eventLd, homeCrumb } from "@/lib/json-ld";
 import { getBankExpectations } from "./bank-expectations";
 import { expectationText } from "./WeekAhead";
 
@@ -89,17 +91,36 @@ export async function UpcomingDecisionPage({ lang, upcoming }: { lang: Lang; upc
   const sentence = detailed ? undefined : await expectationSentence(upcoming, lang, now);
   const prev = upcoming.previous;
   const summary = prev?.statement?.summary;
+  const title = t(
+    `${name} ${monthLabel(m.meetingAt, lang)} faiz kararı`,
+    `${name} ${monthLabel(m.meetingAt, lang)} rate decision`,
+  );
 
   return (
     <article className="space-y-8">
+      <JsonLd
+        data={[
+          breadcrumbLd(lang, [homeCrumb(lang), { name: t("Kararlar", "Decisions"), path: "/kararlar" }, { name: title, path: `/karar/${m.id}` }]),
+          eventLd({
+            lang,
+            id: m.id,
+            name: title,
+            description: t(
+              `${bankFullName(bank, lang)} (${name}) faiz kararı: ${formatDate(m.meetingAt, lang)}${time ? `, Türkiye saatiyle ${time}` : ""}.`,
+              `${bankFullName(bank, lang)} rate decision: ${formatDate(m.meetingAt, lang)}${time ? `, ${time} Turkey time` : ""}.`,
+            ),
+            at: m.meetingAt,
+            timeTbd: m.timeTbd,
+            organizer: { name: bankFullName(bank, "en"), url: bank.websiteUrl },
+          }),
+        ]}
+      />
       <header>
         <div className="flex flex-wrap items-center gap-2 text-sm text-muted">
           <BankTag code={m.bankCode} lang={lang} />
           <span>{t("Yaklaşan karar", "Upcoming decision")}</span>
         </div>
-        <h1 className="mt-2 text-2xl font-semibold tracking-tight">
-          {t(`${name} ${monthLabel(m.meetingAt, lang)} faiz kararı`, `${name} ${monthLabel(m.meetingAt, lang)} rate decision`)}
-        </h1>
+        <h1 className="mt-2 text-2xl font-semibold tracking-tight">{title}</h1>
         <p className="mt-1 text-lg">
           {pending
             ? pendingNote(m, lang)

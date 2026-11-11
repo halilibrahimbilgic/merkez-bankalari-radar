@@ -3,16 +3,28 @@ import Link from "next/link";
 import { BankFilter } from "@/components/BankFilter";
 import { BankTag, ScoreBadge } from "@/components/ScoreBadge";
 import { ScoringGap } from "@/components/ScoringGap";
-import { isBankCode } from "@/lib/banks";
+import { BANKS } from "@/lib/banks";
 import { getBankCodesWithSpeeches, getScoringStatus, getSpeeches } from "@/lib/data/speeches";
+import { bankFilterPath } from "@/lib/filter-paths";
 import { L, languageAlternates, localePath, type Lang } from "@/lib/i18n";
 import { speakerSlug } from "@/lib/speakers";
 import { speechSummary, speechTitle } from "@/lib/speech-i18n";
 import { formatDate } from "@/lib/time";
 import type { BankCode } from "@/lib/types";
 
-export function speechesMetadata(lang: Lang): Metadata {
+export function speechesMetadata(lang: Lang, bankCode?: BankCode): Metadata {
   const t = L(lang);
+  if (bankCode) {
+    const bank = BANKS[bankCode];
+    return {
+      title: t(`${bank.nameTr} konuşmaları: özet ve şahin/güvercin skoru`, `${bank.shortEn} speeches: summaries and hawk/dove score`),
+      description: t(
+        `${bank.fullTr} yetkililerinin konuşmaları — Türkçe özet ve şahin/güvercin skoru ile.`,
+        `Speeches by ${bank.nameEn} policymakers — with summaries and a hawk/dove score.`,
+      ),
+      alternates: languageAlternates(lang, bankFilterPath("/konusmalar", bankCode)),
+    };
+  }
   return {
     title: t("Konuşma arşivi", "Speech archive"),
     description: t(
@@ -25,14 +37,12 @@ export function speechesMetadata(lang: Lang): Metadata {
 
 export async function SpeechesPage({
   lang,
-  searchParams,
+  bankCode,
 }: {
   lang: Lang;
-  searchParams: Record<string, string | string[] | undefined>;
+  bankCode?: BankCode;
 }) {
   const t = L(lang);
-  const raw = typeof searchParams.banka === "string" ? searchParams.banka : undefined;
-  const bankCode: BankCode | undefined = raw && isBankCode(raw) ? raw : undefined;
 
   const speeches = await getSpeeches({ bankCode });
   const availableCodes = await getBankCodesWithSpeeches();

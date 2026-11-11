@@ -182,6 +182,17 @@ body {
 }
 
 /*
+ * Metin içindeki bağlantı renkle tek başına ayırt edilemez (WCAG 1.4.1;
+ * axe: link-in-text-block): paragraf içinde altı çizili. Tek başına duran
+ * bağlantılar (menü, kart, düğme) paragraf içinde olmadığından etkilenmez.
+ */
+p a,
+.prose-width a {
+  text-decoration-line: underline;
+  text-underline-offset: 0.15em;
+}
+
+/*
  * Kart yüzeyi. Projede 30 yerde elle tekrarlanan sınıf dizisinin tek
  * tanımı — bkz. src/components/ui/Card.tsx.
  */
@@ -190,6 +201,23 @@ body {
   border: 1px solid var(--border);
   border-radius: 0.5rem;
   box-shadow: var(--shadow-card);
+}
+
+/*
+ * Yatay kayan tablonun kenarında "devamı var" gölgesi. Gölge yalnızca
+ * içerik o yöne taşıyorsa görünür: yüzey renginde "local" bindirmeler
+ * kaydırdıkça gölgeyi kapatır. .card'dan sonra durmalı (arka planı ezer).
+ */
+.scroll-shadow {
+  background:
+    linear-gradient(to right, var(--surface) 30%, transparent) left center,
+    linear-gradient(to left, var(--surface) 30%, transparent) right center,
+    radial-gradient(farthest-side at 0 50%, color-mix(in srgb, var(--foreground) 18%, transparent), transparent) left center,
+    radial-gradient(farthest-side at 100% 50%, color-mix(in srgb, var(--foreground) 18%, transparent), transparent) right center;
+  background-color: var(--surface);
+  background-repeat: no-repeat;
+  background-size: 2.5rem 100%, 2.5rem 100%, 0.9rem 100%, 0.9rem 100%;
+  background-attachment: local, local, scroll, scroll;
 }
 
 /*

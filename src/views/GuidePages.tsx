@@ -2,10 +2,12 @@ import type { Metadata } from "next";
 import Link from "next/link";
 import { notFound } from "next/navigation";
 import { GuideBody } from "@/components/GuideBody";
+import { JsonLd } from "@/components/JsonLd";
 import { Rows, Row } from "@/components/ui";
 import { pick } from "@/lib/guides";
 import { GUIDES, getGuide } from "@/lib/guides/index";
 import { L, languageAlternates, localePath, type Lang } from "@/lib/i18n";
+import { articleLd, breadcrumbLd, homeCrumb } from "@/lib/json-ld";
 import { formatDate } from "@/lib/time";
 
 export function guidesMetadata(lang: Lang): Metadata {
@@ -67,6 +69,22 @@ export function GuidePage({ lang, slug }: { lang: Lang; slug: string }) {
 
   return (
     <article className="space-y-6">
+      <JsonLd
+        data={[
+          breadcrumbLd(lang, [
+            homeCrumb(lang),
+            { name: t("Rehber", "Guide"), path: "/rehber" },
+            { name: pick(guide.title, lang), path: `/rehber/${guide.slug}` },
+          ]),
+          articleLd({
+            lang,
+            slug: guide.slug,
+            headline: pick(guide.title, lang),
+            description: pick(guide.description, lang),
+            updatedOn: guide.updatedOn,
+          }),
+        ]}
+      />
       <header>
         <Link href={localePath(lang, "/rehber")} className="text-sm text-accent hover:underline">
           {t("← Rehber", "← Guide")}

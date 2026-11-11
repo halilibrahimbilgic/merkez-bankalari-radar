@@ -1,4 +1,5 @@
 import Link from "next/link";
+import { DateTime } from "@/components/DateTime";
 import { BANKS, bankColorVar, bankName } from "@/lib/banks";
 import { formatDecisionRate, hasDecisionPage, hasUpcomingPage, isPendingDecision, pendingNote } from "@/lib/decision-format";
 import { L, localePath, type Lang } from "@/lib/i18n";
@@ -34,10 +35,14 @@ export function MeetingRow({ meeting, now, lang }: { meeting: Meeting; now: Date
           {/* Yaklaşan kararın sayfası: beklenti ve önceki karar (UpcomingDecisionPage). */}
           {hasUpcomingPage(meeting, now) ? (
             <Link href={localePath(lang, `/karar/${meeting.id}`)} className="text-accent hover:underline">
-              {formatDate(meeting.meetingAt, lang)}
+              <DateTime iso={meeting.meetingAt} timeTbd={meeting.timeTbd}>
+                {formatDate(meeting.meetingAt, lang)}
+              </DateTime>
             </Link>
           ) : (
-            formatDate(meeting.meetingAt, lang)
+            <DateTime iso={meeting.meetingAt} timeTbd={meeting.timeTbd}>
+              {formatDate(meeting.meetingAt, lang)}
+            </DateTime>
           )}
           <span className="text-muted"> · {formatWeekday(meeting.meetingAt, lang)}</span>
         </div>
@@ -49,7 +54,7 @@ export function MeetingRow({ meeting, now, lang }: { meeting: Meeting; now: Date
               {trtTime} TRT
               {/* TCMB'de yerel saat zaten TRT — tekrar göstermek gürültü. */}
               {localTime !== trtTime && (
-                <span className="opacity-70">
+                <span>
                   {" "}
                   ({t("yerel", "local")} {localTime})
                 </span>

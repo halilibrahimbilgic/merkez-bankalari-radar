@@ -2,49 +2,30 @@ import type { Metadata } from "next";
 import Link from "next/link";
 import { notFound } from "next/navigation";
 import { AddToCalendar } from "@/components/AddToCalendar";
+import { JsonLd } from "@/components/JsonLd";
 import { ExpectationDetails } from "@/components/BankCard";
 import { MeetingRow } from "@/components/MeetingRow";
-import { formatScore, formatScoreDelta, ScoreBadge, scoreShift, scoreToneClass } from "@/components/ScoreBadge";
-import { TableFrame, Th } from "@/components/ui";
-import { getDecisionViews } from "@/lib/data/decisions";
-import { getAllMinutes } from "@/lib/data/minutes";
+import { formatScore, formatScoreDelta, ScoreBadge, scoreToneClass } from "@/components/ScoreBadge";
 import { getLatestStatementScores } from "@/lib/data/statements";
-import { formatDecisionRate, hasDecisionPage } from "@/lib/decision-format";
-import type { BankCode } from "@/lib/types";
-import { Term } from "@/components/Term";
-import { TimeSeriesChart } from "@/components/TimeSeriesChart";
-import { Stat } from "@/components/ui";
-import {
-  bankCountry,
-  bankFullName,
-  bankName,
-  bankRateName,
-  bankWithCountryTr,
-  getBank,
-} from "@/lib/banks";
+import { bankCountry, bankFullName, bankName, bankRateName, bankWithCountryTr, getBank } from "@/lib/banks";
 import { getPastMeetings, getUpcomingMeetings } from "@/lib/data/meetings";
 import { formatCurrentRate, getCurrentRate } from "@/lib/data/rates";
 import { getBankScoreSummaries, getSpeeches } from "@/lib/data/speeches";
 import { getInflationFor } from "@/lib/data/inflation";
-import { fmtNum, fmtPercent, fmtPercentRange, fmtSignedPercent, L, languageAlternates, localePath, type Lang } from "@/lib/i18n";
+import { fmtPercent, fmtSignedPercent, L, languageAlternates, localePath, type Lang } from "@/lib/i18n";
 import { forwardRealRate, realRate } from "@/lib/real-rates";
 import { getExpectations } from "@/lib/data/expectations";
 import { speechTitle } from "@/lib/speech-i18n";
-import { formatDate, formatDateShort, formatMeeting, formatTimeTrt, monthLabel, trtDayKey } from "@/lib/time";
+import { formatDate, formatDayMonth, formatMeeting, formatTimeTrt, monthLabel, trtDayKey } from "@/lib/time";
 import { getTcmbFunding } from "@/lib/data/tcmb-funding";
-import { getProjections } from "@/lib/data/projections";
-import { EVDS_URL } from "@/lib/sources/evds";
-import {
-  divergencePeriods,
-  fundingNow,
-  periodSentence,
-  valueAt,
-  type DivergencePeriod,
-  type FundingNow,
-  type TcmbFunding,
-} from "@/lib/tcmb-funding";
+import { fundingNow } from "@/lib/tcmb-funding";
 import { isPendingDecision, pendingNote } from "@/lib/decision-format";
+import { breadcrumbLd, homeCrumb } from "@/lib/json-ld";
 import { getBankExpectations } from "./bank-expectations";
+import { bankFaqLd } from "./bank-faq";
+import { FundingSection } from "./bank/FundingSection";
+import { CommitteeTone } from "./bank/CommitteeTone";
+import { TcmbInflationOutlook } from "./bank/TcmbInflationOutlook";
 
 export async function bankMetadata(lang: Lang, code: string): Promise<Metadata> {
   const bank = getBank(code);
@@ -59,6 +40,9 @@ export async function bankMetadata(lang: Lang, code: string): Promise<Metadata> 
   const rate = await getCurrentRate(bank.code);
   const date = next && formatDate(next.meetingAt, lang);
   const time = next && !next.timeTbd ? formatTimeTrt(next.meetingAt) : undefined;
+  // Başlıkta yıl yok: Google ~60 karakterden sonrasını kesiyor ve yaklaşan
+  // karar zaten en yakın tarihtir (açıklamada yıllı tarih var).
+  const dayMonth = next && formatDayMonth(next.meetingAt, lang);
 
   // Türkçe aramalar kısaltmayla olduğu kadar ülkeyle de yapılıyor ("japonya
   // faiz kararı ne zaman", Search Console, Kasım 2026): başlıkta ikisi birden.
@@ -67,14 +51,17 @@ export async function bankMetadata(lang: Lang, code: string): Promise<Metadata> 
   const year = (next?.meetingAt ?? new Date().toISOString()).slice(0, 4);
 
   return {
+    // `absolute`: "· Faiz Radar" eki bu başlıkları 60 karakterin üstüne taşırdı.
     title: !next
       ? t(`${tr} faiz kararları`, `${name} rate decisions`)
-      : time
-        ? t(
-            `${tr} faiz kararı ne zaman, saat kaçta? ${date}, ${time}`,
-            `When is the next ${name} rate decision? ${date}, ${time} Turkey time`,
-          )
-        : t(`${tr} faiz kararı ne zaman? ${date}`, `When is the next ${name} rate decision? ${date}`),
+      : {
+          absolute: time
+            ? t(
+                `${tr} faiz kararı ne zaman, saat kaçta? ${dayMonth}, ${time}`,
+                `When is the ${name} rate decision? ${dayMonth}, ${time} Turkey time`,
+              )
+            : t(`${tr} faiz kararı ne zaman? ${dayMonth}`, `When is the ${name} rate decision? ${dayMonth}`),
+        },
     // Önce cevap; faiz adı ayraçla — "Fed Fed Funds", "BoJ Kısa vadeli…" gibi
     // ad tekrarı ve cümle ortasında büyük harf olmasın.
     description: [
@@ -131,8 +118,19 @@ export async function BankPage({ lang, code }: { lang: Lang; code: string }) {
   const today = trtDayKey(now.toISOString());
   const fundingState = funding && fundingNow(funding, today);
 
+  const structured = [
+    breadcrumbLd(lang, [homeCrumb(lang), { name, path: `/banka/${bank.code}` }]),
+    bankFaqLd({
+      lang,
+      bank,
+      next,
+      rate: currentRate && { text: formatCurrentRate(currentRate, lang), since: formatDate(currentRate.asOf, lang) },
+    }),
+  ].filter((d) => d !== undefined);
+
   return (
     <div className="space-y-8">
+      <JsonLd data={structured} />
       <header>
         <h1 className="text-2xl font-semibold tracking-tight">
           {name}{" "}
@@ -315,7 +313,7 @@ export async function BankPage({ lang, code }: { lang: Lang; code: string }) {
       {past.length > 0 && (
         <section>
           <h2 className="mb-3 text-lg font-semibold">{t("Geçmiş toplantılar", "Past meetings")}</h2>
-          <ul className="overflow-hidden card opacity-80">
+          <ul className="overflow-hidden card">
             {past.map((m) => (
               <MeetingRow key={m.id} meeting={m} now={now} lang={lang} />
             ))}
@@ -336,7 +334,7 @@ export async function BankPage({ lang, code }: { lang: Lang; code: string }) {
           <div className="mb-3 flex items-baseline justify-between">
             <h2 className="text-lg font-semibold">{t("Son konuşmalar", "Recent speeches")}</h2>
             <Link
-              href={`${p("/konusmalar")}?banka=${bank.code}`}
+              href={p(`/konusmalar/${bank.code}`)}
               className="text-sm text-accent hover:underline"
             >
               {t("Tümü →", "All →")}
@@ -363,337 +361,5 @@ export async function BankPage({ lang, code }: { lang: Lang; code: string }) {
         {t("← Tüm takvim", "← Full calendar")}
       </Link>
     </div>
-  );
-}
-
-/**
- * TCMB: politika faizi, fiilî fonlama (AOFM) ve faiz koridoru, son 12 ay.
- * Ayrışma olmasa da durur: okur iki oranın aynı olduğunu da görsün.
- */
-function FundingSection({
-  funding,
-  state,
-  today,
-  now,
-  lang,
-}: {
-  funding: TcmbFunding;
-  state: FundingNow;
-  today: string;
-  now: Date;
-  lang: Lang;
-}) {
-  const t = L(lang);
-  // Pencere /kararlar'daki faiz döngüsüyle aynı: on iki ay önceki ayın başı.
-  const from = new Date(Date.UTC(now.getUTCFullYear() - 1, now.getUTCMonth(), 1)).toISOString().slice(0, 10);
-  const past = divergencePeriods(funding, today).filter((p): p is DivergencePeriod & { end: string } => !!p.end && p.end > from);
-  const diff = Math.round((state.aofm - state.policy) * 100) / 100;
-
-  // Günlük satırlar: kategorik x ekseni zamanı eşit aralıklı göstersin.
-  const rows: Record<string, string | number | null>[] = [];
-  for (let ms = Date.parse(`${from}T00:00:00Z`); ms <= Date.parse(`${today}T00:00:00Z`); ms += 86_400_000) {
-    const date = new Date(ms).toISOString().slice(0, 10);
-    rows.push({
-      label: formatDateShort(`${date}T12:00:00Z`, lang),
-      lower: valueAt(funding.lower, date) ?? null,
-      upper: valueAt(funding.upper, date) ?? null,
-      aofm: valueAt(funding.aofm, date) ?? null,
-      policy: valueAt(funding.policy, date) ?? null,
-    });
-  }
-
-  return (
-    <section aria-labelledby="fiili-fonlama" className="card p-5">
-      <h2 id="fiili-fonlama" className="scroll-mt-4 text-lg font-semibold">
-        {t("Fiilî fonlama ve faiz koridoru", "Effective funding and the rate corridor")}
-      </h2>
-      <p className="prose-width mt-1 text-sm text-muted">
-        {t(
-          "Politika faizi, TCMB'nin bir hafta vadeli repo ihalesindeki faizdir. Bankaların fiilen ödediği ortalama faiz ise ",
-          "The policy rate is the rate at the CBRT's one-week repo auction. The rate banks actually pay on average is the ",
-        )}
-        <Term id="agirlikli-ortalama-fonlama-maliyeti-aofm" lang={lang}>
-          {t("ağırlıklı ortalama fonlama maliyetidir (AOFM)", "weighted average cost of funding")}
-        </Term>
-        {t(
-          ". TCMB ihaleye ara verip bankaları ",
-          ". When the CBRT suspends the auction and funds banks at the top of the ",
-        )}
-        <Term id="faiz-koridoru" lang={lang}>
-          {t("faiz koridorunun", "rate corridor")}
-        </Term>
-        {t(
-          " üst bandından fonladığında AOFM politika faizinin üstüne çıkar: faiz değiştirilmeden yapılan bir sıkılaştırmadır.",
-          ", the funding cost rises above the policy rate: tightening without a rate change.",
-        )}
-      </p>
-
-      <div className="mt-4 grid grid-cols-3 gap-2 sm:gap-3">
-        <Stat compact label={t("Politika faizi", "Policy rate")} value={fmtPercent(state.policy, lang)} />
-        <Stat
-          compact
-          label={t("Fiilî fonlama (AOFM)", "Average funding cost")}
-          value={fmtPercent(state.aofm, lang)}
-          note={
-            diff === 0
-              ? t("politika faiziyle aynı", "same as the policy rate")
-              : t(
-                  `politika faizinin ${fmtNum(Math.abs(diff), lang)} puan ${diff > 0 ? "üstünde" : "altında"}`,
-                  `${fmtNum(Math.abs(diff), lang)} points ${diff > 0 ? "above" : "below"} the policy rate`,
-                )
-          }
-        />
-        {state.lower !== undefined && state.upper !== undefined && (
-          <Stat
-            compact
-            label={t("Faiz koridoru", "Rate corridor")}
-            value={fmtPercentRange(state.lower, state.upper, lang)}
-            note={t("gecelik borç alma–verme", "overnight borrowing–lending")}
-          />
-        )}
-      </div>
-
-      {state.divergence && <p className="prose-width mt-3 text-sm font-medium">{periodSentence(state.divergence, lang, state)}</p>}
-      {past.length > 0 && (
-        <div className="prose-width mt-3 space-y-1 text-sm text-muted">
-          <p className="font-medium text-foreground">{t("Son 12 ayda", "In the last 12 months")}</p>
-          {past.map((p) => (
-            <p key={p.start}>{periodSentence(p, lang)}</p>
-          ))}
-        </div>
-      )}
-
-      <div className="mt-4">
-        <TimeSeriesChart
-          data={rows}
-          // Politika faizi en son çizilir: iki oran aynıyken AOFM onun altında kalır, ayrışınca görünür.
-          series={[
-            { key: "lower", name: t("Alt bant", "Lower band"), color: "var(--muted)", dashed: true },
-            { key: "upper", name: t("Üst bant", "Upper band"), color: "var(--muted)", dashed: true },
-            { key: "aofm", name: t("Fiilî fonlama (AOFM)", "Average funding cost"), color: "var(--series-2)" },
-            { key: "policy", name: t("Politika faizi", "Policy rate"), color: "var(--series-1)" },
-          ]}
-          unit="rate"
-          lang={lang}
-          stepped
-          dots={false}
-        />
-      </div>
-      <p className="mt-2 text-xs text-muted">
-        {t("Kaynak: ", "Source: ")}
-        <a href={EVDS_URL} target="_blank" rel="noopener noreferrer nofollow" className="text-accent hover:underline">
-          TCMB EVDS
-        </a>
-        {t(
-          " — bir hafta vadeli repo faizi, AOFM, gecelik borç alma ve borç verme faizleri. Karar günü AOFM o günün fonlamasını eski oranla gösterir, yeni orana ertesi iş günü geçer.",
-          " — one-week repo rate, average funding cost, overnight borrowing and lending rates. On decision days the funding cost still reflects the old rate and moves to the new one the next business day.",
-        )}
-      </p>
-    </section>
-  );
-}
-
-/**
- * Komitenin ortak sesi kararlardan karara: karar metninin ve tutanağın
- * puanı, konuşmalarla aynı ölçekte. "Bir ay önce +6 olan komite bugün +4" —
- * yön düzeyden çok şey söyler (ARCHITECTURE.md §9).
- */
-async function CommitteeTone({ bankCode, now, lang }: { bankCode: BankCode; now: Date; lang: Lang }) {
-  const t = L(lang);
-  const [views, minutes] = await Promise.all([getDecisionViews({ bankCode, now }), getAllMinutes()]);
-  const minutesScore = new Map(minutes.map((r) => [r.meetingId, r.summary?.score]));
-  // En yeni karar önce; özet cümlesi ilk iki puanlı metni karşılaştırır.
-  const rows = views
-    .filter((v) => hasDecisionPage(v.meeting, now))
-    .sort((a, b) => b.meeting.meetingAt.localeCompare(a.meeting.meetingAt))
-    .slice(0, 8)
-    .map((v) => ({ view: v, statement: v.statement?.summary?.score, minutes: minutesScore.get(v.meeting.id) }));
-  if (!rows.some((r) => r.statement !== undefined || r.minutes !== undefined)) return null;
-  const [last, prev] = rows.filter((r) => r.statement !== undefined);
-  const cell = (score: number | undefined) =>
-    score === undefined ? (
-      <span className="text-muted">—</span>
-    ) : (
-      <span className={`font-semibold ${scoreToneClass(score)}`}>{formatScore(score, lang)}</span>
-    );
-
-  return (
-    <section aria-labelledby="komite-tonu">
-      <h2 id="komite-tonu" className="text-lg font-semibold">
-        {t("Komitenin tonu", "The committee's tone")}
-      </h2>
-      <p className="prose-width mt-1 text-sm text-muted">
-        {t(
-          "Karar metinlerinin ve tutanakların puanı, konuşmalarla aynı -10 (çok güvercin) ile +10 (çok şahin) ölçeğinde: konuşmalar tek tek üyelerin, bunlar komitenin ortak sesi. Puanları bir dil modeli verir; ayrıntısı karar sayfasında.",
-          "The scores of policy statements and minutes, on the same -10 (very dovish) to +10 (very hawkish) scale as the speeches: speeches are individual members, these are the committee's collective voice. A language model assigns the scores; details are on each decision page.",
-        )}
-      </p>
-      {last && prev && (
-        <p className="prose-width mt-2 text-sm tabular">
-          {t(
-            `Son karar metni ${formatScore(last.statement!, lang)}, bir önceki ${formatScore(prev.statement!, lang)}: ${scoreShift(last.statement!, prev.statement!, lang)}.`,
-            `Latest statement ${formatScore(last.statement!, lang)}, the one before ${formatScore(prev.statement!, lang)}: ${scoreShift(last.statement!, prev.statement!, lang)}.`,
-          )}
-        </p>
-      )}
-      <div className="mt-3">
-        <TableFrame minWidth="28rem">
-          <thead>
-            <tr className="border-b border-border-strong text-left text-muted">
-              <Th>{t("Karar", "Decision")}</Th>
-              <Th align="right">{t("Oran", "Rate")}</Th>
-              <Th align="right">{t("Karar metni", "Statement")}</Th>
-              <Th align="right">{t("Tutanak", "Minutes")}</Th>
-            </tr>
-          </thead>
-          <tbody>
-            {rows.map(({ view, statement, minutes }) => {
-              const bp = view.changeBp ?? 0;
-              return (
-                <tr key={view.meeting.id} className="border-b border-border last:border-b-0">
-                  <td className="px-4 py-2.5">
-                    <Link
-                      href={localePath(lang, `/karar/${view.meeting.id}`)}
-                      className="inline-flex min-h-6 items-center text-accent hover:underline tabular"
-                    >
-                      {formatDate(view.meeting.meetingAt, lang)}
-                    </Link>
-                  </td>
-                  <td className="tabular px-4 py-2.5 text-right">
-                    {formatDecisionRate(view.meeting, lang)}{" "}
-                    <span className={`text-xs ${bp > 0 ? "text-hawk" : bp < 0 ? "text-dove" : "text-muted"}`}>
-                      ({bp === 0 ? t("sabit", "hold") : `${bp > 0 ? "+" : "−"}${Math.abs(bp)} bp`})
-                    </span>
-                  </td>
-                  <td className="tabular px-4 py-2.5 text-right">{cell(statement)}</td>
-                  <td className="tabular px-4 py-2.5 text-right">{cell(minutes)}</td>
-                </tr>
-              );
-            })}
-          </tbody>
-        </TableFrame>
-      </div>
-    </section>
-  );
-}
-
-/**
- * TCMB'nin enflasyon ara hedefi ve tahmini (Enflasyon Raporu) ile piyasa
- * katılımcılarının yıl sonu beklentisi ve son gerçekleşen — Türk okurun
- * "TCMB'ye inanılıyor mu?" sorusu.
- */
-export async function TcmbInflationOutlook({ lang }: { lang: Lang }) {
-  const t = L(lang);
-  const [{ tcmb: er }, expectations, inflation] = await Promise.all([
-    getProjections(),
-    getExpectations(),
-    getInflationFor("tcmb"),
-  ]);
-  if (!er) return null;
-  const survey = expectations.tcmb;
-  const years = [...new Set([...Object.keys(er.targets), ...Object.keys(er.forecasts)])].sort();
-  const surveyYear = survey?.period.slice(0, 4);
-  const surveyValue = (year: string) => (year === surveyYear ? survey?.inflationYearEnd : undefined);
-  const pct = (v: number | undefined, digits: number) => (v === undefined ? "—" : fmtPercent(v, lang, digits));
-  const [y0] = years;
-  // "1,6 puan yüksek" — fark yönüyle birlikte söylenir.
-  const gap = (a?: number, b?: number) =>
-    a === undefined || b === undefined
-      ? undefined
-      : `${fmtNum(Math.abs(a - b), lang, 1)} ${a >= b ? t("puan yüksek", "points higher") : t("puan düşük", "points lower")}`;
-  const vsForecast = gap(surveyValue(y0), er.forecasts[y0]);
-  const vsTarget = gap(surveyValue(y0), er.targets[y0]);
-  const reportDate = formatDate(er.publishedOn, lang);
-
-  return (
-    <section aria-labelledby="enflasyon-gorunumu" className="space-y-3">
-      <div>
-        <h2 id="enflasyon-gorunumu" className="text-lg font-semibold">
-          {t("Enflasyon: hedef, tahmin ve beklenti", "Inflation: target, forecast and expectations")}
-        </h2>
-        <p className="prose-width mt-1 text-sm text-muted">
-          {t("TCMB'nin ", "The CBRT's ")}
-          <Term id="ara-hedef-tcmb" lang={lang}>
-            {t("ara hedefi", "interim target")}
-          </Term>
-          {t(
-            ` ve yıl sonu tahmini (Enflasyon Raporu ${er.report}, ${reportDate}) ile piyasa katılımcılarının beklentisi yan yana.`,
-            ` and year-end forecast (Inflation Report ${er.report}, ${reportDate}) next to market participants' expectations.`,
-          )}
-        </p>
-      </div>
-      <TableFrame minWidth="30rem">
-        <thead>
-          <tr className="border-b border-border-strong text-left text-muted">
-            <Th>
-              <span className="sr-only">{t("Ölçü", "Measure")}</span>
-            </Th>
-            {years.map((y) => (
-              <Th key={y} align="right">
-                {t(`${y} sonu`, `End-${y}`)}
-              </Th>
-            ))}
-          </tr>
-        </thead>
-        <tbody>
-          <tr className="border-b border-border">
-            <th scope="row" className="px-4 py-2.5 text-left font-normal">{t("Ara hedef", "Interim target")}</th>
-            {years.map((y) => (
-              <td key={y} className="tabular px-4 py-2.5 text-right">{pct(er.targets[y], 0)}</td>
-            ))}
-          </tr>
-          <tr className="border-b border-border">
-            <th scope="row" className="px-4 py-2.5 text-left font-normal">{t("TCMB tahmini", "CBRT forecast")}</th>
-            {years.map((y) => (
-              <td key={y} className="tabular px-4 py-2.5 text-right font-semibold">{pct(er.forecasts[y], 0)}</td>
-            ))}
-          </tr>
-          {survey?.inflationYearEnd !== undefined && (
-            <tr>
-              <th scope="row" className="px-4 py-2.5 text-left font-normal">
-                {t("Piyasa katılımcıları", "Market participants")}
-                <span className="block text-xs text-muted">
-                  {t(
-                    `${monthLabel(`${survey.period}-15T12:00:00Z`, lang)} anketi`,
-                    `${monthLabel(`${survey.period}-15T12:00:00Z`, lang)} survey`,
-                  )}
-                </span>
-              </th>
-              {years.map((y) => (
-                <td key={y} className="tabular px-4 py-2.5 text-right">{pct(surveyValue(y), 2)}</td>
-              ))}
-            </tr>
-          )}
-        </tbody>
-      </TableFrame>
-      <div className="prose-width space-y-1 text-sm text-muted">
-        {vsForecast !== undefined && vsTarget !== undefined && (
-          <p className="tabular">
-            {t(
-              `Piyasa katılımcılarının ${y0} sonu beklentisi TCMB'nin tahmininden ${vsForecast}, ara hedefinden ${vsTarget}.`,
-              `Market participants' end-${y0} expectation is ${vsForecast} than the CBRT's forecast and ${vsTarget} than its interim target.`,
-            )}
-          </p>
-        )}
-        {inflation && (
-          <p className="tabular">
-            {t(
-              `Son gerçekleşen yıllık enflasyon: ${fmtPercent(inflation.yoy, lang)} (${monthLabel(`${inflation.period}-15T12:00:00Z`, lang)}).`,
-              `Latest annual inflation: ${fmtPercent(inflation.yoy, lang)} (${monthLabel(`${inflation.period}-15T12:00:00Z`, lang)}).`,
-            )}
-          </p>
-        )}
-        <p>
-          {t("Kaynak: ", "Sources: ")}
-          <a href={er.url} target="_blank" rel="noopener noreferrer nofollow" className="text-accent hover:underline">
-            {t(`TCMB Enflasyon Raporu ${er.report}`, `CBRT Inflation Report ${er.report}`)}
-          </a>
-          {t(
-            " (Genel Değerlendirme); piyasa katılımcıları: TCMB Piyasa Katılımcıları Anketi, cari yıl sonu yıllık TÜFE beklentisi. Rapor yılda dört kez yayımlanır.",
-            " (Overview); market participants: CBRT Survey of Market Participants, current year-end annual CPI expectation. The report is published four times a year.",
-          )}
-        </p>
-      </div>
-    </section>
   );
 }

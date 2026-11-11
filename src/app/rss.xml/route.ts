@@ -39,6 +39,7 @@ export async function GET() {
   const items: Item[] = [];
 
   for (const m of meetings) {
+    if (m.status === "cancelled") continue;
     const at = new Date(m.meetingAt).getTime();
     const bank = BANKS[m.bankCode];
     // Karar sayfası (sonuçlanmış ya da yaklaşan) kalıcı adrestir; yoksa banka sayfası.

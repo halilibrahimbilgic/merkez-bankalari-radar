@@ -1,4 +1,4 @@
-import type { Metadata } from "next";
+import type { Metadata, Viewport } from "next";
 import Link from "next/link";
 import { Geist, Geist_Mono } from "next/font/google";
 import { SiteAnalytics } from "@/components/SiteAnalytics";
@@ -32,16 +32,6 @@ export function rootMetadata(lang: Lang): Metadata {
     description: en
       ? "Fed, ECB, CBRT, BoE, BoJ and RBA meeting calendar in Turkey time; market-implied rate probabilities and a hawk/dove score of central bankers' speeches — for education only."
       : "Fed, ECB, TCMB, BoE, BoJ ve RBA faiz toplantı takvimi Türkiye saatiyle; piyasanın fiyatladığı faiz olasılıkları ve merkez bankası konuşmalarının şahin/güvercin skoru — Türkçe, eğitim amaçlı.",
-    keywords: en
-      ? [
-          "Fed meeting", "FOMC calendar", "ECB rate decision", "CBRT rate decision",
-          "rate probabilities", "hawkish dovish", "central bank calendar",
-        ]
-      : [
-          "Fed toplantısı", "FOMC takvimi", "ECB faiz kararı", "TCMB PPK",
-          "faiz olasılığı", "şahin güvercin", "merkez bankası takvimi",
-          "Fed faiz kararı ne zaman", "PPK toplantısı tarihi",
-        ],
     metadataBase: new URL(SITE_URL),
     alternates: {
       ...languageAlternates(lang, "/"),
@@ -60,6 +50,18 @@ export function rootMetadata(lang: Lang): Metadata {
     robots: { index: true, follow: true },
   };
 }
+
+/**
+ * Telefonda tarayıcı çubuğu site rengini alır. Renkler globals.css'teki
+ * --background değerleridir (açık #f1f3f7, koyu #0b0d12); tema düğmesiyle
+ * elle seçilen tema bu meta'yı değiştirmez, yalnızca sistem ayarına uyar.
+ */
+export const rootViewport: Viewport = {
+  themeColor: [
+    { media: "(prefers-color-scheme: light)", color: "#f1f3f7" },
+    { media: "(prefers-color-scheme: dark)", color: "#0b0d12" },
+  ],
+};
 
 export function SiteShell({ lang, children }: { lang: Lang; children: React.ReactNode }) {
   const t = L(lang);

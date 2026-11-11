@@ -20,7 +20,13 @@ export interface CentralBank {
   sortOrder: number;
 }
 
+/**
+ * "minutes" hiçbir kaynak tarafından üretilmiyor; veritabanı CHECK'inde
+ * (db/migrations/001_init.sql) ve haftalık kart/Telegram süzgeçlerinde
+ * savunma olarak duruyor — kaldırmak göç ve üç dosya demek.
+ */
 export type MeetingType = "rate_decision" | "minutes" | "projections";
+/** "cancelled" bugün hiçbir betik yazmaz (iptal kaynaktan düşer); elle yazılırsa okuyucular yok sayar. */
 export type MeetingStatus = "scheduled" | "done" | "cancelled";
 
 export interface Meeting {

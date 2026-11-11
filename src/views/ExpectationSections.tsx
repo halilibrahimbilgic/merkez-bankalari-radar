@@ -1,7 +1,7 @@
 import Link from "next/link";
 import { RateOdds, type OddsRow } from "@/components/RateOdds";
 import { Term } from "@/components/Term";
-import { TimeSeriesChart } from "@/components/TimeSeriesChart";
+import { TimeSeriesFigure } from "@/components/ChartFigures";
 import { Callout, Card, SectionHeader, Stat, TableFrame, Th } from "@/components/ui";
 import type { ExpectationPoint } from "@/lib/expectation-history";
 import type { EcbSurveyExpectations, MarketExpectations, SurveyExpectations } from "@/lib/expectations";
@@ -145,7 +145,8 @@ export function BoeExpectations({
               )}
             </p>
             <div className="mt-3">
-              <TimeSeriesChart
+              <TimeSeriesFigure
+                label={t("Bank Rate beklentisinin son piyasa günlerindeki seyri", "Expected Bank Rate over recent market days")}
                 data={trend}
                 series={[{ key: "expected", name: t("Beklenen Bank Rate", "Expected Bank Rate"), color: "var(--accent)" }]}
                 unit="rate"

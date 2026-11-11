@@ -4,11 +4,29 @@ import { NewsList } from "@/components/NewsList";
 import { EmptyState } from "@/components/ui";
 import { getNews } from "@/lib/data/news";
 import { L, languageAlternates, localePath, type Lang } from "@/lib/i18n";
-import type { NewsKind } from "@/lib/news";
+import { NEWS_KIND_SLUGS, type NewsKindSlug } from "@/lib/filter-paths";
 import { TELEGRAM_URL } from "@/lib/site";
 
-export function newsMetadata(lang: Lang): Metadata {
+export function newsMetadata(lang: Lang, slug?: NewsKindSlug): Metadata {
   const t = L(lang);
+  if (slug) {
+    const official = slug === "resmi";
+    return {
+      title: official
+        ? t("Haberler: merkez bankalarının resmî açıklamaları", "News: official central bank statements")
+        : t("Haberler: basından merkez bankası haberleri", "News: central banks in the press"),
+      description: official
+        ? t(
+            "Fed, ECB, TCMB, BoE, BoJ ve RBA'nın resmî açıklamaları — Türkçe kısa özetlerle, kaynağına bağlantılı.",
+            "Official statements by the Fed, ECB, CBRT, BoE, BoJ and RBA — with short summaries and links to the source.",
+          )
+        : t(
+            "Finans dünyasının önemli isimlerinin sözlerini aktaran haberler — Türkçe kısa özetlerle, kaynağına bağlantılı.",
+            "News reporting remarks by key figures in finance — with short summaries and links to the source.",
+          ),
+      alternates: languageAlternates(lang, `/haberler/${slug}`),
+    };
+  }
   return {
     title: t("Haberler", "News"),
     description: t(
@@ -21,21 +39,20 @@ export function newsMetadata(lang: Lang): Metadata {
 
 export async function NewsPage({
   lang,
-  searchParams,
+  slug,
 }: {
   lang: Lang;
-  searchParams: Record<string, string | string[] | undefined>;
+  slug?: NewsKindSlug;
 }) {
   const t = L(lang);
-  const raw = typeof searchParams.tur === "string" ? searchParams.tur : undefined;
-  const kind: NewsKind | undefined = raw === "resmi" ? "official" : raw === "basin" ? "media" : undefined;
+  const kind = slug ? NEWS_KIND_SLUGS[slug] : undefined;
   const items = await getNews({ kind });
   const base = localePath(lang, "/haberler");
 
   const filters: { href: string; label: string; active: boolean }[] = [
     { href: base, label: t("Tümü", "All"), active: !kind },
-    { href: `${base}?tur=resmi`, label: t("Resmî açıklamalar", "Official statements"), active: kind === "official" },
-    { href: `${base}?tur=basin`, label: t("Basından", "From the press"), active: kind === "media" },
+    { href: `${base}/resmi`, label: t("Resmî açıklamalar", "Official statements"), active: kind === "official" },
+    { href: `${base}/basin`, label: t("Basından", "From the press"), active: kind === "media" },
   ];
 
   return (

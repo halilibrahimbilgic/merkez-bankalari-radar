@@ -7,15 +7,20 @@ export const TRT = "Europe/Istanbul";
  * pahalı). Saat dilimi iki dilde de TRT: site Türkiye saatini gösterir,
  * İngilizce sürüm de "Turkey time" diye açıkça yazar.
  */
-function perLang(options: Intl.DateTimeFormatOptions): Record<Lang, Intl.DateTimeFormat> {
+function perLang(
+  options: Intl.DateTimeFormatOptions,
+  en: Intl.DateTimeFormatOptions = {},
+): Record<Lang, Intl.DateTimeFormat> {
   return {
     tr: new Intl.DateTimeFormat(INTL_LOCALE.tr, { timeZone: TRT, ...options }),
-    en: new Intl.DateTimeFormat(INTL_LOCALE.en, { timeZone: TRT, ...options }),
+    en: new Intl.DateTimeFormat(INTL_LOCALE.en, { timeZone: TRT, ...options, ...en }),
   };
 }
 
-const dateFmt = perLang({ day: "2-digit", month: "long", year: "numeric" });
-const dateShortFmt = perLang({ day: "2-digit", month: "short", year: "numeric" });
+// İngilizcede gün başında sıfırsız ("9 December"); Türkçe resmî yazımda "09 Aralık".
+const dateFmt = perLang({ day: "2-digit", month: "long", year: "numeric" }, { day: "numeric" });
+const dateShortFmt = perLang({ day: "2-digit", month: "short", year: "numeric" }, { day: "numeric" });
+const dayMonthFmt = perLang({ day: "numeric", month: "short" });
 const weekdayFmt = perLang({ weekday: "long" });
 const monthFmt = perLang({ month: "long", year: "numeric" });
 const monthShortFmt = perLang({ month: "short" });
@@ -35,6 +40,11 @@ export function formatDate(iso: string, lang: Lang = "tr"): string {
 /** "14 Eyl 2026" / "14 Sept 2026" */
 export function formatDateShort(iso: string, lang: Lang = "tr"): string {
   return dateShortFmt[lang].format(new Date(iso));
+}
+
+/** "9 Ara" / "9 Dec" — sayfa başlığı gibi dar yerlerde yıl atılır. */
+export function formatDayMonth(iso: string, lang: Lang = "tr"): string {
+  return dayMonthFmt[lang].format(new Date(iso));
 }
 
 /** "21:00" — her zaman Türkiye saati, iki dilde de 24 saat. */
