@@ -1,6 +1,21 @@
 {
-  "fetchedAt": "2026-11-11T21:02:28.165Z",
+  "fetchedAt": "2026-11-11T21:52:38.000Z",
   "items": [
+    {
+      "id": "6ff80acc070d",
+      "sourceKey": "marketwatch",
+      "sourceName": "MarketWatch",
+      "kind": "media",
+      "url": "https://www.marketwatch.com/story/falling-oil-prices-are-no-longer-enough-to-bring-down-borrowing-costs-in-the-worlds-most-important-bond-market-3176d25a?mod=mw_rss_topstories",
+      "publishedAt": "2026-11-11T21:42:00.000Z",
+      "titleOriginal": "Falling oil prices are no longer enough to bring down borrowing costs in the world’s most important bond market",
+      "titleTr": "Petrol fiyatlarındaki düşüş artık ABD tahvil faizlerini aşağı çekmeye yetmiyor",
+      "summaryTr": "MarketWatch'a göre petrol fiyatları ile ABD Hazine tahvil faizleri arasındaki yakın ilişki koptu. Haberde bunun, enflasyon endişelerinin enerji şokunun ötesine geçtiğinin işareti olduğu belirtiliyor.",
+      "titleEn": "Falling oil prices no longer enough to pull down Treasury borrowing costs",
+      "summaryEn": "MarketWatch reports that the tight link between oil prices and Treasury yields has broken down. It says this signals inflation concerns are extending beyond the energy shock.",
+      "important": false,
+      "processedAt": "2026-11-11T21:52:38.000Z"
+    },
     {
       "id": "2d5fbf06e091",
       "sourceKey": "aa-ekonomi",
