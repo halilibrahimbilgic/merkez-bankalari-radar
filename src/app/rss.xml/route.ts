@@ -1,5 +1,6 @@
 import { BANKS } from "@/lib/banks";
 import { getAllMeetings } from "@/lib/data/meetings";
+import { decisionPath } from "@/lib/decision-format";
 import { SITE_URL } from "@/lib/site";
 import { formatDate } from "@/lib/time";
 import { num, rateTr, resultTitle, whenTr } from "@/lib/announce";
@@ -32,14 +33,16 @@ interface Item {
  * bağlayabilir; sitenin kendisi e-posta adresi toplamaz.
  */
 export async function GET() {
-  const now = Date.now();
+  const nowDate = new Date();
+  const now = nowDate.getTime();
   const meetings = await getAllMeetings();
   const items: Item[] = [];
 
   for (const m of meetings) {
     const at = new Date(m.meetingAt).getTime();
     const bank = BANKS[m.bankCode];
-    const link = `${SITE_URL}/banka/${m.bankCode}`;
+    // Karar sayfası (sonuçlanmış ya da yaklaşan) kalıcı adrestir; yoksa banka sayfası.
+    const link = `${SITE_URL}${decisionPath(m, nowDate) ?? `/banka/${m.bankCode}`}`;
 
     const announceAt = at - LEAD_DAYS * DAY;
     if (announceAt <= now && at > now) {
