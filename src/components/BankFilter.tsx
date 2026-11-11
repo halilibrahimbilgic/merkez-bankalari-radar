@@ -1,5 +1,6 @@
 import Link from "next/link";
 import { ALL_BANKS, bankName } from "@/lib/banks";
+import { bankFilterPath } from "@/lib/filter-paths";
 import { L, type Lang } from "@/lib/i18n";
 import type { BankCode } from "@/lib/types";
 
@@ -62,7 +63,7 @@ export function BankFilter({
         return (
           <Link
             key={bank.code}
-            href={`${basePath}?banka=${bank.code}`}
+            href={bankFilterPath(basePath, bank.code)}
             aria-current={isActive ? "page" : undefined}
             className={
               "inline-flex min-h-9 items-center rounded-full border px-3 text-sm " +

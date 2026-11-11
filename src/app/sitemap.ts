@@ -1,5 +1,6 @@
 import type { MetadataRoute } from "next";
 import { ALL_BANKS } from "@/lib/banks";
+import { BANK_FILTER_PAGES, bankFilterPath } from "@/lib/filter-paths";
 import { getSpeakers, getSpeeches } from "@/lib/data/speeches";
 import { getDecisionViews, getUpcomingDecisionIds } from "@/lib/data/decisions";
 import { GUIDES } from "@/lib/guides/index";
@@ -59,6 +60,15 @@ export default async function sitemap(): Promise<MetadataRoute.Sitemap> {
       changeFrequency: "daily" as const,
       lastModified: now,
     })),
+    // Banka bazlı liste sayfaları (/takvim/tcmb): aynı günlük veriyle değişir.
+    ...BANK_FILTER_PAGES.flatMap((base) =>
+      ALL_BANKS.map((b) => ({
+        path: bankFilterPath(base, b.code),
+        priority: base === "/takvim" ? 0.8 : 0.6,
+        changeFrequency: "daily" as const,
+        lastModified: now,
+      })),
+    ),
     // Karar sayfası, metin özeti eklendiğinde son kez değişir.
     ...decisions.map((v) => ({
       path: `/karar/${v.meeting.id}`,
