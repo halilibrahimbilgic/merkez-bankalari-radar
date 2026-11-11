@@ -1,6 +1,6 @@
 import "server-only";
+import { readJsonStore } from "./read-store";
 import { fmtPercent, fmtPercentRange, type Lang } from "@/lib/i18n";
-import { readFile } from "node:fs/promises";
 import path from "node:path";
 import { getPool } from "../db";
 import type { ProbabilitySnapshot, ProbabilityWindow } from "../sources/mpt";
@@ -19,11 +19,7 @@ export async function getProbabilitySnapshot(): Promise<StoredSnapshot | null> {
   if (pool) return loadFromDb(pool);
 
   if (seedCache !== undefined) return seedCache;
-  try {
-    seedCache = JSON.parse(await readFile(SEED_PATH, "utf8")) as StoredSnapshot;
-  } catch {
-    seedCache = null;
-  }
+  seedCache = await readJsonStore<StoredSnapshot | null>(SEED_PATH, null);
   return seedCache;
 }
 

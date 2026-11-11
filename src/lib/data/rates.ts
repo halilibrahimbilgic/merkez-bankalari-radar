@@ -1,6 +1,6 @@
 import "server-only";
+import { readJsonStore } from "./read-store";
 import { fmtPercent, fmtPercentRange, type Lang } from "@/lib/i18n";
-import { readFile } from "node:fs/promises";
 import path from "node:path";
 import { getPool } from "../db";
 import type { BankCode } from "../types";
@@ -56,11 +56,7 @@ async function load(): Promise<Store> {
   }
 
   if (seedCache) return seedCache;
-  try {
-    seedCache = JSON.parse(await readFile(SEED_PATH, "utf8")) as Store;
-  } catch {
-    seedCache = { fetchedAt: new Date(0).toISOString(), rates: [] };
-  }
+  seedCache = await readJsonStore<Store>(SEED_PATH, { fetchedAt: new Date(0).toISOString(), rates: [] });
   return seedCache;
 }
 

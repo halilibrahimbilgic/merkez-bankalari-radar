@@ -1,5 +1,5 @@
 import "server-only";
-import { readFile } from "node:fs/promises";
+import { readJsonStore } from "./read-store";
 import path from "node:path";
 import type { NewsItem, NewsStore } from "../news";
 
@@ -13,11 +13,7 @@ let cache: NewsStore | undefined;
 
 async function load(): Promise<NewsStore> {
   if (cache) return cache;
-  try {
-    cache = JSON.parse(await readFile(STORE_PATH, "utf8")) as NewsStore;
-  } catch {
-    cache = { fetchedAt: new Date(0).toISOString(), items: [], rejected: {} };
-  }
+  cache = await readJsonStore<NewsStore>(STORE_PATH, { fetchedAt: new Date(0).toISOString(), items: [], rejected: {} });
   return cache;
 }
 

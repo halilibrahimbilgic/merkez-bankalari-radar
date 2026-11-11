@@ -23,7 +23,10 @@ export function getPool(): Pool | null {
   pool = new Pool({
     connectionString: url,
     max: 5,
-    ssl: url.includes("localhost") ? undefined : { rejectUnauthorized: false },
+    // Sertifika doğrulanır (sistem CA'larıyla): `rejectUnauthorized: false`
+    // araya girene açıktı. Sağlayıcının sertifikası sistem CA'larında yoksa
+    // bağlantı hata verir — sessizce açık kalmaz; çözüm `{ ca: ... }`.
+    ssl: url.includes("localhost") ? undefined : true,
   });
   return pool;
 }

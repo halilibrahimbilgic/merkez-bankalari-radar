@@ -1,4 +1,5 @@
 import "server-only";
+import { cache } from "react";
 import {
   preDecisionPoint,
   surprise,
@@ -127,9 +128,17 @@ export async function getDecisionViews(
   return views.sort((a, b) => b.meeting.meetingAt.localeCompare(a.meeting.meetingAt));
 }
 
+/**
+ * Bir bankanın bütün karar görünümleri, istek (render) başına bir kez:
+ * metadata ve sayfa ya da "Bu hafta"daki her karar aynı bankayı yeniden
+ * kurmasın. Anahtar yalnızca banka kodu (nesne anahtarı önbelleğe hiç
+ * düşmezdi); render dışında (betik, test) cache doğrudan çağırır.
+ */
+const viewsOfBank = cache((bank: BankCode) => getDecisionViews({ bankCode: bank }));
+
 export async function getDecisionView(id: string): Promise<DecisionView | undefined> {
   const bank = id.split("-")[0] as BankCode;
-  return (await getDecisionViews({ bankCode: bank })).find((v) => v.meeting.id === id);
+  return (await viewsOfBank(bank)).find((v) => v.meeting.id === id);
 }
 
 export async function getDecisionIds(): Promise<string[]> {

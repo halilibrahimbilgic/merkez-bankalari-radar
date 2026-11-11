@@ -1,5 +1,5 @@
 import "server-only";
-import { readFile } from "node:fs/promises";
+import { readJsonStore } from "./read-store";
 import path from "node:path";
 import type { TrInflation } from "../tr-inflation";
 
@@ -10,10 +10,6 @@ let cache: TrInflation | undefined;
 
 export async function getTrInflation(): Promise<TrInflation | undefined> {
   if (cache) return cache;
-  try {
-    cache = JSON.parse(await readFile(FILE, "utf8")) as TrInflation;
-  } catch {
-    return undefined;
-  }
+  cache = await readJsonStore<TrInflation | undefined>(FILE, undefined);
   return cache;
 }

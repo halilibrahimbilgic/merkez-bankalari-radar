@@ -1,5 +1,5 @@
 import "server-only";
-import { readFile } from "node:fs/promises";
+import { readJsonStore } from "./read-store";
 import path from "node:path";
 import type { CalendarEvent } from "../sources/speaking-calendars";
 
@@ -10,10 +10,6 @@ let cache: CalendarEvent[] | undefined;
 
 export async function getEvents(): Promise<CalendarEvent[]> {
   if (cache) return cache;
-  try {
-    cache = (JSON.parse(await readFile(FILE, "utf8")) as { events: CalendarEvent[] }).events;
-  } catch {
-    cache = [];
-  }
+  cache = (await readJsonStore<{ events: CalendarEvent[] }>(FILE, { events: [] })).events;
   return cache;
 }

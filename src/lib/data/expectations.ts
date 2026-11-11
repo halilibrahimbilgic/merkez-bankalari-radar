@@ -1,5 +1,5 @@
 import "server-only";
-import { readFile } from "node:fs/promises";
+import { readJsonStore } from "./read-store";
 import path from "node:path";
 import type { Expectations } from "../expectations";
 
@@ -14,10 +14,6 @@ let cache: Expectations | undefined;
 
 export async function getExpectations(): Promise<Expectations> {
   if (cache) return cache;
-  try {
-    cache = JSON.parse(await readFile(SEED_PATH, "utf8")) as Expectations;
-  } catch {
-    cache = { fetchedAt: new Date(0).toISOString() };
-  }
+  cache = await readJsonStore<Expectations>(SEED_PATH, { fetchedAt: new Date(0).toISOString() });
   return cache;
 }

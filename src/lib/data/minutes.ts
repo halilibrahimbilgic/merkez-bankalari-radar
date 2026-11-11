@@ -1,5 +1,5 @@
 import "server-only";
-import { readFile } from "node:fs/promises";
+import { readJsonStore } from "./read-store";
 import path from "node:path";
 import type { MinutesRecord, MinutesStore } from "../minutes";
 
@@ -10,11 +10,7 @@ let cache: MinutesStore | undefined;
 
 async function load(): Promise<MinutesStore> {
   if (cache) return cache;
-  try {
-    cache = JSON.parse(await readFile(STORE, "utf8")) as MinutesStore;
-  } catch {
-    cache = { fetchedAt: new Date(0).toISOString(), minutes: [] };
-  }
+  cache = await readJsonStore<MinutesStore>(STORE, { fetchedAt: new Date(0).toISOString(), minutes: [] });
   return cache;
 }
 

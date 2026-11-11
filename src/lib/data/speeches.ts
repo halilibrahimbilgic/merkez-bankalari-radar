@@ -1,4 +1,5 @@
 import "server-only";
+import { readJsonStore } from "./read-store";
 import { readFile } from "node:fs/promises";
 import path from "node:path";
 import { getPool } from "../db";
@@ -47,11 +48,7 @@ async function load(): Promise<Store> {
   }
 
   if (seedCache) return seedCache;
-  try {
-    seedCache = JSON.parse(await readFile(SEED_PATH, "utf8")) as Store;
-  } catch {
-    seedCache = { fetchedAt: new Date(0).toISOString(), speeches: [] };
-  }
+  seedCache = await readJsonStore<Store>(SEED_PATH, { fetchedAt: new Date(0).toISOString(), speeches: [] });
   return seedCache;
 }
 

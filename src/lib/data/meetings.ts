@@ -1,5 +1,5 @@
 import "server-only";
-import { readFile } from "node:fs/promises";
+import { readJsonStore } from "./read-store";
 import path from "node:path";
 import { getPool } from "../db";
 import type { BankCode, Meeting } from "../types";
@@ -15,11 +15,7 @@ let seedCache: SeedFile | null = null;
 
 async function loadSeed(): Promise<SeedFile> {
   if (seedCache) return seedCache;
-  try {
-    seedCache = JSON.parse(await readFile(SEED_PATH, "utf8")) as SeedFile;
-  } catch {
-    seedCache = { fetchedAt: new Date(0).toISOString(), meetings: [] };
-  }
+  seedCache = await readJsonStore<SeedFile>(SEED_PATH, { fetchedAt: new Date(0).toISOString(), meetings: [] });
   return seedCache;
 }
 
@@ -77,6 +73,8 @@ export async function getUpcomingMeetings(
   const all = await getAllMeetings();
   const rows = all
     .filter((m) => new Date(m.meetingAt) >= now)
+    // İptal edilen toplantı yaklaşan sayılmaz: ana sayfa, iCal ve sayfalar buradan okur.
+    .filter((m) => m.status !== "cancelled")
     .filter((m) => !opts.bankCode || m.bankCode === opts.bankCode);
   return opts.limit ? rows.slice(0, opts.limit) : rows;
 }

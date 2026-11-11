@@ -1,4 +1,5 @@
 import "server-only";
+import { readJsonStore } from "./read-store";
 import { readFile } from "node:fs/promises";
 import path from "node:path";
 import type { StatementLang, StatementRecord, StatementStore } from "../statements";
@@ -12,11 +13,7 @@ let cache: StatementStore | undefined;
 
 async function load(): Promise<StatementStore> {
   if (cache) return cache;
-  try {
-    cache = JSON.parse(await readFile(STORE, "utf8")) as StatementStore;
-  } catch {
-    cache = { fetchedAt: new Date(0).toISOString(), statements: [] };
-  }
+  cache = await readJsonStore<StatementStore>(STORE, { fetchedAt: new Date(0).toISOString(), statements: [] });
   return cache;
 }
 

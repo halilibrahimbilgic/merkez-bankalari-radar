@@ -1,5 +1,5 @@
 import "server-only";
-import { readFile } from "node:fs/promises";
+import { readJsonStore } from "./read-store";
 import path from "node:path";
 import type { ExpectationHistory } from "../expectation-history";
 
@@ -13,10 +13,6 @@ let cache: ExpectationHistory | undefined;
 
 export async function getExpectationHistory(): Promise<ExpectationHistory> {
   if (cache) return cache;
-  try {
-    cache = JSON.parse(await readFile(FILE, "utf8")) as ExpectationHistory;
-  } catch {
-    cache = { fetchedAt: new Date(0).toISOString(), banks: {} };
-  }
+  cache = await readJsonStore<ExpectationHistory>(FILE, { fetchedAt: new Date(0).toISOString(), banks: {} });
   return cache;
 }

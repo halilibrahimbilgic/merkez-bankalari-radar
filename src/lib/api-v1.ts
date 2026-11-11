@@ -5,10 +5,10 @@ import { getAllMeetings, getMeetingsFetchedAt } from "./data/meetings";
 import { getAllMinutes } from "./data/minutes";
 import { getTrInflation } from "./data/tr-inflation";
 import type { HistorySource } from "./expectation-history";
+import { meetingShape } from "./api-shape";
 import { SITE_URL } from "./site";
-import { formatTimeTrt, trtDayKey } from "./time";
 import { monthlyExpectation } from "./tr-inflation";
-import type { BankCode, Meeting } from "./types";
+import type { BankCode } from "./types";
 
 /**
  * Açık API, sürüm 1 (/api/v1): anahtarsız, yalnızca okuma, önbellekten.
@@ -33,6 +33,7 @@ export function apiJson(data: unknown, extra: Record<string, unknown> = {}): Res
     data,
     meta: {
       version: API_VERSION,
+      // Üretim/önbellek anı (ISR): isteğin anı değil. Alan adı v1 sözü gereği değişmez; /gelistiriciler açıklar.
       generatedAt: new Date().toISOString(),
       ...extra,
       docs: `${SITE_URL}/gelistiriciler`,
@@ -54,7 +55,12 @@ export function apiJson(data: unknown, extra: Record<string, unknown> = {}): Res
 export function apiError(status: number, message: string): Response {
   return new Response(JSON.stringify({ error: { status, message } }, null, 2), {
     status,
-    headers: { "content-type": "application/json; charset=utf-8", "access-control-allow-origin": "*" },
+    headers: {
+      "content-type": "application/json; charset=utf-8",
+      "access-control-allow-origin": "*",
+      // Geçersiz adres (404) önbellekten dönsün: her denemede fonksiyon çalışmasın.
+      "cache-control": "public, max-age=300, s-maxage=3600",
+    },
   });
 }
 
@@ -65,30 +71,6 @@ export function bankParam(raw: string | undefined): BankCode | undefined | null 
 }
 
 export const BANK_CODES = ALL_BANKS.map((b) => b.code);
-
-function meetingShape(m: Meeting) {
-  const decided = m.decisionRate !== undefined;
-  return {
-    id: m.id,
-    bank: m.bankCode,
-    type: m.type,
-    status: m.status,
-    /** UTC, ISO-8601. Saat belli değilse gün başı ve timeTbd=true. */
-    at: m.meetingAt,
-    timeTbd: m.timeTbd,
-    /** Türkiye saatiyle gün ve saat. */
-    trt: { date: trtDayKey(m.meetingAt), time: m.timeTbd ? null : formatTimeTrt(m.meetingAt) },
-    decision: decided
-      ? {
-          rate: m.decisionRate,
-          rateLower: m.decisionRateLower ?? null,
-          previousRate: m.previousRate ?? null,
-          changeBp: m.previousRate === undefined ? null : Math.round((m.decisionRate! - m.previousRate) * 100),
-        }
-      : null,
-    url: `${SITE_URL}/karar/${m.id}`,
-  };
-}
 
 export async function apiMeetings(bank?: BankCode) {
   const meetings = (await getAllMeetings())

@@ -1,5 +1,5 @@
 import "server-only";
-import { readFile } from "node:fs/promises";
+import { readJsonStore } from "./read-store";
 import path from "node:path";
 import type { TcmbFunding } from "../tcmb-funding";
 
@@ -10,10 +10,6 @@ let cache: TcmbFunding | undefined;
 
 export async function getTcmbFunding(): Promise<TcmbFunding | undefined> {
   if (cache) return cache;
-  try {
-    cache = JSON.parse(await readFile(FILE, "utf8")) as TcmbFunding;
-  } catch {
-    return undefined;
-  }
+  cache = await readJsonStore<TcmbFunding | undefined>(FILE, undefined);
   return cache;
 }

@@ -1,5 +1,5 @@
 import "server-only";
-import { readFile } from "node:fs/promises";
+import { readJsonStore } from "./read-store";
 import path from "node:path";
 import type { InflationReading } from "../sources/inflation";
 import type { BankCode } from "../types";
@@ -16,11 +16,7 @@ let cache: Store | undefined;
 
 async function load(): Promise<Store> {
   if (cache) return cache;
-  try {
-    cache = JSON.parse(await readFile(FILE, "utf8")) as Store;
-  } catch {
-    cache = { fetchedAt: new Date(0).toISOString(), readings: [] };
-  }
+  cache = await readJsonStore<Store>(FILE, { fetchedAt: new Date(0).toISOString(), readings: [] });
   return cache;
 }
 

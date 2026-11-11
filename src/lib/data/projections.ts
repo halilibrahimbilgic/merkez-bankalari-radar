@@ -1,5 +1,5 @@
 import "server-only";
-import { readFile } from "node:fs/promises";
+import { readJsonStore } from "./read-store";
 import path from "node:path";
 import type { FedProjections, TcmbForecast } from "../sources/projections";
 
@@ -16,10 +16,6 @@ let cache: Store | undefined;
 
 export async function getProjections(): Promise<Store> {
   if (cache) return cache;
-  try {
-    cache = JSON.parse(await readFile(FILE, "utf8")) as Store;
-  } catch {
-    cache = { fetchedAt: new Date(0).toISOString() };
-  }
+  cache = await readJsonStore<Store>(FILE, { fetchedAt: new Date(0).toISOString() });
   return cache;
 }
