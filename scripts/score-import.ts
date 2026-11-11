@@ -8,7 +8,7 @@
  * yalnızca dışa aktarılmış ve hâlâ skorsuz olan kimlikler kabul edilir, mevcut
  * bir skor asla ezilmez.
  */
-import { readdir, readFile, writeFile } from "node:fs/promises";
+import { appendFile, readdir, readFile, writeFile } from "node:fs/promises";
 import path from "node:path";
 import { CLAUDE_CODE_MODEL, parseScoreOutput, PROMPT_VERSION } from "../src/lib/score";
 import type { Speech } from "../src/lib/types";
@@ -40,9 +40,11 @@ async function main() {
 
   let ok = 0;
   let failed = 0;
+  let expected = 0;
   for (const id of exported) {
     const speech = byId.get(id);
     if (!speech || speech.hawkDoveScore !== undefined) continue;
+    expected++;
 
     if (!produced.has(id)) {
       console.error(`✗  ${id}: çıktı yok`);
@@ -83,6 +85,13 @@ async function main() {
 
   if (ok > 0) await writeFile(SEED, JSON.stringify(store, null, 2) + "\n", "utf8");
   console.log(`\n→ ${ok} skor işlendi${failed ? `, ${failed} başarısız` : ""}.`);
+  // Workflow'da bu adım continue-on-error: veri yine commit'lensin diye. Bu
+  // yüzden eksik skor burada açıkça duyurulur (V-2), yoksa adım yeşil görünür.
+  const summary = `Skorlama: beklenen ${expected}, gelen ${ok}.`;
+  if (ok < expected) console.log(`::warning title=Skorlama eksik::${summary} Konuşmalar siteye skorsuz düşecek.`);
+  if (process.env.GITHUB_STEP_SUMMARY) {
+    await appendFile(process.env.GITHUB_STEP_SUMMARY, `${ok < expected ? "⚠️" : "✅"} ${summary}\n\n`);
+  }
   if (failed > 0) process.exit(1);
 }
 

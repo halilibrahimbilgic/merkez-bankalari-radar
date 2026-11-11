@@ -1,0 +1,44 @@
+name: Nabız
+
+# Haber ve günlük veri işlerinin son BAŞARILI koşusu bayatladıysa bu iş
+# kırmızı biter; GitHub başarısız iş için e-posta atar. Dış tetikleyici
+# (cron-job.org) token süresi dolduğunda (ARCHITECTURE.md §4, Ekim 2027) ya
+# da başka nedenle durursa kimse fark etmezdi. Kanala mesaj ATMAZ: kanal
+# herkese açık, bu uyarı yalnızca site sahibine. İşin kendisi de GitHub'ın
+# düzensiz zamanlamasına bağlı; eşikler bu yüzden cömert.
+on:
+  schedule:
+    - cron: "23 * * * *"
+  workflow_dispatch:
+
+permissions:
+  actions: read
+
+jobs:
+  check:
+    runs-on: ubuntu-latest
+    timeout-minutes: 5
+    steps:
+      - name: Son başarılı koşular yeterince yeni mi
+        env:
+          GH_TOKEN: ${{ github.token }}
+        run: |
+          check() {
+            local wf="$1" max_hours="$2"
+            local last
+            last=$(gh run list --repo "$GITHUB_REPOSITORY" --workflow "$wf" --status success --limit 1 --json createdAt --jq '.[0].createdAt // empty')
+            if [[ -z "$last" ]]; then
+              echo "::error::$wf: hiç başarılı koşu bulunamadı"
+              return 1
+            fi
+            local age_h=$(( ( $(date -u +%s) - $(date -u -d "$last" +%s) ) / 3600 ))
+            echo "$wf: son başarılı koşu $last (${age_h} saat önce, sınır ${max_hours})"
+            if (( age_h >= max_hours )); then
+              echo "::error::$wf ${age_h} saattir başarılı çalışmadı (sınır ${max_hours}). Dış tetikleyiciyi (cron-job.org, token) ve Actions geçmişini kontrol edin."
+              return 1
+            fi
+          }
+          status=0
+          check news.yml 4 || status=1
+          check fetch-meetings.yml 30 || status=1
+          exit $status

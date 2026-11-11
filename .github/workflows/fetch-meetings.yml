@@ -33,46 +33,48 @@ jobs:
       - run: npm ci
       # Kaynaklar birbirinden bağımsızdır: biri kırılınca (ör. Atlanta Fed
       # dosyayı taşıdığında) diğerlerinin verisi yine commit'lenmeli. Hata
-      # gizlenmez — iş yine kırmızı biter; continue-on-error bunu yeşile
-      # boyardı ve kırılma haftalarca fark edilmezdi.
-      - run: npm run fetch:meetings
-      - run: npm run fetch:rates
+      # gizlenmez — gerçek kırılmada iş kırmızı biter; continue-on-error bunu
+      # yeşile boyardı ve kırılma haftalarca fark edilmezdi. `ci:step` yalnızca
+      # geçici ağ hatasını (HTTP 5xx, zaman aşımı) sarı uyarıya çevirir: veri
+      # korunur, "alarm yorgunluğu" olmasın. Ayrıntı: src/lib/transient-error.ts.
+      - run: npm run ci:step -- fetch:meetings
+      - run: npm run ci:step -- fetch:rates
         if: ${{ !cancelled() }}
         env:
           FRED_API_KEY: ${{ secrets.FRED_API_KEY }}
           EVDS_API_KEY: ${{ secrets.EVDS_API_KEY }}
-      - run: npm run fetch:current-rates
+      - run: npm run ci:step -- fetch:current-rates
         if: ${{ !cancelled() }}
         env:
           FRED_API_KEY: ${{ secrets.FRED_API_KEY }}
           EVDS_API_KEY: ${{ secrets.EVDS_API_KEY }}
       # Güncel Bank Rate'i current-rates.json'dan okur — ondan sonra çalışmalı.
       # Beklentilerin seyrini de (data/history) birleştirir.
-      - run: npm run fetch:expectations
+      - run: npm run ci:step -- fetch:expectations
         if: ${{ !cancelled() }}
         env:
           EVDS_API_KEY: ${{ secrets.EVDS_API_KEY }}
       # "Bu hafta": Fed ve ECB yönetim kurullarının konuşma ve yayın takvimi,
       # beş ekonominin TÜFE açıklama tarihleri (ABD'ninki FRED'den).
-      - run: npm run fetch:events
+      - run: npm run ci:step -- fetch:events
         if: ${{ !cancelled() }}
         env:
           FRED_API_KEY: ${{ secrets.FRED_API_KEY }}
       # Reel faiz tablosu: altı ekonominin son yıllık enflasyonu.
-      - run: npm run fetch:inflation
+      - run: npm run ci:step -- fetch:inflation
         if: ${{ !cancelled() }}
         env:
           FRED_API_KEY: ${{ secrets.FRED_API_KEY }}
           EVDS_API_KEY: ${{ secrets.EVDS_API_KEY }}
       # Bankaların kendi tahminleri: Fed'in nokta grafiği (FRED) ve TCMB'nin
       # Enflasyon Raporu tahmini ile ara hedefleri (PDF yalnızca yeni sayıda).
-      - run: npm run fetch:projections
+      - run: npm run ci:step -- fetch:projections
         if: ${{ !cancelled() }}
         env:
           FRED_API_KEY: ${{ secrets.FRED_API_KEY }}
-      - run: npm run fetch:probabilities
+      - run: npm run ci:step -- fetch:probabilities
         if: ${{ !cancelled() }}
-      - run: npm run fetch:speeches
+      - run: npm run ci:step -- fetch:speeches
         if: ${{ !cancelled() }}
       # Skorlama, API anahtarı yerine Claude aboneliğiyle yapılır
       # (CLAUDE_CODE_OAUTH_TOKEN, `claude setup-token` ile üretilir).
