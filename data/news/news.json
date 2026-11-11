@@ -1,6 +1,21 @@
 {
-  "fetchedAt": "2026-11-11T13:01:48.762Z",
+  "fetchedAt": "2026-11-11T14:31:41.450Z",
   "items": [
+    {
+      "id": "d0956511e66c",
+      "sourceKey": "cnbc-finance",
+      "sourceName": "CNBC",
+      "kind": "media",
+      "url": "https://www.cnbc.com/2026/11/11/goolsbee-october-inflation-fed-rates-disturbing-distressing.html",
+      "publishedAt": "2026-11-11T14:24:28.000Z",
+      "titleOriginal": "Fed's Goolsbee calls inflation report 'borderline disturbing' as central bank weighs more hikes",
+      "titleTr": "Fed'den Goolsbee: Enflasyon raporu \"rahatsız edici sınırda\"",
+      "summaryTr": "Fed'den Goolsbee, Ekim ayı tüketici fiyat endeksinin beklentilerin üzerinde artmasını \"rahatsız edici sınırda\" olarak niteledi. Habere göre Fed yetkilileri bu veri karşısında endişe duyuyor ve merkez bankası ek faiz artırımlarını değerlendiriyor.",
+      "titleEn": "Fed's Goolsbee calls inflation report 'borderline disturbing'",
+      "summaryEn": "Goolsbee said October's consumer price index, which rose more than expected, was 'borderline disturbing'. According to the report, Fed officials are alarmed by the data and the central bank is weighing more rate hikes.",
+      "important": true,
+      "processedAt": "2026-11-11T14:31:41.450Z"
+    },
     {
       "id": "1d9227690aaf",
       "sourceKey": "aa-economy",
@@ -4858,21 +4873,6 @@
       "summaryTr": "Tahmin piyasalarındaki işlemciler, gıda ve enerji hariç çekirdek enflasyonun bu yıl %2,2'ye inme ihtimalini düşük görüyor.",
       "titleEn": "Prediction markets: US inflation may have peaked for 2026 but will stay sticky",
       "summaryEn": "Traders on prediction markets see little chance that core inflation, excluding food and energy, falls to 2.2% this year.",
-      "important": false,
-      "processedAt": "2026-10-12T20:40:18.135Z"
-    },
-    {
-      "id": "e4a4e3e941fd",
-      "sourceKey": "cnbc-economy",
-      "sourceName": "CNBC",
-      "kind": "media",
-      "url": "https://www.cnbc.com/2026/10/12/nobel-economics-prize-winner-woodford-hall.html",
-      "publishedAt": "2026-10-12T14:09:02.000Z",
-      "titleOriginal": "Nobel prize in economics awarded to Robert E. Hall and Michael Woodford",
-      "titleTr": "Ekonomi Nobeli, merkez bankalarının kullandığı modellere katkı veren Hall ve Woodford'a",
-      "summaryTr": "ABD'li ekonomistler Robert E. Hall ve Michael Woodford, merkez bankaları ve hükümetlerin ekonomiyi istikrara kavuşturmak için kullandığı modellerin temelini oluşturan çalışmalarıyla ödüllendirildi.",
-      "titleEn": "Economics Nobel goes to Hall and Woodford for work behind central bank models",
-      "summaryEn": "US economists Robert E. Hall and Michael Woodford were honoured for work underpinning the models central banks and governments use to stabilise the economy.",
       "important": false,
       "processedAt": "2026-10-12T20:40:18.135Z"
     }
