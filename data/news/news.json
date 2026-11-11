@@ -1,6 +1,21 @@
 {
-  "fetchedAt": "2026-11-11T14:31:41.450Z",
+  "fetchedAt": "2026-11-11T15:01:49.296Z",
   "items": [
+    {
+      "id": "ca9231bcf2a4",
+      "sourceKey": "aa-economy",
+      "sourceName": "Anadolu Agency",
+      "kind": "media",
+      "url": "https://www.aa.com.tr/en/americas/us-real-estate-stocks-slide-as-hotter-inflation-fuels-fed-rate-hike-bets/4120846",
+      "publishedAt": "2026-11-11T14:24:40.000Z",
+      "titleOriginal": "US real estate stocks slide as hotter inflation fuels Fed rate-hike bets",
+      "titleTr": "Sıcak enflasyon Fed'in faiz artırımı beklentilerini besledi, ABD gayrimenkul hisseleri düştü",
+      "summaryTr": "Ekim enflasyonunun beklentilerin üzerinde gelmesi, Fed'in Aralık'ta 25 ya da 50 baz puanlık faiz artırımına gideceği yönündeki beklentileri güçlendirdi. ABD gayrimenkul hisseleri geriledi.",
+      "titleEn": "US real estate stocks slide as hotter inflation fuels Fed rate-hike bets",
+      "summaryEn": "October inflation came in above expectations, strengthening bets on a 25- or 50-basis-point Fed rate hike in December. US real estate stocks fell.",
+      "important": true,
+      "processedAt": "2026-11-11T15:01:49.296Z"
+    },
     {
       "id": "d0956511e66c",
       "sourceKey": "cnbc-finance",
