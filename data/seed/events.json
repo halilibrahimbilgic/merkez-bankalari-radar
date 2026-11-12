@@ -1,68 +1,6 @@
 {
-  "fetchedAt": "2026-11-11T12:20:59.530Z",
+  "fetchedAt": "2026-11-12T05:01:54.626Z",
   "events": [
-    {
-      "id": "fed-2026-11-10-3xjxf5",
-      "bankCode": "fed",
-      "at": "2026-11-10T09:00:00.000Z",
-      "timeTbd": false,
-      "kind": "speech",
-      "speaker": "Christopher J. Waller",
-      "role": "Governor",
-      "title": "At The Bank of England and its Watchers Conference 2026, London, United Kingdom",
-      "url": "https://www.federalreserve.gov/newsevents/calendar.htm"
-    },
-    {
-      "id": "fed-cpi-2026-11-10",
-      "bankCode": "fed",
-      "at": "2026-11-10T13:30:00.000Z",
-      "timeTbd": false,
-      "kind": "cpi",
-      "title": "CPI",
-      "url": "https://www.bls.gov/schedule/news_release/cpi.htm"
-    },
-    {
-      "id": "ecb-2026-11-10-1il9bw4",
-      "bankCode": "ecb",
-      "at": "2026-11-10T14:00:00.000Z",
-      "timeTbd": false,
-      "kind": "testimony",
-      "speaker": "Piero Cipollone",
-      "title": "Introductory statement by Mr Cipollone at Hearing on the digital euro before the Committee on Economic and Monetary Affairs (ECON) of the European Parliament in Brussels, Belgium",
-      "url": "https://www.ecb.europa.eu/press/calendars/weekly/html/index.en.html"
-    },
-    {
-      "id": "ecb-2026-11-10-19b87ec",
-      "bankCode": "ecb",
-      "at": "2026-11-10T16:45:00.000Z",
-      "timeTbd": false,
-      "kind": "speech",
-      "speaker": "Philip R. Lane",
-      "title": "Keynote speech by Mr Lane at The Bank of England and Its Watchers Conference in London, United Kingdom",
-      "url": "https://www.kcl.ac.uk/events/the-bank-of-england-and-its-watchers"
-    },
-    {
-      "id": "fed-2026-11-10-k30rtv",
-      "bankCode": "fed",
-      "at": "2026-11-10T20:30:00.000Z",
-      "timeTbd": false,
-      "kind": "speech",
-      "speaker": "Michelle W. Bowman",
-      "role": "Vice Chair for Supervision",
-      "title": "At the C. Peter McColough Series on International Economics with Michelle Bowman, Washington, D.C.",
-      "url": "https://www.federalreserve.gov/newsevents/calendar.htm"
-    },
-    {
-      "id": "fed-2026-11-10-k30rtv",
-      "bankCode": "fed",
-      "at": "2026-11-10T23:30:00.000Z",
-      "timeTbd": false,
-      "kind": "speech",
-      "speaker": "Michelle W. Bowman",
-      "role": "Vice Chair for Supervision",
-      "title": "At A View from the Federal Reserve Board (virtual)",
-      "url": "https://www.federalreserve.gov/newsevents/calendar.htm"
-    },
     {
       "id": "ecb-2026-11-11-yx1ouo",
       "bankCode": "ecb",
@@ -220,6 +158,16 @@
       "kind": "fsr",
       "title": "Finansal İstikrar Raporu",
       "url": "https://www.tcmb.gov.tr/wps/wcm/connect/TR/TCMB+TR/Main+Menu/Duyurular/Takvim"
+    },
+    {
+      "id": "tcmb-cpi-2026-12-03",
+      "bankCode": "tcmb",
+      "at": "2026-12-03T07:00:00.000Z",
+      "timeTbd": false,
+      "kind": "cpi",
+      "title": "CPI Kasım 2026",
+      "period": "Kasım 2026",
+      "url": "https://www.tuik.gov.tr/Kurumsal/Veri_Takvimi"
     }
   ]
 }
