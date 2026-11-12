@@ -1,6 +1,21 @@
 {
-  "fetchedAt": "2026-11-12T09:32:05.827Z",
+  "fetchedAt": "2026-11-12T10:02:19.655Z",
   "items": [
+    {
+      "id": "d62ca5bb6190",
+      "sourceKey": "aa-ekonomi",
+      "sourceName": "Anadolu Ajansı",
+      "kind": "media",
+      "url": "https://www.aa.com.tr/tr/ekonomi/bakan-simsek-kalkinma-bankalarimizi-degisimi-tetikleyen-birer-katalizor-olarak-goruyorum/4122161",
+      "publishedAt": "2026-11-12T09:49:51.000Z",
+      "titleOriginal": "Bakan Şimşek: Kalkınma bankalarımızı değişimi tetikleyen birer katalizör olarak görüyorum",
+      "titleTr": "Şimşek: Kalkınma bankalarını değişimi tetikleyen katalizör olarak görüyorum",
+      "summaryTr": "Hazine ve Maliye Bakanı Şimşek, kalkınma bankalarını yalnızca birer aracı kurum olarak değil, daha iyi yönetişim ve daha yüksek standartlar yönünde değişimi tetikleyen katalizörler olarak gördüğünü söyledi.",
+      "titleEn": "Şimşek: I see development banks as catalysts for change",
+      "summaryEn": "Treasury and Finance Minister Şimşek said he views development banks not merely as intermediaries but as catalysts driving change toward better governance and higher standards.",
+      "important": false,
+      "processedAt": "2026-11-12T10:02:19.655Z"
+    },
     {
       "id": "cf79854e76ac",
       "sourceKey": "aa-ekonomi",
