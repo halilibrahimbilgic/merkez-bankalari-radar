@@ -1,5 +1,5 @@
 {
-  "fetchedAt": "2026-11-12T07:02:00.024Z",
+  "fetchedAt": "2026-11-12T07:31:57.389Z",
   "items": [
     {
       "id": "731345fd8340",
@@ -4862,36 +4862,6 @@
       "summaryEn": "The IMF lifted its 2026 UK GDP growth forecast to 1.3% but expects growth to edge down next year. IMF economic counsellor Silvana Tenreyro said Healey should stay the course on repairing public finances, and the fund warned the global economy could soon test the limits of resilience.",
       "important": true,
       "processedAt": "2026-10-14T01:01:44.874Z"
-    },
-    {
-      "id": "711ae1113684",
-      "sourceKey": "aa-economy",
-      "sourceName": "Anadolu Agency",
-      "kind": "media",
-      "url": "https://www.aa.com.tr/en/economy/global-economy-to-grow-31-in-2026-amid-severe-middle-east-contractions-imf-forecasts/4086834",
-      "publishedAt": "2026-10-13T07:11:09.000Z",
-      "titleOriginal": "Global economy to grow 3.1% in 2026 amid severe Middle East contractions, IMF forecasts",
-      "titleTr": "IMF: Küresel ekonomi 2026'da yüzde 3,1 büyüyecek",
-      "summaryTr": "IMF, küresel ekonominin 2026'da yüzde 3,1 büyümesini bekliyor. En sert aşağı yönlü revizyon, büyüme tahmini eksi yüzde 0,3'e düşürülen Orta Doğu ve Orta Asya bölgesinde yapıldı.",
-      "titleEn": "IMF: Global economy to grow 3.1% in 2026",
-      "summaryEn": "The IMF forecasts global growth of 3.1% in 2026. The sharpest downgrades hit the Middle East and Central Asia, where the growth forecast was cut to minus 0.3%.",
-      "important": false,
-      "processedAt": "2026-10-13T09:43:11.201Z"
-    },
-    {
-      "id": "ce091357b317",
-      "sourceKey": "aa-economy",
-      "sourceName": "Anadolu Agency",
-      "kind": "media",
-      "url": "https://www.aa.com.tr/en/europe/germanys-inflation-hits-33-in-september-highest-since-2023/4086832",
-      "publishedAt": "2026-10-13T07:11:02.000Z",
-      "titleOriginal": "Germany's inflation hits 3.3% in September, highest since 2023",
-      "titleTr": "Almanya'da enflasyon Eylül'de yüzde 3,3 ile 2023'ten bu yana en yüksekte",
-      "summaryTr": "Almanya'da enflasyon Eylül'de yüzde 3,3'e çıkarak 2026'nın en yüksek seviyesine ulaştı. İstatistik Kurumu başkanı artışın enerji fiyatlarından kaynaklandığını söyledi.",
-      "titleEn": "Germany's inflation hits 3.3% in September, highest since 2023",
-      "summaryEn": "German inflation rose to 3.3% in September, the highest reading of 2026. The head of the statistical office said energy prices drove the increase.",
-      "important": false,
-      "processedAt": "2026-10-13T09:43:11.201Z"
     }
   ],
   "rejected": {
@@ -4965,6 +4935,7 @@
     "0a86d76e5671": "2026-11-12",
     "d8f3c0f5d91c": "2026-11-12",
     "8f6168e9af31": "2026-11-12",
-    "c4dea867b796": "2026-11-12"
+    "c4dea867b796": "2026-11-12",
+    "c68137efe13d": "2026-11-12"
   }
 }
