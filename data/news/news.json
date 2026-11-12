@@ -1,5 +1,5 @@
 {
-  "fetchedAt": "2026-11-12T09:02:11.916Z",
+  "fetchedAt": "2026-11-12T09:32:05.827Z",
   "items": [
     {
       "id": "cf79854e76ac",
@@ -60,6 +60,21 @@
       "summaryEn": "Turkish Finance Minister Şimşek said they signed 10 agreements worth a total of $5.1 billion with the Asian Development Bank, the Asian Infrastructure Investment Bank, the World Bank and the Islamic Development Bank.",
       "important": true,
       "processedAt": "2026-11-12T07:02:00.024Z"
+    },
+    {
+      "id": "671e98d300b2",
+      "sourceKey": "aa-ekonomi",
+      "sourceName": "Anadolu Ajansı",
+      "kind": "media",
+      "url": "https://www.aa.com.tr/tr/ekonomi/turkiye-ile-kalkinma-bankalari-arasinda-cop31de-5-1-milyar-dolarlik-anlasma/4121700",
+      "publishedAt": "2026-11-12T06:47:49.000Z",
+      "titleOriginal": "Türkiye ile kalkınma bankaları arasında COP31'de 5,1 milyar dolarlık anlaşma",
+      "titleTr": "Türkiye ile kalkınma bankaları arasında COP31'de 5,1 milyar dolarlık anlaşma",
+      "summaryTr": "Türkiye ile çok taraflı kalkınma bankaları arasında COP31'de 5,1 milyar dolarlık anlaşmalar imzalandı. Hazine ve Maliye Bakanı Şimşek, daha yeşil ve dayanıklı bir ekonomi inşa ettiklerini söyledi.",
+      "titleEn": "Turkey signs $5.1 billion deals with development banks at COP31",
+      "summaryEn": "Turkey and multilateral development banks signed agreements worth $5.1 billion at COP31. Treasury and Finance Minister Şimşek said Turkey is building a greener and more resilient economy.",
+      "important": false,
+      "processedAt": "2026-11-12T09:32:05.827Z"
     },
     {
       "id": "eab67047fe15",
@@ -4863,21 +4878,6 @@
       "summaryEn": "Worldpanel by Numerator data show supermarket prices were 2.5% higher year on year in the four weeks to 4 October, up from 2.3% a month earlier. Shoppers are turning to special offers to keep bills down.",
       "important": false,
       "processedAt": "2026-10-14T01:01:44.874Z"
-    },
-    {
-      "id": "2c2be5433c36",
-      "sourceKey": "aa-ekonomi",
-      "sourceName": "Anadolu Ajansı",
-      "kind": "media",
-      "url": "https://www.aa.com.tr/tr/ekonomi/dolar-endeksi-son-18-ayin-zirvesinde-/4087061",
-      "publishedAt": "2026-10-13T09:22:53.000Z",
-      "titleOriginal": "Dolar endeksi son 18 ayın zirvesinde",
-      "titleTr": "Dolar endeksi son 18 ayın zirvesinde",
-      "summaryTr": "Dolar endeksi 102,6'ya çıkarak Nisan 2025'ten bu yana en yüksek seviyeyi gördü. Anadolu Ajansı'na göre yükselişte Orta Doğu'daki jeopolitik riskler, Fed'in faiz artırabileceği beklentisi ve avrodaki zayıflama etkili oldu.",
-      "titleEn": "Dollar index at its highest in 18 months",
-      "summaryEn": "The dollar index climbed to 102.6, its highest since April 2025. Anadolu Agency attributes the rise to Middle East geopolitical risks, expectations that the Fed could raise rates, and a weaker euro.",
-      "important": false,
-      "processedAt": "2026-10-13T09:43:11.201Z"
     }
   ],
   "rejected": {
