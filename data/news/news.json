@@ -1,6 +1,21 @@
 {
-  "fetchedAt": "2026-11-12T02:50:36.217Z",
+  "fetchedAt": "2026-11-12T04:02:01.164Z",
   "items": [
+    {
+      "id": "916ef8f8d2c0",
+      "sourceKey": "aa-ekonomi",
+      "sourceName": "Anadolu Ajansı",
+      "kind": "media",
+      "url": "https://www.aa.com.tr/tr/ekonomi/abdde-faiz-artisi-beklentileri-gayrimenkul-hisselerini-baskiladi/4121582",
+      "publishedAt": "2026-11-12T03:29:05.000Z",
+      "titleOriginal": "ABD'de faiz artışı beklentileri gayrimenkul hisselerini baskıladı",
+      "titleTr": "ABD'de faiz artışı beklentileri gayrimenkul hisselerini baskıladı",
+      "summaryTr": "ABD'de enflasyonun hızlanması, Fed'in faiz artırabileceği beklentilerini güçlendirdi. Bu beklenti ve 10 yıllık tahvil faizindeki yükseliş, gayrimenkul ve konut inşaat hisselerinde satışa yol açtı.",
+      "titleEn": "US rate hike expectations weigh on real estate stocks",
+      "summaryEn": "Faster US inflation strengthened expectations that the Fed could raise rates. Together with a rise in the 10-year Treasury yield, this triggered selling in real estate and homebuilder shares.",
+      "important": true,
+      "processedAt": "2026-11-12T04:02:01.164Z"
+    },
     {
       "id": "6855ac6caaac",
       "sourceKey": "boj",
@@ -4845,21 +4860,6 @@
       "summaryTr": "IMF, devlet tahvili piyasasındaki risklerin kötüleştiğini ve getirilerin sert ve düzensiz biçimde yükselebileceğini belirtti. Uyarı borç ve enflasyon risklerine dayandırılıyor.",
       "titleEn": "IMF warns of 'disorderly' spike in bond yields",
       "summaryEn": "The IMF said risks in the government bond market have worsened and yields could jump sharply and disorderly. It cited growing debt and inflation risks.",
-      "important": false,
-      "processedAt": "2026-10-13T09:43:11.201Z"
-    },
-    {
-      "id": "bed62e820d1d",
-      "sourceKey": "ft",
-      "sourceName": "Financial Times",
-      "kind": "media",
-      "url": "https://www.ft.com/content/6fa735a2-a590-4461-b092-920ba489e7a8?syn-25a6b1a6=1",
-      "publishedAt": "2026-10-13T04:00:28.000Z",
-      "titleOriginal": "Investors brave US Treasury rout to lock in highest yields in decades",
-      "titleTr": "Yatırımcılar ABD tahvilindeki satışa rağmen onlarca yılın en yüksek getirisine yöneliyor",
-      "summaryTr": "Financial Times'a göre ABD Hazine tahvillerinde satış yaşanırken borçlanma maliyetleri onlarca yılın en yüksek seviyesinde. Devlet tahvili fonları rekor girişler alıyor.",
-      "titleEn": "Investors brave US Treasury rout to lock in highest yields in decades",
-      "summaryEn": "The Financial Times reports that US Treasuries are selling off while borrowing costs sit at their highest in decades. Government bond funds are drawing record inflows.",
       "important": false,
       "processedAt": "2026-10-13T09:43:11.201Z"
     }
