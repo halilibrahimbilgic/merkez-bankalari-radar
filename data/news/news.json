@@ -1,6 +1,51 @@
 {
-  "fetchedAt": "2026-11-12T06:02:07.032Z",
+  "fetchedAt": "2026-11-12T07:02:00.024Z",
   "items": [
+    {
+      "id": "731345fd8340",
+      "sourceKey": "aa-economy",
+      "sourceName": "Anadolu Agency",
+      "kind": "media",
+      "url": "https://www.aa.com.tr/en/economy/japanese-yen-weakens-to-over-2-month-low-on-firm-dollar/4121701",
+      "publishedAt": "2026-11-12T06:47:55.000Z",
+      "titleOriginal": "Japanese yen weakens to over 2-month low on firm dollar",
+      "titleTr": "Yen, güçlü dolar karşısında 2 ayın en düşüğüne geriledi",
+      "summaryTr": "Yen, dolar başına 160 eşiğine yaklaştı. Haberde, Fed'in faiz artırımı beklentilerinin ABD-Japonya politika farkını açtığı belirtiliyor.",
+      "titleEn": "Japanese yen weakens to over 2-month low on firm dollar",
+      "summaryEn": "The yen is edging toward the 160-per-dollar threshold. The report says bets on a Fed rate hike are widening the US-Japan policy gap.",
+      "important": true,
+      "processedAt": "2026-11-12T07:02:00.024Z"
+    },
+    {
+      "id": "ce446c212540",
+      "sourceKey": "aa-ekonomi",
+      "sourceName": "Anadolu Ajansı",
+      "kind": "media",
+      "url": "https://www.aa.com.tr/tr/ekonomi/bakan-simsek-5-1-milyar-dolar-degerinde-10-anlasmaya-imza-attik/4121700",
+      "publishedAt": "2026-11-12T06:47:49.000Z",
+      "titleOriginal": "Bakan Şimşek: 5,1 milyar dolar değerinde 10 anlaşmaya imza attık",
+      "titleTr": "Şimşek: Çok taraflı kalkınma bankalarıyla 5,1 milyar dolarlık 10 anlaşma imzalandı",
+      "summaryTr": "Maliye Bakanı Şimşek, Asya Kalkınma Bankası, Asya Altyapı Yatırım Bankası, Dünya Bankası ve İslam Kalkınma Bankası ile toplam 5,1 milyar dolar değerinde 10 anlaşma imzaladıklarını söyledi.",
+      "titleEn": "Şimşek: 10 agreements worth $5.1 billion signed with development banks",
+      "summaryEn": "Turkish Finance Minister Şimşek said they signed 10 agreements worth a total of $5.1 billion with the Asian Development Bank, the Asian Infrastructure Investment Bank, the World Bank and the Islamic Development Bank.",
+      "important": true,
+      "processedAt": "2026-11-12T07:02:00.024Z"
+    },
+    {
+      "id": "18e87581af40",
+      "sourceKey": "aa-economy",
+      "sourceName": "Anadolu Agency",
+      "kind": "media",
+      "url": "https://www.aa.com.tr/en/economy/gold-slips-below-4-000-as-strong-dollar-rate-hike-bets-weigh/4121684",
+      "publishedAt": "2026-11-12T06:25:42.000Z",
+      "titleOriginal": "Gold slips below $4,000 as strong dollar, rate-hike bets weigh",
+      "titleTr": "Altın güçlü dolar ve faiz artırımı beklentileriyle 4.000 doların altına indi",
+      "summaryTr": "Külçe altın, ABD'de enflasyon verisinin beklentilerden güçlü gelmesi ve Fed yetkililerinin şahin açıklamalarının doları 19 ayın zirvesine taşımasıyla bir haftanın en düşük seviyesine geriledi.",
+      "titleEn": "Gold slips below $4,000 as strong dollar, rate-hike bets weigh",
+      "summaryEn": "Bullion fell to over a one-week low after stronger US inflation data and hawkish Fed comments lifted the dollar to a 19-month peak.",
+      "important": true,
+      "processedAt": "2026-11-12T07:02:00.024Z"
+    },
     {
       "id": "916ef8f8d2c0",
       "sourceKey": "aa-ekonomi",
