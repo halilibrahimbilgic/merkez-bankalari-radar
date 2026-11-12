@@ -1,6 +1,36 @@
 {
-  "fetchedAt": "2026-11-12T08:01:59.527Z",
+  "fetchedAt": "2026-11-12T08:32:07.200Z",
   "items": [
+    {
+      "id": "cf79854e76ac",
+      "sourceKey": "aa-ekonomi",
+      "sourceName": "Anadolu Ajansı",
+      "kind": "media",
+      "url": "https://www.aa.com.tr/tr/ekonomi/cin-guclu-yuana-ragmen-ihracatta-rekabet-avantajini-koruyor/4121928",
+      "publishedAt": "2026-11-12T08:14:11.000Z",
+      "titleOriginal": "Çin güçlü yuana rağmen ihracatta rekabet avantajını koruyor",
+      "titleTr": "Çin güçlü yuana rağmen ihracatta rekabet gücünü koruyor",
+      "summaryTr": "Anadolu Ajansı'na göre Çin Merkez Bankasının (PBoC) kurdaki yükselişi sınırlayan politikaları ve ihracatın yapısındaki değişim, güçlü yuanın dış satıma olumsuz etkisini hafifletiyor.",
+      "titleEn": "China keeps export competitiveness despite strong yuan",
+      "summaryEn": "According to Anadolu Agency, the PBoC's policies limiting the yuan's rise and a shift in the structure of exports are softening the negative impact of a strong yuan on exports.",
+      "important": false,
+      "processedAt": "2026-11-12T08:32:07.200Z"
+    },
+    {
+      "id": "474fef37f209",
+      "sourceKey": "aa-ekonomi",
+      "sourceName": "Anadolu Ajansı",
+      "kind": "media",
+      "url": "https://www.aa.com.tr/tr/ekonomi/tcmb-baskani-karahan-yil-sonu-enflasyon-tahminimizi-yuzde-29-5-olarak-yukari-yonlu-guncelledik/4121874",
+      "publishedAt": "2026-11-12T08:00:43.000Z",
+      "titleOriginal": "TCMB Başkanı Karahan: Yıl sonu enflasyon tahminimizi yüzde 29,5 olarak yukarı yönlü güncelledik",
+      "titleTr": "TCMB Başkanı Karahan: Yıl sonu enflasyon tahmini yüzde 29,5'e yükseltildi",
+      "summaryTr": "TCMB Başkanı Karahan, 2026 yıl sonu enflasyon tahminini yüzde 29,5 olarak yukarı yönlü güncellediklerini söyledi.",
+      "titleEn": "CBRT Governor Karahan: Year-end inflation forecast raised to 29.5%",
+      "summaryEn": "CBRT Governor Karahan said the bank revised its 2026 year-end inflation forecast upward to 29.5%.",
+      "important": true,
+      "processedAt": "2026-11-12T08:32:07.200Z"
+    },
     {
       "id": "731345fd8340",
       "sourceKey": "aa-economy",
