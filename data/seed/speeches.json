@@ -1,6 +1,74 @@
 {
-  "fetchedAt": "2026-11-11T05:02:45.135Z",
+  "fetchedAt": "2026-11-12T13:31:29.929Z",
   "speeches": [
+    {
+      "id": "20261112-economic-outlook-and-some-thoughts-labor-market-dynamism",
+      "contextEn": "Speech by Mr Christopher J Waller, Member of the Board of Governors of the Federal Reserve System, at the Bank of England Watchers Conference, hosted by King’s Business School and Money, Macro and Finance Society, London, 10 November 2026.",
+      "textLicense": "frb-public-domain",
+      "bankCode": "fed",
+      "speakerName": "Christopher J Waller",
+      "title": "The economic outlook and some thoughts on labor market dynamism",
+      "speechDate": "2026-11-12",
+      "sourceUrl": "https://www.bis.org/speeches/20261112-economic-outlook-and-some-thoughts-labor-market-dynamism"
+    },
+    {
+      "id": "20261112-low-gear-labour-market",
+      "contextEn": "Speech by Ms Clare Lombardelli, Deputy Governor for Monetary Policy of the Bank of England, at the Bank of England Watchers Conference, hosted by King’s Business School and Money, Macro and Finance Society, London, 10 November 2026.",
+      "bankCode": "boe",
+      "speakerName": "Clare Lombardelli",
+      "title": "The low-gear labour market",
+      "speechDate": "2026-11-12",
+      "sourceUrl": "https://www.bis.org/speeches/20261112-low-gear-labour-market"
+    },
+    {
+      "id": "20261112-cash-and-digital-euro-two-sides-same-coin",
+      "contextEn": "Introductory statement by Mr Piero Cipollone, Member of the Executive Board of the European Central Bank, at the Committee on Economic and Monetary Affairs of the European Parliament, Brussels, 10 November 2026.",
+      "textLicense": "ecb",
+      "bankCode": "ecb",
+      "speakerName": "Piero Cipollone",
+      "title": "Cash and the digital euro - two sides of the same coin",
+      "speechDate": "2026-11-12",
+      "sourceUrl": "https://www.bis.org/speeches/20261112-cash-and-digital-euro-two-sides-same-coin"
+    },
+    {
+      "id": "20261112-central-bank-independence-todays-world",
+      "contextEn": "Speech by Mr Andrew Bailey, Governor of the Bank of England, at the Swiss Institute of International Studies (SIAF) Lecture Series, Zurich University, Zurich, 9 November 2026.",
+      "bankCode": "boe",
+      "speakerName": "Andrew Bailey",
+      "title": "Central bank independence in today’s world",
+      "speechDate": "2026-11-12",
+      "sourceUrl": "https://www.bis.org/speeches/20261112-central-bank-independence-todays-world"
+    },
+    {
+      "id": "20261112-us-economy-and-considerations-monetary-policy",
+      "contextEn": "Speech by Ms Michelle W Bowman, Vice Chair for Supervision of the Board of Governors of the Federal Reserve System, at the C Peter McColough Series on International Economics Council on Foreign Relations, Washington DC, 10 November 2026.",
+      "textLicense": "frb-public-domain",
+      "bankCode": "fed",
+      "speakerName": "Michelle W Bowman",
+      "title": "The US economy and considerations for monetary policy",
+      "speechDate": "2026-11-12",
+      "sourceUrl": "https://www.bis.org/speeches/20261112-us-economy-and-considerations-monetary-policy"
+    },
+    {
+      "id": "20261112-japans-current-account-surplus-and-corporate-adjustment",
+      "contextEn": "Speech by Mr Kazuo Ueda, Governor of the Bank of Japan, at the 2026 Michel Camdessus Central Banking Lecture, International Monetary Fund, Washington DC, 6 November 2026.",
+      "textLicense": "boj",
+      "bankCode": "boj",
+      "speakerName": "Kazuo Ueda",
+      "title": "Japan's current account surplus and corporate adjustment",
+      "speechDate": "2026-11-12",
+      "sourceUrl": "https://www.bis.org/speeches/20261112-japans-current-account-surplus-and-corporate-adjustment"
+    },
+    {
+      "id": "20261112-science-and-practice-monetary-policy-communication-european-central-bank-experience",
+      "contextEn": "Keynote speech by Philip R Lane, Member of the Executive Board of the European Central Bank, at the Bank of England Watchers Conference, hosted by King’s Business School and Money, Macro and Finance Society, London, 10 November 2026.",
+      "textLicense": "ecb",
+      "bankCode": "ecb",
+      "speakerName": "Philip R Lane",
+      "title": "The science and practice of monetary policy communication - the European Central Bank experience",
+      "speechDate": "2026-11-12",
+      "sourceUrl": "https://www.bis.org/speeches/20261112-science-and-practice-monetary-policy-communication-european-central-bank-experience"
+    },
     {
       "id": "20261110-welcome-address-fourth-women-central-banking-workshop",
       "contextEn": "Welcome address by Ms Victoria Rodríguez Ceja, Governor of Bank of Mexico, at the Fourth Women in Central Banking Workshop, organised by Bank of Mexico, the Federal Reserve Bank of Dallas, Norges Bank (Central Bank of Norway) and Bank of Italy, Mexico City, 6 November 2026.",

@@ -1,0 +1,921 @@
+SPEECH
+The science and practice of monetary policy
+communication: the ECB experience
+Keynote speech by Philip R. Lane, Member of the Executive Board
+of the ECB, at the Bank of England and its Watchers Conference
+London, 10 November 2026
+Monetary policy is about more than just the latest interest rate decision. It also involves communication
+about future economic developments and the factors shaping future policy decisions.[ ] By steering the
+expectations of financial market participants, central bank communication shapes the full set of
+financial market prices across the maturity and risk spectrums, in turn affecting financing conditions and
+decisions around credit, saving and investment. The decisions of households and firms are also
+affected by their beliefs about monetary policy, which depend on how the central bank communicates.
+[ ]
+I will divide this speech into two parts. In the first part, I will review recent contributions by ECB staff on
+the science of monetary policy communication.[ ] In the second part, I will discuss the practice of
+monetary policy communication from an ECB perspective.
+The science of monetary policy communication
+Greater data availability, increased computing power and artificial intelligence have substantially
+expanded the tools available for analysing central bank communication. Until recently, researchers
+relied on dictionary-based approaches to quantify the content and tone of monetary policy statements
+and speeches. This involved categorising specific words and expressions associated with a restrictive
+or accommodative stance, or with different assessments of inflation and the economic outlook.[ ]
+Machine learning techniques and large language models (LLMs) now allow for the extensive analysis of
+large volumes of text in a more automated manner, taking into account the context in which words are
+used instead of relying solely on the frequency of individual words or predefined expressions.[ ]
+Recent ECB research illustrates these possibilities. A set of novel, LLM-based in-house measures of
+the tone of ECB monetary policy communication confirms that it becomes more hawkish during
+tightening phases and more dovish during easing periods. These shifts in communication closely track
+developments in the deposit facility rate (Chart 1, panel a).[ ] The importance of communication is also
+illustrated by the research finding that information extracted from ECB monetary policy statements can
+improve forecasts of euro area core inflation several quarters ahead, even when controlling for the
+contributions of Eurosystem and ECB staff projections.[ ]
+These indicators can also be employed to test whether central bank communication follows systematic
+patterns that reflect the economic outlook and the policy stance. Indeed, the evidence suggests that
+1
+2
+3
+4
+5
+6
+7
+central banks tend to communicate in a systematic manner, following “communication rules”.[ ] By
+estimating a systematic relationship between the tone of communication on monetary policy, economic
+activity and inflation, ECB staff find that, in line with our primary objective of price stability, ECB
+communication on monetary policy systematically places more emphasis on inflation developments
+(Chart 1, panel b).
+These new tools therefore provide valuable insights into aspects of communication that conventional
+financial market indicators may not fully capture. At the same time, their use requires careful validation,
+since the results depend on how questions are formulated and what data are used for training.[ ]
+8
+9
+Financial markets
+Financial market participants closely follow central bank communication because it provides information
+about both the economic and inflation outlook and the expected path of monetary policy. Both of these
+dimensions are relevant for asset pricing and investment decisions.
+Central bank communication can influence interest rate expectations and financial conditions,
+independently from actual policy changes.[ ] Research shows that financial analysts reassess the
+Chart 1
+Evolution of ECB communication tone and “Taylor-type” communication rule weights
+Source: ECB staff calculations.
+Notes: Panel a): sentiment scores across three communication dimensions (left-hand scale) and the DFR (right-
+hand scale). “Monetary policy” captures the tone of communication surrounding policy decisions, “economic
+activity” reflects assessments of economic developments and “inflation” captures signals related to price
+developments. A score of zero indicates a neutral tone, while positive and negative values indicate hawkish and
+dovish tones, respectively. Sentiment scores are calculated as moving averages of the scores for the most recent
+30 texts. The sample period is 14 January 2001 to 26 October 2026.
+Panel b): regression coefficients for a model regressing the de-meaned values of the monetary policy tone on the
+de-meaned inflation and economic activity tones, using the tone as measured at the ECB Governing Council
+meeting, with the inflation and economic weights constrained to sum to one. Whiskers show 95%
+heteroscedasticity and autocorrelation-consistent confidence intervals. The sample period is 1 January 2001 to 13
+August 2026.
+a) LLM-based sentiment scores
+and the deposit facility rate (DFR)
+b) estimated communication rules
+linking tone on monetary policy
+with tone on inflation and
+economic activity
+(left-hand side: scoring points (neutral is 0, hawkish is
+above 0, dovish is below 0); right-hand side: deposit
+facility rate (percentages))
+(standardised regression coefficients)
+10
+monetary policy stance following ECB Governing Council announcements, considering both the policy
+decision and the accompanying communication. Unexpected revisions in their assessment contain
+information beyond conventional market-based monetary policy surprises and are associated with
+significant effects on economic and financial conditions. For instance, even when an interest rate
+decision is widely anticipated and generates little immediate market reaction, the accompanying
+communication may lead market analysts to reassess how restrictive is monetary policy or how it is
+likely to evolve.[ ]11
+Chart 2
+Communication moves financial markets
+Cumulated absolute high-frequency changes in risk-free rates by event
+type
+(basis points)
+Source: Akkaya, Y., Bitter, L., Grasso, A. and Amorim Cabaco, B. (2025), “
+”, Economic Bulletin, Issue 1, ECB.
+Notes: Cumulated absolute high-frequency changes (with mean absolute changes in brackets) for a range of risk-
+free and sovereign yields across event types, computed using data from January 2004 to October 2023. The high-
+frequency window around the different event types is as follows: -10 minutes to +20 minutes around publication of
+the monetary policy press release; -10 minutes to +75 minutes around the start of the Governing Council’s press
+conference; -10 minutes to +50 minutes around the publication of the account of the Governing Council’s monetary
+policy meeting; -10 minutes to +80 minutes around the publication of the Monthly/Economic Bulletin; -10 minutes to
++60 minutes around the publication of speeches other than statements to the European Parliament; and -10
+minutes to +10 minutes around the publication of Bloomberg headlines. “OIS” stands for overnight index swap.
+From press conferences to
+speeches: the impact of the ECB’s monetary policy communication
+The importance of communication extends beyond Governing Council meetings. Research examining
+thousands of speeches, interviews, hearings and other events shows that communication in the time
+period between meetings can affect market interest rates across maturities. It can help markets
+anticipate policy changes, particularly ahead of tightening episodes, and its cumulative effect over time
+can be comparable to that of policy announcements, especially at longer maturities (Chart 2).[ ]
+Beyond shaping expectations about the future path of policy rates, communication also affects financial
+conditions more broadly. The tone of ECB communication can influence monetary policy uncertainty
+and premia on risky assets.[ ] In particular, financial markets respond to several dimensions of
+monetary policy news: the current policy rate, the expected path of rates, and market and sovereign
+risk (“target”, “path”, and “risk” in Chart 3, respectively).
+Households and firms
+Communicating with households and firms presents different challenges to communicating with
+markets. Unlike professional market participants, most households do not closely follow central bank
+communication. And even when they do encounter central bank messages, they may interpret their
+implications differently to market analysts. Research presented in our 2021 monetary policy strategy
+review suggests that information about the new inflation target reached only around one in ten
+12
+13
+Chart 3
+Monetary policy news from selected ECB Governing Council meetings
+(standard deviations)
+Jul-22
+Oct-22
+Dec-22
+Mar-23
+May-23
+Jun-23
+Jul-23
+Sep-23-8
+-6
+-4
+-2
+0
+2
+4
+6
+8
+Meeting-by-meeting
+approach
+Reaction function
+framework
+Jun-26
+Jul-26
+Sep-26
+Oct-26 -2
+-1.5
+-1
+-0.5
+0
+0.5
+1
+1.5
+2
+2026
+Path Risk Target Interest rate uncertainty (right-hand scale)
+Sources: Bloomberg and ECB calculations.
+Notes: The model decomposes movements in overnight index swaps (one, three and six months; one, two, five
+and ten years), ten-year sovereign yields (DE, FR, IT and ES), a set of risky assets (Eurostoxx 50, Eurostoxx
+Banks, Eurostoxx VSTOXX) and the EUR/USD exchange rate into three factors: interest rate target, path and risk.
+Average interest rate uncertainty is based on the option-implied standard deviation of the three-month Euribor one
+year ahead. The latest observations are for 29 October 2026.
+consumers in the months following its announcement. Most learned about the new inflation target
+through television, radio and newspapers rather than directly from the ECB (Chart 4).[ ]
+Reaching households, however, is just one part of the process. Attention to inflation varies with the
+economic environment. When inflation is high, households and firms tend to pay more attention, while
+they pay less attention when inflation is low and stable (Chart 5).[ ] This matters for the transmission of
+monetary policy. What households and firms believe about future inflation, and how confident they are
+that the central bank will deliver price stability, shapes how they set wages and prices and how they
+adjust their spending and saving when we change interest rates.[ ]
+When inflation is high, households tend to be more attentive, but they may also be less responsive to
+information they already know. This underscores the importance of tailoring communication to the
+economic environment to ensure that messages reach households when inflation is low while providing
+clear, relevant and informative explanations when inflation becomes more salient.[ ]
+14
+Chart 4
+How ECB communication reaches households
+Consumer Expectations Survey responses on channels for information
+about ECB
+(percentage shares of all respondents)
+0
+5
+10
+15
+20
+25
+30
+35
+40
+45
+50
+No info TV and radio Newspaper
+and
+magazines
+Other websites
+and
+social media
+ECB website /
+publications
+ECB social
+media
+accounts
+Other sources
+Source: Ehrmann, M., Georgarakos, D. and Kenny, G. (2025), “
+”, European Economic Review, Vol. 177, No 105069.
+Notes: Responses to the question “In the past two months, have you seen or heard information about the
+European Central Bank (ECB) from any of the following sources?”. The figure reports the percentage share of all
+respondents, by answer category. Apart from “No info”, all other options are not mutually exclusive, leading to a
+total sum higher than 100 per cent of the respondents. Weighted estimates. The last observation is for August
+2026 (most recent Consumer Expectations Survey).
+Credibility gains from central bank
+communication with the public
+15
+16
+17
+Households typically interpret monetary policy in terms of how it directly affects their economic
+circumstances. Euro area consumers tend to associate monetary policy primarily with borrowing costs
+rather than directly with inflation. Those who emphasise the borrowing-cost channel may also respond
+more strongly to a rate rise in their planned spending decisions.[ ]
+The expectations of firms are also important for monetary policy transmission. Their views about future
+inflation influence pricing, wage-setting and investment decisions, and ultimately the evolution of
+inflation itself. Recent evidence shows that attention paid by firms to inflation varies considerably over
+time, increasing when inflationary pressures become more pronounced (Chart 5, panel b).
+18
+Macroeconomic impact of monetary policy communication
+Unexpected shifts in monetary policy communication (“communication shocks”) can influence activity
+and inflation. Relative to the impact of those of unexpected interest rate decisions (“interest rate
+shocks”), the effects of “communication shocks” tend to be smaller and slower to materialise but can
+nevertheless be significant (Chart 6).[ ]
+Chart 5
+Inflation attention of households and firms
+Panel a: Source:, see Chart B in Aarab, I., Bańbura, M., Bobeica, E. and Leguay, E. (2025), “
+”, Economic Bulletin, Issue 6, ECB.
+Notes: Inflation attention in the news is calculated using the 28-day moving average of the daily index. Inflation
+perceptions and inflation expectations show the mean rate reported in the ECB Consumer Expectations Survey’s
+responses with solid lines, and the median rate with dotted lines. The latest observations are September 2026 for
+inflation attention in the news and HICP inflation, and August 2025 for inflation perceptions over the last 12 months
+and inflation expectations one year ahead.
+Panel b: Source: Battistini, N. and Trebbi, G. (2026), “
+”, The ECB Blog, ECB, 29 July.
+Notes: Firms’ attention to inflation is the three-month moving average of the cross-sectional average number of NL
+Analytics earnings-call sentences mentioning inflation keywords. Firms’ attention to inflation risk is the three-month
+moving average of the cross-sectional average number of NL Analytics earnings-call sentences mentioning
+inflation keywords as well as risk or uncertainty-related language.
+a) Household inflation attention,
+perceptions and expectations
+b) Firms’ attention to inflation and
+inflation risks
+(index of relative number of articles (left scale); annual
+percentage changes (right scale))
+(cross-sectional average of sentences mentioning
+inflation keywords, three-month moving average)
+0
+2
+4
+6
+8
+10
+12
+0
+100
+200
+300
+400
+500
+600
+2021 2022 2023 2024 2025 2026
+Inflation attention in the news
+Inflation perceptions over the last 12 months - mean/median (right scale)
+Inflation expectations one year ahead - mean/median (right scale)
+2% inflation target (right scale)
+HICP inflation (right scale)
+-0.02
+0.04
+0.1
+0.16
+0.22
+0.28
+0.34
+0.4
+-2
+0
+2
+4
+6
+8
+10
+12
+2019 2020 2021 2022 2023 2024 2025 2026
+HICP Inflation
+Firms' attention to inflation
+Firms' attention to inflation risk (right scale)
+Monitoring attention
+to inflation in the news
+Demand or supply-driven? How firms view inflation
+right now
+19
+It is also important to recognise that monetary policy announcements convey different types of
+information. Markets respond not only to the decision, but also to what it reveals about the assessment
+of the economy. A surprise rate rise may signal tighter policy, but it may also lead markets to reassess
+the strength of activity or the persistence of inflation. Research has developed methods to separate
+policy surprises from the so-called central bank information effects, and more recently from surprises
+about how the central bank responds to publicly available news. These distinctions are important in
+Chart 6
+Euro area macroeconomic effects of ECB communication and interest rate shocks
+Impulse responses to interest rate and large language model based
+ECB communication shocks
+(percentage)
+Source: ECB staff calculations.
+Notes: Impulse responses of industrial production and the HICP to both tightening policy rate and communication
+shocks, estimated using local projections (LP). ECB communication shocks derived from large language model
+(LLM)-based sentiment indicators in Chart 1 using a two-step procedure following Gebauer, McGregor and
+Schumacher (2024). First, changes in the policy tone are regressed on activity and inflation tones measured during
+the same meeting by the LLM, and inter-meeting ECB communication derived from LLM-based assessments of
+speeches and interviews. Second, shocks are restricted to tone changes moving inversely with equity prices at
+high frequency during the policy announcement and press conference window, following Jarociński and Karadi
+(2020). The control variables in the LP taking up these shocks include three lags of the respective response
+variables, the euro area unemployment rate, the ECB’s Composite Indicator of Systemic Stress (CISS) in financial
+markets, the commodity price index (all in log levels), the 3-month overnight index swap (OIS) rate, a 10-year
+GDP-weighted synthetic sovereign bond yield, and the USD/EUR exchange rate. Each model additionally controls
+for the “central bank information shocks” derived by Jarociński and Karadi (2020), as well as the communication
+(rate) shock in the regressions for the rate (communication) shocks. Three lags of the respective shock are also
+included. Forward dummies (entering at the t+h horizon) for the pandemic and the war in Ukraine are added
+(pandemic period: March 2020 to December 2021, Ukraine war period: since March 2022). Both communication
+and policy rate shocks are standardised so that each shock results in a 25 basis point increase in the 3-month OIS
+at peak. Shaded areas denote 68% confidence intervals. The estimation sample is from 2002-25.
+order to assess accurately the effects of monetary policy communication.[ ] Recent research shows
+that these channels are distinct and can be identified together, which sharpens estimates of how policy
+affects the economy.[ ]
+For the ECB, research finds that estimated monetary policy surprises on meeting days – the
+movements in interest rates in a narrow window around the announcement – are partially inferable from
+euro area equity market changes over the six weeks preceding the meeting.[ ] Market reactions to
+speeches, by contrast, show no such pattern.[ ] Information conveyed by ECB announcements also
+travels across borders. The evidence suggests that it accounts for an important part of the co-
+movement of German and US government bond yields around ECB announcement days.[ ]
+ECB staff have also analysed the implications of uncertainty for monetary policy communication. When
+economic conditions are changing rapidly, it may be preferable to place greater emphasis on the
+current state of the economy than on precise indications about the distant future.[ ] The appropriate
+degree of precision also depends on how confident policymakers are in their forecasts and how that
+confidence is perceived.[ ] Moreover, how policymakers express confidence in their assessment – or
+acknowledge developments that differ from expectations – can itself be informative about the policy
+stance.[ ]
+Trust and credibility
+Finally, economic agents need to not only clearly understand central bank messages but also trust that
+the words will be followed by action. Explaining why the ECB’s inflation target matters for economic
+stability can strengthen public confidence in our commitment to keep prices stable. Such explanations
+are particularly effective among people with lower financial literacy, as they can help them understand
+how monetary policy contributes to achieving the inflation target. The effects can persist for several
+months but tend to fade over time.[ ] Building and maintaining credibility therefore requires more than
+communicating individual decisions clearly. It requires explaining, consistently and repeatedly, why our
+objective matters and how our policies contribute to achieving it.[ ]
+The practice of monetary policy communication
+Having reviewed recent scientific research on monetary policy communication in the first part of this
+speech, I will now turn to a discussion of monetary policy communication in practice.
+Throughout its history, the ECB has adapted its communication content to changes in the economy, the
+instruments activated in setting the monetary policy stance and the nature of the uncertainty facing
+policymakers (Chart 7).
+20
+21
+22
+23
+24
+25
+26
+27
+28
+29
+Before the global financial crisis, ECB monetary policy communication focused on explaining decisions
+and making the underlying reaction function more predictable, without explicitly signalling an interest
+rate path.[ ] Since its inception, the ECB has held press conferences to accompany its policy
+decisions. The publication of staff macroeconomic projections from 2004 onwards provided further
+information about the outlook. Policy decisions were systematically related to the assessment of risks
+surrounding the projected inflation path, while communication between meetings could help markets
+anticipate turning points. For instance, the speech by ECB President Trichet on 18 November 2005
+ahead of the December 2005 interest rate increase helped prepare markets for the first interest rate
+increase in five years.[ ] Through these steps, news about the orientation of monetary policy
+influenced medium- and longer-term yields even before the era of explicit forward guidance.[ ]
+The global financial crisis and the euro area sovereign debt crisis fundamentally changed the
+environment. Amid severe financial stress, effective communication played an essential role in restoring
+confidence and supporting smooth monetary policy transmission. This was particularly evident in the
+Chart 7
+Evolution of topics discussed in ECB communication
+(percentage share of topic prevalence)
+Source: See Box 7, Chart A in Akkaya et al. (2025), “From press conferences to speeches: the impact of the ECB’s
+monetary policy communication”, Economic Bulletin, Issue 1, ECB
+Notes: The communication outlets considered in this chart include the press conferences following the Governing
+Council’s monetary policy meetings, related press releases, the accounts of the Governing Council’s monetary
+policy meetings and speeches given by the President of the ECB. The Monthly Bulletin and the Economic Bulletin
+publications are excluded, as the Monthly Bulletin is only available in PDF format, which makes it unsuitable for
+topical data filtering. The latest observation is for October 2026.
+30
+31
+32
+summer of 2012 due to rising financial fragmentation and elevated sovereign risk premia. The ECB's
+commitment to do “whatever it takes” to preserve the euro, followed by the announcement of the
+Outright Monetary Transactions (OMT) instrument, helped alleviate these concerns and contributed to a
+substantial decline in sovereign bond yields and narrowing spreads in the countries most affected by
+the crisis. This episode illustrates how communication backed by a clear policy commitment can
+safeguard smooth monetary policy transmission.[ ]
+As policy rates approached the effective lower bound, influencing expectations about future rates
+became all the more important. The ECB introduced explicit rate forward guidance in July 2013. By
+communicating on the future policy path, rate forward guidance sought to influence market
+expectations and financing conditions beyond the immediate policy horizon. Experience showed that
+design matters. Longer-horizon and state-contingent guidance can reduce uncertainty about future
+rates by clarifying the conditions under which policy may change.
+By contrast, short-horizon or open-ended guidance may be less effective and can even increase
+uncertainty if it leaves markets unsure about the central bank's future course of action.[ ] The
+interaction with other instruments matters as well. Asset purchases can reinforce the effectiveness of
+forward guidance, while clear information about the scale of purchase programmes can reduce
+uncertainty. However, linking the sequencing of asset purchases to interest rate decisions can also
+constrain policy flexibility when economic conditions change unexpectedly.
+As a result of the 2021 monetary policy strategy review, the Governing Council adopted the symmetric
+two per cent inflation target. At the following monetary policy meeting (July 2021), it revised its rate
+forward guidance by linking the expected policy path more explicitly to the inflation outlook and realised
+progress in underlying inflation. This reinforced the commitment to a forceful or persistent monetary
+policy response aimed at achieving the inflation target when inflation appeared at risk of undershooting
+the target.[ ] [ ]
+However, in the wake of the 2021-2022 inflation surge, the guidance that had been designed
+specifically for an environment of persistently below-target inflation was no longer appropriate. The
+period between July 2022 and March 2023 constituted an important transition phase. In July 2022 the
+Governing Council moved away from the effective lower bound by raising the policy rate from minus 50
+basis points to zero.[ ] In line with the 2021 strategy decision that the ECB key interest rates are the
+primary monetary policy instrument away from the effective lower bound, the monetary policy statement
+did not provide specific guidance on the expected future rate path. However, it did provide directional
+guidance, indicating that further rate normalisation would be appropriate at upcoming meetings, even if
+the exact calibration would be data-dependent and decided on a meeting-by-meeting basis. The
+following four meetings (September 2022 to February 2023) maintained directional guidance, with a
+pair of 75 basis point hikes followed by a pair of 50 basis point hikes.
+In addition, the February 2023 meeting articulated the intention to also hike by 50 basis points at the
+March meeting, which was subsequently implemented. However, having quickly raised the policy rate
+from -50 to 300 between July 2022 and March 2023, the March 2023 monetary policy statement
+replaced directional guidance with the reaction function guidance that future interest rate decisions
+would be based on the inflation outlook in light of incoming economic and financial data, underlying
+33
+34
+35 36
+37
+inflation dynamics and the strength of monetary policy transmission. These criteria would be assessed
+on a data-dependent, meeting-by-meeting basis. These elements of the reaction function remain in
+place. An explicit role for the risks surrounding the inflation outlook was added in July 2025: this
+reflected one implementation of the conclusion of the 2025 monetary policy strategy assessment that
+monetary policy decisions should explicitly incorporate this risk assessment.
+Although it turned out that the following four meetings would also deliver hikes (25 basis points at each
+meeting, bringing the policy rate to 400 basis points), there was a clear gear shift at the March 2023
+meeting. In essence, after a series of rapid and outsized hikes, the gap between the policy rate and the
+plausible range of the “appropriate level” of the policy rate was no longer so wide as to justify ongoing
+formal directional guidance.[ ] While formal directional guidance may be appropriate in the early
+phases of a forceful monetary policy response to a large inflation shock in either direction, it may
+convey an excessive level of certainty about the future rate path in the later phases (after a large
+adjustment has already been put in place). Similarly, avoiding formal directional guidance is prudent in
+implementing a measured monetary policy response to less extreme inflation shocks.[ ]
+The framework guidance provided by the Governing Council can be interpreted as implementing the
+strategic approach to making monetary policy decisions that was laid out in the 2021 monetary policy
+strategy statement.[ ] In particular, the 2021 strategy committed to basing monetary policy decisions
+on an integrated assessment of all relevant factors, taking into account the interdependencies between
+the economic analysis of real and nominal variables and the monetary and financial analysis that
+focused on the monetary transmission mechanism.
+Since it would be unwise to rely exclusively on inflation projections, especially during times of high
+uncertainty, a balanced approach that takes into account both the forward-looking inflation outlook and
+the information revealed by the realised path of underlying inflation is preferable, with underlying
+inflation indicators distilling the realised inflation data to uncover the components most relevant for the
+medium term. In calibrating monetary policy, it is also essential to rely on the latest assessment of the
+strength of monetary transmission, given the range of uncertainty about the timing and strength of the
+macro-financial impact of shifts in the monetary policy stance and the scope for exogenous shocks to
+financial conditions and financing conditions.[ ]
+Framework guidance delivers a systematic approach to monetary policy that is interpretable by
+financial market participants and external experts. The 2021 monetary policy strategy statement
+highlighted that monetary policy decisions are communicated through the monetary policy statement,
+the press conference, the Economic Bulletin and the monetary policy accounts. Together with the
+publication of the quarterly staff macroeconomic projections exercises, these releases provide the
+analytical underpinnings of how the reaction function criteria are assessed. Further analysis is provided
+through staff working papers and contributions to the ECB Blog, along with presentations and speeches
+by ECB Executive Board members.[ ]
+Recent ECB research shows that the sensitivity of rate expectations to macroeconomic news appears
+to have increased under the ECB’s current framework guidance regime compared with the period of
+explicit forward guidance, where short-term rates were mostly constrained by an effective lower bound,
+implying a smaller information content of surprises for the expected policy path (Chart 8). Markets
+38
+39
+40
+41
+42
+seem to have incorporated macroeconomic news in rate expectations in a systematic manner only after
+the explicit formulation of the reaction function criteria, which also came at a time of receding
+macroeconomic uncertainty. That said, the evidence is suggestive rather than conclusive: the economic
+environment, the degree of uncertainty and the constraints facing monetary policy also changed
+substantially between those periods. Nevertheless, it highlights how communication frameworks can
+influence expectations and the transmission of monetary policy.
+Chart 8
+Response of OIS rates to euro area macroeconomic surprises, by communication
+regime
+(basis points per standard-deviation surprise)
+Source: ECB staff calculations.
+Notes: Estimated change in the OIS rate, in basis points, following a one-standard-deviation euro area
+macroeconomic surprise, at the one-year, two-year and ten-year maturities. Daily first differences in OIS rates
+regressed on the macroeconomic surprise series used in the ECB’s Macroeconomic Surprise Indicator (MSI), with
+regime-specific intercepts and interaction terms, one lag of the dependent variable, and indicators controlling for
+the effective lower bound, Governing Council decision days and press conference days added as controls (results
+robust to the omission of controls and to estimating each regime separately, and to using an alternative definitions
+of the lower bound period instead). The surprise series is built from Bloomberg data on consensus forecasts of 59
+euro area indicators. For each indicator, the surprise is the released value less the Bloomberg median forecast,
+divided by the standard deviation of that indicator’s own surprises. Each release is dated to the respective trading
+day. Indicators are weighted by Bloomberg relevance scores, measuring the share of Bloomberg terminal users
+that follow the series’ release. The weights are therefore independent of any interest rate move. Releases of the
+same category on the same day are combined with a correction for their measured mutual correlation, so that
+several readings of one signal are not counted several times. Whiskers are 95% confidence intervals. Standard
+errors are robust to heteroskedasticity and serial correlation. Coefficients are scaled by the full-sample standard
+deviation of the macroeconomic surprise series. Estimation period: 2007-26.
+Finally, incorporating uncertainty into monetary policy communication poses trade-offs.[ ] In view of the
+high level of external trust in the systematic and comprehensive analysis that underpin the exercise, the
+information anchor provided by the baseline projections is more valuable than ever in an environment
+of elevated uncertainty. At the same time, in relation to specific and material risk events, the publication
+of alternative scenarios can help financial markets, experts and the public understand the possible
+quantitative impact on inflation and growth dynamics if these alternative scenarios were to materialise.
+[ ]
+A communication risk is that excessive focus in placed on the published scenarios rather than also
+taking into account the comprehensive risk assessment that is contained in each monetary policy
+statement and expanded upon in the accounts. During any period, a range of risk factors can
+materialise, such that a wide-angled perspective is needed, rather than taking a reductive approach
+that overly focuses on any particular set of scenarios.[ ]
+Conclusions
+In this speech, I have outlined some recent ECB research on the science of monetary policy
+communication. In particular, I have highlighted that new text-based tools, including large language
+models, allow us to measure central bank communication more systematically, and these confirm that
+what we say moves financial markets, between meetings as well as on meeting days. Relative to
+markets-orientated communication, reaching households and firms is more challenging: their attention
+to inflation rises and falls with inflation itself, which makes clear and consistent communication even
+more important when inflation is elevated.
+In relation to the practice of monetary policy communication, framework guidance is more effective than
+rate forward guidance when policy rates are away from the effective lower bound. In particular,
+framework guidance retains the beneficial properties of forward guidance in providing an anchor for
+rate expectations without incurring the costs in terms of inflexibility and the risk of misperceptions. By
+communicating a reaction function that spells out the criteria that guide our decisions, our framework
+guidance has helped markets interpret the incoming data.
+43
+44
+45
+1.
+I would like to thank Viola Billerbeck, Yannis Da Silva Stamoulis, Alessandro De Sanctis, Laura Gati,
+Stefan Gebauer, Klodiana Istrefi, Peter McQuade, Maria Sole Pagliari, Chiara Scenini, Lennart Stein
+and Lucien Vargas Gniagnocavo for their contributions to this speech. The views expressed here are
+my own and should not be interpreted as representing the collective view of the Governing Council.
+2.
+In addition to its role in determining the effectiveness of monetary policy, communication is also
+essential in ensuring accountability and trust, given the status of the central bank as a public institution
+that is granted operational independence in delivering its mandate.
+3.
+It is beyond the scope of this speech to review the broader literature on central bank monetary policy
+communication.
+4.
+See, for instance, Gardner, B., Scotti, C. and Vega, C. (2022), “
+”,
+Journal of Econometrics, Vol. 231, No 2, pp. 387-409; Picault, M. and Renault, T. (2017), “
+”, Journal of International Money and
+Finance, Vol. 79, pp. 136-156; Bouscasse, J.-F., Kapp, D., Kedan, D., McGregor, T. and Schumacher,
+J. (2023), “ ”, The ECB Blog,
+ECB, 9 August; and Marozzi, A. (2021), “
+”, Working Paper Series, No 2609, ECB.
+5.
+It is beyond the scope of this speech to assess how the intermediation of ECB communication by large
+language models and AI agents might alter best practices in communication. See also: see
+Brunnermeier, M.K. (2026), “ ”, paper
+prepared for the Jackson Hole Economic Policy Symposium, Federal Reserve Bank of Kansas City,
+August.
+6.
+The DFR steers the monetary policy stance. Under the LLM-based approach, the full text is supplied to
+a frontier LLM (GPT/5.1) accompanied by an extensive prompt to support accuracy, auditability and
+stability. The model version is kept fixed as performance across different vintages turns out very similar
+for simple classification tasks and given that it facilitates comparing scores over time. Scores range
+from -1 to 1 for each dimension: zero is neutral, positive is hawkish and negative is dovish. A hawkish
+communication signals a higher probability of future tightening and/or prolonged restrictiveness across
+the policy toolkit. A neutral communication emphasises data-dependence, balanced risks or no clear
+directional tilt in the future policy stance. A dovish communication signals a higher probability of future
+easing and/or earlier normalisation across the policy toolkit. The model also identifies the key passages
+behind each score and provides a brief rationale for human validation. Each document is scored
+multiple times, with the median retained to reduce sensitivity to individual model outcomes. It is worth
+noting that the relation between the DFR and communication tone is inherently imperfect, as the latter
+captures the language surrounding a policy decision that is measured independently from the decision
+itself.
+7.
+Araujo, D., Bokan, N., Comazzi, F.A. and Lenza, M. (2025), “
+”, Working Paper Series, No 3047, ECB. The monetary policy
+Words speak as loudly as actions:
+Central bank communication and the response of equity prices to macroeconomic announcements
+Words are
+not all created equal: A new measure of ECB communication
+How words guide markets: measuring monetary policy communication
+The ECB’s tracker: nowcasting the press conferences of the
+ECB
+Artificial Intelligence and the Brave New World in Finance
+Word2Prices: embedding central bank
+communications for inflation prediction
+statement incorporates more recent information than the staff projections, including developments
+since the cut-off date for the projections exercise and also includes the Governing Council’s risk
+assessment.
+8.
+In Gáti and Handlan (2022) the authors regress communication measures on Federal Reserve
+expectations as stated in the Fed’s Greenbook and realised policy variables, and identify a systematic
+relationship between central bank expectations, decisions in the form of policy variables and
+communication. Gáti, L. and Handlan, A. (2022), “ ”, Working Paper
+Series, No 2759, ECB,
+9.
+See footnotes 5 and 6.
+10.
+Bouscasse, J.-F. et al. (2023), op. cit.
+11.
+Ebener, L. and McGregor, T. (2026), “ ”,
+Working Paper Series, No. 3298, ECB.
+12.
+Istrefi, K., Odendahl, F. and Sestieri, G. (2026), “
+”, European Economic Review, Vol. 188, No 105410; Altavilla, C., Gürkaynak, R.S., Kind, T.
+and Laeven, L. (2026), “ ”, Journal of Monetary
+Economics, Vol. 163, No 103986; Akkaya, Y., Bitter, L., Grasso, A. and Amorim Cabaco, B. (2025),
+“ ”,
+Economic Bulletin, Issue 1, ECB.
+13.
+Belly, G. et al. (2023), “ ”, Journal of
+Forecasting, Vol. 42, No 3, pp. 657-684; Akkaya, Y., Bitter, L., Brand, C. and Fonseca, L. (2024), “
+”, Working Paper Series, No 2994, ECB.
+14.
+Ehrmann, M., Georgarakos, D. and Kenny, G. (2025), “
+”, European Economic Review, Vol. 177, No 105069; Battistini, N. and
+Trebbi, G. (2026), “ ”, The ECB Blog, ECB,
+29 July; Song, W. and Stern, S. (2025), “
+”, The Review of Economic Studies, Vol. 92, No 5, pp. 3438-3469. For the work
+conducted for the strategy assessment, see ECB (2025), “
+”, Occasional Paper Series, No 372, ECB.
+Monetary communication rules
+What analysts hear and why it matters for monetary policy
+ECB communication and its impact on financial
+markets
+Monetary transmission with frequent policy events
+From press conferences to speeches: the impact of the ECB’s monetary policy communication
+Forecasting sovereign risk in the euro area via machine learning
+A
+statistical approach to identifying ECB monetary policy
+Credibility gains from central bank
+communication with the public
+Demand or supply-driven? How firms view inflation right now
+Firm Inattention and the Efficacy of Monetary Policy: A Text-
+Based Approach
+Report on monetary policy tools, strategy
+and communication
+15.
+Paying attention to inflation requires time and effort, so not paying attention when there is little benefit
+to doing so is a rational decision from an individual perspective.
+16.
+Ehrmann, M. et al. (2025), op. cit.; D’Acunto, F., Georgarakos, D., Kenny, G. and Weber, M. (2026),
+“ ”, NBER Working
+Papers, No 35831, National Bureau of Economic Research, September.
+17.
+Weber, M., Candia, B., Afrouzi, H., Ropele, T., Lluberas, R., Frache, S., Meyer, B., Kumar, S.,
+Gorodnichenko, Y., Georgarakos, D., Coibion, O., Kenny, G. and Ponce, J. (2025), “
+”, Econometrica, Vol. 93, No. 1, pp.
+229-264.
+18.
+D’Acunto, F., Georgarakos, D., Kenny, G. and Weber, M. (2026), “
+”, Working Paper, No 35831, National Bureau
+of Economic Research, September.
+19.
+See also Gebauer, S., McGregor, T. and Schumacher, J. (2024), “
+”, The ECB Blog, ECB, 31 July.
+20.
+Jarociński, M. and Karadi, P. (2020), “
+”, American Economic Journal: Macroeconomics, Vol. 12, No 2, pp. 1-43;
+Jarociński, M. and Karadi, P. (2026), “ ”, Working
+Paper Series, No 3292, ECB, October.
+21.
+Jarociński, M. and Karadi, P. (2026), “ ”, Working
+Paper Series, No 3292, ECB, October.
+22.
+However, the evidence indicates that markets overestimate the immediacy of the ECB’s reaction to
+financial market developments, not sufficiently taking into account the gradualism that is typical in
+adjusting monetary policy.
+23.
+Altavilla, C., Gürkaynak, R.S., Kind, T. and Laeven, L. (2026), “
+”, Journal of Monetary Economics, Vol. 163, Article 103986, November. This study also
+Subjective Models of the Macroeconomy and the Transmission of Monetary Policy
+Tell Me Something I
+Don’t Already Know: Learning in Low- and High-Inflation Settings
+Subjective Models of the
+Macroeconomy and the Transmission of Monetary Policy
+How central bank communication
+affects the economy
+Deconstructing Monetary Policy Surprises – The Role of
+Information Shocks
+Monetary policy surprises with imperfect information
+Monetary policy surprises with imperfect information
+Monetary transmission with frequent
+policy events
+finds that, although speeches do affect asset prices significantly, scheduled policy announcements still
+account for the majority of high-frequency movements in euro area interest rates across maturities.
+24.
+Jarociński, M. (2022), “Central bank information effects and transatlantic spillovers”, Journal of
+International Economics, Vol. 139, Article 103683, November.
+25.
+Maintaining discretion may be preferable when severe or unforeseen economic shocks require
+immediate policy flexibility, as a strict commitment can generate a costly “stabilisation bias” by forcing
+the central bank to adhere to rules or paths that no longer fit the altered economic reality. See, for
+example, Clarida, R., Gali, J. and Gertler, M. (1999), “
+”, Journal of Economic Literature, Vol. 37, No 4, pp. 1661–1707; Rogoff, K.
+(1985), “ ”, The Quarterly Journal
+of Economics, Vol. 100, No 4, November, pp. 1169–1189; and Woodford, M. (2003),
+, Princeton University Press.
+26.
+Gáti, L. (2023), “ ”, Journal of Money, Credit
+and Banking, Vol. 55, No 5, 19 April; Gáti, L. and Handlan, A. (2025), “ ”,
+Working Paper Series, No 3141, ECB.
+27.
+Fadda, P., Hanifi, R., Istrefi, K. and Penalver, A. (2025), “ ”,
+Journal of International Money and Finance, Vol. 157, August.
+28.
+Ehrmann, M., Georgarakos, D. and Kenny, G. (2025), “
+”, European Economic Review, Vol. 177, Article 105069, August.
+29.
+Clarity and consistency are essential to make communication effective, as emphasised by the findings
+of both the ECB's 2021 strategy review and the 2025 strategy assessment. Clarity of communication is
+a prerequisite to ensure that decisions are correctly understood by financial market participants, firms
+and households, while coherence across messages over time and between words and actions is
+essential for public trust and central bank credibility.
+30.
+Prior to 2008, the ECB aimed to outline its reaction function through a transparent and structured
+monetary policy strategy, while deliberately avoiding rigid adherence to simplistic rules. For an
+overview, see Issing, O. (2019), The long journey of central bank communication, MIT Press. In
+articulating the approach of the ECB to monetary policy communication, Issing (2000) stressed that
+The science of monetary policy: A New
+Keynesian perspective
+The optimal degree of commitment to an intermediate monetary target
+Interest and prices:
+Foundations of a theory of monetary policy
+Talking Over Time – Dynamic Central Bank Communication
+Reputation for confidence
+Central bank communication of uncertainty
+Credibility gains from central bank
+communication with the public
+“there is no convincing alternative to the arduous task of continuously explaining how we arrive at,
+confirm or refine our common assessment of the outlook for price stability meeting by meeting, month
+by month. This assessment is done in the context of our strategy and is conducted in a systematic
+manner, even if our strategy may seem unduly complex to some observers.” In a similar vein, Issing
+(2005) emphasised that a “publicly announced strategy provides guidance for the markets, enabling
+them to form expectations more efficiently and to better anticipate interest rate decisions”. Draghi
+(2014) later assessed that “[t]ogether, a credible objective and a well-understood reaction function allow
+financial markets and the public to form reasonable expectations about our future interest rate policy
+[…] In the pre-crisis times, these expectation effects worked relatively smoothly. […] And our reaction
+function could be understood well, based on our strategy and actions […]”. While stopping short of
+explicit guidance on the interest rate path, the recurrence of certain formulations over the tightening
+cycle that began in December 2005 — from monitoring developments “closely” and “very closely” to
+“strong vigilance” — led markets to read them as a de facto “traffic light system” for the decision at the
+next meeting (see Cour-Thimann and Jung, 2021). See Issing, O. (2000), “
+”, opening statement at the CFS research conference “The ECB and its watchers II”,
+Frankfurt am Main, 26 June; Issing, O. (2005), “
+”, Federal Reserve Bank of St. Louis Review, Vol. 87, No.
+2, Part 1; Draghi, M. (2014), “ ”, speech at the
+conference De Nederlandsche Bank 200 years: Central banking in the next two decades, Amsterdam,
+24 April; Cour-Thimann, P. and Jung, A. (2021), “
+”, European Journal of Political Economy, Vol. 70, 102039.
+31.
+Istrefi, K., Odendahl, F. and Sestieri, G. (2026), “
+”, European Economic Review, Vol. 188, Article 105410, August.
+32.
+Istrefi, K. and Sestieri, G. (2019), “
+”, Eco Notepad, No 127, Banque de France, 2 August.; Istrefi, K., Odendahl, F. and Sestieri,
+G. (2026), “ ”, European Economic Review, Vol.
+188, Article 105410, August; Akkaya, Y., Bitter, L., Brand, C. and Fonseca, L. (2024), “
+”, Working Paper Series, No 2994, ECB.
+33.
+Akkaya, Y., Bitter, L., Brand, C. and Fonseca, L. (2024), “
+”, Working Paper Series, No 2994, ECB; Belly, G., Boeckelmann, L., Caicedo Graciano,
+C.M., Di Iorio, A., Istrefi, K., Siakoulis, V. and Stalla-Bourdillon, A. (2023), “
+”, Journal of Forecasting, Vol. 42, No 3, pp. 657-684, 14 January;
+Communication challenges
+for the ECB
+Communication, Transparency, Accountability:
+Monetary Policy in the Twenty-First Century
+Monetary policy communication in turbulent times
+Interest-rate setting and communication at the ECB in
+its first twenty years
+ECB communication and its impact on financial
+markets
+Does the ECB balance of risks matter for monetary policy
+decisions?
+ECB communication and its impact on financial markets
+A statistical
+approach to identifying ECB monetary policy
+A statistical approach to identifying ECB
+monetary policy
+Forecasting sovereign risk in
+the Euro area via machine learning
+Istrefi, K., Odendahl, F. and Sestieri, G. (2026), “
+”, European Economic Review, Vol. 188, Article 105410, August; Altavilla, C., Giannone, D. and
+Lenza, M. (2014), “ ”, Working Paper
+Series, No 1707; Alcaraz, C., Claessens, S.,Cuadra, G., Marques-Ibanez, D. and Sapriza, H. (2019),
+“ ”,
+Working Paper Series, No 2249, ECB.
+34.
+Ehrmann, M., Gaballo, G., Hoffmann, P. and Strasser, G. (2019), “
+”, Journal of Monetary Economics, Vol.
+108, pp. 93-112.
+35.
+ECB (2021), “ ”, 22 July; ECB (2021), “ ”, Account
+of the monetary policy meeting of the Governing Council, 26 August.
+36.
+The review also placed greater emphasis on making communication accessible to the wider public.
+Since July 2021 our monetary policy statements have been accompanied by simplified and visual
+explanations designed for a broader audience. Research suggests that these can substantially reduce
+the technical knowledge required to understand our messages. Herbert, S., Istrefi, K. and Sestieri, G.
+(2023), “ ”, Eco Notepad, No 314, Banque de
+France, 13 April; Ehrmann, M., Georgarakos, D. and Kenny, G. (2025), “
+”, European Economic Review, Vol. 177, 105069; ECB (2021),
+, section “The year at a glance”.
+37.
+The process of monetary policy normalisation had started in December 2021, with the announcement
+of ending net asset purchases under the pandemic emergency purchase programme (PEPP) in the first
+quarter of 2022. In anticipation of future rate hikes, the yield curve quickly shifted up in early 2022. See
+Lagarde, C. (2022), “ ” The ECB Blog, ECB, 23 May.
+38.
+My discussion about directional guidance is in relation to the formal monetary policy statement of the
+Governing Council, which has the highest weight in terms of conveying the monetary policy position of
+the ECB.
+39.
+See also Lane, P.R. (2025), “ ,” keynote speech at the 15th
+workshop on exchange rates, co-organised by Banka Slovenije with the Banca d’Italia, the Bank for
+International Settlements, the European Central Bank and the Nationale Bank van België/Banque
+ECB communication and its impact on financial
+markets
+The financial and macroeconomic effects of OMT announcements
+Whatever it takes: what's the impact of a major nonconventional monetary policy intervention?
+Can more public information raise
+uncertainty? The international evidence on forward guidance
+Monetary policy decisions Meeting of 21-22 July 2021
+Towards more clarity in central bank communication
+Credibility gains from central
+bank communication with the public
+Annual Report 2021
+Monetary policy normalisation in the euro area
+Inflation deviations and monetary policy
+Nationale de Belgique, Ljubljana, 3 December; Lane, P.R. (2026), “
+,” dinner remarks at the Centre for European Reform, London, 13 May; Lagarde, C.
+(2026), “ ,” keynote speech at “The ECB and Its
+Watchers” conference organised by the Institute for Monetary and Financial Stability at Goethe
+University Frankfurt, Frankfurt, 25 March.
+40.
+See also Lagarde, C. (2025), ” ,” speech at 25th "ECB and Its Watchers"
+conference organised by the Institute for Monetary and Financial Stability at Goethe University, 12
+March; Lane, P.R. (2025), “ ,” keynote speech at the ECB Conference on
+Monetary Policy 2025: bridging science and practice, 6 October.
+41.
+For a review of model-based estimates of the strength of monetary transmission, see Lane, P.R.
+(2024), “
+,” SUERF Marjolin Lecture hosted by the Banca d’Italia, Rome, 18 November.
+See also: Lane, P.R. (2022), “ ,” speech at the SUERF,
+CGEG|Columbia|SIPA, EIB, Société Générale conference on “EU and US Perspectives: New
+Directions for Economic Policy”, New York, 11 October; Lane, P.R. (2023), “
+,” Dow Lecture, at the National Institute of Economic and Social Research,
+London, 16 February 2023; Lane, P.R. (2023), “
+,” remarks at the Panel Discussion on Banking Solvency and Monetary Policy, NBER
+Summer Institute 2023 Macro, Money and Financial Frictions Workshop, Cambridge, Massachusetts,
+12 July; Lane, P.R. (2024), “ ,”
+contribution to the panel on “Reassessing the effectiveness and transmission of monetary policy” at the
+Federal Reserve Bank of Kansas City Economic Symposium, Jackson Hole, 24 August; Lane, P.R.
+(2025), “ ,” welcome
+address at the 5th WE_ARE_IN Macroeconomics and Finance Conference 2025, Frankfurt, 21
+October. The Eurosystem research network ChaMP (Challenges for Monetary Policy Transmission in a
+Changing World) delivered a rich array of .
+42.
+For instance, I typically release a slide deck containing some of the updated analysis in the week
+following a monetary policy meeting: the most recent slide deck is available .
+43.
+See also: Lane, P.R. (2024), “ ,” keynote speech at the Bank of
+England Watchers’ Conference 2024, King’s College London, 25 November; Lane, P.R. (2025), “
+Analytical perspectives on energy
+supply shocks
+Navigating energy shocks: risks and policy responses
+A robust strategy for a new era
+The conduct of monetary policy
+The 2021-2022 inflation surges and the monetary policy response through the lens of
+macroeconomic models
+The transmission of monetary policy
+The euro area hiking cycle:
+an interim assessment
+The banking channel of monetary policy tightening in
+the euro area
+The effectiveness and transmission of monetary policy in the euro area
+The transmission of monetary policy: financial conditions and credit dynamics
+studies on monetary policy transmission
+here
+Monetary policy under uncertainty
+The
+,” remarks at the
+Second Thomas Laubach Research Conference, Washington, D.C., 16 May.
+44.
+The ECB practice is to examine alternative scenarios while holding fixed the market interest rate curve.
+This helps to keep apart the conditional macroeconomic impact of the alternative scenarios from the
+endogenous monetary policy response. It is not difficult for market participants to explore possible
+monetary policy responses to alternative scenarios by running policy simulations, especially since the
+ECB publishes the details of the main macroeconomic models that it uses. Of course, the actual
+monetary policy decisions take into account a broader range of considerations in addition to the
+guidance provided by model-based rate simulations.
+45.
+See also Lane, P.R. (2026), “ ,” keynote speech at the
+ECB Conference on Monetary Policy 2026: bridging science and practice, Frankfurt, 5 October.
+communication of monetary policy decisions: incorporating risks and uncertainty
+Diagnostic challenges for ECB monetary policy
+CONTACT
+European Central Bank
+Directorate General Communications
+Reproduction is permitted provided that the source is acknowledged.
+Sonnemannstrasse 20
+
+60314 Frankfurt am Main, Germany
+
+ +49 69 1344 7455
+ media@ecb.europa.eu
+Media contacts
+Copyright 2026,
+European Central Bank

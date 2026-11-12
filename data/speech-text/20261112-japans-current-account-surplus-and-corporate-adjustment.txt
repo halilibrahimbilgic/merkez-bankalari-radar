@@ -1,0 +1,184 @@
+Introduction
+
+ It is an immense honor to speak today in celebration of Michel Camdessus. Few leaders have shaped modern international economic cooperation with such profound moral clarity, intellectual depth, and enduring goodwill as Mr. Camdessus has. He taught a generation of policymakers that macroeconomic policy is never merely technical; at its best, it is an act of shared global stewardship.
+
+ That wisdom was made especially clear in the mid-1980s, when global imbalances placed Japan's current account surplus at the heart of international economic debate. Mr. Camdessus was among the most articulate voices calling for surplus nations to act as locomotives for global demand. Japan embraced that call, yet history took an unexpected turn: the post-Plaza Accord adjustments narrowed the surplus only briefly before it transformed into a structural, income-driven surplus that persists to this day.
+
+ In honoring Mr. Camdessus, the best tribute we can offer is to examine these difficult economic realities with the same analytical honesty he brought to global governance. Today, I would like to examine what Japan's persistent surplus reveals about external adjustment, focusing in particular on the evolving role of corporate saving and investment.
+
+ I. Japan's Current Account Surplus in Perspective
+
+ Japan's current account has undergone a striking shift since the mid-20th century (Chart 1). Until the early 1980s, it alternated between deficits and surpluses, sometimes within just a few years. It then moved into persistent surplus. Despite short-term fluctuations, the surplus generally ranged from 2 to 4 percent of GDP for roughly four decades.
+
+ Its composition has changed just as markedly (Chart 2). The goods trade surplus peaked at more than 4 percent of GDP in the mid-1980s, but has since given way to a deficit. Meanwhile, the primary income surplus, which was negligible in the mid-1980s, has risen to more than 6 percent of GDP. Net income earned on foreign investments has thus become the principal source of Japan's current account surplus (Chart 3).
+
+ Japan is not unique in this respect. The United Kingdom in the late 19th and early 20th centuries offers a well-known historical parallel (Chart 4). Following the Industrial Revolution, Britain's trade and current accounts both ran a substantial surplus. As the economy matured, the trade balance moved into deficit, but income from extensive overseas holdings sustained the current account surplus. Around the turn of the 20th century, Britain's net foreign investment income approached 8 percent of national income. Japan today has walked a very similar path: it has evolved from a workshop of the world into a financier to the world.
+
+ This shift from trade surplus to investment income is familiar from accounts of how economies evolve from debtors into mature creditors -- often described as the balance of payments stages hypothesis. 1 &nbsp;In Japan's case, however, understanding the transition requires a closer look at the national accounting identity: a current account surplus reflects national saving in excess of domestic investment ( CA = S - I ). Japan's sectoral data reveals a profound macroeconomic paradox in how that excess has been generated.
+
+ Standard open-economy theory predicts that, as a society ages, households draw down their assets, driving national saving down and pushing the current account toward deficit. In Japan, households did indeed follow this textbook life-cycle path. 2 &nbsp;Net household saving was a major counterpart to the surplus until the mid-1990s, but declined substantially over the subsequent three decades as demographic aging deepened. Meanwhile, the government sector ran persistent and expanding fiscal deficits (Chart 5).
+
+ Yet the external surplus did not disappear. It was sustained because the nonfinancial corporate sector behaved in an extraordinary way (Chart 6). After an investment boom around 1990, corporate investment rates continued to fall over the next two decades, while corporate saving trended upward. In the late 1990s, Japanese firms shifted from being net borrowers to chronic, massive net savers -- and have remained net savers ever since.
+
+ The corporate sector, therefore, completely upended standard demographic predictions. Why did firms become persistent net savers? And why did that position continue long after the acute phase of balance sheet repair had ended? To answer these questions, we must examine the prolonged hangover from Japan's bubble collapse and the subsequent outward expansion of Japanese industry.
+
+ II. The Origins of Balance Sheet Repair
+
+ Let me return briefly to the trade tensions of the mid-1980s. At the time, Japan's surplus was driven overwhelmingly by merchandise trade. Having grown into the world's second-largest economy, its external position attracted intense scrutiny. Multilateral trade negotiations sought to address these imbalances, while the Plaza Accord orchestrated a sharp depreciation of the U.S. dollar.
+
+ As part of this effort, Japan committed to sweeping structural changes -- codified in the landmark 1986 Maekawa Report -- which sought to expand domestic demand and shorten working hours. 3 &nbsp;At the same time, aggressive macroeconomic easing was deployed to cushion the economy against the headwind of a rapidly appreciating yen. In hindsight, these expansionary measures contributed directly to the late-1980s investment boom and the dramatic run-up in equity and real estate prices.
+
+ Japan's current account surplus did narrow around 1990, driven by this feverish boom in domestic investment (Chart 5, 6). But once the bubble burst, the surplus swiftly rebounded, and remained substantial throughout the ensuing balance sheet adjustment and beyond. The narrowing of the surplus proved temporary, but the structural scars left on corporate behavior proved long-lasting.
+
+ The post-bubble drop in business investment was accompanied by a lasting downturn in the return on capital. As Chart 7 illustrates, the rates of return in Japan plummeted during the 1990s and have never returned to their pre-bubble heights, contrasting sharply with the relative stability of capital returns in the United States.
+
+ Multiple explanations account for this decline -- the natural end of the postwar catch-up phase, the reduction in working hours, and shifting demographics. But the hangover from the investment boom played a central role. Falling collateral values crippled both corporate and financial institutions' balance sheets, culminating in the banking crisis of the late 1990s. These financial and structural shocks reinforced one another, setting off a generational change in how Japanese firms managed capital.
+
+ 
+ 3 See Advisory Group on Economic Structural Adjustment for International Harmony (1986). The shortening of the workweek was also viewed as a measure to boost domestic demand by increasing time for leisure.
+
+ 
+ III. Balance Sheet Repair and Corporate Saving
+
+ When the bubble burst, Japanese firms faced a brutal arithmetic: their assets had devalued substantially, but their nominal debt obligations remained intact. They were forced into a protracted process of balance sheet repair. Market-value measures of corporate leverage during this era illustrate the unprecedented financial pressure firms endured (Chart 8).
+
+ Chart 9 traces this multi-decade adjustment. After peaking around 1990, domestic capital expenditure steadily retreated from the early 1990s through 2010. Firms curtailed their accumulation of financial assets and, by the late 1990s, actively liquidated holdings.
+
+ Debt repayment became a major priority for Japanese firms from the late 1990s through the early 2010s. By freezing domestic investment and channeling retained earnings toward debt reduction, the nonfinancial corporate sector engineered a massive financial surplus. That defensive stance did not dissipate once solvency was restored and that surplus has persisted ever since.
+
+ IV. After Balance Sheet Repair: The Rise of Foreign Direct Investment
+
+ Balance sheet repair eventually wound down in stages. Financial pressures began to ease in the mid-2000s once the Japanese banking crisis was resolved, although recovery was interrupted by the global financial crisis. A more definitive, structural turning point emerged around 2011-2012. Domestic investment and borrowing finally began to edge upward (Chart 9).
+
+ Corporate saving, however, remained exceptionally high. Instead of channeling those funds aggressively into domestic factories, firms directed a substantial share of net saving into foreign direct investment (FDI). Since 2012, outward FDI has eclipsed portfolio investment as the dominant vehicle for Japan's capital outflows (Chart 10).
+
+ This capital reallocation was rational: returns on outward FDI remained remarkably resilient, holding at above 8 percent for much of the post-adjustment era, even as yields on debt and equity investments declined (Chart 11). 4 &nbsp;A substantial portion of the earnings generated by overseas affiliates was retained and reinvested abroad. These earnings directly swelled Japan's primary income surplus, while their automatic reinvestment was recorded as fresh FDI. 5 &nbsp;By constructing international production networks, Japanese multinational firms positioned themselves directly within rapidly growing overseas markets.
+
+ A 2024 Bank of Japan survey of firms provides a firsthand window into why domestic investment remained subdued for so long (Chart 12). 6 &nbsp;When reflecting on the period since the mid-1990s, managers most frequently pointed to structurally declining growth expectations. For the 1990s and 2000s, debt repayment and financial solvency dominated corporate decisions. In the 2010s, many firms prioritized precautionary cash buffers, while some, especially large firms, focused aggressively on overseas mergers and acquisitions and outward FDI.
+
+ Weak domestic growth expectations, initially forged during the phase of balance sheet repair, became deeply entrenched. A demographic shift then solidified these expectations, reinforcing the strategic imperative to deploy capital abroad.
+
+ 
+ 4 Colacelli, Gautam, and Rebillard (2021) also note the high rate of return on Japan's FDI.
+
+ 5 Note that a large proportion of the income of foreign affiliates is not remitted to Japan, but in terms of statistical accounting it is classified as part of Japanese corporate savings.
+
+ 6 See Bank of Japan (2024).
+
+ 
+ V. Other Explanations of the Surplus: Demographics Reconsidered
+
+ So far, my argument has centered on balance sheet scarring and outward direct investment as the primary architects of Japan's enduring current account surplus.
+
+ Yet modern economic theory offers a competing, prominent explanation rooted purely in demographic mechanics. In neoclassical trade and growth models, a shrinking working-age population makes capital abundant relative to labor, depressing the domestic marginal product of capital. Forward-looking firms and households respond by deploying capital abroad and shifting domestic production offshore, thus widening the external surplus, and transforming the trade surplus into one that is driven by primary income. 7 
+
+ While this theory is elegant, it carries an empirical requirement: it requires Japan's labor market in the 1990s and 2000s to have been intensely tight.
+
+ The historical data tells the exact opposite story. The Bank of Japan's output gap remained almost continuously negative between 1993 and 2012. Unemployment rate averaged well above 3 percent for those two decades -- elevated by Japan's historical standards (Chart 13). Furthermore, aggregate employment actually grew in the long-run in an era of population aging, buoyed by the surging labor force participation of women and senior citizens.
+
+ Demographics mattered profoundly -- not because firms ran out of workers in the 1990s, but because the anticipation of a shrinking domestic market depressed the expected return on domestic capital, pulling outward FDI forward. The demographic shift acted on the demand side of investment expectations decades before it began to bind Japan on the physical supply side. It is only in recent years that acute labor scarcity has become a reality.
+
+ 
+ 7 See Hirakata and Katagiri (2025).
+
+ 
+ VI. Signs of Change
+
+ Recently, however, we have observed tangible signs of structural change. In the Bank's latest survey, more than 70 percent of Japanese firms reported investing more actively at home in 2023-2024 than in prior years. Strikingly, the most common reason cited was the urgent need to address domestic labor shortages (Chart 12). Large firms also pointed to investments in decarbonization, digital transformation, and the strategic reshoring of supply chains.
+
+ Labor scarcity, when it finally arrives on the factory floor, does not solely push capital abroad -- it also compels domestic capital deepening and labor-saving automation.
+
+ Indeed, post-pandemic business fixed investment has finally eclipsed its early-1990s peak (Chart 9). Bank lending has been expanding at more than 5 percent most recently, fastest clip seen in three decades. 8 &nbsp;Aided by the return of moderate inflation, corporate risk appetite appears to be reawakening.
+
+ Does this mean Japan is finally realizing the four-decade-old vision of domestic demand-led adjustment? That remains an open question. Further demographic aging may accelerate household dissaving, while higher domestic productivity and capital expenditures could diminish the corporate saving surplus. Both forces would work to narrow the national saving-investment gap.
+
+ Yet Japan sits atop a colossal stock of net foreign assets, and the return differential favoring foreign over domestic investments remains wide. Net primary income will remain an enduring pillar of Japan's external accounts for years to come.
+
+ 
+ 8 With the exception of 2020, when the government provided support to loans to small businesses.
+
+ 
+ Concluding Remarks
+
+ Japan's experience highlights the importance of corporate adjustment in understanding a sustained current account surplus. After the bubble collapsed, firms curtailed investment and spent many years repaying debt and repairing their balance sheets. Even after this adjustment had largely run its course, corporate saving remained high, while overseas investment became increasingly important.
+
+ Demographics and globalization helped shape the opportunities firms faced. Population aging weighed on domestic growth expectations, while the expansion of international production networks opened up business opportunities abroad. Income from the resulting foreign investments has helped sustain the current account surplus even as the trade balance weakened. The rise in corporate net saving also offset much of the decline in household net saving associated with population aging.
+
+ These broad forces help explain the long-run trend. Japan's experience also shows how financial upheaval can shape the course of external adjustment for decades. This history does not establish how the current account would have evolved under a different policy response. It does show why external adjustment must be understood alongside changes in investment incentives, corporate balance sheets, and demographics.
+
+ Japan's surplus has been remarkably persistent. The reasons for it have been rather less so.
+
+ Thank you very much.
+
+ References
+
+ 
+ Advisory Group on Economic Structural Adjustment for International Harmony. 1986. "The Report of the Advisory Group on Economic Structural Adjustment for International Harmony."
+
+ Bank of Japan. 2024. "Results of the Survey regarding Corporate Behavior since the Mid-1990s: Economic Activity, Prices, and Monetary Policy over the Past 25 Years from Firms' Perspective." Regional Economic Report (Annex) .
+
+ Colacelli, Mariana, Deepali Gautam, and Cyril Rebillard. 2021. "Japan's Foreign Assets and Liabilities: Implications for the External Accounts." IMF Working Papers, WP/21/26.
+
+ Crowther, Geoffrey. 1957. Balances and Imbalances of Payments . Boston, Mass.: Harvard University Graduate School of Business Administration.
+
+ Hirakata, Naohisa, and Mitsuru Katagiri. 2025. "Foreign Direct Investment as a Long-Term Capital Flow Channel: Evidence from Japan." Journal of International Economics , vol. 158.
+
+ Kasa, Kenneth. 1997. "Get Ready for Japanese Trade Deficits." FRBSF Economic Letter , 1997-28.
+
+ 
+
+ 
+ 
+ 8 Footnotes
+ 
+ 
+ 
+
+ 
+ 
+ 
+ 
+
+ 
+ 
+ 
+ 
+ 
+ 
+ 1 
+ See Crowther (1957).
+ 
+ 
+ 
+ 2 
+ Kasa (1997) summarized the literature at the time and concluded that "a broad spectrum of alternative simulation methodologies all point to a declining Japanese trade balance. The only debate concerns the timing." To be fair, let us note that Japan's trade account has been in deficit for most of the time since the early 2010s, but not the current account (Chart 2).
+ 
+ 
+ 
+ 3 
+ See Advisory Group on Economic Structural Adjustment for International Harmony (1986). The shortening of the workweek was also viewed as a measure to boost domestic demand by increasing time for leisure.
+ 
+ 
+ 
+ 4 
+ Colacelli, Gautam, and Rebillard (2021) also note the high rate of return on Japan's FDI.
+ 
+ 
+ 
+ 5 
+ Note that a large proportion of the income of foreign affiliates is not remitted to Japan, but in terms of statistical accounting it is classified as part of Japanese corporate savings.
+ 
+ 
+ 
+ 6 
+ See Bank of Japan (2024).
+ 
+ 
+ 
+ 7 
+ See Hirakata and Katagiri (2025).
+ 
+ 
+ 
+ 8 
+ With the exception of 2020, when the government provided support to loans to small businesses.

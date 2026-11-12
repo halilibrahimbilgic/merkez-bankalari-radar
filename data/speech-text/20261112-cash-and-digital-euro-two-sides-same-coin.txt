@@ -1,0 +1,165 @@
+SPEECH
+Cash and the digital euro: two sides of the
+same coin
+Introductory statement by Piero Cipollone, Member of the Executive
+Board of the ECB, at the Committee on Economic and Monetary
+Affairs of the European Parliament
+Brussels, 10 November 2026
+It is a pleasure to be back here for the first time since the Parliament adopted its position on the Single
+Currency Package, and I very much welcome the broad support it received in the plenary session on 9
+July. This gives a strong democratic backing to the digital euro. Let me also thank you for the
+considerable work and constructive dialogue that have made this progress possible.
+A swift conclusion of the ongoing trilogue negotiations would pave the way for the adoption of the
+Single Currency Package[ ] by the end of the year as foreseen in the One Europe, One Market
+Roadmap.[ ] This would give us the legal certainty needed to complete our preparations for the digital
+euro. It would also give certainty to the market regarding the planned date for a possible first issuance,
+which can be set only after the Regulation is adopted. A delay in adoption could instead postpone the
+introduction of the digital euro, further entrench Europe’s dependence on foreign providers, and make
+it more difficult for European companies to innovate and compete.
+Europe’s achievements in payments innovation go beyond progress on the digital euro. In September
+we launched Pontes, which connects market distributed ledger technology (DLT) platforms with the
+Eurosystem’s TARGET Services.[ ] The launch was widely welcomed by the market, with 18 market
+participants and market DLT operators onboarded on day one and many others preparing to join soon.
+Pontes makes the settlement of tokenised transactions in central bank money an operational reality
+and is a major milestone in the development of digital European capital markets. On 2 November it
+settled the issuance of the European Stability Mechanism’s first digitally native benchmark bond of €1
+billion[ ], facilitating the shift in European tokenised finance from experimentation to adoption.
+While I am happy to answer any questions on Pontes, I would like to focus my remarks today on the
+digital euro and cash.
+Preparing for the digital euro pilot and first issuance
+We are moving ahead with preparations for the digital euro pilot. It will test the digital euro’s technical
+functionality, operational processes and user experience, using a beta version without legal tender
+status.
+Starting in the second half of 2027, the pilot will involve Eurosystem staff, participating payment
+service providers (PSPs) and selected merchants offering everyday services – for example in
+1
+2
+3
+4
+canteens – at the ECB and participating national central banks.
+We have seen strong market interest in the pilot and, in July, we announced the 36 PSPs selected to
+join the pilot from more than 50 applicants.[ ] They include banks and non-bank providers, and cover a
+broad range of business models, sizes and geographical locations.
+We are working closely with participating PSPs to hear their views and benefit from their experience.[ ]
+In September we opened an additional call for online and mobile merchants to join the pilot to test
+remote payments. The final selection of merchants will be announced early next year.[ ]
+This collaboration with market players is essential. The digital euro must work on a technical level, but
+also in everyday life – for consumers, merchants and PSPs.
+Looking further ahead, we are planning for the digital euro rollout.
+On our side, we plan to ensure that all relevant use cases[ ] for the digital euro are made technically
+available from first issuance. At the same time, feedback from market participants[ ] shows that a
+gradual rollout would support a smooth and successful first issuance by giving them sufficient time to
+adapt. We are glad that the co-legislators intend to provide legal clarity on the feasibility of such a
+phased rollout in shops.
+In preparation for first issuance, we are also working more closely with the market on the digital euro
+innovation platform.
+In September we launched a new call for expression of interest, inviting private companies and
+organisations to explore how the digital euro can foster market innovation.[ ] The next wave of
+activities, including testing conditional payments and exploring applications of artificial intelligence in
+payments, will run from January to June 2027.[ ]
+Redesigning euro banknotes
+Innovation also extends to banknotes. In July we invited Europeans to share their views on ten
+shortlisted design proposals for the new euro banknotes based on the themes “European culture” and
+“Rivers and birds”.
+The survey received almost 10 million responses, with high participation across all euro area countries
+and age groups.[ ] This demonstrates how deeply Europeans care about their money.
+The survey results will inform the ECB Governing Council’s decision on the final design concept,
+expected around the end of this year. At that point, we will also publish the survey results. First
+denominations of the new banknote series are expected to enter into circulation in the early 2030s.[ ]
+But cash must also remain widely available and accepted in practice. We therefore support strong
+legislative provisions on mandatory cash acceptance, access to cash across the euro area and the
+resilience of cash infrastructure.
+Conclusion
+Let me conclude.
+5
+6
+7
+8
+9
+10
+11
+12
+13
+In today’s uncertain geopolitical environment, timely progress on the digital euro is essential to
+strengthen Europe’s autonomy in payments. We are doing our part by progressing with the technical
+preparations. But the adoption of the legal framework is necessary to finalise the digital euro’s design
+and Rulebook[ ] and, ultimately, to issue the digital euro.
+In two months’ time we will mark the 25th anniversary of euro banknotes and coins entering
+circulation. While cash is still widely used in shops, digital payments are growing. I therefore hope that
+by then we will have a strong legal framework in place: one that both safeguards the acceptance of
+cash and gives Europeans a digital form of cash alongside it.
+Thank you.
+14
+1.
+The Single Currency Package includes the legislative proposal on the legal tender of euro cash and
+the legislative proposals establishing the legal framework for a possible digital euro.
+2.
+of the European Parliament, the Council of the European Union
+and the European Commission.
+3.
+See ECB (2026), “ ”, press release, 21
+September.
+4.
+See Deutsche Bundesbank (2026), “
+”, press release,
+26 October.
+5.
+See ECB (2026), “ ”, press release,
+14 July.
+6.
+The kick-off workshop in Frankfurt in September was an important step in building a shared
+understanding of the work ahead. See ECB (2026), “ ”, 29-30
+September.
+7.
+See ECB (2026), “ ”,
+MIP News, 15 September.
+8.
+Including person-to-person, e-commerce and point-of-sale payments.
+One Europe, One Market Roadmap
+Eurosystem brings central bank money to tokenised finance
+ESM is first European supranational issuer to settle DLT-based
+bond issuance on Eurosystem’s Pontes platform with Bundesbank and Clearstream
+ECB selects 36 payment service providers to join digital euro pilot
+Digital euro pilot: PSP kick-off workshop
+Call for online and mobile merchants to participate in digital euro pilot now open
+9.
+See ERPB (2026), “ ”, 13 October.
+10.
+See ECB (2026), “
+”, MIP News, 28 September.
+11.
+The innovation work will follow two workstreams. The experimentation workstream will help the private
+sector develop practical features and services that enhance user experience, including electronic
+receipts and conditional payments. The exploration workstream will examine how emerging
+technologies could enhance future releases of the digital euro, for example the application of artificial
+intelligence in payments.
+12.
+See ECB (2026), “ ”, press
+release, 23 September.
+13.
+See the “ ” page on the ECB’s website.
+14.
+The digital euro scheme rulebook provides a single set of rules, standards and procedures for the
+provision of basic digital euro payment services for payment service providers participating in the
+scheme. See ECB (2026),
+, 6 July.
+Digital euro market rollout plan discussion
+Call for expressions of interest in a new wave of digital euro innovation platform
+activities
+Almost ten million people took part in ECB survey on new euro banknotes
+Future banknotes
+Update on the work of the digital euro scheme’s Rulebook Development
+Group: Sixth progress report
+CONTACT
+European Central Bank
+Directorate General Communications
+Sonnemannstrasse 20
+
+60314 Frankfurt am Main, Germany
+
+ +49 69 1344 7455
+ media@ecb.europa.eu
+Reproduction is permitted provided that the source is acknowledged.
+Media contacts
+Copyright 2026,
+European Central Bank
