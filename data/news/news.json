@@ -1,5 +1,5 @@
 {
-  "fetchedAt": "2026-11-12T08:32:07.200Z",
+  "fetchedAt": "2026-11-12T09:02:11.916Z",
   "items": [
     {
       "id": "cf79854e76ac",
@@ -60,6 +60,22 @@
       "summaryEn": "Turkish Finance Minister Şimşek said they signed 10 agreements worth a total of $5.1 billion with the Asian Development Bank, the Asian Infrastructure Investment Bank, the World Bank and the Islamic Development Bank.",
       "important": true,
       "processedAt": "2026-11-12T07:02:00.024Z"
+    },
+    {
+      "id": "eab67047fe15",
+      "sourceKey": "tcmb-baskan",
+      "sourceName": "TCMB",
+      "kind": "official",
+      "bankCode": "tcmb",
+      "url": "https://www.tcmb.gov.tr/wps/wcm/connect/tr/tcmb+tr/main+menu/duyurular/baskanin+konusmalari/2026/konusmab12_11_2026",
+      "publishedAt": "2026-11-12T06:36:28.000Z",
+      "titleOriginal": "Başkan Fatih Karahan'ın \"Enflasyon Raporu 2026-IV\"ün Tanıtımına İlişkin Bilgilendirme Toplantısında Yaptığı Konuşma (İstanbul)",
+      "titleTr": "Karahan, Enflasyon Raporu 2026-IV'ü tanıttı",
+      "summaryTr": "TCMB Başkanı Fatih Karahan, İstanbul'da düzenlenen bilgilendirme toplantısında Enflasyon Raporu 2026-IV'ün tanıtımına ilişkin konuşma yaptı.",
+      "titleEn": "Karahan presents Inflation Report 2026-IV",
+      "summaryEn": "CBRT Governor Fatih Karahan gave a speech at the briefing in Istanbul introducing the Inflation Report 2026-IV.",
+      "important": true,
+      "processedAt": "2026-11-12T09:02:11.916Z"
     },
     {
       "id": "18e87581af40",
@@ -4862,21 +4878,6 @@
       "summaryEn": "The dollar index climbed to 102.6, its highest since April 2025. Anadolu Agency attributes the rise to Middle East geopolitical risks, expectations that the Fed could raise rates, and a weaker euro.",
       "important": false,
       "processedAt": "2026-10-13T09:43:11.201Z"
-    },
-    {
-      "id": "307ffbbddec5",
-      "sourceKey": "aa-economy",
-      "sourceName": "Anadolu Agency",
-      "kind": "media",
-      "url": "https://www.aa.com.tr/en/economy/euro-depreciates-amid-regional-financial-political-turmoil/4087019",
-      "publishedAt": "2026-10-13T08:56:28.000Z",
-      "titleOriginal": "Euro depreciates amid regional financial, political turmoil",
-      "titleTr": "Avro, bölgesel mali ve siyasi çalkantıyla değer kaybediyor",
-      "summaryTr": "Anadolu Ajansı'na göre Fransa'daki mali disiplinsizlik, siyasi gelişmeler ve İspanya'daki erken seçim avroyu yıl başından bu yana yüzde 5 geriletti. Haberde bunun Avrupa Merkez Bankası'nın politika seçeneklerini sınırladığı belirtiliyor.",
-      "titleEn": "Euro weakens amid regional financial and political turmoil",
-      "summaryEn": "Anadolu Agency reports that France's fiscal indiscipline, political fallout and Spain's snap elections have pushed the euro down 5% since the start of 2026. The piece says this limits the European Central Bank's policy options.",
-      "important": false,
-      "processedAt": "2026-10-13T09:43:11.201Z"
     }
   ],
   "rejected": {
@@ -4952,6 +4953,7 @@
     "8f6168e9af31": "2026-11-12",
     "c4dea867b796": "2026-11-12",
     "c68137efe13d": "2026-11-12",
-    "9334c283f109": "2026-11-12"
+    "9334c283f109": "2026-11-12",
+    "09c80b4c2920": "2026-11-12"
   }
 }
