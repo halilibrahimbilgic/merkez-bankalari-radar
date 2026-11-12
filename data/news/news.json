@@ -1,5 +1,5 @@
 {
-  "fetchedAt": "2026-11-12T04:02:01.164Z",
+  "fetchedAt": "2026-11-12T05:31:58.075Z",
   "items": [
     {
       "id": "916ef8f8d2c0",
@@ -4847,21 +4847,6 @@
       "summaryEn": "German inflation rose to 3.3% in September, the highest reading of 2026. The head of the statistical office said energy prices drove the increase.",
       "important": false,
       "processedAt": "2026-10-13T09:43:11.201Z"
-    },
-    {
-      "id": "4dd45d868706",
-      "sourceKey": "cnbc-economy",
-      "sourceName": "CNBC",
-      "kind": "media",
-      "url": "https://www.cnbc.com/2026/10/13/treasury-yields-imf-debt-inflation-.html",
-      "publishedAt": "2026-10-13T04:54:07.000Z",
-      "titleOriginal": "IMF warns bond yields could see a 'disorderly' spike as debt, inflation risks worsen",
-      "titleTr": "IMF: Tahvil faizlerinde düzensiz sıçrama riski artıyor",
-      "summaryTr": "IMF, devlet tahvili piyasasındaki risklerin kötüleştiğini ve getirilerin sert ve düzensiz biçimde yükselebileceğini belirtti. Uyarı borç ve enflasyon risklerine dayandırılıyor.",
-      "titleEn": "IMF warns of 'disorderly' spike in bond yields",
-      "summaryEn": "The IMF said risks in the government bond market have worsened and yields could jump sharply and disorderly. It cited growing debt and inflation risks.",
-      "important": false,
-      "processedAt": "2026-10-13T09:43:11.201Z"
     }
   ],
   "rejected": {
@@ -4933,6 +4918,7 @@
     "e697f4efba19": "2026-11-11",
     "5bb8275e0fea": "2026-11-12",
     "0a86d76e5671": "2026-11-12",
-    "d8f3c0f5d91c": "2026-11-12"
+    "d8f3c0f5d91c": "2026-11-12",
+    "8f6168e9af31": "2026-11-12"
   }
 }
