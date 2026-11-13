@@ -1,36 +1,6 @@
 {
-  "fetchedAt": "2026-11-12T13:30:35.080Z",
+  "fetchedAt": "2026-11-13T05:02:31.378Z",
   "events": [
-    {
-      "id": "ecb-2026-11-11-yx1ouo",
-      "bankCode": "ecb",
-      "at": "2026-11-11T07:50:00.000Z",
-      "timeTbd": false,
-      "kind": "testimony",
-      "speaker": "Piero Cipollone",
-      "title": "Virtual participation by Mr Cipollone in a digital euro roundtable as part of a policy breakfast organised by the Institute for Competitiveness at the European Parliament",
-      "url": "https://www.ecb.europa.eu/press/calendars/weekly/html/index.en.html"
-    },
-    {
-      "id": "ecb-2026-11-11-1lsqwhk",
-      "bankCode": "ecb",
-      "at": "2026-11-11T09:45:00.000Z",
-      "timeTbd": false,
-      "kind": "discussion",
-      "speaker": "Christine Lagarde",
-      "role": "President",
-      "title": "Participation by Ms Lagarde in panel discussion at 9th Paris Peace Forum in Paris, France",
-      "url": "https://www.ecb.europa.eu/press/calendars/weekly/html/index.en.html"
-    },
-    {
-      "id": "tcmb-2026-11-12-inflation-report",
-      "bankCode": "tcmb",
-      "at": "2026-11-11T21:00:00.000Z",
-      "timeTbd": true,
-      "kind": "inflation-report",
-      "title": "Enflasyon Raporu",
-      "url": "https://www.tcmb.gov.tr/wps/wcm/connect/TR/TCMB+TR/Main+Menu/Duyurular/Takvim"
-    },
     {
       "id": "fed-2026-11-12-w6um9e",
       "bankCode": "fed",
@@ -106,6 +76,39 @@
       "url": "https://www.federalreserve.gov/newsevents/calendar.htm"
     },
     {
+      "id": "fed-2026-11-16-1407e6o",
+      "bankCode": "fed",
+      "at": "2026-11-16T10:00:00.000Z",
+      "timeTbd": false,
+      "kind": "speech",
+      "speaker": "Michael S. Barr",
+      "role": "Governor",
+      "title": "At the 7th ACM International Conference on AI in Finance, Milan, Italy",
+      "url": "https://www.federalreserve.gov/newsevents/calendar.htm"
+    },
+    {
+      "id": "fed-2026-11-16-xuzvyc",
+      "bankCode": "fed",
+      "at": "2026-11-16T17:00:00.000Z",
+      "timeTbd": false,
+      "kind": "speech",
+      "speaker": "Kevin Warsh",
+      "role": "Chair",
+      "title": "At the Federal Reserve’s Productivity and Jobs Task Force Conference, Federal Reserve Bank of San Francisco, San Francisco, Calif.",
+      "url": "https://www.federalreserve.gov/newsevents/calendar.htm"
+    },
+    {
+      "id": "fed-2026-11-17-3xjxf5",
+      "bankCode": "fed",
+      "at": "2026-11-17T14:10:00.000Z",
+      "timeTbd": false,
+      "kind": "speech",
+      "speaker": "Christopher J. Waller",
+      "role": "Governor",
+      "title": "At The Clearing House (TCH) Annual Conference, New York, N.Y.",
+      "url": "https://www.federalreserve.gov/newsevents/calendar.htm"
+    },
+    {
       "id": "boe-cpi-2026-11-18",
       "bankCode": "boe",
       "at": "2026-11-18T07:00:00.000Z",
@@ -113,6 +116,17 @@
       "kind": "cpi",
       "title": "CPI",
       "url": "https://www.ons.gov.uk/releasecalendar"
+    },
+    {
+      "id": "fed-2026-11-18-w6um9e",
+      "bankCode": "fed",
+      "at": "2026-11-18T18:35:00.000Z",
+      "timeTbd": false,
+      "kind": "speech",
+      "speaker": "Michael S. Barr",
+      "role": "Governor",
+      "title": "At Making Missing Markets: Catalyzing Capital and Igniting Innovation, Federal Reserve Bank of New York, New York, N.Y.",
+      "url": "https://www.federalreserve.gov/newsevents/calendar.htm"
     },
     {
       "id": "fed-2026-11-18-1vp5sqm",
@@ -124,6 +138,17 @@
       "url": "https://www.federalreserve.gov/newsevents/calendar.htm"
     },
     {
+      "id": "fed-2026-11-19-grzmek",
+      "bankCode": "fed",
+      "at": "2026-11-19T19:15:00.000Z",
+      "timeTbd": false,
+      "kind": "discussion",
+      "speaker": "Michael S. Barr",
+      "role": "Governor",
+      "title": "At the FinRegLab 2026 AI Symposium, Washington, D.C.",
+      "url": "https://www.federalreserve.gov/newsevents/calendar.htm"
+    },
+    {
       "id": "boj-cpi-2026-11-19",
       "bankCode": "boj",
       "at": "2026-11-19T23:30:00.000Z",
@@ -131,6 +156,28 @@
       "kind": "cpi",
       "title": "CPI",
       "url": "https://www.stat.go.jp/english/data/cpi/1582.html"
+    },
+    {
+      "id": "fed-2026-11-20-3xjxf5",
+      "bankCode": "fed",
+      "at": "2026-11-20T13:25:00.000Z",
+      "timeTbd": false,
+      "kind": "speech",
+      "speaker": "Christopher J. Waller",
+      "role": "Governor",
+      "title": "At the College Fed Challenge Finals",
+      "url": "https://www.federalreserve.gov/newsevents/calendar.htm"
+    },
+    {
+      "id": "fed-2026-11-20-1kcv06a",
+      "bankCode": "fed",
+      "at": "2026-11-20T17:15:00.000Z",
+      "timeTbd": false,
+      "kind": "speech",
+      "speaker": "Lisa D. Cook",
+      "role": "Governor",
+      "title": "At the Annual Conference of the Central Bank of Chile, Santiago, Chile",
+      "url": "https://www.federalreserve.gov/newsevents/calendar.htm"
     },
     {
       "id": "rba-cpi-2026-11-25",
