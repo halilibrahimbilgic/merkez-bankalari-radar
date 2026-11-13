@@ -1,5 +1,5 @@
 {
-  "fetchedAt": "2026-11-13T05:02:31.378Z",
+  "fetchedAt": "2026-11-13T12:46:54.778Z",
   "events": [
     {
       "id": "fed-2026-11-12-w6um9e",
@@ -11,27 +11,6 @@
       "role": "Governor",
       "title": "At A Conversation with Michael S. Barr (virtual)",
       "url": "https://www.federalreserve.gov/newsevents/calendar.htm"
-    },
-    {
-      "id": "ecb-2026-11-12-5qg9l7",
-      "bankCode": "ecb",
-      "at": "2026-11-12T15:30:00.000Z",
-      "timeTbd": false,
-      "kind": "testimony",
-      "speaker": "Boris Vujčić",
-      "title": "Participation by Mr Vujčić in panel at launch event on IMF Regional Economic Outlook for Europe \"Choosing Growth\" organised by IMF and ECB in Brussels, Belgium",
-      "url": "https://www.ecb.europa.eu/press/calendars/weekly/html/index.en.html"
-    },
-    {
-      "id": "ecb-2026-11-12-hwyei4",
-      "bankCode": "ecb",
-      "at": "2026-11-12T19:30:00.000Z",
-      "timeTbd": false,
-      "kind": "discussion",
-      "speaker": "Christine Lagarde",
-      "role": "President",
-      "title": "On-stage conversation between Ms Lagarde and Timothy Geithner at 50th anniversary gala of the French-American Foundation in Paris, France",
-      "url": "https://www.ecb.europa.eu/press/calendars/weekly/html/index.en.html"
     },
     {
       "id": "ecb-2026-11-13-445uzf",
@@ -76,6 +55,16 @@
       "url": "https://www.federalreserve.gov/newsevents/calendar.htm"
     },
     {
+      "id": "ecb-2026-11-16-1bbpcf3",
+      "bankCode": "ecb",
+      "at": "2026-11-16T08:15:00.000Z",
+      "timeTbd": false,
+      "kind": "speech",
+      "speaker": "Boris Vujčić",
+      "title": "Virtual opening speech by Mr Vujčić at 29th Euro Finance Week in Frankfurt, Germany",
+      "url": "https://www.ecb.europa.eu/press/calendars/weekly/html/index.en.html"
+    },
+    {
       "id": "fed-2026-11-16-1407e6o",
       "bankCode": "fed",
       "at": "2026-11-16T10:00:00.000Z",
@@ -109,6 +98,16 @@
       "url": "https://www.federalreserve.gov/newsevents/calendar.htm"
     },
     {
+      "id": "ecb-2026-11-17-1rw4254",
+      "bankCode": "ecb",
+      "at": "2026-11-17T18:30:00.000Z",
+      "timeTbd": false,
+      "kind": "testimony",
+      "speaker": "Philip R. Lane",
+      "title": "Lecture by Mr Lane at Michael Chae Seminar on Macroeconomic Policy organised by University of Harvard in Cambridge, United States",
+      "url": "https://www.ecb.europa.eu/press/calendars/weekly/html/index.en.html"
+    },
+    {
       "id": "boe-cpi-2026-11-18",
       "bankCode": "boe",
       "at": "2026-11-18T07:00:00.000Z",
@@ -116,6 +115,17 @@
       "kind": "cpi",
       "title": "CPI",
       "url": "https://www.ons.gov.uk/releasecalendar"
+    },
+    {
+      "id": "ecb-2026-11-18-3eipvm",
+      "bankCode": "ecb",
+      "at": "2026-11-18T14:25:00.000Z",
+      "timeTbd": false,
+      "kind": "discussion",
+      "speaker": "Christine Lagarde",
+      "role": "President",
+      "title": "Live conversation between Ms Lagarde and Andrew Ross Sorkin at DealBook Summit in New York, USA",
+      "url": "https://www.ecb.europa.eu/press/calendars/weekly/html/index.en.html"
     },
     {
       "id": "fed-2026-11-18-w6um9e",
@@ -138,6 +148,27 @@
       "url": "https://www.federalreserve.gov/newsevents/calendar.htm"
     },
     {
+      "id": "ecb-2026-11-19-1bnpqel",
+      "bankCode": "ecb",
+      "at": "2026-11-19T10:00:00.000Z",
+      "timeTbd": false,
+      "kind": "speech",
+      "speaker": "Claudia Buch",
+      "title": "Introductory statement by Ms Buch at ECB Banking Supervision press conference on the aggregate results of the 2026 Supervisory Review and Evaluation Process (SREP) in Frankfurt, Germany",
+      "url": "https://www.bankingsupervision.europa.eu/home/html/index.en.html"
+    },
+    {
+      "id": "ecb-2026-11-19-1ru80ba",
+      "bankCode": "ecb",
+      "at": "2026-11-19T13:30:00.000Z",
+      "timeTbd": false,
+      "kind": "discussion",
+      "speaker": "Christine Lagarde",
+      "role": "President",
+      "title": "Online conversation by Ms Lagarde at Conference on Financial Literacy in Brussels, Belgium",
+      "url": "https://finance.ec.europa.eu/events/high-level-conference-financial-literacy-beyond-numbers-2026-11-19_en"
+    },
+    {
       "id": "fed-2026-11-19-grzmek",
       "bankCode": "fed",
       "at": "2026-11-19T19:15:00.000Z",
@@ -156,6 +187,37 @@
       "kind": "cpi",
       "title": "CPI",
       "url": "https://www.stat.go.jp/english/data/cpi/1582.html"
+    },
+    {
+      "id": "ecb-2026-11-20-n23dg8",
+      "bankCode": "ecb",
+      "at": "2026-11-20T03:10:00.000Z",
+      "timeTbd": false,
+      "kind": "discussion",
+      "speaker": "Piero Cipollone",
+      "title": "Participation by Mr Cipollone in panel \"A Multi-Rail Future: What Should Come First?\" at Singapore Fintech Festival 2026 in Singapore",
+      "url": "https://www.fintechfestival.sg/agenda?startDate=1795104000000"
+    },
+    {
+      "id": "ecb-2026-11-20-pysdrb",
+      "bankCode": "ecb",
+      "at": "2026-11-20T08:30:00.000Z",
+      "timeTbd": false,
+      "kind": "speech",
+      "speaker": "Christine Lagarde",
+      "role": "President",
+      "title": "Keynote speech by Ms Lagarde at European Banking Congress 2026 in Frankfurt, Germany",
+      "url": "https://www.ecb.europa.eu/press/calendars/weekly/html/index.en.html"
+    },
+    {
+      "id": "ecb-2026-11-20-1tpq44w",
+      "bankCode": "ecb",
+      "at": "2026-11-20T10:40:00.000Z",
+      "timeTbd": false,
+      "kind": "speech",
+      "speaker": "Patrick Montagner",
+      "title": "Speech by Mr Montagner at Deutsche Bundesbank 14th Regulatory Symposium \"Megatrend Demographics – Opportunities and Challenges of an Aging and Shrinking Society\" in Frankfurt, Germany",
+      "url": "https://www.ecb.europa.eu/press/calendars/weekly/html/index.en.html"
     },
     {
       "id": "fed-2026-11-20-3xjxf5",

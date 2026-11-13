@@ -1,15 +1,10 @@
 {
-  "fetchedAt": "2026-11-13T05:02:15.868Z",
+  "fetchedAt": "2026-11-13T12:46:42.406Z",
   "tcmb": {
     "kind": "survey",
-    "period": "2026-10",
+    "period": "2026-11",
     "sourceUrl": "https://www.tcmb.gov.tr/wps/wcm/connect/TR/TCMB+TR/Main+Menu/Istatistikler/Egilim+Anketleri/Piyasa+Katilimcilari+Anketi/",
     "meetings": [
-      {
-        "meetingId": "tcmb-2026-10-22",
-        "meetingAt": "2026-10-22T11:00:00.000Z",
-        "expectedRate": 36
-      },
       {
         "meetingId": "tcmb-2026-12-10",
         "meetingAt": "2026-12-10T11:00:00.000Z",
@@ -18,55 +13,60 @@
       {
         "meetingId": "tcmb-2027-01-21",
         "meetingAt": "2027-01-21T11:00:00.000Z",
-        "expectedRate": 34.35
+        "expectedRate": 34.3
+      },
+      {
+        "meetingId": "tcmb-2027-03-18",
+        "meetingAt": "2027-03-18T11:00:00.000Z",
+        "expectedRate": 33.37
       }
     ],
     "yearEnd": 35,
-    "months12": 29.01,
-    "inflation12": 23.89,
-    "inflationYearEnd": 29.63
+    "months12": 28.9,
+    "inflation12": 24.04,
+    "inflationYearEnd": 30.04
   },
   "boe": {
     "kind": "market",
-    "asOf": "2026-11-11",
+    "asOf": "2026-11-12",
     "sourceUrl": "https://www.bankofengland.co.uk/statistics/yield-curves",
     "currentRate": 4,
     "meetings": [
       {
         "meetingId": "boe-2026-12-17",
         "meetingAt": "2026-12-17T12:00:00.000Z",
-        "impliedRate": 4.19,
-        "changeBp": 19
+        "impliedRate": 4.2,
+        "changeBp": 20
       },
       {
         "meetingId": "boe-2027-02-04",
         "meetingAt": "2027-02-04T12:00:00.000Z",
-        "impliedRate": 4.37,
-        "changeBp": 18
+        "impliedRate": 4.38,
+        "changeBp": 19
       },
       {
         "meetingId": "boe-2027-03-18",
         "meetingAt": "2027-03-18T12:00:00.000Z",
-        "impliedRate": 4.52,
+        "impliedRate": 4.54,
         "changeBp": 15
       },
       {
         "meetingId": "boe-2027-04-29",
         "meetingAt": "2027-04-29T11:00:00.000Z",
-        "impliedRate": 4.65,
-        "changeBp": 13
+        "impliedRate": 4.67,
+        "changeBp": 14
       },
       {
         "meetingId": "boe-2027-06-17",
         "meetingAt": "2027-06-17T11:00:00.000Z",
-        "impliedRate": 4.76,
-        "changeBp": 10
+        "impliedRate": 4.79,
+        "changeBp": 11
       },
       {
         "meetingId": "boe-2027-07-29",
         "meetingAt": "2027-07-29T11:00:00.000Z",
-        "impliedRate": 4.83,
-        "changeBp": 7
+        "impliedRate": 4.87,
+        "changeBp": 8
       }
     ]
   },
