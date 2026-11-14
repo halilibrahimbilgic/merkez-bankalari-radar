@@ -1,17 +1,6 @@
 {
-  "fetchedAt": "2026-11-13T12:46:54.778Z",
+  "fetchedAt": "2026-11-14T05:02:20.384Z",
   "events": [
-    {
-      "id": "fed-2026-11-12-w6um9e",
-      "bankCode": "fed",
-      "at": "2026-11-12T15:00:00.000Z",
-      "timeTbd": false,
-      "kind": "speech",
-      "speaker": "Michael S. Barr",
-      "role": "Governor",
-      "title": "At A Conversation with Michael S. Barr (virtual)",
-      "url": "https://www.federalreserve.gov/newsevents/calendar.htm"
-    },
     {
       "id": "ecb-2026-11-13-445uzf",
       "bankCode": "ecb",
@@ -57,7 +46,7 @@
     {
       "id": "ecb-2026-11-16-1bbpcf3",
       "bankCode": "ecb",
-      "at": "2026-11-16T08:15:00.000Z",
+      "at": "2026-11-16T08:30:00.000Z",
       "timeTbd": false,
       "kind": "speech",
       "speaker": "Boris Vujčić",
@@ -167,6 +156,17 @@
       "role": "President",
       "title": "Online conversation by Ms Lagarde at Conference on Financial Literacy in Brussels, Belgium",
       "url": "https://finance.ec.europa.eu/events/high-level-conference-financial-literacy-beyond-numbers-2026-11-19_en"
+    },
+    {
+      "id": "fed-2026-11-19-7tlyod",
+      "bankCode": "fed",
+      "at": "2026-11-19T14:25:00.000Z",
+      "timeTbd": false,
+      "kind": "discussion",
+      "speaker": "Philip N. Jefferson",
+      "role": "Vice Chair",
+      "title": "At the International Monetary Fund (IMF) and Central Bank of Brazil conference \"A Quarter Century of Inflation Targeting in Latin America: Progress, Challenges, and the Road Ahead\" (virtual)",
+      "url": "https://www.federalreserve.gov/newsevents/calendar.htm"
     },
     {
       "id": "fed-2026-11-19-grzmek",
