@@ -1,48 +1,6 @@
 {
-  "fetchedAt": "2026-11-14T11:54:32.590Z",
+  "fetchedAt": "2026-11-15T05:02:32.938Z",
   "events": [
-    {
-      "id": "ecb-2026-11-13-445uzf",
-      "bankCode": "ecb",
-      "at": "2026-11-13T06:50:00.000Z",
-      "timeTbd": false,
-      "kind": "discussion",
-      "speaker": "Frank Elderson",
-      "title": "Participation by Mr Elderson in panel discussion at Central Bank of Türkiye Conference during COP31 in Antalya, Turkey",
-      "url": "https://www.ecb.europa.eu/press/calendars/weekly/html/index.en.html"
-    },
-    {
-      "id": "ecb-2026-11-13-1eye15x",
-      "bankCode": "ecb",
-      "at": "2026-11-13T07:20:00.000Z",
-      "timeTbd": false,
-      "kind": "testimony",
-      "speaker": "Isabel Schnabel",
-      "title": "Keynote speech and participation in a panel discussion by Ms Schnabel at Lietuvos bankas Annual Economics Conference in Vilnius, Lithuania",
-      "url": "https://www.lb.lt/en/forms/registration-to-the-economics-conference"
-    },
-    {
-      "id": "fed-2026-11-13-1asem21",
-      "bankCode": "fed",
-      "at": "2026-11-13T15:50:00.000Z",
-      "timeTbd": false,
-      "kind": "discussion",
-      "speaker": "Michelle W. Bowman",
-      "role": "Vice Chair for Supervision",
-      "title": "At the Connecticut Bankers Association Annual Meeting and Conference 2026 (virtual)",
-      "url": "https://www.federalreserve.gov/newsevents/calendar.htm"
-    },
-    {
-      "id": "fed-2026-11-13-o12rtf",
-      "bankCode": "fed",
-      "at": "2026-11-14T00:00:00.000Z",
-      "timeTbd": false,
-      "kind": "speech",
-      "speaker": "Philip N. Jefferson",
-      "role": "Vice Chair",
-      "title": "At the University of California San Diego Economics Roundtable, La Jolla, Calif.",
-      "url": "https://www.federalreserve.gov/newsevents/calendar.htm"
-    },
     {
       "id": "ecb-2026-11-16-1bbpcf3",
       "bankCode": "ecb",
