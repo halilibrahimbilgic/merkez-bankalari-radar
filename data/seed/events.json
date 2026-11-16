@@ -1,5 +1,5 @@
 {
-  "fetchedAt": "2026-11-16T05:02:02.129Z",
+  "fetchedAt": "2026-11-16T13:18:15.448Z",
   "events": [
     {
       "id": "ecb-2026-11-16-1bbpcf3",
@@ -149,7 +149,7 @@
     {
       "id": "ecb-2026-11-20-n23dg8",
       "bankCode": "ecb",
-      "at": "2026-11-20T03:10:00.000Z",
+      "at": "2026-11-20T03:20:00.000Z",
       "timeTbd": false,
       "kind": "discussion",
       "speaker": "Piero Cipollone",
