@@ -1,5 +1,5 @@
 {
-  "fetchedAt": "2026-11-10T00:03:08.962Z",
+  "fetchedAt": "2026-11-17T00:32:10.241Z",
   "minutes": [
     {
       "meetingId": "boe-2026-02-05",
@@ -1024,6 +1024,14 @@
         "promptVersion": "1",
         "summarizedAt": "2026-10-14T23:03:47.514Z"
       }
+    },
+    {
+      "meetingId": "rba-2026-11-03",
+      "bankCode": "rba",
+      "urls": {
+        "en": "https://www.rba.gov.au/monetary-policy/rba-board-minutes/2026/2026-11-03.html"
+      },
+      "fetchedAt": "2026-11-17T00:32:10.240Z"
     },
     {
       "meetingId": "tcmb-2026-01-22",
