@@ -1,5 +1,5 @@
 {
-  "fetchedAt": "2026-11-18T05:02:20.435Z",
+  "fetchedAt": "2026-11-18T07:02:10.249Z",
   "readings": [
     {
       "bankCode": "fed",
@@ -22,8 +22,8 @@
     },
     {
       "bankCode": "boe",
-      "period": "2026-09",
-      "yoy": 3.5,
+      "period": "2026-10",
+      "yoy": 3.6,
       "sourceUrl": "https://www.ons.gov.uk/economy/inflationandpriceindices/timeseries/d7g7/mm23"
     },
     {
