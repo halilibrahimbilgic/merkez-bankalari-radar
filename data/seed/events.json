@@ -1,5 +1,5 @@
 {
-  "fetchedAt": "2026-11-18T05:02:11.291Z",
+  "fetchedAt": "2026-11-18T13:38:03.559Z",
   "events": [
     {
       "id": "fed-2026-11-17-3xjxf5",
@@ -23,18 +23,9 @@
       "url": "https://www.ecb.europa.eu/press/calendars/weekly/html/index.en.html"
     },
     {
-      "id": "boe-cpi-2026-11-18",
-      "bankCode": "boe",
-      "at": "2026-11-18T07:00:00.000Z",
-      "timeTbd": false,
-      "kind": "cpi",
-      "title": "CPI",
-      "url": "https://www.ons.gov.uk/releasecalendar"
-    },
-    {
       "id": "ecb-2026-11-18-3eipvm",
       "bankCode": "ecb",
-      "at": "2026-11-18T14:25:00.000Z",
+      "at": "2026-11-18T14:15:00.000Z",
       "timeTbd": false,
       "kind": "discussion",
       "speaker": "Christine Lagarde",
