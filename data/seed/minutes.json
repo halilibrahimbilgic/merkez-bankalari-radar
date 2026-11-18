@@ -1,5 +1,5 @@
 {
-  "fetchedAt": "2026-11-17T00:32:10.241Z",
+  "fetchedAt": "2026-11-18T19:02:31.419Z",
   "minutes": [
     {
       "meetingId": "boe-2026-02-05",
@@ -832,6 +832,14 @@
         "promptVersion": "1",
         "summarizedAt": "2026-10-14T23:26:32.529Z"
       }
+    },
+    {
+      "meetingId": "fed-2026-10-28",
+      "bankCode": "fed",
+      "urls": {
+        "en": "https://www.federalreserve.gov/monetarypolicy/fomcminutes20261028.htm"
+      },
+      "fetchedAt": "2026-11-18T19:02:31.418Z"
     },
     {
       "meetingId": "rba-2026-02-03",
