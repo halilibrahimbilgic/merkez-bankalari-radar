@@ -1,38 +1,6 @@
 {
-  "fetchedAt": "2026-11-17T14:03:51.052Z",
+  "fetchedAt": "2026-11-18T05:02:11.291Z",
   "events": [
-    {
-      "id": "ecb-2026-11-16-1bbpcf3",
-      "bankCode": "ecb",
-      "at": "2026-11-16T08:30:00.000Z",
-      "timeTbd": false,
-      "kind": "speech",
-      "speaker": "Boris Vujčić",
-      "title": "Virtual opening speech by Mr Vujčić at 29th Euro Finance Week in Frankfurt, Germany",
-      "url": "https://www.ecb.europa.eu/press/calendars/weekly/html/index.en.html"
-    },
-    {
-      "id": "fed-2026-11-16-1407e6o",
-      "bankCode": "fed",
-      "at": "2026-11-16T10:00:00.000Z",
-      "timeTbd": false,
-      "kind": "speech",
-      "speaker": "Michael S. Barr",
-      "role": "Governor",
-      "title": "At the 7th ACM International Conference on AI in Finance, Milan, Italy",
-      "url": "https://www.federalreserve.gov/newsevents/calendar.htm"
-    },
-    {
-      "id": "fed-2026-11-16-xuzvyc",
-      "bankCode": "fed",
-      "at": "2026-11-16T17:00:00.000Z",
-      "timeTbd": false,
-      "kind": "speech",
-      "speaker": "Kevin Warsh",
-      "role": "Chair",
-      "title": "At the Federal Reserve’s Productivity and Jobs Task Force Conference, Federal Reserve Bank of San Francisco, San Francisco, Calif.",
-      "url": "https://www.federalreserve.gov/newsevents/calendar.htm"
-    },
     {
       "id": "fed-2026-11-17-3xjxf5",
       "bankCode": "fed",
