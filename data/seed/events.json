@@ -1,27 +1,6 @@
 {
-  "fetchedAt": "2026-11-18T13:38:03.559Z",
+  "fetchedAt": "2026-11-19T05:02:16.391Z",
   "events": [
-    {
-      "id": "fed-2026-11-17-3xjxf5",
-      "bankCode": "fed",
-      "at": "2026-11-17T14:10:00.000Z",
-      "timeTbd": false,
-      "kind": "speech",
-      "speaker": "Christopher J. Waller",
-      "role": "Governor",
-      "title": "At The Clearing House (TCH) Annual Conference, New York, N.Y.",
-      "url": "https://www.federalreserve.gov/newsevents/calendar.htm"
-    },
-    {
-      "id": "ecb-2026-11-17-1rw4254",
-      "bankCode": "ecb",
-      "at": "2026-11-17T18:30:00.000Z",
-      "timeTbd": false,
-      "kind": "testimony",
-      "speaker": "Philip R. Lane",
-      "title": "Lecture by Mr Lane at Michael Chae Seminar on Macroeconomic Policy organised by University of Harvard in Cambridge, United States",
-      "url": "https://www.ecb.europa.eu/press/calendars/weekly/html/index.en.html"
-    },
     {
       "id": "ecb-2026-11-18-3eipvm",
       "bankCode": "ecb",
@@ -84,6 +63,16 @@
       "role": "Vice Chair",
       "title": "At the International Monetary Fund (IMF) and Central Bank of Brazil conference \"A Quarter Century of Inflation Targeting in Latin America: Progress, Challenges, and the Road Ahead\" (virtual)",
       "url": "https://www.federalreserve.gov/newsevents/calendar.htm"
+    },
+    {
+      "id": "ecb-2026-11-19-4axuk9",
+      "bankCode": "ecb",
+      "at": "2026-11-19T14:45:00.000Z",
+      "timeTbd": false,
+      "kind": "discussion",
+      "speaker": "Sharon Donnery",
+      "title": "Participation by Ms Donnery in fireside chat at JP Morgan Financials Conference in London, United Kingdom",
+      "url": "https://www.ecb.europa.eu/press/calendars/weekly/html/index.en.html"
     },
     {
       "id": "fed-2026-11-19-grzmek",
@@ -194,6 +183,15 @@
       "title": "CPI Kasım 2026",
       "period": "Kasım 2026",
       "url": "https://www.tuik.gov.tr/Kurumsal/Veri_Takvimi"
+    },
+    {
+      "id": "fed-cpi-2026-12-10",
+      "bankCode": "fed",
+      "at": "2026-12-10T13:30:00.000Z",
+      "timeTbd": false,
+      "kind": "cpi",
+      "title": "CPI",
+      "url": "https://www.bls.gov/schedule/news_release/cpi.htm"
     }
   ]
 }
