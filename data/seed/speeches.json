@@ -1,5 +1,5 @@
 {
-  "fetchedAt": "2026-11-19T14:06:41.186Z",
+  "fetchedAt": "2026-11-20T05:02:53.511Z",
   "speeches": [
     {
       "id": "20261119-made-europe",
@@ -40,6 +40,16 @@
       "title": "Some potential financial stability implications of Artificial Intelligence",
       "speechDate": "2026-11-19",
       "sourceUrl": "https://www.bis.org/speeches/20261119-some-potential-financial-stability-implications-artificial-intelligence"
+    },
+    {
+      "id": "20261119-economic-activity-prices-and-monetary-policy-japan-japans-money-and-capital-market-transformation-will-paradigm-shift",
+      "contextEn": "Speech by Mr Hajime Takata, Member of the Policy Board of the Bank of Japan, at a meeting held by the Tokushima Association of Corporate Executives, Tokyo, 16 November 2026.",
+      "textLicense": "boj",
+      "bankCode": "boj",
+      "speakerName": "Hajime Takata",
+      "title": "Economic activity, prices, and monetary policy in Japan - Japan's money and capital market transformation - will a paradigm shift occur?",
+      "speechDate": "2026-11-19",
+      "sourceUrl": "https://www.bis.org/speeches/20261119-economic-activity-prices-and-monetary-policy-japan-japans-money-and-capital-market-transformation-will-paradigm-shift"
     },
     {
       "id": "20261112-economic-outlook-and-some-thoughts-labor-market-dynamism",

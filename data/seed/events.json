@@ -1,37 +1,6 @@
 {
-  "fetchedAt": "2026-11-19T14:05:26.237Z",
+  "fetchedAt": "2026-11-20T05:02:23.554Z",
   "events": [
-    {
-      "id": "ecb-2026-11-18-3eipvm",
-      "bankCode": "ecb",
-      "at": "2026-11-18T14:15:00.000Z",
-      "timeTbd": false,
-      "kind": "discussion",
-      "speaker": "Christine Lagarde",
-      "role": "President",
-      "title": "Live conversation between Ms Lagarde and Andrew Ross Sorkin at DealBook Summit in New York, USA",
-      "url": "https://www.ecb.europa.eu/press/calendars/weekly/html/index.en.html"
-    },
-    {
-      "id": "fed-2026-11-18-w6um9e",
-      "bankCode": "fed",
-      "at": "2026-11-18T18:35:00.000Z",
-      "timeTbd": false,
-      "kind": "speech",
-      "speaker": "Michael S. Barr",
-      "role": "Governor",
-      "title": "At Making Missing Markets: Catalyzing Capital and Igniting Innovation, Federal Reserve Bank of New York, New York, N.Y.",
-      "url": "https://www.federalreserve.gov/newsevents/calendar.htm"
-    },
-    {
-      "id": "fed-2026-11-18-1vp5sqm",
-      "bankCode": "fed",
-      "at": "2026-11-18T19:00:00.000Z",
-      "timeTbd": false,
-      "kind": "minutes",
-      "title": "FOMC Minutes",
-      "url": "https://www.federalreserve.gov/newsevents/calendar.htm"
-    },
     {
       "id": "ecb-2026-11-19-1bnpqel",
       "bankCode": "ecb",
