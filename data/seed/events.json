@@ -1,27 +1,6 @@
 {
-  "fetchedAt": "2026-11-20T05:02:23.554Z",
+  "fetchedAt": "2026-11-20T13:47:24.722Z",
   "events": [
-    {
-      "id": "ecb-2026-11-19-1bnpqel",
-      "bankCode": "ecb",
-      "at": "2026-11-19T10:00:00.000Z",
-      "timeTbd": false,
-      "kind": "speech",
-      "speaker": "Claudia Buch",
-      "title": "Introductory statement by Ms Buch at ECB Banking Supervision press conference on the aggregate results of the 2026 Supervisory Review and Evaluation Process (SREP) in Frankfurt, Germany",
-      "url": "https://www.bankingsupervision.europa.eu/home/html/index.en.html"
-    },
-    {
-      "id": "ecb-2026-11-19-1ru80ba",
-      "bankCode": "ecb",
-      "at": "2026-11-19T13:30:00.000Z",
-      "timeTbd": false,
-      "kind": "discussion",
-      "speaker": "Christine Lagarde",
-      "role": "President",
-      "title": "Online conversation by Ms Lagarde at Conference on Financial Literacy in Brussels, Belgium",
-      "url": "https://finance.ec.europa.eu/events/high-level-conference-financial-literacy-beyond-numbers-2026-11-19_en"
-    },
     {
       "id": "fed-2026-11-19-7tlyod",
       "bankCode": "fed",
@@ -32,16 +11,6 @@
       "role": "Vice Chair",
       "title": "At the International Monetary Fund (IMF) and Central Bank of Brazil conference \"A Quarter Century of Inflation Targeting in Latin America: Progress, Challenges, and the Road Ahead\" (virtual)",
       "url": "https://www.federalreserve.gov/newsevents/calendar.htm"
-    },
-    {
-      "id": "ecb-2026-11-19-4axuk9",
-      "bankCode": "ecb",
-      "at": "2026-11-19T14:45:00.000Z",
-      "timeTbd": false,
-      "kind": "discussion",
-      "speaker": "Sharon Donnery",
-      "title": "Participation by Ms Donnery in fireside chat at JP Morgan Financials Conference in London, United Kingdom",
-      "url": "https://www.ecb.europa.eu/press/calendars/weekly/html/index.en.html"
     },
     {
       "id": "fed-2026-11-19-grzmek",
@@ -115,6 +84,26 @@
       "role": "Governor",
       "title": "At the Annual Conference of the Central Bank of Chile, Santiago, Chile",
       "url": "https://www.federalreserve.gov/newsevents/calendar.htm"
+    },
+    {
+      "id": "ecb-2026-11-23-kz3zon",
+      "bankCode": "ecb",
+      "at": "2026-11-23T14:30:00.000Z",
+      "timeTbd": false,
+      "kind": "testimony",
+      "speaker": "Philip R. Lane",
+      "title": "Presentation by Mr Lane at Department of Finance Climate Economy Group meeting organised by Department of Finance in Dublin, Ireland",
+      "url": "https://www.ecb.europa.eu/press/calendars/weekly/html/index.en.html"
+    },
+    {
+      "id": "ecb-2026-11-24-164emiz",
+      "bankCode": "ecb",
+      "at": "2026-11-24T11:00:00.000Z",
+      "timeTbd": false,
+      "kind": "testimony",
+      "speaker": "Boris Vujčić",
+      "title": "Special address and participation in Central Bankers’ chat \"Resist the shocks – how to boost Europe’s resilience\" by Mr Vujčić at Conference on European Economic Integration (CEEI) \"CESEE in a Changing World: geoeconomics, technology and demographic shifts\" jointly organised by Oesterreichische Nationalbank and Narodowy Bank Polski in Vienna, Austria",
+      "url": "https://www.oenb-events.at/en/conference-on-european-economic-integration-ceei-2026"
     },
     {
       "id": "rba-cpi-2026-11-25",
