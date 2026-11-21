@@ -1,37 +1,6 @@
 {
-  "fetchedAt": "2026-11-20T13:47:24.722Z",
+  "fetchedAt": "2026-11-21T05:02:20.534Z",
   "events": [
-    {
-      "id": "fed-2026-11-19-7tlyod",
-      "bankCode": "fed",
-      "at": "2026-11-19T14:25:00.000Z",
-      "timeTbd": false,
-      "kind": "discussion",
-      "speaker": "Philip N. Jefferson",
-      "role": "Vice Chair",
-      "title": "At the International Monetary Fund (IMF) and Central Bank of Brazil conference \"A Quarter Century of Inflation Targeting in Latin America: Progress, Challenges, and the Road Ahead\" (virtual)",
-      "url": "https://www.federalreserve.gov/newsevents/calendar.htm"
-    },
-    {
-      "id": "fed-2026-11-19-grzmek",
-      "bankCode": "fed",
-      "at": "2026-11-19T19:15:00.000Z",
-      "timeTbd": false,
-      "kind": "discussion",
-      "speaker": "Michael S. Barr",
-      "role": "Governor",
-      "title": "At the FinRegLab 2026 AI Symposium, Washington, D.C.",
-      "url": "https://www.federalreserve.gov/newsevents/calendar.htm"
-    },
-    {
-      "id": "boj-cpi-2026-11-19",
-      "bankCode": "boj",
-      "at": "2026-11-19T23:30:00.000Z",
-      "timeTbd": false,
-      "kind": "cpi",
-      "title": "CPI",
-      "url": "https://www.stat.go.jp/english/data/cpi/1582.html"
-    },
     {
       "id": "ecb-2026-11-20-n23dg8",
       "bankCode": "ecb",
