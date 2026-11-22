@@ -1,59 +1,6 @@
 {
-  "fetchedAt": "2026-11-21T05:02:20.534Z",
+  "fetchedAt": "2026-11-22T05:02:29.890Z",
   "events": [
-    {
-      "id": "ecb-2026-11-20-n23dg8",
-      "bankCode": "ecb",
-      "at": "2026-11-20T03:20:00.000Z",
-      "timeTbd": false,
-      "kind": "discussion",
-      "speaker": "Piero Cipollone",
-      "title": "Participation by Mr Cipollone in panel \"A Multi-Rail Future: What Should Come First?\" at Singapore Fintech Festival 2026 in Singapore",
-      "url": "https://www.fintechfestival.sg/agenda?startDate=1795104000000"
-    },
-    {
-      "id": "ecb-2026-11-20-pysdrb",
-      "bankCode": "ecb",
-      "at": "2026-11-20T08:30:00.000Z",
-      "timeTbd": false,
-      "kind": "speech",
-      "speaker": "Christine Lagarde",
-      "role": "President",
-      "title": "Keynote speech by Ms Lagarde at European Banking Congress 2026 in Frankfurt, Germany",
-      "url": "https://www.ecb.europa.eu/press/calendars/weekly/html/index.en.html"
-    },
-    {
-      "id": "ecb-2026-11-20-1tpq44w",
-      "bankCode": "ecb",
-      "at": "2026-11-20T10:40:00.000Z",
-      "timeTbd": false,
-      "kind": "speech",
-      "speaker": "Patrick Montagner",
-      "title": "Speech by Mr Montagner at Deutsche Bundesbank 14th Regulatory Symposium \"Megatrend Demographics – Opportunities and Challenges of an Aging and Shrinking Society\" in Frankfurt, Germany",
-      "url": "https://www.ecb.europa.eu/press/calendars/weekly/html/index.en.html"
-    },
-    {
-      "id": "fed-2026-11-20-3xjxf5",
-      "bankCode": "fed",
-      "at": "2026-11-20T13:25:00.000Z",
-      "timeTbd": false,
-      "kind": "speech",
-      "speaker": "Christopher J. Waller",
-      "role": "Governor",
-      "title": "At the College Fed Challenge Finals",
-      "url": "https://www.federalreserve.gov/newsevents/calendar.htm"
-    },
-    {
-      "id": "fed-2026-11-20-1kcv06a",
-      "bankCode": "fed",
-      "at": "2026-11-20T17:15:00.000Z",
-      "timeTbd": false,
-      "kind": "speech",
-      "speaker": "Lisa D. Cook",
-      "role": "Governor",
-      "title": "At the Annual Conference of the Central Bank of Chile, Santiago, Chile",
-      "url": "https://www.federalreserve.gov/newsevents/calendar.htm"
-    },
     {
       "id": "ecb-2026-11-23-kz3zon",
       "bankCode": "ecb",
