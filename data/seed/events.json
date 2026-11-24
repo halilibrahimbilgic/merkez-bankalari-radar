@@ -1,5 +1,5 @@
 {
-  "fetchedAt": "2026-11-23T15:36:58.049Z",
+  "fetchedAt": "2026-11-24T15:29:10.676Z",
   "events": [
     {
       "id": "ecb-2026-11-23-kz3zon",
@@ -29,6 +29,17 @@
       "kind": "cpi",
       "title": "CPI",
       "url": "https://www.abs.gov.au/statistics/economy/price-indexes-and-inflation/consumer-price-index-australia/latest-release"
+    },
+    {
+      "id": "fed-2026-11-25-k30rtv",
+      "bankCode": "fed",
+      "at": "2026-11-25T12:25:00.000Z",
+      "timeTbd": false,
+      "kind": "speech",
+      "speaker": "Michelle W. Bowman",
+      "role": "Vice Chair for Supervision",
+      "title": "At a meeting with the Association of Supervisors of Banks of the Americas, Basel Committee on Banking Supervision, and Financial Stability Institute",
+      "url": "https://www.federalreserve.gov/newsevents/calendar.htm"
     },
     {
       "id": "fed-2026-11-25-3dfpwl",
