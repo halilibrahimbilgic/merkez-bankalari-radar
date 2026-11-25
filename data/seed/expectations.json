@@ -1,5 +1,5 @@
 {
-  "fetchedAt": "2026-11-25T05:02:06.915Z",
+  "fetchedAt": "2026-11-25T11:08:47.933Z",
   "tcmb": {
     "kind": "survey",
     "period": "2026-11",
@@ -65,7 +65,7 @@
       {
         "meetingId": "boe-2027-07-29",
         "meetingAt": "2027-07-29T11:00:00.000Z",
-        "impliedRate": 4.8,
+        "impliedRate": 4.79,
         "changeBp": 6
       }
     ]
