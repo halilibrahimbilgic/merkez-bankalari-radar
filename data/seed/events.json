@@ -1,16 +1,6 @@
 {
-  "fetchedAt": "2026-11-24T15:29:10.676Z",
+  "fetchedAt": "2026-11-25T05:02:19.783Z",
   "events": [
-    {
-      "id": "ecb-2026-11-23-kz3zon",
-      "bankCode": "ecb",
-      "at": "2026-11-23T14:30:00.000Z",
-      "timeTbd": false,
-      "kind": "testimony",
-      "speaker": "Philip R. Lane",
-      "title": "Presentation by Mr Lane at Department of Finance Climate Economy Group meeting organised by Department of Finance in Dublin, Ireland",
-      "url": "https://www.ecb.europa.eu/press/calendars/weekly/html/index.en.html"
-    },
     {
       "id": "ecb-2026-11-24-164emiz",
       "bankCode": "ecb",
@@ -20,15 +10,6 @@
       "speaker": "Boris Vujčić",
       "title": "Special address and participation in Central Bankers’ chat \"Resist the shocks – how to boost Europe’s resilience\" by Mr Vujčić at Conference on European Economic Integration (CEEI) \"CESEE in a Changing World: geoeconomics, technology and demographic shifts\" jointly organised by Oesterreichische Nationalbank and Narodowy Bank Polski in Vienna, Austria",
       "url": "https://www.oenb-events.at/en/conference-on-european-economic-integration-ceei-2026"
-    },
-    {
-      "id": "rba-cpi-2026-11-25",
-      "bankCode": "rba",
-      "at": "2026-11-25T00:30:00.000Z",
-      "timeTbd": false,
-      "kind": "cpi",
-      "title": "CPI",
-      "url": "https://www.abs.gov.au/statistics/economy/price-indexes-and-inflation/consumer-price-index-australia/latest-release"
     },
     {
       "id": "fed-2026-11-25-k30rtv",
@@ -77,6 +58,24 @@
       "kind": "cpi",
       "title": "CPI",
       "url": "https://www.bls.gov/schedule/news_release/cpi.htm"
+    },
+    {
+      "id": "boe-cpi-2026-12-16",
+      "bankCode": "boe",
+      "at": "2026-12-16T07:00:00.000Z",
+      "timeTbd": false,
+      "kind": "cpi",
+      "title": "CPI",
+      "url": "https://www.ons.gov.uk/releasecalendar"
+    },
+    {
+      "id": "tcmb-2026-12-17-mpc-summary",
+      "bankCode": "tcmb",
+      "at": "2026-12-16T21:00:00.000Z",
+      "timeTbd": true,
+      "kind": "mpc-summary",
+      "title": "Para Politikası Kurulu Toplantı Özeti",
+      "url": "https://www.tcmb.gov.tr/wps/wcm/connect/TR/TCMB+TR/Main+Menu/Duyurular/Takvim"
     }
   ]
 }
