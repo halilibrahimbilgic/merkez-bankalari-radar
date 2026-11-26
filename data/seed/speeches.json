@@ -1,6 +1,55 @@
 {
-  "fetchedAt": "2026-11-20T05:02:53.511Z",
+  "fetchedAt": "2026-11-26T14:40:17.890Z",
   "speeches": [
+    {
+      "id": "20261126-investing-americas-underserved-communities",
+      "contextEn": "Speech by Mr Michael S Barr, Member of the Board of Governors of the Federal Reserve System, at the conference “Making missing markets: catalyzing capital and igniting innovation”, organised by the Federal Reserve Bank of New York, New York City, 18 November 2026.",
+      "textLicense": "frb-public-domain",
+      "bankCode": "fed",
+      "speakerName": "Michael S Barr",
+      "title": "Investing in America’s underserved communities",
+      "speechDate": "2026-11-26",
+      "sourceUrl": "https://www.bis.org/speeches/20261126-investing-americas-underserved-communities"
+    },
+    {
+      "id": "20261126-united-kingdoms-regional-growth-unlocking-economys-full-potential",
+      "contextEn": "Speech by Mr Andrew Bailey, Governor of the Bank of England, at the Institute of Economic Development Conference, London, 18 September 2026.",
+      "bankCode": "boe",
+      "speakerName": "Andrew Bailey",
+      "title": "The United Kingdom’s regional growth - unlocking the economy’s full potential",
+      "speechDate": "2026-11-26",
+      "sourceUrl": "https://www.bis.org/speeches/20261126-united-kingdoms-regional-growth-unlocking-economys-full-potential"
+    },
+    {
+      "id": "20261126-opening-remarks-productivity-and-jobs-task-force-conference",
+      "contextEn": "Speech by Mr Kevin Warsh, Chair of the Board of Governors of the Federal Reserve System, at the Productivity and Jobs Task Force Conference, hosted by the Federal Reserve Board and the Federal Reserve Bank of San Francisco, San Francisco, California, 16 November 2026.",
+      "textLicense": "frb-public-domain",
+      "bankCode": "fed",
+      "speakerName": "Kevin Warsh",
+      "title": "Opening remarks - Productivity and Jobs Task Force Conference",
+      "speechDate": "2026-11-26",
+      "sourceUrl": "https://www.bis.org/speeches/20261126-opening-remarks-productivity-and-jobs-task-force-conference"
+    },
+    {
+      "id": "20261126-monetary-policy-amid-frequent-and-complex-shocks",
+      "contextEn": "Speech by Mr Philip N Jefferson, Vice Chair of the Board of Governors of the Federal Reserve System, at the International Monetary Fund and Central Bank of Brazil Conference “A quarter century of inflation targeting in Latin America: progress, challenges, and the road ahead”, Brasilia, 19 November 2026.",
+      "textLicense": "frb-public-domain",
+      "bankCode": "fed",
+      "speakerName": "Philip N Jefferson",
+      "title": "Monetary policy amid frequent and complex shocks",
+      "speechDate": "2026-11-26",
+      "sourceUrl": "https://www.bis.org/speeches/20261126-monetary-policy-amid-frequent-and-complex-shocks"
+    },
+    {
+      "id": "20261126-considerations-intersection-payments-and-tokenized-markets",
+      "contextEn": "Speech by Mr Christopher J Waller, Member of the Board of Governors of the Federal Reserve System, at The Clearing House Annual Conference 2026 “Navigating the future of banking and payments”, New York City, 17 November 2026.",
+      "textLicense": "frb-public-domain",
+      "bankCode": "fed",
+      "speakerName": "Christopher J Waller",
+      "title": "Considerations at the intersection of payments and tokenized markets",
+      "speechDate": "2026-11-26",
+      "sourceUrl": "https://www.bis.org/speeches/20261126-considerations-intersection-payments-and-tokenized-markets"
+    },
     {
       "id": "20261119-made-europe",
       "contextEn": "Speech by Ms Isabel Schnabel, Member of the Executive Board of the European Central Bank, at the Economics Conference, organised by the Bank of Lithuania, Vilnius, 13 November 2026.",
