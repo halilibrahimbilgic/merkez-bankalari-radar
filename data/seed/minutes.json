@@ -1,5 +1,5 @@
 {
-  "fetchedAt": "2026-11-18T19:02:31.419Z",
+  "fetchedAt": "2026-11-26T12:32:11.918Z",
   "minutes": [
     {
       "meetingId": "boe-2026-02-05",
@@ -640,6 +640,14 @@
         "promptVersion": "1",
         "summarizedAt": "2026-10-15T02:33:46.011Z"
       }
+    },
+    {
+      "meetingId": "ecb-2026-10-29",
+      "bankCode": "ecb",
+      "urls": {
+        "en": "https://www.ecb.europa.eu/press/accounts/2026/html/ecb.mg261126~ccf28c8071.en.html"
+      },
+      "fetchedAt": "2026-11-26T12:32:11.917Z"
     },
     {
       "meetingId": "fed-2026-01-28",
