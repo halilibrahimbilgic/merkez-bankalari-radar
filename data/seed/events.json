@@ -1,16 +1,6 @@
 {
-  "fetchedAt": "2026-11-25T15:14:26.319Z",
+  "fetchedAt": "2026-11-26T05:02:07.042Z",
   "events": [
-    {
-      "id": "ecb-2026-11-24-164emiz",
-      "bankCode": "ecb",
-      "at": "2026-11-24T11:00:00.000Z",
-      "timeTbd": false,
-      "kind": "testimony",
-      "speaker": "Boris Vujčić",
-      "title": "Special address and participation in Central Bankers’ chat \"Resist the shocks – how to boost Europe’s resilience\" by Mr Vujčić at Conference on European Economic Integration (CEEI) \"CESEE in a Changing World: geoeconomics, technology and demographic shifts\" jointly organised by Oesterreichische Nationalbank and Narodowy Bank Polski in Vienna, Austria",
-      "url": "https://www.oenb-events.at/en/conference-on-european-economic-integration-ceei-2026"
-    },
     {
       "id": "fed-2026-11-25-k30rtv",
       "bankCode": "fed",
@@ -39,6 +29,17 @@
       "kind": "fsr",
       "title": "Finansal İstikrar Raporu",
       "url": "https://www.tcmb.gov.tr/wps/wcm/connect/TR/TCMB+TR/Main+Menu/Duyurular/Takvim"
+    },
+    {
+      "id": "fed-2026-12-01-15kqxj9",
+      "bankCode": "fed",
+      "at": "2026-12-01T15:00:00.000Z",
+      "timeTbd": false,
+      "kind": "testimony",
+      "speaker": "Michelle W. Bowman",
+      "role": "Vice Chair for Supervision",
+      "title": "Before the U.S. House Financial Services Committee",
+      "url": "https://www.federalreserve.gov/newsevents/calendar.htm"
     },
     {
       "id": "tcmb-cpi-2026-12-03",

@@ -1,5 +1,5 @@
 {
-  "fetchedAt": "2026-11-25T15:14:36.105Z",
+  "fetchedAt": "2026-11-26T05:02:17.027Z",
   "readings": [
     {
       "bankCode": "fed",
@@ -33,8 +33,8 @@
     },
     {
       "bankCode": "rba",
-      "period": "2026-09",
-      "yoy": 4.3,
+      "period": "2026-10",
+      "yoy": 4.9,
       "sourceUrl": "https://www.rba.gov.au/statistics/tables/#prices-inflation"
     }
   ]
