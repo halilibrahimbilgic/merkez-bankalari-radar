@@ -1,5 +1,5 @@
 {
-  "fetchedAt": "2026-11-27T05:02:18.290Z",
+  "fetchedAt": "2026-11-27T14:35:54.166Z",
   "events": [
     {
       "id": "tcmb-2026-11-27-fsr",
@@ -9,6 +9,48 @@
       "kind": "fsr",
       "title": "Finansal İstikrar Raporu",
       "url": "https://www.tcmb.gov.tr/wps/wcm/connect/TR/TCMB+TR/Main+Menu/Duyurular/Takvim"
+    },
+    {
+      "id": "ecb-2026-11-30-nqp0fm",
+      "bankCode": "ecb",
+      "at": "2026-11-30T14:30:00.000Z",
+      "timeTbd": false,
+      "kind": "testimony",
+      "speaker": "Christine Lagarde",
+      "role": "President",
+      "title": "Introductory statement by Ms Lagarde at ECON Hearing before the Committee on Economic and Monetary Affairs (ECON) of the European Parliament in Brussels, Belgium",
+      "url": "https://multimedia.europarl.europa.eu/en/webstreaming/committee-on-economic-and-monetary-affairs-ordinary-meeting_20261130-1430-COMMITTEE-ECON"
+    },
+    {
+      "id": "ecb-2026-11-30-15fkh9u",
+      "bankCode": "ecb",
+      "at": "2026-11-30T16:30:00.000Z",
+      "timeTbd": false,
+      "kind": "testimony",
+      "speaker": "Christine Lagarde",
+      "role": "President",
+      "title": "Introductory statement by Ms Lagarde in her capacity as ESRB Chair at Hearing before the Committee on Economic and Monetary Affairs (ECON) in Brussels, Belgium",
+      "url": "https://multimedia.europarl.europa.eu/en/webstreaming/committee-on-economic-and-monetary-affairs-ordinary-meeting_20261130-1430-COMMITTEE-ECON"
+    },
+    {
+      "id": "ecb-2026-12-01-19w726i",
+      "bankCode": "ecb",
+      "at": "2026-12-01T13:30:00.000Z",
+      "timeTbd": false,
+      "kind": "testimony",
+      "speaker": "Claudia Buch",
+      "title": "Introductory statement by Ms Buch at ECON Hearing before the Committee on Economic and Monetary Affairs (ECON) of the European Parliament in Brussels, Belgium",
+      "url": "https://multimedia.europarl.europa.eu/en/webstreaming/committee-on-economic-and-monetary-affairs-ordinary-meeting_20261201-1430-COMMITTEE-ECON"
+    },
+    {
+      "id": "ecb-2026-12-01-rqux6o",
+      "bankCode": "ecb",
+      "at": "2026-12-01T14:50:00.000Z",
+      "timeTbd": false,
+      "kind": "speech",
+      "speaker": "Piero Cipollone",
+      "title": "Remote remarks by Mr Cipollone at seminar on the digital euro organised by Università Roma Tre in Rome, Italy",
+      "url": "https://www.ecb.europa.eu/press/calendars/weekly/html/index.en.html"
     },
     {
       "id": "fed-2026-12-01-15kqxj9",
@@ -22,6 +64,87 @@
       "url": "https://www.federalreserve.gov/newsevents/calendar.htm"
     },
     {
+      "id": "ecb-2026-12-01-118z1zx",
+      "bankCode": "ecb",
+      "at": "2026-12-01T15:45:00.000Z",
+      "timeTbd": false,
+      "kind": "testimony",
+      "speaker": "Philip R. Lane",
+      "title": "Moderation of policy panel by Mr Lane at ECB conference on Central banking economic modelling frontiers: trends, cycles and structural shifts in Frankfurt, Germany",
+      "url": "https://www.ecb.europa.eu/press/conferences/html/20261201_cb_econ_model_frontiers.en.html"
+    },
+    {
+      "id": "ecb-2026-12-01-19kmv45",
+      "bankCode": "ecb",
+      "at": "2026-12-01T18:00:00.000Z",
+      "timeTbd": false,
+      "kind": "testimony",
+      "speaker": "Philip R. Lane",
+      "title": "Introductory dinner remarks by Mr Lane at ECB conference on Central banking economic modelling frontiers: trends, cycles and structural shifts in Frankfurt, Germany",
+      "url": "https://www.ecb.europa.eu/press/conferences/html/20261201_cb_econ_model_frontiers.en.html"
+    },
+    {
+      "id": "ecb-2026-12-02-81d4dh",
+      "bankCode": "ecb",
+      "at": "2026-12-02T08:40:00.000Z",
+      "timeTbd": false,
+      "kind": "speech",
+      "speaker": "Christine Lagarde",
+      "role": "President",
+      "title": "Keynote speech by Ms Lagarde at EMERGE Europe 2026 in Amsterdam, Netherlands",
+      "url": "https://www.ecb.europa.eu/press/calendars/weekly/html/index.en.html"
+    },
+    {
+      "id": "ecb-2026-12-02-1l23azd",
+      "bankCode": "ecb",
+      "at": "2026-12-02T10:20:00.000Z",
+      "timeTbd": false,
+      "kind": "discussion",
+      "speaker": "Anneli Tuominen",
+      "title": "Participation by Ms Tuominen in panel \"Future Trends in Oversight: Innovation, Resilience and Artificial Intelligence\" at conference \"The first two years of DORA Oversight – a key European response in a context of rising global cyber challenges\" in Paris, France",
+      "url": "https://www.ecb.europa.eu/press/calendars/weekly/html/index.en.html"
+    },
+    {
+      "id": "ecb-2026-12-02-1s6xdu4",
+      "bankCode": "ecb",
+      "at": "2026-12-02T15:00:00.000Z",
+      "timeTbd": false,
+      "kind": "speech",
+      "speaker": "Philip R. Lane",
+      "title": "Guest lecture and Q&A by Mr Lane at Frankfurt School of Finance and Management's Centre for Central Banking in Frankfurt, Germany",
+      "url": "https://applyexec.frankfurt-school.de/e/6aeb50de3b5d004cb3f54c24?_gl=1*130b6e0*_gcl_au*NDc2MzkwODMyLjE3OTU2MTk1NTI"
+    },
+    {
+      "id": "ecb-2026-12-02-124rxfi",
+      "bankCode": "ecb",
+      "at": "2026-12-02T15:30:00.000Z",
+      "timeTbd": false,
+      "kind": "discussion",
+      "speaker": "Sharon Donnery",
+      "title": "Moderation of panel discussion by Ms Donnery at the ECB Conference on Financial Stability and Macroprudential Policy 2026 in Frankfurt, Germany",
+      "url": "https://www.ecb.europa.eu/press/conferences/html/20261202_financial_stability.en.htm"
+    },
+    {
+      "id": "ecb-2026-12-02-2lfqoq",
+      "bankCode": "ecb",
+      "at": "2026-12-02T16:30:00.000Z",
+      "timeTbd": false,
+      "kind": "discussion",
+      "speaker": "Isabel Schnabel",
+      "title": "Participation by Ms Schnabel in panel discussion at German Federal Ministry of Finance event on the launch of \"Germany 2035\" in Berlin, Germany",
+      "url": "https://www.bundesfinanzministerium.de/Web/DE/Service/Mediathek/LiveStream/livestream.html"
+    },
+    {
+      "id": "ecb-2026-12-02-92m1nj",
+      "bankCode": "ecb",
+      "at": "2026-12-02T17:30:00.000Z",
+      "timeTbd": false,
+      "kind": "speech",
+      "speaker": "Boris Vujčić",
+      "title": "Dinner speech by Mr Vujčić at the ECB Conference on Financial Stability and Macroprudential Policy 2026 in Frankfurt, Germany",
+      "url": "https://www.ecb.europa.eu/press/conferences/html/20261202_financial_stability.en.html"
+    },
+    {
       "id": "tcmb-cpi-2026-12-03",
       "bankCode": "tcmb",
       "at": "2026-12-03T07:00:00.000Z",
@@ -30,6 +153,47 @@
       "title": "CPI Kasım 2026",
       "period": "Kasım 2026",
       "url": "https://www.tuik.gov.tr/Kurumsal/Veri_Takvimi"
+    },
+    {
+      "id": "ecb-2026-12-03-ql94na",
+      "bankCode": "ecb",
+      "at": "2026-12-03T09:00:00.000Z",
+      "timeTbd": false,
+      "kind": "discussion",
+      "speaker": "Christine Lagarde",
+      "role": "President",
+      "title": "Participation by Ms Lagarde in conversation with Federal President Frank-Walter Steinmeier at Forum Bellevue in Berlin, Germany",
+      "url": "www.bundespräsident.de"
+    },
+    {
+      "id": "ecb-2026-12-04-uosqmk",
+      "bankCode": "ecb",
+      "at": "2026-12-04T08:20:00.000Z",
+      "timeTbd": false,
+      "kind": "speech",
+      "speaker": "Boris Vujčić",
+      "title": "Opening remarks by Mr Vujčić at Adopt AI International Summit in Paris, France",
+      "url": "https://adoptai.artefact.com/content/inscription"
+    },
+    {
+      "id": "ecb-2026-12-04-8zuxpj",
+      "bankCode": "ecb",
+      "at": "2026-12-04T13:00:00.000Z",
+      "timeTbd": false,
+      "kind": "testimony",
+      "speaker": "Philip R. Lane",
+      "title": "Participation by Mr Lane in high-level panel \"The next decade of the EU’s economic governance framework: the role of independent fiscal institutions\" at 10th Anniversary of European Fiscal Board’s Annual Conference \"Fiscal policy in turbulent times\" in Brussels, Belgium",
+      "url": "https://commission.europa.eu/get-involved/events/european-fiscal-board-annual-conference-2026-2026-12-04_en"
+    },
+    {
+      "id": "ecb-2026-12-05-8ohw64",
+      "bankCode": "ecb",
+      "at": "2026-12-05T16:00:00.000Z",
+      "timeTbd": false,
+      "kind": "discussion",
+      "speaker": "Philip R. Lane",
+      "title": "Participation by Mr Lane in \"Conversation on Financial Volatility and Global Risks\" at 5th CEPR Paris Symposium in Paris, France",
+      "url": "https://cepr.org/system/files/2026-10/CEPR_Paris_Symposium_2026_Agenda.pdf"
     },
     {
       "id": "fed-cpi-2026-12-10",
