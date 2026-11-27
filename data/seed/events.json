@@ -1,26 +1,6 @@
 {
-  "fetchedAt": "2026-11-26T14:39:40.524Z",
+  "fetchedAt": "2026-11-27T05:02:18.290Z",
   "events": [
-    {
-      "id": "fed-2026-11-25-k30rtv",
-      "bankCode": "fed",
-      "at": "2026-11-25T12:25:00.000Z",
-      "timeTbd": false,
-      "kind": "speech",
-      "speaker": "Michelle W. Bowman",
-      "role": "Vice Chair for Supervision",
-      "title": "At a meeting with the Association of Supervisors of Banks of the Americas, Basel Committee on Banking Supervision, and Financial Stability Institute",
-      "url": "https://www.federalreserve.gov/newsevents/calendar.htm"
-    },
-    {
-      "id": "fed-2026-11-25-3dfpwl",
-      "bankCode": "fed",
-      "at": "2026-11-25T19:00:00.000Z",
-      "timeTbd": false,
-      "kind": "beige-book",
-      "title": "Beige Book",
-      "url": "https://www.federalreserve.gov/newsevents/calendar.htm"
-    },
     {
       "id": "tcmb-2026-11-27-fsr",
       "bankCode": "tcmb",
@@ -77,6 +57,15 @@
       "kind": "mpc-summary",
       "title": "Para Politikası Kurulu Toplantı Özeti",
       "url": "https://www.tcmb.gov.tr/wps/wcm/connect/TR/TCMB+TR/Main+Menu/Duyurular/Takvim"
+    },
+    {
+      "id": "boj-cpi-2026-12-17",
+      "bankCode": "boj",
+      "at": "2026-12-17T23:30:00.000Z",
+      "timeTbd": false,
+      "kind": "cpi",
+      "title": "CPI",
+      "url": "https://www.stat.go.jp/english/data/cpi/1582.html"
     }
   ]
 }

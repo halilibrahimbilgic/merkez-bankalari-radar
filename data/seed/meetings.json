@@ -1,5 +1,5 @@
 {
-  "fetchedAt": "2026-11-26T14:39:12.396Z",
+  "fetchedAt": "2026-11-27T05:01:48.749Z",
   "meetings": [
     {
       "id": "fed-2021-01-27",
@@ -1462,6 +1462,15 @@
       "sourceUrl": "https://www.ecb.europa.eu/press/calendars/mgcgc/html/index.en.html"
     },
     {
+      "id": "rba-2028-02-08",
+      "bankCode": "rba",
+      "meetingAt": "2028-02-08T03:30:00.000Z",
+      "timeTbd": false,
+      "type": "rate_decision",
+      "status": "scheduled",
+      "sourceUrl": "https://www.rba.gov.au/schedules-events/board-meeting-schedules.html"
+    },
+    {
       "id": "ecb-2028-03-23",
       "bankCode": "ecb",
       "meetingAt": "2028-03-23T13:15:00.000Z",
@@ -1469,6 +1478,24 @@
       "type": "rate_decision",
       "status": "scheduled",
       "sourceUrl": "https://www.ecb.europa.eu/press/calendars/mgcgc/html/index.en.html"
+    },
+    {
+      "id": "rba-2028-03-28",
+      "bankCode": "rba",
+      "meetingAt": "2028-03-28T03:30:00.000Z",
+      "timeTbd": false,
+      "type": "rate_decision",
+      "status": "scheduled",
+      "sourceUrl": "https://www.rba.gov.au/schedules-events/board-meeting-schedules.html"
+    },
+    {
+      "id": "rba-2028-05-02",
+      "bankCode": "rba",
+      "meetingAt": "2028-05-02T04:30:00.000Z",
+      "timeTbd": false,
+      "type": "rate_decision",
+      "status": "scheduled",
+      "sourceUrl": "https://www.rba.gov.au/schedules-events/board-meeting-schedules.html"
     },
     {
       "id": "ecb-2028-05-04",
@@ -1489,6 +1516,15 @@
       "sourceUrl": "https://www.ecb.europa.eu/press/calendars/mgcgc/html/index.en.html"
     },
     {
+      "id": "rba-2028-06-20",
+      "bankCode": "rba",
+      "meetingAt": "2028-06-20T04:30:00.000Z",
+      "timeTbd": false,
+      "type": "rate_decision",
+      "status": "scheduled",
+      "sourceUrl": "https://www.rba.gov.au/schedules-events/board-meeting-schedules.html"
+    },
+    {
       "id": "ecb-2028-07-20",
       "bankCode": "ecb",
       "meetingAt": "2028-07-20T12:15:00.000Z",
@@ -1496,6 +1532,15 @@
       "type": "rate_decision",
       "status": "scheduled",
       "sourceUrl": "https://www.ecb.europa.eu/press/calendars/mgcgc/html/index.en.html"
+    },
+    {
+      "id": "rba-2028-08-01",
+      "bankCode": "rba",
+      "meetingAt": "2028-08-01T04:30:00.000Z",
+      "timeTbd": false,
+      "type": "rate_decision",
+      "status": "scheduled",
+      "sourceUrl": "https://www.rba.gov.au/schedules-events/board-meeting-schedules.html"
     },
     {
       "id": "ecb-2028-09-07",
@@ -1507,6 +1552,15 @@
       "sourceUrl": "https://www.ecb.europa.eu/press/calendars/mgcgc/html/index.en.html"
     },
     {
+      "id": "rba-2028-09-19",
+      "bankCode": "rba",
+      "meetingAt": "2028-09-19T04:30:00.000Z",
+      "timeTbd": false,
+      "type": "rate_decision",
+      "status": "scheduled",
+      "sourceUrl": "https://www.rba.gov.au/schedules-events/board-meeting-schedules.html"
+    },
+    {
       "id": "ecb-2028-10-12",
       "bankCode": "ecb",
       "meetingAt": "2028-10-12T12:15:00.000Z",
@@ -1516,6 +1570,15 @@
       "sourceUrl": "https://www.ecb.europa.eu/press/calendars/mgcgc/html/index.en.html"
     },
     {
+      "id": "rba-2028-11-07",
+      "bankCode": "rba",
+      "meetingAt": "2028-11-07T03:30:00.000Z",
+      "timeTbd": false,
+      "type": "rate_decision",
+      "status": "scheduled",
+      "sourceUrl": "https://www.rba.gov.au/schedules-events/board-meeting-schedules.html"
+    },
+    {
       "id": "ecb-2028-12-07",
       "bankCode": "ecb",
       "meetingAt": "2028-12-07T13:15:00.000Z",
@@ -1523,6 +1586,15 @@
       "type": "rate_decision",
       "status": "scheduled",
       "sourceUrl": "https://www.ecb.europa.eu/press/calendars/mgcgc/html/index.en.html"
+    },
+    {
+      "id": "rba-2028-12-12",
+      "bankCode": "rba",
+      "meetingAt": "2028-12-12T03:30:00.000Z",
+      "timeTbd": false,
+      "type": "rate_decision",
+      "status": "scheduled",
+      "sourceUrl": "https://www.rba.gov.au/schedules-events/board-meeting-schedules.html"
     }
   ]
 }

@@ -1,5 +1,5 @@
 {
-  "fetchedAt": "2026-11-26T14:40:17.890Z",
+  "fetchedAt": "2026-11-27T05:02:48.476Z",
   "speeches": [
     {
       "id": "20261126-investing-americas-underserved-communities",
@@ -49,6 +49,26 @@
       "title": "Considerations at the intersection of payments and tokenized markets",
       "speechDate": "2026-11-26",
       "sourceUrl": "https://www.bis.org/speeches/20261126-considerations-intersection-payments-and-tokenized-markets"
+    },
+    {
+      "id": "20261126-acting-time",
+      "contextEn": "Keynote speech by Ms Christine Lagarde, President of the European Central Bank, at the 36th Frankfurt European Banking Congress, Frankfurt am Main, 20 November 2026.",
+      "textLicense": "ecb",
+      "bankCode": "ecb",
+      "speakerName": "Christine Lagarde",
+      "title": "Acting in time",
+      "speechDate": "2026-11-26",
+      "sourceUrl": "https://www.bis.org/speeches/20261126-acting-time"
+    },
+    {
+      "id": "20261126-bank-japans-semiannual-report-currency-and-monetary-control",
+      "contextEn": "Statement by Mr Kazuo Ueda, Governor of the Bank of Japan, before the Committee on Financial Affairs, Senate, Tokyo, 19 November 2026.",
+      "textLicense": "boj",
+      "bankCode": "boj",
+      "speakerName": "Kazuo Ueda",
+      "title": "The Bank of Japan's Semiannual Report on Currency and Monetary Control",
+      "speechDate": "2026-11-26",
+      "sourceUrl": "https://www.bis.org/speeches/20261126-bank-japans-semiannual-report-currency-and-monetary-control"
     },
     {
       "id": "20261119-made-europe",
