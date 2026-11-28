@@ -1,15 +1,6 @@
 {
-  "fetchedAt": "2026-11-27T14:35:54.166Z",
+  "fetchedAt": "2026-11-28T05:02:11.226Z",
   "events": [
-    {
-      "id": "tcmb-2026-11-27-fsr",
-      "bankCode": "tcmb",
-      "at": "2026-11-26T21:00:00.000Z",
-      "timeTbd": true,
-      "kind": "fsr",
-      "title": "Finansal İstikrar Raporu",
-      "url": "https://www.tcmb.gov.tr/wps/wcm/connect/TR/TCMB+TR/Main+Menu/Duyurular/Takvim"
-    },
     {
       "id": "ecb-2026-11-30-nqp0fm",
       "bankCode": "ecb",
